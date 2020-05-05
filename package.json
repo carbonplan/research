@@ -1,0 +1,29 @@
+{
+  "name": "research",
+  "version": "1.0.0",
+  "description": "directory of carbonplan notes, notebooks, primers, data, and models",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carbonplan/research.git"
+  },
+  "author": "carbonplan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carbonplan/research/issues"
+  },
+  "homepage": "https://github.com/carbonplan/research#readme",
+  "dependencies": {
+    "@mdx-js/loader": "^1.6.1",
+    "@next/mdx": "^9.3.6",
+    "next": "^9.3.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "theme-ui": "^0.3.1"
+  }
+}
