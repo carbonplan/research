@@ -17,9 +17,6 @@ const link = {
 
 function Index ({ articles }) {
 
-
-  console.log(articles)
-
   return (
     <Layout>
       <Container sx={{ px: [4] }}>
