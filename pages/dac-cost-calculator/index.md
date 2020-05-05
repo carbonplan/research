@@ -1,4 +1,5 @@
-import Article from '../../components/Article'
+import Article from '../../components/article'
+import Calculator from './calculator'
 
 export const meta = {
   id: 'dac-cost-calculator'
@@ -6,6 +7,6 @@ export const meta = {
 
 # Cost calculator for direct air capture
 
-## Coming soon
+<Calculator></Calculator>
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>
