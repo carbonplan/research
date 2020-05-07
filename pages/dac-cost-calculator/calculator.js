@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { Box, Divider, Flex, Grid, Text, Heading, useThemeUI } from 'theme-ui'
 
-import dacModel from './model/driver.js'
 import Parameter from './components/parameter.js'
 import Donut from './components/charts/donut.js'
 import EnergySelect from './components/energy.js'
-import dacData from './model/dac-params.js'
+import dacData from './components/model/dac-params.js'
+import dacModel from './components/model/driver.js'
 
 
 const DacCalculator = () => {
