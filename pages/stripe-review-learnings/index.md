@@ -1,4 +1,4 @@
-import Article from '../../components/Article'
+import Article from '../../components/article'
 
 export const meta = {
   id: 'stripe-review-learnings'
