@@ -4,8 +4,9 @@ import { Box, Divider, Flex, Grid, Text, Heading, useThemeUI } from 'theme-ui'
 import Parameter from './components/parameter.js'
 import Donut from './components/charts/donut.js'
 import EnergySelect from './components/energy.js'
-import dacData from './components/model/dac-params.js'
-import dacModel from './components/model/driver.js'
+import techData from './components/model/tech-data.js'
+import dacParameters from './components/model/dac-params.js'
+import dacDriver from './components/model/driver.js'
 
 
 const DacCalculator = () => {
@@ -13,30 +14,21 @@ const DacCalculator = () => {
   const context = useThemeUI()
   const theme = context.theme
 
-  const parameters = [
-    "Scale [tCO2/year]",
-    "DAC Capacity Factor",
-    "DAC Section Lead Time [years]",
-    "Overnight Capex [M$] *",
-    "Electric Power Requierement [MW] *",
-    "Thermal [GJ/tCO2] *",
-    "Fixed O+M Costs [$/tCO2] *",
-    "Varible O+M Cost [$/tCO2] *",
-    "WACC [%]",
-    "Natural Gas Cost [$/mmBTU]"
-  ]
-
   // Setup state
   const state = {
     'electric': useState('WIND'),
     'thermal': useState('WIND'),
   }
-  for (var i = 0, l = parameters.length; i < l; i++) {
-    state[parameters[i]] = useState(45);
+  
+  const modelInputs = { "Technology": techData }
+  for (var i = 0, l = dacParameters.length; i < l; i++) {
+    state[dacParameters[i].name] = useState(dacParameters[i].initValue);
+    modelInputs[dacParameters[i].name] = state[dacParameters[i].name][0]
   }
 
-  var results = dacModel(state, dacData)
-  const cost = results['Total Cost[$ / tCO2]'].toFixed(0)
+  const results = dacDriver(modelInputs)
+  console.log('results in calculator', results)
+  const cost = results['Total Cost [$/tCO2]'].toFixed(0)
 
   return (
     <Flex sx={{
@@ -53,7 +45,7 @@ const DacCalculator = () => {
         <EnergySelect key={'thermal'} params={{ 'name': 'THERMAL', 'state': state['thermal'] }} ></EnergySelect>
         <Divider />
 
-        {parameters.map((p) => (<Parameter key={p} params={{ 'name': p, 'state': state[p] }}></Parameter>))}
+        {dacParameters.map((p) => (<Parameter key={p.name} param={p} state={state[p.name]}></Parameter>))}
       </Box>
       <Box>
         {/* TODO, make this box sticky */}

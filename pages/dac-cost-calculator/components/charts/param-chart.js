@@ -3,7 +3,7 @@ import { useThemeUI } from 'theme-ui'
 
 var vegaLite = require('vega-lite')
 
-const ParamChart = () => {
+const ParamChart = ( { param } ) => {
   const context = useThemeUI()
   const theme = context.theme
 
@@ -53,7 +53,7 @@ const ParamChart = () => {
       x: {
         field: "x",
         type: "quantitative",
-        scale: { domain: [0, 10] }  // TODO: parameterize
+        scale: { domain: param.validRange }  // TODO: parameterize
       },
       y: {
         field: "y",
