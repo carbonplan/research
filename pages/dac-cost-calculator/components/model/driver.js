@@ -1,7 +1,6 @@
 import { BatterySection, EnergySection, DacSection, DacModel } from './model.js'
 
 const dacDriver = (params) => {
-  console.log('Default Parameters', params)
 
   params['Base Energy Requierement [MW]'] = 38  // = 'Report Data'!C64
   const ebattery = new BatterySection(params)

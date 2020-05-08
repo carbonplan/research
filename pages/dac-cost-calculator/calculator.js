@@ -7,7 +7,7 @@ import EnergySelect from './components/energy.js'
 import techData from './components/model/tech-data.js'
 import dacParameters from './components/model/dac-params.js'
 import dacDriver from './components/model/driver.js'
-
+import calcPartialCost from './components/model/partial-cost.js'
 
 const DacCalculator = () => {
 
@@ -27,8 +27,9 @@ const DacCalculator = () => {
   }
 
   const results = dacDriver(modelInputs)
-  console.log('results in calculator', results)
   const cost = results['Total Cost [$/tCO2]'].toFixed(0)
+
+  const chartData = calcPartialCost(modelInputs)
 
   return (
     <Flex sx={{
@@ -45,7 +46,7 @@ const DacCalculator = () => {
         <EnergySelect key={'thermal'} params={{ 'name': 'THERMAL', 'state': state['thermal'] }} ></EnergySelect>
         <Divider />
 
-        {dacParameters.map((p) => (<Parameter key={p.name} param={p} state={state[p.name]}></Parameter>))}
+        {dacParameters.map((p) => (<Parameter key={p.name} param={p} data={chartData[p.name]} state={state[p.name]}></Parameter>))}
       </Box>
       <Box>
         {/* TODO, make this box sticky */}

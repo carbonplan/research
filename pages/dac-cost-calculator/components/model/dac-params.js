@@ -5,9 +5,9 @@ const dacParameters = [
     description: "An informative description of this parameter should go here.",
     unit: "tCO2/year",
     initValue: 1000000,
-    validRange: [1, 10000000],
-    step: 1,
-    scale: "linear",
+    validRange: [500000, 10000000],
+    step: 1000,
+    scale: "log",
   },
   {
     name: "DAC Capacity Factor",
@@ -15,8 +15,8 @@ const dacParameters = [
     description: "An informative description of this parameter should go here.",
     unit: "",
     initValue: 0.9,
-    validRange: [0, 10],
-    step: 1,
+    validRange: [0, 1],
+    step: 0.1,
     scale: "linear",
   },
   {
@@ -46,7 +46,7 @@ const dacParameters = [
     unit: "MW",
     initValue: 46.6,
     validRange: [0, 100],
-    step: 1,
+    step: 0.1,
     scale: "linear",
   },
   {
@@ -56,7 +56,7 @@ const dacParameters = [
     unit: "GJ/tCO2",
     initValue: 6.64,
     validRange: [0, 100],
-    step: 1,
+    step: 0.1,
     scale: "linear",
   },
   {
@@ -66,7 +66,7 @@ const dacParameters = [
     unit: "$/tCO2",
     initValue: 34,
     validRange: [0, 100],
-    step: 1,
+    step: 0.1,
     scale: "linear",
   },
   {
@@ -95,8 +95,8 @@ const dacParameters = [
     description: "An informative description of this parameter should go here.",
     unit: "%",
     initValue: 0.085,
-    validRange: [0, 10],
-    step: 1,
+    validRange: [0, 1],
+    step: 0.01,
     scale: "linear",
   },
   {
@@ -106,7 +106,7 @@ const dacParameters = [
     unit: "$/mmBTU",
     initValue: 3.43,
     validRange: [0, 10],
-    step: 1,
+    step: 0.1,
     scale: "linear",
   }
 ]

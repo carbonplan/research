@@ -15,7 +15,6 @@ const Donut = ({ params }) => {
       stroke: null
     },
   }
-  console.log('chart', params.results)
   var values = [
     { category: 'CAPITAL RECOVERY', opacity: 0.8, value: params.results['Capital Recovery [$/tCO2eq]'] / params.results['Total Cost [$/tCO2]']},
     { category: 'FIXED O+M', opacity: 0.55, value: params.results['Fixed O+M [$/tCO2eq]'] / params.results['Total Cost [$/tCO2]']},

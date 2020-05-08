@@ -3,7 +3,7 @@ import { useThemeUI } from 'theme-ui'
 
 var vegaLite = require('vega-lite')
 
-const ParamChart = ( { param } ) => {
+const ParamChart = ( { param, data } ) => {
   const context = useThemeUI()
   const theme = context.theme
 
@@ -28,38 +28,29 @@ const ParamChart = ( { param } ) => {
     },
   }
 
-  var values = [
-    { x: 0, y: 28, c: 0 },
-    { x: 1, y: 43, c: 0 },
-    { x: 2, y: 81, c: 0 },
-    { x: 3, y: 19, c: 0 },
-    { x: 4, y: 52, c: 0 },
-    { x: 5, y: 24, c: 0 },
-    { x: 6, y: 87, c: 0 },
-    { x: 7, y: 17, c: 0 },
-    { x: 8, y: 68, c: 0 },
-    { x: 9, y: 49, c: 0 }
-  ]
-
   const spec = {
     data: {
       name: 'values'
     },
     mark: {
-      type: "line",
-      color: theme.colors.purple
+      type: "bar",
+      color: theme.colors.purple,
     },
     encoding: {
       x: {
         field: "x",
         type: "quantitative",
-        scale: { domain: param.validRange }  // TODO: parameterize
+        scale: { domain: param.validRange, type: param.scale},
+        axis: { title: null }
       },
       y: {
         field: "y",
+        aggregate: "sum",
         type: "quantitative",
-        scale: { domain: [0, 100] }  // TODO: parameterize
+        scale: { 'padding': 1.87 },
+        axis: { title: null}
       },
+      color: { field: "c", type: "nominal", legend: null}
     }
   }
 
@@ -69,7 +60,7 @@ const ParamChart = ( { param } ) => {
   const width = 200
   const height = 100
 
-  return <Vega width={width} height={height} data={{ values: values }} renderer={'svg'} actions={false} spec={vgSpec} />
+  return <Vega width={width} height={height} data={{ values: data }} renderer={'svg'} actions={false} spec={vgSpec} />
 
 }
 

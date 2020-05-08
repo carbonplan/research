@@ -21,6 +21,10 @@ const pmt = (rate, nper, pv) => {
   return -(fv + pv * temp) / fact
 }
 
+const sum = (arr) => {
+  return arr.reduce(function (a, b) {return a + b}, 0)
+}
+
 class DacComponent {
   constructor(params) {
     this.params = params
@@ -29,17 +33,15 @@ class DacComponent {
   compute() {
     return {}
   }
-  // replaces cells =Q5:AB158 in `WACC Table Project Lead Time`
   leadTimeMult(time) {
+    // TODO: this needs a serious review
     const rate = this.params["WACC [%]"]
-    // time = int(time)
+    const vals = [(1 + rate) * (1 / time)]
 
-    // vals = np.zeros(time)
-    // vals[0] = (1 + rate) * (1 / time)
-    // for t in range(1, time):
-    //   vals[t] = np.sum(vals[: t]) * rate + (1 + rate) * (1 / time)
-    // return vals.sum()
-    return 1.  // TODO
+    for (var t = 1; t < time; t++) {
+      vals.push(sum(vals.slice(0, t)) * rate + (1+rate) * (1/time))
+    }
+    return sum(vals)
   }
   // calculate the capital recovery factor
   recoveryFactor() {
@@ -127,7 +129,7 @@ export class EnergySection extends DacComponent {
     v["Overnight Cost [M$]"] = (this.tech["Base Plant Cost [M$]"] * (v["Plant Size [MW]"] / this.tech["Plant Size [MW]"]) ** this.tech["Scaling Factor"])
 
     // Lead Time Multiplier
-    v["Lead Time Multiplier"] = this.leadTimeMult(this.tech["Lead Time [Years]"])
+    v["Lead Time Multiplier"] = this.leadTimeMult(this.tech["Lead Time [Years]"].toFixed(0))
 
     // Capital Cost[M$]
     v["Capital Cost [M$]"] = v["Overnight Cost [M$]"] * v["Lead Time Multiplier"]
