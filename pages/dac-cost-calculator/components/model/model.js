@@ -339,17 +339,24 @@ export class DacModel extends DacComponent {
 
     const ev = this.electric.compute()
     const tv = this.thermal.compute()
+
+    // console.log('ev', ev)
+    // console.log('tv', tv)
     
     let cv
     let tev
     if (this.electric.source == this.thermal.source) {
       cv = this.combinedPowerBlockRequirements(this.electric.source, ev, tv)
       tev = this.totalEnergyBlockCosts(ev, tv, cv)
+      // console.log('cv', cv)
+      // console.log('tev', tev)
+
     } else {
       throw "TODO: handle case with mismatched energy sources"
     }
 
     const dv = this.dac.compute()
+    // console.log('dv', dv)
 
     // Total Capital Cost[M$]
     v["Total Capital Cost [M$]"] = (tev["Total Capital Cost [M$]"] + dv["Capital Cost (including Lead Time) [M$]"])

@@ -1,36 +1,32 @@
 import { Box, Grid, Text, Select } from 'theme-ui'
 
+const eMap = {
+  'WIND': 'Wind',
+  'SOLAR': 'Solar'
+}
+
 
 const EnergySelect = ({ params }) => {
   const [value, setValue] = params.state
+
+  const defaultValue = value.toUpperCase()
   return (
     <Grid columns={[1, null, '100px 1fr']}>
       <Text>{params.name}</Text>
       <Box>
         <Select
           onChange={e => {
-            setValue(e.target.value)
+            setValue(eMap[e.target.value])
           }}
           sx={{
             variant: 'forms.select'
           }}
-          defaultValue={value}>
+          defaultValue={defaultValue}>
           <option>WIND</option>
           <option>SOLAR</option>
-          <option>NGCC</option>
-          <option>NUCLEAR</option>
+          {/* <option>NGCC</option>
+          <option>NUCLEAR</option> */}
         </Select>
-        {/* Note: was having trouble getting the form select variant to work so I've turn off the custom arrow */}
-        {/* <span sx={{
-          ml: ['-15px'],
-          fontSize: [4],
-          display: 'inline-block',
-          transform: 'rotate(90deg)',
-          pointerEvents: 'none',
-          position: 'relative',
-          top: '3px',
-          color: 'secondary'
-        }}>-></span> */}
       </Box>
     </Grid>
   )

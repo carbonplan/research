@@ -11,7 +11,7 @@ function linspace(startValue, stopValue, count) {
   return array
 }
 
-const calcPartialCost = (params) => {
+const calcPartialCost = (electricSource, thermalSource, params) => {
   const context = useThemeUI()
   const theme = context.theme
 
@@ -26,11 +26,11 @@ const calcPartialCost = (params) => {
     
     p = dacParameters[i]
     chartData[p.name] = []
-    x = linspace(p.validRange[0], p.validRange[1], 30)
+    x = linspace(p.validRange[0], p.validRange[1], 10)
 
     for (var j = 0, k = x.length; j < k; j++) {
       localParams[p.name] = x[j]
-      tempResults = dacDriver(localParams)
+      tempResults = dacDriver(electricSource, thermalSource, localParams)
       chartData[p.name].push({
         x: x[j],
         y: tempResults['Capital Recovery [$/tCO2eq]'],

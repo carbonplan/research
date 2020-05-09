@@ -71,7 +71,7 @@ const dacParameters = [
   },
   {
     name: "Varible O+M Cost [$/tCO2]",
-    displayName: "Varible",
+    displayName: "Varible O+M Cost",
     description: "An informative description of this parameter should go here.",
     unit: "$/tCO2",
     initValue: 4,
@@ -95,7 +95,7 @@ const dacParameters = [
     description: "An informative description of this parameter should go here.",
     unit: "%",
     initValue: 0.085,
-    validRange: [0, 1],
+    validRange: [-0.2, 0.3],
     step: 0.01,
     scale: "linear",
   },

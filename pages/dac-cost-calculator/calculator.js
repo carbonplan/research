@@ -16,8 +16,8 @@ const DacCalculator = () => {
 
   // Setup state
   const state = {
-    'electric': useState('WIND'),
-    'thermal': useState('WIND'),
+    'electric': useState('Wind'),
+    'thermal': useState('Wind'),  // not used
   }
   
   const modelInputs = { "Technology": techData }
@@ -26,10 +26,11 @@ const DacCalculator = () => {
     modelInputs[dacParameters[i].name] = state[dacParameters[i].name][0]
   }
 
-  const results = dacDriver(modelInputs)
+  const results = dacDriver(state.electric[0], state.thermal[0], modelInputs)
   const cost = results['Total Cost [$/tCO2]'].toFixed(0)
 
-  const chartData = calcPartialCost(modelInputs)
+  const chartData = calcPartialCost(state.electric[0], state.thermal[0], modelInputs)
+  // const chartData = {}
 
   return (
     <Flex sx={{
@@ -43,7 +44,7 @@ const DacCalculator = () => {
 
         <Heading>Select Your Energy Sources</Heading>
         <EnergySelect key={'electric'} params={{ 'name': 'ELECTRIC', 'state': state['electric'] }} ></EnergySelect>
-        <EnergySelect key={'thermal'} params={{ 'name': 'THERMAL', 'state': state['thermal'] }} ></EnergySelect>
+        {/* <EnergySelect key={'thermal'} params={{ 'name': 'THERMAL', 'state': state['thermal'] }} ></EnergySelect> */}
         <Divider />
 
         {dacParameters.map((p) => (<Parameter key={p.name} param={p} data={chartData[p.name]} state={state[p.name]}></Parameter>))}
