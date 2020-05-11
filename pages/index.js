@@ -21,7 +21,7 @@ function Index ({ articles }) {
     <Layout hideFooter={true}>
       <Container sx={{ px: [4] }}>
         <Box sx={{ maxWidth: '700px'}}>
-          <Heading sx={{ my: [5], fontSize: [7] }}>
+          <Heading sx={{ my: [5], fontSize: [6, 7, 7] }}>
             Research
           </Heading>
           {articles.map(({id, title, authors, date}) => (
