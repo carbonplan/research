@@ -24,7 +24,13 @@ const Footer = (props) => {
   const color = '#7eb36a'  // TODO: Get from pointer
 
   return (
-    <Box sx={{ float: 'right', transformOrigin: 'right', transform: 'rotate(90deg)' }}>
+    <Box sx={{ 
+      float: 'right', 
+      transformOrigin: 'right', 
+      transform: 'rotate(90deg)',
+      paddingBottom: '10px',
+      backgroundColor: 'background'
+    }}>
       <Text variant='metric.units' sx={{ whiteSpace: 'nowrap', display: 'inline-block', leftMargin: '15px' }}>
         {coords.x.toString().padStart(4, '0')},{coords.y.toString().padStart(4, '0')} X,Y 
       </Text>
