@@ -44,7 +44,7 @@ const Table = () => {
     borderWidth: '0px',
     borderBottomWidth: '1px',
     borderColor: 'muted',
-    display: ['none', 'initial', 'initial']
+    display: ['none', 'inherit', 'inherit']
     }}>
     <Row>
       <Text sx={header}>Mechanism</Text>
@@ -71,7 +71,7 @@ const Table = () => {
           project.metrics.filter((k) => k.name == 'transparency')[0].value
         }/>
         <Box sx={{ position: 'relative', top: '5px' }}>
-          <Link variant='arrow'>↗</Link>
+          <Link href={'https://staging.reports.carbonplan.org/?id=' + project.id} variant='arrow'>↗</Link>
         </Box>
       </Row>
       }

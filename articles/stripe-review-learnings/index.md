@@ -12,11 +12,11 @@ export const meta = {
   quotes: [
     {
       position: 500,
-      text: ' we decided to make our analysis, methods, and commentary public'
+      text: 'We decided to make our analysis, methods, and commentary public'
     },
     {
       position: 2900,
-      text: 'the complexity of carbon removal solutions across so many different technology areas presents a challenge for any one organization to evaluate'
+      text: 'The complexity of carbon removal solutions across so many different technology areas presents a challenge for any one organization to evaluate'
     },
     {
       position: 800,

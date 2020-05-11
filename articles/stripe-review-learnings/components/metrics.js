@@ -7,7 +7,7 @@ import { Box, Grid, Text, Link } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 
 const Row = ({ children }) => {
-  return <Grid columns={['125px 1fr']} sx={{
+  return <Grid columns={[1, '125px 1fr', '125px 1fr']} sx={{
       borderStyle: 'solid',
       borderWidth: '0px',
       borderTopWidth: '1px',
