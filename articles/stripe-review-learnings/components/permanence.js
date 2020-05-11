@@ -1,5 +1,6 @@
-import { Vega } from 'react-vega'
+import { Box, Text } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
+import { Vega } from 'react-vega'
 import data from '../data'
 var vegaLite = require('vega-lite')
 
@@ -37,6 +38,13 @@ const Permanence = () => {
   const { projects } = data
   const context = useThemeUI()
   const theme = context.theme
+
+  const Inline = ({ name, display }) => {
+    return <Text sx={{ 
+      display: 'inline-block', 
+      color: theme.tags[name] 
+    }}>{ display ? display : name }</Text>
+  }
 
   var values = []
   let opacity
@@ -100,8 +108,23 @@ const Permanence = () => {
   const width = 600
   const height = 200
 
-  return <Vega width={width} height={height}
+  return <Box>
+    <Vega width={width} height={height}
     data={{ values: values }} renderer={'svg'} actions={false} spec={vgSpec} />
+    <Text sx={{ 
+      color: 'secondary', 
+      fontSize: [1], 
+      fontFamily: 'monospace', 
+      mt: [2], 
+      mb: [5] 
+    }}>
+    Figure 1. Each point shows the permanence for a project. 
+    Colors represent project categories:{' '}
+    <Inline name='forests'/>, <Inline name='soil'/>, <Inline name='biomass'/>,{' '} 
+    <Inline name='dac' display='direct air capture'/>, <Inline name='mineralization'/>, 
+    and <Inline name='ocean'/>. 
+  </Text>
+  </Box>
 }
 
 export default Permanence
