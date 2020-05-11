@@ -4,6 +4,7 @@ import Check from './components/icons/check'
 import Ex from './components/icons/ex'
 import Exclamation from './components/icons/exclamation'
 import Table from './components/table'
+import Permanence from './components/permanence'
 import Metrics from './components/metrics'
 
 export const meta = {
@@ -86,7 +87,7 @@ Climate programs focusing on carbon removal strategies need to carefully conside
 
 The projects we analyzed clustered into two distinct groups: those with permanence horizons that match the scale of the climate problem, and those that don’t. For example, projects seeking to store CO2 underground in geologic reservoirs or in stable mineralized rock form have a plausible claim to carbon removal on the scale of 1000 years or more. Biochar projects, too, are likely to retain a significant fraction of their carbon in stable form for hundreds of years or more. In contrast, others that seek to store carbon in soils or forests tend to claim much shorter time horizons—some as few as one year, but more commonly between 10 and 100 years. 
 
-[Permanence figure]
+<Permanence/>
 
 Projects with shorter permanence horizons may have significant value. Many are associated with important environmental co-benefits to water quality, agricultural productivity, or species conservation. Shorter carbon removal commitments can also buy time to scale up more permanent solutions—although the challenge of adding to tomorrow’s decarbonization burden is no comfort, given the scale and rate of change already required. 
 

@@ -38,8 +38,19 @@ const Table = () => {
   const context = useThemeUI()
   const theme = context.theme
 
-  return <Box sx={{ 
-    my: [5],
+  const Inline = ({ name, display }) => {
+    return <Text sx={{ 
+      display: 'inline-block', 
+      color: theme.tags[name] 
+    }}>{ display ? display : name }</Text>
+  }
+
+  const order = ['forests', 'soil', 'biomass', 'dac', 'mineralization', 'ocean']
+
+  return <>
+    <Box sx={{ 
+    mt: [5],
+    mb: [2],
     borderStyle: 'solid',
     borderWidth: '0px',
     borderBottomWidth: '1px',
@@ -56,9 +67,11 @@ const Table = () => {
       <Box></Box>
     </Row>
     {data.projects.sort((a, b) => {
-      return a.tags[0].localeCompare(b.tags[0])
+      if (order.indexOf(a.tags[0]) < order.indexOf(b.tags[0])) return -1
+      else return 1
     }).map((project) => {
       const color = theme.colors[theme.tags[project.tags[0]]]
+      const url = 'https://staging.reports.carbonplan.org/?id=' + project.id + '&expand=true'
       return <Row key={project.id}>
         {icons(project.metrics.filter((k) => k.name == 'mechanism')[0].rating, color)}
         {icons(project.metrics.filter((k) => k.name == 'volume')[0].rating, color)}
@@ -71,12 +84,20 @@ const Table = () => {
           project.metrics.filter((k) => k.name == 'transparency')[0].value
         }/>
         <Box sx={{ position: 'relative', top: '5px' }}>
-          <Link href={'https://staging.reports.carbonplan.org/?id=' + project.id} variant='arrow'>↗</Link>
+          <Link href={url} variant='arrow'>↗</Link>
         </Box>
       </Row>
       }
     )}
   </Box>
+  <Text sx={{ color: 'secondary', fontSize: [1], fontFamily: 'monospace', mb: [5] }}>
+    Table 1. Each column is a metric, and each row shows our ratings
+    for an individual project. Colors represent project categories:{' '}
+    <Inline name='forests'/>, <Inline name='soil'/>, <Inline name='biomass'/>,{' '} 
+    <Inline name='dac' display='direct air capture'/>, <Inline name='mineralization'/>, 
+    and <Inline name='ocean'/>. Click the arrow in each row to see the report for that project. 
+  </Text>
+  </>
 }
 
 export default Table
