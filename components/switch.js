@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 const Footer = (props) => {
 
   const [colorMode, setColorMode] = useColorMode()
-  const [coords, setCoords] = useState({ x: 0, y: 0 })
+  const [scroll, setScroll] = useState({ y: 0 })
 
   const toggle = (e) => {
     if (colorMode == 'light') setColorMode('dark')
@@ -14,14 +14,16 @@ const Footer = (props) => {
   }
 
   useEffect(() => {
-    const setFromEvent = e => setCoords({ x: e.clientX, y: e.clientY })
-    window.addEventListener("mousemove", setFromEvent)
+    const setFromEvent = e => setScroll({ 
+      y: Math.min(window.scrollY / (document.body.offsetHeight - (700)),0.99)
+    })
+    window.addEventListener('scroll', setFromEvent)
     return () => {
-      window.removeEventListener("mousemove", setFromEvent)
+      window.removeEventListener('scroll', setFromEvent)
     }
   }, [])
 
-  const color = '#7eb36a'  // TODO: Get from pointer
+  const color = '#7eb36a'
 
   return (
     <Box sx={{ 
@@ -31,8 +33,12 @@ const Footer = (props) => {
       paddingBottom: '10px',
       backgroundColor: 'background'
     }}>
-      <Text variant='metric.units' sx={{ whiteSpace: 'nowrap', display: 'inline-block', leftMargin: '15px' }}>
-        {coords.x.toString().padStart(4, '0')},{coords.y.toString().padStart(4, '0')} X,Y 
+      <Text variant='metric.units' sx={{ 
+        whiteSpace: 'nowrap', 
+        display: 'inline-block', 
+        leftMargin: '15px' 
+      }}>
+        0.{(scroll.y * 100).toFixed(0).toString().padStart(2, '0')} SCROLL 
       </Text>
       <IconButton aria-label='Current Color' sx={{ fill: 'secondary' }} >
         <svg

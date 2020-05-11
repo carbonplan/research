@@ -4,7 +4,7 @@ import Footer from './footer'
 import Switch from './switch'
 import { Container, Flex, Box, Text } from 'theme-ui'
 
-const Layout = ({ children }) => {
+const Layout = ({ hideFooter, children }) => {
   return (
     <>
       <Seo/>
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
           }}>
             { children }
         </Box>
-        <Box 
+        {!hideFooter && <Box 
           sx={{
             width: '100%',
             borderStyle: 'solid',
@@ -53,6 +53,7 @@ const Layout = ({ children }) => {
             <Footer/>
           </Container>
         </Box>
+        }
         <Box
           sx={{
             width: '100%',

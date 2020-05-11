@@ -18,7 +18,7 @@ const link = {
 function Index ({ articles }) {
 
   return (
-    <Layout>
+    <Layout hideFooter={true}>
       <Container sx={{ px: [4] }}>
         <Box sx={{ maxWidth: '700px'}}>
           <Heading sx={{ my: [5], fontSize: [7] }}>

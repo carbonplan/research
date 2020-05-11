@@ -12,7 +12,7 @@ const Article = ({ children, meta }) => {
         <Box sx={{ 
           position: 'absolute', 
           bottom: 0, 
-          width: '800px', 
+          width: '1200px', 
           pb: [3],
           color: 'background'
         }}>

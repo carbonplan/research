@@ -72,7 +72,7 @@ const Header = () => {
           </svg>
         }
       </IconButton>
-      {expanded && 
+      {/*{expanded && 
       <Box sx={{
         position: 'fixed', 
         top: '0px',
@@ -102,7 +102,7 @@ const Header = () => {
       <NextLink href='/faq'><Link sx={link}>FAQ</Link></NextLink>
       </Box>
       </Box>
-    }
+    }*/}
     </Box>
   </Flex>
   
