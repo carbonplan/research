@@ -2,7 +2,9 @@ import Article from '../../components/article'
 import Calculator from './calculator'
 
 export const meta = {
-  id: 'dac-cost-calculator'
+  id: 'dac-cost-calculator',
+  summary: 'Calculator for costing Direct Air Capture projects'
+  quotes: []
 }
 
 # Cost calculator for direct air capture
