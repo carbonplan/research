@@ -237,7 +237,7 @@ export default {
       letterSpacing: 'body'
     },
     h1: {
-      fontFamily: 'mad',
+      fontFamily: 'heading',
       fontSize: [7],
       fontWeight: 'heading',
       lineHeight: 'heading'
