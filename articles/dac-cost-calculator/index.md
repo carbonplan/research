@@ -3,7 +3,7 @@ import Calculator from './calculator'
 
 export const meta = {
   id: 'dac-cost-calculator',
-  summary: 'Calculator for costing Direct Air Capture projects'
+  summary: 'Calculator for costing Direct Air Capture projects',
   quotes: []
 }
 
