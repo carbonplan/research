@@ -8,14 +8,15 @@ const Article = ({ children, meta }) => {
 
   return <Layout>
     <Box sx={{ backgroundColor: info.color, height: '125px', position: 'relative' }}>
-      <Container sx={{ px: [4] }}>
+      
         <Box sx={{ 
           position: 'absolute', 
           bottom: 0, 
-          width: '1200px', 
           pb: [3],
+          width: '100%',
           color: 'background'
         }}>
+        <Container sx={{ px: [4] }}>
           <Grid columns={[1, '15% 35% 50%', '15% 35% 50%']} gap={['0px']}>
             <Text sx={{ fontFamily: 'monospace', textTransform: 'uppercase' }}>
               Article({ info.number })
@@ -27,8 +28,9 @@ const Article = ({ children, meta }) => {
               { info.date }
             </Text>
           </Grid>
+          </Container>
         </Box>
-      </Container>
+      
     </Box>
     <Container sx={{ px: [4], mb: [5] }}>
       <Grid columns={[1, '650px 1fr', '650px 1fr']} gap={['100px']}>

@@ -43,7 +43,8 @@ const Table = () => {
     borderStyle: 'solid',
     borderWidth: '0px',
     borderBottomWidth: '1px',
-    borderColor: 'muted'
+    borderColor: 'muted',
+    display: ['none', 'initial', 'initial']
     }}>
     <Row>
       <Text sx={header}>Mechanism</Text>

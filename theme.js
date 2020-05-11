@@ -238,7 +238,7 @@ export default {
     },
     h1: {
       fontFamily: 'heading',
-      fontSize: [7],
+      fontSize: [6, 7, 7],
       fontWeight: 'heading',
       lineHeight: 'heading'
     },
