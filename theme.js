@@ -5,7 +5,7 @@ export default {
     paragraph: 'relative-medium-pro, Roboto, system-ui, -apple-system, BlinkMacSystemFont',
     heading: 'relative-medium-pro, Roboto, system-ui, -apple-system, BlinkMacSystemFont',
     monospace: 'relative-mono-11-pitch-pro, Menlo, monospace',
-    mad: 'MAD Serif Trial'
+    mad: 'GT Super Display'
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
   fontWeights: {
@@ -18,7 +18,8 @@ export default {
     heading: 1.125,
   },
   letterSpacings: {
-    body: '0.01em'
+    medium: '0.02em',
+    wide: '0.05em'
   },
   colors: {
     text: '#ebebec',
@@ -186,6 +187,7 @@ export default {
       pb: [1]
     },
     arrow: {
+      cursor: 'pointer',
       color: 'secondary',
       ml: [2], 
       fontSize: [4], 
@@ -237,13 +239,17 @@ export default {
     h1: {
       fontFamily: 'mad',
       fontSize: [7],
-      fontStyle: 'italic',
       fontWeight: 'heading',
       lineHeight: 'heading'
     },
     h2: {
       fontFamily: 'heading',
-      fontSize: [6],
+      fontSize: [5],
+      fontWeight: 'heading'
+    },
+    h3: {
+      fontFamily: 'heading',
+      fontSize: [4],
       fontWeight: 'heading'
     }
   },
