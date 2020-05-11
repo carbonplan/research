@@ -8,7 +8,7 @@ export const config = (theme) => {
   return {
     background: null,
     cursor: 'pointer',
-    padding: { left: 25, right: 0, top: 30, bottom: 50 },
+    padding: { left: 100, right: 0, top: 30, bottom: 50 },
     axis: {
       grid: false,
       labelFontSize: theme.fontSizes[1],
@@ -51,8 +51,11 @@ const Permanence = () => {
   for (var i = 0; i < projects.length; i++) {
     values.push(
       {
-        durability: parseFloat(projects[i].metrics.filter(
+        permanence: parseFloat(projects[i].metrics.filter(
           m => (m.name == 'permanence'))[0].value
+        ),
+        cost: parseFloat(projects[i].metrics.filter(
+          m => (m.name == 'cost'))[0].value
         ),
         group: projects[i].tags[0],
         color: theme.colors[theme.tags[projects[i].tags[0]]],
@@ -73,13 +76,13 @@ const Permanence = () => {
     },
     encoding: {
       y: { 
-        field: 'group', 
-        type: 'nominal',
-        scale: { 'padding': 1.87 },
-        axis: { title: 'CATEGORY', domain: false, labels: false, ticks: false }
+        field: 'cost', 
+        type: 'quantitative', 
+        axis: { title: 'COST $/tCO2', tickCount: 3 },
+        scale: { type: 'log', domain: [2, 2000], nice: false },
       },
       x: {
-        field: 'durability', 
+        field: 'permanence', 
         type: 'quantitative', 
         axis: { title: 'PERMANENCE years', tickCount: 3 },
         scale: { type: 'log',  domain: [0.6, 2000], nice: false  },
@@ -105,7 +108,7 @@ const Permanence = () => {
 
   var vgSpec = vegaLite.compile(spec, { config: config(theme) }).spec
 
-  const width = 600
+  const width = 500
   const height = 200
 
   return <Box>
@@ -118,11 +121,12 @@ const Permanence = () => {
       mt: [2], 
       mb: [5] 
     }}>
-    Figure 1. Each point shows the permanence for a project. 
+    Figure 1. Each point shows the cost and permanence for a project. 
     Colors represent project categories:{' '}
     <Inline name='forests'/>, <Inline name='soil'/>, <Inline name='biomass'/>,{' '} 
     <Inline name='dac' display='direct air capture'/>, <Inline name='mineralization'/>, 
-    and <Inline name='ocean'/>. 
+    and <Inline name='ocean'/>. Note that questions or concerns were raised 
+    for some of the projects with permanence below 1000+ years.
   </Text>
   </Box>
 }

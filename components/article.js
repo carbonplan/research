@@ -1,6 +1,7 @@
 import { Box, Text, Grid, Container } from 'theme-ui'
 import Layout from './layout'
 import Contents from '../contents'
+import BackArrow from './article/back-arrow'
 
 const Article = ({ children, meta }) => {
 
@@ -31,8 +32,9 @@ const Article = ({ children, meta }) => {
       </Box>
     </Box>
     <Container sx={{ px: [4], mb: [5] }}>
+      <BackArrow/>
       <Grid columns={[1, '650px 1fr', '650px 1fr']} gap={['100px']}>
-        <Box>{children}</Box>
+        <Box sx={{ mt: '-50px' }}>{children}</Box>
         <Box sx={{ display: ['none', 'none', 'initial']}}>
           <Box sx={{ mt: '150px', maxWidth: '250px' }}>
             <Text sx={{ fontFamily: 'heading', letterSpacing: 'wide', mb: [3] }}>
