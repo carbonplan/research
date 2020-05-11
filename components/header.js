@@ -46,10 +46,10 @@ const Header = () => {
         strokeWidth: '2px', 
         stroke: 'text', 
         '.paren': {
-          stroke: 'background'
+          opacity: '0'
         },
         '&:hover .paren': {
-          stroke: 'text'
+          opacity: '1'
         }
       }} aria-label='Toggle Menu'>
         {!expanded && <svg sx={{ width: '50px', height: '30px', transform: 'scale(2)', mt: ['-3px'] }}
