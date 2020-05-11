@@ -8,7 +8,7 @@ import Metrics from './components/metrics'
 
 export const meta = {
   id: 'stripe-review-learnings',
-  summary: 'Insights from our first external program evaluation for Stripe’s negative emissions commitment',
+  summary: 'Insights from our first external program evaluation for Stripe’s 2020 Negative Emissions Purchase',
   quotes: [
     {
       position: 500,
@@ -27,7 +27,7 @@ export const meta = {
 
 # Learnings from our first project reports
 
-One of our core areas of work at CarbonPlan is evaluating carbon removal projects, programs, and technologies. In March 2020, we partnered with Stripe for our first external engagement to help them evaluate proposals for a first round of funding under their [negative emissions commitment]().
+One of our core areas of work at CarbonPlan is evaluating carbon removal projects, programs, and technologies. In March 2020, we partnered with Stripe for our first external engagement to help them evaluate proposals for a first round of funding under their [Negative Emissions Purchase]().
 
 [Why we did it]
 
