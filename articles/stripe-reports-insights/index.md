@@ -30,7 +30,7 @@ export const meta = {
 
 One of our core focus areas at CarbonPlan is evaluating carbon removal projects, programs, and technologies. We believe that carbon removal and negative emissions will play an important role in addressing the climate crisis, but that success requires a culture of transparency and accountability. For us, getting the details right is critical — as it is for the many inventors, entrepreneurs, and activists who work to make climate solutions a reality. 
 
-In March 2020, we partnered with Stripe for our first external engagement to help evaluate proposals for a first round of funding under their [Negative Emissions Purchase](). Notably, Stripe agreed at the start of its process to make its proposals public — a decision that allowed us to begin building a public database of reports. We are grateful to the organizations and individuals who took the time to prepare these public applications, which offer the broader climate community a chance to grow and improve over time.
+In March 2020, we partnered with Stripe in our first external engagement to help evaluate proposals for a first round of funding under their [Negative Emissions Purchase](). Notably, Stripe agreed at the start of its process to make its proposals public — a decision that allowed us to begin building a public database of reports. We are grateful to the organizations and individuals who took the time to prepare these public applications, which offer the broader climate community a chance to grow and improve over time.
 
 This article describes what we did and what we learned in the process. For additional detail, check out our [project reports](https://carbonplan.org/reports) and the [terms of our engagement](#terms-of-engagement) with Stripe. Please note that this work represents CarbonPlan’s views, and not necessarily those of Stripe or any other organizations. 
 
@@ -58,11 +58,11 @@ The last two metrics — additionality and transparency — reflect our best jud
 
 Along with summary graphics, the reports include “notes” with detailed information taken directly from project proposals as well as “comments” with our analysis and interpretation for each criterion. In a few instances, we flagged a project with an <Exclamation closed={true}/> on these items to indicate an important issue warranting further examination. 
 
-See our [methods documentation](https://carbonplan.org/reports/methods) for full details on our approach.
+See our [methods](https://carbonplan.org/reports/methods) for full details on our approach.
 
-## Our big take-aways
+## Our big take aways
 
-There’s a lot of information in the [project reports](https://carbonplan.org/reports). We’ll summarize three major insights here. 
+There’s a lot of information in our [project reports](https://carbonplan.org/reports). We’ll summarize three insights here. 
 
 ### More questions than answers
 
