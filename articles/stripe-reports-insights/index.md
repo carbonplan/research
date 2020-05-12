@@ -32,7 +32,7 @@ One of our core focus areas at CarbonPlan is evaluating carbon removal projects,
 
 In March 2020, we partnered with Stripe for our first external engagement to help evaluate proposals for a first round of funding under their [Negative Emissions Purchase](). Notably, Stripe agreed at the start of its process to make its proposals public — a decision that allowed us to begin building a public database of reports. We are grateful to the organizations and individuals who took the time to prepare these public applications, which offer the broader climate community a chance to grow and improve over time.
 
-This article describes what we did and what we learned in the process. For additional detail, check out our [project reports](https://carbonplan.org/reports) and the [terms of our engagement]() with Stripe. Please note that this work represents CarbonPlan’s views, and not necessarily those of Stripe or any other organizations. 
+This article describes what we did and what we learned in the process. For additional detail, check out our [project reports](https://carbonplan.org/reports) and the [terms of our engagement](#terms-of-engagement) with Stripe. Please note that this work represents CarbonPlan’s views, and not necessarily those of Stripe or any other organizations. 
 
 ## What we did
 
@@ -84,7 +84,7 @@ Carbon dioxide remains active in the atmospheric carbon cycle for hundreds to th
 
 Climate programs focusing on carbon removal strategies need to carefully consider permanence. One way to do this is to focus procurement processes on technology areas with comparable permanence timeframes, which in turn can be matched the sponsor’s climate objectives. Alternatively, if a procurement includes a broad set of projects with significantly different permanence characteristics, then sponsors need to find a way to compare issues like volume and cost across fundamentally different time horizons. 
 
-The projects we analyzed clustered into two distinct groups: those with permanence horizons that match the scale of the climate problem, and those that don’t. For example, projects seeking to store CO2 underground in geologic reservoirs or in stable mineralized form have a plausible claim to carbon removal on the scale of 1000 years or more. Biochar projects, too, are likely to retain a significant fraction of their carbon in stable form for hundreds of years or more. In contrast, others that seek to store carbon in soils or forests tend to claim much shorter time horizons—some as few as one year, but more commonly between 10 and 100 years. 
+The projects we analyzed clustered into two distinct groups: those with permanence horizons that match the scale of the climate problem, and those that don’t. For example, projects seeking to store CO2 underground in geologic reservoirs or in stable mineralized form have a plausible claim to carbon removal on the scale of 1000 years or more. Biochar projects, too, are likely to retain a significant fraction of their carbon in stable form for hundreds of years or more. In contrast, others that seek to store carbon in soils or forests tend to claim much shorter time horizons — some as few as one year, but more commonly between 10 and 100 years. 
 
 <Permanence/>
 

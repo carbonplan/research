@@ -71,7 +71,7 @@ const Table = () => {
       else return 1
     }).map((project) => {
       const color = theme.colors[theme.tags[project.tags[0]]]
-      const url = 'https://staging.reports.carbonplan.org/?id=' + project.id + '&expand=true'
+      const url = 'https://carbonplan.org/reports/?id=' + project.id + '&expand=true'
       return <Row key={project.id}>
         {icons(project.metrics.filter((k) => k.name == 'mechanism')[0].rating, color)}
         {icons(project.metrics.filter((k) => k.name == 'volume')[0].rating, color)}
