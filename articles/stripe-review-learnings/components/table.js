@@ -91,7 +91,7 @@ const Table = () => {
     )}
   </Box>
   <Text sx={{ color: 'secondary', fontSize: [1], fontFamily: 'monospace', mt: [3], mb: [5] }}>
-    Table 1. Each column is a metric, and each row shows our ratings
+    TABLE 1 / Each column is a metric, and each row shows our ratings
     for an individual project. Colors represent project categories:{' '}
     <Inline name='forests'/>, <Inline name='soil'/>, <Inline name='biomass'/>,{' '} 
     <Inline name='dac' display='direct air capture'/>, <Inline name='mineralization'/>, 

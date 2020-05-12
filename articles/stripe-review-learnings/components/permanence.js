@@ -108,8 +108,8 @@ const Permanence = () => {
 
   var vgSpec = vegaLite.compile(spec, { config: config(theme) }).spec
 
-  const width = 500
-  const height = 200
+  const width = 450
+  const height = 250
 
   return <Box>
     <Vega width={width} height={height}
@@ -121,7 +121,7 @@ const Permanence = () => {
       mt: [2], 
       mb: [5] 
     }}>
-    Figure 1. Each point shows the cost and permanence for a project. 
+    FIGURE 1 / Each point shows the cost and permanence for a project. 
     Colors represent project categories:{' '}
     <Inline name='forests'/>, <Inline name='soil'/>, <Inline name='biomass'/>,{' '} 
     <Inline name='dac' display='direct air capture'/>, <Inline name='mineralization'/>, 

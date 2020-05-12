@@ -90,7 +90,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -183,7 +183,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -276,7 +276,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -369,7 +369,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -462,7 +462,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -555,7 +555,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -648,7 +648,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -741,7 +741,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -834,7 +834,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -927,7 +927,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -953,7 +953,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Timeframe over which expected volume of carbon reductions occurs is not stated.",
-          "comment": "Based on public details on project website, expected weathering for all GreenSand deposits since 2007 totals 306 tCO2. Given the $/tCO2 cost of project, it is likely that the claimed volume is over a longer time horizon than a single year."
+          "comment": "Few details available on specific deployment plan. Based on public details from other deployments on project website, expected weathering for all GreenSand deposits since 2007 totals 306 tCO2. Given the $/tCO2 cost of project, it is likely that the claimed volume is over a longer time horizon than a single year."
         },
         {
           "type": "Metric",
@@ -1020,7 +1020,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -1113,7 +1113,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -1174,11 +1174,11 @@ module.exports = {
         {
           "type": "Metric",
           "name": "cost",
-          "value": 100.0,
+          "value": 4.14,
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Cost is conservative as it is based on total costs divided by a lower bound on volume estimate. The average cost per acre in year 1 of each project is $3,500."
+          "comment": "Rather than use the reported cost of $100, for consistency with other forest projects, we estimate a cost over the 30 year project lifetime using the provided rate of $1416.43 / ha and the information on provide size and volume."
         },
         {
           "type": "Metric",
@@ -1206,7 +1206,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -1299,7 +1299,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -1392,7 +1392,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -1485,7 +1485,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -1578,7 +1578,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -1671,7 +1671,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -1764,7 +1764,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -1845,7 +1845,7 @@ module.exports = {
         "type": null
       },
       "tags": [
-        "forests",
+        "biomass",
         "burial"
       ],
       "id": "STRP20",
@@ -1857,7 +1857,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -1954,7 +1954,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -2047,7 +2047,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -2073,7 +2073,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 1.0,
           "notes": "Volume projected based on total crushed olivine supply to pilot project site.",
-          "comment": "Given the stated ratio of 1.25 tCO2 removed per 1 tCO2 of olivine, we infer 160 t of olivine used. Assuming that amount is procudred, the volume is plausible."
+          "comment": "Given the stated ratio of 1.25 tCO2 removed per 1 tCO2 of olivine, we infer 160 t of olivine used. Assuming that amount is procured, the volume is plausible."
         },
         {
           "type": "Metric",
@@ -2140,7 +2140,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     },
@@ -2233,7 +2233,7 @@ module.exports = {
         }
       },
       "program": {
-        "name": "Stripe Climate 2020",
+        "name": "Stripe 2020 Negative Emissions Purchase",
         "url": "https://stripe.com/climate"
       }
     }
