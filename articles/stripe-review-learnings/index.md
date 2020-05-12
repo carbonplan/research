@@ -20,7 +20,7 @@ export const meta = {
       text: 'The complexity of carbon removal solutions across so many different technology areas presents a challenge for any one organization to evaluate'
     },
     {
-      position: 800,
+      position: 1100,
       text: 'Permanent carbon storage in these systems ultimately depends on the political and economic stability of private contracts and government policy regimes operating over long time horizons'
     }
   ]

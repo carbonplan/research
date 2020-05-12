@@ -36,7 +36,7 @@ const Article = ({ children, meta }) => {
       <Grid columns={[1, '650px 1fr', '650px 1fr']} gap={['100px']}>
         <Box sx={{ mt: '-50px' }}>{children}</Box>
         <Box sx={{ display: ['none', 'none', 'initial']}}>
-          <Box sx={{ mt: '150px', maxWidth: '250px' }}>
+          <Box sx={{ mt: '100px', maxWidth: '250px' }}>
             <Text sx={{ fontFamily: 'heading', letterSpacing: 'wide', mb: [3] }}>
               / QUICK LOOK
             </Text>
