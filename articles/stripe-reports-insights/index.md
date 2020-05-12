@@ -8,7 +8,7 @@ import Table from './components/table'
 import Metrics from './components/metrics'
 
 export const meta = {
-  id: 'stripe-review-learnings',
+  id: 'stripe-reports-insights',
   summary: 'Project reports and lessons learned from our first external engagement for Stripe’s 2020 Negative Emissions Purchase',
   quotes: [
     {

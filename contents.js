@@ -1,8 +1,8 @@
 const Contents = [
   {
-    id: 'stripe-review-learnings',
+    id: 'stripe-reports-insights',
     number: 0,
-    title: 'Learnings from our first project evaluation',
+    title: 'Insights from our first set of project reports',
     section: 'research',
     tags: ['note'],
     authors: ['CarbonPlan Team'],
