@@ -6,7 +6,7 @@ const Parameter = ( { param, data, state }) => {
   const [value, setValue] = state
 
   const updateParamValue = (e) => {
-    setValue(e.target.value)
+    setValue(parseFloat(e.target.value))
   }
 
   return (
@@ -28,6 +28,7 @@ const Parameter = ( { param, data, state }) => {
           <ParamChart param={param} data={data}></ParamChart>
           <Box sx={{ paddingLeft: '10px', paddingRight: '50px'}}>
             <Slider
+              type='range'
               value={value}
               onChange={updateParamValue}
               min={param.validRange[0]}

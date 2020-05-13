@@ -17,8 +17,8 @@ const Donut = ({ params }) => {
   }
   var values = [
     { category: 'CAPITAL RECOVERY', opacity: 0.8, value: params.results['Capital Recovery [$/tCO2eq]'] / params.results['Total Cost [$/tCO2]']},
-    { category: 'FIXED O+M', opacity: 0.55, value: params.results['Fixed O+M [$/tCO2eq]'] / params.results['Total Cost [$/tCO2]']},
-    { category: 'VARIABLE O+M', opacity: 0.3, value: params.results['Variable O+M [$/tCO2eq]'] / params.results['Total Cost [$/tCO2]']},
+    { category: 'FIXED O&M', opacity: 0.55, value: params.results['Fixed O&M [$/tCO2eq]'] / params.results['Total Cost [$/tCO2]']},
+    { category: 'VARIABLE O&M', opacity: 0.3, value: params.results['Variable O&M [$/tCO2eq]'] / params.results['Total Cost [$/tCO2]']},
   ]
 
   const spec = {

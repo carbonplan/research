@@ -80,10 +80,10 @@ export class BatterySection extends DacComponent {
     // Battery Capital Cost[M$]
     v["Battery Capital Cost [M$]"] = (this.tech["Base Plant Cost [M$]"] * (v["Battery Capacity Needed [MWh]"] / this.tech["Battery Capacity [MWhr]"]) ** this.tech["Scaling Factor"])
 
-    // Battery Fixed O & M[$ / tCO2eq]
+    // Battery Fixed O&M [$/tCO2eq]
     v["Battery Fixed O&M [$/tCO2eq]"] = ((this.tech["Base Plant Annual Fixed O&M [$M]"] * (v["Battery Capacity Needed [MWh]"] / this.tech["Battery Capacity [MWhr]"]) ** this.tech["Scaling Factor"]) * MILLION / this.params["Scale [tCO2/year]"])
 
-    // Battery Variable O & M[$ / tCO2eq]
+    // Battery Variable O&M [$/tCO2eq]
     v["Battery Variable O&M [$/tCO2eq]"] = (this.tech["Variable O&M [$/MWhr]"] * v["Battery Capacity [MWh]"] / this.params["Scale [tCO2/year]"] * DAYS_PER_YEAR )
 
     return v
@@ -143,22 +143,22 @@ export class EnergySection extends DacComponent {
     // Annual Capital Recovery Factor
     const annualCapitalRecoveryFactor = this.recoveryFactor()
 
-    // Capital Recovery[$ / tCO2eq]
+    // Capital Recovery[$/tCO2eq]
     v["Capital Recovery [$/tCO2eq]"] = (v["Total Capital Cost [M$]"] * annualCapitalRecoveryFactor * MILLION / this.params["Scale [tCO2/year]"])
 
-    // Power Fixed O & M[$ / tCO2eq]
+    // Power Fixed O&M [$/tCO2eq]
     v["Power Fixed O&M [$/tCO2eq]"] = ((this.tech["Base Plant Annual Fixed O&M [$M]"] * (v["Plant Size [MW]"] / this.tech["Plant Size [MW]"]) ** this.tech["Scaling Factor"] ) * MILLION / this.params["Scale [tCO2/year]"])
 
-    // Power Variable O & M[$ / tCO2eq]
+    // Power Variable O&M [$/tCO2eq]
     v["Power Variable O&M [$/tCO2eq]"] = (this.tech["Variable O&M [$/MWhr]"] * v["Plant Size [MW]"] * operationalHours / this.params["Scale [tCO2/year]"])
 
-    // Total Fixed O & M[$ / tCO2eq]
+    // Total Fixed O&M [$/tCO2eq]
     v["Total Fixed O&M [$/tCO2eq]"] = v["Power Fixed O&M [$/tCO2eq]"]
     if (this.battery) {
       v["Total Fixed O&M [$/tCO2eq]"] += v["Battery Fixed O&M [$/tCO2eq]"]
     }
 
-    // Total Variable O & M[$ / tCO2eq]
+    // Total Variable O&M [$/tCO2eq]
     v["Total Variable O&M [$/tCO2eq]"] = v["Power Variable O&M [$/tCO2eq]"]
     if (this.battery) {
       v["Total Variable O&M [$/tCO2eq]"] += v["Battery Variable O&M [$/tCO2eq]"]
@@ -172,16 +172,16 @@ export class EnergySection extends DacComponent {
       v["Natural Gas Use [mmBTU/tCO2eq]"] = 0.0
     }
 
-    // Natural Gas Cost[$ / tCO2eq]
+    // Natural Gas Cost[$/tCO2eq]
     v["Natural Gas Cost [$/tCO2eq]"] = (v["Natural Gas Use [mmBTU/tCO2eq]"] * this.params["Natural Gas Cost [$/mmBTU]"])
 
     // Emitted tCO2eq / tCO2
     v["Emitted tCO2eq/tCO2"] = (v["Natural Gas Use [mmBTU/tCO2eq]"] * this.tech["Total CO2 eq [lb/mmbtu]"] * LB_TO_METRIC_TON * (1 - this.tech["Capture Efficiency"]) )
 
-    // Total Cost[$ / tCO2eq gross]
+    // Total Cost[$/tCO2eq gross]
     v["Total Cost [$/tCO2eq gross]"] = (v["Capital Recovery [$/tCO2eq]"] + v["Total Fixed O&M [$/tCO2eq]"] + v["Total Variable O&M [$/tCO2eq]"] )
 
-    // Total Cost[$ / tCO2eq net]
+    // Total Cost[$/tCO2eq net]
     v["Total Cost [$/tCO2eq net]"] = v["Total Cost [$/tCO2eq gross]"] / (1 - v["Emitted tCO2eq/tCO2"])  // TODO: K62 is the tCO2eq / tCO2 field from the thermal section
 
     return v
@@ -209,19 +209,19 @@ export class DacSection extends DacComponent {
     // Capital Cost(including Lead Time)[M$]
     v["Capital Cost (including Lead Time) [M$]"] = (v["Total Capital Cost [M$]"] * v["Lead Time Multiplier"])
 
-    // Capital Recovery[$ / tCO2eq]
+    // Capital Recovery[$/tCO2eq]
     v["Capital Recovery [$/tCO2eq]"] = (v["Total Capital Cost [M$]"] * this.recoveryFactor() * MILLION / this.params["Scale [tCO2/year]"])
 
-    // Fixed O + M[$ / tCO2eq]
-    v["Fixed O+M [$/tCO2eq]"] = this.params["Fixed O+M Costs [$/tCO2]"]
+    // Fixed O&M [$/tCO2eq]
+    v["Fixed O&M [$/tCO2eq]"] = this.params["Fixed O&M Costs [$/tCO2]"]
 
-    // Variable O + M[$ / tCO2eq]
-    v["Variable O+M [$/tCO2eq]"] = this.params["Varible O+M Cost [$/tCO2]"]
+    // Variable O&M [$/tCO2eq]
+    v["Variable O&M [$/tCO2eq]"] = this.params["Varible O&M Cost [$/tCO2]"]
 
-    // Total Cost[$ / tCO2]
-    v["Total Cost [$/tCO2]"] = (v["Capital Recovery [$/tCO2eq]"] + v["Fixed O+M [$/tCO2eq]"] + v["Variable O+M [$/tCO2eq]"])
+    // Total Cost[$/tCO2]
+    v["Total Cost [$/tCO2]"] = (v["Capital Recovery [$/tCO2eq]"] + v["Fixed O&M [$/tCO2eq]"] + v["Variable O&M [$/tCO2eq]"])
 
-    // // Total Cost[$ / tCO2 net removed]
+    // // Total Cost[$/tCO2 net removed]
     // v['Total Cost [$/tCO2 net removed]'] = v['Total Cost [$/tCO2]'] / (
     //     1 - (ev['Emitted tCO2eq/tCO2'] + tv['Emitted tCO2eq/tCO2'])
     // )
@@ -261,10 +261,10 @@ export class DacModel extends DacComponent {
     // Capital Cost[M$]
     v["Capital Cost [M$]"] = v["Overnight Cost [M$]"] * v["Lead Time Multiplier"]
 
-    // Power Fixed O & M[$ / tCO2eq]
+    // Power Fixed O&M [$/tCO2eq]
     v["Power Fixed O&M [$/tCO2eq]"] = ((tech["Base Plant Annual Fixed O&M [$M]"]  * (v["Plant Size [MW]"] / tech["Plant Size [MW]"]) ** tech["Scaling Factor"]) * MILLION/ this.params["Scale [tCO2/year]"])
 
-    // Power Variable O & M[$ / tCO2eq]
+    // Power Variable O&M [$/tCO2eq]
     v["Power Variable O&M [$/tCO2eq]"] = (tech["Variable O&M [$/MWhr]"] * v["Plant Size [MW]"] * operationalHours / this.params["Scale [tCO2/year]"])
 
     // Battery Capacity[MWh]
@@ -273,24 +273,24 @@ export class DacModel extends DacComponent {
     // Battery Capital Cost[M$]
     v["Battery Capital Cost [M$]"] = (this.params["Technology"]["Battery Storage"]["Base Plant Cost [M$]"] * (  v["Battery Capacity [MWh]"]  / this.params["Technology"]["Battery Storage"]["Battery Capacity [MWhr]"])**this.params["Technology"]["Battery Storage"]["Scaling Factor"])
 
-    // Battery Fixed O & M[$ / tCO2eq]
+    // Battery Fixed O&M [$/tCO2eq]
     v["Battery Fixed O&M [$/tCO2eq]"] = ((this.params["Technology"]["Battery Storage"]["Base Plant Annual Fixed O&M [$M]"] * (  v["Battery Capacity [MWh]"] / this.params["Technology"]["Battery Storage"]["Battery Capacity [MWhr]"])**this.params["Technology"]["Battery Storage"]["Scaling Factor"]) * MILLION / this.params["Scale [tCO2/year]"])
 
-    // Battery Variable O & M[$ / tCO2eq]
+    // Battery Variable O&M [$/tCO2eq]
     v["Battery Variable O&M [$/tCO2eq]"] = (this.params["Technology"]["Battery Storage"]["Variable O&M [$/MWhr]"] * v["Battery Capacity [MWh]"] / this.params["Scale [tCO2/year]"] * DAYS_PER_YEAR
     )
 
     // Total Capital Cost[M$]
     v["Total Capital Cost [M$]"] = v["Capital Cost [M$]"] + v["Battery Capital Cost [M$]"]
 
-    // Capital Recovery[$ / tCO2eq]
+    // Capital Recovery[$/tCO2eq]
     v["Capital Recovery [$/tCO2eq]"] = (v["Total Capital Cost [M$]"] * this.recoveryFactor() * MILLION / this.params["Scale [tCO2/year]"])
 
-    // Fixed O + M[$ / tCO2eq]
-    v["Fixed O+M [$/tCO2eq]"] = (v["Power Fixed O&M [$/tCO2eq]"] + v["Battery Fixed O&M [$/tCO2eq]"])
+    // Fixed O&M [$/tCO2eq]
+    v["Fixed O&M [$/tCO2eq]"] = (v["Power Fixed O&M [$/tCO2eq]"] + v["Battery Fixed O&M [$/tCO2eq]"])
 
-    // Variable O + M[$ / tCO2eq]
-    v["Variable O+M [$/tCO2eq]"] = (v["Power Variable O&M [$/tCO2eq]"] + v["Battery Variable O&M [$/tCO2eq]"])
+    // Variable O&M [$/tCO2eq]
+    v["Variable O&M [$/tCO2eq]"] = (v["Power Variable O&M [$/tCO2eq]"] + v["Battery Variable O&M [$/tCO2eq]"])
 
     return v
   }
@@ -309,25 +309,25 @@ export class DacModel extends DacComponent {
     // Total Capital Cost[M$]
     v["Total Capital Cost [M$]"] = cv["Total Capital Cost [M$]"]
 
-    // Capital Recovery[$ / tCO2eq]
+    // Capital Recovery[$/tCO2eq]
     v["Capital Recovery [$/tCO2eq]"] = cv["Capital Recovery [$/tCO2eq]"]
 
-    // Fixed O + M[$ / tCO2eq]
-    v["Fixed O+M [$/tCO2eq]"] = cv["Fixed O+M [$/tCO2eq]"]
+    // Fixed O&M [$/tCO2eq]
+    v["Fixed O&M [$/tCO2eq]"] = cv["Fixed O&M [$/tCO2eq]"]
 
-    // Variable O + M[$ / tCO2eq]
-    v["Variable O+M [$/tCO2eq]"] = cv["Variable O+M [$/tCO2eq]"]
+    // Variable O&M [$/tCO2eq]
+    v["Variable O&M [$/tCO2eq]"] = cv["Variable O&M [$/tCO2eq]"]
 
-    // NG Cost[$ / tCO2eq]
+    // NG Cost[$/tCO2eq]
     v["Natural Gas Cost [$/tCO2eq]"] = (ev["Natural Gas Cost [$/tCO2eq]"] + tv["Natural Gas Cost [$/tCO2eq]"])
 
-    // Total Cost[$ / tCO2]
-    v["Total Cost [$/tCO2]"] = (v["Capital Recovery [$/tCO2eq]"] + v["Fixed O+M [$/tCO2eq]"] + v["Variable O+M [$/tCO2eq]"] + v["Natural Gas Cost [$/tCO2eq]"])
+    // Total Cost[$/tCO2]
+    v["Total Cost [$/tCO2]"] = (v["Capital Recovery [$/tCO2eq]"] + v["Fixed O&M [$/tCO2eq]"] + v["Variable O&M [$/tCO2eq]"] + v["Natural Gas Cost [$/tCO2eq]"])
 
     // Net Capture[tCO2 / yr]
     v["Net Capture [tCO2/yr]"] = this.params["Scale [tCO2/year]"] - this.params["Scale [tCO2/year]"] * (ev["Emitted tCO2eq/tCO2"] + tv["Emitted tCO2eq/tCO2"])
 
-    // Total Cost[$ / tCO2 net removed]
+    // Total Cost[$/tCO2 net removed]
     v["Total Cost [$/tCO2 net removed]"] = v["Total Cost [$/tCO2]"] / (1 - (ev["Emitted tCO2eq/tCO2"] + tv["Emitted tCO2eq/tCO2"]))
     return v
   }
@@ -355,23 +355,23 @@ export class DacModel extends DacComponent {
     // Total Capital Cost[M$]
     v["Total Capital Cost [M$]"] = (tev["Total Capital Cost [M$]"] + dv["Capital Cost (including Lead Time) [M$]"])
 
-    // Capital Recovery[$ / tCO2eq]
+    // Capital Recovery[$/tCO2eq]
     // = K86 * 'Economic Parameters'!C6 * 10 ^ 6 / 'Report Data'!C3
     v["Capital Recovery [$/tCO2eq]"] = (v["Total Capital Cost [M$]"] * this.recoveryFactor() * MILLION / this.params["Scale [tCO2/year]"])
 
-    // Fixed O + M[$ / tCO2eq]
-    v["Fixed O+M [$/tCO2eq]"] = tev["Fixed O+M [$/tCO2eq]"] + dv["Fixed O+M [$/tCO2eq]"]
+    // Fixed O&M [$/tCO2eq]
+    v["Fixed O&M [$/tCO2eq]"] = tev["Fixed O&M [$/tCO2eq]"] + dv["Fixed O&M [$/tCO2eq]"]
 
-    // Variable O + M[$ / tCO2eq]
-    v["Variable O+M [$/tCO2eq]"] = (tev["Variable O+M [$/tCO2eq]"] + dv["Variable O+M [$/tCO2eq]"])
+    // Variable O&M [$/tCO2eq]
+    v["Variable O&M [$/tCO2eq]"] = (tev["Variable O&M [$/tCO2eq]"] + dv["Variable O&M [$/tCO2eq]"])
 
-    // Natural Gas Cost[$ / tCO2]
+    // Natural Gas Cost[$/tCO2]
     v["Natural Gas Cost [$/tCO2]"] = tev["Natural Gas Cost [$/tCO2eq]"]
 
-    // Total Cost[$ / tCO2]
-    v["Total Cost [$/tCO2]"] = (v["Capital Recovery [$/tCO2eq]"] + v["Fixed O+M [$/tCO2eq]"] + v["Variable O+M [$/tCO2eq]"] + v["Natural Gas Cost [$/tCO2]"])
+    // Total Cost[$/tCO2]
+    v["Total Cost [$/tCO2]"] = (v["Capital Recovery [$/tCO2eq]"] + v["Fixed O&M [$/tCO2eq]"] + v["Variable O&M [$/tCO2eq]"] + v["Natural Gas Cost [$/tCO2]"])
 
-    // Total Cost[$ / tCO2 Net Removed]
+    // Total Cost[$/tCO2 Net Removed]
     // v['Total Cost [$/tCO2 Net Removed]'] = (
     //     tev['Total Cost [$/tCO2 net removed]'] + dv['Total Cost [$/tCO2 net removed]']
     // )

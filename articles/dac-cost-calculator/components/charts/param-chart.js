@@ -35,13 +35,13 @@ const ParamChart = ( { param, data } ) => {
     mark: {
       type: "bar",
       color: theme.colors.purple,
-      width: 14  // hack
+      // width: 14  // hack
     },
     encoding: {
       x: {
         field: "x",
         type: "quantitative",
-        scale: { domain: param.validRange, type: param.scale},
+        scale: { domain: param.validRange, type: param.scale, padding: 1 },
         axis: { title: null }
       },
       y: {

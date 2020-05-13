@@ -1,8 +1,7 @@
 import dacDriver from './driver.js'
 import dacParameters from './dac-params.js'
-import { useThemeUI } from 'theme-ui'
 
-const nBars = 10
+const nBars = 20
 
 function linspace(startValue, stopValue, count) {
   const array = []
@@ -25,11 +24,7 @@ function logspace(startValue, stopValue, count) {
 }
 
 
-
 const calcPartialCost = (electricSource, thermalSource, params) => {
-  const context = useThemeUI()
-  const theme = context.theme
-
   const chartData = {}
   let p
   let x
@@ -58,13 +53,13 @@ const calcPartialCost = (electricSource, thermalSource, params) => {
       })
       chartData[p.name].push({
         x: x[j],
-        y: tempResults['Fixed O+M [$/tCO2eq]'],
-        c: 'Fixed O+M [$/tCO2eq]'
+        y: tempResults['Fixed O&M [$/tCO2eq]'],
+        c: 'Fixed O&M [$/tCO2eq]'
       })
       chartData[p.name].push({
         x: x[j],
-        y: tempResults['Variable O+M [$/tCO2eq]'],
-        c: 'Variable O+M [$/tCO2eq]'
+        y: tempResults['Variable O&M [$/tCO2eq]'],
+        c: 'Variable O&M [$/tCO2eq]'
       })
     }
   }
