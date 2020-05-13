@@ -47,15 +47,14 @@ const Table = () => {
 
   const order = ['forests', 'soil', 'biomass', 'dac', 'mineralization', 'ocean']
 
-  return <>
+  return <Box sx={{ display: ['none', 'inherit', 'inherit'] }}>
     <Box sx={{ 
     mt: [5],
     mb: [2],
     borderStyle: 'solid',
     borderWidth: '0px',
     borderBottomWidth: '1px',
-    borderColor: 'muted',
-    display: ['none', 'inherit', 'inherit']
+    borderColor: 'muted'
     }}>
     <Row>
       <Text sx={header}>Mechanism</Text>
@@ -97,7 +96,7 @@ const Table = () => {
     <Inline name='dac' display='direct air capture'/>, <Inline name='mineralization'/>, 
     and <Inline name='ocean'/>. Click the arrow in each row to see the report for that project. 
   </Text>
-  </>
+  </Box>
 }
 
 export default Table

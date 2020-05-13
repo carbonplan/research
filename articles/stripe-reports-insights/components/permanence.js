@@ -111,7 +111,7 @@ const Permanence = () => {
   const width = 450
   const height = 250
 
-  return <Box>
+  return <Box sx={{ display: ['none', 'inherit', 'inherit'] }}>
     <Vega width={width} height={height}
     data={{ values: values }} renderer={'svg'} actions={false} spec={vgSpec} />
     <Text sx={{ 
