@@ -35,6 +35,7 @@ const ParamChart = ( { param, data } ) => {
     mark: {
       type: "bar",
       color: theme.colors.purple,
+      width: 14  // hack
     },
     encoding: {
       x: {
@@ -48,17 +49,21 @@ const ParamChart = ( { param, data } ) => {
         aggregate: "sum",
         type: "quantitative",
         scale: { 'padding': 1.87 },
-        axis: { title: null}
+        axis: { title: null, orient: 'right' }
       },
-      color: { field: "c", type: "nominal", legend: null}
+      opacity: {
+        field: "c",
+        type: "nominal",
+        legend: null,
+      }
     }
   }
 
   var vgSpec = vegaLite.compile(spec,
       { config: donut_config }).spec;
 
-  const width = 200
-  const height = 100
+  const width = 300
+  const height = 120
 
   return <Vega width={width} height={height} data={{ values: data }} renderer={'svg'} actions={false} spec={vgSpec} />
 

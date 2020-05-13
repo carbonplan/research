@@ -37,9 +37,9 @@ const Donut = ({ params }) => {
         scale: { domain: [0, 1] },
       },
       opacity: {
-        field: "opacity",
-        type: "quantitative",
-        scale: { domain: [0, 1] },
+        field: "category",
+        type: "nominal",
+        // scale: { domain: [0, 1] },
         legend: {
           orient: 'bottom',
           direction: 'vertical',

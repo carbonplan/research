@@ -30,7 +30,7 @@ const DacCalculator = () => {
   const cost = results['Total Cost [$/tCO2]'].toFixed(0)
 
   const chartData = calcPartialCost(state.electric[0], state.thermal[0], modelInputs)
-  // const chartData = {}
+  // const chartData = {}  // toggle to turn off partial cost
 
   return (
     <Flex sx={{

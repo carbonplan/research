@@ -10,35 +10,34 @@ const Parameter = ( { param, data, state }) => {
   }
 
   return (
-    <Grid columns={[1, null, '250px 1fr']}>
-      <Box>
-        <Input
-          sx={{ textAlign: 'left', color: 'purple', fontSize: [4] }}
-          type='number'
-          step={param.step}
-          onChange={updateParamValue}
-          value={value}/>
-        <Divider sx={{ borderColor: 'text' }}/>
-        <Grid columns={[1, null, '150px 1fr']}>
-          <Text sx={{ fontSize: [3] }}> {param.displayName} </Text>
-          {/* TODO: move sx to theme, put units on same line as scale */}
-          <Text variant='metric.units' > {param.unit} </Text>
-        </Grid>       
-        <Text sx={{ fontSize: [1] }}> {param.description} </Text>
-      </Box>
-      <Box>
-        <ParamChart param={param} data={data}></ParamChart>
-        <Box sx={{ paddingLeft: '55px', paddingRight: '15px' }}>
-          <Slider
-            value={value}
-            onChange={updateParamValue}
-            min={param.validRange[0]}
-            max={param.validRange[1]}
+    <Box>
+      <Text sx={{ fontSize: [3] }}> {param.displayName} </Text>
+      <Text sx={{ fontSize: [1] }}> {param.description} </Text>
+      <Grid columns={[1, null, '160px 1fr']}>
+        <Box>
+          <Input
+            sx={{ textAlign: 'left', position: 'relative', top: '45%', color: 'purple', fontSize: [4] }}
+            type='number'
             step={param.step}
-          />
+            onChange={updateParamValue}
+            value={value} />
+          <Divider sx={{ borderColor: 'text', position: 'relative', top: '40%', }}/>
+          <Text variant='metric.units' sx={{ position: 'relative', top: '40%', }}> {param.unit} </Text>
         </Box>
-      </Box>
-    </Grid>
+        <Box>
+          <ParamChart param={param} data={data}></ParamChart>
+          <Box sx={{ paddingLeft: '10px', paddingRight: '50px'}}>
+            <Slider
+              value={value}
+              onChange={updateParamValue}
+              min={param.validRange[0]}
+              max={param.validRange[1]}
+              step={param.step}
+            />
+          </Box>
+        </Box>
+      </Grid>
+    </Box>
   )
 }
 

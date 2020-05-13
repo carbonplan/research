@@ -2,6 +2,8 @@ import dacDriver from './driver.js'
 import dacParameters from './dac-params.js'
 import { useThemeUI } from 'theme-ui'
 
+const nBars = 10
+
 function linspace(startValue, stopValue, count) {
   const array = []
   const step = (stopValue - startValue) / (count - 1)
@@ -10,6 +12,19 @@ function linspace(startValue, stopValue, count) {
   }
   return array
 }
+
+function logspace(startValue, stopValue, count) {
+  const start = Math.log10(startValue)
+  const stop = Math.log10(stopValue)
+  const array = []
+  const step = (stop - start) / (count - 1)
+  for (var i = 0; i < count; i++) {
+    array.push(Math.pow(10, (start + (step * i))))
+  }
+  return array
+}
+
+
 
 const calcPartialCost = (electricSource, thermalSource, params) => {
   const context = useThemeUI()
@@ -26,7 +41,12 @@ const calcPartialCost = (electricSource, thermalSource, params) => {
     
     p = dacParameters[i]
     chartData[p.name] = []
-    x = linspace(p.validRange[0], p.validRange[1], 10)
+    if (p.scale == 'linear') {
+      x = linspace(p.validRange[0], p.validRange[1], nBars)
+    } else {
+      x = logspace(p.validRange[0], p.validRange[1], nBars)
+    }
+    
 
     for (var j = 0, k = x.length; j < k; j++) {
       localParams[p.name] = x[j]
