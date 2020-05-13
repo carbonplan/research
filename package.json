@@ -4,7 +4,7 @@
   "description": "directory of carbonplan notes, notebooks, primers, data, and models",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "NODE_ENV=development next",
     "build": "next build",
     "start": "next start"
   },
