@@ -1,4 +1,4 @@
-import { Box } from 'theme-ui'
+import { Box, Link } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 
@@ -6,7 +6,7 @@ const Logo = () => {
   const context = useThemeUI()
   const theme = context.theme
 
-  return <NextLink href='/'><Box sx={{ width: '150px', fill: theme.colors.text, cursor: 'pointer' }}>
+  return <Link href='/'><Box sx={{ width: '150px', fill: theme.colors.text, cursor: 'pointer' }}>
   <svg version="1.1" x="0px" y="0px" viewBox="0 0 151.1 28.8">
   <g>
     <g>
@@ -76,7 +76,7 @@ const Logo = () => {
       s0.6,8.3,1.7,12.2c0,0.1-0.1,0.3-0.2,0.3H3.3c-0.1,0-0.2-0.1-0.2-0.2C2,23.2,1.4,19.1,1.4,14.9z"/>
   </g>
   </svg>
-  </Box></NextLink>
+  </Box></Link>
 }
 
 export default Logo

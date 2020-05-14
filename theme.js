@@ -153,7 +153,7 @@ export default {
       borderStyle: 'solid',
       borderColor: 'primary',
       borderWidth: '0px',
-      borderBottomWidth: '2px',
+      borderBottomWidth: '1px',
       bg: 'background',
       borderRadius: '0px',
       textTransform: 'uppercase',

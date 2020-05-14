@@ -5,7 +5,7 @@ import BackArrow from './article/back-arrow'
 
 const Article = ({ children, meta }) => {
 
-  const info = Contents.filter(({id}) => id === meta.id)[0]
+  const info = Contents.articles.filter(({id}) => id === meta.id)[0]
 
   return <Layout>
     <Box sx={{ backgroundColor: info.color, height: '125px', position: 'relative' }}>

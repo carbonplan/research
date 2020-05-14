@@ -38,7 +38,7 @@ const Footer = (props) => {
         display: 'inline-block', 
         leftMargin: '15px' 
       }}>
-        0.{(scroll.y * 100).toFixed(0).toString().padStart(2, '0')} SCROLL 
+        SCROLL: 0.{(scroll.y * 100).toFixed(0).toString().padStart(2, '0')} 
       </Text>
       <IconButton aria-label='Current Color' sx={{ fill: 'secondary' }} >
         <svg

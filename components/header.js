@@ -1,8 +1,9 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, IconButton, Link, Image } from 'theme-ui'
+import { jsx, Box, Flex, Container, IconButton, Link, Image } from 'theme-ui'
 import Logo from './logo'
 import { useState } from 'react'
 import { default as NextLink } from 'next/link'
+import { alpha } from '@theme-ui/color'
 
 const link = {
   width: 'fit-content',
@@ -72,7 +73,7 @@ const Header = () => {
           </svg>
         }
       </IconButton>
-      {/*{expanded && 
+      {expanded && 
       <Box sx={{
         position: 'fixed', 
         top: '0px',
@@ -80,29 +81,33 @@ const Header = () => {
         bottom: '0px',
         minWidth: '0px',
         maxHeight: '100vh',
-        width: '300px',
-        backgroundColor: 'background',
+        width: '100vw',
+        backgroundColor: [
+          'background', 
+          alpha('background', 0.9), 
+          alpha('background', 0.9)
+        ],
         opacity: 1,
         textAlign: '-webkit-right',
-        zIndex: 1000,
         mt: ['56px'],
-        pt: [3],
-        pr: ['270px'],
-        pl: ['100px'],
-        borderStyle: 'solid',
-        borderColor: 'muted',
-        borderWidth: '0px',
-        borderLeftWidth: '1px'
+        pt: [3]
       }}>
-      <Box sx={{ textAlign: '-webkit-right', width: 'fit-content' }}> 
-      <NextLink href='/about'><Link sx={link}>About</Link></NextLink>
-      <NextLink href='/team'><Link sx={link}>Team</Link></NextLink>
-      <NextLink href='/research'><Link sx={link}>Research</Link></NextLink>
-      <Link href='https://reports.carbonplan.now.sh/' sx={link}>Reports</Link>
-      <NextLink href='/faq'><Link sx={link}>FAQ</Link></NextLink>
+        <Container>
+        <Box sx={{ 
+          textAlign: '-webkit-right', 
+          width: 'fit-content',
+          mr: [4]
+
+        }}> 
+          <Link href='/about' sx={link}>About</Link>
+          <Link href='/team' sx={link}>Team</Link>
+          <Link href='/research' sx={link}>Research</Link>
+          <Link href='/reports' sx={link}>Reports</Link>
+          <Link href='/faq' sx={link}>FAQ</Link>
+        </Box>
+        </Container>
       </Box>
-      </Box>
-    }*/}
+      }
     </Box>
   </Flex>
   
