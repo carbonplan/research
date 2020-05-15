@@ -8,7 +8,7 @@ const Footer = () => {
       pt: [4],
       mb: [5, 0, 0]
     }}>
-    <Grid columns={[1, 1, 3]} sx={{ mb: [3] }}>
+    <Grid columns={[1, 1, 3]} sx={{ mb: [4] }}>
       <Box sx={{ fontFamily: 'heading' }}>
         <Text sx={{ letterSpacing: 'wide', mb: [2] }}>EMAIL</Text>
         <Link href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>
@@ -18,7 +18,7 @@ const Footer = () => {
         <Text>2443 Fillmore St #380-6048</Text>
         <Text>San Francisco, CA 94115</Text>
       </Box>
-      <Box sx={{ fontFamily: 'body' }}>
+      <Box sx={{ fontFamily: 'body', letterSpacing: 'body' }}>
         <Text sx={{ color: 'secondary' }}>
         CarbonPlan is a registered non-profit public benefit corporation in California
         with 501(3)(c) status pending.

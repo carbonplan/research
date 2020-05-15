@@ -941,8 +941,8 @@ module.exports = {
           "value": "",
           "units": "",
           "rating": 1.0,
-          "notes": "Project removes carbon from atmosphere through enhanced weathering of olivine.",
-          "comment": "Final form of carbon not specified and depends on sediment transfer. Potential additional benefits to ocean alkalinity.",
+          "notes": "Project leverages rainwater to weather ground olivine spread on land. Depending on sediment transfer, olivine weathering can result in alkalization of runoff and/or formation of carbonate precipitates, both of which remove carbon from the atmosphere.",
+          "comment": "Not known over relavant time scales whether final form of carbon is carbonate precipitates or dissolved bicarbonate.",
           "removal": 1.0,
           "avoided": 0.0
         },
@@ -2061,8 +2061,8 @@ module.exports = {
           "value": "",
           "units": "",
           "rating": 1.0,
-          "notes": "Project removes carbon from atmosphere through enhanced weathering of olivine.",
-          "comment": "Potential additional benefits to ocean alkalinity.",
+          "notes": "Project leverages wave power to enhance weathering of olivine spread on beaches. Olivine weathering primarily results in ocean alkalization, which removes carbon from the atmosphere.",
+          "comment": "Some uncertainty around whether final form of carbon is dissolved bicarbonate or carbonate precipitates.",
           "removal": 1.0,
           "avoided": 0.0
         },

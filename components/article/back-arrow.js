@@ -7,6 +7,7 @@ const BackArrow = () => {
   const theme = context.theme
 
   return <NextLink href='/research'><a><Text sx={{ 
+    fontFamily: 'faux',
     color: 'text',
     display: 'inline-block', 
     mr: [3],

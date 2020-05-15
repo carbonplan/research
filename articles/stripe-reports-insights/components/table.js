@@ -14,7 +14,7 @@ const Row = ({ children }) => {
       borderColor: 'muted',
       py: [0],
       height: '30px',
-      mb: ['5px']
+      mb: ['7px']
     }}>
     { children }
   </Grid>
@@ -50,7 +50,7 @@ const Table = () => {
   return <Box sx={{ display: ['none', 'inherit', 'inherit'] }}>
     <Box sx={{ 
     mt: [5],
-    mb: [2],
+    mb: [3],
     borderStyle: 'solid',
     borderWidth: '0px',
     borderBottomWidth: '1px',
@@ -70,7 +70,7 @@ const Table = () => {
       else return 1
     }).map((project) => {
       const color = theme.colors[theme.tags[project.tags[0]]]
-      const url = 'https://carbonplan.org/reports/?id=' + project.id + '&expand=true'
+      const url = '/reports/?id=' + project.id + '&expand=true'
       return <Row key={project.id}>
         {icons(project.metrics.filter((k) => k.name == 'mechanism')[0].rating, color)}
         {icons(project.metrics.filter((k) => k.name == 'volume')[0].rating, color)}
@@ -83,14 +83,30 @@ const Table = () => {
           project.metrics.filter((k) => k.name == 'transparency')[0].value
         }/>
         <Box sx={{ position: 'relative', top: '5px' }}>
-          <Link href={url} variant='arrow'>↗</Link>
+          <Link href={url} variant='arrow' sx={{
+            color: 'secondary',
+            transition: '0.25s',
+            '&:hover': {
+              color: 'text'
+            }
+          }}>↗</Link>
         </Box>
       </Row>
       }
     )}
   </Box>
-  <Text sx={{ color: 'secondary', fontSize: [1], fontFamily: 'monospace', mt: [3], mb: [5] }}>
-    TABLE 1 / Each column is a metric, and each row shows our ratings
+  <Text sx={{ 
+    color: 'secondary', 
+    fontSize: [2], 
+    letterSpacing: 'faux', 
+    fontFamily: 'faux', 
+    mt: [3], 
+    mb: [5] 
+  }}>
+    TABLE 1 <Text sx={{ 
+      display: 'inline-block', 
+      color: 'text' 
+    }}>/</Text> Each column is a metric, and each row shows our ratings
     for an individual project. Colors represent project categories:{' '}
     <Inline name='forests'/>, <Inline name='soil'/>, <Inline name='biomass'/>,{' '} 
     <Inline name='dac' display='direct air capture'/>, <Inline name='mineralization'/>, 

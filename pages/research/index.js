@@ -1,5 +1,5 @@
 import Layout from '../../components/layout'
-import { Box, Text, Heading, Badge, Image, Link, Grid, Container } from 'theme-ui'
+import { Box, Divider, Text, Heading, Badge, Image, Link, Grid, Container } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import data from '../../contents'
 import { darken } from '@theme-ui/color'
@@ -70,14 +70,15 @@ function Index () {
                 }}>
                 </Box>
                 <Text sx={{ 
+                  fontFamily: 'faux',
                   position: 'absolute',
-                  top: '-20px',
-                  left: '25px',
+                  top: '-23px',
+                  left: '20px',
                   width: '100%',
                   height: '100%',
                   display: 'inline-block',
                   borderRadius: '50%', 
-                  fontSize: '112px',
+                  fontSize: '122px',
                   color: 'text',
                   zIndex: 1000,
                   transition: '0.25s',
@@ -91,29 +92,40 @@ function Index () {
                 </NextLink>
               </Box>
               <Box>
-                <Text sx={{ color: 'secondary', fontSize: [2] }}>
-                    {date} / v{version}
+                <Text sx={{ fontFamily: 'monospace', color: 'secondary', fontSize: [2] }}>
+                    {date} <Text sx={{ display: 'inline-block', color: 'text'}}>/</Text> v{version}
                   </Text>
                 <Heading sx={{ my: [1], fontSize: [5] }}>
                   {title}
                 </Heading>
-                <Text sx={{ textTransform: 'uppercase', fontSize: [3] }}>
-                  by {authors.map((author) => <Text sx={{
+                <Text sx={{ 
+                  textTransform: 'uppercase', 
+                  letterSpacing: 'mono', 
+                  fontFamily: 'monospace', 
+                  fontSize: [3] 
+                }}>
+                  by {authors.map((author) => <Text key={author} sx={{
                     display: 'inline-block',
                     mr: [2]
                   }}>{author}</Text>)}
                 </Text>
-                <Box sx={{ mt: [2] }}>
-                  {tags.map((tag) => <Badge variant='primary' sx={{
-                    mr: [3],
+                <Box sx={{ mt: [2], fontFamily: 'monospace', letterSpacing: 'extra' }}>
+                  {tags.map((tag) => <Box sx={{ 
+                    display: 'inline-block', 
+                    mr: [3] 
+                  }}><Badge key={tag} variant='primary' sx={{
                     cursor: 'default'
-                  }}>{tag}</Badge>)}
+                  }}>{tag}</Badge></Box>)}
                 </Box>
               </Box>
               </Grid>
             </Box>
           ))}
+          <Divider/>
           </Box>
+          <Text sx={{ mt: [5], fontSize: [3] }}>
+            More coming soon...
+          </Text>
         </Box>
       </Container>
     </Layout>
