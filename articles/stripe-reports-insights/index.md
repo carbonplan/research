@@ -28,11 +28,11 @@ export const meta = {
 
 # Insights from our first set of project reports
 
-A core part of our work at CarbonPlan is evaluating carbon removal projects, programs, and technologies. We believe that carbon removal (or “negative emissions”) will play an important role in addressing the climate crisis, but that success requires a culture of rigor, transparency, and accountability. For us, getting the details right matters — as it does for the many inventors, scientists, entrepreneurs, and activists who work to make climate solutions a reality. 
+At CarbonPlan we evaluate carbon removal projects, programs, and technologies. We believe that carbon removal (or “negative emissions”) will play an important role in addressing the climate crisis, but that success requires a culture of rigor, transparency, and accountability. For us, getting the details right matters — as it does for the many inventors, scientists, entrepreneurs, and activists who work to make climate solutions a reality. 
 
 In March 2020, we partnered with Stripe to perform our first independent analysis of carbon removal projects. As part of its [Negative Emissions Purchase](), Stripe solicited a wide range of project proposals, and to help encourage transparency in the field, they required that all proposals be made public. We received early access to these proposals to perform an  independent analysis, the results of which we are releasing to launch our public database of project reports.
 
-We are grateful to Stripe for prioritizing transparency, as well as to the many organizations and individuals who took the time to prepare these public applications. Making this information available to all offers the broader climate community a chance to grow and improve over time. 
+We are grateful to Stripe for prioritizing transparency, and to the many organizations and individuals who prepared these public applications. Making this information available offers the broader climate community a chance to grow and improve over time.
 
 This article summarizes our major takeaways from this effort. For additional detail, check out our [project reports](/reports) and the [terms of our engagement](#terms-of-engagement) with Stripe. Please note that this is independent work that only represents CarbonPlan’s views, not those of Stripe or any other organizations. 
 
