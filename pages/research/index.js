@@ -110,7 +110,7 @@ function Index () {
                   }}>{author}</Text>)}
                 </Text>
                 <Box sx={{ mt: [2], fontFamily: 'monospace', letterSpacing: 'extra' }}>
-                  {tags.map((tag) => <Box sx={{ 
+                  {tags.map((tag) => <Box key={tag} sx={{ 
                     display: 'inline-block', 
                     mr: [3] 
                   }}><Badge key={tag} variant='primary' sx={{
