@@ -119,7 +119,7 @@ const Permanence = () => {
       fontSize: [2], 
       fontFamily: 'faux', 
       letterSpacing: 'faux',
-      mt: [2], 
+      mt: [3], 
       mb: [5] 
     }}>
     FIGURE 1 <Text sx={{

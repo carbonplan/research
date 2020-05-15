@@ -13,17 +13,17 @@ const Row = ({ children }) => {
       borderTopWidth: '1px',
       borderColor: 'muted',
       py: [0],
-      height: '30px',
-      mb: ['7px']
+      height: '26px',
+      mb: ['8px']
     }}>
     { children }
   </Grid>
 }
 
 const icons = (rating, color) => {
-  if (rating == 1) return <Check color={color}/>
+  if (rating == 1) return <Box sx={{ mt: ['-2px'] }}><Check color={color}/></Box>
   if (rating == 0) return <Question color={color}/>
-  if (rating == -1) return <Ex color={color}/>
+  if (rating == -1) return <Box sx={{ mt: ['-2px'] }}><Ex color={color}/></Box>
 }
 
 const header = {
@@ -76,13 +76,13 @@ const Table = () => {
         {icons(project.metrics.filter((k) => k.name == 'volume')[0].rating, color)}
         {icons(project.metrics.filter((k) => k.name == 'negativity')[0].rating, color)}
         {icons(project.metrics.filter((k) => k.name == 'permanence')[0].rating, color)}
-        <Squares color={color} data={
+        <Box sx={{ mt: '-3px' }}><Squares color={color} data={
           project.metrics.filter((k) => k.name == 'additionality')[0].value
-        }/>
-        <Squares color={color} data={
+        }/></Box>
+        <Box sx={{ mt: '-3px' }}><Squares color={color} data={
           project.metrics.filter((k) => k.name == 'transparency')[0].value
-        }/>
-        <Box sx={{ position: 'relative', top: '5px' }}>
+        }/></Box>
+        <Box sx={{ position: 'relative', top: '3px' }}>
           <Link href={url} variant='arrow' sx={{
             color: 'secondary',
             transition: '0.25s',

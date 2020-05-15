@@ -34,7 +34,7 @@ const Article = ({ children, meta }) => {
     <Container sx={{ px: [4], mb: [5] }}>
       <BackArrow/>
       <Grid columns={[1, '650px 1fr', '650px 1fr']} gap={['100px']}>
-        <Box sx={{ mt: '-60px' }}>{children}</Box>
+        <Box sx={{ mt: '-65px' }}>{children}</Box>
         <Box sx={{ display: ['none', 'none', 'initial']}}>
           <Box sx={{ mt: '100px', maxWidth: '250px' }}>
             <Text sx={{ fontFamily: 'heading', letterSpacing: 'wide', mb: [3] }}>

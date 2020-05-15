@@ -25,7 +25,7 @@ function Index () {
     <Layout hideFooter={true}>
       <Container sx={{ px: [4] }}>
         <Box>
-          <Heading sx={{ my: [5], fontSize: [6, 7, 7] }}>
+          <Heading sx={{ my: [4, 5, 5], fontSize: [6, 7, 7] }}>
             Research
           </Heading>
           <Text sx={{ maxWidth: '700px', fontSize: [3] }}>
@@ -45,13 +45,13 @@ function Index () {
               borderWidth: '0px', 
               borderTopWidth: '1px'
             }} key={id}>
-              <Grid columns={['225px 1fr']}>
+              <Grid columns={[1, '225px 1fr', '225px 1fr']}>
               <Box>
                 <NextLink href={`/research/${id}`}><a><Box sx={{
                   display: 'inline-block',
-                  width: '125px',
-                  height: '125px',                  
-                  ml: [5],
+                  width: '130px',
+                  height: '130px',                  
+                  ml: [0, 5, 5],
                   mt: '6px',
                   position: 'relative'
                 }}>
@@ -95,26 +95,29 @@ function Index () {
                 <Text sx={{ fontFamily: 'monospace', color: 'secondary', fontSize: [2] }}>
                     {date} <Text sx={{ display: 'inline-block', color: 'text'}}>/</Text> v{version}
                   </Text>
-                <Heading sx={{ my: [1], fontSize: [5] }}>
+                <Heading sx={{ mb: ['2px'], mt: ['10px'], fontSize: [5] }}>
                   {title}
                 </Heading>
                 <Text sx={{ 
                   textTransform: 'uppercase', 
                   letterSpacing: 'mono', 
                   fontFamily: 'monospace', 
-                  fontSize: [3] 
+                  fontSize: [3],
+                  mt: ['10px'] 
                 }}>
                   by {authors.map((author) => <Text key={author} sx={{
                     display: 'inline-block',
                     mr: [2]
                   }}>{author}</Text>)}
                 </Text>
-                <Box sx={{ mt: [2], fontFamily: 'monospace', letterSpacing: 'extra' }}>
+                <Box sx={{ mt: ['10px'], fontFamily: 'monospace', letterSpacing: 'extra' }}>
                   {tags.map((tag) => <Box key={tag} sx={{ 
                     display: 'inline-block', 
                     mr: [3] 
                   }}><Badge key={tag} variant='primary' sx={{
-                    cursor: 'default'
+                    cursor: 'default',
+                    color: 'secondary',
+                    borderColor: 'secondary'
                   }}>{tag}</Badge></Box>)}
                 </Box>
               </Box>
@@ -123,7 +126,7 @@ function Index () {
           ))}
           <Divider/>
           </Box>
-          <Text sx={{ mt: [5], fontSize: [3] }}>
+          <Text sx={{ mt: [5], mb: [6, 0, 0], fontSize: [3] }}>
             More coming soon...
           </Text>
         </Box>

@@ -12,7 +12,8 @@ const Row = ({ children }) => {
       borderWidth: '0px',
       borderTopWidth: '1px',
       borderColor: 'muted',
-      py: [3]
+      pt: [3],
+      pb: ['22px', 3, 3]
     }}>
     { children }
   </Grid>
