@@ -29,11 +29,11 @@ export const meta = {
 
 # Insights from our first set of project reports
 
-At CarbonPlan we evaluate carbon removal projects, programs, and technologies. We believe that carbon removal (or “negative emissions”) will play an important role in addressing the climate crisis, but that success requires a culture of rigor, transparency, and accountability. For us, getting the details right matters — as it does for the many inventors, scientists, entrepreneurs, and activists who work to make climate solutions a reality. 
+At CarbonPlan we analyze carbon removal projects, programs, and technologies. We believe that carbon removal (or "negative emissions") will play an important role in addressing the climate crisis, and we want to help engender a culture of openness, transparency, and accountability. Our hope is that sharing data and insights can benefit the field as a whole, and complement the work of the inventors, scientists, entrepreneurs, and activists who are making climate solutions a reality. 
 
 In March 2020, we partnered with Stripe to perform our first independent analysis of carbon removal projects. As part of its [Negative Emissions Purchase](), Stripe solicited a wide range of project proposals, and to help encourage transparency in the field, they required that all proposals be made public. We received early access to these now-public proposals to perform an independent analysis, the results of which we are releasing to launch our public database of project reports.
 
-We are grateful to Stripe for prioritizing transparency, and to the many organizations and individuals who prepared these public applications. Making this information available offers the broader climate community a chance to grow and improve over time.
+We are grateful to Stripe for encouraging transparency, and to the many organizations and individuals who prepared these public applications. Making this information available offers the broader climate community a chance to grow and improve over time.
 
 This article summarizes our major takeaways from our analysis. For additional detail, check out our [project reports](/reports) and the [terms of our engagement](#terms-of-engagement) with Stripe. Please note that this is independent work that only represents CarbonPlan’s views, not those of Stripe or any other organizations. 
 
@@ -45,7 +45,7 @@ Our goals were to harmonize metrics and concepts across a range of projects; to 
 
 We are making all our analysis, methods, and commentary from our process public because we want our reports to help all interested organizations — researchers, project proponents, sponsor organizations — learn about the field and improve outcomes in future iterations. While we appreciate that confidential analysis is common (and sometimes necessary) in climate programs, it can also reduce transparency and lead to duplicate work. Our work aims to address both challenges, and to that end, we’re committed to growing and improving our public database of project reports over time.
 
-Making our work public is also an opportunity to reflect on what can and cannot be said with confidence in the complex and nascent space of carbon removal. The gaps we’ve identified will help us develop open source methods for more detailed analyses of projects and technologies in future programs.
+Making our work public is also an opportunity to reflect on what can and cannot be said with confidence in the complex and nascent space of carbon removal. The gaps we’ve identified will help us and others develop open source methods for more detailed analyses of projects and technologies in future programs.
 
 ### How we analyzed projects
 
