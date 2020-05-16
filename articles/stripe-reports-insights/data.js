@@ -81,7 +81,7 @@ module.exports = {
         "dac",
         "mineralization"
       ],
-      "id": "STRP01",
+      "id": "STRP001",
       "description": "Direct air capture and mineralization.",
       "location": {
         "name": "Iceland",
@@ -174,7 +174,7 @@ module.exports = {
         "mineralization",
         "materials"
       ],
-      "id": "STRP02",
+      "id": "STRP002",
       "description": "Carbon reductions in concrete.",
       "location": {
         "name": "North America",
@@ -267,7 +267,7 @@ module.exports = {
         "soil",
         "broker"
       ],
-      "id": "STRP03",
+      "id": "STRP003",
       "description": "Increasing soil carbon sequestration and soil health.",
       "location": {
         "name": "USA",
@@ -360,7 +360,7 @@ module.exports = {
         "soil",
         "broker"
       ],
-      "id": "STRP04",
+      "id": "STRP004",
       "description": "Rgenerative farming practices for soil carbon sequestration.",
       "location": {
         "name": "Mid-West and Southern USA",
@@ -453,7 +453,7 @@ module.exports = {
         "biomass",
         "broker"
       ],
-      "id": "STRP05",
+      "id": "STRP005",
       "description": "Supporting bio-energy with carbon capture and storage.",
       "location": {
         "name": "North America / Europe",
@@ -546,7 +546,7 @@ module.exports = {
         "biomass",
         "biochar"
       ],
-      "id": "STRP06",
+      "id": "STRP006",
       "description": "Turning woody biomass waste into biochar.",
       "location": {
         "name": "Central Valley, CA, USA",
@@ -639,7 +639,7 @@ module.exports = {
         "forests",
         "reforestation"
       ],
-      "id": "STRP07",
+      "id": "STRP007",
       "description": "Reforestation using drone swarms and seed enablement.",
       "location": {
         "name": "WA, USA",
@@ -674,7 +674,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume is the total of two exemplar projects, Rip's Redwoods and Guanare. The Pachama platform offers a larger portfolio of projects, but they are not considered here.",
-          "comment": "Sequestration rates of 16 and 26 tCO2 / ha / year for Rip's Redwoods and Guanare, respectively, are broadly commensurate with published literature. Some additional details (e.g. stand age) would be required for a more precise comparison. No evidence provided for specific utility of advanced monitoring methods for improving volume estimates."
+          "comment": "Claimed sequestration rates of 16 and 26 tCO2 / ha / yr for Rip's Redwoods and Guanare, respectively, are broadly commensurate with published literature. Some additional details (e.g. stand age) would be required for a more precise comparison. No evidence provided for specific utility of advanced monitoring methods for improving volume estimates."
         },
         {
           "type": "Metric",
@@ -695,7 +695,7 @@ module.exports = {
           "units": "years",
           "rating": 0.0,
           "notes": "Claims 60 years from 2006 for Guanare and 100 years from 2013 for Rip's Redwoods.",
-          "comment": "We report the minimum across the estimated permanence for the underlying projects (46 and 97), relative to the year of the proposal (2020). Physical risks are mixed with wildfire are high for Guanare, [unknown for Rip's Redwoods]. Socioeconomic risks are significant due to the risk of default or bankruptcy on this time horizon."
+          "comment": "We report the minimum across the estimated permanence for the underlying projects (46 and 97), relative to the year of the proposal (2020). Physical risks are mixed with wildfire are high for Guanare, and low to moderate for Rip's Redwoods. Socioeconomic risks are significant due to the risk of default or bankruptcy on this time horizon."
         },
         {
           "type": "Metric",
@@ -732,7 +732,7 @@ module.exports = {
         "forests",
         "broker"
       ],
-      "id": "STRP08",
+      "id": "STRP008",
       "description": "Reforestation projects with verification and monitoring.",
       "location": {
         "name": "Uruguay & CA, USA",
@@ -766,7 +766,7 @@ module.exports = {
           "value": 693.0,
           "units": "tCO2",
           "rating": 0.0,
-          "notes": "Demonstration project to be deployed offshore California or Hawaii. Project volume based on expected carbon removal over five years.",
+          "notes": "Demonstration project to be deployed offshore California or Hawaii. Project volume based on expected carbon removal over 5 years.",
           "comment": "Difficult to assess volume due to early stage of technology."
         },
         {
@@ -825,7 +825,7 @@ module.exports = {
         "ocean",
         "phytoplankton"
       ],
-      "id": "STRP09",
+      "id": "STRP009",
       "description": "Wave-powered upwelling/downwelling for carbon\u200b sequestration.",
       "location": {
         "name": "Pacific Ocean (offshore of CA)",
@@ -860,7 +860,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Specific projects not identified. Claimed volume reflects 10-30 plots totaling 13355 ha with an average of 2.5 tCO2 / ha / year.",
-          "comment": "Lack of detail on projects raises questions about overall volume, but claimed rate of 2.5 tCO2 / ha / year is commensurate with existing literature and models."
+          "comment": "Lack of detail on projects raises questions about overall volume, but claimed rate of 2.5 tCO2 / ha / yr is commensurate with existing literature and models."
         },
         {
           "type": "Metric",
@@ -918,7 +918,7 @@ module.exports = {
         "soil",
         "broker"
       ],
-      "id": "STRP10",
+      "id": "STRP010",
       "description": "Regenerative land management.",
       "location": {
         "name": "",
@@ -962,7 +962,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Reported ratio for exemplar project based on 2,880 tCO2 removed, 750 tCO2 emitted. LCA also references 509 tCO2 avoided, but avoided emissions are otherwise not considered as part of the project description.",
-          "comment": "For consistency, we recompute negativity only for the carbon removal component, yielding a lower number. Detailed analysis only available for one exemplar project, so uncertainty remains for full project portfolio.",
+          "comment": "For consistency, we recompute negativity only for the carbon removal component, yielding a lower number. Detailed analysis only available for one exemplar project, so uncertainty remains for full project portfolio and for the specific proposal we analyzed.",
           "removal": 2880.0,
           "emissions": 750.0,
           "kind": "project"
@@ -1011,7 +1011,7 @@ module.exports = {
         "mineralization",
         "materials"
       ],
-      "id": "STRP11",
+      "id": "STRP011",
       "description": "CO2 removal with olivine.",
       "location": {
         "name": "Netherlands",
@@ -1046,7 +1046,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume extrapolated from a pilot implementation in 6 counties in Pennsylvania. Projects in 2020 will be sourced from 11 southern US states. Supply will be allocated via an auction.",
-          "comment": "Volume estimates will be relatively straightforward to confirm via stocking estimates as a result of the 1-year project duration. However, the plausibility of total volume depends on the number of particpants."
+          "comment": "Volume estimates will be relatively straightforward to confirm via stocking estimates as a result of the 1 year project duration. However, the plausibility of total volume depends on the number of particpants."
         },
         {
           "type": "Metric",
@@ -1104,7 +1104,7 @@ module.exports = {
         "forests",
         "avoided conversion"
       ],
-      "id": "STRP12",
+      "id": "STRP012",
       "description": "Forest carbon rental markets.",
       "location": {
         "name": "Southern USA",
@@ -1139,7 +1139,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume estimated from calculations using USDA COMET-Planner model (56 tCO2). A higher volume was also provided in parallel using Eric Toensmeier's The Carbon Farming Solution (140 tCO2). Project has 3.2 current ha and intends to add 4.9 ha.",
-          "comment": "We report the lower value offered because it is based on a method that includes a broader range of lifecycle emissions and because the project used the lower volume number to calculate project costs. While COMET-Farm is a publicly available tool, volumes are difficult to independently validate without model parameters used. Overall rate of 11.4 tCO2 / ha is commensurate with existing litearture."
+          "comment": "We report the lower value offered because it is based on a method that includes a broader range of lifecycle emissions and because the project used the lower volume number to calculate project costs. While COMET-Farm is a publicly available tool, volumes are difficult to independently validate without model parameters used. Overall rate of 11.4 tCO2 / ha / yr is high if only including above ground biomass, but may be plausible given broader considerations."
         },
         {
           "type": "Metric",
@@ -1197,7 +1197,7 @@ module.exports = {
         "forests",
         "agroforestry"
       ],
-      "id": "STRP13",
+      "id": "STRP013",
       "description": "Conversion of annual cropland to sheep/chestnut silvopasture.",
       "location": {
         "name": "Johnsonville, NY, USA",
@@ -1290,7 +1290,7 @@ module.exports = {
         "biomass",
         "biochar"
       ],
-      "id": "STRP14",
+      "id": "STRP014",
       "description": "Biochar production through pyrolysis.",
       "location": {
         "name": "South Sweden",
@@ -1325,7 +1325,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 1.0,
           "notes": "Volume sourced from multiple facilities across Finland to produce laminated lumber from kiln-dried pine and spruce. Claims an annual production capacity of 40000 tCO2. Project is based on the Puro platform.",
-          "comment": "Species and composition of wood and wood products are well characterized."
+          "comment": "Species and composition of wood and wood products are well characterized. Volume is plausible assuming the given procurement."
         },
         {
           "type": "Metric",
@@ -1346,7 +1346,7 @@ module.exports = {
           "units": "years",
           "rating": 1.0,
           "notes": "Claims 50 to 200 years.",
-          "comment": "Wood carbon stored in building materials is more durable than in forests. Nevertheless, we report 50 as the minimum of the claimed range."
+          "comment": "Wood carbon stored in building materials is more durable than in forests. We report 50 as the minimum of the claimed range, which is plausible based on existing literature."
         },
         {
           "type": "Metric",
@@ -1383,7 +1383,7 @@ module.exports = {
         "biomass",
         "materials"
       ],
-      "id": "STRP15",
+      "id": "STRP015",
       "description": "Laminated log production from lumber with CO2 sequestration.",
       "location": {
         "name": "Finland",
@@ -1418,16 +1418,16 @@ module.exports = {
           "units": "tCO2",
           "rating": 1.0,
           "notes": "Volume sourced from multiple facilities across Finland. Project is based on the Puro platform.",
-          "comment": "Carbon content of wood products well characterized."
+          "comment": "Carbon content of wood products well characterized. Volume is plausible assuming the given procurement."
         },
         {
           "type": "Metric",
           "name": "negativity",
           "value": 0.935,
           "units": "",
-          "rating": 1.0,
-          "notes": "Reported ratio based on 0.087 tCO2 emissions for 1.34 tCO2 stored. Includesraw materials through production stage. Excludes transport of finished materials and construction-related emissions.",
-          "comment": "Analysis performed by third-party with public details, as required by Puro. Boundary conditions well specified and LCA components detailed and referenced.",
+          "rating": 0.0,
+          "notes": "Reported ratio based on 0.087 tCO2 emissions for 1.34 tCO2 stored. Includes raw materials through production stage. Excludes transport of finished materials and construction-related emissions.",
+          "comment": "Analysis performed by third-party with public details, as required by Puro. Boundary conditions genreally well specified and LCA components detailed and referenced. Paper products form a key component of the feedstock material, so it would be useful to characterize any emissions associated with their production. Given this unknown, we remain uncertain about the total value.",
           "removal": 1.34,
           "emissions": 0.087,
           "kind": "ratio"
@@ -1437,9 +1437,9 @@ module.exports = {
           "name": "permanence",
           "value": 50.0,
           "units": "years",
-          "rating": 1.0,
+          "rating": 0.0,
           "notes": "Claims 50 to 400 years.",
-          "comment": "Wood carbon stored in building materials is more durable than in forests. Nevertheless, we report 50 as the minimum of the claimed range."
+          "comment": "Wood carbon stored in building materials is likely more durable than in forests, but less is known about the specific blown loose wool materials described here. We report 50 as the minimum of the claimed range, but are unable to validate the duration with confidence."
         },
         {
           "type": "Metric",
@@ -1476,7 +1476,7 @@ module.exports = {
         "biomass",
         "materials"
       ],
-      "id": "STRP16",
+      "id": "STRP016",
       "description": "Net-negative wood products.",
       "location": {
         "name": "Kouvola, Finland",
@@ -1569,7 +1569,7 @@ module.exports = {
         "biomass",
         "biochar"
       ],
-      "id": "STRP17",
+      "id": "STRP017",
       "description": "Biochar and carbon negative energy.",
       "location": {
         "name": "Tampere, Finland",
@@ -1604,7 +1604,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume based on initial production of 100 t of underlying product. Project is based on the Puro platform.",
-          "comment": "Early stage technology is difficult to independently evaluate."
+          "comment": "Early stage of technology makes it difficult to independently evaluate."
         },
         {
           "type": "Metric",
@@ -1662,7 +1662,7 @@ module.exports = {
         "mineralization",
         "materials"
       ],
-      "id": "STRP18",
+      "id": "STRP018",
       "description": "Producing bricks and slips by carbonation.",
       "location": {
         "name": "Finland",
@@ -1697,7 +1697,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume projected for one year on a 174 ha land project in Scotland. Claimed breakdown of total volume includes 18.3 - 25.7 tCO2 / ha / year for above ground biomass, 7.3 - 25.7 tCO2E / ha / year for soil carbon, and 11 - 22 tCO2 / ha / year for biochar.",
-          "comment": "Project provides references for forest growth rates, though claimed rates of tCO2 / ha / year are on the higher end of published estimates. Estimates for soil carbon difficult to validate without more specifics on planned management practices or site properties."
+          "comment": "Project provides references for forest growth rates, though claimed rates of tCO2 / ha / yr are on the high end of published estimates. Estimates for soil carbon difficult to validate without more specifics on planned management practices or site properties."
         },
         {
           "type": "Metric",
@@ -1755,7 +1755,7 @@ module.exports = {
         "forests",
         "reforestation"
       ],
-      "id": "STRP19",
+      "id": "STRP019",
       "description": "Reforestation offset model.",
       "location": {
         "name": "Scotland",
@@ -1848,7 +1848,7 @@ module.exports = {
         "biomass",
         "burial"
       ],
-      "id": "STRP20",
+      "id": "STRP020",
       "description": "Carbon sequestration via logging and wood burial.",
       "location": {
         "name": "East Texas, USA",
@@ -1883,7 +1883,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 1.0,
           "notes": "Improved forest management project on 8485 acres on state-owned land in Tennessee. Project is projected to generate 770543 tCO2 beneifts over 20 years, the dominant majority of which (545254 tCO2 or 71%) are avoided emissions from forest harvesting. An 18% risk buffer pool is set aside to mitigate against potential reversals, producing a net expected removal of 631845 tCO2. No specific method for calculating forest carbon benefits identified. Buffer pool calculated using American Carbon Registry methods.",
-          "comment": "Estimates of 166.7 tCO2 / ha for standing stock and 2.9 tCO2 / ha / year for future growth fall within a highly plausible range based on USFS yield tables."
+          "comment": "Estimates of 166.7 tCO2 / ha for standing stock and 2.9 tCO2 / ha / yr for future growth fall within a highly plausible range based on USFS yield tables."
         },
         {
           "type": "Metric",
@@ -1941,7 +1941,7 @@ module.exports = {
         "forests",
         "avoided conversion"
       ],
-      "id": "STRP21",
+      "id": "STRP021",
       "description": "Protecting forest carbon stock.",
       "location": {
         "name": "Mountain City, TN, USA",
@@ -1980,7 +1980,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume based on a 1000 ha pilot, using an unspecified Verified Carbon Standard protocol for calculations. Total includes both 15680 tCO2 based on reforestation and 4020 tCO2 based on storage of existing culms.",
-          "comment": "Inferred rate of 15.7 tCO2 / ha / year for the first year of growth is high, but within the range of published allometric estimates for other bamboo species. Given large potential variability due to regional conditions, further validation would require ground measurements and/or the project-referenced VCS biomass methodology to be released in 2021."
+          "comment": "Inferred rate of 15.7 tCO2 / ha / yr for the first year of growth is high, but within the range of published allometric estimates for other bamboo species. Given large potential variability due to regional conditions, further validation would require ground measurements and/or the project-referenced VCS biomass methodology to be released in 2021."
         },
         {
           "type": "Metric",
@@ -2038,7 +2038,7 @@ module.exports = {
         "forests",
         "materials"
       ],
-      "id": "STRP22",
+      "id": "STRP022",
       "description": "Bamboo reforestation and engineered lumber.",
       "location": {
         "name": "Philippines",
@@ -2071,9 +2071,9 @@ module.exports = {
           "name": "volume",
           "value": 200.0,
           "units": "tCO2",
-          "rating": 1.0,
+          "rating": 0.0,
           "notes": "Volume projected based on total crushed olivine supply to pilot project site.",
-          "comment": "Given the stated ratio of 1.25 tCO2 removed per 1 tCO2 of olivine, we infer 160 t of olivine used. Assuming that amount is procured, the volume is plausible."
+          "comment": "Assuming the stated ratio of 1.25 tCO2 removed per 1 tCO2 of olivine, we infer 160 t of olivine will be procured. However, that ratio likely reflects an upper bound, and in genreal some uncertainty remains around the actual volume of carbon removal that is likely with this approach, requiring further work to evaluate."
         },
         {
           "type": "Metric",
@@ -2082,7 +2082,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Reported ratio based on 0.049 tCO2 for 1.25 tCO2 removed, including energy for mining, milling, and\ntransport. Higher negativity ratio than other mineralization projects is due to using wave energy to displace secondary and tertiary grinding of olivine to small particles needed for carbon removal.",
-          "comment": "Boundary conditions well specified and references documented. Project emissions are well characterzied, but reported number depends on the successful use of waves for secondary and tertiary grinding. Because technology is new, we cannot independently validate this claim.",
+          "comment": "Boundary conditions well specified and references documented. Project emissions are well characterzied, but reported number depends on the successful use of waves for secondary and tertiary grinding, and on the claimed ratio of 1.25 tCO2 removed for 1 t of olivine, which may be an upper bound. Thus, while estimate is plausible, some uncertainty remains.",
           "removal": 1.25,
           "emissions": 0.049,
           "kind": "project"
@@ -2131,7 +2131,7 @@ module.exports = {
         "mineralization",
         "ocean"
       ],
-      "id": "STRP23",
+      "id": "STRP023",
       "description": "Accelerating olivine weathering with wave power for CO2 removal.",
       "location": {
         "name": "Caribbean",
@@ -2224,7 +2224,7 @@ module.exports = {
         "biomass",
         "injection"
       ],
-      "id": "STRP24",
+      "id": "STRP024",
       "description": "Geological sequestration of bio-oil",
       "location": {
         "name": "CA, USA",
