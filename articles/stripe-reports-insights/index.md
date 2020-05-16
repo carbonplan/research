@@ -9,6 +9,7 @@ import Metrics from './components/metrics'
 
 export const meta = {
   id: 'stripe-reports-insights',
+  version: '1.0.0',
   summary: 'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
   quotes: [
     {
@@ -30,21 +31,21 @@ export const meta = {
 
 At CarbonPlan we evaluate carbon removal projects, programs, and technologies. We believe that carbon removal (or “negative emissions”) will play an important role in addressing the climate crisis, but that success requires a culture of rigor, transparency, and accountability. For us, getting the details right matters — as it does for the many inventors, scientists, entrepreneurs, and activists who work to make climate solutions a reality. 
 
-In March 2020, we partnered with Stripe to perform our first independent analysis of carbon removal projects. As part of its [Negative Emissions Purchase](), Stripe solicited a wide range of project proposals, and to help encourage transparency in the field, they required that all proposals be made public. We received early access to these proposals to perform an  independent analysis, the results of which we are releasing to launch our public database of project reports.
+In March 2020, we partnered with Stripe to perform our first independent analysis of carbon removal projects. As part of its [Negative Emissions Purchase](), Stripe solicited a wide range of project proposals, and to help encourage transparency in the field, they required that all proposals be made public. We received early access to these now-public proposals to perform an independent analysis, the results of which we are releasing to launch our public database of project reports.
 
 We are grateful to Stripe for prioritizing transparency, and to the many organizations and individuals who prepared these public applications. Making this information available offers the broader climate community a chance to grow and improve over time.
 
-This article summarizes our major takeaways from this effort. For additional detail, check out our [project reports](/reports) and the [terms of our engagement](#terms-of-engagement) with Stripe. Please note that this is independent work that only represents CarbonPlan’s views, not those of Stripe or any other organizations. 
+This article summarizes our major takeaways from our analysis. For additional detail, check out our [project reports](/reports) and the [terms of our engagement](#terms-of-engagement) with Stripe. Please note that this is independent work that only represents CarbonPlan’s views, not those of Stripe or any other organizations. 
 
 ## What we did
 
-We performed an independent analysis of the 24 project proposals Stripe received. Faced with a wide range of projects spanning everything from soil carbon management to direct air capture, we took a broad, comparative approach. 
+We performed an independent analysis of the 24 project proposals. Faced with a wide range of projects spanning everything from soil carbon management to direct air capture, we took a broad, comparative approach. 
 
 Our goals were to harmonize metrics and concepts across a range of projects; to analyze and validate claims made by projects where possible based on the best available science and data; and to better understand challenges and opportunities facing organizations seeking climate solutions. As a result of our focus on cross-cutting issues, we played a different role than the domain experts who  governments and companies typically engage to evaluate project proposals in specific subject-matter areas.
 
 We are making all our analysis, methods, and commentary from our process public because we want our reports to help all interested organizations — researchers, project proponents, sponsor organizations — learn about the field and improve outcomes in future iterations. While we appreciate that confidential analysis is common (and sometimes necessary) in climate programs, it can also reduce transparency and lead to duplicate work. Our work aims to address both challenges, and to that end, we’re committed to growing and improving our public database of project reports over time.
 
-Making our work public is also an opportunity to reflect on what can and cannot be said with confidence in the complex space of carbon removal. The gaps we’ve identified will help us develop open source methods for more detailed analyses of projects and technologies in future programs.
+Making our work public is also an opportunity to reflect on what can and cannot be said with confidence in the complex and nascent space of carbon removal. The gaps we’ve identified will help us develop open source methods for more detailed analyses of projects and technologies in future programs.
 
 ### How we analyzed projects
 
@@ -92,7 +93,7 @@ The projects we analyzed clustered into two distinct groups: those with permanen
 
 Projects with shorter permanence horizons may have significant value. Many are associated with important environmental co-benefits to water quality, agricultural productivity, or species conservation. Shorter carbon removal commitments can also buy time to scale up more permanent solutions — although the challenge of adding to tomorrow’s decarbonization burden is no comfort, given the scale and rate of change already required. 
 
-Whether temporary storage options can be made reliable over longer periods of time turns on whether permanence risks are predominantly physical or socioeconomic. We are optimistic that physical risks can be reasonably well characterized by rigorous science. For example, projects storing carbon in forests need to promise that these carbon stocks will remain. Quantitative analysis can help predict the vulnerability of a specific location or species in a changing climate for risk factors like fire, drought, or insect-related tree deaths. 
+Whether temporary storage options can be made reliable over longer periods of time turns on whether permanence risks are predominantly physical or socioeconomic. We are optimistic that physical risks can be reasonably well characterized by rigorous science. For example, projects storing carbon in forests need to promise that these carbon stocks will remain. Quantitative analysis can help predict the vulnerability of a specific location or species in a changing climate for risk factors like fire, drought, or insect-related tree mortality. 
 
 In contrast, socioeconomic risks present a more vexing challenge. Long-term commitments to carbon storage in forests or soils require restricting landowner actions to prevent future changes to timber harvesting regimes or soil management practices. Many projects use long-term contracts — some for as long as 100 years — but over these kinds of timeframes there are significant risks of default or bankruptcy. 
 
@@ -128,10 +129,10 @@ If an organization wants to look broadly across multiple sectors, parallel track
 
 ### CarbonPlan: Develop new methods for project areas 
 
-To improve our own analysis capabilities,, we are developing open source methods for evaluating projects on a technology-by-technology basis in close collaboration with the academic community. Examples include models of direct air capture project cost and scale (with Jennifer Wilcox) and models for evaluating forest carbon removal potential and physical reversal risks (with Bill Anderegg). These kinds of detailed models will enable more systematic analysis and comparison within and across project categories, as well as identify information sponsors could collect from proposals to facilitate comparison and evaluation. 
+To improve our own analysis capabilities, we are developing open source methods for evaluating projects on a technology-by-technology basis in close collaboration with the academic community. Examples include models of direct air capture project cost and scale (with Jennifer Wilcox) and models for evaluating forest carbon removal potential and physical reversal risks (with Bill Anderegg). These kinds of detailed models will enable more systematic analysis and comparison within and across project categories, as well as identify information sponsors could collect from proposals to facilitate comparison and evaluation. 
 
 ## Terms of engagement
 
-CarbonPlan and Stripe entered into an agreement in which Stripe shared the project proposals it received in response to its 2020 Negative Emissions Purchase in advance of their public release. CarbonPlan was compensated by Stripe for our time. We provided feedback to Stripe on both individual projects and overall program design, but our work was independent and Stripe did not exercise any control over it. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not necessarily reflect the views of Stripe or any other other organizations.  
+CarbonPlan and Stripe entered into an agreement in which Stripe shared the project proposals it received in response to its 2020 Negative Emissions Purchase in advance of their public release. We provided feedback to Stripe on its program and were compensated by Stripe for our time. Our work was independent and Stripe did not exercise any control over it. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not represent the views of Stripe or any other other organizations. 
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>
