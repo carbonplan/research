@@ -61,9 +61,9 @@ const Layout = ({ hideFooter, children }) => {
             bottom: '0px',
             display: ['none', 'none', 'inherit']
           }}>
-          <Container sx={{ px: [4], maxWidth: '100%' }}>
+          <Box sx={{ px: [4], width: '100%' }}>
             <Switch/>
-          </Container>
+          </Box>
         </Box>
       </Flex>
     </>
