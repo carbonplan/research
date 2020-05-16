@@ -45,7 +45,7 @@ Our goals were to harmonize metrics and concepts across a range of projects; to 
 
 We are making all our analysis, methods, and commentary from our process public because we want our reports to help all interested organizations — researchers, project proponents, sponsor organizations — learn about the field and improve outcomes in future iterations. While we appreciate that confidential analysis is common (and sometimes necessary) in climate programs, it can also reduce transparency and lead to duplicate work. Our work aims to address both challenges, and to that end, we’re committed to growing and improving our public database of project reports over time.
 
-Making our work public is also an opportunity to reflect on what can and cannot be said with confidence in the complex and nascent space of carbon removal. The gaps we’ve identified will help us and others develop open source methods for more detailed analyses of projects and technologies in future programs.
+Making our work public is also an opportunity to reflect on what can and cannot be said with confidence in the complex and nascent space of carbon removal. The gaps we’ve identified will help us and others develop open source methods for more detailed analyses of projects and technologies in future programs, and we welcome feedback on our process.
 
 ### How we analyzed projects
 
