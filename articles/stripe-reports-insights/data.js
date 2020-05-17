@@ -62,7 +62,7 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Reported value is the average of a range ($735-800)."
+          "comment": "Reported value is the average of the range $735-800."
         },
         {
           "type": "Metric",
@@ -257,7 +257,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Several project details (e.g. plot locations) available. Volume and LCA methods based on the public and published COMET-Farm model. Specific parameters used for model not public, limiting ability for independent analysis and quantification."
+          "comment": "Several project details (e.g. plot locations) available. Volume and LCA methods based on the public and published COMET-Farm model. Specific parameters used for model are not public, limiting ability for independent analysis and quantification."
         }
       ],
       "geometry": {
@@ -611,7 +611,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counterfactual is reforesting manually or not at all.",
-          "comment": "This project can be considered an investment in a new technology to lower the cost of reforestation, with funding likely going to future reforetation projects. As an investment in a specific quantity of carbon removal, however, there are signficant concerns about double-counting, as the landowner may attempt to separately monetize the same carbon benefits using a carbon offset protocol, and this pattern could repeat in future iterations."
+          "comment": "This project can be considered an investment in a new technology to lower the cost of reforestation, with funding likely going to future reforestation projects. As an investment in a specific quantity of carbon removal, however, there are then signficant concerns about double-counting, as the landowner may attempt to separately monetize the same carbon benefits using a carbon offset protocol, and this pattern could repeat in future iterations."
         },
         {
           "type": "Metric",
@@ -1001,7 +1001,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Basic technology reasonably well described in published litearture. Several project details (including locations and durations) are publicly available."
+          "comment": "Basic technology reasonably well described in published literature. Several project details (including locations and durations) are publicly available."
         }
       ],
       "geometry": {
@@ -1834,7 +1834,7 @@ module.exports = {
         {
           "type": "Metric",
           "name": "specificity",
-          "value": 1.0,
+          "value": 0.0,
           "units": "",
           "rating": "",
           "notes": "",
@@ -2204,7 +2204,7 @@ module.exports = {
           "value": 600.0,
           "units": "$/tCO2",
           "rating": "",
-          "notes": "Costs based on bio-oil procurement (72%), transport (18%) and injection (10%)",
+          "notes": "Costs based on bio-oil procurement (72%), transport (18%), and injection (10%)",
           "comment": ""
         },
         {
