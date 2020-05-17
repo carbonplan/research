@@ -91,7 +91,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -185,7 +185,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -279,7 +279,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -373,7 +373,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -467,7 +467,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -561,7 +561,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -655,7 +655,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -749,7 +749,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -843,7 +843,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -937,7 +937,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -1031,7 +1031,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -1125,7 +1125,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -1219,7 +1219,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -1313,7 +1313,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -1407,7 +1407,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -1501,7 +1501,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -1595,7 +1595,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -1689,7 +1689,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -1783,7 +1783,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -1877,7 +1877,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -1975,7 +1975,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -2069,7 +2069,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -2163,7 +2163,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
@@ -2257,7 +2257,7 @@ module.exports = {
       },
       "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "license": "CC-BY",
+        "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     }
