@@ -363,7 +363,7 @@ module.exports = {
       "id": "STRP004",
       "description": "Regenerative farming practices for soil carbon sequestration.",
       "location": {
-        "name": "Mid-West and Southern USA",
+        "name": "Midwest and Southern USA",
         "geometry": {
           "type": null
         }
@@ -828,7 +828,7 @@ module.exports = {
       "id": "STRP009",
       "description": "Wave-powered upwelling/downwelling for carbon\u200b sequestration.",
       "location": {
-        "name": "Pacific Ocean (offshore of CA)",
+        "name": "Pacific Ocean (near CA)",
         "geometry": {
           "type": null
         }
@@ -1427,7 +1427,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Reported ratio based on 0.087 tCO2 emissions for 1.34 tCO2 stored. Includes raw materials through production stage. Excludes transport of finished materials and construction-related emissions.",
-          "comment": "Analysis performed by third-party with public details, as required by Puro. Boundary conditions genreally well specified and LCA components detailed and referenced. Paper products form a key component of the feedstock material, so it would be useful to characterize any emissions associated with their production.",
+          "comment": "Analysis performed by third-party with public details, as required by Puro. Boundary conditions generally well specified and LCA components detailed and referenced. Paper products form a key component of the feedstock material, so it would be useful to characterize any emissions associated with their production.",
           "removal": 1.34,
           "emissions": 0.087,
           "kind": "ratio"
@@ -1448,7 +1448,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Existing industry has been in produciton since the 1980s, so the production of insulation does not seem contingent on carbon incentives."
+          "comment": "Existing industry has been in production since the 1980s, so the production of insulation does not seem contingent on carbon incentives."
         },
         {
           "type": "Metric",
@@ -2121,7 +2121,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Project details provided in public proposal with several public white papers and references. Further detail could be provided in the future through pubilc data on pilot deployments."
+          "comment": "Project details provided in public proposal with several public white papers and references. Further detail could be provided in the future through public data on pilot deployments."
         }
       ],
       "geometry": {

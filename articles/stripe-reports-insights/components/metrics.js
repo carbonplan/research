@@ -85,7 +85,7 @@ const Metrics = () => {
     <Row>
       <Text sx={header}>SPECIFICITY</Text>
       <Text sx={entry}>
-        Is there enough detail in project proposal, publications, or other materials
+        Is there enough detail in project proposals, publications, or other materials
         to independently validate the rest of our metrics?
       </Text>
     </Row>
