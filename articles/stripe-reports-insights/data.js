@@ -328,7 +328,7 @@ module.exports = {
         {
           "type": "Metric",
           "name": "additionality",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "",
@@ -505,11 +505,11 @@ module.exports = {
         {
           "type": "Metric",
           "name": "permanence",
-          "value": 152.0,
+          "value": 680.0,
           "units": "years",
           "rating": 1.0,
           "notes": "Claims 100 years or more.",
-          "comment": "Permanence of biochar depends on chemical composition, storage conditons, and other factors. Using the reported O:C ratio of 0.08 we estimate 152 years as the duration during which 90% of biochar C remains."
+          "comment": "Permanence of biochar depends on chemical composition, storage conditons, and other factors. Using the reported O:C ratio of 0.08 and a simple published model we estimate 680 years as an approximate duration during which 90% of biochar C remains."
         },
         {
           "type": "Metric",
@@ -611,7 +611,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counterfactual is reforesting manually or not at all.",
-          "comment": "This project can be considered an investment in a new technology to lower the cost of reforestation, with funding likely going to future reforestation projects. As an investment in a specific quantity of carbon removal, however, there are then signficant concerns about double-counting, as the landowner may attempt to separately monetize the same carbon benefits using a carbon offset protocol, and this pattern could repeat in future iterations."
+          "comment": "This project can be considered an investment in a new technology to lower the cost of reforestation, with funding likely going to future reforestation projects. As an investment in a specific quantity of carbon removal, however, there are then concerns about double-counting, as the landowner may attempt to separately monetize the same carbon benefits using a carbon offset protocol, and this pattern could repeat in future iterations."
         },
         {
           "type": "Metric",
@@ -674,7 +674,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume is the total of two exemplar projects, Rip's Redwoods and Guanare. The Pachama platform offers a larger portfolio of projects, but they are not considered here.",
-          "comment": "Claimed sequestration rates of 16 and 26 tCO2 / ha / yr for Rip's Redwoods and Guanare, respectively, are high but broadly commensurate with published literature. Additional details on project (e.g. stand age) or public proprietary monitoring-based methods would be required for validating volume."
+          "comment": "Claimed sequestration rates of 16 and 26 tCO2 / ha / yr for Rip's Redwoods and Guanare, respectively, are on the high end of published literature. Additional details on project (e.g. stand ages) and more information on proprietary quantification methods would be useful for validating volume."
         },
         {
           "type": "Metric",
@@ -718,11 +718,11 @@ module.exports = {
         {
           "type": "Metric",
           "name": "specificity",
-          "value": 1.0,
+          "value": 2.0,
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Basic project characteristics described in detail. Proprietary quantification methods are not published or publicly available."
+          "comment": "Basic project characteristics described in detail."
         }
       ],
       "geometry": {
@@ -1094,7 +1094,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Reasonably thorough description of program design. Details on specific projects or methods for project quantification or selection are not available."
+          "comment": "Reasonably thorough description of program design. Details on specific projects or methods for project quantification or selection are not yet publicly available."
         }
       ],
       "geometry": {
@@ -1249,11 +1249,11 @@ module.exports = {
         {
           "type": "Metric",
           "name": "permanence",
-          "value": 760.0,
+          "value": 869.0,
           "units": "years",
           "rating": 1.0,
           "notes": "Claims 500 to 4000 years.",
-          "comment": "Permanence of biochar depends on chemical composition, storage conditons, and other factors. Using the reported O:C ratio of 0.039 we estimate 760 years as the duration over which 90% of biochar C remains."
+          "comment": "Permanence of biochar depends on chemical composition, storage conditons, and other factors. Using the reported O:C ratio of 0.039 and simple published model, we estimate 760 years as an approximate duration over which 90% of biochar C remains."
         },
         {
           "type": "Metric",
@@ -1528,11 +1528,11 @@ module.exports = {
         {
           "type": "Metric",
           "name": "permanence",
-          "value": 1000.0,
+          "value": 807.0,
           "units": "years",
           "rating": 1.0,
           "notes": "Claims 100 to 5000 years.",
-          "comment": "Permanence of biochar depends on chemical composition and storage conditons. Using the reported O:C ratio of 0.021 we estimate 1520 years as the duration during which 90% of biochar C remains."
+          "comment": "Permanence of biochar depends on chemical composition and storage conditons. Using the reported O:C ratio of 0.021 and a simple published model, we estimate 1520 years as an approximate duration during which 90% of biochar C remains."
         },
         {
           "type": "Metric",
@@ -1838,7 +1838,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "No publications on technique other than a speculative research proposal, and no demonstration projects."
+          "comment": "Only publication on technique is a speculative research proposal. No demonstration projects yet."
         }
       ],
       "geometry": {
@@ -2073,7 +2073,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume projected based on total crushed olivine supply to pilot project site.",
-          "comment": "Assuming the stated ratio of 1.25 tCO2 removed per 1 tCO2 of olivine, we infer 160 t of olivine will be procured. That ratio likely reflects an upper bound, and in genreal some uncertainty remains around the actual volume of carbon removal that is likely with this approach, requiring further work to validate."
+          "comment": "Assuming the stated ratio of 1.25 tCO2 removed per 1 tCO2 of olivine, we infer 160 t of olivine will be procured. That ratio likely an upper bound, and in genreal some uncertainty remains around the actual volume of carbon removal that is likely with this approach, requiring further work to validate."
         },
         {
           "type": "Metric",
@@ -2082,7 +2082,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Reported ratio based on 0.049 tCO2 for 1.25 tCO2 removed, including energy for mining, milling, and\ntransport. Higher negativity ratio than other mineralization projects is due to using wave energy to displace secondary and tertiary grinding of olivine to small particles needed for carbon removal.",
-          "comment": "Boundary conditions well specified and references documented. Project emissions are well characterzied, but reported number depends on the successful use of waves for secondary and tertiary grinding, and on the claimed ratio of 1.25 tCO2 removed for 1 t of olivine, which may be an upper bound. Thus, while estimate is plausible, some uncertainty remains.",
+          "comment": "Boundary conditions well specified and references documented. Project emissions are well characterzied, but reported number depends on the successful use of waves for secondary and tertiary grinding, and on the claimed ratio of 1.25 tCO2 removed for 1 t of olivine, which is an upper bound. Thus, while estimate is plausible, some uncertainty remains.",
           "removal": 1.25,
           "emissions": 0.049,
           "kind": "project"
