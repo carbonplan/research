@@ -83,10 +83,10 @@ const Metrics = () => {
       </Text>
     </Row>
     <Row>
-      <Text sx={header}>TRANSPARENCY</Text>
+      <Text sx={header}>SPECIFICITY</Text>
       <Text sx={entry}>
-        Does the project provide sufficient 
-        information to independently validate the rest of our metrics?
+        Is there enough detail in project proposal, publications, or other materials
+        to independently validate the rest of our metrics?
       </Text>
     </Row>
   </Box>

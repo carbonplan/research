@@ -53,7 +53,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Counterfactual not applicable. The only reason to implement a project like this is to generate climate benefits. New investments may relate to future deployments rather than current procurements."
+          "comment": "The only reason to implement a project like this is to generate climate benefits. New investments may relate to future deployments rather than current procurements."
         },
         {
           "type": "Metric",
@@ -66,7 +66,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -116,7 +116,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume reflects 200 cement production facilities using the technology. Every 1 tCO2 used is corresponds to 0.85 tCO2 mineralized and 44.45 tCO2 avoided by reducing conventional concrete production emissions from 0.26 tCO2 / m3 to 0.22 tCO2 / m3.",
-          "comment": "Reporting 60000 tCO2 as an estimate of current annual volume. Total volume combines utilization and avoided emissions from reducing conventional concrete production. Based on ratios provided in LCA, we infer 1126 total tCO2 utilitized and 58874 tCO2 avoided, though we have not validated this breakdown based on specific project parameters."
+          "comment": "Reporting 60000 tCO2 as an estimate of current annual volume. Total volume combines utilization and avoided emissions from reducing conventional concrete production. Based on ratios provided in LCA, we infer 1126 total tCO2 utilitized and 58874 tCO2 avoided. Validating this breakdown would require more specific project parameters."
         },
         {
           "type": "Metric",
@@ -159,7 +159,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -198,7 +198,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Broker that facilitates removal of carbon from the atmosphere by incentivizing changes in agricultural practices that increase sequestration in soils.",
-          "comment": "Nori is looking at established soil carbon removal pathways, but has not specified which ones are used in this project. Nori identifies that the project uses its Nori Croplands methodlogy, and Section 2.3 of Version 1.1 specifies five potential categories of cropland-related soil carbon management.",
+          "comment": "Multiple established soil carbon removal pathways exist, including five referenced in the Nori Croplands methodlogy (Section 2.3 of Version 1.1). Validating specific removal mechanisms would require more project details.",
           "removal": 1.0,
           "avoided": 0.0
         },
@@ -209,7 +209,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume based on a single supplier, Harborview Farms, which includes 27 plots totaling 14011 tCO2. Volumes calculated using USDA COMET-Farm model, using project-level data collected by Nori. The Nori platform offers a larger portfolio of projects, but they are not considered here.",
-          "comment": "Project locations are specified and COMET-Farm is a publicly available tool. Volumes are difficult to independently validate without knowing which practices will be applied at project sites, model parameters used, or complete plot details."
+          "comment": "Project locations are specified and COMET-Farm is a publicly available tool. Validating individual volumes would require knowing which practices will be applied at project sites, model parameters used, or complete plot details."
         },
         {
           "type": "Metric",
@@ -218,7 +218,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "No data provided, but high likelihood it will vary across projects. Claimed guarantee that negativity will be greater than 0.",
-          "comment": "Emissions information ought to be available in the COMET-Farm model outputs, but cannot be reproduced as model parameters are not yet publicly available.",
+          "comment": "Emissions information ought to be available in the COMET-Farm model outputs, but cannot be reproduced as model parameters are not available.",
           "removal": "N/A",
           "emissions": "N/A",
           "kind": "N/A"
@@ -252,7 +252,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -291,7 +291,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Broker that facilitates removal of carbon from the atmosphere by incentivizing changes in agricultural practices that increase sequestration in soils.",
-          "comment": "Difficult to assess projects' specific removal mechanisms without more transparency. Multiple established soil carbon removal pathways exist, but none are specified in public proposal.",
+          "comment": "Multiple established soil carbon removal pathways exist, but validating project mechanisms would require specific project details.",
           "removal": 1.0,
           "avoided": 0.0
         },
@@ -345,7 +345,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 0.0,
           "units": "",
           "rating": "",
@@ -361,7 +361,7 @@ module.exports = {
         "broker"
       ],
       "id": "STRP004",
-      "description": "Rgenerative farming practices for soil carbon sequestration.",
+      "description": "Regenerative farming practices for soil carbon sequestration.",
       "location": {
         "name": "Mid-West and Southern USA",
         "geometry": {
@@ -384,7 +384,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Facilitates late-stage BECCS projects, which avoid emissions from biogenic carbon sources and instead capture it for geologic sequestration in rocks' pore space.",
-          "comment": "BECCS is a well established technology. Project acts as a broker, rather than deploying a particular technology or process.",
+          "comment": "BECCS is a well established technology. Project acts as a broker, rather than deploying a particular technology or process, so specific mechanisms could vary across sites.",
           "removal": 1.0,
           "avoided": 1.0
         },
@@ -395,7 +395,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume appears to be sourced from multiple BECCS projects.",
-          "comment": "Overall volume reasonable given technology. No specifics on individual projects in portfolio are available to validate volume, or to distinguish relative amounts of removal vs avoided emissions."
+          "comment": "Overall volume reasonable given technology. Further validation, including distinguishing relative amounts of removal vs avoided emissions, would require more specifics on individual projects in portfolio."
         },
         {
           "type": "Metric",
@@ -416,7 +416,7 @@ module.exports = {
           "units": "years",
           "rating": 0.0,
           "notes": "",
-          "comment": "Successful geologic sequestration produces reliable, effectively permanent carbon storage. However, geologic storage stability depends on sound management practices, and project provides no specifics on approach."
+          "comment": "Successful geologic sequestration produces reliable, effectively permanent carbon storage. However, geologic storage stability depends on sound management practices, which could vary by specific project sites."
         },
         {
           "type": "Metric",
@@ -438,12 +438,12 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 0.0,
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Few data on specific projects available in proposal or on project website. Basic technology well understood, but no data or publications on specific approaches, and no references or third-party analyses for LCA."
+          "comment": "Few data on specific projects available in proposal or on project website. Basic technology well understood, but no data or publications on specific approaches, and no references or third-party analyses available yet for LCA."
         }
       ],
       "geometry": {
@@ -518,7 +518,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counterfactual is dumping walnut shells on ground or burning in biomass electricity plant.",
-          "comment": "Feedstock is walnut shells that are otherwise dumped on the ground or on roads, e.g. for dust reduction purposes. Further analysis would require understanding competing uses for feedstock."
+          "comment": "Feedstock is walnut shells that are otherwise dumped on the ground or on roads, e.g. for dust reduction purposes. Further analysis would require knowing competing uses for feedstock."
         },
         {
           "type": "Metric",
@@ -531,7 +531,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -602,7 +602,7 @@ module.exports = {
           "units": "years",
           "rating": 0.0,
           "notes": "Claims 51 years with potential economic incentives for longer durations.",
-          "comment": "Physical risks are unknown as exact location is unknown, but could be large given coarse location in the Pacific Northwest. Socioeconomic risks are significant due to the risk of default or bankruptcy on this time horizon. In addition, because funds will be used to reforest another, unspecified project, there is uncertainty as to the landowner committments and associated risks for this particular project. See our comment on additionality for additional discussion."
+          "comment": "Physical risks are unknown as exact location is unknown, but could be large given coarse location in the Pacific Northwest. Socioeconomic risks are significant due to the risk of default or bankruptcy on this time horizon. In addition, because funds will be used to reforest another project, there is uncertainty as to the landowner committments and associated risks. See our comment on additionality for additional discussion."
         },
         {
           "type": "Metric",
@@ -611,7 +611,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counterfactual is reforesting manually or not at all.",
-          "comment": "This project can be considered an investment in a new technology to lower the cost of reforestation, with funding going to future projects. As an investment in a specific quantity of carbon removal, however, there are concerns about double-counting, as the landowner may attempt to separately monetize the same carbon benefits using a carbon offset protocol."
+          "comment": "This project can be considered an investment in a new technology to lower the cost of reforestation, with funding likely going to future reforetation projects. As an investment in a specific quantity of carbon removal, however, there are signficant concerns about double-counting, as the landowner may attempt to separately monetize the same carbon benefits using a carbon offset protocol, and this pattern could repeat in future iterations."
         },
         {
           "type": "Metric",
@@ -624,12 +624,12 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Details are provided on plan and process, but no publications or public data are available on the technology and its performance in reforestation projects."
+          "comment": "Details are provided on plan and process, but no publications or public data are available on the new technology and its performance in reforestation projects."
         }
       ],
       "geometry": {
@@ -674,7 +674,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume is the total of two exemplar projects, Rip's Redwoods and Guanare. The Pachama platform offers a larger portfolio of projects, but they are not considered here.",
-          "comment": "Claimed sequestration rates of 16 and 26 tCO2 / ha / yr for Rip's Redwoods and Guanare, respectively, are high but broadly commensurate with published literature. Additional details (e.g. stand age) would be required for a more precise comparison. No evidence provided for specific utility of advanced monitoring methods for improving volume estimates."
+          "comment": "Claimed sequestration rates of 16 and 26 tCO2 / ha / yr for Rip's Redwoods and Guanare, respectively, are high but broadly commensurate with published literature. Additional details on project (e.g. stand age) or public proprietary monitoring-based methods would be required for validating volume."
         },
         {
           "type": "Metric",
@@ -704,7 +704,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counterfactual scenarios specified for both projects.",
-          "comment": "Guanare afforestation project began in 2006, and thus future carbon removals are already assured under these historical land management practices. Rip's Redwood project already credited for standing carbon stock above regional baseline, which indicates a promise not to harvest normally and therefore raises questions about the additionality of ongoing carbon removal credits."
+          "comment": "Guanare project began in 2006, and thus future carbon removals are already assured under these historical land management practices. Rip's Redwood project already credited for standing carbon stock above regional baseline, which indicates a promise not to harvest normally and therefore raises questions about the additionality of ongoing carbon removal credits."
         },
         {
           "type": "Metric",
@@ -717,12 +717,12 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Basic project characteristics described in detail. Proprietary quantification methods are not yet published or publicly available, but these methods also do not appear relavant to the stated project carbon removal claims."
+          "comment": "Basic project characteristics described in detail. Proprietary quantification methods are not published or publicly available."
         }
       ],
       "geometry": {
@@ -797,7 +797,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Counterfactual not applicable. The only reason to implement a project like this is to generate climate benefits, and no such projects are operating today."
+          "comment": "The only reason to implement a project like this is to generate climate benefits, and no such projects are operating today."
         },
         {
           "type": "Metric",
@@ -810,12 +810,12 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Reasonably thorough description of technology with references. Specific publications or public data on demonstration projects not yet available."
+          "comment": "Reasonably thorough description of technology with references. Specific publications or public data on demonstration projects not available."
         }
       ],
       "geometry": {
@@ -849,7 +849,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Broker that facilitates removal of carbon from the atmosphere by incentivizing changes in agricultural practices that increase sequestration in soils.",
-          "comment": "Multiple established soil carbon removal pathways exist. Specific mechnaisms for individual projects are not detailed in public proposal.",
+          "comment": "Multiple established soil carbon removal pathways exist. Specific mechnaisms for individual projects are not detailed.",
           "removal": 1.0,
           "avoided": 0.0
         },
@@ -869,7 +869,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Reported ratio provisional based on several referenced publications, with amended results to be determined in a future study.",
-          "comment": "Connection between existing references, project plans, and future study not entirely clear. Net LCA impacts depend on methane emissions from livestock and no GWP conversion information reported.",
+          "comment": "Connection between existing references, project plans, and future study not clear. Net LCA impacts depend on methane emissions from livestock and no GWP conversion information reported.",
           "removal": "N/A",
           "emissions": "N/A",
           "kind": "N/A"
@@ -903,12 +903,12 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 0.0,
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Few details available on specific projects. Protocol is under development but not yet publicly available."
+          "comment": "No details available on specific projects. Protocol is under development but not yet available."
         }
       ],
       "geometry": {
@@ -996,7 +996,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -1046,7 +1046,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume extrapolated from a pilot implementation in 6 counties in Pennsylvania. Projects in 2020 will be sourced from 11 southern US states. Supply will be allocated via an auction.",
-          "comment": "Volume estimates will be relatively straightforward to confirm via stocking estimates as a result of the 1 year project duration. The plausibility of the large total volume depends on the number of particpants."
+          "comment": "Volume will be relatively straightforward to confirm via stocking estimates as a result of the 1 year project duration. Plausibility of large total volume depends on the number of particpants."
         },
         {
           "type": "Metric",
@@ -1089,12 +1089,12 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Reasonably thorough description of program design. Details on specific projects or methods for project quantification or selection are not yet available."
+          "comment": "Reasonably thorough description of program design. Details on specific projects or methods for project quantification or selection are not available."
         }
       ],
       "geometry": {
@@ -1128,7 +1128,7 @@ module.exports = {
           "units": "",
           "rating": 1.0,
           "notes": "Project integrates tree crops and grazing livestock as silvopasture systems, to sequester carbon in both soil and aboveground biomass.",
-          "comment": "Planting of chestnut trees is clearly specified. Other practices that will be used to enhance soil carbon are unclear.",
+          "comment": "Planting of chestnut trees is clearly specified. Other practices that will be used to enhance soil carbon are are less clear.",
           "removal": 1.0,
           "avoided": 0.0
         },
@@ -1182,7 +1182,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -1262,7 +1262,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Feedstock is agricultural (seed) waste. Further analysis would require understanding competing uses for feedstock."
+          "comment": "Feedstock is agricultural (seed) waste. Further analysis would require knowing competing uses for feedstock."
         },
         {
           "type": "Metric",
@@ -1275,7 +1275,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -1325,7 +1325,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 1.0,
           "notes": "Volume sourced from multiple facilities across Finland to produce laminated lumber from kiln-dried pine and spruce. Claims an annual production capacity of 40000 tCO2. Project is based on the Puro platform.",
-          "comment": "Species and composition of wood and wood products are well characterized. Volume is plausible assuming the given procurement."
+          "comment": "Species and composition of wood and wood products are well characterized. Volume appears plausible assuming the given procurement."
         },
         {
           "type": "Metric",
@@ -1368,7 +1368,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -1418,7 +1418,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 1.0,
           "notes": "Volume sourced from multiple facilities across Finland. Project is based on the Puro platform.",
-          "comment": "Carbon content of insulation products well characterized. Volume is plausible assuming the given procurement."
+          "comment": "Carbon content of insulation products well characterized. Volume appears plausible assuming the given procurement."
         },
         {
           "type": "Metric",
@@ -1448,7 +1448,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Existing industry has been in produciton since the 1980s, so the production of insulation may not be contingent on carbon incentives."
+          "comment": "Existing industry has been in produciton since the 1980s, so the production of insulation does not seem contingent on carbon incentives."
         },
         {
           "type": "Metric",
@@ -1461,7 +1461,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -1541,7 +1541,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Feedstock is residual wood (thinnings). Further analysis would require understanding competing uses for feedstock."
+          "comment": "Feedstock is residual wood (thinnings). Further analysis would require knowing competing uses for feedstock."
         },
         {
           "type": "Metric",
@@ -1554,7 +1554,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 2.0,
           "units": "",
           "rating": "",
@@ -1647,7 +1647,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -1740,7 +1740,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -1820,7 +1820,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "No commercial value to storing wood waste in pits. Further analysis would require understanding alternative feedstock uses such as bioenergy."
+          "comment": "No commercial value to storing wood waste in pits. Further analysis would require knowing competing uses for feedstock."
         },
         {
           "type": "Metric",
@@ -1833,7 +1833,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -1926,7 +1926,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 2.0,
           "units": "",
           "rating": "",
@@ -2010,7 +2010,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counterfactual not specified. Project appears to target degraded land and suggests alternative land uses, such as native forest plantations, might be feasible but would produce lower overall carbon removal services due to bamboo's extremely high annual productivity.",
-          "comment": "Project claims that bamboo building materials have reached parity with conventional wood products. This suggests bamboo planting may not require climate policy incentives. No analysis of competing economics of conventional wood products or alternative land management available."
+          "comment": "Project claims that bamboo building materials have reached parity with conventional wood products. This suggests bamboo planting may not require climate policy incentives. No analysis available of competing economics of conventional wood products or alternative land management."
         },
         {
           "type": "Metric",
@@ -2023,7 +2023,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 1.0,
           "units": "",
           "rating": "",
@@ -2116,7 +2116,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 2.0,
           "units": "",
           "rating": "",
@@ -2196,7 +2196,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Competing uses of bio-oil assumed to be burning for energy. Further analysis would require better understanding these alternative uses. Some possibility that procurement of bio-oil will expand production."
+          "comment": "Competing uses of bio-oil assumed to be burning for energy. Further analysis would require more information on competing uses. Some possibility that procurement of bio-oil will expand production."
         },
         {
           "type": "Metric",
@@ -2209,7 +2209,7 @@ module.exports = {
         },
         {
           "type": "Metric",
-          "name": "transparency",
+          "name": "specificity",
           "value": 2.0,
           "units": "",
           "rating": "",

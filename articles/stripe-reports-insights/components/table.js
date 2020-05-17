@@ -7,7 +7,7 @@ import { Box, Grid, Text, Link } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 
 const Row = ({ children }) => {
-  return <Grid columns={['85px 85px 85px 85px 95px 95px 20px']} sx={{
+  return <Grid columns={['85px 85px 85px 91px 99px 85px 20px']} sx={{
       borderStyle: 'solid',
       borderWidth: '0px',
       borderTopWidth: '1px',
@@ -62,7 +62,7 @@ const Table = () => {
       <Text sx={header}>Negativity</Text>
       <Text sx={header}>Permanence</Text>
       <Text sx={header}>Additionality</Text>
-      <Text sx={header}>Transparency</Text>
+      <Text sx={header}>Specificity</Text>
       <Box></Box>
     </Row>
     {data.projects.sort((a, b) => {
@@ -80,7 +80,7 @@ const Table = () => {
           project.metrics.filter((k) => k.name == 'additionality')[0].value
         }/></Box>
         <Box sx={{ mt: '-3px' }}><Squares color={color} data={
-          project.metrics.filter((k) => k.name == 'transparency')[0].value
+          project.metrics.filter((k) => k.name == 'specificity')[0].value
         }/></Box>
         <Box sx={{ position: 'relative', top: '3px' }}>
           <Link href={url} variant='arrow' sx={{

@@ -13,7 +13,7 @@ export const meta = {
   quotes: [
     {
       position: 1320,
-      text: 'We are making all our analysis, methods, and commentary from our process public'
+      text: 'We are making public all analysis, methods, and commentary from our process'
     },
     {
       position: 5000,
@@ -34,15 +34,15 @@ In March 2020, we partnered with Stripe to perform our first independent analysi
 
 We are grateful to Stripe for encouraging transparency, and to the many organizations and individuals who took the time to prepare these public applications. Making this information available to all offers the broader climate community a chance to grow and improve over time. 
 
-This article summarizes our major takeaways from our analysis. For additional detail, check out our [project reports](https://carbonplan.org/reports) and the [terms of our engagement](#terms-of-engagement) with Stripe. Please note that this is independent work that only represents CarbonPlan’s views, not those of Stripe or any other organizations. 
+This article summarizes our major takeaways from our analysis. For additional detail, check out our [project reports](https://carbonplan.org/reports) and the [terms of our engagement](#terms-of-engagement) with Stripe. Please note that this is independent work that represents only CarbonPlan’s views, not those of Stripe or any other organizations. 
 
 ## What we did
 
 We performed an independent analysis of the 24 project proposals. Faced with a wide range of projects spanning everything from soil carbon management to direct air capture, we took a broad, comparative approach. 
 
-Our goals were to harmonize metrics and concepts across a range of projects; to analyze and validate claims made by projects where possible based on the best available science and data; and to better understand challenges and opportunities facing organizations seeking climate solutions. As a result of our focus on cross-cutting issues, we played a different role than the domain experts who governments and companies typically engage to evaluate project proposals in specific subject-matter areas.
+Our goals were to harmonize metrics and concepts across a range of projects; to analyze and validate claims made by projects where possible, based on the best available science and data; and to better understand challenges and opportunities facing organizations seeking climate solutions. As a result of our focus on cross-cutting issues, we played a different role than the domain experts whom governments and companies typically engage to evaluate project proposals in specific subject-matter areas.
 
-We are making all our analysis, methods, and commentary from our process public because we want our reports to help all interested organizations — researchers, project proponents, sponsor organizations — learn about the field and improve outcomes in future iterations. While we appreciate that confidential analysis is common (and sometimes necessary) in climate programs, it can also reduce transparency and lead to duplicate work. Our work aims to address both challenges, and to that end, we’re committed to growing and improving our public database of project reports over time.
+We are making public all analysis, methods, and commentary from our process because we want our reports to help all interested organizations — researchers, project proponents, sponsor organizations — learn about the field and improve outcomes in future iterations. While we appreciate that confidential analysis is common (and sometimes necessary) in climate programs, it can also reduce transparency and lead to duplicate work. Our work aims to address both challenges, and to that end, we’re committed to growing and improving our public database of project reports over time.
 
 Making our work public is also an opportunity to reflect on what can and cannot be said with confidence in the complex and nascent space of carbon removal. The gaps we’ve identified will help us and others develop open source methods for more detailed analyses of projects and technologies in future programs, and we welcome feedback on our process.
 
@@ -56,9 +56,9 @@ For the first four metrics — mechanism, volume, negativity, and permanence —
 
 An additional key point for the first metric — mechanism — is that some projects do not currently remove carbon dioxide from the atmosphere. Rather, some avoid emissions that would otherwise occur, including by sourcing and transforming existing biogenic or industrial emissions into more stable storage. These projects, however, all could become a component of a carbon removal system. For example, a project could begin sourcing CO2 from direct air capture rather than from an industrial waste stream. We try to clearly point out each of these cases in our reports, and we plan to more thoroughly explain this distinction in a future post.
 
-For the fifth metric, cost, we report what projects offer. We did not attempt to validate this metric because the price at which a project offers its product speaks for itself, at least in terms of total cost. The stated price in terms of $/tCO2, however, depends on several other factors, including the estimate of the volume, so should be interpreted carefully.
+For the fifth metric, cost, we report what projects offer. We did not attempt to validate this metric because the price at which a project offers its product speaks for itself, at least in terms of total cost. The stated price in terms of $/tCO2, however, depends on several other factors, including the estimate of the volume, so should be interpreted with care.
 
-The last two metrics — additionality and specificity — reflect our attempt to qualitatively assess these cross-cutting issues. Specificity reflects the degree to which detailed project information is available in proposals, publications, or other materials. For additionality, as we discuss below, the importance depends on the motivation for funding, and this metric may be low for projects with significant and positive climate benefits.
+The last two metrics — additionality and specificity — reflect our attempt to qualitatively assess these cross-cutting issues. Specificity reflects the degree to which detailed information is available in proposals, publications, or other materials. For additionality, as we discuss below, the importance depends on the motivation for funding, and this metric may be low for projects with significant and positive climate benefits.
 
 Along with summary metrics, the reports include “notes” with detailed information taken directly from project proposals as well as “comments” with our analysis and interpretation. 
 
@@ -70,7 +70,7 @@ There’s a lot of information in our [project reports](https://carbonplan.org/r
 
 ### More questions than answers
 
-Perhaps the most important finding is how often we found ourselves unable to confidently and independently validate project's claims.
+Perhaps the most important finding is how often we found ourselves unable to confidently and independently validate metrics.
 
 We were able to assign a <Check closed={true}/> for many projects on mechanism, for which we generally have existing published literature and data, and in several cases also on permanence. We were less often able to assign a <Check closed={true}/> on volume or negativity, reflecting the additional complexity of these dimensions.
 
@@ -90,7 +90,7 @@ The projects we analyzed clustered into two distinct groups: those with permanen
 
 Whether temporary storage can be made reliable over longer time periods turns on whether permanence risks are physical or socioeconomic. We are optimistic that physical risks can be well characterized by rigorous science. For example, projects storing carbon in forests need to promise that these carbon stocks will remain. Quantitative analysis can help predict the vulnerability of a specific location or species in a changing climate for risk factors like fire, drought, or insect-related tree mortality. 
 
-Socioeconomic risks present a more vexing challenge. Long-term commitments to carbon storage in forests or soils require restricting landowner actions to prevent future changes to timber harvesting regimes or soil management practices. Many projects use long-term contracts — some for as long as 100 years — but over these kinds of timeframes there are significant risks of default or bankruptcy. 
+Socioeconomic risks present a more vexing challenge. Long-term commitments to carbon storage in forests or soils require restricting landowner actions to prevent future changes to timber harvesting regimes or soil management practices. Many projects use long-term contracts — some for as long as 100 years — but over these timeframes there are significant risks of default or bankruptcy. 
 
 Permanent carbon storage in these systems ultimately depends on the political and economic stability of private contracts and government policy regimes operating over long time horizons. Coordinated large-scale programs could potentially meet this ambition if they start by recognizing the challenges faced by past efforts and engaging all relevant stakeholders.
 
@@ -100,7 +100,7 @@ Our third and final insight concerns the motivation behind carbon removal. Is th
 
 Carbon offsetting focuses on the climate credit to be gained from an investment in a specific project. Climate benefits, in turn, are claimed relative to a counterfactual scenario — that is, what would happen without the investment. Without a clear demonstration of a causal link between a prospective investment and a change in behavior, an offset might not produce real climate benefits and a buyer looking to assert a claim of carbon neutrality won’t get what she paid for. 
 
-Evaluating additionality is difficult because the counterfactual scenario against which climate benefits are calculated can only be estimated, never observed. To facilitate evaluation, analysis needs to focus on specific claims about projects’ counterfactual scenarios, competing alternatives, and the detailed economics of projects’ technologies, associated commodity markets, and main competitors. 
+Evaluating additionality is difficult because the counterfactual scenario against which climate benefits are calculated can only be estimated, never observed. To facilitate evaluation, analysis needs to focus on specific claims about a project's counterfactual scenarios, competing alternatives, and the detailed economics of its technologies, associated commodity markets, and main competitors. 
 
 If this sounds like a lot, it is! Unfortunately, the history of project-level additionality claims is not a positive story. Project proponents know the most about their own activities, including how feasible their work might be without outside investment — an information asymmetry that can reduce transparency. We analyzed several cases where additionality appears to be a significant concern and provide commentary to describe the issues we encountered. In general, given its complexity, rigorous assessment of additionality will require more research and transparency, not proprietary methods, as some have proposed.
 
@@ -118,13 +118,13 @@ We end with two brief thoughts about what comes next.
 
 The blessing and the curse of carbon removal is that no one strategy is like another. The wide range of technologies and approaches presents challenges for analysis and evaluation. 
 
-We recommend that, where possible, procurement programs should focus on specific technologies or sectors of carbon removal. While some data can be collected from all kinds of projects, the most important issues depend on specific technology performance characteristics or socioeconomic contexts, and some comparisons may only be possible within a category. 
+We recommend that, where possible, procurement programs should focus on specific technologies or sectors of carbon removal. While some data can be collected from all projects, the most important issues depend on specific technology performance characteristics or socioeconomic contexts, and some comparisons may only be possible within a category. 
 
 If an organization wants to look broadly across multiple sectors, parallel tracks with distinct proposal requirements might be preferable. A focus on land management projects, for example, would need a targeted solicitation designed with input from land owners, project developers, and experimental scientists carefully characterizing both benefits and risks. Such a program would look different not only because project evaluation would require different information, but also because applicants would have distinct backgrounds, expertise, and capacity. In general, a more focused process will elicit better data and enable richer analysis.
 
 ### CarbonPlan: Develop new methods for project areas 
 
-To improve our own analysis capabilities, we are developing open source methods for evaluating projects on a technology-by-technology basis in close collaboration with the academic community. Examples include models of direct air capture project cost and scale (with Jennifer Wilcox) and models for evaluating forest carbon removal potential and physical reversal risks (with Bill Anderegg). These kinds of detailed models will enable more systematic analysis and comparison within and across project categories, as well as identify information sponsors could collect from proposals to facilitate comparison and evaluation. 
+To improve our own analysis capabilities, we are developing open source methods for evaluating projects on a technology-by-technology basis in close collaboration with the academic community. Examples include models of direct air capture project cost and scale (with Jennifer Wilcox) and models for evaluating forest carbon removal potential and physical reversal risks (with Bill Anderegg). These kinds of models will enable more systematic analysis and comparison within and across project categories, as well as identify information that sponsors could collect from proposals to facilitate comparison and evaluation. 
 
 ## Terms of engagement
 
