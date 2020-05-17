@@ -1,4 +1,3 @@
-import Question from './icons/question'
 import Check from './icons/check'
 import Ex from './icons/ex'
 import Squares from './graphics/squares'

@@ -32,7 +32,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Claims total emissions are 0.1 tCO2 for every 1 tCO2 removed.",
-          "comment": "Minimal justification provided, and detailed assessment in collaboration with research group is pending publication. Low ratio likely depends on availability of low-carbon energy in Iceland.",
+          "comment": "Detailed assessment in collaboration with research group is pending publication. Low ratio likely depends on availability of low-carbon energy in Iceland.",
           "removal": 1.0,
           "emissions": 0.1,
           "kind": "ratio"
@@ -53,7 +53,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Counterfactual not applicable. Project is already fully subscribed, so any new investments are better construed as investments in future projects rather than fully additional procurements."
+          "comment": "Counterfactual not applicable. New investments may relate to future deployments rather than current procurements."
         },
         {
           "type": "Metric",
@@ -62,7 +62,7 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Commensurate with other early stage DAC costs on a $/tCO2 basis. Could be independently verified as a function of technology parameters and energy sources."
+          "comment": "Reported value is the average of a range ($735-800)."
         },
         {
           "type": "Metric",
@@ -71,7 +71,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Basic technology is well understood through both demonstrations and published litearture. Publications on LCA are pending. No publications or public datasets on specific approaches are available."
+          "comment": "Basic technology is well understood through both demonstrations and published litearture. Publications on LCA are pending. Publications or public datasets on specific approaches are not yet available."
         }
       ],
       "geometry": {
@@ -145,7 +145,7 @@ module.exports = {
           "value": 1.0,
           "units": "",
           "rating": "",
-          "notes": "Counterfactual not specified.",
+          "notes": "",
           "comment": "Cement will already be purchased and used separate from its carbon removal benefits. The carbon removal benefits are being offered separately, albeit for the first time for this company."
         },
         {
@@ -154,8 +154,8 @@ module.exports = {
           "value": 100.0,
           "units": "$/tCO2",
           "rating": "",
-          "notes": "",
-          "comment": "Amount charged specifically for carbon removal is arbitrarily set to incentize utilization of the product, which is already economically favorable."
+          "notes": "Amount charged specifically for carbon removal is arbitrarily set to incentize utilization of the product, which is already economically favorable.",
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -164,7 +164,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "No publications on primary techology available, but references to several third-party LCAs are provided and available upon request."
+          "comment": "Publications on specific techology not yet available, but references to several third-party LCAs are provided and may be available upon request."
         }
       ],
       "geometry": {
@@ -198,7 +198,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Broker that facilitates removal of carbon from the atmosphere by incentivizing changes in agricultural practices that increase sequestration in soils.",
-          "comment": "Nori is looking only at established soil carbon removal pathways, but has not specified which ones are used in this project. Nori only identifies that the project uses its Nori Croplands methodlogy, and Section 2.3 of Version 1.1 specifies five potential categories of cropland-related soil carbon management.",
+          "comment": "Nori is looking at established soil carbon removal pathways, but has not specified which ones are used in this project. Nori identifies that the project uses its Nori Croplands methodlogy, and Section 2.3 of Version 1.1 specifies five potential categories of cropland-related soil carbon management.",
           "removal": 1.0,
           "avoided": 0.0
         },
@@ -209,7 +209,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume based on a single supplier, Harborview Farms, which includes 27 plots totaling 14011 tCO2. Volumes calculated using USDA COMET-Farm model, using project-level data collected by Nori. The Nori platform offers a larger portfolio of projects, but they are not considered here.",
-          "comment": "Project locations are specified and COMET-Farm is a publicly available tool, but volumes are difficult to independently validate without more transparency around practices applied at project sites, model parameters used, or complete plot details."
+          "comment": "Project locations are specified and COMET-Farm is a publicly available tool. Volumes are difficult to independently validate without knowing which practices will be applied at project sites, model parameters used, or complete plot details."
         },
         {
           "type": "Metric",
@@ -218,7 +218,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "No data provided, but high likelihood it will vary across projects. Claimed guarantee that negativity will be greater than 0.",
-          "comment": "Emissions information ought to be available in the COMET-Farm model outputs, but cannot be reproduced as model parameters are not publicly available.",
+          "comment": "Emissions information ought to be available in the COMET-Farm model outputs, but cannot be reproduced as model parameters are not yet publicly available.",
           "removal": "N/A",
           "emissions": "N/A",
           "kind": "N/A"
@@ -235,10 +235,10 @@ module.exports = {
         {
           "type": "Metric",
           "name": "additionality",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
-          "notes": "Counterfactual not specified.",
+          "notes": "",
           "comment": "Changes to land management practices not specified. Significant co-benefits to land managers claimed alongside climate benefits offered for sale. The Nori Croplands methodology requires additionality, but does not specify how it is determined how to independently identify or validate additionality claims."
         },
         {
@@ -247,8 +247,8 @@ module.exports = {
           "value": 16.5,
           "units": "$/tCO2",
           "rating": "",
-          "notes": "",
-          "comment": "Set by the supplier and includes a 10% fee to Nori as broker. Commensurate with (or lower than) existing soil carbon project cost estimates."
+          "notes": "Set by the supplier and includes a 10% fee to Nori as broker.",
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -257,7 +257,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Volume and LCA methods based on the public and published COMET-Farm model, but specific project parameters are not made public so analysis and quantification cannot be reproduced."
+          "comment": "Several project details (e.g. plot locations) available. Volume and LCA methods based on the public and published COMET-Farm model. Specific parameters used for model not public, limiting ability for independent analysis and quantification."
         }
       ],
       "geometry": {
@@ -331,7 +331,7 @@ module.exports = {
           "value": 0.0,
           "units": "",
           "rating": "",
-          "notes": "Counterfactual not specified.",
+          "notes": "",
           "comment": "Changes to land management practices not specified. Significant co-benefits to land managers claimed alongside climate benefits offered for sale."
         },
         {
@@ -340,8 +340,8 @@ module.exports = {
           "value": 20.0,
           "units": "$/tCO2",
           "rating": "",
-          "notes": "",
-          "comment": "Includes 75% for farmers and 25% for monitoring, reporting, and verification work. Cost to farmers is commensurate with (or lower than) existing soil carbon project cost estimates, but justification of monitoring costs are not provided."
+          "notes": "Includes 75% for farmers and 25% for monitoring, reporting, and verification work.",
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -384,7 +384,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Facilitates late-stage BECCS projects, which avoid emissions from biogenic carbon sources and instead capture it for geologic sequestration in rocks' pore space.",
-          "comment": "BECCS is a well established technology but project does not provide any specifics on biomass, capture, or sequestration implementation.",
+          "comment": "BECCS is a well established technology. Project provides few specifics on biomass, capture, or sequestration implementation.",
           "removal": 1.0,
           "avoided": 1.0
         },
@@ -395,7 +395,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume appears to be sourced from multiple BECCS projects.",
-          "comment": "No public details available on any specific projects, but overall volume reasonable given technology. No specifics available to distinguish relative amounts of removal vs avoided emissions."
+          "comment": "Overall volume reasonable given technology. No specifics on individual projects in portfolio are available to validate volume, or to distinguish relative amounts of removal vs avoided emissions."
         },
         {
           "type": "Metric",
@@ -404,7 +404,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Range expected to vary across sites from 0.9 to 0.995.",
-          "comment": "No information provided on specific projects. Based on available data, lifecycle emisisons do not include injection, and appear to exclude biogenic CO2 emissions not captured from production process. Possible uses for enhanced oil recovery would affect overall lifecycle emissions. Lacking more details, we report the lowest, most conservative ratio.",
+          "comment": "Based on available project information, lifecycle emisisons do not include injection, and appear to exclude biogenic CO2 emissions not captured from production process. Possible uses for enhanced oil recovery would affect overall lifecycle emissions. Lacking more details, we report the lowest, most conservative ratio.",
           "removal": "N/A",
           "emissions": "N/A",
           "kind": "N/A"
@@ -424,7 +424,7 @@ module.exports = {
           "value": 1.0,
           "units": "",
           "rating": "",
-          "notes": "Counterfactual not specified.",
+          "notes": "",
           "comment": "No detail provided. BECCS projects are likely additioinal, but additionality depends on the economics of any applicable tax credits or policy incentives."
         },
         {
@@ -434,7 +434,7 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Cost commensurate with existing estimates for BECCS."
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -443,7 +443,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "No data on specific projects. Basic technology well understood, but no data or publications on specific approaches, and no references or third-party analyses for LCA."
+          "comment": "Few data on specific projects available in proposal or on project website. Basic technology well understood, but no data or publications on specific approaches, and no references or third-party analyses for LCA."
         }
       ],
       "geometry": {
@@ -488,7 +488,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Demonstration project in California's central valley, converting walnut shell waste into biochar.",
-          "comment": "Volume is based on producing 16.89 tC of biochar with fraction C of at least 85%. For consistency with other biochar projects, volume is reduced to 90% because permanence assumes the duration over which at least 90% of volume will remain. Further validation of volume would require knowing the decay rates of the feedstock."
+          "comment": "Volume is based on producing 16.89 tC of biochar with fraction C of at least 85%. For consistency with other biochar projects, volume is decreased by 10% because permanence assumes the duration over which 90% of volume will remain. Further validation of volume would require knowing the decay rates of the feedstock."
         },
         {
           "type": "Metric",
@@ -497,7 +497,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Biogenic CO2 emissions are excluded from ratio.",
-          "comment": "Few details provided on LCA.",
+          "comment": "Boundary conditions are well specified and process described. Full LCA is pending several additional details.",
           "removal": "N/A",
           "emissions": "N/A",
           "kind": "N/A"
@@ -527,16 +527,16 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Notably higher than other biochar projects without clear justification."
+          "comment": ""
         },
         {
           "type": "Metric",
           "name": "transparency",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Minimal public data on project specifics and no publications or public data on underlying process."
+          "comment": "Reasonable details provided on project specifics. Additional documentaiton on LCA and other certification may be available upon request."
         }
       ],
       "geometry": {
@@ -581,7 +581,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 1.0,
           "notes": "Volume based on a pilot project in the Pacific Northwest, East. Volume stated as computed using Climate Action Reserve's Climate Forward Reforestation Forecast Methodology Version 1.0, which appears in this case to use direct projections based on USFS yield tables for Ponderosa Pine. Claim is 510 tCO2 in the first year (2020), 31026 tCO2 in 51 years (the project lifetime), and 64031 tCO2 over 100 years.",
-          "comment": "We independently validated for consistency with U.S. Forest Service yield tables, assuming Ponderosa Pine in Pacific Northwest, East and project size of 211 ha. Assumes reforestation approach works as effectively as assumed, for which there is not yet published data."
+          "comment": "We independently validated against U.S. Forest Service yield tables, assuming Ponderosa Pine in Pacific Northwest, East and project size of 211 ha. Assumes reforestation approach works as effectively as assumed, for which public data or publications are not yet available."
         },
         {
           "type": "Metric",
@@ -609,7 +609,7 @@ module.exports = {
           "name": "additionality",
           "value": 0.0,
           "units": "",
-          "rating": -2.0,
+          "rating": "",
           "notes": "Counterfactual is reforesting manually or not at all.",
           "comment": "This project can reasonably be considered an investment in a new technology to lower the cost of reforestation and aforestation. As an investment in a specific quantity of carbon removal, however, it raises important concerns. Although we were able to validate the expected volume for this project, we identified a significant risk of double-counting. The project explicitly disclaims that it is not offering the tons associated with the described project, which Droneseed suggests the landowner may attempt to separately monetize using a carbon offset protocol. Instead, Droneseed specifically notes that any funds raised would go toward the development of future afforestation projects. Any future projects would also be subject to double-counting risks, as the pattern is capable of being repeated without additional clarification."
         },
@@ -674,7 +674,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume is the total of two exemplar projects, Rip's Redwoods and Guanare. The Pachama platform offers a larger portfolio of projects, but they are not considered here.",
-          "comment": "Claimed sequestration rates of 16 and 26 tCO2 / ha / yr for Rip's Redwoods and Guanare, respectively, are broadly commensurate with published literature. Some additional details (e.g. stand age) would be required for a more precise comparison. No evidence provided for specific utility of advanced monitoring methods for improving volume estimates."
+          "comment": "Claimed sequestration rates of 16 and 26 tCO2 / ha / yr for Rip's Redwoods and Guanare, respectively, are high but broadly commensurate with published literature. Additional details (e.g. stand age) would be required for a more precise comparison. No evidence provided for specific utility of advanced monitoring methods for improving volume estimates."
         },
         {
           "type": "Metric",
@@ -683,7 +683,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Claims a range of 0.19 to 0.59 across exemplar projects.",
-          "comment": "Self-reported value appears unreasonably low, but not enough data is provided for validation. We report the lowest, most conservative ratio; based on project type, however, we would expect a much higher ratio.",
+          "comment": "Self-reported value appears unreasonably low, but not enough data is provided for validation. We report the lowest, most conservative ratio. Based on project type, however, we would expect a much higher ratio.",
           "removal": "N/A",
           "emissions": "N/A",
           "kind": "N/A"
@@ -702,7 +702,7 @@ module.exports = {
           "name": "additionality",
           "value": 0.0,
           "units": "",
-          "rating": -2.0,
+          "rating": "",
           "notes": "Counterfactual scenarios specified for both projects.",
           "comment": "Guanare afforestation project began in 2006, and thus future carbon removals are already assured under these historical land management practices. Rip's Redwood project already credited for standing carbon stock above regional baseline, which indicates a promise not to harvest normally and therefore raises questions about the additionality of ongoing carbon removal credits."
         },
@@ -713,16 +713,16 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Cost commensurate with similar forest projects."
+          "comment": ""
         },
         {
           "type": "Metric",
           "name": "transparency",
-          "value": 2.0,
+          "value": 1.0,
           "units": "",
-          "rating": -2.0,
+          "rating": "",
           "notes": "",
-          "comment": "Basic project characteristics described in detail. No public or published materials on proprietary quantification methods are available, but these methods also do not appear relavant to the stated project carbon removal claims."
+          "comment": "Basic project characteristics described in detail. Proprietary quantification methods are not yet published or publicly available, but these methods also do not appear relavant to the stated project carbon removal claims."
         }
       ],
       "geometry": {
@@ -756,7 +756,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Removes carbon from atmosphere via sequestration in phytoplankton and transport of phytoplankton biomass to deep ocean.",
-          "comment": "Novel early-stage technology with pilot demonstrations still in progress. Dissolved carbon storage in deep oceans raises potential long-term carbon cycle and ocean acidification questions.",
+          "comment": "Novel early-stage technology with pilot demonstrations in progress. Dissolved carbon storage in deep oceans raises potential long-term carbon cycle and ocean acidification questions.",
           "removal": 1.0,
           "avoided": 0.0
         },
@@ -806,7 +806,7 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "No cost comparisons available due to uniqueness of technology."
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -815,7 +815,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Reasonably thorough description of technology with references, but no publications or public data on demonstration projects."
+          "comment": "Reasonably thorough description of technology with references. Specific publications or public data on demonstration projects not yet available."
         }
       ],
       "geometry": {
@@ -849,7 +849,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Broker that facilitates removal of carbon from the atmosphere by incentivizing changes in agricultural practices that increase sequestration in soils.",
-          "comment": "Multiple established soil carbon removal pathways exist, but specific mechnaisms for individual projects are not detailed in public proposal.",
+          "comment": "Multiple established soil carbon removal pathways exist. Specific mechnaisms for individual projects are not detailed in public proposal.",
           "removal": 1.0,
           "avoided": 0.0
         },
@@ -860,7 +860,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Specific projects not identified. Claimed volume reflects 10-30 plots totaling 13355 ha with an average of 2.5 tCO2 / ha / year.",
-          "comment": "Lack of detail on projects raises questions about overall volume, but claimed rate of 2.5 tCO2 / ha / yr is commensurate with existing literature and models."
+          "comment": "Claimed rate of 2.5 tCO2 / ha / yr is commensurate with existing literature and models. Few project specific details are available to validate volume further."
         },
         {
           "type": "Metric",
@@ -868,8 +868,8 @@ module.exports = {
           "value": 0.5,
           "units": "",
           "rating": 0.0,
-          "notes": "Reported ratio only provisional, with amended results to be determined in a future study.",
-          "comment": "No clear connection expressed between detailed, project-level expectations and promised future study. Net LCA impacts depend crucially on methane emissions from livestock and no GWP conversion information reported.",
+          "notes": "Reported ratio provisional based on several referenced publications, with amended results to be determined in a future study.",
+          "comment": "Connection between existing references, project plans, and future study not entirely clear. Net LCA impacts depend on methane emissions from livestock and no GWP conversion information reported.",
           "removal": "N/A",
           "emissions": "N/A",
           "kind": "N/A"
@@ -886,7 +886,7 @@ module.exports = {
         {
           "type": "Metric",
           "name": "additionality",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "Counterfactual could include conventional grazing and intensive feedlot grazing, but no projects identified and no historical practices identified at specific project sites.",
@@ -898,8 +898,8 @@ module.exports = {
           "value": 30.0,
           "units": "$/tCO2",
           "rating": "",
-          "notes": "",
-          "comment": "Cost appears to include payments to farmers and monitoring, veritification, and reporting, but no breakdown is specified."
+          "notes": "Cost appears to include payments to farmers and monitoring, veritification, and reporting, but no breakdown is specified.",
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -908,7 +908,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "No public details on projects, no public or published details on planned quantification methods."
+          "comment": "Few details available on specific projects. Protocol is under development but not yet publicly available."
         }
       ],
       "geometry": {
@@ -962,7 +962,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Reported ratio for exemplar project based on 2,880 tCO2 removed, 750 tCO2 emitted. LCA also references 509 tCO2 avoided, but avoided emissions are otherwise not considered as part of the project description.",
-          "comment": "For consistency, we recompute negativity only for the carbon removal component, yielding a lower number. Detailed analysis only available for one exemplar project, so uncertainty remains for full project portfolio and for the specific proposal we analyzed.",
+          "comment": "For consistency, we recompute negativity only for the carbon removal component, yielding a lower number. Detailed analysis only available for one exemplar project, so we are uncertain about the full project portfolio and the specific proposal we analyzed.",
           "removal": 2880.0,
           "emissions": 750.0,
           "kind": "project"
@@ -979,11 +979,11 @@ module.exports = {
         {
           "type": "Metric",
           "name": "additionality",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
-          "notes": "Counterfactual is using alternative rocks without carbon removal benefits.",
-          "comment": "Olivine sand will already be purchased and used separate from its carbon removal benefits. The carbon removal benefits are offered separately via certificates."
+          "notes": "Counterfactual is using alternative rocks without carbon removal benefits, at least when olivine is purchased for its use in gravel.",
+          "comment": "Olivine can be purchased and used separate from its carbon removal benefits, but can also be purchased separately only for carbon removal."
         },
         {
           "type": "Metric",
@@ -992,7 +992,7 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Cost at the lower end relative to existing approaches. Appears to mainly reflect mining activity and logistics."
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -1001,7 +1001,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Several project details (including locations and durations) are publicly available."
+          "comment": "Basic technology reasonably well described in published litearture. Several project details (including locations and durations) are publicly available."
         }
       ],
       "geometry": {
@@ -1046,7 +1046,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume extrapolated from a pilot implementation in 6 counties in Pennsylvania. Projects in 2020 will be sourced from 11 southern US states. Supply will be allocated via an auction.",
-          "comment": "Volume estimates will be relatively straightforward to confirm via stocking estimates as a result of the 1 year project duration. However, the plausibility of total volume depends on the number of particpants."
+          "comment": "Volume estimates will be relatively straightforward to confirm via stocking estimates as a result of the 1 year project duration. The plausibility of the large total volume depends on the number of particpants."
         },
         {
           "type": "Metric",
@@ -1094,7 +1094,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Reasonably thorough description of program design, but no public details on specific projects or methods for project quantification or selection are currently available."
+          "comment": "Reasonably thorough description of program design. Details on specific projects or methods for project quantification or selection are not yet available."
         }
       ],
       "geometry": {
@@ -1128,7 +1128,7 @@ module.exports = {
           "units": "",
           "rating": 1.0,
           "notes": "Project integrates tree crops and grazing livestock as silvopasture systems, to sequester carbon in both soil and aboveground biomass.",
-          "comment": "Planting of chestnut trees is clearly specified, but other aspects of practices to enhance soil carbon remain vague.",
+          "comment": "Planting of chestnut trees is clearly specified. Other practices that will be used to enhance soil carbon are unclear.",
           "removal": 1.0,
           "avoided": 0.0
         },
@@ -1139,7 +1139,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume estimated from calculations using USDA COMET-Planner model (56 tCO2). A higher volume was also provided in parallel using Eric Toensmeier's The Carbon Farming Solution (140 tCO2). Project has 3.2 current ha and intends to add 4.9 ha.",
-          "comment": "We report the lower value offered because it is based on a method that includes a broader range of lifecycle emissions and because the project used the lower volume number to calculate project costs. While COMET-Farm is a publicly available tool, volumes are difficult to independently validate without model parameters used. Overall rate of 11.4 tCO2 / ha / yr is high if only including above ground biomass, but may be plausible given broader considerations."
+          "comment": "We report the lower value offered because it is based on a method that includes a broader range of lifecycle emissions and because the project used the lower volume number to calculate project costs. While COMET-Farm is a publicly available tool, validating volume would require knowing model parameters used. Overall rate of 11.4 tCO2 / ha / yr is high if only including above ground biomass, but may be plausible given broader considerations."
         },
         {
           "type": "Metric",
@@ -1148,7 +1148,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Reported ratio based on emissions from on-site tractor use and employee transportation, totaling 1.04 tCO2 for 56 tCO2 removed.",
-          "comment": "Calculation of tractor and transportation emissions are reasonable. Project ratio is consistent with other reforestation projects, but lifecycle boundaries are not explicit. Specifically, no detail provided on methane emissions from livestock expansion and/or any soil carbon benefits.",
+          "comment": "Calculation of tractor and transportation emissions appear reasonable. Project ratio is consistent with other reforestation projects, but lifecycle boundaries are not explicit. Specifically, no detail provided on methane emissions from livestock expansion and/or any soil carbon benefits.",
           "removal": 56.0,
           "emissions": 1.0,
           "kind": "project"
@@ -1165,10 +1165,10 @@ module.exports = {
         {
           "type": "Metric",
           "name": "additionality",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
-          "notes": "Counterfactual not specified.",
+          "notes": "",
           "comment": "No analysis available in public materials."
         },
         {
@@ -1187,7 +1187,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Methods publicly described and shapefiles for locations provided, but COMET-Planner model parameters and life cycle boundaries are not available."
+          "comment": "Methods publicly described and shapefiles for locations provided. Model parameters for COMET-Planner and life cycle boundaries are not yet available."
         }
       ],
       "geometry": {
@@ -1232,7 +1232,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Biochar produced from established production facility.",
-          "comment": "Volume is based on producing 1746.66 tC of biochar with fraction C of 78%. For consistency with other biochar projects, volume is reduced to 90% because permanence assumes the duration over which at least 90% of volume will remain. Further validation of volume would require knowing the decay rates of the feedstock."
+          "comment": "Volume is based on producing 1746.66 tC of biochar with fraction C of 78%. For consistency with other biochar projects, volume is decreased by 10% because permanence assumes the duration over which 90% of volume will remain. Further validation of volume would require knowing the decay rates of the feedstock."
         },
         {
           "type": "Metric",
@@ -1261,7 +1261,7 @@ module.exports = {
           "value": 1.0,
           "units": "",
           "rating": "",
-          "notes": "Counterfactual not specified.",
+          "notes": "",
           "comment": "Feedstock is agricultural (seed) waste. No analysis provided of competing uses for feedstock."
         },
         {
@@ -1271,7 +1271,7 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Cost is commensurate with other biochar projects."
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -1280,7 +1280,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Reasonable details provided on project specifics, uses public analysis as required by Puro for LCA, but no Puro third-party analysis statement available."
+          "comment": "Reasonable details provided on project specifics, uses public analysis as required by Puro for LCA, but Puro third-party analysis statement not yet available."
         }
       ],
       "geometry": {
@@ -1351,7 +1351,7 @@ module.exports = {
         {
           "type": "Metric",
           "name": "additionality",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "Counterfactual is either decomposing biomass resources or using to generate heat or electrical energy.",
@@ -1364,7 +1364,7 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Difficult to assess cost without more information on building material market, but comparable with similar projects."
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -1406,7 +1406,7 @@ module.exports = {
           "value": "",
           "units": "",
           "rating": 1.0,
-          "notes": "Avoids emissions from decomposing biomass and sequesters carbon in wood-based blown fiber used for insulation.",
+          "notes": "Avoids emissions from decomposing biomass and sequesters carbon in wood and paper-based blown fiber used for insulation.",
           "comment": "From a narrow lifecycle perspective, project only avoids biogenic CO2 emissions. From a broad perspective, the same mechanism forms a carbon removal pathway when coupled to biomass production.",
           "removal": 0.0,
           "avoided": 1.0
@@ -1418,7 +1418,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 1.0,
           "notes": "Volume sourced from multiple facilities across Finland. Project is based on the Puro platform.",
-          "comment": "Carbon content of wood products well characterized. Volume is plausible assuming the given procurement."
+          "comment": "Carbon content of insulation products well characterized. Volume is plausible assuming the given procurement."
         },
         {
           "type": "Metric",
@@ -1427,7 +1427,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Reported ratio based on 0.087 tCO2 emissions for 1.34 tCO2 stored. Includes raw materials through production stage. Excludes transport of finished materials and construction-related emissions.",
-          "comment": "Analysis performed by third-party with public details, as required by Puro. Boundary conditions genreally well specified and LCA components detailed and referenced. Paper products form a key component of the feedstock material, so it would be useful to characterize any emissions associated with their production. Given this unknown, we remain uncertain about the total value.",
+          "comment": "Analysis performed by third-party with public details, as required by Puro. Boundary conditions genreally well specified and LCA components detailed and referenced. Paper products form a key component of the feedstock material, so it would be useful to characterize any emissions associated with their production.",
           "removal": 1.34,
           "emissions": 0.087,
           "kind": "ratio"
@@ -1444,11 +1444,11 @@ module.exports = {
         {
           "type": "Metric",
           "name": "additionality",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
-          "notes": "Counterfactual not specified.",
-          "comment": "Existing industry has been in produciton since the 1980s, so the production of insulation doesn't seem contingent on carbon incentives."
+          "notes": "",
+          "comment": "Existing industry has been in produciton since the 1980s, so the production of insulation may not be contingent on carbon incentives."
         },
         {
           "type": "Metric",
@@ -1457,7 +1457,7 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Difficult to assess cost without more information on building material market, but comparable with similar projects."
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -1511,7 +1511,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume sourced from a biochar facility in Finland. Project is based on the Puro platform.",
-          "comment": "Volume is based on producing 681.20 tC of biochar with fraction C of 92%. For consistency with other biochar projects, volume is reduced to 90% because permanence assumes the duration over which at least 90% of volume will remain. Further validation of volume would require knowing the decay rates of the feedstock. Also, note that the referenced Puro verification reports a rate of 3.1 tCO2 stored for 1 t of biochar rather than 3.4 tCO2, which would imply a C fraction of 85% rather than 92%."
+          "comment": "Volume is based on producing 681.20 tC of biochar with fraction C of 92%. For consistency with other biochar projects, volume is decreased by 10% because permanence assumes the duration over which 90% of volume will remain. Further validation of volume would require knowing the decay rates of the feedstock. Also, note that the referenced Puro verification reports a rate of 3.1 tCO2 stored for 1 t of biochar rather than 3.4 tCO2, which would imply a C fraction of 85% rather than 92%."
         },
         {
           "type": "Metric",
@@ -1540,7 +1540,7 @@ module.exports = {
           "value": 1.0,
           "units": "",
           "rating": "",
-          "notes": "Counterfactual not specified.",
+          "notes": "",
           "comment": "Feedstock is residual wood (thinnings). No analysis provided of competing uses for feedstock."
         },
         {
@@ -1550,7 +1550,7 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Cost is commensurate with other biochar projects."
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -1604,7 +1604,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume based on initial production of 100 t of underlying product. Project is based on the Puro platform.",
-          "comment": "Early stage of technology makes it difficult to independently evaluate."
+          "comment": "Early stage of technology makes it difficult to independently evaluate volume."
         },
         {
           "type": "Metric",
@@ -1633,8 +1633,8 @@ module.exports = {
           "value": 2.0,
           "units": "",
           "rating": "",
-          "notes": "Counterfactual not specified.",
-          "comment": "Project involves initial production from carbon sequestering building materials using relatively expensive CO2 inputs (\u20ac75/tCO2)."
+          "notes": "",
+          "comment": "No specific analysis available, but project involves initial production from carbon sequestering building materials using relatively expensive CO2 inputs (\u20ac75/tCO2)."
         },
         {
           "type": "Metric",
@@ -1643,16 +1643,16 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Difficult to assess cost without more information on market."
+          "comment": ""
         },
         {
           "type": "Metric",
           "name": "transparency",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Few project details are provided and most appear to be pending future third-party analysis as required by Puro."
+          "comment": "Several third-party analyses as required by Puro are still pending and not yet available."
         }
       ],
       "geometry": {
@@ -1706,7 +1706,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Emission calculations based on one-time planting and fencing emissions amortized over 60 years. Various ongoing operations including raising pigs and transporation.",
-          "comment": "Boundary conditions and emission sources well specified, and consistent with similar projects. However, claimed carbon removal benefits are on the high end of published estimates, so may inflate the values reported here.",
+          "comment": "Boundary conditions and emission sources well specified, and consistent with similar projects. Claimed carbon removal benefits are on the high end of published estimates, so may be inflating the value reported here.",
           "removal": 6380.0,
           "emissions": 29.72,
           "kind": "project"
@@ -1723,7 +1723,7 @@ module.exports = {
         {
           "type": "Metric",
           "name": "additionality",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "Counterfactual not specified, but appears to involve \"degraded\" land remaining degraded.",
@@ -1736,7 +1736,7 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Costs driven by land price, tree costs, and labour. Commensurate with similar projects."
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -1745,7 +1745,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Reasonably thorough description of project and site, but additional public materials would be useful (e.g. shapefiles, species composition)."
+          "comment": "Reasonably thorough description of project and site, but additional public materials would be useful for analysis (e.g. shapefiles, species composition)."
         }
       ],
       "geometry": {
@@ -1790,7 +1790,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume based on loblolly pine waste (slash) to be stored in partially above-ground sealed pits. Total claimed volume reflects pit capacity of 71019 tCO2.",
-          "comment": "Could be plausible if sufficient slash volume can be obtained. Additionally depends on validation of pit design."
+          "comment": "Total volume could be plausible if sufficient slash volume can be obtained. Additionally depends on validation of pit design."
         },
         {
           "type": "Metric",
@@ -1799,7 +1799,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Reported ratio based on both transporation and operations, totaling 6,804 tCO2 emitted for 71,019 tCO2 stored.",
-          "comment": "Relatively few details provided and no serious analysis of the potential for emissions to leak from pit.",
+          "comment": "Relatively few details provided. Serious analysis required around the potential for emissions to leak from pit.",
           "removal": 71019.0,
           "emissions": 6804.0,
           "kind": "project"
@@ -1810,7 +1810,7 @@ module.exports = {
           "value": 100.0,
           "units": "years",
           "rating": -1.0,
-          "notes": "Claims 99% of carbon is permanent at 100 years and 88% is permanent at 100 years.",
+          "notes": "Claims a range of 88% carbon permanent at 100 years to 99% permanent at 100 years.",
           "comment": "Pits are partially above-ground. Risks of emission leakage or anaerobic decomposition not addressed comprehensively."
         },
         {
@@ -1819,7 +1819,7 @@ module.exports = {
           "value": 1.0,
           "units": "",
           "rating": "",
-          "notes": "Counterfactual not specified.",
+          "notes": "",
           "comment": "No commercial value to storing wood waste in pits. However, no analysis provided of alternative feedstock uses such as bioenergy."
         },
         {
@@ -1828,8 +1828,8 @@ module.exports = {
           "value": 42.5,
           "units": "$/tCO2",
           "rating": "",
-          "notes": "",
-          "comment": "Costs based on purchase of slash ($5), transportation ($5), chipping ($10), pit construction ($10.50), and verification ($12.00)."
+          "notes": "Costs based on purchase of slash ($5), transportation ($5), chipping ($10), pit construction ($10.50), and verification ($12.00).",
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -1911,7 +1911,7 @@ module.exports = {
           "name": "additionality",
           "value": 0.0,
           "units": "",
-          "rating": -2.0,
+          "rating": "",
           "notes": "Counterfactual is harvest of most forest carbon over the period 2018-2021.",
           "comment": "By the end of 2020, 56% of total project climate benefits will have been earned via avoided harvest. Thus, the project has already committed to avoid harvest and therefore the expected carbon removal in later years is already assured. As a result, the entire project appears to be offering climate benefits that have already been promised to other buyers. Land is owned by a state-charted entity that is statutorily obligated to protect the land for multiple uses, of which timber is only one."
         },
@@ -1922,7 +1922,7 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Costs commensurate with similar projects."
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -1931,7 +1931,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Significant project information available from multiple public sources (Stripe Climate 2020 proposal and American Carbon Registry). Shapefiles could not be found."
+          "comment": "Significant project information available from multiple public sources (Stripe Climate 2020 proposal and American Carbon Registry), although digital shapefiles could not be found."
         }
       ],
       "geometry": {
@@ -1989,7 +1989,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Minimal information reported.",
-          "comment": "Difficult to evaluate without more specific information. Lack of detail on the manufacturing process raises questions about the high ratio. Frequent harvests may affect emissions due to harvesting.",
+          "comment": "Difficult to evaluate without more information. Lack of detail on the manufacturing process raises questions about the high ratio. Frequent harvests may affect emissions due to harvesting.",
           "removal": "N/A",
           "emissions": "N/A",
           "kind": "N/A"
@@ -2006,11 +2006,11 @@ module.exports = {
         {
           "type": "Metric",
           "name": "additionality",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "Counterfactual not specified. Project appears to target degraded land and suggests alternative land uses, such as native forest plantations, might be feasible but would produce lower overall carbon removal services due to bamboo's extremely high annual productivity.",
-          "comment": "Project claims that bamboo building materials have reached parity with conventional wood products. This suggests bamboo planting may not require climate policy incentives. No analysis of competing economics of conventional wood products, alternative land management options."
+          "comment": "Project claims that bamboo building materials have reached parity with conventional wood products. This suggests bamboo planting may not require climate policy incentives. No analysis of competing economics of conventional wood products or alternative land management available."
         },
         {
           "type": "Metric",
@@ -2019,16 +2019,16 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Costs commensurate with other forest projects, but building material production component is not clearly specified."
+          "comment": ""
         },
         {
           "type": "Metric",
           "name": "transparency",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Few project details provided, especially around engineered lumber products, and project refers to VCS standard that has yet to be released."
+          "comment": "Reasonably thorough description of project plan. Few details avaialble around engineered lumber products. Project refers to VCS standard that has yet to be released."
         }
       ],
       "geometry": {
@@ -2073,7 +2073,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume projected based on total crushed olivine supply to pilot project site.",
-          "comment": "Assuming the stated ratio of 1.25 tCO2 removed per 1 tCO2 of olivine, we infer 160 t of olivine will be procured. However, that ratio likely reflects an upper bound, and in genreal some uncertainty remains around the actual volume of carbon removal that is likely with this approach, requiring further work to evaluate."
+          "comment": "Assuming the stated ratio of 1.25 tCO2 removed per 1 tCO2 of olivine, we infer 160 t of olivine will be procured. That ratio likely reflects an upper bound, and in genreal some uncertainty remains around the actual volume of carbon removal that is likely with this approach, requiring further work to validate."
         },
         {
           "type": "Metric",
@@ -2112,7 +2112,7 @@ module.exports = {
           "units": "$/tCO2",
           "rating": "",
           "notes": "",
-          "comment": "Costs commensurate with similar projects."
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -2175,7 +2175,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Reported ratio based on 0.34 tCO2 emitted for 1.55 tCO2 sequestered, including emissions due to bio-oil production, transporation to well, and injection.",
-          "comment": "Comprehensive LCA is pending analysis via independent consultant. Boundary conditions for process are well specified and numbers derived from plausible, though still approximate, sources.",
+          "comment": "Comprehensive LCA is pending analysis via independent consultant. Boundary conditions for process are well specified and numbers derived from plausible, though approximate, sources.",
           "removal": 1.55,
           "emissions": 0.34,
           "kind": "ratio"
@@ -2195,8 +2195,8 @@ module.exports = {
           "value": 1.0,
           "units": "",
           "rating": "",
-          "notes": "Competing uses of bio-oil assumed to be burning for energy, but no specific analysis provided. Some possibility that procurement of bio-oil will expand production.",
-          "comment": "Competing uses of bio-oil assumed to be burning for energy, but no specific analysis provided."
+          "notes": "",
+          "comment": "Competing uses of bio-oil assumed to be burning for energy, but no specific analysis provided. Some possibility that procurement of bio-oil will expand production."
         },
         {
           "type": "Metric",
@@ -2204,8 +2204,8 @@ module.exports = {
           "value": 600.0,
           "units": "$/tCO2",
           "rating": "",
-          "notes": "",
-          "comment": "Costs based on bio-oil procurement (72%), transport (18%) and injection (10%)"
+          "notes": "Costs based on bio-oil procurement (72%), transport (18%) and injection (10%)",
+          "comment": ""
         },
         {
           "type": "Metric",

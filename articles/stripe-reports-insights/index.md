@@ -72,7 +72,7 @@ There’s a lot of information in our [project reports](https://carbonplan.org/r
 
 Perhaps the most important finding is how often we found ourselves unable to confidently and independently validate metrics.
 
-We were able to assign a <Check closed={true}/> for many projects on mechanism, which was generally well described, and in several cases also on permanence. We were less often able to assign a <Check closed={true}/> on volume or negativity, reflecting the additional complexity of these dimensions.
+We were able to assign a <Check closed={true}/> for many projects on mechanism, for which we generally have existing published literature and data, and in several cases also on permanence. We were less often able to assign a <Check closed={true}/> on volume or negativity, reflecting the additional complexity of these dimensions.
 
 <Table/>
 
