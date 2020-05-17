@@ -211,7 +211,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume based on a single supplier, Harborview Farms, which includes 27 plots totaling 14011 tCO2. Volumes calculated using USDA COMET-Farm model, using project-level data collected by Nori. The Nori platform offers a larger portfolio of projects, but they are not considered here.",
-          "comment": "Project locations are specified and COMET-Farm is a publicly available tool. Validating individual volumes would require knowing which practices will be applied at project sites, model parameters used, or complete plot details."
+          "comment": "Project locations are specified and COMET-Farm is a publicly available tool. Validating individual volumes would require knowing at least which practices will be applied at project sites, model parameters used, or more complete plot details."
         },
         {
           "type": "Metric",
@@ -303,9 +303,9 @@ module.exports = {
           "name": "volume",
           "value": 550000.0,
           "units": "tCO2",
-          "rating": -1.0,
+          "rating": 0.0,
           "notes": "Range of 100k-1M tCO2 based on potential participants in program.",
-          "comment": "We report the average of the range. Validation of volume would at a minimum require information on specific projects, and values are only plausible under a significant scale of participation. Carbon crediting methodology from Verra not specified, and carbon crediting methodology from Climate Action Reserve has not been finalized and is in preliminary public review as of this writing."
+          "comment": "We report the average of the range. Validation of volume would at a minimum require information on specific projects, and values are only plausible under a significant scale of participation, for example, 0.5M ha of farmland at a rate of 1 tCO2 / ha / yr."
         },
         {
           "type": "Metric",
@@ -325,8 +325,8 @@ module.exports = {
           "value": 100.0,
           "units": "years",
           "rating": -1.0,
-          "notes": "Carbon offsets produced under Climate Action Reserve or Verified Carbon Standard protocols require 100-year commitments.",
-          "comment": "Soil carbon storage can be reversed by changed land practices. Payment schemes could provide an incentive to prevent reversals, but no information is available about the duration of contractual or other legal obligations to maintain soil carbon practices. Project cites two protocol development processes ongoing at the Climate Action Reserve and Verra, only one of which is available for public comment. 100-year contracts raise significant quesions around bankruptcy and default risks."
+          "notes": "Claims that offsets issued under Climate Action Reserve or Verra protocols require 100-year commitments.",
+          "comment": "Soil carbon storage can be reversed by changed land management practices. Project claims that offset protocols ensure permanence on a 100 year timeframe, but of the protocols mentioned, only one is public in draft form (from Climate Action Reserve) and it does not require projects to make legally-binding contracts for 100 years."
         },
         {
           "type": "Metric",
@@ -514,7 +514,7 @@ module.exports = {
           "units": "years",
           "rating": 1.0,
           "notes": "Claims 100 years or more.",
-          "comment": "Permanence of biochar depends on chemical composition, storage conditons, and other factors. Using the reported O:C ratio of 0.08 and a simple published model we estimate 680 years as an approximate duration during which 90% of biochar C remains."
+          "comment": "Using the reported O:C ratio of 0.08 and a simple published model we estimate 680 years as an approximate duration during which 90% of biochar C remains. This should be considered approximate, as permanence is only weakly correlated with composition, and likely depends on the storage environment and other factors."
         },
         {
           "type": "Metric",
@@ -1266,7 +1266,7 @@ module.exports = {
           "units": "years",
           "rating": 1.0,
           "notes": "Claims 500 to 4000 years.",
-          "comment": "Permanence of biochar depends on chemical composition, storage conditons, and other factors. Using the reported O:C ratio of 0.039 and simple published model, we estimate 760 years as an approximate duration over which 90% of biochar C remains."
+          "comment": "Using the reported O:C ratio of 0.039 and a simple published model, we estimate 760 years as an approximate duration over which 90% of biochar C remains. This should be considered approximate, as permanence is only weakly correlated with composition, and likely depends on the storage environment and other factors."
         },
         {
           "type": "Metric",
@@ -1548,7 +1548,7 @@ module.exports = {
           "units": "years",
           "rating": 1.0,
           "notes": "Claims 100 to 5000 years.",
-          "comment": "Permanence of biochar depends on chemical composition and storage conditons. Using the reported O:C ratio of 0.021 and a simple published model, we estimate 1520 years as an approximate duration during which 90% of biochar C remains."
+          "comment": "Using the reported O:C ratio of 0.021 and a simple published model, we estimate 1520 years as an approximate duration during which 90% of biochar C remains. This should be considered approximate, as permanence is only weakly correlated with composition, and likely depends on the storage environment and other factors."
         },
         {
           "type": "Metric",
@@ -1798,7 +1798,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Avoids biomass emissions by burying wood waste in covered pits.",
-          "comment": "Technology has not been vetted in practice nor explored carefully in the scientific literature. Pilot pit has yet to be constructed. From a broad lifecycle perspective, successful deployment would form a carbon removal pathway when coupled to biomass production. From a narrow, project-specific lifecycle perspective, project would only avoids biogenic CO2 emissions.",
+          "comment": "Technology has not been vetted in practice nor explored carefully in the scientific literature. Pilot pit has yet to be constructed. From a broad lifecycle perspective, successful deployment would form a carbon removal pathway when coupled to biomass production. From a narrow, project-specific lifecycle perspective, project would only avoid biogenic CO2 emissions.",
           "removal": 0.0,
           "avoided": 1.0
         },
@@ -2189,7 +2189,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 1.0,
           "notes": "Volume based on the amount of bio-oil that will be procured for inejection. Bio-oil production is stated as a limiting factor.",
-          "comment": "Given the stated ratio of 1.55 tCO2 for 1 t of bio-oil, we infer 6452 t of bio-oil will be procured, with a C fraction of 0.42. Assuming that amount is procured, the volume is plausible."
+          "comment": "Given the stated ratio of 1.55 tCO2 for 1 t of bio-oil, we infer 6452 t of bio-oil will be procured. Assuming that amount is procured, the volume is plausible."
         },
         {
           "type": "Metric",
