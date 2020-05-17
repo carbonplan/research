@@ -52,13 +52,13 @@ After multiple rounds of internal discussion, the CarbonPlan team decided on sev
 
 <Metrics/>
 
-For the first four metrics — mechanism, volume, negativity, and permanence — we attempted to independently validate projects’ claims. We gave projects a <Check closed={true}/> when we could validate their claims with reasonable confidence, and occasionally an <Ex closed={true}/> if we found credible information contradicting the claims. In all other cases we were uncertain, so left the entry blank, erring on the side of caution and respectfulness, and indicating in comments where additional information could be useful. As we develop better methods, and as we and the community learn more about these and other projects, we expect to be able to validate more claims with confidence.
+For the first four metrics — mechanism, volume, negativity, and permanence — we attempted to independently validate projects’ claims. We gave projects a <Check closed={true}/> when we could validate their claims with reasonable confidence, and an <Ex closed={true}/> if we found credible reason to doubt the claims. In all other cases we were uncertain, so left the entry blank, erring on the side of caution and respectfulness, and indicating in comments where additional information could be useful. As we develop better methods, and as we and the community learn more about these and other projects, we expect to be able to validate more claims with confidence.
 
 An additional key point for the first metric — mechanism — is that some projects do not currently remove carbon dioxide from the atmosphere. Rather, some avoid emissions that would otherwise occur, including by sourcing and transforming existing biogenic or industrial emissions into more stable storage. These projects, however, all could become a component of a carbon removal system. For example, a project could begin sourcing CO2 from direct air capture rather than from an industrial waste stream. We try to clearly point out each of these cases in our reports, and we plan to more thoroughly explain this distinction in a future post.
 
 For the fifth metric, cost, we report what projects offer. We did not attempt to validate this metric because the price at which a project offers its product speaks for itself, at least in terms of total cost. The stated price in terms of $/tCO2, however, does depend on other factors, including the precision of the project’s estimated volume, so should be considered approximate.
 
-The last two metrics — additionality and transparency — reflect our attempt to coarsely quantify these cross-cutting issues. Projects making proposals public is itself a major show of transparency, so our metric here should be considered a relative value above and beyond that baseline. For additionality, as we discuss below, the importance depends on the motivation for funding, and this metric may be low for projects with significant and positive climate benefits.
+The last two metrics — additionality and specificity — reflect our attempt to qualitatively assess these cross-cutting issues. Specificity reflects the degree to which detailed project information is available in proposals, publications, or other materials. For additionality, as we discuss below, the importance depends on the motivation for funding, and this metric may be low for projects with significant and positive climate benefits.
 
 Along with summary metrics, the reports include “notes” with detailed information taken directly from project proposals as well as “comments” with our analysis and interpretation. 
 
@@ -88,11 +88,11 @@ The projects we analyzed clustered into two distinct groups: those with permanen
 
 <Permanence/>
 
-Whether temporary storage can be made reliable over longer time periods turns on whether permanence risks are physical or socioeconomic. We are optimistic that physical risks can be well characterized by rigorous science. With forest projects, for example, quantitative analysis can help predict the vulnerability of a specific location or species in a changing climate for risk factors like fire, drought, or insect-related tree mortality. 
+Whether temporary storage can be made reliable over longer time periods turns on whether permanence risks are physical or socioeconomic. We are optimistic that physical risks can be well characterized by rigorous science. For example, projects storing carbon in forests need to promise that these carbon stocks will remain. Quantitative analysis can help predict the vulnerability of a specific location or species in a changing climate for risk factors like fire, drought, or insect-related tree mortality. 
 
-In contrast, socioeconomic risks present a more vexing challenge. Long-term commitments to carbon storage in forests or soils require restricting landowner actions to prevent future changes to timber harvesting regimes or soil management practices. Many projects use long-term contracts — some for as long as 100 years — but over these kinds of timeframes there are significant risks of default or bankruptcy. 
+Socioeconomic risks present a more vexing challenge. Long-term commitments to carbon storage in forests or soils require restricting landowner actions to prevent future changes to timber harvesting regimes or soil management practices. Many projects use long-term contracts — some for as long as 100 years — but over these kinds of timeframes there are significant risks of default or bankruptcy. 
 
-Permanent carbon storage in these systems ultimately depends on the political and economic stability of private contracts and government policy regimes operating over long time horizons. Coordinated large-scale programs could potentially meet this ambition if they start by recognizing the challenges faced by past efforts and engaging all relevant stakeholders. 
+Permanent carbon storage in these systems ultimately depends on the political and economic stability of private contracts and government policy regimes operating over long time horizons. Coordinated large-scale programs could potentially meet this ambition if they start by recognizing the challenges faced by past efforts and engaging all relevant stakeholders.
 
 ## Evaluation strategies depend on program motivation
 
@@ -108,7 +108,7 @@ The second motivation, technological change, is different. These investments are
 
 A long-term investment orientation can help avoid some of the most challenging features of carbon offsets. Additonality is essential to justify a carbon offset, but not particularly relevant to accelerating technological change. In fact, the more a technology proponent can say about what it has recently accomplished as a justification for what it aims to do next, the better — yet describing a prospective investment on the basis of what was recently accomplished is a red flag in the world of offsets and additionality. 
 
-We are mindful that different organizations might adopt different paradigms, or even pursue multiple approaches in parallel. Low scores on additionality are not a concern when the purpose is to advance technology, but should be a primary consideration if the goal is carbon offsetting. 
+We are mindful that different organizations might adopt different paradigms, or even pursue multiple approaches in parallel. Low scores on additionality are not a concern when the purpose is to advance technology, but high scores should be a primary consideration if the goal is carbon offsetting. 
 
 ## Lessons for future procurements
 

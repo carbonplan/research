@@ -53,7 +53,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Counterfactual not applicable. New investments may relate to future deployments rather than current procurements."
+          "comment": "Counterfactual not applicable. The only reason to implement a project like this is to generate climate benefits. New investments may relate to future deployments rather than current procurements."
         },
         {
           "type": "Metric",
@@ -384,7 +384,7 @@ module.exports = {
           "units": "",
           "rating": 0.0,
           "notes": "Facilitates late-stage BECCS projects, which avoid emissions from biogenic carbon sources and instead capture it for geologic sequestration in rocks' pore space.",
-          "comment": "BECCS is a well established technology. Project provides few specifics on biomass, capture, or sequestration implementation.",
+          "comment": "BECCS is a well established technology. Project acts as a broker, rather than deploying a particular technology or process.",
           "removal": 1.0,
           "avoided": 1.0
         },
@@ -425,7 +425,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "No detail provided. BECCS projects are likely additioinal, but additionality depends on the economics of any applicable tax credits or policy incentives."
+          "comment": "BECCS projects are likely additioinal, but specifics depend on the economics of any applicable tax credits or policy incentives."
         },
         {
           "type": "Metric",
@@ -518,7 +518,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counterfactual is dumping walnut shells on ground or burning in biomass electricity plant.",
-          "comment": "Feedstock is walnut shells that are otherwise dumped on the ground or on roads, e.g. for dust reduction purposes. No analysis provided of competing uses for feedstock."
+          "comment": "Feedstock is walnut shells that are otherwise dumped on the ground or on roads, e.g. for dust reduction purposes. Further analysis would require understanding competing uses for feedstock."
         },
         {
           "type": "Metric",
@@ -611,7 +611,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counterfactual is reforesting manually or not at all.",
-          "comment": "This project can reasonably be considered an investment in a new technology to lower the cost of reforestation and aforestation. As an investment in a specific quantity of carbon removal, however, it raises important concerns. Although we were able to validate the expected volume for this project, we identified a significant risk of double-counting. The project explicitly disclaims that it is not offering the tons associated with the described project, which Droneseed suggests the landowner may attempt to separately monetize using a carbon offset protocol. Instead, Droneseed specifically notes that any funds raised would go toward the development of future afforestation projects. Any future projects would also be subject to double-counting risks, as the pattern is capable of being repeated without additional clarification."
+          "comment": "This project can be considered an investment in a new technology to lower the cost of reforestation, with funding going to future projects. As an investment in a specific quantity of carbon removal, however, there are concerns about double-counting, as the landowner may attempt to separately monetize the same carbon benefits using a carbon offset protocol."
         },
         {
           "type": "Metric",
@@ -890,7 +890,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counterfactual could include conventional grazing and intensive feedlot grazing, but no projects identified and no historical practices identified at specific project sites.",
-          "comment": "Not enough information available about participating projects and their past practices to confirm."
+          "comment": "Participating projects and their past practices unknown."
         },
         {
           "type": "Metric",
@@ -1076,7 +1076,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counteractual is active forest product harvest.",
-          "comment": "By shifting to a ton-year accounting framework, SilviaTerra intends to avoid additionality concerns by measuring actual carbon stored each year. However, other factors, such as exogenous shifts in timber markets, can still affect additionality considerations with respect to forest harvest decisions. Proprietary methods for measurement and verification against field plots were not available at the time of this proposal."
+          "comment": "By shifting to a ton-year accounting framework, SilviaTerra intends to avoid additionality concerns by measuring actual carbon stored each year. However, other factors, such as exogenous shifts in timber markets, can still affect additionality considerations with respect to forest harvest decisions. Proprietary methods for measurement and verification against field plots are not yet available."
         },
         {
           "type": "Metric",
@@ -1169,7 +1169,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "No analysis available in public materials."
+          "comment": "No specific analysis available."
         },
         {
           "type": "Metric",
@@ -1262,7 +1262,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Feedstock is agricultural (seed) waste. No analysis provided of competing uses for feedstock."
+          "comment": "Feedstock is agricultural (seed) waste. Further analysis would require understanding competing uses for feedstock."
         },
         {
           "type": "Metric",
@@ -1355,7 +1355,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counterfactual is either decomposing biomass resources or using to generate heat or electrical energy.",
-          "comment": "No specific analysis available."
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -1541,7 +1541,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Feedstock is residual wood (thinnings). No analysis provided of competing uses for feedstock."
+          "comment": "Feedstock is residual wood (thinnings). Further analysis would require understanding competing uses for feedstock."
         },
         {
           "type": "Metric",
@@ -1634,7 +1634,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "No specific analysis available, but project involves initial production from carbon sequestering building materials using relatively expensive CO2 inputs (\u20ac75/tCO2)."
+          "comment": "Project involves initial production from carbon sequestering building materials using relatively expensive CO2 inputs (\u20ac75/tCO2)."
         },
         {
           "type": "Metric",
@@ -1727,7 +1727,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counterfactual not specified, but appears to involve \"degraded\" land remaining degraded.",
-          "comment": "No specific analysis provided."
+          "comment": ""
         },
         {
           "type": "Metric",
@@ -1820,7 +1820,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "No commercial value to storing wood waste in pits. However, no analysis provided of alternative feedstock uses such as bioenergy."
+          "comment": "No commercial value to storing wood waste in pits. Further analysis would require understanding alternative feedstock uses such as bioenergy."
         },
         {
           "type": "Metric",
@@ -1913,7 +1913,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "Counterfactual is harvest of most forest carbon over the period 2018-2021.",
-          "comment": "By the end of 2020, 56% of total project climate benefits will have been earned via avoided harvest. Thus, the project has already committed to avoid harvest and therefore the expected carbon removal in later years is already assured. As a result, the entire project appears to be offering climate benefits that have already been promised to other buyers. Land is owned by a state-charted entity that is statutorily obligated to protect the land for multiple uses, of which timber is only one."
+          "comment": "By the end of 2020, 56% of total project climate benefits will have been earned via avoided harvest. Thus, the project has already committed to avoid harvest and therefore the expected carbon removal in later years is already assured. As a result, the project appears to be offering climate benefits that have already been promised to other buyers. Land is owned by a state-charted entity that is statutorily obligated to protect the land for multiple uses, of which timber is only one."
         },
         {
           "type": "Metric",
@@ -2103,7 +2103,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Counterfactual not applicable. Project would only be pursued for carbon removal purposes. No intrinsic commerical value."
+          "comment": "Project would only be pursued for carbon removal purposes. No intrinsic commerical value."
         },
         {
           "type": "Metric",
@@ -2196,7 +2196,7 @@ module.exports = {
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Competing uses of bio-oil assumed to be burning for energy, but no specific analysis provided. Some possibility that procurement of bio-oil will expand production."
+          "comment": "Competing uses of bio-oil assumed to be burning for energy. Further analysis would require better understanding these alternative uses. Some possibility that procurement of bio-oil will expand production."
         },
         {
           "type": "Metric",
