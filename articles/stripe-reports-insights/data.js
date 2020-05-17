@@ -439,11 +439,11 @@ module.exports = {
         {
           "type": "Metric",
           "name": "specificity",
-          "value": 0.0,
+          "value": 1.0,
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Few data on specific projects available in proposal or on project website. Basic technology well understood, but no data or publications on specific approaches, and no references or third-party analyses available yet for LCA."
+          "comment": "Basic technology well understood. Few data on specific projects or deployment sites available in proposal or on project website. No references or third-party analyses available yet for LCA."
         }
       ],
       "geometry": {
