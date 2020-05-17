@@ -22,7 +22,7 @@ and then visit `http://localhost:4000/research` in your browser.
 
 ## license
 
-All the code in this repository is MIT licensed, but we request that you please provide attribution if reusing any of our digital content (graphics, logo, articles, etc.).
+All the code in this repository is [MIT](https://choosealicense.com/licenses/mit/) licensed, but we request that you please provide attribution if reusing any of our digital content (graphics, logo, articles, etc.).
 
 ## about us
 
