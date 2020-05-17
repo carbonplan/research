@@ -56,7 +56,7 @@ For the first four metrics — mechanism, volume, negativity, and permanence —
 
 An additional key point for the first metric — mechanism — is that some projects do not currently remove carbon dioxide from the atmosphere. Rather, some avoid emissions that would otherwise occur, including by sourcing and transforming existing biogenic or industrial emissions into more stable storage. These projects, however, all could become a component of a carbon removal system. For example, a project could begin sourcing CO2 from direct air capture rather than from an industrial waste stream. We try to clearly point out each of these cases in our reports, and we plan to more thoroughly explain this distinction in a future post.
 
-For the fifth metric, cost, we report what projects offer. We did not attempt to validate this metric because the price at which a project offers its product speaks for itself, at least in terms of total cost. The stated price in terms of $/tCO2, however, does depend on other factors, including the precision of the project’s estimated volume, so should be considered approximate.
+For the fifth metric, cost, we report what projects offer. We did not attempt to validate this metric because the price at which a project offers its product speaks for itself, at least in terms of total cost. The stated price in terms of $/tCO2, however, depends on several other factors, including the estimate of the volume, so should be interpreted carefully.
 
 The last two metrics — additionality and specificity — reflect our attempt to qualitatively assess these cross-cutting issues. Specificity reflects the degree to which detailed project information is available in proposals, publications, or other materials. For additionality, as we discuss below, the importance depends on the motivation for funding, and this metric may be low for projects with significant and positive climate benefits.
 
@@ -70,7 +70,7 @@ There’s a lot of information in our [project reports](https://carbonplan.org/r
 
 ### More questions than answers
 
-Perhaps the most important finding is how often we found ourselves unable to confidently and independently validate metrics.
+Perhaps the most important finding is how often we found ourselves unable to confidently and independently validate project's claims.
 
 We were able to assign a <Check closed={true}/> for many projects on mechanism, for which we generally have existing published literature and data, and in several cases also on permanence. We were less often able to assign a <Check closed={true}/> on volume or negativity, reflecting the additional complexity of these dimensions.
 
