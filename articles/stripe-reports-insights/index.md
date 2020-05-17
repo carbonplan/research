@@ -64,7 +64,7 @@ Along with summary metrics, the reports include “notes” with detailed inform
 
 See our [methods](https://carbonplan.org/reports/methods) for full details on our approach.
 
-## Our big takeaways
+## Our key takeaways
 
 There’s a lot of information in our [project reports](https://carbonplan.org/reports). We’ll summarize three insights here. 
 
@@ -102,7 +102,7 @@ Carbon offsetting focuses on the climate credit to be gained from an investment 
 
 Evaluating additionality is difficult because the counterfactual scenario against which climate benefits are calculated can only be estimated, never observed. To facilitate evaluation, analysis needs to focus on specific claims about projects’ counterfactual scenarios, competing alternatives, and the detailed economics of projects’ technologies, associated commodity markets, and main competitors. 
 
-If this sounds like a lot, it is! Unfortunately, the history of project-level additionality claims is not a positive story. Project proponents know the most about their own activities, including how feasible their work might be without outside investment — an information asymmetry that can reduce transparency. We analyzed a few cases where additionality appears to be a concern and provide commentary to describe the issues we encountered. In general, rigorous assessment of additionality will require more research and transparency, not proprietary methods, as some have proposed.
+If this sounds like a lot, it is! Unfortunately, the history of project-level additionality claims is not a positive story. Project proponents know the most about their own activities, including how feasible their work might be without outside investment — an information asymmetry that can reduce transparency. We analyzed several cases where additionality appears to be a significant concern and provide commentary to describe the issues we encountered. In general, given its complexity, rigorous assessment of additionality will require more research and transparency, not proprietary methods, as some have proposed.
 
 The second motivation, technological change, is different. These investments are primarily concerned with unlocking the potential for solutions at scale. To assess this potential, a sponsor organization could center its questions around the performance of a given technology, benchmarks to measure its anticipated improvements, and how investment can unlock either new entry markets or a path to cost reductions. 
 
