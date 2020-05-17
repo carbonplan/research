@@ -59,7 +59,7 @@ const Footer = () => {
           display: ['none', 'none', 'inherit']
         }}>
           <Text><NextLink href='/terms'>
-            <a><Text sx={{color: 'secondary'}}>READ OUR TERMS</Text></a>
+            <a><Text sx={{ color: 'secondary' }}>READ OUR TERMS</Text></a>
           </NextLink></Text>
         </Box>
       </Box>
