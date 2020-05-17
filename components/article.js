@@ -45,11 +45,11 @@ const Article = ({ children, meta }) => {
             </Text>
           </Box>
           {meta.quotes.map((quote) => (
-            <Box key={quote.position} sx={{ mt: quote.position, maxWidth: '250px' }}>
+            <Box key={quote.position} sx={{ position: 'absolute', top: quote.position, maxWidth: '250px' }}>
             <Text sx={{ 
               fontFamily: 'heading', 
               fontSize: [5], 
-              lineHeight: [1.125], 
+              lineHeight: 'heading',
               color: info.color 
             }}>
               {quote.text}

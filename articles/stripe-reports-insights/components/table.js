@@ -22,7 +22,7 @@ const Row = ({ children }) => {
 
 const icons = (rating, color) => {
   if (rating == 1) return <Box sx={{ mt: ['-2px'] }}><Check color={color}/></Box>
-  if (rating == 0) return <Question color={color}/>
+  if (rating == 0) return <Box></Box>
   if (rating == -1) return <Box sx={{ mt: ['-2px'] }}><Ex color={color}/></Box>
 }
 

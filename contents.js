@@ -3,7 +3,7 @@ const Contents = {
     {
       id: 'stripe-reports-insights',
       number: 0,
-      title: 'Insights from our first set of project reports',
+      title: 'Insights from our first project reports',
       section: 'research',
       tags: ['note','commentary'],
       authors: ['CarbonPlan Team'],
