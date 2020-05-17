@@ -91,7 +91,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -184,7 +184,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -277,7 +277,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -370,7 +370,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -463,7 +463,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -556,7 +556,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -649,7 +649,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -742,7 +742,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -835,7 +835,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -928,7 +928,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -1021,7 +1021,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -1114,7 +1114,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -1207,7 +1207,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -1300,7 +1300,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -1393,7 +1393,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -1486,7 +1486,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -1579,7 +1579,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -1672,7 +1672,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -1765,7 +1765,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -1858,7 +1858,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -1955,7 +1955,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -2048,7 +2048,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -2141,7 +2141,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     },
     {
@@ -2234,7 +2234,7 @@ module.exports = {
       },
       "program": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/climate"
+        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
       }
     }
   ]
