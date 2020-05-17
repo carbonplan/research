@@ -89,9 +89,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -182,9 +183,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -275,14 +277,15 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
       "type": "Project",
-      "name": "IndigoAg",
+      "name": "Indigo Ag",
       "metrics": [
         {
           "type": "Metric",
@@ -368,9 +371,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -461,9 +465,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -554,9 +559,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -647,9 +653,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -740,9 +747,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -833,9 +841,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -926,9 +935,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -1019,9 +1029,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -1112,9 +1123,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -1205,9 +1217,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -1298,9 +1311,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -1391,9 +1405,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -1484,9 +1499,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -1577,9 +1593,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -1670,9 +1687,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -1763,9 +1781,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -1856,9 +1875,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -1953,9 +1973,10 @@ module.exports = {
           ]
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -2046,9 +2067,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -2139,9 +2161,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     },
     {
@@ -2232,9 +2255,10 @@ module.exports = {
           "type": null
         }
       },
-      "program": {
+      "source": {
         "name": "Stripe 2020 Negative Emissions Purchase",
-        "url": "https://stripe.com/blog/first-negative-emissions-purchases"
+        "license": "CC-BY",
+        "url": "https://github.com/stripe/negative-emissions-source-materials"
       }
     }
   ]
