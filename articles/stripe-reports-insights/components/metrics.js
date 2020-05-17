@@ -57,9 +57,8 @@ const Metrics = () => {
     <Row>
       <Text sx={header}>NEGATIVITY</Text>
       <Text sx={entry}>
-        How emissions-intensive is the technology’s 
-        process relative to the carbon removal potential? This relies on a life cycle analysis
-        to quantify all project emissions.
+        Based on a life cycle analysis, how emissions-intensive is the project's 
+        process relative to its carbon removal potential?
       </Text>
     </Row>
     <Row>
