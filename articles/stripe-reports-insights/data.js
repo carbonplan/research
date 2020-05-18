@@ -869,7 +869,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Specific projects not identified. Claimed volume reflects 10-30 plots totaling 13355 ha with an average of 2.5 tCO2 / ha / year.",
-          "comment": "Claimed rate of 2.5 tCO2 / ha / yr is commensurate with existing literature and models. Few project specific details are available to validate volume further."
+          "comment": "Claimed rate of 2.5 tCO2 / ha / yr is broadly commensurate with a range from existing literature and models. Few project specific details are available to validate volume further."
         },
         {
           "type": "Metric",
@@ -1250,12 +1250,12 @@ module.exports = {
         {
           "type": "Metric",
           "name": "negativity",
-          "value": 0.984,
+          "value": 0.982,
           "units": "",
           "rating": 1.0,
           "notes": "Reported ratio based on 0.046 tCO2 emitted for 2.79 tCO2 stored, with reported emissions including electricity for pre-treatment, transport, and electricity for pyrolysis. Project uses low-carbon electricity from the Nordic grid for pelletizing and pyrolysis.",
-          "comment": "Analysis required by Puro is pending but not yet completed. Boundary conditions well specified and LCA components detailed and referenced.",
-          "removal": 2.7885,
+          "comment": "Analysis required by Puro is pending but not yet completed. Boundary conditions well specified and LCA components detailed and referenced. Minor permanence adjustment made for consistency with other biochar projects.",
+          "removal": 2.50965,
           "emissions": 0.0455,
           "kind": "ratio"
         },
@@ -1532,12 +1532,12 @@ module.exports = {
         {
           "type": "Metric",
           "name": "negativity",
-          "value": 0.95,
+          "value": 0.944,
           "units": "",
           "rating": 1.0,
           "notes": "Reported ratio based on 0.17 tCO2 emitted for 3.4 tCO2 stored. Includes fossil emissions for transporation and pyrolosis. Excludes 1.69 tCO2 emissions from biogenic sources, and does not include transporation to customer.",
-          "comment": "Analysis performed by third-party with public details, as required by Puro. Boundary conditions well specified and LCA components detailed and referenced.",
-          "removal": 3.4,
+          "comment": "Analysis performed by third-party with public details, as required by Puro. Boundary conditions well specified and LCA components detailed and referenced. Minor permanence adjustment made for consistency with other biochar projects.",
+          "removal": 3.06,
           "emissions": 0.17,
           "kind": "ratio"
         },
