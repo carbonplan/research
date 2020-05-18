@@ -26,6 +26,32 @@ class MyApp extends App {
               outline: none !important;
             }
 
+            a {
+              text-decoration: none;
+            }
+
+            sup, sub {
+              vertical-align: baseline;
+              position: relative;
+              top: -0.4em;
+            }
+
+            sub { 
+              top: 0.4em; 
+              font-size: small;
+            }
+
+            @font-face {
+              font-family: 'relative-book-pro';
+              src: url('${prefix}relative-book-pro.eot');
+              src: url('${prefix}relative-book-pro.eot?#iefix') format('embedded-opentype'),
+                   url('${prefix}relative-book-pro.woff2') format('woff2'),
+                   url('${prefix}relative-book-pro.woff') format('woff'),
+                   url('${prefix}relative-book-pro.ttf') format('truetype');
+              font-weight: normal;
+              font-style: normal;
+            }
+
             @font-face {
               font-family: 'relative-medium-pro';
               src: url('${prefix}relative-medium-pro.eot');

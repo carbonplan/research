@@ -1,4 +1,3 @@
-import Question from './icons/question'
 import Check from './icons/check'
 import Ex from './icons/ex'
 import Squares from './graphics/squares'
@@ -7,12 +6,13 @@ import { Box, Grid, Text, Link } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 
 const Row = ({ children }) => {
-  return <Grid columns={['125px 1fr']} sx={{
+  return <Grid columns={[1, '170px 1fr', '170px 1fr']} sx={{
       borderStyle: 'solid',
       borderWidth: '0px',
       borderTopWidth: '1px',
       borderColor: 'muted',
-      py: [2]
+      pt: [3],
+      pb: ['22px', 3, 3]
     }}>
     { children }
   </Grid>
@@ -20,9 +20,16 @@ const Row = ({ children }) => {
 
 const header = {
   textTransform: 'uppercase',
+  letterSpacing: 'wide',
   fontFamily: 'heading',
-  fontSize: [1],
+  fontSize: [2],
   mt: ['3px']
+}
+
+const entry = {
+  fontSize: [2],
+  fontFamily: 'faux',
+  letterSpacing: 'faux'
 }
 
 const Metrics = () => {
@@ -36,49 +43,49 @@ const Metrics = () => {
     }}>
     <Row>
       <Text sx={header}>Mechanism</Text>
-      <Text>
-        Does the project directly remove CO2 from the atmosphere, 
-        avoid CO2 emissions that would otherwise end up in the atmosphere, or both?
+      <Text sx={entry}>
+        Does the project directly remove CO<sub>2</sub> from the atmosphere, 
+        avoid CO<sub>2</sub> emissions that would otherwise end up in the atmosphere, or both?
       </Text>
     </Row>
     <Row>
       <Text sx={header}>VOLUME</Text>
-      <Text>
-        How many tons of CO2 does the project claim to remove or avoid?
+      <Text sx={entry}>
+        How many tons of CO<sub>2</sub> does the project claim to remove or avoid?
       </Text>
     </Row>
     <Row>
       <Text sx={header}>NEGATIVITY</Text>
-      <Text>
-        How emissions-intensive is the technology’s 
-        process relative to the carbon removal potential? 
+      <Text sx={entry}>
+        Based on a life cycle analysis, how emissions-intensive is the project's 
+        process relative to its carbon removal potential?
       </Text>
     </Row>
     <Row>
       <Text sx={header}>PERMANENCE</Text>
-      <Text>
+      <Text sx={entry}>
         How long does the project claim carbon will be safely removed from the atmosphere? 
         Is that a question of physical material stability or socioeconomic choices?
       </Text>
     </Row>
     <Row>
       <Text sx={header}>COST</Text>
-      <Text>
+      <Text sx={entry}>
         How much does the project want to charge its buyer?
       </Text>
     </Row>
     <Row>
       <Text sx={header}>ADDITIONALITY</Text>
-      <Text>
+      <Text sx={entry}>
         Would an investment cause new climate 
         benefits or take credit for benefits that may already be happening?
       </Text>
     </Row>
     <Row>
-      <Text sx={header}>TRANSPARENCY</Text>
-      <Text>
-        Does the project provide sufficient 
-        information to independently validate the rest of our metrics?
+      <Text sx={header}>SPECIFICITY</Text>
+      <Text sx={entry}>
+        Is there enough detail in project proposals, publications, or other materials
+        to independently validate the rest of our metrics?
       </Text>
     </Row>
   </Box>
