@@ -8,7 +8,13 @@ const Article = ({ children, meta }) => {
   const info = Contents.articles.filter(({id}) => id === meta.id)[0]
 
   return <Layout>
-    <Box sx={{ backgroundColor: info.color, height: '125px', position: 'relative' }}>
+    <Box sx={{ 
+      backgroundColor: info.color, 
+      height: ['100px','100px','275px'], 
+      position: 'relative',
+      backgroundImage: ['none','none','url("https://carbonplan-assets.s3.amazonaws.com/images/road.png")'],
+      backgroundSize: 'cover' 
+    }}>
       <Box sx={{ 
         position: 'absolute', 
         bottom: 0, 

@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import Layout from '../../components/layout'
-import { Box, Divider, Text, Heading, Badge, Image, Link, Grid, Container } from 'theme-ui'
+import { jsx, Box, Divider, Text, Heading, Badge, Image, Link, Grid, Container } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import data from '../../contents'
 import { darken } from '@theme-ui/color'
@@ -36,42 +37,56 @@ function Index () {
 
           }}>
           {articles.map(({id, title, color, tags, authors, version, date}) => (
-            <NextLink key={id} href={`/research/${id}`}><a>
-            <Box sx={{ 
-              my: [4],
+            <NextLink key={id} href={`/research/${id}`}><a sx={{
+              cursor: 'pointer',
+              '&:hover > #box > #grid > #box2 > #container > #background': {
+                opacity: 0.5
+              },
+              '&:hover > #box > #grid > #box2 > #container > #arrow': {
+                opacity: 1
+              }
+            }}>
+            <Box id='box' sx={{ 
+              mt: [4],
               pt: [4],
-              pb: [2],
+              pb: [4],
               borderStyle: 'solid', 
               borderColor: 'muted',
               borderWidth: '0px', 
               borderTopWidth: '1px',
               color: 'text'
             }} key={id}>
-              <Grid columns={[1, '225px 1fr', '225px 1fr']}>
-              <Box>
-                <Box sx={{
+              <Grid id='grid' columns={[1, '225px 1fr', '225px 1fr']}>
+              <Box id='box2' sx={{
+                
+              }}>
+                <Box id='container' sx={{
                   display: 'inline-block',
                   width: '130px',
                   height: '130px',                  
                   ml: [0, 5, 5],
                   mt: '6px',
-                  position: 'relative'
+                  position: 'relative',
+                  borderRadius: '50%', 
+                  borderStyle: 'solid',
+                  borderColor: 'primary',
+                  borderWidth: '1px'
                 }}>
-                <Box sx={{
+                <Box id='background' sx={{
                   top: 0,
                   left: 0,
                   position: 'absolute',
                   display: 'inline-block',
+                  borderRadius: '50%', 
                   width: '100%',
                   height: '100%',
-                  borderRadius: '50%', 
-                  borderStyle: 'solid',
-                  borderColor: 'primary',
-                  borderWidth: '1px',
-                  backgroundColor: color
+                  backgroundColor: color,
+                  transition: '0.25s',
+                  opacity: 1,
+                  backgroundImage: ['none','none','url("https://carbonplan-assets.s3.amazonaws.com/images/road-small.png")'],
                 }}>
                 </Box>
-                <Text sx={{ 
+                <Text id='arrow' sx={{ 
                   fontFamily: 'faux',
                   position: 'absolute',
                   top: '-23px',
@@ -84,10 +99,7 @@ function Index () {
                   color: 'text',
                   zIndex: 1000,
                   transition: '0.25s',
-                  opacity: 0,
-                  '&:hover': {
-                    opacity: 1
-                  }
+                  opacity: 0
                 }}>→</Text>
                 </Box>
               </Box>

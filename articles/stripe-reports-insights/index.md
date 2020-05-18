@@ -12,15 +12,15 @@ export const meta = {
   summary: 'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
   quotes: [
     {
-      position: 1320,
+      position: 1470,
       text: 'We are making public all analysis, methods, and commentary from our process'
     },
     {
-      position: 5100,
+      position: 5250,
       text: 'The complexity of carbon removal solutions across so many technologies presents a challenge for any one organization to evaluate'
     },
     {
-      position: 7600,
+      position: 7750,
       text: 'A long-term investment orientation can help avoid some of the most challenging features of carbon offsets'
     }
   ]
