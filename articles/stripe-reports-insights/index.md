@@ -16,11 +16,11 @@ export const meta = {
       text: 'We are making public all analysis, methods, and commentary from our process'
     },
     {
-      position: 5000,
+      position: 5100,
       text: 'The complexity of carbon removal solutions across so many technologies presents a challenge for any one organization to evaluate'
     },
     {
-      position: 7400,
+      position: 7600,
       text: 'A long-term investment orientation can help avoid some of the most challenging features of carbon offsets'
     }
   ]
@@ -52,11 +52,11 @@ After multiple rounds of internal discussion, the CarbonPlan team decided on sev
 
 <Metrics/>
 
-For the first four metrics — mechanism, volume, negativity, and permanence — we attempted to independently validate projects’ claims. We gave projects a <Check closed={true}/> when we could validate a claim with reasonable confidence, and a <Ex closed={true}/> if we found credible reason to doubt a claim. Where we didn’t feel confident, we left the entry blank to err on the side of caution and respectfulness. We also indicated what kind of additional information would be useful in comments. As we develop better methods, and as we and the community learn more about these and other projects, we expect to be able to validate more claims with confidence.
+For the first four metrics — mechanism, volume, negativity, and permanence — we attempted to independently validate projects’ claims. We gave projects a <Check closed={true}/> when we could validate a claim with reasonable confidence. Where we didn’t feel confident about validating claims, we left the entry blank, generally erring on the side of caution and respectfulness. We also indicated what kind of additional information would be useful in comments. As we develop better methods, and as we and the community learn more about these and other projects, we expect to be able to validate more claims with confidence.
 
-An additional key point for the first metric — mechanism — is that some projects do not currently remove carbon dioxide from the atmosphere. Rather, some avoid emissions that would otherwise occur, including by sourcing and transforming existing biogenic or industrial emissions into more stable storage. These projects could all become a component of a carbon removal system in the future, however. For example, a project that sequesters CO2 from an industrial waste stream today could begin sourcing CO2 from direct air capture or biogenic energy tomorrow. We try to clearly point out each of these cases in our reports, and we plan to more thoroughly explore this nuanced distinction in a future post.
+An additional key point for the first metric — mechanism — is that some projects do not currently remove carbon dioxide from the atmosphere. Rather, some avoid emissions that would otherwise occur, including by sourcing and transforming existing biogenic or industrial emissions into more stable storage. These projects could all become a component of a carbon removal system in the future, however. For example, a project that sequesters CO<sub>2</sub> from an industrial waste stream today could begin sourcing CO<sub>2</sub> from direct air capture or biogenic energy tomorrow. We try to clearly point out each of these cases in our reports, and we plan to more thoroughly explore this nuanced distinction in a future post.
 
-For the fifth metric — cost — we report what projects offer. We did not attempt to validate this metric because the price at which a project offers its product speaks for itself, at least in terms of total cost. The stated price in terms of $/tCO2 depends on several other factors, however, including projects’  estimated volume. We encourage readers to interpret these data in the context of other project attributes.
+For the fifth metric — cost — we report what projects offer. We did not attempt to validate this metric because the price at which a project offers its product speaks for itself, at least in terms of total cost. The stated price in terms of $/tCO<sub>2</sub> depends on several other factors, however, including projects’  estimated volume. We encourage readers to interpret these data in the context of other project attributes.
 
 The last two metrics — additionality and specificity — reflect our attempt to qualitatively assess these cross-cutting issues. The importance of additionality depends on the motivation for funding. As discussed further below, this metric is less important when funding decisions are oriented around encouraging innovation, rather than carbon offsetting. Specificity reflects the degree to which there is enough detail in project proposals, publications, or other materials to validate the rest of our metrics. 
 
@@ -76,15 +76,15 @@ We were able to assign a <Check closed={true}/> for many projects on mechanism, 
 
 <Table/>
 
-The absence of a <Check closed={true}/> should not be interpreted as a criticism of the project, but rather a lack of information or certainty. Over time, we intend to develop our capacity to reach more definitive answers across our metrics, and hope that as a community we learn more about the science and data underlying these projects. We also offer suggestions below for how future procurement processes can elicit more useful information from projects for the purpose of analysis. Fundamentally, however, the complexity of carbon removal solutions across so many technologies presents a challenge for any one organization to evaluate.
+The absence of a <Check closed={true}/> should not necessarily be interpreted as a critque. Most of the time, it reflects a lack of information or certainty. Over time, we intend to develop our capacity to reach more definitive answers across our metrics, and hope that as a community we learn more about the science and data underlying these projects. We also offer suggestions below for how future procurement processes can elicit more useful information from projects for the purpose of analysis. Fundamentally, however, the complexity of carbon removal solutions across so many technologies presents a challenge for any one organization to evaluate.
 
 ## The permanence gap
 
 Our second insight relates to the role of “permanence,” which is the timeframe over which carbon removed from the atmosphere stays put in some other reservoir, such as in soils, forests, or minerals. 
 
-Carbon dioxide remains active in the atmospheric carbon cycle for hundreds to thousands of years. Because CO2 pollution today is effectively permanent over the time scale of civilization, the climate benefits of carbon removal strategies depend on their permanence.  
+Carbon dioxide remains active in the atmospheric carbon cycle for hundreds to thousands of years. Because CO<sub>2</sub> pollution today is effectively permanent over the time scale of civilization, the climate benefits of carbon removal strategies depend on their permanence.  
 
-The projects we analyzed clustered into two distinct groups: those with permanence horizons that match the scale of the climate problem, and those that don’t. For example, projects seeking to store CO2 underground in geologic reservoirs or in stable mineralized form have a plausible claim to carbon removal on the scale of 1000 years or more. Biochar projects, too, are likely to retain a significant fraction of their carbon in stable form for hundreds of years or more. In contrast, others that seek to store carbon in soils or forests tend to claim much shorter time horizons — some as few as one year, but more commonly between 10 and 100 years. 
+The projects we analyzed clustered into two distinct groups: those with permanence horizons that match the scale of the climate problem, and those that don’t. For example, projects seeking to store CO<sub>2</sub> underground in geologic reservoirs or in stable mineralized form have a plausible claim to carbon removal on the scale of 1000 years or more. Biochar projects, too, are likely to retain a significant fraction of their carbon in stable form for hundreds of years or more. In contrast, others that seek to store carbon in soils or forests tend to claim much shorter time horizons — some as few as one year, but more commonly between 10 and 100 years. 
 
 <Permanence/>
 
@@ -131,3 +131,6 @@ To improve our own analysis capabilities, we are developing open source methods 
 CarbonPlan and Stripe entered into an agreement in which Stripe shared the project proposals it received in response to its 2020 Negative Emissions Purchase in advance of their public release. We provided feedback to Stripe on its program and were compensated by Stripe for our time. Our work was independent and Stripe did not exercise any control over it. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not represent the views of Stripe or any other other organizations.  
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>
+
+
+### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)

@@ -44,14 +44,14 @@ const Metrics = () => {
     <Row>
       <Text sx={header}>Mechanism</Text>
       <Text sx={entry}>
-        Does the project directly remove CO2 from the atmosphere, 
-        avoid CO2 emissions that would otherwise end up in the atmosphere, or both?
+        Does the project directly remove CO<sub>2</sub> from the atmosphere, 
+        avoid CO<sub>2</sub> emissions that would otherwise end up in the atmosphere, or both?
       </Text>
     </Row>
     <Row>
       <Text sx={header}>VOLUME</Text>
       <Text sx={entry}>
-        How many tons of CO2 does the project claim to remove or avoid?
+        How many tons of CO<sub>2</sub> does the project claim to remove or avoid?
       </Text>
     </Row>
     <Row>

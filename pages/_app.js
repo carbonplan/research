@@ -30,6 +30,17 @@ class MyApp extends App {
               text-decoration: none;
             }
 
+            sup, sub {
+              vertical-align: baseline;
+              position: relative;
+              top: -0.4em;
+            }
+
+            sub { 
+              top: 0.4em; 
+              font-size: small;
+            }
+
             @font-face {
               font-family: 'relative-book-pro';
               src: url('${prefix}relative-book-pro.eot');

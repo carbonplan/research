@@ -36,7 +36,7 @@ function Index () {
 
           }}>
           {articles.map(({id, title, color, tags, authors, version, date}) => (
-            <NextLink href={`/research/${id}`}><a>
+            <NextLink key={id} href={`/research/${id}`}><a>
             <Box sx={{ 
               my: [4],
               pt: [4],
