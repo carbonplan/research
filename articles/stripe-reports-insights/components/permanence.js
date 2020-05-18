@@ -129,8 +129,7 @@ const Permanence = () => {
     Colors represent project categories:{' '}
     <Inline name='forests'/>, <Inline name='soil'/>, <Inline name='biomass'/>,{' '} 
     <Inline name='dac' display='direct air capture'/>, <Inline name='mineralization'/>, 
-    and <Inline name='ocean'/>. Note that questions or concerns were raised 
-    for some of the projects with permanence below 1000+ years.
+    and <Inline name='ocean'/>.
   </Text>
   </Box>
 }
