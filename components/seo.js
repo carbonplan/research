@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 const Seo = () => (
   <Head>
-    <title>(carbon)plan / research</title>
+    <title>carbonplan / research</title>
     <meta name='description' content='Data and science for carbon removal.'/>
     <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
     <link rel='canonical' content='https://carbonplan.org/'/>
