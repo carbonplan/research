@@ -127,6 +127,7 @@ function Index () {
                     display: 'inline-block', 
                     mr: [3] 
                   }}><Badge key={tag} variant='primary' sx={{
+                    pointerEvents: 'none',
                     cursor: 'default',
                     color: 'secondary',
                     borderColor: 'secondary'
