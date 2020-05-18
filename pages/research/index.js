@@ -36,6 +36,7 @@ function Index () {
 
           }}>
           {articles.map(({id, title, color, tags, authors, version, date}) => (
+            <NextLink href={`/research/${id}`}><a>
             <Box sx={{ 
               my: [4],
               pt: [4],
@@ -43,11 +44,12 @@ function Index () {
               borderStyle: 'solid', 
               borderColor: 'muted',
               borderWidth: '0px', 
-              borderTopWidth: '1px'
+              borderTopWidth: '1px',
+              color: 'text'
             }} key={id}>
               <Grid columns={[1, '225px 1fr', '225px 1fr']}>
               <Box>
-                <NextLink href={`/research/${id}`}><a><Box sx={{
+                <Box sx={{
                   display: 'inline-block',
                   width: '130px',
                   height: '130px',                  
@@ -73,7 +75,7 @@ function Index () {
                   fontFamily: 'faux',
                   position: 'absolute',
                   top: '-23px',
-                  left: '20px',
+                  left: '23px',
                   width: '100%',
                   height: '100%',
                   display: 'inline-block',
@@ -88,8 +90,6 @@ function Index () {
                   }
                 }}>→</Text>
                 </Box>
-                </a>
-                </NextLink>
               </Box>
               <Box>
                 <Text sx={{ fontFamily: 'monospace', color: 'secondary', fontSize: [2] }}>
@@ -100,8 +100,8 @@ function Index () {
                 </Heading>
                 <Text sx={{ 
                   textTransform: 'uppercase', 
-                  letterSpacing: 'mono', 
-                  fontFamily: 'monospace', 
+                  letterSpacing: 'faux', 
+                  fontFamily: 'faux', 
                   fontSize: [3],
                   mt: ['10px'] 
                 }}>
@@ -123,6 +123,8 @@ function Index () {
               </Box>
               </Grid>
             </Box>
+            </a>
+            </NextLink>
           ))}
           <Divider/>
           </Box>
