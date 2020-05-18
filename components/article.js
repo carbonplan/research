@@ -5,7 +5,7 @@ import BackArrow from './article/back-arrow'
 
 const Article = ({ children, meta }) => {
 
-  const info = Contents.filter(({id}) => id === meta.id)[0]
+  const info = Contents.articles.filter(({id}) => id === meta.id)[0]
 
   return <Layout>
     <Box sx={{ backgroundColor: info.color, height: '125px', position: 'relative' }}>
@@ -18,13 +18,13 @@ const Article = ({ children, meta }) => {
       }}>
         <Container sx={{ px: [4] }}>
           <Grid columns={[1, '15% 35% 50%', '15% 35% 50%']} gap={['0px']}>
-            <Text sx={{ fontFamily: 'monospace', textTransform: 'uppercase' }}>
+            <Text sx={{ fontFamily: 'monospace', letterSpacing: 'mono', textTransform: 'uppercase' }}>
               Article({ info.number })
             </Text>
-            <Text sx={{ fontFamily: 'monospace', textTransform: 'uppercase' }}>
+            <Text sx={{ fontFamily: 'monospace', letterSpacing: 'mono', textTransform: 'uppercase' }}>
               by { info.authors }
             </Text>
-            <Text sx={{ fontFamily: 'monospace', textTransform: 'uppercase' }}>
+            <Text sx={{ fontFamily: 'monospace', letterSpacing: 'mono', textTransform: 'uppercase' }}>
               { info.date }
             </Text>
           </Grid>
@@ -34,7 +34,7 @@ const Article = ({ children, meta }) => {
     <Container sx={{ px: [4], mb: [5] }}>
       <BackArrow/>
       <Grid columns={[1, '650px 1fr', '650px 1fr']} gap={['100px']}>
-        <Box sx={{ mt: '-50px' }}>{children}</Box>
+        <Box sx={{ mt: '-65px' }}>{children}</Box>
         <Box sx={{ display: ['none', 'none', 'initial']}}>
           <Box sx={{ mt: '100px', maxWidth: '250px' }}>
             <Text sx={{ fontFamily: 'heading', letterSpacing: 'wide', mb: [3] }}>
@@ -45,11 +45,11 @@ const Article = ({ children, meta }) => {
             </Text>
           </Box>
           {meta.quotes.map((quote) => (
-            <Box key={quote.position} sx={{ mt: quote.position, maxWidth: '250px' }}>
+            <Box key={quote.position} sx={{ position: 'absolute', top: quote.position, maxWidth: '250px' }}>
             <Text sx={{ 
               fontFamily: 'heading', 
               fontSize: [5], 
-              lineHeight: [1.125], 
+              lineHeight: 'heading',
               color: info.color 
             }}>
               {quote.text}

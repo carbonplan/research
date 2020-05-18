@@ -4,7 +4,7 @@
   "description": "directory of carbonplan notes, notebooks, primers, data, and models",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development next",
+    "dev": "NODE_ENV=development next -p 4000",
     "build": "next build",
     "start": "next start"
   },
@@ -21,6 +21,7 @@
   "dependencies": {
     "@mdx-js/loader": "^1.6.1",
     "@next/mdx": "^9.3.6",
+    "@theme-ui/color": "^0.3.1",
     "next": "^9.3.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

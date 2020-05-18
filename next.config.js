@@ -11,5 +11,5 @@ const withMDX = require('@next/mdx')({
 
 module.exports = withMDX({
   pageExtensions: ['jsx', 'js', 'md', 'mdx'],
-  assetPrefix: isDev ? '' : 'https://staging.research.carbonplan.org'
+  assetPrefix: isDev ? '' : 'https://staging.research.carbonplan.org/'
 })

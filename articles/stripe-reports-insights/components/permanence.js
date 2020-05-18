@@ -116,12 +116,16 @@ const Permanence = () => {
     data={{ values: values }} renderer={'svg'} actions={false} spec={vgSpec} />
     <Text sx={{ 
       color: 'secondary', 
-      fontSize: [1], 
-      fontFamily: 'monospace', 
-      mt: [2], 
+      fontSize: [2], 
+      fontFamily: 'faux', 
+      letterSpacing: 'faux',
+      mt: [3], 
       mb: [5] 
     }}>
-    FIGURE 1 / Each point shows the cost and permanence for a project. 
+    FIGURE 1 <Text sx={{
+      display: 'inline-block',
+      color: 'text'
+    }}>/</Text> Each point shows the cost and permanence for a project. 
     Colors represent project categories:{' '}
     <Inline name='forests'/>, <Inline name='soil'/>, <Inline name='biomass'/>,{' '} 
     <Inline name='dac' display='direct air capture'/>, <Inline name='mineralization'/>, 

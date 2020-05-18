@@ -6,15 +6,18 @@ const BackArrow = () => {
   const context = useThemeUI()
   const theme = context.theme
 
-  return <NextLink href='/'><Text sx={{ 
+  return <NextLink href='/research'><a><Text sx={{ 
+    fontFamily: 'faux',
+    color: 'text',
     display: 'inline-block', 
     mr: [3],
     fontSize: [7],
+    mt: [2],
     cursor: 'pointer',
     '&:hover': {
       color: 'secondary'
     }
-  }}>←</Text></NextLink>
+  }}>←</Text></a></NextLink>
   {/*
   <NextLink href='/'><Box sx={{ 
     mt: [5], 
