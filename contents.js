@@ -9,7 +9,8 @@ const Contents = {
       authors: ['CarbonPlan Team'],
       version: '1.0.0',
       date: '05-18-2020',
-      color: 'yellow'
+      color: 'yellow',
+      background: 'road.png'
     }
   ]
 }

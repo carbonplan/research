@@ -12,8 +12,11 @@ const Article = ({ children, meta }) => {
       backgroundColor: info.color, 
       height: ['100px','100px','275px'], 
       position: 'relative',
-      backgroundImage: ['none','none','url("https://carbonplan-assets.s3.amazonaws.com/images/road.png")'],
-      backgroundSize: 'cover' 
+      backgroundImage: ['none','none',
+        `url(https://carbonplan-assets.s3.amazonaws.com/images/${info.background})`
+      ],
+      backgroundSize: 'cover',
+      backgroundPosition: '50% 70%'
     }}>
       <Box sx={{ 
         position: 'absolute', 
