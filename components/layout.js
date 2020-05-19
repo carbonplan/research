@@ -4,10 +4,10 @@ import Footer from './footer'
 import Switch from './switch'
 import { Container, Flex, Box, Text } from 'theme-ui'
 
-const Layout = ({ hideFooter, children }) => {
+const Layout = ({ hideFooter, shareCard, shareDescription, shareTitle, children }) => {
   return (
     <>
-      <Seo/>
+      <Seo shareCard={shareCard} shareDescription={shareDescription} shareTitle={shareTitle}/>
       <Flex
         sx={{
           flexDirection: 'column',

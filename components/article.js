@@ -7,7 +7,7 @@ const Article = ({ children, meta }) => {
 
   const info = Contents.articles.filter(({id}) => id === meta.id)[0]
 
-  return <Layout>
+  return <Layout shareCard={meta.id} shareDescription={meta.summary} shareTitle={info.title}>
     <Box sx={{ 
       backgroundColor: info.color, 
       height: ['100px','100px','275px'], 
