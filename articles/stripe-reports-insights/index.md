@@ -76,7 +76,7 @@ We were able to assign a <Check closed={true}/> for many projects on mechanism, 
 
 <Table/>
 
-The absence of a <Check closed={true}/> should not necessarily be interpreted as a critque. Most of the time, it reflects a lack of information or certainty. Over time, we intend to develop our capacity to reach more definitive answers across our metrics, and hope that as a community we learn more about the science and data underlying these projects. We also offer suggestions below for how future procurement processes can elicit more useful information from projects for the purpose of analysis. Fundamentally, however, the complexity of carbon removal solutions across so many technologies presents a challenge for any one organization to evaluate.
+The absence of a <Check closed={true}/> should not necessarily be interpreted as a critique. Most of the time, it reflects a lack of information or certainty. Over time, we intend to develop our capacity to reach more definitive answers across our metrics, and hope that as a community we learn more about the science and data underlying these projects. We also offer suggestions below for how future procurement processes can elicit more useful information from projects for the purpose of analysis. Fundamentally, however, the complexity of carbon removal solutions across so many technologies presents a challenge for any one organization to evaluate.
 
 ## The permanence gap
 
