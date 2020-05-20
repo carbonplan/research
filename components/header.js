@@ -96,9 +96,9 @@ const Header = () => {
           fontSize: ['92px']
         }}> 
           <Link href='/about' sx={link}>About</Link>
-          <Link href='/team' sx={link}>Team</Link>
-          <Link href='/research' sx={link}>Research</Link>
           <Link href='/reports' sx={link}>Reports</Link>
+          <Link href='/research' sx={link}>Research</Link>
+          <Link href='/team' sx={link}>Team</Link>
           <Link href='/faq' sx={link}>FAQ</Link>
         </Box>
         </Container>

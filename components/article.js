@@ -1,19 +1,19 @@
 import { Box, Text, Grid, Container } from 'theme-ui'
 import Layout from './layout'
-import Contents from '../contents'
 import BackArrow from './article/back-arrow'
+import contents from '../contents'
 
 const Article = ({ children, meta }) => {
 
-  const info = Contents.articles.filter(({id}) => id === meta.id)[0]
+  const info = contents[meta.id]
 
   return <Layout shareCard={meta.id} shareDescription={meta.summary} shareTitle={info.title}>
     <Box sx={{ 
       backgroundColor: info.color, 
-      height: ['100px','100px','275px'], 
+      height: ['100px','100px',info.background ? '275px' : '100px'], 
       position: 'relative',
       backgroundImage: ['none','none',
-        `url(https://carbonplan-assets.s3.amazonaws.com/images/${info.background})`
+        info.background ? `url(https://carbonplan-assets.s3.amazonaws.com/images/${info.background})` : 'none'
       ],
       backgroundSize: 'cover',
       backgroundPosition: '50% 70%'

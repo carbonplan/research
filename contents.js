@@ -1,6 +1,5 @@
 const Contents = {
-  articles: [
-    {
+  'stripe-reports-insights': {
       id: 'stripe-reports-insights',
       number: 0,
       title: 'Insights from our first project reports',
@@ -10,9 +9,9 @@ const Contents = {
       version: '1.0.0',
       date: '05-18-2020',
       color: 'yellow',
-      background: 'road.png'
+      background: 'road.png',
+      icon: 'road-small.png'
     }
-  ]
 }
 
 export default Contents
