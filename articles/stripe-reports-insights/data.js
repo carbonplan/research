@@ -93,7 +93,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -187,7 +193,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -198,9 +210,9 @@ module.exports = {
           "name": "mechanism",
           "value": "",
           "units": "",
-          "rating": 0.0,
+          "rating": 1.0,
           "notes": "Broker facilitates atmospheric carbon removal by providing an incentive to adopt agricultural practices that increase carbon sequestration in soils.",
-          "comment": "Multiple established soil carbon removal pathways exist, including five referenced in the Nori Croplands methodlogy (Section 2.3 of Version 1.1). Validating specific removal mechanisms would require more project details.",
+          "comment": "Multiple established soil carbon removal pathways exist, including five referenced in the Nori Croplands methodology (Section 2.3 of Version 1.1). According to independent verification by Aster Global, Inc. available on Nori's website, this specific project is practicing no till and planting directly into a living winter cover crop.",
           "removal": 1.0,
           "avoided": 0.0
         },
@@ -211,7 +223,7 @@ module.exports = {
           "units": "tCO2",
           "rating": 0.0,
           "notes": "Volume based on a single supplier, Harborview Farms, which includes 27 plots totaling 14011 tCO2. Volumes calculated using USDA COMET-Farm model, using project-level data collected by Nori. The Nori platform offers a larger portfolio of projects, but they are not considered here.",
-          "comment": "Project locations are specified and COMET-Farm is a publicly available tool. Validating individual volumes would require knowing at least which practices will be applied at project sites, model parameters used, or more complete plot details."
+          "comment": "Project locations are specified and COMET-Farm is a publicly available tool. Validating volume further would require knowing model parameters used, having more complete plot details, and knowing more about project duration."
         },
         {
           "type": "Metric",
@@ -281,7 +293,17 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        },
+        {
+          "date": "05-20-2020",
+          "note": "Updated mechanism validation based on notes from project website."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -375,7 +397,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -469,7 +497,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -563,7 +597,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -657,7 +697,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -751,7 +797,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -845,7 +897,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -939,7 +997,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -1033,7 +1097,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -1127,7 +1197,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -1221,7 +1297,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -1315,7 +1397,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -1409,7 +1497,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -1503,7 +1597,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -1597,7 +1697,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -1691,7 +1797,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -1785,7 +1897,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -1879,7 +1997,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -1977,7 +2101,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -2071,7 +2201,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -2165,7 +2301,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     },
     {
       "type": "Project",
@@ -2259,7 +2401,13 @@ module.exports = {
         "name": "Stripe 2020 Negative Emissions Purchase",
         "license": "CC-BY-4.0",
         "url": "https://github.com/stripe/negative-emissions-source-materials"
-      }
+      },
+      "revisions": [
+        {
+          "date": "05-18-2020",
+          "note": "First release."
+        }
+      ]
     }
   ]
 }
