@@ -7,7 +7,6 @@ var vegaLite = require('vega-lite')
 export const config = (theme) => {
   return {
     background: null,
-    cursor: 'pointer',
     padding: { left: 100, right: 0, top: 30, bottom: 50 },
     axis: {
       grid: false,

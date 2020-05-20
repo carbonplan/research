@@ -17,6 +17,7 @@ class MyApp extends App {
           <style jsx global>{`
             body {
               overscroll-behavior: none;
+              cursor: inherit !important;
             }
 
             .no-focus-outline a:focus,
