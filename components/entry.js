@@ -55,7 +55,7 @@ const Entry =({ info }) => {
           <Text id='arrow' sx={{ 
             fontFamily: 'faux',
             position: 'absolute',
-            top: '-16px',
+            top: '-18px',
             left: '26px',
             width: '100%',
             height: '100%',
