@@ -33,14 +33,11 @@ function Index () {
             on carbon removal and climate solutions by us and our collaborators.
           </Text>
           <Box>
-          {Object.keys(contents).map((id) => (
-            <NextLink key={id} href='/research/[id]' as={`/research/${id}`}>
-              <a>
-                <Entry info={contents[id]}></Entry>
-              </a>
-            </NextLink>
-            )
-          )}
+          <NextLink key='stripe-reports-insights' href='/research/stripe-reports-insights'>
+            <a>
+              <Entry info={contents['stripe-reports-insights']}></Entry>
+            </a>
+          </NextLink>
           </Box>
           <Divider sx={{ mt: [0] }}/>
           <Text sx={{ mt: [5], mb: [6, 0, 0], fontSize: [3] }}>
