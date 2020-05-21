@@ -66,8 +66,13 @@ const Table = () => {
       <Box></Box>
     </Row>
     {data.projects.sort((a, b) => {
-      if (order.indexOf(a.tags[0]) < order.indexOf(b.tags[0])) return -1
-      else return 1
+      if (order.indexOf(a.tags[0]) < order.indexOf(b.tags[0])) {
+        return -1
+      } else if (order.indexOf(a.tags[0]) == order.indexOf(b.tags[0])) {
+        return 0
+      } else if (order.indexOf(a.tags[0]) > order.indexOf(b.tags[0])) {
+        return 1
+      }
     }).map((project) => {
       const color = theme.colors[theme.tags[project.tags[0]]]
       const url = '/reports/?id=' + project.id + '&expand=true'
