@@ -2320,7 +2320,7 @@ module.exports = {
           "units": "",
           "rating": 1.0,
           "notes": "Project uses bio-oil converted from biomass via fast pyrolysism and then pumped into an underground waste disposal well for geological storage.",
-          "comment": "Both components of the process are well established, and their combination has been proposed but not yet performed. From a narrow lifecycle perspective, project only avoids CO2 emissions by sourcing bio-oil that would otherwise be burned producing CO2 emissions. From a broad perspective, the biomass and bio-oil production coupled to injection forms a carbon removal pathway. Geological sequestration capacity could become a constraint at larger scales.",
+          "comment": "Both components of the process are well established, and their combination has been proposed but not yet performed. Project claims bio-oil purchased is in excess capacity from supplier, and that the source sawdust would have otherwise decomposed. From a narrow lifecycle perspective, the project avoids CO2 emissions because the source sawdust from which the bio-oil was procured would have decomposed, resulting in biogenic CO2 emissions. From a broad perspective, coupling biomass production, bio-oil production, and underground injection forms a carbon removal pathway. Geological sequestration capacity could become a constraint at larger scales.",
           "removal": 0.0,
           "avoided": 1.0
         },
@@ -2357,11 +2357,11 @@ module.exports = {
         {
           "type": "Metric",
           "name": "additionality",
-          "value": 1.0,
+          "value": 2.0,
           "units": "",
           "rating": "",
           "notes": "",
-          "comment": "Competing uses of bio-oil assumed to be burning for energy. Further analysis would require more information on competing uses. Some possibility that procurement of bio-oil will expand production."
+          "comment": "Project claims bio-oil is purchased from supplier\u2019s unused, excess capacity, so would not have been used as a fossil fuel replacement. Project also claims that the source sawdust would have otherwise decomposed and would not have been used as a fossil fuel replacement. The high cost for the pilot project and the lack of inherent commercial value provide evidence of additionality. Some possibility that at larger scales bio-oil procurement would result in future expanded bio-oil production or that the future acquisition of biological feedstocks would compete with fossil fuel displacement."
         },
         {
           "type": "Metric",
@@ -2406,6 +2406,10 @@ module.exports = {
         {
           "date": "05-18-2020",
           "note": "First release."
+        },
+        {
+          "date": "05-30-2020",
+          "note": "Updated comment on mechanism, and updated comment and increased score on additionality, after project developer identified a mistake in how the report described information about the counterfactual."
         }
       ]
     }
