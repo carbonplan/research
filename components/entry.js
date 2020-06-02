@@ -83,10 +83,10 @@ const Entry =({ info }) => {
             fontSize: [3],
             mt: ['10px'] 
           }}>
-            by {authors.map((author) => <Text key={author} sx={{
+            by {authors.map((author, ix) => <Text key={author} sx={{
               display: 'inline-block',
               mr: [2]
-            }}>{author}</Text>)}
+            }}>{author} {ix < (info.authors.length - 1) ? '+' : ''}</Text>)}
           </Text>
           <Box sx={{ mt: ['10px'], fontFamily: 'monospace', letterSpacing: 'extra' }}>
             {tags.map((tag) => <Box key={tag} sx={{ 

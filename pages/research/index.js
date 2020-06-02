@@ -33,6 +33,11 @@ function Index () {
             on carbon removal and climate solutions by us and our collaborators.
           </Text>
           <Box>
+          <NextLink key='soil-carbon-comment' href='/research/soil-carbon-comment'>
+            <a>
+              <Entry info={contents['soil-carbon-comment']}></Entry>
+            </a>
+          </NextLink>
           <NextLink key='stripe-reports-insights' href='/research/stripe-reports-insights'>
             <a>
               <Entry info={contents['stripe-reports-insights']}></Entry>
