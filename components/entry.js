@@ -13,7 +13,6 @@ const Entry =({ info }) => {
     }
   }}>
     <Box id='box' sx={{ 
-      mt: [4],
       pt: [4],
       pb: [4],
       borderStyle: 'solid', 

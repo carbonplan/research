@@ -32,7 +32,7 @@ function Index () {
             A collection of datasets, models, interactive articles, and commentary
             on carbon removal and climate solutions by us and our collaborators.
           </Text>
-          <Box>
+          <Box sx={{ mt: [4] }}>
           <NextLink key='soil-carbon-comment' href='/research/soil-carbon-comment'>
             <a>
               <Entry info={contents['soil-carbon-comment']}></Entry>
