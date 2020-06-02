@@ -10,18 +10,19 @@ const Article = ({ children, meta }) => {
   return <Layout shareCard={meta.id} shareDescription={meta.summary} shareTitle={info.title}>
     <Box sx={{ 
       backgroundColor: info.color, 
-      height: ['100px','100px',info.background ? '275px' : '100px'], 
+      height: ['auto','auto', info.background ? '275px' : '100px'], 
       position: 'relative',
       backgroundImage: ['none','none',
         info.background ? `url(https://carbonplan-assets.s3.amazonaws.com/images/${info.background})` : 'none'
       ],
       backgroundSize: 'cover',
-      backgroundPosition: '50% 70%'
+      backgroundPosition: '50% 70%',
+      py: [3, 3, 0]
     }}>
       <Box sx={{ 
-        position: 'absolute', 
+        position: ['initial', 'initial', 'absolute'], 
         bottom: 0, 
-        pb: [3],
+        pb: [0, 0, 3],
         width: '100%',
         color: 'background'
       }}>
@@ -31,7 +32,9 @@ const Article = ({ children, meta }) => {
               Article({ info.number })
             </Text>
             <Text sx={{ fontFamily: 'monospace', letterSpacing: 'mono', textTransform: 'uppercase' }}>
-              by { info.authors }
+              by { info.authors.map((author, ix) => <Text key={author} sx={{ 
+                display: 'inline-block', 
+                mr: [2] }}>{author} {ix < (info.authors.length - 1) ? '+' : ''}</Text>) }
             </Text>
             <Text sx={{ fontFamily: 'monospace', letterSpacing: 'mono', textTransform: 'uppercase' }}>
               { info.date }
