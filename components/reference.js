@@ -52,8 +52,11 @@ const Reference = ({ color, data }) => {
       display: 'inline-block',
       transition: 'opacity 0.2s ease-in-out'
     }}>
-      <sup>{data.number}</sup>{' '}{data.authors}{' '}({data.year}){' '}
-      {data.title}{' '}<i>{data.journal}</i>
+      <span sx={{
+        ml: ['-18px'],
+        display: ['none', 'none', 'initial']
+      }}>{data.number}</span><span sx={{ ml: [0, 0, '7px'] }}>{' '}{data.authors}{' '}({data.year}){' '}
+      {data.title}{' '}<i>{data.journal}</i></span>
     </span>
   </span></a></>
 }
