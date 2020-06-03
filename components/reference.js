@@ -26,7 +26,7 @@ const Reference = ({ color, data }) => {
     pr: [1], 
     fontSize: [1],
     cursor: 'pointer',
-    color: ['text', 'text', selected ? color : 'text'],
+    color: [selectedMobile ? color : 'text', selectedMobile ? color : 'text', selected ? color : 'text'],
     transition: 'color 0.2s ease-in-out'
   }}>{data.number}</sup>
   <a href={data.url} target='_blank'><span onMouseOver={toggleOn} onMouseOut={toggleOff} sx={{ 
