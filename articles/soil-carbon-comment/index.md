@@ -1,5 +1,6 @@
 import Article from '../../components/article'
-import Reference from '../../components/reference'
+import Reference from '../../components/article/reference'
+import TaggedLink from '../../components/article/tagged-link'
 import Table from './components/table'
 import Heading from './components/heading'
 
@@ -122,12 +123,11 @@ Forest carbon quantification has also benefited from advances in remote sensing 
 Any protocol for soil carbon crediting needs to start by appreciating the complexity of the science, and progress will require coordination around public data, sharing of methods, and transparency.
 
 ## Our comments
-
-Given the enormous challenges in designing a carbon offset protocol to quantify and credit soil carbon storage, we were interested to see the Climate Action Reserve take this problem on. We reviewed the draft protocol and highlight two sets of issues here. See our [comment letter](https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf) for details and check out comments posted by other groups at the [protocol website](https://www.climateactionreserve.org/how/protocols/soil-enrichment/). 
+Given the enormous challenges in designing a carbon offset protocol to quantify and credit soil carbon storage, we were interested to see the Climate Action Reserve take this problem on. We reviewed the draft protocol and highlight two sets of issues here. See our <TaggedLink action='PDF' category='downloads' href='https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf'>comment letter</TaggedLink> for details and check out comments posted by other groups at the [protocol website](https://www.climateactionreserve.org/how/protocols/soil-enrichment/).
 
 ### Conflict of interest
 
-Normally, the idea behind third-party carbon offset standards is that an independent body develops technical methods and verification processes. Those methods give buyers confidence that the credited climate benefits meet rigorous standards. (In practice, this approach has always been complicated by the fact that verification is typically paid for by the very projects that seek to generate credits.) Success requires independence between the development of the rules and their application to specific projects or companies. 
+Normally, the idea behind third-party carbon offset standards is that an independent body develops technical methods and verification processes. Those methods give buyers confidence that the credited climate benefits meet rigorous standards. (In practice, this approach has always been complicated by the fact that verification is typically paid for by the very projects that seek to generate credits.) Success requires independence between the development of the rules and their application to specific projects or companies.
 
 Unfortunately, that’s not the case here. Indigo Ag paid the Climate Action Reserve to develop the protocol and contributed to drafting its requirements. Not only did Indigo Ag shape the protocol, but the protocol’s design, as we discuss below, allows users like Indigo Ag to pick their own sampling methods and model calculations — subject to the approval of the Climate Action Reserve, which was paid by Indigo Ag to develop the protocol in the first place. The protocol doesn’t even require independent verifiers to collect independent soil samples or reproduce projects’ modeled climate benefits. 
 
