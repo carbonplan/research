@@ -14,7 +14,8 @@ class MyApp extends App {
       <ThemeProvider theme={theme}>
         <MDXProvider>
           <Component {...pageProps} />
-          <style jsx global>{`
+          <style jsx global>
+            {`
             body {
               overscroll-behavior: none;
               cursor: inherit !important;

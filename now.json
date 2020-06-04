@@ -2,6 +2,6 @@
   "version": 2,
   "routes": [
     { "src": "/_next(.*)", "dest": "/research/_next$1" },
-    { "src": "/(.*)", "dest": "/research$1"}
+    { "src": "/(.*)", "dest": "/research$1" }
   ]
 }
