@@ -6,19 +6,30 @@ const BackArrow = () => {
   const context = useThemeUI()
   const theme = context.theme
 
-  return <NextLink href='/research'><a><Text sx={{ 
-    fontFamily: 'faux',
-    color: 'text',
-    display: 'inline-block', 
-    mr: [3],
-    fontSize: [7],
-    mt: [2],
-    cursor: 'pointer',
-    '&:hover': {
-      color: 'secondary'
-    }
-  }}>←</Text></a></NextLink>
-  {/*
+  return (
+    <NextLink href='/research'>
+      <a>
+        <Text
+          sx={{
+            fontFamily: 'faux',
+            color: 'text',
+            display: 'inline-block',
+            mr: [3],
+            fontSize: [7],
+            mt: [2],
+            cursor: 'pointer',
+            '&:hover': {
+              color: 'secondary',
+            },
+          }}
+        >
+          ←
+        </Text>
+      </a>
+    </NextLink>
+  )
+  {
+    /*
   <NextLink href='/'><Box sx={{ 
     mt: [5], 
     width: '200px', 
@@ -38,8 +49,8 @@ const BackArrow = () => {
     <line x1="2.4" y1="15.8" x2="17" y2="0.8"/>
   </svg>
   </Box></NextLink>
-  */}
+  */
+  }
 }
 
 export default BackArrow
-

@@ -19,78 +19,80 @@ export const config = (theme) => {
       domain: true,
       tickOffset: 0,
       labelPadding: 5,
-      titlePadding: 10
+      titlePadding: 10,
     },
     view: {
-      stroke: 'none'
+      stroke: 'none',
     },
     line: {
       strokeWidth: 5,
-      color: theme.colors.text
+      color: theme.colors.text,
     },
-    autosize: 'none'
+    autosize: 'none',
   }
 }
 
 const Permanence = () => {
-
   const { projects } = data
   const context = useThemeUI()
   const theme = context.theme
 
   const Inline = ({ name, display }) => {
-    return <Text sx={{ 
-      display: 'inline-block', 
-      color: theme.tags[name] 
-    }}>{ display ? display : name }</Text>
+    return (
+      <Text
+        sx={{
+          display: 'inline-block',
+          color: theme.tags[name],
+        }}
+      >
+        {display ? display : name}
+      </Text>
+    )
   }
 
   var values = []
   let opacity
   for (var i = 0; i < projects.length; i++) {
-    values.push(
-      {
-        permanence: parseFloat(projects[i].metrics.filter(
-          m => (m.name == 'permanence'))[0].value
-        ),
-        cost: parseFloat(projects[i].metrics.filter(
-          m => (m.name == 'cost'))[0].value
-        ),
-        group: projects[i].tags[0],
-        color: theme.colors[theme.tags[projects[i].tags[0]]],
-        name: projects[i].name,
-        id: projects[i].id,
-        opacity: 1
-      }
-    )
+    values.push({
+      permanence: parseFloat(
+        projects[i].metrics.filter((m) => m.name == 'permanence')[0].value
+      ),
+      cost: parseFloat(
+        projects[i].metrics.filter((m) => m.name == 'cost')[0].value
+      ),
+      group: projects[i].tags[0],
+      color: theme.colors[theme.tags[projects[i].tags[0]]],
+      name: projects[i].name,
+      id: projects[i].id,
+      opacity: 1,
+    })
   }
 
   const spec = {
-    data: { 
-      name: 'values' 
+    data: {
+      name: 'values',
     },
     mark: {
-      type: 'circle', 
-      size: 200
+      type: 'circle',
+      size: 200,
     },
     encoding: {
-      y: { 
-        field: 'cost', 
-        type: 'quantitative', 
+      y: {
+        field: 'cost',
+        type: 'quantitative',
         axis: { title: 'COST $/tCO2', tickCount: 3 },
         scale: { type: 'log', domain: [2, 2000], nice: false },
       },
       x: {
-        field: 'permanence', 
-        type: 'quantitative', 
+        field: 'permanence',
+        type: 'quantitative',
         axis: { title: 'PERMANENCE years', tickCount: 3 },
-        scale: { type: 'log',  domain: [0.6, 2000], nice: false  },
+        scale: { type: 'log', domain: [0.6, 2000], nice: false },
       },
       color: {
         field: 'color',
         type: 'nominal',
-        scale: null
-
+        scale: null,
       },
       stroke: {
         field: 'color',
@@ -100,9 +102,9 @@ const Permanence = () => {
       opacity: {
         field: 'opacity',
         type: 'quantitative',
-        scale: null
-      }
-    }
+        scale: null,
+      },
+    },
   }
 
   var vgSpec = vegaLite.compile(spec, { config: config(theme) }).spec
@@ -110,27 +112,43 @@ const Permanence = () => {
   const width = 450
   const height = 250
 
-  return <Box sx={{ display: ['none', 'inherit', 'inherit'] }}>
-    <Vega width={width} height={height}
-    data={{ values: values }} renderer={'svg'} actions={false} spec={vgSpec} />
-    <Text sx={{ 
-      color: 'secondary', 
-      fontSize: [2], 
-      fontFamily: 'faux', 
-      letterSpacing: 'faux',
-      mt: [3], 
-      mb: [5] 
-    }}>
-    FIGURE 1 <Text sx={{
-      display: 'inline-block',
-      color: 'text'
-    }}>/</Text> Each point shows the cost and permanence for a project. 
-    Colors represent project categories:{' '}
-    <Inline name='forests'/>, <Inline name='soil'/>, <Inline name='biomass'/>,{' '} 
-    <Inline name='dac' display='direct air capture'/>, <Inline name='mineralization'/>, 
-    and <Inline name='ocean'/>.
-  </Text>
-  </Box>
+  return (
+    <Box sx={{ display: ['none', 'inherit', 'inherit'] }}>
+      <Vega
+        width={width}
+        height={height}
+        data={{ values: values }}
+        renderer={'svg'}
+        actions={false}
+        spec={vgSpec}
+      />
+      <Text
+        sx={{
+          color: 'secondary',
+          fontSize: [2],
+          fontFamily: 'faux',
+          letterSpacing: 'faux',
+          mt: [3],
+          mb: [5],
+        }}
+      >
+        FIGURE 1{' '}
+        <Text
+          sx={{
+            display: 'inline-block',
+            color: 'text',
+          }}
+        >
+          /
+        </Text>{' '}
+        Each point shows the cost and permanence for a project. Colors represent
+        project categories: <Inline name='forests' />, <Inline name='soil' />,{' '}
+        <Inline name='biomass' />,{' '}
+        <Inline name='dac' display='direct air capture' />,{' '}
+        <Inline name='mineralization' />, and <Inline name='ocean' />.
+      </Text>
+    </Box>
+  )
 }
 
 export default Permanence
