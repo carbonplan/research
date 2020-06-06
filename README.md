@@ -1,4 +1,4 @@
-# (carbon)plan / research
+# carbonplan / research
 
 This repository contains our directory of research articles, including notes, primers, models, and datasets. Browse at [carbonplan.org/research](https://carbonplan.org/research).
 
