@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "npm run lint-js && npm run lint-md",
     "lint-js": "prettier --check '{components,lib,pages,articles}/**/*.js'",
-    "lint-md": "prettier --check 'articles/**/*.md' --parser mdx"
+    "lint-md": "prettier --check README.md 'articles/**/*.md' --parser mdx"
   },
   "repository": {
     "type": "git",
