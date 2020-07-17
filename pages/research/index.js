@@ -45,6 +45,14 @@ function Index() {
           </Text>
           <Box sx={{ mt: [4] }}>
             <NextLink
+              key='forest-climate-risks'
+              href='/research/forest-climate-risks'
+            >
+              <a>
+                <Entry info={contents['forest-climate-risks']}></Entry>
+              </a>
+            </NextLink>
+            <NextLink
               key='soil-carbon-comment'
               href='/research/soil-carbon-comment'
             >

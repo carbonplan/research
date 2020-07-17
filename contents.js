@@ -25,6 +25,19 @@ const Contents = {
     background: 'article-001/soil.png',
     icon: 'article-001/soil-small.png',
   },
+  'forest-climate-risks': {
+    id: 'forest-climate-risks',
+    number: 2,
+    title: 'Climate-driven risks to forest carbon',
+    section: 'research',
+    tags: ['publication'],
+    authors: ['CarbonPlan Team'],
+    version: '1.0.0',
+    date: '06-23-2020',
+    color: 'green',
+    background: 'article-002/tree.png',
+    icon: 'article-002/tree-small.png',
+  },
 }
 
 export default Contents

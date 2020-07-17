@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "NODE_ENV=development next -p 4000",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "npm run lint-js && npm run lint-md",
+    "lint-js": "prettier --check '{components,lib,pages,articles}/**/*.js'",
+    "lint-md": "prettier --check README.md 'articles/**/*.md' --parser mdx"
   },
   "repository": {
     "type": "git",
