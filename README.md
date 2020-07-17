@@ -1,6 +1,6 @@
 <img
   src='https://carbonplan-assets.s3.amazonaws.com/monogram/dark-small.png'
-  height='96'
+  height='48'
 />
 
 # carbonplan / research
