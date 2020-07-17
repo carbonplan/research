@@ -1,8 +1,22 @@
+<img
+  src='https://carbonplan-assets.s3.amazonaws.com/monogram/dark-small.png'
+  height='96'
+/>
+
 # carbonplan / research
 
-[![Build](https://github.com/carbonplan/research/workflows/CI/badge.svg)](https://github.com/carbonplan/research/actions)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=carbonplan/research)](https://dependabot.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/carbonplan/research/blob/master/LICENSE)
+**datasets, models, interactives, and commentary on carbon removal**
+
+[![GitHub][github-badge]][github]
+![Build Status][]
+![dependabot][]
+![MIT License][]
+
+[github]: https://github.com/carbonplan/research
+[github-badge]: https://flat.badgen.net/badge/-/github?icon=github&label
+[build status]: https://flat.badgen.net/github/checks/carbonplan/research
+[dependabot]: https://flat.badgen.net/dependabot/carbonplan/research?icon=dependabot
+[mit license]: https://flat.badgen.net/badge/license/MIT/blue
 
 This repository contains our directory of research articles, including notes, primers, models, and datasets. Browse at [carbonplan.org/research](https://carbonplan.org/research).
 
