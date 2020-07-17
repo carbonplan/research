@@ -1,4 +1,8 @@
-# (carbon)plan / research
+# carbonplan / research
+
+[![Build](https://github.com/carbonplan/research/workflows/CI/badge.svg)](https://github.com/carbonplan/research/actions)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=carbonplan/research)](https://dependabot.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/carbonplan/research/blob/master/LICENSE)
 
 This repository contains our directory of research articles, including notes, primers, models, and datasets. Browse at [carbonplan.org/research](https://carbonplan.org/research).
 
