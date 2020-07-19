@@ -9,13 +9,11 @@
 
 [![GitHub][github-badge]][github]
 ![Build Status][]
-![dependabot][]
 ![MIT License][]
 
 [github]: https://github.com/carbonplan/research
 [github-badge]: https://flat.badgen.net/badge/-/github?icon=github&label
 [build status]: https://flat.badgen.net/github/checks/carbonplan/research
-[dependabot]: https://flat.badgen.net/dependabot/carbonplan/research?icon=dependabot
 [mit license]: https://flat.badgen.net/badge/license/MIT/blue
 
 This repository contains our directory of research articles, including notes, primers, models, and datasets. Browse at [carbonplan.org/research](https://carbonplan.org/research).
