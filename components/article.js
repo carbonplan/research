@@ -35,7 +35,7 @@ const Article = ({ children, meta }) => {
             bottom: 0,
             pb: [0, 0, 3],
             width: '100%',
-            color: 'background',
+            color: info.invert ? 'primary' : 'background',
           }}
         >
           <Container sx={{ px: [4] }}>

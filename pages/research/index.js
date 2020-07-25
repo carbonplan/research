@@ -44,30 +44,18 @@ function Index() {
             collaborators.
           </Text>
           <Box sx={{ mt: [4] }}>
-            <NextLink
-              key='forest-climate-risks'
-              href='/research/forest-climate-risks'
-            >
-              <a>
-                <Entry info={contents['forest-climate-risks']}></Entry>
-              </a>
-            </NextLink>
-            <NextLink
-              key='soil-carbon-comment'
-              href='/research/soil-carbon-comment'
-            >
-              <a>
-                <Entry info={contents['soil-carbon-comment']}></Entry>
-              </a>
-            </NextLink>
-            <NextLink
-              key='stripe-reports-insights'
-              href='/research/stripe-reports-insights'
-            >
-              <a>
-                <Entry info={contents['stripe-reports-insights']}></Entry>
-              </a>
-            </NextLink>
+            {[
+              'carbon-removal-mechanisms',
+              'forest-climate-risks',
+              'soil-carbon-comment',
+              'stripe-reports-insights',
+            ].map((id) => (
+              <NextLink key={id} href={`/research/${id}`}>
+                <a>
+                  <Entry info={contents[id]}></Entry>
+                </a>
+              </NextLink>
+            ))}
           </Box>
           <Divider sx={{ mt: [0] }} />
           <Text sx={{ mt: [5], mb: [6, 0, 0], fontSize: [3] }}>
