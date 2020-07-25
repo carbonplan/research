@@ -271,7 +271,7 @@ In our diagram, we include a special storage location for such durable “materi
   }}
 />
 
-In some cases, one could reasonably argue that the broader system, including both biomass production and conversion into biochar, performs carbon removal. In this broader system, carbon fluxes from the atmosphere into land biomass; some remains as biomass; some is more permanently stored in biochar; and some emissions are avoided. Strictly from a carbon cycle perspective, it’s rather similar to the combination of direct air capture and geological sequestration described above. We could diagram that more complete system as follows.
+In some cases, one could reasonably argue that the broader system, including both biomass production and conversion into biochar, performs carbon removal. In this broader system, carbon fluxes from the atmosphere into land biomass; some remains as biomass; and some is stored for a long duration as biochar. Strictly from a carbon cycle perspective, it’s rather similar to the combination of direct air capture and geological sequestration described above. We could diagram that more complete system as follows.
 
 <Cycle
   labels={true}
@@ -280,7 +280,6 @@ In some cases, one could reasonably argue that the broader system, including bot
     stock: { geological: false, land: true, ocean: false, material: true },
     flux: [
       { from: 'land', to: 'material', type: 'enhanced' },
-      { from: 'land', to: 'atmosphere', type: 'avoided' },
       { from: 'atmosphere', to: 'land', type: 'enhanced' },
     ],
   }}
@@ -319,7 +318,6 @@ Second, we could broaden the boundary to start with the sawdust. If we assume th
       { from: 'land', to: 'material', type: 'enhanced' },
       { from: 'material', to: 'geological', type: 'enhanced' },
       { from: 'land', to: 'atmosphere', type: 'avoided' },
-      { from: 'material', to: 'atmosphere', type: 'avoided' },
     ],
   }}
 />
@@ -335,8 +333,6 @@ Third, we might consider an even broader boundary that begins with the biomass p
       { from: 'material', to: 'geological', type: 'enhanced' },
       { from: 'land', to: 'material', type: 'enhanced' },
       { from: 'atmosphere', to: 'land', type: 'enhanced' },
-      { from: 'land', to: 'atmosphere', type: 'avoided' },
-      { from: 'material', to: 'atmosphere', type: 'avoided' },
     ],
   }}
 />
