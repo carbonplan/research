@@ -85,7 +85,7 @@ export const sidenotes = {
     title:
       'The technological and economic prospects for CO2 utilization and removal',
     journal: 'Nature',
-    url: 'https://doi.org/s41586-019-1681-6',
+    url: 'https://doi.org/10.1038/s41586-019-1681-6',
   },
   8: {
     offset: 0,
