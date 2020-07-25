@@ -50,7 +50,7 @@ const Contents = {
     color: 'grey',
     background: 'article-003/pipes.png',
     icon: 'article-003/pipes-small.png',
-    invert: true
+    invert: true,
   },
 }
 
