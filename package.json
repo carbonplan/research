@@ -7,9 +7,9 @@
     "dev": "NODE_ENV=development next -p 4000",
     "build": "next build",
     "start": "next start",
-    "lint": "npm run lint-js && npm run lint-md",
-    "lint-js": "prettier --check '{components,lib,pages,articles}/**/*.js'",
-    "lint-md": "prettier --check README.md 'articles/**/*.md' --parser mdx"
+    "format": "npm run format-js && npm run format-md",
+    "format-js": "prettier --write '{components,lib,pages,articles}/**/*.js'",
+    "format-md": "prettier --write README.md 'articles/**/*.md' --parser mdx"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
+    "@carbonplan/components": "^1.0.0",
+    "@carbonplan/theme": "^1.1.0",
     "@mdx-js/loader": "^1.6.14",
     "@next/mdx": "^9.4.4",
     "@theme-ui/color": "^0.3.1",

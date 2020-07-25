@@ -38,6 +38,20 @@ const Contents = {
     background: 'article-002/tree.png',
     icon: 'article-002/tree-small.png',
   },
+  'carbon-removal-mechanisms': {
+    id: 'carbon-removal-mechanisms',
+    number: 3,
+    title: 'Carbon removal mechanisms',
+    section: 'research',
+    tags: ['explainer'],
+    authors: ['CarbonPlan Team', 'Toly Rinberg'],
+    version: '1.0.0',
+    date: '07-24-2020',
+    color: 'grey',
+    background: 'article-003/pipes.png',
+    icon: 'article-003/pipes-small.png',
+    invert: true
+  },
 }
 
 export default Contents
