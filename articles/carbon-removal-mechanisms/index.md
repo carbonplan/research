@@ -280,6 +280,7 @@ In some cases, one could reasonably argue that the broader system, including bot
     stock: { geological: false, land: true, ocean: false, material: true },
     flux: [
       { from: 'land', to: 'material', type: 'enhanced' },
+      { from: 'land', to: 'atmosphere', type: 'avoided' },
       { from: 'atmosphere', to: 'land', type: 'enhanced' },
     ],
   }}
@@ -318,6 +319,7 @@ Second, we could broaden the boundary to start with the sawdust. If we assume th
       { from: 'land', to: 'material', type: 'enhanced' },
       { from: 'material', to: 'geological', type: 'enhanced' },
       { from: 'land', to: 'atmosphere', type: 'avoided' },
+      { from: 'material', to: 'atmosphere', type: 'avoided' },
     ],
   }}
 />
@@ -333,6 +335,8 @@ Third, we might consider an even broader boundary that begins with the biomass p
       { from: 'material', to: 'geological', type: 'enhanced' },
       { from: 'land', to: 'material', type: 'enhanced' },
       { from: 'atmosphere', to: 'land', type: 'enhanced' },
+      { from: 'land', to: 'atmosphere', type: 'avoided' },
+      { from: 'material', to: 'atmosphere', type: 'avoided' },
     ],
   }}
 />
