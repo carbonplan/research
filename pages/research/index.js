@@ -39,7 +39,7 @@ function Index() {
             Research
           </Heading>
           <Text sx={{ maxWidth: '700px', fontSize: [3] }}>
-            A collection of datasets, models, interactive articles, and
+            A collection of datasets, models, explainers, and
             commentary on carbon removal and climate solutions by us and our
             collaborators.
           </Text>
