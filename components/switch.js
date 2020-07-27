@@ -59,14 +59,14 @@ const Footer = (props) => {
         </svg>
       </IconButton>
       <Text
-        sx={{ 
-          whiteSpace: 'nowrap', 
+        sx={{
+          whiteSpace: 'nowrap',
           display: 'inline-block',
           fontFamily: 'monospace',
           color: 'secondary',
           fontSize: [1],
           ml: [2],
-          textTransform: 'normal', 
+          textTransform: 'normal',
         }}
       >
         {color}
