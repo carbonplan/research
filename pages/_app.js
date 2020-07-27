@@ -8,7 +8,7 @@ import { MDXProvider } from '@mdx-js/react'
 import theme from '../theme'
 
 const components = {
-  a: (props) => <Link target='_blank' {...props} />
+  a: (props) => <Link target='_blank' {...props} />,
 }
 
 export default ({ Component, pageProps }) => {

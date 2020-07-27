@@ -39,9 +39,8 @@ function Index() {
             Research
           </Heading>
           <Text sx={{ maxWidth: '700px', fontSize: [3] }}>
-            A collection of datasets, models, explainers, and
-            commentary on carbon removal and climate solutions by us and our
-            collaborators.
+            A collection of datasets, models, explainers, and commentary on
+            carbon removal and climate solutions by us and our collaborators.
           </Text>
           <Box sx={{ mt: [4] }}>
             {[
