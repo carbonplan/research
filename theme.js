@@ -23,4 +23,7 @@ export default {
       fontFamily: 'monospace',
     },
   },
+  breakpoints: [
+    '40em', '64em', '64em',
+  ],
 }
