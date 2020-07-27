@@ -36,11 +36,14 @@ const Footer = (props) => {
       }}
     >
       <Text
-        variant='metric.units'
         sx={{
           whiteSpace: 'nowrap',
           display: 'inline-block',
           leftMargin: '15px',
+          fontFamily: 'monospace',
+          color: 'secondary',
+          fontSize: [1],
+          textTransform: 'normal',
         }}
       >
         SCROLL: 0.{(scroll.y * 100).toFixed(0).toString().padStart(2, '0')}
@@ -56,8 +59,15 @@ const Footer = (props) => {
         </svg>
       </IconButton>
       <Text
-        variant='metric.units'
-        sx={{ whiteSpace: 'nowrap', display: 'inline-block' }}
+        sx={{ 
+          whiteSpace: 'nowrap', 
+          display: 'inline-block',
+          fontFamily: 'monospace',
+          color: 'secondary',
+          fontSize: [1],
+          ml: [2],
+          textTransform: 'normal', 
+        }}
       >
         {color}
       </Text>

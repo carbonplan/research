@@ -43,7 +43,7 @@ const Article = ({ children, meta }) => {
               <Text
                 sx={{
                   fontFamily: 'monospace',
-                  letterSpacing: 'mono',
+                  letterSpacing: 'monospace',
                   textTransform: 'uppercase',
                 }}
               >
@@ -52,7 +52,7 @@ const Article = ({ children, meta }) => {
               <Text
                 sx={{
                   fontFamily: 'monospace',
-                  letterSpacing: 'mono',
+                  letterSpacing: 'monospace',
                   textTransform: 'uppercase',
                 }}
               >
@@ -72,7 +72,7 @@ const Article = ({ children, meta }) => {
               <Text
                 sx={{
                   fontFamily: 'monospace',
-                  letterSpacing: 'mono',
+                  letterSpacing: 'monospace',
                   textTransform: 'uppercase',
                 }}
               >
