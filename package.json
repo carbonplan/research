@@ -34,7 +34,7 @@
     "rehype-slug": "^3.0.0",
     "theme-ui": "^0.3.1",
     "vega": "^5.15.0",
-    "vega-lite": "^4.14.1"
+    "vega-lite": "^4.15.0"
   },
   "devDependencies": {
     "prettier": "2.1.1"
