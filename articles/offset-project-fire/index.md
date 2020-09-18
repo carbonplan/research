@@ -13,7 +13,7 @@ export const meta = {
 
 export const sidenotes = {
   1: {
-    offset: -80,
+    offset: -90,
     number: 1,
     authors: 'M A Krawchuk et al.',
     year: 2009,
@@ -66,7 +66,7 @@ export const sidenotes = {
     url: 'https://www.nap.edu/catalog/12877/climate-stabilization-targets-emissions-concentrations-and-impacts-over-decades-to'
   },
   8: {
-    offset: -50,
+    offset: -30,
     number: 8,
     authors: 'B M Sleeter et al.',
     title: 'Effects of 21st‐century climate, land use, and disturbances on ecosystem carbon balance in California',
