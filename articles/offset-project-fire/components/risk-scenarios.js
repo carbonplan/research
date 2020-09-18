@@ -33,7 +33,7 @@ const Radio = ({ value, label, current, set }) => {
           verticalAlign: 'middle',
           width: '22px',
           height: '22px',
-          my: [2],
+          my: [1],
         }}
       >
         <Box
@@ -95,6 +95,7 @@ const RiskScenarios = () => {
   const [risk, setRisk] = useState(0.25)
   const [mortality, setMortality] = useState(0.5)
   const [data, setData] = useState(null)
+  const [chartWidth, setChartWidth] = useState(550)
   const buffer = 0.11
 
   useEffect(() => {
@@ -121,17 +122,31 @@ const RiskScenarios = () => {
     setData(combined.flat())
   }, [risk, mortality])
 
+  useEffect(() => {
+    if (!window.matchMedia('(min-width: 640px)').matches) {
+      console.log('here')
+      setChartWidth(300)
+    }
+    if (!window.matchMedia('(min-width: 400px)').matches) {
+      console.log('here')
+      setChartWidth(200)
+    }
+    if (!window.matchMedia('(min-width: 375px)').matches) {
+      console.log('here')
+      setChartWidth(175)
+    }
+  }, [])
+
   return (
     <Box
       sx={{
         fontSize: [3],
         my: [5],
-        display: ['none', 'none', 'inherit'],
       }}
     >
       <Divider />
       <Grid
-        columns={[2]}
+        columns={[1, 2, 2]}
         sx={{
           my: [3],
         }}
@@ -154,7 +169,7 @@ const RiskScenarios = () => {
               fontFamily: 'faux',
               letterSpacing: 'faux',
               lineHeight: '1.2',
-              my: [3],
+              my: [1, 3, 3],
             }}
           >
             What fraction of the carbon is lost in an event like this?
@@ -196,7 +211,7 @@ const RiskScenarios = () => {
               fontFamily: 'faux',
               letterSpacing: 'faux',
               lineHeight: '1.2',
-              my: [3],
+              my: [1, 3, 3],
             }}
           >
             How often is an event like this likely to occur?
@@ -227,7 +242,7 @@ const RiskScenarios = () => {
           mb: [3],
         }}
       >
-        <Chart data={data} />
+        <Chart data={data} width={chartWidth} />
       </Box>
       <Divider />
       <Text

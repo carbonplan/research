@@ -4,7 +4,7 @@ import { useThemeUI, Box } from 'theme-ui'
 
 var vegaLite = require('vega-lite')
 
-const Chart = ({ data }) => {
+const Chart = ({ data, width }) => {
   const [spec, setSpec] = useState(null)
   const [loaded, setLoaded] = useState(false)
   const context = useThemeUI()
@@ -110,7 +110,6 @@ const Chart = ({ data }) => {
     setLoaded(true)
   }, [context])
 
-  const width = 550
   const height = 150
 
   return (
