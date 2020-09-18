@@ -86,7 +86,7 @@ export const sidenotes = {
     url: ' https://doi.org/10.1111/gcb.14677',
   },
   9: {
-    offset: 80,
+    offset: 75,
     number: 9,
     authors: 'W R L Anderegg et al.',
     year: 2020,
