@@ -149,7 +149,7 @@ The already unprecedented — and on-going — fire year provides a sobering exa
 
 ## Documentation
 
-All analyses and data underlying this article are open source and [available online](https://github.com/carbonplan/notebooks/tree/master/offset-project-fire). The fire data is from NASA's Fire Information for Resource Management System (FIRMS), the buffer pool data is from the California Air Resource Board’s database of offset credit issuances, and the offset project geometries are from the American Carbon Registry project database. Our Jupyter notebooks show how we worked with these raw data sources and estimated all the numbers reported in the article. This article itself (including the map visualization and the calculator) are also themselves open source and [available in this repository](https://github.com/carbonplan/research).
+All analyses and data underlying this article are open source and [available online](https://github.com/carbonplan/notebooks/tree/master/offset-project-fire). The fire data is from NASA's Fire Information for Resource Management System (FIRMS), the buffer pool data is from the California Air Resource Board’s database of offset credit issuances, and the offset project geometries are from the American Carbon Registry project database. Our Jupyter notebooks show how we worked with these raw data sources and estimated all the numbers reported in the article. This article itself (including the map visualization and the calculator) is also open source and [available in this repository](https://github.com/carbonplan/research/tree/master/articles/offset-project-fire).
 
 Photograph by [Jared Stapp](https://www.jaredstapp.com/).
 
