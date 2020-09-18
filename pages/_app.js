@@ -1,5 +1,4 @@
 import React from 'react'
-import App from 'next/app'
 import { Link } from 'theme-ui'
 import { Style } from '@carbonplan/components'
 import { ThemeProvider } from 'theme-ui'
@@ -11,7 +10,7 @@ const components = {
   a: (props) => <Link target='_blank' {...props} />,
 }
 
-export default ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       <MDXProvider components={components}>
@@ -21,3 +20,5 @@ export default ({ Component, pageProps }) => {
     </ThemeProvider>
   )
 }
+
+export default App
