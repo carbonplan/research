@@ -52,6 +52,20 @@ const Contents = {
     icon: 'article-003/pipes-small.png',
     invert: true,
   },
+  'offset-project-fire': {
+    id: 'offset-project-fire',
+    number: 4,
+    title: 'Carbon offsets burning',
+    section: 'research',
+    tags: ['note', 'analysis'],
+    authors: ['Claudia Herbert', 'Jared Stapp', 'Grayson Badgley', 'William R L Anderegg', 'CarbonPlan Team'],
+    version: '1.0.0',
+    date: '09-17-2020',
+    color: 'red',
+    background: 'article-004/forest.png',
+    icon: 'article-004/forest-small.png',
+    invert: true,
+  },
 }
 
 export default Contents

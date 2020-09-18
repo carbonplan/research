@@ -44,6 +44,7 @@ function Index() {
           </Text>
           <Box sx={{ mt: [4] }}>
             {[
+              'offset-project-fire',
               'carbon-removal-mechanisms',
               'forest-climate-risks',
               'soil-carbon-comment',
