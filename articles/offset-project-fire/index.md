@@ -143,7 +143,7 @@ Relatively conservative assumptions still present a worrying picture. In a scena
 
 As long as the buffer pool has “priced” climate-related risks adequately, even the most severe wildfires or other future disturbances wouldn’t undermine the goal of using forests to meet climate targets. 
 
-Thus, the critical question becomes: have we priced these risks correctly? The scenarios examined here strongly suggest undercapitalization of the buffer pool and the urgent need for California to update how climate risks are treated by the forest carbon buffer pool.<Reference color={meta.color} data={sidenotes[8]}/><Reference color={meta.color} data={sidenotes[9]}/> 
+But have we priced these risks correctly? The scenarios examined here strongly suggest undercapitalization of the buffer pool and the urgent need for California to update how climate risks are treated by the forest carbon buffer pool.<Reference color={meta.color} data={sidenotes[8]}/><Reference color={meta.color} data={sidenotes[9]}/> 
 
 The already unprecedented — and on-going — fire year provides a sobering example of the importance of considering risk and permanence in a scientifically rigorous way in the context of forest carbon, carbon removal, and climate policy.
 
