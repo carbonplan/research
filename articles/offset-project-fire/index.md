@@ -137,7 +137,7 @@ Our model starts by asking what would happen in a year where the same number of 
 
 <RiskScenarios/>
 
-Under a scenario in which carbon loss is 50% in burned areas and events of this magnitude occur once every 4 years, fire alone could consume the entirety of the buffer pool by 2100, despite the fact that the buffer is intended to insure against many other non-fire risks. 
+Under a scenario in which carbon loss is 50% in burned areas and events of this magnitude occur once every 4 years, fire alone could consume the entirety of the buffer pool by 2100, despite the fact that the buffer pool is intended to insure against many other non-fire risks. 
 
 Relatively conservative assumptions still present a worrying picture. In a scenario with 20% carbon loss and events occuring every 10 years, fires could still exceed the 20% of the buffer pool specifically set aside to cover the risk of fire. While buffer credits are fungible and can compensate any unintended reversal, when fire reversals exhaust more than their "fair share" of the buffer pool, all other risks would have to outperform expectations for the buffer pool to adequately insure against future reversals from all types of permanence risks — including drought, disease, insect infestation, and other mounting climate-related stresses.
 
