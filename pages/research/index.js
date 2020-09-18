@@ -34,7 +34,7 @@ function Index() {
   return (
     <Layout hideFooter={true}>
       <Container sx={{ px: [4] }}>
-        <Box>
+        <Box sx={{ mb: [4] }}>
           <Heading sx={{ my: [4, 5, 5], fontSize: [6, 7, 7] }}>
             Research
           </Heading>
@@ -58,9 +58,6 @@ function Index() {
             ))}
           </Box>
           <Divider sx={{ mt: [0] }} />
-          <Text sx={{ mt: [5], mb: [6, 0, 0], fontSize: [3] }}>
-            More coming soon...
-          </Text>
         </Box>
       </Container>
     </Layout>
