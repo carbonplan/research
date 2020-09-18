@@ -173,7 +173,7 @@ We have not reached out to the Confederated Tribes of Warm Springs Reservation o
 
 CarbonPlan received no specific financial support for this work.
 
-[Claudia Herbert](https://nature.berkeley.edu/stephenslab/lab-members/claudia-herbert/) and [Jared Stapp](https://ourenvironment.berkeley.edu/people/jared-r-stapp) are PhD students at UC Berkeley, [Grayson Badgley](https://scholar.google.com/citations?user=Sz0PywYAAAAJ&hl=en) is a postdoctoral scientist at the Black Rock Forest Consortium and Columbia University, and [William R.L. Anderegg](https://faculty.utah.edu/u6003057-WILLIAM_ANDEREGG/research/index.hml) is a professor at the University of Utah.
+[Claudia Herbert](https://nature.berkeley.edu/stephenslab/lab-members/claudia-herbert/) and [Jared Stapp](https://ourenvironment.berkeley.edu/people/jared-r-stapp) are PhD students at UC Berkeley, [Grayson Badgley](https://www.gbadgley.com/) is a postdoctoral scientist at the Black Rock Forest Consortium and Columbia University, and [William R.L. Anderegg](https://faculty.utah.edu/u6003057-WILLIAM_ANDEREGG/research/index.hml) is a professor at the University of Utah.
 
 ### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
 
