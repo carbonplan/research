@@ -131,7 +131,7 @@ The burning of ACR260 represents one of the few documented fire-induced reversal
 
 So is the forest buffer pool robust enough to handle the inevitable fires of the future? 
 
-To explore this question, we built a simple model that asks what the experience with ACR260 means if future years have similar levels of carbon reversals. We aren’t modeling whether this project re-grows and burns again, nor are we assuming that a similarly sized project will experience a similar event in the future — future reversals could come from multiple offset projects and multiple fires, or another single large event. Our calculations evaluate the impact on the buffer pool from future fires, using the outcome for ACR260 as an example for what a bad year could look like. 
+To explore this question, we built a simple model that asks what the experience with ACR260 means if future years have similar levels of carbon reversals. We aren’t modeling whether this project re-grows and burns again, nor are we assuming that a similarly sized project will experience a similar event in the future — future reversals could come from multiple offset projects and multiple fires, or another single large event. Our calculations evaluate the impact on the buffer pool from future fires, using ACR260 as an example for what a bad year could look like. 
 
 Our model starts by asking what would happen in a year where the same number of offset credits in the ACR260 project experience a fire. We then vary two parameters: the fraction of carbon lost in each event and the frequency with which such events might occur. In the calculator below, you can select values for these two variables and simulate futures that show, as a function of time, the fraction of the buffer pool depleted. 
 
