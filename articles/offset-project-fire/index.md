@@ -117,7 +117,7 @@ As of early July, more than 127 million forest offset credits were in the privat
 
 The Lionshead Fire in Oregon provides a timely example of the importance of forest carbon offset permanence. Started by a lightning strike on August 16, 2020, the Lionshead Fire merged with nearby fires Beachie Creek and P515. The extent of this fire complex overlaps substantially with the boundaries of the Warm Springs forest offset project in Central Oregon, known as ACR260 in the offsets registry.
 
-Public records from the offset program provide context for the potential scale of carbon loss from this project. ACR260 has received 2,676,483 carbon credits to date — each credit equal to 1 metric ton of CO2 — which makes it the largest credited forest offset project in Oregon and among the fifteen largest forest projects in California’s carbon offset market.
+Public records from the offset program provide context for the potential scale of carbon loss from this project. ACR260 has received 2,676,483 carbon credits to date — each credit equal to 1 metric ton of CO<sub>2</sub> — which makes it the largest credited forest offset project in Oregon and among the fifteen largest forest projects in California’s carbon offset market.
 
 Estimating forest carbon losses due to fire first requires estimating the area burned. We do this using satellites. Preliminary analysis of NASA FIRMS data, a standardized satellite product that detects and tracks fires across an array of satellites, shows that approximately 72% of the ACR260 project area has been burned by the Lionshead Fire through September 17, 2020.<Reference color={meta.color} data={sidenotes[5]}/> The map below shows the region of the fire and the project area boundary.
 
