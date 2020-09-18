@@ -169,7 +169,7 @@ const RiskScenarios = () => {
               fontFamily: 'faux',
               letterSpacing: 'faux',
               lineHeight: '1.2',
-              my: [1, 3, 3],
+              my: [2, 3, 3],
             }}
           >
             What fraction of the carbon is lost in an event like this?
@@ -211,7 +211,7 @@ const RiskScenarios = () => {
               fontFamily: 'faux',
               letterSpacing: 'faux',
               lineHeight: '1.2',
-              my: [1, 3, 3],
+              my: [2, 3, 3],
             }}
           >
             How often is an event like this likely to occur?
