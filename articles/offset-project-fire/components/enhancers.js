@@ -3,7 +3,6 @@ import useTheme from './use-theme'
 import dates from './dates'
 
 export default function Enhancers({ map, time }) {
-
   useTheme(map)
 
   useEffect(() => {

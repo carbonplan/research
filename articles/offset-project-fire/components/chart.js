@@ -69,7 +69,7 @@ const Chart = ({ data }) => {
                 nice: false,
               },
               axis: {
-                title: '% BUFFER POOL USED',
+                title: 'FRACTION BUFFER POOL',
                 orient: 'left',
                 padding: 0,
                 offset: 5,

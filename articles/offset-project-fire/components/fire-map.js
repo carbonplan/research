@@ -16,7 +16,7 @@ const FireMap = () => {
     map.flyTo({
       center: centerZoomOut,
       zoom: 7.1417,
-      essential: true
+      essential: true,
     })
   }
 
@@ -24,12 +24,11 @@ const FireMap = () => {
     map.flyTo({
       center: centerZoomIn,
       zoom: 9,
-      essential: true
+      essential: true,
     })
   }
 
   useEffect(() => {
-
     const filter = ['!=', 'NAME', 'Corvallis']
 
     let centerZoomOut = [-122.58549497082685, 45.12433103370327]
@@ -76,102 +75,141 @@ const FireMap = () => {
     }
   }, [])
 
-  return <Box sx={{
-    mt: [5],
-    mb: [5],
-    position: 'relative',
-    width: ['90%', '90%', '650px']
-  }}>
-    <Divider/>
+  return (
     <Box
-      ref={container}
       sx={{
-        width: '100%',
-        height: '400px',
-        'canvas.mapboxgl-canvas:focus': {
-          outline: 'none',
-        },
-        'canvas.mapboxgl-canvas': {
-          cursor: 'default',
-        },
+        mt: [5],
+        mb: [5],
+        position: 'relative',
+        width: ['90%', '90%', '650px'],
       }}
     >
-    {map && <Enhancers map={map} time={time}/>}
+      <Divider />
+      <Box
+        ref={container}
+        sx={{
+          width: '100%',
+          height: '400px',
+          'canvas.mapboxgl-canvas:focus': {
+            outline: 'none',
+          },
+          'canvas.mapboxgl-canvas': {
+            cursor: 'default',
+          },
+        }}
+      >
+        {map && <Enhancers map={map} time={time} />}
+      </Box>
+      {map && (
+        <Text
+          sx={{
+            position: 'absolute',
+            bottom: ['150px'],
+            fontSize: [3],
+            left: '4px',
+            fontFamily: 'faux',
+            letterSpacing: 'faux',
+            color: 'primary',
+            display: ['none', 'none', 'inherit'],
+          }}
+        >
+          DAY {dates[time]}
+        </Text>
+      )}
+      <Divider />
+      <Grid
+        gap={['0px']}
+        columns={[
+          '60px 30px 40px',
+          '50px 1fr 60px 30px 40px',
+          '50px 1fr 60px 30px 40px',
+        ]}
+      >
+        <Text
+          sx={{
+            pl: [1],
+            pt: [2],
+            display: ['none', 'inherit', 'inherit'],
+          }}
+        >
+          TIME
+        </Text>
+        <Slider
+          value={time}
+          onChange={(e) => setTime(parseInt(e.target.value))}
+          min='0'
+          max='36'
+          sx={{
+            display: ['none', 'inherit', 'inherit'],
+            width: 'calc(100% - 75px)',
+            ml: [1],
+            mt: ['18px'],
+            bg: 'secondary',
+            color: 'red',
+            '&:focus': {
+              color: 'red',
+            },
+          }}
+        />
+        <Text
+          sx={{
+            pl: [1],
+            pt: [2],
+          }}
+        >
+          ZOOM
+        </Text>
+        <Box
+          onClick={zoomOut}
+          sx={{
+            mt: ['-4px'],
+            background: 'none',
+            fontSize: [5],
+            pl: [2],
+            cursor: 'pointer',
+            color: 'secondary',
+            '&:hover': {
+              color: 'primary',
+            },
+            transition: '0.2s',
+          }}
+        >
+          –
+        </Box>
+        <Box
+          onClick={zoomIn}
+          sx={{
+            mt: ['-4px'],
+            background: 'none',
+            fontSize: [5],
+            pl: [2],
+            cursor: 'pointer',
+            color: 'secondary',
+            '&:hover': {
+              color: 'primary',
+            },
+            transition: '0.2s',
+          }}
+        >
+          +
+        </Box>
+      </Grid>
+      <Divider sx={{ mt: [0] }} />
+      <Text
+        sx={{
+          color: 'secondary',
+          my: [3],
+        }}
+      >
+        FIGURE 1{' '}
+        <Text sx={{ display: 'inline-block', color: 'primary' }}>/</Text>{' '}
+        Intersection between the Riverside / Beachie Creek / Lionshead fire and
+        forest offset project ACR260.{' '}
+        <Text sx={{ display: 'inline-block', color: 'red' }}>Red</Text> area
+        shows cumulative area burned through the date selected on the slider.
+      </Text>
     </Box>
-    {map && <Text sx={{
-        position: 'absolute',
-        bottom: ['150px'],
-        fontSize: [3],
-        left: '4px',
-        fontFamily: 'faux',
-        letterSpacing: 'faux',
-        color: 'primary',
-        display: ['none', 'none', 'inherit'],
-      }}>DAY {dates[time]}</Text>
-    }
-    <Divider/>
-    <Grid gap={['0px']} columns={['60px 30px 40px', '50px 1fr 60px 30px 40px', '50px 1fr 60px 30px 40px']}>
-    <Text sx={{
-      pl: [1],
-      pt: [2],
-      display: ['none', 'inherit', 'inherit'],
-    }}>
-    TIME
-    </Text>
-    <Slider 
-      value={time}
-      onChange={(e) => setTime(parseInt(e.target.value))}
-      min='0'
-      max='36'
-      sx={{
-        display: ['none', 'inherit', 'inherit'],
-        width: 'calc(100% - 75px)',
-        ml: [1],
-        mt: ['18px'],
-        bg: 'secondary',
-        color: 'red',
-        '&:focus': {
-          color: 'red'
-        }
-    }}/>
-    <Text sx={{
-      pl: [1],
-      pt: [2],
-    }}>
-    ZOOM
-    </Text>
-    <Box onClick={zoomOut} sx={{
-      mt: ['-4px'],
-      background: 'none',
-      fontSize: [5],
-      pl: [2],
-      cursor: 'pointer',
-      color: 'secondary',
-      '&:hover': {
-        color: 'primary'
-      },
-      transition: '0.2s',
-    }}>–</Box>
-    <Box onClick={zoomIn} sx={{
-      mt: ['-4px'],
-      background: 'none',
-      fontSize: [5],
-      pl: [2],
-      cursor: 'pointer',
-      color: 'secondary',
-      '&:hover': {
-        color: 'primary'
-      },
-      transition: '0.2s'
-    }}>+</Box>
-    </Grid>
-    <Divider sx={{ mt: [0]}}/>
-    <Text sx={{
-        color: 'secondary',
-        my: [3]
-      }}>FIGURE 1 <Text sx={{display: 'inline-block', color: 'primary'}}>/</Text> Intersection between the Riverside / Beachie Creek / Lionshead fire and forest offset project ACR260. 
-      {' '}<Text sx={{ display: 'inline-block', color: 'red' }}>Red</Text> area shows cumulative area burned through the date selected on the slider.</Text>
-  </Box>
+  )
 }
 
 export default FireMap

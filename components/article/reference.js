@@ -79,7 +79,8 @@ const Reference = ({ color, data }) => {
             </span>
             <span sx={{ ml: [0, 0, '7px'] }}>
               {' '}
-              {data.authors} {data.year ? `(${data.year})` : ''} {data.title} <i>{data.journal}</i>
+              {data.authors} {data.year ? `(${data.year})` : ''} {data.title}{' '}
+              <i>{data.journal}</i>
             </span>
           </span>
         </span>

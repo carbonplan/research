@@ -4,52 +4,54 @@ const style = {
   sources: {
     basemap: {
       type: 'vector',
-      tiles: [`https://storage.googleapis.com/carbonplan-research/articles/offset-project-fire/basemap/{z}/{x}/{y}.pbf`],
+      tiles: [
+        `https://storage.googleapis.com/carbonplan-research/articles/offset-project-fire/basemap/{z}/{x}/{y}.pbf`,
+      ],
       maxzoom: 5,
     },
     project: {
       type: 'geojson',
-      data: `https://storage.googleapis.com/carbonplan-research/articles/offset-project-fire/project-boundary.json`
+      data: `https://storage.googleapis.com/carbonplan-research/articles/offset-project-fire/project-boundary.json`,
     },
     fires: {
       type: 'geojson',
-      data: `https://storage.googleapis.com/carbonplan-research/articles/offset-project-fire/lionshead-fire-polygons.json`
+      data: `https://storage.googleapis.com/carbonplan-research/articles/offset-project-fire/lionshead-fire-polygons.json`,
     },
     'fire-label': {
       type: 'geojson',
       data: {
         type: 'FeatureCollection',
-        'features': [
+        features: [
           {
             type: 'Feature',
             properties: {
-              description: 'RIVERSIDE/\nBEACHIE CREEK/\nLIONSHEAD FIRE'
+              description: 'RIVERSIDE/\nBEACHIE CREEK/\nLIONSHEAD FIRES',
             },
             geometry: {
               type: 'Point',
-              coordinates: [-122.15251639187901, 44.94148820590199]
-            }
+              coordinates: [-122.15251639187901, 44.94148820590199],
+            },
           },
-        ]
-      }
+        ],
+      },
     },
     'project-label': {
       type: 'geojson',
       data: {
         type: 'FeatureCollection',
-        'features': [
+        features: [
           {
             type: 'Feature',
             properties: {
-              description: 'PROJECT\nACR260'
+              description: 'PROJECT\nACR260',
             },
             geometry: {
               type: 'Point',
-              coordinates: [-121.65251639187901, 44.7948820590199]
-            }
-          }
-        ]
-      }
+              coordinates: [-121.65251639187901, 44.7948820590199],
+            },
+          },
+        ],
+      },
     },
   },
   layers: [
@@ -161,7 +163,7 @@ const style = {
       paint: {
         'circle-color': 'white',
         'circle-opacity': 0,
-        'circle-radius': 4
+        'circle-radius': 4,
       },
     },
     {
@@ -172,17 +174,13 @@ const style = {
       paint: {
         'text-color': 'white',
         'text-opacity': 0,
-        'text-translate': [0, -18]
+        'text-translate': [0, -18],
       },
       layout: {
         'text-ignore-placement': true,
         'text-font': ['relative-faux-book'],
-        'text-field': [
-          'format',
-          ['get', 'name_en'],
-          { 'font-scale': 1.2 }
-        ]
-      }
+        'text-field': ['format', ['get', 'name_en'], { 'font-scale': 1.2 }],
+      },
     },
     {
       id: 'fires',
@@ -190,7 +188,7 @@ const style = {
       source: 'fires',
       paint: {
         'fill-color': 'black',
-        'fill-opacity': 0
+        'fill-opacity': 0,
       },
     },
     {
@@ -199,7 +197,7 @@ const style = {
       source: 'project',
       paint: {
         'fill-color': 'black',
-        'fill-opacity': 0
+        'fill-opacity': 0,
       },
     },
     {
@@ -216,11 +214,8 @@ const style = {
         'text-size': 20,
         'text-justify': 'left',
         'text-offset': [4.25, 2],
-        'text-field': [
-          'format',
-          ['get', 'description'],
-        ]
-      }
+        'text-field': ['format', ['get', 'description']],
+      },
     },
     {
       id: 'fire-label',
@@ -236,11 +231,8 @@ const style = {
         'text-size': 20,
         'text-justify': 'left',
         'text-offset': [4, -6.25],
-        'text-field': [
-          'format',
-          ['get', 'description'],
-        ]
-      }
+        'text-field': ['format', ['get', 'description']],
+      },
     },
   ],
 }
