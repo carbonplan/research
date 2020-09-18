@@ -77,7 +77,7 @@ export const sidenotes = {
   9: {
     offset: 50,
     number: 9,
-    authors: 'W R. L. Anderegg et al.',
+    authors: 'W R L Anderegg et al.',
     year: 2020,
     title: 'Climate-driven risks to the climate mitigation potential of forests',
     journal: 'Science',
