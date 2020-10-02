@@ -35,7 +35,7 @@
     "react-vega": "^7.4.1",
     "rehype-slug": "^3.0.0",
     "theme-ui": "^0.3.1",
-    "vega": "^5.16.1",
+    "vega": "^5.17.0",
     "vega-lite": "^4.16.8"
   },
   "devDependencies": {
