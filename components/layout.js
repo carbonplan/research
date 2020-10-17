@@ -40,7 +40,7 @@ const Layout = ({
         >
           <Container
             sx={{
-              px: [4],
+              px: [3, 3, 4],
             }}
           >
             <Header />
@@ -66,7 +66,7 @@ const Layout = ({
           >
             <Container
               sx={{
-                px: [4],
+                px: [3, 3, 4],
               }}
             >
               <Footer />

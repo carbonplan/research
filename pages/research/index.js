@@ -33,7 +33,7 @@ const link = {
 function Index() {
   return (
     <Layout hideFooter={true}>
-      <Container sx={{ px: [4] }}>
+      <Container sx={{ px: [3, 3, 4] }}>
         <Box sx={{ mb: [4] }}>
           <Heading sx={{ my: [4, 5, 5], fontSize: [6, 7, 7] }}>
             Research
