@@ -30,7 +30,7 @@
     "d3-random": "^2.2.2",
     "mapbox-gl": "^1.12.0",
     "next": "^9.5.5",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-dom": "^16.13.1",
     "react-vega": "^7.4.1",
     "rehype-slug": "^3.0.0",
