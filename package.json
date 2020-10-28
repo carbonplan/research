@@ -25,7 +25,7 @@
     "@carbonplan/components": "^1.0.0",
     "@carbonplan/theme": "^1.1.0",
     "@mdx-js/loader": "^1.6.19",
-    "@next/mdx": "^9.5.5",
+    "@next/mdx": "^10.0.0",
     "@theme-ui/color": "^0.3.1",
     "d3-random": "^2.2.2",
     "mapbox-gl": "^1.12.0",
