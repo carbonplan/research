@@ -24,7 +24,7 @@
   "dependencies": {
     "@carbonplan/components": "^1.0.0",
     "@carbonplan/theme": "^1.1.0",
-    "@mdx-js/loader": "^1.6.19",
+    "@mdx-js/loader": "^1.6.21",
     "@next/mdx": "^10.0.2",
     "@theme-ui/color": "^0.3.3",
     "d3-random": "^2.2.2",
