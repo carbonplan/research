@@ -235,11 +235,11 @@ const Cycle = ({ tag, data, labels, intro }) => {
   return (
     <Box
       sx={{
-        ml: ['-8px'],
+        ml: ['0px', '0px', '-8px'],
         mt: [2, 4, 4],
         mb: [0, 4, 4],
         transformOrigin: 'left',
-        width: '110%',
+        width: ['100%', '80%', '80%'],
         maxWidth: '600px',
       }}
     >
@@ -249,7 +249,7 @@ const Cycle = ({ tag, data, labels, intro }) => {
         strokeLinecap='round'
         strokeMiterlimit='10'
         fill='none'
-        viewBox='5 0 400 140'
+        viewBox='5 0 350 140'
       >
         <rect
           sx={{ fill: mix('muted', 'background', 0.5) }}
