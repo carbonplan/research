@@ -39,6 +39,6 @@
     "vega-lite": "^4.17.0"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "prettier": "2.2.0"
   }
 }
