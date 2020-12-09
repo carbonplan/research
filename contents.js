@@ -72,6 +72,32 @@ const Contents = {
     icon: 'article-004/forest-small.png',
     invert: true,
   },
+  'permanence-calculator-explainer': {
+    id: 'permanence-calculator-explainer',
+    number: 5,
+    title: 'The cost of temporary carbon removal',
+    section: 'research',
+    tags: ['tool', 'explainer'],
+    authors: ['CarbonPlan Team'],
+    version: '1.0.0',
+    date: '12-09-2020',
+    color: 'pink',
+    background: 'article-005/leaf.png',
+    icon: 'article-005/leaf-small.png',
+    invert: true,
+  },
+  'permanence-calculator': {
+    id: 'permanence-calculator',
+    number: 0,
+    title: 'Permanence calculator',
+    section: 'research',
+    tags: ['tool'],
+    authors: ['CarbonPlan team'],
+    version: '1.0.0',
+    date: '12-09-2020',
+    color: 'pink',
+    hideTop: true,
+  },
 }
 
 export default Contents
