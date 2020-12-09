@@ -113,7 +113,7 @@ When two carbon removal projects each claim a $/tCO₂ cost, directly comparing 
 
 Over the past few months, we’ve received several questions from companies looking to procure carbon removal and normalize the cost of competing projects with different storage durations. For example, how should one compare a $20/tCO₂ soil carbon project that promises to lock up CO₂ for 10 years with a $700/tCO₂ direct air capture and geological sequestration project that promises effectively permanent carbon storage?
 
-Some helpful academic thinking on these questions exists,<Reference color={meta.color} data={sidenotes[2]}/><Reference color={meta.color} data={sidenotes[3]}/> but we haven’t been able to point anyone to a simple tool that illustrates and facilitates the comparisons that decision makers need to make. 
+Some helpful academic thinking on these questions exists,<Reference color={meta.color} data={sidenotes[2]}/><Reference color={meta.color} data={sidenotes[3]}/> but we haven’t been able to point anyone to a simple tool that illustrates and facilitates the comparisons that decision makers need to make.
 
 So we <NextLink href={'/research/permanence-calculator'} passHref={true}><Link>built one</Link></NextLink>.
 
