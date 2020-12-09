@@ -41,10 +41,7 @@ const Calculator = () => {
     const { shortDuration, longCostCurve } = options
 
     const longCostCurveValues = longCostCurve.map((d) => d[1])
-    const longCostPiecewise = piecewise(
-      interpolateNumber,
-      longCostCurveValues
-    )
+    const longCostPiecewise = piecewise(interpolateNumber, longCostCurveValues)
     const longCostArray = quantize(longCostPiecewise, 100)
     set('longCostArray')(longCostArray)
   }, [options['shortDuration'], options['longCostCurve']])

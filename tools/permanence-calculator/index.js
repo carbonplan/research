@@ -23,7 +23,10 @@ const Index = () => {
         mineralization, geological). This calculator estimates the upfront costs
         needed to make a temporary carbon removal strategy permanent over time.
         Read more in our{' '}
-        <NextLink href={'/research/permanence-calculator-explainer'} passHref={true}>
+        <NextLink
+          href={'/research/permanence-calculator-explainer'}
+          passHref={true}
+        >
           <Link>article</Link>
         </NextLink>
         .

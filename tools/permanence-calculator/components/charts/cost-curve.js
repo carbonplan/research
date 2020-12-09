@@ -88,7 +88,7 @@ const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
     .attr('stroke-opacity', 1)
     .attr(
       'd',
-        line()
+      line()
         .x((d) => d.x)
         .y((d) => d.y)
         .defined((d) => d.defined)

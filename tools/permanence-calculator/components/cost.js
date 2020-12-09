@@ -17,10 +17,7 @@ const Cost = ({
   const [standardDeviation, setStandardDeviation] = useState(0)
 
   const shortCostCurveValues = shortCostCurve.map((d) => d[1])
-  const shortCostPiecewise = piecewise(
-    interpolateNumber,
-    shortCostCurveValues
-  )
+  const shortCostPiecewise = piecewise(interpolateNumber, shortCostCurveValues)
   const shortCostArray = quantize(shortCostPiecewise, 100)
 
   const nsims = 50
