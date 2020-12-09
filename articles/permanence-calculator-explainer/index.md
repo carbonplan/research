@@ -54,7 +54,8 @@ export const sidenotes = {
     number: 4,
     authors: 'P M Costa & C Wilson',
     year: 2000,
-    title: 'An equivalence factor between CO₂ avoided emissions and sequestration — description and applications in forestry',
+    title:
+      'An equivalence factor between CO₂ avoided emissions and sequestration — description and applications in forestry',
     journal: 'Mitigation and Adaptation Strategies for Global Change',
     url: 'https://doi.org/10.1023/A:1009697625521',
   },
