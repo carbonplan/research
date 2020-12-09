@@ -13,7 +13,7 @@ export const meta = {
     'How to compare the long-term cost of temporary and permanent carbon removal.',
   quotes: [
     {
-      position: 1900,
+      position: 1950,
       text:
         'The calculator normalizes projects with different temporal dimensions into long-term strategies that achieve comparable climate benefits',
     },
@@ -50,8 +50,17 @@ export const sidenotes = {
     url: 'https://doi.org/10.1016/j.ecolecon.2007.04.013',
   },
   4: {
-    offset: 3,
+    offset: 145,
     number: 4,
+    authors: 'P M Costa & C Wilson',
+    year: 2000,
+    title: 'An equivalence factor between CO₂ avoided emissions and sequestration — description and applications in forestry',
+    journal: 'Mitigation and Adaptation Strategies for Global Change',
+    url: 'https://doi.org/10.1023/A:1009697625521',
+  },
+  5: {
+    offset: 3,
+    number: 5,
     authors: 'J P Kelleher & G Wagner',
     year: 2018,
     title:
@@ -60,36 +69,36 @@ export const sidenotes = {
     url:
       'https://gwagner.com/wp-content/uploads/Kelleher-Wagner-AES-2018-Prescriptivism.pdf',
   },
-  5: {
+  6: {
     offset: 105,
-    number: 5,
+    number: 6,
     authors: 'M A Drupp et al.',
     year: 2018,
     title: 'Discounting disentangled',
     journal: 'American Economic Journal: Economic Policy',
     url: 'https://doi.org/10.1257/pol.20160240',
   },
-  6: {
+  7: {
     offset: 3,
-    number: 6,
+    number: 7,
     authors: 'D W Keith et al.',
     year: 2018,
     title: 'A Process for Capturing CO₂ from the Atmosphere',
     journal: 'Joule',
     url: 'https://doi.org/10.1016/j.joule.2018.05.006',
   },
-  7: {
+  8: {
     offset: 3,
-    number: 7,
+    number: 8,
     authors: 'K D Daniel et al.',
     year: 2019,
     title: 'Declining CO₂ price paths',
     journal: 'PNAS',
     url: 'https://doi.org/10.1073/pnas.1817444116',
   },
-  8: {
+  9: {
     offset: 0,
-    number: 8,
+    number: 9,
     authors: 'J Emmerling et al.',
     year: 2019,
     title:
@@ -113,7 +122,7 @@ When two carbon removal projects each claim a $/tCO₂ cost, directly comparing 
 
 Over the past few months, we’ve received several questions from companies looking to procure carbon removal and normalize the cost of competing projects with different storage durations. For example, how should one compare a $20/tCO₂ soil carbon project that promises to lock up CO₂ for 10 years with a $700/tCO₂ direct air capture and geological sequestration project that promises effectively permanent carbon storage?
 
-Some helpful academic thinking on these questions exists,<Reference color={meta.color} data={sidenotes[2]}/><Reference color={meta.color} data={sidenotes[3]}/> but we haven’t been able to point anyone to a simple tool that illustrates and facilitates the comparisons that decision makers need to make.
+Some helpful academic thinking on these questions exists,<Reference color={meta.color} data={sidenotes[2]}/><Reference color={meta.color} data={sidenotes[3]}/><Reference color={meta.color} data={sidenotes[4]}/> but we haven’t been able to point anyone to a simple tool that illustrates and facilitates the comparisons that decision makers need to make.
 
 So we <NextLink href={'/research/permanence-calculator'} passHref={true}><Link>built one</Link></NextLink>.
 
@@ -139,7 +148,7 @@ Before walking through what the calculator can teach us, we’ll discuss some of
 
 A net present value framework translates costs that arise in future years into present-year terms by discounting the future costs according to an exponentially compounding discount function. When discount rates are small — either zero, or close to zero — future costs remain large in present-day terms. For example, the 2006 [Stern Review on the Economics of Climate Change](https://www.lse.ac.uk/granthaminstitute/publication/the-economics-of-climate-change-the-stern-review/) famously used a discount rate of 1.5% and made a case for aggressive climate action in part on that basis. When discount rates grow past a few percentage points, however, even large costs from tomorrow’s climate impacts appear small in present-day terms.
 
-Net present value calculations are ethically and philosophically fraught in the context of climate change economics because they impose value judgments about the welfare of future generations and assume that wealth today will become greater wealth tomorrow.<Reference color={meta.color} data={sidenotes[4]}/><Reference color={meta.color} data={sidenotes[5]}/> Choosing a discount rate that resembles typical, real-world interest rates minimizes the net present value of costs imposed on people living in the future. For example, under a 10% discount rate, a climate impact that causes $1 million worth of damage in 100 years costs about $73 in net present terms. Many people would say that it isn’t ethical for an individual today to become $73 richer if the result is that someone in 100 years experiences a $1 million loss, but that’s effectively what an economic discounting framework says is rational: if that $73 earns a reliable 10% per year, it’ll fully cover the $1 million damage bill that comes due in 100 years.
+Net present value calculations are ethically and philosophically fraught in the context of climate change economics because they impose value judgments about the welfare of future generations and assume that wealth today will become greater wealth tomorrow.<Reference color={meta.color} data={sidenotes[5]}/><Reference color={meta.color} data={sidenotes[6]}/> Choosing a discount rate that resembles typical, real-world interest rates minimizes the net present value of costs imposed on people living in the future. For example, under a 10% discount rate, a climate impact that causes $1 million worth of damage in 100 years costs about $73 in net present terms. Many people would say that it isn’t ethical for an individual today to become $73 richer if the result is that someone in 100 years experiences a $1 million loss, but that’s effectively what an economic discounting framework says is rational: if that $73 earns a reliable 10% per year, it’ll fully cover the $1 million damage bill that comes due in 100 years.
 
 These dynamics naturally lead to the concern that people will act selfishly today and harm the generations of tomorrow, just as has been the case with greenhouse gas pollution since the industrial revolution. A related concern is that people might pursue cheap and temporary carbon removal today on the promise of investing in more expensive and effective approaches tomorrow — but when tomorrow comes, there’s no guarantee of following through.
 
@@ -165,7 +174,7 @@ The calculator allows users to specify costs in two ways. The simplest is a fixe
 
 Alternatively, the user can vary costs over time, “drawing” a trajectory of costs for temporary and permanent carbon removal projects. Dynamic cost trends let users explore two critical issues.
 
-First, many permanent carbon removal approaches are in their infancy and are projected to have lower costs over time due to ongoing investment and innovation. For example, direct air capture projects are very expensive today on a $/tCO₂ basis, but many proponents believe costs will fall significantly in the years ahead.<Reference color={meta.color} data={sidenotes[6]}/> When a project is expensive today but could become considerably cheaper tomorrow, there could be significant economic value in waiting out those changes — and thus, delaying a transition to permanent approaches could be cost-effective. On the other hand, a wait-and-see approach does little to help bring those costs down. That’s a problem because early investment in climate mitigation plays a critical role in reducing total costs.<Reference color={meta.color} data={sidenotes[7]}/>
+First, many permanent carbon removal approaches are in their infancy and are projected to have lower costs over time due to ongoing investment and innovation. For example, direct air capture projects are very expensive today on a $/tCO₂ basis, but many proponents believe costs will fall significantly in the years ahead.<Reference color={meta.color} data={sidenotes[7]}/> When a project is expensive today but could become considerably cheaper tomorrow, there could be significant economic value in waiting out those changes — and thus, delaying a transition to permanent approaches could be cost-effective. On the other hand, a wait-and-see approach does little to help bring those costs down. That’s a problem because early investment in climate mitigation plays a critical role in reducing total costs.<Reference color={meta.color} data={sidenotes[8]}/>
 
 Second, many temporary removal approaches are cheap today, but one might expect those costs to rise, not fall, over time. Consider high-quality forest projects that establish a clear case for additionality and feature low risks from fires, droughts, and other disturbances. In today’s market, many of these projects feature low prices. But as more and more decision-makers look to invest in carbon removal and insist on higher levels of quality, prices could easily rise as demand begins to outstrip high-quality supply. In that case, the user might want to explore the implications of rising temporary project costs, rather than falling costs from technological progress.
 
@@ -209,7 +218,7 @@ The discount rate is one of the most important variables affecting long-term eco
 
 Consider a set of sequential investments in a 10-year temporary project that has a fixed cost of $20/tCO₂, with a transition after 100 years to a permanent project that has a fixed cost of $500/tCO₂. We’ll assume the temporary carbon project has a 3% risk of failure each year.
 
-To estimate the costs of this climate strategy, we’ll look at two representative discount rates — 2% and 9%. Some researchers have argued that a 2% discount rate is appropriate for use in climate policy analysis,<Reference color={meta.color} data={sidenotes[8]}/> although this rate is lower than most market-based interest rates today. In contrast, a 9% discount rate is inappropriate for public policy analysis but more closely resembles the private cost of capital that some corporations use to allocate investments over time.
+To estimate the costs of this climate strategy, we’ll look at two representative discount rates — 2% and 9%. Some researchers have argued that a 2% discount rate is appropriate for use in climate policy analysis,<Reference color={meta.color} data={sidenotes[9]}/> although this rate is lower than most market-based interest rates today. In contrast, a 9% discount rate is inappropriate for public policy analysis but more closely resembles the private cost of capital that some corporations use to allocate investments over time.
 
 With a 2% discount rate, the cost of a permanent climate solution based on this 10-year temporary project would be about $175/tCO₂ in net present value terms — almost six times higher than the project’s upfront price of $20/tCO₂.
 
