@@ -123,7 +123,7 @@ Our calculator lets you compare the permanence-adjusted costs of different carbo
 
 The core calculation is the net present value of a series of carbon removal decisions over a 1000-year period. We model a decision-maker seeking to achieve permanent climate benefits, whether by paying directly for permanent CO₂ removal today, by sequentially renewing temporary carbon removal projects over the full 1000 years, or by sequentially renewing temporary projects for a user-specified period of time before switching to a permanent alternative.
 
-To begin, we assume that temporary removal projects are renewed at the end of each project period. The user can leave this choice as a default, in which case the permanence-adjusted cost of a temporary project is calculated as the net present value of this series of repeated investments over 1000 years. Alternatively, the user can select a point in time at which the investment switches from a temporary to a permanent carbon removal strategy, similar to the shift recommended by the recent [Oxford principles for net zero carbon offsetting](https://www.ox.ac.uk/news/2020-09-29-oxford-launches-new-principles-credible-carbon-offsetting). This approach might be desirable, for example, based on the relative costs of different strategies today and the belief that permanent costs might fall in the future. 
+To begin, we assume that temporary removal projects are renewed at the end of each project period. The user can leave this choice as a default, in which case the permanence-adjusted cost of a temporary project is calculated as the net present value of this series of repeated investments over 1000 years. Alternatively, the user can select a point in time at which the investment switches from a temporary to a permanent carbon removal strategy, similar to the shift recommended by the recent [Oxford principles for net zero carbon offsetting](https://www.ox.ac.uk/news/2020-09-29-oxford-launches-new-principles-credible-carbon-offsetting). This approach might be desirable, for example, based on the relative costs of different strategies today and the belief that permanent costs might fall in the future.
 
 Whatever the user’s preferred strategy for achieving permanence, we then compare the initial cost of the temporary removal option to the permanece-adjusted project cost — that is, the amount that must be budgeted today to implement the user’s strategy for achieving permanence over time. In this way, the calculator normalizes projects with different temporal dimensions into long-term strategies that achieve comparable climate benefits.
 
@@ -137,13 +137,13 @@ Before walking through what the calculator can teach us, we’ll discuss some of
 
 A net present value framework translates costs that arise in future years into present-year terms by discounting the future costs according to an exponentially compounding discount function. When discount rates are small — either zero, or close to zero — future costs remain large in present-day terms. For example, the 2006 [Stern Review on the Economics of Climate Change](https://www.lse.ac.uk/granthaminstitute/publication/the-economics-of-climate-change-the-stern-review/) famously used a discount rate of 1.5% and made a case for aggressive climate action in part on that basis. When discount rates grow past a few percentage points, however, even large costs from tomorrow’s climate impacts appear small in present-day terms.
 
-Net present value calculations are ethically and philosophically fraught in the context of climate change economics because they impose value judgments about the welfare of future generations and assume that wealth today will become greater wealth tomorrow.<Reference color={meta.color} data={sidenotes[4]}/><Reference color={meta.color} data={sidenotes[5]}/> Choosing a discount rate that resembles typical, real-world interest rates minimizes the net present value of costs imposed on people living in the future. For example, under a 10% discount rate, a climate impact that causes $1 million worth of damage in 100 years costs about $73 in net present terms. Many people would say that it isn’t ethical for an individual today to become $73 richer if the result is that someone in 100 years experiences a $1 million loss, but that’s effectively what an economic discounting framework says is rational: if that $73 earns a reliable 10% per year, it’ll fully cover the $1 million damage bill that comes due in 100 years. 
+Net present value calculations are ethically and philosophically fraught in the context of climate change economics because they impose value judgments about the welfare of future generations and assume that wealth today will become greater wealth tomorrow.<Reference color={meta.color} data={sidenotes[4]}/><Reference color={meta.color} data={sidenotes[5]}/> Choosing a discount rate that resembles typical, real-world interest rates minimizes the net present value of costs imposed on people living in the future. For example, under a 10% discount rate, a climate impact that causes $1 million worth of damage in 100 years costs about $73 in net present terms. Many people would say that it isn’t ethical for an individual today to become $73 richer if the result is that someone in 100 years experiences a $1 million loss, but that’s effectively what an economic discounting framework says is rational: if that $73 earns a reliable 10% per year, it’ll fully cover the $1 million damage bill that comes due in 100 years.
 
 These dynamics naturally lead to the concern that people will act selfishly today and harm the generations of tomorrow, just as has been the case with greenhouse gas pollution since the industrial revolution. A related concern is that people might pursue cheap and temporary carbon removal today on the promise of investing in more expensive and effective approaches tomorrow — but when tomorrow comes, there’s no guarantee of following through.
 
 Although most discount rates effectively downplay harms to future generations, they nevertheless tell us something useful: what saving a certain sum of money today would produce in terms of future wealth. You can think of a net present value calculation as a way of determining how much money should be set aside today to cover a cost tomorrow, such as the ongoing costs of renewing a temporary carbon removal strategy. The total cost of pursuing a temporary carbon removal strategy will be higher than the initial project cost precisely because additional procurements will be needed at the end of every project cycle, up until the point where the decision-maker switches to a permanent carbon removal project instead (if ever).
 
-We don’t aim to resolve the challenging debates around the role of discount rates and their ethical implications, other than to flag that any discussion of timeframes of 100 years or more necessarily implicates these complex issues. The discount rate is a critical factor in determining permanence-adjusted project costs and it’s one where ethical values are just as important as technical considerations, if not more so. 
+We don’t aim to resolve the challenging debates around the role of discount rates and their ethical implications, other than to flag that any discussion of timeframes of 100 years or more necessarily implicates these complex issues. The discount rate is a critical factor in determining permanence-adjusted project costs and it’s one where ethical values are just as important as technical considerations, if not more so.
 
 ### Project risks
 
@@ -161,7 +161,7 @@ The calculator assumes that temporary and permanent carbon removal projects are 
 
 The calculator allows users to specify costs in two ways. The simplest is a fixed cost that doesn’t vary over time. This helps illustrate the effect of the other variables on total costs, such as the discount rate and the timing of when to switch from temporary to permanent carbon removal.
 
-Alternatively, the user can vary costs over time, “drawing” a trajectory of costs for temporary and permanent  carbon removal projects. Dynamic cost trends let users explore two critical issues.
+Alternatively, the user can vary costs over time, “drawing” a trajectory of costs for temporary and permanent carbon removal projects. Dynamic cost trends let users explore two critical issues.
 
 First, many permanent carbon removal approaches are in their infancy and are projected to have lower costs over time due to ongoing investment and innovation. For example, direct air capture projects are very expensive today on a $/tCO₂ basis, but many proponents believe costs will fall significantly in the years ahead.<Reference color={meta.color} data={sidenotes[6]}/> When a project is expensive today but could become considerably cheaper tomorrow, there could be significant economic value in waiting out those changes — and thus, delaying a transition to permanent approaches could be cost-effective. On the other hand, a wait-and-see approach does little to help bring those costs down. That’s a problem because early investment in climate mitigation plays a critical role in reducing total costs.<Reference color={meta.color} data={sidenotes[7]}/>
 
@@ -183,7 +183,7 @@ The simplest scenario is one in which we repeatedly purchase temporary 10-year p
   discountRate={0}
   projectRisk={0}
   temporaryCost={[20, 20, 20, 20, 20, 20]}
-  permanentCost={['N/A', 'N/A', 'N/A', 'N/A','N/A','N/A']}
+  permanentCost={['N/A', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A']}
   netPresentValue={2000}
 />
 
@@ -217,7 +217,7 @@ With a 2% discount rate, the cost of a permanent climate solution based on this 
   discountRate={2}
   projectRisk={3}
   temporaryCost={[20, 20, 20, 20, 20, 20]}
-  permanentCost={[500, 500,500, 500, 500, 500]}
+  permanentCost={[500, 500, 500, 500, 500, 500]}
   netPresentValue={175}
   netPresentValueError={10}
 />
@@ -301,11 +301,8 @@ Notably, the full cost of relying on temporary carbon removal is higher than the
 
 ## Terms of engagement
 
-CarbonPlan received a grant from the ClimateWorks Foundation to support this work. ClimateWorks did not exercise any control over the output. CarbonPlan thanks Gernot Wagner, Frances Moore, Toly Rinberg, and Rafael Broze for helpful feedback. CarbonPlan is solely responsible for the content of this writeup, which does not necessarily reflect the views of ClimateWorks, those who provided feedback, or any other individuals or organizations. 
+CarbonPlan received a grant from the ClimateWorks Foundation to support this work. ClimateWorks did not exercise any control over the output. CarbonPlan thanks Gernot Wagner, Frances Moore, Toly Rinberg, and Rafael Broze for helpful feedback. CarbonPlan is solely responsible for the content of this writeup, which does not necessarily reflect the views of ClimateWorks, those who provided feedback, or any other individuals or organizations.
 
 ### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>
-
-
-

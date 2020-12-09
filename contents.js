@@ -78,9 +78,7 @@ const Contents = {
     title: 'The cost of temporary carbon removal',
     section: 'research',
     tags: ['tool', 'explainer'],
-    authors: [
-      'CarbonPlan Team',
-    ],
+    authors: ['CarbonPlan Team'],
     version: '1.0.0',
     date: '12-09-2020',
     color: 'pink',

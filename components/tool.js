@@ -13,11 +13,10 @@ const Tool = ({ title, description, meta, children }) => {
       shareTitle={info.title}
     >
       <Container sx={{ px: [3, 3, 4], mb: [5] }}>
-        <BackArrow/>
+        <BackArrow />
         <Grid columns={[1, 1, '700px 1fr']} gap={['100px']} sx={{ mt: [4] }}>
           <Box sx={{ mt: '-95px' }}>
-            <span>
-            </span>
+            <span></span>
             {title}
             {description}
           </Box>
