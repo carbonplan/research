@@ -239,7 +239,10 @@ const Calculator = () => {
           </Styled.p>
           <Styled.p>
             For more details, read our{' '}
-            <NextLink href={'/research/permanence-calculator-explainer'} passHref={true}>
+            <NextLink
+              href={'/research/permanence-calculator-explainer'}
+              passHref={true}
+            >
               <Link>article</Link>
             </NextLink>{' '}
             on this calculator.

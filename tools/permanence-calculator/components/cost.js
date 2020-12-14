@@ -123,7 +123,7 @@ const Cost = ({
           letterSpacing: 'monospace',
           color: 'pink',
           mt: [0, 0, 2],
-          mb: [1, 1, 2]
+          mb: [1, 1, 2],
         }}
       >
         ${shortCostCurve[0][1].toFixed(0)}
