@@ -1,20 +1,7 @@
-/** @jsx jsx */
-import Layout from '../../components/layout'
-import Entry from '../../components/entry'
-import {
-  jsx,
-  Box,
-  Divider,
-  Text,
-  Heading,
-  Badge,
-  Image,
-  Link,
-  Grid,
-  Container,
-} from 'theme-ui'
+import { Box, Divider, Styled, Text, Heading, Grid } from 'theme-ui'
 import { default as NextLink } from 'next/link'
-import { darken } from '@theme-ui/color'
+import { Layout } from '@carbonplan/components'
+import Entry from '../../components/entry'
 import contents from '../../contents'
 
 const link = {
@@ -32,35 +19,41 @@ const link = {
 
 function Index() {
   return (
-    <Layout hideFooter={true}>
-      <Container sx={{ px: [3, 3, 4] }}>
-        <Box sx={{ mb: [4] }}>
-          <Heading sx={{ my: [4, 5, 5], fontSize: [6, 7, 7] }}>
-            Research
-          </Heading>
-          <Text sx={{ maxWidth: '700px', fontSize: [3] }}>
+    <Layout 
+      title={'carbonplan / research'}
+      description={'Datasets, models, interactives, and commentary on carbon removal and climate solutions.'}
+      card={'research'}
+      footer={false}
+      links={'local'}
+    >
+      <Box sx={{ mb: [4], pb: [4] }}>
+        <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
+          Research
+        </Text>
+        <Box sx={{ maxWidth: '700px' }}>
+          <Styled.p>
             A collection of datasets, models, explainers, and commentary on
             carbon removal and climate solutions by us and our collaborators.
-          </Text>
-          <Box sx={{ mt: [4] }}>
-            {[
-              'permanence-calculator-explainer',
-              'offset-project-fire',
-              'carbon-removal-mechanisms',
-              'forest-climate-risks',
-              'soil-carbon-comment',
-              'stripe-reports-insights',
-            ].map((id) => (
-              <NextLink key={id} href={`/research/${id}`}>
-                <a>
-                  <Entry info={contents[id]}></Entry>
-                </a>
-              </NextLink>
-            ))}
-          </Box>
-          <Divider sx={{ mt: [0] }} />
+          </Styled.p>
         </Box>
-      </Container>
+        <Box sx={{ mt: [4] }}>
+          {[
+            'permanence-calculator-explainer',
+            'offset-project-fire',
+            'carbon-removal-mechanisms',
+            'forest-climate-risks',
+            'soil-carbon-comment',
+            'stripe-reports-insights',
+          ].map((id) => (
+            <NextLink key={id} href={`/research/${id}`}>
+              <a>
+                <Entry info={contents[id]}></Entry>
+              </a>
+            </NextLink>
+          ))}
+        </Box>
+        <Divider sx={{ mt: [0] }} />
+      </Box>
     </Layout>
   )
 }

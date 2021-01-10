@@ -1,6 +1,6 @@
 import { Link } from 'theme-ui'
 import Article from '../../components/article'
-import Reference from '../../components/article/reference'
+import Reference from '../../components/reference'
 import Scenario from './components/scenario'
 import Parameters from './components/parameters'
 import { default as NextLink } from 'next/link'

@@ -1,5 +1,5 @@
 import Article from '../../components/article'
-import Reference from '../../components/article/reference'
+import Reference from '../../components/reference'
 import FireMap from './components/fire-map'
 import RiskScenarios from './components/risk-scenarios'
 

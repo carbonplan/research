@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'theme-ui'
-import { Style } from '@carbonplan/components'
-import { ThemeProvider } from 'theme-ui'
+import { Link, ThemeProvider } from 'theme-ui'
 import { MDXProvider } from '@mdx-js/react'
+import '@carbonplan/components/fonts.css'
+import '@carbonplan/components/globals.css'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
 import theme from '../theme'
@@ -16,7 +16,6 @@ const App = ({ Component, pageProps }) => {
     <ThemeProvider theme={theme}>
       <MDXProvider components={components}>
         <Component {...pageProps} />
-        <Style />
       </MDXProvider>
     </ThemeProvider>
   )

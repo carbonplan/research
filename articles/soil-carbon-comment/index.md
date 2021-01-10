@@ -1,6 +1,6 @@
 import Article from '../../components/article'
-import Reference from '../../components/article/reference'
-import TaggedLink from '../../components/article/tagged-link'
+import Reference from '../../components/reference'
+import TaggedLink from '../../components/tagged-link'
 import Table from './components/table'
 import Heading from './components/heading'
 
