@@ -19,9 +19,11 @@ const link = {
 
 function Index() {
   return (
-    <Layout 
+    <Layout
       title={'carbonplan / research'}
-      description={'Datasets, models, interactives, and commentary on carbon removal and climate solutions.'}
+      description={
+        'Datasets, models, interactives, and commentary on carbon removal and climate solutions.'
+      }
       card={'research'}
       footer={false}
       links={'local'}

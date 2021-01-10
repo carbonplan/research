@@ -7,11 +7,7 @@ const Tool = ({ title, description, meta, children }) => {
   const info = contents[meta.id]
 
   return (
-    <Layout
-      card={meta.id}
-      description={meta.summary}
-      title={info.title}
-    >
+    <Layout card={meta.id} description={meta.summary} title={info.title}>
       <Container sx={{ px: [3, 3, 4], mb: [5] }}>
         <BackArrow />
         <Grid columns={[1, 1, '700px 1fr']} gap={['100px']} sx={{ mt: [4] }}>

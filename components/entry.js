@@ -96,13 +96,18 @@ const Entry = ({ info }) => {
               }}
             >
               {date}{' '}
-              <Text as='span' sx={{ 
-                color: 'text',
-                fontFamily: 'mono',
-                letterSpacing: '0.05em',
-                fontSize: [2],
-                 }}>/</Text> v
-              {version}
+              <Text
+                as='span'
+                sx={{
+                  color: 'text',
+                  fontFamily: 'mono',
+                  letterSpacing: '0.05em',
+                  fontSize: [2],
+                }}
+              >
+                /
+              </Text>{' '}
+              v{version}
             </Text>
             <Heading sx={{ mb: ['2px'], mt: ['10px'], fontSize: [5] }}>
               {title}
@@ -143,7 +148,7 @@ const Entry = ({ info }) => {
                   sx={{
                     mr: [3],
                     color: 'secondary',
-                    cursor: 'pointer'
+                    cursor: 'pointer',
                   }}
                 />
               ))}

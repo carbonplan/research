@@ -48,7 +48,7 @@ const Article = ({ children, meta }) => {
                   fontFamily: 'mono',
                   letterSpacing: 'mono',
                   textTransform: 'uppercase',
-                  fontSize: [2]
+                  fontSize: [2],
                 }}
               >
                 Article({info.number})
@@ -58,7 +58,7 @@ const Article = ({ children, meta }) => {
                   fontFamily: 'mono',
                   letterSpacing: 'mono',
                   textTransform: 'uppercase',
-                  fontSize: [2]
+                  fontSize: [2],
                 }}
               >
                 by{' '}
@@ -70,7 +70,7 @@ const Article = ({ children, meta }) => {
                       mr: [2],
                       fontFamily: 'mono',
                       letterSpacing: 'mono',
-                      fontSize: [2]
+                      fontSize: [2],
                     }}
                   >
                     {author} {ix < info.authors.length - 1 ? '+' : ''}
@@ -82,7 +82,7 @@ const Article = ({ children, meta }) => {
                   fontFamily: 'mono',
                   letterSpacing: 'mono',
                   textTransform: 'uppercase',
-                  fontSize: [2]
+                  fontSize: [2],
                 }}
               >
                 {info.date}
@@ -98,7 +98,11 @@ const Article = ({ children, meta }) => {
           <Box sx={{ display: ['none', 'none', 'initial'] }}>
             <Box sx={{ mt: '55px', maxWidth: '250px' }}>
               <Text
-                sx={{ fontFamily: 'heading', letterSpacing: 'smallcaps', mb: [3] }}
+                sx={{
+                  fontFamily: 'heading',
+                  letterSpacing: 'smallcaps',
+                  mb: [3],
+                }}
               >
                 / QUICK LOOK
               </Text>
