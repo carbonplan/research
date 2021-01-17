@@ -36,12 +36,11 @@ const Reference = ({ color, data }) => {
           transition: 'color 0.2s ease-in-out',
         }}
       >
-        <sup>
-        {data.number}
-        </sup>
+        <sup>{data.number}</sup>
       </Text>
       <a href={data.url} target='_blank'>
-        <Text as='span'
+        <Text
+          as='span'
           onMouseOver={toggleOn}
           onMouseOut={toggleOff}
           sx={{
@@ -60,7 +59,8 @@ const Reference = ({ color, data }) => {
             ],
           }}
         >
-          <Text as='span'
+          <Text
+            as='span'
             sx={{
               fontFamily: 'body',
               fontSize: [1],
@@ -71,7 +71,8 @@ const Reference = ({ color, data }) => {
               transition: 'opacity 0.2s ease-in-out',
             }}
           >
-            <Text as='span'
+            <Text
+              as='span'
               sx={{
                 ml: ['-18px'],
                 lineHeight: 1.25,
