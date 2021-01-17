@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link, ThemeProvider } from 'theme-ui'
+import { ThemeProvider } from 'theme-ui'
 import { MDXProvider } from '@mdx-js/react'
 import '@carbonplan/components/fonts.css'
 import '@carbonplan/components/globals.css'

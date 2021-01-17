@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx, Box, Text } from 'theme-ui'
+import { Box, Text } from 'theme-ui'
 import { useState } from 'react'
 
 const Reference = ({ color, data }) => {
@@ -20,13 +19,14 @@ const Reference = ({ color, data }) => {
 
   return (
     <>
-      <sup
+      <Text
+        as='span'
         onMouseOver={toggleOn}
         onMouseOut={toggleOff}
         onClick={toggle}
         sx={{
           pr: [1],
-          fontSize: [1],
+          fontSize: ['17px'],
           cursor: 'pointer',
           color: [
             selectedMobile ? color : 'text',
@@ -36,10 +36,12 @@ const Reference = ({ color, data }) => {
           transition: 'color 0.2s ease-in-out',
         }}
       >
+        <sup>
         {data.number}
-      </sup>
+        </sup>
+      </Text>
       <a href={data.url} target='_blank'>
-        <span
+        <Text as='span'
           onMouseOver={toggleOn}
           onMouseOut={toggleOff}
           sx={{
@@ -58,7 +60,7 @@ const Reference = ({ color, data }) => {
             ],
           }}
         >
-          <span
+          <Text as='span'
             sx={{
               fontFamily: 'body',
               fontSize: [1],
@@ -69,21 +71,22 @@ const Reference = ({ color, data }) => {
               transition: 'opacity 0.2s ease-in-out',
             }}
           >
-            <span
+            <Text as='span'
               sx={{
                 ml: ['-18px'],
+                lineHeight: 1.25,
                 display: ['none', 'none', 'initial'],
               }}
             >
               {data.number}
-            </span>
-            <span sx={{ ml: [0, 0, '7px'] }}>
+            </Text>
+            <Text as='span' sx={{ ml: [0, 0, '7px'], lineHeight: 1.25 }}>
               {' '}
               {data.authors} {data.year ? `(${data.year})` : ''} {data.title}{' '}
               <i>{data.journal}</i>
-            </span>
-          </span>
-        </span>
+            </Text>
+          </Text>
+        </Text>
       </a>
     </>
   )
