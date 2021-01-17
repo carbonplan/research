@@ -42,7 +42,7 @@ const Article = ({ children, meta }) => {
           }}
         >
           <Container sx={{ px: [3, 3, 4] }}>
-            <Grid columns={[1, '15% 40% 45%', '15% 40% 45%']} gap={['0px']}>
+            <Grid columns={[1, 1, '165px 585px 1fr']} gap={['0px']}>
               <Text
                 sx={{
                   fontFamily: 'mono',

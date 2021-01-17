@@ -17,7 +17,7 @@ export const meta = {
         'Success requires independence between the development of the rules and their application to specific projects or companies',
     },
     {
-      position: 4950,
+      position: 5000,
       text:
         'Protocols and standards must represent the most accurate approaches to calculating climate benefits',
     },

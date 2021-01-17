@@ -144,6 +144,7 @@ const Entry = ({ info }) => {
             >
               {tags.map((tag) => (
                 <Tag
+                  key={tag}
                   label={tag}
                   sx={{
                     mr: [3],

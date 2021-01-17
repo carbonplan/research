@@ -6,6 +6,15 @@ import data from '../data'
 import { Box, Grid, Text, Link } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 
+const tags = {
+  mineralization: 'grey',
+  soil: 'orange',
+  biomass: 'yellow',
+  forests: 'green',
+  ocean: 'teal',
+  dac: 'purple',
+}
+
 const Row = ({ children }) => {
   return (
     <Grid
@@ -44,6 +53,7 @@ const icons = (rating, color) => {
 const header = {
   textTransform: 'uppercase',
   fontFamily: 'heading',
+  letterSpacing: 'body',
   fontSize: [1],
   mt: [2],
 }
@@ -57,7 +67,7 @@ const Table = () => {
       <Text
         sx={{
           display: 'inline-block',
-          color: theme.tags[name],
+          color: tags[name],
         }}
       >
         {display ? display : name}
@@ -99,7 +109,7 @@ const Table = () => {
             }
           })
           .map((project) => {
-            const color = theme.colors[theme.tags[project.tags[0]]]
+            const color = theme.colors[tags[project.tags[0]]]
             const url = '/reports/?id=' + project.id + '&expand=true'
             return (
               <Row key={project.id}>

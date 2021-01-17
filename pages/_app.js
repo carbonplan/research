@@ -4,17 +4,12 @@ import { MDXProvider } from '@mdx-js/react'
 import '@carbonplan/components/fonts.css'
 import '@carbonplan/components/globals.css'
 import 'mapbox-gl/dist/mapbox-gl.css'
-
 import theme from '../theme'
-
-const components = {
-  a: (props) => <Link target='_blank' {...props} />,
-}
 
 const App = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
-      <MDXProvider components={components}>
+      <MDXProvider>
         <Component {...pageProps} />
       </MDXProvider>
     </ThemeProvider>

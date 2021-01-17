@@ -3,14 +3,15 @@ import { Box, Grid, Text, Divider } from 'theme-ui'
 const Row = ({ children }) => {
   return (
     <Grid
-      columns={[1, '275px 1fr', '275px 1fr']}
+      columns={[1, '300px 1fr', '300px 1fr']}
       sx={{
         borderStyle: 'solid',
         borderWidth: '0px',
         borderTopWidth: '1px',
         borderColor: 'muted',
         pt: [3],
-        pb: ['22px', 3, 3],
+        pb: [3],
+        mb: ['2px', 0, 0]
       }}
     >
       {children}
@@ -27,7 +28,8 @@ const Top = ({ children }) => {
         borderTopWidth: '1px',
         borderColor: 'muted',
         pt: [3],
-        pb: ['22px', 3, 3],
+        pb: [3],
+        mb: ['2px', 0, 0]
       }}
     >
       {children}
@@ -38,25 +40,29 @@ const Top = ({ children }) => {
 const Parameters = ({}) => {
   const sx = {
     title: {
-      fontFamily: 'body',
-      letterSpacing: 'wide',
+      fontFamily: 'heading',
+      letterSpacing: 'smallcaps',
       textTransform: 'uppercase',
-      fontSize: [2, 2, 3],
+      mt: [0],
+      mb: [0, '2px', '2px'],
+      fontSize: [2],
     },
     label: {
-      fontFamily: 'body',
-      letterSpacing: 'wide',
+      fontFamily: 'heading',
+      letterSpacing: 'smallcaps',
       textTransform: 'uppercase',
-      fontSize: [2, 2, 3],
+      mt: [0],
+      fontSize: [2],
     },
     description: {
       fontFamily: 'faux',
       letterSpacing: 'faux',
       fontSize: [2],
+      mb: [0, 0, '2px']
     },
     number: {
-      fontFamily: 'monospace',
-      letterSpacing: 'monospace',
+      fontFamily: 'mono',
+      letterSpacing: 'mono',
       fontSize: [5],
       color: 'pink',
     },
@@ -95,7 +101,7 @@ const Parameters = ({}) => {
           Switching time
           <Text sx={sx.units}>years</Text>
         </Text>
-        <Text>
+        <Text sx={sx.description}>
           The year in which the decision-maker switches from temporary to
           permanent carbon removal. (Optional.)
         </Text>
@@ -105,7 +111,7 @@ const Parameters = ({}) => {
           Discount rate
           <Text sx={sx.units}>%</Text>
         </Text>
-        <Text>
+        <Text sx={sx.description}>
           Used to discount future year costs and generate a net present value
           calculation.
         </Text>
@@ -115,7 +121,7 @@ const Parameters = ({}) => {
           Project risk
           <Text sx={sx.units}>%/year</Text>
         </Text>
-        <Text>
+        <Text sx={sx.description}>
           The risk that a project fails and releases its carbon back to the
           atmosphere.
         </Text>
@@ -125,7 +131,7 @@ const Parameters = ({}) => {
           Temporary project cost
           <Text sx={sx.units}>$/tCO₂</Text>
         </Text>
-        <Text>
+        <Text sx={sx.description}>
           Project costs set as constant or based on a custom price trajectory.
         </Text>
       </Row>
@@ -134,7 +140,7 @@ const Parameters = ({}) => {
           Permanent project cost
           <Text sx={sx.units}>$/tCO₂</Text>
         </Text>
-        <Text>
+        <Text sx={sx.description}>
           Project costs set as constant or based on a custom price trajectory.
         </Text>
       </Row>

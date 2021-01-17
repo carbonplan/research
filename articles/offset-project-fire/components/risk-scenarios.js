@@ -156,7 +156,7 @@ const RiskScenarios = () => {
             sx={{
               fontSize: [3],
               fontFamily: 'heading',
-              letterSpacing: 'wide',
+              letterSpacing: 'smallcaps',
               textTransform: 'uppercase',
               color: 'red',
             }}
@@ -198,7 +198,7 @@ const RiskScenarios = () => {
             sx={{
               fontSize: [3],
               fontFamily: 'heading',
-              letterSpacing: 'wide',
+              letterSpacing: 'smallcaps',
               textTransform: 'uppercase',
               color: 'red',
             }}

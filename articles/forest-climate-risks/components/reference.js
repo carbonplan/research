@@ -12,7 +12,7 @@ const Reference = () => {
           pt: [3],
           pb: ['22px', 3, 3],
           textTransform: 'uppercase',
-          letterSpacing: 'wide',
+          letterSpacing: 'smallcaps',
           fontFamily: 'heading',
           fontSize: [2],
           color: 'green',

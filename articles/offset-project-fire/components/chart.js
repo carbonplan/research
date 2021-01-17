@@ -17,9 +17,9 @@ const Chart = ({ data, width }) => {
       axis: {
         grid: false,
         labelFontSize: theme.fontSizes[1],
-        labelFont: theme.fonts.monospace,
+        labelFont: theme.fonts.mono,
         labelColor: theme.colors.text,
-        titleFont: theme.fonts.monospace,
+        titleFont: theme.fonts.mono,
         titleFontSize: theme.fontSizes[1],
         titleColor: theme.colors.text,
         domain: true,

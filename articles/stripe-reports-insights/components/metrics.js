@@ -15,7 +15,8 @@ const Row = ({ children }) => {
         borderTopWidth: '1px',
         borderColor: 'muted',
         pt: [3],
-        pb: ['22px', 3, 3],
+        pb: [3],
+        mb: ['2px', 0, 0]
       }}
     >
       {children}
@@ -25,16 +26,16 @@ const Row = ({ children }) => {
 
 const header = {
   textTransform: 'uppercase',
-  letterSpacing: 'wide',
+  letterSpacing: 'smallcaps',
   fontFamily: 'heading',
   fontSize: [2],
-  mt: ['3px'],
 }
 
 const entry = {
   fontSize: [2],
   fontFamily: 'faux',
   letterSpacing: 'faux',
+  mb: [0, 0, '2px']
 }
 
 const Metrics = () => {

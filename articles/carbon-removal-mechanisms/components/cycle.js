@@ -1,22 +1,27 @@
 /** @jsx jsx */
 import { jsx, Box } from 'theme-ui'
-import { useThemeUI } from 'theme-ui'
 import { shade, mix } from '@theme-ui/color'
 
-const Cycle = ({ tag, data, labels, intro }) => {
-  const context = useThemeUI()
-  const theme = context.theme
+const tags = {
+  mineralization: 'grey',
+  soil: 'orange',
+  biomass: 'yellow',
+  forests: 'green',
+  ocean: 'teal',
+  dac: 'purple',
+}
 
+const Cycle = ({ tag, data, labels, intro }) => {
   const sxStock = (stock) => {
     const enhanced = data.flux.filter(
       (fx) => fx.from == stock && fx.type == 'enhanced'
     )
-    if (data.stock[stock] || enhanced.length > 0) return theme.tags[tag]
+    if (data.stock[stock] || enhanced.length > 0) return tags[tag]
     else return 'muted'
   }
 
   const sxStockInner = (stock) => {
-    if (data.stock[stock]) return theme.tags[tag]
+    if (data.stock[stock]) return tags[tag]
     else return 'none'
   }
 
@@ -35,13 +40,11 @@ const Cycle = ({ tag, data, labels, intro }) => {
     if (avoided) {
       return 'none'
     } else if (enhanced) {
-      return theme.tags[tag]
+      return tags[tag]
     } else if (lateral) {
       return 'background'
     } else {
-      return intro
-        ? mix('secondary', 'background', 0.6)
-        : mix('secondary', 'background', 0.3)
+      return 'muted'
     }
   }
 
@@ -53,7 +56,7 @@ const Cycle = ({ tag, data, labels, intro }) => {
       if (display) {
         return 'initial'
       } else {
-        return theme.tags[tag]
+        return tags[tag]
       }
     } else return 'none'
   }
