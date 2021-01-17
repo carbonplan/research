@@ -11,7 +11,7 @@ const Row = ({ children }) => {
         borderColor: 'muted',
         pt: [3],
         pb: [3],
-        mb: ['2px', 0, 0]
+        mb: ['2px', 0, 0],
       }}
     >
       {children}
@@ -29,7 +29,7 @@ const Top = ({ children }) => {
         borderColor: 'muted',
         pt: [3],
         pb: [3],
-        mb: ['2px', 0, 0]
+        mb: ['2px', 0, 0],
       }}
     >
       {children}
@@ -58,7 +58,7 @@ const Parameters = ({}) => {
       fontFamily: 'faux',
       letterSpacing: 'faux',
       fontSize: [2],
-      mb: [0, 0, '2px']
+      mb: [0, 0, '2px'],
     },
     number: {
       fontFamily: 'mono',

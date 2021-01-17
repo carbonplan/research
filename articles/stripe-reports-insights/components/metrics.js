@@ -16,7 +16,7 @@ const Row = ({ children }) => {
         borderColor: 'muted',
         pt: [3],
         pb: [3],
-        mb: ['2px', 0, 0]
+        mb: ['2px', 0, 0],
       }}
     >
       {children}
@@ -35,7 +35,7 @@ const entry = {
   fontSize: [2],
   fontFamily: 'faux',
   letterSpacing: 'faux',
-  mb: [0, 0, '2px']
+  mb: [0, 0, '2px'],
 }
 
 const Metrics = () => {

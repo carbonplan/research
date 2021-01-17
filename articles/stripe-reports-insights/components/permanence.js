@@ -151,9 +151,9 @@ const Permanence = () => {
         >
           /
         </Text>{' '}
-        Each point shows the cost and permanence for an individual project. Colors represent
-        project categories: <Inline name='forests' />, <Inline name='soil' />,{' '}
-        <Inline name='biomass' />,{' '}
+        Each point shows the cost and permanence for an individual project.
+        Colors represent project categories: <Inline name='forests' />,{' '}
+        <Inline name='soil' />, <Inline name='biomass' />,{' '}
         <Inline name='dac' display='direct air capture' />,{' '}
         <Inline name='mineralization' />, and <Inline name='ocean' />.
       </Text>
