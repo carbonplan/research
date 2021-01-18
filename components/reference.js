@@ -49,7 +49,7 @@ const Reference = ({ color, data }) => {
             mt: [3, 3, '-250px'],
             mb: [3, 3, 0],
             top: ['0px', '0px', `${250 + data.offset}px`],
-            left: ['0px', '0px', '350px'],
+            left: ['0px', '0px', '344px'],
             maxWidth: '250px',
             cursor: 'pointer',
             display: [
