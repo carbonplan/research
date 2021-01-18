@@ -1,6 +1,6 @@
 import Article from '../../components/article'
-import Reference from '../../components/article/reference'
-import TaggedLink from '../../components/article/tagged-link'
+import Reference from '../../components/reference'
+import TaggedLink from '../../components/tagged-link'
 import Table from './components/table'
 import Heading from './components/heading'
 
@@ -17,7 +17,7 @@ export const meta = {
         'Success requires independence between the development of the rules and their application to specific projects or companies',
     },
     {
-      position: 4950,
+      position: 5000,
       text:
         'Protocols and standards must represent the most accurate approaches to calculating climate benefits',
     },

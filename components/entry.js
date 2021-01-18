@@ -1,4 +1,5 @@
-import { Box, Grid, Text, Heading, Badge } from 'theme-ui'
+import { Box, Grid, Text, Heading } from 'theme-ui'
+import { Tag } from '@carbonplan/components'
 
 const Entry = ({ info }) => {
   const { id, title, color, tags, authors, version, date, icon } = info
@@ -14,6 +15,7 @@ const Entry = ({ info }) => {
           opacity: 1,
         },
       }}
+      key={id}
     >
       <Box
         id='box'
@@ -26,7 +28,6 @@ const Entry = ({ info }) => {
           borderTopWidth: '1px',
           color: 'text',
         }}
-        key={id}
       >
         <Grid id='grid' columns={[1, '225px 1fr', '225px 1fr']}>
           <Box id='box2' sx={{}}>
@@ -88,14 +89,25 @@ const Entry = ({ info }) => {
           <Box>
             <Text
               sx={{
-                fontFamily: 'monospace',
                 color: 'secondary',
+                fontFamily: 'mono',
+                letterSpacing: '0.05em',
                 fontSize: [2],
               }}
             >
               {date}{' '}
-              <Text sx={{ display: 'inline-block', color: 'text' }}>/</Text> v
-              {version}
+              <Text
+                as='span'
+                sx={{
+                  color: 'text',
+                  fontFamily: 'mono',
+                  letterSpacing: '0.05em',
+                  fontSize: [2],
+                }}
+              >
+                /
+              </Text>{' '}
+              v{version}
             </Text>
             <Heading sx={{ mb: ['2px'], mt: ['10px'], fontSize: [5] }}>
               {title}
@@ -112,9 +124,12 @@ const Entry = ({ info }) => {
               by{' '}
               {authors.map((author, ix) => (
                 <Text
+                  as='span'
                   key={author}
                   sx={{
-                    display: 'inline-block',
+                    fontFamily: 'faux',
+                    letterSpacing: 'faux',
+                    fontSize: [3],
                     mr: [2],
                   }}
                 >
@@ -125,31 +140,18 @@ const Entry = ({ info }) => {
             <Box
               sx={{
                 mt: ['10px'],
-                fontFamily: 'monospace',
-                letterSpacing: 'extra',
               }}
             >
               {tags.map((tag) => (
-                <Box
+                <Tag
                   key={tag}
+                  label={tag}
                   sx={{
-                    display: 'inline-block',
                     mr: [3],
+                    color: 'secondary',
+                    cursor: 'pointer',
                   }}
-                >
-                  <Badge
-                    key={tag}
-                    variant='primary'
-                    sx={{
-                      pointerEvents: 'none',
-                      cursor: 'default',
-                      color: 'secondary',
-                      borderColor: 'secondary',
-                    }}
-                  >
-                    {tag}
-                  </Badge>
-                </Box>
+                />
               ))}
             </Box>
           </Box>

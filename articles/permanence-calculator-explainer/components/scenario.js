@@ -16,14 +16,14 @@ const Scenario = ({
 }) => {
   const sx = {
     label: {
-      fontFamily: 'body',
-      letterSpacing: 'wide',
+      fontFamily: 'heading',
+      letterSpacing: 'smallcaps',
       textTransform: 'uppercase',
-      fontSize: [2, 2, 3],
+      fontSize: [2, 2, 2],
     },
     number: {
-      fontFamily: 'monospace',
-      letterSpacing: 'monospace',
+      fontFamily: 'mono',
+      letterSpacing: 'mono',
       fontSize: [3, 3, 5],
       color: 'pink',
     },

@@ -4,6 +4,15 @@ import { Vega } from 'react-vega'
 import data from '../data'
 var vegaLite = require('vega-lite')
 
+const tags = {
+  mineralization: 'grey',
+  soil: 'orange',
+  biomass: 'yellow',
+  forests: 'green',
+  ocean: 'teal',
+  dac: 'purple',
+}
+
 export const config = (theme) => {
   return {
     background: null,
@@ -11,10 +20,11 @@ export const config = (theme) => {
     axis: {
       grid: false,
       labelFontSize: theme.fontSizes[1],
-      labelFont: theme.fonts.monospace,
+      labelFont: theme.fonts.mono,
       labelColor: theme.colors.text,
-      titleFont: theme.fonts.monospace,
+      titleFont: theme.fonts.mono,
       titleFontSize: theme.fontSizes[1],
+      titleLetterSpacing: theme.letterSpacings.mono,
       titleColor: theme.colors.text,
       domain: true,
       tickOffset: 0,
@@ -42,7 +52,7 @@ const Permanence = () => {
       <Text
         sx={{
           display: 'inline-block',
-          color: theme.tags[name],
+          color: tags[name],
         }}
       >
         {display ? display : name}
@@ -61,7 +71,7 @@ const Permanence = () => {
         projects[i].metrics.filter((m) => m.name == 'cost')[0].value
       ),
       group: projects[i].tags[0],
-      color: theme.colors[theme.tags[projects[i].tags[0]]],
+      color: theme.colors[tags[projects[i].tags[0]]],
       name: projects[i].name,
       id: projects[i].id,
       opacity: 1,
@@ -80,7 +90,7 @@ const Permanence = () => {
       y: {
         field: 'cost',
         type: 'quantitative',
-        axis: { title: 'COST $/tCO2', tickCount: 3 },
+        axis: { title: 'COST $/tCO₂', tickCount: 3 },
         scale: { type: 'log', domain: [2, 2000], nice: false },
       },
       x: {
@@ -126,8 +136,8 @@ const Permanence = () => {
         sx={{
           color: 'secondary',
           fontSize: [2],
-          fontFamily: 'faux',
-          letterSpacing: 'faux',
+          fontFamily: 'body',
+          letterSpacing: 'body',
           mt: [3],
           mb: [5],
         }}
@@ -141,9 +151,9 @@ const Permanence = () => {
         >
           /
         </Text>{' '}
-        Each point shows the cost and permanence for a project. Colors represent
-        project categories: <Inline name='forests' />, <Inline name='soil' />,{' '}
-        <Inline name='biomass' />,{' '}
+        Each point shows the cost and permanence for an individual project.
+        Colors represent project categories: <Inline name='forests' />,{' '}
+        <Inline name='soil' />, <Inline name='biomass' />,{' '}
         <Inline name='dac' display='direct air capture' />,{' '}
         <Inline name='mineralization' />, and <Inline name='ocean' />.
       </Text>

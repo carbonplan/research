@@ -1,5 +1,5 @@
 import Article from '../../components/article'
-import Reference from '../../components/article/reference'
+import Reference from '../../components/reference'
 import Cycle from './components/cycle'
 
 export const meta = {

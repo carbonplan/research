@@ -1,17 +1,13 @@
 import { Box, Text, Grid, Container, Styled } from 'theme-ui'
-import Layout from './layout'
-import BackArrow from './article/back-arrow'
+import { Layout } from '@carbonplan/components'
+import BackArrow from './back-arrow'
 import contents from '../contents'
 
 const Tool = ({ title, description, meta, children }) => {
   const info = contents[meta.id]
 
   return (
-    <Layout
-      shareCard={meta.id}
-      shareDescription={meta.summary}
-      shareTitle={info.title}
-    >
+    <Layout card={meta.id} description={meta.summary} title={info.title}>
       <Container sx={{ px: [3, 3, 4], mb: [5] }}>
         <BackArrow />
         <Grid columns={[1, 1, '700px 1fr']} gap={['100px']} sx={{ mt: [4] }}>

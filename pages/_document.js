@@ -1,20 +1,14 @@
-import React from 'react'
-import Document, {
-  Html,
-  Main,
-  NextScript,
-  Head as NextHead,
-} from 'next/document'
-import { Head } from '@carbonplan/components'
+import Document, { Html, Main, NextScript, Head } from 'next/document'
+import { Tracking } from '@carbonplan/components'
 import { InitializeColorMode } from 'theme-ui'
 
 class MyDocument extends Document {
   render() {
     return (
       <Html className='no-focus-outline'>
-        <NextHead>
-          <Head />
-        </NextHead>
+        <Head>
+          <Tracking />
+        </Head>
         <body>
           <InitializeColorMode />
           <Main />

@@ -10,7 +10,8 @@ const Row = ({ children }) => {
         borderTopWidth: '1px',
         borderColor: 'muted',
         pt: [3],
-        pb: ['22px', 3, 3],
+        pb: [3],
+        mb: ['2px', 0, 0],
       }}
     >
       {children}
@@ -27,7 +28,8 @@ const Top = ({ children }) => {
         borderTopWidth: '1px',
         borderColor: 'muted',
         pt: [3],
-        pb: ['22px', 3, 3],
+        pb: [3],
+        mb: ['2px', 0, 0],
       }}
     >
       {children}
@@ -37,25 +39,27 @@ const Top = ({ children }) => {
 
 const title = {
   textTransform: 'uppercase',
-  letterSpacing: 'wide',
+  letterSpacing: 'smallcaps',
   fontFamily: 'heading',
   fontSize: [2],
-  mt: ['3px'],
+  mt: [0, 0, 0],
+  mb: [0, '2px', '2px'],
   color: 'orange',
 }
 
 const header = {
   textTransform: 'uppercase',
-  letterSpacing: 'wide',
+  letterSpacing: 'smallcaps',
   fontFamily: 'heading',
+  mt: [0, 0, 0],
   fontSize: [2],
-  mt: ['3px'],
 }
 
 const entry = {
   fontSize: [2],
   fontFamily: 'faux',
   letterSpacing: 'faux',
+  mb: [0, 0, '2px'],
 }
 
 const Table = () => {

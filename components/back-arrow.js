@@ -14,6 +14,7 @@ const BackArrow = () => {
             mr: [3],
             fontSize: [7],
             mt: [2],
+            transition: '0.1s',
             cursor: 'pointer',
             '&:hover': {
               color: 'secondary',

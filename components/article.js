@@ -1,6 +1,6 @@
 import { Box, Text, Grid, Container } from 'theme-ui'
-import Layout from './layout'
-import BackArrow from './article/back-arrow'
+import { Layout } from '@carbonplan/components'
+import BackArrow from './back-arrow'
 import contents from '../contents'
 
 const Article = ({ children, meta }) => {
@@ -8,9 +8,12 @@ const Article = ({ children, meta }) => {
 
   return (
     <Layout
-      shareCard={meta.id}
-      shareDescription={meta.summary}
-      shareTitle={info.title}
+      card={meta.id}
+      description={meta.summary}
+      title={info.title}
+      links={'local'}
+      metadata={'scroll'}
+      container={false}
     >
       <Box
         sx={{
@@ -39,21 +42,23 @@ const Article = ({ children, meta }) => {
           }}
         >
           <Container sx={{ px: [3, 3, 4] }}>
-            <Grid columns={[1, '15% 35% 50%', '15% 35% 50%']} gap={['0px']}>
+            <Grid columns={[1, 1, '165px 585px 1fr']} gap={['0px']}>
               <Text
                 sx={{
-                  fontFamily: 'monospace',
-                  letterSpacing: 'monospace',
+                  fontFamily: 'mono',
+                  letterSpacing: 'mono',
                   textTransform: 'uppercase',
+                  fontSize: [2],
                 }}
               >
                 Article({info.number})
               </Text>
               <Text
                 sx={{
-                  fontFamily: 'monospace',
-                  letterSpacing: 'monospace',
+                  fontFamily: 'mono',
+                  letterSpacing: 'mono',
                   textTransform: 'uppercase',
+                  fontSize: [2],
                 }}
               >
                 by{' '}
@@ -63,6 +68,9 @@ const Article = ({ children, meta }) => {
                     sx={{
                       display: 'inline-block',
                       mr: [2],
+                      fontFamily: 'mono',
+                      letterSpacing: 'mono',
+                      fontSize: [2],
                     }}
                   >
                     {author} {ix < info.authors.length - 1 ? '+' : ''}
@@ -71,9 +79,10 @@ const Article = ({ children, meta }) => {
               </Text>
               <Text
                 sx={{
-                  fontFamily: 'monospace',
-                  letterSpacing: 'monospace',
+                  fontFamily: 'mono',
+                  letterSpacing: 'mono',
                   textTransform: 'uppercase',
+                  fontSize: [2],
                 }}
               >
                 {info.date}
@@ -89,7 +98,11 @@ const Article = ({ children, meta }) => {
           <Box sx={{ display: ['none', 'none', 'initial'] }}>
             <Box sx={{ mt: '55px', maxWidth: '250px' }}>
               <Text
-                sx={{ fontFamily: 'heading', letterSpacing: 'wide', mb: [3] }}
+                sx={{
+                  fontFamily: 'heading',
+                  letterSpacing: 'smallcaps',
+                  mb: [3],
+                }}
               >
                 / QUICK LOOK
               </Text>
