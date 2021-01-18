@@ -75,7 +75,7 @@ const Reference = ({ color, data }) => {
             <Text
               as='span'
               sx={{
-                ml: ['-18px'],
+                ml: ['-12px'],
                 lineHeight: 1.25,
                 letterSpacing: '0.0125em',
                 display: ['none', 'none', 'initial'],
@@ -87,11 +87,12 @@ const Reference = ({ color, data }) => {
               as='span'
               sx={{
                 ml: [0, 0, '7px'],
+                mt: [0, 0, '-17px'],
+                display: ['initial', 'intial', 'block'],
                 lineHeight: 1.25,
                 letterSpacing: '0.0125em',
               }}
             >
-              {' '}
               {data.authors} {data.year ? `(${data.year})` : ''} {data.title}{' '}
               <i>{data.journal}</i>
             </Text>
