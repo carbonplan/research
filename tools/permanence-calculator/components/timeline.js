@@ -44,7 +44,9 @@ const Timeline = ({ options }) => {
   }
 
   useEffect(() => {
-    chart = new TimelineChart(container, theme)
+    if (container.current.offsetWidth > 0) {
+      chart = new TimelineChart(container, theme)
+    }
 
     return function cleanup() {
       container.current.innerHTML = ''
@@ -57,9 +59,36 @@ const Timeline = ({ options }) => {
     }
   }, [theme, options])
 
+  useEffect(() => {
+    let id = null
+
+    const listener = () => {
+      clearTimeout(id)
+      id = setTimeout(() => {
+        if (container.current.offsetWidth > 0) {
+          chart = new TimelineChart(container, theme)
+          chart.update(data(options))
+        }
+      }, 150)
+    }
+
+    window.addEventListener('resize', listener)
+
+    return () => {
+      window.removeEventListener('resize', listener)
+    }
+  }, [theme])
+
   return (
     <>
-      <Box ref={container} sx={{ height: '160px', width: '100%' }} />
+      <Box
+        ref={container}
+        sx={{
+          display: ['none', 'none', 'inherit'],
+          height: '160px',
+          width: '100%',
+        }}
+      />
     </>
   )
 }

@@ -11,6 +11,8 @@ const TimelineChart = (container, theme, data) => {
   const width = container.current.offsetWidth - margin.left - margin.right
   const height = container.current.offsetHeight - margin.top - margin.bottom
 
+  select(container.current).selectAll('*').remove()
+
   svg = select(container.current)
     .append('svg')
     .attr('width', width + margin.left + margin.right)

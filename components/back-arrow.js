@@ -13,7 +13,8 @@ const BackArrow = () => {
             display: 'inline-block',
             mr: [3],
             fontSize: [7],
-            mt: [2],
+            mt: [0, 0, 2],
+            mb: [3, 1, 0],
             transition: '0.1s',
             cursor: 'pointer',
             '&:hover': {

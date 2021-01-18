@@ -10,6 +10,8 @@ const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
   const width = container.current.offsetWidth - margin.left - margin.right
   const height = container.current.offsetHeight - margin.top - margin.bottom
 
+  select(container.current).selectAll('*').remove()
+
   svg = select(container.current)
     .append('svg')
     .attr('width', width + margin.left + margin.right)
@@ -130,7 +132,7 @@ const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
     .style('text-anchor', 'left')
     .style('fill', theme.colors.muted)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.monospace)
+    .style('font-family', theme.fonts.mono)
     .text('0 years')
 
   svg
@@ -139,7 +141,7 @@ const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
     .style('text-anchor', 'right')
     .style('fill', theme.colors.muted)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.monospace)
+    .style('font-family', theme.fonts.mono)
     .text('100 years')
 
   svg
@@ -151,7 +153,7 @@ const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
     .style('text-anchor', 'left')
     .style('fill', theme.colors.muted)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.monospace)
+    .style('font-family', theme.fonts.mono)
     .text((d) => `$${d}`)
 
   let current = svg
@@ -159,8 +161,9 @@ const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
     .style('text-anchor', 'center')
     .style('fill', theme.colors.pink)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.monospace)
+    .style('font-family', theme.fonts.mono)
     .style('opacity', 0)
+    .style('transition', '0.15s')
     .text('$100')
 
   function updateValues() {
@@ -187,7 +190,7 @@ const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
       .attr('x', x(d[0]))
       .attr('y', y(y.invert(event.y)) - 10)
       .text(`$${d[1].toFixed(0)}`)
-    current.transition().duration(150).style('opacity', 1)
+    current.style('opacity', 1)
   }
 
   function dragged(event, d) {
@@ -210,7 +213,7 @@ const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
 
   function dragended(d) {
     updateValues()
-    current.transition().duration(150).style('opacity', 0)
+    current.style('opacity', 0)
   }
 
   const update = (data) => {}

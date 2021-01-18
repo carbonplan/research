@@ -120,7 +120,7 @@ const Cost = ({
           display: ['inline-block', 'inline-block', 'block'],
           fontSize: [3, 3, 6],
           fontFamily: 'mono',
-          letterSpacing: 'mono',
+          letterSpacing: '0.02em',
           color: 'pink',
           mt: [0, 0, 2],
           mb: [1, 1, 2],
@@ -155,7 +155,7 @@ const Cost = ({
           display: ['inline-block', 'inline-block', 'block'],
           fontSize: [3, 3, 6],
           fontFamily: 'mono',
-          letterSpacing: 'mono',
+          letterSpacing: '0.02em',
           color: 'pink',
           my: [0, 0, 2],
         }}

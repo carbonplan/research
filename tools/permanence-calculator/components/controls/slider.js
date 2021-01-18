@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Box, Text, Grid, Slider } from 'theme-ui'
-import Toggle from '../toggle'
+import LabeledToggle from '../labeled-toggle'
 import { darken } from '@theme-ui/color'
 
 const Control = ({
@@ -66,7 +66,7 @@ const Control = ({
               left: ['calc(100% - 55px)', 'calc(100% - 55px)', '424px'],
             }}
           >
-            <Toggle
+            <LabeledToggle
               value={active}
               setValue={setActive}
               labels={{ on: 'on', off: 'off' }}
@@ -104,7 +104,7 @@ const Control = ({
                 color: active ? 'pink' : 'muted',
                 fontSize: [4],
                 fontFamily: 'mono',
-                letterSpacing: 'mono',
+                letterSpacing: '0.03em',
                 transition: '0.2s',
               }}
             >

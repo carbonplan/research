@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import { useThemeUI, Box, Text, Grid, Slider } from 'theme-ui'
 import { darken } from '@theme-ui/color'
-import Toggle from '../toggle'
+import LabeledToggle from '../labeled-toggle'
 import CostCurve from '../charts/cost-curve'
 
 let chart = null
@@ -35,6 +35,33 @@ const Curve = ({
     }
   }, [theme, isVariable])
 
+  useEffect(() => {
+    let id = null
+
+    const listener = () => {
+      clearTimeout(id)
+      id = setTimeout(() => {
+        if (container.current.offsetWidth > 0) {
+          chart = new CostCurve(
+            container,
+            theme,
+            value,
+            setValue,
+            name,
+            scales,
+            !isVariable
+          )
+        }
+      }, 150)
+    }
+
+    window.addEventListener('resize', listener)
+
+    return () => {
+      window.removeEventListener('resize', listener)
+    }
+  }, [theme])
+
   const format = (value) => {
     return `$${value.toFixed(0)}`
   }
@@ -65,7 +92,7 @@ const Curve = ({
             left: ['calc(100% - 55px)', 'calc(100% - 55px)', '424px'],
           }}
         >
-          <Toggle
+          <LabeledToggle
             value={isVariable}
             setValue={setIsVariable}
             labels={{ on: 'varied', off: 'fixed' }}

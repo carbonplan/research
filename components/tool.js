@@ -7,8 +7,13 @@ const Tool = ({ title, description, meta, children }) => {
   const info = contents[meta.id]
 
   return (
-    <Layout card={meta.id} description={meta.summary} title={info.title}>
-      <Container sx={{ px: [3, 3, 4], mb: [5] }}>
+    <Layout
+      card={meta.id}
+      metadata={false}
+      description={meta.summary}
+      title={info.title}
+    >
+      <Box sx={{ mb: [6] }}>
         <BackArrow />
         <Grid columns={[1, 1, '700px 1fr']} gap={['100px']} sx={{ mt: [4] }}>
           <Box sx={{ mt: '-95px' }}>
@@ -19,7 +24,11 @@ const Tool = ({ title, description, meta, children }) => {
           <Box sx={{ display: ['none', 'none', 'initial'] }}>
             <Box sx={{ mt: '55px', maxWidth: '250px' }}>
               <Text
-                sx={{ fontFamily: 'heading', letterSpacing: 'wide', mb: [3] }}
+                sx={{
+                  fontFamily: 'heading',
+                  letterSpacing: 'smallcaps',
+                  mb: [3],
+                }}
               >
                 / QUICK LOOK
               </Text>
@@ -28,7 +37,7 @@ const Tool = ({ title, description, meta, children }) => {
           </Box>
         </Grid>
         {children}
-      </Container>
+      </Box>
     </Layout>
   )
 }

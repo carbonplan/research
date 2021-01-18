@@ -41,7 +41,7 @@ const Article = ({ children, meta }) => {
             color: ['#1b1e23', '#1b1e23', info.invert ? '#ebebec' : '#1b1e23'],
           }}
         >
-          <Container sx={{ px: [3, 3, 4] }}>
+          <Container sx={{ px: [3, 4, 4] }}>
             <Grid columns={[1, 1, '165px 585px 1fr']} gap={['0px']}>
               <Text
                 sx={{
@@ -91,7 +91,7 @@ const Article = ({ children, meta }) => {
           </Container>
         </Box>
       </Box>
-      <Container sx={{ px: [3, 3, 4], mb: [5] }}>
+      <Container sx={{ px: [3, 4, 4], mb: [5] }}>
         <BackArrow />
         <Grid columns={[1, 1, '650px 1fr']} gap={['100px']}>
           <Box sx={{ mt: '-65px' }}>{children}</Box>
