@@ -94,7 +94,7 @@ const TimelineChart = (container, theme, data) => {
     .style('text-anchor', 'left')
     .style('fill', theme.colors.muted)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.monospace)
+    .style('font-family', theme.fonts.mono)
     .text('0 years')
 
   svg
@@ -103,7 +103,7 @@ const TimelineChart = (container, theme, data) => {
     .style('text-anchor', 'right')
     .style('fill', theme.colors.muted)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.monospace)
+    .style('font-family', theme.fonts.mono)
     .text('100 years')
 
   svg
@@ -139,7 +139,7 @@ const TimelineChart = (container, theme, data) => {
     .style('text-anchor', 'left')
     .style('fill', theme.colors.primary)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.monospace)
+    .style('font-family', theme.fonts.mono)
     .text('1')
 
   svg
@@ -148,7 +148,7 @@ const TimelineChart = (container, theme, data) => {
     .style('text-anchor', 'left')
     .style('fill', theme.colors.primary)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.monospace)
+    .style('font-family', theme.fonts.mono)
     .text('0')
 
   const update = (data) => {

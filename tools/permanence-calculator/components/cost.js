@@ -119,8 +119,8 @@ const Cost = ({
         sx={{
           display: ['inline-block', 'inline-block', 'block'],
           fontSize: [3, 3, 6],
-          fontFamily: 'monospace',
-          letterSpacing: 'monospace',
+          fontFamily: 'mono',
+          letterSpacing: 'mono',
           color: 'pink',
           mt: [0, 0, 2],
           mb: [1, 1, 2],
@@ -154,8 +154,8 @@ const Cost = ({
         sx={{
           display: ['inline-block', 'inline-block', 'block'],
           fontSize: [3, 3, 6],
-          fontFamily: 'monospace',
-          letterSpacing: 'monospace',
+          fontFamily: 'mono',
+          letterSpacing: 'mono',
           color: 'pink',
           my: [0, 0, 2],
         }}

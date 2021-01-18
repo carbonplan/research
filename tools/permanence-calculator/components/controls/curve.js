@@ -49,7 +49,7 @@ const Curve = ({
       <Text
         sx={{
           fontFamily: 'heading',
-          letterSpacing: 'wide',
+          letterSpacing: 'smallcaps',
           textTransform: 'uppercase',
           fontSize: [3],
           mt: [3],
@@ -101,8 +101,8 @@ const Curve = ({
                 display: 'inline-block',
                 color: 'pink',
                 fontSize: [4],
-                fontFamily: 'monospace',
-                letterSpacing: 'monospace',
+                fontFamily: 'mono',
+                letterSpacing: 'mono',
               }}
             >
               {format(displayValue)}

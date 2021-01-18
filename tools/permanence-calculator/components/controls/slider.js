@@ -48,8 +48,8 @@ const Control = ({
     >
       <Text
         sx={{
-          fontFamily: 'body',
-          letterSpacing: 'wide',
+          fontFamily: 'heading',
+          letterSpacing: 'smallcaps',
           textTransform: 'uppercase',
           fontSize: [3],
           mt: [3],
@@ -103,8 +103,8 @@ const Control = ({
                 display: 'inline-block',
                 color: active ? 'pink' : 'muted',
                 fontSize: [4],
-                fontFamily: 'monospace',
-                letterSpacing: 'monospace',
+                fontFamily: 'mono',
+                letterSpacing: 'mono',
                 transition: '0.2s',
               }}
             >
