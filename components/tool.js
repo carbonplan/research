@@ -4,14 +4,13 @@ import BackArrow from './back-arrow'
 import contents from '../contents'
 
 const Tool = ({ title, description, meta, children }) => {
-  const info = contents[meta.id]
 
   return (
     <Layout
       card={meta.id}
       metadata={false}
       description={meta.summary}
-      title={info.title}
+      title={meta.title}
     >
       <Box sx={{ mb: [6] }}>
         <BackArrow />
@@ -22,7 +21,7 @@ const Tool = ({ title, description, meta, children }) => {
             {description}
           </Box>
           <Box sx={{ display: ['none', 'none', 'initial'] }}>
-            <Box sx={{ mt: '55px', maxWidth: '250px' }}>
+            <Box sx={{ mt: '24px', maxWidth: '250px' }}>
               <Text
                 sx={{
                   fontFamily: 'heading',
@@ -32,7 +31,7 @@ const Tool = ({ title, description, meta, children }) => {
               >
                 / QUICK LOOK
               </Text>
-              <Text sx={{ color: info.color }}>{meta.summary}</Text>
+              <Text sx={{ color: meta.color }}>{meta.summary}</Text>
             </Box>
           </Box>
         </Grid>

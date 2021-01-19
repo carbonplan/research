@@ -5,8 +5,19 @@ import RiskScenarios from './components/risk-scenarios'
 
 export const meta = {
   id: 'offset-project-fire',
-  title: 'Offset project fire',
+  number: 4,
   color: 'red',
+  title: 'Offset project fire',
+  authors: [
+    'Claudia Herbert',
+    'Jared Stapp',
+    'Grayson Badgley',
+    'William R L Anderegg',
+    'CarbonPlan Team',
+  ],
+  date: '09-17-2020',
+  background: 'article-004/forest.png',
+  invert: true,
   summary:
     'A major fire in Oregon illustrates the challenges of managing forest carbon permanence.',
   quotes: [],

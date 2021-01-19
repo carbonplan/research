@@ -1,21 +1,19 @@
 import Article from '../../components/article'
 import Reference from '../../components/reference'
+import PullQuote from '../../components/pull-quote'
 import Cycle from './components/cycle'
 
 export const meta = {
   id: 'carbon-removal-mechanisms',
+  number: 3,
   color: 'grey',
   title: 'Carbon removal mechanisms',
+  authors: ['CarbonPlan Team', 'Toly Rinberg'],
+  date: '07-24-2020',
+  background: 'article-003/pipes.png',
+  invert: true,
   summary:
     'How different carbon removal projects interact with the global carbon cycle.',
-  quotes: [
-    {
-      position: 10750,
-      text:
-        'A clear typology is needed to categorize and contextualize projects in the broader field of climate mitigation',
-    },
-  ],
-  full: [],
 }
 
 export const sidenotes = {
@@ -344,6 +342,11 @@ As these alternative perspectives illustrate, the same basic project type can ac
 Considering the full carbon cycle impacts of a project is a complex task, and many questions remain — especially around what these distinctions mean for those purchasing or investing in carbon removal. We’ll give two examples of how the carbon cycle concepts developed here matter to real-world decisions.
 
 First, if we’re considering avoided emissions among carbon removal projects, where should we as a community draw the line?
+
+<PullQuote color={meta.color}>
+  A clear typology is needed to categorize and contextualize projects in the
+  broader field of climate mitigation
+</PullQuote>
 
 There is no objectively correct answer about where to focus energy and resources, but we believe that a clear typology is needed to categorize and contextualize projects in the broader field of climate mitigation. We at CarbonPlan are particularly interested in approaches that either perform carbon removal today, or that could in principle be part of carbon removal systems if coupled to some other component — such as geologic sequestration coupled to direct air capture, or biochar production coupled to sustainable biomass production. That said, reducing and avoiding emissions are the essential core of climate mitigation strategy, and need to accelerate rapidly in parallel to large-scale deployment of carbon removal.
 

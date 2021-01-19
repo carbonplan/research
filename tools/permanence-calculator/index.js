@@ -7,6 +7,7 @@ const Index = () => {
   const meta = {
     id: 'permanence-calculator',
     title: 'Permanence calculator',
+    color: 'pink',
     summary:
       'How to compare the long-term cost of temporary and permanent carbon removal.',
     quotes: [],

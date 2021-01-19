@@ -4,9 +4,14 @@ import Block from './components/block'
 
 export const meta = {
   id: 'forest-climate-risks',
+  number: 2,
+  color: 'green',
+  title: 'Climate-driven risks to forest carbon',
+  authors: ['CarbonPlan Team'],
+  date: '06-23-2020',
+  background: 'article-002/tree.png',
   summary:
     'A new publication with our collaborators examines the physical risks associated with storing carbon in forests.',
-  quotes: [],
 }
 
 # Climate-driven risks to forest carbon

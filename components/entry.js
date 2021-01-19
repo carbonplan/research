@@ -1,6 +1,8 @@
 import { Box, Grid, Text, Heading } from 'theme-ui'
 import { Tag } from '@carbonplan/components'
 
+const prefix = 'https://carbonplan-assets.s3.amazonaws.com/images'
+
 const Entry = ({ info }) => {
   const { id, title, color, tags, authors, version, date, icon } = info
 
@@ -29,63 +31,7 @@ const Entry = ({ info }) => {
           color: 'text',
         }}
       >
-        <Grid id='grid' columns={[1, '225px 1fr', '225px 1fr']}>
-          <Box id='box2' sx={{}}>
-            <Box
-              id='container'
-              sx={{
-                display: 'inline-block',
-                width: '140px',
-                height: '140px',
-                ml: [0, 5, 5],
-                mt: '-2px',
-                position: 'relative',
-                borderRadius: '50%',
-                borderStyle: 'solid',
-                borderColor: 'primary',
-                borderWidth: '1px',
-              }}
-            >
-              <Box
-                id='background'
-                sx={{
-                  top: 0,
-                  left: 0,
-                  position: 'absolute',
-                  display: 'inline-block',
-                  borderRadius: '50%',
-                  width: '100%',
-                  height: '100%',
-                  backgroundColor: color,
-                  transition: '0.25s',
-                  opacity: 1,
-                  backgroundImage: [
-                    `url("https://carbonplan-assets.s3.amazonaws.com/images/${icon}")`,
-                  ],
-                }}
-              ></Box>
-              <Text
-                id='arrow'
-                sx={{
-                  fontFamily: 'faux',
-                  position: 'absolute',
-                  top: '-18px',
-                  left: '26px',
-                  width: '100%',
-                  height: '100%',
-                  display: 'inline-block',
-                  borderRadius: '50%',
-                  fontSize: '122px',
-                  color: 'text',
-                  zIndex: 1000,
-                  transition: '0.25s',
-                  opacity: 0,
-                }}
-              >
-                →
-              </Text>
-            </Box>
-          </Box>
+        <Grid id='grid' columns={[1, '550px 1fr', '550px 1fr']}>
           <Box>
             <Text
               sx={{
@@ -153,6 +99,62 @@ const Entry = ({ info }) => {
                   }}
                 />
               ))}
+            </Box>
+          </Box>
+          <Box id='box2' sx={{}}>
+            <Box
+              id='container'
+              sx={{
+                display: 'inline-block',
+                width: '140px',
+                height: '140px',
+                ml: [0, 5, 5],
+                mt: '-2px',
+                position: 'relative',
+                borderRadius: '50%',
+                borderStyle: 'solid',
+                borderColor: 'primary',
+                borderWidth: '1px',
+              }}
+            >
+              <Box
+                id='background'
+                sx={{
+                  top: 0,
+                  left: 0,
+                  position: 'absolute',
+                  display: 'inline-block',
+                  borderRadius: '50%',
+                  width: '100%',
+                  height: '100%',
+                  backgroundColor: color,
+                  transition: '0.25s',
+                  opacity: 1,
+                  backgroundImage: [
+                    `url('${prefix}/${icon}')`,
+                  ],
+                }}
+              ></Box>
+              <Text
+                id='arrow'
+                sx={{
+                  fontFamily: 'faux',
+                  position: 'absolute',
+                  top: '-18px',
+                  left: '26px',
+                  width: '100%',
+                  height: '100%',
+                  display: 'inline-block',
+                  borderRadius: '50%',
+                  fontSize: '122px',
+                  color: 'text',
+                  zIndex: 1000,
+                  transition: '0.25s',
+                  opacity: 0,
+                }}
+              >
+                →
+              </Text>
             </Box>
           </Box>
         </Grid>

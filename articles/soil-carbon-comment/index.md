@@ -1,32 +1,25 @@
 import Article from '../../components/article'
 import Reference from '../../components/reference'
+import PullQuote from '../../components/pull-quote'
 import TaggedLink from '../../components/tagged-link'
 import Table from './components/table'
 import Heading from './components/heading'
 
 export const meta = {
   id: 'soil-carbon-comment',
-  title: 'Getting soil carbon right',
+  number: 1,
   color: 'orange',
+  title: 'Getting soil carbon right',
+  authors: ['Danny Cullenward', 'Jeremy Freeman'],
+  date: '06-01-2020',
+  background: 'article-001/soil.png',
   summary:
     'Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols.',
-  quotes: [
-    {
-      position: 2350,
-      text:
-        'Success requires independence between the development of the rules and their application to specific projects or companies',
-    },
-    {
-      position: 5000,
-      text:
-        'Protocols and standards must represent the most accurate approaches to calculating climate benefits',
-    },
-  ],
 }
 
 export const sidenotes = {
   1: {
-    offset: -150,
+    offset: -170,
     number: 1,
     authors: 'J. Sanderman & J. A. Baldock',
     year: 2010,
@@ -57,7 +50,7 @@ export const sidenotes = {
   },
   4: {
     number: 4,
-    offset: 75,
+    offset: 62,
     authors: 'K. Paustian et al.',
     year: 2017,
     title:
@@ -76,7 +69,7 @@ export const sidenotes = {
     url: 'https://doi.org/10.1088/1748-9326/10/12/123004',
   },
   6: {
-    offset: 150,
+    offset: 135,
     number: 6,
     authors: 'B. van Wesemael et al.',
     year: 2011,
@@ -142,6 +135,11 @@ Given the enormous challenges in designing a carbon offset protocol to quantify 
 
 ### Conflict of interest
 
+<PullQuote color={meta.color}>
+  Success requires independence between the development of the rules and their
+  application to specific projects or companies
+</PullQuote>
+
 Normally, the idea behind third-party carbon offset standards is that an independent body develops technical methods and verification processes. Those methods give buyers confidence that the credited climate benefits meet rigorous standards. (In practice, this approach has always been complicated by the fact that verification is typically paid for by the very projects that seek to generate credits.) Success requires independence between the development of the rules and their application to specific projects or companies.
 
 Unfortunately, that’s not the case here. Indigo Ag paid the Climate Action Reserve to develop the protocol and contributed to drafting its requirements. Not only did Indigo Ag shape the protocol, but the protocol’s design, as we discuss below, allows users like Indigo Ag to pick their own sampling methods and model calculations — subject to the approval of the Climate Action Reserve, which was paid by Indigo Ag to develop the protocol in the first place. The protocol doesn’t even require independent verifiers to collect independent soil samples or reproduce projects’ modeled climate benefits.
@@ -155,6 +153,11 @@ Our technical comments focused on four issues — additionality, model selection
 <Table />
 
 ## Why do we care?
+
+<PullQuote color={meta.color}>
+  Protocols and standards must represent the most accurate approaches to
+  calculating climate benefits
+</PullQuote>
 
 Scientific integrity is at the core of our mission. With growing interest in public and private markets for climate solutions, protocols and standards must represent the most accurate approaches to calculating climate benefits — especially in areas like soil carbon that will likely require public policy support in the years ahead.
 

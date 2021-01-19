@@ -1,4 +1,5 @@
 import Article from '../../components/article'
+import PullQuote from '../../components/pull-quote'
 import Question from './components/icons/question'
 import Check from './components/icons/check'
 import Ex from './components/icons/ex'
@@ -9,25 +10,14 @@ import Metrics from './components/metrics'
 
 export const meta = {
   id: 'stripe-reports-insights',
+  number: 0,
+  color: 'yellow',
+  title: 'Insights from our first project reports',
+  authors: ['CarbonPlan Team'],
+  date: '05-18-2020',
+  background: 'road.png',
   summary:
     'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
-  quotes: [
-    {
-      position: 1470,
-      text:
-        'We are making public all analysis, methods, and commentary from our process',
-    },
-    {
-      position: 5250,
-      text:
-        'The complexity of carbon removal solutions across so many technologies presents a challenge for any one organization to evaluate',
-    },
-    {
-      position: 7750,
-      text:
-        'A long-term investment orientation can help avoid some of the most challenging features of carbon offsets',
-    },
-  ],
 }
 
 # Insights from our first project reports
@@ -45,6 +35,10 @@ This article summarizes our major takeaways from our analysis. For additional de
 We performed an independent analysis of the 24 project proposals. Faced with a wide range of projects spanning everything from soil carbon management to direct air capture, we took a broad, comparative approach.
 
 Our goals were to harmonize metrics and concepts across a range of projects; to analyze and validate claims made by projects where possible, based on the best available science and data; and to better understand challenges and opportunities facing organizations seeking climate solutions. As a result of our focus on cross-cutting issues, we played a different role than the domain experts whom governments and companies typically engage to evaluate project proposals in specific subject-matter areas.
+
+<PullQuote color={meta.color}>
+  We are making public all analysis, methods, and commentary from our process
+</PullQuote>
 
 We are making public all analysis, methods, and commentary from our process because we want our reports to help all interested organizations — including researchers, project proponents, sponsor organizations — learn about the field and improve outcomes in future iterations. While we appreciate that confidential analysis is common (and sometimes necessary) in climate programs, it can also reduce transparency and lead to duplicate work. Our work aims to address both challenges, and to that end, we’re committed to growing and improving our public database of project reports over time.
 
@@ -82,6 +76,11 @@ We were able to assign a <Check closed={true}/> for many projects on mechanism, 
 
 <Table />
 
+<PullQuote color={meta.color}>
+  The complexity of carbon removal solutions across so many technologies
+  presents a challenge for any one organization to evaluate
+</PullQuote>
+
 The absence of a <Check closed={true}/> should not necessarily be interpreted as a critique. Most of the time, it reflects a lack of information or certainty. Over time, we intend to develop our capacity to reach more definitive answers across our metrics, and hope that as a community we learn more about the science and data underlying these projects. We also offer suggestions below for how future procurement processes can elicit more useful information from projects for the purpose of analysis. Fundamentally, however, the complexity of carbon removal solutions across so many technologies presents a challenge for any one organization to evaluate.
 
 ## The permanence gap
@@ -109,6 +108,11 @@ Carbon offsetting focuses on the climate credit to be gained from an investment 
 Evaluating additionality is difficult because the counterfactual scenario against which climate benefits are calculated can only be estimated, never observed. To facilitate evaluation, analysis needs to focus on specific claims about a project's counterfactual scenarios, competing alternatives, and the detailed economics of its technologies, associated commodity markets, and main competitors.
 
 If this sounds like a lot, it is! Unfortunately, the history of project-level additionality claims is not a positive story. Project proponents know the most about their own activities, including how feasible their work might be without outside investment — an information asymmetry that can reduce transparency. We analyzed several cases where additionality appears to be a significant concern and provide commentary to describe the issues we encountered. Because additionality is so complicated, we believe that rigorous assessment requires careful analysis, extensive data, and transparency.
+
+<PullQuote color={meta.color}>
+  A long-term investment orientation can help avoid some of the most challenging
+  features of carbon offsets
+</PullQuote>
 
 The second motivation, technological change, is different. These investments are primarily concerned with unlocking the potential for solutions that could work at scale. To assess this potential, a sponsor organization could center its questions around the performance of a given technology, benchmarks to measure its anticipated improvements, and how investment can unlock either new entry markets or a path to cost reductions.
 
