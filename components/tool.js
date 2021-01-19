@@ -4,7 +4,6 @@ import BackArrow from './back-arrow'
 import contents from '../contents'
 
 const Tool = ({ title, description, meta, children }) => {
-
   return (
     <Layout
       card={meta.id}

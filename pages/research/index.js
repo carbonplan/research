@@ -1,7 +1,5 @@
-import { Grid } from 'theme-ui'
-import { Layout, Tag } from '@carbonplan/components'
-import Sidebar from '../../components/sidebar'
-import List from '../../components/list'
+import { Layout } from '@carbonplan/components'
+import Contents from '../../components/contents'
 
 const Index = () => {
   return (
@@ -14,10 +12,7 @@ const Index = () => {
       footer={false}
       links={'local'}
     >
-      <Grid columns={[1, 1, 'minmax(350px, 30%) auto']} gap={['0px']}>
-        <Sidebar />
-        <List />
-      </Grid>
+      <Contents />
     </Layout>
   )
 }

@@ -1,44 +1,55 @@
-import { Box, Grid, Text, Heading } from 'theme-ui'
+import { memo } from 'react'
+import { Box, Grid, Text, Link, Heading } from 'theme-ui'
+import { default as NextLink } from 'next/link'
 import { Tag } from '@carbonplan/components'
+import Icon from './icon'
 
-const prefix = 'https://carbonplan-assets.s3.amazonaws.com/images'
-
-const Entry = ({ info }) => {
-  const { id, title, color, tags, authors, version, date, icon } = info
+const Entry = ({ info, final }) => {
+  let {
+    title,
+    color,
+    tags,
+    authors,
+    version,
+    date,
+    icon,
+    summary,
+    links,
+  } = info
+  
+  color = color || 'text'
 
   return (
-    <Box
-      sx={{
-        cursor: 'pointer',
-        '&:hover > #box > #grid > #box2 > #container > #background': {
-          opacity: 0.5,
-        },
-        '&:hover > #box > #grid > #box2 > #container > #arrow': {
-          opacity: 1,
-        },
-      }}
-      key={id}
-    >
+    <Box sx={{}}>
       <Box
         id='box'
         sx={{
-          pt: [4],
-          pb: [4],
+          pt: [4, 4, 4],
+          pb: [4, 4, 4],
           borderStyle: 'solid',
           borderColor: 'muted',
           borderWidth: '0px',
-          borderTopWidth: '1px',
+          borderBottomWidth: final ? '0px' : '1px',
           color: 'text',
         }}
       >
-        <Grid id='grid' columns={[1, '550px 1fr', '550px 1fr']}>
-          <Box>
+        <Grid
+          id='grid'
+          columns={[
+            1,
+            icon ? '500px 1fr' : '550p 1fr',
+            icon ? '500px 1fr' : '550px 1fr',
+          ]}
+          gap={[0, 0, 16]}
+        >
+          <Box sx={{ mb: ['-3px'] }}>
             <Text
               sx={{
                 color: 'secondary',
                 fontFamily: 'mono',
                 letterSpacing: '0.05em',
                 fontSize: [2],
+                userSelect: 'none',
               }}
             >
               {date}{' '}
@@ -55,7 +66,15 @@ const Entry = ({ info }) => {
               </Text>{' '}
               v{version}
             </Text>
-            <Heading sx={{ mb: ['2px'], mt: ['10px'], fontSize: [5] }}>
+            <Heading
+              sx={{
+                mb: ['2px'],
+                mt: ['10px'],
+                ml: ['-1px'],
+                fontSize: [5],
+                color: color,
+              }}
+            >
               {title}
             </Heading>
             <Text
@@ -63,11 +82,11 @@ const Entry = ({ info }) => {
                 textTransform: 'uppercase',
                 letterSpacing: 'faux',
                 fontFamily: 'faux',
-                fontSize: [3],
+                fontSize: [2],
                 mt: ['10px'],
+                color: 'text',
               }}
             >
-              by{' '}
               {authors.map((author, ix) => (
                 <Text
                   as='span'
@@ -75,87 +94,80 @@ const Entry = ({ info }) => {
                   sx={{
                     fontFamily: 'faux',
                     letterSpacing: 'faux',
-                    fontSize: [3],
-                    mr: [2],
+                    fontSize: [2],
+                    mr: [0],
+                    color: 'text',
                   }}
                 >
-                  {author} {ix < info.authors.length - 1 ? '+' : ''}
+                  {author}{' '}
+                  {ix < info.authors.length - 1 ? (
+                    <Text as='span' sx={{ color: 'text' }}>
+                      {' '}
+                      +{' '}
+                    </Text>
+                  ) : (
+                    ''
+                  )}
                 </Text>
               ))}
             </Text>
-            <Box
-              sx={{
-                mt: ['10px'],
-              }}
-            >
-              {tags.map((tag) => (
-                <Tag
-                  key={tag}
-                  label={tag}
-                  sx={{
-                    mr: [3],
-                    color: 'secondary',
-                    cursor: 'pointer',
-                  }}
-                />
-              ))}
+            <Text sx={{ my: [2], fontSize: [2] }}>{summary}</Text>
+            <Box sx={{ mt: [2], fontSize: [2] }}>
+              {links.map((link, ix) => {
+                return (
+                  <WrappedLink key={ix} url={link.url}>
+                    <Text
+                      as='span'
+                      sx={{ 
+                        color: 'secondary', 
+                        mr: [3], 
+                        cursor: 'pointer',
+                        transition: '0.15s',
+                        '&:hover': {
+                          color: 'text'
+                        }
+                      }}
+                    >
+                      {link.label}
+                      <Text
+                        as='span'
+                        sx={{
+                          position: 'relative',
+                          top: '4px',
+                          ml: [1],
+                          fontSize: [4],
+                        }}
+                      >
+                        ↗
+                      </Text>
+                    </Text>
+                  </WrappedLink>
+                )
+              })}
             </Box>
           </Box>
-          <Box id='box2' sx={{}}>
+          <Box>
             <Box
-              id='container'
               sx={{
-                display: 'inline-block',
-                width: '140px',
-                height: '140px',
-                ml: [0, 5, 5],
-                mt: '-2px',
-                position: 'relative',
-                borderRadius: '50%',
-                borderStyle: 'solid',
-                borderColor: 'primary',
-                borderWidth: '1px',
+                textAlign: 'right',
+                display: ['none', 'none', 'block'],
               }}
             >
-              <Box
-                id='background'
-                sx={{
-                  top: 0,
-                  left: 0,
-                  position: 'absolute',
-                  display: 'inline-block',
-                  borderRadius: '50%',
-                  width: '100%',
-                  height: '100%',
-                  backgroundColor: color,
-                  transition: '0.25s',
-                  opacity: 1,
-                  backgroundImage: [
-                    `url('${prefix}/${icon}')`,
-                  ],
-                }}
-              ></Box>
-              <Text
-                id='arrow'
-                sx={{
-                  fontFamily: 'faux',
-                  position: 'absolute',
-                  top: '-18px',
-                  left: '26px',
-                  width: '100%',
-                  height: '100%',
-                  display: 'inline-block',
-                  borderRadius: '50%',
-                  fontSize: '122px',
-                  color: 'text',
-                  zIndex: 1000,
-                  transition: '0.25s',
-                  opacity: 0,
-                }}
-              >
-                →
-              </Text>
+              {tags
+                .sort((a, b) => (a > b ? 1 : -1))
+                .map((tag) => (
+                  <Tag
+                    key={tag}
+                    label={tag}
+                    sx={{
+                      ml: [2],
+                      mr: [0],
+                      color: 'secondary',
+                    }}
+                  />
+                ))}
             </Box>
+            {icon && <Icon icon={icon} color={color} />}
           </Box>
         </Grid>
       </Box>
@@ -163,4 +175,18 @@ const Entry = ({ info }) => {
   )
 }
 
-export default Entry
+function WrappedLink({url, children}) {
+  if (url.startsWith('/research')) {
+    return <NextLink href={url} passHref={true}>
+      <Link sx={{textDecoration: 'none'}}>
+        {children}
+      </Link>
+    </NextLink>
+  } else {
+    return <Link sx={{textDecoration: 'none'}} href={url}>
+      {children}
+    </Link>
+  }
+}
+
+export default memo(Entry)
