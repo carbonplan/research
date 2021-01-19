@@ -46,7 +46,11 @@ const List = ({ filter, sort }) => {
         .filter(inFilter)
         .sort(compare)
         .map((d, ix) => (
-          <Entry key={d.title} info={d} final={ix === contents.length - 1}></Entry>
+          <Entry
+            key={d.title}
+            info={d}
+            final={ix === contents.length - 1}
+          ></Entry>
         ))}
     </Box>
   )

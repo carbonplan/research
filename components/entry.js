@@ -16,7 +16,7 @@ const Entry = ({ info, final }) => {
     summary,
     links,
   } = info
-  
+
   color = color || 'text'
 
   return (
@@ -118,14 +118,14 @@ const Entry = ({ info, final }) => {
                   <WrappedLink key={ix} url={link.url}>
                     <Text
                       as='span'
-                      sx={{ 
-                        color: 'secondary', 
-                        mr: [3], 
+                      sx={{
+                        color: 'secondary',
+                        mr: [3],
                         cursor: 'pointer',
                         transition: '0.15s',
                         '&:hover': {
-                          color: 'text'
-                        }
+                          color: 'text',
+                        },
                       }}
                     >
                       {link.label}
@@ -175,17 +175,19 @@ const Entry = ({ info, final }) => {
   )
 }
 
-function WrappedLink({url, children}) {
+function WrappedLink({ url, children }) {
   if (url.startsWith('/research')) {
-    return <NextLink href={url} passHref={true}>
-      <Link sx={{textDecoration: 'none'}}>
+    return (
+      <NextLink href={url} passHref={true}>
+        <Link sx={{ textDecoration: 'none' }}>{children}</Link>
+      </NextLink>
+    )
+  } else {
+    return (
+      <Link sx={{ textDecoration: 'none' }} href={url}>
         {children}
       </Link>
-    </NextLink>
-  } else {
-    return <Link sx={{textDecoration: 'none'}} href={url}>
-      {children}
-    </Link>
+    )
   }
 }
 
