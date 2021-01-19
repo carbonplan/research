@@ -124,15 +124,12 @@ const RiskScenarios = () => {
 
   useEffect(() => {
     if (!window.matchMedia('(min-width: 640px)').matches) {
-      console.log('here')
       setChartWidth(300)
     }
     if (!window.matchMedia('(min-width: 400px)').matches) {
-      console.log('here')
       setChartWidth(200)
     }
     if (!window.matchMedia('(min-width: 375px)').matches) {
-      console.log('here')
       setChartWidth(175)
     }
   }, [])
