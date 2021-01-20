@@ -8,7 +8,7 @@ export const meta = {
   number: 3,
   color: 'grey',
   title: 'Carbon removal mechanisms',
-  authors: ['CarbonPlan Team', 'Toly Rinberg'],
+  authors: ['Toly Rinberg', 'CarbonPlan Team'],
   date: '07-24-2020',
   background: 'article-003/pipes.png',
   invert: true,

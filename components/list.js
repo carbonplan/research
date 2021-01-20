@@ -10,24 +10,12 @@ const List = ({ filter, sort }) => {
 
   const compare = (a, b) => {
     if (sort.date) {
-      const da = new Date(a.date)
-      const db = new Date(b.date)
-      if (da > db) {
-        return -1
-      }
-      if (da < db) {
-        return 1
-      }
-      return 0
+      const da = new Date(a.date.replace(/-/g, '/'))
+      const db = new Date(b.date.replace(/-/g, '/'))
+      return (da < db) - (da > db)
     }
     if (sort.title) {
-      if (a.title < b.title) {
-        return -1
-      }
-      if (a.title > b.title) {
-        return 1
-      }
-      return 0
+      return (a.title > b.title) - (a.title < b.title)
     }
   }
 
@@ -49,7 +37,7 @@ const List = ({ filter, sort }) => {
           <Entry
             key={d.title}
             info={d}
-            final={ix === contents.length - 1}
+            final={ix === contents.filter(inFilter).length - 1}
           ></Entry>
         ))}
     </Box>

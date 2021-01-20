@@ -10,7 +10,7 @@ export const meta = {
   number: 1,
   color: 'orange',
   title: 'Getting soil carbon right',
-  authors: ['Danny Cullenward', 'Jeremy Freeman'],
+  authors: ['CarbonPlan Team'],
   date: '06-01-2020',
   background: 'article-001/soil.png',
   summary:

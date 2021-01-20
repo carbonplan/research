@@ -10,7 +10,7 @@ const Sidebar = ({ filter, sort, setFilter, setSort }) => {
         tool: true,
         comment: true,
         publication: true,
-        database: true,
+        dataset: true,
       })
     } else {
       setFilter({
@@ -19,7 +19,7 @@ const Sidebar = ({ filter, sort, setFilter, setSort }) => {
         tool: value === 'tool',
         comment: value === 'comment',
         publication: value === 'publication',
-        database: value === 'database',
+        dataset: value === 'dataset',
       })
     }
   }
@@ -100,9 +100,9 @@ const Sidebar = ({ filter, sort, setFilter, setSort }) => {
             label='Publication'
           />
           <Tag
-            onClick={() => toggleFilter('database')}
-            value={filter.database}
-            label='Database'
+            onClick={() => toggleFilter('dataset')}
+            value={filter.dataset}
+            label='dataset'
           />
         </Box>
       </Box>

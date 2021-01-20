@@ -9,7 +9,7 @@ const initFilter = {
   tool: true,
   comment: true,
   publication: true,
-  database: true,
+  dataset: true,
 }
 
 const initSort = {
@@ -17,7 +17,7 @@ const initSort = {
   title: false,
 }
 
-const Contents = () => {
+const Main = () => {
   const [filter, setFilter] = useState(initFilter)
   const [sort, setSort] = useState(initSort)
 
@@ -34,4 +34,4 @@ const Contents = () => {
   )
 }
 
-export default Contents
+export default Main

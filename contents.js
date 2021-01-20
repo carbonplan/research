@@ -1,7 +1,7 @@
 const Contents = [
   {
     title: 'Insights from our first project reports',
-    tags: ['article', 'database'],
+    tags: ['article', 'dataset'],
     authors: ['CarbonPlan Team'],
     summary:
       'An interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to dig into methods and implications .',
@@ -12,7 +12,7 @@ const Contents = [
     links: [
       {
         label: 'Read article',
-        url: '/research/soil-carbon-commnent',
+        url: '/research/stripe-reports-insights',
       },
       {
         label: 'Browse reports',
@@ -23,9 +23,9 @@ const Contents = [
   {
     title: 'Getting soil carbon right',
     tags: ['comment', 'article'],
-    authors: ['Danny Cullenward', 'Jeremy Freeman'],
+    authors: ['CarbonPlan Team'],
     summary:
-      'An interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to dig into methods and implications .',
+      'There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.',
     version: '1.0.0',
     date: '06-01-2020',
     color: 'orange',
@@ -33,24 +33,24 @@ const Contents = [
     links: [
       {
         label: 'Read article',
-        url: '/research/soil-carbon-commnent',
+        url: '/research/soil-carbon-comment',
       },
       {
         label: 'Read letter #1',
-        url: '/',
+        url: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
       },
       {
         label: 'Read letter #2',
-        url: '/',
+        url: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
       },
     ],
   },
   {
     title: 'Climate-driven risks to forest carbon',
     tags: ['publication'],
-    authors: ['CarbonPlan Team'],
+    authors: ['William R L Anderegg', 'Anna Trugman', 'Grayson Badgley', 'et al', 'CarbonPlan Team'],
     summary:
-      'An interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to dig into methods and implications .',
+      'Team members contributed to a review paper on physical risks to forest carbon, like fire, drought, and insects, and why that matters for thinking about the role of forests in climate change mitigation.',
     version: '1.0.0',
     date: '06-23-2020',
     color: 'green',
@@ -58,20 +58,24 @@ const Contents = [
     links: [
       {
         label: 'Read summary',
-        url: '/research/soil-carbon-commnent',
+        url: '/research/forest-climate-risks',
       },
       {
         label: 'Read paper',
-        url: '/',
+        url: 'https://doi.org/10.1126/science.aaz7005',
       },
+      {
+        label: 'Rolling Stone coverage',
+        url: 'https://www.rollingstone.com/politics/politics-features/tree-planting-wont-stop-climate-crisis-1020500/'
+      }
     ],
   },
   {
     title: 'Carbon removal mechanisms',
     tags: ['article'],
-    authors: ['CarbonPlan Team', 'Toly Rinberg'],
+    authors: ['Toly Rinberg', 'CarbonPlan Team'],
     summary:
-      'An interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to dig into methods and implications .',
+      'Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.',
     version: '1.0.0',
     date: '07-24-2020',
     color: 'grey',
@@ -87,7 +91,7 @@ const Contents = [
     title: 'Carbon offsets burning',
     tags: ['article'],
     summary:
-      'An interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to dig into methods and implications .',
+      'Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.',
     authors: [
       'Claudia Herbert',
       'Jared Stapp',
@@ -104,6 +108,10 @@ const Contents = [
         label: 'Read article',
         url: '/research/offset-project-fire',
       },
+      {
+        label: 'Grist coverage',
+        url: 'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
+      },
     ],
   },
   {
@@ -111,7 +119,7 @@ const Contents = [
     tags: ['tool', 'article'],
     authors: ['CarbonPlan Team'],
     summary:
-      'An interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to dig into methods and implications .',
+      'Our interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to learn about the methods and implications.',
     version: '1.0.0',
     date: '12-09-2020',
     color: 'pink',
@@ -125,45 +133,51 @@ const Contents = [
         label: 'Use tool',
         url: '/research/permanence-calculator',
       },
+      {
+        label: 'Blog post w/ ClimateWorks',
+        url: 'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
+      },
     ],
   },
   {
-    title: 'Letter to the Taskforce on Scaling Voluntary Carbon Markets',
+    title: 'Letter to Taskforce on Scaling Voluntary Carbon Markets',
     tags: ['comment'],
     authors: [
-      'Danny Cullenward',
-      'Jeremy Freeman',
-      'Jonathan Goldberg',
-      'Barbara Haya',
-      'Eli Mitchell-Larson',
+      'Carbon Direct',
+      'Berkeley Carbon Trading Project',
+      'CarbonPlan Team',
     ],
     summary:
-      'An interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to dig into methods and implications .',
+      "A coordinated effort to standardize and scale today's voluntary offsets market is underway. We submitted a joint letter detailing how the Task Force is ignoring the problem of poor quality rampant in today's market. That problem needs to be addressed first.",
     version: '1.0.0',
     date: '01-05-2021',
+    color: 'yellow',
+    icon: 'shared/typewriter-yellow.png',
     links: [
       {
         label: 'Read letter',
-        url: '/research/permanence-calculator-explainer',
+        url: 'https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021',
       },
       {
         label: 'Task force website',
-        url: '/research/permanence-calculator',
+        url: 'https://www.iif.com/tsvcm',
       },
     ],
   },
   {
     title: 'CDR Primer',
     tags: ['publication'],
-    authors: ['CarbonPlan Team'],
+    authors: ['Jennifer Wilcox', 'Ben Kolosz', 'CarbonPlan Team'],
     summary:
-      'An interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to dig into methods and implications .',
+      'A new resource on the fundamentals of carbon dioxide removal and its role in addressing the climate crisis. Our team helped write, edit, and produce this free, online digital book.',
     version: '1.0.0',
     date: '01-14-2021',
+    icon: 'shared/cdr-primer.png',
+    color: 'teal',
     links: [
       {
         label: 'Read the primer',
-        url: '/research/permanence-calculator-explainer',
+        url: 'https://cdrprimer.org',
       },
     ],
   },

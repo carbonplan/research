@@ -37,8 +37,8 @@ const Entry = ({ info, final }) => {
           id='grid'
           columns={[
             1,
-            icon ? '500px 1fr' : '550p 1fr',
-            icon ? '500px 1fr' : '550px 1fr',
+            icon ? '1fr 175px' : '1fr 150px',
+            icon ? '1fr 175px' : '1fr 150px',
           ]}
           gap={[0, 0, 16]}
         >
@@ -99,7 +99,7 @@ const Entry = ({ info, final }) => {
                     color: 'text',
                   }}
                 >
-                  {author}{' '}
+                  {author.replace(/ /g, '\u00a0')}{' '}
                   {ix < info.authors.length - 1 ? (
                     <Text as='span' sx={{ color: 'text' }}>
                       {' '}
@@ -111,8 +111,10 @@ const Entry = ({ info, final }) => {
                 </Text>
               ))}
             </Text>
-            <Text sx={{ my: [2], fontSize: [2] }}>{summary}</Text>
-            <Box sx={{ mt: [2], fontSize: [2] }}>
+            <Text sx={{ my: [2], fontSize: [2], lineHeight: 1.3 }}>
+              {summary}
+            </Text>
+            <Box sx={{ mt: [3], fontSize: [2], userSelect: 'none' }}>
               {links.map((link, ix) => {
                 return (
                   <WrappedLink key={ix} url={link.url}>
@@ -120,26 +122,30 @@ const Entry = ({ info, final }) => {
                       as='span'
                       sx={{
                         color: 'secondary',
-                        mr: [3],
+                        mr: [4],
+                        my: [0],
                         cursor: 'pointer',
                         transition: '0.15s',
+                        display: ['block', 'block', 'inline-block'],
                         '&:hover': {
                           color: 'text',
                         },
                       }}
                     >
                       {link.label}
-                      <Text
-                        as='span'
-                        sx={{
-                          position: 'relative',
-                          top: '4px',
-                          ml: [1],
-                          fontSize: [4],
-                        }}
-                      >
-                        ↗
-                      </Text>
+                      <Box as='span' sx={{position: 'relative'}}>
+                        <Text
+                          as='span'
+                          sx={{
+                            position: 'absolute',
+                            top: '-5px',
+                            left: '3px',
+                            fontSize: [4],
+                          }}
+                        >
+                          ↗
+                        </Text>
+                      </Box>
                     </Text>
                   </WrappedLink>
                 )

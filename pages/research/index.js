@@ -1,5 +1,5 @@
 import { Layout } from '@carbonplan/components'
-import Contents from '../../components/contents'
+import Main from '../../components/main'
 
 const Index = () => {
   return (
@@ -12,7 +12,7 @@ const Index = () => {
       footer={false}
       links={'local'}
     >
-      <Contents />
+      <Main />
     </Layout>
   )
 }
