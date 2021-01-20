@@ -42,7 +42,7 @@ const Entry = ({ info, final }) => {
           ]}
           gap={[0, 0, 16]}
         >
-          <Box sx={{ mb: ['-3px'] }}>
+          <Box>
             <Text
               sx={{
                 color: 'secondary',
@@ -116,6 +116,8 @@ const Entry = ({ info, final }) => {
             </Text>
             <Box sx={{ mt: [3], fontSize: [2], userSelect: 'none' }}>
               {links.map((link, ix) => {
+                console.log(links.length > 1 ? 2 : 0)
+                const pad = (links.length > 1) && ix < (links.length - 1)
                 return (
                   <WrappedLink key={ix} url={link.url}>
                     <Text
@@ -123,10 +125,12 @@ const Entry = ({ info, final }) => {
                       sx={{
                         color: 'secondary',
                         mr: [4],
-                        my: [0],
+                        mb: [pad ? 1 : 0, pad ? 1 : 0, 0],
                         cursor: 'pointer',
                         transition: '0.15s',
                         display: ['block', 'block', 'inline-block'],
+                        float: ['left', 'left', 'initial'],
+                        clear: ['left', 'left', 'initial'],
                         '&:hover': {
                           color: 'text',
                         },
