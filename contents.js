@@ -37,18 +37,26 @@ const Contents = [
       },
       {
         label: 'Read letter #1',
-        url: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
+        url:
+          'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
       },
       {
         label: 'Read letter #2',
-        url: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
+        url:
+          'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
       },
     ],
   },
   {
     title: 'Climate-driven risks to forest carbon',
     tags: ['publication'],
-    authors: ['William R L Anderegg', 'Anna Trugman', 'Grayson Badgley', 'et al', 'CarbonPlan Team'],
+    authors: [
+      'William R L Anderegg',
+      'Anna Trugman',
+      'Grayson Badgley',
+      'et al',
+      'CarbonPlan Team',
+    ],
     summary:
       'Team members contributed to a review paper on physical risks to forest carbon, like fire, drought, and insects, and why that matters for thinking about the role of forests in climate change mitigation.',
     version: '1.0.0',
@@ -66,8 +74,9 @@ const Contents = [
       },
       {
         label: 'Rolling Stone coverage',
-        url: 'https://www.rollingstone.com/politics/politics-features/tree-planting-wont-stop-climate-crisis-1020500/'
-      }
+        url:
+          'https://www.rollingstone.com/politics/politics-features/tree-planting-wont-stop-climate-crisis-1020500/',
+      },
     ],
   },
   {
@@ -110,7 +119,8 @@ const Contents = [
       },
       {
         label: 'Grist coverage',
-        url: 'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
+        url:
+          'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
       },
     ],
   },
@@ -135,7 +145,8 @@ const Contents = [
       },
       {
         label: 'Blog post w/ ClimateWorks',
-        url: 'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
+        url:
+          'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
       },
     ],
   },
@@ -156,7 +167,8 @@ const Contents = [
     links: [
       {
         label: 'Read letter',
-        url: 'https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021',
+        url:
+          'https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021',
       },
       {
         label: 'Task force website',

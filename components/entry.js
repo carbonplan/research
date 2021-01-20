@@ -133,7 +133,7 @@ const Entry = ({ info, final }) => {
                       }}
                     >
                       {link.label}
-                      <Box as='span' sx={{position: 'relative'}}>
+                      <Box as='span' sx={{ position: 'relative' }}>
                         <Text
                           as='span'
                           sx={{
