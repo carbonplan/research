@@ -129,6 +129,7 @@ const Entry = ({ info, final }) => {
               sx={{
                 textAlign: 'right',
                 display: ['none', 'none', 'block'],
+                mt: ['-1px']
               }}
             >
               {tags

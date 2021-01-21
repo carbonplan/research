@@ -8,6 +8,7 @@ const BackArrow = () => {
       <a>
         <Text
           sx={{
+            userSelect: 'none',
             fontFamily: 'faux',
             color: 'text',
             display: 'inline-block',
