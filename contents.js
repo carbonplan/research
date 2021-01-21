@@ -149,7 +149,7 @@ const Contents = [
           'https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf',
       },
       {
-        label: 'Task force website',
+        label: 'Taskforce website',
         url: 'https://www.iif.com/tsvcm',
       },
     ],
