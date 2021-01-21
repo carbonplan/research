@@ -15,7 +15,7 @@ export const meta = {
     'William R L Anderegg',
     'Danny Cullenward',
     'Joseph Hamman',
-    'Jeremy Freeman'
+    'Jeremy Freeman',
   ],
   date: '09-17-2020',
   background: 'article-004/forest.png',

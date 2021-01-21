@@ -81,46 +81,46 @@ const Entry = ({ info, final }) => {
               {summary}
             </Text>
             <Box sx={{ mt: [3], fontSize: [2], userSelect: 'none' }}>
-              <Box sx={{mt: [0, 0, '-4px']}}>
-              {links.map((link, ix) => {
-                const pad = (links.length > 1) && ix < (links.length - 1)
-                return (
-                  <WrappedLink key={ix} url={link.url}>
-                    <Text
-                      as='span'
-                      sx={{
-                        color: 'secondary',
-                        mr: [4],
-                        mb: [pad ? 1 : 0, pad ? 1 : 0, 0],
-                        mt: [0, 0, 1],
-                        cursor: 'pointer',
-                        transition: '0.15s',
-                        display: ['block', 'block', 'inline-block'],
-                        float: ['left', 'left', 'initial'],
-                        clear: ['left', 'left', 'initial'],
-                        '&:hover': {
-                          color: 'text',
-                        },
-                      }}
-                    >
-                      {link.label}
-                      <Box as='span' sx={{ position: 'relative' }}>
-                        <Text
-                          as='span'
-                          sx={{
-                            position: 'absolute',
-                            top: '-5px',
-                            left: '3px',
-                            fontSize: [4],
-                          }}
-                        >
-                          ↗
-                        </Text>
-                      </Box>
-                    </Text>
-                  </WrappedLink>
-                )
-              })}
+              <Box sx={{ mt: [0, 0, '-4px'] }}>
+                {links.map((link, ix) => {
+                  const pad = links.length > 1 && ix < links.length - 1
+                  return (
+                    <WrappedLink key={ix} url={link.url}>
+                      <Text
+                        as='span'
+                        sx={{
+                          color: 'secondary',
+                          mr: [4],
+                          mb: [pad ? 1 : 0, pad ? 1 : 0, 0],
+                          mt: [0, 0, 1],
+                          cursor: 'pointer',
+                          transition: '0.15s',
+                          display: ['block', 'block', 'inline-block'],
+                          float: ['left', 'left', 'initial'],
+                          clear: ['left', 'left', 'initial'],
+                          '&:hover': {
+                            color: 'text',
+                          },
+                        }}
+                      >
+                        {link.label}
+                        <Box as='span' sx={{ position: 'relative' }}>
+                          <Text
+                            as='span'
+                            sx={{
+                              position: 'absolute',
+                              top: '-5px',
+                              left: '3px',
+                              fontSize: [4],
+                            }}
+                          >
+                            ↗
+                          </Text>
+                        </Box>
+                      </Text>
+                    </WrappedLink>
+                  )
+                })}
               </Box>
             </Box>
           </Box>
@@ -145,11 +145,11 @@ const Entry = ({ info, final }) => {
                   />
                 ))}
             </Box>
-            {
-              icon && <WrappedLink url={links[0].url}>
+            {icon && (
+              <WrappedLink url={links[0].url}>
                 <Icon icon={icon} color={color} />
               </WrappedLink>
-            }
+            )}
           </Box>
         </Grid>
       </Box>

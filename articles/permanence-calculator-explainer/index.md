@@ -317,12 +317,11 @@ Notably, the full cost of relying on temporary carbon removal is higher than the
 
 ## Credits
 
-Danny developed the model and wrote the first draft of the article. Jeremy implemented the model and designed the interactive web tool. Joe provided feedback on the model. All authors contributed to writing the article. The authors thank Gernot Wagner, Frances Moore, Toly Rinberg, and Rafael Broze for helpful feedback. 
+Danny developed the model and wrote the first draft of the article. Jeremy implemented the model and designed the interactive web tool. Joe provided feedback on the model. All authors contributed to writing the article. The authors thank Gernot Wagner, Frances Moore, Toly Rinberg, and Rafael Broze for helpful feedback.
 
 Please cite as:
 
-D Cullenward, J Hamman, J Freeman (2020) “The cost of temporary carbon removal” CarbonPlan https://carbonplan.org/research/permanence-calculator-explainer 
-
+D Cullenward, J Hamman, J Freeman (2020) “The cost of temporary carbon removal” CarbonPlan https://carbonplan.org/research/permanence-calculator-explainer
 
 ## Terms
 

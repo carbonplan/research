@@ -45,9 +45,9 @@ const Contents = [
       },
       {
         label: 'MIT Tech Review Coverage',
-        url: 
-          'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/'
-      }
+        url:
+          'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
+      },
     ],
   },
   {
