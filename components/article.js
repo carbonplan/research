@@ -35,7 +35,7 @@ const Article = ({ children, meta }) => {
             bottom: 0,
             pb: [0, 0, 3],
             width: '100%',
-            color: ['#1b1e23', '#1b1e23', meta.invert ? '#ebebec' : '#1b1e23'],
+            color: ['#1b1e23', '#1b1e23', meta.invert ? '#1b1e23' : '#ebebec'],
           }}
         >
           <Container sx={{ px: [3, 4, 4] }}>

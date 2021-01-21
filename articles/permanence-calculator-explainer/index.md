@@ -1,7 +1,7 @@
-import { Link } from 'theme-ui'
 import Article from '../../components/article'
 import Reference from '../../components/reference'
 import PullQuote from '../../components/pull-quote'
+import SectionBreak from '../../components/section-break'
 import Scenario from './components/scenario'
 import Parameters from './components/parameters'
 import { default as NextLink } from 'next/link'
@@ -14,7 +14,6 @@ export const meta = {
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '12-09-2020',
   background: 'article-005/leaf.png',
-  invert: true,
   summary:
     'How to compare the long-term cost of temporary and permanent carbon removal.',
 }
@@ -314,6 +313,8 @@ Simple $/tCO₂ metrics assume the climate benefits of different mitigation and 
 Our calculator puts projects that temporarily remove CO₂ from the atmosphere on an equal footing with those that do so permanently by modeling a strategy that relies on sequential temporary projects to achieve a permanent climate benefit. By making a simple set of assumptions around project costs, project sequencing, and the applicable discount rate, it lets users calculate and compare the total cost of different climate strategies.
 
 Notably, the full cost of relying on temporary carbon removal is higher than the upfront and relatively low cost of most temporary carbon removal projects today, with the extent of the difference dependent on key parameter choices. By making these choices explicit and transparent, the calculator helps decision-makers consistently explore the full costs of competing climate strategies across a range of assumptions.
+
+<SectionBreak />
 
 ## Credits
 

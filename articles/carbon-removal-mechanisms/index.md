@@ -1,6 +1,7 @@
 import Article from '../../components/article'
 import Reference from '../../components/reference'
 import PullQuote from '../../components/pull-quote'
+import SectionBreak from '../../components/section-break'
 import Cycle from './components/cycle'
 
 export const meta = {
@@ -16,7 +17,6 @@ export const meta = {
   ],
   date: '07-24-2020',
   background: 'article-003/pipes.png',
-  invert: true,
   summary:
     'How different carbon removal projects interact with the global carbon cycle.',
 }
@@ -360,6 +360,8 @@ Second, what does all this mean for a funder or decision-maker?
 The answer depends on the goals. If an organization wants to “purchase” carbon removal in a strict, narrow sense — such as to justify carbon neutrality claims premised on achieving a net carbon balance given the organization's emissions — then they should engage only projects that exclusively perform carbon removal today. Precisely because the field is so new, however, few such projects exist! We’ve also seen examples of projects conflating carbon removal and avoided emissions claims, so we advise sponsor organizations to scrutinize and communicate the claims projects make on this important dimension.
 
 Other sponsor organizations may be interested in supporting technologies that have the potential to become components of carbon removal systems, but which do not currently remove atmospheric CO<sub>2</sub> today. This philosophy could be a critical driver to accelerate change in the coming years, but it risks confusion with current carbon removal efforts. We recommend that such sponsor organizations explicitly frame their mission as advancing a particular theory of technological change and/or research investment, so as to clarify their goals and potential strategic risks.
+
+<SectionBreak />
 
 ## Credits
 

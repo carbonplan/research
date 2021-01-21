@@ -1,5 +1,6 @@
 import Article from '../../components/article'
 import Reference from '../../components/reference'
+import SectionBreak from '../../components/section-break'
 import FireMap from './components/fire-map'
 import RiskScenarios from './components/risk-scenarios'
 
@@ -19,7 +20,6 @@ export const meta = {
   ],
   date: '09-17-2020',
   background: 'article-004/forest.png',
-  invert: true,
   summary:
     'A major fire in Oregon illustrates the challenges of managing forest carbon permanence.',
   quotes: [],
@@ -172,6 +172,8 @@ But have we priced these risks correctly? The scenarios examined here strongly s
 
 The already unprecedented — and on-going — fire year provides a sobering example of the importance of considering risk and permanence in a scientifically rigorous way in the context of forest carbon, carbon removal, and climate policy.
 
+<SectionBreak />
+
 ## Documentation
 
 All analyses and data underlying this article are open source and [available online](https://github.com/carbonplan/notebooks/tree/master/offset-project-fire). The fire data is from NASA's Fire Information for Resource Management System (FIRMS), the buffer pool data is from the California Air Resource Board’s database of offset credit issuances, and the offset project geometries are from the American Carbon Registry project database. Our Jupyter notebooks show how we worked with these raw data sources and estimated all the numbers reported in the article. This article itself (including the map visualization and the calculator) is also open source and [available in this repository](https://github.com/carbonplan/research/tree/master/articles/offset-project-fire).
@@ -179,6 +181,8 @@ All analyses and data underlying this article are open source and [available onl
 ## Note
 
 We have not reached out to the Confederated Tribes of Warm Springs Reservation of Oregon, on whose land the ACR260 project is located, for comments.
+
+<SectionBreak />
 
 ## Credits
 

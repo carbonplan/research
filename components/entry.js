@@ -2,6 +2,7 @@ import { memo } from 'react'
 import { Box, Grid, Text, Link, Heading } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import { Tag } from '@carbonplan/components'
+import TaggedLink from './tagged-link'
 import Icon from './icon'
 
 const Entry = ({ info, final }) => {
@@ -166,10 +167,21 @@ function WrappedLink({ url, children }) {
       </NextLink>
     )
   } else {
+    let action = 'website'
+    let category = 'external'
+    if (url.includes('pdf')) {
+      action = 'PDF'
+      category = 'download'
+    }
     return (
-      <Link sx={{ textDecoration: 'none' }} href={url}>
+      <TaggedLink
+        action={action}
+        category={category}
+        sx={{ textDecoration: 'none' }}
+        href={url}
+      >
         {children}
-      </Link>
+      </TaggedLink>
     )
   }
 }

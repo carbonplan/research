@@ -1,6 +1,7 @@
 import Article from '../../components/article'
 import Reference from '../../components/reference'
 import PullQuote from '../../components/pull-quote'
+import SectionBreak from '../../components/section-break'
 import TaggedLink from '../../components/tagged-link'
 import Table from './components/table'
 import Heading from './components/heading'
@@ -9,7 +10,6 @@ export const meta = {
   id: 'soil-carbon-comment',
   number: 1,
   color: 'orange',
-  invert: true,
   title: 'Getting soil carbon right',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '06-01-2020',
@@ -175,6 +175,16 @@ Perfection is a tall order in the face of conceptually complicated and empirical
 But carbon credits aren’t the only way to support soil carbon. An alternative might be to think about soil carbon as a public investment, where funds are used to support beneficial changes in land management and agricultural practices but not used to claim precise carbon benefits. In contrast to an offsets-oriented paradigm, perfection isn’t required for public investment — especially not if soil carbon is a co-benefit that helps justify financial support.
 
 Meanwhile, any efforts built around carbon offset credits should be transparent, subject to third-party verification, and capable of thorough validation by financially independent organizations.
+
+<SectionBreak />
+
+## Updates
+
+### 08-25-2020
+
+After reviewing an updated version of the draft protocol, we submitted a second <TaggedLink action='PDF' category='downloads' href='https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf'>comment letter</TaggedLink> on remaining concerns and additional issues.
+
+<SectionBreak />
 
 ## Credits
 

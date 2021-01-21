@@ -24,7 +24,7 @@ const Contents = [
     tags: ['comment', 'article'],
     summary:
       'There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.',
-    version: '1.0.0',
+    version: '1.1.0',
     date: '06-01-2020',
     color: 'orange',
     icon: 'article-001/soil-small.png',
@@ -44,7 +44,7 @@ const Contents = [
           'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
       },
       {
-        label: 'MIT Tech Review Coverage',
+        label: 'MIT Tech Review coverage',
         url:
           'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
       },

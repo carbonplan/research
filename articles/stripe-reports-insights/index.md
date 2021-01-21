@@ -1,4 +1,5 @@
 import Article from '../../components/article'
+import SectionBreak from '../../components/section-break'
 import PullQuote from '../../components/pull-quote'
 import Question from './components/icons/question'
 import Check from './components/icons/check'
@@ -12,7 +13,6 @@ export const meta = {
   id: 'stripe-reports-insights',
   number: 0,
   color: 'yellow',
-  invert: true,
   title: 'Insights from our first project reports',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '05-18-2020',
@@ -136,6 +136,8 @@ If an organization wants to look broadly across multiple sectors, parallel track
 ### CarbonPlan: Develop new methods for project areas
 
 To improve our own analysis capabilities, we are developing open source methods for evaluating projects on a technology-by-technology basis in close collaboration with the academic community. Examples include models of direct air capture project cost and scale (with Jennifer Wilcox) and models for evaluating forest carbon removal potential and physical reversal risks (with Bill Anderegg). These kinds of models will enable more systematic analysis and comparison within and across project categories, as well as identify information that sponsors could collect from proposals to facilitate comparison and evaluation.
+
+<SectionBreak />
 
 ## Credits
 
