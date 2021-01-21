@@ -11,7 +11,7 @@ export const meta = {
   number: 5,
   color: 'pink',
   title: 'The cost of temporary carbon removal',
-  authors: ['CarbonPlan Team'],
+  authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '12-09-2020',
   background: 'article-005/leaf.png',
   invert: true,
@@ -315,9 +315,18 @@ Our calculator puts projects that temporarily remove CO₂ from the atmosphere o
 
 Notably, the full cost of relying on temporary carbon removal is higher than the upfront and relatively low cost of most temporary carbon removal projects today, with the extent of the difference dependent on key parameter choices. By making these choices explicit and transparent, the calculator helps decision-makers consistently explore the full costs of competing climate strategies across a range of assumptions.
 
-## Terms of engagement
+## Credits
 
-CarbonPlan received a grant from the ClimateWorks Foundation to support this work. ClimateWorks did not exercise any control over the output. CarbonPlan thanks Gernot Wagner, Frances Moore, Toly Rinberg, and Rafael Broze for helpful feedback. CarbonPlan is solely responsible for the content of this writeup, which does not necessarily reflect the views of ClimateWorks, those who provided feedback, or any other individuals or organizations.
+Danny developed the model and wrote the first draft of the article. Jeremy implemented the model and designed the interactive web tool. Joe provided feedback on the model. All authors contributed to writing the article. The authors thank Gernot Wagner, Frances Moore, Toly Rinberg, and Rafael Broze for helpful feedback. 
+
+Please cite as:
+
+D Cullenward, J Hamman, J Freeman (2020) “The cost of temporary carbon removal” CarbonPlan https://carbonplan.org/research/permanence-calculator-explainer 
+
+
+## Terms
+
+CarbonPlan received a grant from the ClimateWorks Foundation to support this work. ClimateWorks did not exercise any control over the output. CarbonPlan is solely responsible for the content of this writeup, which does not necessarily reflect the views of ClimateWorks, those who provided feedback, or any other individuals or organizations.
 
 ### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
 

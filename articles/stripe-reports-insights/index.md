@@ -12,8 +12,9 @@ export const meta = {
   id: 'stripe-reports-insights',
   number: 0,
   color: 'yellow',
+  invert: true,
   title: 'Insights from our first project reports',
-  authors: ['CarbonPlan Team'],
+  authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '05-18-2020',
   background: 'road.png',
   summary:
@@ -136,7 +137,15 @@ If an organization wants to look broadly across multiple sectors, parallel track
 
 To improve our own analysis capabilities, we are developing open source methods for evaluating projects on a technology-by-technology basis in close collaboration with the academic community. Examples include models of direct air capture project cost and scale (with Jennifer Wilcox) and models for evaluating forest carbon removal potential and physical reversal risks (with Bill Anderegg). These kinds of models will enable more systematic analysis and comparison within and across project categories, as well as identify information that sponsors could collect from proposals to facilitate comparison and evaluation.
 
-## Terms of engagement
+## Credits
+
+Danny wrote the first draft of the article. Joe and Jeremy designed and implemented the graphics. All authors contributed to analyzing the data and writing the article.
+
+Please cite as:
+
+D Cullenward, J Hamman, J Freeman (2020) “Insights from our first project reports” CarbonPlan https://carbonplan.org/research/stripe-reports-insights
+
+## Terms
 
 CarbonPlan and Stripe entered into an agreement in which Stripe shared the project proposals it received in response to its 2020 Negative Emissions Purchase in advance of their public release. We provided feedback to Stripe on its program and were compensated by Stripe for our time. Our work was independent and Stripe did not exercise any control over it. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not represent the views of Stripe or any other other organizations.
 

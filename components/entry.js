@@ -77,46 +77,12 @@ const Entry = ({ info, final }) => {
             >
               {title}
             </Heading>
-            <Text
-              sx={{
-                textTransform: 'uppercase',
-                letterSpacing: 'faux',
-                fontFamily: 'faux',
-                fontSize: [2],
-                mt: ['10px'],
-                color: 'text',
-              }}
-            >
-              {authors.map((author, ix) => (
-                <Text
-                  as='span'
-                  key={author}
-                  sx={{
-                    fontFamily: 'faux',
-                    letterSpacing: 'faux',
-                    fontSize: [2],
-                    mr: [0],
-                    color: 'text',
-                  }}
-                >
-                  {author.replace(/ /g, '\u00a0')}{' '}
-                  {ix < info.authors.length - 1 ? (
-                    <Text as='span' sx={{ color: 'text' }}>
-                      {' '}
-                      +{' '}
-                    </Text>
-                  ) : (
-                    ''
-                  )}
-                </Text>
-              ))}
-            </Text>
             <Text sx={{ my: [2], fontSize: [2], lineHeight: 1.3 }}>
               {summary}
             </Text>
             <Box sx={{ mt: [3], fontSize: [2], userSelect: 'none' }}>
+              <Box sx={{mt: [0, 0, '-4px']}}>
               {links.map((link, ix) => {
-                console.log(links.length > 1 ? 2 : 0)
                 const pad = (links.length > 1) && ix < (links.length - 1)
                 return (
                   <WrappedLink key={ix} url={link.url}>
@@ -126,6 +92,7 @@ const Entry = ({ info, final }) => {
                         color: 'secondary',
                         mr: [4],
                         mb: [pad ? 1 : 0, pad ? 1 : 0, 0],
+                        mt: [0, 0, 1],
                         cursor: 'pointer',
                         transition: '0.15s',
                         display: ['block', 'block', 'inline-block'],
@@ -154,6 +121,7 @@ const Entry = ({ info, final }) => {
                   </WrappedLink>
                 )
               })}
+              </Box>
             </Box>
           </Box>
           <Box>
@@ -177,7 +145,11 @@ const Entry = ({ info, final }) => {
                   />
                 ))}
             </Box>
-            {icon && <Icon icon={icon} color={color} />}
+            {
+              icon && <WrappedLink url={links[0].url}>
+                <Icon icon={icon} color={color} />
+              </WrappedLink>
+            }
           </Box>
         </Grid>
       </Box>

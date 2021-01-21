@@ -9,8 +9,9 @@ export const meta = {
   id: 'soil-carbon-comment',
   number: 1,
   color: 'orange',
+  invert: true,
   title: 'Getting soil carbon right',
-  authors: ['CarbonPlan Team'],
+  authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '06-01-2020',
   background: 'article-001/soil.png',
   summary:
@@ -175,7 +176,11 @@ But carbon credits aren’t the only way to support soil carbon. An alternative 
 
 Meanwhile, any efforts built around carbon offset credits should be transparent, subject to third-party verification, and capable of thorough validation by financially independent organizations.
 
-## Terms of engagement
+## Credits
+
+Danny led the effort to write the comment letters and drafted the first version of this article. All authors contributed to writing the comment letters and the article. Collaborators Jane Zelikova and Grayson Badgley contributed to the comment letters, but were not involved in writing this article.
+
+## Terms
 
 CarbonPlan received no financial support for this work and has no financial conflicts of interest with the Climate Action Reserve or Indigo Ag.
 

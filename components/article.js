@@ -70,7 +70,7 @@ const Article = ({ children, meta }) => {
                       fontSize: [2],
                     }}
                   >
-                    {author} {ix < meta.authors.length - 1 ? '+' : ''}
+                    {author.replace(/ /g, '\u00a0')} {ix < meta.authors.length - 1 ? '+' : ''}
                   </Text>
                 ))}
               </Text>

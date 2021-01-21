@@ -8,7 +8,7 @@ export const meta = {
   number: 3,
   color: 'grey',
   title: 'Carbon removal mechanisms',
-  authors: ['Toly Rinberg', 'CarbonPlan Team'],
+  authors: ['Toly Rinberg', 'Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '07-24-2020',
   background: 'article-003/pipes.png',
   invert: true,
@@ -355,6 +355,14 @@ Second, what does all this mean for a funder or decision-maker?
 The answer depends on the goals. If an organization wants to “purchase” carbon removal in a strict, narrow sense — such as to justify carbon neutrality claims premised on achieving a net carbon balance given the organization's emissions — then they should engage only projects that exclusively perform carbon removal today. Precisely because the field is so new, however, few such projects exist! We’ve also seen examples of projects conflating carbon removal and avoided emissions claims, so we advise sponsor organizations to scrutinize and communicate the claims projects make on this important dimension.
 
 Other sponsor organizations may be interested in supporting technologies that have the potential to become components of carbon removal systems, but which do not currently remove atmospheric CO<sub>2</sub> today. This philosophy could be a critical driver to accelerate change in the coming years, but it risks confusion with current carbon removal efforts. We recommend that such sponsor organizations explicitly frame their mission as advancing a particular theory of technological change and/or research investment, so as to clarify their goals and potential strategic risks.
+
+## Credits
+
+Danny, Jeremy, and Toly developed the concepts and typology. All authors developed the concept for the graphics (with input from Jonny Black of [Ordinary Things](https://ot.studio)). Jeremy implemented the graphics. All authors contributed to writing the article.
+
+Please cite as:
+
+T Rinberg, D Cullenward, J Hamman, J Freeman (2020) “Carbon removal mechanisms” CarbonPlan https://carbonplan.org/research/carbon-removal-mechanisms
 
 ## Terms of engagement
 

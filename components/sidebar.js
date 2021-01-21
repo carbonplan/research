@@ -38,7 +38,7 @@ const Sidebar = ({ filter, sort, setFilter, setSort }) => {
         pb: [0, 0, 3],
         position: ['initial', 'initial', 'sticky'],
         top: [56],
-        height: 'fit-content',
+        height: ['fit-content', 'fit-content', 'calc(100vh - 56px)'],
         backgroundColor: 'background',
       }}
     >

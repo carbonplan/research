@@ -11,6 +11,7 @@ const Index = () => {
       card={'research'}
       footer={false}
       links={'local'}
+      metadata={'POSTS: 8'}
     >
       <Main />
     </Layout>
