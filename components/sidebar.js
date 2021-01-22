@@ -49,7 +49,7 @@ const Sidebar = ({ filter, sort, setFilter, setSort }) => {
       >
         Research
       </Text>
-      <Box sx={{ maxWidth: '750px', pb: [3, 3, 0] }}>
+      <Box sx={{ maxWidth: '400px', pb: [3, 3, 0] }}>
         <Styled.p>
           Articles, tools, and commentary on carbon removal and climate
           solutions.
