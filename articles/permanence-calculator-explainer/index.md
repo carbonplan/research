@@ -1,23 +1,22 @@
-import { Link } from 'theme-ui'
 import Article from '../../components/article'
 import Reference from '../../components/reference'
+import PullQuote from '../../components/pull-quote'
+import SectionBreak from '../../components/section-break'
 import Scenario from './components/scenario'
 import Parameters from './components/parameters'
 import { default as NextLink } from 'next/link'
 
 export const meta = {
   id: 'permanence-calculator-explainer',
+  number: 5,
+  version: '1.0.0',
   color: 'pink',
   title: 'The cost of temporary carbon removal',
+  authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
+  date: '12-09-2020',
+  background: 'article-005/leaf.png',
   summary:
     'How to compare the long-term cost of temporary and permanent carbon removal.',
-  quotes: [
-    {
-      position: 1950,
-      text:
-        'The calculator normalizes projects with different temporal dimensions into long-term strategies that achieve comparable climate benefits',
-    },
-  ],
 }
 
 export const sidenotes = {
@@ -132,6 +131,11 @@ As we explain below, our calculator shows how the initial cost of a temporary ca
 ## Calculator basics
 
 Our calculator lets you compare the permanence-adjusted costs of different carbon removal strategies based on a set of input parameters.
+
+<PullQuote color={meta.color}>
+  The calculator normalizes projects with different temporal dimensions into
+  long-term strategies that achieve comparable climate benefits
+</PullQuote>
 
 The core calculation is the net present value of a series of carbon removal decisions over a 1000-year period. We model a decision-maker seeking to achieve permanent climate benefits, whether by paying directly for permanent CO₂ removal today, by sequentially renewing temporary carbon removal projects over the full 1000 years, or by sequentially renewing temporary projects for a user-specified period of time before switching to a permanent alternative.
 
@@ -311,9 +315,19 @@ Our calculator puts projects that temporarily remove CO₂ from the atmosphere o
 
 Notably, the full cost of relying on temporary carbon removal is higher than the upfront and relatively low cost of most temporary carbon removal projects today, with the extent of the difference dependent on key parameter choices. By making these choices explicit and transparent, the calculator helps decision-makers consistently explore the full costs of competing climate strategies across a range of assumptions.
 
-## Terms of engagement
+<SectionBreak />
 
-CarbonPlan received a grant from the ClimateWorks Foundation to support this work. ClimateWorks did not exercise any control over the output. CarbonPlan thanks Gernot Wagner, Frances Moore, Toly Rinberg, and Rafael Broze for helpful feedback. CarbonPlan is solely responsible for the content of this writeup, which does not necessarily reflect the views of ClimateWorks, those who provided feedback, or any other individuals or organizations.
+## Credits
+
+Danny developed the model and wrote the first draft of the article. Jeremy implemented the model and designed the interactive web tool. Joe provided feedback on the model. All authors contributed to writing the article. The authors thank Gernot Wagner, Frances Moore, Toly Rinberg, and Rafael Broze for helpful feedback.
+
+Please cite as:
+
+D Cullenward, J Hamman, J Freeman (2020) “The cost of temporary carbon removal” CarbonPlan https://carbonplan.org/research/permanence-calculator-explainer
+
+## Terms
+
+CarbonPlan received a grant from the ClimateWorks Foundation to support this work. ClimateWorks did not exercise any control over the output. CarbonPlan is solely responsible for the content of this writeup, which does not necessarily reflect the views of ClimateWorks, those who provided feedback, or any other individuals or organizations.
 
 ### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
 

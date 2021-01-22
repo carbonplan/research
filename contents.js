@@ -1,103 +1,175 @@
-const Contents = {
-  'stripe-reports-insights': {
-    id: 'stripe-reports-insights',
-    number: 0,
+const Contents = [
+  {
     title: 'Insights from our first project reports',
-    section: 'research',
-    tags: ['note', 'commentary'],
-    authors: ['CarbonPlan Team'],
-    version: '1.0.0',
+    tags: ['article', 'dataset'],
+    summary:
+      'An interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to dig into methods and implications .',
     date: '05-18-2020',
+    version: '1.0.0',
     color: 'yellow',
-    background: 'road.png',
     icon: 'road-small.png',
-  },
-  'soil-carbon-comment': {
-    id: 'soil-carbon-comment',
-    number: 1,
-    title: 'Getting soil carbon right',
-    section: 'research',
-    tags: ['note', 'commentary'],
-    authors: ['Danny Cullenward', 'Jeremy Freeman'],
-    version: '1.0.0',
-    date: '06-01-2020',
-    color: 'orange',
-    background: 'article-001/soil.png',
-    icon: 'article-001/soil-small.png',
-  },
-  'forest-climate-risks': {
-    id: 'forest-climate-risks',
-    number: 2,
-    title: 'Climate-driven risks to forest carbon',
-    section: 'research',
-    tags: ['publication'],
-    authors: ['CarbonPlan Team'],
-    version: '1.0.0',
-    date: '06-23-2020',
-    color: 'green',
-    background: 'article-002/tree.png',
-    icon: 'article-002/tree-small.png',
-  },
-  'carbon-removal-mechanisms': {
-    id: 'carbon-removal-mechanisms',
-    number: 3,
-    title: 'Carbon removal mechanisms',
-    section: 'research',
-    tags: ['explainer'],
-    authors: ['CarbonPlan Team', 'Toly Rinberg'],
-    version: '1.0.0',
-    date: '07-24-2020',
-    color: 'grey',
-    background: 'article-003/pipes.png',
-    icon: 'article-003/pipes-small.png',
-    invert: true,
-  },
-  'offset-project-fire': {
-    id: 'offset-project-fire',
-    number: 4,
-    title: 'Carbon offsets burning',
-    section: 'research',
-    tags: ['note', 'analysis'],
-    authors: [
-      'Claudia Herbert',
-      'Jared Stapp',
-      'Grayson Badgley',
-      'William R L Anderegg',
-      'CarbonPlan Team',
+    links: [
+      {
+        label: 'Read article',
+        url: '/research/stripe-reports-insights',
+      },
+      {
+        label: 'Browse reports',
+        url: '/reports',
+      },
     ],
+  },
+  {
+    title: 'Getting soil carbon right',
+    tags: ['comment', 'article'],
+    summary:
+      'There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.',
+    date: '06-01-2020',
+    version: '1.1.0',
+    color: 'orange',
+    icon: 'article-001/soil-small.png',
+    links: [
+      {
+        label: 'Read article',
+        url: '/research/soil-carbon-comment',
+      },
+      {
+        label: 'Read letter #1',
+        url:
+          'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
+      },
+      {
+        label: 'Read letter #2',
+        url:
+          'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
+      },
+      {
+        label: 'MIT Tech Review coverage',
+        url:
+          'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
+      },
+    ],
+  },
+  {
+    title: 'Climate-driven risks to forest carbon',
+    tags: ['publication'],
+    summary:
+      'Team members contributed to a review paper on physical risks to forest carbon, like fire, drought, and insects, and why that matters for thinking about the role of forests in climate change mitigation.',
+    date: '06-23-2020',
     version: '1.0.0',
+    color: 'green',
+    icon: 'article-002/tree-small.png',
+    links: [
+      {
+        label: 'Read paper',
+        url: 'https://doi.org/10.1126/science.aaz7005',
+      },
+      {
+        label: 'Rolling Stone coverage',
+        url:
+          'https://www.rollingstone.com/politics/politics-features/tree-planting-wont-stop-climate-crisis-1020500/',
+      },
+    ],
+  },
+  {
+    title: 'Carbon removal mechanisms',
+    tags: ['article'],
+    summary:
+      'Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.',
+    date: '07-24-2020',
+    version: '1.0.0',
+    color: 'grey',
+    icon: 'article-003/pipes-small.png',
+    links: [
+      {
+        label: 'Read article',
+        url: '/research/carbon-removal-mechanisms',
+      },
+    ],
+  },
+  {
+    title: 'Carbon offsets burning',
+    tags: ['article'],
+    summary:
+      'Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.',
     date: '09-17-2020',
+    version: '1.0.0',
     color: 'red',
-    background: 'article-004/forest.png',
     icon: 'article-004/forest-small.png',
-    invert: true,
+    links: [
+      {
+        label: 'Read article',
+        url: '/research/offset-project-fire',
+      },
+      {
+        label: 'Grist coverage',
+        url:
+          'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
+      },
+    ],
   },
-  'permanence-calculator-explainer': {
-    id: 'permanence-calculator-explainer',
-    number: 5,
-    title: 'The cost of temporary carbon removal',
-    section: 'research',
-    tags: ['tool', 'explainer'],
-    authors: ['CarbonPlan Team'],
-    version: '1.0.0',
-    date: '12-09-2020',
-    color: 'pink',
-    background: 'article-005/leaf.png',
-    icon: 'article-005/leaf-small.png',
-    invert: true,
-  },
-  'permanence-calculator': {
-    id: 'permanence-calculator',
-    number: 0,
+  {
     title: 'Permanence calculator',
-    section: 'research',
-    tags: ['tool'],
-    authors: ['CarbonPlan team'],
-    version: '1.0.0',
+    tags: ['tool', 'article'],
+    summary:
+      'Our interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to learn about the methods and implications.',
     date: '12-09-2020',
+    version: '1.0.0',
     color: 'pink',
-    hideTop: true,
+    icon: 'article-005/leaf-small.png',
+    links: [
+      {
+        label: 'Read article',
+        url: '/research/permanence-calculator-explainer',
+      },
+      {
+        label: 'Use tool',
+        url: '/research/permanence-calculator',
+      },
+      {
+        label: 'ClimateWorks post',
+        url:
+          'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
+      },
+    ],
   },
-}
+  {
+    title: 'Letter to Taskforce on Scaling Voluntary Carbon Markets',
+    tags: ['comment'],
+    summary:
+      "A coordinated effort to standardize and scale today's voluntary offsets market is underway. We submitted a joint letter with Carbon Direct and the Berkeley Carbon Trading Project detailing how the Taskforce is ignoring the problem of poor quality rampant in today's market. That problem needs to be addressed first.",
+    date: '01-05-2021',
+    version: '1.0.0',
+    color: 'yellow',
+    icon: 'shared/typewriter-yellow.png',
+    links: [
+      {
+        label: 'Read letter',
+        url:
+          'https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf',
+      },
+      {
+        label: 'Taskforce website',
+        url: 'https://www.iif.com/tsvcm',
+      },
+    ],
+  },
+  {
+    title: 'CDR Primer',
+    tags: ['publication'],
+    summary:
+      'A new resource on the fundamentals of carbon dioxide removal and its role in addressing the climate crisis. Our team helped write, edit, and produce this free, online digital book.',
+    date: '01-14-2021',
+    version: '1.0.0',
+    icon: 'shared/cdr-primer.png',
+    color: 'teal',
+    links: [
+      {
+        label: 'Read the primer',
+        url: 'https://cdrprimer.org',
+      },
+    ],
+  },
+]
 
 export default Contents

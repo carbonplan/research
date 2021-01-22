@@ -1,31 +1,28 @@
 import { Box, Text, Grid, Container } from 'theme-ui'
 import { Layout } from '@carbonplan/components'
 import BackArrow from './back-arrow'
-import contents from '../contents'
+
+const prefix = 'https://carbonplan-assets.s3.amazonaws.com/images'
 
 const Article = ({ children, meta }) => {
-  const info = contents[meta.id]
-
   return (
     <Layout
       card={meta.id}
       description={meta.summary}
-      title={info.title}
+      title={meta.title}
       links={'local'}
       metadata={'scroll'}
       container={false}
     >
       <Box
         sx={{
-          backgroundColor: info.color,
-          height: ['auto', 'auto', info.background ? '275px' : '100px'],
+          backgroundColor: meta.color,
+          height: ['auto', 'auto', meta.background ? '275px' : '100px'],
           position: 'relative',
           backgroundImage: [
             'none',
             'none',
-            info.background
-              ? `url(https://carbonplan-assets.s3.amazonaws.com/images/${info.background})`
-              : 'none',
+            meta.background ? `url(${prefix}/${meta.background})` : 'none',
           ],
           backgroundSize: 'cover',
           backgroundPosition: '50% 70%',
@@ -38,7 +35,7 @@ const Article = ({ children, meta }) => {
             bottom: 0,
             pb: [0, 0, 3],
             width: '100%',
-            color: ['#1b1e23', '#1b1e23', info.invert ? '#ebebec' : '#1b1e23'],
+            color: ['#1b1e23', '#1b1e23', meta.invert ? '#1b1e23' : '#ebebec'],
           }}
         >
           <Container sx={{ px: [3, 4, 4] }}>
@@ -51,7 +48,7 @@ const Article = ({ children, meta }) => {
                   fontSize: [2],
                 }}
               >
-                Article({info.number})
+                Article({meta.number})
               </Text>
               <Text
                 sx={{
@@ -62,7 +59,7 @@ const Article = ({ children, meta }) => {
                 }}
               >
                 by{' '}
-                {info.authors.map((author, ix) => (
+                {meta.authors.map((author, ix) => (
                   <Text
                     key={author}
                     sx={{
@@ -73,7 +70,8 @@ const Article = ({ children, meta }) => {
                       fontSize: [2],
                     }}
                   >
-                    {author} {ix < info.authors.length - 1 ? '+' : ''}
+                    {author.replace(/ /g, '\u00a0')}{' '}
+                    {ix < meta.authors.length - 1 ? '+' : ''}
                   </Text>
                 ))}
               </Text>
@@ -85,7 +83,7 @@ const Article = ({ children, meta }) => {
                   fontSize: [2],
                 }}
               >
-                {info.date}
+                {meta.date}
               </Text>
             </Grid>
           </Container>
@@ -106,29 +104,8 @@ const Article = ({ children, meta }) => {
               >
                 / QUICK LOOK
               </Text>
-              <Text sx={{ color: info.color }}>{meta.summary}</Text>
+              <Text sx={{ color: meta.color }}>{meta.summary}</Text>
             </Box>
-            {meta.quotes.map((quote) => (
-              <Box
-                key={quote.position}
-                sx={{
-                  position: 'absolute',
-                  top: quote.position,
-                  maxWidth: '250px',
-                }}
-              >
-                <Text
-                  sx={{
-                    fontFamily: 'heading',
-                    fontSize: [5],
-                    lineHeight: 'heading',
-                    color: info.color,
-                  }}
-                >
-                  {quote.text}
-                </Text>
-              </Box>
-            ))}
           </Box>
         </Grid>
       </Container>

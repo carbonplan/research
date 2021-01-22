@@ -1,12 +1,26 @@
 import Article from '../../components/article'
 import Reference from '../../components/reference'
+import SectionBreak from '../../components/section-break'
 import FireMap from './components/fire-map'
 import RiskScenarios from './components/risk-scenarios'
 
 export const meta = {
   id: 'offset-project-fire',
-  title: 'Offset project fire',
+  number: 4,
+  version: '1.0.0',
   color: 'red',
+  title: 'Offset project fire',
+  authors: [
+    'Claudia Herbert',
+    'Jared Stapp',
+    'Grayson Badgley',
+    'William R L Anderegg',
+    'Danny Cullenward',
+    'Joseph Hamman',
+    'Jeremy Freeman',
+  ],
+  date: '09-17-2020',
+  background: 'article-004/forest.png',
   summary:
     'A major fire in Oregon illustrates the challenges of managing forest carbon permanence.',
   quotes: [],
@@ -159,17 +173,27 @@ But have we priced these risks correctly? The scenarios examined here strongly s
 
 The already unprecedented — and on-going — fire year provides a sobering example of the importance of considering risk and permanence in a scientifically rigorous way in the context of forest carbon, carbon removal, and climate policy.
 
+<SectionBreak />
+
 ## Documentation
 
 All analyses and data underlying this article are open source and [available online](https://github.com/carbonplan/notebooks/tree/master/offset-project-fire). The fire data is from NASA's Fire Information for Resource Management System (FIRMS), the buffer pool data is from the California Air Resource Board’s database of offset credit issuances, and the offset project geometries are from the American Carbon Registry project database. Our Jupyter notebooks show how we worked with these raw data sources and estimated all the numbers reported in the article. This article itself (including the map visualization and the calculator) is also open source and [available in this repository](https://github.com/carbonplan/research/tree/master/articles/offset-project-fire).
-
-Photograph credit [Jared Stapp](https://www.jaredstapp.com/) — used with permission.
 
 ## Note
 
 We have not reached out to the Confederated Tribes of Warm Springs Reservation of Oregon, on whose land the ACR260 project is located, for comments.
 
-## Terms of engagement
+<SectionBreak />
+
+## Credits
+
+Claudia and Jared identified the project and its proximity to the fire. Joe and Jeremy analyzed the fire data with input from Claudia and Jared. Danny, Joe, Grayson, and William developed the future projection and protocol buffer pool models. Jeremy designed and implemented the web visualizations. Joe packaged the data and code for sharing. All authors contributed to writing the article. Photograph by [Jared Stapp](https://www.jaredstapp.com/) used with permission.
+
+Please cite as:
+
+C Herbert, J Stapp, G Badgley, W R L Anderegg, D Cullenward, J Hamman, J Freeman (2020) “Carbon offsets burning” CarbonPlan https://carbonplan.org/research/offset-project-fire
+
+## Terms
 
 CarbonPlan received no specific financial support for this work.
 

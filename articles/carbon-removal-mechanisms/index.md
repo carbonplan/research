@@ -1,21 +1,25 @@
 import Article from '../../components/article'
 import Reference from '../../components/reference'
+import PullQuote from '../../components/pull-quote'
+import SectionBreak from '../../components/section-break'
 import Cycle from './components/cycle'
 
 export const meta = {
   id: 'carbon-removal-mechanisms',
+  number: 3,
+  version: '1.0.0',
   color: 'grey',
   title: 'Carbon removal mechanisms',
+  authors: [
+    'Toly Rinberg',
+    'Danny Cullenward',
+    'Joseph Hamman',
+    'Jeremy Freeman',
+  ],
+  date: '07-24-2020',
+  background: 'article-003/pipes.png',
   summary:
     'How different carbon removal projects interact with the global carbon cycle.',
-  quotes: [
-    {
-      position: 10750,
-      text:
-        'A clear typology is needed to categorize and contextualize projects in the broader field of climate mitigation',
-    },
-  ],
-  full: [],
 }
 
 export const sidenotes = {
@@ -345,6 +349,11 @@ Considering the full carbon cycle impacts of a project is a complex task, and ma
 
 First, if we’re considering avoided emissions among carbon removal projects, where should we as a community draw the line?
 
+<PullQuote color={meta.color}>
+  A clear typology is needed to categorize and contextualize projects in the
+  broader field of climate mitigation
+</PullQuote>
+
 There is no objectively correct answer about where to focus energy and resources, but we believe that a clear typology is needed to categorize and contextualize projects in the broader field of climate mitigation. We at CarbonPlan are particularly interested in approaches that either perform carbon removal today, or that could in principle be part of carbon removal systems if coupled to some other component — such as geologic sequestration coupled to direct air capture, or biochar production coupled to sustainable biomass production. That said, reducing and avoiding emissions are the essential core of climate mitigation strategy, and need to accelerate rapidly in parallel to large-scale deployment of carbon removal.
 
 Second, what does all this mean for a funder or decision-maker?
@@ -352,6 +361,16 @@ Second, what does all this mean for a funder or decision-maker?
 The answer depends on the goals. If an organization wants to “purchase” carbon removal in a strict, narrow sense — such as to justify carbon neutrality claims premised on achieving a net carbon balance given the organization's emissions — then they should engage only projects that exclusively perform carbon removal today. Precisely because the field is so new, however, few such projects exist! We’ve also seen examples of projects conflating carbon removal and avoided emissions claims, so we advise sponsor organizations to scrutinize and communicate the claims projects make on this important dimension.
 
 Other sponsor organizations may be interested in supporting technologies that have the potential to become components of carbon removal systems, but which do not currently remove atmospheric CO<sub>2</sub> today. This philosophy could be a critical driver to accelerate change in the coming years, but it risks confusion with current carbon removal efforts. We recommend that such sponsor organizations explicitly frame their mission as advancing a particular theory of technological change and/or research investment, so as to clarify their goals and potential strategic risks.
+
+<SectionBreak />
+
+## Credits
+
+Danny, Jeremy, and Toly developed the concepts and typology. All authors developed the concept for the graphics (with input from Jonny Black of [Ordinary Things](https://ot.studio)). Jeremy implemented the graphics. All authors contributed to writing the article.
+
+Please cite as:
+
+T Rinberg, D Cullenward, J Hamman, J Freeman (2020) “Carbon removal mechanisms” CarbonPlan https://carbonplan.org/research/carbon-removal-mechanisms
 
 ## Terms of engagement
 

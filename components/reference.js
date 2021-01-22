@@ -38,7 +38,7 @@ const Reference = ({ color, data }) => {
       >
         <sup>{data.number}</sup>
       </Text>
-      <a href={data.url} target='_blank'>
+      <a href={data.url}>
         <Text
           as='span'
           onMouseOver={toggleOn}
