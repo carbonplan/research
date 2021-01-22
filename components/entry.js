@@ -54,19 +54,22 @@ const Entry = ({ info, final }) => {
               }}
             >
               {date}{' '}
-              {false && <><Text
-                as='span'
-                sx={{
-                  color: 'text',
-                  fontFamily: 'mono',
-                  letterSpacing: '0.05em',
-                  fontSize: [2],
-                }}
-              >
-                /
-              </Text>{' '}
-              v{version}</>
-            }
+              {false && (
+                <>
+                  <Text
+                    as='span'
+                    sx={{
+                      color: 'text',
+                      fontFamily: 'mono',
+                      letterSpacing: '0.05em',
+                      fontSize: [2],
+                    }}
+                  >
+                    /
+                  </Text>{' '}
+                  v{version}
+                </>
+              )}
             </Text>
             <Heading
               sx={{
