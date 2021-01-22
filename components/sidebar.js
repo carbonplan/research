@@ -45,17 +45,19 @@ const Sidebar = ({ filter, sort, setFilter, setSort }) => {
       <Text
         as='h1'
         variant='styles.h1'
-        sx={{ pt: [3, 3, 4], mb: [3, 3, 4], mt: [2, 2, 0] }}
+        sx={{ pt: [4, 4, 5], mb: [3, 3, 4], mt: [0, 0, 0] }}
       >
         Research
       </Text>
       <Box sx={{ maxWidth: '750px', pb: [3, 3, 0] }}>
         <Styled.p>
-          A collection of articles, tools, and commentary on carbon removal and
-          climate solutions.
+          Articles, tools, and commentary on carbon removal and climate
+          solutions.
         </Styled.p>
       </Box>
-      <Divider sx={{ mr: [4], mt: [0, 0, 4], mb: [0, 0, 0] }} />
+      <Box sx={{ mt: [0, 0, '40px'], mb: [0, 0, '40px'] }}>
+        <Divider sx={{ mr: [4], mt: [0, 0, 4], mb: [0, 0, 0] }} />
+      </Box>
       <Box
         sx={{
           mt: [4],
