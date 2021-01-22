@@ -12,6 +12,7 @@ import Metrics from './components/metrics'
 export const meta = {
   id: 'stripe-reports-insights',
   number: 0,
+  version: '1.0.0',
   color: 'yellow',
   title: 'Insights from our first project reports',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],

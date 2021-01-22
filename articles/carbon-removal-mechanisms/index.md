@@ -7,6 +7,7 @@ import Cycle from './components/cycle'
 export const meta = {
   id: 'carbon-removal-mechanisms',
   number: 3,
+  version: '1.0.0',
   color: 'grey',
   title: 'Carbon removal mechanisms',
   authors: [

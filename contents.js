@@ -4,8 +4,8 @@ const Contents = [
     tags: ['article', 'dataset'],
     summary:
       'An interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to dig into methods and implications .',
-    version: '1.0.0',
     date: '05-18-2020',
+    version: '1.0.0',
     color: 'yellow',
     icon: 'road-small.png',
     links: [
@@ -24,8 +24,8 @@ const Contents = [
     tags: ['comment', 'article'],
     summary:
       'There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.',
-    version: '1.1.0',
     date: '06-01-2020',
+    version: '1.1.0',
     color: 'orange',
     icon: 'article-001/soil-small.png',
     links: [
@@ -55,8 +55,8 @@ const Contents = [
     tags: ['publication'],
     summary:
       'Team members contributed to a review paper on physical risks to forest carbon, like fire, drought, and insects, and why that matters for thinking about the role of forests in climate change mitigation.',
-    version: '1.0.0',
     date: '06-23-2020',
+    version: '1.0.0',
     color: 'green',
     icon: 'article-002/tree-small.png',
     links: [
@@ -76,8 +76,8 @@ const Contents = [
     tags: ['article'],
     summary:
       'Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.',
-    version: '1.0.0',
     date: '07-24-2020',
+    version: '1.0.0',
     color: 'grey',
     icon: 'article-003/pipes-small.png',
     links: [
@@ -92,8 +92,8 @@ const Contents = [
     tags: ['article'],
     summary:
       'Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.',
-    version: '1.0.0',
     date: '09-17-2020',
+    version: '1.0.0',
     color: 'red',
     icon: 'article-004/forest-small.png',
     links: [
@@ -113,8 +113,8 @@ const Contents = [
     tags: ['tool', 'article'],
     summary:
       'Our interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to learn about the methods and implications.',
-    version: '1.0.0',
     date: '12-09-2020',
+    version: '1.0.0',
     color: 'pink',
     icon: 'article-005/leaf-small.png',
     links: [
@@ -138,8 +138,8 @@ const Contents = [
     tags: ['comment'],
     summary:
       "A coordinated effort to standardize and scale today's voluntary offsets market is underway. We submitted a joint letter with Carbon Direct and the Berkeley Carbon Trading Project detailing how the Taskforce is ignoring the problem of poor quality rampant in today's market. That problem needs to be addressed first.",
-    version: '1.0.0',
     date: '01-05-2021',
+    version: '1.0.0',
     color: 'yellow',
     icon: 'shared/typewriter-yellow.png',
     links: [
@@ -159,8 +159,8 @@ const Contents = [
     tags: ['publication'],
     summary:
       'A new resource on the fundamentals of carbon dioxide removal and its role in addressing the climate crisis. Our team helped write, edit, and produce this free, online digital book.',
-    version: '1.0.0',
     date: '01-14-2021',
+    version: '1.0.0',
     icon: 'shared/cdr-primer.png',
     color: 'teal',
     links: [

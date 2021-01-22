@@ -9,6 +9,7 @@ import { default as NextLink } from 'next/link'
 export const meta = {
   id: 'permanence-calculator-explainer',
   number: 5,
+  version: '1.0.0',
   color: 'pink',
   title: 'The cost of temporary carbon removal',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],

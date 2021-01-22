@@ -54,7 +54,7 @@ const Entry = ({ info, final }) => {
               }}
             >
               {date}{' '}
-              <Text
+              {false && <><Text
                 as='span'
                 sx={{
                   color: 'text',
@@ -65,7 +65,8 @@ const Entry = ({ info, final }) => {
               >
                 /
               </Text>{' '}
-              v{version}
+              v{version}</>
+            }
             </Text>
             <Heading
               sx={{

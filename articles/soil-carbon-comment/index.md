@@ -9,6 +9,7 @@ import Heading from './components/heading'
 export const meta = {
   id: 'soil-carbon-comment',
   number: 1,
+  version: '1.1.0',
   color: 'orange',
   title: 'Getting soil carbon right',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],

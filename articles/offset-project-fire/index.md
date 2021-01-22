@@ -7,6 +7,7 @@ import RiskScenarios from './components/risk-scenarios'
 export const meta = {
   id: 'offset-project-fire',
   number: 4,
+  version: '1.0.0',
   color: 'red',
   title: 'Offset project fire',
   authors: [
