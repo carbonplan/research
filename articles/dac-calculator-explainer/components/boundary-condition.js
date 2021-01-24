@@ -19,13 +19,13 @@ const BoundaryCondition = () => {
             .st4{font-family:${heading};}
             .st5{font-size:26px;}
             .st6{fill:${background};}
+            .st7{fill:none;stroke:${purple};stroke-width:2;stroke-miterlimit:10;stroke-dasharray:4,4;}
             `}
           </style>
           <rect x='571.4' y='145.8' className='st0' width='200.8' height='82.1' />
           <rect x='571.4' y='299.9' className='st0' width='200.8' height='82.1' />
           <rect x='571.4' y='299.9' className='st0' width='200.8' height='82.1' />
-          <polyline className='st1' points='187.7,242.7 187.7,83.9 645.2,83.9 ' />
-          <path className='st1' d='M641.8,445.9' />
+          <polyline className='st1' points='187.7,242.7 187.7,83.9 368.3,83.9 ' />
           <polyline className='st1' points='645.2,444.9 187.7,444.9 187.7,286.9 ' />
           <polyline
             className='st1'
@@ -37,6 +37,13 @@ const BoundaryCondition = () => {
             className='st3 st4 st5'
           >
             TRANSPORTATION
+          </text>
+          <rect x='276.2' y='5.8' className='st2' width='239.1' height='32.8' />
+          <text
+            transform='matrix(1 0 0 1 284.3244 23.9714)'
+            className='st3 st4 st5'
+          >
+            CO₂ DEPLETED AIR
           </text>
           <rect x='569.9' y='5.8' className='st2' width='203.7' height='32.8' />
           <text
@@ -54,6 +61,15 @@ const BoundaryCondition = () => {
               CAPTURE
             </tspan>
           </text>
+          <g>
+            <rect x='637.2' y='251' className='st2' width='150.5' height='53.9' />
+            <text
+              transform='matrix(1 0 0 1 688.5464 269.2202)'
+              className='st3 st4 st5'
+            >
+              CO₂
+            </text>
+          </g>
           <g>
             <rect x='570.5' y='331.5' className='st2' width='202.6' height='53.9' />
             <text
@@ -169,6 +185,21 @@ const BoundaryCondition = () => {
               </tspan>
             </text>
           </g>
+          <g>
+            <g>
+              <polyline
+                className='st7'
+                points='548.3,162.4 395.6,162.4 395.6,43.6    '
+              />
+              <g>
+                <polygon
+                  className='st3'
+                  points='403.8,50.2 402.3,51.5 395.6,44.3 388.9,51.5 387.4,50.2 395.6,41.4      '
+                />
+              </g>
+            </g>
+          </g>
+          <line className='st1' x1='421.3' y1='83.9' x2='646' y2='83.9' />
         </svg>
       </Box>
       <Divider sx={{ mt: [3] }} />
