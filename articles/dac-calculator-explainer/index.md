@@ -68,7 +68,7 @@ WACC and capacity factor?
 
 ## Looking ahead
 
-We hope our interactive calculator helps build intuition for the model underlying McQueen et al., and helps reveal the complex, high-dimensional relationships underlying the cost of DAC. Far more information and modeling would be required for utility in actual design, engineering, planning, but experimenting with this tool could be the first step in evaluating existing technologies, or developing new ones.
+We hope our interactive calculator helps build intuition for the model underlying McQueen et al., and helps reveal the complex, high-dimensional relationships underlying the cost of DAC. Along with understanding the technology and finding opportunities to lower cost, evaluating different cost scenarios and energy systems can help with siting DAC facilities. Far more information and modeling is of course required for actual design, engineering, and planning, but experimenting with this tool could be the first step in evaluating existing technologies — or developing new ones.
 
 <SectionBreak />
 
@@ -86,4 +86,6 @@ CarbonPlan received no specific financial support for this work. Noah McQueen is
 
 ### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
 
-export default ({ children }) => <Article meta={meta}>{children}</Article>
+export default ({ children }) => <Article meta={meta}>{children}</Article
+
+>
