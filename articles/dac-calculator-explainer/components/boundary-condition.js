@@ -8,7 +8,7 @@ const BoundaryCondition = () => {
 
   return (
     <Box sx={{ width: '100%', maxWidth: '650px', my: [5] }}>
-      <Box sx={{ mb: [2] }}>
+      <Box sx={{ mb: [2], userSelect: 'none' }}>
         <svg viewBox='0 0 966.3 534.8'>
           <style type='text/css'>
             {`
