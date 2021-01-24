@@ -1,5 +1,6 @@
 import Article from '../../components/article'
 import Reference from '../../components/reference'
+import SectionBreak from '../../components/section-break'
 import BoundaryCondition from './components/boundary-condition'
 import ParameterTable from './components/parameter-table'
 
@@ -86,6 +87,4 @@ CarbonPlan received no specific financial support for this work. Noah McQueen is
 
 ### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
 
-export default ({ children }) => <Article meta={meta}>{children}</Article
-
->
+export default ({ children }) => <Article meta={meta}>{children}</Article>
