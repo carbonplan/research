@@ -24,19 +24,19 @@ export const meta = {
 
 # The cost of direct air capture
 
-Direct air capture (DAC) is a technology that captures carbon dioxide (CO2) from the air using chemicals. There are several types. Sorbent and solvent DAC are in use today, and others are emerging, such as electro-swing, humidity-swing and mineralization-based.
+Direct air capture (DAC) is a technology that captures carbon dioxide (CO₂) from the air using chemicals. There are several types. Sorbent and solvent DAC are in use today, and others are emerging, such as electro-swing, humidity-swing and mineralization-based.
 
-In all cases, chemicals selectively bind CO2 from the air, typically at ambient conditions (room temperature and pressure). Once the chemical has bound an adequate amount of CO2, the system releases the CO2 at elevated conditions, typically elevated temperature or decreased pressure. Once the CO2 is released, it can be captured, compressed, transported, and stored.
+In all cases, chemicals selectively bind CO₂ from the air, typically at ambient conditions (room temperature and pressure). Once the chemical has bound an adequate amount of CO₂, the system releases the CO₂ at elevated conditions, typically elevated temperature or decreased pressure. Once the CO₂ is released, it can be captured, compressed, transported, and stored.
 
 This all requires infrastructure, consumables, and energy — and has a significant price tag.
 
-There are two key costs associated with DAC: capital costs and energy costs. Capital costs are dominated by the equipment required to both capture CO2 from air and regenerate the capture material. This infrastructure can include the specialty chemicals used to capture CO2, the contactor used to facilitate contact between the air stream and the CO2-capturing chemicals, and the equipment required to release CO2 from the chemicals (such as steam generation, for the solid sorbent DAC approach, or pellet reactors, slakers, and calciners for the solvent DAC approach).
+There are two key costs associated with DAC: capital costs and energy costs. Capital costs are dominated by the equipment required to both capture CO₂ from air and regenerate the capture material. This infrastructure can include the specialty chemicals used to capture CO₂, the contactor used to facilitate contact between the air stream and the CO₂-capturing chemicals, and the equipment required to release CO₂ from the chemicals (such as steam generation, for the solid sorbent DAC approach, or pellet reactors, slakers, and calciners for the solvent DAC approach).
 
-Energy costs are also a major consideration. Existing systems require between 300 MW and 500 MW to capture 1 million tons of CO2 per year — approximately equivalent to the size of an individual power plant today. Of this energy requirement, roughly 80% is thermal energy and 20% electricity, where the thermal energy is associated with the heating during the regeneration step.
+Energy costs are also a major consideration. Existing systems require between 300 MW and 500 MW to capture 1 million tons of CO₂ per year — approximately equivalent to the size of an individual power plant today. Of this energy requirement, roughly 80% is thermal energy and 20% electricity, where the thermal energy is associated with the heating during the regeneration step.
 
-Analyzing the cost of DAC also requires considering any associated greenhouse gas emissions, which effectively reduce the total amount of net removal, and thus increase the $/tCO2 cost.
+Analyzing the cost of DAC also requires considering any associated greenhouse gas emissions, which effectively reduce the total amount of net removal, and thus increase the $/tCO₂ cost.
 
-In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system. They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO2 released during combustion, and six all-electric non-fossil systems.
+In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system. They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO₂ released during combustion, and six all-electric non-fossil systems.
 
 To help build intuition for how different factors influence the cost of DAC, we built an [interactive calculator](https://carbonplan.org/research/dac-calculator) based directly on the model from the paper.
 
@@ -44,7 +44,7 @@ Here we explain the design of the model and the parameter space, and highlight s
 
 ## Factors that determine cost
 
-Techno-economic analyses (TEAs) for emerging technologies, such as DAC, rely heavily on assumptions. These assumptions can be thought of as knobs that, when turned, affect the overall cost estimate on a $/tCO2 removed basis. Since these knobs have varying impacts on the cost of capture, it is important to be transparent about the underlying assumptions of any TEA and understand how changing these parameters impact the costs reported for DAC.
+Techno-economic analyses (TEAs) for emerging technologies, such as DAC, rely heavily on assumptions. These assumptions can be thought of as knobs that, when turned, affect the overall cost estimate on a $/tCO₂ removed basis. Since these knobs have varying impacts on the cost of capture, it is important to be transparent about the underlying assumptions of any TEA and understand how changing these parameters impact the costs reported for DAC.
 
 Our calculator estimates the cost of a given DAC technology explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but the energy resource used to power it.
 
@@ -61,7 +61,7 @@ The calculator presents each of these parameters as an interactive slider. Above
 ### Natural gas versus electricity
 
 A key result from the McQueen et al. paper concerns the relative cost of particular energy configurations, which you can recreate in the calculator.
-When systems use leak-tight natural gas to directly meet the thermal energy requirements of the system and to produce electricity via a small natural gas combined cycle, this provides the lowest-cost energy system ($230 - $390/tCO2). However, current natural gas production in the US involves appreciable natural gas leakage, which dramatically increases the net cost of CO2 capture. The authors develop representative capture costs of $250 – $440/tCO2 for geothermal energy, $370 – $620/tCO2 for nuclear energy (two variants - a light water reactor and small modular nuclear), $360 – $570/tCO2 for wind, $430 – $690/tCO2 for solar photovoltaics (two variants assuming different daily solar availabilities), and $300 - $490/tCO2 for a hybrid system with a natural-gas-powered electric calciner.
+When systems use leak-tight natural gas to directly meet the thermal energy requirements of the system and to produce electricity via a small natural gas combined cycle, this provides the lowest-cost energy system ($230 - $390/tCO₂). However, current natural gas production in the US involves appreciable natural gas leakage, which dramatically increases the net cost of CO₂ capture. The authors develop representative capture costs of $250 – $440/tCO₂ for geothermal energy, $370 – $620/tCO₂ for nuclear energy (two variants - a light water reactor and small modular nuclear), $360 – $570/tCO₂ for wind, $430 – $690/tCO₂ for solar photovoltaics (two variants assuming different daily solar availabilities), and $300 - $490/tCO₂ for a hybrid system with a natural-gas-powered electric calciner.
 
 ### The relationship between ...
 
