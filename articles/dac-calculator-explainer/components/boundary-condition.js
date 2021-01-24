@@ -7,19 +7,19 @@ const BoundaryCondition = () => {
   const { faux } = context.theme.fonts
 
   return (
-    <Box sx={{ width: '100%', maxWidth: '650px', my: [5] }}>
-      <Box sx={{ mb: [2], userSelect: 'none' }}>
-        <svg viewBox='0 0 966.3 534.8'>
+    <Box sx={{ width: '100%', my: [5] }}>
+      <Box sx={{ mb: [2, 2, 4], maxWidth: '550px', userSelect: 'none' }}>
+        <svg viewBox='0 0 809.2 629.4'>
           <style type='text/css'>
             {`
-          .st0{fill:${purple};stroke:${purple};stroke-miterlimit:10;}
-          .st1{fill:none;stroke:${purple};stroke-width:2;stroke-miterlimit:10;}
-          .st2{fill:none;}
-          .st3{fill:${purple};}
-          .st4{font-family:${faux};}
-          .st5{font-size:30px;}
-          .st6{fill:${background};}
-          `}
+            .st0{fill:${purple};stroke:${purple};stroke-miterlimit:10;}
+            .st1{fill:none;stroke:${purple};stroke-width:2;stroke-miterlimit:10;}
+            .st2{fill:none;}
+            .st3{fill:${purple};}
+            .st4{font-family:${faux};}
+            .st5{font-size:30px;}
+            .st6{fill:${background};}
+            `}
           </style>
           <rect
             x='547.4'
@@ -57,13 +57,13 @@ const BoundaryCondition = () => {
           />
           <rect
             x='535.5'
-            y='505.5'
+            y='503.5'
             className='st2'
             width='222.1'
             height='32.8'
           />
           <text
-            transform='matrix(1 0 0 1 535.5052 526.4617)'
+            transform='matrix(1 0 0 1 535.5052 524.4617)'
             className='st3 st4 st5'
           >
             Transportation
@@ -147,14 +147,14 @@ const BoundaryCondition = () => {
             </text>
           </g>
           <rect
-            x='853.5'
-            y='505.5'
+            x='589.5'
+            y='600.4'
             className='st2'
             width='114.2'
             height='32.8'
           />
           <text
-            transform='matrix(1 0 0 1 856.1896 526.4616)'
+            transform='matrix(1 0 0 1 592.1972 621.4363)'
             className='st3 st4 st5'
           >
             Storage
@@ -183,6 +183,23 @@ const BoundaryCondition = () => {
                 <polygon
                   className='st3'
                   points='638.4,276.2 639.9,274.8 646.6,282 653.3,274.8 654.7,276.2 646.6,285      '
+                />
+              </g>
+            </g>
+          </g>
+          <g>
+            <g>
+              <line
+                className='st1'
+                x1='646.6'
+                y1='545.2'
+                x2='646.6'
+                y2='585.9'
+              />
+              <g>
+                <polygon
+                  className='st3'
+                  points='638.4,579.3 639.9,577.9 646.6,585.1 653.3,577.9 654.7,579.3 646.6,588.1      '
                 />
               </g>
             </g>
@@ -232,23 +249,6 @@ const BoundaryCondition = () => {
                 <polygon
                   className='st3'
                   points='638.4,478.9 639.9,477.5 646.6,484.7 653.3,477.5 654.7,478.9 646.6,487.7      '
-                />
-              </g>
-            </g>
-          </g>
-          <g>
-            <g>
-              <line
-                className='st1'
-                x1='764.7'
-                y1='518.5'
-                x2='838.3'
-                y2='518.5'
-              />
-              <g>
-                <polygon
-                  className='st3'
-                  points='831.7,526.6 830.3,525.2 837.5,518.5 830.3,511.7 831.7,510.3 840.5,518.5      '
                 />
               </g>
             </g>

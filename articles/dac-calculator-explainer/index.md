@@ -46,7 +46,7 @@ Here we explain the design of the model and the parameter space, and highlight s
 
 Techno-economic analyses (TEAs) for emerging technologies, such as DAC, rely heavily on assumptions. These assumptions can be thought of as knobs that, when turned, affect the overall cost estimate on a $/tCO₂ removed basis. Since these knobs have varying impacts on the cost of capture, it is important to be transparent about the underlying assumptions of any TEA and understand how changing these parameters impact the costs reported for DAC.
 
-Our calculator estimates the cost of a given DAC technology explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but the energy resource used to power it.
+Our calculator estimates the cost of a given DAC technology explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but the energy resource used to power it. We do not, however, include costs for transportation or storage. The “boundary condition” diagram below shows which costs are included.
 
 <BoundaryCondition />
 
