@@ -8,27 +8,32 @@ export const meta = {
   number: 6,
   version: '1.0.0',
   color: 'purple',
-  authors: ['Noah McQueen', 'Jennifer Wilcox', 'Joseph Hamman', 'Danny Cullenward', 'Jeremy Freeman'],
+  authors: [
+    'Noah McQueen',
+    'Jennifer Wilcox',
+    'Joseph Hamman',
+    'Danny Cullenward',
+    'Jeremy Freeman',
+  ],
   title: 'The cost of direct air capture',
   date: '01-23-2021',
   background: 'article-006/dac.png',
-  summary:
-    'What factors drive the cost of direct air capture.'
+  summary: 'What factors drive the cost of direct air capture.',
 }
 
 # The cost of direct air capture
 
-Direct air capture (DAC) is a technology that captures carbon dioxide (CO2) from the air using chemicals. There are several types. Sorbent and solvent DAC are in use today, and others are emerging, such as electro-swing, humidity-swing and mineralization-based. 
+Direct air capture (DAC) is a technology that captures carbon dioxide (CO2) from the air using chemicals. There are several types. Sorbent and solvent DAC are in use today, and others are emerging, such as electro-swing, humidity-swing and mineralization-based.
 
-In all cases, chemicals selectively bind CO2 from the air, typically at ambient conditions (room temperature and pressure). Once the chemical has bound an adequate amount of CO2, the system releases the CO2 at elevated conditions, typically elevated temperature or decreased pressure. Once the CO2 is released, it can be captured, compressed, transported, and stored. 
+In all cases, chemicals selectively bind CO2 from the air, typically at ambient conditions (room temperature and pressure). Once the chemical has bound an adequate amount of CO2, the system releases the CO2 at elevated conditions, typically elevated temperature or decreased pressure. Once the CO2 is released, it can be captured, compressed, transported, and stored.
 
 This all requires infrastructure, consumables, and energy — and has a significant price tag.
 
 There are two key costs associated with DAC: capital costs and energy costs. Capital costs are dominated by the equipment required to both capture CO2 from air and regenerate the capture material. This infrastructure can include the specialty chemicals used to capture CO2, the contactor used to facilitate contact between the air stream and the CO2-capturing chemicals, and the equipment required to release CO2 from the chemicals (such as steam generation, for the solid sorbent DAC approach, or pellet reactors, slakers, and calciners for the solvent DAC approach).
 
-Energy costs are also a major consideration. Existing systems require between 300 MW and 500 MW to capture 1 million tons of CO2 per year — approximately equivalent to the size of an individual power plant today. Of this energy requirement, roughly 80% is thermal energy and 20% electricity, where the thermal energy is associated with the heating during the regeneration step. 
+Energy costs are also a major consideration. Existing systems require between 300 MW and 500 MW to capture 1 million tons of CO2 per year — approximately equivalent to the size of an individual power plant today. Of this energy requirement, roughly 80% is thermal energy and 20% electricity, where the thermal energy is associated with the heating during the regeneration step.
 
-Analyzing the cost of DAC also requires considering any associated greenhouse gas emissions, which effectively reduce the total amount of net removal, and thus increase the $/tCO2 cost. 
+Analyzing the cost of DAC also requires considering any associated greenhouse gas emissions, which effectively reduce the total amount of net removal, and thus increase the $/tCO2 cost.
 
 In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system. They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO2 released during combustion, and six all-electric non-fossil systems.
 
@@ -38,15 +43,15 @@ Here we explain the design of the model and the parameter space, and highlight s
 
 ## Factors that determine cost
 
-Techno-economic analyses (TEAs) for emerging technologies, such as DAC, rely heavily on assumptions. These assumptions can be thought of as knobs that, when turned, affect the overall cost estimate on a $/tCO2 removed basis. Since these knobs have varying impacts on the cost of capture, it is important to be transparent about the underlying assumptions of any TEA and understand how changing these parameters impact the costs reported for DAC. 
+Techno-economic analyses (TEAs) for emerging technologies, such as DAC, rely heavily on assumptions. These assumptions can be thought of as knobs that, when turned, affect the overall cost estimate on a $/tCO2 removed basis. Since these knobs have varying impacts on the cost of capture, it is important to be transparent about the underlying assumptions of any TEA and understand how changing these parameters impact the costs reported for DAC.
 
 Our calculator estimates the cost of a given DAC technology explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but the energy resource used to power it.
 
-<BoundaryCondition/>
+<BoundaryCondition />
 
 Each of these cost components in turn depend on many different parameters. Here we highlight the key parameters included in the calculator, with a brief explanation for each.
 
-<ParameterTable/>
+<ParameterTable />
 
 The calculator presents each of these parameters as an interactive slider. Above each slider, a chart that shows how the total cost will change as you vary that parameter, conditional on the current setting of all other parameters. So, as you change each parameter, not only can you see how the total cost changes (in the pie chart), but you can also see how it affects the sensitivity of the other parameters. Finally, a dropdown at the top lets you choose between three different sources of energy: wind, solar, and a combined-cycle natural gas turbine with carbon capture.
 
@@ -82,4 +87,3 @@ CarbonPlan received no specific financial support for this work. Noah McQueen is
 ### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>
-
