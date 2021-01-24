@@ -4,7 +4,7 @@ import Main from '../../components/main'
 const Index = () => {
   return (
     <Layout
-      title={'carbonplan / research'}
+      title={'research / carbonplan'}
       description={
         'Articles, tools, and commentary on carbon removal and climate solutions.'
       }

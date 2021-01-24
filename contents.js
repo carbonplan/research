@@ -3,7 +3,7 @@ const Contents = [
     title: 'Insights from our first project reports',
     tags: ['article', 'dataset'],
     summary:
-      'An interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to dig into methods and implications .',
+      "We analyzed project proposals submitted for Stripe's 2020 Negative Emisions Purchase. Browse our reports database or read the article for our main takeaways and lessons learned.",
     date: '05-18-2020',
     version: '1.0.0',
     color: 'yellow',

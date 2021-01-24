@@ -9,7 +9,7 @@ const Article = ({ children, meta }) => {
     <Layout
       card={meta.id}
       description={meta.summary}
-      title={meta.title}
+      title={meta.title.toLowerCase() + ' / research / carbonplan'}
       links={'local'}
       metadata={'scroll'}
       container={false}

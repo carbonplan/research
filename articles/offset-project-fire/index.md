@@ -9,7 +9,7 @@ export const meta = {
   number: 4,
   version: '1.0.0',
   color: 'red',
-  title: 'Offset project fire',
+  title: 'Carbon offsets burning',
   authors: [
     'Claudia Herbert',
     'Jared Stapp',
