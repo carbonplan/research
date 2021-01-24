@@ -8,7 +8,8 @@ const BoundaryCondition = () => {
 
   return (
     <Box sx={{ width: '100%', maxWidth: '650px', my: [5] }}>
-      <svg viewBox='0 0 1072.7 444.2'>
+      <Box sx={{mb: [2]}}>
+      <svg viewBox='0 0 966.3 534.8'>
         <style type='text/css'>
           {`
           .st0{fill:${purple};stroke:${purple};stroke-miterlimit:10;}
@@ -16,149 +17,93 @@ const BoundaryCondition = () => {
           .st2{fill:none;}
           .st3{fill:${purple};}
           .st4{font-family:${faux};}
-          .st5{font-size:28px;}
+          .st5{font-size:30px;}
           .st6{fill:${background};}
           `}
         </style>
-        <rect x='149.9' y='328.1' className='st0' width='184.7' height='75.7' />
-        <polyline className='st1' points='95.1,344.5 95.1,76.9 318.4,76.9 ' />
-        <polyline
-          className='st1'
-          points='599.6,389.7 599.6,441.4 95.1,441.4 95.1,389.7 '
-        />
-        <polyline className='st1' points='370.2,76.9 599.6,76.9 599.6,344 ' />
-        <rect x='657.1' y='356.7' className='st2' width='198.8' height='32.8' />
-        <text
-          transform='matrix(1 0 0 1 657.0925 376.2583)'
-          className='st3 st4 st5'
-        >
-          Transportation
-        </text>
-        <rect x='244' y='1.8' className='st2' width='203.7' height='32.8' />
-        <text
-          transform='matrix(1 0 0 1 244.156 21.3652)'
-          className='st3 st4 st5'
-        >
-          Energy resource
-        </text>
-        <rect x='1' y='356.7' className='st2' width='57.4' height='32.8' />
-        <text
-          transform='matrix(1 0 0 1 1.0142 376.2583)'
-          className='st3 st4 st5'
-        >
-          Air
-        </text>
-        <rect x='177.7' y='342.1' className='st2' width='129.1' height='53.9' />
-        <text transform='matrix(1 0 0 1 177.8018 361.6998)'>
-          <tspan x='0' y='0' className='st6 st4 st5'>
-            Direct air
-          </tspan>
-          <tspan x='14.1' y='27' className='st6 st4 st5'>
-            capture
-          </tspan>
-        </text>
-        <rect x='357.7' y='328.1' className='st0' width='184.7' height='75.7' />
+        <rect x='547.4' y='145.8' className='st0' width='200.8' height='82.1'/>
+        <rect x='546.3' y='299.9' className='st0' width='200.8' height='82.1'/>
+        <rect x='546.3' y='299.9' className='st0' width='200.8' height='82.1'/>
+        <polyline className='st1' points='163.7,241.7 163.7,83.9 619.2,83.9 '/>
+        <path className='st1' d='M617.8,445.9'/>
+        <polyline className='st1' points='619.2,444.9 163.7,444.9 163.7,285.9 '/>
+        <polyline className='st1' points='671,83.9 803,83.9 803,444.9 671,444.9 '/>
+        <rect x='535.5' y='505.5' className='st2' width='222.1' height='32.8'/>
+        <text transform='matrix(1 0 0 1 535.5052 526.4617)' className='st3 st4 st5'>Transportation</text>
+        <rect x='544.7' y='5.8' className='st2' width='203.7' height='32.8'/>
+        <text transform='matrix(1 0 0 1 625.692 26.7711)' className='st3 st4 st5'>Air</text>
         <g>
-          <rect x='366.5' y='356.6' className='st2' width='167' height='53.9' />
-          <text
-            transform='matrix(1 0 0 1 367.3798 376.1901)'
-            className='st6 st4 st5'
-          >
-            Compression
-          </text>
+          <rect x='-1.5' y='235.4' className='st2' width='125' height='88.8'/>
+          <text transform='matrix(1 0 0 1 16.6164 256.388)'><tspan x='0' y='0' className='st3 st4 st5'>Energy</tspan><tspan x='-16.6' y='36' className='st3 st4 st5'>resource</tspan></text>
         </g>
-        <rect x='249.9' y='137.6' className='st0' width='191.9' height='75.7' />
+        <rect x='572.5' y='159.9' className='st2' width='150.5' height='53.9'/>
+        <text transform='matrix(1 0 0 1 578.7355 180.8974)'><tspan x='0' y='0' className='st6 st4 st5'>Direct air</tspan><tspan x='15.1' y='27' className='st6 st4 st5'>capture</tspan></text>
         <g>
-          <rect
-            x='256.2'
-            y='150.4'
-            className='st2'
-            width='179.2'
-            height='53.9'
-          />
-          <text transform='matrix(1 0 0 1 264.4141 170.0396)'>
-            <tspan x='0' y='0' className='st6 st4 st5'>
-              Heat / power
-            </tspan>
-            <tspan x='10.6' y='27' className='st6 st4 st5'>
-              generation
-            </tspan>
-          </text>
+          <rect x='556.4' y='327.5' className='st2' width='180.8' height='53.9'/>
+          <text transform='matrix(1 0 0 1 558.2682 348.4603)' className='st6 st4 st5'>Compression</text>
         </g>
-        <rect x='970.3' y='356.7' className='st2' width='114.2' height='32.8' />
-        <text
-          transform='matrix(1 0 0 1 970.2505 376.2583)'
-          className='st3 st4 st5'
-        >
-          Storage
-        </text>
+        <rect x='223.4' y='222.6' className='st0' width='200.8' height='82.1'/>
+        <g>
+          <rect x='234.2' y='236.7' className='st2' width='179.2' height='53.9'/>
+          <text transform='matrix(1 0 0 1 236.5728 257.6865)'><tspan x='0' y='0' className='st6 st4 st5'>Heat / power</tspan><tspan x='11.3' y='27' className='st6 st4 st5'>generation</tspan></text>
+        </g>
+        <rect x='853.5' y='505.5' className='st2' width='114.2' height='32.8'/>
+        <text transform='matrix(1 0 0 1 856.1896 526.4616)' className='st3 st4 st5'>Storage</text>
         <g>
           <g>
-            <line className='st1' x1='345.8' y1='34.4' x2='345.8' y2='119' />
+            <line className='st1' x1='646.6' y1='41.4' x2='646.6' y2='126'/>
             <g>
-              <polygon
-                className='st3'
-                points='337.7,112.4 339.1,111 345.8,118.2 352.5,111 354,112.4 345.8,121.2      '
-              />
+              <polygon className='st3' points='638.4,119.4 639.9,118 646.6,125.2 653.3,118 654.7,119.4 646.6,128.2      '/>
             </g>
           </g>
         </g>
         <g>
           <g>
-            <polyline
-              className='st1'
-              points='449.8,303.8 449.8,264.2 242.9,264.2 242.9,303.8     '
-            />
+            <line className='st1' x1='646.6' y1='242.1' x2='646.6' y2='282.8'/>
             <g>
-              <polygon
-                className='st3'
-                points='458,297.2 456.5,295.8 449.8,303 443.1,295.8 441.6,297.2 449.8,306      '
-              />
-            </g>
-            <g>
-              <polygon
-                className='st3'
-                points='234.7,297.2 236.1,295.8 242.9,303 249.6,295.8 251,297.2 242.9,306      '
-              />
-            </g>
-          </g>
-        </g>
-        <line className='st1' x1='345.8' y1='263.9' x2='345.8' y2='227.7' />
-        <g>
-          <g>
-            <line className='st1' x1='57.8' y1='367.1' x2='131.4' y2='367.1' />
-            <g>
-              <polygon
-                className='st3'
-                points='124.8,375.3 123.4,373.8 130.6,367.1 123.4,360.4 124.8,358.9 133.6,367.1      '
-              />
+              <polygon className='st3' points='638.4,276.2 639.9,274.8 646.6,282 653.3,274.8 654.7,276.2 646.6,285      '/>
             </g>
           </g>
         </g>
         <g>
           <g>
-            <line className='st1' x1='561.4' y1='367.1' x2='635' y2='367.1' />
+            <polyline className='st1' points='523.6,185.9 484,185.9 484,340.8 523.6,340.8     '/>
             <g>
-              <polygon
-                className='st3'
-                points='628.3,375.3 627,373.8 634.2,367.1 627,360.4 628.3,358.9 637.1,367.1      '
-              />
+              <polygon className='st3' points='517,177.7 515.6,179.1 522.8,185.9 515.6,192.6 517,194 525.8,185.9      '/>
+            </g>
+            <g>
+              <polygon className='st3' points='517,349 515.6,347.5 522.8,340.8 515.6,334.1 517,332.6 525.8,340.8      '/>
+            </g>
+          </g>
+        </g>
+        <line className='st1' x1='483.7' y1='263.6' x2='442.5' y2='263.6'/>
+        <g>
+          <g>
+            <line className='st1' x1='126.4' y1='263.6' x2='200' y2='263.6'/>
+            <g>
+              <polygon className='st3' points='193.4,271.8 192,270.3 199.3,263.6 192,256.9 193.4,255.4 202.2,263.6      '/>
             </g>
           </g>
         </g>
         <g>
           <g>
-            <line className='st1' x1='871.3' y1='367.1' x2='944.9' y2='367.1' />
+            <line className='st1' x1='646.6' y1='400.9' x2='646.6' y2='485.5'/>
             <g>
-              <polygon
-                className='st3'
-                points='938.3,375.3 936.9,373.8 944.2,367.1 936.9,360.4 938.3,358.9 947.1,367.1      '
-              />
+              <polygon className='st3' points='638.4,478.9 639.9,477.5 646.6,484.7 653.3,477.5 654.7,478.9 646.6,487.7      '/>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g>
+            <line className='st1' x1='764.7' y1='518.5' x2='838.3' y2='518.5'/>
+            <g>
+              <polygon className='st3' points='831.7,526.6 830.3,525.2 837.5,518.5 830.3,511.7 831.7,510.3 840.5,518.5      '/>
             </g>
           </g>
         </g>
       </svg>
-      <Divider sx={{ mt: [3] }} />
+      </Box>
+      <Divider sx={{ mt: [3]}} />
       <Text
         sx={{
           color: 'secondary',
