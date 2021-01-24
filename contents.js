@@ -1,5 +1,25 @@
 const Contents = [
   {
+    title: 'DAC cost calculator',
+    tags: ['article', 'tool'],
+    summary:
+      'Our interactive tool helps explore the cost of direct air capture (DAC) coupled to stand alone energy sources. Try the tool, or read the article to learn more about the model.',
+    date: '01-25-2021',
+    version: '1.0.0',
+    color: 'purple',
+    icon: 'road-small.png',
+    links: [
+      {
+        label: 'Read article',
+        url: '/research/dac-calculator-explainer',
+      },
+      {
+        label: 'Use tool',
+        url: '/research/dac-calculator',
+      },
+    ],
+  },
+  {
     title: 'Insights from our first project reports',
     tags: ['article', 'dataset'],
     summary:
