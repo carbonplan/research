@@ -17,7 +17,8 @@ export const meta = {
     'Jeremy Freeman',
   ],
   date: '07-24-2020',
-  background: 'article-003/pipes.png',
+  card: 'carbon-removal-mechanisms',
+  background: 'article-003/pipes',
   summary:
     'How different carbon removal projects interact with the global carbon cycle.',
 }

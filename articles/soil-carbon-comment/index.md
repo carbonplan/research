@@ -1,8 +1,8 @@
+import { TaggedLink } from '@carbonplan/components'
 import Article from '../../components/article'
 import Reference from '../../components/reference'
 import PullQuote from '../../components/pull-quote'
 import SectionBreak from '../../components/section-break'
-import TaggedLink from '../../components/tagged-link'
 import Table from './components/table'
 import Heading from './components/heading'
 
@@ -14,7 +14,8 @@ export const meta = {
   title: 'Getting soil carbon right',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '06-01-2020',
-  background: 'article-001/soil.png',
+  card: 'soil-carbon-comment',
+  background: 'article-001/soil',
   summary:
     'Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols.',
 }

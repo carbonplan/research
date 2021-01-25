@@ -2,12 +2,12 @@ import { Box, Text, Grid, Container } from 'theme-ui'
 import { Layout } from '@carbonplan/components'
 import BackArrow from './back-arrow'
 
-const prefix = 'https://carbonplan-assets.s3.amazonaws.com/images'
+const prefix = 'https://images.carbonplan.org'
 
 const Article = ({ children, meta }) => {
   return (
     <Layout
-      card={meta.id}
+      card={`${prefix}/social/${meta.card}.png`}
       description={meta.summary}
       title={meta.title.toLowerCase() + ' / research / carbonplan'}
       links={'local'}
@@ -22,7 +22,7 @@ const Article = ({ children, meta }) => {
           backgroundImage: [
             'none',
             'none',
-            meta.background ? `url(${prefix}/${meta.background})` : 'none',
+            meta.background ? `url(${prefix}/${meta.background}.png)` : 'none',
           ],
           backgroundSize: 'cover',
           backgroundPosition: '50% 70%',

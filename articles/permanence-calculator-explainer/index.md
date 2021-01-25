@@ -1,10 +1,11 @@
+import { Link } from 'theme-ui'
+import { default as NextLink } from 'next/link'
 import Article from '../../components/article'
 import Reference from '../../components/reference'
 import PullQuote from '../../components/pull-quote'
 import SectionBreak from '../../components/section-break'
 import Scenario from './components/scenario'
 import Parameters from './components/parameters'
-import { default as NextLink } from 'next/link'
 
 export const meta = {
   id: 'permanence-calculator-explainer',
@@ -14,7 +15,8 @@ export const meta = {
   title: 'The cost of temporary carbon removal',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '12-09-2020',
-  background: 'article-005/leaf.png',
+  card: 'permanence-calculator-explainer',
+  background: 'article-005/leaf',
   summary:
     'How to compare the long-term cost of temporary and permanent carbon removal.',
 }

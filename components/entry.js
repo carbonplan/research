@@ -1,8 +1,7 @@
 import { memo } from 'react'
 import { Box, Grid, Text, Link, Heading } from 'theme-ui'
 import { default as NextLink } from 'next/link'
-import { Tag } from '@carbonplan/components'
-import TaggedLink from './tagged-link'
+import { Tag, TaggedLink } from '@carbonplan/components'
 import Icon from './icon'
 
 const Entry = ({ info, final }) => {

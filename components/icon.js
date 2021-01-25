@@ -1,6 +1,6 @@
 import { Box, Text } from 'theme-ui'
 
-const prefix = 'https://carbonplan-assets.s3.amazonaws.com/images'
+const prefix = 'https://images.carbonplan.org'
 
 const Icon = ({ color, icon, link }) => {
   return (
@@ -40,7 +40,7 @@ const Icon = ({ color, icon, link }) => {
           backgroundColor: color,
           transition: '0.25s',
           opacity: 1,
-          backgroundImage: [`url('${prefix}/${icon}')`],
+          backgroundImage: [`url('${prefix}/${icon}.png')`],
           backgroundSize: 'contain',
         }}
       ></Box>

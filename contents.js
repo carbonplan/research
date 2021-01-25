@@ -7,7 +7,7 @@ const Contents = [
     date: '05-18-2020',
     version: '1.0.0',
     color: 'yellow',
-    icon: 'road-small.png',
+    icon: 'road-small',
     links: [
       {
         label: 'Read article',
@@ -27,7 +27,7 @@ const Contents = [
     date: '06-01-2020',
     version: '1.1.0',
     color: 'orange',
-    icon: 'article-001/soil-small.png',
+    icon: 'article-001/soil-small',
     links: [
       {
         label: 'Read article',
@@ -58,7 +58,7 @@ const Contents = [
     date: '06-23-2020',
     version: '1.0.0',
     color: 'green',
-    icon: 'article-002/tree-small.png',
+    icon: 'article-002/tree-small',
     links: [
       {
         label: 'Read paper',
@@ -79,7 +79,7 @@ const Contents = [
     date: '07-24-2020',
     version: '1.0.0',
     color: 'grey',
-    icon: 'article-003/pipes-small.png',
+    icon: 'article-003/pipes-small',
     links: [
       {
         label: 'Read article',
@@ -95,7 +95,7 @@ const Contents = [
     date: '09-17-2020',
     version: '1.0.0',
     color: 'red',
-    icon: 'article-004/forest-small.png',
+    icon: 'article-004/forest-small',
     links: [
       {
         label: 'Read article',
@@ -116,7 +116,7 @@ const Contents = [
     date: '12-09-2020',
     version: '1.0.0',
     color: 'pink',
-    icon: 'article-005/leaf-small.png',
+    icon: 'article-005/leaf-small',
     links: [
       {
         label: 'Read article',
@@ -141,7 +141,7 @@ const Contents = [
     date: '01-05-2021',
     version: '1.0.0',
     color: 'yellow',
-    icon: 'shared/typewriter-yellow.png',
+    icon: 'shared/typewriter-yellow',
     links: [
       {
         label: 'Read letter',
@@ -161,7 +161,7 @@ const Contents = [
       'A new resource on the fundamentals of carbon dioxide removal and its role in addressing the climate crisis. Our team helped write, edit, and produce this free, online digital book.',
     date: '01-14-2021',
     version: '1.0.0',
-    icon: 'shared/cdr-primer.png',
+    icon: 'shared/cdr-primer',
     color: 'teal',
     links: [
       {

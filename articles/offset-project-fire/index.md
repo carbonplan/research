@@ -20,7 +20,8 @@ export const meta = {
     'Jeremy Freeman',
   ],
   date: '09-17-2020',
-  background: 'article-004/forest.png',
+  card: 'offset-project-fire',
+  background: 'article-004/forest',
   summary:
     'A major fire in Oregon illustrates the challenges of managing forest carbon permanence.',
   quotes: [],

@@ -8,7 +8,7 @@ const Index = () => {
       description={
         'Articles, tools, and commentary on carbon removal and climate solutions.'
       }
-      card={'research'}
+      card={'https://images.carbonplan.org/social/research.png'}
       footer={false}
       links={'local'}
       metadata={'POSTS: 8'}
