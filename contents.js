@@ -7,7 +7,7 @@ const Contents = [
     date: '01-25-2021',
     version: '1.0.0',
     color: 'purple',
-    icon: 'article-006/factory-small.png',
+    icon: 'article-006/factory-small',
     links: [
       {
         label: 'Read article',
