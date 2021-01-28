@@ -33,8 +33,8 @@ const Energy = ({ params }) => {
           fontSize: [3],
         }}
       >
-        <Text as='span' sx={{display: ['none', 'none', 'initial']}}>
-        The source of energy for the DAC facility is
+        <Text as='span' sx={{ display: ['none', 'none', 'initial'] }}>
+          The source of energy for the DAC facility is
         </Text>
         <Box
           sx={{

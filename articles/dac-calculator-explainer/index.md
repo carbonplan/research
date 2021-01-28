@@ -2,7 +2,7 @@ import Article from '../../components/article'
 import Reference from '../../components/reference'
 import SectionBreak from '../../components/section-break'
 import BoundaryCondition from './components/boundary-condition'
-import ParameterTable from './components/parameter-table'
+import ParameterScenario from './components/parameter-scenario'
 
 export const meta = {
   id: 'dac-calculator-explainer',
@@ -18,26 +18,37 @@ export const meta = {
   ],
   title: 'The cost of direct air capture',
   date: '01-23-2021',
-  card: 'dac-calculator-explainer',
   background: 'article-006/factory',
   summary: 'What factors drive the cost of direct air capture.',
+}
+
+export const sidenotes = {
+  1: {
+    offset: 0,
+    number: 1,
+    authors: 'N McQueen et al.',
+    year: 2021,
+    title: 'Natural gas vs. electricity for solvent-based direct air capture',
+    journal: 'Frontiers in Climate',
+    url: 'https://doi.org/10.3389/fclim.2020.618644',
+  },
 }
 
 # The cost of direct air capture
 
 Direct air capture (DAC) is a technology that captures carbon dioxide (CO₂) from the air using chemicals. There are several types. Sorbent and solvent DAC are in use today, and others are emerging, such as electro-swing, humidity-swing and mineralization-based.
 
-In all cases, chemicals selectively bind CO₂ from the air, typically at ambient conditions (room temperature and pressure). Once the chemical has bound an adequate amount of CO₂, the system releases the CO₂ at elevated conditions, typically elevated temperature or decreased pressure. Once the CO₂ is released, it can be captured, compressed, transported, and stored.
+In all cases, chemicals selectively bind CO₂ from the air, typically at ambient conditions (room temperature and pressure). Once the chemical has bound an adequate amount of CO₂, the system releases the CO₂ at elevated conditions, typically elevated temperature and/or decreased pressure. Once the CO₂ is released, it can be captured, compressed, transported, and stored.
 
 This all requires infrastructure, consumables, and energy — and has a significant price tag.
 
-There are two key costs associated with DAC: capital costs and energy costs. Capital costs are dominated by the equipment required to both capture CO₂ from air and regenerate the capture material. This infrastructure can include the specialty chemicals used to capture CO₂, the contactor used to facilitate contact between the air stream and the CO₂-capturing chemicals, and the equipment required to release CO₂ from the chemicals (such as steam generation, for the solid sorbent DAC approach, or pellet reactors, slakers, and calciners for the solvent DAC approach).
+There are two key costs associated with DAC: capital costs and energy costs. Capital costs are dominated by the equipment required to both capture CO₂ from air and regenerate the capture material. This infrastructure can include the specialty chemicals used to capture CO₂, the contactor used to facilitate contact between the air stream and the CO₂-capturing chemicals, and the equipment required to release CO₂ from the chemicals (such as steam generation, for solid sorbent DAC approaches, or pellet reactors, slakers, and calciners for the solvent DAC approach).
 
-Energy costs are also a major consideration. Existing systems require between 300 MW and 500 MW to capture 1 million tons of CO₂ per year — approximately equivalent to the size of an individual power plant today. Of this energy requirement, roughly 80% is thermal energy and 20% electricity, where the thermal energy is associated with the heating during the regeneration step.
+Energy costs are also a major consideration. Existing systems require between roughly 300 MW and 500 MW to capture 1 million tons of CO₂ per year — approximately equivalent to the size of an individual power plant today. Of this energy requirement, roughly 80% is thermal energy and 20% electricity, where the thermal energy is associated with the heating during the regeneration step.
 
 Analyzing the cost of DAC also requires considering any associated greenhouse gas emissions, which effectively reduce the total amount of net removal, and thus increase the $/tCO₂ cost.
 
-In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system. They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO₂ released during combustion, and six all-electric non-fossil systems.
+In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system.<Reference color={meta.color} data={sidenotes[1]}/> They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO₂ released during combustion, and six all-electric non-fossil systems.
 
 To help build intuition for how different factors influence the cost of DAC, we built an [interactive calculator](https://carbonplan.org/research/dac-calculator) based directly on the model from the paper.
 
@@ -53,20 +64,89 @@ Our calculator estimates the cost of a given DAC technology explicitly linked to
 
 Each of these cost components in turn depend on many different parameters. Here we highlight the key parameters included in the calculator, with a brief explanation for each.
 
-<ParameterTable />
-
 The calculator presents each of these parameters as an interactive slider. Above each slider, a chart that shows how the total cost will change as you vary that parameter, conditional on the current setting of all other parameters. So, as you change each parameter, not only can you see how the total cost changes (in the pie chart), but you can also see how it affects the sensitivity of the other parameters. Finally, a dropdown at the top lets you choose between three different sources of energy: wind, solar, and a combined-cycle natural gas turbine with carbon capture.
 
 ## Example results
 
 ### Natural gas versus electricity
 
-A key result from the McQueen et al. paper concerns the relative cost of particular energy configurations, which you can recreate in the calculator.
-When systems use leak-tight natural gas to directly meet the thermal energy requirements of the system and to produce electricity via a small natural gas combined cycle, this provides the lowest-cost energy system ($230 - $390/tCO₂). However, current natural gas production in the US involves appreciable natural gas leakage, which dramatically increases the net cost of CO₂ capture. The authors develop representative capture costs of $250 – $440/tCO₂ for geothermal energy, $370 – $620/tCO₂ for nuclear energy (two variants - a light water reactor and small modular nuclear), $360 – $570/tCO₂ for wind, $430 – $690/tCO₂ for solar photovoltaics (two variants assuming different daily solar availabilities), and $300 - $490/tCO₂ for a hybrid system with a natural-gas-powered electric calciner.
+A key result from the McQueen et al. paper concerns the relative cost of particular energy configurations, which you can recreate in the calculator. Specifically, the calculator explores three energy scenarios from this paper.
 
-### The relationship between ...
+The first scenario uses natural gas combined with carbon capture and storage to supply electricity for the DAC plant, while natural gas combustion meets the thermal energy requirements. Here, the natural gas used in the process is assumed to be ‘leak-tight,’ or, in other words, none of the natural gas produced for use in the process is lost to the atmosphere during processing or distribution. This is a key assumption since methane, a primary component of natural gas, has a higher global warming potential (GWP) than CO2. Including methane emissions during production and supply can result in significant greenhouse gas emissions, which impacts whether a given DAC process actually results in net negative emissions. Current natural gas production in the US involves an appreciable amount of natural gas leakage, which dramatically increases the net cost of CO₂ capture. Additionally, these costs do not incorporate negative externalities that result from continued use of and dependence on fossil energy.
 
-WACC and capacity factor?
+In the second scenario, wind turbines are used to continuously power the DAC plant which requires over-producing electricity during windy times and store the excess electricity in lithium-ion batteries. The energy storage allows for the DAC plant to continuously use electricity produced from wind, even when the wind turbines are unable to produce electricity (i.e., when the air is still). In this scenario, electric resistance heating is used to meet the thermal demands of the system as opposed to the combustion of natural gas in the first scenario.
+
+Finally, the third scenario uses solar photovoltaics (PV) to continuously power the DAC plant. Similar to using wind turbines, solar PV requires the overproduction of electricity when the sun is shining to make up for times when there is not enough sunshine to produce electricity (i.e., at night). This requires energy storage, which is included in the form of lithium-ion batteries. Additionally, the solar PV alternative also uses electric resistance heating to meet the thermal energy demands of the DAC plant.
+
+In the McQueen et al. paper, the authors use a series of different assumptions to develop the cost of DAC coupled to these same three energy scenarios. When systems use leak-tight natural gas as in the first energy scenario, this provides a cost estimate of $230 - $390/tCO₂, where the range is the result of varying capital costs and energy demands that are outlined within the paper. The authors develop representative capture costs of $360 – $570/tCO₂ for wind and $430 – $690/tCO₂ for solar photovoltaics (two variants assuming different daily solar availabilities).
+
+### The relationship between WACC, capacity factor, and DAC costs
+
+To illustrate the relationship between cost parameters and the overall cost of DAC, we have provided two examples that you can follow along with in the interactive calculator. Unless otherwise stated, these examples use the default values provided in the calculator.
+
+In this first example, we explore the relationship between the weighted average cost of capital (WACC) and the cost of DAC. WACC is derived from combined equity and debt capital. The WACC is a weighted percent between differing interest rates from multiple lenders and can be used to calculate the capital recovery factor, which is used to annualize the capital cost of the system. In other words, the WACC is a way to discount money that exists today for its future value. The higher the WACC, the higher the annualized capital cost resulting in greater process costs.
+
+For this example, start by moving the toggle labelled WACC from 8.5% to 10%, which is a reasonable value for a first-of-a-kind DAC plant. This causes the cost of DAC to increase from $218/tCO2 to $238/tCO2.
+
+<ParameterScenario
+  capitalExpense={936}
+  WACC={0.1}
+  facilityLifetime={20}
+  scale={1000000}
+  totalCost={238}
+  variableOM={6}
+  fixedOM={31}
+  naturalGas={36}
+  capitalRecovery={165}
+/>
+
+From 10%, we can reduce the WACC to 4%, which is similar to the WACC that you might see for a public-owned utility company. Reducing the WACC to 4% drops the cost of DAC by nearly $80/tCO2. That is a 30% reduction in the overall cost of DAC, just by modifying the WACC. Notice that the primary reason for this change results from the changing capital recovery on a per ton of CO2 captured basis.
+
+<ParameterScenario
+  capitalExpense={936}
+  WACC={0.04}
+  facilityLifetime={20}
+  scale={1000000}
+  totalCost={165}
+  variableOM={6}
+  fixedOM={31}
+  naturalGas={36}
+  capitalRecovery={165}
+/>
+
+Another interesting parameter is the capacity factor for the DAC plant. For this model, the capacity factor is the ratio of the actual operating capacity of a given industrial facility divided by the maximum operating capacity of the facility over a defined period. This includes planned down time, such as routine maintenance. The lower the capacity factor, the larger the facility needs to be to capture the same amount of CO2, or to produce an equivalent amount of electricity, as a facility with a higher capacity factor. This results in higher capital costs and higher overall process costs.
+
+For this example, we look specifically at the capacity factor of the DAC facility. At 90%, the cost of DAC from the calculator is $218. Reminder: reset the WACC to 8.5%, which is the calculator default.
+
+<ParameterScenario
+  capitalExpense={936}
+  WACC={0.085}
+  facilityLifetime={20}
+  scale={1000000}
+  totalCost={218}
+  variableOM={6}
+  fixedOM={31}
+  naturalGas={36}
+  capitalRecovery={145}
+/>
+
+If we decrease this capacity factor to 75%, the DAC facility must be built to capture roughly 1.3 million tons to ensure that over the course of a year it captures 1 million tons, accounting for the 30% of the time that the plant is not operational.
+
+<ParameterScenario
+  capitalExpense={936}
+  WACC={0.085}
+  facilityLifetime={20}
+  scale={1000000}
+  totalCost={223}
+  variableOM={6}
+  fixedOM={31}
+  naturalGas={36}
+  capitalRecovery={150}
+/>
+
+While the calculator allows users to change multiple parameters to see how the costs of DAC change, it is important to note that not all of these combinations may be feasible. For example, the calculator allows users to set the operating and maintenance costs to $0/tCO2. However, this would not be considered an achievable value for a DAC system.
+
+We encourage you to explore how the cost of DAC changes with different economic assumptions outside of these examples.
 
 ## Looking ahead
 

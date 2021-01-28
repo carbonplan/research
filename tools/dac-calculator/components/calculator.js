@@ -101,10 +101,21 @@ const Calculator = () => {
           pointerEvents: 'none',
         }}
       >
-        <Grid sx={{ mb: [4] }} gap={[0, 0, '100px']} columns={[1, 1, '700px minmax(300px,400px)']}>
-          <Box sx={{mt: [2]}}>
+        <Grid
+          sx={{ mb: [4] }}
+          gap={[0, 0, '100px']}
+          columns={[1, 1, '700px minmax(300px,400px)']}
+        >
+          <Box sx={{ mt: [2] }}>
             <Divider sx={{ my: [0] }} />
-            <Box sx={{py: [1], pb: ['20px', '20px', '25px'], backgroundColor: 'background', pointerEvents: 'all'}}>
+            <Box
+              sx={{
+                py: [1],
+                pb: ['20px', '20px', '25px'],
+                backgroundColor: 'background',
+                pointerEvents: 'all',
+              }}
+            >
               <Energy key='energy' params={{ state: state['energy'] }}></Energy>
               <Text
                 sx={{
@@ -113,7 +124,7 @@ const Calculator = () => {
                   fontSize: [6],
                   display: ['initial', 'initial', 'none'],
                   mt: '-68px',
-                  float: 'right'
+                  float: 'right',
                 }}
               >
                 ${cost}
@@ -121,7 +132,7 @@ const Calculator = () => {
             </Box>
             <Divider sx={{ my: [0] }} />
           </Box>
-          <Box sx={{display: ['none', 'none', 'inherit']}}>
+          <Box sx={{ display: ['none', 'none', 'inherit'] }}>
             <Divider />
             <Box>
               <Box sx={{ mb: [3] }}>
@@ -155,8 +166,8 @@ const Calculator = () => {
                   </Text>
                 </Box>
               </Box>
-              <Divider sx={{mt: ['20px']}}/>
-              <Box sx={{mt: [4], display: ['none', 'none', 'inherit'],}}>
+              <Divider sx={{ mt: ['20px'] }} />
+              <Box sx={{ mt: [4], display: ['none', 'none', 'inherit'] }}>
                 <Donut params={{ results: results }}></Donut>
                 <Legend results={results} />
               </Box>
@@ -165,53 +176,62 @@ const Calculator = () => {
         </Grid>
       </Box>
       <Box>
-        <Grid sx={{ mb: [4] }} gap={[0, 0, '100px']} columns={[1, 1, '700px 1fr']}>
+        <Grid
+          sx={{ mb: [4] }}
+          gap={[0, 0, '100px']}
+          columns={[1, 1, '700px 1fr']}
+        >
           <Box sx={{ position: 'relative' }}>
             <Box
-                sx={{
-                  position: 'relative',
-                  top: ['0px', '0px', '-390px'],
-                  mb: ['0px', '0px', '-390px'],
-                  mt: [0, 0, (results['Natural Gas Cost [$/tCO2]'] > 0) ? 0 : '54px']
-                }}
-              >
-            {dacParameters.map((g) => (
-              <ParameterGroup
-                key={g.id}
-                group={g}
-                data={chartData}
-                state={state}
-              ></ParameterGroup>
-            ))}
-            <Text
               sx={{
-                fontSize: [4],
-                mt: [4],
-                mb: [3],
-                fontFamily: 'heading',
-                letterSpacing: 'heading',
+                position: 'relative',
+                top: ['0px', '0px', '-390px'],
+                mb: ['0px', '0px', '-390px'],
+                mt: [
+                  0,
+                  0,
+                  results['Natural Gas Cost [$/tCO2]'] > 0 ? 0 : '54px',
+                ],
               }}
             >
-              {/* {group.displayName} */}
-              Energy Technology
-            </Text>
-            <Text sx={{ fontSize: [2], mb: [4] }}>
-              Click to expand and adjust parameters for each energy technology.
-            </Text>
-            <Divider sx={{ my: [0] }} />
-            {techKeys.map((key) => (
-              <TechGroup
-                key={key}
-                name={key}
-                group={techData[key]}
-                data={chartData['Technology'][key]}
-                state={state['Technology'][key]}
-              ></TechGroup>
-            ))}
-            <Box>
-              <Methods />
+              {dacParameters.map((g) => (
+                <ParameterGroup
+                  key={g.id}
+                  group={g}
+                  data={chartData}
+                  state={state}
+                ></ParameterGroup>
+              ))}
+              <Text
+                sx={{
+                  fontSize: [4],
+                  mt: [4],
+                  mb: [3],
+                  fontFamily: 'heading',
+                  letterSpacing: 'heading',
+                }}
+              >
+                {/* {group.displayName} */}
+                Energy Technology
+              </Text>
+              <Text sx={{ fontSize: [2], mb: [4] }}>
+                Click to expand and adjust parameters for each energy
+                technology.
+              </Text>
+              <Divider sx={{ my: [0] }} />
+              {techKeys.map((key) => (
+                <TechGroup
+                  key={key}
+                  name={key}
+                  group={techData[key]}
+                  data={chartData['Technology'][key]}
+                  state={state['Technology'][key]}
+                ></TechGroup>
+              ))}
+              <Box>
+                <Methods />
+              </Box>
             </Box>
-          </Box>
           </Box>
           <Box />
         </Grid>

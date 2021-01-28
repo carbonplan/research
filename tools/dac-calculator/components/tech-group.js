@@ -24,7 +24,12 @@ const TechGroup = ({ name, group, data, state }) => {
           pb: [2, 2, 3],
         }}
       >
-        <Expander id='expander' sx={{mr: [2] }}toggle={toggle} expanded={expanded}></Expander>
+        <Expander
+          id='expander'
+          sx={{ mr: [2] }}
+          toggle={toggle}
+          expanded={expanded}
+        ></Expander>
         <Text
           sx={{
             fontSize: [4],
