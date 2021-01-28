@@ -22,16 +22,46 @@ const BoundaryCondition = () => {
             .st7{fill:none;stroke:${purple};stroke-width:2;stroke-miterlimit:10;stroke-dasharray:4,4;}
             `}
           </style>
-          <rect x='571.4' y='145.8' className='st0' width='200.8' height='82.1' />
-          <rect x='571.4' y='299.9' className='st0' width='200.8' height='82.1' />
-          <rect x='571.4' y='299.9' className='st0' width='200.8' height='82.1' />
-          <polyline className='st1' points='187.7,242.7 187.7,83.9 368.3,83.9 ' />
-          <polyline className='st1' points='645.2,444.9 187.7,444.9 187.7,286.9 ' />
+          <rect
+            x='571.4'
+            y='145.8'
+            className='st0'
+            width='200.8'
+            height='82.1'
+          />
+          <rect
+            x='571.4'
+            y='299.9'
+            className='st0'
+            width='200.8'
+            height='82.1'
+          />
+          <rect
+            x='571.4'
+            y='299.9'
+            className='st0'
+            width='200.8'
+            height='82.1'
+          />
+          <polyline
+            className='st1'
+            points='187.7,242.7 187.7,83.9 368.3,83.9 '
+          />
+          <polyline
+            className='st1'
+            points='645.2,444.9 187.7,444.9 187.7,286.9 '
+          />
           <polyline
             className='st1'
             points='697,83.9 827,83.9 827,444.9 697,444.9 '
           />
-          <rect x='560.7' y='506.5' className='st2' width='239.1' height='32.8' />
+          <rect
+            x='560.7'
+            y='506.5'
+            className='st2'
+            width='239.1'
+            height='32.8'
+          />
           <text
             transform='matrix(1 0 0 1 560.7131 524.6619)'
             className='st3 st4 st5'
@@ -52,7 +82,13 @@ const BoundaryCondition = () => {
           >
             AIR
           </text>
-          <rect x='596.5' y='161.9' className='st2' width='150.5' height='53.9' />
+          <rect
+            x='596.5'
+            y='161.9'
+            className='st2'
+            width='150.5'
+            height='53.9'
+          />
           <text transform='matrix(1 0 0 1 604.9211 180.0976)'>
             <tspan x='0' y='0' className='st6 st4 st5'>
               DIRECT AIR{' '}
@@ -62,7 +98,13 @@ const BoundaryCondition = () => {
             </tspan>
           </text>
           <g>
-            <rect x='637.2' y='251' className='st2' width='150.5' height='53.9' />
+            <rect
+              x='637.2'
+              y='251'
+              className='st2'
+              width='150.5'
+              height='53.9'
+            />
             <text
               transform='matrix(1 0 0 1 688.5464 269.2202)'
               className='st3 st4 st5'
@@ -71,7 +113,13 @@ const BoundaryCondition = () => {
             </text>
           </g>
           <g>
-            <rect x='570.5' y='331.5' className='st2' width='202.6' height='53.9' />
+            <rect
+              x='570.5'
+              y='331.5'
+              className='st2'
+              width='202.6'
+              height='53.9'
+            />
             <text
               transform='matrix(1 0 0 1 580.1046 349.6595)'
               className='st6 st4 st5'
@@ -79,9 +127,21 @@ const BoundaryCondition = () => {
               COMPRESSION
             </text>
           </g>
-          <rect x='247.4' y='222.6' className='st0' width='200.8' height='82.1' />
+          <rect
+            x='247.4'
+            y='222.6'
+            className='st0'
+            width='200.8'
+            height='82.1'
+          />
           <g>
-            <rect x='258.2' y='238.7' className='st2' width='179.2' height='53.9' />
+            <rect
+              x='258.2'
+              y='238.7'
+              className='st2'
+              width='179.2'
+              height='53.9'
+            />
             <text transform='matrix(1 0 0 1 259.5679 256.8867)'>
               <tspan x='0' y='0' className='st6 st4 st5'>
                 HEAT / POWER{' '}
@@ -91,7 +151,13 @@ const BoundaryCondition = () => {
               </tspan>
             </text>
           </g>
-          <rect x='583.1' y='600.4' className='st2' width='177.3' height='32.8' />
+          <rect
+            x='583.1'
+            y='600.4'
+            className='st2'
+            width='177.3'
+            height='32.8'
+          />
           <text
             transform='matrix(1 0 0 1 613.3589 618.6375)'
             className='st3 st4 st5'
@@ -111,7 +177,13 @@ const BoundaryCondition = () => {
           </g>
           <g>
             <g>
-              <line className='st1' x1='671.8' y1='242.1' x2='671.8' y2='282.8' />
+              <line
+                className='st1'
+                x1='671.8'
+                y1='242.1'
+                x2='671.8'
+                y2='282.8'
+              />
               <g>
                 <polygon
                   className='st3'
@@ -122,7 +194,13 @@ const BoundaryCondition = () => {
           </g>
           <g>
             <g>
-              <line className='st1' x1='671.8' y1='541.2' x2='671.8' y2='581.9' />
+              <line
+                className='st1'
+                x1='671.8'
+                y1='541.2'
+                x2='671.8'
+                y2='581.9'
+              />
               <g>
                 <polygon
                   className='st3'
@@ -165,7 +243,13 @@ const BoundaryCondition = () => {
           </g>
           <g>
             <g>
-              <line className='st1' x1='671.8' y1='400.9' x2='671.8' y2='485.5' />
+              <line
+                className='st1'
+                x1='671.8'
+                y1='400.9'
+                x2='671.8'
+                y2='485.5'
+              />
               <g>
                 <polygon
                   className='st3'
@@ -175,7 +259,13 @@ const BoundaryCondition = () => {
             </g>
           </g>
           <g>
-            <rect x='-4.5' y='238.7' className='st2' width='138.7' height='88.8' />
+            <rect
+              x='-4.5'
+              y='238.7'
+              className='st2'
+              width='138.7'
+              height='88.8'
+            />
             <text transform='matrix(1 0 0 1 36.3098 256.8868)'>
               <tspan x='0' y='0' className='st3 st4 st5'>
                 ENERGY
