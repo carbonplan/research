@@ -63,7 +63,7 @@ class DacComponent {
 
   log(...args) {
     if (this.params['log']) {
-      //console.log(args)
+      console.log(args)
     }
   }
 
@@ -242,7 +242,6 @@ export class EnergySection extends DacComponent {
 
     // Total Capital Cost [M$]
     v['Total Capital Cost [M$]'] = v['Capital Cost [M$]']
-    this.log(this.battery)
     if (this.battery) {
       v['Total Capital Cost [M$]'] += v['Battery Capital Cost [M$]']
     }
@@ -303,25 +302,14 @@ export class EnergySection extends DacComponent {
 
     // Emitted tCO2eq / tCO2
     if (v['Natural Gas Use [mmBTU/tCO2eq]'] > 0) {
-      v['Emitted [tCO2eq/tCO2]'] =
+      v['Emitted [tCO2/tCO2]'] =
         v['Natural Gas Use [mmBTU/tCO2eq]'] *
         this.tech['Total CO2 eq [lb/mmbtu]'] *
         LB_TO_METRIC_TON *
         (1 - this.tech['Capture Efficiency'])
     } else {
-      v['Emitted [tCO2eq/tCO2]'] = 0
+      v['Emitted [tCO2/tCO2]'] = 0
     }
-
-    // Total Cost [$/tCO2eq gross]
-    v['Total Cost [$/tCO2eq gross]'] =
-      v['Capital Recovery [$/tCO2eq]'] +
-      v['Total Fixed O&M [$/tCO2eq]'] +
-      v['Total Variable O&M [$/tCO2eq]']
-
-    // Total Cost [$/tCO2eq net]
-    this.log(v['Total Cost [$/tCO2eq gross]'], v['Emitted [tCO2eq/tCO2]'])
-    v['Total Cost [$/tCO2eq net]'] =
-      v['Total Cost [$/tCO2eq gross]'] / (1 - v['Emitted [tCO2eq/tCO2]']) // TODO: K62 is the tCO2eq / tCO2 field from the thermal section
 
     return v
   }
@@ -353,7 +341,7 @@ export class NgThermalSection extends EnergySection {
       v['Natural Gas Use [mmBTU/tCO2eq]']
 
     // Assume 100 % capture from oxy fired kiln
-    v['Emitted [tCO2eq/tCO2]'] = 0.0
+    v['Emitted [tCO2/tCO2]'] = 0.0
 
     return v
   }
@@ -388,17 +376,6 @@ export class DacSection extends DacComponent {
 
     // Variable O&M [$/tCO2eq]
     v['Variable O&M [$/tCO2eq]'] = this.params['Variable O&M Cost [$/tCO2]']
-
-    // Total Cost [$/tCO2]
-    v['Total Cost [$/tCO2]'] =
-      v['Capital Recovery [$/tCO2eq]'] +
-      v['Fixed O&M [$/tCO2eq]'] +
-      v['Variable O&M [$/tCO2eq]']
-
-    // Total Cost [$/tCO2 net removed]
-    v['Total Cost [$/tCO2 net removed]'] =
-      v['Total Cost [$/tCO2]'] /
-      (1 - (v['Emitted [tCO2eq/tCO2]'] + v['Emitted [tCO2eq/tCO2]']))
 
     return v
   }
@@ -519,8 +496,6 @@ export class DacModel extends DacComponent {
     v['Variable O&M [$/tCO2eq]'] =
       v['Power Variable O&M [$/tCO2eq]'] + v['Battery Variable O&M [$/tCO2eq]']
 
-    this.log('combined', v)
-
     return v
   }
 
@@ -549,7 +524,7 @@ export class DacModel extends DacComponent {
     v['Variable O&M [$/tCO2eq]'] = cv['Variable O&M [$/tCO2eq]']
 
     // NG Cost [$/tCO2eq]
-    v['Natural Gas Cost [$/tCO2eq]'] = 0 //(ev["Natural Gas Cost [$/tCO2eq]"] + tv["Natural Gas Cost [$/tCO2eq]"])
+    v['Natural Gas Cost [$/tCO2eq]'] = 0
 
     // Total Cost [$/tCO2]
     v['Total Cost [$/tCO2]'] =
@@ -558,16 +533,6 @@ export class DacModel extends DacComponent {
       v['Variable O&M [$/tCO2eq]'] +
       v['Natural Gas Cost [$/tCO2eq]']
 
-    // Net Capture[tCO2 / yr]
-    v['Net Capture [tCO2/yr]'] =
-      this.params['Scale [tCO2/year]'] -
-      this.params['Scale [tCO2/year]'] *
-        (ev['Emitted [tCO2eq/tCO2]'] + tv['Emitted [tCO2eq/tCO2]'])
-
-    // Total Cost [$/tCO2 net removed]
-    v['Total Cost [$/tCO2 net removed]'] =
-      v['Total Cost [$/tCO2]'] /
-      (1 - (ev['Emitted [tCO2eq/tCO2]'] + tv['Emitted [tCO2eq/tCO2]']))
     return v
   }
 
@@ -587,18 +552,8 @@ export class DacModel extends DacComponent {
     uv['Natural Gas Cost [$/tCO2eq]'] =
       ev['Natural Gas Cost [$/tCO2eq]'] + tv['Natural Gas Cost [$/tCO2eq]']
 
-    uv['Total Cost [$/tCO2]'] =
-      uv['Capital Recovery[$/tCO2eq]'] +
-      uv['Fixed O&M [$/tCO2eq]'] +
-      uv['Variable O&M [$/tCO2eq]'] +
-      uv['Natural Gas Cost [$/tCO2eq]']
-
-    uv['CO2 Emitted[tCO2/tCO2]'] =
-      ev['Emitted [tCO2eq/tCO2]'] + tv['Emitted [tCO2eq/tCO2]']
-
-    uv['Total Cost [$/tCO2 Net Removed]'] =
-      uv['Total Cost [$/tCO2]'] / (1 - uv['CO2 Emitted[tCO2/tCO2]'])
-    // us['Total CO2 Captured[tCO2 / yr]'] =  ev['XXX'] + tv['XXX']
+    uv['Emitted [tCO2/tCO2]'] =
+      ev['Emitted [tCO2/tCO2]'] + tv['Emitted [tCO2/tCO2]']
 
     return uv
   }
@@ -608,8 +563,6 @@ export class DacModel extends DacComponent {
     const v = {}
     const ev = this.electric.compute()
     const tv = this.thermal.compute()
-    this.log('ev', ev)
-    this.log('tv', tv)
 
     let cv
     let tev
@@ -651,6 +604,9 @@ export class DacModel extends DacComponent {
     // Natural Gas Cost [$/tCO2]
     v['Natural Gas Cost [$/tCO2]'] = tev['Natural Gas Cost [$/tCO2eq]']
 
+    // Emitted [tCO2eq/tCO2]
+    v['Emitted [tCO2/tCO2]'] = tev['Emitted [tCO2/tCO2]'] // + dv['Emitted [tCO2/tCO2]']
+
     // Total Cost [$/tCO2]
     v['Total Cost [$/tCO2]'] =
       v['Capital Recovery [$/tCO2eq]'] +
@@ -658,16 +614,25 @@ export class DacModel extends DacComponent {
       v['Variable O&M [$/tCO2eq]'] +
       v['Natural Gas Cost [$/tCO2]']
 
-    // Total Cost [$/tCO2 Net Removed]
-    this.log(
-      tev['Total Cost [$/tCO2 net removed]'],
-      dv['Total Cost [$/tCO2 net removed]']
-    )
-    v['Total Cost [$/tCO2 Net Removed]'] =
-      tev['Total Cost [$/tCO2 net removed]'] +
-      dv['Total Cost [$/tCO2 net removed]']
+    // Capital Recovery [$/tCO2eq Net Removed]
+    v['Capital Recovery [$/tCO2eq Net Removed]'] =
+      v['Capital Recovery [$/tCO2eq]'] / (1 - v['Emitted [tCO2/tCO2]'])
 
-    this.log('compute all', v)
+    // Variable O&M [$/tCO2eq Net Removed]
+    v['Variable O&M [$/tCO2eq Net Removed]'] =
+      v['Variable O&M [$/tCO2eq]'] / (1 - v['Emitted [tCO2/tCO2]'])
+
+    // Natural Gas Cost [$/tCO2 Net Removed]
+    v['Natural Gas Cost [$/tCO2 Net Removed]'] =
+      v['Natural Gas Cost [$/tCO2]'] / (1 - v['Emitted [tCO2/tCO2]'])
+
+    // Fixed O&M [$/tCO2eq Net Removed]
+    v['Fixed O&M [$/tCO2eq Net Removed]'] =
+      v['Fixed O&M [$/tCO2eq]'] / (1 - v['Emitted [tCO2/tCO2]'])
+
+    // Total Cost [$/tCO2 Net Removed]
+    v['Total Cost [$/tCO2 Net Removed]'] =
+      v['Total Cost [$/tCO2]'] / (1 - v['Emitted [tCO2/tCO2]'])
 
     return v
   }

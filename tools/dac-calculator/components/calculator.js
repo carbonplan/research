@@ -83,7 +83,7 @@ const Calculator = () => {
   dacModel.setParams(modelInputs)
   const results = dacModel.compute()
 
-  const cost = results['Total Cost [$/tCO2]'].toFixed(0)
+  const cost = results['Total Cost [$/tCO2 Net Removed]'].toFixed(0)
 
   // partial cost
   modelInputs['log'] = false
@@ -153,7 +153,7 @@ const Calculator = () => {
                       fontSize: [4],
                     }}
                   >
-                    Total Cost
+                    Net Capture Cost
                     <Text
                       sx={{
                         ml: [2],
@@ -161,7 +161,7 @@ const Calculator = () => {
                         color: 'secondary',
                       }}
                     >
-                      $/CO<sub>2</sub>
+                      $/tCO<sub>2</sub>
                     </Text>
                   </Text>
                 </Box>

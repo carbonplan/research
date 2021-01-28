@@ -65,24 +65,24 @@ const Legend = ({ results }) => {
       <Row>
         <Circle opacity={1} />
         <Label label={'Variable O&M'} />
-        <Value value={results['Variable O&M [$/tCO2eq]']} />
+        <Value value={results['Variable O&M [$/tCO2eq Net Removed]']} />
       </Row>
       {results['Natural Gas Cost [$/tCO2]'] > 0 && (
         <Row>
           <Circle opacity={0.8} />
           <Label label={'Natural gas'} />
-          <Value value={results['Natural Gas Cost [$/tCO2]']} />
+          <Value value={results['Natural Gas Cost [$/tCO2 Net Removed]']} />
         </Row>
       )}
       <Row>
         <Circle opacity={0.6} />
         <Label label={'Fixed O&M'} />
-        <Value value={results['Fixed O&M [$/tCO2eq]']} />
+        <Value value={results['Fixed O&M [$/tCO2eq Net Removed]']} />
       </Row>
       <Row>
         <Circle opacity={0.4} />
         <Label label={'Capital recovery'} />
-        <Value value={results['Capital Recovery [$/tCO2eq]']} />
+        <Value value={results['Capital Recovery [$/tCO2eq Net Removed]']} />
       </Row>
     </Box>
   )

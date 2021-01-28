@@ -17,9 +17,10 @@ export const meta = {
     'Jeremy Freeman',
   ],
   title: 'The cost of direct air capture',
-  date: '01-23-2021',
+  date: '01-29-2021',
   background: 'article-006/factory',
-  summary: 'What factors drive the cost of direct air capture under different energy configurations?',
+  summary:
+    'What factors drive the cost of direct air capture under different energy configurations?',
 }
 
 export const sidenotes = {
