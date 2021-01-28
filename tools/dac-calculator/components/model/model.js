@@ -526,6 +526,9 @@ export class DacModel extends DacComponent {
     // NG Cost [$/tCO2eq]
     v['Natural Gas Cost [$/tCO2eq]'] = 0
 
+    // Emitted [tCO2/tCO2]
+    v['Emitted [tCO2/tCO2]'] = 0
+
     // Total Cost [$/tCO2]
     v['Total Cost [$/tCO2]'] =
       v['Capital Recovery [$/tCO2eq]'] +

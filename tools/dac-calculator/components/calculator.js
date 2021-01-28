@@ -79,7 +79,7 @@ const Calculator = () => {
   const dacModel = makeModel(state.energy[0])
 
   // Run once with specified parameters
-  modelInputs['log'] = true
+  modelInputs['log'] = false
   dacModel.setParams(modelInputs)
   const results = dacModel.compute()
 
