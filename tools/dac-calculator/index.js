@@ -17,9 +17,9 @@ const Index = () => {
   const description = (
     <Box sx={{ maxWidth: '700px', mb: [0, 0, 4] }}>
       <Styled.p>
-        The cost of direct air capture (DAC) depends on several factors. To help
-        understand the space, our calculator combines key factors and computes a
-        cost. Explore the tool, read our{' '}
+        The cost of direct air capture (DAC) depends on several factors. Our interactive
+        calculator combines key parameters and computes the cost of net removal. 
+        Explore the tool, read our{' '}
         <NextLink href={'/research/dac-calculator-explainer'} passHref={true}>
           <Link>article</Link>
         </NextLink>

@@ -1,4 +1,4 @@
-const isDev = process.env.NODE_ENV === 'development'
+const isDev = process.env.VERCEL_ENV === 'preview'
 
 const slug = require('rehype-slug')
 
