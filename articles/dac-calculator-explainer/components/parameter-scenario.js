@@ -1,8 +1,9 @@
 import { Box, Divider, Grid, Text } from 'theme-ui'
 import Donut from './donut'
-import Legend from './legend'
+import LegendWithValues from './legend-with-values'
 
 const ParameterScenario = ({
+  figureNumber,
   capitalExpense,
   WACC,
   facilityLifetime,
@@ -41,7 +42,7 @@ const ParameterScenario = ({
         </Box>
         <Box>
           <Divider />
-          <Box sx={{ ml: [2], mt: [4] }}>
+          <Box sx={{ textAlign: 'center', ml: [2], mt: [4] }}>
             <Donut results={results} />
           </Box>
         </Box>
@@ -57,11 +58,23 @@ const ParameterScenario = ({
             </Text>
           </Text>
           <Box sx={{ mt: [4] }}>
-            <Legend results={results} />
+            <LegendWithValues results={results} />
           </Box>
         </Box>
       </Grid>
       <Divider sx={{ mt: [0, 0, 3] }} />
+      <Text
+        sx={{
+          color: 'secondary',
+          my: [3],
+        }}
+      >
+        FIGURE {figureNumber}{' '}
+        <Text sx={{ display: 'inline-block', color: 'primary', mx: [1] }}>
+          /
+        </Text>{' '}
+        Parameter and cost summary for energy configuration.
+      </Text>
     </Box>
   )
 }

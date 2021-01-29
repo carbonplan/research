@@ -144,6 +144,7 @@ const Parameter = ({ param, data, state }) => {
         <Box
           sx={{
             position: 'relative',
+            userSelect: 'none',
           }}
         >
           <ParamChart param={param} data={data}></ParamChart>

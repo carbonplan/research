@@ -104,7 +104,7 @@ const Calculator = () => {
         <Grid
           sx={{ mb: [4] }}
           gap={[0, 0, '100px']}
-          columns={[1, 1, '700px minmax(300px,400px)']}
+          columns={[1, 1, 'minmax(600px,700px) minmax(300px,400px)']}
         >
           <Box sx={{ mt: [2] }}>
             <Divider sx={{ my: [0] }} />
@@ -179,7 +179,7 @@ const Calculator = () => {
         <Grid
           sx={{ mb: [4] }}
           gap={[0, 0, '100px']}
-          columns={[1, 1, '700px 1fr']}
+          columns={[1, 1, 'minmax(600px,700px) minmax(300px,400px)']}
         >
           <Box sx={{ position: 'relative' }}>
             <Box

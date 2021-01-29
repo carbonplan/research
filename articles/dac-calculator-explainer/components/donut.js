@@ -24,7 +24,7 @@ const Donut = ({ results }) => {
       },
       mark: {
         type: 'arc',
-        innerRadius: 35,
+        innerRadius: 29,
         color: theme.colors.purple,
       },
       encoding: {
@@ -80,8 +80,8 @@ const Donut = ({ results }) => {
     })
   }
 
-  const width = 175
-  const height = 175
+  const width = 125
+  const height = 125
 
   return (
     <>

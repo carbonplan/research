@@ -62,6 +62,7 @@ const Energy = ({ params }) => {
               fontColor: 'text',
               width: '100px',
               color: 'purple',
+              userSelect: 'none',
             }}
             defaultValue={defaultValue}
           >
@@ -79,6 +80,7 @@ const Energy = ({ params }) => {
               top: '3px',
               color: 'secondary',
               width: '10px',
+              userSelect: 'none',
             }}
           >
             ↓
