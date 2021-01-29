@@ -11,6 +11,16 @@ const Parameter = ({ param, data, state }) => {
     setValue(parseFloat(e.target.value))
   }
 
+  const format = (v) => {
+    if (param.displayName === 'Electric Req') {
+      return v.toFixed(2)
+    }
+    if (param.displayName === 'Thermal Req') {
+      return v.toFixed(2)
+    }
+    else return v
+  }
+
   return (
     <Box sx={{ mb: [3] }}>
       <Grid columns={[1, 1, '200px 1fr']}>
@@ -42,7 +52,7 @@ const Parameter = ({ param, data, state }) => {
               },
             }}
             onChange={updateParamValue}
-            value={value}
+            value={format(value)}
           />
           <Box>
             <Text
