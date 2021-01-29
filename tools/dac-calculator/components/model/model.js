@@ -68,7 +68,7 @@ class DacComponent {
   }
 
   leadTimeMult(time) {
-    const rate = this.params['WACC [%]']
+    const rate = this.params['WACC [%]'] / 100
     const vals = [(1 + rate) * (1 / time)]
 
     for (var t = 1; t < time; t++) {
@@ -80,7 +80,7 @@ class DacComponent {
   // calculate the capital recovery factor
   recoveryFactor() {
     return -pmt(
-      this.params['WACC [%]'],
+      this.params['WACC [%]'] / 100,
       this.params['Economic Lifetime [years]'],
       1
     )
