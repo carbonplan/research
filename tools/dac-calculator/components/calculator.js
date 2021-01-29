@@ -153,7 +153,7 @@ const Calculator = () => {
                       fontSize: [4],
                     }}
                   >
-                    Net Capture Cost
+                    Net Removed Cost
                     <Text
                       sx={{
                         ml: [2],
