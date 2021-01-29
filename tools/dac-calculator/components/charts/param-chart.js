@@ -15,7 +15,7 @@ const ParamChart = ({ param, data }) => {
   useEffect(() => {
     if (document.body.clientWidth < 420) {
       setWidth(280)
-      setBarWidth(10)
+      setBarWidth(8)
     }
   }, [])
 
