@@ -50,7 +50,7 @@ const Legend = () => {
     <Box
       sx={{
         position: ['relative', 'relative', 'absolute'],
-        bottom: 0,
+        bottom: '-4px',
         mt: [0],
         mb: [0, 0, 3],
       }}

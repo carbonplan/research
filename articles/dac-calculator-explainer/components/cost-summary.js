@@ -17,12 +17,15 @@ const sx = {
     color: 'text',
     fontSize: [3],
     textTransform: 'uppercase',
+    ml: [2]
   },
   cost: {
     fontFamily: 'mono',
     letterSpacing: 'mono',
     color: 'purple',
     fontSize: [5],
+    ml: [2],
+    mb: [2],
   },
 }
 
@@ -30,22 +33,22 @@ const CostSummary = () => {
   return (
     <Box sx={{ my: [5] }}>
       <Grid columns={[3, 3, 4]} sx={{ pb: [0] }}>
-        <Box sx={{ textAlign: 'center' }}>
+        <Box sx={{ textAlign: 'left' }}>
           <Text sx={sx.title}>NGCC</Text>
           <Text sx={sx.cost}>$100</Text>
           <Donut results={results} />
         </Box>
-        <Box sx={{ textAlign: 'center' }}>
+        <Box sx={{ textAlign: 'left' }}>
           <Text sx={sx.title}>Wind</Text>
           <Text sx={sx.cost}>$100</Text>
           <Donut results={results} />
         </Box>
-        <Box sx={{ textAlign: 'center' }}>
+        <Box sx={{ textAlign: 'left' }}>
           <Text sx={sx.title}>Solar</Text>
           <Text sx={sx.cost}>$100</Text>
           <Donut results={results} />
         </Box>
-        <Box sx={{ position: 'relative' }}>
+        <Box sx={{ position: 'relative', }}>
           <Legend results={results} />
         </Box>
       </Grid>

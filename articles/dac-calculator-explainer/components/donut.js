@@ -3,11 +3,13 @@ import { Vega } from 'react-vega'
 import { useThemeUI, Box } from 'theme-ui'
 var vegaLite = require('vega-lite')
 
-const Donut = ({ results }) => {
+const Donut = ({ results, width, innerRadius }) => {
   const [spec, setSpec] = useState(null)
   const [loaded, setLoaded] = useState(false)
   const context = useThemeUI()
   const theme = context.theme
+  width = width || 125
+  innerRadius = innerRadius || width * 0.2333 
 
   useEffect(() => {
     const config = {
@@ -24,7 +26,7 @@ const Donut = ({ results }) => {
       },
       mark: {
         type: 'arc',
-        innerRadius: 29,
+        innerRadius: innerRadius,
         color: theme.colors.purple,
       },
       encoding: {
@@ -80,8 +82,7 @@ const Donut = ({ results }) => {
     })
   }
 
-  const width = 125
-  const height = 125
+  const height = width
 
   return (
     <>

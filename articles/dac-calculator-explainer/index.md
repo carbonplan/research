@@ -76,7 +76,7 @@ In the second scenario, wind turbines are used to continuously power the DAC pla
 
 The third scenario uses solar photovoltaics (PV) to continuously power the DAC plant. Similar to using wind turbines, solar PV requires the overproduction of electricity when the sun is shining to make up for times when there is not enough sunshine to produce electricity (i.e. at night). This requires energy storage, which is included in the form of lithium-ion batteries. Additionally, the solar PV alternative also uses electric resistance heating to meet the thermal energy demands of the DAC plant.
 
-With default settings, the calculator yields higher costs for Wind or Solar than for NGCC, and higher costs for Solar than for Wind.
+With default settings, the calculator yields higher costs for wind or solar than for NGCC, and higher costs for solar than for wind.
 
 <CostSummary />
 
@@ -84,18 +84,16 @@ But these particular costs reflect a specific set of assumptions. Varying parame
 
 ### Exploring the parameter space
 
-The above analysis shows a clear cost advantage for NGCC relative to Wind or Solar. But with alternative assumptions, that difference can become much smaller.
-
-Here we explore a high cost NGCC configuration, and a low cost Wind configuration.
+The above analysis shows a clear cost advantage for NGCC relative to wind or solar. But with alternative assumptions, that difference can become much smaller. Here we explore a high cost NGCC configuration, and a low cost wind configuration.
 
 To model the high cost NGCC, we assume several parameters that differ from the baseline model. For financing we set capital expenses to $2,027 million, for design we set requirements of 1.7 GJ/tCO2 of electricity and 7.2 GJ/tCO2 of thermal energy, and we set fixed and variable O&M costs to $70/tCO2 and $8/tCO2, respectively.
 
 <ParameterScenario
   figureNumber={3}
-  capitalExpense={2027}
-  WACC={8.5}
-  facilityLifetime={20}
-  scale={1000000}
+  energySource={'NGCC'}
+  capEx={2027}
+  electricReq={10}
+  thermalReq={10}
   totalCost={401}
   variableOM={11}
   fixedOM={73}
@@ -103,14 +101,14 @@ To model the high cost NGCC, we assume several parameters that differ from the b
   capitalRecovery={286}
 />
 
-If you are following along in the model, you can refresh the page to reload the baseline model. To model low cost Wind, we select ‘Wind’ from the energy dropdown menu. From here, the only changes we make to the model are moving the electricity requirements slider to 0.95 GJ/tCO2 and the thermal requirements slider to 5.8 GJ/tCO2.
+If you are following along in the model, you can refresh the page to reload the baseline model. To model low cost wind, we select 'wind' from the energy dropdown menu. From here, the only changes we make to the model are moving the electricity requirements slider to 0.95 GJ/tCO2 and the thermal requirements slider to 5.8 GJ/tCO2.
 
 <ParameterScenario
   figureNumber={4}
-  capitalExpense={936}
-  WACC={8.5}
-  facilityLifetime={20}
-  scale={1000000}
+  energySource={'wind'}
+  capEx={936}
+  electricReq={10}
+  thermalReq={10}
   totalCost={365}
   variableOM={4}
   fixedOM={64}
