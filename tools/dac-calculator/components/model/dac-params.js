@@ -61,9 +61,9 @@ const dacParameters = [
       },
       {
         name: 'Capex [$]',
-        displayName: 'Capital Expenses',
+        displayName: 'Cap Ex',
         description:
-          'The capital costs of the complete DAC facility per ton of CO2 installed capacity. This includes equipment, installation, piping and instrumentation, as well as neccessary costs for infrastructure inside and outside battery operating limits.',
+          'The capital costs of the complete DAC facility per ton of CO₂ installed capacity. This includes equipment, installation, piping and instrumentation, as well as neccessary costs for infrastructure inside and outside battery operating limits.',
         unit: '$ / tCO₂ ann. cap.',
         initValue: 936,
         validRange: [10, 2250],
