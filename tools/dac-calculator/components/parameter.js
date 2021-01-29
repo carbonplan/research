@@ -7,6 +7,7 @@ const Parameter = ({ param, data, state }) => {
   const [value, setValue] = state
   const [expanded, setExpanded] = useState(false)
   const [displayValue, setDisplayValue] = useState(value)
+  const [inputFocus, setInputFocus] = useState(false)
   const inputRef = useRef(null)
 
   const handleEnter = (e) => {
@@ -16,6 +17,7 @@ const Parameter = ({ param, data, state }) => {
   }
 
   const updateParamValueFromInput = () => {
+    setInputFocus(false)
     let v = parseFloat(displayValue)
     if (!isNaN(v)) {
       if (v < param.validRange[0]) {
@@ -60,11 +62,12 @@ const Parameter = ({ param, data, state }) => {
               color: 'purple',
               fontSize: [4],
               borderStyle: 'solid',
-              borderColor: 'primary',
+              borderColor: inputFocus ? 'primary' : 'secondary',
               borderWidth: '0px',
               borderRadius: '0px',
               p: [0, 0, 1],
               pl: [0, 0, 0],
+              transition: '0.15s',
               borderBottomWidth: '1px',
               'input::-webkit-outer-spin-button': {
                 WebkitAppearance: 'none',
@@ -76,6 +79,7 @@ const Parameter = ({ param, data, state }) => {
               },
             }}
             onKeyPress={handleEnter}
+            onFocus={() => setInputFocus(true)}
             onChange={updateParamDisplayValue}
             onBlur={updateParamValueFromInput}
             value={displayValue}
@@ -158,6 +162,12 @@ const Parameter = ({ param, data, state }) => {
               min={param.validRange[0]}
               max={param.validRange[1]}
               step={param.step}
+              sx={{
+                '&::-webkit-slider-thumb': {
+                  height: [24, 24, 16],
+                  width: [24, 24, 16],
+                },
+              }}
             />
           </Box>
         </Box>
