@@ -65,7 +65,7 @@ const Parameter = ({ param, data, state }) => {
               borderColor: inputFocus ? 'primary' : 'secondary',
               borderWidth: '0px',
               borderRadius: '0px',
-              p: [0, 0, 1],
+              p: [1, 1, 1],
               pl: [0, 0, 0],
               transition: '0.15s',
               borderBottomWidth: '1px',
@@ -89,7 +89,7 @@ const Parameter = ({ param, data, state }) => {
               sx={{
                 fontSize: [1],
                 mr: [param.unit ? 2 : 0],
-                mt: [2],
+                mt: [2, 2, 2],
                 display: 'inline-block',
               }}
             >
