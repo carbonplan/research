@@ -14,9 +14,9 @@ import calcPartialCost from './model/partial-cost.js'
 const TECH_WITH_BATS = ['Wind', 'Solar']
 
 const ELECTRIC_DEMAND = {
-  Wind: 1.0704342,
-  Solar: 1.0704342,
-  NGCC: 1.48199428,
+  Wind: 1.07, // 1.0704342
+  Solar: 1.07, // 1.0704342
+  NGCC: 1.48, // 1.48199428
 }
 
 const getTech = (energy) => {

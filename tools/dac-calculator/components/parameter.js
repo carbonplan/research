@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Box, Divider, Grid, Input, Slider, Text } from 'theme-ui'
 import ParamChart from '../components/charts/param-chart.js'
 import AnimateHeight from 'react-animate-height'
@@ -6,20 +6,42 @@ import AnimateHeight from 'react-animate-height'
 const Parameter = ({ param, data, state }) => {
   const [value, setValue] = state
   const [expanded, setExpanded] = useState(false)
+  const [displayValue, setDisplayValue] = useState(value)
+  const inputRef = useRef(null)
+
+  const handleEnter = (e) => {
+    if (e.key == 'Enter') {
+      inputRef.current.blur()
+    }
+  }
+
+  const updateParamValueFromInput = () => {
+    let v = parseFloat(displayValue)
+    if (!isNaN(v)) {
+      if (v < param.validRange[0]) {
+        v = param.validRange[0]
+      }
+      if (v > param.validRange[1]) {
+        v = param.validRange[1]
+      }
+      setValue(v)
+      setDisplayValue(v)
+    } else {
+      setDisplayValue(value)
+    }
+  }
 
   const updateParamValue = (e) => {
     setValue(parseFloat(e.target.value))
   }
 
-  const format = (v) => {
-    if (param.displayName === 'Electric Req') {
-      return v.toFixed(2)
-    }
-    if (param.displayName === 'Thermal Req') {
-      return v.toFixed(2)
-    }
-    else return v
+  const updateParamDisplayValue = (e) => {
+    setDisplayValue(e.target.value)
   }
+
+  useEffect(() => {
+    setDisplayValue(value)
+  }, [value])
 
   return (
     <Box sx={{ mb: [3] }}>
@@ -31,6 +53,8 @@ const Parameter = ({ param, data, state }) => {
           }}
         >
           <Input
+            type='text'
+            ref={inputRef}
             sx={{
               textAlign: 'left',
               color: 'purple',
@@ -51,14 +75,16 @@ const Parameter = ({ param, data, state }) => {
                 margin: 0,
               },
             }}
-            onChange={updateParamValue}
-            value={format(value)}
+            onKeyPress={handleEnter}
+            onChange={updateParamDisplayValue}
+            onBlur={updateParamValueFromInput}
+            value={displayValue}
           />
           <Box>
             <Text
               sx={{
                 fontSize: [1],
-                mr: [2],
+                mr: [param.unit ? 2 : 0],
                 mt: [2],
                 display: 'inline-block',
               }}
@@ -66,17 +92,19 @@ const Parameter = ({ param, data, state }) => {
               {' '}
               {param.displayName}
             </Text>
-            <Text
-              sx={{
-                fontSize: [1],
-                ml: [0],
-                display: 'inline-block',
-                color: 'secondary',
-              }}
-            >
-              {' '}
-              {param.unit}{' '}
-            </Text>
+            {param.unit && (
+              <Text
+                sx={{
+                  fontSize: [1],
+                  ml: [0],
+                  display: 'inline-block',
+                  color: 'secondary',
+                }}
+              >
+                {' '}
+                {param.unit}{' '}
+              </Text>
+            )}
             {param.description && (
               <Box
                 onClick={() => setExpanded(!expanded)}

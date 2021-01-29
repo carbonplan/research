@@ -111,7 +111,7 @@ const dacParameters = [
         description:
           'The electric requirements are system energy requirements that neccessitate electricity. For example, fans to push air through the system.',
         unit: 'GJ/tCO₂',
-        initValue: 1.48199428,
+        initValue: 1.48, // rounded from 1.48199428
         validRange: [0, 10],
         step: 0.1,
         scale: 'linear',
@@ -123,7 +123,7 @@ const dacParameters = [
         description:
           'The thermal requirements of the system require energy input in the form of heat. For example, sorbent regeneration requires a heat input to release adsorbed CO2.',
         unit: 'GJ/tCO₂',
-        initValue: 6.640178571,
+        initValue: 6.64, // rounded from 6.640178571
         validRange: [0, 10],
         step: 0.1,
         scale: 'linear',

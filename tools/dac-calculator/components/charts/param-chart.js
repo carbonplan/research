@@ -75,6 +75,8 @@ const ParamChart = ({ param, data }) => {
             offset: 6,
             labelBound: true,
             labelFlush: false,
+            format: '~f',
+            labelSeparation: 8,
           },
         },
         y: {
@@ -91,6 +93,7 @@ const ParamChart = ({ param, data }) => {
             orient: 'right',
             padding: 0,
             offset: 5,
+            format: '0f',
           },
         },
         opacity: {
