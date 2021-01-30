@@ -26,17 +26,27 @@ export const meta = {
 
 export const sidenotes = {
   1: {
-    offset: 0,
+    offset: -25,
     number: 1,
+    authors: 'N McQueen et al.',
+    year: 2021,
+    title: 'Analysis and Quantification of Negative Emissions',
+    journal: 'CDR Primer',
+    editors: 'J Wilcox, B Kolosz, J Freeman',
+    url: 'https://cdrprimer.org/read/chapter-4'
+  },
+  2: {
+    offset: 25,
+    number: 2,
     authors: 'N McQueen et al.',
     year: 2021,
     title: 'Natural gas vs. electricity for solvent-based direct air capture',
     journal: 'Frontiers in Climate',
     url: 'https://doi.org/10.3389/fclim.2020.618644',
   },
-  2: {
+  3: {
     offset: -100,
-    number: 2,
+    number: 3,
     authors: 'M Mazzotti et al.',
     year: 2013,
     title:
@@ -44,22 +54,22 @@ export const sidenotes = {
     journal: 'Climatic Change',
     url: 'https://link.springer.com/article/10.1007/s10584-012-0679-y',
   },
-  3: {
+  4: {
     offset: 25,
-    number: 3,
+    number: 4,
     authors: 'F Zeman',
     year: 2014,
     title: 'Reducing the Cost of Ca-Based Direct Air Capture of CO₂',
     journal: 'Environ. Sci. Technol.',
     url: 'https://pubs.acs.org/doi/10.1021/es502887y',
   },
-  4: {
+  5: {
     offset: 30,
-    number: 4,
+    number: 5,
     authors:
       'Comparable to the vertical flow (VF) scenario described in McQueen et al. (2021).',
   },
-  5: {
+  6: {
     offset: -25,
     number: 6,
     authors: 'D Keith et al.',
@@ -68,7 +78,7 @@ export const sidenotes = {
     journal: 'Joule',
     url: 'https://www.sciencedirect.com/science/article/pii/S2542435118302253',
   },
-  6: {
+  7: {
     offset: 0,
     number: 7,
     authors:
@@ -88,9 +98,9 @@ There are two key costs associated with DAC: capital costs and energy costs. Cap
 
 Energy costs are also significant. Existing systems require between roughly 180 MW and 500 MW to capture 1 million tons of CO₂ per year — about as large as an individual power plant today. Of this energy requirement, roughly 80% is thermal energy and 20% electricity, where the thermal energy is required for heating during the regeneration step.
 
-Analyzing the cost of DAC also requires considering any associated greenhouse gas emissions, which effectively reduce the total amount of net removal, and thus increase the [net removed cost](https://cdrprimer.org/read/chapter-4#sec-4-3).
+Analyzing the cost of DAC also requires considering any associated greenhouse gas emissions, which effectively reduce the total amount of net removal, and thus increase the [net removed cost](https://cdrprimer.org/read/chapter-4#sec-4-3).<Reference color={meta.color} data={sidenotes[1]}/>
 
-In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system.<Reference color={meta.color} data={sidenotes[1]}/> They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO₂ released during combustion, and six all-electric non-fossil systems.
+In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system.<Reference color={meta.color} data={sidenotes[2]}/> They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO₂ released during combustion, and six all-electric non-fossil systems.
 
 To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an [interactive calculator](https://carbonplan.org/research/dac-calculator) based directly on the model from the paper.
 
@@ -142,7 +152,7 @@ But these particular costs reflect a specific set of assumptions. Varying parame
 
 The above analysis shows a cost advantage for NGCC relative to wind or solar. But with alternate assumptions, that difference can become much smaller. Here we explore a high cost NGCC configuration, and a low cost wind configuration.
 
-To model high cost NGCC, we use parameters from a DAC facility described in the [American Physical Societies 2011 report on Direct Air Capture](https://www.aps.org/policy/reports/assessments/upload/dac2011.pdf), including corrections for two additional follow-ons analyses.<Reference color={meta.color} data={sidenotes[2]}/><Reference color={meta.color} data={sidenotes[3]}/> Specifically, we assume a higher DAC plant cost, including both fixed and variable O&M, and slightly higher electricity and thermal energy requirements than some other cost estimates.<Reference color={meta.color} data={sidenotes[4]}/>
+To model high cost NGCC, we use parameters from a DAC facility described in the [American Physical Societies 2011 report on Direct Air Capture](https://www.aps.org/policy/reports/assessments/upload/dac2011.pdf), including corrections for two additional follow-ons analyses.<Reference color={meta.color} data={sidenotes[3]}/><Reference color={meta.color} data={sidenotes[4]}/> Specifically, we assume a higher DAC plant cost, including both fixed and variable O&M, and slightly higher electricity and thermal energy requirements than some other cost estimates.<Reference color={meta.color} data={sidenotes[5]}/>
 
 <ParameterScenario
   figureNumber={3}
@@ -157,7 +167,7 @@ To model high cost NGCC, we use parameters from a DAC facility described in the 
   capitalRecovery={286}
 />
 
-To model low cost wind, we use parameters from a DAC facility described in Keith et al. (2018)<Reference color={meta.color} data={sidenotes[5]}/>, which corresponds to a lower DAC plant cost, including both fixed and variable O&M, and slightly lower electricity and thermal energy requirements.<Reference color={meta.color} data={sidenotes[6]}/>
+To model low cost wind, we use parameters from a DAC facility described in Keith et al. (2018)<Reference color={meta.color} data={sidenotes[6]}/>, which corresponds to a lower DAC plant cost, including both fixed and variable O&M, and slightly lower electricity and thermal energy requirements.<Reference color={meta.color} data={sidenotes[7]}/>
 
 <ParameterScenario
   figureNumber={4}

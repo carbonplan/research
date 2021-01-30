@@ -94,7 +94,7 @@ const Reference = ({ color, data }) => {
               }}
             >
               {data.authors} {data.year ? `(${data.year})` : ''} {data.title}{' '}
-              <i>{data.journal}</i>
+              <i>{data.journal}</i> {data.editors ? `edited by ${data.editors}` : ''}
             </Text>
           </Text>
         </Text>
