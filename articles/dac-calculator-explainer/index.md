@@ -135,13 +135,13 @@ With default settings, the calculator yields higher costs for wind or solar than
   NGCCNaturalGas={33}
 />
 
-But these particular costs reflect a specific set of assumptions. Varying parameters in the calculator lets you explore a range of costs for each scenario, and recreate the ranges reported by McQueen et al. (2021): $230-390/tCO₂ for NGCC, $360–570/tCO₂ for wind, and $430–690/tCO₂ for solar. Note that the large number of parameters exposed in the calculator creates the potential for wider cost ranges compared to the paper.
+But these particular costs reflect a specific set of assumptions. Varying parameters in the calculator lets you explore a range of costs for each scenario, and recreate the ranges that McQueen et al. report: $230-390/tCO₂ for NGCC, $360–570/tCO₂ for wind, and $430–690/tCO₂ for solar. Note that the parameters exposed in the calculator create the potential for wider cost ranges compared to the paper.
 
 ### Exploring the parameter space
 
-The above analysis shows a clear cost advantage for NGCC relative to wind or solar. But with alternative assumptions, that difference can become much smaller. Here we explore a high cost NGCC configuration, and a low cost wind configuration.
+The above analysis shows a clear cost advantage for NGCC relative to wind or solar. But with alternate assumptions, that difference can become much smaller. Here we explore a high cost NGCC configuration, and a low cost wind configuration.
 
-To model the high cost NGCC, we use parameters from a DAC facility described in the [American Physical Societies 2011 report on Direct Air Capture](https://www.aps.org/policy/reports/assessments/upload/dac2011.pdf), including corrections for two additional follow-ons analyses.<Reference color={meta.color} data={sidenotes[2]}/><Reference color={meta.color} data={sidenotes[3]}/> Specifically, we assume a higher DAC plant cost, including both fixed and variable O&M, and slightly higher electricity and thermal energy requirements than some other cost estimates.<Reference color={meta.color} data={sidenotes[4]}/>
+To model high cost NGCC, we use parameters from a DAC facility described in the [American Physical Societies 2011 report on Direct Air Capture](https://www.aps.org/policy/reports/assessments/upload/dac2011.pdf), including corrections for two additional follow-ons analyses.<Reference color={meta.color} data={sidenotes[2]}/><Reference color={meta.color} data={sidenotes[3]}/> Specifically, we assume a higher DAC plant cost, including both fixed and variable O&M, and slightly higher electricity and thermal energy requirements than some other cost estimates.<Reference color={meta.color} data={sidenotes[4]}/>
 
 <ParameterScenario
   figureNumber={3}
