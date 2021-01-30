@@ -16,7 +16,7 @@ const Methods = () => {
         Brief Methods
       </Text>
       <Text sx={{ fontSize: [3] }}>
-        This calculator computes the cost per net ton of CO₂ captured by a
+        This calculator computes the cost per net ton of CO₂ removed by a
         hypothetical DAC facility coupled to different energy sources. The model
         estimates the levelized cost of energy, capital expenses, and operation
         and maintenance costs. The entire model is implemented natively in
