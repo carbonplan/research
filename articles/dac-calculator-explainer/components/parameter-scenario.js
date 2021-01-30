@@ -24,7 +24,11 @@ const ParameterScenario = ({
 
   return (
     <Box sx={{ my: [5] }}>
-      <Grid gap={[0, 0, '32px']} columns={[1, 1, '200px 160px 1fr']} sx={{ pb: [2] }}>
+      <Grid
+        gap={[0, 0, '32px']}
+        columns={[1, 1, '200px 160px 1fr']}
+        sx={{ pb: [2] }}
+      >
         <Box>
           <Divider sx={{ mb: [3] }} />
           <Box>
@@ -43,22 +47,31 @@ const ParameterScenario = ({
         <Box>
           <Divider />
           <Box sx={{ textAlign: ['left', 'left', 'center'], mt: [4] }}>
-            <Donut results={results} width={150}/>
+            <Donut results={results} width={150} />
           </Box>
         </Box>
         <Box>
           <Divider />
-          <Text sx={{
+          <Text
+            sx={{
               fontFamily: 'heading',
               letterSpacing: 'smallcaps',
               fontSize: [3],
               mt: [3],
-              textTransform: 'uppercase'
-            }}>{energySource}</Text>
+              textTransform: 'uppercase',
+            }}
+          >
+            {energySource}
+          </Text>
           <Text sx={{ color: 'purple', fontSize: [6], fontFamily: 'mono' }}>
             ${totalCost}
           </Text>
-          <Box sx={{ mt: (results['Natural Gas Cost [$/tCO2]'] > 0) ? ['38px'] : ['58px']}}>
+          <Box
+            sx={{
+              mt:
+                results['Natural Gas Cost [$/tCO2]'] > 0 ? ['38px'] : ['58px'],
+            }}
+          >
             <LegendWithValues results={results} />
           </Box>
         </Box>
@@ -75,6 +88,7 @@ const ParameterScenario = ({
           /
         </Text>{' '}
         Parameter and cost summary for {energySource} energy configuration.
+        Costs are reported as net removed cost ($/tCO₂)
       </Text>
     </Box>
   )

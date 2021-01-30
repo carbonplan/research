@@ -9,7 +9,7 @@ const Donut = ({ results, width, innerRadius }) => {
   const context = useThemeUI()
   const theme = context.theme
   width = width || 125
-  innerRadius = innerRadius || width * 0.2333 
+  innerRadius = innerRadius || width * 0.2333
 
   useEffect(() => {
     const config = {

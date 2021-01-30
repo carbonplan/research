@@ -17,7 +17,8 @@ const sx = {
     color: 'text',
     fontSize: [3],
     textTransform: 'uppercase',
-    ml: [2]
+    ml: [2],
+    mt: [3],
   },
   cost: {
     fontFamily: 'mono',
@@ -29,27 +30,65 @@ const sx = {
   },
 }
 
-const CostSummary = () => {
+const CostSummary = ({
+  windTotalCost,
+  windVariableOM,
+  windFixedOM,
+  windCapitalRecovery,
+  solarTotalCost,
+  solarVariableOM,
+  solarFixedOM,
+  solarCapitalRecovery,
+  NGCCTotalCost,
+  NGCCVariableOM,
+  NGCCFixedOM,
+  NGCCCapitalRecovery,
+  NGCCNaturalGas,
+}) => {
+  const NGCCResults = {
+    'Capital Recovery [$/tCO2eq]': NGCCCapitalRecovery,
+    'Variable O&M [$/tCO2eq]': NGCCVariableOM,
+    'Natural Gas Cost [$/tCO2]': NGCCNaturalGas,
+    'Fixed O&M [$/tCO2eq]': NGCCFixedOM,
+    'Total Cost [$/tCO2]': NGCCTotalCost,
+  }
+
+  const windResults = {
+    'Capital Recovery [$/tCO2eq]': windCapitalRecovery,
+    'Variable O&M [$/tCO2eq]': windVariableOM,
+    'Fixed O&M [$/tCO2eq]': windFixedOM,
+    'Total Cost [$/tCO2]': windTotalCost,
+  }
+
+  const solarResults = {
+    'Capital Recovery [$/tCO2eq]': solarCapitalRecovery,
+    'Variable O&M [$/tCO2eq]': solarVariableOM,
+    'Fixed O&M [$/tCO2eq]': solarFixedOM,
+    'Total Cost [$/tCO2]': solarTotalCost,
+  }
   return (
     <Box sx={{ my: [5] }}>
       <Grid columns={[3, 3, 4]} sx={{ pb: [0] }}>
         <Box sx={{ textAlign: 'left' }}>
+          <Divider sx={{ mt: [0], mr: [3] }} />
           <Text sx={sx.title}>NGCC</Text>
-          <Text sx={sx.cost}>$100</Text>
-          <Donut results={results} />
+          <Text sx={sx.cost}>${NGCCTotalCost}</Text>
+          <Donut results={NGCCResults} />
         </Box>
         <Box sx={{ textAlign: 'left' }}>
+          <Divider sx={{ mt: [0], mr: [3] }} />
           <Text sx={sx.title}>Wind</Text>
-          <Text sx={sx.cost}>$100</Text>
-          <Donut results={results} />
+          <Text sx={sx.cost}>${windTotalCost}</Text>
+          <Donut results={windResults} />
         </Box>
         <Box sx={{ textAlign: 'left' }}>
+          <Divider sx={{ mt: [0], mr: [3] }} />
           <Text sx={sx.title}>Solar</Text>
-          <Text sx={sx.cost}>$100</Text>
-          <Donut results={results} />
+          <Text sx={sx.cost}>${solarTotalCost}</Text>
+          <Donut results={solarResults} />
         </Box>
-        <Box sx={{ position: 'relative', }}>
-          <Legend results={results} />
+        <Box sx={{ position: 'relative' }}>
+          <Legend />
         </Box>
       </Grid>
       <Divider sx={{ mt: [3] }} />
@@ -63,7 +102,8 @@ const CostSummary = () => {
         <Text sx={{ display: 'inline-block', color: 'primary', mx: [1] }}>
           /
         </Text>{' '}
-        Cost summaries for three energy configurations.
+        Cost summaries for three energy configurations, reported as net removed
+        cost ($/tCO₂).
       </Text>
     </Box>
   )

@@ -20,9 +20,8 @@ const Label = ({ label }) => {
     <Box
       sx={{
         color: 'secondary',
-        fontFamily: 'mono',
-        letterSpacing: 'mono',
-        textTransform: 'uppercase',
+        fontFamily: 'body',
+        letterSpacing: 'body',
         fontSize: [1],
       }}
     >
