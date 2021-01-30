@@ -8,6 +8,7 @@ const KG_TO_MT = 1000
 const LB_TO_KG = 0.453592
 const LB_TO_METRIC_TON = LB_TO_KG / KG_TO_MT
 const GJ_TO_MMBTU = 0.94709
+const GJ_PER_TNG = 53.4
 const MWH_TO_MWH_GJ_PER_YEAR = 3.6
 const PERFECT_EFFICIENT_HEAT_RATE = 3412.14 // 100 % Efficienct Heat Rate
 
@@ -31,7 +32,7 @@ const nasReport511 = (req, scale, capacityFactor) => {
 
 const pmt = (rate, nper, pv) => {
   const fv = 0
-  const when = 0 // i.e. 'end'
+  const when = 0
   const temp = (1 + rate) ** nper
 
   let fact
@@ -224,8 +225,6 @@ export class EnergySection extends DacComponent {
     }
 
     // Overnight Cost [M$]
-    // Note to Noah: We seem to need plant size here so we can do this scaling correctly.
-    // I've added the field back to tech-data but it isn't shown in the interactive.
     v['Overnight Cost [M$]'] =
       this.tech['Base Plant Cost [M$]'] *
       (v['Plant Size [MW]'] / this.tech['Plant Size [MW]']) **
@@ -526,6 +525,8 @@ export class DacModel extends DacComponent {
     // NG Cost [$/tCO2eq]
     v['Natural Gas Cost [$/tCO2eq]'] = 0
 
+    v['Natural Gas Use [mmBTU/tCO2eq]'] = 0
+
     // Emitted [tCO2/tCO2]
     v['Emitted [tCO2/tCO2]'] = 0
 
@@ -552,6 +553,9 @@ export class DacModel extends DacComponent {
       ev['Power Fixed O&M [$/tCO2eq]'] + tv['Total Fixed O&M [$/tCO2eq]']
     uv['Variable O&M [$/tCO2eq]'] =
       ev['Power Variable O&M [$/tCO2eq]'] + tv['Total Variable O&M [$/tCO2eq]']
+    uv['Natural Gas Use [mmBTU/tCO2eq]'] =
+      ev['Natural Gas Use [mmBTU/tCO2eq]'] +
+      tv['Natural Gas Use [mmBTU/tCO2eq]']
     uv['Natural Gas Cost [$/tCO2eq]'] =
       ev['Natural Gas Cost [$/tCO2eq]'] + tv['Natural Gas Cost [$/tCO2eq]']
 
@@ -574,10 +578,7 @@ export class DacModel extends DacComponent {
     if (this.electric.source == this.thermal.source) {
       cv = this.combinedPowerBlockRequirements(this.electric.source, ev, tv)
       tev = this.totalEnergyBlockCosts(ev, tv, cv)
-    } else if (
-      this.electric.source == 'NGCC w/ CCS' &&
-      this.electric.source == 'NGCC w/ CCS'
-    ) {
+    } else if (this.electric.source == 'NGCC w/ CCS') {
       tev = this.ngUtilitySection(ev, tv)
     } else {
       throw 'TODO: handle case with mismatched energy sources'
@@ -634,8 +635,40 @@ export class DacModel extends DacComponent {
       v['Fixed O&M [$/tCO2eq]'] / (1 - v['Emitted [tCO2/tCO2]'])
 
     // Total Cost [$/tCO2 Net Removed]
+    // v['Total Cost [$/tCO2 Net Removed]'] =
+    //   v['Total Cost [$/tCO2]'] / (1 - v['Emitted [tCO2/tCO2]'])
+
+    let gwp100 = 32.0 // methane
+    let co2eGwp = (this.params['Leakage Rate [%]'] / 100) * gwp100
+
+    let co2_per_ton_methan_supchain = 0.274
+
+    let totCO2eq_per_ton_methane = co2eGwp + co2_per_ton_methan_supchain
+    this.log('totCO2eq_per_ton_methane', totCO2eq_per_ton_methane)
+
+    let totCO2perGJMethan = totCO2eq_per_ton_methane / GJ_PER_TNG
+    this.log('totCO2perGJMethan', totCO2perGJMethan)
+
+    this.log(
+      'Natural Gas Use [mmBTU/tCO2eq]',
+      tev['Natural Gas Use [mmBTU/tCO2eq]']
+    )
+    let GJNatGasPerTonCO2e = tev['Natural Gas Use [mmBTU/tCO2eq]'] / GJ_TO_MMBTU
+    this.log('GJNatGasPerTonCO2e', GJNatGasPerTonCO2e)
+
+    let co2_emission_methan_per_ton_co2_captured =
+      totCO2perGJMethan * GJNatGasPerTonCO2e
+
+    this.log(
+      'co2_emission_methan_per_ton_co2_captured',
+      co2_emission_methan_per_ton_co2_captured
+    )
+
+    // Total Cost [$/tCO2 Net Removed]
     v['Total Cost [$/tCO2 Net Removed]'] =
-      v['Total Cost [$/tCO2]'] / (1 - v['Emitted [tCO2/tCO2]'])
+      v['Total Cost [$/tCO2]'] /
+      (1 -
+        (v['Emitted [tCO2/tCO2]'] + co2_emission_methan_per_ton_co2_captured))
 
     return v
   }
