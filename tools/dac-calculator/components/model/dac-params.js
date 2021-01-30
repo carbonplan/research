@@ -75,7 +75,7 @@ const dacParameters = [
   },
   {
     id: 'design',
-    displayName: 'Design Parameters',
+    displayName: 'Design parameters',
     description:
       'A lot goes into building a new DAC facility. Here we expose a few of the most important parameters.',
     parameters: [
@@ -133,7 +133,7 @@ const dacParameters = [
   },
   {
     id: 'ops',
-    displayName: 'How Much Does Operation and Maintenance Cost?',
+    displayName: 'How much does operation and maintenance cost?',
     description:
       'Running a DAC facility comes with fixed and variable costs, associated with regular operation and maintenance.',
     parameters: [

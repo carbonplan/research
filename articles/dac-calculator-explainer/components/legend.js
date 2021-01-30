@@ -20,9 +20,8 @@ const Label = ({ label }) => {
     <Box
       sx={{
         color: 'secondary',
-        fontFamily: 'mono',
-        letterSpacing: 'mono',
-        textTransform: 'uppercase',
+        fontFamily: 'body',
+        letterSpacing: 'body',
         fontSize: [1],
       }}
     >
@@ -50,7 +49,7 @@ const Legend = () => {
     <Box
       sx={{
         position: ['relative', 'relative', 'absolute'],
-        bottom: 0,
+        bottom: '-4px',
         mt: [0],
         mb: [0, 0, 3],
       }}
@@ -61,7 +60,7 @@ const Legend = () => {
       </Row>
       <Row>
         <Circle opacity={0.8} />
-        <Label label={'Natural gas'} />
+        <Label label={'Natural Gas'} />
       </Row>
       <Row>
         <Circle opacity={0.6} />
@@ -69,7 +68,7 @@ const Legend = () => {
       </Row>
       <Row>
         <Circle opacity={0.4} />
-        <Label label={'Capital recovery'} />
+        <Label label={'Capital Recovery'} />
       </Row>
     </Box>
   )

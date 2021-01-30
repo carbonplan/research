@@ -20,9 +20,8 @@ const Label = ({ label }) => {
     <Box
       sx={{
         color: 'secondary',
-        fontFamily: 'mono',
-        letterSpacing: 'mono',
-        textTransform: 'uppercase',
+        fontFamily: 'body',
+        letterSpacing: 'body',
         fontSize: [1],
       }}
     >
@@ -40,7 +39,7 @@ const Value = ({ value }) => {
         letterSpacing: 'mono',
       }}
     >
-      <Text>${value.toFixed(0)}</Text>
+      ${value.toFixed(0)}
     </Box>
   )
 }
@@ -52,7 +51,7 @@ const Row = ({ children }) => {
         fontSize: [1],
         mb: [1],
       }}
-      columns={['10px 140px 1fr']}
+      columns={['10px 125px 1fr']}
     >
       {children}
     </Grid>
@@ -70,7 +69,7 @@ const Legend = ({ results }) => {
       {results['Natural Gas Cost [$/tCO2]'] > 0 && (
         <Row>
           <Circle opacity={0.8} />
-          <Label label={'Natural gas'} />
+          <Label label={'Natural Gas'} />
           <Value value={results['Natural Gas Cost [$/tCO2]']} />
         </Row>
       )}
@@ -81,7 +80,7 @@ const Legend = ({ results }) => {
       </Row>
       <Row>
         <Circle opacity={0.4} />
-        <Label label={'Capital recovery'} />
+        <Label label={'Capital Recovery'} />
         <Value value={results['Capital Recovery [$/tCO2eq]']} />
       </Row>
     </Box>

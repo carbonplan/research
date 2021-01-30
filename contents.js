@@ -4,7 +4,7 @@ const Contents = [
     tags: ['article', 'tool'],
     summary:
       'Our interactive tool helps explore the cost of direct air capture (DAC) coupled to stand alone energy sources. Try the tool, or read the article to learn more about the model.',
-    date: '01-29-2021',
+    date: '02-01-2021',
     version: '1.0.0',
     color: 'purple',
     icon: 'article-006/factory-small',

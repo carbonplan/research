@@ -6,10 +6,11 @@ import Calculator from './components/calculator'
 const Index = () => {
   const meta = {
     id: 'dac-calculator',
-    title: 'DAC cost calculator',
+    title: 'DAC calculator',
     color: 'purple',
+    card: 'dac-calculator-explainer',
     summary:
-      'What factors drive the cost of direct air capture under different energy configurations?',
+      'How the cost of direct air capture varies under different energy configurations.',
   }
 
   const title = <Styled.h1>DAC cost calculator</Styled.h1>
