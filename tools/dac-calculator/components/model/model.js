@@ -611,29 +611,6 @@ export class DacModel extends DacComponent {
     // Emitted [tCO2eq/tCO2]
     v['Emitted [tCO2/tCO2]'] = tev['Emitted [tCO2/tCO2]'] // + dv['Emitted [tCO2/tCO2]']
 
-    // Total Cost [$/tCO2]
-    v['Total Cost [$/tCO2]'] =
-      v['Capital Recovery [$/tCO2eq]'] +
-      v['Fixed O&M [$/tCO2eq]'] +
-      v['Variable O&M [$/tCO2eq]'] +
-      v['Natural Gas Cost [$/tCO2]']
-
-    // Capital Recovery [$/tCO2eq Net Removed]
-    v['Capital Recovery [$/tCO2eq Net Removed]'] =
-      v['Capital Recovery [$/tCO2eq]'] / (1 - v['Emitted [tCO2/tCO2]'])
-
-    // Variable O&M [$/tCO2eq Net Removed]
-    v['Variable O&M [$/tCO2eq Net Removed]'] =
-      v['Variable O&M [$/tCO2eq]'] / (1 - v['Emitted [tCO2/tCO2]'])
-
-    // Natural Gas Cost [$/tCO2 Net Removed]
-    v['Natural Gas Cost [$/tCO2 Net Removed]'] =
-      v['Natural Gas Cost [$/tCO2]'] / (1 - v['Emitted [tCO2/tCO2]'])
-
-    // Fixed O&M [$/tCO2eq Net Removed]
-    v['Fixed O&M [$/tCO2eq Net Removed]'] =
-      v['Fixed O&M [$/tCO2eq]'] / (1 - v['Emitted [tCO2/tCO2]'])
-
     // Total Cost [$/tCO2 Net Removed]
     // v['Total Cost [$/tCO2 Net Removed]'] =
     //   v['Total Cost [$/tCO2]'] / (1 - v['Emitted [tCO2/tCO2]'])
@@ -664,11 +641,33 @@ export class DacModel extends DacComponent {
       co2_emission_methan_per_ton_co2_captured
     )
 
-    // Total Cost [$/tCO2 Net Removed]
+    const emissionsFactor =
+      1 - (v['Emitted [tCO2/tCO2]'] + co2_emission_methan_per_ton_co2_captured)
+
+    // Capital Recovery [$/tCO2eq Net Removed]
+    v['Capital Recovery [$/tCO2eq Net Removed]'] =
+      v['Capital Recovery [$/tCO2eq]'] / emissionsFactor
+
+    // Variable O&M [$/tCO2eq Net Removed]
+    v['Variable O&M [$/tCO2eq Net Removed]'] =
+      v['Variable O&M [$/tCO2eq]'] / emissionsFactor
+
+    // Natural Gas Cost [$/tCO2 Net Removed]
+    v['Natural Gas Cost [$/tCO2 Net Removed]'] =
+      v['Natural Gas Cost [$/tCO2]'] / emissionsFactor
+
+    // Fixed O&M [$/tCO2eq Net Removed]
+    v['Fixed O&M [$/tCO2eq Net Removed]'] =
+      v['Fixed O&M [$/tCO2eq]'] / emissionsFactor
+
+    // Total Cost [$/tCO2]
     v['Total Cost [$/tCO2 Net Removed]'] =
-      v['Total Cost [$/tCO2]'] /
-      (1 -
-        (v['Emitted [tCO2/tCO2]'] + co2_emission_methan_per_ton_co2_captured))
+      v['Capital Recovery [$/tCO2eq Net Removed]'] +
+      v['Fixed O&M [$/tCO2eq Net Removed]'] +
+      v['Variable O&M [$/tCO2eq Net Removed]'] +
+      v['Natural Gas Cost [$/tCO2 Net Removed]']
+
+    this.log(emissionsFactor, v)
 
     return v
   }

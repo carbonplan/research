@@ -50,37 +50,37 @@ const Donut = ({ params }) => {
     {
       category: 'CAPITAL RECOVERY',
       opacity: 1.0,
-      value: params.results['Capital Recovery [$/tCO2eq]'],
+      value: params.results['Capital Recovery [$/tCO2eq Net Removed]'],
       fraction:
-        params.results['Capital Recovery [$/tCO2eq]'] /
-        params.results['Total Cost [$/tCO2]'],
+        params.results['Capital Recovery [$/tCO2eq Net Removed]'] /
+        params.results['Total Cost [$/tCO2 Net Removed]'],
     },
     {
       category: 'FIXED O&M',
       opacity: 0.7,
-      value: params.results['Fixed O&M [$/tCO2eq]'],
+      value: params.results['Fixed O&M [$/tCO2eq Net Removed]'],
       fraction:
-        params.results['Fixed O&M [$/tCO2eq]'] /
-        params.results['Total Cost [$/tCO2]'],
+        params.results['Fixed O&M [$/tCO2eq Net Removed]'] /
+        params.results['Total Cost [$/tCO2 Net Removed]'],
     },
     {
       category: 'VARIABLE O&M',
       opacity: 0.4,
-      value: params.results['Variable O&M [$/tCO2eq]'],
+      value: params.results['Variable O&M [$/tCO2eq Net Removed]'],
       fraction:
-        params.results['Variable O&M [$/tCO2eq]'] /
-        params.results['Total Cost [$/tCO2]'],
+        params.results['Variable O&M [$/tCO2eq Net Removed]'] /
+        params.results['Total Cost [$/tCO2 Net Removed]'],
     },
   ]
 
-  if (params.results['Natural Gas Cost [$/tCO2]'] > 0) {
+  if (params.results['Natural Gas Cost [$/tCO2 Net Removed]'] > 0) {
     values.push({
       category: 'NATURAL GAS',
       opacity: 0.2,
-      value: params.results['Natural Gas Cost [$/tCO2]'],
+      value: params.results['Natural Gas Cost [$/tCO2 Net Removed]'],
       fraction:
-        params.results['Natural Gas Cost [$/tCO2]'] /
-        params.results['Total Cost [$/tCO2]'],
+        params.results['Natural Gas Cost [$/tCO2 Net Removed]'] /
+        params.results['Total Cost [$/tCO2 Net Removed]'],
     })
   }
 
