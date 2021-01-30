@@ -177,13 +177,13 @@ We encourage you to explore how the cost of DAC changes with different economic 
 
 ## Looking ahead
 
-We hope our interactive calculator helps build intuition for the model underlying McQueen et al. (2021), and helps provide more transparency around the complex, high-dimensional relationships underlying the cost of DAC. Along with understanding the technology itself, and finding opportunities to lower cost, evaluating different cost scenarios and energy systems can help with siting DAC facilities. Far more information and modeling is of course required for actual design, engineering, and planning, but experimenting with this tool could be the first step in evaluating existing technologies — or developing new ones.
+We hope our interactive calculator helps build intuition for the model underlying McQueen et al. (2021), and helps provide more transparency around the complex, high-dimensional relationships underlying the cost of DAC. Along with understanding the technology itself, and finding opportunities to lower costs, evaluating different cost scenarios and energy systems can help with siting DAC facilities. Far more information and modeling is of course required for actual design, engineering, and planning, but experimenting with this tool could be the first step in evaluating existing technologies — or developing new ones.
 
 <SectionBreak />
 
 ## Credits
 
-Noah and Jennifer developed the underlying model. All authors developed the concept for an interactive version. Joe implemented the model in Javascript, with Noah’s guidance. Joe and Jeremy developed and implemented the interactive graphics (with input from Jonny Black of [Ordinary Things](https://ot.studio)). All authors contributed to writing the article.
+Noah and Jennifer developed the underlying model. All authors developed the concept for an interactive version. Joe implemented the model in JavaScript, with Noah’s guidance. Joe and Jeremy developed and implemented the interactive graphics (with input from Jonny Black of [Ordinary Things](https://ot.studio)). All authors contributed to writing the article.
 
 Please cite as:
 
