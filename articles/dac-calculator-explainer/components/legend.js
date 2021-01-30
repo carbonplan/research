@@ -60,7 +60,7 @@ const Legend = () => {
       </Row>
       <Row>
         <Circle opacity={0.8} />
-        <Label label={'Natural gas'} />
+        <Label label={'Natural Gas'} />
       </Row>
       <Row>
         <Circle opacity={0.6} />
@@ -68,7 +68,7 @@ const Legend = () => {
       </Row>
       <Row>
         <Circle opacity={0.4} />
-        <Label label={'Capital recovery'} />
+        <Label label={'Capital Recovery'} />
       </Row>
     </Box>
   )

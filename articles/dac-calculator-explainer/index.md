@@ -18,9 +18,9 @@ export const meta = {
     'Jeremy Freeman',
   ],
   title: 'The cost of direct air capture',
-  date: '01-29-2021',
+  date: '02-01-2021',
   background: 'article-006/factory',
-  summary: 'What factors drive the cost of direct air capture.',
+  summary: 'What factors drive the cost of direct air capture under different energy configurations?',
 }
 
 export const sidenotes = {
@@ -111,7 +111,7 @@ Each of these cost components in turn depend on parameters, which are presented 
 
 The calculator allows you to explore three of the energy scenarios considered in McQueen et al. (2021).
 
-The first scenario uses natural gas combined with carbon capture and storage (NGCC) to supply electricity for the DAC plant, while natural gas combustion meets the thermal energy requirements. A key issue when considering NGCC for powering DAC is that any greenhouse gas emissions created in the process reduce the effective net amount of CO₂ removal, and thus increase the net removal cost. Current natural gas production in the US involves an appreciable amount of natural gas leakage, potentially as high as 3.7%. We assume that some fraction of natural gas is lost to the atmosphere during processing or distribution. In the model, that fraction is controlled by a leakage rate parameter. Methane, a primary component of natural gas, has a higher global warming potential (GWP) than CO₂, so the model uses a GWP 100 of 32 to calculate the CO₂ equivalent of the methane emissions, which are then factored into the net removed cost. The costs we report do not include non-greenhouse gas negative externalities that result from continued use of and dependence on fossil energy, which could be a critical factor in considering different energy sources.
+The first scenario uses natural gas combined with carbon capture and storage (NGCC) to supply electricity for the DAC plant, while natural gas combustion meets the thermal energy requirements. A key issue when considering NGCC for powering DAC is that any greenhouse gas emissions created in the process reduce the effective net amount of CO₂ removal, and thus increase the net removal cost. Current natural gas production in the US involves an appreciable amount of natural gas leakage, potentially as high as 3.7%. We assume that some fraction of natural gas is lost to the atmosphere during processing or distribution. In the model, that fraction is controlled by a leakage rate parameter. Methane, a primary component of natural gas, has a higher global warming potential (GWP) than CO₂. The model uses a GWP 100 of 32 to calculate the CO₂ equivalent of the methane emissions, which are then factored into the net removed cost. The costs we report do not include non-greenhouse gas negative externalities that result from continued use of and dependence on fossil energy, which could be a critical factor in considering different energy sources.
 
 In the second scenario, wind turbines are used to continuously power the DAC plant which requires over-producing electricity during windy times and storing the excess electricity in lithium-ion batteries. The energy storage allows the DAC plant to continuously use electricity produced from wind, even when the wind turbines are unable to produce electricity (i.e. when the air is still). In this scenario, electric resistance heating is used to meet the thermal demands of the system as opposed to the combustion of natural gas in the first scenario.
 

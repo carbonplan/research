@@ -103,7 +103,7 @@ function Value({ children }) {
         fontSize: [4],
         pb: [1],
         borderStyle: 'solid',
-        borderColor: 'secondary',
+        borderColor: 'muted',
         borderWidth: '0px',
         borderBottomWidth: '1px',
       }}

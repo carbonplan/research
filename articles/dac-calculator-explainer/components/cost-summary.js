@@ -102,8 +102,7 @@ const CostSummary = ({
         <Text sx={{ display: 'inline-block', color: 'primary', mx: [1] }}>
           /
         </Text>{' '}
-        Cost summaries for three energy configurations, reported as net removed
-        cost ($/tCO₂).
+        Net removed costs ($/tCO₂) for three energy configurations.
       </Text>
     </Box>
   )

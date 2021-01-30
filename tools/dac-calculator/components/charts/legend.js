@@ -69,7 +69,7 @@ const Legend = ({ results }) => {
       {results['Natural Gas Cost [$/tCO2]'] > 0 && (
         <Row>
           <Circle opacity={0.8} />
-          <Label label={'Natural gas'} />
+          <Label label={'Natural Gas'} />
           <Value value={results['Natural Gas Cost [$/tCO2 Net Removed]']} />
         </Row>
       )}
@@ -80,7 +80,7 @@ const Legend = ({ results }) => {
       </Row>
       <Row>
         <Circle opacity={0.4} />
-        <Label label={'Capital recovery'} />
+        <Label label={'Capital Recovery'} />
         <Value value={results['Capital Recovery [$/tCO2eq Net Removed]']} />
       </Row>
     </Box>
