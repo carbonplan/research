@@ -178,7 +178,7 @@ const dacParameters = [
         description: 'The rate of methane leakage.',
         unit: '%',
         initValue: 2.2,
-        validRange: [0, 100],
+        validRange: [0, 10],
         step: 1,
         scale: 'linear',
         chartHeight: 120,
