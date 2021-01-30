@@ -20,9 +20,9 @@ const Methods = () => {
         hypothetical DAC facility coupled to different energy sources. The model
         estimates the levelized cost of energy, capital expenses, and operation
         and maintenance costs. The entire model is implemented natively in
-        JavaScript and available{' '}
+        JavaScript and{' '}
         <Link href='http://github.com/carbonplan/research/tools/dac-calculator'>
-          on Github
+          available on Github
         </Link>
         , and a Python version is under development. The model is based directly
         on a{' '}
