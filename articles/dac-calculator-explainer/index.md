@@ -20,7 +20,8 @@ export const meta = {
   title: 'The cost of direct air capture',
   date: '02-01-2021',
   background: 'article-006/factory',
-  summary: 'What factors drive the cost of direct air capture under different energy configurations?',
+  card: 'dac-cost-calculator',
+  summary: 'How the cost of direct air capture varies under different energy configurations.',
 }
 
 export const sidenotes = {

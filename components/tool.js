@@ -3,13 +3,16 @@ import { Layout } from '@carbonplan/components'
 import BackArrow from './back-arrow'
 import contents from '../contents'
 
+const prefix = 'https://images.carbonplan.org'
+
 const Tool = ({ title, description, meta, children }) => {
   return (
     <Layout
-      card={meta.id}
+      card={`${prefix}/social/${meta.card}.png`}
       metadata={false}
       description={meta.summary}
-      title={meta.title}
+      title={meta.title.toLowerCase() + ' / research / carbonplan'}
+      links={'local'}
     >
       <Box sx={{ mb: [6] }}>
         <BackArrow />
