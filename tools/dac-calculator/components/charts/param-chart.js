@@ -84,7 +84,7 @@ const ParamChart = ({ param, data }) => {
           aggregate: 'sum',
           type: 'quantitative',
           scale: {
-            domain: [0, 1000],
+            domain: [0, 800],
             padding: 0,
             nice: false,
           },
