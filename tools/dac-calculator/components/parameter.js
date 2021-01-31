@@ -1,6 +1,7 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, memo } from 'react'
 import { Box, Divider, Grid, Input, Slider, Text } from 'theme-ui'
-import ParamChart from '../components/charts/param-chart.js'
+import ParamChart from './charts/param-chart'
+import ParamDescription from './parameter-description'
 import AnimateHeight from 'react-animate-height'
 
 const Parameter = ({ param, data, state }) => {
@@ -84,62 +85,11 @@ const Parameter = ({ param, data, state }) => {
             onBlur={updateParamValueFromInput}
             value={displayValue}
           />
-          <Box>
-            <Text
-              sx={{
-                fontSize: [1],
-                mr: [param.unit ? 2 : 0],
-                mt: [2, 2, 2],
-                display: 'inline-block',
-              }}
-            >
-              {' '}
-              {param.displayName}
-            </Text>
-            {param.unit && (
-              <Text
-                sx={{
-                  fontSize: [1],
-                  ml: [0],
-                  display: 'inline-block',
-                  color: 'secondary',
-                }}
-              >
-                {' '}
-                {param.unit}{' '}
-              </Text>
-            )}
-            {param.description && (
-              <Box
-                onClick={() => setExpanded(!expanded)}
-                sx={{
-                  position: 'relative',
-                  width: '20px',
-                  height: '20px',
-                  ml: [2],
-                  display: 'inline-block',
-                  cursor: 'pointer',
-                  '&:hover > #question': {
-                    opacity: 1,
-                  },
-                }}
-              >
-                <Text
-                  id='question'
-                  sx={{
-                    position: 'absolute',
-                    pl: [1],
-                    color: 'purple',
-                    top: ['4px'],
-                    opacity: expanded ? 1 : 0.6,
-                    transition: '0.2s',
-                  }}
-                >
-                  ?
-                </Text>
-              </Box>
-            )}
-          </Box>
+          <ParamDescription
+            param={param}
+            expanded={expanded}
+            setExpanded={setExpanded}
+          />
         </Box>
         <Box
           sx={{

@@ -24,7 +24,7 @@ const Donut = ({ params }) => {
       },
       mark: {
         type: 'arc',
-        innerRadius: 35,
+        innerRadius: 39,
         color: theme.colors.purple,
       },
       encoding: {
@@ -34,9 +34,9 @@ const Donut = ({ params }) => {
           scale: { domain: [0, 1] },
         },
         opacity: {
-          field: 'category',
-          type: 'nominal',
-          // scale: { domain: [0, 1] },
+          field: 'index',
+          type: 'quantitative',
+          scale: { domain: [0, 3], range: [0.3, 0.9] },
           legend: null,
         },
       },
@@ -49,7 +49,7 @@ const Donut = ({ params }) => {
   const values = [
     {
       category: 'CAPITAL RECOVERY',
-      opacity: 1.0,
+      index: 0,
       value: params.results['Capital Recovery [$/tCO2eq Net Removed]'],
       fraction:
         params.results['Capital Recovery [$/tCO2eq Net Removed]'] /
@@ -57,7 +57,7 @@ const Donut = ({ params }) => {
     },
     {
       category: 'FIXED O&M',
-      opacity: 0.7,
+      index: 1,
       value: params.results['Fixed O&M [$/tCO2eq Net Removed]'],
       fraction:
         params.results['Fixed O&M [$/tCO2eq Net Removed]'] /
@@ -65,7 +65,7 @@ const Donut = ({ params }) => {
     },
     {
       category: 'VARIABLE O&M',
-      opacity: 0.4,
+      index: 3,
       value: params.results['Variable O&M [$/tCO2eq Net Removed]'],
       fraction:
         params.results['Variable O&M [$/tCO2eq Net Removed]'] /
@@ -76,7 +76,7 @@ const Donut = ({ params }) => {
   if (params.results['Natural Gas Cost [$/tCO2 Net Removed]'] > 0) {
     values.push({
       category: 'NATURAL GAS',
-      opacity: 0.2,
+      index: 2,
       value: params.results['Natural Gas Cost [$/tCO2 Net Removed]'],
       fraction:
         params.results['Natural Gas Cost [$/tCO2 Net Removed]'] /

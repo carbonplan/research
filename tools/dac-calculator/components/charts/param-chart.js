@@ -98,7 +98,8 @@ const ParamChart = ({ param, data }) => {
         },
         opacity: {
           field: 'c',
-          type: 'nominal',
+          type: 'quantitative',
+          scale: { domain: [0, 3], range: [0.3, 0.9] },
           legend: null,
         },
       },

@@ -89,6 +89,10 @@ const Calculator = () => {
   modelInputs['log'] = false
   const chartData = calcPartialCost(dacModel, modelInputs, techKeys)
 
+  const reset = () => {
+    console.log('resetting')
+  }
+
   return (
     <Box>
       <Box
@@ -116,7 +120,11 @@ const Calculator = () => {
                 pointerEvents: 'all',
               }}
             >
-              <Energy key='energy' params={{ state: state['energy'] }}></Energy>
+              <Energy
+                key='energy'
+                params={{ state: state['energy'] }}
+                reset={reset}
+              ></Energy>
               <Text
                 sx={{
                   textAlign: 'left',

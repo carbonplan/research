@@ -36,9 +36,9 @@ const Donut = ({ results, width, innerRadius }) => {
           scale: { domain: [0, 1] },
         },
         opacity: {
-          field: 'category',
-          type: 'nominal',
-          // scale: { domain: [0, 1] },
+          field: 'index',
+          type: 'quantitative',
+          scale: { domain: [0, 3], range: [0.3, 0.9] },
           legend: null,
         },
       },
@@ -51,21 +51,21 @@ const Donut = ({ results, width, innerRadius }) => {
   const values = [
     {
       category: 'CAPITAL RECOVERY',
-      opacity: 1.0,
+      index: 0,
       value: results['Capital Recovery [$/tCO2eq]'],
       fraction:
         results['Capital Recovery [$/tCO2eq]'] / results['Total Cost [$/tCO2]'],
     },
     {
       category: 'FIXED O&M',
-      opacity: 0.7,
+      index: 1,
       value: results['Fixed O&M [$/tCO2eq]'],
       fraction:
         results['Fixed O&M [$/tCO2eq]'] / results['Total Cost [$/tCO2]'],
     },
     {
       category: 'VARIABLE O&M',
-      opacity: 0.4,
+      index: 3,
       value: results['Variable O&M [$/tCO2eq]'],
       fraction:
         results['Variable O&M [$/tCO2eq]'] / results['Total Cost [$/tCO2]'],
@@ -75,7 +75,7 @@ const Donut = ({ results, width, innerRadius }) => {
   if (results['Natural Gas Cost [$/tCO2]'] > 0) {
     values.push({
       category: 'NATURAL GAS',
-      opacity: 0.2,
+      index: 2,
       value: results['Natural Gas Cost [$/tCO2]'],
       fraction:
         results['Natural Gas Cost [$/tCO2]'] / results['Total Cost [$/tCO2]'],

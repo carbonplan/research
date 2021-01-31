@@ -55,19 +55,19 @@ const Legend = () => {
       }}
     >
       <Row>
-        <Circle opacity={1} />
+        <Circle opacity={0.95} />
         <Label label={'Variable O&M'} />
       </Row>
       <Row>
-        <Circle opacity={0.8} />
+        <Circle opacity={0.75} />
         <Label label={'Natural Gas'} />
       </Row>
       <Row>
-        <Circle opacity={0.6} />
+        <Circle opacity={0.55} />
         <Label label={'Fixed O&M'} />
       </Row>
       <Row>
-        <Circle opacity={0.4} />
+        <Circle opacity={0.35} />
         <Label label={'Capital Recovery'} />
       </Row>
     </Box>

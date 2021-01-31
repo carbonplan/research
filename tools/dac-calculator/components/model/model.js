@@ -64,7 +64,7 @@ class DacComponent {
 
   log(...args) {
     if (this.params['log']) {
-      console.log(args)
+      //console.log(args)
     }
   }
 

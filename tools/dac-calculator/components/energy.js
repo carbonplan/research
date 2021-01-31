@@ -1,6 +1,8 @@
 /** @jsx jsx */
+import { memo } from 'react'
 import { jsx } from 'theme-ui'
 import { Box, Text } from 'theme-ui'
+import Reset from './reset'
 
 const eMap = {
   WIND: 'Wind',
@@ -8,7 +10,7 @@ const eMap = {
   NGCC: 'NGCC',
 }
 
-const Energy = ({ params }) => {
+const Energy = ({ params, reset }) => {
   const [value, setValue] = params.state
 
   const handleChange = (e) => {
@@ -27,7 +29,9 @@ const Energy = ({ params }) => {
         }}
       >
         ENERGY SOURCE
+        <Reset onClick={reset} />
       </Text>
+
       <Text
         sx={{
           fontSize: [3],
@@ -70,11 +74,11 @@ const Energy = ({ params }) => {
             <option>WIND</option>
             <option>SOLAR</option>
           </select>
-          <span
+          <Text
+            as='span'
             sx={{
               ml: ['-15px'],
               fontSize: [4],
-              display: 'inline-block',
               pointerEvents: 'none',
               position: 'relative',
               top: '3px',
@@ -84,11 +88,11 @@ const Energy = ({ params }) => {
             }}
           >
             ↓
-          </span>
+          </Text>
         </Box>
       </Text>
     </Box>
   )
 }
 
-export default Energy
+export default memo(Energy)

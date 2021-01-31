@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Box, Divider, Text } from 'theme-ui'
-import Parameter from './parameter'
 import { Expander } from '@carbonplan/components'
+import Parameter from './parameter'
 
 const TechGroup = ({ name, group, data, state }) => {
   const [expanded, setExpanded] = useState(false)
@@ -43,7 +43,7 @@ const TechGroup = ({ name, group, data, state }) => {
           {name}
         </Text>
       </Box>
-      {expanded && (
+      {expanded && !(name == 'Advanced NGCC') && (
         <Box sx={{ mb: [4] }}>
           {group.map(
             (p) =>
@@ -56,6 +56,21 @@ const TechGroup = ({ name, group, data, state }) => {
                 ></Parameter>
               )
           )}
+        </Box>
+      )}
+      {expanded && name == 'Advanced NGCC' && (
+        <Box sx={{ mb: [3] }}>
+          <Text sx={{ pb: [2] }}>
+            No additional parameters because, whereas the electricity for the
+            system is provided by NGCC w/ CCS, the thermal energy is directly
+            supplied by natural gas production. Therefore, the cost of thermal
+            energy depends on the thermal energy demand of the system and the
+            cost of natural gas. It is important to note here that the emissions
+            associated with natural gas combustion are not included in the net
+            removed cost as the model is based on the solvent DAC system, which
+            co-captures the emissions from natural gas combustion inside the
+            high temperature thermal step.
+          </Text>
         </Box>
       )}
       <Divider sx={{ my: [0] }} />

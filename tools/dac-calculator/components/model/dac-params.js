@@ -175,7 +175,8 @@ const dacParameters = [
       {
         name: 'Leakage Rate [%]',
         displayName: 'Leakage Rate',
-        description: 'The rate of methane leakage during processing or distribution.',
+        description:
+          'The rate of methane leakage during natural gas processing or distribution.',
         unit: '%',
         initValue: 2.2,
         validRange: [0, 10],

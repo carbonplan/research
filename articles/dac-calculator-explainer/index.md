@@ -21,7 +21,8 @@ export const meta = {
   date: '02-01-2021',
   background: 'article-006/factory',
   card: 'dac-cost-calculator',
-  summary: 'How the cost of direct air capture varies under different energy configurations.',
+  summary:
+    'How the cost of direct air capture varies under different energy configurations.',
 }
 
 export const sidenotes = {
@@ -33,7 +34,7 @@ export const sidenotes = {
     title: 'Analysis and Quantification of Negative Emissions',
     journal: 'CDR Primer',
     editors: 'J Wilcox, B Kolosz, J Freeman',
-    url: 'https://cdrprimer.org/read/chapter-4'
+    url: 'https://cdrprimer.org/read/chapter-4',
   },
   2: {
     offset: 25,
