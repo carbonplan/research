@@ -193,7 +193,7 @@ const Calculator = () => {
                           color: 'secondary',
                         }}
                       >
-                        $/tCO₂
+                        $/tCO₂eq
                       </Text>
                     )}
                   </Text>

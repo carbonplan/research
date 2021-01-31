@@ -64,7 +64,7 @@ const dacParameters = [
         displayName: 'Cap Ex',
         description:
           'The capital costs of the complete DAC facility per ton of CO₂ installed capacity. This includes equipment, installation, piping and instrumentation, as well as neccessary costs for infrastructure inside and outside battery operating limits.',
-        unit: '$ / tCO₂ ann. cap.',
+        unit: '$/tCO₂ ann. cap.',
         initValue: 936,
         validRange: [10, 2250],
         step: 1,
@@ -141,7 +141,7 @@ const dacParameters = [
         name: 'Fixed O&M Costs [$/tCO2]',
         displayName: 'Fixed O&M',
         description:
-          'Fixed operating and maintenance costs are associated with process that do not vary based on the production (i.e. tCO2 captured by DAC facility). An example of fixed O&M is lease payments and/or property taxes.',
+          'Fixed operating and maintenance costs are associated with processes that do not vary based on the production (i.e. tCO2 captured by DAC facility). An example of fixed O&M is lease payments and/or property taxes.',
         unit: '$/tCO₂',
         initValue: 34,
         validRange: [0, 150],
@@ -153,7 +153,7 @@ const dacParameters = [
         name: 'Variable O&M Cost [$/tCO2]',
         displayName: 'Variable O&M',
         description:
-          'Variable operating and maintenance costs are the non-fuel portion of operating costs that are a function of the production (i.e. these are the costs associated with consumables that vary directly with the tCO2 captured by the DAC facility ). An example of a Variable O&M cost is raw materials, such as water and chemicals, as well as other consumables.',
+          'Variable operating and maintenance costs are the non-fuel portions of operating costs that are a function of the production (i.e. these are the costs associated with consumables that vary directly with the tCO2 captured by the DAC facility ). An example of a variable O&M cost is raw materials, such as water and chemicals, as well as other consumables.',
         unit: '$/tCO₂',
         initValue: 4,
         validRange: [0, 50],
@@ -176,7 +176,7 @@ const dacParameters = [
         name: 'Leakage Rate [%]',
         displayName: 'Leakage Rate',
         description:
-          'The rate of methane leakage during natural gas processing or distribution.',
+          'The rate of leakage during natural gas processing or distribution.',
         unit: '%',
         initValue: 2.2,
         validRange: [0, 10],

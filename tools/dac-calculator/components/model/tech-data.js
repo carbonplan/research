@@ -203,9 +203,9 @@ const techData = {
     },
     {
       name: 'Total CO2 eq [lb/mmbtu]',
-      displayName: 'Total CO2 eq',
+      displayName: 'Total CO₂eq',
       description:
-        'The total CO2eq refers to the total emissions of CO2 directly from the energy generating source.',
+        'The total CO₂eq refers to the total emissions of CO2 directly from the energy generating source.',
       unit: 'lb/mmbtu',
       initValue: 119,
       validRange: [0, 200],
@@ -308,7 +308,7 @@ const techData = {
     },
     {
       name: 'CO2 [lbs/mmbtu]',
-      displayName: 'CO2',
+      displayName: 'CO₂',
       description: 'TODO',
       unit: 'lbs/mmbtu',
       initValue: 117.0,
@@ -359,9 +359,9 @@ const techData = {
     },
     {
       name: 'Total CO2 eq [lb/mmbtu]',
-      displayName: 'Total CO2 eq',
+      displayName: 'Total CO₂eq',
       description:
-        'The total CO2eq refers to the total emissions of CO2 directly from the energy generating source.',
+        'The total CO₂eq refers to the total emissions of CO2 directly from the energy generating source.',
       unit: 'lb/mmbtu',
       initValue: 119,
       validRange: [0, 200],

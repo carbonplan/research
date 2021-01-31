@@ -56,15 +56,15 @@ const TechGroup = ({ name, group, data, state }) => {
       {expanded && name == 'Advanced NGCC' && (
         <Box sx={{ mb: [3] }}>
           <Text sx={{ pb: [2] }}>
-            This component of the energy technolog has no additional parameters.
-            Whereas electricity is provided by NGCC w/ CCS, thermal energy is
-            directly supplied by natural gas production. Therefore, the cost of
-            thermal energy depends on the thermal energy demand of the system
-            and the cost of natural gas. It is important to note here that the
-            emissions associated with natural gas combustion are not included in
-            the net removed cost as the model is based on the solvent DAC
-            system, which co-captures the emissions from natural gas combustion
-            inside the high temperature thermal step.
+            This component of the energy technology has no additional
+            parameters. Whereas electricity is provided by NGCC w/ CCS, thermal
+            energy is directly supplied by natural gas production. Therefore,
+            the cost of thermal energy depends on the thermal energy demand of
+            the system and the cost of natural gas. It is important to note here
+            that the emissions associated with natural gas combustion are not
+            included in the net removed cost as the model is based on the
+            solvent DAC system, which co-captures the emissions from natural gas
+            combustion inside the high temperature thermal step.
           </Text>
         </Box>
       )}

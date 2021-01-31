@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Link } from 'theme-ui'
+import { Box, Heading, Text, Link, Styled } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 
 const Methods = () => {
@@ -15,12 +15,32 @@ const Methods = () => {
       >
         Brief Methods
       </Text>
-      <Text sx={{ fontSize: [3] }}>
-        This calculator computes the cost per net ton of CO₂ removed by a
-        hypothetical DAC facility coupled to different energy sources. The model
-        estimates the levelized cost of energy, capital expenses, and operation
-        and maintenance costs. The entire model is implemented natively in
-        JavaScript and{' '}
+      <Styled.p>
+        This calculator computes the net removed cost ($/tCO₂eq) of carbon
+        removal for a hypothetical DAC facility coupled to one of three
+        different energy sources: natural gas combined with carbon capture and
+        storage (NGCC), wind, and solar. The model estimates the levelized cost
+        of energy, capital expenses, and operation and maintenance costs.
+      </Styled.p>
+      <Styled.p>
+        For natural gas, the model assumes that combustion for electricity
+        production is coupled with carbon capture at 90% capture efficiency. The
+        remaining 10% of emissions from electricity production are considered
+        net emissions and factored into net removed cost. Additionally, the
+        model assumes that all the natural gas combusted for thermal energy is
+        co-captured by the process, resulting in no emissions from combustion. A
+        leakge rate parameter accounts for natural gas leakage, which has been
+        reported as high as 3.7% in the Permian Basin region of the United
+        States
+      </Styled.p>
+      <Styled.p>
+        Given the definition of net removed cost, it is possible to create
+        parameter scenarios with NGCC that do not achieve net carbon removal,
+        because emissions are too large. These scenarios are indicated using
+        gray bars in the calculator.
+      </Styled.p>
+      <Styled.p>
+        The entire model is implemented natively in JavaScript and{' '}
         <Link href='http://github.com/carbonplan/research/tools/dac-calculator'>
           available on Github
         </Link>
@@ -38,7 +58,7 @@ const Methods = () => {
           <Link>article</Link>
         </NextLink>{' '}
         for more information.
-      </Text>
+      </Styled.p>
     </Box>
   )
 }
