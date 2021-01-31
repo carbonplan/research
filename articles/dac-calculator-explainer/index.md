@@ -222,7 +222,7 @@ Finally, returning to the high cost NGCC example, we can further consider increa
   capitalRecovery={416}
 />
 
-If we were to use a GWP20 of 86 for methane instead of a GWP100 of 32, emissions would become so high that the system no longer achieves carbon removal. Even with a GWP100 of 32, higher electricity and thermal requirements coupled to even higher leakage rates could result in no net removal, as shown here, though note that these are extremely high and likely unrealistic values.
+If we were to use a GWP20 of 86 for methane instead of a GWP100 of 32, emissions would become so high that the system no longer achieves carbon removal. Even with a GWP100 of 32, higher electricity and thermal requirements coupled to even higher leakage rates could result in no net removal, as shown here, though note that these are extremely high values.
 
 <ParameterScenario
   figureNumber={6}
