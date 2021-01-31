@@ -102,7 +102,7 @@ const Parameter = ({ param, data, state }) => {
           <Box
             sx={{
               width: [
-                'calc(min(89.1%, 380px) + 2px)',
+                'calc(min(89.1%, 380px) + 0px)',
                 'calc(min(89.1%, 380px) - 4px)',
                 'calc(min(89.1%, 380px) - 12px)',
               ],

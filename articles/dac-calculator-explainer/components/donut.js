@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { Vega } from 'react-vega'
 import { useThemeUI, Box } from 'theme-ui'
 var vegaLite = require('vega-lite')
@@ -8,26 +8,30 @@ const Donut = ({ results, initWidth, innerRadius }) => {
   const [loaded, setLoaded] = useState(false)
   const [width, setWidth] = useState(initWidth || 125)
   const context = useThemeUI()
+  const container = useRef(null)
   const theme = context.theme
 
   const updateWidth = (node) => {
-    const newWidth = node.offsetWidth * 0.85
-    if (newWidth < width) {
-      setWidth(newWidth)
+    if (container.current) {
+      const newWidth = container.current.offsetWidth * 0.85
+      if (newWidth < width) {
+        setWidth(newWidth)
+      }
     }
   }
 
-  const container = useCallback((node) => {
-    if (node) {
-      updateWidth(node)
-      let id = null
-      const listener = () => {
-        clearTimeout(id)
-        id = setTimeout(() => {
-          updateWidth(node)
-        }, 150)
-      }
-      window.addEventListener('resize', listener)
+  useEffect(() => {
+    updateWidth(container)
+    let id = null
+    const listener = () => {
+      clearTimeout(id)
+      id = setTimeout(() => {
+        updateWidth(container)
+      }, 150)
+    }
+    window.addEventListener('resize', listener)
+    return () => {
+      window.removeEventListener('resize', listener)
     }
   }, [])
 
