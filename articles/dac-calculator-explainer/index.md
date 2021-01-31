@@ -65,10 +65,10 @@ export const sidenotes = {
     url: 'https://pubs.acs.org/doi/10.1021/es502887y',
   },
   5: {
-    offset: 30,
+    offset: 50,
     number: 5,
     authors:
-      'Comparable to the vertical flow (VF) scenario described in McQueen et al. (2021).',
+      'This scenario is comparable to the vertical flow (VF) scenario described in McQueen et al. (2021).',
   },
   6: {
     offset: -25,
@@ -83,7 +83,7 @@ export const sidenotes = {
     offset: 0,
     number: 7,
     authors:
-      'Comparable to the horizontal flow (VF) scenario described in McQueen et al. (2021).',
+      'This scenario is comparable to the horizontal flow (VF) scenario described in McQueen et al. (2021).',
   },
 }
 
@@ -129,7 +129,7 @@ In the second scenario, wind turbines are used to continuously power the DAC pla
 
 The third scenario uses solar photovoltaics (PV) to continuously power the DAC plant. Similar to using wind turbines, solar PV requires the overproduction of electricity when the sun is shining to make up for times when there is not enough sunshine to produce electricity (i.e. at night). This requires energy storage, which is included in the form of lithium-ion batteries. Additionally, the solar PV alternative also uses electric resistance heating to meet the thermal energy demands of the DAC plant.
 
-With default settings, the calculator yields higher costs for wind or solar than for NGCC, and higher costs for solar than for wind.
+With default settings, the calculator yields the highest cost for solar, second highest for wind, and lowest for NGCC.
 
 <CostSummary
   windTotalCost={393}
@@ -140,35 +140,35 @@ With default settings, the calculator yields higher costs for wind or solar than
   solarVariableOM={4}
   solarFixedOM={72}
   solarCapitalRecovery={397}
-  NGCCTotalCost={225}
-  NGCCVariableOM={6}
-  NGCCFixedOM={37}
-  NGCCCapitalRecovery={149}
-  NGCCNaturalGas={33}
+  NGCCTotalCost={275}
+  NGCCVariableOM={8}
+  NGCCFixedOM={45}
+  NGCCCapitalRecovery={182}
+  NGCCNaturalGas={39}
 />
 
-But these particular costs reflect a specific set of assumptions. Varying parameters in the calculator lets you explore a range of costs for each scenario, and recreate the ranges that McQueen et al. report: $230-390/tCO₂ for NGCC, $360–570/tCO₂ for wind, and $430–690/tCO₂ for solar. Note that the parameters exposed in the calculator create the potential for wider cost ranges compared to the paper.
+But these costs reflect just one specific set of assumptions. Varying parameters in the calculator lets you explore a range of costs for each scenario, and recreate the ranges that McQueen et al. report: $230-390/tCO₂ for NGCC, $360–570/tCO₂ for wind, and $430–690/tCO₂ for solar. Note that the parameter ranges in the calculator let you explore a wider range of costs than described directly in the paper.
 
 ### Exploring the parameter space
 
-The above analysis shows a cost advantage for NGCC relative to wind or solar. But with alternate assumptions, that difference can become much smaller. Here we explore a high cost NGCC configuration, and a low cost wind configuration.
+The above analysis shows a cost advantage for NGCC relative to wind or solar. But with alternate assumptions, we can arrive at a different ranking. Here we explore a high cost NGCC configuration, and a low cost wind configuration.
 
-To model high cost NGCC, we use parameters from a DAC facility described in the [American Physical Societies 2011 report on Direct Air Capture](https://www.aps.org/policy/reports/assessments/upload/dac2011.pdf), including corrections for two additional follow-ons analyses.<Reference color={meta.color} data={sidenotes[3]}/><Reference color={meta.color} data={sidenotes[4]}/> Specifically, we assume a higher DAC plant cost, including both fixed and variable O&M, and slightly higher electricity and thermal energy requirements than some other cost estimates.<Reference color={meta.color} data={sidenotes[5]}/>
+To model high cost NGCC, we use parameters from a DAC facility described in the [American Physical Societies 2011 report on Direct Air Capture](https://www.aps.org/policy/reports/assessments/upload/dac2011.pdf), including corrections for two additional follow-ons analyses.<Reference color={meta.color} data={sidenotes[3]}/><Reference color={meta.color} data={sidenotes[4]}/> Specifically, we assume a higher DAC plant cost, and slightly higher electricity and thermal energy requirements than some other cost estimates.<Reference color={meta.color} data={sidenotes[5]}/>
 
 <ParameterScenario
   figureNumber={3}
   energySource={'NGCC'}
   capEx={2027}
-  electricReq={10}
-  thermalReq={10}
-  totalCost={401}
-  variableOM={11}
-  fixedOM={73}
-  naturalGas={35}
-  capitalRecovery={286}
+  electricReq={1.7}
+  thermalReq={7.2}
+  totalCost={464}
+  variableOM={9}
+  fixedOM={47}
+  naturalGas={44}
+  capitalRecovery={364}
 />
 
-To model low cost wind, we use parameters from a DAC facility described in Keith et al. (2018)<Reference color={meta.color} data={sidenotes[6]}/>, which corresponds to a lower DAC plant cost, including both fixed and variable O&M, and slightly lower electricity and thermal energy requirements.<Reference color={meta.color} data={sidenotes[7]}/>
+To model low cost wind, we use parameters from a DAC facility described in Keith et al. (2018)<Reference color={meta.color} data={sidenotes[6]}/>, which corresponds to a lower DAC plant cost, and slightly lower electricity and thermal energy requirements.<Reference color={meta.color} data={sidenotes[7]}/>
 
 <ParameterScenario
   figureNumber={4}
