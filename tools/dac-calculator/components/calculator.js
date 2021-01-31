@@ -103,6 +103,8 @@ const Calculator = () => {
           mb: ['-32px', '-32px', 0],
           zIndex: 500,
           pointerEvents: 'none',
+          width: ['calc(100vw)', 'calc(100vw)', 'initial'],
+          ml: ['-16px', '-32px', 0],
         }}
       >
         <Grid
@@ -120,6 +122,7 @@ const Calculator = () => {
                 pb: ['20px', '20px', '25px'],
                 backgroundColor: 'background',
                 pointerEvents: 'all',
+                px: [3, 4, 0],
               }}
             >
               <Energy
@@ -133,7 +136,7 @@ const Calculator = () => {
                   color: 'purple',
                   fontSize: [6],
                   display: ['initial', 'initial', 'none'],
-                  mt: '-68px',
+                  mt: '-70px',
                   float: 'right',
                 }}
               >

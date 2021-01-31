@@ -12,6 +12,7 @@ const Reset = ({ onClick }) => {
         position: 'relative',
         cursor: 'pointer',
         transition: '0.15s',
+        display: ['none', 'none', 'inherit'],
         pl: ['24px'],
         userSelect: 'none',
         '&:hover': {

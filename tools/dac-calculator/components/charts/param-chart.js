@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { Vega } from 'react-vega'
 import { useThemeUI, Box } from 'theme-ui'
 
@@ -9,15 +9,42 @@ const ParamChart = ({ param, data }) => {
   const [loaded, setLoaded] = useState(false)
   const [width, setWidth] = useState(380)
   const [barWidth, setBarWidth] = useState(15)
-  const context = useThemeUI()
-  const theme = context.theme
+  const container = useRef(null)
+  const { theme } = useThemeUI()
+
+  const getWidth = (container) => {
+    return Math.min(380, container.current.offsetWidth * 0.9)
+  }
 
   useEffect(() => {
-    if (document.body.clientWidth < 420) {
-      setWidth(280)
-      setBarWidth(11)
+    if (container.current && container.current.offsetWidth > 0) {
+      const newWidth = getWidth(container)
+      console.log(newWidth)
+      setWidth(newWidth)
+      setBarWidth(newWidth * 0.0392)
     }
   }, [])
+
+  useEffect(() => {
+    let id = null
+
+    const listener = () => {
+      clearTimeout(id)
+      id = setTimeout(() => {
+        if (container.current && container.current.offsetWidth > 0) {
+          const newWidth = getWidth(container)
+          setWidth(newWidth)
+          setBarWidth(newWidth * 0.0392)
+        }
+      }, 150)
+    }
+
+    window.addEventListener('resize', listener)
+
+    return () => {
+      window.removeEventListener('resize', listener)
+    }
+  }, [theme])
 
   useEffect(() => {
     const config = {
@@ -106,21 +133,23 @@ const ParamChart = ({ param, data }) => {
     }
     setSpec(vegaLite.compile(spec, { config: config }).spec)
     setLoaded(true)
-  }, [context, param])
+  }, [theme, param, barWidth])
 
   const height = param.chartHeight
 
   return (
     <>
       {loaded && (
-        <Vega
-          width={width}
-          height={height}
-          data={{ values: data }}
-          renderer={'svg'}
-          actions={false}
-          spec={spec}
-        />
+        <Box ref={container} sx={{ width: '100%' }}>
+          <Vega
+            width={width}
+            height={height}
+            data={{ values: data }}
+            renderer={'svg'}
+            actions={false}
+            spec={spec}
+          />
+        </Box>
       )}
       {!loaded && <Box sx={{ height: height + 41 }}></Box>}
     </>

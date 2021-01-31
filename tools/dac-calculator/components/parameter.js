@@ -60,6 +60,7 @@ const Parameter = ({ param, data, state }) => {
             ref={inputRef}
             sx={{
               textAlign: 'left',
+              maxWidth: '195px',
               color: 'purple',
               fontSize: [4],
               borderStyle: 'solid',
@@ -100,8 +101,12 @@ const Parameter = ({ param, data, state }) => {
           <ParamChart param={param} data={data}></ParamChart>
           <Box
             sx={{
-              width: ['276px', '276px', '368px'],
-              left: ['2px', '2px', '6px'],
+              width: [
+                'calc(min(90%, 380px) + 2px)',
+                'calc(min(90%, 380px) - 4px)',
+                'calc(min(90%, 380px) - 12px)',
+              ],
+              left: ['-1px', '2px', '4px'],
               top: param.offset ? param.offset[1] : '118px',
               position: 'absolute',
             }}
