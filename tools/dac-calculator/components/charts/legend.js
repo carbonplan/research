@@ -1,7 +1,6 @@
 import { Grid, Box, Text } from 'theme-ui'
-import { alpha } from '@theme-ui/color'
 
-const Circle = ({ opacity }) => {
+const Circle = ({ opacity, value }) => {
   return (
     <Box
       sx={{
@@ -9,7 +8,8 @@ const Circle = ({ opacity }) => {
         height: '14px',
         mt: '2px',
         borderRadius: '7px',
-        backgroundColor: alpha('purple', opacity),
+        opacity: value < 0 ? 0.65 : opacity,
+        backgroundColor: value < 0 ? 'secondary' : 'purple',
       }}
     ></Box>
   )
@@ -34,12 +34,12 @@ const Value = ({ value }) => {
   return (
     <Box
       sx={{
-        color: 'purple',
+        color: value < 0 ? 'secondary' : 'purple',
         fontFamily: 'mono',
         letterSpacing: 'mono',
       }}
     >
-      ${value.toFixed(0)}
+      ${value < 0 ? 'N/A' : value.toFixed(0)}
     </Box>
   )
 }
@@ -62,24 +62,36 @@ const Legend = ({ results }) => {
   return (
     <Box sx={{ mt: [3], mb: [3] }}>
       <Row>
-        <Circle opacity={0.95} />
+        <Circle
+          opacity={0.95}
+          value={results['Total Cost [$/tCO2 Net Removed]']}
+        />
         <Label label={'Variable O&M'} />
         <Value value={results['Variable O&M [$/tCO2eq Net Removed]']} />
       </Row>
       {results['Natural Gas Cost [$/tCO2]'] > 0 && (
         <Row>
-          <Circle opacity={0.75} />
+          <Circle
+            opacity={0.75}
+            value={results['Total Cost [$/tCO2 Net Removed]']}
+          />
           <Label label={'Natural Gas'} />
           <Value value={results['Natural Gas Cost [$/tCO2 Net Removed]']} />
         </Row>
       )}
       <Row>
-        <Circle opacity={0.55} />
+        <Circle
+          opacity={0.55}
+          value={results['Total Cost [$/tCO2 Net Removed]']}
+        />
         <Label label={'Fixed O&M'} />
         <Value value={results['Fixed O&M [$/tCO2eq Net Removed]']} />
       </Row>
       <Row>
-        <Circle opacity={0.35} />
+        <Circle
+          opacity={0.35}
+          value={results['Total Cost [$/tCO2 Net Removed]']}
+        />
         <Label label={'Capital Recovery'} />
         <Value value={results['Capital Recovery [$/tCO2eq Net Removed]']} />
       </Row>

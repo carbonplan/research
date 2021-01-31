@@ -6,8 +6,8 @@ var vegaLite = require('vega-lite')
 const Donut = ({ params }) => {
   const [spec, setSpec] = useState(null)
   const [loaded, setLoaded] = useState(false)
-  const context = useThemeUI()
-  const theme = context.theme
+  const { theme } = useThemeUI()
+  const cost = params.results['Total Cost [$/tCO2 Net Removed]']
 
   useEffect(() => {
     const config = {
@@ -39,48 +39,69 @@ const Donut = ({ params }) => {
           scale: { domain: [0, 3], range: [0.3, 0.9] },
           legend: null,
         },
+        color: {
+          field: 'color',
+          type: 'quantitative',
+          scale: {
+            domain: [0, 1],
+            range: [theme.colors.secondary, theme.colors.purple],
+          },
+          legend: null,
+        },
       },
     }
 
     setSpec(vegaLite.compile(spec, { config: config }).spec)
     setLoaded(true)
-  }, [context])
+  }, [theme])
 
   const values = [
     {
       category: 'CAPITAL RECOVERY',
-      index: 0,
+      index: cost < 0 ? 1 : 0,
+      color: cost < 0 ? 0 : 1,
       value: params.results['Capital Recovery [$/tCO2eq Net Removed]'],
       fraction:
-        params.results['Capital Recovery [$/tCO2eq Net Removed]'] /
-        params.results['Total Cost [$/tCO2 Net Removed]'],
+        cost < 0
+          ? 1
+          : params.results['Capital Recovery [$/tCO2eq Net Removed]'] /
+            params.results['Total Cost [$/tCO2 Net Removed]'],
     },
     {
       category: 'FIXED O&M',
-      index: 1,
+      index: cost < 0 ? 1 : 1,
+      color: cost < 0 ? 0 : 1,
       value: params.results['Fixed O&M [$/tCO2eq Net Removed]'],
       fraction:
-        params.results['Fixed O&M [$/tCO2eq Net Removed]'] /
-        params.results['Total Cost [$/tCO2 Net Removed]'],
+        cost < 0
+          ? 0
+          : params.results['Fixed O&M [$/tCO2eq Net Removed]'] /
+            params.results['Total Cost [$/tCO2 Net Removed]'],
     },
     {
       category: 'VARIABLE O&M',
-      index: 3,
+      index: cost < 0 ? 1 : 3,
+      color: cost < 0 ? 0 : 1,
       value: params.results['Variable O&M [$/tCO2eq Net Removed]'],
       fraction:
-        params.results['Variable O&M [$/tCO2eq Net Removed]'] /
-        params.results['Total Cost [$/tCO2 Net Removed]'],
+        cost < 0
+          ? 0
+          : params.results['Variable O&M [$/tCO2eq Net Removed]'] /
+            params.results['Total Cost [$/tCO2 Net Removed]'],
     },
   ]
 
   if (params.results['Natural Gas Cost [$/tCO2 Net Removed]'] > 0) {
     values.push({
       category: 'NATURAL GAS',
-      index: 2,
+      index: cost < 0 ? 1 : 2,
+      color: cost < 0 ? 0 : 1,
       value: params.results['Natural Gas Cost [$/tCO2 Net Removed]'],
       fraction:
-        params.results['Natural Gas Cost [$/tCO2 Net Removed]'] /
-        params.results['Total Cost [$/tCO2 Net Removed]'],
+        cost < 0
+          ? 0
+          : params.results['Natural Gas Cost [$/tCO2 Net Removed]'] /
+            params.results['Total Cost [$/tCO2 Net Removed]'],
     })
   }
 

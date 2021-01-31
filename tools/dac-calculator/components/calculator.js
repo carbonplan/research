@@ -130,18 +130,27 @@ const Calculator = () => {
                 params={{ state: state['energy'] }}
                 reset={reset}
               ></Energy>
-              <Text
+              <Box
                 sx={{
-                  textAlign: 'left',
-                  color: 'purple',
-                  fontSize: [6],
                   display: ['initial', 'initial', 'none'],
-                  mt: '-70px',
-                  float: 'right',
                 }}
               >
-                ${cost}
-              </Text>
+                <Text
+                  sx={{
+                    textAlign: 'left',
+                    color: cost < 0 ? 'secondary' : 'purple',
+                    fontSize: ['42px'],
+                    fontFamily: 'mono',
+                    mt: '-70px',
+                    float: 'right',
+                  }}
+                >
+                  ${cost < 0 ? 'N/A' : cost}
+                </Text>
+                <Text sx={{ float: 'right', mt: '-18px' }}>
+                  {cost < 0 ? 'No Net Removal' : 'Net Removed Cost'}
+                </Text>
+              </Box>
             </Box>
             <Divider sx={{ my: [0] }} />
           </Box>
@@ -161,11 +170,11 @@ const Calculator = () => {
                 <Text
                   sx={{
                     textAlign: 'left',
-                    color: 'purple',
+                    color: cost < 0 ? 'secondary' : 'purple',
                     fontSize: [6],
                   }}
                 >
-                  ${cost}
+                  ${cost < 0 ? 'N/A' : cost}
                 </Text>
                 <Box>
                   <Text
@@ -175,16 +184,18 @@ const Calculator = () => {
                       fontSize: [4],
                     }}
                   >
-                    Net Removed Cost
-                    <Text
-                      sx={{
-                        ml: [2],
-                        display: 'inline-block',
-                        color: 'secondary',
-                      }}
-                    >
-                      $/tCO<sub>2</sub>
-                    </Text>
+                    {cost < 0 ? 'No Net Removal' : 'Net Removed Cost'}
+                    {cost >= 0 && (
+                      <Text
+                        sx={{
+                          ml: [2],
+                          display: 'inline-block',
+                          color: 'secondary',
+                        }}
+                      >
+                        $/tCO₂
+                      </Text>
+                    )}
                   </Text>
                 </Box>
               </Box>

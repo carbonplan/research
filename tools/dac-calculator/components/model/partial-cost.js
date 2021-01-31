@@ -70,29 +70,40 @@ function calcForOneParam(model, p, params) {
   const origValue = params[p.name].valueOf() // copy original value
 
   const x = calcX(p)
+
+  let cost
+
   for (var j = 0, k = x.length; j < k; j++) {
     params[p.name] = x[j]
     model.setParams(params)
     tempResults = model.compute()
+    cost = tempResults['Total Cost [$/tCO2 Net Removed]']
     chartData.push({
       x: x[j],
-      y: tempResults['Variable O&M [$/tCO2eq Net Removed]'],
-      c: 3,
+      y: cost < 0 ? 1000 : tempResults['Variable O&M [$/tCO2eq Net Removed]'],
+      o: cost < 0 ? 1 : 3,
+      c: cost < 0 ? 0 : 1,
     })
     chartData.push({
       x: x[j],
-      y: tempResults['Natural Gas Cost [$/tCO2 Net Removed]'],
-      c: 2,
+      y: cost < 0 ? 1000 : tempResults['Natural Gas Cost [$/tCO2 Net Removed]'],
+      o: cost < 0 ? 1 : 2,
+      c: cost < 0 ? 0 : 1,
     })
     chartData.push({
       x: x[j],
-      y: tempResults['Fixed O&M [$/tCO2eq Net Removed]'],
-      c: 1,
+      y: cost < 0 ? 1000 : tempResults['Fixed O&M [$/tCO2eq Net Removed]'],
+      o: cost < 0 ? 1 : 1,
+      c: cost < 0 ? 0 : 1,
     })
     chartData.push({
       x: x[j],
-      y: tempResults['Capital Recovery [$/tCO2eq Net Removed]'],
-      c: 0,
+      y:
+        cost < 0
+          ? 1000
+          : tempResults['Capital Recovery [$/tCO2eq Net Removed]'],
+      o: cost < 0 ? 1 : 0,
+      c: cost < 0 ? 0 : 1,
     })
   }
   params[p.name] = origValue // replace original value
@@ -115,29 +126,40 @@ function calcForOneTechParam(model, tech, p, params) {
   const chartData = []
 
   const x = calcX(p)
+
+  let cost
+
   for (var j = 0, k = x.length; j < k; j++) {
     params['Technology'][tech][p.name] = x[j]
     model.setParams(params)
     tempResults = model.compute()
+    cost = tempResults['Total Cost [$/tCO2 Net Removed]']
     chartData.push({
       x: x[j],
-      y: tempResults['Natural Gas Cost [$/tCO2 Net Removed]'],
-      c: 2,
+      y: cost < 0 ? 1000 : tempResults['Natural Gas Cost [$/tCO2 Net Removed]'],
+      o: cost < 0 ? 1 : 2,
+      c: cost < 0 ? 0 : 1,
     })
     chartData.push({
       x: x[j],
-      y: tempResults['Variable O&M [$/tCO2eq Net Removed]'],
-      c: 3,
+      y: cost < 0 ? 1000 : tempResults['Variable O&M [$/tCO2eq Net Removed]'],
+      o: cost < 0 ? 1 : 3,
+      c: cost < 0 ? 0 : 1,
     })
     chartData.push({
       x: x[j],
-      y: tempResults['Fixed O&M [$/tCO2eq Net Removed]'],
-      c: 1,
+      y: cost < 0 ? 1000 : tempResults['Fixed O&M [$/tCO2eq Net Removed]'],
+      o: cost < 0 ? 1 : 1,
+      c: cost < 0 ? 0 : 1,
     })
     chartData.push({
       x: x[j],
-      y: tempResults['Capital Recovery [$/tCO2eq Net Removed]'],
-      c: 0,
+      y:
+        cost < 0
+          ? 1000
+          : tempResults['Capital Recovery [$/tCO2eq Net Removed]'],
+      o: cost < 0 ? 1 : 0,
+      c: cost < 0 ? 0 : 1,
     })
   }
   params['Technology'][tech][p.name] = origValue // replace original value

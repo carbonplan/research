@@ -116,9 +116,18 @@ const ParamChart = ({ param, data }) => {
           },
         },
         opacity: {
-          field: 'c',
+          field: 'o',
           type: 'quantitative',
           scale: { domain: [0, 3], range: [0.3, 0.9] },
+          legend: null,
+        },
+        color: {
+          field: 'c',
+          type: 'quantitative',
+          scale: {
+            domain: [0, 1],
+            range: [theme.colors.secondary, theme.colors.purple],
+          },
           legend: null,
         },
       },
