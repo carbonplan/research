@@ -95,9 +95,7 @@ const Calculator = () => {
     )
     state['Electric [GJ/tCO2]'][1](ELECTRIC_DEMAND[state.energy[0]])
     for (var key in techData) {
-      techData[key].map(
-        (p) => (state['Technology'][key][p.name][1](p.initValue))
-      )
+      techData[key].map((p) => state['Technology'][key][p.name][1](p.initValue))
     }
     console.log('resetting')
   }
