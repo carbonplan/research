@@ -50,9 +50,10 @@ export const sidenotes = {
     number: 3,
     authors: 'Socolow et al.',
     year: 2011,
-    title: 'Direct air capture of CO₂ with chemicals: A technology assessment for the APS panel on public affairs',
+    title:
+      'Direct air capture of CO₂ with chemicals: A technology assessment for the APS panel on public affairs',
     journal: 'American Physical Society',
-    url: 'https://www.aps.org/policy/reports/assessments/upload/dac2011.pdf'
+    url: 'https://www.aps.org/policy/reports/assessments/upload/dac2011.pdf',
   },
   4: {
     offset: -100,
