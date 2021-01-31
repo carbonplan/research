@@ -1,3 +1,5 @@
+import { Link } from 'theme-ui'
+import { default as NextLink } from 'next/link'
 import Article from '../../components/article'
 import Reference from '../../components/reference'
 import SectionBreak from '../../components/section-break'
@@ -113,7 +115,9 @@ Analyzing the cost of DAC also requires considering any associated greenhouse ga
 
 In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system.<Reference color={meta.color} data={sidenotes[2]}/> They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO₂ released during combustion, and six all-electric non-fossil systems.
 
-To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an [interactive calculator](https://carbonplan.org/research/dac-calculator) based directly on the model from the paper.
+To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an <NextLink href={'/research/dac-calculator'} passHref={true}><Link>interactive calculator</Link></NextLink> based directly on the model from the paper.
+
+So we .
 
 Here we explain the design of the model and the parameter space, and highlight some key insights.
 
