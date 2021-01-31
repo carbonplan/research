@@ -9,6 +9,7 @@ const ParameterScenario = ({
   capEx,
   electricReq,
   thermalReq,
+  leakage,
   totalCost,
   variableOM,
   fixedOM,
@@ -40,10 +41,16 @@ const ParameterScenario = ({
             <Value>{electricReq}</Value>
             <Label units='GJ/tCO₂'>Electric Req</Label>
           </Box>
-          <Box sx={{ mt: [3], mb: [2, 2, 0] }}>
+          <Box sx={{ mt: [3], mb: leakage ? [0, 0, 0] : [2, 2, 0] }}>
             <Value>{thermalReq}</Value>
             <Label units='GJ/tCO₂'>Thermal Req</Label>
           </Box>
+          {leakage > 0 &&
+            <Box sx={{ mt: [3], mb: [2, 2, 0] }}>
+              <Value>{leakage}</Value>
+              <Label units='%'>Leakage Rate</Label>
+            </Box>
+          }
         </Box>
         <Box>
           <Divider />
@@ -69,15 +76,34 @@ const ParameterScenario = ({
           >
             {energySource}
           </Text>
-          <Text sx={{ color: 'purple', fontSize: [6], fontFamily: 'mono' }}>
+          <Text sx={{ color: (totalCost === 'N/A') ? 'secondary' : 'purple', fontSize: [6], fontFamily: 'mono' }}>
             ${totalCost}
+          </Text>
+          <Text
+            sx={{
+              textAlign: 'left',
+              color: 'text',
+              fontSize: [2],
+            }}
+          >
+            {(totalCost === 'N/A') ? 'No Net Removal' : 'Net Removed Cost'}
+            {!(totalCost === 'N/A') && <Text
+                sx={{
+                  ml: [2],
+                  display: 'inline-block',
+                  color: 'secondary',
+                }}
+              >
+                $/tCO₂eq
+              </Text>
+            }
           </Text>
           <Box
             sx={{
               mt:
-                results['Natural Gas Cost [$/tCO2]'] > 0
-                  ? [0, 0, '38px']
-                  : [0, 0, '58px'],
+                leakage
+                  ? [0, 0, '59px']
+                  : [0, 0, '-2px'],
             }}
           >
             <LegendWithValues results={results} />
@@ -95,8 +121,7 @@ const ParameterScenario = ({
         <Text sx={{ display: 'inline-block', color: 'primary', mx: [1] }}>
           /
         </Text>{' '}
-        Parameter and cost summary for {figureCaption}. Costs are reported as
-        net removed cost ($/tCO₂)
+        Summary for {figureCaption}.
       </Text>
     </Box>
   )
@@ -108,7 +133,7 @@ function Value({ children }) {
       sx={{
         fontFamily: 'mono',
         color: 'purple',
-        fontSize: [4],
+        fontSize: [3],
         pb: [1],
         borderStyle: 'solid',
         borderColor: 'muted',

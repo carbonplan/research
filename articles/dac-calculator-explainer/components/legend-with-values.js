@@ -1,7 +1,7 @@
 import { Grid, Box, Text } from 'theme-ui'
 import { alpha } from '@theme-ui/color'
 
-const Circle = ({ opacity }) => {
+const Circle = ({ opacity, disabled }) => {
   return (
     <Box
       sx={{
@@ -9,7 +9,8 @@ const Circle = ({ opacity }) => {
         height: '14px',
         mt: '2px',
         borderRadius: '7px',
-        backgroundColor: alpha('purple', opacity),
+        opacity: disabled ? 0.75 : opacity,
+        backgroundColor: disabled ? 'secondary' : 'purple',
       }}
     ></Box>
   )
@@ -30,16 +31,16 @@ const Label = ({ label }) => {
   )
 }
 
-const Value = ({ value }) => {
+const Value = ({ value, disabled }) => {
   return (
     <Box
       sx={{
-        color: 'purple',
+        color: disabled ? 'secondary' : 'purple',
         fontFamily: 'mono',
         letterSpacing: 'mono',
       }}
     >
-      ${value.toFixed(0)}
+      ${value}
     </Box>
   )
 }
@@ -59,29 +60,31 @@ const Row = ({ children }) => {
 }
 
 const Legend = ({ results }) => {
+  const disabled = results['Natural Gas Cost [$/tCO2]'] === 'N/A'
+
   return (
     <Box sx={{ mt: [2, 2, 3], mb: [2, 2, 3] }}>
       <Row>
-        <Circle opacity={0.95} />
+        <Circle opacity={0.95} disabled/>
         <Label label={'Variable O&M'} />
-        <Value value={results['Variable O&M [$/tCO2eq]']} />
+        <Value value={results['Variable O&M [$/tCO2eq]']} disabled/>
       </Row>
-      {results['Natural Gas Cost [$/tCO2]'] > 0 && (
+      {((results['Natural Gas Cost [$/tCO2]'] > 0) || disabled) && (
         <Row>
-          <Circle opacity={0.75} />
+          <Circle opacity={0.75} disabled/>
           <Label label={'Natural Gas'} />
-          <Value value={results['Natural Gas Cost [$/tCO2]']} />
+          <Value value={results['Natural Gas Cost [$/tCO2]']} disabled/>
         </Row>
       )}
       <Row>
-        <Circle opacity={0.55} />
+        <Circle opacity={0.55} disabled/>
         <Label label={'Fixed O&M'} />
-        <Value value={results['Fixed O&M [$/tCO2eq]']} />
+        <Value value={results['Fixed O&M [$/tCO2eq]']} disabled/>
       </Row>
       <Row>
-        <Circle opacity={0.35} />
+        <Circle opacity={0.35} disabled/>
         <Label label={'Capital Recovery'} />
-        <Value value={results['Capital Recovery [$/tCO2eq]']} />
+        <Value value={results['Capital Recovery [$/tCO2eq]']} disabled/>
       </Row>
     </Box>
   )
