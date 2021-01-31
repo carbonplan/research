@@ -72,9 +72,12 @@ const Donut = ({ results, initWidth, innerRadius }) => {
         color: {
           field: 'color',
           type: 'quantitative',
-          scale: { domain: [0, 1], range: [theme.colors.secondary, theme.colors.purple] },
+          scale: {
+            domain: [0, 1],
+            range: [theme.colors.secondary, theme.colors.purple],
+          },
           legend: null,
-        }
+        },
       },
     }
 
@@ -90,24 +93,28 @@ const Donut = ({ results, initWidth, innerRadius }) => {
       index: disabled ? 1 : 0,
       color: disabled ? 0 : 1,
       value: results['Capital Recovery [$/tCO2eq]'],
-      fraction: disabled ? 1 :
-        results['Capital Recovery [$/tCO2eq]'] / results['Total Cost [$/tCO2]'],
+      fraction: disabled
+        ? 1
+        : results['Capital Recovery [$/tCO2eq]'] /
+          results['Total Cost [$/tCO2]'],
     },
     {
       category: 'FIXED O&M',
       index: 1,
       color: 1,
       value: results['Fixed O&M [$/tCO2eq]'],
-      fraction: disabled ? 0 :
-        results['Fixed O&M [$/tCO2eq]'] / results['Total Cost [$/tCO2]'],
+      fraction: disabled
+        ? 0
+        : results['Fixed O&M [$/tCO2eq]'] / results['Total Cost [$/tCO2]'],
     },
     {
       category: 'VARIABLE O&M',
       index: 3,
       color: 1,
       value: results['Variable O&M [$/tCO2eq]'],
-      fraction: disabled ? 0 :
-        results['Variable O&M [$/tCO2eq]'] / results['Total Cost [$/tCO2]'],
+      fraction: disabled
+        ? 0
+        : results['Variable O&M [$/tCO2eq]'] / results['Total Cost [$/tCO2]'],
     },
   ]
 
@@ -117,8 +124,9 @@ const Donut = ({ results, initWidth, innerRadius }) => {
       index: 2,
       color: 1,
       value: results['Natural Gas Cost [$/tCO2]'],
-      fraction: disabled ? 0 :
-        results['Natural Gas Cost [$/tCO2]'] / results['Total Cost [$/tCO2]'],
+      fraction: disabled
+        ? 0
+        : results['Natural Gas Cost [$/tCO2]'] / results['Total Cost [$/tCO2]'],
     })
   }
 

@@ -9,7 +9,7 @@ const Circle = ({ opacity }) => {
         mt: '2px',
         borderRadius: '7px',
         opacity: opacity,
-        backgroundColor: 'purple'
+        backgroundColor: 'purple',
       }}
     ></Box>
   )

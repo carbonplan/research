@@ -50,8 +50,9 @@ export const sidenotes = {
   3: {
     offset: 0,
     number: 3,
-    authors: 'Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.',
-    url: 'https://twitter.com/emilygrubert/status/1353155080061669376'
+    authors:
+      'Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.',
+    url: 'https://twitter.com/emilygrubert/status/1353155080061669376',
   },
   4: {
     offset: -210,
@@ -141,7 +142,7 @@ Each of these cost components in turn depend on parameters, which are presented 
 
 The calculator allows you to explore three of the energy scenarios that McQueen et al. considered.
 
-The first scenario uses natural gas combined with carbon capture and storage (NGCC) to supply electricity for the DAC plant, while natural gas combustion meets the thermal energy requirements. A key issue when considering NGCC for powering DAC is that any greenhouse gas emissions created in the process reduce the effective net removal, and thus increase the net removal cost. The model assumes that natural gas combustion for electricity production is coupled with carbon capture at 90% capture efficiency. The remaining 10% of emissions from electricity production are considered net emissions and factored into net removed cost. Additionally, the model assumes that all the natural gas combusted for thermal energy is co-captured by the process, resulting in no emissions from combustion. 
+The first scenario uses natural gas combined with carbon capture and storage (NGCC) to supply electricity for the DAC plant, while natural gas combustion meets the thermal energy requirements. A key issue when considering NGCC for powering DAC is that any greenhouse gas emissions created in the process reduce the effective net removal, and thus increase the net removal cost. The model assumes that natural gas combustion for electricity production is coupled with carbon capture at 90% capture efficiency. The remaining 10% of emissions from electricity production are considered net emissions and factored into net removed cost. Additionally, the model assumes that all the natural gas combusted for thermal energy is co-captured by the process, resulting in no emissions from combustion.
 
 For natural gas we also have to consider leakage, which is substantial — we use a default rate of 2.2% but rates as high as 3.7% have been reported for the Permian Basin region of the United States. In the model, we assume that some fraction of natural gas is lost to the atmosphere during processing or distribution, with the fraction controlled by a leakage rate parameter. Methane, a primary component of natural gas, has a higher [global warming potential (GWP)](https://cdrprimer.org/read/chapter-4) than CO₂. The model uses a GWP 100 of 32 to calculate the CO₂ equivalent of methane emissions, which are then factored into the net removed cost. As we will show below, given the definition of net removed cost, it is possible to create parameter scenarios with NGCC that do not achieve net carbon removal, because emissions are too large.<Reference color={meta.color} data={sidenotes[3]}/> The costs we report do not include non-greenhouse gas negative externalities that result from continued use of and dependence on fossil energy, which could be a critical factor in considering different energy sources for DAC.
 
@@ -204,7 +205,7 @@ To model low cost wind, we use parameters from a DAC facility described in Keith
   capitalRecovery={297}
 />
 
-Finally, returning to the high cost NGCC example, we can further consider increasing the natural gas leakage rate from the default of 2.2% to 3.7%. With these parameters, net removed cost increases to $530, higher than for any of the scenarios considered thus far. 
+Finally, returning to the high cost NGCC example, we can further consider increasing the natural gas leakage rate from the default of 2.2% to 3.7%. With these parameters, net removed cost increases to $530, higher than for any of the scenarios considered thus far.
 
 <ParameterScenario
   figureNumber={5}
@@ -225,7 +226,9 @@ If we were to use a GWP20 of 86 for methane instead of a GWP100 of 32, emissions
 
 <ParameterScenario
   figureNumber={6}
-  figureCaption={'Summary for an NGCC scenario that does not achieve carbon removal.'}
+  figureCaption={
+    'Summary for an NGCC scenario that does not achieve carbon removal.'
+  }
   energySource={'NGCC'}
   capEx={2027}
   electricReq={6.1}
@@ -263,4 +266,3 @@ CarbonPlan received no specific financial support for this work. Noah McQueen is
 ### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>
-

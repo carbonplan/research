@@ -45,12 +45,12 @@ const ParameterScenario = ({
             <Value>{thermalReq}</Value>
             <Label units='GJ/tCO₂'>Thermal Req</Label>
           </Box>
-          {leakage > 0 &&
+          {leakage > 0 && (
             <Box sx={{ mt: [3], mb: [2, 2, 0] }}>
               <Value>{leakage}</Value>
               <Label units='%'>Leakage Rate</Label>
             </Box>
-          }
+          )}
         </Box>
         <Box>
           <Divider />
@@ -76,7 +76,13 @@ const ParameterScenario = ({
           >
             {energySource}
           </Text>
-          <Text sx={{ color: (totalCost === 'N/A') ? 'secondary' : 'purple', fontSize: [6], fontFamily: 'mono' }}>
+          <Text
+            sx={{
+              color: totalCost === 'N/A' ? 'secondary' : 'purple',
+              fontSize: [6],
+              fontFamily: 'mono',
+            }}
+          >
             ${totalCost}
           </Text>
           <Text
@@ -86,8 +92,9 @@ const ParameterScenario = ({
               fontSize: [2],
             }}
           >
-            {(totalCost === 'N/A') ? 'No Net Removal' : 'Net Removed Cost'}
-            {!(totalCost === 'N/A') && <Text
+            {totalCost === 'N/A' ? 'No Net Removal' : 'Net Removed Cost'}
+            {!(totalCost === 'N/A') && (
+              <Text
                 sx={{
                   ml: [2],
                   display: 'inline-block',
@@ -96,14 +103,11 @@ const ParameterScenario = ({
               >
                 $/tCO₂eq
               </Text>
-            }
+            )}
           </Text>
           <Box
             sx={{
-              mt:
-                leakage
-                  ? [0, 0, '59px']
-                  : [0, 0, '-2px'],
+              mt: leakage ? [0, 0, '59px'] : [0, 0, '-2px'],
             }}
           >
             <LegendWithValues results={results} />

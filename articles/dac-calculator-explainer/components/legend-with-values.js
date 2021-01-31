@@ -64,26 +64,32 @@ const Legend = ({ results }) => {
   return (
     <Box sx={{ mt: [2, 2, 3], mb: [2, 2, 3] }}>
       <Row>
-        <Circle opacity={0.95} disabled={disabled}/>
+        <Circle opacity={0.95} disabled={disabled} />
         <Label label={'Variable O&M'} />
-        <Value value={results['Variable O&M [$/tCO2eq]']} disabled={disabled}/>
+        <Value value={results['Variable O&M [$/tCO2eq]']} disabled={disabled} />
       </Row>
-      {((results['Natural Gas Cost [$/tCO2]'] > 0) || disabled) && (
+      {(results['Natural Gas Cost [$/tCO2]'] > 0 || disabled) && (
         <Row>
-          <Circle opacity={0.75} disabled={disabled}/>
+          <Circle opacity={0.75} disabled={disabled} />
           <Label label={'Natural Gas'} />
-          <Value value={results['Natural Gas Cost [$/tCO2]']} disabled={disabled}/>
+          <Value
+            value={results['Natural Gas Cost [$/tCO2]']}
+            disabled={disabled}
+          />
         </Row>
       )}
       <Row>
-        <Circle opacity={0.55} disabled={disabled}/>
+        <Circle opacity={0.55} disabled={disabled} />
         <Label label={'Fixed O&M'} />
-        <Value value={results['Fixed O&M [$/tCO2eq]']} disabled={disabled}/>
+        <Value value={results['Fixed O&M [$/tCO2eq]']} disabled={disabled} />
       </Row>
       <Row>
-        <Circle opacity={0.35} disabled={disabled}/>
+        <Circle opacity={0.35} disabled={disabled} />
         <Label label={'Capital Recovery'} />
-        <Value value={results['Capital Recovery [$/tCO2eq]']} disabled={disabled}/>
+        <Value
+          value={results['Capital Recovery [$/tCO2eq]']}
+          disabled={disabled}
+        />
       </Row>
     </Box>
   )
