@@ -171,6 +171,7 @@ To model high cost NGCC, we use parameters from a DAC facility described in a 20
 
 <ParameterScenario
   figureNumber={3}
+  figureCaption={'a higher cost NGCC scenario'}
   energySource={'NGCC'}
   capEx={2027}
   electricReq={1.7}
@@ -186,6 +187,7 @@ To model low cost wind, we use parameters from a DAC facility described in Keith
 
 <ParameterScenario
   figureNumber={4}
+  figureCaption={'a lower cost wind scenario'}
   energySource={'wind'}
   capEx={936}
   electricReq={0.95}

@@ -5,6 +5,7 @@ import LegendWithValues from './legend-with-values'
 const ParameterScenario = ({
   figureNumber,
   energySource,
+  figureCaption,
   capEx,
   electricReq,
   thermalReq,
@@ -39,15 +40,15 @@ const ParameterScenario = ({
             <Value>{electricReq}</Value>
             <Label units='GJ/tCO₂'>Electric Req</Label>
           </Box>
-          <Box sx={{ mt: [3] }}>
+          <Box sx={{ mt: [3], mb: [2, 2, 0] }}>
             <Value>{thermalReq}</Value>
             <Label units='GJ/tCO₂'>Thermal Req</Label>
           </Box>
         </Box>
         <Box>
-          <Divider />
-          <Box sx={{ textAlign: ['left', 'left', 'center'], mt: [4] }}>
-            <Donut results={results} width={150} />
+          <Divider/>
+          <Box sx={{ textAlign: ['left', 'left', 'center'], mt: ['13px', '13px', 4] }}>
+            <Donut results={results} initWidth={150} />
           </Box>
         </Box>
         <Box>
@@ -69,7 +70,7 @@ const ParameterScenario = ({
           <Box
             sx={{
               mt:
-                results['Natural Gas Cost [$/tCO2]'] > 0 ? ['38px'] : ['58px'],
+                results['Natural Gas Cost [$/tCO2]'] > 0 ? [0, 0, '38px'] : [0, 0, '58px'],
             }}
           >
             <LegendWithValues results={results} />
@@ -87,7 +88,7 @@ const ParameterScenario = ({
         <Text sx={{ display: 'inline-block', color: 'primary', mx: [1] }}>
           /
         </Text>{' '}
-        Parameter and cost summary for {energySource} energy configuration.
+        Parameter and cost summary for {figureCaption}.
         Costs are reported as net removed cost ($/tCO₂)
       </Text>
     </Box>
@@ -106,6 +107,7 @@ function Value({ children }) {
         borderColor: 'muted',
         borderWidth: '0px',
         borderBottomWidth: '1px',
+        maxWidth: '200px'
       }}
     >
       {children}

@@ -60,7 +60,7 @@ const Row = ({ children }) => {
 
 const Legend = ({ results }) => {
   return (
-    <Box sx={{ mt: [3], mb: [3] }}>
+    <Box sx={{ mt: [2, 2, 3], mb: [2, 2, 3] }}>
       <Row>
         <Circle opacity={0.95} />
         <Label label={'Variable O&M'} />

@@ -1,15 +1,35 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { Vega } from 'react-vega'
 import { useThemeUI, Box } from 'theme-ui'
 var vegaLite = require('vega-lite')
 
-const Donut = ({ results, width, innerRadius }) => {
+const Donut = ({ results, initWidth, innerRadius }) => {
   const [spec, setSpec] = useState(null)
   const [loaded, setLoaded] = useState(false)
+  const [width, setWidth] = useState(initWidth || 125)
   const context = useThemeUI()
   const theme = context.theme
-  width = width || 125
-  innerRadius = innerRadius || width * 0.2333
+
+  const updateWidth = (node) => {
+    const newWidth = node.offsetWidth * 0.85
+    if (newWidth < width) {
+      setWidth(newWidth)
+    }
+  }
+
+  const container = useCallback(node => {
+    if (node) {
+      updateWidth(node)
+      let id = null
+      const listener = () => {
+        clearTimeout(id)
+        id = setTimeout(() => {
+          updateWidth(node)
+        }, 150)
+      }
+      window.addEventListener('resize', listener)
+    }
+  }, [])
 
   useEffect(() => {
     const config = {
@@ -26,7 +46,7 @@ const Donut = ({ results, width, innerRadius }) => {
       },
       mark: {
         type: 'arc',
-        innerRadius: innerRadius,
+        innerRadius: width * 0.2333,
         color: theme.colors.purple,
       },
       encoding: {
@@ -46,7 +66,7 @@ const Donut = ({ results, width, innerRadius }) => {
 
     setSpec(vegaLite.compile(spec, { config: config }).spec)
     setLoaded(true)
-  }, [context])
+  }, [context, width])
 
   const values = [
     {
@@ -87,14 +107,16 @@ const Donut = ({ results, width, innerRadius }) => {
   return (
     <>
       {loaded && (
-        <Vega
-          width={width}
-          height={height}
-          data={{ values: values }}
-          renderer={'svg'}
-          actions={false}
-          spec={spec}
-        />
+        <Box ref={container} sx={{width: '100%'}}>
+          <Vega
+            width={width}
+            height={height}
+            data={{ values: values }}
+            renderer={'svg'}
+            actions={false}
+            spec={spec}
+          />
+        </Box>
       )}
       {!loaded && <Box sx={{ height: height + 14 }}></Box>}
     </>

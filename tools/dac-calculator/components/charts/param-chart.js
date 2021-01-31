@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { Vega } from 'react-vega'
 import { useThemeUI, Box } from 'theme-ui'
 
@@ -9,42 +9,27 @@ const ParamChart = ({ param, data }) => {
   const [loaded, setLoaded] = useState(false)
   const [width, setWidth] = useState(380)
   const [barWidth, setBarWidth] = useState(15)
-  const container = useRef(null)
   const { theme } = useThemeUI()
 
-  const getWidth = (container) => {
-    return Math.min(380, container.current.offsetWidth * 0.9)
+  const updateWidth = (node) => {
+    const newWidth = Math.min(380, node.offsetWidth * 0.9)
+    setWidth(newWidth)
+    setBarWidth(newWidth * 0.0392)
   }
 
-  useEffect(() => {
-    if (container.current && container.current.offsetWidth > 0) {
-      const newWidth = getWidth(container)
-      console.log(newWidth)
-      setWidth(newWidth)
-      setBarWidth(newWidth * 0.0392)
+  const container = useCallback(node => {
+    if (node) {
+      updateWidth(node)
+      let id = null
+      const listener = () => {
+        clearTimeout(id)
+        id = setTimeout(() => {
+            updateWidth(node)
+        }, 150)
+      }
+      window.addEventListener('resize', listener)
     }
   }, [])
-
-  useEffect(() => {
-    let id = null
-
-    const listener = () => {
-      clearTimeout(id)
-      id = setTimeout(() => {
-        if (container.current && container.current.offsetWidth > 0) {
-          const newWidth = getWidth(container)
-          setWidth(newWidth)
-          setBarWidth(newWidth * 0.0392)
-        }
-      }, 150)
-    }
-
-    window.addEventListener('resize', listener)
-
-    return () => {
-      window.removeEventListener('resize', listener)
-    }
-  }, [theme])
 
   useEffect(() => {
     const config = {

@@ -106,7 +106,7 @@ const Parameter = ({ param, data, state }) => {
                 'calc(min(90%, 380px) - 4px)',
                 'calc(min(90%, 380px) - 12px)',
               ],
-              left: ['-1px', '2px', '4px'],
+              left: ['-1px', '2px', '6px'],
               top: param.offset ? param.offset[1] : '118px',
               position: 'absolute',
             }}
