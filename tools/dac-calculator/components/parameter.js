@@ -102,11 +102,11 @@ const Parameter = ({ param, data, state }) => {
           <Box
             sx={{
               width: [
-                'calc(min(90%, 380px) + 2px)',
-                'calc(min(90%, 380px) - 4px)',
-                'calc(min(90%, 380px) - 12px)',
+                'calc(min(89.1%, 380px) + 2px)',
+                'calc(min(89.1%, 380px) - 4px)',
+                'calc(min(89.1%, 380px) - 12px)',
               ],
-              left: ['-1px', '2px', '6px'],
+              left: ['0px', '2px', '6px'],
               top: param.offset ? param.offset[1] : '118px',
               position: 'absolute',
             }}

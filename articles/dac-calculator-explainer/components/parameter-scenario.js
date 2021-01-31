@@ -46,8 +46,13 @@ const ParameterScenario = ({
           </Box>
         </Box>
         <Box>
-          <Divider/>
-          <Box sx={{ textAlign: ['left', 'left', 'center'], mt: ['13px', '13px', 4] }}>
+          <Divider />
+          <Box
+            sx={{
+              textAlign: ['left', 'left', 'center'],
+              mt: ['13px', '13px', 4],
+            }}
+          >
             <Donut results={results} initWidth={150} />
           </Box>
         </Box>
@@ -70,7 +75,9 @@ const ParameterScenario = ({
           <Box
             sx={{
               mt:
-                results['Natural Gas Cost [$/tCO2]'] > 0 ? [0, 0, '38px'] : [0, 0, '58px'],
+                results['Natural Gas Cost [$/tCO2]'] > 0
+                  ? [0, 0, '38px']
+                  : [0, 0, '58px'],
             }}
           >
             <LegendWithValues results={results} />
@@ -88,8 +95,8 @@ const ParameterScenario = ({
         <Text sx={{ display: 'inline-block', color: 'primary', mx: [1] }}>
           /
         </Text>{' '}
-        Parameter and cost summary for {figureCaption}.
-        Costs are reported as net removed cost ($/tCO₂)
+        Parameter and cost summary for {figureCaption}. Costs are reported as
+        net removed cost ($/tCO₂)
       </Text>
     </Box>
   )
@@ -107,7 +114,7 @@ function Value({ children }) {
         borderColor: 'muted',
         borderWidth: '0px',
         borderBottomWidth: '1px',
-        maxWidth: '200px'
+        maxWidth: '200px',
       }}
     >
       {children}

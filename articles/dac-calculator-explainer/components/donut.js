@@ -17,7 +17,7 @@ const Donut = ({ results, initWidth, innerRadius }) => {
     }
   }
 
-  const container = useCallback(node => {
+  const container = useCallback((node) => {
     if (node) {
       updateWidth(node)
       let id = null
@@ -107,7 +107,7 @@ const Donut = ({ results, initWidth, innerRadius }) => {
   return (
     <>
       {loaded && (
-        <Box ref={container} sx={{width: '100%'}}>
+        <Box ref={container} sx={{ width: '100%' }}>
           <Vega
             width={width}
             height={height}

@@ -17,14 +17,14 @@ const ParamChart = ({ param, data }) => {
     setBarWidth(newWidth * 0.0392)
   }
 
-  const container = useCallback(node => {
+  const container = useCallback((node) => {
     if (node) {
       updateWidth(node)
       let id = null
       const listener = () => {
         clearTimeout(id)
         id = setTimeout(() => {
-            updateWidth(node)
+          updateWidth(node)
         }, 150)
       }
       window.addEventListener('resize', listener)
@@ -125,7 +125,7 @@ const ParamChart = ({ param, data }) => {
   return (
     <>
       {loaded && (
-        <Box ref={container} sx={{ width: '100%' }}>
+        <Box ref={container} sx={{ width: '99%' }}>
           <Vega
             width={width}
             height={height}
