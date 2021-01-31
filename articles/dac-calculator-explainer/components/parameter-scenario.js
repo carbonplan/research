@@ -121,7 +121,7 @@ const ParameterScenario = ({
         <Text sx={{ display: 'inline-block', color: 'primary', mx: [1] }}>
           /
         </Text>{' '}
-        Summary for {figureCaption}.
+        {figureCaption}
       </Text>
     </Box>
   )

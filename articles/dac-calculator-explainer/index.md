@@ -175,7 +175,7 @@ To model high cost NGCC, we use parameters from a DAC facility described in a 20
 
 <ParameterScenario
   figureNumber={3}
-  figureCaption={'a higher cost NGCC scenario'}
+  figureCaption={'Summary for a higher cost NGCC scenario.'}
   energySource={'NGCC'}
   capEx={2027}
   electricReq={1.7}
@@ -192,7 +192,7 @@ To model low cost wind, we use parameters from a DAC facility described in Keith
 
 <ParameterScenario
   figureNumber={4}
-  figureCaption={'a lower cost wind scenario'}
+  figureCaption={'Summary for a lower cost wind scenario.'}
   energySource={'wind'}
   capEx={936}
   electricReq={0.95}
@@ -208,7 +208,7 @@ Finally, returning to the high cost NGCC example, we can further consider increa
 
 <ParameterScenario
   figureNumber={5}
-  figureCaption={'a higher cost NGCC scenario with higher leakage'}
+  figureCaption={'Summary for a higher cost NGCC scenario with higher leakage.'}
   energySource={'NGCC'}
   capEx={2027}
   electricReq={1.7}
@@ -221,16 +221,16 @@ Finally, returning to the high cost NGCC example, we can further consider increa
   capitalRecovery={416}
 />
 
-If we were to use a GWP20 of 86 for methane instead of a GWP100 of 32, emissions would become so high that the system no longer achieves carbon removal. Similarly, even with a GWP100 of 32, higher electricity and thermal requirements coupled to even higher leakage rates would result in no net removal, as shown here.
+If we were to use a GWP20 of 86 for methane instead of a GWP100 of 32, emissions would become so high that the system no longer achieves carbon removal. Even with a GWP100 of 32, higher electricity and thermal requirements coupled to even higher leakage rates could result in no net removal, as shown here, though note that these are extremely high and likely unrealistic values.
 
 <ParameterScenario
   figureNumber={6}
-  figureCaption={'a NGCC scenario that does not achieve carbon removal'}
+  figureCaption={'Summary for an NGCC scenario that does not achieve carbon removal.'}
   energySource={'NGCC'}
   capEx={2027}
-  electricReq={4.1}
-  thermalReq={9.9}
-  leakage={8.1}
+  electricReq={6.1}
+  thermalReq={9.1}
+  leakage={6.5}
   totalCost={'N/A'}
   variableOM={'N/A'}
   fixedOM={'N/A'}

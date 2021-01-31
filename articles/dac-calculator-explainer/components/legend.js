@@ -1,5 +1,4 @@
 import { Grid, Box, Text } from 'theme-ui'
-import { alpha } from '@theme-ui/color'
 
 const Circle = ({ opacity }) => {
   return (
@@ -9,7 +8,8 @@ const Circle = ({ opacity }) => {
         height: '14px',
         mt: '2px',
         borderRadius: '7px',
-        backgroundColor: alpha('purple', opacity),
+        opacity: opacity,
+        backgroundColor: 'purple'
       }}
     ></Box>
   )
