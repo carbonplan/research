@@ -90,6 +90,15 @@ const Calculator = () => {
   const chartData = calcPartialCost(dacModel, modelInputs, techKeys)
 
   const reset = () => {
+    dacParameters.map((group) =>
+      group.parameters.map((p) => state[p.name][1](p.initValue))
+    )
+    state['Electric [GJ/tCO2]'][1](ELECTRIC_DEMAND[state.energy[0]])
+    for (var key in techData) {
+      techData[key].map(
+        (p) => (state['Technology'][key][p.name][1](p.initValue))
+      )
+    }
     console.log('resetting')
   }
 

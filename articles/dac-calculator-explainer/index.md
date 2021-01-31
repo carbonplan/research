@@ -122,7 +122,7 @@ Analyzing the cost of DAC also requires considering any associated greenhouse ga
 
 In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system.<Reference color={meta.color} data={sidenotes[2]}/> They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO₂ released during combustion, and six all-electric non-fossil systems.
 
-To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an <NextLink href={'/research/dac-calculator'} passHref={true}><Link>interactive calculator</Link></NextLink> based directly on the model from the paper.
+To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an open source <NextLink href={'/research/dac-calculator'} passHref={true}><Link>interactive calculator</Link></NextLink> based directly on the model from the paper. The model is written in JavaScript and runs natively in the browser.
 
 Here we explain the design of the model and the parameter space, and highlight some key insights.
 
@@ -132,7 +132,7 @@ Here we explain the design of the model and the parameter space, and highlight s
 
 Techno-economic analyses (TEAs) for emerging technologies, such as DAC, rely heavily on assumptions about which parameters are included in the "boundary" of the analysis. These parameters then act as knobs that, when turned, affect the overall estimate of net removal cost in units of $/tCO₂eq. Transparency about the assumptions underlying any TEA are critical, as is understanding how changing parameters impacts cost estimates.
 
-Our calculator estimates the cost of a given DAC technology explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but also the energy resource. We do not, however, include costs for transportation or storage. The “boundary condition” diagram below shows which costs are included.
+Our calculator estimates the cost of DAC explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but also building the infrastructure to generate heat and power. We do not, however, include transportation or storage costs. The “boundary condition” diagram below shows which costs are included.
 
 <BoundaryCondition />
 
@@ -167,7 +167,7 @@ With default settings, the calculator yields the highest cost for solar, second 
   NGCCVariableOM={8}
   NGCCFixedOM={45}
   NGCCCapitalRecovery={182}
-  NGCCNaturalGas={39}
+  NGCCNaturalGas={40}
 />
 
 With alternate assumptions, we arrive at different answers. By varying parameters, McQueen et al. report ranges of $230-390/tCO₂eq for NGCC, $360–570/tCO₂eq for wind, and $430–690/tCO₂eq for solar. Here we explore some of those parameter scenarios in detail: a higher cost NGCC scenario, a lower cost wind scenario, and an NGCC scenario with a higher leakage rate.
