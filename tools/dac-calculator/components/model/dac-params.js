@@ -3,7 +3,7 @@ const dacParameters = [
     id: 'scale',
     displayName: 'How large will your DAC facility be?',
     description:
-      'Going bigger tends to drive down cost due to economies of scale.',
+      'Going bigger tends to reduce costs due to economies of scale, but the effect is modest.',
     parameters: [
       {
         name: 'Scale [tCO2/year]',
@@ -45,7 +45,7 @@ const dacParameters = [
     id: 'financing',
     displayName: 'Financing parameters',
     description:
-      'Building a DAC facility requires capital, these parameters dictate how that capital is financed.',
+      'Building a DAC facility requires capital. These parameters dictate how that capital is financed.',
     parameters: [
       {
         name: 'WACC [%]',

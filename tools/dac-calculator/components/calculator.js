@@ -106,7 +106,9 @@ const Calculator = () => {
         }}
       >
         <Grid
-          sx={{ mb: [4] }}
+          sx={{
+            mb: [4],
+          }}
           gap={[0, 0, '100px']}
           columns={[1, 1, 'minmax(600px,700px) minmax(300px,400px)']}
         >
@@ -140,10 +142,19 @@ const Calculator = () => {
             </Box>
             <Divider sx={{ my: [0] }} />
           </Box>
-          <Box sx={{ display: ['none', 'none', 'inherit'] }}>
+          <Box
+            sx={{
+              display: ['none', 'none', 'inherit'],
+              pointerEvents: 'all',
+            }}
+          >
             <Divider />
             <Box>
-              <Box sx={{ mb: [3] }}>
+              <Box
+                sx={{
+                  mb: [3],
+                }}
+              >
                 <Text
                   sx={{
                     textAlign: 'left',
@@ -183,9 +194,11 @@ const Calculator = () => {
           </Box>
         </Grid>
       </Box>
-      <Box>
+      <Box sx={{}}>
         <Grid
-          sx={{ mb: [4] }}
+          sx={{
+            mb: [4],
+          }}
           gap={[0, 0, '100px']}
           columns={[1, 1, 'minmax(600px,700px) minmax(300px,400px)']}
         >
