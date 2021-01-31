@@ -6,7 +6,7 @@ var vegaLite = require('vega-lite')
 const Donut = ({ results, initWidth, innerRadius }) => {
   const [spec, setSpec] = useState(null)
   const [loaded, setLoaded] = useState(false)
-  const [width, setWidth] = useState(initWidth || 125)
+  const [width, setWidth] = useState(null)
   const context = useThemeUI()
   const container = useRef(null)
   const theme = context.theme
@@ -14,14 +14,19 @@ const Donut = ({ results, initWidth, innerRadius }) => {
   const updateWidth = (node) => {
     if (container.current) {
       const newWidth = container.current.offsetWidth * 0.85
-      if (newWidth < width) {
+      if (newWidth < initWidth) {
         setWidth(newWidth)
+      } else {
+        setWidth(initWidth)
       }
     }
   }
 
   useEffect(() => {
     updateWidth(container)
+  }, [container.current])
+
+  useEffect(() => {
     let id = null
     const listener = () => {
       clearTimeout(id)
@@ -109,21 +114,19 @@ const Donut = ({ results, initWidth, innerRadius }) => {
   const height = width
 
   return (
-    <>
-      {loaded && (
-        <Box ref={container} sx={{ width: '100%' }}>
-          <Vega
-            width={width}
-            height={height}
-            data={{ values: values }}
-            renderer={'svg'}
-            actions={false}
-            spec={spec}
-          />
-        </Box>
+    <Box ref={container} sx={{ width: '100%' }}>
+      {loaded && width && (
+        <Vega
+          width={width}
+          height={height}
+          data={{ values: values }}
+          renderer={'svg'}
+          actions={false}
+          spec={spec}
+        />
       )}
-      {!loaded && <Box sx={{ height: height + 14 }}></Box>}
-    </>
+      {(!loaded || !width) && <Box sx={{ height: height + 14 }}></Box>}
+    </Box>
   )
 }
 

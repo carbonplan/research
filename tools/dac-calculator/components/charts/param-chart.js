@@ -7,7 +7,7 @@ var vegaLite = require('vega-lite')
 const ParamChart = ({ param, data }) => {
   const [spec, setSpec] = useState(null)
   const [loaded, setLoaded] = useState(false)
-  const [width, setWidth] = useState(380)
+  const [width, setWidth] = useState(null)
   const [barWidth, setBarWidth] = useState(15)
   const container = useRef(null)
   const { theme } = useThemeUI()
@@ -22,6 +22,9 @@ const ParamChart = ({ param, data }) => {
 
   useEffect(() => {
     updateWidth(container)
+  }, [container.current])
+
+  useEffect(() => {
     let id = null
     const listener = () => {
       clearTimeout(id)
@@ -127,21 +130,19 @@ const ParamChart = ({ param, data }) => {
   const height = param.chartHeight
 
   return (
-    <>
-      {loaded && (
-        <Box ref={container} sx={{ width: '99%' }}>
-          <Vega
-            width={width}
-            height={height}
-            data={{ values: data }}
-            renderer={'svg'}
-            actions={false}
-            spec={spec}
-          />
-        </Box>
+    <Box ref={container} sx={{ width: '99%' }}>
+      {loaded && width && (
+        <Vega
+          width={width}
+          height={height}
+          data={{ values: data }}
+          renderer={'svg'}
+          actions={false}
+          spec={spec}
+        />
       )}
-      {!loaded && <Box sx={{ height: height + 41 }}></Box>}
-    </>
+      {(!loaded || !width) && <Box sx={{ height: height + 41 }}></Box>}
+    </Box>
   )
 }
 
