@@ -195,17 +195,17 @@ To model low cost wind, we use parameters from a DAC facility described in Keith
   figureNumber={4}
   figureCaption={'Summary for a lower cost wind scenario.'}
   energySource={'wind'}
-  capEx={936}
+  capEx={1023}
   electricReq={0.95}
-  thermalReq={5.8}
-  totalCost={365}
+  thermalReq={5.82}
+  totalCost={376}
   variableOM={4}
   fixedOM={64}
   naturalGas={0}
-  capitalRecovery={297}
+  capitalRecovery={308}
 />
 
-Finally, returning to the high cost NGCC example, we can further consider increasing the natural gas leakage rate from the default of 2.2% to 3.7%. With these parameters, net removed cost increases to $530, higher than for any of the scenarios considered thus far.
+Finally, returning to the high cost NGCC example, we can further consider increasing the natural gas leakage rate from the default of 2.2% to 3.7%. With these parameters, net removed cost increases to $490, higher than for any of the scenarios considered thus far.
 
 <ParameterScenario
   figureNumber={5}
@@ -215,11 +215,11 @@ Finally, returning to the high cost NGCC example, we can further consider increa
   electricReq={1.7}
   thermalReq={7.2}
   leakage={3.7}
-  totalCost={530}
-  variableOM={10}
-  fixedOM={54}
-  naturalGas={51}
-  capitalRecovery={416}
+  totalCost={490}
+  variableOM={9}
+  fixedOM={47}
+  naturalGas={50}
+  capitalRecovery={384}
 />
 
 As these comparisons show, the energy source on its own does not determine how scenarios stack up — the full parameter space matters.
@@ -233,9 +233,9 @@ For NGCC in particular, is it also possible for emissions to be so high that the
   }
   energySource={'NGCC'}
   capEx={2027}
-  electricReq={6.1}
+  electricReq={6.5}
   thermalReq={9.1}
-  leakage={6.5}
+  leakage={7}
   totalCost={'N/A'}
   variableOM={'N/A'}
   fixedOM={'N/A'}

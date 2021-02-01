@@ -10,7 +10,7 @@ import techData from './model/tech-data.js'
 import dacParameters from './model/dac-params.js'
 import { makeModel } from './model/driver.js'
 import calcPartialCost from './model/partial-cost.js'
-import checks from './model/checks.js'
+// import checks from './model/checks.js'
 
 const TECH_WITH_BATS = ['Wind', 'Solar']
 

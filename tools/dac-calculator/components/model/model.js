@@ -568,15 +568,11 @@ export class DacModel extends DacComponent {
   }
 
   calcEmissionsFactor(natGasUsed, emitted) {
-    this.params['CO2e / tCH4 (supply chain) [-]'] = 0
     const co2eGwp =
       (this.params['Leakage Rate [%]'] / 100) *
       this.params['Methane GWP 100 [-]']
 
-    const totCO2eqPerTonMethane =
-      co2eGwp + this.params['CO2e / tCH4 (supply chain) [-]']
-
-    const totCO2perGJMethan = totCO2eqPerTonMethane / GJ_PER_TNG
+    const totCO2perGJMethan = co2eGwp / GJ_PER_TNG
 
     const GJNatGasPerTonCO2e = natGasUsed / GJ_TO_MMBTU
 

@@ -210,18 +210,6 @@ const dacParameters = [
         chartHeight: 120,
         show: false,
       },
-      {
-        name: 'CO2e / tCH4 (supply chain) [-]',
-        displayName: 'CO2e / tCh4 (supply chain)',
-        description: '',
-        unit: '-',
-        initValue: 0.274,
-        validRange: [0.1, 0.5],
-        step: 0.05,
-        scale: 'linear',
-        chartHeight: 120,
-        show: false,
-      },
     ],
   },
 ]
