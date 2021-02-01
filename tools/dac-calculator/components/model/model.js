@@ -367,7 +367,9 @@ export class DacSection extends DacComponent {
 
     // Capital Recovery[$/tCO2eq]
     v['Capital Recovery [$/tCO2eq]'] =
-      (v['Total Capital Cost [M$]'] * this.recoveryFactor() * MILLION) /
+      (v['Capital Cost (including Lead Time) [M$]'] *
+        this.recoveryFactor() *
+        MILLION) /
       this.params['Scale [tCO2/year]']
 
     // Fixed O&M [$/tCO2eq]
@@ -566,6 +568,7 @@ export class DacModel extends DacComponent {
   }
 
   calcEmissionsFactor(natGasUsed, emitted) {
+    this.params['CO2e / tCH4 (supply chain) [-]'] = 0
     const co2eGwp =
       (this.params['Leakage Rate [%]'] / 100) *
       this.params['Methane GWP 100 [-]']
@@ -609,7 +612,6 @@ export class DacModel extends DacComponent {
       dv['Capital Cost (including Lead Time) [M$]']
 
     // Capital Recovery [$/tCO2eq]
-    // = K86 * 'Economic Parameters'!C6 * 10 ^ 6 / 'Report Data'!C3
     v['Capital Recovery [$/tCO2eq]'] =
       (v['Total Capital Cost [M$]'] * this.recoveryFactor() * MILLION) /
       this.params['Scale [tCO2/year]']
@@ -627,10 +629,6 @@ export class DacModel extends DacComponent {
 
     // Emitted [tCO2eq/tCO2]
     v['Emitted [tCO2/tCO2]'] = tev['Emitted [tCO2/tCO2]']
-
-    // Total Cost [$/tCO2 Net Removed]
-    // v['Total Cost [$/tCO2 Net Removed]'] =
-    //   v['Total Cost [$/tCO2]'] / (1 - v['Emitted [tCO2/tCO2]'])
 
     const emissionsFactor = this.calcEmissionsFactor(
       tev['Natural Gas Use [mmBTU/tCO2eq]'],

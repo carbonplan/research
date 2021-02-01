@@ -74,7 +74,7 @@ const getDefaultParams = () => {
         'Scaling Factor': 0.95,
       },
     },
-    log: false,
+    log: true,
   }
 
   return p
@@ -114,8 +114,9 @@ const checks = () => {
   params = getDefaultParams()
   params['Capex [$]'] = 2027
   params['Electric [GJ/tCO2]'] = 1.7
-  params['Thermal [GJ/tCO2]'] = 5.82
-
+  params['Thermal [GJ/tCO2]'] = 7.22
+  params['Fixed O&M Costs [$/tCO2]'] = 70
+  params['Variable O&M Costs [$/tCO2]'] = 8
   model = makeModel('NGCC')
   model.setParams(params)
   results = model.compute()
@@ -167,6 +168,8 @@ const checks = () => {
   params['Capex [$]'] = 2000
   params['Electric [GJ/tCO2]'] = 1.17
   params['Thermal [GJ/tCO2]'] = 7.22
+  params['Fixed O&M Costs [$/tCO2]'] = 70
+  params['Variable O&M Costs [$/tCO2]'] = 8
   model = makeModel('Solar')
   model.setParams(params)
   results = model.compute()
@@ -218,6 +221,8 @@ const checks = () => {
   params['Capex [$]'] = 2000
   params['Electric [GJ/tCO2]'] = 1.17
   params['Thermal [GJ/tCO2]'] = 7.22
+  params['Fixed O&M Costs [$/tCO2]'] = 70
+  params['Variable O&M Costs [$/tCO2]'] = 8
   model = makeModel('Wind')
   model.setParams(params)
   results = model.compute()

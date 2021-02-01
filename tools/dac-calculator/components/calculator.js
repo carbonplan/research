@@ -106,7 +106,6 @@ const Calculator = () => {
     for (var key in techData) {
       techData[key].map((p) => state['Technology'][key][p.name][1](p.initValue))
     }
-    console.log('resetting')
   }
 
   return (
