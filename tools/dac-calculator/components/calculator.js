@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Box, Divider, Grid, Text, Container, useThemeUI } from 'theme-ui'
+import { Box, Divider, Grid, Text, useThemeUI } from 'theme-ui'
 import ParameterGroup from './parameter-group.js'
 import TechGroup from './tech-group.js'
 import Donut from './charts/donut.js'
@@ -10,6 +10,7 @@ import techData from './model/tech-data.js'
 import dacParameters from './model/dac-params.js'
 import { makeModel } from './model/driver.js'
 import calcPartialCost from './model/partial-cost.js'
+import checks from './model/checks.js'
 
 const TECH_WITH_BATS = ['Wind', 'Solar']
 
@@ -36,8 +37,8 @@ const getTech = (energy) => {
 }
 
 const Calculator = () => {
-  const context = useThemeUI()
-  const theme = context.theme
+  // temporary qa/qc checks
+  checks()
 
   // Setup state
   const state = {

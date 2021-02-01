@@ -16,12 +16,14 @@ const ParameterGroup = ({ group, data, state }) => {
             return null
           }
           return (
-            <Parameter
-              key={p.name}
-              param={p}
-              data={data[p.name]}
-              state={state[p.name]}
-            ></Parameter>
+            p.show && (
+              <Parameter
+                key={p.name}
+                param={p}
+                data={data[p.name]}
+                state={state[p.name]}
+              ></Parameter>
+            )
           )
         })}
       </Box>

@@ -565,6 +565,24 @@ export class DacModel extends DacComponent {
     return uv
   }
 
+  calcEmissionsFactor(natGasUsed, emitted) {
+    const co2eGwp =
+      (this.params['Leakage Rate [%]'] / 100) *
+      this.params['Methane GWP 100 [-]']
+
+    const totCO2eqPerTonMethane =
+      co2eGwp + this.params['CO2e / tCH4 (supply chain) [-]']
+
+    const totCO2perGJMethan = totCO2eqPerTonMethane / GJ_PER_TNG
+
+    const GJNatGasPerTonCO2e = natGasUsed / GJ_TO_MMBTU
+
+    const co2EmissionMethanPerTonCO2Captured =
+      totCO2perGJMethan * GJNatGasPerTonCO2e
+
+    return 1 - (emitted + co2EmissionMethanPerTonCO2Captured)
+  }
+
   // compute the composite DAC model's values
   compute() {
     const v = {}
@@ -609,40 +627,16 @@ export class DacModel extends DacComponent {
     v['Natural Gas Cost [$/tCO2]'] = tev['Natural Gas Cost [$/tCO2eq]']
 
     // Emitted [tCO2eq/tCO2]
-    v['Emitted [tCO2/tCO2]'] = tev['Emitted [tCO2/tCO2]'] // + dv['Emitted [tCO2/tCO2]']
+    v['Emitted [tCO2/tCO2]'] = tev['Emitted [tCO2/tCO2]']
 
     // Total Cost [$/tCO2 Net Removed]
     // v['Total Cost [$/tCO2 Net Removed]'] =
     //   v['Total Cost [$/tCO2]'] / (1 - v['Emitted [tCO2/tCO2]'])
 
-    let gwp100 = 32.0 // methane
-    let co2eGwp = (this.params['Leakage Rate [%]'] / 100) * gwp100
-
-    let co2_per_ton_methan_supchain = 0.274
-
-    let totCO2eq_per_ton_methane = co2eGwp + co2_per_ton_methan_supchain
-    this.log('totCO2eq_per_ton_methane', totCO2eq_per_ton_methane)
-
-    let totCO2perGJMethan = totCO2eq_per_ton_methane / GJ_PER_TNG
-    this.log('totCO2perGJMethan', totCO2perGJMethan)
-
-    this.log(
-      'Natural Gas Use [mmBTU/tCO2eq]',
-      tev['Natural Gas Use [mmBTU/tCO2eq]']
+    const emissionsFactor = this.calcEmissionsFactor(
+      tev['Natural Gas Use [mmBTU/tCO2eq]'],
+      v['Emitted [tCO2/tCO2]']
     )
-    let GJNatGasPerTonCO2e = tev['Natural Gas Use [mmBTU/tCO2eq]'] / GJ_TO_MMBTU
-    this.log('GJNatGasPerTonCO2e', GJNatGasPerTonCO2e)
-
-    let co2_emission_methan_per_ton_co2_captured =
-      totCO2perGJMethan * GJNatGasPerTonCO2e
-
-    this.log(
-      'co2_emission_methan_per_ton_co2_captured',
-      co2_emission_methan_per_ton_co2_captured
-    )
-
-    const emissionsFactor =
-      1 - (v['Emitted [tCO2/tCO2]'] + co2_emission_methan_per_ton_co2_captured)
 
     // Capital Recovery [$/tCO2eq Net Removed]
     v['Capital Recovery [$/tCO2eq Net Removed]'] =
