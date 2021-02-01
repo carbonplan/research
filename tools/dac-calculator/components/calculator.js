@@ -44,7 +44,7 @@ const getTech = (energy) => {
 
 const Calculator = () => {
   // temporary qa/qc checks
-  checks()
+  // checks()
 
   // Setup state
   const state = {
