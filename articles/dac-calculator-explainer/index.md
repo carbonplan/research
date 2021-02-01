@@ -47,20 +47,22 @@ export const sidenotes = {
     journal: 'Frontiers in Climate',
     url: 'https://doi.org/10.3389/fclim.2020.618644',
   },
-3: {
+  3: {
     offset: 0,
     number: 3,
     authors: 'Y Zhang et al.',
     year: 2020,
-    title: 'Quantifying methane emissions from the largest oil-producing basin in the United States from space',
+    title:
+      'Quantifying methane emissions from the largest oil-producing basin in the United States from space',
     journal: 'Science Advances',
     url: 'https://doi.org/10.1126/sciadv.aaz5120',
   },
   4: {
     offset: 0,
     number: 4,
-    authors: 'Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.',
-    url: 'https://twitter.com/emilygrubert/status/1353155080061669376'
+    authors:
+      'Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.',
+    url: 'https://twitter.com/emilygrubert/status/1353155080061669376',
   },
   5: {
     offset: -210,
@@ -276,6 +278,3 @@ CarbonPlan received no specific financial support for this work. Noah McQueen is
 ### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>
-
-
-
