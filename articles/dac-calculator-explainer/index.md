@@ -21,8 +21,8 @@ export const meta = {
   ],
   title: 'The cost of direct air capture',
   date: '02-01-2021',
-  background: 'article-006/wind',
-  card: 'dac-calculator-explainer',
+  background: 'article-006/factory',
+  card: 'dac-cost-calculator',
   summary:
     'How the cost of direct air capture varies under different energy scenarios.',
 }
@@ -47,16 +47,24 @@ export const sidenotes = {
     journal: 'Frontiers in Climate',
     url: 'https://doi.org/10.3389/fclim.2020.618644',
   },
-  3: {
+3: {
     offset: 0,
     number: 3,
-    authors:
-      'Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.',
-    url: 'https://twitter.com/emilygrubert/status/1353155080061669376',
+    authors: 'Y Zhang et al.',
+    year: 2020,
+    title: 'Quantifying methane emissions from the largest oil-producing basin in the United States from space',
+    journal: 'Science Advances',
+    url: 'https://doi.org/10.1126/sciadv.aaz5120',
   },
   4: {
-    offset: -210,
+    offset: 0,
     number: 4,
+    authors: 'Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.',
+    url: 'https://twitter.com/emilygrubert/status/1353155080061669376'
+  },
+  5: {
+    offset: -210,
+    number: 5,
     authors: 'Socolow et al.',
     year: 2011,
     title:
@@ -64,9 +72,9 @@ export const sidenotes = {
     journal: 'American Physical Society',
     url: 'https://www.aps.org/policy/reports/assessments/upload/dac2011.pdf',
   },
-  5: {
+  6: {
     offset: -100,
-    number: 5,
+    number: 6,
     authors: 'M Mazzotti et al.',
     year: 2013,
     title:
@@ -74,33 +82,33 @@ export const sidenotes = {
     journal: 'Climatic Change',
     url: 'https://link.springer.com/article/10.1007/s10584-012-0679-y',
   },
-  6: {
+  7: {
     offset: 25,
-    number: 6,
+    number: 7,
     authors: 'F Zeman',
     year: 2014,
     title: 'Reducing the Cost of Ca-Based Direct Air Capture of CO₂',
     journal: 'Environ. Sci. Technol.',
     url: 'https://pubs.acs.org/doi/10.1021/es502887y',
   },
-  7: {
+  8: {
     offset: 50,
-    number: 7,
+    number: 8,
     authors:
       'This scenario is comparable to the vertical flow (VF) scenario described in McQueen et al. (2021).',
   },
-  8: {
+  9: {
     offset: -50,
-    number: 8,
+    number: 9,
     authors: 'D Keith et al.',
     year: 2018,
     title: 'A Process for Capturing CO₂ from the Atmosphere',
     journal: 'Joule',
     url: 'https://www.sciencedirect.com/science/article/pii/S2542435118302253',
   },
-  9: {
+  10: {
     offset: -25,
-    number: 9,
+    number: 10,
     authors:
       'This scenario is comparable to the horizontal flow (VF) scenario described in McQueen et al. (2021).',
   },
@@ -116,13 +124,13 @@ These activities require infrastructure, consumables, and energy — all of whic
 
 There are two key costs associated with DAC: capital costs and energy costs. Capital costs are dominated by the equipment required to capture CO₂ from air and regenerate the capture material, including the specialty chemicals used to capture CO₂, the contactor used to facilitate contact between the air stream and the CO₂-capturing chemicals, and the equipment required to release CO₂ from the chemicals.
 
-Energy costs are also significant. Existing systems require between roughly 180 MW and 500 MW to capture 1 million tons of CO₂ per year — about as large as an individual power plant today. Of this energy requirement, roughly 80% is thermal energy and 20% electricity, where the thermal energy is required for heating during the regeneration step.
+Energy costs are also significant. Existing systems require between roughly 180 MW and 500 MW to capture 1 million tons of CO₂ per year — about as large as an individual power plant today. Of this energy requirement, roughly 80% is thermal energy and 20% electricity, where the thermal energy is required for heating to regenerate the capture material.
 
 Analyzing the cost of DAC also requires considering any associated greenhouse gas emissions, which effectively reduce the total amount of net removal, and thus increase the [net removed cost](https://cdrprimer.org/read/chapter-4#sec-4-3) — a metric that divides the base cost by one minus the ratio of CO₂eq emitted to CO₂eq removed.<Reference color={meta.color} data={sidenotes[1]}/>
 
 In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system.<Reference color={meta.color} data={sidenotes[2]}/> They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO₂ released during combustion, and six all-electric non-fossil systems.
 
-To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an open source <NextLink href={'/research/dac-calculator'} passHref={true}><Link>interactive calculator</Link></NextLink> based directly on the model from the paper. The model is written in JavaScript and runs natively in the browser.
+To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an <NextLink href={'/research/dac-calculator'} passHref={true}><Link>interactive calculator</Link></NextLink> based directly on the model from the paper.
 
 Here we explain the design of the model and the parameter space, and highlight some key insights.
 
@@ -132,7 +140,7 @@ Here we explain the design of the model and the parameter space, and highlight s
 
 Techno-economic analyses (TEAs) for emerging technologies, such as DAC, rely heavily on assumptions about which parameters are included in the "boundary" of the analysis. These parameters then act as knobs that, when turned, affect the overall estimate of net removal cost in units of $/tCO₂eq. Transparency about the assumptions underlying any TEA are critical, as is understanding how changing parameters impacts cost estimates.
 
-Our calculator estimates the cost of DAC explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but also building the infrastructure to generate heat and power. We do not, however, include transportation or storage costs. The “boundary condition” diagram below shows which costs are included.
+Our calculator estimates the cost of a given DAC technology explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but also building the energy infrastructure. We do not, however, include costs for CO₂ transportation or storage. In the case of natural gas with carbon capture and storage, the carbon capture process is within the boundary, but transportation and storage is outside. The “boundary condition” diagram below shows which costs are included.
 
 <BoundaryCondition />
 
@@ -144,7 +152,7 @@ The calculator allows you to explore three of the energy scenarios that McQueen 
 
 The first scenario uses natural gas combined with carbon capture and storage (NGCC) to supply electricity for the DAC plant, while natural gas combustion meets the thermal energy requirements. A key issue when considering NGCC for powering DAC is that any greenhouse gas emissions created in the process reduce the effective net removal, and thus increase the net removal cost. The model assumes that natural gas combustion for electricity production is coupled with carbon capture at 90% capture efficiency. The remaining 10% of emissions from electricity production are considered net emissions and factored into net removed cost. Additionally, the model assumes that all the natural gas combusted for thermal energy is co-captured by the process, resulting in no emissions from combustion.
 
-For natural gas we also have to consider leakage, which is substantial — we use a default rate of 2.2% but rates as high as 3.7% have been reported for the Permian Basin region of the United States. In the model, we assume that some fraction of natural gas is lost to the atmosphere during processing or distribution, with the fraction controlled by a leakage rate parameter. Methane, a primary component of natural gas, has a higher [global warming potential (GWP)](https://cdrprimer.org/read/chapter-4) than CO₂. The model uses a GWP 100 of 32 to calculate the CO₂ equivalent of methane emissions, which are then factored into the net removed cost. As we will show below, given the definition of net removed cost, it is possible to create parameter scenarios with NGCC that do not achieve net carbon removal, because emissions are too large.<Reference color={meta.color} data={sidenotes[3]}/> The costs we report do not include non-greenhouse gas negative externalities that result from continued use of and dependence on fossil energy, which could be a critical factor in considering different energy sources for DAC.
+For natural gas we also have to consider leakage, which is substantial — we use a default rate of 2.2% but rates as high as 3.7% have been reported for the Permian Basin region of the United States.<Reference color={meta.color} data={sidenotes[3]}/> In the model, we assume that some fraction of natural gas is lost to the atmosphere during processing or distribution, with the fraction controlled by a leakage rate parameter. Methane, a primary component of natural gas, has a higher [global warming potential (GWP)](https://cdrprimer.org/read/chapter-4) than CO₂. The model uses a GWP 100 of 32 to calculate the CO₂ equivalent of methane emissions, which are then factored into the net removed cost. As we will show below, given the definition of net removed cost, it is possible to create parameter scenarios with NGCC that do not achieve net carbon removal, because emissions are too large.<Reference color={meta.color} data={sidenotes[4]}/> The costs we report do not include non-greenhouse gas negative externalities that result from continued use of and dependence on fossil energy, which could be a critical factor in considering different energy sources for DAC.
 
 In the second scenario, wind turbines are used to continuously power the DAC plant which requires over-producing electricity during windy times and storing the excess electricity in lithium-ion batteries. The energy storage allows the DAC plant to continuously use electricity produced from wind, even when the wind turbines are unable to produce electricity (i.e. when the air is still). In this scenario, electric resistance heating is used to meet the thermal demands of the system as opposed to the combustion of natural gas in the first scenario.
 
@@ -167,12 +175,12 @@ With default settings, the calculator yields the highest cost for solar, second 
   NGCCVariableOM={8}
   NGCCFixedOM={45}
   NGCCCapitalRecovery={182}
-  NGCCNaturalGas={40}
+  NGCCNaturalGas={39}
 />
 
 By varying parameters, McQueen et al. reported ranges of $230-390/tCO₂eq for NGCC, $360–570/tCO₂eq for wind, and $430–690/tCO₂eq for solar. Here we explore some of those scenarios in detail: a higher cost NGCC scenario, a lower cost wind scenario, and an NGCC scenario with a higher leakage rate.
 
-To model high cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Reference color={meta.color} data={sidenotes[4]}/> including corrections from two additional follow-on analyses.<Reference color={meta.color} data={sidenotes[5]}/><Reference color={meta.color} data={sidenotes[6]}/> In using these reports we assume a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Reference color={meta.color} data={sidenotes[7]}/>
+To model high cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Reference color={meta.color} data={sidenotes[5]}/> including corrections from two additional follow-on analyses.<Reference color={meta.color} data={sidenotes[6]}/><Reference color={meta.color} data={sidenotes[7]}/> In using these reports we assume a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Reference color={meta.color} data={sidenotes[8]}/>
 
 <ParameterScenario
   figureNumber={3}
@@ -189,7 +197,7 @@ To model high cost NGCC, we use parameters from a DAC facility described in a 20
   capitalRecovery={364}
 />
 
-To model low cost wind, we use parameters from a DAC facility described in Keith et al. (2018),<Reference color={meta.color} data={sidenotes[8]}/> which corresponds to a lower DAC plant cost and slightly lower electricity and thermal energy requirements.<Reference color={meta.color} data={sidenotes[9]}/>
+To model low cost wind, we use parameters from a DAC facility described in Keith et al. (2018),<Reference color={meta.color} data={sidenotes[9]}/> which corresponds to a lower DAC plant cost and slightly lower electricity and thermal energy requirements.<Reference color={meta.color} data={sidenotes[10]}/>
 
 <ParameterScenario
   figureNumber={4}
@@ -224,7 +232,7 @@ Finally, returning to the high cost NGCC example, we can further consider increa
 
 As these comparisons show, the energy source on its own does not determine how scenarios stack up — the full parameter space matters.
 
-For NGCC in particular, is it also possible for emissions to be so high that the system no longer achives carbon removal. This would occur in the above scenario if we were to use a GWP20 of 86 for methane instead of a GWP100 of 32. Even with a GWP100 of 32, higher electricity and thermal requirements coupled to even higher leakage rates could result in no net removal, as shown here, though note that these are extremely high values.
+For NGCC in particular, is it also possible for emissions to be so high that the system no longer achieves carbon removal. This would occur in the above scenario if we were to use a GWP20 of 86 for methane instead of a GWP100 of 32. Even with a GWP100 of 32, higher electricity and thermal requirements coupled to even higher leakage rates could result in no net removal, as shown here, though note that these are extremely high values.
 
 <ParameterScenario
   figureNumber={6}
@@ -243,7 +251,7 @@ For NGCC in particular, is it also possible for emissions to be so high that the
   capitalRecovery={'N/A'}
 />
 
-A final note is that not all parameter combinations may be feasible. For example, the calculator allows users to set operating and maintenance costs to $0/tCO₂, but this would not be considered an achievable value for most realistic DAC systems.
+A final note is that not all parameter combinations may be feasible. For example, the calculator allows users to set operating and maintenance costs to $0/tCO₂, but this would not be considered an achievable value for realistic DAC systems.
 
 We encourage you to explore how the cost of DAC changes with different economic assumptions outside of these examples — and think carefully about the assumptions underlying parameter choices in any such exercise.
 
@@ -268,3 +276,6 @@ CarbonPlan received no specific financial support for this work. Noah McQueen is
 ### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>
+
+
+
