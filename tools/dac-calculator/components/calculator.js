@@ -15,9 +15,15 @@ import checks from './model/checks.js'
 const TECH_WITH_BATS = ['Wind', 'Solar']
 
 const ELECTRIC_DEMAND = {
-  Wind: 1.07, // 1.0704342
-  Solar: 1.07, // 1.0704342
-  NGCC: 1.48, // 1.48199428
+  Wind: 0.95, // 0.945201996
+  Solar: 0.95, // 0.945201996
+  NGCC: 1.46, // 1.462397513,
+}
+
+const CAPEX = {
+  Wind: 1023,
+  Solar: 1023,
+  NGCC: 1028,
 }
 
 const getTech = (energy) => {
@@ -60,6 +66,7 @@ const Calculator = () => {
   // set electric requirement
   useEffect(() => {
     state['Electric [GJ/tCO2]'][1](ELECTRIC_DEMAND[state.energy[0]])
+    state['Capex [$]'][1](CAPEX[state.energy[0]])
   }, [state.energy[0]])
 
   // unpack techData
@@ -80,7 +87,7 @@ const Calculator = () => {
   const dacModel = makeModel(state.energy[0])
 
   // Run once with specified parameters
-  modelInputs['log'] = true
+  modelInputs['log'] = false
   dacModel.setParams(modelInputs)
   const results = dacModel.compute()
 

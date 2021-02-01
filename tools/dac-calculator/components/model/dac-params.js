@@ -62,13 +62,14 @@ const dacParameters = [
         chartHeight: 120,
         show: true,
       },
+      // Note: the default value for this parameter varies by energy type
       {
         name: 'Capex [$]',
         displayName: 'Cap Ex',
         description:
           'The capital costs of the complete DAC facility per ton of CO₂ installed capacity. This includes equipment, installation, piping and instrumentation, as well as neccessary costs for infrastructure inside and outside battery operating limits.',
         unit: '$/tCO₂ ann. cap.',
-        initValue: 936,
+        initValue: 1028,
         validRange: [10, 2250],
         step: 1,
         scale: 'linear',
@@ -111,13 +112,14 @@ const dacParameters = [
         chartHeight: 120,
         show: true,
       },
+      // Note: the default value for this parameter varies by energy type
       {
         name: 'Electric [GJ/tCO2]',
         displayName: 'Electric Req',
         description:
           'The electric requirements are system energy requirements that neccessitate electricity. For example, fans to push air through the system.',
         unit: 'GJ/tCO₂',
-        initValue: 1.48, // rounded from 1.48199428
+        initValue: 1.46, // rounded from 1.462397513
         validRange: [0, 10],
         step: 0.1,
         scale: 'linear',
@@ -130,7 +132,7 @@ const dacParameters = [
         description:
           'The thermal requirements of the system require energy input in the form of heat. For example, sorbent regeneration requires a heat input to release adsorbed CO2.',
         unit: 'GJ/tCO₂',
-        initValue: 6.64, // rounded from 6.640178571
+        initValue: 5.82,
         validRange: [0, 10],
         step: 0.1,
         scale: 'linear',

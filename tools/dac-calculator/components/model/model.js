@@ -64,7 +64,7 @@ class DacComponent {
 
   log(...args) {
     if (this.params['log']) {
-      //console.log(args)
+      console.log(args)
     }
   }
 
@@ -591,7 +591,6 @@ export class DacModel extends DacComponent {
 
     let cv
     let tev
-    let ngv
 
     if (this.electric.source == this.thermal.source) {
       cv = this.combinedPowerBlockRequirements(this.electric.source, ev, tv)
@@ -660,8 +659,6 @@ export class DacModel extends DacComponent {
       v['Fixed O&M [$/tCO2eq Net Removed]'] +
       v['Variable O&M [$/tCO2eq Net Removed]'] +
       v['Natural Gas Cost [$/tCO2 Net Removed]']
-
-    this.log(emissionsFactor, v)
 
     return v
   }

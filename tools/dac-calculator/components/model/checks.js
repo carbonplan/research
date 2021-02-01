@@ -6,11 +6,8 @@ const getDefaultParams = () => {
     'Scale [tCO2/year]': 1000000,
     'Economic Lifetime [years]': 20,
     'WACC [%]': 8.5,
-    'Capex [$]': 936,
     'DAC Section Lead Time [years]': 3,
     'DAC Capacity Factor': 0.9,
-    'Electric [GJ/tCO2]': 1.48,
-    'Thermal [GJ/tCO2]': 6.64,
     'Fixed O&M Costs [$/tCO2]': 34,
     'Variable O&M Cost [$/tCO2]': 4,
     'Natural Gas Cost [$/mmBTU]': 3.43,
@@ -77,7 +74,7 @@ const getDefaultParams = () => {
         'Scaling Factor': 0.95,
       },
     },
-    log: true,
+    log: false,
   }
 
   return p
@@ -90,23 +87,26 @@ const checks = () => {
 
   // check 1A-low
   params = getDefaultParams()
+  params['Capex [$]'] = 1028
+  params['Electric [GJ/tCO2]'] = 1.46
+  params['Thermal [GJ/tCO2]'] = 5.82
   model = makeModel('NGCC')
   model.setParams(params)
   results = model.compute()
   if (
-    results['Total Cost [$/tCO2 Net Removed]'] > 290 &&
-    results['Total Cost [$/tCO2 Net Removed]'] < 305
+    results['Total Cost [$/tCO2 Net Removed]'] > 250 &&
+    results['Total Cost [$/tCO2 Net Removed]'] < 260
   ) {
     console.log(
       'check 1A-low passed',
-      results['Total Cost [$/tCO2 Net Removed]']
+      results['Total Cost [$/tCO2 Net Removed]'].toFixed(2)
     )
   } else {
     console.log(
       'check 1A-low failed',
-      results['Total Cost [$/tCO2 Net Removed]'],
+      results['Total Cost [$/tCO2 Net Removed]'].toFixed(2),
       'expected',
-      297
+      256
     )
   }
 
@@ -114,29 +114,130 @@ const checks = () => {
   params = getDefaultParams()
   params['Capex [$]'] = 2027
   params['Electric [GJ/tCO2]'] = 1.7
-  params['Thermal [GJ/tCO2]'] = 2.2
+  params['Thermal [GJ/tCO2]'] = 5.82
 
   model = makeModel('NGCC')
   model.setParams(params)
   results = model.compute()
   if (
-    results['Total Cost [$/tCO2 Net Removed]'] > 535 &&
-    results['Total Cost [$/tCO2 Net Removed]'] < 550
+    results['Total Cost [$/tCO2 Net Removed]'] > 460 &&
+    results['Total Cost [$/tCO2 Net Removed]'] < 475
   ) {
     console.log(
       'check 1A-high passed',
-      results['Total Cost [$/tCO2 Net Removed]'],
+      results['Total Cost [$/tCO2 Net Removed]'].toFixed(2),
       'expected'
     )
   } else {
     console.log(
       'check 1A-high failed',
-      results['Total Cost [$/tCO2 Net Removed]'],
+      results['Total Cost [$/tCO2 Net Removed]'].toFixed(2),
       'expected',
-      542
+      468
     )
   }
-  console.log(results)
+
+  // check 2A-low
+  params = getDefaultParams()
+  params['Capex [$]'] = 1023
+  params['Electric [GJ/tCO2]'] = 0.95
+  params['Thermal [GJ/tCO2]'] = 5.82
+  model = makeModel('Solar')
+  model.setParams(params)
+  results = model.compute()
+  if (
+    results['Total Cost [$/tCO2 Net Removed]'] > 425 &&
+    results['Total Cost [$/tCO2 Net Removed]'] < 440
+  ) {
+    console.log(
+      'check 2A-low passed',
+      results['Total Cost [$/tCO2 Net Removed]'].toFixed(2)
+    )
+  } else {
+    console.log(
+      'check 2A-low failed',
+      results['Total Cost [$/tCO2 Net Removed]'].toFixed(2),
+      'expected',
+      433
+    )
+  }
+
+  // check 2A-high
+  params = getDefaultParams()
+  params['Capex [$]'] = 2000
+  params['Electric [GJ/tCO2]'] = 1.17
+  params['Thermal [GJ/tCO2]'] = 7.22
+  model = makeModel('Solar')
+  model.setParams(params)
+  results = model.compute()
+  if (
+    results['Total Cost [$/tCO2 Net Removed]'] > 650 &&
+    results['Total Cost [$/tCO2 Net Removed]'] < 665
+  ) {
+    console.log(
+      'check 2A-high passed',
+      results['Total Cost [$/tCO2 Net Removed]'].toFixed(2),
+      'expected'
+    )
+  } else {
+    console.log(
+      'check 2A-high failed',
+      results['Total Cost [$/tCO2 Net Removed]'].toFixed(2),
+      'expected',
+      658
+    )
+  }
+
+  // check 3A-low
+  params = getDefaultParams()
+  params['Capex [$]'] = 1023
+  params['Electric [GJ/tCO2]'] = 0.95
+  params['Thermal [GJ/tCO2]'] = 5.82
+  model = makeModel('Wind')
+  model.setParams(params)
+  results = model.compute()
+  if (
+    results['Total Cost [$/tCO2 Net Removed]'] > 355 &&
+    results['Total Cost [$/tCO2 Net Removed]'] < 370
+  ) {
+    console.log(
+      'check 3A-low passed',
+      results['Total Cost [$/tCO2 Net Removed]'].toFixed(2)
+    )
+  } else {
+    console.log(
+      'check 3A-low failed',
+      results['Total Cost [$/tCO2 Net Removed]'].toFixed(2),
+      'expected',
+      361
+    )
+  }
+
+  // check 3A-high
+  params = getDefaultParams()
+  params['Capex [$]'] = 2000
+  params['Electric [GJ/tCO2]'] = 1.17
+  params['Thermal [GJ/tCO2]'] = 7.22
+  model = makeModel('Wind')
+  model.setParams(params)
+  results = model.compute()
+  if (
+    results['Total Cost [$/tCO2 Net Removed]'] > 565 &&
+    results['Total Cost [$/tCO2 Net Removed]'] < 575
+  ) {
+    console.log(
+      'check 3A-high passed',
+      results['Total Cost [$/tCO2 Net Removed]'].toFixed(2),
+      'expected'
+    )
+  } else {
+    console.log(
+      'check 3A-high failed',
+      results['Total Cost [$/tCO2 Net Removed]'].toFixed(2),
+      'expected',
+      570
+    )
+  }
 }
 
 export default checks
