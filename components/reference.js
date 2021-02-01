@@ -18,7 +18,7 @@ const Reference = ({ color, data }) => {
   }
 
   return (
-    <>
+    <Box as='span' sx={{ userSelect: 'none' }}>
       <Text
         as='span'
         onMouseOver={toggleOn}
@@ -100,7 +100,7 @@ const Reference = ({ color, data }) => {
           </Text>
         </Text>
       </a>
-    </>
+    </Box>
   )
 }
 
