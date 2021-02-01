@@ -6,7 +6,7 @@ import Calculator from './components/calculator'
 const Index = () => {
   const meta = {
     id: 'dac-calculator',
-    title: 'DAC calculator',
+    title: 'DAC cost calculator',
     color: 'purple',
     card: 'dac-calculator',
     summary:
