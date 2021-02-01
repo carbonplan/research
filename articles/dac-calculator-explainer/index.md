@@ -122,7 +122,7 @@ Analyzing the cost of DAC also requires considering any associated greenhouse ga
 
 In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system.<Reference color={meta.color} data={sidenotes[2]}/> They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO₂ released during combustion, and six all-electric non-fossil systems.
 
-To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an <NextLink href={'/research/dac-calculator'} passHref={true}><Link>interactive calculator</Link></NextLink> based directly on the model from the paper.
+To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an open source <NextLink href={'/research/dac-calculator'} passHref={true}><Link>interactive calculator</Link></NextLink> based directly on the model from the paper. The model is written in JavaScript and runs natively in the browser.
 
 Here we explain the design of the model and the parameter space, and highlight some key insights.
 
@@ -132,7 +132,7 @@ Here we explain the design of the model and the parameter space, and highlight s
 
 Techno-economic analyses (TEAs) for emerging technologies, such as DAC, rely heavily on assumptions about which parameters are included in the "boundary" of the analysis. These parameters then act as knobs that, when turned, affect the overall estimate of net removal cost in units of $/tCO₂eq. Transparency about the assumptions underlying any TEA are critical, as is understanding how changing parameters impacts cost estimates.
 
-Our calculator estimates the cost of a given DAC technology explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but also the energy resource. We do not, however, include costs for transportation or storage. The “boundary condition” diagram below shows which costs are included.
+Our calculator estimates the cost of DAC explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but also building the infrastructure to generate heat and power. We do not, however, include transportation or storage costs. The “boundary condition” diagram below shows which costs are included.
 
 <BoundaryCondition />
 
@@ -148,7 +148,7 @@ For natural gas we also have to consider leakage, which is substantial — we us
 
 In the second scenario, wind turbines are used to continuously power the DAC plant which requires over-producing electricity during windy times and storing the excess electricity in lithium-ion batteries. The energy storage allows the DAC plant to continuously use electricity produced from wind, even when the wind turbines are unable to produce electricity (i.e. when the air is still). In this scenario, electric resistance heating is used to meet the thermal demands of the system as opposed to the combustion of natural gas in the first scenario.
 
-The third scenario uses solar photovoltaics (PV) to continuously power the DAC plant. Similar to using wind turbines, solar PV requires the overproduction of electricity when the sun is shining to make up for times when there is not enough sunshine to produce electricity (i.e. at night). This requires energy storage, which is included in the form of lithium-ion batteries. Additionally, the solar PV alternative also uses electric resistance heating to meet the thermal energy demands of the DAC plant.
+The third scenario uses solar photovoltaics (PV) to continuously power the DAC plant. Similar to using wind turbines, solar PV requires the overproduction of electricity when the sun is shining to make up for times when there is not enough sunshine to produce electricity (i.e. at night). This requires energy storage, which is included in the form of lithium-ion batteries. The solar PV alternative also uses electric resistance heating to meet the thermal energy demands.
 
 ## Key insights
 
@@ -167,12 +167,12 @@ With default settings, the calculator yields the highest cost for solar, second 
   NGCCVariableOM={8}
   NGCCFixedOM={45}
   NGCCCapitalRecovery={182}
-  NGCCNaturalGas={39}
+  NGCCNaturalGas={40}
 />
 
-With alternate assumptions, we arrive at different answers. By varying parameters, McQueen et al. report ranges of $230-390/tCO₂eq for NGCC, $360–570/tCO₂eq for wind, and $430–690/tCO₂eq for solar. Here we explore some of those parameter scenarios in detail: a higher cost NGCC scenario, a lower cost wind scenario, and an NGCC scenario with a higher leakage rate.
+By varying parameters, McQueen et al. reported ranges of $230-390/tCO₂eq for NGCC, $360–570/tCO₂eq for wind, and $430–690/tCO₂eq for solar. Here we explore some of those scenarios in detail: a higher cost NGCC scenario, a lower cost wind scenario, and an NGCC scenario with a higher leakage rate.
 
-To model high cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Reference color={meta.color} data={sidenotes[4]}/> including corrections for two additional follow-on analyses.<Reference color={meta.color} data={sidenotes[5]}/><Reference color={meta.color} data={sidenotes[6]}/> By using these reports we assume a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Reference color={meta.color} data={sidenotes[7]}/>
+To model high cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Reference color={meta.color} data={sidenotes[4]}/> including corrections from two additional follow-on analyses.<Reference color={meta.color} data={sidenotes[5]}/><Reference color={meta.color} data={sidenotes[6]}/> In using these reports we assume a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Reference color={meta.color} data={sidenotes[7]}/>
 
 <ParameterScenario
   figureNumber={3}
@@ -222,7 +222,9 @@ Finally, returning to the high cost NGCC example, we can further consider increa
   capitalRecovery={416}
 />
 
-If we were to use a GWP20 of 86 for methane instead of a GWP100 of 32, emissions would become so high that the system no longer achieves carbon removal. Even with a GWP100 of 32, higher electricity and thermal requirements coupled to even higher leakage rates could result in no net removal, as shown here, though note that these are extremely high values.
+As these comparisons show, the energy source on its own does not determine how scenarios stack up — the full parameter space matters.
+
+For NGCC in particular, is it also possible for emissions to be so high that the system no longer achives carbon removal. This would occur in the above scenario if we were to use a GWP20 of 86 for methane instead of a GWP100 of 32. Even with a GWP100 of 32, higher electricity and thermal requirements coupled to even higher leakage rates could result in no net removal, as shown here, though note that these are extremely high values.
 
 <ParameterScenario
   figureNumber={6}
@@ -241,7 +243,7 @@ If we were to use a GWP20 of 86 for methane instead of a GWP100 of 32, emissions
   capitalRecovery={'N/A'}
 />
 
-As these comparisons show, the energy source on its own does not fully determine how different scenarios stack up — the full parameter space matters. Note also, however, that not all parameter combinations may be feasible. As discussed above, some parameter settings for NGCC raise emissions so high that the system no longer achieves carbon removal. The calculator also allows users to set some parameters, such as operating and maintenance costs, to $0/tCO₂, but this would not be considered an achievable value for most realistic DAC systems.
+A final note is that not all parameter combinations may be feasible. For example, the calculator allows users to set operating and maintenance costs to $0/tCO₂, but this would not be considered an achievable value for most realistic DAC systems.
 
 We encourage you to explore how the cost of DAC changes with different economic assumptions outside of these examples — and think carefully about the assumptions underlying parameter choices in any such exercise.
 
