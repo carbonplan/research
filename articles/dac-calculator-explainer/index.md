@@ -163,19 +163,19 @@ The third scenario uses solar photovoltaics (PV) to continuously power the DAC p
 With default settings, the calculator yields the highest cost for solar, second highest for wind, and lowest for NGCC. But, as we will explore, these costs reflect just one specific set of assumptions.
 
 <CostSummary
-  windTotalCost={393}
+  windTotalCost={376}
   windVariableOM={4}
-  windFixedOM={68}
-  windCapitalRecovery={321}
-  solarTotalCost={473}
+  windFixedOM={64}
+  windCapitalRecovery={308}
+  solarTotalCost={447}
   solarVariableOM={4}
-  solarFixedOM={72}
-  solarCapitalRecovery={397}
-  NGCCTotalCost={275}
-  NGCCVariableOM={8}
-  NGCCFixedOM={45}
+  solarFixedOM={68}
+  solarCapitalRecovery={375}
+  NGCCTotalCost={265}
+  NGCCVariableOM={7}
+  NGCCFixedOM={42}
   NGCCCapitalRecovery={182}
-  NGCCNaturalGas={39}
+  NGCCNaturalGas={34}
 />
 
 By varying parameters, McQueen et al. reported ranges of $230-390/tCO₂eq for NGCC, $360–570/tCO₂eq for wind, and $430–690/tCO₂eq for solar. Here we explore some of those scenarios in detail: a higher cost NGCC scenario, a lower cost wind scenario, and an NGCC scenario with a higher leakage rate.
@@ -190,11 +190,11 @@ To model high cost NGCC, we use parameters from a DAC facility described in a 20
   electricReq={1.7}
   thermalReq={7.2}
   leakage={2.2}
-  totalCost={464}
-  variableOM={9}
-  fixedOM={47}
-  naturalGas={44}
-  capitalRecovery={364}
+  totalCost={434}
+  variableOM={8}
+  fixedOM={44}
+  naturalGas={42}
+  capitalRecovery={340}
 />
 
 To model low cost wind, we use parameters from a DAC facility described in Keith et al. (2018),<Reference color={meta.color} data={sidenotes[9]}/> which corresponds to a lower DAC plant cost and slightly lower electricity and thermal energy requirements.<Reference color={meta.color} data={sidenotes[10]}/>
@@ -213,7 +213,7 @@ To model low cost wind, we use parameters from a DAC facility described in Keith
   capitalRecovery={297}
 />
 
-Finally, returning to the high cost NGCC example, we can further consider increasing the natural gas leakage rate from the default of 2.2% to 3.7%. With these parameters, net removed cost increases to $530, higher than for any of the scenarios considered thus far.
+Finally, returning to the high cost NGCC example, we can further consider increasing the natural gas leakage rate from the default of 2.2% to 3.7%. With these parameters, net removed cost increases to $490, higher than for any of the scenarios considered thus far.
 
 <ParameterScenario
   figureNumber={5}
@@ -223,11 +223,11 @@ Finally, returning to the high cost NGCC example, we can further consider increa
   electricReq={1.7}
   thermalReq={7.2}
   leakage={3.7}
-  totalCost={530}
-  variableOM={10}
-  fixedOM={54}
-  naturalGas={51}
-  capitalRecovery={416}
+  totalCost={490}
+  variableOM={9}
+  fixedOM={50}
+  naturalGas={47}
+  capitalRecovery={385}
 />
 
 As these comparisons show, the energy source on its own does not determine how scenarios stack up — the full parameter space matters.
@@ -241,9 +241,9 @@ For NGCC in particular, is it also possible for emissions to be so high that the
   }
   energySource={'NGCC'}
   capEx={2027}
-  electricReq={6.1}
+  electricReq={6.5}
   thermalReq={9.1}
-  leakage={6.5}
+  leakage={6.9}
   totalCost={'N/A'}
   variableOM={'N/A'}
   fixedOM={'N/A'}
