@@ -47,25 +47,28 @@ export const sidenotes = {
     journal: 'Frontiers in Climate',
     url: 'https://doi.org/10.3389/fclim.2020.618644',
   },
-3: {
+  3: {
     offset: 0,
     number: 3,
     authors: 'Y Zhang et al.',
     year: 2020,
-    title: 'Quantifying methane emissions from the largest oil-producing basin in the United States from space',
+    title:
+      'Quantifying methane emissions from the largest oil-producing basin in the United States from space',
     journal: 'Science Advances',
     url: 'https://doi.org/10.1126/sciadv.aaz5120',
   },
   4: {
     offset: 0,
     number: 4,
-    authors: 'Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.',
-    url: 'https://twitter.com/emilygrubert/status/1353155080061669376'
+    authors:
+      'Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.',
+    url: 'https://twitter.com/emilygrubert/status/1353155080061669376',
   },
   5: {
     offset: -23,
     number: 5,
-    authors: 'These defaults correspond to the horizontal flow (HF) scenarios from McQueen et al. (2021)',
+    authors:
+      'These defaults correspond to the horizontal flow (HF) scenarios from McQueen et al. (2021)',
   },
   6: {
     offset: -210,
@@ -159,7 +162,7 @@ The third scenario uses solar photovoltaics (PV) to continuously power the DAC p
 
 ## Key insights
 
-With default settings, the calculator yields the highest cost for solar, second highest for wind, and lowest for NGCC.<Reference color={meta.color} data={sidenotes[5]}/>  But, as we will explore, these costs reflect just one specific set of assumptions.
+With default settings, the calculator yields the highest cost for solar, second highest for wind, and lowest for NGCC.<Reference color={meta.color} data={sidenotes[5]}/> But, as we will explore, these costs reflect just one specific set of assumptions.
 
 <CostSummary
   windTotalCost={365}

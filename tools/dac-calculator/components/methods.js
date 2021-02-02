@@ -40,8 +40,8 @@ const Methods = () => {
       <Styled.p>
         Given the definition of net removed cost, it is possible to create
         parameter scenarios with NGCC that do not achieve net carbon removal,
-        because emissions are too large. We show this case with
-        gray bars in the calculator.
+        because emissions are too large. We show this case with gray bars in the
+        calculator.
       </Styled.p>
       <Styled.p>
         The entire model is implemented natively in JavaScript and{' '}
@@ -57,8 +57,8 @@ const Methods = () => {
         >
           paper
         </Link>{' '}
-        by McQueen et al. (2021). There may be small differences (± $10)
-        between the model outputs above and the results in the paper due to
+        by McQueen et al. (2021). There may be small differences (± $10) between
+        the model outputs above and the results in the paper due to
         implementation differences.
       </Styled.p>
       <Styled.p>
