@@ -1,6 +1,14 @@
 import { Box, Text } from 'theme-ui'
 import { useState } from 'react'
 
+const Wrapper = ({ url, children }) => {
+  if (url) {
+    return <a href={url}>{children}</a>
+  } else {
+    return <span>{children}</span>
+  }
+}
+
 const Reference = ({ color, data }) => {
   const [selected, setSelected] = useState(false)
   const [selectedMobile, setSelectedMobile] = useState(false)
@@ -38,7 +46,7 @@ const Reference = ({ color, data }) => {
       >
         <sup>{data.number}</sup>
       </Text>
-      <a href={data.url}>
+      <Wrapper url={data.url}>
         <Text
           as='span'
           onMouseOver={toggleOn}
@@ -99,7 +107,7 @@ const Reference = ({ color, data }) => {
             </Text>
           </Text>
         </Text>
-      </a>
+      </Wrapper>
     </Box>
   )
 }
