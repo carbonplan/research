@@ -35,12 +35,12 @@ const Methods = () => {
         thermal energy is co-captured by the process, resulting in no emissions
         from combustion. A leakge rate parameter accounts for natural gas
         leakage, which has been reported as high as 3.7% in the Permian Basin
-        region of the United States
+        region of the United States.
       </Styled.p>
       <Styled.p>
         Given the definition of net removed cost, it is possible to create
         parameter scenarios with NGCC that do not achieve net carbon removal,
-        because emissions are too large. These scenarios are indicated using
+        because emissions are too large. We show this case with
         gray bars in the calculator.
       </Styled.p>
       <Styled.p>
@@ -59,7 +59,10 @@ const Methods = () => {
         </Link>{' '}
         from McQueen et al. (2021). There may be small differences (± $10)
         between the model outputs above and the results in the paper due to
-        differences in implementation. Read our{' '}
+        implementation differences.
+      </Styled.p>
+      <Styled.p>
+        Read our{' '}
         <NextLink href={'/research/dac-calculator-explainer'} passHref={true}>
           <Link>article</Link>
         </NextLink>{' '}

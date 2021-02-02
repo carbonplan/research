@@ -21,8 +21,8 @@ const ELECTRIC_DEMAND = {
 }
 
 const CAPEX = {
-  Wind: 1023,
-  Solar: 1023,
+  Wind: 936,
+  Solar: 936,
   NGCC: 1028,
 }
 

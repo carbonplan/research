@@ -47,26 +47,29 @@ export const sidenotes = {
     journal: 'Frontiers in Climate',
     url: 'https://doi.org/10.3389/fclim.2020.618644',
   },
-  3: {
+3: {
     offset: 0,
     number: 3,
     authors: 'Y Zhang et al.',
     year: 2020,
-    title:
-      'Quantifying methane emissions from the largest oil-producing basin in the United States from space',
+    title: 'Quantifying methane emissions from the largest oil-producing basin in the United States from space',
     journal: 'Science Advances',
     url: 'https://doi.org/10.1126/sciadv.aaz5120',
   },
   4: {
     offset: 0,
     number: 4,
-    authors:
-      'Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.',
-    url: 'https://twitter.com/emilygrubert/status/1353155080061669376',
+    authors: 'Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.',
+    url: 'https://twitter.com/emilygrubert/status/1353155080061669376'
   },
   5: {
-    offset: -210,
+    offset: -23,
     number: 5,
+    authors: 'These defaults correspond to the horizontal flow (HF) scenarios from McQueen et al. (2021)',
+  },
+  6: {
+    offset: -210,
+    number: 6,
     authors: 'Socolow et al.',
     year: 2011,
     title:
@@ -74,9 +77,9 @@ export const sidenotes = {
     journal: 'American Physical Society',
     url: 'https://www.aps.org/policy/reports/assessments/upload/dac2011.pdf',
   },
-  6: {
+  7: {
     offset: -100,
-    number: 6,
+    number: 7,
     authors: 'M Mazzotti et al.',
     year: 2013,
     title:
@@ -84,35 +87,29 @@ export const sidenotes = {
     journal: 'Climatic Change',
     url: 'https://link.springer.com/article/10.1007/s10584-012-0679-y',
   },
-  7: {
+  8: {
     offset: 25,
-    number: 7,
+    number: 8,
     authors: 'F Zeman',
     year: 2014,
     title: 'Reducing the Cost of Ca-Based Direct Air Capture of CO₂',
     journal: 'Environ. Sci. Technol.',
     url: 'https://pubs.acs.org/doi/10.1021/es502887y',
   },
-  8: {
+  9: {
     offset: 50,
-    number: 8,
+    number: 9,
     authors:
       'This scenario is comparable to the vertical flow (VF) scenario described in McQueen et al. (2021).',
   },
-  9: {
-    offset: -50,
-    number: 9,
+  10: {
+    offset: -40,
+    number: 10,
     authors: 'D Keith et al.',
     year: 2018,
     title: 'A Process for Capturing CO₂ from the Atmosphere',
     journal: 'Joule',
     url: 'https://www.sciencedirect.com/science/article/pii/S2542435118302253',
-  },
-  10: {
-    offset: -25,
-    number: 10,
-    authors:
-      'This scenario is comparable to the horizontal flow (VF) scenario described in McQueen et al. (2021).',
   },
 }
 
@@ -142,7 +139,7 @@ Here we explain the design of the model and the parameter space, and highlight s
 
 Techno-economic analyses (TEAs) for emerging technologies, such as DAC, rely heavily on assumptions about which parameters are included in the "boundary" of the analysis. These parameters then act as knobs that, when turned, affect the overall estimate of net removal cost in units of $/tCO₂eq. Transparency about the assumptions underlying any TEA are critical, as is understanding how changing parameters impacts cost estimates.
 
-Our calculator estimates the cost of a given DAC technology explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but also building the energy infrastructure. We do not, however, include costs for CO₂ transportation or storage. In the case of natural gas with carbon capture and storage, the carbon capture process is within the boundary, but transportation and storage is outside. The “boundary condition” diagram below shows which costs are included.
+Our calculator estimates the cost of a given DAC technology explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but also building the energy infrastructure. We do not, however, include costs for CO₂ transportation or storage. In the case of natural gas with carbon capture and storage, the carbon capture process is inside the boundary, but transportation and storage is outside. The “boundary condition” diagram below shows which costs are included.
 
 <BoundaryCondition />
 
@@ -162,17 +159,17 @@ The third scenario uses solar photovoltaics (PV) to continuously power the DAC p
 
 ## Key insights
 
-With default settings, the calculator yields the highest cost for solar, second highest for wind, and lowest for NGCC. But, as we will explore, these costs reflect just one specific set of assumptions.
+With default settings, the calculator yields the highest cost for solar, second highest for wind, and lowest for NGCC.<Reference color={meta.color} data={sidenotes[5]}/>  But, as we will explore, these costs reflect just one specific set of assumptions.
 
 <CostSummary
-  windTotalCost={376}
+  windTotalCost={365}
   windVariableOM={4}
   windFixedOM={64}
-  windCapitalRecovery={308}
-  solarTotalCost={447}
+  windCapitalRecovery={298}
+  solarTotalCost={436}
   solarVariableOM={4}
   solarFixedOM={68}
-  solarCapitalRecovery={375}
+  solarCapitalRecovery={364}
   NGCCTotalCost={265}
   NGCCVariableOM={7}
   NGCCFixedOM={42}
@@ -180,9 +177,9 @@ With default settings, the calculator yields the highest cost for solar, second 
   NGCCNaturalGas={34}
 />
 
-By varying parameters, McQueen et al. reported ranges of $230-390/tCO₂eq for NGCC, $360–570/tCO₂eq for wind, and $430–690/tCO₂eq for solar. Here we explore some of those scenarios in detail: a higher cost NGCC scenario, a lower cost wind scenario, and an NGCC scenario with a higher leakage rate.
+Here we explore three alternative scenarios in detail: a higher cost NGCC scenario, a lower cost wind scenario, and an NGCC scenario with a higher leakage rate.
 
-To model high cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Reference color={meta.color} data={sidenotes[5]}/> including corrections from two additional follow-on analyses.<Reference color={meta.color} data={sidenotes[6]}/><Reference color={meta.color} data={sidenotes[7]}/> In using these reports we assume a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Reference color={meta.color} data={sidenotes[8]}/>
+To model higher cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Reference color={meta.color} data={sidenotes[6]}/> including corrections from two additional follow-on analyses.<Reference color={meta.color} data={sidenotes[7]}/><Reference color={meta.color} data={sidenotes[8]}/> In using these reports we are assuming a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Reference color={meta.color} data={sidenotes[9]}/>
 
 <ParameterScenario
   figureNumber={3}
@@ -199,23 +196,23 @@ To model high cost NGCC, we use parameters from a DAC facility described in a 20
   capitalRecovery={340}
 />
 
-To model low cost wind, we use parameters from a DAC facility described in Keith et al. (2018),<Reference color={meta.color} data={sidenotes[9]}/> which corresponds to a lower DAC plant cost and slightly lower electricity and thermal energy requirements.<Reference color={meta.color} data={sidenotes[10]}/>
+To model a hypothetical lower cost wind scenario, we keep the default capital expenses the same, which are based on a DAC facility described in Keith et al. (2018),<Reference color={meta.color} data={sidenotes[10]}/> and we assume lower electricity and thermal energy requirements.
 
 <ParameterScenario
   figureNumber={4}
   figureCaption={'Summary for a lower cost wind scenario.'}
   energySource={'wind'}
-  capEx={1023}
-  electricReq={0.95}
-  thermalReq={5.82}
-  totalCost={376}
+  capEx={936}
+  electricReq={0.6}
+  thermalReq={4.4}
+  totalCost={313}
   variableOM={4}
-  fixedOM={64}
+  fixedOM={56}
   naturalGas={0}
-  capitalRecovery={308}
+  capitalRecovery={252}
 />
 
-Finally, returning to the high cost NGCC example, we can further consider increasing the natural gas leakage rate from the default of 2.2% to 3.7%. With these parameters, net removed cost increases to $490, higher than for any of the scenarios considered thus far.
+Finally, returning to the higher cost NGCC example, we can further consider increasing the natural gas leakage rate from the default of 2.2% to 3.7%. With these parameters, net removed cost increases to $490, higher than for any of the scenarios considered thus far.
 
 <ParameterScenario
   figureNumber={5}
@@ -229,7 +226,7 @@ Finally, returning to the high cost NGCC example, we can further consider increa
   variableOM={9}
   fixedOM={50}
   naturalGas={47}
-  capitalRecovery={384}
+  capitalRecovery={385}
 />
 
 As these comparisons show, the energy source on its own does not determine how scenarios stack up — the full parameter space matters.
@@ -245,7 +242,7 @@ For NGCC in particular, is it also possible for emissions to be so high that the
   capEx={2027}
   electricReq={6.5}
   thermalReq={9.1}
-  leakage={7}
+  leakage={6.9}
   totalCost={'N/A'}
   variableOM={'N/A'}
   fixedOM={'N/A'}
