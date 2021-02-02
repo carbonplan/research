@@ -21,7 +21,7 @@ export const meta = {
   ],
   title: 'The cost of direct air capture',
   date: '02-01-2021',
-  background: 'article-006/factory',
+  background: 'article-006/wind',
   card: 'dac-calculator-explainer',
   summary:
     'How the cost of direct air capture varies under different energy scenarios.',
