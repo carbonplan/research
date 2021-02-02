@@ -41,7 +41,7 @@ const ParamChart = ({ param, data }) => {
   useEffect(() => {
     const config = {
       background: null,
-      padding: { left: 0, right: 0, top: 0, bottom: 0 },
+      padding: { left: 0, right: 10, top: 0, bottom: 0 },
       axis: {
         grid: false,
         labelFontSize: theme.fontSizes[1],
@@ -112,7 +112,7 @@ const ParamChart = ({ param, data }) => {
             orient: 'right',
             padding: 0,
             offset: 5,
-            format: '0f',
+            format: '$0f',
           },
         },
         opacity: {
@@ -139,7 +139,7 @@ const ParamChart = ({ param, data }) => {
   const height = param.chartHeight
 
   return (
-    <Box ref={container} sx={{ width: '99%' }}>
+    <Box ref={container} sx={{ width: '97%' }}>
       {loaded && width && (
         <Vega
           width={width}
