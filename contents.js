@@ -1,5 +1,25 @@
 const Contents = [
   {
+    title: 'DAC cost calculator',
+    tags: ['article', 'tool'],
+    summary:
+      'Our interactive tool helps explore the cost of direct air capture (DAC) coupled to stand alone energy sources. Try the tool, or read the article to learn more about the model.',
+    date: '02-01-2021',
+    version: '1.0.0',
+    color: 'purple',
+    icon: 'article-006/wind-small',
+    links: [
+      {
+        label: 'Read article',
+        url: '/research/dac-calculator-explainer',
+      },
+      {
+        label: 'Use tool',
+        url: '/research/dac-calculator',
+      },
+    ],
+  },
+  {
     title: 'Insights from our first project reports',
     tags: ['article', 'dataset'],
     summary:
@@ -34,19 +54,19 @@ const Contents = [
         url: '/research/soil-carbon-comment',
       },
       {
-        label: 'Read letter #1',
+        label: 'MIT Tech Review coverage',
+        url:
+          'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
+      },
+      {
+        label: 'Read comment letter #1',
         url:
           'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
       },
       {
-        label: 'Read letter #2',
+        label: 'Read comment letter #2',
         url:
           'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
-      },
-      {
-        label: 'MIT Tech Review coverage',
-        url:
-          'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
       },
     ],
   },
@@ -144,7 +164,7 @@ const Contents = [
     icon: 'shared/typewriter-yellow',
     links: [
       {
-        label: 'Read letter',
+        label: 'Read comment letter',
         url:
           'https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf',
       },
@@ -165,7 +185,7 @@ const Contents = [
     color: 'teal',
     links: [
       {
-        label: 'Read the primer',
+        label: 'Read the Primer',
         url: 'https://cdrprimer.org',
       },
     ],

@@ -11,7 +11,7 @@ const Index = () => {
       card={'https://images.carbonplan.org/social/research.png'}
       footer={false}
       links={'local'}
-      metadata={'POSTS: 8'}
+      metadata={'POSTS: 9'}
     >
       <Main />
     </Layout>

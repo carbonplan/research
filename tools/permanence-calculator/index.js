@@ -8,9 +8,9 @@ const Index = () => {
     id: 'permanence-calculator',
     title: 'Permanence calculator',
     color: 'pink',
+    card: 'permanence-calculator-explainer',
     summary:
       'How to compare the long-term cost of temporary and permanent carbon removal.',
-    quotes: [],
   }
 
   const title = <Styled.h1>Permanence calculator</Styled.h1>
