@@ -81,7 +81,7 @@ export const sidenotes = {
     url: 'https://www.aps.org/policy/reports/assessments/upload/dac2011.pdf',
   },
   7: {
-    offset: -100,
+    offset: -125,
     number: 7,
     authors: 'M Mazzotti et al.',
     year: 2013,
@@ -91,7 +91,7 @@ export const sidenotes = {
     url: 'https://link.springer.com/article/10.1007/s10584-012-0679-y',
   },
   8: {
-    offset: 25,
+    offset: 0,
     number: 8,
     authors: 'F Zeman',
     year: 2014,
@@ -100,7 +100,7 @@ export const sidenotes = {
     url: 'https://pubs.acs.org/doi/10.1021/es502887y',
   },
   9: {
-    offset: 50,
+    offset: 25,
     number: 9,
     authors:
       'This scenario is comparable to the vertical flow (VF) scenario described in McQueen et al. (2021).',
