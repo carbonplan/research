@@ -165,19 +165,19 @@ The third scenario uses solar photovoltaics (PV) to continuously power the DAC p
 With default settings, the calculator yields the highest cost for solar, second highest for wind, and lowest for NGCC.<Reference color={meta.color} data={sidenotes[5]}/> But, as we will explore, these costs reflect just one specific set of assumptions.
 
 <CostSummary
-  windTotalCost={365}
+  windTotalCost={365.476}
   windVariableOM={4}
-  windFixedOM={64}
-  windCapitalRecovery={298}
-  solarTotalCost={436}
+  windFixedOM={63.834}
+  windCapitalRecovery={297.642}
+  solarTotalCost={435.853}
   solarVariableOM={4}
-  solarFixedOM={68}
-  solarCapitalRecovery={364}
-  NGCCTotalCost={265}
-  NGCCVariableOM={7}
-  NGCCFixedOM={42}
-  NGCCCapitalRecovery={182}
-  NGCCNaturalGas={34}
+  solarFixedOM={67.679}
+  solarCapitalRecovery={364.174}
+  NGCCTotalCost={264.979}
+  NGCCVariableOM={7.332}
+  NGCCFixedOM={42.157}
+  NGCCCapitalRecovery={182.271}
+  NGCCNaturalGas={33.219}
 />
 
 Here we explore three alternative scenarios in detail: a higher cost NGCC scenario, a lower cost wind scenario, and an NGCC scenario with a higher leakage rate.
@@ -193,10 +193,10 @@ To model higher cost NGCC, we use parameters from a DAC facility described in a 
   thermalReq={7.2}
   leakage={2.2}
   totalCost={434}
-  variableOM={8}
-  fixedOM={44}
-  naturalGas={42}
-  capitalRecovery={340}
+  variableOM={8.032}
+  fixedOM={43.874}
+  naturalGas={41.576}
+  capitalRecovery={340.47}
 />
 
 To model a hypothetical lower cost wind scenario, we keep the default capital expenses the same, which are based on a DAC facility described in Keith et al. (2018),<Reference color={meta.color} data={sidenotes[10]}/> and we assume lower electricity and thermal energy requirements.
@@ -210,9 +210,9 @@ To model a hypothetical lower cost wind scenario, we keep the default capital ex
   thermalReq={4.4}
   totalCost={313}
   variableOM={4}
-  fixedOM={56}
+  fixedOM={56.37}
   naturalGas={0}
-  capitalRecovery={252}
+  capitalRecovery={252.37}
 />
 
 Finally, returning to the higher cost NGCC example, we can further consider increasing the natural gas leakage rate from the default of 2.2% to 3.7%. With these parameters, net removed cost increases to $490, higher than for any of the scenarios considered thus far.
@@ -226,10 +226,10 @@ Finally, returning to the higher cost NGCC example, we can further consider incr
   thermalReq={7.2}
   leakage={3.7}
   totalCost={490}
-  variableOM={9}
-  fixedOM={50}
-  naturalGas={47}
-  capitalRecovery={385}
+  variableOM={9.077}
+  fixedOM={49.577}
+  naturalGas={46.982}
+  capitalRecovery={384.736}
 />
 
 As these comparisons show, the energy source on its own does not determine how scenarios stack up — the full parameter space matters.

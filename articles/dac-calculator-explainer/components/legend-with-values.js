@@ -39,7 +39,7 @@ const Value = ({ value, disabled }) => {
         letterSpacing: 'mono',
       }}
     >
-      ${value}
+      {disabled ? '$N/A' : `$${value.toFixed(0)}`}
     </Box>
   )
 }
