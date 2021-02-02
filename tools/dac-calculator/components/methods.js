@@ -57,7 +57,7 @@ const Methods = () => {
         >
           paper
         </Link>{' '}
-        from McQueen et al. (2021). There may be small differences (± $10)
+        by McQueen et al. (2021). There may be small differences (± $10)
         between the model outputs above and the results in the paper due to
         implementation differences.
       </Styled.p>
