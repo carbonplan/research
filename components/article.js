@@ -12,18 +12,20 @@ const Article = ({ children, meta }) => {
       title={meta.title.toLowerCase() + ' / research / carbonplan'}
       links={'local'}
       metadata={'scroll'}
-      container={false}
     >
       <Box
         sx={{
           backgroundColor: meta.color,
           height: ['auto', 'auto', meta.background ? '275px' : '100px'],
-          position: 'relative',
+          position: ['relative', 'relative', 'absolute'],
           backgroundImage: [
             'none',
             'none',
             meta.background ? `url(${prefix}/${meta.background}.png)` : 'none',
           ],
+          width: ['calc(100vw)'],
+          left: [0],
+          ml: [-3, -4, 0],
           backgroundSize: 'cover',
           backgroundPosition: '50% 70%',
           py: [3, 3, 0],
@@ -89,7 +91,9 @@ const Article = ({ children, meta }) => {
           </Container>
         </Box>
       </Box>
-      <Container sx={{ px: [3, 4, 4], mb: [5] }}>
+      <Container
+        sx={{ pt: [0, 0, meta.background ? '275px' : '100px'], mb: [5] }}
+      >
         <BackArrow />
         <Grid columns={[1, 1, '650px 1fr']} gap={['100px']}>
           <Box sx={{ mt: '-65px' }}>{children}</Box>
