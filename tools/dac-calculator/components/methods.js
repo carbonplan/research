@@ -45,7 +45,7 @@ const Methods = () => {
       </Styled.p>
       <Styled.p>
         The entire model is implemented natively in JavaScript and{' '}
-        <Link href='http://github.com/carbonplan/research/tools/dac-calculator'>
+        <Link href='https://github.com/carbonplan/research/tree/main/tools/dac-calculator'>
           available on Github
         </Link>
         , and a Python version is under development. The model is based directly
