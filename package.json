@@ -35,7 +35,7 @@
     "d3-shape": "^2.0.0",
     "mapbox-gl": "^1.13.1",
     "next": "^10.0.7",
-    "react": "^16.14.0",
+    "react": "^17.0.1",
     "react-animate-height": "^2.0.23",
     "react-dom": "^16.14.0",
     "react-vega": "^7.4.2",
