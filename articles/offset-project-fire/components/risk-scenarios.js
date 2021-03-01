@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Box, Text, Grid, Divider } from 'theme-ui'
 import Chart from './chart'
 const random = require('d3-random')
@@ -95,7 +95,6 @@ const RiskScenarios = () => {
   const [risk, setRisk] = useState(0.25)
   const [mortality, setMortality] = useState(0.5)
   const [data, setData] = useState(null)
-  const [chartWidth, setChartWidth] = useState(550)
   const buffer = 0.11
 
   useEffect(() => {
@@ -122,26 +121,16 @@ const RiskScenarios = () => {
     setData(combined.flat())
   }, [risk, mortality])
 
-  useEffect(() => {
-    if (!window.matchMedia('(min-width: 640px)').matches) {
-      setChartWidth(300)
-    }
-    if (!window.matchMedia('(min-width: 400px)').matches) {
-      setChartWidth(200)
-    }
-    if (!window.matchMedia('(min-width: 375px)').matches) {
-      setChartWidth(175)
-    }
-  }, [])
-
   return (
     <Box
       sx={{
         fontSize: [3],
-        my: [5],
+        mt: [5],
+        mb: [3],
+        width: '100%',
+        maxWidth: '650px',
       }}
     >
-      <Divider />
       <Grid
         columns={[1, 2, 2]}
         sx={{
@@ -239,24 +228,8 @@ const RiskScenarios = () => {
           mb: [3],
         }}
       >
-        <Chart data={data} width={chartWidth} />
+        <Chart data={data} />
       </Box>
-      <Divider />
-      <Text
-        sx={{
-          fontSize: [2],
-          color: 'secondary',
-          my: [3],
-        }}
-      >
-        FIGURE 2{' '}
-        <Text sx={{ display: 'inline-block', color: 'primary' }}>/</Text> A
-        simple stochastic model predicts buffer pool depletion as a function of
-        the severity and frequency of fires. Individual{' '}
-        <Text sx={{ display: 'inline-block', color: 'red' }}>red</Text> lines
-        show different simulations. The dashed line at 20% shows the approximate
-        fraction of the buffer pool for fire.
-      </Text>
     </Box>
   )
 }

@@ -1,5 +1,7 @@
 import Article from '../../components/article'
 import Reference from '../../components/reference'
+import FigureCaption from '../../components/figure-caption'
+import Inline from '../../components/inline'
 import SectionBreak from '../../components/section-break'
 import FireMap from './components/fire-map'
 import RiskScenarios from './components/risk-scenarios'
@@ -149,6 +151,11 @@ Public records from the offset program provide context for the potential scale o
 Estimating forest carbon losses due to fire first requires estimating the area burned. We do this using satellites. Preliminary analysis of NASA FIRMS data, a standardized satellite product that detects and tracks fires across an array of satellites, shows that approximately 72% of the ACR260 project area has been burned by the Lionshead Fire through September 17, 2020.<Reference color={meta.color} data={sidenotes[5]}/> The map below shows the region of the fire and the project area boundary.
 
 <FireMap />
+<FigureCaption number={1}>
+  Intersection between the Riverside / Beachie Creek / Lionshead fire and forest
+  offset project ACR260. <Inline sx={{ color: 'red' }}>Red</Inline> area shows
+  cumulative area burned through the date selected on the slider.
+</FigureCaption>
 
 Second, we need to estimate the fraction of carbon lost due to fire-related mortality. Estimating carbon loss will ultimately require detailed assessment on the ground, which we lack today. As a historical reference point, the 2003 B&B fire, which burned nearby under similar conditions, ultimately killed almost half the trees it encountered.<Reference color={meta.color} data={sidenotes[6]}/> Though the situation in Oregon is still evolving, we can calculate the carbon impacts that would arise from a similar outcome in this incident. At a 50% loss of carbon in the 72% of the ACR260 project area burned through September 17, the Lionshead Fire will have reversed 963,534 credits (about 4% of the total buffer pool). In a worst case scenario in which the entirety of the project burns and all credited carbon is lost, more than 11% of the buffer pool could be depleted.
 
@@ -163,6 +170,13 @@ To explore this question, we built a simple model that asks what the experience 
 Our model starts by asking what would happen in a year where the same number of offset credits in the ACR260 project experience a fire. We then vary two parameters: the fraction of carbon lost in each event and the frequency with which such events might occur. In the calculator below, you can select values for these two variables and simulate futures that show, as a function of time, the fraction of the buffer pool depleted.
 
 <RiskScenarios />
+<FigureCaption number={2}>
+  A simple stochastic model predicts buffer pool depletion as a function of the
+  severity and frequency of fires. Individual{' '}
+  <Inline sx={{ color: 'red' }}>red</Inline> lines show different simulations.
+  The dashed line at 20% shows the approximate fraction of the buffer pool for
+  fire.
+</FigureCaption>
 
 Under a scenario in which carbon loss is 50% in burned areas and events of this magnitude occur once every 4 years, fire alone could consume the entirety of the buffer pool by 2100, despite the fact that the buffer pool is intended to insure against many other non-fire risks.
 

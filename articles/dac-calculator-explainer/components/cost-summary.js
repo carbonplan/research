@@ -67,7 +67,7 @@ const CostSummary = ({
     'Total Cost [$/tCO2]': solarTotalCost,
   }
   return (
-    <Box sx={{ my: [5] }}>
+    <Box sx={{ mt: [5], mb: [3], maxWidth: '650px' }}>
       <Grid columns={[3, 3, 4]} sx={{ pb: [0] }}>
         <Box sx={{ textAlign: 'left' }}>
           <Divider sx={{ mt: [0], mr: [3] }} />
@@ -92,18 +92,6 @@ const CostSummary = ({
         </Box>
       </Grid>
       <Divider sx={{ mt: [3] }} />
-      <Text
-        sx={{
-          color: 'secondary',
-          my: [3],
-        }}
-      >
-        FIGURE 2{' '}
-        <Text sx={{ display: 'inline-block', color: 'primary', mx: [1] }}>
-          /
-        </Text>{' '}
-        Net removed costs ($/tCO₂eq) for three energy configurations.
-      </Text>
     </Box>
   )
 }

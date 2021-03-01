@@ -3,9 +3,7 @@ import Donut from './donut'
 import LegendWithValues from './legend-with-values'
 
 const ParameterScenario = ({
-  figureNumber,
   energySource,
-  figureCaption,
   capEx,
   electricReq,
   thermalReq,
@@ -25,7 +23,7 @@ const ParameterScenario = ({
   }
 
   return (
-    <Box sx={{ my: [5] }}>
+    <Box sx={{ mt: [5], mb: [3], maxWidth: '650px' }}>
       <Grid
         gap={[0, 0, '32px']}
         columns={[1, 1, '200px 160px 1fr']}
@@ -115,18 +113,6 @@ const ParameterScenario = ({
         </Box>
       </Grid>
       <Divider sx={{ mt: [0, 0, '-4px'] }} />
-      <Text
-        sx={{
-          color: 'secondary',
-          my: [3],
-        }}
-      >
-        FIGURE {figureNumber}{' '}
-        <Text sx={{ display: 'inline-block', color: 'primary', mx: [1] }}>
-          /
-        </Text>{' '}
-        {figureCaption}
-      </Text>
     </Box>
   )
 }

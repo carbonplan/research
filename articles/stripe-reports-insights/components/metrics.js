@@ -9,6 +9,7 @@ const Row = ({ children }) => {
   return (
     <Grid
       columns={[1, '170px 1fr', '170px 1fr']}
+      gap={[1, '16px', '16px']}
       sx={{
         borderStyle: 'solid',
         borderWidth: '0px',

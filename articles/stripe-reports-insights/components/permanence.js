@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from 'react'
 import { Box, Text } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 import { Vega } from 'react-vega'
@@ -16,7 +17,7 @@ const tags = {
 export const config = (theme) => {
   return {
     background: null,
-    padding: { left: 100, right: 0, top: 30, bottom: 50 },
+    padding: { left: 80, right: 0, top: 30, bottom: 50 },
     axis: {
       grid: false,
       labelFontSize: theme.fontSizes[1],
@@ -45,20 +46,34 @@ export const config = (theme) => {
 const Permanence = () => {
   const { projects } = data
   const context = useThemeUI()
+  const container = useRef(null)
+  const [width, setWidth] = useState(450)
   const theme = context.theme
 
-  const Inline = ({ name, display }) => {
-    return (
-      <Text
-        sx={{
-          display: 'inline-block',
-          color: tags[name],
-        }}
-      >
-        {display ? display : name}
-      </Text>
-    )
-  }
+  useEffect(() => {
+    let id = null
+
+    const listener = () => {
+      clearTimeout(id)
+      id = setTimeout(() => {
+        if (container.current.offsetWidth > 0) {
+          setWidth(container.current.offsetWidth)
+        }
+      }, 150)
+    }
+
+    window.addEventListener('resize', listener)
+
+    return () => {
+      window.removeEventListener('resize', listener)
+    }
+  }, [theme])
+
+  useEffect(() => {
+    if (container.current.offsetWidth > 0) {
+      setWidth(container.current.offsetWidth)
+    }
+  }, [container])
 
   var values = []
   let opacity
@@ -119,44 +134,18 @@ const Permanence = () => {
 
   var vgSpec = vegaLite.compile(spec, { config: config(theme) }).spec
 
-  const width = 450
   const height = 250
 
   return (
-    <Box sx={{ display: ['none', 'inherit', 'inherit'] }}>
+    <Box ref={container} sx={{ maxWidth: '650px' }}>
       <Vega
-        width={width}
+        width={width * 0.8 - 80}
         height={height}
         data={{ values: values }}
         renderer={'svg'}
         actions={false}
         spec={vgSpec}
       />
-      <Text
-        sx={{
-          color: 'secondary',
-          fontSize: [2],
-          fontFamily: 'body',
-          letterSpacing: 'body',
-          mt: [3],
-          mb: [5],
-        }}
-      >
-        FIGURE 1{' '}
-        <Text
-          sx={{
-            display: 'inline-block',
-            color: 'text',
-          }}
-        >
-          /
-        </Text>{' '}
-        Each point shows the cost and permanence for an individual project.
-        Colors represent project categories: <Inline name='forests' />,{' '}
-        <Inline name='soil' />, <Inline name='biomass' />,{' '}
-        <Inline name='dac' display='direct air capture' />,{' '}
-        <Inline name='mineralization' />, and <Inline name='ocean' />.
-      </Text>
     </Box>
   )
 }

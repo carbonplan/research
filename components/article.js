@@ -41,7 +41,10 @@ const Article = ({ children, meta }) => {
           }}
         >
           <Container sx={{ px: [3, 4, 4] }}>
-            <Grid columns={[1, 1, '165px 585px 1fr']} gap={['0px']}>
+            <Grid
+              columns={[1, 1, '10.59% 49.26% 1fr']}
+              gap={['0px', '0px', '50px']}
+            >
               <Text
                 sx={{
                   fontFamily: 'mono',
@@ -95,7 +98,7 @@ const Article = ({ children, meta }) => {
         sx={{ pt: [0, 0, meta.background ? '275px' : '100px'], mb: [5] }}
       >
         <BackArrow />
-        <Grid columns={[1, 1, '650px 1fr']} gap={['100px']}>
+        <Grid columns={[1, 1, '59.85% 1fr']} gap={['100px']}>
           <Box sx={{ mt: '-65px' }}>{children}</Box>
           <Box sx={{ display: ['none', 'none', 'initial'] }}>
             <Box sx={{ mt: '55px', maxWidth: '250px' }}>

@@ -1,14 +1,41 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { Vega } from 'react-vega'
 import { useThemeUI, Box } from 'theme-ui'
 
 var vegaLite = require('vega-lite')
 
-const Chart = ({ data, width }) => {
+const Chart = ({ data }) => {
   const [spec, setSpec] = useState(null)
   const [loaded, setLoaded] = useState(false)
+  const [width, setWidth] = useState(550)
+  const container = useRef(null)
   const context = useThemeUI()
   const theme = context.theme
+
+  useEffect(() => {
+    let id = null
+
+    const listener = () => {
+      clearTimeout(id)
+      id = setTimeout(() => {
+        if (container.current.offsetWidth > 0) {
+          setWidth(container.current.offsetWidth)
+        }
+      }, 150)
+    }
+
+    window.addEventListener('resize', listener)
+
+    return () => {
+      window.removeEventListener('resize', listener)
+    }
+  }, [theme])
+
+  useEffect(() => {
+    if (container.current.offsetWidth > 0) {
+      setWidth(container.current.offsetWidth)
+    }
+  }, [container])
 
   useEffect(() => {
     const config = {
@@ -113,10 +140,10 @@ const Chart = ({ data, width }) => {
   const height = 150
 
   return (
-    <>
+    <Box ref={container} sx={{ maxWidth: '650px' }}>
       {loaded && (
         <Vega
-          width={width}
+          width={width - 70}
           height={height}
           data={{ data: data }}
           renderer={'svg'}
@@ -125,7 +152,7 @@ const Chart = ({ data, width }) => {
         />
       )}
       {!loaded && <Box sx={{ height: height + 41 }}></Box>}
-    </>
+    </Box>
   )
 }
 

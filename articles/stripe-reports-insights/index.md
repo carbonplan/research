@@ -1,6 +1,8 @@
 import Article from '../../components/article'
 import SectionBreak from '../../components/section-break'
 import PullQuote from '../../components/pull-quote'
+import FigureCaption from '../../components/figure-caption'
+import Inline from '../../components/inline'
 import Question from './components/icons/question'
 import Check from './components/icons/check'
 import Ex from './components/icons/ex'
@@ -55,10 +57,10 @@ After multiple rounds of internal discussion, the CarbonPlan team decided on sev
 
 For the first four metrics — mechanism, volume, negativity, and permanence — we attempted to independently validate projects’ claims. We gave projects a <Check closed={true}/> when we could validate a claim with reasonable confidence. Where we didn’t feel confident about validating claims, we left the entry blank, generally erring on the side of caution and respectfulness. We also indicated what kind of additional information would be useful in comments. As we develop better methods, and as we and the community learn more about these and other projects, we expect to be able to validate more claims with confidence.
 
-An additional key point for the first metric — mechanism — is that some projects do not currently remove carbon dioxide from the atmosphere. Rather, some avoid emissions that would otherwise occur, including by sourcing and transforming existing biogenic or industrial emissions into more stable storage. These projects could all become a component of a carbon removal system in the future, however. For example, a project that sequesters CO<sub>2</sub> from an industrial waste stream today could begin sourcing CO<sub>2</sub> from direct air capture or biogenic energy tomorrow. We try to clearly point out each of these cases in our reports, and we plan to more thoroughly explore this nuanced distinction in a future post.
+An additional key point for the first metric — mechanism — is that some projects do not currently remove carbon dioxide from the atmosphere. Rather, some avoid emissions that would otherwise occur, including by sourcing and transforming existing biogenic or industrial emissions into more stable storage. These projects could all become a component of a carbon removal system in the future, however. For example, a project that sequesters CO₂ from an industrial waste stream today could begin sourcing CO₂ from direct air capture or biogenic energy tomorrow. We try to clearly point out each of these cases in our reports, and we plan to more thoroughly explore this nuanced distinction in a future post.
 
 <!-- prettier-ignore-start -->
-For the fifth metric — cost — we report what projects offer. We did not attempt to validate this metric because the price at which a project offers its product speaks for itself, at least in terms of total cost. The stated price in terms of $/tCO<sub>2</sub> depends on several other factors, however, including projects’ estimated volume. We encourage readers to interpret these data in the context of other project attributes.
+For the fifth metric — cost — we report what projects offer. We did not attempt to validate this metric because the price at which a project offers its product speaks for itself, at least in terms of total cost. The stated price in terms of $/tCO₂ depends on several other factors, however, including projects’ estimated volume. We encourage readers to interpret these data in the context of other project attributes.
 <!-- prettier-ignore-end -->
 
 The last two metrics — additionality and specificity — reflect our attempt to qualitatively assess these cross-cutting issues. The importance of additionality depends on the motivation for funding. As discussed further below, this metric is less important when funding decisions are oriented around encouraging innovation, rather than carbon offsetting. Specificity reflects the degree to which there is enough detail in project proposals, publications, or other materials to validate the rest of our metrics.
@@ -78,6 +80,17 @@ Perhaps the most important finding is how often we found ourselves unable to con
 We were able to assign a <Check closed={true}/> for many projects on mechanism, for which we generally have existing published literature and data, and in several cases also on permanence. We were less often able to assign a <Check closed={true}/> on volume or negativity, reflecting the additional complexity of these dimensions.
 
 <Table />
+<FigureCaption number={1}>
+  Each column is a metric, and each row shows our ratings for an individual
+  project. Colors represent project categories:{' '}
+  <Inline sx={{ color: 'green' }}>forests</Inline>,{' '}
+  <Inline sx={{ color: 'orange' }}>soil</Inline>,{' '}
+  <Inline sx={{ color: 'yellow' }}>biomass</Inline>,{' '}
+  <Inline sx={{ color: 'purple' }}>direct air capture</Inline>,{' '}
+  <Inline sx={{ color: 'grey' }}>mineralization</Inline>, and{' '}
+  <Inline sx={{ color: 'teal' }}>ocean</Inline>. Click the arrow in each row to
+  see the report for that project.
+</FigureCaption>
 
 <PullQuote color={meta.color}>
   The complexity of carbon removal solutions across so many technologies
@@ -90,11 +103,20 @@ The absence of a <Check closed={true}/> should not necessarily be interpreted as
 
 Our second insight relates to the role of “permanence,” which is the timeframe over which carbon removed from the atmosphere stays put in some other reservoir, such as in soils, forests, or minerals.
 
-Carbon dioxide remains active in the atmospheric carbon cycle for hundreds to thousands of years. Because CO<sub>2</sub> pollution today is effectively permanent over the time scale of civilization, the climate benefits of carbon removal strategies depend on their permanence.
+Carbon dioxide remains active in the atmospheric carbon cycle for hundreds to thousands of years. Because CO₂ pollution today is effectively permanent over the time scale of civilization, the climate benefits of carbon removal strategies depend on their permanence.
 
-The projects we analyzed clustered into two distinct groups: those with permanence horizons that match the scale of the climate problem, and those that don’t. For example, projects seeking to store CO<sub>2</sub> underground in geologic reservoirs or in stable mineralized form have a plausible claim to carbon removal on the scale of 1000 years or more. Biochar projects, too, are likely to retain a significant fraction of their carbon in stable form for hundreds of years or more. In contrast, others that seek to store carbon in soils or forests tend to claim much shorter time horizons — some as few as one year, but more commonly between 10 and 100 years.
+The projects we analyzed clustered into two distinct groups: those with permanence horizons that match the scale of the climate problem, and those that don’t. For example, projects seeking to store CO₂ underground in geologic reservoirs or in stable mineralized form have a plausible claim to carbon removal on the scale of 1000 years or more. Biochar projects, too, are likely to retain a significant fraction of their carbon in stable form for hundreds of years or more. In contrast, others that seek to store carbon in soils or forests tend to claim much shorter time horizons — some as few as one year, but more commonly between 10 and 100 years.
 
 <Permanence />
+<FigureCaption number={2}>
+  Each point shows the cost and permanence for an individual project. Colors
+  represent project categories: <Inline sx={{ color: 'green' }}>forests</Inline>
+  , <Inline sx={{ color: 'orange' }}>soil</Inline>,{' '}
+  <Inline sx={{ color: 'yellow' }}>biomass</Inline>,{' '}
+  <Inline sx={{ color: 'purple' }}>direct air capture</Inline>,{' '}
+  <Inline sx={{ color: 'grey' }}>mineralization</Inline>, and{' '}
+  <Inline sx={{ color: 'teal' }}>ocean</Inline>.
+</FigureCaption>
 
 Whether temporary storage can be made reliable over longer time periods turns on whether permanence risks are physical or socioeconomic. We are optimistic that physical risks can be well characterized by rigorous science. For example, projects storing carbon in forests need to promise that these carbon stocks will remain. Quantitative analysis can help predict the vulnerability of a specific location or species in a changing climate for risk factors like fire, drought, or insect-related tree mortality.
 

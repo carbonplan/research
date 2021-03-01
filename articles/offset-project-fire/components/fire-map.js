@@ -79,7 +79,7 @@ const FireMap = () => {
     <Box
       sx={{
         mt: [5],
-        mb: [5],
+        mb: [3],
         position: 'relative',
         width: ['90%', '90%', '650px'],
       }}
@@ -104,7 +104,7 @@ const FireMap = () => {
         <Text
           sx={{
             position: 'absolute',
-            bottom: ['150px'],
+            bottom: ['78px'],
             fontSize: [3],
             left: '4px',
             fontFamily: 'faux',
@@ -116,7 +116,7 @@ const FireMap = () => {
           DAY {dates[time]}
         </Text>
       )}
-      <Divider />
+      <Divider sx={{ mt: ['18px'], mb: [1] }} />
       <Grid
         gap={['0px']}
         columns={[
@@ -194,20 +194,7 @@ const FireMap = () => {
           +
         </Box>
       </Grid>
-      <Divider sx={{ mt: [0] }} />
-      <Text
-        sx={{
-          color: 'secondary',
-          my: [3],
-        }}
-      >
-        FIGURE 1{' '}
-        <Text sx={{ display: 'inline-block', color: 'primary' }}>/</Text>{' '}
-        Intersection between the Riverside / Beachie Creek / Lionshead fire and
-        forest offset project ACR260.{' '}
-        <Text sx={{ display: 'inline-block', color: 'red' }}>Red</Text> area
-        shows cumulative area burned through the date selected on the slider.
-      </Text>
+      <Divider sx={{ mt: ['2px'] }} />
     </Box>
   )
 }

@@ -15,18 +15,20 @@ const tags = {
   dac: 'purple',
 }
 
-const Row = ({ children }) => {
+const Row = ({ first = false, children }) => {
   return (
     <Grid
-      columns={['85px 85px 85px 91px 99px 85px 20px']}
+      columns={['15.63%  15.63% 15.63% 16.56% 17.80% 15.63% 3.10%']}
+      gap={[0]}
       sx={{
         borderStyle: 'solid',
         borderWidth: '0px',
-        borderTopWidth: '1px',
+        borderTopWidth: first ? '0px' : '1px',
         borderColor: 'muted',
         py: [0],
         height: '26px',
         mb: ['8px'],
+        width: ['100%', '650px', '100%'],
       }}
     >
       {children}
@@ -56,6 +58,9 @@ const header = {
   letterSpacing: 'body',
   fontSize: [1],
   mt: [2],
+  ml: [2, 0, 0],
+  transform: ['rotate(-90deg)', 'rotate(0deg)', 'rotate(0deg)'],
+  transformOrigin: 'left',
 }
 
 const Table = () => {
@@ -78,10 +83,10 @@ const Table = () => {
   const order = ['forests', 'soil', 'biomass', 'dac', 'mineralization', 'ocean']
 
   return (
-    <Box sx={{ display: ['none', 'inherit', 'inherit'] }}>
+    <Box sx={{ maxWidth: '650px' }}>
       <Box
         sx={{
-          mt: [5],
+          mt: [7, 5, 5],
           mb: [3],
           borderStyle: 'solid',
           borderWidth: '0px',
@@ -89,7 +94,7 @@ const Table = () => {
           borderColor: 'muted',
         }}
       >
-        <Row>
+        <Row first={true}>
           <Text sx={header}>Mechanism</Text>
           <Text sx={header}>Volume</Text>
           <Text sx={header}>Negativity</Text>
@@ -132,24 +137,49 @@ const Table = () => {
                     .rating,
                   color
                 )}
-                <Box sx={{ mt: '-3px' }}>
-                  <Squares
-                    color={color}
-                    data={
-                      project.metrics.filter(
-                        (k) => k.name == 'additionality'
-                      )[0].value
-                    }
-                  />
+                <Box sx={{ ml: [1, 0, 0], mt: ['5px', '-3px', '-3px'] }}>
+                  <Box sx={{ display: ['none', 'initial', 'initial'] }}>
+                    <Squares
+                      color={color}
+                      data={
+                        project.metrics.filter(
+                          (k) => k.name == 'additionality'
+                        )[0].value
+                      }
+                    />
+                  </Box>
+                  <Box
+                    sx={{
+                      fontFamily: 'mono',
+                      display: ['initial', 'none', 'none'],
+                      color: color,
+                    }}
+                  >
+                    {project.metrics.filter((k) => k.name == 'additionality')[0]
+                      .value + 1}
+                  </Box>
                 </Box>
-                <Box sx={{ mt: '-3px' }}>
-                  <Squares
-                    color={color}
-                    data={
-                      project.metrics.filter((k) => k.name == 'specificity')[0]
-                        .value
-                    }
-                  />
+                <Box sx={{ ml: [1, 0, 0], mt: ['5px', '-3px', '-3px'] }}>
+                  <Box sx={{ display: ['none', 'initial', 'initial'] }}>
+                    <Squares
+                      color={color}
+                      data={
+                        project.metrics.filter(
+                          (k) => k.name == 'specificity'
+                        )[0].value
+                      }
+                    />
+                  </Box>
+                  <Box
+                    sx={{
+                      fontFamily: 'mono',
+                      display: ['initial', 'none', 'none'],
+                      color: color,
+                    }}
+                  >
+                    {project.metrics.filter((k) => k.name == 'specificity')[0]
+                      .value + 1}
+                  </Box>
                 </Box>
                 <Box sx={{ position: 'relative', top: '3px' }}>
                   <Link
@@ -170,33 +200,6 @@ const Table = () => {
             )
           })}
       </Box>
-      <Text
-        sx={{
-          color: 'secondary',
-          fontSize: [2],
-          letterSpacing: 'faux',
-          fontFamily: 'faux',
-          mt: [3],
-          mb: [5],
-        }}
-      >
-        TABLE 1{' '}
-        <Text
-          sx={{
-            display: 'inline-block',
-            color: 'text',
-          }}
-        >
-          /
-        </Text>{' '}
-        Each column is a metric, and each row shows our ratings for an
-        individual project. Colors represent project categories:{' '}
-        <Inline name='forests' />, <Inline name='soil' />,{' '}
-        <Inline name='biomass' />,{' '}
-        <Inline name='dac' display='direct air capture' />,{' '}
-        <Inline name='mineralization' />, and <Inline name='ocean' />. Click the
-        arrow in each row to see the report for that project.
-      </Text>
     </Box>
   )
 }

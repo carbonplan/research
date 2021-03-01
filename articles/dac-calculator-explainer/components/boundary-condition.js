@@ -7,7 +7,7 @@ const BoundaryCondition = () => {
   const { faux, heading } = context.theme.fonts
 
   return (
-    <Box sx={{ width: '100%', my: [5] }}>
+    <Box sx={{ width: '100%', maxWidth: '650px', mt: [5], mb: [3] }}>
       <Box sx={{ mb: [2, 2, 4], maxWidth: '550px', userSelect: 'none' }}>
         <svg viewBox='0 0 831.7 629.4'>
           <style type='text/css'>
@@ -292,21 +292,6 @@ const BoundaryCondition = () => {
           <line className='st1' x1='421.3' y1='83.9' x2='646' y2='83.9' />
         </svg>
       </Box>
-      <Divider sx={{ mt: [3] }} />
-      <Text
-        sx={{
-          color: 'secondary',
-          my: [3],
-        }}
-      >
-        FIGURE 1{' '}
-        <Text sx={{ display: 'inline-block', color: 'primary', mx: [1] }}>
-          /
-        </Text>{' '}
-        Boundary conditions for the DAC cost calculator.{' '}
-        <Text sx={{ display: 'inline-block', color: 'purple' }}>Purple</Text>{' '}
-        box bounds the components considered for our analysis.
-      </Text>
     </Box>
   )
 }
