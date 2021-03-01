@@ -192,6 +192,11 @@ After reviewing an updated version of the draft protocol, we submitted a second 
 
 Danny led the effort to write the comment letters and drafted the first version of this article. All authors contributed to writing the comment letters and the article. Collaborators Jane Zelikova and Grayson Badgley contributed to the comment letters, but were not involved in writing this article.
 
+Please cite as:
+
+D Cullenward, J Hamman, J Freeman (2020) “Getting soil carbon right” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/soil-carbon-comment</span>
+
+
 ## Terms
 
 CarbonPlan received no financial support for this work and has no financial conflicts of interest with the Climate Action Reserve or Indigo Ag.
