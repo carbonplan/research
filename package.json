@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
-    "@carbonplan/components": "^2.5.17",
+    "@carbonplan/components": "^3.1.0",
     "@carbonplan/theme": "^2.3.1",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.7",
