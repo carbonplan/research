@@ -40,7 +40,7 @@ const Article = ({ children, meta }) => {
             color: ['#1b1e23', '#1b1e23', meta.invert ? '#1b1e23' : '#ebebec'],
           }}
         >
-          <Container sx={{ px: [3, 4, 4] }}>
+          <Container>
             <Grid
               columns={[1, 1, '10.59% 49.26% 1fr']}
               gap={['0px', '0px', '50px']}
@@ -95,7 +95,7 @@ const Article = ({ children, meta }) => {
         </Box>
       </Box>
       <Container
-        sx={{ pt: [0, 0, meta.background ? '275px' : '100px'], mb: [5] }}
+        sx={{ px: [0, 0, 0], pt: [0, 0, meta.background ? '275px' : '100px'], mb: [5] }}
       >
         <BackArrow />
         <Grid columns={[1, 1, '59.85% 1fr']} gap={['100px']}>

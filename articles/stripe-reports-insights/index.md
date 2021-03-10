@@ -110,12 +110,16 @@ The projects we analyzed clustered into two distinct groups: those with permanen
 <Permanence />
 <FigureCaption number={2}>
   Each point shows the cost and permanence for an individual project. Colors
-  represent project categories: <Inline sx={{ color: 'green' }}>forests</Inline>
-  , <Inline sx={{ color: 'orange' }}>soil</Inline>,{' '}
-  <Inline sx={{ color: 'yellow' }}>biomass</Inline>,{' '}
-  <Inline sx={{ color: 'purple' }}>direct air capture</Inline>,{' '}
-  <Inline sx={{ color: 'grey' }}>mineralization</Inline>, and{' '}
-  <Inline sx={{ color: 'teal' }}>ocean</Inline>.
+  represent project categories: <Inline sx={{ color: 'green' }}>forests</Inline>,{' '}
+  <Inline sx={{ color: 'orange' }}>soil</Inline>, <Inline
+    sx={{ color: 'yellow' }}
+  >
+    biomass
+  </Inline>, <Inline sx={{ color: 'purple' }}>direct air capture</Inline>, <Inline
+    sx={{ color: 'grey' }}
+  >
+    mineralization
+  </Inline>, and <Inline sx={{ color: 'teal' }}>ocean</Inline>.
 </FigureCaption>
 
 Whether temporary storage can be made reliable over longer time periods turns on whether permanence risks are physical or socioeconomic. We are optimistic that physical risks can be well characterized by rigorous science. For example, projects storing carbon in forests need to promise that these carbon stocks will remain. Quantitative analysis can help predict the vulnerability of a specific location or species in a changing climate for risk factors like fire, drought, or insect-related tree mortality.

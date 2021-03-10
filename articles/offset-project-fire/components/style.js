@@ -47,7 +47,7 @@ const style = {
             },
             geometry: {
               type: 'Point',
-              coordinates: [-121.65251639187901, 44.7948820590199],
+              coordinates: [-121.69251639187901, 44.7948820590199],
             },
           },
         ],

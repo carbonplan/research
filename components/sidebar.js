@@ -79,33 +79,28 @@ const Sidebar = ({ filter, sort, setFilter, setSort }) => {
           <Tag
             onClick={() => toggleFilter('all')}
             value={filter.all}
-            label='All'
-          />
+          >All</Tag>
           <Tag
             onClick={() => toggleFilter('article')}
             value={filter.article}
-            label='Article'
-          />
+          >Article</Tag>
           <Tag
             onClick={() => toggleFilter('tool')}
             value={filter.tool}
-            label='Tool'
-          />
+          >Tool</Tag>
           <Tag
             onClick={() => toggleFilter('comment')}
             value={filter.comment}
             label='Comment'
-          />
+          >Comment</Tag>
           <Tag
             onClick={() => toggleFilter('publication')}
             value={filter.publication}
-            label='Publication'
-          />
+          >Publication</Tag>
           <Tag
             onClick={() => toggleFilter('dataset')}
             value={filter.dataset}
-            label='dataset'
-          />
+          >Dataset</Tag>
         </Box>
       </Box>
       <Box
@@ -129,13 +124,12 @@ const Sidebar = ({ filter, sort, setFilter, setSort }) => {
           <Tag
             onClick={() => toggleSort('date')}
             value={sort.date}
-            label='Date'
-          />
+          >Date</Tag>
           <Tag
             onClick={() => toggleSort('title')}
             value={sort.title}
             label='Title'
-          />
+          >Title</Tag>
         </Box>
       </Box>
     </Box>

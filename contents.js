@@ -172,6 +172,10 @@ const Contents = [
         label: 'Taskforce website',
         url: 'https://www.iif.com/tsvcm',
       },
+      {
+        label: 'Financial Times coverage',
+        url: 'https://www.ft.com/content/de5e8631-bdf2-4c2e-8b7f-83c0c80cdea8',
+      },
     ],
   },
   {

@@ -128,7 +128,6 @@ const RiskScenarios = () => {
         mt: [5],
         mb: [3],
         width: '100%',
-        maxWidth: '650px',
       }}
     >
       <Grid

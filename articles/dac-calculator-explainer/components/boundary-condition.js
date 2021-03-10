@@ -7,7 +7,7 @@ const BoundaryCondition = () => {
   const { faux, heading } = context.theme.fonts
 
   return (
-    <Box sx={{ width: '100%', maxWidth: '650px', mt: [5], mb: [3] }}>
+    <Box sx={{ width: '100%', mt: [5], mb: [3] }}>
       <Box sx={{ mb: [2, 2, 4], maxWidth: '550px', userSelect: 'none' }}>
         <svg viewBox='0 0 831.7 629.4'>
           <style type='text/css'>

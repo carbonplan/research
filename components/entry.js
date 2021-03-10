@@ -91,31 +91,37 @@ const Entry = ({ info, final }) => {
                   return (
                     <WrappedLink key={ix} url={link.url}>
                       <Text
-                        as='span'
                         sx={{
                           color: 'secondary',
                           mr: [4],
                           mb: [pad ? 2 : 0, pad ? 2 : 0, 0],
                           mt: [0, 0, 1],
                           cursor: 'pointer',
-                          transition: '0.15s',
                           display: ['block', 'block', 'inline-block'],
                           float: ['left', 'left', 'initial'],
                           clear: ['left', 'left', 'initial'],
                           '&:hover': {
+                            color: 'text'
+                          },
+                          '&:hover > #container > #arrow': {
+                            transform: 'rotate(45deg)',
                             color: 'text',
                           },
                         }}
                       >
+                        <Box as='span' id='label' sx={{transition: '0.15s'}}>
                         {link.label}
-                        <Box as='span' sx={{ position: 'relative' }}>
+                        </Box>
+                        <Box id='container' as='span' sx={{ position: 'relative' }}>
                           <Text
+                            id='arrow'
                             as='span'
                             sx={{
                               position: 'absolute',
                               top: '-5px',
-                              left: '3px',
+                              left: '5px',
                               fontSize: [4],
+                              transition: '0.15s'
                             }}
                           >
                             ↗
@@ -141,13 +147,12 @@ const Entry = ({ info, final }) => {
                 .map((tag) => (
                   <Tag
                     key={tag}
-                    label={tag}
                     sx={{
                       ml: [2],
                       mr: [0],
                       color: 'secondary',
                     }}
-                  />
+                  >{tag}</Tag>
                 ))}
             </Box>
             {icon && (

@@ -137,10 +137,10 @@ const Chart = ({ data }) => {
     setLoaded(true)
   }, [context])
 
-  const height = 150
+  const height = 0.3 * (width - 70)
 
   return (
-    <Box ref={container} sx={{ maxWidth: '650px' }}>
+    <Box ref={container} sx={{ maxWidth: '100%' }}>
       {loaded && (
         <Vega
           width={width - 70}

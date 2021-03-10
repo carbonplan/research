@@ -1,12 +1,17 @@
-import { Box, Text } from 'theme-ui'
+import { Box, Link, Text } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 
 const BackArrow = () => {
   return (
-    <NextLink href='/research'>
-      <a>
+    <Box sx={{
+      mt: [0, 0, 2],
+      mb: [3, 1, 0],
+    }}>
+    <NextLink href='/research' passHref>
+      <Link sx={{display: 'inline-block', position: 'relative', zIndex: 10}}>
         <Text
+          as='span'
           sx={{
             userSelect: 'none',
             fontFamily: 'faux',
@@ -14,8 +19,6 @@ const BackArrow = () => {
             display: 'inline-block',
             mr: [3],
             fontSize: [7],
-            mt: [0, 0, 2],
-            mb: [3, 1, 0],
             transition: '0.1s',
             cursor: 'pointer',
             '&:hover': {
@@ -25,8 +28,9 @@ const BackArrow = () => {
         >
           ←
         </Text>
-      </a>
+      </Link>
     </NextLink>
+    </Box>
   )
 }
 

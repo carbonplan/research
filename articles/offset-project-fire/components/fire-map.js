@@ -81,7 +81,7 @@ const FireMap = () => {
         mt: [5],
         mb: [3],
         position: 'relative',
-        width: ['90%', '90%', '650px'],
+        width: ['100%', '100%', '100%'],
       }}
     >
       <Divider />

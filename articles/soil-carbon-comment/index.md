@@ -53,7 +53,7 @@ export const sidenotes = {
   },
   4: {
     number: 4,
-    offset: 62,
+    offset: 80,
     authors: 'K. Paustian et al.',
     year: 2017,
     title:
@@ -63,7 +63,7 @@ export const sidenotes = {
   },
   5: {
     number: 5,
-    offset: 160,
+    offset: 180,
     authors: 'E. E. Campbell & K. Paustian',
     year: 2015,
     title:
@@ -92,7 +92,7 @@ export const sidenotes = {
     url: 'https://doi.org/10.1111/ejss.12499',
   },
   8: {
-    offset: 310,
+    offset: 330,
     number: 8,
     authors: 'P. Smith et al.',
     year: 2019,

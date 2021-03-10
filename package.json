@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
-    "@carbonplan/components": "^2.5.17",
-    "@carbonplan/theme": "^2.3.1",
+    "@carbonplan/components": "^4.0.4",
+    "@carbonplan/theme": "^3.0.0",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.7",
     "@theme-ui/color": "^0.3.5",
