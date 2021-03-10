@@ -95,7 +95,11 @@ const Article = ({ children, meta }) => {
         </Box>
       </Box>
       <Container
-        sx={{ px: [0, 0, 0], pt: [0, 0, meta.background ? '275px' : '100px'], mb: [5] }}
+        sx={{
+          px: [0, 0, 0],
+          pt: [0, 0, meta.background ? '275px' : '100px'],
+          mb: [5],
+        }}
       >
         <BackArrow />
         <Grid columns={[1, 1, '59.85% 1fr']} gap={['100px']}>

@@ -130,7 +130,7 @@ const Calculator = () => {
           <Cost {...options} />
         </Grid>
       </Box>
-      <Container sx={{ px: [0] }}>
+      <Box>
         <Grid
           columns={[1, 1, '500px 1fr']}
           sx={{
@@ -252,7 +252,7 @@ const Calculator = () => {
             This work was generously funded by the ClimateWorks Foundation.
           </Styled.p>
         </Box>
-      </Container>
+      </Box>
     </Box>
   )
 }

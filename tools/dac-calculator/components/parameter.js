@@ -79,6 +79,10 @@ const Parameter = ({ param, data, state }) => {
                 WebkitAppearance: 'none',
                 margin: 0,
               },
+              ':focus-visible': {
+                outline: 'none !important',
+                background: 'none !important',
+              },
             }}
             onKeyPress={handleEnter}
             onFocus={() => setInputFocus(true)}

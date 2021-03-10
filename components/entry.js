@@ -101,7 +101,7 @@ const Entry = ({ info, final }) => {
                           float: ['left', 'left', 'initial'],
                           clear: ['left', 'left', 'initial'],
                           '&:hover': {
-                            color: 'text'
+                            color: 'text',
                           },
                           '&:hover > #container > #arrow': {
                             transform: 'rotate(45deg)',
@@ -109,10 +109,14 @@ const Entry = ({ info, final }) => {
                           },
                         }}
                       >
-                        <Box as='span' id='label' sx={{transition: '0.15s'}}>
-                        {link.label}
+                        <Box as='span' id='label' sx={{ transition: '0.15s' }}>
+                          {link.label}
                         </Box>
-                        <Box id='container' as='span' sx={{ position: 'relative' }}>
+                        <Box
+                          id='container'
+                          as='span'
+                          sx={{ position: 'relative' }}
+                        >
                           <Text
                             id='arrow'
                             as='span'
@@ -121,7 +125,7 @@ const Entry = ({ info, final }) => {
                               top: '-5px',
                               left: '5px',
                               fontSize: [4],
-                              transition: '0.15s'
+                              transition: '0.15s',
                             }}
                           >
                             ↗
@@ -152,7 +156,9 @@ const Entry = ({ info, final }) => {
                       mr: [0],
                       color: 'secondary',
                     }}
-                  >{tag}</Tag>
+                  >
+                    {tag}
+                  </Tag>
                 ))}
             </Box>
             {icon && (
