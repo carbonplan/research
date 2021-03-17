@@ -2371,7 +2371,7 @@ module.exports = {
     },
     {
       metrics: [
-        { name: 'mechanism', value: 0.0, rating: 1.0 },
+        { name: 'mechanism', value: 0.0, rating: 0.0 },
         { name: 'volume', value: 22500.0, rating: 0.0 },
         { name: 'negativity', value: 'N/A', rating: 0.0 },
         { name: 'permanence', value: 25.0, rating: 0.0 },
