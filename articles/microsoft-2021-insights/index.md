@@ -51,7 +51,7 @@ We received early access to these now-public proposals to perform our independen
 
 While existing registries and protocols purport to standardize aspects of carbon removal procurement, we were struck by the enormous diversity of proposals. 16 registries and 45 unique protocols were represented — and still, less than 30% of projects had any affiliation with a registry or protocol. As [highlighted by Carbon Direct](https://carbon-direct.com/responsible-carbon-removal-means-putting-science-first/), we also found that the existence of registry listings did not reliably predict project quality one way or the other, although projects on registries were likely to feature more public project documentation than those that were not.
 
-Using the public proposals, project websites, registry listings, and published literature, we analyzed each of the 161 proposals on the basis of [seven harmonized metrics](https://carbonplan.org/reports/methods).
+Using the public proposals, project websites, registry listings, and published literature, we analyzed each of the 161 proposals on the basis of [seven harmonized metrics](https://carbonplan.org/research/cdr-database/methods).
 
 <Metrics />
 
