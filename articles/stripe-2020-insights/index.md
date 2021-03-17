@@ -12,14 +12,14 @@ import Table from './components/table'
 import Metrics from './components/metrics'
 
 export const meta = {
-  id: 'stripe-reports-insights',
+  id: 'stripe-2020-insights',
   number: 0,
-  version: '1.0.0',
+  version: '1.0.1',
   color: 'yellow',
   title: 'Insights from our first project reports',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '05-18-2020',
-  card: 'stripe-reports-insights',
+  card: 'stripe-2020-insights',
   background: 'road',
   summary:
     'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
@@ -33,7 +33,7 @@ In March 2020, we partnered with Stripe to perform our first independent analysi
 
 We are grateful to Stripe for encouraging transparency, and to the many organizations and individuals who took the time to prepare these public applications. Making this information available to all offers the broader climate community a chance to grow and improve over time.
 
-This article summarizes our major takeaways from our analysis. For additional detail, check out our [project reports](https://carbonplan.org/reports) and the [terms of our engagement](#terms-of-engagement) with Stripe. Please note that this is independent work that represents only CarbonPlan’s views, not those of Stripe or any other organizations.
+This article summarizes our major takeaways from our analysis. For additional detail, check out our [project reports database](https://carbonplan.org/research/cdr-database) and the [terms of our engagement](#terms-of-engagement) with Stripe. Please note that this is independent work that represents only CarbonPlan’s views, not those of Stripe or any other organizations.
 
 ## What we did
 

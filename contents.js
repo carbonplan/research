@@ -45,13 +45,13 @@ const Contents = [
     summary:
       "We analyzed project proposals submitted for Stripe's 2020 Negative Emisions Purchase. Explore our database of project reports or read the article for our main takeaways and lessons learned.",
     date: '05-18-2020',
-    version: '1.0.0',
+    version: '1.0.1',
     color: 'yellow',
     icon: 'road-small',
     links: [
       {
         label: 'Read article',
-        url: '/research/stripe-reports-insights',
+        url: '/research/stripe-2020-insights',
       },
       {
         label: 'Explore database',
