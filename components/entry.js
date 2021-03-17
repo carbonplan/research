@@ -72,7 +72,7 @@ const Entry = ({ info, final }) => {
             </Text>
             <Heading
               sx={{
-                mb: ['2px'],
+                mb: ['14px'],
                 mt: ['10px'],
                 ml: ['-1px'],
                 fontSize: [5],

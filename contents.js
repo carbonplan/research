@@ -1,5 +1,25 @@
 const Contents = [
   {
+    title: 'Insights from analyzing a new round of carbon removal projects',
+    tags: ['article', 'dataset'],
+    summary:
+      "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
+    date: '03-17-2021',
+    version: '1.0.0',
+    color: 'gray',
+    icon: 'article-007/sign-small',
+    links: [
+      {
+        label: 'Read article',
+        url: '/research/microsoft-2021-insights',
+      },
+      {
+        label: 'Explore database',
+        url: '/research/cdr-database',
+      },
+    ],
+  },
+  {
     title: 'DAC cost calculator',
     tags: ['article', 'tool'],
     summary:
@@ -23,7 +43,7 @@ const Contents = [
     title: 'Insights from our first project reports',
     tags: ['article', 'dataset'],
     summary:
-      "We analyzed project proposals submitted for Stripe's 2020 Negative Emisions Purchase. Browse our reports database or read the article for our main takeaways and lessons learned.",
+      "We analyzed project proposals submitted for Stripe's 2020 Negative Emisions Purchase. Explore our database of project reports or read the article for our main takeaways and lessons learned.",
     date: '05-18-2020',
     version: '1.0.0',
     color: 'yellow',
@@ -34,8 +54,8 @@ const Contents = [
         url: '/research/stripe-reports-insights',
       },
       {
-        label: 'Browse reports',
-        url: '/reports',
+        label: 'Explore database',
+        url: '/research/cdr-database',
       },
     ],
   },
