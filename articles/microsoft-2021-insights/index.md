@@ -59,10 +59,11 @@ Metric validation is done on the basis of project proposals, which may or may no
 
 Distributions of volume and permanence across projects reveal familiar patterns, with notable categorical distinctions (Figure 2). Forest and soil projects tend to have the largest volumes and the lowest permanence, though we again caution that volumes should not be taken at face value. Permanence is generally higher for biomass projects, and 1000+ years or more is common for mineralization and direct air capture. Volumes claimed for these categories vary widely, depending on whether projects proposed prototypes in progress, speculative future plans, or something in between. All three direct air capture projects, in particular, proposed scaling up existing deployments and thus offered very large volumes.
 
+<!-- prettier-ignore -->
 <Distributions />
 <FigureCaption number={2}>
   Distributions of volume (above) and permanence (below) across six project
-  categories: <Inline sx={{ color: 'green' }}>forests</Inline>
+  categories:{' '}<Inline sx={{ color: 'green' }}>forests</Inline>
   {', '}
   <Inline sx={{ color: 'orange' }}>soil</Inline>
   {', '}
@@ -92,6 +93,7 @@ We learned a lot performing this analysis, both from the content of the proposal
 
 In our previous round of analysis, we often found ourselves unable to confidently and independently validate projects’ claims. That was also the case here (see Figure 3).
 
+<!-- prettier-ignore -->
 <Validation />
 <FigureCaption number={3}>
   Fraction of validated projects across five metrics and six project categories:{' '}
