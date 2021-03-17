@@ -1,8 +1,4 @@
-import Check from './icons/check'
-import Ex from './icons/ex'
-import Squares from './graphics/squares'
-import data from '../data'
-import { Box, Grid, Text, Link } from 'theme-ui'
+import { Box, Grid, Text } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 
 const Row = ({ children }) => {

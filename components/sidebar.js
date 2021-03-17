@@ -56,7 +56,7 @@ const Sidebar = ({ filter, sort, setFilter, setSort }) => {
         </Styled.p>
       </Box>
       <Box sx={{ mt: [0, 0, '40px'], mb: [0, 0, '40px'] }}>
-        <Divider sx={{ mr: [4], mt: [0, 0, 4], mb: [0, 0, 0] }} />
+        <Divider sx={{ mr: [0, 0, 4], mt: [0, 0, 4], mb: [0, 0, 0] }} />
       </Box>
       <Box
         sx={{
