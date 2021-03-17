@@ -108,6 +108,7 @@ Carbon dioxide remains active in the atmospheric carbon cycle for hundreds to th
 The projects we analyzed clustered into two distinct groups: those with permanence horizons that match the scale of the climate problem, and those that don’t. For example, projects seeking to store CO₂ underground in geologic reservoirs or in stable mineralized form have a plausible claim to carbon removal on the scale of 1000 years or more. Biochar projects, too, are likely to retain a significant fraction of their carbon in stable form for hundreds of years or more. In contrast, others that seek to store carbon in soils or forests tend to claim much shorter time horizons — some as few as one year, but more commonly between 10 and 100 years.
 
 <!-- prettier-ignore-start -->
+
 <Permanence />
 <FigureCaption number={2}>
   Each point shows the cost and permanence for an individual project. Colors
@@ -118,6 +119,7 @@ The projects we analyzed clustered into two distinct groups: those with permanen
   <Inline sx={{ color: 'grey' }}>mineralization</Inline>, and{' '}
   <Inline sx={{ color: 'teal' }}>ocean</Inline>.
 </FigureCaption>
+
 <!-- prettier-ignore-end -->
 
 Whether temporary storage can be made reliable over longer time periods turns on whether permanence risks are physical or socioeconomic. We are optimistic that physical risks can be well characterized by rigorous science. For example, projects storing carbon in forests need to promise that these carbon stocks will remain. Quantitative analysis can help predict the vulnerability of a specific location or species in a changing climate for risk factors like fire, drought, or insect-related tree mortality.
