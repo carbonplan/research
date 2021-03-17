@@ -67,6 +67,10 @@ const Energy = ({ params, reset }) => {
               width: '100px',
               color: 'purple',
               userSelect: 'none',
+              ':focus-visible': {
+                outline: 'none !important',
+                background: 'none !important',
+              },
             }}
             defaultValue={defaultValue}
           >

@@ -16,7 +16,11 @@ const Tool = ({ title, description, meta, children }) => {
     >
       <Box sx={{ mb: [6] }}>
         <BackArrow />
-        <Grid columns={[1, 1, '700px 1fr']} gap={['100px']} sx={{ mt: [4] }}>
+        <Grid
+          columns={[1, 1, '700px 1fr']}
+          gap={['100px']}
+          sx={{ mt: [5, 4, 4] }}
+        >
           <Box sx={{ mt: '-95px' }}>
             <span></span>
             {title}
