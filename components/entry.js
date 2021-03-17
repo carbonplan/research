@@ -2,6 +2,7 @@ import { memo } from 'react'
 import { Box, Grid, Text, Link, Heading } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import { Tag, TaggedLink } from '@carbonplan/components'
+import { mix } from '@theme-ui/color'
 import Icon from './icon'
 
 const Entry = ({ info, final }) => {
@@ -18,6 +19,10 @@ const Entry = ({ info, final }) => {
   } = info
 
   color = color || 'text'
+
+  if (color == 'secondary') {
+    color = mix('primary', 'background', 0.6)
+  }
 
   return (
     <Box sx={{}}>
