@@ -25,8 +25,8 @@ const ParameterScenario = ({
 
   return (
     <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
-      <Row columns={[6]} sx={{ pb: [2] }}>
-        <Column start={[1]} width={[6, 2, 2, 2]}>
+      <Row columns={[6]} sx={{ pb: [2, 2, 2, 3] }}>
+        <Column start={[1]} width={[6, 2, 2, 2]} >
           <Divider sx={{ mb: [3] }} />
           <Box>
             <Value>{capEx}</Value>
@@ -41,7 +41,7 @@ const ParameterScenario = ({
             <Label units='GJ/tCO₂'>Thermal Req</Label>
           </Box>
           {leakage > 0 && (
-            <Box sx={{ mt: [3], mb: [2, 2, 0] }}>
+            <Box sx={{ mt: [3], mb: [2, 2, 3, 3] }}>
               <Value>{leakage}</Value>
               <Label units='%'>Leakage Rate</Label>
             </Box>
@@ -84,7 +84,7 @@ const ParameterScenario = ({
             sx={{
               textAlign: 'left',
               color: 'text',
-              fontSize: [2],
+              fontSize: [2, 2, 2, 3],
             }}
           >
             {totalCost === 'N/A' ? 'No Net Removal' : 'Net Removed Cost'}
@@ -102,7 +102,7 @@ const ParameterScenario = ({
           </Box>
           <Box
             sx={{
-              mt: leakage ? [0, '56px', '59px'] : [0, '-2px', '-2px'],
+              pt: [2, 3, 3, 4],
             }}
           >
             <LegendWithValues results={results} />
