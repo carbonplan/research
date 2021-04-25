@@ -1,5 +1,6 @@
 import Article from '../../components/article'
 import Reference from '../../components/reference'
+import Endnote from '../../components/endnote'
 import PullQuote from '../../components/pull-quote'
 import SectionBreak from '../../components/section-break'
 import Cycle from './components/cycle'
@@ -88,7 +89,7 @@ export const sidenotes = {
     authors: 'C. Hepburn et al.',
     year: '2019',
     title:
-      'The technological and economic prospects for CO2 utilization and removal',
+      'The technological and economic prospects for CO₂ utilization and removal',
     journal: 'Nature',
     url: 'https://doi.org/10.1038/s41586-019-1681-6',
   },
@@ -150,7 +151,7 @@ With this diagram in hand, let’s build our intuition by first stepping through
 
 ## Engineered systems
 
-Consider the process of storing carbon dioxide in mineral form via injection into basaltic rock, which results in effectively permanent CO<sub>2</sub> storage. Using our diagram, we show geologic storage by filling in the appropriate circle indicating where carbon is ultimately stored.
+Consider the process of storing carbon dioxide in mineral form via injection into basaltic rock, which results in effectively permanent CO₂ storage. Using our diagram, we show geologic storage by filling in the appropriate circle indicating where carbon is ultimately stored.
 
 <Cycle
   labels={true}
@@ -158,9 +159,9 @@ Consider the process of storing carbon dioxide in mineral form via injection int
   data={{ stock: { geological: true }, flux: [] }}
 />
 
-Does geologic injection lead to carbon removal? The answer depends on where the CO<sub>2</sub> came from.
+Does geologic injection lead to carbon removal? The answer depends on where the CO₂ came from.
 
-Let’s imagine the CO<sub>2</sub> is waste from some industrial process that burns a carbon-based fossil fuel. Injecting the captured CO<sub>2</sub> from a fossil energy waste stream into geologic storage permanently stores CO<sub>2</sub>, but has not taken it out of the atmosphere because the source of the carbon was a fossil fuel and was destined for the atmosphere if not captured first. As a result of the project’s decision to capture and store carbon, CO<sub>2</sub> emissions that might have otherwise occurred are avoided instead. We call this outcome “avoided emissions” and distinguish it from “carbon removal.” We diagram it with a crossed out circle blocking the arrow from fuels to the atmosphere, and drawing a horizontal arrow from fuels to geologic storage.
+Let’s imagine the CO₂ is waste from some industrial process that burns a carbon-based fossil fuel. Injecting the captured CO₂ from a fossil energy waste stream into geologic storage permanently stores CO₂, but has not taken it out of the atmosphere because the source of the carbon was a fossil fuel and was destined for the atmosphere if not captured first. As a result of the project’s decision to capture and store carbon, CO₂ emissions that might have otherwise occurred are avoided instead. We call this outcome “avoided emissions” and distinguish it from “carbon removal.” We diagram it with a crossed out circle blocking the arrow from fuels to the atmosphere, and drawing a horizontal arrow from fuels to geologic storage.
 
 <Cycle
   labels={true}
@@ -174,7 +175,7 @@ Let’s imagine the CO<sub>2</sub> is waste from some industrial process that bu
   }}
 />
 
-Now consider an alternative source of CO<sub>2</sub>: the atmosphere. Suppose a project captures CO<sub>2</sub> from the atmosphere using direct air capture technology, and then injects pure CO<sub>2</sub> into the ground. This project performs carbon removal because it reduces atmospheric CO<sub>2</sub> and stores it in another stock. We draw this scenario by highlighting an arrow straight from the atmosphere to geologic storage. Compared to the previous example, the end location of storage remains the same, but the source of the CO<sub>2</sub> — and thus the source of the flux — has changed. (As drawn, this scenario assumes that direct air capture is powered by zero-carbon energy; otherwise, we would also include an arrow from fuels to the atmosphere to reflect the fact that the project leads to both atmospheric emissions and carbon removal.)
+Now consider an alternative source of CO₂: the atmosphere. Suppose a project captures CO₂ from the atmosphere using direct air capture technology, and then injects pure CO₂ into the ground. This project performs carbon removal because it reduces atmospheric CO₂ and stores it in another stock. We draw this scenario by highlighting an arrow straight from the atmosphere to geologic storage. Compared to the previous example, the end location of storage remains the same, but the source of the CO₂ — and thus the source of the flux — has changed. (As drawn, this scenario assumes that direct air capture is powered by zero-carbon energy; otherwise, we would also include an arrow from fuels to the atmosphere to reflect the fact that the project leads to both atmospheric emissions and carbon removal.)
 
 <Cycle
   labels={true}
@@ -189,7 +190,7 @@ We distinguish these two scenarios because precision is necessary for accurate c
 
 For example, when evaluating a carbon removal project, we must consider all of the emissions associated with the lifecycle of the process. If the direct air capture is powered by carbon-intensive energy, then despite performing net carbon removal, it will likely be ineffective at scale.
 
-Similarly, if the captured CO<sub>2</sub> is used to create a synthetic fuel or to extract further fossil fuels through a process called “enhanced oil recovery,” then the overall process might accomplish little to no net carbon removal. In some circumstances, it could even emit more than it removes while continuing to enable fossil fuel production. We would diagram such a project as follows.
+Similarly, if the captured CO₂ is used to create a synthetic fuel or to extract further fossil fuels through a process called “enhanced oil recovery,” then the overall process might accomplish little to no net carbon removal. In some circumstances, it could even emit more than it removes while continuing to enable fossil fuel production. We would diagram such a project as follows.
 
 <Cycle
   labels={true}
@@ -205,7 +206,7 @@ Similarly, if the captured CO<sub>2</sub> is used to create a synthetic fuel or 
 
 As this diagram suggests, a project’s efficacy depends on the scale of gross carbon removal (down arrow) relative to the scale of gross project emissions (up arrow). In our [project reports](https://carbonplan.org/reports) we use a summary metric called “Negativity” to capture this important aspect of projects’ lifecycle emissions. If a project performs carbon removal, but its Negativity is near 0, then it’s not an effective way of delivering climate benefits.
 
-Avoiding emissions can also be good, or bad, for the climate. Permanently storing what otherwise would have been an atmospheric CO<sub>2</sub> emission avoids an increase in atmospheric CO<sub>2</sub>. However, the impact of the intervention often depends on the counterfactual scenario — would the emission have happened without our action? — which can only ever be estimated, not observed.
+Avoiding emissions can also be good, or bad, for the climate. Permanently storing what otherwise would have been an atmospheric CO₂ emission avoids an increase in atmospheric CO₂. However, the impact of the intervention often depends on the counterfactual scenario — would the emission have happened without our action? — which can only ever be estimated, not observed.
 
 Estimating counterfactuals with confidence is often more difficult for avoided emissions than for carbon removal. If a project claims to avoid emissions that weren’t going to happen anyway — and especially if someone else gets credit to continue to emit more emissions in exchange, as is the case with carbon offset programs — then a low-quality avoided emissions project can do more damage to the climate than doing nothing at all.<Reference color={meta.color} data={sidenotes[4]}/>
 
@@ -213,13 +214,13 @@ As these examples help illustrate, differentiating carbon removal from avoided e
 
 ## Biological systems
 
-Let’s work through examples involving biological systems. These can be more complex than the engineered systems described above because CO<sub>2</sub> in biological systems is constantly in flux and often harder to measure. As a result, humans have less direct control over outcomes, and need to consider a wider range of risks. The intuition we’ve developed above can help reduce those challenges.
+Let’s work through examples involving biological systems. These can be more complex than the engineered systems described above because CO₂ in biological systems is constantly in flux and often harder to measure. As a result, humans have less direct control over outcomes, and need to consider a wider range of risks. The intuition we’ve developed above can help reduce those challenges.
 
-Consider a tree and its role in the carbon cycle. The tree uses photosynthesis to convert light energy into chemical energy, which it uses to convert CO<sub>2</sub> into compounds that make up the plant’s tissue. (For the purposes of the carbon cycle, scientists call a plant’s tissue its biomass. About 50% of the above-ground biomass of a tree is carbon from the atmosphere.<Reference color={meta.color} data={sidenotes[5]}/>)
+Consider a tree and its role in the carbon cycle. The tree uses photosynthesis to convert light energy into chemical energy, which it uses to convert CO₂ into compounds that make up the plant’s tissue. (For the purposes of the carbon cycle, scientists call a plant’s tissue its biomass. About 50% of the above-ground biomass of a tree is carbon from the atmosphere.<Reference color={meta.color} data={sidenotes[5]}/>)
 
-Viewed in isolation, a tree performs carbon removal, at least for the period of its life when it is growing and therefore sequestering net CO<sub>2</sub> from the atmosphere into its tissues. How much? The rate depends on factors like the age and species of the tree and properties of the surrounding ecosystem, with carbon removal generally accelerating early in the growth of a tree and then eventually reaching saturation — the point at which CO<sub>2</sub> emissions from the decay of organic material like leaves balances the CO<sub>2</sub> removal from photosynthesis, and no further carbon removal occurs. During the growth and maturation of a tree — or of a forest with many trees — a cumulative quantity of carbon fluxes from the atmosphere into the biosphere.
+Viewed in isolation, a tree performs carbon removal, at least for the period of its life when it is growing and therefore sequestering net CO₂ from the atmosphere into its tissues. How much? The rate depends on factors like the age and species of the tree and properties of the surrounding ecosystem, with carbon removal generally accelerating early in the growth of a tree and then eventually reaching saturation — the point at which CO₂ emissions from the decay of organic material like leaves balances the CO₂ removal from photosynthesis, and no further carbon removal occurs. During the growth and maturation of a tree — or of a forest with many trees — a cumulative quantity of carbon fluxes from the atmosphere into the biosphere.
 
-In our diagram, we show the simple case of a growing forest with a circle representing the storage of carbon in the land, and an arrow representing a flux of CO<sub>2</sub> from the atmosphere into the land.
+In our diagram, we show the simple case of a growing forest with a circle representing the storage of carbon in the land, and an arrow representing a flux of CO₂ from the atmosphere into the land.
 
 <Cycle
   labels={true}
@@ -238,7 +239,7 @@ From a carbon cycle perspective, reforestation will result in new tree growth. W
 
 But what if someone agrees to not cut down a forest they were otherwise planning to harvest? This scenario arises frequently in carbon offset programs that seek to compensate landowners for the climate benefits of their forests. Maybe the landowner pursues “avoided conversion” by preserving a forest indefinitely through a conservation easement. Or perhaps they agree to delay a timber harvest for a few years under an “improved forest management” practice that increases the quantity of carbon stored on the land relative to business-as-usual conditions. Are such practices carbon removal or avoided emissions? Turns out, both!
 
-These projects avoid emissions because cutting down the trees would have caused emissions in two ways — first, the industrial processes of harvesting cause emissions on their own, and second, the dead biomass leftover would decompose and emit CO<sub>2</sub>. But they are also carbon removal because the trees left standing will continue to capture carbon from the atmosphere, with the total amount depending on their age and growth relative to saturation. We can show this in our diagram by combining the two arrows.
+These projects avoid emissions because cutting down the trees would have caused emissions in two ways — first, the industrial processes of harvesting cause emissions on their own, and second, the dead biomass leftover would decompose and emit CO₂. But they are also carbon removal because the trees left standing will continue to capture carbon from the atmosphere, with the total amount depending on their age and growth relative to saturation. We can show this in our diagram by combining the two arrows.
 
 <Cycle
   labels={true}
@@ -298,7 +299,7 @@ Another example shows how these core concepts help us navigate increasingly comp
 
 Consider the case of creating bio-oil from sawdust and then injecting that bio-oil into geologic formations for permanent storage. While similar to the biochar example, this case involves an extra step. There are three different ways to think about this project, depending on where we draw the boundaries and how we contextualize the project in the surrounding system.
 
-First, we consider the narrowest boundary condition. For this scenario, we assume that the bio-oil has already been produced and that without the project, the bio-oil would be burned to produce CO<sub>2</sub> emissions. In this case, the project is avoiding emissions by geologically sequestering the bio-oil instead.
+First, we consider the narrowest boundary condition. For this scenario, we assume that the bio-oil has already been produced and that without the project, the bio-oil would be burned to produce CO₂ emissions. In this case, the project is avoiding emissions by geologically sequestering the bio-oil instead.
 
 <Cycle
   labels={true}
@@ -312,7 +313,7 @@ First, we consider the narrowest boundary condition. For this scenario, we assum
   }}
 />
 
-Second, we could broaden the boundary to start with the sawdust. If we assume that without the project the sawdust would decompose and produce CO<sub>2</sub> emissions, then the project is again avoiding emissions, in this case by processing the sawdust into bio-oil and geologically sequestering it.
+Second, we could broaden the boundary to start with the sawdust. If we assume that without the project the sawdust would decompose and produce CO₂ emissions, then the project is again avoiding emissions, in this case by processing the sawdust into bio-oil and geologically sequestering it.
 
 <Cycle
   labels={true}
@@ -361,11 +362,11 @@ Second, what does all this mean for a funder or decision-maker?
 
 The answer depends on the goals. If an organization wants to “purchase” carbon removal in a strict, narrow sense — such as to justify carbon neutrality claims premised on achieving a net carbon balance given the organization's emissions — then they should engage only projects that exclusively perform carbon removal today. Precisely because the field is so new, however, few such projects exist! We’ve also seen examples of projects conflating carbon removal and avoided emissions claims, so we advise sponsor organizations to scrutinize and communicate the claims projects make on this important dimension.
 
-Other sponsor organizations may be interested in supporting technologies that have the potential to become components of carbon removal systems, but which do not currently remove atmospheric CO<sub>2</sub> today. This philosophy could be a critical driver to accelerate change in the coming years, but it risks confusion with current carbon removal efforts. We recommend that such sponsor organizations explicitly frame their mission as advancing a particular theory of technological change and/or research investment, so as to clarify their goals and potential strategic risks.
+Other sponsor organizations may be interested in supporting technologies that have the potential to become components of carbon removal systems, but which do not currently remove atmospheric CO₂ today. This philosophy could be a critical driver to accelerate change in the coming years, but it risks confusion with current carbon removal efforts. We recommend that such sponsor organizations explicitly frame their mission as advancing a particular theory of technological change and/or research investment, so as to clarify their goals and potential strategic risks.
 
 <SectionBreak />
 
-## Credits
+<Endnote label='Credits'>
 
 Danny, Jeremy, and Toly developed the concepts and typology. All authors developed the concept for the graphics (with input from Jonny Black of [Ordinary Things](https://ot.studio)). Jeremy implemented the graphics. All authors contributed to writing the article.
 
@@ -373,10 +374,12 @@ Please cite as:
 
 T Rinberg, D Cullenward, J Hamman, J Freeman (2020) “Carbon removal mechanisms” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/carbon-removal-mechanisms</span>
 
-## Terms of engagement
+</Endnote>
+
+<Endnote label='Terms'>
 
 CarbonPlan received no specific financial support for this work.
 
-### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
+</Endnote>
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>

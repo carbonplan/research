@@ -17,7 +17,7 @@ const tags = {
 export const config = (theme) => {
   return {
     background: null,
-    padding: { left: 80, right: 0, top: 30, bottom: 50 },
+    padding: { left: 74, right: 0, top: 30, bottom: 50 },
     axis: {
       grid: false,
       labelFontSize: theme.fontSizes[1],
@@ -137,9 +137,9 @@ const Permanence = () => {
   const height = 250
 
   return (
-    <Box ref={container} sx={{ maxWidth: '650px' }}>
+    <Box as='figure' ref={container} sx={{}}>
       <Vega
-        width={width * 0.8 - 80}
+        width={width * 0.8 - 58}
         height={height}
         data={{ values: values }}
         renderer={'svg'}

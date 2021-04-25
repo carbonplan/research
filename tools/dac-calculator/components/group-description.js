@@ -4,26 +4,26 @@ import { Box, Text } from 'theme-ui'
 const GroupDescription = ({ group }) => {
   return (
     <Box>
-      <Text
+      <Box
         sx={{
           fontSize: [4],
-          mt: [4],
+          mt: [5],
           mb: [3],
           fontFamily: 'heading',
           letterSpacing: 'heading',
         }}
       >
         {group.displayName}
-      </Text>
-      <Text
+      </Box>
+      <Box
         sx={{
-          fontSize: [2],
+          fontSize: [2, 2, 2, 3],
           mb: [1],
           maxWidth: '500px',
         }}
       >
         {group.description}
-      </Text>
+      </Box>
     </Box>
   )
 }

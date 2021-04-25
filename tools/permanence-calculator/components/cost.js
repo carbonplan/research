@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Box, Text } from 'theme-ui'
+import { Box } from 'theme-ui'
 import { piecewise, quantize, interpolateNumber } from 'd3-interpolate'
 
 const Cost = ({
@@ -105,20 +105,23 @@ const Cost = ({
 
   return (
     <Box>
-      <Text
+      <Box
         sx={{
           display: ['inline-block', 'inline-block', 'block'],
-          fontSize: [3, 3, 3],
+          fontSize: [3, 3, 3, 4],
           fontFamily: 'faux',
           letterSpacing: 'faux',
+          mr: [2, 2, 0, 0],
+          mt: [2, 2, 5, 6],
+          pt: [1, 1, 0, 0],
         }}
       >
         If a temporary project now costs...
-      </Text>
-      <Text
+      </Box>
+      <Box
         sx={{
           display: ['inline-block', 'inline-block', 'block'],
-          fontSize: [3, 3, 6],
+          fontSize: [3, 3, 6, 7],
           fontFamily: 'mono',
           letterSpacing: '0.02em',
           color: 'pink',
@@ -127,10 +130,10 @@ const Cost = ({
         }}
       >
         ${shortCostCurve[0][1].toFixed(0)}
-        <Text
+        <Box
           sx={{
             display: 'inline-block',
-            fontSize: [3],
+            fontSize: [3, 3, 3, 4],
             fontFamily: 'faux',
             letterSpacing: 'faux',
             color: 'secondary',
@@ -138,22 +141,23 @@ const Cost = ({
           }}
         >
           per tCO₂
-        </Text>
-      </Text>
-      <Text
+        </Box>
+      </Box>
+      <Box
         sx={{
           display: ['inline-block', 'inline-block', 'block'],
-          fontSize: [3, 3, 3],
+          fontSize: [3, 3, 3, 4],
           fontFamily: 'faux',
           letterSpacing: 'faux',
+          mr: [2, 2, 0, 0],
         }}
       >
         you actually need to budget...
-      </Text>
-      <Text
+      </Box>
+      <Box
         sx={{
           display: ['inline-block', 'inline-block', 'block'],
-          fontSize: [3, 3, 6],
+          fontSize: [3, 3, 6, 7],
           fontFamily: 'mono',
           letterSpacing: '0.02em',
           color: 'pink',
@@ -161,19 +165,19 @@ const Cost = ({
         }}
       >
         ${discountedCost.toFixed(0)}
-        <Text
+        <Box
           sx={{
             display: 'inline-block',
             mx: [2],
           }}
         >
           ±
-        </Text>
+        </Box>
         {standardDeviation.toFixed(0)}
-        <Text
+        <Box
           sx={{
             display: 'inline-block',
-            fontSize: [3, 3, 3],
+            fontSize: [3, 3, 3, 4],
             fontFamily: 'faux',
             letterSpacing: 'faux',
             color: 'secondary',
@@ -181,18 +185,18 @@ const Cost = ({
           }}
         >
           per tCO₂
-        </Text>
-      </Text>
-      <Text
+        </Box>
+      </Box>
+      <Box
         sx={{
           display: ['none', 'none', 'block'],
-          fontSize: [3, 3, 3],
+          fontSize: [3, 3, 3, 4],
           fontFamily: 'faux',
           letterSpacing: 'faux',
         }}
       >
         for permanent carbon removal.
-      </Text>
+      </Box>
     </Box>
   )
 }

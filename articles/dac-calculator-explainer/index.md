@@ -2,10 +2,10 @@ import { Link } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import Article from '../../components/article'
 import FigureCaption from '../../components/figure-caption'
+import Endnote from '../../components/endnote'
 import Inline from '../../components/inline'
 import Reference from '../../components/reference'
 import SectionBreak from '../../components/section-break'
-import Heading from './components/heading'
 import BoundaryCondition from './components/boundary-condition'
 import ParameterScenario from './components/parameter-scenario'
 import CostSummary from './components/cost-summary'
@@ -118,7 +118,7 @@ export const sidenotes = {
   },
 }
 
-<Heading>The cost of direct air capture</Heading>
+# The cost of direct air capture
 
 Direct air capture (DAC) is a technology that removes carbon dioxide (CO₂) from the air using chemicals. There are several types. Solid sorbent and liquid solvent DAC are in use today. Others are emerging, such as electro-swing, humidity-swing, and mineralization-based.
 
@@ -206,6 +206,7 @@ To model higher cost NGCC, we use parameters from a DAC facility described in a 
   naturalGas={41.576}
   capitalRecovery={340.47}
 />
+
 <FigureCaption number={3}>
   Summary for a higher cost NGCC scenario.
 </FigureCaption>
@@ -275,7 +276,7 @@ We hope our interactive calculator provides intuition and transparency around th
 
 <SectionBreak />
 
-## Credits
+<Endnote label='Credits'>
 
 Noah and Jennifer developed the underlying model with their collaborators Michael J. Desmond, Robert H. Socolow, and Peter Psarras. All authors of this article developed the concept for an interactive version. Joe implemented the model in JavaScript, with Noah’s guidance. Joe and Jeremy developed and implemented the interactive graphics with input from Jonny Black of [Ordinary Things](https://ot.studio). All authors contributed to writing the article.
 
@@ -283,10 +284,12 @@ Please cite as:
 
 N McQueen, J Wilcox, J Hamman, J Freeman (2021) “The cost of direct air capture” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/dac-calculator-explainer</span>
 
-## Terms of engagement
+</Endnote>
+
+<Endnote label='Terms'>
 
 CarbonPlan received no specific financial support for this work. Noah McQueen is a Ph.D. Student at the University of Pennsylvania and Jennifer Wilcox is a Professor at the University of Pennsylvania.
 
-### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
+</Endnote>
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>

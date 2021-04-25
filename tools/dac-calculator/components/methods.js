@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Link, Styled } from 'theme-ui'
+import { Box, Heading, Text, Link, Themed } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 
 const Methods = () => {
@@ -15,7 +15,7 @@ const Methods = () => {
       >
         Brief Methods
       </Text>
-      <Styled.p>
+      <Themed.p>
         This calculator computes the{' '}
         <Link href='https://cdrprimer.org/read/chapter-4#sec-4-3'>
           net removed cost
@@ -25,8 +25,8 @@ const Methods = () => {
         capture and storage (NGCC), wind, and solar. The model estimates the
         levelized cost of energy, capital expenses, and operation and
         maintenance costs.
-      </Styled.p>
-      <Styled.p>
+      </Themed.p>
+      <Themed.p>
         For natural gas, the model assumes that combustion for electricity
         production is coupled with carbon capture at 90% capture efficiency. The
         remaining 10% of emissions from electricity production are considered
@@ -36,14 +36,14 @@ const Methods = () => {
         from combustion. A leakge rate parameter accounts for natural gas
         leakage, which has been reported as high as 3.7% in the Permian Basin
         region of the United States.
-      </Styled.p>
-      <Styled.p>
+      </Themed.p>
+      <Themed.p>
         Given the definition of net removed cost, it is possible to create
         parameter scenarios with NGCC that do not achieve net carbon removal,
         because emissions are too large. We show this case with gray bars in the
         calculator.
-      </Styled.p>
-      <Styled.p>
+      </Themed.p>
+      <Themed.p>
         The entire model is implemented natively in JavaScript and{' '}
         <Link href='https://github.com/carbonplan/research/tree/main/tools/dac-calculator'>
           available on Github
@@ -60,14 +60,14 @@ const Methods = () => {
         by McQueen et al. (2021). There may be small differences (± $10) between
         the model outputs above and the results in the paper due to
         implementation differences.
-      </Styled.p>
-      <Styled.p>
+      </Themed.p>
+      <Themed.p>
         Read our{' '}
         <NextLink href={'/research/dac-calculator-explainer'} passHref={true}>
           <Link>article</Link>
         </NextLink>{' '}
         for more information.
-      </Styled.p>
+      </Themed.p>
     </Box>
   )
 }

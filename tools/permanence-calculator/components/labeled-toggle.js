@@ -1,25 +1,28 @@
-import { Box, Text } from 'theme-ui'
+import { Box } from 'theme-ui'
 import { Toggle } from '@carbonplan/components'
 
 const LabeledToggle = ({ value, setValue, labels }) => {
   return (
-    <Box onClick={() => setValue(!value)} sx={{ cursor: 'pointer' }}>
+    <Box
+      onClick={() => setValue(!value)}
+      sx={{ textAlign: 'center', cursor: 'pointer', position: 'relative' }}
+    >
       <Toggle value={value} sx={{ color: 'pink' }} />
-      <Text
+      <Box
         sx={{
-          fontFamily: 'faux',
-          textTransform: 'initial',
-          fontSize: [2],
+          fontFamily: 'mono',
+          textTransform: 'uppercase',
+          fontSize: [1, 1, 1, 2],
           color: value ? 'pink' : 'muted',
-          right: '-1px',
-          top: '-1px',
+          top: '0px',
           position: 'relative',
           transition: '0.2s',
           textAlign: 'center',
+          position: 'relative',
         }}
       >
         {value ? labels.on : labels.off}
-      </Text>
+      </Box>
     </Box>
   )
 }

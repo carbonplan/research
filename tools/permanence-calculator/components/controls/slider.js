@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Box, Text, Grid, Slider } from 'theme-ui'
+import { useThemeUI, Box } from 'theme-ui'
+import { Row, Column, Slider } from '@carbonplan/components'
 import LabeledToggle from '../labeled-toggle'
 import { darken } from '@theme-ui/color'
 
@@ -31,6 +32,9 @@ const Control = ({
     }
   }
 
+  const {
+    theme: { rawColors: colors },
+  } = useThemeUI()
   const [active, setActive] = useState(true)
 
   useEffect(() => {
@@ -42,16 +46,16 @@ const Control = ({
   return (
     <Box
       sx={{
-        mt: [2],
-        mb: [4],
+        mt: [4, 5, 6, 7],
+        mb: [4, 5, 6, 7],
       }}
     >
-      <Text
+      <Box
         sx={{
           fontFamily: 'heading',
           letterSpacing: 'smallcaps',
           textTransform: 'uppercase',
-          fontSize: [3],
+          fontSize: [3, 3, 3, 4],
           mt: [3],
           mb: [1],
         }}
@@ -63,7 +67,7 @@ const Control = ({
               display: 'inline-block',
               mt: [1],
               position: 'absolute',
-              left: ['calc(100% - 55px)', 'calc(100% - 55px)', '424px'],
+              right: ['0px'],
             }}
           >
             <LabeledToggle
@@ -73,21 +77,24 @@ const Control = ({
             />
           </Box>
         )}
-      </Text>
-      <Text
-        sx={{
-          fontFamily: 'faux',
-          letterSpacing: 'faux',
-          fontSize: [2],
-          mt: [0],
-          mb: [1],
-          maxWidth: optional ? ['70%', '70%', '375px'] : '100%',
-        }}
-      >
-        {description}
-      </Text>
-      <Grid columns={['75px 1fr']}>
-        <Box>
+      </Box>
+      <Row columns={[6, 6, 5, 5]}>
+        <Column start={[1]} width={[4, 4, 4, 4]}>
+          <Box
+            sx={{
+              fontFamily: 'faux',
+              letterSpacing: 'faux',
+              fontSize: [2, 2, 2, 3],
+              mt: [0],
+              mb: [1],
+            }}
+          >
+            {description}
+          </Box>
+        </Column>
+      </Row>
+      <Row columns={[6, 6, 5, 5]}>
+        <Column start={[1]} width={[2, 1, 1, 1]}>
           <Box
             sx={{
               borderStyle: 'solid',
@@ -98,7 +105,7 @@ const Control = ({
               pt: [2],
             }}
           >
-            <Text
+            <Box
               sx={{
                 display: 'inline-block',
                 color: active ? 'pink' : 'muted',
@@ -109,46 +116,37 @@ const Control = ({
               }}
             >
               {format(value)}
-            </Text>
+            </Box>
           </Box>
-          <Text
+          <Box
             sx={{
               color: 'secondary',
-              fontSize: [2],
+              fontSize: [2, 2, 2, 3],
               fontFamily: 'faux',
               letterSpacing: 'faux',
               pt: [1],
             }}
           >
             {units}
-          </Text>
-        </Box>
-        <Slider
-          sx={{
-            width: ['100%', '100%', '380px'],
-            color: active ? 'pink' : 'muted',
-            backgroundColor: active ? 'secondary' : 'muted',
-            mt: ['42px'],
-            '&:focus': {
-              color: active ? 'pink' : 'secondary',
-            },
-            '&:active': {
-              color: active ? darken('pink', 0.03) : 'muted',
-            },
-            transition: '0.2s',
-            pointerEvents: active ? 'all' : 'none',
-            '&::-webkit-slider-thumb': {
-              height: [24, 24, 16],
-              width: [24, 24, 16],
-            },
-          }}
-          value={value}
-          onChange={(e) => setValue(parseFloat(e.target.value))}
-          min={min}
-          max={max}
-          step={step}
-        ></Slider>
-      </Grid>
+          </Box>
+        </Column>
+        <Column start={[3, 2, 2, 2]} width={[4, 5, 4, 4]}>
+          <Slider
+            sx={{
+              width: ['100%'],
+              color: active ? 'pink' : 'muted',
+              backgroundColor: active ? 'secondary' : 'muted',
+              mt: ['42px'],
+              pointerEvents: active ? 'all' : 'none',
+            }}
+            value={value}
+            onChange={(e) => setValue(parseFloat(e.target.value))}
+            min={min}
+            max={max}
+            step={step}
+          ></Slider>
+        </Column>
+      </Row>
     </Box>
   )
 }

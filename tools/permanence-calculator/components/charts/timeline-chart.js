@@ -7,6 +7,8 @@ const TimelineChart = (container, theme, data) => {
   let svg
   data = data ? data : { discountFunction: [], switchingTime: [] }
 
+  const { fonts, rawColors: colors } = theme
+
   const margin = { top: 20, right: 25, bottom: 30, left: 2 }
   const width = container.current.offsetWidth - margin.left - margin.right
   const height = container.current.offsetHeight - margin.top - margin.bottom
@@ -35,7 +37,7 @@ const TimelineChart = (container, theme, data) => {
 
   svg
     .append('rect')
-    .attr('fill', theme.colors.muted)
+    .attr('fill', colors.muted)
     .attr('stroke-width', 0)
     .attr('width', width)
     .attr('height', height / 2 - 15)
@@ -43,7 +45,7 @@ const TimelineChart = (container, theme, data) => {
 
   let switchingRect = svg
     .append('rect')
-    .attr('fill', mix(0.4, theme.colors.pink, theme.colors.background))
+    .attr('fill', mix(0.4, colors.pink, colors.background))
     .attr('stroke-width', 0)
     .attr('width', 0)
     .attr('height', height / 2 - 15)
@@ -55,9 +57,9 @@ const TimelineChart = (container, theme, data) => {
     .append('text')
     .style('text-anchor', 'left')
     .style('opacity', 0)
-    .style('fill', theme.colors.pink)
+    .style('fill', colors.pink)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.body)
+    .style('font-family', fonts.body)
     .style('transition', 'opacity 0.15s')
     .text('SWITCHING TIME')
 
@@ -66,13 +68,13 @@ const TimelineChart = (container, theme, data) => {
     .datum([])
     .attr('class', 'durationIntervals')
     .attr('fill', 'none')
-    .attr('stroke', theme.colors.background)
+    .attr('stroke', colors.background)
     .attr('stroke-width', 2)
     .attr('stroke-opacity', 1)
 
   svg
     .append('line')
-    .attr('stroke', theme.colors.primary)
+    .attr('stroke', colors.primary)
     .attr('stroke-width', 1)
     .attr('stroke-opacity', 1)
     .attr('x1', 0)
@@ -84,9 +86,9 @@ const TimelineChart = (container, theme, data) => {
     .append('text')
     .attr('transform', `translate(${width - 144},${3})`)
     .style('text-anchor', 'left')
-    .style('fill', theme.colors.primary)
+    .style('fill', colors.primary)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.body)
+    .style('font-family', fonts.body)
     .style('transition', 'opacity 0.15s')
     .text('DISCOUNT FACTOR')
 
@@ -94,18 +96,18 @@ const TimelineChart = (container, theme, data) => {
     .append('text')
     .attr('transform', `translate(${0},${height + 20})`)
     .style('text-anchor', 'left')
-    .style('fill', theme.colors.muted)
+    .style('fill', colors.muted)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.mono)
+    .style('font-family', fonts.mono)
     .text('0 years')
 
   svg
     .append('text')
     .attr('transform', `translate(${width - 80},${height + 20})`)
     .style('text-anchor', 'right')
-    .style('fill', theme.colors.muted)
+    .style('fill', colors.muted)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.mono)
+    .style('font-family', fonts.mono)
     .text('100 years')
 
   svg
@@ -113,7 +115,7 @@ const TimelineChart = (container, theme, data) => {
     .datum([])
     .attr('class', 'discountFunction')
     .attr('fill', 'none')
-    .attr('stroke', theme.colors.primary)
+    .attr('stroke', colors.primary)
     .attr('stroke-width', 3)
 
   let switchingTimeLine = svg
@@ -121,13 +123,13 @@ const TimelineChart = (container, theme, data) => {
     .datum([])
     .attr('class', 'switchingTime')
     .attr('fill', 'none')
-    .attr('stroke', theme.colors.pink)
+    .attr('stroke', colors.pink)
     .attr('stroke-width', 5)
     .attr('stroke-opacity', 1)
 
   svg
     .append('line')
-    .attr('stroke', theme.colors.primary)
+    .attr('stroke', colors.primary)
     .attr('stroke-width', 1)
     .attr('stroke-opacity', 1)
     .attr('x1', width + 10)
@@ -139,18 +141,18 @@ const TimelineChart = (container, theme, data) => {
     .append('text')
     .attr('transform', `translate(${width + 17},${0 + 3})`)
     .style('text-anchor', 'left')
-    .style('fill', theme.colors.primary)
+    .style('fill', colors.primary)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.mono)
+    .style('font-family', fonts.mono)
     .text('1')
 
   svg
     .append('text')
     .attr('transform', `translate(${width + 17},${height / 2 + 3})`)
     .style('text-anchor', 'left')
-    .style('fill', theme.colors.primary)
+    .style('fill', colors.primary)
     .style('font-size', 16)
-    .style('font-family', theme.fonts.mono)
+    .style('font-family', fonts.mono)
     .text('0')
 
   const update = (data) => {

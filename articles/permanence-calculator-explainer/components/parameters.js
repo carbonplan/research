@@ -1,23 +1,5 @@
-import { Box, Grid, Text, Divider } from 'theme-ui'
-
-const Row = ({ children }) => {
-  return (
-    <Grid
-      columns={[1, '300px 1fr', '300px 1fr']}
-      sx={{
-        borderStyle: 'solid',
-        borderWidth: '0px',
-        borderTopWidth: '1px',
-        borderColor: 'muted',
-        pt: [3],
-        pb: [3],
-        mb: ['2px', 0, 0],
-      }}
-    >
-      {children}
-    </Grid>
-  )
-}
+import { Box } from 'theme-ui'
+import { Table } from '@carbonplan/components'
 
 const Top = ({ children }) => {
   return (
@@ -37,115 +19,80 @@ const Top = ({ children }) => {
   )
 }
 
+const sx = {
+  title: {
+    fontFamily: 'heading',
+    letterSpacing: 'smallcaps',
+    textTransform: 'uppercase',
+    mt: [0],
+    mb: [0, '2px', '2px'],
+    fontSize: [2, 2, 2, 3],
+  },
+  units: {
+    textTransform: 'initial',
+    fontFamily: 'faux',
+    letterSpacing: 'faux',
+    fontSize: [2, 2, 2, 3],
+    color: 'secondary',
+  },
+}
+
+const table = [
+  [
+    <Box>
+      Project duration<Box sx={sx.units}>years</Box>
+    </Box>,
+    'How long the temporary carbon removal lasts before needing a renewal.',
+  ],
+  [
+    <Box>
+      Switching time<Box sx={sx.units}>years</Box>
+    </Box>,
+    'The year in which the decision-maker switches from temporary to permanent carbon removal. (Optional.)',
+  ],
+  [
+    <Box>
+      Discount rate<Box sx={sx.units}>%</Box>
+    </Box>,
+    'Used to discount future year costs and generate a net present value calculation.',
+  ],
+  [
+    <Box>
+      Project risk<Box sx={sx.units}>%/year</Box>
+    </Box>,
+    'The risk that a project fails and releases its carbon back to the atmosphere.',
+  ],
+  [
+    <Box>
+      Temporary project cost<Box sx={sx.units}>$/tCO₂</Box>
+    </Box>,
+    'Project costs set as constant or based on a custom price trajectory.',
+  ],
+  [
+    <Box>
+      Permanent project cost<Box sx={sx.units}>$/tCO₂</Box>
+    </Box>,
+    'Project costs set as constant or based on a custom price trajectory.',
+  ],
+]
+
 const Parameters = ({}) => {
-  const sx = {
-    title: {
-      fontFamily: 'heading',
-      letterSpacing: 'smallcaps',
-      textTransform: 'uppercase',
-      mt: [0],
-      mb: [0, '2px', '2px'],
-      fontSize: [2],
-    },
-    label: {
-      fontFamily: 'heading',
-      letterSpacing: 'smallcaps',
-      textTransform: 'uppercase',
-      mt: [0],
-      fontSize: [2],
-    },
-    description: {
-      fontFamily: 'faux',
-      letterSpacing: 'faux',
-      fontSize: [2],
-      mb: [0, 0, '2px'],
-    },
-    number: {
-      fontFamily: 'mono',
-      letterSpacing: 'mono',
-      fontSize: [5],
-      color: 'pink',
-    },
-    units: {
-      textTransform: 'initial',
-      fontFamily: 'faux',
-      letterSpacing: 'faux',
-      fontSize: [2],
-      color: 'secondary',
-    },
-    group: {
-      borderStyle: 'solid',
-      borderWidth: '0px',
-      borderTopWidth: '1px',
-      borderColor: 'muted',
-      pt: [3],
-      pb: [3],
-    },
-  }
   return (
-    <Box sx={{ my: [4] }}>
-      <Top>
-        <Text sx={{ ...sx.title, ...{ color: 'pink' } }}>Parameters</Text>
-      </Top>
-      <Row>
-        <Text sx={sx.label}>
-          Project duration
-          <Text sx={sx.units}>years</Text>
-        </Text>
-        <Text sx={sx.description}>
-          How long the temporary carbon removal lasts before needing a renewal.
-        </Text>
-      </Row>
-      <Row>
-        <Text sx={sx.label}>
-          Switching time
-          <Text sx={sx.units}>years</Text>
-        </Text>
-        <Text sx={sx.description}>
-          The year in which the decision-maker switches from temporary to
-          permanent carbon removal. (Optional.)
-        </Text>
-      </Row>
-      <Row>
-        <Text sx={sx.label}>
-          Discount rate
-          <Text sx={sx.units}>%</Text>
-        </Text>
-        <Text sx={sx.description}>
-          Used to discount future year costs and generate a net present value
-          calculation.
-        </Text>
-      </Row>
-      <Row>
-        <Text sx={sx.label}>
-          Project risk
-          <Text sx={sx.units}>%/year</Text>
-        </Text>
-        <Text sx={sx.description}>
-          The risk that a project fails and releases its carbon back to the
-          atmosphere.
-        </Text>
-      </Row>
-      <Row>
-        <Text sx={sx.label}>
-          Temporary project cost
-          <Text sx={sx.units}>$/tCO₂</Text>
-        </Text>
-        <Text sx={sx.description}>
-          Project costs set as constant or based on a custom price trajectory.
-        </Text>
-      </Row>
-      <Row>
-        <Text sx={sx.label}>
-          Permanent project cost
-          <Text sx={sx.units}>$/tCO₂</Text>
-        </Text>
-        <Text sx={sx.description}>
-          Project costs set as constant or based on a custom price trajectory.
-        </Text>
-      </Row>
-      <Divider sx={{ mt: [1], width: ['100%', '100%', '650px'] }} />
-    </Box>
+    <Table
+      header='Parameters'
+      columns={[6]}
+      color='pink'
+      start={[
+        [1, 1, 1, 1],
+        [1, 4, 4, 4],
+      ]}
+      width={[
+        [6, 3, 3, 3],
+        [6, 3, 3, 3],
+      ]}
+      data={table}
+      sx={{ my: [6, 6, 6, 7] }}
+    />
   )
 }
 

@@ -1,5 +1,6 @@
-import { Box, Text, Grid, Button, Slider, Divider } from 'theme-ui'
+import { useThemeUI, Box, Text, Grid, Button, Divider } from 'theme-ui'
 import { useState, useEffect, useRef } from 'react'
+import { Slider } from '@carbonplan/components'
 import mapboxgl from 'mapbox-gl'
 import style from './style'
 import dates from './dates'
@@ -11,6 +12,10 @@ const FireMap = () => {
   const [time, setTime] = useState(36)
   const [centerZoomIn, setCenterZoomIn] = useState([])
   const [centerZoomOut, setCenterZoomOut] = useState([])
+
+  const {
+    theme: { rawColors: colors },
+  } = useThemeUI()
 
   const zoomOut = () => {
     map.flyTo({
@@ -77,11 +82,11 @@ const FireMap = () => {
 
   return (
     <Box
+      as='figure'
       sx={{
-        mt: [5],
-        mb: [3],
+        mt: [6, 6, 6, 7],
+        mb: [4, 4, 4, 5],
         position: 'relative',
-        width: ['100%', '100%', '100%'],
       }}
     >
       <Divider />
@@ -101,64 +106,69 @@ const FireMap = () => {
         {map && <Enhancers map={map} time={time} />}
       </Box>
       {map && (
-        <Text
+        <Box
           sx={{
             position: 'absolute',
             bottom: ['78px'],
-            fontSize: [3],
+            fontSize: [3, 3, 3, 4],
             left: '4px',
             fontFamily: 'faux',
             letterSpacing: 'faux',
             color: 'primary',
-            display: ['none', 'none', 'inherit'],
           }}
         >
           DAY {dates[time]}
-        </Text>
+        </Box>
       )}
       <Divider sx={{ mt: ['18px'], mb: [1] }} />
       <Grid
         gap={['0px']}
         columns={[
-          '60px 30px 40px',
+          '50px 1fr 60px 30px 40px',
           '50px 1fr 60px 30px 40px',
           '50px 1fr 60px 30px 40px',
         ]}
       >
-        <Text
+        <Box
           sx={{
             pl: [1],
             pt: [2],
-            display: ['none', 'inherit', 'inherit'],
+            fontSize: [2, 2, 2, 3],
+            fontFamily: 'heading',
+            letterSpacing: 'smallcaps',
           }}
         >
           TIME
-        </Text>
+        </Box>
         <Slider
           value={time}
           onChange={(e) => setTime(parseInt(e.target.value))}
           min='0'
           max='36'
           sx={{
-            display: ['none', 'inherit', 'inherit'],
-            width: 'calc(100% - 75px)',
+            width: [
+              'calc(84%)',
+              'calc(84%)',
+              'calc(100% - 75px)',
+              'calc(100% - 75px)',
+            ],
             ml: [1],
             mt: ['18px'],
             bg: 'secondary',
             color: 'red',
-            '&:focus': {
-              color: 'red',
-            },
           }}
         />
-        <Text
+        <Box
           sx={{
+            fontSize: [2, 2, 2, 3],
+            fontFamily: 'heading',
+            letterSpacing: 'smallcaps',
             pl: [1],
             pt: [2],
           }}
         >
           ZOOM
-        </Text>
+        </Box>
         <Box
           onClick={zoomOut}
           sx={{
@@ -168,8 +178,10 @@ const FireMap = () => {
             pl: [2],
             cursor: 'pointer',
             color: 'secondary',
-            '&:hover': {
-              color: 'primary',
+            '@media (hover: hover) and (pointer: fine)': {
+              '&:hover': {
+                color: 'primary',
+              },
             },
             transition: '0.2s',
           }}
@@ -185,8 +197,10 @@ const FireMap = () => {
             pl: [2],
             cursor: 'pointer',
             color: 'secondary',
-            '&:hover': {
-              color: 'primary',
+            '@media (hover: hover) and (pointer: fine)': {
+              '&:hover': {
+                color: 'primary',
+              },
             },
             transition: '0.2s',
           }}

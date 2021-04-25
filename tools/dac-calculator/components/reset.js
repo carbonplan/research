@@ -2,16 +2,27 @@ import { Box, Text } from 'theme-ui'
 
 const Reset = ({ onClick }) => {
   return (
-    <Text
+    <Box
       onClick={onClick}
-      as='span'
+      as='button'
       sx={{
+        fontSize: [3, 3, 3, 4],
+        WebkitAppearance: 'none',
+        MozAppearance: 'none',
+        pr: [0],
+        pb: [0],
+        pt: [0],
+        background: 'transparent',
+        border: 'none',
+        mt: [0],
+        fontFamily: 'body',
+        letterSpacing: 'body',
         float: 'right',
         color: 'secondary',
         stroke: 'secondary',
         position: 'relative',
         cursor: 'pointer',
-        transition: '0.15s',
+        transition: 'color 0.15s, stroke 0.15s',
         display: ['none', 'none', 'inherit'],
         pl: ['24px'],
         userSelect: 'none',
@@ -40,7 +51,7 @@ const Reset = ({ onClick }) => {
         </svg>
       </Box>
       Reset
-    </Text>
+    </Box>
   )
 }
 

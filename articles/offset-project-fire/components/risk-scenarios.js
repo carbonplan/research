@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
-import { Box, Text, Grid, Divider } from 'theme-ui'
+import { Box, Grid, Divider } from 'theme-ui'
+import { Row, Column } from '@carbonplan/components'
 import Chart from './chart'
 const random = require('d3-random')
 
@@ -13,7 +14,6 @@ const Radio = ({ value, label, current, set }) => {
       onClick={handleClick}
       sx={{
         cursor: 'pointer',
-        width: '250px',
         '&:hover > #box > #circle1': {
           opacity: 1,
         },
@@ -76,17 +76,18 @@ const Radio = ({ value, label, current, set }) => {
           }}
         />
       </Box>
-      <Text
+      <Box
         id='text'
         sx={{
           display: 'inline-block',
+          fontSize: [3, 3, 3, 4],
           ml: [3],
           opacity: value == current ? 1 : 0.3,
           transition: '0.2s',
         }}
       >
         {label}
-      </Text>
+      </Box>
     </Box>
   )
 }
@@ -123,23 +124,22 @@ const RiskScenarios = () => {
 
   return (
     <Box
+      as='figure'
       sx={{
-        fontSize: [3],
-        mt: [5],
-        mb: [3],
-        width: '100%',
+        mt: [6, 6, 6, 7],
+        mb: [4, 4, 4, 5],
       }}
     >
-      <Grid
-        columns={[1, 2, 2]}
+      <Row
+        columns={[6]}
         sx={{
           my: [3],
         }}
       >
-        <Box>
-          <Text
+        <Column start={[1]} width={[6, 3, 3, 3]}>
+          <Box
             sx={{
-              fontSize: [3],
+              fontSize: [3, 3, 3, 4],
               fontFamily: 'heading',
               letterSpacing: 'smallcaps',
               textTransform: 'uppercase',
@@ -147,10 +147,10 @@ const RiskScenarios = () => {
             }}
           >
             Carbon loss
-          </Text>
-          <Text
+          </Box>
+          <Box
             sx={{
-              fontSize: [3],
+              fontSize: [3, 3, 3, 4],
               fontFamily: 'faux',
               letterSpacing: 'faux',
               lineHeight: '1.2',
@@ -158,7 +158,7 @@ const RiskScenarios = () => {
             }}
           >
             What fraction of the carbon is lost in an event like this?
-          </Text>
+          </Box>
           <Radio
             value={0.2}
             label={'20% (low)'}
@@ -177,11 +177,15 @@ const RiskScenarios = () => {
             current={mortality}
             set={setMortality}
           />
-        </Box>
-        <Box>
-          <Text
+        </Column>
+        <Column
+          start={[1, 4, 4, 4]}
+          width={[6, 3, 3, 3]}
+          sx={{ mt: [4, 0, 0, 0] }}
+        >
+          <Box
             sx={{
-              fontSize: [3],
+              fontSize: [3, 3, 3, 4],
               fontFamily: 'heading',
               letterSpacing: 'smallcaps',
               textTransform: 'uppercase',
@@ -189,10 +193,10 @@ const RiskScenarios = () => {
             }}
           >
             Frequency
-          </Text>
-          <Text
+          </Box>
+          <Box
             sx={{
-              fontSize: [3],
+              fontSize: [3, 3, 3, 4],
               fontFamily: 'faux',
               letterSpacing: 'faux',
               lineHeight: '1.2',
@@ -200,7 +204,7 @@ const RiskScenarios = () => {
             }}
           >
             How often is an event like this likely to occur?
-          </Text>
+          </Box>
           <Radio
             value={0.1}
             label={'10% (every ten years)'}
@@ -219,8 +223,8 @@ const RiskScenarios = () => {
             current={risk}
             set={setRisk}
           />
-        </Box>
-      </Grid>
+        </Column>
+      </Row>
       <Box
         sx={{
           mt: [4],

@@ -25,18 +25,18 @@ const TechGroup = ({ name, group, data, state }) => {
         }}
       >
         <Expander id='expander' sx={{ mr: [2] }} value={expanded}></Expander>
-        <Text
+        <Box
           sx={{
             fontSize: [4],
             fontFamily: 'heading',
             letterSpacing: 'heading',
-            mb: [1],
+            mb: [2],
             maxWidth: '500px',
             display: 'inline-block',
           }}
         >
           {name}
-        </Text>
+        </Box>
       </Box>
       {expanded && !(name == 'Advanced NGCC') && (
         <Box sx={{ mb: [4] }}>
@@ -55,7 +55,7 @@ const TechGroup = ({ name, group, data, state }) => {
       )}
       {expanded && name == 'Advanced NGCC' && (
         <Box sx={{ mb: [3] }}>
-          <Text sx={{ pb: [2] }}>
+          <Box sx={{ pb: ['12px'] }}>
             This component of the energy technology has no additional
             parameters. Whereas electricity is provided by NGCC w/ CCS, thermal
             energy is directly supplied by natural gas production. Therefore,
@@ -65,7 +65,7 @@ const TechGroup = ({ name, group, data, state }) => {
             included in the net removed cost as the model is based on the
             solvent DAC system, which co-captures the emissions from natural gas
             combustion inside the high temperature thermal step.
-          </Text>
+          </Box>
         </Box>
       )}
       <Divider sx={{ my: [0] }} />

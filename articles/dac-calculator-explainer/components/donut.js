@@ -7,9 +7,9 @@ const Donut = ({ results, initWidth, innerRadius }) => {
   const [spec, setSpec] = useState(null)
   const [loaded, setLoaded] = useState(false)
   const [width, setWidth] = useState(null)
-  const context = useThemeUI()
   const container = useRef(null)
-  const theme = context.theme
+  const { theme } = useThemeUI()
+  const { rawColors: colors } = theme
 
   const updateWidth = (node) => {
     if (container.current) {
@@ -74,7 +74,7 @@ const Donut = ({ results, initWidth, innerRadius }) => {
           type: 'quantitative',
           scale: {
             domain: [0, 1],
-            range: [theme.colors.secondary, theme.colors.purple],
+            range: [colors.secondary, colors.purple],
           },
           legend: null,
         },
@@ -83,7 +83,7 @@ const Donut = ({ results, initWidth, innerRadius }) => {
 
     setSpec(vegaLite.compile(spec, { config: config }).spec)
     setLoaded(true)
-  }, [context, width])
+  }, [theme, width])
 
   const disabled = results['Total Cost [$/tCO2]'] === 'N/A'
 

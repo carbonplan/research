@@ -3,6 +3,7 @@ import { default as NextLink } from 'next/link'
 import Article from '../../components/article'
 import Reference from '../../components/reference'
 import PullQuote from '../../components/pull-quote'
+import Endnote from '../../components/endnote'
 import SectionBreak from '../../components/section-break'
 import Scenario from './components/scenario'
 import Parameters from './components/parameters'
@@ -32,7 +33,7 @@ export const sidenotes = {
     url: 'https://doi.org/10.1146/annurev.earth.031208.100206',
   },
   2: {
-    offset: -20,
+    offset: -30,
     number: 2,
     authors: 'H Herzog et al.',
     year: 2003,
@@ -51,7 +52,7 @@ export const sidenotes = {
     url: 'https://doi.org/10.1016/j.ecolecon.2007.04.013',
   },
   4: {
-    offset: 145,
+    offset: 165,
     number: 4,
     authors: 'P M Costa & C Wilson',
     year: 2000,
@@ -72,7 +73,7 @@ export const sidenotes = {
       'https://gwagner.com/wp-content/uploads/Kelleher-Wagner-AES-2018-Prescriptivism.pdf',
   },
   6: {
-    offset: 105,
+    offset: 115,
     number: 6,
     authors: 'M A Drupp et al.',
     year: 2018,
@@ -319,7 +320,7 @@ Notably, the full cost of relying on temporary carbon removal is higher than the
 
 <SectionBreak />
 
-## Credits
+<Endnote label='Credits'>
 
 Danny developed the model and wrote the first draft of the article. Jeremy implemented the model and designed the interactive web tool. Joe provided feedback on the model. All authors contributed to writing the article. The authors thank Gernot Wagner, Frances Moore, Toly Rinberg, and Rafael Broze for helpful feedback.
 
@@ -327,10 +328,12 @@ Please cite as:
 
 D Cullenward, J Hamman, J Freeman (2020) “The cost of temporary carbon removal” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/permanence-calculator-explainer</span>
 
-## Terms
+</Endnote>
+
+<Endnote label='Terms'>
 
 CarbonPlan received a grant from the ClimateWorks Foundation to support this work. ClimateWorks did not exercise any control over the output. CarbonPlan is solely responsible for the content of this writeup, which does not necessarily reflect the views of ClimateWorks, those who provided feedback, or any other individuals or organizations.
 
-### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
+</Endnote>
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>
