@@ -97,8 +97,10 @@ const Entry = ({ info, first, final }) => {
                   transition: 'color 0.15s',
                   textDecoration: 'none',
                   color: color,
-                  '&:hover': {
-                    color: 'primary',
+                  '@media (hover: hover) and (pointer: fine)': {
+                    '&:hover': {
+                      color: 'primary',
+                    },
                   },
                 }}
                 tabIndex='-1'

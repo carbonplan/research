@@ -178,8 +178,10 @@ const FireMap = () => {
             pl: [2],
             cursor: 'pointer',
             color: 'secondary',
-            '&:hover': {
-              color: 'primary',
+            '@media (hover: hover) and (pointer: fine)': {
+              '&:hover': {
+                color: 'primary',
+              },
             },
             transition: '0.2s',
           }}
@@ -195,8 +197,10 @@ const FireMap = () => {
             pl: [2],
             cursor: 'pointer',
             color: 'secondary',
-            '&:hover': {
-              color: 'primary',
+            '@media (hover: hover) and (pointer: fine)': {
+              '&:hover': {
+                color: 'primary',
+              },
             },
             transition: '0.2s',
           }}

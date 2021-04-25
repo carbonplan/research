@@ -116,7 +116,7 @@ const Curve = ({
         </Column>
       </Row>
       <Row columns={[6, 6, 5, 5]}>
-        <Column start={[1]} width={[1]}>
+        <Column start={[1]} width={[2, 1, 1, 1]}>
           <Box
             sx={{
               borderStyle: 'solid',
@@ -151,7 +151,7 @@ const Curve = ({
             {units}
           </Box>
         </Column>
-        <Column start={[2]} width={[5, 5, 4, 4]}>
+        <Column start={[3, 2, 2, 2]} width={[5, 5, 4, 4]}>
           <Box sx={{ mt: ['5px'], ml: ['-10px'] }}>
             <Box ref={container} sx={{ height: '200px', width: '100%' }} />
           </Box>

@@ -239,7 +239,7 @@ const Cycle = ({ tag, data, labels, intro }) => {
   return (
     <Box sx={{ mt: [6, 6, 6, 7], mb: [6, 6, 6, 7] }}>
       <Row columns={[6]}>
-        <Column start={[1]} width={[5, 5, 5, 5]}>
+        <Column start={[1]} width={[6, 5, 5, 5]}>
           <Box
             sx={{
               width: ['100%'],

@@ -94,7 +94,7 @@ const Control = ({
         </Column>
       </Row>
       <Row columns={[6, 6, 5, 5]}>
-        <Column start={[1]} width={[1]}>
+        <Column start={[1]} width={[2, 1, 1, 1]}>
           <Box
             sx={{
               borderStyle: 'solid',
@@ -130,7 +130,7 @@ const Control = ({
             {units}
           </Box>
         </Column>
-        <Column start={[2]} width={[5, 5, 4, 4]}>
+        <Column start={[3, 2, 2, 2]} width={[4, 5, 4, 4]}>
           <Slider
             sx={{
               width: ['100%'],
