@@ -1,4 +1,4 @@
-import { Box, Grid, Text } from 'theme-ui'
+import { Box, Grid } from 'theme-ui'
 import { format } from 'd3-format'
 import Donut from './donut'
 import Bar from './bar'
@@ -8,8 +8,8 @@ const sx = {
     fontFamily: 'heading',
     letterSpacing: 'smallcaps',
     textTransform: 'uppercase',
-    fontSize: [2, 2, 2],
-    pt: [2],
+    fontSize: [2, 2, 2, 3],
+    pt: [2, 2, 2, 3],
     mt: [1],
     pb: [0],
   },
@@ -26,7 +26,7 @@ const sx = {
     letterSpacing: 'mono',
     textTransform: 'uppercase',
     color: 'secondary',
-    fontSize: [4],
+    fontSize: [4, 4, 4, 5],
     mb: [1, 0, 0],
   },
   count: {
@@ -34,7 +34,7 @@ const sx = {
     letterSpacing: 'mono',
     textTransform: 'uppercase',
     color: 'secondary',
-    fontSize: [2],
+    fontSize: [2, 2, 2, 3],
     mb: [2, 0, 0],
   },
   group: {
@@ -52,76 +52,81 @@ const sx = {
 
 const Numbers = () => {
   return (
-    <Box sx={{ maxWidth: '100%', mt: [5], mb: [4] }}>
+    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
       <Grid
-        sx={{ width: '100%', columnGap: ['5%'], rowGap: [1] }}
+        sx={{ width: '100%', columnGap: [4, 5, 5, 6], rowGap: [1] }}
         columns={[3]}
       >
         <Box sx={{ ...sx.group }}>
-          <Text sx={sx.label}>Volume</Text>
-          <Text sx={sx.valueBig}>165M</Text>
-          <Text sx={sx.count}>(n=189)</Text>
+          <Box sx={sx.label}>Volume</Box>
+          <Box sx={sx.valueBig}>165M</Box>
+          <Box sx={sx.count}>(n=189)</Box>
         </Box>
         <Box sx={{ ...sx.group }}>
-          <Text sx={sx.label}>Analyzed</Text>
-          <Text sx={sx.valueBig}>154M</Text>
-          <Text sx={sx.count}>(n=161)</Text>
+          <Box sx={sx.label}>Analyzed</Box>
+          <Box sx={sx.valueBig}>154M</Box>
+          <Box sx={sx.count}>(n=161)</Box>
         </Box>
         <Box sx={{ ...sx.group }}>
-          <Text sx={sx.label}>Excluded</Text>
-          <Text sx={sx.valueBig}>11M</Text>
-          <Text sx={sx.count}>(n=28)</Text>
-        </Box>
-      </Grid>
-      <Grid
-        sx={{ mt: [1, 4, 4], width: '100%', columnGap: ['5%'], rowGap: [1] }}
-        columns={[2, 4, 4]}
-      >
-        <Box sx={{ ...sx.group }}>
-          <Text sx={{ ...sx.label, pb: [1] }}>
-            Unique
-            <br />
-            applicants
-          </Text>
-          <Text sx={sx.valueSmall}>72</Text>
-        </Box>
-        <Box sx={{ ...sx.group }}>
-          <Text sx={{ ...sx.label, pb: [1] }}>
-            Protocols
-            <br />
-            represented
-          </Text>
-          <Text sx={sx.valueSmall}>45</Text>
-        </Box>
-        <Box sx={{ ...sx.group }}>
-          <Text sx={{ ...sx.label, pb: [1] }}>
-            Registries
-            <br />
-            represented
-          </Text>
-          <Text sx={sx.valueSmall}>16</Text>
-        </Box>
-        <Box sx={{ ...sx.group }}>
-          <Text sx={{ ...sx.label, pb: [1] }}>
-            Listed on
-            <br />
-            registry
-          </Text>
-          <Text sx={sx.valueSmall}>28%</Text>
+          <Box sx={sx.label}>Excluded</Box>
+          <Box sx={sx.valueBig}>11M</Box>
+          <Box sx={sx.count}>(n=28)</Box>
         </Box>
       </Grid>
       <Grid
         sx={{
-          mt: [1, '24px', '24px'],
+          mt: [1, 4, 4, 5],
           width: '100%',
-          columnGap: ['5%'],
+          columnGap: [4, 5, 5, 6],
+          rowGap: [1],
+        }}
+        columns={[2, 4, 4]}
+      >
+        <Box sx={{ ...sx.group }}>
+          <Box sx={{ ...sx.label, pb: [1] }}>
+            Unique
+            <br />
+            applicants
+          </Box>
+          <Box sx={sx.valueSmall}>72</Box>
+        </Box>
+        <Box sx={{ ...sx.group }}>
+          <Box sx={{ ...sx.label, pb: [1] }}>
+            Protocols
+            <br />
+            represented
+          </Box>
+          <Box sx={sx.valueSmall}>45</Box>
+        </Box>
+        <Box sx={{ ...sx.group }}>
+          <Box sx={{ ...sx.label, pb: [1] }}>
+            Registries
+            <br />
+            represented
+          </Box>
+          <Box sx={sx.valueSmall}>16</Box>
+        </Box>
+        <Box sx={{ ...sx.group }}>
+          <Box sx={{ ...sx.label, pb: [1] }}>
+            Listed on
+            <br />
+            registry
+          </Box>
+          <Box sx={sx.valueSmall}>28%</Box>
+        </Box>
+      </Grid>
+      <Grid
+        sx={{
+          mt: [1, 4, 4, 5],
+          width: '100%',
+          columnGap: [4, 5, 5, 6],
           rowGap: [1],
         }}
         columns={[3, 6, 6]}
       >
         <Box sx={{ ...sx.group }}>
-          <Text sx={{ ...sx.label, pb: [1] }}>Forests</Text>
-          <Text sx={{ ...sx.valueSmall, color: 'green' }}>58%</Text>
+          <Box sx={{ ...sx.label, pb: [1] }}>Forests</Box>
+          <Box sx={{ ...sx.valueSmall, color: 'green' }}>58%</Box>
           <Box sx={sx.bar}>
             <Bar
               data={[0.594]}
@@ -132,36 +137,36 @@ const Numbers = () => {
           </Box>
         </Box>
         <Box sx={{ ...sx.group }}>
-          <Text sx={{ ...sx.label, pb: [1] }}>Biomass</Text>
-          <Text sx={{ ...sx.valueSmall, color: 'yellow' }}>19%</Text>
+          <Box sx={{ ...sx.label, pb: [1] }}>Biomass</Box>
+          <Box sx={{ ...sx.valueSmall, color: 'yellow' }}>19%</Box>
           <Box sx={sx.bar}>
             <Bar data={[0.19]} opacity={[0.9, 0.2]} color='yellow' />
           </Box>
         </Box>
         <Box sx={{ ...sx.group }}>
-          <Text sx={{ ...sx.label, pb: [1] }}>Soils</Text>
-          <Text sx={{ ...sx.valueSmall, color: 'orange' }}>9%</Text>
+          <Box sx={{ ...sx.label, pb: [1] }}>Soils</Box>
+          <Box sx={{ ...sx.valueSmall, color: 'orange' }}>9%</Box>
           <Box sx={sx.bar}>
             <Bar data={[0.094]} opacity={[0.9, 0.2]} color='orange' />
           </Box>
         </Box>
         <Box sx={{ ...sx.group }}>
-          <Text sx={{ ...sx.label, pb: [1] }}>Mineral</Text>
-          <Text sx={{ ...sx.valueSmall, color: 'grey' }}>8%</Text>
+          <Box sx={{ ...sx.label, pb: [1] }}>Mineral</Box>
+          <Box sx={{ ...sx.valueSmall, color: 'grey' }}>8%</Box>
           <Box sx={sx.bar}>
             <Bar data={[0.077]} opacity={[0.9, 0.2]} color='grey' />
           </Box>
         </Box>
         <Box sx={{ ...sx.group }}>
-          <Text sx={{ ...sx.label, pb: [1] }}>DAC</Text>
-          <Text sx={{ ...sx.valueSmall, color: 'purple' }}>6%</Text>
+          <Box sx={{ ...sx.label, pb: [1] }}>DAC</Box>
+          <Box sx={{ ...sx.valueSmall, color: 'purple' }}>6%</Box>
           <Box sx={sx.bar}>
             <Bar data={[0.041]} opacity={[0.9, 0.2]} color='purple' />
           </Box>
         </Box>
         <Box sx={{ ...sx.group }}>
-          <Text sx={{ ...sx.label, pb: [1] }}>Ocean</Text>
-          <Text sx={{ ...sx.valueSmall, color: 'teal' }}>{'<'}1%</Text>
+          <Box sx={{ ...sx.label, pb: [1] }}>Ocean</Box>
+          <Box sx={{ ...sx.valueSmall, color: 'teal' }}>{'<'}1%</Box>
           <Box sx={sx.bar}>
             <Bar data={[0.004]} opacity={[0.9, 0.2]} color='teal' />
           </Box>

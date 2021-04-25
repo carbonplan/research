@@ -1,4 +1,5 @@
-import { Box, Divider, Grid, Text } from 'theme-ui'
+import { Box, Divider, Grid } from 'theme-ui'
+import { Row, Column } from '@carbonplan/components'
 import Donut from './donut'
 import LegendWithValues from './legend-with-values'
 
@@ -23,13 +24,9 @@ const ParameterScenario = ({
   }
 
   return (
-    <Box sx={{ mt: [5], mb: [3], maxWidth: '650px' }}>
-      <Grid
-        gap={[0, 0, '32px']}
-        columns={[1, 1, '200px 160px 1fr']}
-        sx={{ pb: [2] }}
-      >
-        <Box>
+    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+      <Row columns={[6]} sx={{ pb: [2] }}>
+        <Column start={[1]} width={[6, 2, 2, 2]}>
           <Divider sx={{ mb: [3] }} />
           <Box>
             <Value>{capEx}</Value>
@@ -49,41 +46,41 @@ const ParameterScenario = ({
               <Label units='%'>Leakage Rate</Label>
             </Box>
           )}
-        </Box>
-        <Box>
+        </Column>
+        <Column start={[1, 3, 3, 3]} width={[3, 2, 2, 2]}>
           <Divider />
           <Box
             sx={{
-              textAlign: ['left', 'left', 'center'],
+              textAlign: ['left', 'center', 'center'],
               mt: ['13px', '13px', 4],
             }}
           >
             <Donut results={results} initWidth={150} />
           </Box>
-        </Box>
-        <Box>
+        </Column>
+        <Column start={[4, 5, 5, 5]} width={[3, 2, 2, 2]}>
           <Divider />
-          <Text
+          <Box
             sx={{
               fontFamily: 'heading',
               letterSpacing: 'smallcaps',
-              fontSize: [3],
+              fontSize: [3, 3, 3, 4],
               mt: [3],
               textTransform: 'uppercase',
             }}
           >
             {energySource}
-          </Text>
-          <Text
+          </Box>
+          <Box
             sx={{
               color: totalCost === 'N/A' ? 'secondary' : 'purple',
-              fontSize: [6],
+              fontSize: [6, 6, 6, 7],
               fontFamily: 'mono',
             }}
           >
             ${totalCost}
-          </Text>
-          <Text
+          </Box>
+          <Box
             sx={{
               textAlign: 'left',
               color: 'text',
@@ -92,26 +89,26 @@ const ParameterScenario = ({
           >
             {totalCost === 'N/A' ? 'No Net Removal' : 'Net Removed Cost'}
             {!(totalCost === 'N/A') && (
-              <Text
+              <Box
                 sx={{
-                  ml: [2],
-                  display: 'inline-block',
+                  ml: [0],
+                  display: 'block',
                   color: 'secondary',
                 }}
               >
                 $/tCO₂eq
-              </Text>
+              </Box>
             )}
-          </Text>
+          </Box>
           <Box
             sx={{
-              mt: leakage ? [0, 0, '59px'] : [0, 0, '-2px'],
+              mt: leakage ? [0, '56px', '59px'] : [0, '-2px', '-2px'],
             }}
           >
             <LegendWithValues results={results} />
           </Box>
-        </Box>
-      </Grid>
+        </Column>
+      </Row>
       <Divider sx={{ mt: [0, 0, '-4px'] }} />
     </Box>
   )
@@ -119,36 +116,35 @@ const ParameterScenario = ({
 
 function Value({ children }) {
   return (
-    <Text
+    <Box
       sx={{
         fontFamily: 'mono',
         color: 'purple',
-        fontSize: [3],
+        fontSize: [3, 3, 3, 4],
         pb: [1],
         borderStyle: 'solid',
         borderColor: 'muted',
         borderWidth: '0px',
         borderBottomWidth: '1px',
-        maxWidth: '200px',
       }}
     >
       {children}
-    </Text>
+    </Box>
   )
 }
 
 function Label({ units, children }) {
   return (
-    <Text
+    <Box
       sx={{
         fontFamily: 'body',
         color: 'text',
-        fontSize: [1],
+        fontSize: [1, 1, 1, 2],
         pt: [1],
       }}
     >
       {children}
-      <Text
+      <Box
         as='span'
         sx={{
           color: 'secondary',
@@ -156,8 +152,8 @@ function Label({ units, children }) {
         }}
       >
         {units}
-      </Text>
-    </Text>
+      </Box>
+    </Box>
   )
 }
 

@@ -30,7 +30,7 @@ const sx = {
 
 const Distributions = () => {
   return (
-    <Box sx={{ mt: [5], mb: [3], maxWidth: ['100%', '650px', '100%'] }}>
+    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
       <Box sx={{ my: [4] }}>
         <Box sx={sx.label}>
           Volume <Box sx={sx.units}>tCO₂</Box>
@@ -44,7 +44,7 @@ const Distributions = () => {
           log={true}
         />
       </Box>
-      <Box sx={{ my: [4] }}>
+      <Box sx={{ mt: [5] }}>
         <Box sx={sx.label}>
           Permanence <Box sx={sx.units}>years</Box>
         </Box>

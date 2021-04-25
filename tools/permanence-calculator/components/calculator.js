@@ -1,11 +1,13 @@
-import { Box, Text, Grid, Container, Link, Divider, Styled } from 'theme-ui'
+import { Box, Grid, Container, Link, Divider, Themed } from 'theme-ui'
 import { useState, useEffect } from 'react'
+import { piecewise, quantize, interpolateNumber } from 'd3-interpolate'
+import { Row, Column, Links } from '@carbonplan/components'
 import Slider from './controls/slider'
 import Curve from './controls/curve'
 import Timeline from './timeline'
 import Cost from './cost'
-import { default as NextLink } from 'next/link'
-import { piecewise, quantize, interpolateNumber } from 'd3-interpolate'
+
+const { InternalLink } = Links
 
 const Calculator = () => {
   const initOptions = {
@@ -113,9 +115,8 @@ const Calculator = () => {
         >
           <Timeline options={options} />
         </Box>
-        <Grid
-          columns={[1, 1, 2]}
-          gap={['16px', '16px', '148px']}
+        <Row
+          columns={[6, 6, 10, 10]}
           sx={{
             backgroundColor: ['background', 'background', 'transparent'],
             pb: [3, 3, 0],
@@ -126,23 +127,28 @@ const Calculator = () => {
             borderTopWidth: ['1px', '1px', '0px'],
           }}
         >
-          <Box />
-          <Cost {...options} />
-        </Grid>
+          <Column start={[1, 1, 7, 7]} width={[6, 6, 4, 4]}>
+            <Cost {...options} />
+          </Column>
+        </Row>
       </Box>
       <Box>
-        <Grid
-          columns={[1, 1, '500px 1fr']}
+        <Row
+          columns={[6, 6, 10, 10]}
           sx={{
             zIndex: [-1],
           }}
         >
-          <Box sx={{ position: 'relative' }}>
+          <Column
+            start={[1, 1, 1, 1]}
+            width={[6, 6, 5, 5]}
+            sx={{ position: 'relative' }}
+          >
             <Box
               sx={{
                 position: 'relative',
-                top: ['0px', '0px', '-264px'],
-                marginBottom: ['0px', '0px', '-264px'],
+                top: ['0px', '0px', '-296px', '-378px'],
+                marginBottom: ['0px', '0px', '-264px', '-264px'],
               }}
             >
               <Slider
@@ -206,52 +212,51 @@ const Calculator = () => {
                 scales={{ x: [0, 100], y: [0, 1000] }}
               />
             </Box>
-          </Box>
-          <Box />
-        </Grid>
-        <Box sx={{ maxWidth: ['500px'], mb: [0] }}>
-          <Divider />
-          <Styled.h2>Methods</Styled.h2>
-          <Styled.p>
-            We model a decision-maker seeking to achieve permanent climate
-            benefits, whether by paying directly for permanent CO₂ removal or by
-            sequentially renewing temporary carbon removal projects over a
-            1000-year period. We assume that temporary projects are renewed at
-            the end of each project period. At any point, the decision-maker can
-            switch to a permanent carbon removal alternative and stop purchasing
-            renewals (or never, if this option is turned off).
-          </Styled.p>
-          <Styled.p>
-            If project risk is greater than 0%, each project has a probability
-            of failing each year according to an independent Bernoulli trial,
-            and in the event of a failure, another temporary project is
-            immediately purchased.
-          </Styled.p>
-          <Styled.p>
-            We calculate the amount that must be budgeted to sustain the
-            temporary removals over time, including the cost of the eventual
-            permanent solution if and whenever the switch is made. All future
-            costs are discounted using the specified discount rate and reported
-            in net present value terms to compare with the upfront cost of the
-            temporary carbon removal project. The model is deterministic except
-            for the stochastic project failure. For every parameter setting, we
-            run the model 50 times and report the mean and standard deviation.
-          </Styled.p>
-          <Styled.p>
-            For more details, read our{' '}
-            <NextLink
-              href={'/research/permanence-calculator-explainer'}
-              passHref={true}
-            >
-              <Link>article</Link>
-            </NextLink>{' '}
-            on this calculator.
-          </Styled.p>
-          <Styled.h2>Support</Styled.h2>
-          <Styled.p>
-            This work was generously funded by the ClimateWorks Foundation.
-          </Styled.p>
-        </Box>
+          </Column>
+        </Row>
+        <Row columns={[6, 6, 10, 10]} sx={{ mb: [0], mt: [2, 3, -4, -8] }}>
+          <Column start={[1, 1, 1, 1]} width={[6, 6, 5, 5]}>
+            <Divider />
+            <Themed.h2>Methods</Themed.h2>
+            <Themed.p>
+              We model a decision-maker seeking to achieve permanent climate
+              benefits, whether by paying directly for permanent CO₂ removal or
+              by sequentially renewing temporary carbon removal projects over a
+              1000-year period. We assume that temporary projects are renewed at
+              the end of each project period. At any point, the decision-maker
+              can switch to a permanent carbon removal alternative and stop
+              purchasing renewals (or never, if this option is turned off).
+            </Themed.p>
+            <Themed.p>
+              If project risk is greater than 0%, each project has a probability
+              of failing each year according to an independent Bernoulli trial,
+              and in the event of a failure, another temporary project is
+              immediately purchased.
+            </Themed.p>
+            <Themed.p>
+              We calculate the amount that must be budgeted to sustain the
+              temporary removals over time, including the cost of the eventual
+              permanent solution if and whenever the switch is made. All future
+              costs are discounted using the specified discount rate and
+              reported in net present value terms to compare with the upfront
+              cost of the temporary carbon removal project. The model is
+              deterministic except for the stochastic project failure. For every
+              parameter setting, we run the model 50 times and report the mean
+              and standard deviation.
+            </Themed.p>
+            <Themed.p>
+              For more details, read our{' '}
+              <InternalLink href={'/research/permanence-calculator-explainer'}>
+                article
+              </InternalLink>{' '}
+              on this calculator.
+            </Themed.p>
+            <Themed.h2>Support</Themed.h2>
+            <Themed.p>
+              This work was generously funded by the ClimateWorks Foundation.
+            </Themed.p>
+          </Column>
+        </Row>
       </Box>
     </Box>
   )

@@ -1,7 +1,9 @@
-import { Box, Styled, Link } from 'theme-ui'
-import { default as NextLink } from 'next/link'
+import { Box, Link } from 'theme-ui'
+import { Links } from '@carbonplan/components'
 import Tool from '../../components/tool'
 import Calculator from './components/calculator'
+
+const { InternalLink } = Links
 
 const Index = () => {
   const meta = {
@@ -13,28 +15,26 @@ const Index = () => {
       'How the cost of direct air capture varies under different energy scenarios.',
   }
 
-  const title = <Styled.h1>DAC cost calculator</Styled.h1>
+  const title = 'DAC cost calculator'
 
   const description = (
-    <Box sx={{ maxWidth: '700px', mb: [0, 0, 4] }}>
-      <Styled.p>
-        The cost of direct air capture (DAC) depends on several factors. Our
-        interactive calculator combines key parameters and computes the cost of
-        net removal. Explore the tool, read our{' '}
-        <NextLink href={'/research/dac-calculator-explainer'} passHref={true}>
-          <Link>article</Link>
-        </NextLink>
-        , and read the{' '}
-        <Link
-          href={
-            'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/full'
-          }
-        >
-          paper
-        </Link>{' '}
-        this work is based on.
-      </Styled.p>
-    </Box>
+    <span>
+      The cost of direct air capture (DAC) depends on several factors. Our
+      calculator combines key parameters and computes the cost of net removal.
+      Explore the tool, read our{' '}
+      <InternalLink href={'/research/dac-calculator-explainer'}>
+        article
+      </InternalLink>
+      , and read the{' '}
+      <Link
+        href={
+          'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/full'
+        }
+      >
+        paper
+      </Link>{' '}
+      this work is based on.
+    </span>
   )
 
   return (

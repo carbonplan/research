@@ -49,32 +49,54 @@ const data = {
 }
 
 const descriptions = {
-  'Type 1': <Box>Avoided emissions without storage</Box>,
+  'Type 1': (
+    <Box>
+      Avoided emissions{' '}
+      <Box as='br' sx={{ display: ['initial', 'none', 'none', 'none'] }} />
+      without storage
+    </Box>
+  ),
   'Type 2': (
     <Box>
-      Avoided emissions with{' '}
+      Avoided emissions with
+      <Box as='br' sx={{ display: ['initial', 'none', 'none', 'none'] }} />{' '}
       <Box sx={{ display: 'inline-block', color: 'text' }}>short</Box> storage
     </Box>
   ),
   'Type 3': (
     <Box>
-      Avoided emissions with{' '}
+      Avoided emissions with
+      <Box as='br' sx={{ display: ['initial', 'none', 'none', 'none'] }} />{' '}
       <Box sx={{ display: 'inline-block', color: 'text' }}>long</Box> storage
     </Box>
   ),
   'Type 4': (
     <Box>
-      Carbon removal with{' '}
+      Carbon removal{' '}
+      <Box as='br' sx={{ display: ['none', 'none', 'none', 'initial'] }} /> with{' '}
+      <Box as='br' sx={{ display: ['initial', 'none', 'none', 'none'] }} />{' '}
       <Box sx={{ display: 'inline-block', color: 'text' }}>short</Box> storage
     </Box>
   ),
   'Type 5': (
     <Box>
-      Carbon removal with{' '}
+      Carbon removal{' '}
+      <Box
+        as='br'
+        sx={{ display: ['none', 'initial', 'initial', 'initial'] }}
+      />
+      with
+      <Box as='br' sx={{ display: ['initial', 'none', 'none', 'none'] }} />{' '}
       <Box sx={{ display: 'inline-block', color: 'text' }}>long</Box> storage
     </Box>
   ),
-  'Type 2/4': <Box>Cannot be confirmed (e.g. IFM projects)</Box>,
+  'Type 2/4': (
+    <Box>
+      Cannot be confirmed{' '}
+      <Box as='br' sx={{ display: ['initial', 'none', 'none', 'none'] }} />
+      (e.g. IFM projects)
+    </Box>
+  ),
 }
 
 const types = ['Type 1', 'Type 2', 'Type 3', 'Type 4', 'Type 5', 'Type 2/4']
@@ -111,7 +133,7 @@ const Oxford = () => {
   }
 
   return (
-    <Box sx={{ maxWidth: ['100%', '650px', '100%'], mt: [5], mb: [4] }}>
+    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
       <Box
         sx={{
           display: ['none', 'inherit', 'inherit'],
@@ -206,13 +228,13 @@ const Oxford = () => {
         </Box>
       </Box>
       <Grid
-        sx={{ mt: [1], width: '100%', columnGap: ['5%'], rowGap: [1] }}
+        sx={{ mt: [1], width: '100%', columnGap: [4, 5, 5, 6], rowGap: [1] }}
         columns={[2, 6, 6]}
       >
         {types.map((t, ti) => {
           return (
             <Box key={ti} sx={{ ...sx.group }}>
-              <Box sx={{ ...sx.label, pb: [1] }}>{t}</Box>
+              <Box sx={{ ...sx.label, pb: [1], width: '100%' }}>{t}</Box>
               <Box sx={{ fontSize: [1], color: 'secondary' }}>
                 {descriptions[t]}
               </Box>

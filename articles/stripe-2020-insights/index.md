@@ -2,6 +2,7 @@ import Article from '../../components/article'
 import SectionBreak from '../../components/section-break'
 import PullQuote from '../../components/pull-quote'
 import FigureCaption from '../../components/figure-caption'
+import Endnote from '../../components/endnote'
 import Inline from '../../components/inline'
 import Question from './components/icons/question'
 import Check from './components/icons/check'
@@ -167,7 +168,7 @@ To improve our own analysis capabilities, we are developing open source methods 
 
 <SectionBreak />
 
-## Credits
+<Endnote label='Credits'>
 
 Danny wrote the first draft of the article. Joe and Jeremy designed and implemented the graphics. All authors contributed to analyzing the data and writing the article.
 
@@ -175,10 +176,12 @@ Please cite as:
 
 D Cullenward, J Hamman, J Freeman (2020) “Insights from our first project reports” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/stripe-2020-insights</span>
 
-## Terms
+</Endnote>
+
+<Endnote label='Terms'>
 
 CarbonPlan and Stripe entered into an agreement in which Stripe shared the project proposals it received in response to its 2020 Negative Emissions Purchase in advance of their public release. We provided feedback to Stripe on its program and were compensated by Stripe for our time. Our work was independent and Stripe did not exercise any control over it. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not represent the views of Stripe or any other other organizations.
 
-export default ({ children }) => <Article meta={meta}>{children}</Article>
+</Endnote>
 
-### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
+export default ({ children }) => <Article meta={meta}>{children}</Article>

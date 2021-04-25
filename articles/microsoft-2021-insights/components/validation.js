@@ -67,27 +67,26 @@ const sx = {
     letterSpacing: 'smallcaps',
     textTransform: 'uppercase',
     pb: [0],
-    fontSize: [2, 2, 2],
+    fontSize: [2, 2, 2, 3],
   },
 }
 
 const Validation = () => {
   return (
     <Box
+      as='figure'
       sx={{
-        width: ['100%'],
-        maxWidth: ['100%', '650px', '100%'],
-        mt: [5],
-        mb: [3],
+        mt: [6, 6, 6, 7],
+        mb: [4, 4, 4, 5],
       }}
     >
       <Box sx={{ display: ['none', 'initial', 'initial'] }}>
         <Grid columns={[5]} sx={{ columnGap: [3, 4, 4], mb: [2] }}>
-          <Text sx={sx.label}>Mechanism</Text>
-          <Text sx={sx.label}>Volume</Text>
-          <Text sx={sx.label}>Negativity</Text>
-          <Text sx={sx.label}>Permanence</Text>
-          <Text sx={sx.label}>Additionality</Text>
+          <Box sx={sx.label}>Mechanism</Box>
+          <Box sx={sx.label}>Volume</Box>
+          <Box sx={sx.label}>Negativity</Box>
+          <Box sx={sx.label}>Permanence</Box>
+          <Box sx={sx.label}>Additionality</Box>
           <Box />
         </Grid>
 
@@ -143,7 +142,7 @@ const Validation = () => {
         {metrics.map((m, i) => {
           return (
             <Box key={i}>
-              <Text sx={{ ...sx.label, mb: [2] }}>{m}</Text>
+              <Box sx={{ ...sx.label, mb: [2] }}>{m}</Box>
               <Grid columns={[6]} sx={{ columnGap: [3, 4, 4], mb: ['24px'] }}>
                 {categories.map((c, j) => {
                   return (

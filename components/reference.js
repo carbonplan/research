@@ -27,7 +27,7 @@ const Reference = ({ color, data }) => {
 
   return (
     <Box as='span' sx={{ userSelect: 'none' }}>
-      <Text
+      <Box
         as='span'
         onMouseOver={toggleOn}
         onMouseOut={toggleOff}
@@ -36,29 +36,36 @@ const Reference = ({ color, data }) => {
           pr: [1],
           fontSize: ['17px'],
           cursor: 'pointer',
-          color: [
-            selectedMobile ? color : 'text',
-            selectedMobile ? color : 'text',
-            selected ? color : 'text',
-          ],
+          color: [color, color, selected ? color : 'text'],
           transition: 'color 0.2s ease-in-out',
         }}
       >
         <sup>{data.number}</sup>
-      </Text>
+      </Box>
       <Wrapper url={data.url}>
-        <Text
+        <Box
           as='span'
           onMouseOver={toggleOn}
           onMouseOut={toggleOff}
           sx={{
-            float: ['none', 'none', 'right'],
+            float: ['none', 'none', 'left'],
             position: ['initial', 'initial', 'relative'],
             mt: [3, 3, '-250px'],
             mb: [3, 3, 0],
+            ml: ['calc(100vw / 6 - 2px)', 'calc(100vw / 8 - 2px)', 0, 0],
             top: ['0px', '0px', `${250 + data.offset}px`],
-            left: ['0px', '0px', '344px'],
-            maxWidth: '250px',
+            left: [
+              '0px',
+              '0px',
+              'calc(7 * 100vw / 12 - 26px)',
+              'min(calc(7 * 100vw / 12 - 32px), 1085px)',
+            ],
+            width: [
+              'calc(5 * 100vw / 6 - 30px)',
+              'calc(5 * 100vw / 8 - 42px)',
+              'calc(2 * 100vw / 12 - 18px)',
+              'min(calc(2 * 100vw / 12 - 52px), 272px)',
+            ],
             cursor: 'pointer',
             display: [
               selectedMobile ? 'block' : 'none',
@@ -67,11 +74,11 @@ const Reference = ({ color, data }) => {
             ],
           }}
         >
-          <Text
+          <Box
             as='span'
             sx={{
               fontFamily: 'body',
-              fontSize: [1],
+              fontSize: [1, 1, '13px', '15px'],
               lineHeight: 1.25,
               letterSpacing: '0.0125em',
               color: color,
@@ -80,7 +87,7 @@ const Reference = ({ color, data }) => {
               transition: 'opacity 0.2s ease-in-out',
             }}
           >
-            <Text
+            <Box
               as='span'
               sx={{
                 ml: ['-12px'],
@@ -90,8 +97,8 @@ const Reference = ({ color, data }) => {
               }}
             >
               {data.number}
-            </Text>
-            <Text
+            </Box>
+            <Box
               as='span'
               sx={{
                 ml: [0, 0, '7px'],
@@ -104,9 +111,9 @@ const Reference = ({ color, data }) => {
               {data.authors} {data.year ? `(${data.year})` : ''} {data.title}{' '}
               <i>{data.journal}</i>{' '}
               {data.editors ? `edited by ${data.editors}` : ''}
-            </Text>
-          </Text>
-        </Text>
+            </Box>
+          </Box>
+        </Box>
       </Wrapper>
     </Box>
   )

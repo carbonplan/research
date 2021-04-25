@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Box, Divider, Grid, Text, useThemeUI } from 'theme-ui'
+import { Row, Column } from '@carbonplan/components'
 import ParameterGroup from './parameter-group.js'
 import TechGroup from './tech-group.js'
 import Donut from './charts/donut.js'
@@ -114,7 +115,6 @@ const Calculator = () => {
         sx={{
           position: 'sticky',
           top: '47px',
-          my: [3],
           mb: ['-32px', '-32px', 0],
           zIndex: 500,
           pointerEvents: 'none',
@@ -122,169 +122,181 @@ const Calculator = () => {
           ml: ['-16px', '-32px', 0],
         }}
       >
-        <Grid
+        <Row
+          columns={[6, 10]}
           sx={{
             mb: [4],
           }}
-          gap={[0, 0, '100px']}
-          columns={[1, 1, 'minmax(600px,700px) minmax(300px,400px)']}
         >
-          <Box sx={{ mt: [2] }}>
-            <Divider sx={{ my: [0] }} />
+          <Column start={[1, 1]} width={[6, 6]}>
+            <Box sx={{ mt: [2], mb: [3, 3, 0] }}>
+              <Divider sx={{ my: [0] }} />
+              <Box
+                sx={{
+                  py: [2],
+                  pb: ['24px', '24px', '25px'],
+                  backgroundColor: 'background',
+                  pointerEvents: 'all',
+                  px: [3, 5, 0],
+                }}
+              >
+                <Energy
+                  key='energy'
+                  params={{ state: state['energy'] }}
+                  reset={reset}
+                ></Energy>
+                <Box
+                  sx={{
+                    display: ['initial', 'initial', 'none'],
+                  }}
+                >
+                  <Box
+                    sx={{
+                      textAlign: 'left',
+                      color: cost < 0 ? 'secondary' : 'purple',
+                      fontSize: ['42px'],
+                      fontFamily: 'mono',
+                      mt: '-70px',
+                      float: 'right',
+                    }}
+                  >
+                    ${cost < 0 ? 'N/A' : cost}
+                  </Box>
+                  <Box sx={{ float: 'right', mt: '-18px' }}>
+                    {cost < 0 ? 'No Net Removal' : 'Net Removed Cost'}
+                  </Box>
+                </Box>
+              </Box>
+              <Divider sx={{ my: [0] }} />
+            </Box>
+          </Column>
+          <Column start={[1, 8]} width={[6, 3]}>
             <Box
               sx={{
-                py: [1],
-                pb: ['20px', '20px', '25px'],
-                backgroundColor: 'background',
+                display: ['none', 'none', 'inherit'],
                 pointerEvents: 'all',
-                px: [3, 4, 0],
               }}
             >
-              <Energy
-                key='energy'
-                params={{ state: state['energy'] }}
-                reset={reset}
-              ></Energy>
-              <Box
-                sx={{
-                  display: ['initial', 'initial', 'none'],
-                }}
-              >
-                <Text
+              <Divider />
+              <Box>
+                <Box
                   sx={{
-                    textAlign: 'left',
-                    color: cost < 0 ? 'secondary' : 'purple',
-                    fontSize: ['42px'],
-                    fontFamily: 'mono',
-                    mt: '-70px',
-                    float: 'right',
+                    mb: [3],
                   }}
                 >
-                  ${cost < 0 ? 'N/A' : cost}
-                </Text>
-                <Text sx={{ float: 'right', mt: '-18px' }}>
-                  {cost < 0 ? 'No Net Removal' : 'Net Removed Cost'}
-                </Text>
-              </Box>
-            </Box>
-            <Divider sx={{ my: [0] }} />
-          </Box>
-          <Box
-            sx={{
-              display: ['none', 'none', 'inherit'],
-              pointerEvents: 'all',
-            }}
-          >
-            <Divider />
-            <Box>
-              <Box
-                sx={{
-                  mb: [3],
-                }}
-              >
-                <Text
-                  sx={{
-                    textAlign: 'left',
-                    color: cost < 0 ? 'secondary' : 'purple',
-                    fontSize: [6],
-                  }}
-                >
-                  ${cost < 0 ? 'N/A' : cost}
-                </Text>
-                <Box>
                   <Text
                     sx={{
                       textAlign: 'left',
-                      color: 'text',
-                      fontSize: [4],
+                      color: cost < 0 ? 'secondary' : 'purple',
+                      fontSize: [6, 6, 6, 6],
+                      fontFamily: 'mono',
+                      letterSpacing: '0.01em',
                     }}
                   >
-                    {cost < 0 ? 'No Net Removal' : 'Net Removed Cost'}
+                    ${cost < 0 ? 'N/A' : cost}
                     {cost >= 0 && (
                       <Text
                         sx={{
                           ml: [2],
+                          fontSize: [4],
                           display: 'inline-block',
                           color: 'secondary',
                         }}
                       >
-                        $/tCO₂eq
+                        / tCO₂eq
                       </Text>
                     )}
                   </Text>
+                  <Box>
+                    <Text
+                      sx={{
+                        textAlign: 'left',
+                        color: 'text',
+                        fontSize: [4],
+                      }}
+                    >
+                      {cost < 0 ? 'No Net Removal' : 'Net Removed Cost'}
+                    </Text>
+                  </Box>
+                </Box>
+                <Divider sx={{ mt: ['20px'] }} />
+                <Box sx={{ mt: [4], display: ['none', 'none', 'inherit'] }}>
+                  <Row columns={[3]}>
+                    <Column start={[1]} width={[2]}>
+                      <Box sx={{ pt: [2], ml: ['-6px'] }}>
+                        <Donut params={{ results: results }}></Donut>
+                      </Box>
+                    </Column>
+                  </Row>
+                  <Legend results={results} />
                 </Box>
               </Box>
-              <Divider sx={{ mt: ['20px'] }} />
-              <Box sx={{ mt: [4], display: ['none', 'none', 'inherit'] }}>
-                <Donut params={{ results: results }}></Donut>
-                <Legend results={results} />
-              </Box>
             </Box>
-          </Box>
-        </Grid>
+          </Column>
+        </Row>
       </Box>
       <Box sx={{}}>
-        <Grid
+        <Row
+          columns={[6, 10]}
           sx={{
-            mb: [4],
+            mb: [0, 0, 0, 3],
           }}
-          gap={[0, 0, '100px']}
-          columns={[1, 1, 'minmax(600px,700px) minmax(300px,400px)']}
         >
-          <Box sx={{ position: 'relative' }}>
-            <Box
-              sx={{
-                position: 'relative',
-                top: ['0px', '0px', '-390px'],
-                mb: ['0px', '0px', '-390px'],
-                mt: [
-                  0,
-                  0,
-                  results['Natural Gas Cost [$/tCO2]'] > 0 ? 0 : '54px',
-                ],
-              }}
-            >
-              {dacParameters.map((g) => (
-                <ParameterGroup
-                  key={g.id}
-                  group={g}
-                  data={chartData}
-                  state={state}
-                ></ParameterGroup>
-              ))}
-              <Text
+          <Column start={[1, 1]} width={[6, 6]}>
+            <Box sx={{ position: 'relative' }}>
+              <Box
                 sx={{
-                  fontSize: [4],
-                  mt: [4],
-                  mb: [3],
-                  fontFamily: 'heading',
-                  letterSpacing: 'heading',
+                  position: 'relative',
+                  top: ['0px', '0px', '-380px'],
+                  mb: ['0px', '0px', '-380px'],
+                  mt: [
+                    0,
+                    0,
+                    results['Natural Gas Cost [$/tCO2]'] > 0 ? 0 : '54px',
+                  ],
                 }}
               >
-                {/* {group.displayName} */}
-                Energy Technology
-              </Text>
-              <Text sx={{ fontSize: [2], mb: [4] }}>
-                Click to expand and adjust parameters for each energy
-                technology.
-              </Text>
-              <Divider sx={{ my: [0] }} />
-              {techKeys.map((key) => (
-                <TechGroup
-                  key={key}
-                  name={key}
-                  group={techData[key]}
-                  data={chartData['Technology'][key]}
-                  state={state['Technology'][key]}
-                ></TechGroup>
-              ))}
-              <Box>
-                <Methods />
+                {dacParameters.map((g) => (
+                  <ParameterGroup
+                    key={g.id}
+                    group={g}
+                    data={chartData}
+                    state={state}
+                  ></ParameterGroup>
+                ))}
+                <Box
+                  sx={{
+                    fontSize: [4],
+                    mt: [4],
+                    mb: [3],
+                    fontFamily: 'heading',
+                    letterSpacing: 'heading',
+                  }}
+                >
+                  Energy Technology
+                </Box>
+                <Box sx={{ fontSize: [2], mb: [4] }}>
+                  Click to expand and adjust parameters for each energy
+                  technology.
+                </Box>
+                <Divider sx={{ my: [0] }} />
+                {techKeys.map((key) => (
+                  <TechGroup
+                    key={key}
+                    name={key}
+                    group={techData[key]}
+                    data={chartData['Technology'][key]}
+                    state={state['Technology'][key]}
+                  ></TechGroup>
+                ))}
+                <Box>
+                  <Methods />
+                </Box>
               </Box>
             </Box>
-          </Box>
-          <Box />
-        </Grid>
+            <Box />
+          </Column>
+        </Row>
       </Box>
     </Box>
   )

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, memo } from 'react'
-import { Box, Divider, Grid, Input, Slider, Text } from 'theme-ui'
+import { useThemeUI, Box, Divider, Grid, Input, Text } from 'theme-ui'
+import { Row, Column, Slider } from '@carbonplan/components'
 import ParamChart from './charts/param-chart'
 import ParamDescription from './parameter-description'
 import AnimateHeight from 'react-animate-height'
@@ -10,6 +11,7 @@ const Parameter = ({ param, data, state }) => {
   const [displayValue, setDisplayValue] = useState(value)
   const [inputFocus, setInputFocus] = useState(false)
   const inputRef = useRef(null)
+  const { theme } = useThemeUI()
 
   const handleEnter = (e) => {
     if (e.key == 'Enter') {
@@ -48,107 +50,109 @@ const Parameter = ({ param, data, state }) => {
 
   return (
     <Box sx={{ mb: [3] }}>
-      <Grid columns={[1, 1, '200px 1fr']}>
-        <Box
-          sx={{
-            position: 'relative',
-            top: ['10%', '10%', param.offset ? param.offset[0] : '54%'],
-          }}
-        >
-          <Input
-            type='text'
-            ref={inputRef}
-            sx={{
-              textAlign: 'left',
-              maxWidth: '195px',
-              color: 'purple',
-              fontSize: [4],
-              borderStyle: 'solid',
-              borderColor: inputFocus ? 'primary' : 'secondary',
-              borderWidth: '0px',
-              borderRadius: '0px',
-              p: [1, 1, 1],
-              pl: [0, 0, 0],
-              transition: '0.15s',
-              borderBottomWidth: '1px',
-              'input::-webkit-outer-spin-button': {
-                WebkitAppearance: 'none',
-                margin: 0,
-              },
-              'input::-webkit-inner-spin-button': {
-                WebkitAppearance: 'none',
-                margin: 0,
-              },
-              ':focus-visible': {
-                outline: 'none !important',
-                background: 'none !important',
-              },
-            }}
-            onKeyPress={handleEnter}
-            onFocus={() => setInputFocus(true)}
-            onChange={updateParamDisplayValue}
-            onBlur={updateParamValueFromInput}
-            value={displayValue}
-          />
-          <ParamDescription
-            param={param}
-            expanded={expanded}
-            setExpanded={setExpanded}
-          />
-        </Box>
-        <Box
-          sx={{
-            position: 'relative',
-            userSelect: 'none',
-          }}
-        >
-          <ParamChart param={param} data={data}></ParamChart>
+      <Row columns={[6, 6]}>
+        <Column start={[1, 1]} width={[6, 2, 2, 2]}>
           <Box
             sx={{
-              width: [
-                'calc(min(87.3%, 380px) + 0px)',
-                'calc(min(87.3%, 380px) - 4px)',
-                'calc(min(87.3%, 380px) - 12px)',
-              ],
-              left: ['0px', '2px', '6px'],
-              top: param.offset ? param.offset[1] : '118px',
-              position: 'absolute',
+              position: 'relative',
+              top: ['10%', '10%', param.offset ? param.offset[0] : '54%'],
             }}
           >
-            <Slider
-              type='range'
-              value={value}
-              onChange={updateParamValue}
-              min={param.validRange[0]}
-              max={param.validRange[1]}
-              step={param.step}
+            <Input
+              type='text'
+              ref={inputRef}
               sx={{
-                '&::-webkit-slider-thumb': {
-                  height: [24, 24, 16],
-                  width: [24, 24, 16],
+                textAlign: 'left',
+                color: 'purple',
+                fontSize: [4, 4, 4, 5],
+                fontFamily: 'mono',
+                letterSpacing: 'mono',
+                borderStyle: 'solid',
+                borderColor: inputFocus ? 'primary' : 'secondary',
+                borderWidth: '0px',
+                borderRadius: '0px',
+                p: [1, 1, 1],
+                pl: [0, 0, 0],
+                transition: '0.15s',
+                borderBottomWidth: '1px',
+                'input::-webkit-outer-spin-button': {
+                  WebkitAppearance: 'none',
+                  margin: 0,
+                },
+                'input::-webkit-inner-spin-button': {
+                  WebkitAppearance: 'none',
+                  margin: 0,
+                },
+                ':focus-visible': {
+                  outline: 'none !important',
+                  background: 'none !important',
                 },
               }}
+              onKeyPress={handleEnter}
+              onFocus={() => setInputFocus(true)}
+              onChange={updateParamDisplayValue}
+              onBlur={updateParamValueFromInput}
+              value={displayValue}
+            />
+            <ParamDescription
+              param={param}
+              expanded={expanded}
+              setExpanded={setExpanded}
             />
           </Box>
-        </Box>
-      </Grid>
-      {param.description && (
-        <AnimateHeight
-          duration={75}
-          height={expanded ? 'auto' : 0}
-          easing={'linear'}
-        >
-          <Text
+        </Column>
+        <Column start={[1, 3]} width={[6, 5, 4, 4]}>
+          <Box
             sx={{
-              maxWidth: '600px',
-              fontSize: [2],
-              color: 'purple',
-              mt: [2],
+              position: 'relative',
+              userSelect: 'none',
+              pointerEvents: 'none',
             }}
           >
-            {param.description}
-          </Text>
-        </AnimateHeight>
+            <ParamChart param={param} data={data}></ParamChart>
+            <Box
+              sx={{
+                width: ['calc(100% - 54px)'],
+                top: param.offset ? param.offset[1] : '118px',
+                position: 'absolute',
+              }}
+            >
+              <Slider
+                value={value}
+                onChange={updateParamValue}
+                min={param.validRange[0]}
+                max={param.validRange[1]}
+                step={param.step}
+                sx={{
+                  pointerEvents: 'all',
+                }}
+              />
+            </Box>
+          </Box>
+        </Column>
+      </Row>
+
+      {param.description && (
+        <Row columns={[6, 6]}>
+          <Column start={[1, 1]} width={[6, 6]}>
+            <AnimateHeight
+              duration={75}
+              height={expanded ? 'auto' : 0}
+              easing={'linear'}
+            >
+              <Box
+                sx={{
+                  maxWidth: '600px',
+                  fontSize: [2, 2, 2, 3],
+                  color: 'purple',
+                  mt: [2, 2, 2, 3],
+                }}
+              >
+                {param.description}
+              </Box>
+            </AnimateHeight>
+          </Column>
+        </Row>
       )}
     </Box>
   )

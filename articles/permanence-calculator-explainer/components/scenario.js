@@ -1,7 +1,7 @@
-/** @jsx jsx */
-import { jsx, Box, Grid, Text, Divider } from 'theme-ui'
+import { Box, Grid, Divider } from 'theme-ui'
 import { scaleLinear } from 'd3-scale'
 import { line } from 'd3-shape'
+import { Row, Column } from '@carbonplan/components'
 
 const Scenario = ({
   projectDuration,
@@ -19,19 +19,19 @@ const Scenario = ({
       fontFamily: 'heading',
       letterSpacing: 'smallcaps',
       textTransform: 'uppercase',
-      fontSize: [2, 2, 2],
+      fontSize: [1, 2, 2, 3],
     },
     number: {
       fontFamily: 'mono',
       letterSpacing: 'mono',
-      fontSize: [3, 3, 5],
+      fontSize: [3, 3, 5, 6],
       color: 'pink',
     },
     units: {
-      display: ['block', 'block', 'inline-block'],
+      display: ['block', 'block', 'inline-block', 'inline-block'],
       fontFamily: 'faux',
       letterSpacing: 'faux',
-      fontSize: [2],
+      fontSize: [2, 2, 2, 3],
       color: 'secondary',
       ml: [0, 0, 2],
     },
@@ -65,113 +65,123 @@ const Scenario = ({
     const years = [0, 20, 40, 60, 80, 100]
     const points = values.map((d, i) => [years[i], d])
     return (
-      <svg width={width} height={height}>
-        <path
+      <svg width='100%' viewBox={`0 0 100 ${height}`} height={height}>
+        <Box
+          as='path'
           sx={{
             stroke: 'pink',
             fill: 'none',
-            strokeWidth: 2,
+            strokeWidth: '2px',
+            vectorEffect: 'non-scaling-stroke',
           }}
           d={path(points)}
-        ></path>
+        ></Box>
       </svg>
     )
   }
 
   return (
-    <Box sx={{ my: [5] }}>
-      <Grid gap={[0, 0, '36px']} columns={[3, 3, '125px 125px 300px']}>
-        <Box sx={sx.group}>
-          <Text sx={sx.label}>Duration</Text>
-          <Text sx={sx.number}>
-            {projectDuration}
-            <Text sx={sx.units}>years</Text>
-          </Text>
-        </Box>
-        <Box sx={sx.group}>
-          <Text sx={sx.label}>Discount</Text>
-          <Text sx={sx.number}>{discountRate}%</Text>
-        </Box>
-        <Box sx={sx.group}>
-          <Grid gap={['0px']} columns={[1, 1, '200px 1fr']}>
-            <Box>
-              <Text sx={sx.label}>Temporary cost</Text>
-              <Text sx={sx.number}>
-                ${temporaryCost[0]}
-                <Text sx={sx.units}>per tCO₂</Text>
-              </Text>
+    <Box as='figure' sx={{ my: [6, 6, 6, 7] }}>
+      <Row columns={[6]}>
+        <Column start={[1]} width={[3]}>
+          <Row columns={[2]}>
+            <Box sx={sx.group}>
+              <Box sx={sx.label}>Duration</Box>
+              <Box sx={sx.number}>
+                {projectDuration}
+                <Box sx={sx.units}>years</Box>
+              </Box>
             </Box>
+            <Box sx={sx.group}>
+              <Box sx={sx.label}>Discount</Box>
+              <Box sx={sx.number}>{discountRate}%</Box>
+            </Box>
+          </Row>
+        </Column>
+        <Column start={[4]} width={[3]} sx={sx.group}>
+          <Row columns={[3]}>
+            <Column start={[1]} width={[2]}>
+              <Box sx={sx.label}>Temporary cost</Box>
+              <Box sx={sx.number}>
+                ${temporaryCost[0]}
+                <Box sx={sx.units}>per tCO₂</Box>
+              </Box>
+            </Column>
             {showSparklines && (
-              <Sparkline
-                scales={{ x: [0, 100], y: [0, 100] }}
-                values={temporaryCost}
-              />
+              <Column start={[3]} width={[1]}>
+                <Sparkline
+                  scales={{ x: [0, 100], y: [0, 100] }}
+                  values={temporaryCost}
+                />
+              </Column>
             )}
-          </Grid>
-        </Box>
-      </Grid>
-      <Grid gap={[0, 0, '36px']} columns={[3, 3, '125px 125px 300px']}>
-        <Box sx={sx.group}>
-          <Text sx={sx.label}>Switch</Text>
-          <Text sx={sx.number}>
-            {switchingTime}
-            {isNumber(switchingTime) && <Text sx={sx.units}>years</Text>}
-          </Text>
-        </Box>
-        <Box sx={sx.group}>
-          <Text sx={sx.label}>Risk</Text>
-          <Text sx={sx.number}>{projectRisk}%</Text>
-        </Box>
-        <Box sx={sx.group}>
-          <Grid gap={['0px']} columns={[1, 1, '200px 1fr']}>
-            <Box>
-              <Text sx={sx.label}>Permanent cost</Text>
-              <Text sx={sx.number}>
+          </Row>
+        </Column>
+      </Row>
+      <Row columns={[6]}>
+        <Column start={[1]} width={[3]}>
+          <Row columns={[2]}>
+            <Box sx={sx.group}>
+              <Box sx={sx.label}>Switch</Box>
+              <Box sx={sx.number}>
+                {switchingTime}
+                {isNumber(switchingTime) && <Box sx={sx.units}>years</Box>}
+              </Box>
+            </Box>
+            <Box sx={sx.group}>
+              <Box sx={sx.label}>Risk</Box>
+              <Box sx={sx.number}>{projectRisk}%</Box>
+            </Box>
+          </Row>
+        </Column>
+        <Column start={[4]} width={[3]} sx={sx.group}>
+          <Row columns={[3]}>
+            <Column start={[1]} width={[2]}>
+              <Box sx={sx.label}>Permanent cost</Box>
+              <Box sx={sx.number}>
                 {isNumber(permanentCost[5]) && '$'}
                 {permanentCost[5]}
                 {isNumber(permanentCost[5]) && (
-                  <Text sx={sx.units}>per tCO₂</Text>
+                  <Box sx={sx.units}>per tCO₂</Box>
                 )}
-              </Text>
-            </Box>
+              </Box>
+            </Column>
             {showSparklines && (
-              <Sparkline
-                scales={{ x: [0, 100], y: [0, 1000] }}
-                values={permanentCost}
-              />
+              <Column start={[3]} width={[1]}>
+                <Sparkline
+                  scales={{ x: [0, 100], y: [0, 1000] }}
+                  values={permanentCost}
+                />
+              </Column>
             )}
-          </Grid>
-        </Box>
-      </Grid>
-      <Box sx={{ width: ['100%', '100%', '622px'] }}>
-        <Grid
-          sx={{ ...sx.group, ...{ pb: [2], pt: [2] } }}
-          gap={[0, 0, '120px']}
-          columns={[1, 1, '200px 1fr']}
-        >
-          <Text sx={{ ...sx.label, ...{ mt: ['12px'] } }}>
-            Net present value
-          </Text>
-          <Text sx={{ ...sx.number, ...{ fontSize: [5, 5, 6] } }}>
+          </Row>
+        </Column>
+      </Row>
+      <Row columns={[6]} sx={{ ...sx.group, ...{ pb: [2], pt: [2] } }}>
+        <Column start={[1]} width={[3]}>
+          <Box sx={{ ...sx.label, ...{ mt: ['12px'] } }}>Net present value</Box>
+        </Column>
+        <Column start={[4]} width={[3]}>
+          <Box sx={{ ...sx.number, ...{ fontSize: [5, 5, 6] } }}>
             ${netPresentValue.toFixed(0)}
             {netPresentValueError && (
               <>
-                <Text
+                <Box
                   sx={{
                     display: 'inline-block',
                     mx: [2],
                   }}
                 >
                   ±
-                </Text>
+                </Box>
                 {netPresentValueError}
               </>
             )}
-            <Text sx={sx.units}>per tCO₂</Text>
-          </Text>
-        </Grid>
-      </Box>
-      <Divider sx={{ width: ['100%', '100%', '622px'] }} />
+            <Box sx={sx.units}>per tCO₂</Box>
+          </Box>
+        </Column>
+      </Row>
+      <Divider sx={{ width: ['100%'] }} />
     </Box>
   )
 }

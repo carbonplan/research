@@ -4,9 +4,9 @@ import { Box, Text } from 'theme-ui'
 const ParamDescription = ({ param, expanded, setExpanded }) => {
   return (
     <Box>
-      <Text
+      <Box
         sx={{
-          fontSize: [1],
+          fontSize: [1, 1, 1, 2],
           mr: [param.unit ? 2 : 0],
           mt: [2, 2, 2],
           display: 'inline-block',
@@ -14,9 +14,9 @@ const ParamDescription = ({ param, expanded, setExpanded }) => {
       >
         {' '}
         {param.displayName}
-      </Text>
+      </Box>
       {param.unit && (
-        <Text
+        <Box
           sx={{
             fontSize: [1],
             ml: [0],
@@ -26,7 +26,7 @@ const ParamDescription = ({ param, expanded, setExpanded }) => {
         >
           {' '}
           {param.unit}{' '}
-        </Text>
+        </Box>
       )}
       {param.description && (
         <Box
@@ -43,7 +43,7 @@ const ParamDescription = ({ param, expanded, setExpanded }) => {
             },
           }}
         >
-          <Text
+          <Box
             id='question'
             sx={{
               position: 'absolute',
@@ -55,7 +55,7 @@ const ParamDescription = ({ param, expanded, setExpanded }) => {
             }}
           >
             ?
-          </Text>
+          </Box>
         </Box>
       )}
     </Box>

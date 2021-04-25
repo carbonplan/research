@@ -51,7 +51,7 @@ const Row = ({ children }) => {
         fontSize: [1],
         mb: [1],
       }}
-      columns={['10px 125px 1fr']}
+      columns={['10px 115px 1fr']}
     >
       {children}
     </Grid>

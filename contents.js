@@ -11,11 +11,11 @@ const Contents = [
     links: [
       {
         label: 'Read article',
-        url: '/research/microsoft-2021-insights',
+        href: '/research/microsoft-2021-insights',
       },
       {
         label: 'Explore database',
-        url: '/research/cdr-database',
+        href: '/research/cdr-database',
       },
     ],
   },
@@ -31,11 +31,11 @@ const Contents = [
     links: [
       {
         label: 'Read article',
-        url: '/research/dac-calculator-explainer',
+        href: '/research/dac-calculator-explainer',
       },
       {
         label: 'Use tool',
-        url: '/research/dac-calculator',
+        href: '/research/dac-calculator',
       },
     ],
   },
@@ -51,11 +51,11 @@ const Contents = [
     links: [
       {
         label: 'Read article',
-        url: '/research/stripe-2020-insights',
+        href: '/research/stripe-2020-insights',
       },
       {
         label: 'Explore database',
-        url: '/research/cdr-database',
+        href: '/research/cdr-database',
       },
     ],
   },
@@ -71,21 +71,21 @@ const Contents = [
     links: [
       {
         label: 'Read article',
-        url: '/research/soil-carbon-comment',
+        href: '/research/soil-carbon-comment',
       },
       {
         label: 'MIT Tech Review coverage',
-        url:
+        href:
           'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
       },
       {
         label: 'Read comment letter #1',
-        url:
+        href:
           'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
       },
       {
         label: 'Read comment letter #2',
-        url:
+        href:
           'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
       },
     ],
@@ -102,11 +102,11 @@ const Contents = [
     links: [
       {
         label: 'Read paper',
-        url: 'https://doi.org/10.1126/science.aaz7005',
+        href: 'https://doi.org/10.1126/science.aaz7005',
       },
       {
         label: 'Rolling Stone coverage',
-        url:
+        href:
           'https://www.rollingstone.com/politics/politics-features/tree-planting-wont-stop-climate-crisis-1020500/',
       },
     ],
@@ -123,7 +123,7 @@ const Contents = [
     links: [
       {
         label: 'Read article',
-        url: '/research/carbon-removal-mechanisms',
+        href: '/research/carbon-removal-mechanisms',
       },
     ],
   },
@@ -139,11 +139,11 @@ const Contents = [
     links: [
       {
         label: 'Read article',
-        url: '/research/offset-project-fire',
+        href: '/research/offset-project-fire',
       },
       {
         label: 'Grist coverage',
-        url:
+        href:
           'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
       },
     ],
@@ -160,15 +160,15 @@ const Contents = [
     links: [
       {
         label: 'Read article',
-        url: '/research/permanence-calculator-explainer',
+        href: '/research/permanence-calculator-explainer',
       },
       {
         label: 'Use tool',
-        url: '/research/permanence-calculator',
+        href: '/research/permanence-calculator',
       },
       {
         label: 'ClimateWorks post',
-        url:
+        href:
           'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
       },
     ],
@@ -185,16 +185,16 @@ const Contents = [
     links: [
       {
         label: 'Read comment letter',
-        url:
+        href:
           'https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf',
       },
       {
         label: 'Taskforce website',
-        url: 'https://www.iif.com/tsvcm',
+        href: 'https://www.iif.com/tsvcm',
       },
       {
         label: 'Financial Times coverage',
-        url: 'https://www.ft.com/content/de5e8631-bdf2-4c2e-8b7f-83c0c80cdea8',
+        href: 'https://www.ft.com/content/de5e8631-bdf2-4c2e-8b7f-83c0c80cdea8',
       },
     ],
   },
@@ -210,7 +210,7 @@ const Contents = [
     links: [
       {
         label: 'Read the Primer',
-        url: 'https://cdrprimer.org',
+        href: 'https://cdrprimer.org',
       },
     ],
   },

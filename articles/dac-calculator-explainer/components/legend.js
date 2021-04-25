@@ -22,7 +22,7 @@ const Label = ({ label }) => {
         color: 'secondary',
         fontFamily: 'body',
         letterSpacing: 'body',
-        fontSize: [1],
+        fontSize: [1, 1, 1, 2],
       }}
     >
       {label}
@@ -34,7 +34,7 @@ const Row = ({ children }) => {
   return (
     <Grid
       sx={{
-        fontSize: [1],
+        fontSize: [1, 1, 1, 2],
         mb: [1],
       }}
       columns={['10px 140px']}

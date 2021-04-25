@@ -1,4 +1,4 @@
-import { Box, Grid, Text, Divider } from 'theme-ui'
+import { Box, Grid, Divider } from 'theme-ui'
 import Donut from './donut'
 import Legend from './legend'
 
@@ -15,7 +15,7 @@ const sx = {
     fontFamily: 'heading',
     letterSpacing: 'smallcaps',
     color: 'text',
-    fontSize: [3],
+    fontSize: [3, 3, 3, 4],
     textTransform: 'uppercase',
     ml: [2],
     mt: [3],
@@ -24,7 +24,7 @@ const sx = {
     fontFamily: 'mono',
     letterSpacing: 'mono',
     color: 'purple',
-    fontSize: [5],
+    fontSize: [5, 5, 5, 6],
     ml: [2],
     mb: [2],
   },
@@ -67,24 +67,24 @@ const CostSummary = ({
     'Total Cost [$/tCO2]': solarTotalCost,
   }
   return (
-    <Box sx={{ mt: [5], mb: [3], maxWidth: '650px' }}>
-      <Grid columns={[3, 3, 4]} sx={{ pb: [0] }}>
+    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+      <Grid columns={[3, 3, 4]} gap={[4, 5, 4, 6]} sx={{ pb: [0] }}>
         <Box sx={{ textAlign: 'left' }}>
-          <Divider sx={{ mt: [0], mr: [3] }} />
-          <Text sx={sx.title}>NGCC</Text>
-          <Text sx={sx.cost}>${NGCCTotalCost.toFixed(0)}</Text>
+          <Divider sx={{ mt: [0], mr: [0, 0, 3, 3] }} />
+          <Box sx={sx.title}>NGCC</Box>
+          <Box sx={sx.cost}>${NGCCTotalCost.toFixed(0)}</Box>
           <Donut results={NGCCResults} initWidth={125} />
         </Box>
         <Box sx={{ textAlign: 'left' }}>
-          <Divider sx={{ mt: [0], mr: [3] }} />
-          <Text sx={sx.title}>Wind</Text>
-          <Text sx={sx.cost}>${windTotalCost.toFixed(0)}</Text>
+          <Divider sx={{ mt: [0], mr: [0, 0, 3, 3] }} />
+          <Box sx={sx.title}>Wind</Box>
+          <Box sx={sx.cost}>${windTotalCost.toFixed(0)}</Box>
           <Donut results={windResults} initWidth={125} />
         </Box>
         <Box sx={{ textAlign: 'left' }}>
-          <Divider sx={{ mt: [0], mr: [3] }} />
-          <Text sx={sx.title}>Solar</Text>
-          <Text sx={sx.cost}>${solarTotalCost.toFixed(0)}</Text>
+          <Divider sx={{ mt: [0], mr: [0, 0, 3, 3] }} />
+          <Box sx={sx.title}>Solar</Box>
+          <Box sx={sx.cost}>${solarTotalCost.toFixed(0)}</Box>
           <Donut results={solarResults} initWidth={125} />
         </Box>
         <Box sx={{ position: 'relative' }}>

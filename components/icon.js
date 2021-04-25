@@ -6,24 +6,27 @@ const Icon = ({ color, icon, link }) => {
   return (
     <Box
       id='container'
+      tabIndex='-1'
       sx={{
         cursor: 'pointer',
-        display: ['none', 'none', 'inline-block'],
-        width: '120px',
-        height: '120px',
-        mt: [3],
-        float: 'right',
+        display: ['inline-block'],
+        width: ['100px', '120px', '120px', '150px'],
+        height: ['100px', '120px', '120px', '150px'],
+        mt: [0, 4, 4, 4],
+        float: ['none', 'right', 'right', 'right'],
         position: 'relative',
         borderRadius: '50%',
         borderStyle: 'solid',
         borderColor: 'primary',
         borderWidth: '0px',
-        '&:hover > #background': {
-          opacity: 0.5,
-        },
-        '&:hover > #arrow': {
-          opacity: 1,
-          left: '22px',
+        '@media (hover: hover) and (pointer: fine)': {
+          '&:hover > #background': {
+            opacity: 0.5,
+          },
+          '&:hover > #arrow': {
+            opacity: 1,
+            left: ['20px', '22px', '22px', '30px'],
+          },
         },
       }}
     >
@@ -49,13 +52,13 @@ const Icon = ({ color, icon, link }) => {
         sx={{
           fontFamily: 'faux',
           position: 'absolute',
-          top: '-20px',
-          left: '10px',
+          top: ['-14px', '-20px', '-20px', '-24px'],
+          left: ['10px', '10px', '10px', '10px'],
           width: '100%',
           height: '100%',
           display: 'inline-block',
           borderRadius: '50%',
-          fontSize: '110px',
+          fontSize: ['90px', '110px', '110px', '135px'],
           color: 'text',
           zIndex: 500,
           transition: '0.25s',

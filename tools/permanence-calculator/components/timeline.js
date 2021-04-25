@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'react'
-import { useThemeUI, Box, Text } from 'theme-ui'
+import { useThemeUI, Box } from 'theme-ui'
 import TimelineChart from './charts/timeline-chart'
 
 let chart = null

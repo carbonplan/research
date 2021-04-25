@@ -6,7 +6,7 @@ import { drag } from 'd3-drag'
 const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
   let svg
 
-  const margin = { top: 0, right: 60, bottom: 40, left: 10 }
+  const margin = { top: 0, right: 50, bottom: 40, left: 10 }
   const width = container.current.offsetWidth - margin.left - margin.right
   const height = container.current.offsetHeight - margin.top - margin.bottom
 

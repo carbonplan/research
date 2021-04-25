@@ -3,7 +3,7 @@ import { MDXProvider } from '@mdx-js/react'
 import '@carbonplan/components/fonts.css'
 import '@carbonplan/components/globals.css'
 import 'mapbox-gl/dist/mapbox-gl.css'
-import theme from '../theme'
+import theme from '@carbonplan/theme'
 
 const App = ({ Component, pageProps }) => {
   return (

@@ -1,11 +1,16 @@
 import { memo } from 'react'
-import { Box, Grid, Text, Link, Heading } from 'theme-ui'
+import { Box, Paragraph, Grid, Text, Link, Heading } from 'theme-ui'
 import { default as NextLink } from 'next/link'
-import { Tag, TaggedLink } from '@carbonplan/components'
+import { Row, Column, Tag, Arrow, Links, Buttons } from '@carbonplan/components'
 import { mix } from '@theme-ui/color'
+import { utils } from '@carbonplan/components'
 import Icon from './icon'
 
-const Entry = ({ info, final }) => {
+const { formatDate } = utils
+const { ArrowButton } = Buttons
+const { WrappedLink } = Links
+
+const Entry = ({ info, first, final }) => {
   let {
     title,
     color,
@@ -29,126 +34,125 @@ const Entry = ({ info, final }) => {
       <Box
         id='box'
         sx={{
-          pt: [4, 4, 4],
-          pb: [4, 4, 4],
+          pb: final ? [2, 3, 4, 5] : [4, 6, 6, 7],
+          pt: [4, 0, 0, 0],
           borderStyle: 'solid',
           borderColor: 'muted',
           borderWidth: '0px',
-          borderBottomWidth: final ? '0px' : '1px',
+          borderTopWidth: [first ? '1px' : '0px', '0px', '0px', '0px'],
+          borderBottomWidth: [final ? '0px' : '1px', '0px', '0px'],
           color: 'text',
         }}
       >
-        <Grid
-          id='grid'
-          columns={[
-            1,
-            icon ? '1fr 175px' : '1fr 150px',
-            icon ? '1fr 175px' : '1fr 150px',
-          ]}
-          gap={[0, 0, 16]}
-        >
-          <Box>
-            <Text
+        <Row id='grid' columns={[6, 7, 7, 7]}>
+          <Column
+            start={[1]}
+            width={[2]}
+            sx={{ display: ['initial', 'none', 'none', 'none'] }}
+          >
+            {icon && (
+              <WrappedLink href={links[0].href}>
+                <Icon icon={icon} color={color} />
+              </WrappedLink>
+            )}
+          </Column>
+          <Column
+            start={[3, 1, 2, 2]}
+            width={[4, 4, 4, 4]}
+            sx={{
+              borderStyle: 'solid',
+              borderColor: 'muted',
+              borderWidth: '0px',
+              borderLeftWidth: ['0px', '1px', '1px', '1px'],
+              pl: [0, 5, 5, 6],
+              ml: [0, -5, -5, -6],
+            }}
+          >
+            <Box
               sx={{
                 color: 'secondary',
                 fontFamily: 'mono',
                 letterSpacing: '0.05em',
-                fontSize: [2],
+                fontSize: [1, 1, 1, 2],
                 userSelect: 'none',
+                textTransform: 'uppercase',
+                display: ['none', 'block', 'block', 'block'],
               }}
             >
-              {date}{' '}
-              {false && (
-                <>
-                  <Text
-                    as='span'
-                    sx={{
-                      color: 'text',
-                      fontFamily: 'mono',
-                      letterSpacing: '0.05em',
-                      fontSize: [2],
-                    }}
-                  >
-                    /
-                  </Text>{' '}
-                  v{version}
-                </>
-              )}
-            </Text>
-            <Heading
+              {formatDate(date)}{' '}
+            </Box>
+            <Box
               sx={{
                 mb: ['14px'],
-                mt: ['10px'],
+                mt: ['-5px', '10px', '10px', '10px'],
                 ml: ['-1px'],
-                fontSize: [5],
+                lineHeight: 'heading',
+                fontFamily: 'heading',
+                fontSize: [4, 5, 5, 6],
                 color: color,
               }}
             >
-              {title}
-            </Heading>
-            <Text sx={{ my: [2], fontSize: [2], lineHeight: 1.3 }}>
+              <WrappedLink
+                sx={{
+                  transition: 'color 0.15s',
+                  textDecoration: 'none',
+                  color: color,
+                  '&:hover': {
+                    color: 'primary',
+                  },
+                }}
+                tabIndex='-1'
+                href={links[0].href}
+              >
+                {title}
+              </WrappedLink>
+            </Box>
+            <Box
+              sx={{
+                color: 'secondary',
+                fontFamily: 'mono',
+                letterSpacing: '0.05em',
+                fontSize: [1, 1, 1, 2],
+                userSelect: 'none',
+                textTransform: 'uppercase',
+                display: ['block', 'none', 'none', 'none'],
+              }}
+            >
+              {formatDate(date)}{' '}
+            </Box>
+            <Box
+              sx={{
+                mt: [2],
+                mb: [1],
+                fontSize: [2, 2, 2, 3],
+                lineHeight: 1.35,
+                display: ['none', 'block', 'block', 'block'],
+              }}
+            >
               {summary}
-            </Text>
-            <Box sx={{ mt: [3], fontSize: [2], userSelect: 'none' }}>
-              <Box sx={{ mt: [0, 0, '-4px'] }}>
-                {links.map((link, ix) => {
-                  const pad = links.length > 1 && ix < links.length - 1
-                  return (
-                    <WrappedLink key={ix} url={link.url}>
-                      <Text
-                        sx={{
-                          color: 'secondary',
-                          mr: [4],
-                          mb: [pad ? 2 : 0, pad ? 2 : 0, 0],
-                          mt: [0, 0, 1],
-                          cursor: 'pointer',
-                          display: ['block', 'block', 'inline-block'],
-                          float: ['left', 'left', 'initial'],
-                          clear: ['left', 'left', 'initial'],
-                          '&:hover': {
-                            color: 'text',
-                          },
-                          '&:hover > #container > #arrow': {
-                            transform: 'rotate(45deg)',
-                            color: 'text',
-                          },
-                        }}
-                      >
-                        <Box as='span' id='label' sx={{ transition: '0.15s' }}>
-                          {link.label}
-                        </Box>
-                        <Box
-                          id='container'
-                          as='span'
-                          sx={{ position: 'relative' }}
-                        >
-                          <Text
-                            id='arrow'
-                            as='span'
-                            sx={{
-                              position: 'absolute',
-                              top: '-5px',
-                              left: '5px',
-                              fontSize: [4],
-                              transition: '0.15s',
-                            }}
-                          >
-                            ↗
-                          </Text>
-                        </Box>
-                      </Text>
-                    </WrappedLink>
-                  )
-                })}
+            </Box>
+            <Box
+              sx={{
+                mt: ['12px'],
+                fontSize: [2, 2, 2, 3],
+                userSelect: 'none',
+                display: ['none', 'block', 'block', 'block'],
+              }}
+            >
+              <Box sx={{ mb: [-1] }}>
+                <LinkGroup links={links} />
               </Box>
             </Box>
-          </Box>
-          <Box>
+          </Column>
+          <Column
+            start={[1, 5, 6, 6]}
+            width={[4, 2, 2, 2]}
+            sx={{ display: ['none', 'block', 'block'] }}
+          >
             <Box
               sx={{
                 textAlign: 'right',
-                display: ['none', 'none', 'block'],
-                mt: ['-1px'],
+                mt: ['-3px', '-3px', '-3px', '-1px'],
               }}
             >
               {tags
@@ -158,7 +162,6 @@ const Entry = ({ info, final }) => {
                     key={tag}
                     sx={{
                       ml: [2],
-                      mr: [0],
                       color: 'secondary',
                     }}
                   >
@@ -167,42 +170,47 @@ const Entry = ({ info, final }) => {
                 ))}
             </Box>
             {icon && (
-              <WrappedLink url={links[0].url}>
+              <WrappedLink tabIndex='-1' href={links[0].href}>
                 <Icon icon={icon} color={color} />
               </WrappedLink>
             )}
+          </Column>
+        </Row>
+        <Box sx={{ display: ['initial', 'none', 'none', 'none'] }}>
+          <Box sx={{ my: [3], fontSize: [2, 2, 2, 3], lineHeight: 1.35 }}>
+            {summary}
           </Box>
-        </Grid>
+          <Box sx={{ mt: [3], display: 'block' }}>
+            <LinkGroup links={links} />
+          </Box>
+        </Box>
       </Box>
     </Box>
   )
 }
 
-function WrappedLink({ url, children }) {
-  if (url.startsWith('/research')) {
+function LinkGroup({ links }) {
+  return links.map((link, i) => {
     return (
-      <NextLink href={url} passHref={true}>
-        <Link sx={{ textDecoration: 'none' }}>{children}</Link>
-      </NextLink>
-    )
-  } else {
-    let action = 'website'
-    let category = 'external'
-    if (url.includes('pdf')) {
-      action = 'PDF'
-      category = 'download'
-    }
-    return (
-      <TaggedLink
-        action={action}
-        category={category}
-        sx={{ textDecoration: 'none' }}
-        href={url}
+      <WrappedLink
+        key={i}
+        href={link.href}
+        sx={{ textDecoration: 'none', width: 'fit-content', mr: [4, 4, 4, 5] }}
       >
-        {children}
-      </TaggedLink>
+        <ArrowButton
+          key={i}
+          label={link.label}
+          color={'secondary'}
+          fill={'secondary'}
+          sx={{
+            display: 'inline-block',
+            mb: ['6px'],
+            mt: ['5px'],
+          }}
+        />
+      </WrappedLink>
     )
-  }
+  })
 }
 
 export default memo(Entry)

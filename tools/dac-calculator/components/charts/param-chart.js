@@ -11,10 +11,11 @@ const ParamChart = ({ param, data }) => {
   const [barWidth, setBarWidth] = useState(15)
   const container = useRef(null)
   const { theme } = useThemeUI()
+  const { secondary, text, purple } = theme.rawColors
 
   const updateWidth = (container) => {
     if (container.current) {
-      const newWidth = Math.min(380, container.current.offsetWidth * 0.9)
+      const newWidth = container.current.offsetWidth - 48
       setWidth(newWidth)
       setBarWidth(newWidth * 0.0392)
     }
@@ -46,10 +47,10 @@ const ParamChart = ({ param, data }) => {
         grid: false,
         labelFontSize: theme.fontSizes[1],
         labelFont: theme.fonts.mono,
-        labelColor: theme.colors.text,
+        labelColor: text,
         titleFont: theme.fonts.mono,
         titleFontSize: theme.fontSizes[1],
-        titleColor: theme.colors.text,
+        titleColor: text,
         domain: true,
         tickOffset: 0,
         labelPadding: 5,
@@ -66,7 +67,7 @@ const ParamChart = ({ param, data }) => {
       },
       mark: {
         type: 'bar',
-        color: theme.colors.purple,
+        color: purple,
         width: barWidth,
         clip: true,
       },
@@ -115,7 +116,7 @@ const ParamChart = ({ param, data }) => {
             format: '$0f',
           },
         },
-        opacity: {
+        fillOpacity: {
           field: 'o',
           type: 'quantitative',
           scale: { domain: [0, 3], range: [0.3, 0.9] },
@@ -126,7 +127,7 @@ const ParamChart = ({ param, data }) => {
           type: 'quantitative',
           scale: {
             domain: [0, 1],
-            range: [theme.colors.secondary, theme.colors.purple],
+            range: [secondary, purple],
           },
           legend: null,
         },
@@ -139,7 +140,7 @@ const ParamChart = ({ param, data }) => {
   const height = param.chartHeight
 
   return (
-    <Box ref={container} sx={{ width: '97%' }}>
+    <Box ref={container} sx={{ ml: ['-6px'] }}>
       {loaded && width && (
         <Vega
           width={width}

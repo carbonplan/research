@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import { Grid } from 'theme-ui'
-import Sidebar from './sidebar'
+import { Box } from 'theme-ui'
+import { Row, Column, Tray, Filter } from '@carbonplan/components'
 import List from './list'
+import Heading from './heading'
 
-const initFilter = {
-  all: true,
+const initCategory = {
   article: true,
   tool: true,
   comment: true,
@@ -12,25 +12,64 @@ const initFilter = {
   dataset: true,
 }
 
-const initSort = {
-  date: true,
-  title: false,
+const initYear = {
+  2020: true,
+  2021: true,
 }
 
-const Main = () => {
-  const [filter, setFilter] = useState(initFilter)
-  const [sort, setSort] = useState(initSort)
+const Main = ({ expanded }) => {
+  const [category, setCategory] = useState(initCategory)
+  const [year, setYear] = useState(initYear)
+
+  const FilterContents = () => {
+    return (
+      <Filter
+        filters={{ category: category, year: year }}
+        setFilters={{ category: setCategory, year: setYear }}
+        filterLabels={{ category: 'Category', year: 'Year' }}
+        filterList={['year', 'category']}
+      />
+    )
+  }
 
   return (
-    <Grid columns={[1, 1, 'minmax(350px, 30%) auto']} gap={['0px']}>
-      <Sidebar
-        filter={filter}
-        setFilter={setFilter}
-        sort={sort}
-        setSort={setSort}
-      />
-      <List filter={filter} sort={sort} />
-    </Grid>
+    <Box sx={{ mb: [8, 8, 9, 10] }}>
+      <Heading
+        description={
+          <span>
+            Articles, tools, and commentary on carbon
+            <Box
+              as='br'
+              sx={{ display: ['none', 'initial', 'initial', 'initial'] }}
+            />{' '}
+            removal and climate solutions.
+          </span>
+        }
+      >
+        Research
+      </Heading>
+      <Tray expanded={expanded}>
+        <FilterContents />
+      </Tray>
+      <Row sx={{ mb: [0] }}>
+        <Column
+          start={[1, 1, 2, 2]}
+          width={[6, 6, 2, 2]}
+          sx={{ display: ['none', 'none', 'initial', 'intial'] }}
+        >
+          <Box sx={{ position: 'sticky', top: '76px', height: 'auto' }}>
+            <FilterContents />
+          </Box>
+        </Column>
+        <Column
+          start={[1, 2, 5, 5]}
+          width={[6, 7, 7, 7]}
+          sx={{ mt: ['-3px', '0px', '-1px', '0px'] }}
+        >
+          <List category={category} year={year} />
+        </Column>
+      </Row>
+    </Box>
   )
 }
 

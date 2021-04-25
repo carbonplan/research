@@ -1,6 +1,7 @@
 import { Icons } from '@carbonplan/components'
 import Article from '../../components/article'
 import PullQuote from '../../components/pull-quote'
+import Endnote from '../../components/endnote'
 import SectionBreak from '../../components/section-break'
 import Inline from '../../components/inline'
 import FigureCaption from '../../components/figure-caption'
@@ -173,7 +174,7 @@ As we learn more, CarbonPlan will continue to develop and share methods for eval
 
 <SectionBreak />
 
-## Credits
+<Endnote label='Credits'>
 
 Freya led data analysis and wrote the first draft of the article. Joe and Jeremy designed and built the data architecture and web tools. All authors contributed to analyzing the data and writing the article.
 
@@ -181,10 +182,12 @@ Please cite as:
 
 F Chay, D Cullenward, J Hamman, J Freeman (2021) “Insights from analyzing a new round of carbon removal projects” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/microsoft-2021-insights</span>
 
-## Terms
+</Endnote>
+
+<Endnote label='Terms'>
 
 CarbonPlan received no specific financial support for this work, although Microsoft is supporting CarbonPlan’s research on [other topics](https://carbonplan.org/funding). Microsoft provided CarbonPlan with early access to now-public proposals for the purpose of this analysis. CarbonPlan received no access to information about projects beyond what Microsoft has made publicly available. Microsoft did not exercise any control over this work, nor did they use this information in their decision making. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not represent the views of Microsoft or any other other organizations.
 
-### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
+</Endnote>
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>

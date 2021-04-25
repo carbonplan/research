@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { Vega } from 'react-vega'
 import { useThemeUI, Box } from 'theme-ui'
 var vegaLite = require('vega-lite')
@@ -7,6 +7,7 @@ const Donut = ({ params }) => {
   const [spec, setSpec] = useState(null)
   const [loaded, setLoaded] = useState(false)
   const { theme } = useThemeUI()
+  const { secondary, purple } = theme.rawColors
   const cost = params.results['Total Cost [$/tCO2 Net Removed]']
 
   useEffect(() => {
@@ -24,7 +25,7 @@ const Donut = ({ params }) => {
       },
       mark: {
         type: 'arc',
-        innerRadius: 39,
+        innerRadius: 45,
         color: theme.colors.purple,
       },
       encoding: {
@@ -33,7 +34,7 @@ const Donut = ({ params }) => {
           type: 'quantitative',
           scale: { domain: [0, 1] },
         },
-        opacity: {
+        fillOpacity: {
           field: 'index',
           type: 'quantitative',
           scale: { domain: [0, 3], range: [0.3, 0.9] },
@@ -44,7 +45,7 @@ const Donut = ({ params }) => {
           type: 'quantitative',
           scale: {
             domain: [0, 1],
-            range: [theme.colors.secondary, theme.colors.purple],
+            range: [secondary, purple],
           },
           legend: null,
         },
@@ -109,7 +110,7 @@ const Donut = ({ params }) => {
   const height = 200
 
   return (
-    <>
+    <Box>
       {loaded && (
         <Vega
           width={width}
@@ -121,7 +122,7 @@ const Donut = ({ params }) => {
         />
       )}
       {!loaded && <Box sx={{ height: height + 14 }}></Box>}
-    </>
+    </Box>
   )
 }
 

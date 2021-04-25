@@ -1,7 +1,9 @@
-import { Box, Styled, Link } from 'theme-ui'
-import { default as NextLink } from 'next/link'
+import { Box, Link } from 'theme-ui'
+import { Links } from '@carbonplan/components'
 import Tool from '../../components/tool'
 import Calculator from './components/calculator'
+
+const { InternalLink } = Links
 
 const Index = () => {
   const meta = {
@@ -13,26 +15,20 @@ const Index = () => {
       'How to compare the long-term cost of temporary and permanent carbon removal.',
   }
 
-  const title = <Styled.h1>Permanence calculator</Styled.h1>
+  const title = 'Permanence calculator'
 
   const description = (
-    <Box sx={{ maxWidth: '700px', mb: [0] }}>
-      <Styled.p>
-        The effects of CO₂ emissions last for hundreds to thousands of years.
-        The permanence of CO₂ removal differs across methods, ranging from
-        temporary (e.g. forests, soil) to effectively permanent (e.g.
-        mineralization, geological). This calculator estimates the upfront costs
-        needed to make a temporary carbon removal strategy permanent over time.
-        Read more in our{' '}
-        <NextLink
-          href={'/research/permanence-calculator-explainer'}
-          passHref={true}
-        >
-          <Link>article</Link>
-        </NextLink>
-        .
-      </Styled.p>
-    </Box>
+    <span>
+      The effects of CO₂ emissions last for hundreds to thousands of years. The
+      permanence of CO₂ removal differs across methods, ranging from temporary
+      (e.g. forests, soil) to effectively permanent (e.g. mineralization,
+      geological). This calculator estimates the upfront costs needed to make a
+      temporary carbon removal strategy permanent over time. Read more in our{' '}
+      <InternalLink href={'/research/permanence-calculator-explainer'}>
+        article
+      </InternalLink>
+      .
+    </span>
   )
 
   return (

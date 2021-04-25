@@ -3,6 +3,8 @@ import Reference from '../../components/reference'
 import FigureCaption from '../../components/figure-caption'
 import Inline from '../../components/inline'
 import SectionBreak from '../../components/section-break'
+import Endnote from '../../components/endnote'
+import Closing from '../../components/closing'
 import FireMap from './components/fire-map'
 import RiskScenarios from './components/risk-scenarios'
 
@@ -190,17 +192,21 @@ The already unprecedented — and on-going — fire year provides a sobering exa
 
 <SectionBreak />
 
-## Documentation
+<Endnote label={'Documentation'}>
 
 All analyses and data underlying this article are open source and [available online](https://github.com/carbonplan/notebooks/tree/master/offset-project-fire). The fire data is from NASA's Fire Information for Resource Management System (FIRMS), the buffer pool data is from the California Air Resource Board’s database of offset credit issuances, and the offset project geometries are from the American Carbon Registry project database. Our Jupyter notebooks show how we worked with these raw data sources and estimated all the numbers reported in the article. This article itself (including the map visualization and the calculator) is also open source and [available in this repository](https://github.com/carbonplan/research/tree/master/articles/offset-project-fire).
 
-## Note
+</Endnote>
+
+<Endnote label='Note'>
 
 We have not reached out to the Confederated Tribes of Warm Springs Reservation of Oregon, on whose land the ACR260 project is located, for comments.
 
+</Endnote>
+
 <SectionBreak />
 
-## Credits
+<Endnote label='Credits'>
 
 Claudia and Jared identified the project and its proximity to the fire. Joe and Jeremy analyzed the fire data with input from Claudia and Jared. Danny, Joe, Grayson, and William developed the future projection and protocol buffer pool models. Jeremy designed and implemented the web visualizations. Joe packaged the data and code for sharing. All authors contributed to writing the article. Photograph by [Jared Stapp](https://www.jaredstapp.com/) used with permission.
 
@@ -208,12 +214,14 @@ Please cite as:
 
 C Herbert, J Stapp, G Badgley, W R L Anderegg, D Cullenward, J Hamman, J Freeman (2020) “Carbon offsets burning” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/offset-project-fire</span>
 
-## Terms
+</Endnote>
+
+<Endnote label='Terms'>
 
 CarbonPlan received no specific financial support for this work.
 
 [Claudia Herbert](https://nature.berkeley.edu/stephenslab/lab-members/claudia-herbert/) and [Jared Stapp](https://ourenvironment.berkeley.edu/people/jared-r-stapp) are PhD students at UC Berkeley, [Grayson Badgley](https://www.gbadgley.com/) is a postdoctoral scientist at the Black Rock Forest Consortium and Columbia University, and [William R.L. Anderegg](https://faculty.utah.edu/u6003057-WILLIAM_ANDEREGG/research/index.hml) is a professor at the University of Utah.
 
-### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
+</Endnote>
 
 export default ({ children }) => <Article meta={meta}>{children}</Article>

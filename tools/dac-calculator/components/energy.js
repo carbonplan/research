@@ -1,7 +1,6 @@
-/** @jsx jsx */
 import { memo } from 'react'
-import { jsx } from 'theme-ui'
 import { Box, Text } from 'theme-ui'
+import { Select } from '@carbonplan/components'
 import Reset from './reset'
 
 const eMap = {
@@ -19,8 +18,8 @@ const Energy = ({ params, reset }) => {
 
   const defaultValue = value.toUpperCase()
   return (
-    <Box sx={{ mt: [2, 2, '24px'] }}>
-      <Text
+    <Box sx={{ mt: [2, 2, '20px'] }}>
+      <Box
         sx={{
           fontSize: [3],
           fontFamily: 'heading',
@@ -30,71 +29,30 @@ const Energy = ({ params, reset }) => {
       >
         ENERGY SOURCE
         <Reset onClick={reset} />
-      </Text>
-
-      <Text
+      </Box>
+      <Box
         sx={{
-          fontSize: [3],
+          fontSize: [3, 3, 3, 4],
         }}
       >
-        <Text as='span' sx={{ display: ['none', 'none', 'initial'] }}>
+        <Box as='span' sx={{ display: ['none', 'none', 'initial'] }}>
           The source of energy for the DAC facility is
-        </Text>
-        <Box
+        </Box>
+        <Select
+          size='sm'
           sx={{
-            display: 'inline-block',
             ml: [0, 0, 2],
+            mt: [0, 0, '18px'],
+            color: 'purple',
+            fontFamily: 'heading',
+            textTransform: 'uppercase',
           }}
         >
-          <select
-            onChange={handleChange}
-            sx={{
-              cursor: 'pointer',
-              WebkitAppearance: 'none',
-              MozAppearance: 'none',
-              p: [1],
-              pl: [0],
-              mt: [0, 0, 3],
-              bg: 'background',
-              border: 'none',
-              borderBottomStyle: 'solid',
-              borderBottomWidth: '1px',
-              borderBottomColor: 'text',
-              borderRadius: '0px',
-              fontFamily: 'heading',
-              fontSize: [3],
-              fontColor: 'text',
-              width: '100px',
-              color: 'purple',
-              userSelect: 'none',
-              ':focus-visible': {
-                outline: 'none !important',
-                background: 'none !important',
-              },
-            }}
-            defaultValue={defaultValue}
-          >
-            <option>NGCC</option>
-            <option>WIND</option>
-            <option>SOLAR</option>
-          </select>
-          <Text
-            as='span'
-            sx={{
-              ml: ['-15px'],
-              fontSize: [4],
-              pointerEvents: 'none',
-              position: 'relative',
-              top: '3px',
-              color: 'secondary',
-              width: '10px',
-              userSelect: 'none',
-            }}
-          >
-            ↓
-          </Text>
-        </Box>
-      </Text>
+          <option>NGCC</option>
+          <option>Wind</option>
+          <option>Solar</option>
+        </Select>
+      </Box>
     </Box>
   )
 }

@@ -1,7 +1,10 @@
-import { Layout } from '@carbonplan/components'
+import { useState } from 'react'
+import { Layout, Guide } from '@carbonplan/components'
 import Main from '../../components/main'
 
 const Index = () => {
+  const [expanded, setExpanded] = useState(false)
+
   return (
     <Layout
       title={'research / carbonplan'}
@@ -9,11 +12,13 @@ const Index = () => {
         'Articles, tools, and commentary on carbon removal and climate solutions.'
       }
       card={'https://images.carbonplan.org/social/research.png'}
-      footer={false}
       links={'local'}
       metadata={'POSTS: 10'}
+      nav={'research'}
+      settings={{ value: expanded, onClick: () => setExpanded(!expanded) }}
     >
-      <Main />
+      <Guide />
+      <Main expanded={expanded} />
     </Layout>
   )
 }
