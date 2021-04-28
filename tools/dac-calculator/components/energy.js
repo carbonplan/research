@@ -3,17 +3,11 @@ import { Box, Text } from 'theme-ui'
 import { Select } from '@carbonplan/components'
 import Reset from './reset'
 
-const eMap = {
-  WIND: 'Wind',
-  SOLAR: 'Solar',
-  NGCC: 'NGCC',
-}
-
 const Energy = ({ params, reset }) => {
   const [value, setValue] = params.state
 
-  const handleChange = (e) => {
-    setValue(eMap[e.target.value])
+  const onChange = (e) => {
+    setValue(e.target.value)
   }
 
   const defaultValue = value.toUpperCase()
@@ -40,6 +34,8 @@ const Energy = ({ params, reset }) => {
         </Box>
         <Select
           size='sm'
+          onChange={onChange}
+          defaultValue={defaultValue}
           sx={{
             ml: [0, 0, 2],
             mt: [0, 0, '18px'],
