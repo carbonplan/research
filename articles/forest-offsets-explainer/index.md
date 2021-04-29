@@ -65,7 +65,7 @@ export const sidenotes = {
     {
       label: 'Read preprint',
       href:
-        'https://carbonplan-assets.s3.amazonaws.com/docs/Badgley-et-al-Over-Crediting-Forest-Offsets-2021.pdf',
+        'https://doi.org/10.1101/2021.04.28.441870',
     },
     { label: 'Browse map', href: '/research/forest-offsets-map' },
     {
@@ -89,7 +89,7 @@ To better understand whether these climate claims hold up in practice, we perfor
   a 90% confidence interval.
 </FigureCaption>
 
-This article provides an overview of how we identified crediting errors in California's offsets program. For a deeper dive on our methods and analysis, you can read [our preprint](https://carbonplan-assets.s3.amazonaws.com/docs/Badgley-et-al-Over-Crediting-Forest-Offsets-2021.pdf). To better understand its implications, you can read [a story](https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere) by Lisa Song (ProPublica) and James Temple (MIT Technology Review) that covers and contextualizes our findings. Finally, you can browse [an interactive online map](https://carbonplan.org/research/forest-offsets-map) of the projects we analyzed, or download the open source [data](https://doi.org/10.5281/zenodo.4630712) and [code](https://github.com/carbonplan/forest-offsets) that underlies our analysis.
+This article provides an overview of how we identified crediting errors in California's offsets program. For a deeper dive on our methods and analysis, you can read [our preprint](https://doi.org/10.1101/2021.04.28.441870). To better understand its implications, you can read [a story](https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere) by Lisa Song (ProPublica) and James Temple (MIT Technology Review) that covers and contextualizes our findings. Finally, you can browse [an interactive online map](https://carbonplan.org/research/forest-offsets-map) of the projects we analyzed, or download the open source [data](https://doi.org/10.5281/zenodo.4630712) and [code](https://github.com/carbonplan/forest-offsets) that underlies our analysis.
 
 ## Background
 
@@ -147,7 +147,7 @@ To quantify these errors systematically, we replaced projects’ common practice
   see more info for that project.
 </FigureCaption>
 
-Our analysis relied on the [digitized project records](https://doi.org/10.5281/zenodo.4630684) described above, as well as public data from the US Forest Service [Forest Inventory Analysis](https://www.fia.fs.fed.us/) program and the open source [rFIA package](https://github.com/hunter-stanke/rFIA). Our methods are described in detail in [our preprint](https://carbonplan-assets.s3.amazonaws.com/docs/Badgley-et-al-Over-Crediting-Forest-Offsets-2021.pdf) and all of the [code](https://github.com/carbonplan/forest-offsts) and [additional data](https://doi.org/10.5281/zenodo.4630712) underlying our analysis is open source and fully reproducible.
+Our analysis relied on the [digitized project records](https://doi.org/10.5281/zenodo.4630684) described above, as well as public data from the US Forest Service [Forest Inventory Analysis](https://www.fia.fs.fed.us/) program and the open source [rFIA package](https://github.com/hunter-stanke/rFIA). Our methods are described in detail in [our preprint](https://doi.org/10.1101/2021.04.28.441870) and all of the [code](https://github.com/carbonplan/forest-offsts) and [additional data](https://doi.org/10.5281/zenodo.4630712) underlying our analysis is open source and fully reproducible.
 
 Across the program as a whole, we estimate net over-crediting of 30 million tCO₂e total (90% CI: 20.5 to 38.6 million tCO₂e) or 29.4% of the credits we analyzed (90% CI: 20.1 to 37.8%). At recent market prices of $13.67 per offset credit,<Reference color={meta.color} data={sidenotes[3]}/> these excess credits are worth $410 million (90% CI: $280 to $528 million) — and likely more, as market prices would rise if market regulators took steps to correct for over-crediting.
 
@@ -211,7 +211,7 @@ Grayson, Danny, Jeremy, and Joe designed the research; Grayson digitized the pro
 
 A version of this work is currently under peer review and is available now via the following preprint:
 
-G Badgley, J Freeman, J Hamman, B Haya, A T Trugman, W R L Anderegg, D Cullenward (2021) “Systematic over-crediting in California’s forest carbon offsets program” [PDF](https://carbonplan-assets.s3.amazonaws.com/docs/Badgley-et-al-Over-Crediting-Forest-Offsets-2021.pdf)
+G Badgley, J Freeman, J Hamman, B Haya, A T Trugman, W R L Anderegg, D Cullenward (2021) “Systematic over-crediting in California’s forest carbon offsets program” bioRxiv doi: [10.1101/2021.04.28.441870](https://doi.org/10.1101/2021.04.28.441870)
 
 Please cite this web article as:
 

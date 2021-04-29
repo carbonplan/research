@@ -16,7 +16,7 @@ const Contents = [
       {
         label: 'Read preprint',
         href:
-          'https://carbonplan-assets.s3.amazonaws.com/docs/Badgley-et-al-Over-Crediting-Forest-Offsets-2021.pdf',
+          'https://doi.org/10.1101/2021.04.28.441870',
       },
       {
         label: 'Browse map',
