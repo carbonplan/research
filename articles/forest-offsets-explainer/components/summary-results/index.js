@@ -106,7 +106,7 @@ const SummaryResults = () => {
           <Box sx={{ ...sx.group }}>
             <Box sx={sx.label}>Credit value</Box>
             <Box sx={{ ...sx.valueSmall, mt: [2] }}>
-              ${program.defaultCreditValue}*
+              ${program.defaultCreditValue}
             </Box>
           </Box>
         </Column>
