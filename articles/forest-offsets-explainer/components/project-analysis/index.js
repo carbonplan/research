@@ -468,7 +468,7 @@ const ProjectAnalysis = () => {
               </Box>
             </Box>
             <Link
-              href={`/research/forest-offsets?id=${selected}`}
+              href={`/research/forest-offsets-map?id=${selected}`}
               sx={{
                 textDecoration: 'none',
                 width: 'fit-content',
