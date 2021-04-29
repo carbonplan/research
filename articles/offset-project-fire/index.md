@@ -27,7 +27,7 @@ export const meta = {
   card: 'offset-project-fire',
   background: 'article-004/forest',
   summary:
-    'A major fire in Oregon illustrates the challenges of managing forest carbon permanence.',
+    'A major fire in Oregon illustrates the challenges of managing forest carbon permanence',
   quotes: [],
 }
 

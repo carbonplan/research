@@ -1,4 +1,5 @@
 import Article from '../../components/article'
+import Links from '../../components/links'
 import SectionBreak from '../../components/section-break'
 import PullQuote from '../../components/pull-quote'
 import FigureCaption from '../../components/figure-caption'
@@ -27,6 +28,11 @@ export const meta = {
 }
 
 # Insights from our first project reports
+
+<Links
+  color='secondary'
+  data={[{ label: 'Browse the database', href: '/research/cdr-database' }]}
+/>
 
 At CarbonPlan we analyze carbon removal projects, programs, and technologies. We believe that carbon removal (or "negative emissions") will play an important role in addressing the climate crisis, and we want to help engender a culture of openness, transparency, and accountability. Our hope is that sharing data and insights can benefit the field as a whole — to complement the work of the inventors, scientists, entrepreneurs, and activists who are making climate solutions a reality.
 

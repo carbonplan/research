@@ -18,7 +18,7 @@ export const meta = {
   card: 'soil-carbon-comment',
   background: 'article-001/soil',
   summary:
-    'Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols.',
+    'Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols',
 }
 
 export const sidenotes = {

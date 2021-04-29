@@ -20,7 +20,7 @@ const Tool = ({ title, description, meta, children }) => {
     <Layout
       card={`${prefix}/social/${meta.card}.png`}
       metadata={false}
-      description={meta.summary}
+      description={meta.summary + '.'}
       title={meta.title.toLowerCase() + ' / research / carbonplan'}
       links={'local'}
       nav={'research'}
