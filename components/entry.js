@@ -164,6 +164,7 @@ const Entry = ({ info, first, final }) => {
                     key={tag}
                     sx={{
                       ml: [2],
+                      mb: ['5px'],
                       color: 'secondary',
                     }}
                   >
