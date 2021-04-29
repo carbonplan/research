@@ -1,5 +1,6 @@
 import { Icons } from '@carbonplan/components'
 import Article from '../../components/article'
+import Links from '../../components/links'
 import PullQuote from '../../components/pull-quote'
 import Endnote from '../../components/endnote'
 import SectionBreak from '../../components/section-break'
@@ -31,6 +32,11 @@ export const meta = {
 }
 
 # Insights from analyzing a new round of carbon removal projects
+
+<Links
+  color='secondary'
+  data={[{ label: 'Browse the database', href: '/research/cdr-database' }]}
+/>
 
 CarbonPlan analyzes carbon removal projects and programs because we believe these activities will play an important role in addressing the climate crisis. In 2020, we began building a publicly accessible [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal project reports. The purpose of this database is to help engender a culture of openness, transparency, and accountability for those participating in the field of carbon removal.
 

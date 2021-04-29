@@ -90,7 +90,9 @@ const Reference = ({ color, data }) => {
             <Box
               as='span'
               sx={{
+                position: 'relative',
                 ml: ['-12px'],
+                mt: ['-50px'],
                 lineHeight: 1.25,
                 letterSpacing: '0.0125em',
                 display: ['none', 'none', 'initial'],
@@ -102,7 +104,7 @@ const Reference = ({ color, data }) => {
               as='span'
               sx={{
                 ml: [0, 0, '7px'],
-                mt: [0, 0, '-17px'],
+                mt: [0, 0, '-16px', '-18px'],
                 display: ['initial', 'intial', 'block'],
                 lineHeight: 1.25,
                 letterSpacing: '0.0125em',
