@@ -174,11 +174,11 @@ This is best illustrated in the spatial pattern of projects in the Southern Casc
   >
     (<Triangle />)
   </span>, which earn credits simply by having forests with higher carbon levels
-  than the supersection average. Select a project{' '}
-  <span style={{ whiteSpace: 'nowrap' }}>
+  than the supersection average. Select a project <span
+    style={{ whiteSpace: 'nowrap' }}
+  >
     (<Triangle />)
-  </span>{' '}
-  to see details including ID, developer, and our estimate of crediting error.
+  </span> to see details including ID, developer, and our estimate of crediting error.
 </FigureCaption>
 
 While the Southern Cascades is an extreme example, any form of averaging creates an opportunity for adverse selection. Biogeographers have long understood the challenge of drawing firm boundaries around ecological regions or categories of species. While boundaries help communicate with outside audiences, border regions are complex areas where the characteristics of separate regions interact. Any program based on such boundaries must be continually reviewed to ensure the kind of adverse selection described here is not taking place.
