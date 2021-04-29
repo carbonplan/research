@@ -27,7 +27,7 @@ export const meta = {
   background: 'article-006/wind',
   card: 'dac-calculator-explainer',
   summary:
-    'How the cost of direct air capture varies under different energy scenarios.',
+    'How the cost of direct air capture varies under different energy scenarios',
 }
 
 export const sidenotes = {

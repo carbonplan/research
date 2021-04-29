@@ -20,7 +20,7 @@ export const meta = {
   card: 'permanence-calculator-explainer',
   background: 'article-005/leaf',
   summary:
-    'How to compare the long-term cost of temporary and permanent carbon removal.',
+    'How to compare the long-term cost of temporary and permanent carbon removal',
 }
 
 export const sidenotes = {

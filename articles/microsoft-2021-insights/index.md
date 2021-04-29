@@ -26,7 +26,7 @@ export const meta = {
   ],
   color: 'secondary',
   summary:
-    "Project reports and lessons learned from analyzing proposals for Microsoft's 2021 Carbon Removal procurement.",
+    "Project reports and lessons learned from analyzing proposals for Microsoft's 2021 Carbon Removal procurement",
   background: 'article-007/sign',
   card: 'microsoft-2021-insights',
 }

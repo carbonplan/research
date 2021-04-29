@@ -21,7 +21,7 @@ export const meta = {
   card: 'carbon-removal-mechanisms',
   background: 'article-003/pipes',
   summary:
-    'How different carbon removal projects interact with the global carbon cycle.',
+    'How different carbon removal projects interact with the global carbon cycle',
 }
 
 export const sidenotes = {

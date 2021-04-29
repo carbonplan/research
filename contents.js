@@ -15,7 +15,7 @@ const Contents = [
       },
       {
         label: 'Read preprint',
-        href: '/research/forest-offsets-explainer',
+        href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Badgley-et-al-Over-Crediting-Forest-Offsets-2021.pdf',
       },
       {
         label: 'Browse map',
