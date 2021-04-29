@@ -209,9 +209,9 @@ It is precisely on issues of such critical importance to the public where we bel
 
 Grayson, Danny, Jeremy, and Joe designed the research; Grayson digitized the project report data; Grayson, Danny, Jeremy, Joe, and Barbara performed the research and analyzed the data; all authors contributed to interpreting the results and writing the paper. Jeremy developed the interactive graphics with input from Jonny Black of [Ordinary Things](https://ot.studio/).
 
-A version of this work is currently under peer review and is available via the following preprint:
+A version of this work is currently under peer review and is available now via the following preprint:
 
-G Badgley, J Freeman, J Hamman, B Haya, A T Trugman, W R L Anderegg, D Cullenward (2021) “Systematic over-crediting in California’s forest carbon offsets program” bioRxiv, [PDF](https://carbonplan-assets.s3.amazonaws.com/docs/Badgley-et-al-Over-Crediting-Forest-Offsets-2021.pdf)
+G Badgley, J Freeman, J Hamman, B Haya, A T Trugman, W R L Anderegg, D Cullenward (2021) “Systematic over-crediting in California’s forest carbon offsets program” [PDF](https://carbonplan-assets.s3.amazonaws.com/docs/Badgley-et-al-Over-Crediting-Forest-Offsets-2021.pdf)
 
 Please cite this web article as:
 
