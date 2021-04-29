@@ -98,7 +98,7 @@ const Contents = [
     date: '06-23-2020',
     version: '1.0.0',
     color: 'green',
-    icon: 'article-002/tree-small',
+    icon: 'article-002/forest-small',
     links: [
       {
         label: 'Read paper',
