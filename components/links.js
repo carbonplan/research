@@ -19,6 +19,7 @@ const Links = ({ data, color }) => {
                 'inline-block',
               ],
               mr: [3],
+              mt: [3, 0, 0, 0],
               mb: [1, 0, 0, 0],
               width: 'fit-contents',
               textDecoration: 'none',
