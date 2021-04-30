@@ -42,6 +42,12 @@ const Article = ({ children, meta }) => {
             meta.background ? `url(${prefix}/${meta.background}.png)` : 'none',
           ],
           width: ['calc(100vw)'],
+          maxWidth: [
+            'calc(100% + 32px)',
+            'calc(100% + 48px)',
+            '100%',
+            '100%',
+          ],
           left: [0],
           ml: [-3, -4, 0],
           backgroundSize: 'cover',
