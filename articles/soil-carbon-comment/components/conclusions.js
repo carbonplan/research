@@ -98,7 +98,7 @@ const TableWrapper = ({ data, header, first = false }) => {
   return (
     <Table
       color='orange'
-      header='Additionality'
+      header={header}
       data={data}
       columns={[6]}
       start={[
