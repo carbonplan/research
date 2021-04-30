@@ -64,8 +64,7 @@ export const sidenotes = {
   data={[
     {
       label: 'Read preprint',
-      href:
-        'https://doi.org/10.1101/2021.04.28.441870',
+      href: 'https://doi.org/10.1101/2021.04.28.441870',
     },
     { label: 'Browse map', href: '/research/forest-offsets-map' },
     {

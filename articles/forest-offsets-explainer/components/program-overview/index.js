@@ -17,7 +17,12 @@ const Bar = ({ width, label, value, color }) => {
       <Box
         sx={{
           ...sx.bar,
-          width: `calc(${width} * 100% - 66px)`,
+          width: [
+            `calc(${width} * 100% - 52px)`,
+            `calc(${width} * 100% - 66px)`,
+            `calc(${width} * 100% - 66px)`,
+            `calc(${width} * 100% - 66px)`,
+          ],
           position: 'relative',
           backgroundColor: color,
         }}
@@ -51,70 +56,6 @@ const Bar = ({ width, label, value, color }) => {
         }}
       >
         {format('.3~s')(value)}
-      </Text>
-    </Box>
-  )
-}
-
-const FilledBar = ({ width, label, value, color }) => {
-  return (
-    <Box sx={{ mb: [3] }}>
-      <Box
-        sx={{
-          ...sx.bar,
-          width: `calc(100% - 66px)`,
-          position: 'relative',
-        }}
-      >
-        <Box
-          sx={{
-            ...sx.bar,
-            width: '100%',
-            position: 'absolute',
-            backgroundColor: color,
-            left: 0,
-            opacity: 0.2,
-          }}
-        />
-        <Box
-          sx={{
-            ...sx.bar,
-            width: width * 100 + '%',
-            position: 'absolute',
-            backgroundColor: color,
-            left: 0,
-            opacity: 1,
-          }}
-        />
-        <Text
-          sx={{
-            display: 'inline-block',
-            fontFamily: 'mono',
-            letterSpacing: 'mono',
-            textTransform: 'uppercase',
-            color: 'background',
-            fontSize: [1],
-            position: 'absolute',
-            mt: ['3px'],
-            ml: [2],
-          }}
-        >
-          {label}
-        </Text>
-      </Box>
-      <Text
-        sx={{
-          display: 'inline-block',
-          fontFamily: 'mono',
-          letterSpacing: 'mono',
-          color: color,
-          fontSize: [4],
-          position: 'absolute',
-          mt: ['-5px'],
-          ml: [2],
-        }}
-      >
-        {format('.2~p')(value)}
       </Text>
     </Box>
   )
