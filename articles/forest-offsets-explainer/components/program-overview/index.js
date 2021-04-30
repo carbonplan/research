@@ -123,7 +123,7 @@ const FilledBar = ({ width, label, value, color }) => {
 const ProgramOverview = () => {
   const { theme } = useThemeUI()
   return (
-    <Box sx={{ maxWidth: '600px', mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+    <Box sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
       <Box sx={{ width: '100%' }}>
         <Bar
           width={1}
