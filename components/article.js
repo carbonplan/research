@@ -28,7 +28,6 @@ const Article = ({ children, meta }) => {
       metadata={'scroll'}
       nav={'research'}
     >
-      <Guide />
       <Box
         sx={{
           backgroundColor: meta.color,

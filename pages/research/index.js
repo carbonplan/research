@@ -17,7 +17,6 @@ const Index = () => {
       nav={'research'}
       settings={{ value: expanded, onClick: () => setExpanded(!expanded) }}
     >
-      <Guide />
       <Main expanded={expanded} />
     </Layout>
   )
