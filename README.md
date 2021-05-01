@@ -17,7 +17,7 @@
 [actions]: https://github.com/carbonplan/research/actions/workflows/main.yaml
 [mit license]: https://badgen.net/badge/license/MIT/blue
 
-This repository contains our directory of research articles, including notes, primers, models, and datasets. Browse at [carbonplan.org/research](https://carbonplan.org/research).
+This repository contains our directory of research articles, tools, and commentary. Browse the live version at [carbonplan.org/research](https://carbonplan.org/research). All articles and most of our tools are included directly within this repository within the `articles` and `tools` folders. Some of our more complex tools are in separate repos and hosted independently (for example [`forest-offests`](https://github.com/carbonplan/forest-offsets-web) and [`cdr-database`](https://github.com/carbonplan/cdr-database).
 
 The site is a [Next.js](https://nextjs.org/) project, deployed on [Vercel](https://vercel.com/).
 
