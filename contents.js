@@ -19,7 +19,7 @@ const Contents = [
       },
       {
         label: 'Browse map',
-        href: '/research/forest-offsets-map',
+        href: '/research/forest-offsets',
       },
       {
         label: 'ProPublica / MIT Tech Review coverage',

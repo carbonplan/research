@@ -108,7 +108,7 @@ const Info = ({ project, mobile = false }) => {
         }}
       />
       <Link
-        href={`/research/forest-offsets-map?id=${id}`}
+        href={`/research/forest-offsets?id=${id}`}
         sx={{
           textDecoration: 'none',
           width: 'fit-content',

@@ -66,7 +66,7 @@ export const sidenotes = {
       label: 'Read preprint',
       href: 'https://doi.org/10.1101/2021.04.28.441870',
     },
-    { label: 'Browse map', href: '/research/forest-offsets-map' },
+    { label: 'Browse map', href: '/research/forest-offsets' },
     {
       label: 'Press coverage',
       href:
@@ -88,7 +88,7 @@ To better understand whether these climate claims hold up in practice, we perfor
   a 90% confidence interval.
 </FigureCaption>
 
-This article provides an overview of how we identified crediting errors in California's offsets program. For a deeper dive on our methods and analysis, you can read [our preprint](https://doi.org/10.1101/2021.04.28.441870). To better understand its implications, you can read [a story](https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere) by Lisa Song (ProPublica) and James Temple (MIT Technology Review) that covers and contextualizes our findings. Finally, you can browse [an interactive online map](https://carbonplan.org/research/forest-offsets-map) of the projects we analyzed, or download the open source [data](https://doi.org/10.5281/zenodo.4630712) and [code](https://github.com/carbonplan/forest-offsets) that underlies our analysis.
+This article provides an overview of how we identified crediting errors in California's offsets program. For a deeper dive on our methods and analysis, you can read [our preprint](https://doi.org/10.1101/2021.04.28.441870). To better understand its implications, you can read [a story](https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere) by Lisa Song (ProPublica) and James Temple (MIT Technology Review) that covers and contextualizes our findings. Finally, you can browse [an interactive online map](https://carbonplan.org/research/forest-offsets) of the projects we analyzed, or download the open source [data](https://doi.org/10.5281/zenodo.4630712) and [code](https://github.com/carbonplan/forest-offsets) that underlies our analysis.
 
 ## Background
 
@@ -129,7 +129,7 @@ We found evidence that the vast majority of projects were over-credited: for the
 
 For example, in the “Southern Cascades” region of California, the common practice numbers used in the program average together temperate, carbon-dense forest types like Douglas Fir (<i>Pseudotsuga menziesii</i>, average 122.5 tCO₂ / acre) and Tanoak (<i>Notholithocarpus densiflorus</i>, average 192.4 tCO₂ / acre) with less-carbon-dense forest types that occupy more arid niches, like Ponderosa pine (<i>Pinus ponderosa</i>, average 60.4 tCO₂ / acre).<Reference color={meta.color} data={sidenotes[1]}/>
 
-Comparing project carbon against this average causes projects like [ACR189](https://carbonplan.org/research/forest-offsets-map?id=ACR189), which is located in Northern California and is composed primarily of Douglas fir (26% of basal area) and Tanoak (49% of basal area), to receive substantial credits simply due to a mismatch between the species in the project and the species included in the regional average. If we instead compare ACR189 against Douglas Fir and Tanoak — a more ecologically robust comparison — we find the project was over-credited by 135,869 tCO₂e (90% CI: 85,481-185,917 tCO₂e), or 50.1% (90% CI: 31.5-68.6%) of its total credits.<Reference color={meta.color} data={sidenotes[2]}/>
+Comparing project carbon against this average causes projects like [ACR189](https://carbonplan.org/research/forest-offsets?id=ACR189), which is located in Northern California and is composed primarily of Douglas fir (26% of basal area) and Tanoak (49% of basal area), to receive substantial credits simply due to a mismatch between the species in the project and the species included in the regional average. If we instead compare ACR189 against Douglas Fir and Tanoak — a more ecologically robust comparison — we find the project was over-credited by 135,869 tCO₂e (90% CI: 85,481-185,917 tCO₂e), or 50.1% (90% CI: 31.5-68.6%) of its total credits.<Reference color={meta.color} data={sidenotes[2]}/>
 
 But ACR189 wasn’t an exception. We found this same pattern over and over again.
 
