@@ -1,7 +1,7 @@
 import { Box } from 'theme-ui'
 import { Column } from '@carbonplan/components'
 
-const QuickLook = ({ start, color, children }) => {
+const QuickLook = ({ start, color, children, tool = false }) => {
   return (
     <>
       <Column start={[1, start]} width={[1]}>
@@ -17,7 +17,7 @@ const QuickLook = ({ start, color, children }) => {
                 fontFamily: 'faux',
                 letterSpacing: 'smallcaps',
                 mb: [3],
-                pt: [0, 0, '42px', '23px'],
+                pt: tool ? [0, 0, '42px', '55px'] : [0, 0, '42px', '23px'],
                 textAlign: 'right',
               }}
             >
@@ -39,7 +39,7 @@ const QuickLook = ({ start, color, children }) => {
                 fontFamily: 'faux',
                 letterSpacing: 'smallcaps',
                 mb: [3],
-                pt: ['20px', '20px', '42px', '23px'],
+                pt: tool ? [0, 0, '42px', '55px'] : [0, 0, '42px', '23px'],
               }}
             >
               QUICK LOOK

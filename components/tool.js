@@ -32,7 +32,7 @@ const Tool = ({ title, description, meta, children }) => {
             start={[1, 1]}
             width={[2]}
             dr={1}
-            sx={{ mb: [-2, -4, 0, 0], mt: [3, 4, '104px', '150px'] }}
+            sx={{ mb: [-2, -4, 0, 0], mt: [3, 4, '106px', '152px'] }}
           >
             <InternalLink href={'/research'}>
               <BackButton sx={{ ml: ['-2px', '-2px', '-2px', '-2px'] }} />
@@ -44,12 +44,12 @@ const Tool = ({ title, description, meta, children }) => {
             <Box as='h1' variant='styles.h1' sx={{ mt: [5, 7, 7, 8] }}>
               {title}
             </Box>
-            <Box sx={{ mb: [0, 0, 4], mt: [0, 0, 7, 8] }}>
+            <Box sx={{ mb: [0, 0, 4], mt: [0, 0, 5, 6] }}>
               <Themed.p>{description}</Themed.p>
             </Box>
           </Box>
         </Column>
-        <QuickLook start={8} color={meta.color}>
+        <QuickLook start={8} color={meta.color} tool={true}>
           {meta.summary}
         </QuickLook>
       </Row>
