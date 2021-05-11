@@ -10,6 +10,8 @@ export const meta = {
   back: '/research/forest-offsets-explainer',
   color: 'green',
   card: 'forest-offsets-explainer',
+  summary:
+    "FAQ for our article Systematic over-crediting of forest offsets",
 }
 
 # FAQ
