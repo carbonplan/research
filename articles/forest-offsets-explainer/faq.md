@@ -6,7 +6,7 @@ import Supplement from '../../components/supplement'
 export const meta = {
   id: 'forest-offsets-explainer-faq',
   date: '05-12-2021',
-  title: 'Systematic over-crediting of forest offsets (FAQ)',
+  title: 'faq / systematic over-crediting of forest offsets',
   back: '/research/forest-offsets-explainer',
   color: 'green',
   card: 'forest-offsets-explainer',
@@ -30,7 +30,7 @@ export const meta = {
   >
     preprint
   </Link> including the extended methods. To make this information more accessible,
-  however, we have developed this list of FAQs.
+  however, we have developed this FAQ.
 </Box>
 
 ## Does the paper’s “alternative common practice” estimates lead to lower precision relative to the approach taken by the Climate Action Reserve and the California Air Resources Board?
