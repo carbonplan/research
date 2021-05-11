@@ -10,8 +10,7 @@ export const meta = {
   back: '/research/forest-offsets-explainer',
   color: 'green',
   card: 'forest-offsets-explainer',
-  summary:
-    "FAQ for our article Systematic over-crediting of forest offsets",
+  summary: 'FAQ for our article Systematic over-crediting of forest offsets',
 }
 
 # FAQ
@@ -125,49 +124,50 @@ Although our approach is both reliable and accurate, it is not perfect. To addre
 
 Had we simply calculated our alternative common practice concept and directly used that number to estimate crediting error, our method could incorporate statistical imperfections that reflect differences between our methods and/or data sources, rather than the ecological errors we identified in CARB’s approach. We did not take this approach.
 
-Instead, we estimated a variable called CPNEW as follows and used it to estimate the number of offset credits a project should have received based on CARB’s protocol rules
+Instead, we estimated a variable called CP<sub>NEW</sub> as follows and used it to estimate the number of offset credits a project should have received based on CARB’s protocol rules
 
-<Code>CPNEW = (CP1 / CP0) * CPARB</Code>
+<Code>
+  CP<sub>NEW</sub> = (CP<sub>1</sub> / CP<sub>0</sub>) * CP<sub>ARB</sub>
+</Code>
 
 Where:
 
 <Code>
-  CPARB =<br />
-  common practice number from CARB
+  CP<sub>ARB</sub> = common practice number from CARB
   <br />
   <br />
-  CP0 =<br />
-  our re-estimate of CARB’s common practice number
+  CP<sub>0</sub> = our re-estimate of CARB’s common practice number
   <br />
   <br />
-  CP1 = <br />
-  our alternative species-specific common practice
+  CP<sub>1</sub> = our alternative species-specific common practice
 </Code>
 
-Thus, our approach scales CARB’s own estimate of common practice (CPARB), which is taken directly from the 2015 forest protocol, by the ratio of our estimate of a species-specific common practice number (CP1) to our re-estimate of CARB’s original common practice number (CP0).
+Thus, our approach scales CARB’s own estimate of common practice (CP<sub>ARB</sub>), which is taken directly from the 2015 forest protocol, by the ratio of our estimate of a species-specific common practice number (CP<sub>1</sub>) to our re-estimate of CARB’s original common practice number (CP<sub>0</sub>).
 
-This approach allows us to isolate the effect of varying forest types from any differences between our estimate of CP0 and projects’ reported CPARB. In other words, it ensures that our estimates of change in common practice are internally consistent, as we expect any error in re-estimating CARB’s common practice (CP0) to also be present in our ability to accurately estimate our alternative common practice (CP1).
+This approach allows us to isolate the effect of varying forest types from any differences between our estimate of CP<sub>0</sub> and projects’ reported CP<sub>ARB</sub>. In other words, it ensures that our estimates of change in common practice are internally consistent, as we expect any error in re-estimating CARB’s common practice (CP<sub>0</sub>) to also be present in our ability to accurately estimate our alternative common practice (CP<sub>1</sub>).
 
 ### Any remaining bias suggests more (not less) over-crediting
 
 After showing that our estimates are accurate and developing a method to avoid bias, we analyzed our data to check for remaining bias that could prejudice our results. We wrote:
 
 <Blockquote source={'Extended Methods / page 14'}>
-  Note also that any systematic bias in our estimates of CP0 relative to CPARB
-  could potentially overestimate (or underestimate) our re-crediting
-  calculations. Specifically, if we systematically overestimated CP0, then we
-  underestimated over-crediting; similarly, if we systematically underestimated
-  CP0, then we overestimated over-crediting. As reported above, our estimates of
-  CP0 are well matched to CPARB (R² = 0.94, RMSE = 9.76), and on average were
-  3.2% higher than CPARB. If anything, the fact that we overestimate CPARB
-  likely makes our overall finding of net over-crediting conservative. In
-  addition, we found no evidence for a systematic relationship between error in
-  our estimate of CP0 and our estimates of crediting error (r = 0.06).
+  Note also that any systematic bias in our estimates of CP<sub>0</sub> relative
+  to CP<sub>ARB</sub> could potentially overestimate (or underestimate) our
+  re-crediting calculations. Specifically, if we systematically overestimated CP
+  <sub>0</sub>, then we underestimated over-crediting; similarly, if we
+  systematically underestimated CP<sub>0</sub>, then we overestimated
+  over-crediting. As reported above, our estimates of CP<sub>0</sub> are well
+  matched to CP<sub>ARB</sub> (R² = 0.94, RMSE = 9.76), and on average were 3.2%
+  higher than CP<sub>ARB</sub>. If anything, the fact that we overestimate CP
+  <sub>ARB</sub> likely makes our overall finding of net over-crediting
+  conservative. In addition, we found no evidence for a systematic relationship
+  between error in our estimate of CP<sub>0</sub> and our estimates of crediting
+  error (r = 0.06).
 </Blockquote>
 
-In other words, our reproduction of CARB’s common practice (CP0) is a little too high on average; and because the formula for our alternative estimate of common practice (CPNEW) divides by our re-estimate of CARB’s common practice (CP0), our alternative common practice variable is too low; and because increases in our alternative common practice result in more over-crediting, our estimate of over-crediting is conservative.
+In other words, our reproduction of CARB’s common practice (CP<sub>0</sub>) is a little too high on average; and because the formula for our alternative estimate of common practice (CP<sub>NEW</sub>) divides by our re-estimate of CARB’s common practice (CP<sub>0</sub>), our alternative common practice variable is too low; and because increases in our alternative common practice result in more over-crediting, our estimate of over-crediting is conservative.
 
-We also find no correlation between errors in our re-estimate of CARB’s common practice numbers (CP0) and our crediting error results. If our use of a contemporary FIA database introduced bias into results, then we would expect to find a correlation. We do not.
+We also find no correlation between errors in our re-estimate of CARB’s common practice numbers (CP<sub>0</sub>) and our crediting error results. If our use of a contemporary FIA database introduced bias into results, then we would expect to find a correlation. We do not.
 
 ## Does this research merely repeat claims that the California courts heard previously and decided in favor of the California Air Resources Board?
 
