@@ -72,6 +72,10 @@ export const sidenotes = {
       href:
         'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
     },
+    {
+      label: 'FAQ',
+      href: '/research/forest-offsets-explainer-faq',
+    },
   ]}
 />
 

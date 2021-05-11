@@ -1,4 +1,5 @@
 import { Box, Text, Grid, Container } from 'theme-ui'
+import { MDXProvider } from '@mdx-js/react'
 import {
   Layout,
   Row,
@@ -28,6 +29,7 @@ const Article = ({ children, meta }) => {
       metadata={'scroll'}
       nav={'research'}
     >
+      <MDXProvider>
       <Box
         sx={{
           backgroundColor: meta.color,
@@ -234,6 +236,7 @@ const Article = ({ children, meta }) => {
           </QuickLook>
         </Row>
       </Box>
+      </MDXProvider>
     </Layout>
   )
 }
