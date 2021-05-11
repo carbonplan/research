@@ -3,16 +3,18 @@ import { alpha } from '@theme-ui/color'
 
 const Code = ({ children }) => {
   return (
-    <Box sx={{
-      bg: alpha('muted', 0.5), 
-      color: 'primary', 
-      fontSize: [2, 2, 2, 3], 
-      my: [5, 5, 5, 6],
-      p: [3, 3, 3, 4],
-      borderRadius: '2px',
-      fontFamily: 'mono',
-      letterSpacing: 'mono',
-    }}>
+    <Box
+      sx={{
+        bg: alpha('muted', 0.5),
+        color: 'primary',
+        fontSize: [2, 2, 2, 3],
+        my: [5, 5, 5, 6],
+        p: [3, 3, 3, 4],
+        borderRadius: '2px',
+        fontFamily: 'mono',
+        letterSpacing: 'mono',
+      }}
+    >
       {children}
     </Box>
   )
