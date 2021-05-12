@@ -1,7 +1,7 @@
 import { Row, Column } from '@carbonplan/components'
 import Scatter from '../scatter'
-import assessmentAreas from './assessment-areas.json'
-import projects from './projects.json'
+import { assessmentAreas } from './assessment-areas'
+import { projects } from './projects'
 
 const CommonPractice = () => {
   return (
