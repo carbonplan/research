@@ -40,8 +40,7 @@ export const meta = {
     sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
   >
     preprint
-  </Link> including the extended methods. To make this information more accessible,
-  however, we have developed this FAQ.
+  </Link>, including the extended methods. To make this information more accessible, we developed this FAQ.
   <br />
   <br />
   Prepared by{' '}
