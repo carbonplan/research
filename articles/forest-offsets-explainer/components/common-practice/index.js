@@ -7,7 +7,7 @@ const CommonPractice = () => {
   return (
     <Row
       columns={[6]}
-      sx={{ height: ['550px', '250px', '250px', '250px'], my: [6, 6, 6, 7] }}
+      sx={{ my: [6, 6, 6, 7] }}
     >
       <Column
         start={[1, 1, 1, 1]}

@@ -25,7 +25,7 @@ const yScale = scaleLinear()
 
 const Scatter = ({ data, title, legend1, legend2, color = 'primary' }) => {
   return (
-    <Box sx={{ width: '100%', height: '100%' }}>
+    <Box sx={{ width: '100%', height: ['300px', '250px', '250px', '250px'] }}>
       <Box as='svg' width={'100%'} height={'100%'}>
         <Box
           as='g'
@@ -116,13 +116,13 @@ const Scatter = ({ data, title, legend1, legend2, color = 'primary' }) => {
           />
           <line x1={`${ml}%`} x2={`${ml}%`} y1={`${mt}%`} y2={`${100 - mb}%`} />
         </Box>
+        <Box as='g' sx={{transform: `translateX(${ml + xScale(225 / 2)}%)`}}>
         <Box
           as='text'
           x={'0%'}
           y={'100%'}
           textAnchor={'middle'}
           sx={{
-            transform: `translateX(${ml + xScale(225 / 2)}%)`,
             fill: 'primary',
             fontFamily: 'mono',
             fontSize: [1, 1, 1, 2],
@@ -130,13 +130,14 @@ const Scatter = ({ data, title, legend1, legend2, color = 'primary' }) => {
         >
           <tspan dy={-19}>{xLabel}</tspan>
         </Box>
+        </Box>
+        <Box as='g' sx={{transform: `translateX(${ml + xScale(225 / 2)}%)`}}>
         <Box
           as='text'
           x={'0%'}
           y={'100%'}
           textAnchor={'middle'}
           sx={{
-            transform: `translateX(${ml + xScale(225 / 2)}%)`,
             fill: 'secondary',
             fontFamily: 'mono',
             fontSize: [1, 1, 1, 2],
@@ -144,13 +145,14 @@ const Scatter = ({ data, title, legend1, legend2, color = 'primary' }) => {
         >
           <tspan dy={-2}>{xUnits}</tspan>
         </Box>
+        </Box>
+        <Box as='g' sx={{transform: `translateY(${mt + yScale(225 / 2)}%) rotate(-90deg)`}}>
         <Box
           as='text'
           x={'0%'}
           y={'0%'}
           textAnchor={'middle'}
           sx={{
-            transform: `translateY(${mt + yScale(225 / 2)}%) rotate(-90deg)`,
             fill: 'primary',
             fontFamily: 'mono',
             fontSize: [1, 1, 1, 2],
@@ -158,13 +160,14 @@ const Scatter = ({ data, title, legend1, legend2, color = 'primary' }) => {
         >
           <tspan dy={11}>{yLabel}</tspan>
         </Box>
+        </Box>
+        <Box as='g' sx={{transform: `translateY(${mt + yScale(225 / 2)}%) rotate(-90deg)`,}}>
         <Box
           as='text'
           x={'0%'}
           y={'0%'}
           textAnchor={'middle'}
           sx={{
-            transform: `translateY(${mt + yScale(225 / 2)}%) rotate(-90deg)`,
             fill: 'secondary',
             fontFamily: 'mono',
             fontSize: [1, 1, 1, 2],
@@ -172,7 +175,7 @@ const Scatter = ({ data, title, legend1, legend2, color = 'primary' }) => {
         >
           <tspan dy={28}>{yUnits}</tspan>
         </Box>
-
+        </Box>
         <Box
           as='line'
           x1={`${ml + xScale(0)}%`}
@@ -182,9 +185,10 @@ const Scatter = ({ data, title, legend1, legend2, color = 'primary' }) => {
           sx={{ stroke: 'secondary', strokeWidth: 1 }}
         />
         <g>
-          {data.map((d) => {
+          {data.map((d,i) => {
             return (
               <Box
+                key={i}
                 as='circle'
                 cx={`${ml + xScale(d.x)}%`}
                 cy={`${mt + yScale(d.y)}%`}
@@ -194,6 +198,7 @@ const Scatter = ({ data, title, legend1, legend2, color = 'primary' }) => {
             )
           })}
         </g>
+        <Box as='g' sx={{transform: `translateX(${ml}%)`}}>
         <Box
           as='text'
           x={'0%'}
@@ -202,13 +207,13 @@ const Scatter = ({ data, title, legend1, legend2, color = 'primary' }) => {
           alignmentBaseline={'hanging'}
           dx={15}
           sx={{
-            transform: `translateX(${ml}%)`,
             fill: 'secondary',
             fontFamily: 'body',
             fontSize: [2, 2, 2, 3],
           }}
         >
           {title}
+        </Box>
         </Box>
         <Box
           as='text'
