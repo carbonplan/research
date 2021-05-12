@@ -6,14 +6,17 @@ const Blockquote = ({ children, source }) => {
   return (
     <>
       <Row columns={[6]}>
-        <Column start={[2]} width={[5]}>
+        <Column start={[1]} width={[6]}>
           <Box
             sx={{
-              color: 'secondary',
-              fontFamily: 'faux',
+              bg: alpha('muted', 0.5),
+              color: 'primary',
+              fontFamily: 'body',
               lineHeight: '1.35',
               fontSize: [3, 3, 3, 4],
+              borderRadius: '1px',
               mt: [5, 5, 5, 6],
+              p: [3, 4, 5, 6],
             }}
           >
             {children}

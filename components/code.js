@@ -9,8 +9,8 @@ const Code = ({ children }) => {
         color: 'primary',
         fontSize: [2, 2, 2, 3],
         my: [5, 5, 5, 6],
-        p: [3, 3, 3, 4],
-        borderRadius: '2px',
+        p: [3, 4, 5, 6],
+        borderRadius: '1px',
         fontFamily: 'mono',
         letterSpacing: 'mono',
       }}
