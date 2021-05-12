@@ -14,7 +14,7 @@ const CommonPractice = () => {
         <Scatter
           data={assessmentAreas}
           title={'Assessment Areas'}
-          legend1={'R2 = 0.97'}
+          legend1={'R² = 0.97'}
           legend2={'RMSE= 4.94'}
         />
       </Column>
@@ -22,7 +22,7 @@ const CommonPractice = () => {
         <Scatter
           data={projects}
           title={'Projects'}
-          legend1={'R2 = 0.94'}
+          legend1={'R² = 0.94'}
           legend2={'RMSE = 9.71'}
         />
       </Column>

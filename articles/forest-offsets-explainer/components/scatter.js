@@ -46,7 +46,7 @@ const Scatter = ({ data, title, legend1, legend2, color = 'primary' }) => {
                   x={0}
                   y={10}
                   textAnchor={'middle'}
-                  alignmentBaseline={'hanging'}
+                  dy={15}
                   style={{ userSelect: 'none' }}
                 >
                   {d}
@@ -70,7 +70,7 @@ const Scatter = ({ data, title, legend1, legend2, color = 'primary' }) => {
                   x={-10}
                   y={0}
                   textAnchor={'end'}
-                  alignmentBaseline={'middle'}
+                  dy={5}
                   style={{ userSelect: 'none' }}
                 >
                   {d}
@@ -214,8 +214,8 @@ const Scatter = ({ data, title, legend1, legend2, color = 'primary' }) => {
             x={'0%'}
             y={'0%'}
             textAnchor={'start'}
-            alignmentBaseline={'hanging'}
             dx={15}
+            dy={15}
             sx={{
               fill: 'secondary',
               fontFamily: 'body',
