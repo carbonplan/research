@@ -5,10 +5,7 @@ import projects from './projects.json'
 
 const CommonPractice = () => {
   return (
-    <Row
-      columns={[6]}
-      sx={{ my: [6, 6, 6, 7] }}
-    >
+    <Row columns={[6]} sx={{ my: [6, 6, 6, 7] }}>
       <Column
         start={[1, 1, 1, 1]}
         width={[6, 3, 3, 3]}
