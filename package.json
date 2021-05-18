@@ -42,7 +42,7 @@
     "react-dom": "^16.14.0",
     "react-vega": "^7.4.2",
     "rehype-slug": "^4.0.1",
-    "theme-ui": "^0.7.3",
+    "theme-ui": "^0.7.5",
     "vega": "^5.20.2",
     "vega-lite": "5.0.0"
   },
