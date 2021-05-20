@@ -37,7 +37,7 @@ const Layer = ({
           letterSpacing: 'smallcaps',
           color: color,
           mt: [3],
-          mb: [3, 0, 0, 0]
+          mb: [3, 0, 0, 0],
         }}
       >
         {label}
@@ -103,7 +103,12 @@ const Layer = ({
           fill: 'none',
           stroke: 'primary',
           ml: [0, '22px', '22px', '22px'],
-          mt: [0, slider ? '0px' : '20px', slider ? '0px' : '20px', slider ? '0px' : '20px'],
+          mt: [
+            0,
+            slider ? '0px' : '20px',
+            slider ? '0px' : '20px',
+            slider ? '0px' : '20px',
+          ],
         }}
       >
         <svg viewBox='0 0 980 610'>
@@ -132,61 +137,63 @@ const Layer = ({
               )
             })}
         </svg>
-        {slider && <Box sx={{mb: [5]}}><Slider
-            type='range'
-            sx={{
-              display: ['block', 'none', 'none', 'none'],
-              color: color,
-            }}
-            onChange={(e) => setThreshold(parseFloat(e.target.value))}
-            onMouseUp={(e) => {
-              setSliderChanging(false)
-            }}
-            onTouchEnd={(e) => {
-              setSliderChanging(false)
-            }}
-            onMouseDown={() => {
-              setSliderChanging(true)
-            }}
-            onTouchStart={() => {
-              setSliderChanging(true)
-            }}
-            onKeyDown={() => {
-              if (tick) clearTimeout(tick)
-              setSliderChanging(true)
-              setTick(
-                setTimeout(() => {
-                  setSliderChanging(false)
-                }, 250)
-              )
-            }}
-            value={threshold}
-            min={domain[0]}
-            max={domain[1]}
-            step={(domain[1] - domain[0]) / 20}
-          />
-          <Box
-            sx={{
-              display: ['block', 'none', 'none', 'none'],
-              fontFamily: 'mono',
-              fontSize: [1, 1, 1, 2],
-              letterSpacing: 'smallcaps',
-              textTransform: 'uppercase',
-              color: 'secondary',
-              transition: '0.15s',
-              opacity: sliderChanging ? 1 : 0,
-              position: 'absolute',
-              color: color,
-              cursor: 'default',
-              pointerEvents: 'none',
-              height: [3],
-              mt: [2]
-            }}
-          >
-            {format('02.0f')(threshold)}%
+        {slider && (
+          <Box sx={{ mb: [5] }}>
+            <Slider
+              type='range'
+              sx={{
+                display: ['block', 'none', 'none', 'none'],
+                color: color,
+              }}
+              onChange={(e) => setThreshold(parseFloat(e.target.value))}
+              onMouseUp={(e) => {
+                setSliderChanging(false)
+              }}
+              onTouchEnd={(e) => {
+                setSliderChanging(false)
+              }}
+              onMouseDown={() => {
+                setSliderChanging(true)
+              }}
+              onTouchStart={() => {
+                setSliderChanging(true)
+              }}
+              onKeyDown={() => {
+                if (tick) clearTimeout(tick)
+                setSliderChanging(true)
+                setTick(
+                  setTimeout(() => {
+                    setSliderChanging(false)
+                  }, 250)
+                )
+              }}
+              value={threshold}
+              min={domain[0]}
+              max={domain[1]}
+              step={(domain[1] - domain[0]) / 20}
+            />
+            <Box
+              sx={{
+                display: ['block', 'none', 'none', 'none'],
+                fontFamily: 'mono',
+                fontSize: [1, 1, 1, 2],
+                letterSpacing: 'smallcaps',
+                textTransform: 'uppercase',
+                color: 'secondary',
+                transition: '0.15s',
+                opacity: sliderChanging ? 1 : 0,
+                position: 'absolute',
+                color: color,
+                cursor: 'default',
+                pointerEvents: 'none',
+                height: [3],
+                mt: [2],
+              }}
+            >
+              {format('02.0f')(threshold)}%
+            </Box>
           </Box>
-          </Box>
-        }
+        )}
       </Box>
     </Column>
   )

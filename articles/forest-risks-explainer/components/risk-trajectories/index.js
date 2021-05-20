@@ -65,7 +65,12 @@ const RiskTrajectories = () => {
               return (
                 <Tag
                   key={i}
-                  sx={{ textAlign: 'left', mr: [3], mb: [2], width: 'max-content' }}
+                  sx={{
+                    textAlign: 'left',
+                    mr: [3],
+                    mb: [2],
+                    width: 'max-content',
+                  }}
                   onClick={() => setRegion(i)}
                   value={region == i}
                 >
@@ -80,7 +85,12 @@ const RiskTrajectories = () => {
             <Box
               as='svg'
               viewBox='0 0 980 610'
-              sx={{ maxWidth: ['100%', '100%', '100%', '75%'], fill: 'none', strokeWidth: '0.5', stroke: 'primary' }}
+              sx={{
+                maxWidth: ['100%', '100%', '100%', '75%'],
+                fill: 'none',
+                strokeWidth: '0.5',
+                stroke: 'primary',
+              }}
             >
               <g strokeLinejoin='round' strokeLinecap='round'>
                 {path && <path d={path}></path>}

@@ -3,7 +3,15 @@ import { json } from 'd3-fetch'
 import { scaleLinear } from 'd3-scale'
 import { line } from 'd3-shape'
 import { mix } from '@theme-ui/color'
-import { Chart, Grid, AxisLabel, Ticks, TickLabels, Plot, Line } from '@carbonplan/charts'
+import {
+  Chart,
+  Grid,
+  AxisLabel,
+  Ticks,
+  TickLabels,
+  Plot,
+  Line,
+} from '@carbonplan/charts'
 
 const sx = {
   tick: {
@@ -39,7 +47,16 @@ const colors = {
   ssp585: 'red',
 }
 
-const Panel = ({ label, ylabel='risk', yunits='%', yticks, data, units, domain = [0, 30], height = 200 }) => {
+const Panel = ({
+  label,
+  ylabel = 'risk',
+  yunits = '%',
+  yticks,
+  data,
+  units,
+  domain = [0, 30],
+  height = 200,
+}) => {
   return (
     <Box>
       <Box
@@ -60,42 +77,52 @@ const Panel = ({ label, ylabel='risk', yunits='%', yticks, data, units, domain =
             height: height,
           }}
         >
-          <Chart x={[1980, 2090]} y={domain} padding={{left: 55}}>
+          <Chart x={[1980, 2090]} y={domain} padding={{ left: 55 }}>
             <Ticks bottom />
-            <Ticks left count={4} values={yticks}/>
-            <Grid horizontal values={yticks}/>
+            <Ticks left count={4} values={yticks} />
+            <Grid horizontal values={yticks} />
             <Grid vertical values={[1980, 2000, 2020, 2040, 2060, 2080]} />
             <TickLabels bottom values={[2000, 2040, 2080]} />
-            <TickLabels left count={4} values={yticks}/>
-            <AxisLabel left align={'left'}><span>{ylabel}{' '}<Box as='span' sx={{color: 'secondary'}}>{yunits}</Box></span></AxisLabel>
-            <AxisLabel bottom align={'right'}>Year</AxisLabel>
-            {data && <Plot>
-              {scenarios.map((s) => {
-                return models.map((m) => {
+            <TickLabels left count={4} values={yticks} />
+            <AxisLabel left align={'left'}>
+              <span>
+                {ylabel}{' '}
+                <Box as='span' sx={{ color: 'secondary' }}>
+                  {yunits}
+                </Box>
+              </span>
+            </AxisLabel>
+            <AxisLabel bottom align={'right'}>
+              Year
+            </AxisLabel>
+            {data && (
+              <Plot>
+                {scenarios.map((s) => {
+                  return models.map((m) => {
+                    return (
+                      <Line
+                        key={m}
+                        data={data[s].models[m].map((d) => [d.y, d.r])}
+                        sx={{
+                          ...sx.line,
+                          stroke: mix(colors[s], 'background', 0.25),
+                          strokeWidth: '1px',
+                        }}
+                      />
+                    )
+                  })
+                })}
+                {scenarios.map((s) => {
                   return (
                     <Line
-                      key={m}
-                      data={data[s].models[m].map(d => [d.y, d.r])}
-                      sx={{
-                        ...sx.line,
-                        stroke: mix(colors[s], 'background', 0.25),
-                        strokeWidth: '1px',
-                      }}
+                      key={s}
+                      data={data[s].mean.map((d) => [d.y, d.r])}
+                      sx={{ ...sx.line, stroke: colors[s], strokeWidth: '3px' }}
                     />
                   )
-                })
-              })}
-              {scenarios.map((s) => {
-                return (
-                  <Line
-                    key={s}
-                    data={data[s].mean.map(d => [d.y, d.r])}
-                    sx={{ ...sx.line, stroke: colors[s], strokeWidth: '3px' }}
-                  />
-                )
-              })}
+                })}
               </Plot>
-            }
+            )}
           </Chart>
         </Box>
       </Box>
