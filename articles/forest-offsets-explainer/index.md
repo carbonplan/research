@@ -14,7 +14,7 @@ import Triangle from './components/triangle'
 
 export const meta = {
   id: 'forest-offsets-explainer',
-  number: 9,
+  number: 8,
   date: '04-29-2021',
   title: 'Systematic over-crediting of forest offsets',
   authors: [

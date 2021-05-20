@@ -102,6 +102,11 @@ const Entry = ({ info, first, final }) => {
                       color: 'primary',
                     },
                   },
+                  '@media (hover: none) and (pointer: coarse)': {
+                    '&:hover': {
+                      color: color,
+                    },
+                  },
                 }}
                 tabIndex='-1'
                 href={links[0].href}

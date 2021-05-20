@@ -1,5 +1,29 @@
 const Contents = [
   {
+    title: 'Risks to forest carbon in a changing climate',
+    tags: ['article', 'dataset', 'tool', 'publication'],
+    summary:
+      'Forests in the United States are already at risk from wildfire, drought, and insects, and climate change is making it worse. We combined satellite and ecological data with climate models to project future risks to forest carbon. Along with a preprint, we are releasing open data, open software, and an interactive web map.',
+    date: '05-20-2021',
+    version: '1.0.0',
+    color: 'orange',
+    icon: 'article-009/forest-fire-small',
+    links: [
+      {
+        label: 'Read article',
+        href: '/research/forest-risks-explainer',
+      },
+      {
+        label: 'Read preprint',
+        href: 'https://doi.org/10.1101/2021.05.11.443688',
+      },
+      {
+        label: 'Browse map',
+        href: '/research/forest-risks',
+      },
+    ],
+  },
+  {
     title: 'Systematic over-crediting of forest offsets',
     tags: ['article', 'dataset', 'tool', 'publication'],
     summary:

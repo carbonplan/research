@@ -33,10 +33,9 @@ const Reference = ({ color, data }) => {
         onMouseOut={toggleOff}
         onClick={toggle}
         sx={{
-          pr: [1],
-          fontSize: ['17px'],
+          fontSize: ['16px'],
           cursor: 'pointer',
-          color: [color, color, selected ? color : 'text'],
+          color: [color, color, color],
           transition: 'color 0.2s ease-in-out',
         }}
       >
