@@ -16,18 +16,54 @@ const displayRegions = {
   Southeast: 'Southeast',
 }
 
+const projection = geoAlbersUsa().scale(1300).translate([487.5, 305])
+
+const bboxes = {
+  CONUS: {
+    x: 35,
+    y: 35,
+    width: 890,
+    height: 530,
+  },
+  PNW: {
+    x: 25,
+    y: 30,
+    width: 220,
+    height: 140,
+  },
+  Southeast: {
+    x: 630,
+    y: 320,
+    width: 230,
+    height: 260,
+  },
+  Southwest: {
+    x: 150,
+    y: 275,
+    width: 200,
+    height: 200,
+  },
+  California: {
+    x: 20,
+    y: 160,
+    width: 110,
+    height: 270,
+  },
+}
+
 const RiskTrajectories = () => {
   const [scenario, setScenario] = useState(2)
   const [region, setRegion] = useState(0)
   const [path, setPath] = useState(0)
+  const [boundary, setBoundary] = useState(null)
   const [data, setData] = useState(null)
 
   useEffect(() => {
     const prefix =
       'https://storage.googleapis.com/carbonplan-data/raw/us-atlas/'
-    const url = prefix + 'nation-albers-10m-simplified.json'
+    const url = prefix + 'conus-albers-simplified.json'
     json(url).then((us) => {
-      setPath(geoPath()(feature(us, us.objects.nation)))
+      setPath(geoPath()(feature(us, us.objects.states)))
     })
   }, [])
 
@@ -39,6 +75,10 @@ const RiskTrajectories = () => {
       setData(d)
     })
   }, [])
+
+  useEffect(() => {
+    setBoundary(bboxes[regions[region]])
+  }, [region])
 
   return (
     <Box
@@ -94,6 +134,14 @@ const RiskTrajectories = () => {
             >
               <g strokeLinejoin='round' strokeLinecap='round'>
                 {path && <path d={path}></path>}
+                {path && (
+                  <rect
+                    x={boundary.x}
+                    y={boundary.y}
+                    width={boundary.width}
+                    height={boundary.height}
+                  ></rect>
+                )}
               </g>
             </Box>
           </Box>

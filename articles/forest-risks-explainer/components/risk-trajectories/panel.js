@@ -65,7 +65,7 @@ const Panel = ({
           fontSize: [2, 2, 2, 3],
           letterSpacing: 'smallcaps',
           textTransform: 'uppercase',
-          my: [3, 4, 4, 4],
+          my: [3],
         }}
       >
         {label}

@@ -24,9 +24,9 @@ const RiskMaps = () => {
   useEffect(() => {
     const prefix =
       'https://storage.googleapis.com/carbonplan-data/raw/us-atlas/'
-    const url = prefix + 'nation-albers-10m-simplified.json'
+    const url = prefix + 'conus-albers-simplified.json'
     json(url).then((us) => {
-      setPath(geoPath()(feature(us, us.objects.nation)))
+      setPath(geoPath()(feature(us, us.objects.states)))
     })
   }, [])
 
