@@ -204,11 +204,9 @@ In the future, all US-averaged risks are projected to increase in severity throu
   </Box>
   , <Box as='span' sx={{ color: 'yellow' }}>
     SSP3-7.0 (medium)
-  </Box>, and{' '}
-  <Box as='span' sx={{ color: 'teal' }}>
+  </Box>, and <Box as='span' sx={{ color: 'teal' }}>
     SSP2-4.5 (low)
-  </Box>
-  . Averaging risks regionally (upper left) reveals how risks depend on location.
+  </Box>. Averaging risks regionally (upper left) reveals how risks depend on location.
   The ensemble mean of 6 global climate models is dark while light traces indicate
   each individual ensemble member. Historical period shown in gray.
 </FigureCaption>
