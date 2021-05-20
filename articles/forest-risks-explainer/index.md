@@ -288,13 +288,15 @@ W R L Anderegg, O S Chegwidden, G Badgley, A T Trugman, D Cullenward, J A Abatzo
 
 Please cite this web article as:
 
-O S Chegwidden, W R L Anderegg, G Badgley, D Cullenward, J A Abatzoglou, J A Hicke, A T Trugman, J Freeman, J Hamman (2020) “Mapping risks to forest carbon” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/forest-risks-explainer</span>
+O S Chegwidden, W R L Anderegg, G Badgley, D Cullenward, J A Abatzoglou, J A Hicke, A T Trugman, J Freeman, J Hamman (2020) “Risks to forest carbon in a changing climate” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/forest-risks-explainer</span>
 
 </Endnote>
 
 <Endnote label='Terms'>
 
 CarbonPlan received a grant from Microsoft AI for Earth to support this work. Microsoft did not exercise any control over the output. The authors are solely responsible for the content of this writeup, which does not reflect the views of Microsoft or any other individuals or organizations.
+
+[William R.L. Anderegg](http://www.anderegglab.net/) is a professor at the University of Utah, [Grayson Badgley](https://www.gbadgley.com) is a Postdoctoral Scientist at Black Rock Forest and Columbia University, [Jeffrey A. Hicke](https://webpages.uidaho.edu/~jhicke/) is a professor at the University of Idaho, [John A. Abatzoglou](http://www.climatologylab.org/) is a professor at UC Merced, and [Anna Trugman](http://trugmanlab.geog.ucsb.edu) is a professor at UC Santa Barbara.
 
 </Endnote>
 
