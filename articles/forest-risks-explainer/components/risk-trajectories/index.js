@@ -10,7 +10,7 @@ const scenarios = ['ssp2-4.5', 'ssp3-7.0', 'ssp5-8.5']
 const regions = ['CONUS', 'California', 'PNW', 'Southwest', 'Southeast']
 const displayRegions = {
   CONUS: 'United States',
-  California: 'California',
+  California: 'West coast',
   PNW: 'Pacific Northwest',
   Southwest: 'Southwest',
   Southeast: 'Southeast',
@@ -45,7 +45,7 @@ const bboxes = {
   },
   California: {
     x: 20,
-    y: 160,
+    y: 150,
     width: 110,
     height: 270,
   },

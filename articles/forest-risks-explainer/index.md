@@ -146,7 +146,7 @@ export const sidenotes = {
   ]}
 />
 
-Climate change, with its hotter summers and drier atmosphere, is posed to exacerbate the wildfires, insect outbreaks, and drought conditions that already threaten forests in the United States.<Reference color={meta.color} data={sidenotes[1]}/> We set out to analyze these risks, with the goal of supporting data-driven decisions about the role forests can play in climate policy.
+Climate change, with its hotter summers and drier atmosphere, is poised to exacerbate the wildfires, insect outbreaks, and drought conditions that already threaten forests in the United States.<Reference color={meta.color} data={sidenotes[1]}/> We set out to analyze these risks, with the goal of supporting data-driven decisions about the role forests can play in climate policy.
 
 Forests are a key part of the global carbon cycle, sequestering carbon dioxide and storing it in the biomass of trees. Unfortunately, that sequestered carbon is only kept from the atmosphere while trees remain alive. When trees die, most of the carbon they sequestered is released back into the atmosphere, either immediately (e.g. during a fire) or slowly (e.g. through decomposition following drought or insect-related mortality).
 
@@ -170,7 +170,7 @@ We projected risks to forests based on three future climate scenarios (“shared
     [6, 2, 2, 2],
     [6, 4, 4, 4],
   ]}
-  index={false}
+  index={true}
   sx={{ my: [6, 6, 6, 7] }}
   data={[
     [
@@ -190,9 +190,9 @@ We projected risks to forests based on three future climate scenarios (“shared
 
 Although SSP2-4.5 is the lowest emissions scenario we include, it is considered “middle-of-the-road” in terms of the [full suite of scenarios](https://gmd.copernicus.org/articles/13/3571/2020/) and still results in warming that exceeds the limits set by the Paris Agreement. Note that there is significant uncertainty as to the likelihood of some of these scenarios given current trends, but together they offer a view at the range of future outcomes.
 
-Our full high-resolution results can be browsed in a live [web mapping tool](https://carbonplan.org/research/forest-risks). The interactive graphic below shows a downsampled version that helps build intuition for our study’s results. The figure includes a projection of forest biomass and three risk factors — fire, drought, and insect mortality — and several interactive options. For any of the three risk factors, a user can change the threshold at which impacts appear on the map, raising or lowering the level of risk that is displayed. In addition, the user can select the climate scenario and explore risk projections at 10-year time steps in between 2010 and 2090.
+Our full high-resolution results can be browsed in a live [web mapping tool](https://carbonplan.org/research/forest-risks). The interactive graphic below shows a downsampled version that helps build intuition for our study’s results. The figure includes the three risk factors alongside a projection of forest biomass. For any of the three risk factors, you can change the threshold at which impacts appear on the map, raising or lowering the level of risk. In addition, you can select the climate scenario and scroll through time at 10-year steps between 2010 and 2090.
 
-Note that projected "risk" in our results means slightly different things for the different forms of disturbance. Fire risk represents the probability of at least one moderate or high severity fire within a 20 year period. Drought and insect risks represent the expected mortality (as a fraction) over a 20 year period related to each of the factors. While qualitatively comparable, full harmonization would require further assumptions about the fraction of biomass lost in fires and expected background levels of mortality.
+Note that projected "risk" here means slightly different things for the different forms of disturbance. Fire risk represents the probability of at least one moderate or high severity fire within a 20 year period. Drought and insect risks represent the expected mortality (as a fraction) over a 20 year period related to each of the factors. While qualitatively comparable, full harmonization would require further assumptions about the fraction of biomass lost in fires and expected background levels of mortality.
 
 <RiskMaps />
 <FigureCaption number={1}>
@@ -221,17 +221,19 @@ Note that projected "risk" in our results means slightly different things for th
   (lower left) to see risks change.
 </FigureCaption>
 
-Historically, areas with high wildfire risk (regions covered with orange dots) are predominantly in the mountains of the western US, especially California, the northern Rocky Mountains, and the southwest. Areas of high mortality for insects and drought were generally in the Rocky Mountains of Idaho, Montana, and Colorado. But these risks aren’t static.
+Historically, areas with high wildfire risk (regions covered with orange dots) are predominantly in the mountains of the western US, especially California, the northern Rocky Mountains, and the southwest. Areas of high mortality for insects and drought were generally in the Rocky Mountains of Idaho, Montana, and Colorado. 
+
+But these risks aren’t static.
 
 Fire risk increases dramatically throughout the 21st century. For example, by moving the year slider to the right, we see that by 2090, under SSP3-7.0, almost the entire western US, as well as much of the midwest and southeast, exhibits some risk of wildfire (>5% chance of burning within a 20 year period as indicated by the vertical slider at left). Under higher emissions scenarios we project an even higher risk. For example, selecting (at lower left) the high emissions scenario (SSP5-8.5) or the lower emissions scenario (SSP2-4.5) causes the fire-prone regions in 2090 to either expand or shrink.
 
 Insects and drought are less sensitive to climate than fire, though still worsen throughout the 21st century. Drought risks are projected to increase across broad swaths of the intermountain and southwestern US, California, and western Texas, and insect risks are projected to grow across the Rocky Mountains in the intermountain western US, Sierra Nevada mountains in California, and parts of the northern midwest.
 
-Our insect and drought models were partially limited by noisy observational forest plot data. We made the conservative decision to project future climate sensitivities only in regions where we could establish reliable historical relationships. As a result, we are likely underestimating the sensitivity of these risks to a changing climate.
+Our insect and drought models were partially limited by noisy observational forest plot data. We made the conservative decision to project future climate sensitivities only in regions where we could establish robust historical relationships. As a result, we are likely underestimating the sensitivity of these risks to a changing climate.
 
 ## Risk profiles vary by region
 
-In the future, all US-averaged risks are projected to increase in severity throughout the 21st century. Changes depend substantially on emissions scenario, with modeled increases by 2090 ranging from 4-14x for fire and 1.3-1.8x for drought and insects (Figure 2). However, the severity of the risk change will depend on location, which you can explore in the interactive graphic below.
+In the future, all US-averaged risks are projected to increase in severity throughout the 21st century. Changes depend substantially on emissions scenario, with modeled increases by 2090 ranging from 4-14x for fire and 1.3-1.8x for drought and insects. However, the severity of the risk change will depend on location, which you can explore in the interactive graphic below.
 
 <RiskTrajectories />
 <FigureCaption number={2}>
@@ -248,11 +250,11 @@ In the future, all US-averaged risks are projected to increase in severity throu
   each individual ensemble member. Historical period shown in gray.
 </FigureCaption>
 
-California, which is already beleaguered by fire risk, has the potential to experience intense growth in risk such that by 2090 fire risk could exceed 50% in the high emissions scenario. By the end of the century, the historically low-fire risk southeast could have levels of fire risks similar to present-day California. Increases in drought mortality are most striking in the southwest, where climate change could increase drought mortality by about 3x. As mentioned above, projections are more uncertain for drought and insect mortality, and vary depending on the decade and the underlying individual climate model (with individual model scenarios shown in pale traces, compared to the multi-model mean shown with thicker lines).
+The west coast, which is already beleaguered by fire risk, has the potential to experience intense growth in risk such that by 2090 fire risk could exceed 50% in the high emissions scenario. By the end of the century, the historically low-fire risk southeast could have levels of fire risks similar to the present-day west coast. Increases in drought mortality are most striking in the southwest, where climate change could increase drought mortality by about 3x. As mentioned above, projections are more uncertain for drought and insect mortality, and vary depending on the decade and the underlying individual climate model (with individual model scenarios shown in pale traces, compared to the multi-model mean shown with thicker lines).
 
 ## Cutting emissions matters
 
-Higher emissions scenarios, which include both higher temperatures and more extreme changes to precipitation patterns, project higher risks to forests across our results. Fire risk, in particular, is a factor of 2 lower under the low emissions scenario compared to the high emissions scenario. Reducing forest risk is thus yet another motivation for the already urgent need to cut emissions as soon as possible.
+Higher emissions scenarios, which include both higher temperatures and more extreme changes to precipitation patterns, project higher risks to forests across our results. Fire risk at the end of the century, in particular, is 3x lower under the low emissions scenario compared to the high emissions scenario. Reducing forest risk is thus yet another motivation for the already urgent need to cut emissions as soon as possible.
 
 The link between global emissions and forest risks matters because forests have been proposed as a potential climate change mitigation strategy. While forests certainly provide carbon removal in many regions currently, their efficacy will likely be limited by the increasing risks described above. Due to this unfortunate chain of circumstances, the ability of forests to mitigate climate change will itself become more limited as climate change gets worse.
 
@@ -262,9 +264,9 @@ While our results stress the importance of reducing emissions, they offer a sobe
 
 ## Why open science
 
-This research leveraged a growing ecosystem of powerful, cloud-based open source tools, enabling both speed and reproducibility.<Reference color={meta.color} data={sidenotes[10]}/> As we refined the underlying downscaled climate data, we were able to repeatedly rerun the model fitting and projections end-to-end, which would have been prohibitively resource-intensive without cloud-scale computing. All of our [software](https://doi.org/10.5281/zenodo.4741329) and the resulting [data products](https://doi.org/10.5281/zenodo.47413334) are available in public cloud storage, and all of our analysis relied on curated, publicly available datasets like the [Forest Inventory Analysis](https://www.fia.fs.fed.us/) and the [Monitoring Trends in Burn Severity](https://www.mtbs.gov/) datasets. All future projections, in particular, relied on public results from the international CMIP6 climate modeling community, which were uploaded to publicly-accessible cloud storage as part of the [Pangeo project](https://pangeo-data.github.io/pangeo-cmip6-cloud/).
+This research leveraged a growing ecosystem of powerful, cloud-based open source tools, enabling both speed and reproducibility.<Reference color={meta.color} data={sidenotes[10]}/> As we refined the underlying downscaled climate data, we were able to repeatedly rerun the model fitting and projections end-to-end, which would have been prohibitively resource-intensive without cloud-scale computing. All of our [software](https://doi.org/10.5281/zenodo.4741329) and the resulting [data products](https://doi.org/10.5281/zenodo.4741333) are available in public cloud storage, and all of our analysis relied on curated, publicly available datasets like the [Forest Inventory Analysis](https://www.fia.fs.fed.us/) and the [Monitoring Trends in Burn Severity](https://www.mtbs.gov/) datasets. All future projections, in particular, relied on public results from the international CMIP6 climate modeling community, which were uploaded to publicly-accessible cloud storage as part of the [Pangeo project](https://pangeo-data.github.io/pangeo-cmip6-cloud/).
 
-As with all of our work, we aim to improve these methods and models over time, as we and others work on and better understand these problems. For a problem as important to the public as understanding future climate risk, we hope to keep demonstrating the value of doing the work in the open.
+As with all of our work, we aim to improve these methods and models over time, as we and others work on and better understand these problems. For an issue as important to the public as understanding future climate risk, we hope to keep demonstrating the value of doing the work in the open.
 
 <SectionBreak />
 
@@ -272,15 +274,17 @@ As with all of our work, we aim to improve these methods and models over time, a
 
 Our work is described in detail in our [preprint](https://doi.org/10.1101/2021.05.11.443688). Here we describe some of our methods in brief. Projections are based upon simulations from the Coupled Model Intercomparison Project Phase 6 (CMIP6). We used results from six global climate models (GCM) and unless otherwise stated all results reflect the multi-model mean. We produced risk projections on a 4km equal area grid for all regions in the continental US that were at least 50% forested in 2016 based on the [National Land Cover Database](https://www.mrlc.gov/data/nlcd-land-cover-conus-all-years). Depending on the risk, we produced either monthly (fire) or decadal (insects and drought) projections. We then aggregated projections to create rolling 20-year means of disturbance risk.
 
-There are a number of important caveats to emphasize. First, these projections do not include any negative feedbacks — periods of low risk followed by disturbances — and thus likely overpredict risk integrated over long time scales. Second, these projections assume static forest composition and distribution over time, and thus do not include feedbacks between disturbances and subsequent forest growth. Finally, they do not explicitly include any interactions among risks. The underlying observational disturbance datasets are also a limiting factor, especially for insect and drought models, where we conservatively predict static risks for forest types where we could not establish robust historical models. Finally, the drought and insect projections may underestimate risk because they do not account for non-linear impacts or novel pests and pathogens. A more detailed description of our approach is available in the Methods and Datasets section of the scientific manuscript.
+Our approach has a number of important limitations. First, these projections do not include any negative feedbacks — periods of low risk followed by disturbances — and thus likely overpredict risk integrated over long time scales. Second, these projections assume static forest composition and distribution over time, and thus do not include feedbacks between disturbances and subsequent forest growth. Third, they do not explicitly include any interactions among risks. 
 
-All of our results are publicly available in [a Zenoodo archive](https://doi.org/10.5281/zenodo.4741333) or on Microsoft Azure (see our [dataset documentation](https://github.com/carbonplan/forest-risks#data-products)). We conducted the entire project under version control with the code freely accessible on GitHub to reproduce the [ results](https://github.com/carbonplan/forest-risks) and [web map](https://github.com/carbonplan/forest-risks-web).
+The underlying observational disturbance datasets are also a limiting factor, especially for insect and drought models, where we conservatively predict static risks for forest types where we could not establish robust historical models. The drought and insect projections may additionally underestimate risk because they do not account for non-linear impacts or novel pests and pathogens. 
+
+A more detailed description of our approach is available in the Methods and Datasets section of the [preprint](https://doi.org/10.1101/2021.05.11.443688). All of our results are publicly available in [a Zenoodo archive](https://doi.org/10.5281/zenodo.4741333) or on Microsoft Azure (see our [dataset documentation](https://github.com/carbonplan/forest-risks#data-products)). We conducted the entire project under version control with the code freely accessible on GitHub to reproduce the [results](https://github.com/carbonplan/forest-risks) and [web map](https://github.com/carbonplan/forest-risks-web).
 
 </Endnote>
 
 <Endnote label='Credits'>
 
-This work was highly collaborative, with all team members playing critical roles. Oriana led the fire modeling and helped develop the downscaled climate data, and Bill and Anna led the drought and insect modeling. Grayson developed the FIA processing pipeline and helped review all the modeling work. Danny helped guide the framing and connections to policy. John and Jeff provided critical insights on the fire and drought / insect models, respectively. Jeremy implemented early versions of the models and helped guide the project. Joe architected the climate downscaling and technical infrastructure and helped guide the project as a whole. All authors contributed to reviewing the analysis and writing the manuscript.
+This work was highly collaborative, with all team members playing critical roles. Oriana led the fire modeling and helped develop the downscaled climate data, and Bill and Anna led the drought and insect modeling. Grayson developed the FIA processing pipeline and helped review the modeling work. Danny helped guide the framing and connections to policy. John and Jeff provided critical insights on the fire and drought / insect models, respectively. Jeremy implemented early versions of the models and helped guide the project. Joe architected the climate downscaling and technical infrastructure and helped guide the project as a whole. Oriana and Jeremy designed the web graphics. All authors contributed to reviewing the analysis and writing the article.
 
 A version of this work has been submitted for peer review and is available via the following preprint:
 
