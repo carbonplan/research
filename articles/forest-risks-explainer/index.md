@@ -130,7 +130,7 @@ export const sidenotes = {
     authors: 'R P Abernathey et al.',
     title: 'Cloud-native repositories for big scientific data',
     url: 'https://doi.org/10.1109/MCSE.2021.3059437',
-  }
+  },
 }
 
 # Risks to forest carbon in a changing climate
@@ -190,7 +190,7 @@ We projected risks to forests based on three future climate scenarios (“shared
 
 Although SSP2-4.5 is the lowest emissions scenario we include, it is considered “middle-of-the-road” in terms of the [full suite of scenarios](https://gmd.copernicus.org/articles/13/3571/2020/) and still results in warming that exceeds the limits set by the Paris Agreement. Note that there is significant uncertainty as to the likelihood of some of these scenarios given current trends, but together they offer a view at the range of future outcomes.
 
-Our full high-resolution results can be browsed in a live [web mapping tool](https://carbonplan.org/research/forest-risks). The interactive graphic below shows a downsampled version that helps build intuition for our study’s results. The figure includes a projection of forest biomass and three risk factors — fire, drought, and insect mortality — and several interactive options. For any of the three risk factors, a user can change the threshold at which impacts appear on the map, raising or lowering the level of risk that is displayed. In addition, the user can select the climate scenario and explore risk projections at 10-year time steps in between 2010 and 2090. 
+Our full high-resolution results can be browsed in a live [web mapping tool](https://carbonplan.org/research/forest-risks). The interactive graphic below shows a downsampled version that helps build intuition for our study’s results. The figure includes a projection of forest biomass and three risk factors — fire, drought, and insect mortality — and several interactive options. For any of the three risk factors, a user can change the threshold at which impacts appear on the map, raising or lowering the level of risk that is displayed. In addition, the user can select the climate scenario and explore risk projections at 10-year time steps in between 2010 and 2090.
 
 Note that projected "risk" in our results means slightly different things for the different forms of disturbance. Fire risk represents the probability of at least one moderate or high severity fire within a 20 year period. Drought and insect risks represent the expected mortality (as a fraction) over a 20 year period related to each of the factors. While qualitatively comparable, full harmonization would require further assumptions about the fraction of biomass lost in fires and expected background levels of mortality.
 
@@ -209,7 +209,8 @@ Note that projected "risk" in our results means slightly different things for th
   <Box as='span' sx={{ color: 'blue' }}>
     insect
   </Box>{' '}
-  risks represent the expected mortality (as a fraction) related to each of the factors. Adjusting the sliders next to each panel raises or lowers the
+  risks represent the expected mortality (as a fraction) related to each of the
+  factors. Adjusting the sliders next to each panel raises or lowers the
   threshold for when a pixel will appear, denoting a location at or exceeding
   that risk level. The{' '}
   <Box as='span' sx={{ color: 'green' }}>
