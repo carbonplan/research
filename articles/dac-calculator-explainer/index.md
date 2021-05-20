@@ -205,7 +205,7 @@ With default settings, the calculator yields the highest cost for solar, second 
 
 Here we explore three alternative scenarios in detail: a higher cost NGCC scenario, a lower cost wind scenario, and an NGCC scenario with a higher leakage rate.
 
-To model higher cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Reference color={meta.color} data={sidenotes[6]}/> including corrections from two additional follow-on analyses.<Reference color={meta.color} data={sidenotes[7]}/><Reference color={meta.color} data={sidenotes[8]}/> In using these reports we are assuming a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Reference color={meta.color} data={sidenotes[9]}/>
+To model higher cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Reference color={meta.color} data={sidenotes[6]}/> including corrections from two additional follow-on analyses.<Reference color={meta.color} data={sidenotes[7]}/> <Reference color={meta.color} data={sidenotes[8]}/> In using these reports we are assuming a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Reference color={meta.color} data={sidenotes[9]}/>
 
 <ParameterScenario
   energySource={'NGCC'}
