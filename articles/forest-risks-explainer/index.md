@@ -221,7 +221,7 @@ Note that projected "risk" here means slightly different things for the differen
   (lower left) to see risks change.
 </FigureCaption>
 
-Historically, areas with high wildfire risk (regions covered with orange dots) are predominantly in the mountains of the western US, especially California, the northern Rocky Mountains, and the southwest. Areas of high mortality for insects and drought were generally in the Rocky Mountains of Idaho, Montana, and Colorado. 
+Historically, areas with high wildfire risk (regions covered with orange dots) are predominantly in the mountains of the western US, especially California, the northern Rocky Mountains, and the southwest. Areas of high mortality for insects and drought were generally in the Rocky Mountains of Idaho, Montana, and Colorado.
 
 But these risks aren’t static.
 
@@ -274,9 +274,9 @@ As with all of our work, we aim to improve these methods and models over time, a
 
 Our work is described in detail in our [preprint](https://doi.org/10.1101/2021.05.11.443688). Here we describe some of our methods in brief. Projections are based upon simulations from the Coupled Model Intercomparison Project Phase 6 (CMIP6). We used results from six global climate models (GCM) and unless otherwise stated all results reflect the multi-model mean. We produced risk projections on a 4km equal area grid for all regions in the continental US that were at least 50% forested in 2016 based on the [National Land Cover Database](https://www.mrlc.gov/data/nlcd-land-cover-conus-all-years). Depending on the risk, we produced either monthly (fire) or decadal (insects and drought) projections. We then aggregated projections to create rolling 20-year means of disturbance risk.
 
-Our approach has a number of important limitations. First, these projections do not include any negative feedbacks — periods of low risk followed by disturbances — and thus likely overpredict risk integrated over long time scales. Second, these projections assume static forest composition and distribution over time, and thus do not include feedbacks between disturbances and subsequent forest growth. Third, they do not explicitly include any interactions among risks. 
+Our approach has a number of important limitations. First, these projections do not include any negative feedbacks — periods of low risk followed by disturbances — and thus likely overpredict risk integrated over long time scales. Second, these projections assume static forest composition and distribution over time, and thus do not include feedbacks between disturbances and subsequent forest growth. Third, they do not explicitly include any interactions among risks.
 
-The underlying observational disturbance datasets are also a limiting factor, especially for insect and drought models, where we conservatively predict static risks for forest types where we could not establish robust historical models. The drought and insect projections may additionally underestimate risk because they do not account for non-linear impacts or novel pests and pathogens. 
+The underlying observational disturbance datasets are also a limiting factor, especially for insect and drought models, where we conservatively predict static risks for forest types where we could not establish robust historical models. The drought and insect projections may additionally underestimate risk because they do not account for non-linear impacts or novel pests and pathogens.
 
 A more detailed description of our approach is available in the Methods and Datasets section of the [preprint](https://doi.org/10.1101/2021.05.11.443688). All of our results are publicly available in [a Zenoodo archive](https://doi.org/10.5281/zenodo.4741333) or on Microsoft Azure (see our [dataset documentation](https://github.com/carbonplan/forest-risks#data-products)). We conducted the entire project under version control with the code freely accessible on GitHub to reproduce the [results](https://github.com/carbonplan/forest-risks) and [web map](https://github.com/carbonplan/forest-risks-web).
 
