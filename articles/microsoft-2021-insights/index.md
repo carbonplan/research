@@ -15,7 +15,7 @@ import Metrics from './components/metrics'
 export const meta = {
   id: 'microsoft-2021-insights',
   number: 7,
-  version: '1.0.0',
+  version: '1.1.0',
   date: '03-17-2021',
   title: 'Insights from analyzing a new round of carbon removal projects',
   authors: [

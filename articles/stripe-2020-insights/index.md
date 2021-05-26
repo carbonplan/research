@@ -16,13 +16,13 @@ import Metrics from './components/metrics'
 export const meta = {
   id: 'stripe-2020-insights',
   number: 0,
-  version: '1.0.1',
-  color: 'yellow',
+  version: '1.1.0',
+  color: 'secondary',
   title: 'Insights from our first project reports',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '05-18-2020',
   card: 'stripe-2020-insights',
-  background: 'road',
+  background: 'article-000/road',
   summary:
     'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
 }
@@ -67,7 +67,7 @@ For the first four metrics — mechanism, volume, negativity, and permanence —
 An additional key point for the first metric — mechanism — is that some projects do not currently remove carbon dioxide from the atmosphere. Rather, some avoid emissions that would otherwise occur, including by sourcing and transforming existing biogenic or industrial emissions into more stable storage. These projects could all become a component of a carbon removal system in the future, however. For example, a project that sequesters CO₂ from an industrial waste stream today could begin sourcing CO₂ from direct air capture or biogenic energy tomorrow. We try to clearly point out each of these cases in our reports, and we plan to more thoroughly explore this nuanced distinction in a future post.
 
 <!-- prettier-ignore-start -->
-For the fifth metric — cost — we report what projects offer. We did not attempt to validate this metric because the price at which a project offers its product speaks for itself, at least in terms of total cost. The stated price in terms of $/tCO₂ depends on several other factors, however, including projects’ estimated volume. We encourage readers to interpret these data in the context of other project attributes.
+For the fifth metric — price — we report what projects offer. We did not attempt to validate this metric because the price at which a project offers its product speaks for itself, at least in terms of total price. The stated price in terms of $/tCO₂ depends on several other factors, however, including projects’ estimated volume. We encourage readers to interpret these data in the context of other project attributes.
 <!-- prettier-ignore-end -->
 
 The last two metrics — additionality and specificity — reflect our attempt to qualitatively assess these cross-cutting issues. The importance of additionality depends on the motivation for funding. As discussed further below, this metric is less important when funding decisions are oriented around encouraging innovation, rather than carbon offsetting. Specificity reflects the degree to which there is enough detail in project proposals, publications, or other materials to validate the rest of our metrics.
@@ -118,7 +118,7 @@ The projects we analyzed clustered into two distinct groups: those with permanen
 
 <Permanence />
 <FigureCaption number={2}>
-  Each point shows the cost and permanence for an individual project. Colors
+  Each point shows the price and permanence for an individual project. Colors
   represent project categories: <Inline sx={{ color: 'green' }}>forests</Inline>
   , <Inline sx={{ color: 'orange' }}>soil</Inline>,{' '}
   <Inline sx={{ color: 'yellow' }}>biomass</Inline>,{' '}
