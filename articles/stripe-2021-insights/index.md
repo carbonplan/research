@@ -37,7 +37,7 @@ export const meta = {
   data={[{ label: 'Browse the database', href: '/research/cdr-database' }]}
 />
 
-CarbonPlan began building a public [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal proposal analyses in 2020. We’ve previously published insights from our analysis of [Stripe’s 2020 purchase](https://carbonplan.org/research/stripe-2020-insights) and [Microsoft’s 2021 purchase](https://carbonplan.org/research/microsoft-2021-insights). We are now updating the database to include an analysis of 23 new proposals submitted in response to [Stripe’s Spring 2021 carbon removal purchase](TK).
+CarbonPlan began building a public [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal proposal analyses in 2020. We’ve previously published insights from our analysis of [Stripe’s 2020 purchase](https://carbonplan.org/research/stripe-2020-insights) and [Microsoft’s 2021 purchase](https://carbonplan.org/research/microsoft-2021-insights). We are now updating the database to include an analysis of 23 new proposals submitted in response to [Stripe’s Spring 2021 carbon removal purchase](https://stripe.com/newsroom/news/spring-21-carbon-removal-purchases)).
 
 We continue to analyze carbon removal projects because we believe these activities play an important role in addressing the climate crisis. As the field evolves, we hope this database contributes to a culture of openness, transparency, and accountability for those participating in the field of carbon removal and climate action more broadly.
 
@@ -47,7 +47,7 @@ This article summarizes key takeaways from our new analysis. Please note that ou
 
 Early in 2021, we collaborated with Stripe to design a [new carbon removal application](https://github.com/carbonplan/carbon-removal-application), drawing on lessons learned from previous rounds of project solicitation and proposal analysis. Most notably, the new application is designed to solicit category-specific information that is needed to better evaluate what carbon removal projects are actually proposing. Validation and comparison across projects’ claims also requires getting projects to show the work behind topline metrics like volume and permanence, thereby surfacing key assumptions and enabling more accurate interpretation.
 
-The new carbon removal application features a set of general questions relevant to all project categories, accompanied by category-specific supplements that seek additional detail. The application materials currently include supplements for Direct Air Capture (DAC), Biomass, Surface Mineralization, Oceans, Geologic Injection, and CO₂ utilization. Projects complete one or more supplements according to their approach. The project [Climeworks](http://climeworks.com), for example, would fill out the DAC supplement and the Geologic Injection supplement; [Charm Industrial](https://charmindustrial.com/) would fill out the Biomass supplement and the Geologic Injection supplement; [CarbonCure](http://carboncure.com) would fill out the Utilization supplement; and [Project Vesta](http://projectvesta.org) would fill out the Surface Mineralization supplement and the Ocean supplement.
+The new carbon removal application features a set of general questions relevant to all project categories, accompanied by category-specific supplements that seek additional detail. The application materials currently include supplements for Direct Air Capture (DAC), Biomass, Surface Mineralization, Oceans, Geologic Injection, and CO₂ Utilization. Projects complete one or more supplements according to their approach. The project [Climeworks](http://climeworks.com), for example, would fill out the DAC supplement and the Geologic Injection supplement; [Charm Industrial](https://charmindustrial.com/) would fill out the Biomass supplement and the Geologic Injection supplement; [CarbonCure](http://carboncure.com) would fill out the Utilization supplement; and [Project Vesta](http://projectvesta.org) would fill out the Surface Mineralization supplement and the Ocean supplement.
 
 <PullQuote color={meta.color}>
   The application is open source and available for re-use and iteration
@@ -71,7 +71,7 @@ Because [Stripe’s purchase criteria](https://stripe.com/blog/first-negative-em
 
 Using the [now-public proposals](https://github.com/stripe/carbon-removal-source-materials), project websites, and published literature, we analyzed each proposal on the basis of [seven harmonized metrics](https://carbonplan.org/research/cdr-database/methods).
 
-Below we show distributions of two key metrics, Volume and Permanence, in an interactive where you can compare the three batches of proposals we’ve evaluated thus far. Compared to previous rounds, Permanence values are higher (due to Stripe’s criteria) and Volumes are generally lower (likely due to limited supplies that meet these strict criteria).
+Below we show distributions of two key metrics, volume and permanence, in an interactive where you can compare the three batches of proposals we’ve evaluated thus far. Compared to previous rounds, Permanence values are higher (due to Stripe’s criteria) and volumes are generally lower (likely due to limited supplies that meet these strict criteria).
 
 <!-- prettier-ignore -->
 <Distributions />
@@ -90,11 +90,11 @@ Below we show distributions of two key metrics, Volume and Permanence, in an int
   <Inline sx={{ color: 'purple' }}>direct air capture</Inline>. Each circle represents a project, and curves show the distribution using a kernel density estimate. Permanence values and volumes reflect proposal claims, and are not necessarily accurate or realistic. You can compare volume and permanence distributions between the  RFPs we’ve analyzed using the toggle in the upper left. 
 </FigureCaption>
 
-As a reminder, Volume claims vary widely depending on project stage and assumed delivery timelines, and are reported here on a gross basis that does not reflect projects’ own greenhouse gas emissions. We attempt to document nuances in the database notes and comments. Volumes should not be compared directly without paying careful attention to project details.
+As a reminder, volume claims vary widely depending on project stage and assumed delivery timelines, and are reported here on a gross basis that does not reflect projects’ own greenhouse gas emissions. We attempt to document nuances in the database notes and comments. Volumes should not be compared directly without paying careful attention to project details.
 
 This is the second time Stripe proposals have included public offer prices expressed as $/net tCO₂ removed. In this round, the negotiated purchase prices for a subset of chosen projects were also released. For consistency across projects and RFPs, we report the offer price rather than the purchase price. We recognize, however, that purchase prices are fundamentally the signal of interest, and we reflect these data in our notes and comments. Although purchase price gives a more accurate depiction of market outcomes, we decided that reporting purchase price could introduce bias in comparisons with projects that, for whatever reason, were not chosen and therefore did not engage in any subsequent price negotiations.
 
-Below we show the distributions of our Price and Volume metrics in an interactive where you can compare the two batches of Stripe proposals.
+Below we show the distributions of our price and volume metrics in an interactive where you can compare the two batches of Stripe proposals.
 
 <Price />
 <FigureCaption number={3}>
@@ -147,7 +147,7 @@ As interest grows in ocean CDR, we believe it will be critical to ensure that th
 
 ## Conclusion
 
-We are once again grateful to Stripe and participating projects for contributing to the ecosystem of transparency, accountability, and community learning by making all application materials and detailed project proposals public. We are also glad to see that others, like Shopify, are providing [more transparency](https://www.shopify.com/about/environment/sustainability-fund) around their own processes.
+We are once again grateful to Stripe and participating projects for contributing to the ecosystem of transparency, accountability, and community learning by making all application materials and detailed project proposals public. We are also glad to see that others, like Shopify, are providing [more transparency](https://cdn.shopify.com/static/sustainability/How-to-Kick-Start-the-Carbon-Removal-Market_Shopifys-Playbook.pdf ) around their own processes.
 
 Moving forward, we hope the open source application materials developed here provide a jumping-off point for future improvement of carbon removal solicitations. If feasible, we would encourage buyers and grantors to develop parallel solicitation and purchase structures for early-stage projects with open research questions.
 
