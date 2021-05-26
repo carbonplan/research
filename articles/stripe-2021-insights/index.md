@@ -53,7 +53,7 @@ The new carbon removal application features a set of general questions relevant 
   The application is open source and available for re-use and iteration
 </PullQuote>
 
-We think this design helps buyers flexibly solicit the more relevant and detailed project information. We also hope it strikes a balance between soliciting thorough information and not creating an unreasonable burden for projects who apply. Of course, there is always room for improvement! The application is open source and available on [GitHub](https://github.com/carbonplan/carbon-removal-application) for re-use and iteration.
+We think this design helps buyers flexibly solicit more relevant and detailed project information. We also hope it strikes a balance between soliciting thorough information and not creating an unreasonable burden for projects who apply. Of course, there is always room for improvement! The application is open source and available on [GitHub](https://github.com/carbonplan/carbon-removal-application) for re-use and iteration.
 
 ## Project analysis
 
@@ -167,7 +167,7 @@ F Chay, J Zelikova, D Cullenward, J Hamman, J Freeman (2021) “New lessons from
 
 <Endnote label='Terms'>
 
-CarbonPlan received [funding from Stripe](https://carbonplan.org/funding) to support the development of the new, open-source carbon removal application referenced in this article and used by Stripe for their 2021 carbon removal solicitation. Stripe provided CarbonPlan with early access to now-public proposals for the purpose of this analysis. CarbonPlan received no access to information about projects beyond what Stripe has made publicly available. Stripe did not exercise any control over this work, nor did they use this information in their decision making. CarbonPlan received [funding from ClimateWorks](https://carbonplan.org/funding) to support the analysis of the technological carbon removal proposals. The rest of the work was supported through our unrestricted funding. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not represent the views of ClimateWorks, Stripe, or any other other organizations.
+CarbonPlan received [funding from Stripe](https://carbonplan.org/funding) to support the development of the new, open source carbon removal application referenced in this article and used by Stripe for their 2021 carbon removal solicitation. Stripe provided CarbonPlan with early access to now-public proposals for the purpose of this analysis. CarbonPlan received no access to information about projects beyond what Stripe has made publicly available. Stripe did not exercise any control over this work, nor did they use this information in their decision making. CarbonPlan received [funding from ClimateWorks](https://carbonplan.org/funding) to support the analysis of the technological carbon removal proposals. The rest of the work was supported through our unrestricted funding. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not represent the views of ClimateWorks, Stripe, or any other other organizations.
 
 </Endnote>
 
