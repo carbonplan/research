@@ -147,7 +147,7 @@ As interest grows in ocean CDR, we believe it will be critical to ensure that th
 
 ## Conclusion
 
-We are once again grateful to Stripe and participating projects for contributing to the ecosystem of transparency, accountability, and community learning by making all application materials and detailed project proposals public. We are also glad to see that others, like Shopify, are providing [more transparency](https://cdn.shopify.com/static/sustainability/How-to-Kick-Start-the-Carbon-Removal-Market_Shopifys-Playbook.pdf ) around their own processes.
+We are once again grateful to Stripe and participating projects for contributing to the ecosystem of transparency, accountability, and community learning by making all application materials and detailed project proposals public. We are also glad to see that others, like Shopify, are providing [more transparency](https://cdn.shopify.com/static/sustainability/How-to-Kick-Start-the-Carbon-Removal-Market_Shopifys-Playbook.pdf) around their own processes.
 
 Moving forward, we hope the open source application materials developed here provide a jumping-off point for future improvement of carbon removal solicitations. If feasible, we would encourage buyers and grantors to develop parallel solicitation and purchase structures for early-stage projects with open research questions.
 
