@@ -78,10 +78,10 @@ const Panel = ({
           }}
         >
           <Chart x={[1980, 2090]} y={domain} padding={{ left: 55 }}>
-            <Ticks bottom />
-            <Ticks left count={4} values={yticks} />
             <Grid horizontal values={yticks} />
             <Grid vertical values={[1980, 2000, 2020, 2040, 2060, 2080]} />
+            <Ticks bottom />
+            <Ticks left count={4} values={yticks} />
             <TickLabels bottom values={[2000, 2040, 2080]} />
             <TickLabels left count={4} values={yticks} />
             <AxisLabel left align={'left'}>
