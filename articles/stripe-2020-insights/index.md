@@ -21,7 +21,7 @@ export const meta = {
   title: 'Insights from our first project reports',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '05-18-2020',
-  card: 'stripe-2020-insights',
+  card: 'stripe-2020-insights-gray',
   background: 'article-000/road',
   summary:
     'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
