@@ -99,14 +99,12 @@ Below we show the distributions of our price and volume metrics in an interactiv
 <Price />
 <FigureCaption number={3}>
   Comparing price vs volume for all projects from the 2020 and 2021 Stripe RFPs.
-  Only projects with an overall rating of 2 or higher are shown, so as to ensure
+  You can compare results using the toggle in the upper left. Only projects with an overall rating of 2 or higher are shown, so as to ensure
   a minimal degree of robustness in the data. All values are self-reported and
   should be interpreted with care. Due to reporting inconsistencies, volumes are
-  reported as gross removal (tCO₂) whereas prices are net negative removal
-  (offered $/net tCO₂). We had estimates of net removal for the Stripe 2021 RFP
-  data, and confirmed overall trends were similar using those values. You can
-  compare results between the two Stripe RFPs we’ve analyzed using the toggle in
-  the upper left.
+  shown as gross removal (tCO₂) whereas prices are shown as net negative removal
+  (offered $/net tCO₂). For the Stripe 2021 RFP
+  data, where we had estimated of net removal, we confirmed overall trends were similar using those values instead.
 </FigureCaption>
 
 The data show a shift toward lower volumes and higher prices, which would seem consistent with Stripe’s strong requirements around permanence. As we obtain more public data on CDR prices, more analysis of price trends and learning curves will become possible.
@@ -137,11 +135,11 @@ The ocean proposals can be categorized broadly as either interacting with the oc
 
 Permanence with ocean projects is especially complicated.
 
-Carbon storage in the deep ocean has a much longer permanence horizon than carbon storage in forests or soils. In addition, carbon storage in the deep ocean does not depend on human choice – no maintenance is required and carbon gains cannot be reversed due to changing priorities or incentives over time.
+Carbon storage in the deep ocean has a much longer permanence horizon than carbon storage in forests or soils. In addition, carbon storage in the deep ocean does not depend on human choice — no maintenance is required and carbon gains cannot be reversed due to changing priorities or incentives over time.
 
-That said, deep ocean storage does not achieve the permanence of mineralization or geologic storage. Fundamentally, storing biogenic carbon in the deep ocean kicks the can down the road – after hundreds to thousands of years, most of that carbon will resurface to enter the atmosphere.
+That said, deep ocean storage does not achieve the permanence of mineralization or geologic storage. Fundamentally, storing biogenic carbon in the deep ocean kicks the can down the road — after hundreds to thousands of years, most of that carbon will resurface to enter the atmosphere.
 
-If implemented carefully and robustly, this form of intermediate permanence could play a unique role in the carbon removal landscape, especially given the vast potential scale of these projects. However, there are major uncertainties associated with deep ocean carbon storage. It is likely that deployment at scale will face different challenges than current prototype deployments. We don’t know all that much about the underlying dynamics of carbon flux into the deep ocean, or the potential impacts of exporting large quantities of carbon into benthic ecosystems. Plus, the deep ocean is tricky to study and monitor.
+If implemented carefully and robustly, this form of intermediate permanence could play a unique role in the carbon removal landscape, especially given the vast potential scale of these projects. However, there are major uncertainties associated with deep ocean carbon storage. It is likely that deployment at scale will face different challenges than current prototypes. We don’t know all that much about the underlying dynamics of carbon flux into the deep ocean, or the potential impacts of exporting large quantities of carbon into benthic ecosystems. Plus, the deep ocean is tricky to study and monitor.
 
 As interest grows in ocean CDR, we believe it will be critical to ensure that the research into efficacy and impacts keeps up with the rate and scale of deployment.
 
