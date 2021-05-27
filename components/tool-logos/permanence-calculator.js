@@ -20,11 +20,11 @@ const Logo = () => {
   `}
       </style>
       <g>
-        <path class='st0-pc' d='M0.2,10.7c0,0,62.9,24.6,149.6,26' />
-        <line class='st0-pc' x1='0' y1='51.6' x2='150' y2='51.6' />
-        <rect x='0' y='62.6' class='st1-pc' width='74.3' height='27.4' />
-        <rect x='75.1' y='62.6' class='st2-pc' width='74.9' height='27.4' />
-        <rect x='72.3' y='10.6' class='st3-pc' width='4.5' height='79.4' />
+        <path className='st0-pc' d='M0.2,10.7c0,0,62.9,24.6,149.6,26' />
+        <line className='st0-pc' x1='0' y1='51.6' x2='150' y2='51.6' />
+        <rect x='0' y='62.6' className='st1-pc' width='74.3' height='27.4' />
+        <rect x='75.1' y='62.6' className='st2-pc' width='74.9' height='27.4' />
+        <rect x='72.3' y='10.6' className='st3-pc' width='4.5' height='79.4' />
       </g>
     </svg>
   )

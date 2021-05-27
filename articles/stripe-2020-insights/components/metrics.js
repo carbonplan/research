@@ -15,7 +15,7 @@ const table = [
     'Permanence',
     'How long does the project claim carbon will be safely removed from the atmosphere? Is that a question of physical material stability or socioeconomic choices?',
   ],
-  ['Cost', 'How much does the project want to charge its buyer?'],
+  ['Price', 'How much does the project want to charge its buyer?'],
   [
     'Additionality',
     'Would an investment cause new climate benefits or take credit for benefits that may already be happening?',

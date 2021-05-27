@@ -105,7 +105,7 @@ const Permanence = () => {
       y: {
         field: 'cost',
         type: 'quantitative',
-        axis: { title: 'COST $/tCO₂', tickCount: 3 },
+        axis: { title: 'PRICE $/tCO₂', tickCount: 3 },
         scale: { type: 'log', domain: [2, 2000], nice: false },
       },
       x: {

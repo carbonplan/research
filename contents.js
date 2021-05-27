@@ -1,5 +1,25 @@
 const Contents = [
   {
+    title: 'New lessons from reviewing carbon removal proposals',
+    tags: ['article', 'dataset'],
+    summary:
+      "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
+    date: '05-26-2021',
+    version: '1.0.0',
+    color: 'secondary',
+    icon: 'article-010/curve-small',
+    links: [
+      {
+        label: 'Read article',
+        href: '/research/stripe-2021-insights',
+      },
+      {
+        label: 'Explore database',
+        href: '/research/cdr-database',
+      },
+    ],
+  },
+  {
     title: 'Risks to forest carbon in a changing climate',
     tags: ['article', 'dataset', 'tool', 'publication'],
     summary:
@@ -99,8 +119,8 @@ const Contents = [
       "We analyzed project proposals submitted for Stripe's 2020 Negative Emisions Purchase. Explore our database of project reports or read the article for our main takeaways and lessons learned.",
     date: '05-18-2020',
     version: '1.0.1',
-    color: 'yellow',
-    icon: 'road-small',
+    color: 'secondary',
+    icon: 'article-000/road-small',
     links: [
       {
         label: 'Read article',
