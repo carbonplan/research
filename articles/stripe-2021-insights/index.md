@@ -99,12 +99,13 @@ Below we show the distributions of our price and volume metrics in an interactiv
 <Price />
 <FigureCaption number={3}>
   Comparing price vs volume for all projects from the 2020 and 2021 Stripe RFPs.
-  You can compare results using the toggle in the upper left. Only projects with an overall rating of 2 or higher are shown, so as to ensure
-  a minimal degree of robustness in the data. All values are self-reported and
-  should be interpreted with care. Due to reporting inconsistencies, volumes are
-  shown as gross removal (tCO₂) whereas prices are shown as net negative removal
-  (offered $/net tCO₂). For the Stripe 2021 RFP
-  data, where we had estimated of net removal, we confirmed overall trends were similar using those values instead.
+  You can compare results using the toggle in the upper left. Only projects with
+  an overall rating of 2 or higher are shown, so as to ensure a minimal degree
+  of robustness in the data. All values are self-reported and should be
+  interpreted with care. Due to reporting inconsistencies, volumes are shown as
+  gross removal (tCO₂) whereas prices are shown as net negative removal (offered
+  $/net tCO₂). For the Stripe 2021 RFP data, where we had estimated of net
+  removal, we confirmed overall trends were similar using those values instead.
 </FigureCaption>
 
 The data show a shift toward lower volumes and higher prices, which would seem consistent with Stripe’s strong requirements around permanence. As we obtain more public data on CDR prices, more analysis of price trends and learning curves will become possible.
