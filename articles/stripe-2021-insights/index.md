@@ -53,7 +53,7 @@ The new carbon removal application features a set of general questions relevant 
   The application is open source and available for re-use and iteration
 </PullQuote>
 
-We think this design helps buyers flexibly solicit more relevant and detailed project information. We also hope it strikes a balance between soliciting thorough information and not creating an unreasonable burden for projects who apply. Of course, there is always room for improvement! The application is open source and available on [GitHub](https://github.com/carbonplan/carbon-removal-application) for re-use and iteration.
+We think this design helps buyers flexibly solicit more relevant and detailed project information. We also hope it strikes a balance between soliciting thorough information and not creating an unreasonable burden for projects who apply. Of course, there is always room for improvement! The application is open source and [available on GitHub](https://github.com/carbonplan/carbon-removal-application) for re-use and iteration.
 
 ## Project analysis
 
