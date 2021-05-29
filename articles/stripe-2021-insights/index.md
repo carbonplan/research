@@ -104,7 +104,7 @@ Below we show the distributions of our price and volume metrics in an interactiv
   of robustness in the data. All values are self-reported and should be
   interpreted with care. Due to reporting inconsistencies, volumes are shown as
   gross removal (tCO₂) whereas prices are shown as net negative removal (offered
-  $/net tCO₂). For the Stripe 2021 RFP data, where we had estimated of net
+  $/net tCO₂). For the Stripe 2021 RFP data, where we had estimates of net
   removal, we confirmed overall trends were similar using those values instead.
 </FigureCaption>
 
