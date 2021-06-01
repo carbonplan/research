@@ -37,7 +37,7 @@ export const meta = {
   data={[{ label: 'Browse the database', href: '/research/cdr-database' }]}
 />
 
-CarbonPlan began building a public [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal proposal analyses in 2020. We’ve previously published insights from our analysis of [Stripe’s 2020 purchase](https://carbonplan.org/research/stripe-2020-insights) and [Microsoft’s 2021 purchase](https://carbonplan.org/research/microsoft-2021-insights). We are now updating the database to include an analysis of 23 new proposals submitted in response to [Stripe’s Spring 2021 carbon removal purchase](https://stripe.com/newsroom/news/spring-21-carbon-removal-purchases)).
+CarbonPlan began building a public [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal proposal analyses in 2020. We’ve previously published insights from our analysis of [Stripe’s 2020 purchase](https://carbonplan.org/research/stripe-2020-insights) and [Microsoft’s 2021 purchase](https://carbonplan.org/research/microsoft-2021-insights). We are now updating the database to include an analysis of 23 new proposals submitted in response to [Stripe’s Spring 2021 carbon removal purchase](https://stripe.com/newsroom/news/spring-21-carbon-removal-purchases).
 
 We continue to analyze carbon removal projects because we believe these activities play an important role in addressing the climate crisis. As the field evolves, we hope this database contributes to a culture of openness, transparency, and accountability for those participating in the field of carbon removal and climate action more broadly.
 
