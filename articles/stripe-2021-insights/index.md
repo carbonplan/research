@@ -170,6 +170,4 @@ CarbonPlan received [funding from Stripe](https://carbonplan.org/funding) to sup
 
 </Endnote>
 
-### Questions? Interested in collaborating on these problems? Email us at [hello@carbonplan.org](mailto:hello@carbonplan.org)
-
 export default ({ children }) => <Article meta={meta}>{children}</Article>
