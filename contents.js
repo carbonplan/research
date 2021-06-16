@@ -1,5 +1,21 @@
 const Contents = [
   {
+    title: 'Depth matters for soil carbon accounting',
+    tags: ['article'],
+    summary:
+      'Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls.',
+    date: '06-17-2021',
+    version: '1.0.0',
+    color: 'orange',
+    icon: 'article-011/tillage-small',
+    links: [
+      {
+        label: 'Read article',
+        href: '/research/soil-depth-sampling',
+      },
+    ],
+  },
+  {
     title: 'New lessons from reviewing carbon removal proposals',
     tags: ['article', 'dataset'],
     summary:
