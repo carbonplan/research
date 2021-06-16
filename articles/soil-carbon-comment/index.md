@@ -1,11 +1,13 @@
 import { Box } from 'theme-ui'
 import { Links } from '@carbonplan/components'
 import Article from '../../components/article'
-import Reference from '../../components/reference'
+import Cite from '../../components/cite'
+import CiteGroup from '../../components/cite-group'
 import PullQuote from '../../components/pull-quote'
 import Endnote from '../../components/endnote'
 import SectionBreak from '../../components/section-break'
 import Conclusions from './components/conclusions'
+import references from './references'
 
 export const meta = {
   id: 'soil-carbon-comment',
@@ -21,100 +23,6 @@ export const meta = {
     'Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols',
 }
 
-export const sidenotes = {
-  1: {
-    offset: -240,
-    number: 1,
-    authors: 'J. Sanderman & J. A. Baldock',
-    year: 2010,
-    title:
-      'Accounting for soil carbon sequestration in national inventories: a soil scientist’s perspective',
-    journal: 'Environmental Research Letters',
-    url: 'https://doi.org/10.1088/1748-9326/5/3/034003',
-  },
-  2: {
-    offset: -100,
-    number: 2,
-    authors: 'C. Poeplau & A. Don',
-    year: 2014,
-    title:
-      'Carbon sequestration in agricultural soils via cultivation of cover crops – A meta-analysis',
-    journal: 'Agriculture, Ecosystems and Environment',
-    url: 'https://doi.org/10.1016/j.agee.2014.10.024',
-  },
-  3: {
-    offset: 25,
-    number: 3,
-    authors: 'M. F. Cotrufo et al.',
-    year: 2018,
-    title:
-      'Soil carbon storage informed by particulate and mineral-associated organic matter',
-    journal: 'Nature Geoscience',
-    url: 'https://doi.org/10.1038/s41561-019-0484-6',
-  },
-  4: {
-    number: 4,
-    offset: 70,
-    authors: 'K. Paustian et al.',
-    year: 2017,
-    title:
-      'Field‐ and farm‐scale assessment of soil greenhouse gas mitigation using COMET‐Farm',
-    journal: 'Agronomy Monographs',
-    url: 'https://doi.org/10.2134/agronmonogr59.c16',
-  },
-  5: {
-    number: 5,
-    offset: 190,
-    authors: 'E. E. Campbell & K. Paustian',
-    year: 2015,
-    title:
-      'Current developments in soil organic matter modeling and the expansion of model applications: a review',
-    journal: 'Environmental Research Letters',
-    url: 'https://doi.org/10.1088/1748-9326/10/12/123004',
-  },
-  6: {
-    offset: 135,
-    number: 6,
-    authors: 'B. van Wesemael et al.',
-    year: 2011,
-    title:
-      'How can soil monitoring networks be used to improve predictions of organic carbon pool dynamics and CO2 fluxes in agricultural soils?',
-    journal: 'Plant and Soil',
-    url: 'https://doi.org/10.1007/s11104-010-0567-z',
-  },
-  7: {
-    offset: 265,
-    number: 7,
-    authors: 'A. Orgiazzi et al.',
-    year: 2017,
-    title:
-      'LUCAS Soil, the largest expandable soil dataset for Europe: a review',
-    journal: 'European Journal of Soil Science',
-    url: 'https://doi.org/10.1111/ejss.12499',
-  },
-  8: {
-    offset: 340,
-    number: 8,
-    authors: 'P. Smith et al.',
-    year: 2019,
-    title:
-      'How to measure, report and verify soil carbon change to realize the potential of soil carbon sequestration for atmospheric greenhouse gas removal',
-    journal: 'Global Change Biology',
-    url: 'https://doi.org/10.1111/gcb.14815',
-  },
-  9: {
-    offset: 0,
-    number: 9,
-    authors: 'B. Haya et al.',
-    year: 2019,
-    title:
-      'Managing Uncertainty in Carbon Offsets: Insights from California’s Standardized Approach',
-    journal: 'Climate Policy (in press)',
-    url:
-      'https://law.stanford.edu/publications/managing-uncertainty-in-carbon-offsets-insights-from-californias-standardized-approach/',
-  },
-}
-
 # Getting soil <br/> carbon right
 
 There are good reasons to be [excited](https://carbon180.org/leading-with-soil) about better soil management practices for carbon removal. Agricultural practices that increase soil carbon storage have the potential to provide benefits both for farmers and ranchers and for the global climate. In turn, working with the agricultural sector could help engage people and organizations that haven’t been the focus of most climate action to date. The complexities of soil carbon quantification, however, pose challenges for designing financial crediting systems.
@@ -125,9 +33,9 @@ Below, we review why quantifying soil carbon is so challenging and summarize our
 
 ## Why soil carbon is challenging
 
-Agricultural practices such as adding cover crops, changing from conventional tillage to no-tillage, or applying soil amendments, have the potential to both improve crop health and remove additional carbon dioxide from the atmosphere. The challenge is that these effects are hard to measure. Accurate quantification relies on physical sampling and soil carbon content measurements, but soil carbon content varies substantially across soil depth, individual plots, spatial locations within a plot (even at the scale of a few meters), and time.<Reference color={meta.color} data={sidenotes[1]}/> <Reference color={meta.color} data={sidenotes[2]}/> <Reference color={meta.color} data={sidenotes[3]}/> Future changes in land management practices can also reverse gains. Addressing that variability requires careful sampling methods, baseline estimation, meta analysis, and interpretation and projection that is guided, but not replaced, by models.<Reference color={meta.color} data={sidenotes[4]}/> <Reference color={meta.color} data={sidenotes[5]}/>
+Agricultural practices such as adding cover crops, changing from conventional tillage to no-tillage, or applying soil amendments, have the potential to both improve crop health and remove additional carbon dioxide from the atmosphere. The challenge is that these effects are hard to measure. Accurate quantification relies on physical sampling and soil carbon content measurements, but soil carbon content varies substantially across soil depth, individual plots, spatial locations within a plot (even at the scale of a few meters), and time.<CiteGroup ids={['sanderman.2010', 'poeplau.2014', 'cotrufo.2018']}/> Future changes in land management practices can also reverse gains. Addressing that variability requires careful sampling methods, baseline estimation, meta analysis, and interpretation and projection that is guided, but not replaced, by models.<CiteGroup ids={['paustian.2017', 'campbell.2015']} />
 
-Compared to forests, soil carbon science hasn’t benefited from decades of extensive public data collection and model verification. In the US, for example, the Forest Service has been operating its national [Forest Inventory and Analysis program](https://www.fia.fs.fed.us/about/about_us/index.php) since 1930, producing a wealth of public information that can directly guide efforts to manage and quantify forest carbon. Several soil monitoring networks around the world are underway to help bridge this gap,<Reference color={meta.color} data={sidenotes[6]}/> <Reference color={meta.color} data={sidenotes[7]}/> but considerable uncertainty and much future work remains. <Reference color={meta.color} data={sidenotes[8]}/>
+Compared to forests, soil carbon science hasn’t benefited from decades of extensive public data collection and model verification. In the US, for example, the Forest Service has been operating its national [Forest Inventory and Analysis program](https://www.fia.fs.fed.us/about/about_us/index.php) since 1930, producing a wealth of public information that can directly guide efforts to manage and quantify forest carbon. Several soil monitoring networks around the world are underway to help bridge this gap,<CiteGroup ids={['wesemael.2011', 'orgiazzi.2017']} /> but considerable uncertainty and much future work remains. <Cite id='smith.2019' />
 
 Forest carbon quantification has also benefited from advances in remote sensing technology, with air and satellite-based methods providing increasingly accurate insights into above-ground forest carbon stocks. In contrast, while accurately inferring soil carbon from remote measurement could become feasible in the future, physical samples are required for high resolution estimates today. Remote sensing for soil is an active area of research, and will require extensive benchmarking, calibration, and validation with public data.
 
@@ -171,7 +79,7 @@ Meanwhile, it’s one thing for a company to sell proprietary technology to priv
 
 ## Alternative approaches
 
-Carbon offsets are particularly challenging because they require effectively perfect calculations — even one ton of over-crediting causes a buyer’s claim of carbon neutrality to fall short. <Reference color={meta.color} data={sidenotes[9]}/>
+Carbon offsets are particularly challenging because they require effectively perfect calculations — even one ton of over-crediting causes a buyer’s claim of carbon neutrality to fall short. <Cite id='haya.2020'/>
 
 Perfection is a tall order in the face of conceptually complicated and empirically fraught problems like leakage and additionality. Achieving these standards is difficult even when the quantification science is mature and readily applied to carbon offset projects. In the case of soil carbon, where comprehensive measurement is challenging and there are few long-term public data sets from which to extrapolate trends, that task is even harder.
 
@@ -216,4 +124,9 @@ CarbonPlan received no financial support for this work and has no financial conf
 
 </Endnote>
 
-export default ({ children }) => <Article meta={meta}>{children}</Article>
+export default ({ children }) => (
+  <Article references={references} meta={meta}>
+    {children}
+  </Article>
+
+)

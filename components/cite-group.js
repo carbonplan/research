@@ -18,6 +18,16 @@ const CiteGroup = ({ ids, hide = false }) => {
         <Cite id={ids[1]} />
       </>
     )
+  } else if (count === 3) {
+    return (
+      <>
+        <Cite id={ids[0]} />
+        <CiteSeparator sep=',' />
+        <Cite id={ids[1]} />
+        <CiteSeparator sep=',' />
+        <Cite id={ids[2]} />
+      </>
+    )
   } else {
     return (
       <>

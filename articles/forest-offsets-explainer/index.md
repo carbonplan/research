@@ -2,7 +2,7 @@ import { Box } from 'theme-ui'
 import Article from '../../components/article'
 import SectionBreak from '../../components/section-break'
 import Links from '../../components/links'
-import Reference from '../../components/reference'
+import Cite from '../../components/cite'
 import FigureCaption from '../../components/figure-caption'
 import Endnote from '../../components/endnote'
 import SummaryResults from './components/summary-results'
@@ -11,6 +11,7 @@ import AnalysisExplanation from './components/analysis-explanation'
 import ProjectAnalysis from './components/project-analysis'
 import SouthernCascades from './components/southern-cascades'
 import Triangle from './components/triangle'
+import references from './references'
 
 export const meta = {
   id: 'forest-offsets-explainer',
@@ -32,29 +33,6 @@ export const meta = {
   quotes: [],
   card: 'forest-offsets-explainer',
   background: 'article-008/ash',
-}
-
-export const sidenotes = {
-  1: {
-    offset: -100,
-    number: 1,
-    authors:
-      "Common practice numbers use tCO₂ / acre, converting the C stored in trees' biomass to CO₂. Offset credits are denominated in terms of tCO₂e because they function in a multi-gas policy environment, where non-CO₂ gases are converted to CO₂e using 100-year global warming potentials from the 2013 IPCC assessment reports. The applicable GWP for CO₂ is 1, so only the units change when converting between CO₂ and CO₂e in this policy environment.",
-  },
-  2: {
-    offset: 50,
-    number: 2,
-    authors:
-      'For all estimates, we report the median (50th percentile) of a bootstrapped distribution alongside 5th and 95th percentiles in parentheses, forming a 90% confidence interval.',
-  },
-  3: {
-    offset: 0,
-    number: 3,
-    authors:
-      'California Air Resources Board, Summary of Market Transfers Completed in Q4 2020',
-    url:
-      'https://ww2.arb.ca.gov/our-work/programs/cap-and-trade-program/cap-and-trade-program-data',
-  },
 }
 
 # Systematic <span style={{whiteSpace: 'nowrap'}}>over-crediting</span> <br/> of forest offsets
@@ -131,9 +109,9 @@ To test the integrity of California's program, we asked how well each project’
 
 We found evidence that the vast majority of projects were over-credited: for these projects, common practice values are systematically low because they reflect averages based on dissimilar species types. As a result, projects received more credits than they would have under a more ecologically accurate and robust definition of common practice.
 
-For example, in the “Southern Cascades” region of California, the common practice numbers used in the program average together temperate, carbon-dense forest types like Douglas Fir (<i>Pseudotsuga menziesii</i>, average 122.5 tCO₂ / acre) and Tanoak (<i>Notholithocarpus densiflorus</i>, average 192.4 tCO₂ / acre) with less-carbon-dense forest types that occupy more arid niches, like Ponderosa pine (<i>Pinus ponderosa</i>, average 60.4 tCO₂ / acre).<Reference color={meta.color} data={sidenotes[1]}/>
+For example, in the “Southern Cascades” region of California, the common practice numbers used in the program average together temperate, carbon-dense forest types like Douglas Fir (<i>Pseudotsuga menziesii</i>, average 122.5 tCO₂ / acre) and Tanoak (<i>Notholithocarpus densiflorus</i>, average 192.4 tCO₂ / acre) with less-carbon-dense forest types that occupy more arid niches, like Ponderosa pine (<i>Pinus ponderosa</i>, average 60.4 tCO₂ / acre).<Cite id='carbon.units'/>
 
-Comparing project carbon against this average causes projects like [ACR189](https://carbonplan.org/research/forest-offsets?id=ACR189), which is located in Northern California and is composed primarily of Douglas fir (26% of basal area) and Tanoak (49% of basal area), to receive substantial credits simply due to a mismatch between the species in the project and the species included in the regional average. If we instead compare ACR189 against Douglas Fir and Tanoak — a more ecologically robust comparison — we find the project was over-credited by 135,869 tCO₂e (90% CI: 85,481-185,917 tCO₂e), or 50.1% (90% CI: 31.5-68.6%) of its total credits.<Reference color={meta.color} data={sidenotes[2]}/>
+Comparing project carbon against this average causes projects like [ACR189](https://carbonplan.org/research/forest-offsets?id=ACR189), which is located in Northern California and is composed primarily of Douglas fir (26% of basal area) and Tanoak (49% of basal area), to receive substantial credits simply due to a mismatch between the species in the project and the species included in the regional average. If we instead compare ACR189 against Douglas Fir and Tanoak — a more ecologically robust comparison — we find the project was over-credited by 135,869 tCO₂e (90% CI: 85,481-185,917 tCO₂e), or 50.1% (90% CI: 31.5-68.6%) of its total credits.<Cite id='confidence.intervals'/>
 
 But ACR189 wasn’t an exception. We found this same pattern over and over again.
 
@@ -152,7 +130,7 @@ To quantify these errors systematically, we replaced projects’ common practice
 
 Our analysis relied on the [digitized project records](https://doi.org/10.5281/zenodo.4630684) described above, as well as public data from the US Forest Service [Forest Inventory Analysis](https://www.fia.fs.fed.us/) program and the open source [rFIA package](https://github.com/hunter-stanke/rFIA). Our methods are described in detail in [our preprint](https://doi.org/10.1101/2021.04.28.441870) and all of the [code](https://github.com/carbonplan/forest-offsets) and [additional data](https://doi.org/10.5281/zenodo.4630712) underlying our analysis is open source and fully reproducible.
 
-Across the program as a whole, we estimate net over-crediting of 30 million tCO₂e total (90% CI: 20.5 to 38.6 million tCO₂e) or 29.4% of the credits we analyzed (90% CI: 20.1 to 37.8%). At recent market prices of $13.67 per offset credit,<Reference color={meta.color} data={sidenotes[3]}/> these excess credits are worth $410 million (90% CI: $280 to $528 million) — and likely more, as market prices would rise if market regulators took steps to correct for over-crediting.
+Across the program as a whole, we estimate net over-crediting of 30 million tCO₂e total (90% CI: 20.5 to 38.6 million tCO₂e) or 29.4% of the credits we analyzed (90% CI: 20.1 to 37.8%). At recent market prices of $13.67 per offset credit,<Cite id='market.transfers'/> these excess credits are worth $410 million (90% CI: $280 to $528 million) — and likely more, as market prices would rise if market regulators took steps to correct for over-crediting.
 
 A key feature of our study is that it does not depend on counterfactual analysis. In general, offsets must reflect “additional” climate benefits above and beyond what is expected under business-as-usual conditions. Claims about the [additionality](https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees/) of [entire projects](https://www.earthisland.org/journal/index.php/magazine/entry/carbon-conundrum) are important to consider but difficult to evaluate quantitatively because counterfactual scenarios cannot be observed directly. In contrast, our analysis uses revealed program outcomes to directly estimate crediting errors.
 
@@ -230,4 +208,9 @@ CarbonPlan received a grant from Microsoft AI for Earth to support the portion o
 
 </Endnote>
 
-export default ({ children }) => <Article meta={meta}>{children}</Article>
+export default ({ children }) => (
+  <Article references={references} meta={meta}>
+    {children}
+  </Article>
+
+)

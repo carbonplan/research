@@ -1,9 +1,11 @@
 import Article from '../../components/article'
-import Reference from '../../components/reference'
+import Cite from '../../components/cite'
+import CiteGroup from '../../components/cite-group'
 import Endnote from '../../components/endnote'
 import PullQuote from '../../components/pull-quote'
 import SectionBreak from '../../components/section-break'
 import Cycle from './components/cycle'
+import references from './references'
 
 export const meta = {
   id: 'carbon-removal-mechanisms',
@@ -24,96 +26,6 @@ export const meta = {
     'How different carbon removal projects interact with the global carbon cycle',
 }
 
-export const sidenotes = {
-  1: {
-    offset: -50,
-    number: 1,
-    authors: 'P Friedlingstein et al.',
-    year: 2019,
-    title: 'Global Carbon Budget 2019',
-    journal: 'Earth System Science Data',
-    url: 'https://doi.org/10.5194/essd-11-1783-2019',
-  },
-  2: {
-    offset: 30,
-    number: 2,
-    authors: 'P. Ciais et al.',
-    year: 2013,
-    title: 'Carbon and Other Biogeochemical Cycles',
-    journal:
-      'Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change',
-    url: 'https://www.ipcc.ch/report/ar5/wg1/',
-  },
-  3: {
-    offset: 0,
-    number: 3,
-    authors: 'Keller et al.',
-    year: 2018,
-    title: 'The Effects of Carbon Dioxide Removal on the Carbon Cycle',
-    journal: 'Current Climate Change Reports',
-    url: 'https://doi.org/10.1007/s40641-018-0104-3',
-  },
-  4: {
-    offset: 0,
-    number: 4,
-    authors: 'Haya et al.',
-    year: 2020,
-    title:
-      'Managing uncertainty in carbon offsets: insights from California’s standardized approach',
-    journal: 'Climate Policy',
-    url: 'https://doi.org/10.1080/14693062.2020.1781035',
-  },
-  5: {
-    offset: 0,
-    number: 5,
-    authors: 'A. R. Martin et al.',
-    year: 2018,
-    title:
-      'Global patterns in wood carbon concentration across the world’s trees and forests',
-    journal: 'Nature Geoscience',
-    url: 'https://doi.org/10.1038/s41561-018-0246-x',
-  },
-  6: {
-    offset: 0,
-    number: 6,
-    authors: 'S. L. Lewis et al.',
-    year: 2019,
-    title:
-      'Restoring natural forests is the best way to remove atmospheric carbon',
-    journal: 'Nature',
-    url: 'https://doi.org/10.1038/d41586-019-01026-8',
-  },
-  7: {
-    offset: -70,
-    number: 7,
-    authors: 'C. Hepburn et al.',
-    year: '2019',
-    title:
-      'The technological and economic prospects for CO₂ utilization and removal',
-    journal: 'Nature',
-    url: 'https://doi.org/10.1038/s41586-019-1681-6',
-  },
-  8: {
-    offset: 0,
-    number: 8,
-    authors: 'H-P Schmidt et al.',
-    year: '2018',
-    title: 'Pyrogenic carbon capture and storage',
-    journal: 'Global Change Biology Bioenergy',
-    url: 'https://doi.org/10.1111/gcbb.12553',
-  },
-  9: {
-    offset: 80,
-    number: 9,
-    authors: 'J. L. Campbell et al.',
-    year: '2018',
-    title:
-      'Potential carbon storage in biochar made from logging residue: Basic principles and Southern Oregon case studies',
-    journal: 'PLOS ONE',
-    url: 'https://doi.org/10.1371/journal.pone.0203475',
-  },
-}
-
 # Carbon removal mechanisms
 
 Carbon removal is an exciting field because there are so many methods.
@@ -132,7 +44,7 @@ We hope this article helps bring clarity to the carbon removal conversation.
 
 Carbon removal must be considered in the context of the [global carbon cycle](https://www.globalcarbonproject.org/) — the exchange of carbon, in various chemical states, between the land, ocean, atmosphere, and geosphere. Each reservoir has a “stock” of carbon stored, and carbon “fluxes” between reservoirs, with billions of tons of carbon (GtC) moving through the system every year.
 
-Increased carbon in the atmosphere causes warming at the Earth’s surface. Since the 1750s, atmospheric carbon has increased by roughly 30% (from ~590 to ~870 GtC), with human emissions (~10 GtC/year) now constituting about 5% of the total atmosphere/ocean and atmosphere/land fluxes combined.<Reference color={meta.color} data={sidenotes[1]}/> <Reference color={meta.color} data={sidenotes[2]}/> (These numbers ignore the important, but smaller, role of changes in other greenhouse gas concentrations and emissions.) The efficacy and impact of any carbon removal effort depends on its relative scale and how it interfaces with the background cycle.
+Increased carbon in the atmosphere causes warming at the Earth’s surface. Since the 1750s, atmospheric carbon has increased by roughly 30% (from ~590 to ~870 GtC), with human emissions (~10 GtC/year) now constituting about 5% of the total atmosphere/ocean and atmosphere/land fluxes combined.<CiteGroup ids={['friedlingstein.2019', 'ciais.2013']}/> (These numbers ignore the important, but smaller, role of changes in other greenhouse gas concentrations and emissions.) The efficacy and impact of any carbon removal effort depends on its relative scale and how it interfaces with the background cycle.
 
 To help the reader develop intuition about carbon removal, we use “intervention diagrams” to succinctly illustrate the impact of specific projects. A blank diagram looks like this:
 
@@ -145,7 +57,7 @@ To help the reader develop intuition about carbon removal, we use “interventio
 
 For any given project, we use colors to highlight which stocks are involved and which fluxes are enhanced or blocked. We dim the others.
 
-These diagrams are meant to illustrate key concepts, but they deliberately over-simplify the underlying science. They do not depict the sizes of either stocks or fluxes. They only show the intervention at a fixed moment in time, obscuring the fact that any intervention causes feedbacks that dynamically affect other stocks and fluxes due to the interconnected nature of the carbon cycle.<Reference color={meta.color} data={sidenotes[3]}/> Nevertheless, they offer a simple way to distinguish different carbon removal mechanisms.
+These diagrams are meant to illustrate key concepts, but they deliberately over-simplify the underlying science. They do not depict the sizes of either stocks or fluxes. They only show the intervention at a fixed moment in time, obscuring the fact that any intervention causes feedbacks that dynamically affect other stocks and fluxes due to the interconnected nature of the carbon cycle.<Cite id='keller.2018'/> Nevertheless, they offer a simple way to distinguish different carbon removal mechanisms.
 
 With this diagram in hand, let’s build our intuition by first stepping through examples involving engineered systems.
 
@@ -208,7 +120,7 @@ As this diagram suggests, a project’s efficacy depends on the scale of gross c
 
 Avoiding emissions can also be good, or bad, for the climate. Permanently storing what otherwise would have been an atmospheric CO₂ emission avoids an increase in atmospheric CO₂. However, the impact of the intervention often depends on the counterfactual scenario — would the emission have happened without our action? — which can only ever be estimated, not observed.
 
-Estimating counterfactuals with confidence is often more difficult for avoided emissions than for carbon removal. If a project claims to avoid emissions that weren’t going to happen anyway — and especially if someone else gets credit to continue to emit more emissions in exchange, as is the case with carbon offset programs — then a low-quality avoided emissions project can do more damage to the climate than doing nothing at all.<Reference color={meta.color} data={sidenotes[4]}/>
+Estimating counterfactuals with confidence is often more difficult for avoided emissions than for carbon removal. If a project claims to avoid emissions that weren’t going to happen anyway — and especially if someone else gets credit to continue to emit more emissions in exchange, as is the case with carbon offset programs — then a low-quality avoided emissions project can do more damage to the climate than doing nothing at all.<Cite id='haya.2020'/>
 
 As these examples help illustrate, differentiating carbon removal from avoided emissions requires thinking about the source of the carbon and how projects redirect fluxes to different stocks.
 
@@ -216,7 +128,7 @@ As these examples help illustrate, differentiating carbon removal from avoided e
 
 Let’s work through examples involving biological systems. These can be more complex than the engineered systems described above because CO₂ in biological systems is constantly in flux and often harder to measure. As a result, humans have less direct control over outcomes, and need to consider a wider range of risks. The intuition we’ve developed above can help reduce those challenges.
 
-Consider a tree and its role in the carbon cycle. The tree uses photosynthesis to convert light energy into chemical energy, which it uses to convert CO₂ into compounds that make up the plant’s tissue. (For the purposes of the carbon cycle, scientists call a plant’s tissue its biomass. About 50% of the above-ground biomass of a tree is carbon from the atmosphere.<Reference color={meta.color} data={sidenotes[5]}/>)
+Consider a tree and its role in the carbon cycle. The tree uses photosynthesis to convert light energy into chemical energy, which it uses to convert CO₂ into compounds that make up the plant’s tissue. (For the purposes of the carbon cycle, scientists call a plant’s tissue its biomass. About 50% of the above-ground biomass of a tree is carbon from the atmosphere.<Cite id='martin.2018/>)
 
 Viewed in isolation, a tree performs carbon removal, at least for the period of its life when it is growing and therefore sequestering net CO₂ from the atmosphere into its tissues. How much? The rate depends on factors like the age and species of the tree and properties of the surrounding ecosystem, with carbon removal generally accelerating early in the growth of a tree and then eventually reaching saturation — the point at which CO₂ emissions from the decay of organic material like leaves balances the CO₂ removal from photosynthesis, and no further carbon removal occurs. During the growth and maturation of a tree — or of a forest with many trees — a cumulative quantity of carbon fluxes from the atmosphere into the biosphere.
 
@@ -233,7 +145,7 @@ In our diagram, we show the simple case of a growing forest with a circle repres
 
 The accounting becomes more complex for projects that change existing ecological systems.
 
-Reforestation, for example, refers to the planting of trees in locations that were forested in the past. (You might also hear the phrase “afforestation,” which refers to planting vegetation – typically monoculture forest plantations – in areas that have not previously been forested. Ecologists rightly question the feasibility or utility of large-scale afforestation.<Reference color={meta.color} data={sidenotes[6]}/>)
+Reforestation, for example, refers to the planting of trees in locations that were forested in the past. (You might also hear the phrase “afforestation,” which refers to planting vegetation – typically monoculture forest plantations – in areas that have not previously been forested. Ecologists rightly question the feasibility or utility of large-scale afforestation.<Cite id='lewis.2019'/>)
 
 From a carbon cycle perspective, reforestation will result in new tree growth. We can think of it as carbon removal, at least for as long as the trees continue to accumulate biomass. The diagram is the same as above.
 
@@ -257,7 +169,7 @@ These projects address the same stock as before, but the intervention affects th
 
 ## Biomass and materials
 
-Another example — and a frequently confusing one — is the conversion of biomass into derived materials that decompose more slowly and are thus more durable than the source biomass. Examples include producing durable laminated wood products,<Reference color={meta.color} data={sidenotes[7]}/> or using pyrolysis to convert biomass into bio-oil (fast pyrolysis) <Reference color={meta.color} data={sidenotes[8]}/> or biochar (slow pyrolysis).<Reference color={meta.color} data={sidenotes[9]}/>
+Another example — and a frequently confusing one — is the conversion of biomass into derived materials that decompose more slowly and are thus more durable than the source biomass. Examples include producing durable laminated wood products,<Cite id='hepburn.2019'/> or using pyrolysis to convert biomass into bio-oil (fast pyrolysis)<Cite id='schmidt.2018'/> or biochar (slow pyrolysis).<Cite id='campbell.2018'/>
 
 These conversions can be considered either avoided emissions or carbon removal depending on the context in which we consider the project — known as the “boundary conditions” in the field of lifecycle analysis.
 
@@ -382,4 +294,9 @@ CarbonPlan received no specific financial support for this work.
 
 </Endnote>
 
-export default ({ children }) => <Article meta={meta}>{children}</Article>
+export default ({ children }) => (
+  <Article references={references} meta={meta}>
+    {children}
+  </Article>
+
+)

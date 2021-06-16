@@ -1,12 +1,14 @@
 import Article from '../../components/article'
-import Reference from '../../components/reference'
 import FigureCaption from '../../components/figure-caption'
 import Inline from '../../components/inline'
+import Cite from '../../components/cite'
+import CiteGroup from '../../components/cite-group'
 import SectionBreak from '../../components/section-break'
 import Endnote from '../../components/endnote'
 import Closing from '../../components/closing'
 import FireMap from './components/fire-map'
 import RiskScenarios from './components/risk-scenarios'
+import references from './references'
 
 export const meta = {
   id: 'offset-project-fire',
@@ -31,91 +33,6 @@ export const meta = {
   quotes: [],
 }
 
-export const sidenotes = {
-  1: {
-    offset: -90,
-    number: 1,
-    authors: 'M A Krawchuk et al.',
-    year: 2009,
-    title:
-      'Global pyrogeography: the current and future distribution of wildfire',
-    journal: 'PLOS One',
-    url: 'https://doi.org/10.1371/journal.pone.0005102',
-  },
-  2: {
-    offset: 0,
-    number: 2,
-    authors: 'M A Moritz et al.',
-    year: 2020,
-    title: 'Climate change and disruptions to global fire activity',
-    journal: 'Ecosphere',
-    url: 'https://doi.org/10.1890/ES11-00345.1',
-  },
-  3: {
-    offset: 70,
-    number: 3,
-    authors: 'A P Williams & J T Abatzoglou',
-    year: 2016,
-    title:
-      'Recent advances and remaining uncertainties in resolving past and future climate effects on global fire activity',
-    journal: 'Current Climate Change Reports',
-    url: 'https://doi.org/10.1007/s40641-016-0031-0',
-  },
-  4: {
-    offset: 0,
-    number: 4,
-    title: 'Calculated from the Q2 2020 Compliance Instrument Report',
-    url:
-      'https://ww2.arb.ca.gov/sites/default/files/2020-07/2020_q2_complianceinstrumentreport.pdf',
-  },
-  5: {
-    offset: -80,
-    number: 5,
-    title:
-      'The exact burned area is moderately sensitive to the processing method. Under maximally conservative parameters, we found the burned area to remain at or above 64%. See our Jupyter Notebook for full details.',
-    url:
-      'https://github.com/carbonplan/notebooks/blob/master/offset-project-fire/fire_analysis.ipynb',
-  },
-  6: {
-    offset: 0,
-    number: 6,
-    title:
-      'Based on an area-weighted average from Table 2 in a USFS Report on the fire and using common burn severities of 10% mortality in "Low Mortality", 10-75% mortality in "Mixed Mortality", and 75% mortality in "High Mortality" categories.',
-    url:
-      'https://scholarsbank.uoregon.edu/xmlui/bitstream/handle/1794/7103/B%26B_Fire_Recovery_Project_ROD.pdf?sequence=1',
-  },
-  7: {
-    offset: 0,
-    number: 7,
-    authors: 'National Research Council',
-    title:
-      'Climate Stabilization Targets: Emissions, Concentrations, and Impacts over Decades to Millennia',
-    journal: 'Washington, DC: The National Academies Press',
-    url:
-      'https://www.nap.edu/catalog/12877/climate-stabilization-targets-emissions-concentrations-and-impacts-over-decades-to',
-  },
-  8: {
-    offset: -30,
-    number: 8,
-    authors: 'B M Sleeter et al.',
-    title:
-      'Effects of 21st‐century climate, land use, and disturbances on ecosystem carbon balance in California',
-    year: 2019,
-    journal: 'Global Change Biology',
-    url: ' https://doi.org/10.1111/gcb.14677',
-  },
-  9: {
-    offset: 75,
-    number: 9,
-    authors: 'W R L Anderegg et al.',
-    year: 2020,
-    title:
-      'Climate-driven risks to the climate mitigation potential of forests',
-    journal: 'Science',
-    url: 'https://doi.org/10.1126/science.aaz7005',
-  },
-}
-
 # Carbon offsets burning
 
 In the middle of a record fire season on the US West Coast, the [Lionshead Fire](http://inciweb.nwcg.gov/incident/7049/) in Oregon burned through one of the largest forest carbon offset projects participating in [California’s carbon market](https://ww2.arb.ca.gov/our-work/programs/cap-and-trade-program). Beyond the tragic effects on local communities and hazardous regional air quality, the expected carbon losses from this fire illustrate how California’s approach of using forests to mitigate climate change may need re-evaluation.
@@ -130,7 +47,7 @@ California runs the largest carbon market in North America. This program establi
 
 One way companies subject to California’s carbon market can comply with its requirements is by buying forest offset credits. It works like this: the climate regulator first awards tradeable offsets credits to forest owners that manage their lands to increase forest carbon stocks relative to a business-as-usual scenario. Companies can acquire these offset credits and increase their emissions, on the theory that higher emissions are fully offset by the preservation and enhancement of a forest somewhere else.
 
-Although forests provide many environmental and social benefits, one critical challenge forests face as a climate solution is the permanence or durability of the carbon they store. When trees die — whether through fire, drought, or other ecological processes — much of the carbon stored in roots, wood, and soil is released back into the atmosphere. Many threats to forest carbon permanence will only get worse as the planet warms, increasing the chances that forest carbon will be released to the atmosphere.<Reference color={meta.color} data={sidenotes[1]}/> <Reference color={meta.color} data={sidenotes[2]}/> <Reference color={meta.color} data={sidenotes[3]}/>
+Although forests provide many environmental and social benefits, one critical challenge forests face as a climate solution is the permanence or durability of the carbon they store. When trees die — whether through fire, drought, or other ecological processes — much of the carbon stored in roots, wood, and soil is released back into the atmosphere. Many threats to forest carbon permanence will only get worse as the planet warms, increasing the chances that forest carbon will be released to the atmosphere.<CiteGroup ids={['krawchuk.2009', 'moritz.2020', 'williams.2016']}/>
 
 The 2020 fire season, while unfortunately intense, provides a useful case study for evaluating just how prepared the California offsets program is for managing the permanence risks of forest carbon in a warming climate.
 
@@ -142,15 +59,15 @@ In essence, the buffer pool functions as an insurance program that can be access
 
 California’s forest offset protocol identifies a set of risks that determine what share of each project’s credits must be set aside in the buffer pool. Contributions per risk factor vary per project, but forest offset projects typically contribute between 15% to 20% of their total credits to the buffer pool. Notably, the entire buffer pool is available to cover comprehensive carbon loss from unintentional reversals, no matter the share of the buffer pool associated with that specific risk and no matter the contribution an individual project has made to the collective buffer pool.
 
-As of early July, more than 127 million forest offset credits were in the private market, and just over 24 million credits remained in the buffer pool — equal to about 15.8% of the total.<Reference color={meta.color} data={sidenotes[4]}/>
+As of early July, more than 127 million forest offset credits were in the private market, and just over 24 million credits remained in the buffer pool — equal to about 15.8% of the total.<Cite id='compliance.report'/>
 
 ## The fire and the project
 
 The Lionshead Fire in Oregon provides a timely example of the importance of forest carbon offset permanence. Started by a lightning strike on August 16, 2020, the Lionshead Fire merged with nearby fires Beachie Creek and P515. The extent of this fire complex overlaps substantially with the boundaries of the Warm Springs forest offset project in Central Oregon, known as ACR260 in the offsets registry.
 
-Public records from the offset program provide context for the potential scale of carbon loss from this project. ACR260 has received 2,676,483 carbon credits to date — with each credit equal to 1 metric ton of CO<sub>2</sub> — which makes it the largest credited forest offset project in Oregon and among the fifteen largest forest projects in California’s carbon offset market.
+Public records from the offset program provide context for the potential scale of carbon loss from this project. ACR260 has received 2,676,483 carbon credits to date — with each credit equal to 1 metric ton of CO₂ — which makes it the largest credited forest offset project in Oregon and among the fifteen largest forest projects in California’s carbon offset market.
 
-Estimating forest carbon losses due to fire first requires estimating the area burned. We do this using satellites. Preliminary analysis of NASA FIRMS data, a standardized satellite product that detects and tracks fires across an array of satellites, shows that approximately 72% of the ACR260 project area has been burned by the Lionshead Fire through September 17, 2020.<Reference color={meta.color} data={sidenotes[5]}/> The map below shows the region of the fire and the project area boundary.
+Estimating forest carbon losses due to fire first requires estimating the area burned. We do this using satellites. Preliminary analysis of NASA FIRMS data, a standardized satellite product that detects and tracks fires across an array of satellites, shows that approximately 72% of the ACR260 project area has been burned by the Lionshead Fire through September 17, 2020.<Cite id='burn.area'/> The map below shows the region of the fire and the project area boundary.
 
 <FireMap />
 <FigureCaption number={1}>
@@ -159,11 +76,11 @@ Estimating forest carbon losses due to fire first requires estimating the area b
   cumulative area burned through the date selected on the slider.
 </FigureCaption>
 
-Second, we need to estimate the fraction of carbon lost due to fire-related mortality. Estimating carbon loss will ultimately require detailed assessment on the ground, which we lack today. As a historical reference point, the 2003 B&B fire, which burned nearby under similar conditions, ultimately killed almost half the trees it encountered.<Reference color={meta.color} data={sidenotes[6]}/> Though the situation in Oregon is still evolving, we can calculate the carbon impacts that would arise from a similar outcome in this incident. At a 50% loss of carbon in the 72% of the ACR260 project area burned through September 17, the Lionshead Fire will have reversed 963,534 credits (about 4% of the total buffer pool). In a worst case scenario in which the entirety of the project burns and all credited carbon is lost, more than 11% of the buffer pool could be depleted.
+Second, we need to estimate the fraction of carbon lost due to fire-related mortality. Estimating carbon loss will ultimately require detailed assessment on the ground, which we lack today. As a historical reference point, the 2003 B&B fire, which burned nearby under similar conditions, ultimately killed almost half the trees it encountered.<Cite id='mortality.estimation'/> Though the situation in Oregon is still evolving, we can calculate the carbon impacts that would arise from a similar outcome in this incident. At a 50% loss of carbon in the 72% of the ACR260 project area burned through September 17, the Lionshead Fire will have reversed 963,534 credits (about 4% of the total buffer pool). In a worst case scenario in which the entirety of the project burns and all credited carbon is lost, more than 11% of the buffer pool could be depleted.
 
 ## Fires of the future
 
-The burning of ACR260 represents one of the few documented fire-induced reversals of a credited California forest offset project. As temperatures continue to rise and fires grow more severe and more frequent, similar losses across other projects and regions are likely to occur in the future.<Reference color={meta.color} data={sidenotes[7]}/>
+The burning of ACR260 represents one of the few documented fire-induced reversals of a credited California forest offset project. As temperatures continue to rise and fires grow more severe and more frequent, similar losses across other projects and regions are likely to occur in the future.<Cite id='stabilization.targets'/>
 
 So is the forest buffer pool robust enough to handle the inevitable fires of the future?
 
@@ -186,7 +103,7 @@ Relatively conservative assumptions still present a worrying picture. In a scena
 
 As long as the buffer pool has “priced” climate-related risks adequately, even the most severe wildfires or other future disturbances wouldn’t undermine the goal of using forests to meet climate targets.
 
-But have we priced these risks correctly? The scenarios examined here strongly suggest undercapitalization of the buffer pool and the urgent need for California to update how climate risks are treated by the forest carbon buffer pool.<Reference color={meta.color} data={sidenotes[8]}/> <Reference color={meta.color} data={sidenotes[9]}/>
+But have we priced these risks correctly? The scenarios examined here strongly suggest undercapitalization of the buffer pool and the urgent need for California to update how climate risks are treated by the forest carbon buffer pool.<CiteGroup ids={['sleeter.2019', 'anderegg.2020']}/>
 
 The already unprecedented — and on-going — fire year provides a sobering example of the importance of considering risk and permanence in a scientifically rigorous way in the context of forest carbon, carbon removal, and climate policy.
 
@@ -224,4 +141,9 @@ CarbonPlan received no specific financial support for this work.
 
 </Endnote>
 
-export default ({ children }) => <Article meta={meta}>{children}</Article>
+export default ({ children }) => (
+  <Article references={references} meta={meta}>
+    {children}
+  </Article>
+
+)

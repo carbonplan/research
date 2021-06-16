@@ -128,8 +128,8 @@ const RiskTrajectories = () => {
               sx={{
                 maxWidth: ['100%', '100%', '100%', '75%'],
                 fill: 'none',
-                strokeWidth: '0.5',
-                stroke: 'primary',
+                strokeWidth: '1',
+                stroke: 'secondary',
               }}
             >
               <g strokeLinejoin='round' strokeLinecap='round'>

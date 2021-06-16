@@ -1,4 +1,4 @@
-let references = {
+export default {
   'sanderman.2017': {
     year: 2017,
     authors: 'J Sanderman et al.',
@@ -195,9 +195,3 @@ let references = {
     journal: 'Soil Science Society of America Journal',
   },
 }
-
-Object.keys(references).map((d, i) => {
-  references[d] = { ...references[d], number: i + 1 }
-})
-
-export default references

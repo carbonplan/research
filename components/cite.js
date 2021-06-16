@@ -20,6 +20,9 @@ const Wrapper = ({ url, children, sx }) => {
 
 const Cite = ({ id, data, hide = false }) => {
   const { references, color } = useReferences()
+  if (!Object.keys(references).includes(id)) {
+    throw Error(`referencee ${id} not found`)
+  }
   data = references[id] || data
   data.offset = data.offset || 0
   const [selected, setSelected] = useState(false)
