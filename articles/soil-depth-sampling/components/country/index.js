@@ -101,7 +101,7 @@ const Country = ({ map, selected, locations }) => {
               mb: [2],
             }}
           >
-            Error magnitude
+            Artifact magnitude
           </Box>
           <Tag
             sx={{ fontSize: [0, 1, 1, 2], mr: [2, 3, 3, 3] }}
