@@ -125,7 +125,7 @@ const Country = ({ map, selected, locations }) => {
             High
           </Tag>
         </Column>
-        <Column start={[4, 5, 5, 5]} width={[3, 2, 2, 2]} sx={{ mt: ['-6px'] }}>
+        <Column start={[4, 5, 5, 5]} width={[3, 2, 2, 2]} sx={{ mt: ['-3px'] }}>
           <Legend value={0.2} label={opacity.invert(0.2)} />
           <Legend value={0.5} label={opacity.invert(0.5)} />
           <Legend value={0.8} label={opacity.invert(0.8)} />
