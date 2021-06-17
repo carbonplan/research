@@ -149,7 +149,7 @@ Once we had these data (26,560 individual soil map units), we simulated the dens
 
 <Endnote label='Credits'>
 
-Eric developed the initial concept for the analysis with input from Danny and Jeremy. Eric performed all analyses and wrote the first draft of the article. Jeremy and Eric designed and developed the figures. All authors contributed to writing the article. The authors thank Dan Liptzin for helpful feedback.
+Eric developed the initial concept for the analysis with input from Danny and Jeremy. Eric performed all analyses and wrote the first draft of the article. Jeremy and Eric designed and developed the figures. All authors contributed to writing the article. The authors thank Dan Liptzin for helpful feedback and Jennifer Pett-Ridge for helpful discussions.
 
 Please cite as:
 
