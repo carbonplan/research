@@ -128,5 +128,4 @@ export default ({ children }) => (
   <Article references={references} meta={meta}>
     {children}
   </Article>
-
 )
