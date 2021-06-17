@@ -10,6 +10,7 @@ import {
 import QuickLook from './quick-look'
 import Closing from './closing'
 import SectionBreak from './section-break'
+import { ReferencesProvider } from './references'
 import { utils } from '@carbonplan/components'
 
 const { formatDate } = utils
@@ -18,7 +19,7 @@ const { InternalLink } = Links
 
 const prefix = 'https://images.carbonplan.org'
 
-const Article = ({ children, meta }) => {
+const Article = ({ children, meta, references }) => {
   return (
     <Layout
       card={`${prefix}/social/${meta.card}.png`}
@@ -225,7 +226,9 @@ const Article = ({ children, meta }) => {
                 </Box>
               </Column>
             </Row>
-            <Box as='article'>{children}</Box>
+            <ReferencesProvider color={meta.color} references={references}>
+              <Box as='article'>{children}</Box>
+            </ReferencesProvider>
             <SectionBreak />
             <Closing />
           </Column>
