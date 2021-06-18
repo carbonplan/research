@@ -1,8 +1,9 @@
 import { Box } from 'theme-ui'
-import { Links } from '@carbonplan/components'
+import { Links as CustomLinks } from '@carbonplan/components'
 import Article from '../../components/article'
 import Cite from '../../components/cite'
 import CiteGroup from '../../components/cite-group'
+import Links from '../../components/links'
 import PullQuote from '../../components/pull-quote'
 import Endnote from '../../components/endnote'
 import SectionBreak from '../../components/section-break'
@@ -25,6 +26,27 @@ export const meta = {
 
 # Getting soil <br/> carbon right
 
+<Links
+  color='orange'
+  data={[
+    {
+      label: 'Comment letter #1',
+      href:
+        'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
+    },
+    {
+      label: 'Comment letter #2',
+      href:
+        'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
+    },
+    {
+      label: 'Press coverage',
+      href:
+        'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
+    },
+  ]}
+/>
+
 There are good reasons to be [excited](https://carbon180.org/leading-with-soil) about better soil management practices for carbon removal. Agricultural practices that increase soil carbon storage have the potential to provide benefits both for farmers and ranchers and for the global climate. In turn, working with the agricultural sector could help engage people and organizations that haven’t been the focus of most climate action to date. The complexities of soil carbon quantification, however, pose challenges for designing financial crediting systems.
 
 This post provides context for a comment letter we submitted to the Climate Action Reserve concerning one such effort, its draft [Soil Enrichment Protocol](https://www.climateactionreserve.org/how/protocols/soil-enrichment/). We were proud to work with our collaborators [Dr. Grayson Badgley](https://www.gbadgley.com/) (a member of the expert workgroup for this protocol and an expert in remote sensing) and [Dr. Jane Zelikova](https://carbon180.org/team) (Chief Scientist at Carbon180, Research Scientist at the University of Wyoming, and an expert in climate change science), who joined the letter.
@@ -43,7 +65,7 @@ Any protocol for soil carbon crediting needs to start by appreciating the comple
 
 ## Our comments
 
-Given the enormous challenges in designing a carbon offset protocol to quantify and credit soil carbon storage, we were interested to see the Climate Action Reserve take this problem on. We reviewed the draft protocol and highlight two sets of issues here. See our <Links.TaggedLink action='PDF' category='downloads' href='https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf'>comment letter</Links.TaggedLink> for details and check out comments posted by other groups at the [protocol website](https://www.climateactionreserve.org/how/protocols/soil-enrichment/).
+Given the enormous challenges in designing a carbon offset protocol to quantify and credit soil carbon storage, we were interested to see the Climate Action Reserve take this problem on. We reviewed the draft protocol and highlight two sets of issues here. See our <CustomLinks.TaggedLink action='PDF' category='downloads' href='https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf'>comment letter</CustomLinks.TaggedLink> for details and check out comments posted by other groups at the [protocol website](https://www.climateactionreserve.org/how/protocols/soil-enrichment/).
 
 ### Conflict of interest
 
@@ -102,7 +124,7 @@ Meanwhile, any efforts built around carbon offset credits should be transparent,
   AUG 25 2020
 </Box>
 
-After reviewing an updated version of the draft protocol, we submitted a second <Links.TaggedLink action='PDF' category='downloads' href='https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf'>comment letter</Links.TaggedLink> on remaining concerns and additional issues.
+After reviewing an updated version of the draft protocol, we submitted a second <CustomLinks.TaggedLink action='PDF' category='downloads' href='https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf'>comment letter</CustomLinks.TaggedLink> on remaining concerns and additional issues.
 
 </Endnote>
 
