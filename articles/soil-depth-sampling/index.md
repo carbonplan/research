@@ -165,7 +165,8 @@ E Slessarev, J Zelikova, J Hamman, D Cullenward, J Freeman (2021) “Depth matte
 
 <Endnote label='Terms'>
 
-CarbonPlan received [funding from the Preston-Werner Foundation](https://carbonplan.org/funding) to support research that could inform the role of natural and working lands in California’s scoping plan. CarbonPlan is solely responsible for the content of this writeup, which does not represent the views of any other individuals or organizations.
+CarbonPlan received [funding from the Preston-Werner Foundation](https://carbonplan.org/funding) to support research that could inform the role of natural and working lands in California’s scoping plan. 
+CarbonPlan and the authors are solely responsible for the content of this writeup, which does not represent the views of any other individuals or organizations.
 
 [Eric Slessarev](https://eslessarev.wordpress.com/) is a post-doctoral researcher at Lawrence Livermore National Laboratory. Writing and analysis contributed by Eric were performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344.
 
