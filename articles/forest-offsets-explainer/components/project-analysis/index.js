@@ -2,9 +2,8 @@ import { useState, useEffect } from 'react'
 import { useThemeUI, Link, Box, Grid, Text } from 'theme-ui'
 import { format } from 'd3-format'
 import { scaleLinear } from 'd3-scale'
-import { Row, Column, Buttons, Select } from '@carbonplan/components'
-
-const { ArrowButton } = Buttons
+import { Row, Column, Button, Select } from '@carbonplan/components'
+import { RotatingArrow } from '@carbonplan/icons'
 
 import projects from '../../data/projects'
 
@@ -467,29 +466,23 @@ const ProjectAnalysis = () => {
                 {selected ? selected : '(click to select)'}
               </Box>
             </Box>
-            <Link
+            <Button
+              size='xs'
               href={`/research/forest-offsets?id=${selected}`}
+              inverted
+              suffix={<RotatingArrow />}
               sx={{
-                textDecoration: 'none',
-                width: 'fit-content',
+                cursor: 'pointer',
+                mb: [2],
+                opacity: selected ? 1 : 0,
+                transition: 'opacity 0.15s, color 0.15s',
+                pointerEvents: selected ? 'all' : 'none',
+                pointerEvents: [selected ? 'all' : 'none'],
+                display: ['none', 'block', 'block', 'block'],
               }}
             >
-              <ArrowButton
-                size='xs'
-                label='Open in map'
-                color='secondary'
-                fill='secondary'
-                sx={{
-                  cursor: 'pointer',
-                  mb: [2],
-                  opacity: selected ? 1 : 0,
-                  transition: 'opacity 0.15s, color 0.15s',
-                  pointerEvents: selected ? 'all' : 'none',
-                  pointerEvents: [selected ? 'all' : 'none'],
-                  display: ['none', 'block', 'block', 'block'],
-                }}
-              />
-            </Link>
+              Open in map
+            </Button>
           </Column>
           <Column
             start={[1, 4, 4, 4]}

@@ -1,4 +1,4 @@
-import { Icons } from '@carbonplan/components'
+import { CheckCircle } from '@carbonplan/icons'
 import Article from '../../components/article'
 import Links from '../../components/links'
 import PullQuote from '../../components/pull-quote'
@@ -86,7 +86,7 @@ Distributions of volume and permanence across projects reveal familiar patterns,
   or realistic.
 </FigureCaption>
 
-To help guide interpretation of these metrics, we validate with a <Icons.Check as='span' sx={{position: 'relative', px: [1], top: ['3px']}} closed={true}/> the mechanism, volume, negativity, and permanence of each project if we can independently confirm claims with reasonable confidence, based on the best available science, data, and public documentation. Where we don’t feel confident about validation, we simply report the project claim without giving it a <Icons.Check as='span' sx={{position: 'relative', px: [1], top: ['3px']}} closed={true}/>. In the case of additionality (would the claimed climate benefits occur without the project?) and specificity (was there enough information for us to perform our analysis?) we assign a qualitative score on a scale of 1 to 3.
+To help guide interpretation of these metrics, we validate with a <CheckCircle sx={{position: 'relative', width: [25, 25, 25, 30], height: [19, 19, 19, 22], strokeWidth: [1.5, 1.5, 1.5, 2], px: [1], top: ['4px']}}/> the mechanism, volume, negativity, and permanence of each project if we can independently confirm claims with reasonable confidence, based on the best available science, data, and public documentation. Where we don’t feel confident about validation, we simply report the project claim without giving it a <CheckCircle sx={{position: 'relative', width: [25, 25, 25, 30], height: [19, 19, 19, 22], strokeWidth: [1.5, 1.5, 1.5, 2], px: [1], top: ['4px']}}/>. In the case of additionality (would the claimed climate benefits occur without the project?) and specificity (was there enough information for us to perform our analysis?) we assign a qualitative score on a scale of 1 to 3.
 
 For this update to our database, we have also included a cross-cutting project score on a 5-point scale. This score integrates our efforts to validate projects across all metrics, with 1 point each for validation of mechanism, volume, negativity, and permanence. We then add 1 point for a perfect score on additionality, or subtract 1 point for the lowest score on additionality.
 

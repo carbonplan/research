@@ -1,27 +1,20 @@
 import { memo } from 'react'
-import { Box, Paragraph, Grid, Text, Link, Heading } from 'theme-ui'
-import { default as NextLink } from 'next/link'
-import { Row, Column, Tag, Arrow, Links, Buttons } from '@carbonplan/components'
+import { Box, Paragraph, Grid, Text, Heading } from 'theme-ui'
+import {
+  Row,
+  Column,
+  Tag,
+  Link,
+  Button,
+  formatDate,
+} from '@carbonplan/components'
+import { RotatingArrow } from '@carbonplan/icons'
 import { mix } from '@theme-ui/color'
-import { utils } from '@carbonplan/components'
 import Icon from './icon'
 
-const { formatDate } = utils
-const { ArrowButton } = Buttons
-const { WrappedLink } = Links
-
 const Entry = ({ info, first, final }) => {
-  let {
-    title,
-    color,
-    tags,
-    authors,
-    version,
-    date,
-    icon,
-    summary,
-    links,
-  } = info
+  let { title, color, tags, authors, version, date, icon, summary, links } =
+    info
 
   color = color || 'text'
 
@@ -51,9 +44,9 @@ const Entry = ({ info, first, final }) => {
             sx={{ display: ['initial', 'none', 'none', 'none'] }}
           >
             {icon && (
-              <WrappedLink href={links[0].href}>
+              <Link href={links[0].href}>
                 <Icon icon={icon} color={color} />
-              </WrappedLink>
+              </Link>
             )}
           </Column>
           <Column
@@ -92,7 +85,7 @@ const Entry = ({ info, first, final }) => {
                 color: color,
               }}
             >
-              <WrappedLink
+              <Link
                 sx={{
                   transition: 'color 0.15s',
                   textDecoration: 'none',
@@ -112,7 +105,7 @@ const Entry = ({ info, first, final }) => {
                 href={links[0].href}
               >
                 {title}
-              </WrappedLink>
+              </Link>
             </Box>
             <Box
               sx={{
@@ -178,9 +171,9 @@ const Entry = ({ info, first, final }) => {
                 ))}
             </Box>
             {icon && (
-              <WrappedLink tabIndex='-1' href={links[0].href}>
+              <Link tabIndex='-1' href={links[0].href}>
                 <Icon icon={icon} color={color} />
-              </WrappedLink>
+              </Link>
             )}
           </Column>
         </Row>
@@ -200,23 +193,21 @@ const Entry = ({ info, first, final }) => {
 function LinkGroup({ links }) {
   return links.map((link, i) => {
     return (
-      <WrappedLink
+      <Button
         key={i}
+        inverted
         href={link.href}
-        sx={{ textDecoration: 'none', width: 'fit-content', mr: [4, 4, 4, 5] }}
+        size='xs'
+        sx={{
+          display: 'inline-block',
+          mb: ['6px'],
+          mt: ['5px'],
+          mr: [4, 4, 4, 5],
+        }}
+        suffix={<RotatingArrow />}
       >
-        <ArrowButton
-          key={i}
-          label={link.label}
-          color={'secondary'}
-          fill={'secondary'}
-          sx={{
-            display: 'inline-block',
-            mb: ['6px'],
-            mt: ['5px'],
-          }}
-        />
-      </WrappedLink>
+        {link.label}
+      </Button>
     )
   })
 }
