@@ -1,6 +1,7 @@
 import { Box } from 'theme-ui'
 import { mean, max, range } from 'd3-array'
 import { format } from 'd3-format'
+import { curveBasis } from 'd3-shape'
 import { mix } from '@theme-ui/color'
 import {
   Chart,
@@ -124,7 +125,7 @@ const Metric = ({
               data={density}
               color={categoryToColor[c]}
               width={2}
-              curve
+              curve={curveBasis}
             />
           )
         })}

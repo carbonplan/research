@@ -13,7 +13,7 @@ const Index = () => {
       }
       card={'https://images.carbonplan.org/social/research.png'}
       links={'local'}
-      metadata={'POSTS: 11'}
+      metadata={'COUNT: 14'}
       nav={'research'}
       settings={{ value: expanded, onClick: () => setExpanded(!expanded) }}
     >

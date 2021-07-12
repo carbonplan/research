@@ -1,39 +1,28 @@
-import { Box, Link } from 'theme-ui'
-import { Buttons } from '@carbonplan/components'
-
-const { ArrowButton } = Buttons
+import { Box } from 'theme-ui'
+import { Button } from '@carbonplan/components'
+import { RotatingArrow } from '@carbonplan/icons'
 
 const Links = ({ data, color }) => {
   return (
     <Box sx={{ mt: [0, -2, -2, -2], mb: [5] }}>
       {data.map((d, i) => {
         return (
-          <Link
+          <Button
             key={i}
             href={d.href}
+            label={d.label}
+            size='xs'
             sx={{
-              display: [
-                'block',
-                'inline-block',
-                'inline-block',
-                'inline-block',
-              ],
+              display: 'inline-block',
+              color: color,
               mr: [3],
               mt: [3, 0, 0, 0],
               mb: [1, 0, 0, 0],
-              width: 'fit-contents',
-              textDecoration: 'none',
             }}
+            suffix={<RotatingArrow/>}
           >
-            <ArrowButton
-              fill={color}
-              color={color}
-              sx={{
-                cursor: 'pointer',
-              }}
-              label={d.label}
-            />
-          </Link>
+            {d.label}
+          </Button>
         )
       })}
     </Box>

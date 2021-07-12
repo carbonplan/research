@@ -4,14 +4,12 @@ import {
   Guide,
   Row,
   Column,
-  Buttons,
-  Links,
+  Button,
+  Link,
 } from '@carbonplan/components'
+import { Left } from '@carbonplan/icons'
 import QuickLook from './quick-look'
 import contents from '../contents'
-
-const { BackButton } = Buttons
-const { InternalLink } = Links
 
 const prefix = 'https://images.carbonplan.org'
 
@@ -32,11 +30,9 @@ const Tool = ({ title, description, meta, children }) => {
             start={[1, 1]}
             width={[2]}
             dr={1}
-            sx={{ mb: [-2, -4, 0, 0], mt: [3, 4, '106px', '152px'] }}
+            sx={{ mb: [-2, -4, 0, 0], mt: [3, 4, '109px', '154px'] }}
           >
-            <InternalLink href={'/research'}>
-              <BackButton sx={{ ml: ['-2px', '-2px', '-2px', '-2px'] }} />
-            </InternalLink>
+            <Button href={'/research'} inverted size='xs' prefix={<Left/>} sx={{ ml: ['-2px', '-2px', '-2px', '-2px'] }}>Back</Button>
           </Column>
         </Box>
         <Column start={[1, 2]} width={[6, 6, 6, 6]}>

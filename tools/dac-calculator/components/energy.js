@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import { Box, Text } from 'theme-ui'
-import { Select } from '@carbonplan/components'
-import Reset from './reset'
+import { Select, Button } from '@carbonplan/components'
+import { Reset } from '@carbonplan/icons'
 
 const Energy = ({ params, reset }) => {
   const [value, setValue] = params.state
@@ -22,7 +22,7 @@ const Energy = ({ params, reset }) => {
         }}
       >
         ENERGY SOURCE
-        <Reset onClick={reset} />
+        <Button size='sm' prefix={<Reset/>} inverted onClick={reset} sx={{display: 'inline-block', float: 'right', mt: ['2px'], display: ['none', 'none', 'inherit'],}}>Reset</Button>
       </Box>
       <Box
         sx={{

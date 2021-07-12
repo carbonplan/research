@@ -1,9 +1,7 @@
-import { Box, Link } from 'theme-ui'
-import { Links } from '@carbonplan/components'
+import { Box } from 'theme-ui'
+import { Link } from '@carbonplan/components'
 import Tool from '../../components/tool'
 import Calculator from './components/calculator'
-
-const { InternalLink } = Links
 
 const Index = () => {
   const meta = {
@@ -22,9 +20,9 @@ const Index = () => {
       The cost of direct air capture (DAC) depends on several factors. Our
       calculator combines key parameters and computes the cost of net removal.
       Explore the tool, read our{' '}
-      <InternalLink href={'/research/dac-calculator-explainer'}>
+      <Link href={'/research/dac-calculator-explainer'}>
         article
-      </InternalLink>
+      </Link>
       , and read the{' '}
       <Link
         href={

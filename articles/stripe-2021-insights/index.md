@@ -1,4 +1,4 @@
-import { Icons } from '@carbonplan/components'
+import { CheckCircle } from '@carbonplan/icons'
 import Article from '../../components/article'
 import PullQuote from '../../components/pull-quote'
 import SectionBreak from '../../components/section-break'
@@ -124,7 +124,7 @@ Our analytical framework, and all the procurement processes we have analyzed, ha
 
 First, a volume-sale framework does not necessarily solicit the kinds of information needed to identify a robust research approach. At minimum, evaluating research requires seeing a clear presentation of testable hypotheses and planned experimental approaches.
 
-Second, evaluating novel research may require a different orientation toward uncertainty. In our analysis, we currently give a <Icons.Check as='span' sx={{position: 'relative', px: [1], top: ['3px']}} closed={true}/> for a metric if we can independently confirm a proposal’s claim with reasonable confidence. An early-stage project with active research questions may — quite reasonably — be difficult to validate because there’s simply not enough science or data. But within our current framework the lack of a <Icons.Check as='span' sx={{position: 'relative', px: [1], top: ['3px']}} closed={true}/> conflates the inherent uncertainty of an open research question with potentially concerning questions about the validity of a more mature project. Ideally early-stage proposals containing open research questions would be distinguished upstream and subject to separate evaluation.
+Second, evaluating novel research may require a different orientation toward uncertainty. In our analysis, we currently give a <CheckCircle sx={{position: 'relative', width: [25, 25, 25, 30], height: [19, 19, 19, 22], strokeWidth: [1.5, 1.5, 1.5, 2], px: [1], top: ['4px']}}/> for a metric if we can independently confirm a proposal’s claim with reasonable confidence. An early-stage project with active research questions may — quite reasonably — be difficult to validate because there’s simply not enough science or data. But within our current framework the lack of a <CheckCircle sx={{position: 'relative', width: [25, 25, 25, 30], height: [19, 19, 19, 22], strokeWidth: [1.5, 1.5, 1.5, 2], px: [1], top: ['4px']}}/> conflates the inherent uncertainty of an open research question with potentially concerning questions about the validity of a more mature project. Ideally early-stage proposals containing open research questions would be distinguished upstream and subject to separate evaluation.
 
 If the private sector continues to support early-stage carbon removal projects — as opposed to, say, government-funded research programs — we recommend buyers and grantors develop parallel solicitation and funding structures tailored to early-stage projects with open research questions.
 

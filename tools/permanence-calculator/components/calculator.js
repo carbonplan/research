@@ -1,13 +1,11 @@
-import { Box, Grid, Container, Link, Divider, Themed } from 'theme-ui'
+import { Box, Grid, Container, Divider, Themed } from 'theme-ui'
 import { useState, useEffect } from 'react'
 import { piecewise, quantize, interpolateNumber } from 'd3-interpolate'
-import { Row, Column, Links } from '@carbonplan/components'
+import { Row, Column, Link } from '@carbonplan/components'
 import Slider from './controls/slider'
 import Curve from './controls/curve'
 import Timeline from './timeline'
 import Cost from './cost'
-
-const { InternalLink } = Links
 
 const Calculator = () => {
   const initOptions = {
@@ -246,9 +244,9 @@ const Calculator = () => {
             </Themed.p>
             <Themed.p>
               For more details, read our{' '}
-              <InternalLink href={'/research/permanence-calculator-explainer'}>
+              <Link href={'/research/permanence-calculator-explainer'}>
                 article
-              </InternalLink>{' '}
+              </Link>{' '}
               on this calculator.
             </Themed.p>
             <Themed.h2>Support</Themed.h2>

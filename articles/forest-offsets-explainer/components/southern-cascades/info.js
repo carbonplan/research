@@ -1,8 +1,7 @@
 import { Link, Box, Text, Divider } from 'theme-ui'
 import { format } from 'd3-format'
-import { Buttons } from '@carbonplan/components'
-
-const { ArrowButton } = Buttons
+import { Button } from '@carbonplan/components'
+import { RotatingArrow } from '@carbonplan/icons'
 
 const Metric = ({ label, units, value, color }) => {
   return (
@@ -107,25 +106,19 @@ const Info = ({ project, mobile = false }) => {
           mb: [2, 3, 3, 3],
         }}
       />
-      <Link
+      <Button
+        size='xs'
+        inverted
         href={`/research/forest-offsets?id=${id}`}
+        suffix={<RotatingArrow/>}
         sx={{
-          textDecoration: 'none',
-          width: 'fit-content',
+          cursor: 'pointer',
+          mb: ['13px', '22px', '22px', '22px'],
+          transition: 'opacity 0.15s, color 0.15s',
         }}
       >
-        <ArrowButton
-          size='xs'
-          label='Open in map'
-          color='secondary'
-          fill='secondary'
-          sx={{
-            cursor: 'pointer',
-            mb: ['13px', '22px', '22px', '22px'],
-            transition: 'opacity 0.15s, color 0.15s',
-          }}
-        />
-      </Link>
+        Open in map
+      </Button>
     </Box>
   )
 }

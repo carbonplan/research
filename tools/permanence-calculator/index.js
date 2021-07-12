@@ -1,9 +1,7 @@
-import { Box, Link } from 'theme-ui'
-import { Links } from '@carbonplan/components'
+import { Box } from 'theme-ui'
+import { Link } from '@carbonplan/components'
 import Tool from '../../components/tool'
 import Calculator from './components/calculator'
-
-const { InternalLink } = Links
 
 const Index = () => {
   const meta = {
@@ -24,9 +22,9 @@ const Index = () => {
       (e.g. forests, soil) to effectively permanent (e.g. mineralization,
       geological). This calculator estimates the upfront costs needed to make a
       temporary carbon removal strategy permanent over time. Read more in our{' '}
-      <InternalLink href={'/research/permanence-calculator-explainer'}>
+      <Link href={'/research/permanence-calculator-explainer'}>
         article
-      </InternalLink>
+      </Link>
       .
     </span>
   )

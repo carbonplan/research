@@ -4,17 +4,15 @@ import {
   Row,
   Column,
   Guide,
-  Buttons,
-  Links,
+  Button,
+  Link,
+  formatDate,
 } from '@carbonplan/components'
+import { Left } from '@carbonplan/icons'
 import QuickLook from './quick-look'
 import Closing from './closing'
 import SectionBreak from './section-break'
 import { utils } from '@carbonplan/components'
-
-const { formatDate } = utils
-const { BackButton } = Buttons
-const { InternalLink } = Links
 
 const prefix = 'https://images.carbonplan.org'
 
@@ -35,9 +33,7 @@ const Article = ({ children, meta }) => {
           dr={1}
           sx={{ mb: [-3, '-120px', 0, 0], mt: [3, '91px', '106px', '119px'] }}
         >
-          <InternalLink href={meta.back}>
-            <BackButton sx={{ ml: ['-2px', '-2px', '-2px', '-2px'] }} />
-          </InternalLink>
+          <Button href={meta.back} size='xs' inverted prefix={<Left/>} sx={{ ml: ['-2px', '-2px', '-2px', '-2px'] }}>Back</Button>
         </Column>
         <Column
           start={[5, 7, 7, 7]}
