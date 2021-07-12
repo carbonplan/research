@@ -22,7 +22,20 @@ const Energy = ({ params, reset }) => {
         }}
       >
         ENERGY SOURCE
-        <Button size='sm' prefix={<Reset/>} inverted onClick={reset} sx={{display: 'inline-block', float: 'right', mt: ['2px'], display: ['none', 'none', 'inherit'],}}>Reset</Button>
+        <Button
+          size='sm'
+          prefix={<Reset />}
+          inverted
+          onClick={reset}
+          sx={{
+            display: 'inline-block',
+            float: 'right',
+            mt: ['2px'],
+            display: ['none', 'none', 'inherit'],
+          }}
+        >
+          Reset
+        </Button>
       </Box>
       <Box
         sx={{

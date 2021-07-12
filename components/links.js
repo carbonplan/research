@@ -19,7 +19,7 @@ const Links = ({ data, color }) => {
               mt: [3, 0, 0, 0],
               mb: [1, 0, 0, 0],
             }}
-            suffix={<RotatingArrow/>}
+            suffix={<RotatingArrow />}
           >
             {d.label}
           </Button>

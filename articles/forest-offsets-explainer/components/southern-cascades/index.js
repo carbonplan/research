@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useThemeUI, Box, Flex, Grid, Text } from 'theme-ui'
-import { useBreakpointIndex } from '@theme-ui/match-media'
 import { json } from 'd3-fetch'
 import { geoPath, geoAlbersUsa } from 'd3-geo'
 import { scaleLinear } from 'd3-scale'
@@ -21,7 +20,6 @@ const o = scaleLinear().domain([0, 0.5]).range([0, 1])
 
 const SouthernCascades = () => {
   const { theme } = useThemeUI()
-  const index = useBreakpointIndex()
   const [conus, setConus] = useState(null)
   const [supersection, setSupersection] = useState(null)
   const [path, setPath] = useState(null)

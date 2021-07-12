@@ -20,10 +20,8 @@ const Index = () => {
       The cost of direct air capture (DAC) depends on several factors. Our
       calculator combines key parameters and computes the cost of net removal.
       Explore the tool, read our{' '}
-      <Link href={'/research/dac-calculator-explainer'}>
-        article
-      </Link>
-      , and read the{' '}
+      <Link href={'/research/dac-calculator-explainer'}>article</Link>, and read
+      the{' '}
       <Link
         href={
           'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/full'

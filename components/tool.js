@@ -32,7 +32,15 @@ const Tool = ({ title, description, meta, children }) => {
             dr={1}
             sx={{ mb: [-2, -4, 0, 0], mt: [3, 4, '109px', '154px'] }}
           >
-            <Button href={'/research'} inverted size='xs' prefix={<Left/>} sx={{ ml: ['-2px', '-2px', '-2px', '-2px'] }}>Back</Button>
+            <Button
+              href={'/research'}
+              inverted
+              size='xs'
+              prefix={<Left />}
+              sx={{ ml: ['-2px', '-2px', '-2px', '-2px'] }}
+            >
+              Back
+            </Button>
           </Column>
         </Box>
         <Column start={[1, 2]} width={[6, 6, 6, 6]}>

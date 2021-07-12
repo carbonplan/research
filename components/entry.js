@@ -1,22 +1,20 @@
 import { memo } from 'react'
 import { Box, Paragraph, Grid, Text, Heading } from 'theme-ui'
-import { Row, Column, Tag, Link, Button, formatDate } from '@carbonplan/components'
+import {
+  Row,
+  Column,
+  Tag,
+  Link,
+  Button,
+  formatDate,
+} from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
 import { mix } from '@theme-ui/color'
 import Icon from './icon'
 
 const Entry = ({ info, first, final }) => {
-  let {
-    title,
-    color,
-    tags,
-    authors,
-    version,
-    date,
-    icon,
-    summary,
-    links,
-  } = info
+  let { title, color, tags, authors, version, date, icon, summary, links } =
+    info
 
   color = color || 'text'
 
@@ -204,9 +202,9 @@ function LinkGroup({ links }) {
           display: 'inline-block',
           mb: ['6px'],
           mt: ['5px'],
-          mr: [4, 4, 4, 5]
+          mr: [4, 4, 4, 5],
         }}
-        suffix={<RotatingArrow/>}
+        suffix={<RotatingArrow />}
       >
         {link.label}
       </Button>

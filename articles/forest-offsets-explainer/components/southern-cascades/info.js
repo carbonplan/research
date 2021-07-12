@@ -110,7 +110,7 @@ const Info = ({ project, mobile = false }) => {
         size='xs'
         inverted
         href={`/research/forest-offsets?id=${id}`}
-        suffix={<RotatingArrow/>}
+        suffix={<RotatingArrow />}
         sx={{
           cursor: 'pointer',
           mb: ['13px', '22px', '22px', '22px'],

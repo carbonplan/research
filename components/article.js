@@ -6,7 +6,7 @@ import {
   Guide,
   Button,
   Link,
-  formatDate
+  formatDate,
 } from '@carbonplan/components'
 import { Left } from '@carbonplan/icons'
 import QuickLook from './quick-look'
@@ -143,9 +143,18 @@ const Article = ({ children, meta, references }) => {
             start={[1, 1]}
             width={[2]}
             dr={1}
-            sx={{ mb: [-3, '-120px', 0, 0], mt: ['20px', '94px', '109px', '122px'] }}
+            sx={{
+              mb: [-3, '-120px', 0, 0],
+              mt: ['20px', '94px', '109px', '122px'],
+            }}
           >
-            <Button inverted size='xs' href='/research' prefix={<Left/>} sx={{ ml: ['-2px', '-2px', '-2px', '-2px'] }}>
+            <Button
+              inverted
+              size='xs'
+              href='/research'
+              prefix={<Left />}
+              sx={{ ml: ['-2px', '-2px', '-2px', '-2px'] }}
+            >
               Back
             </Button>
           </Column>

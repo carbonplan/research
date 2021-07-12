@@ -470,7 +470,7 @@ const ProjectAnalysis = () => {
               size='xs'
               href={`/research/forest-offsets?id=${selected}`}
               inverted
-              suffix={<RotatingArrow/>}
+              suffix={<RotatingArrow />}
               sx={{
                 cursor: 'pointer',
                 mb: [2],

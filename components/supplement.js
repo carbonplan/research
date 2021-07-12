@@ -33,7 +33,15 @@ const Article = ({ children, meta }) => {
           dr={1}
           sx={{ mb: [-3, '-120px', 0, 0], mt: [3, '91px', '106px', '119px'] }}
         >
-          <Button href={meta.back} size='xs' inverted prefix={<Left/>} sx={{ ml: ['-2px', '-2px', '-2px', '-2px'] }}>Back</Button>
+          <Button
+            href={meta.back}
+            size='xs'
+            inverted
+            prefix={<Left />}
+            sx={{ ml: ['-2px', '-2px', '-2px', '-2px'] }}
+          >
+            Back
+          </Button>
         </Column>
         <Column
           start={[5, 7, 7, 7]}

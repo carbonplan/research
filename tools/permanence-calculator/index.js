@@ -22,10 +22,7 @@ const Index = () => {
       (e.g. forests, soil) to effectively permanent (e.g. mineralization,
       geological). This calculator estimates the upfront costs needed to make a
       temporary carbon removal strategy permanent over time. Read more in our{' '}
-      <Link href={'/research/permanence-calculator-explainer'}>
-        article
-      </Link>
-      .
+      <Link href={'/research/permanence-calculator-explainer'}>article</Link>.
     </span>
   )
 

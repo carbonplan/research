@@ -40,8 +40,7 @@ export default {
     title:
       'Prescriptivism, Risk Aversion, and Intertemporal Substitution in Climate Economics',
     journal: 'Annals of Economics and Statistics',
-    url:
-      'https://gwagner.com/wp-content/uploads/Kelleher-Wagner-AES-2018-Prescriptivism.pdf',
+    url: 'https://gwagner.com/wp-content/uploads/Kelleher-Wagner-AES-2018-Prescriptivism.pdf',
   },
   'drupp.2018': {
     number: 6,
