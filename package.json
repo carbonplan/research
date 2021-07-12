@@ -29,7 +29,7 @@
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.2.3",
     "@theme-ui/color": "^0.10.0",
-    "@theme-ui/match-media": "^0.10.1",
+    "@theme-ui/match-media": "^0.9.1",
     "d3-drag": "^2.0.0",
     "d3-fetch": "^2.0.0",
     "d3-interpolate": "^2.0.1",
