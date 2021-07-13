@@ -25,17 +25,17 @@ const Permanence = () => {
   const { theme } = useThemeUI()
 
   return (
-    <Box as='figure' sx={{ width: '80%', height: '250px' }}>
+    <Box as='figure' sx={{ width: '80%', height: '330px' }}>
       <Chart log x={[0.6, 1000]} y={[1, 1000]}>
         <Ticks bottom values={[1, 10, 100, 1000]} />
         <TickLabels bottom values={[1, 10, 100, 1000]} />
         <Ticks left values={[10, 100, 1000]} />
         <TickLabels left values={[10, 100, 1000]} />
         <Axis left bottom />
-        <AxisLabel left>
+        <AxisLabel align='center' left>
           <Box sx={{ textTransform: 'none' }}>PRICE $/tCO₂</Box>
         </AxisLabel>
-        <AxisLabel bottom>
+        <AxisLabel align='center' bottom>
           <Box sx={{ textTransform: 'none' }}>PERMANENCE years</Box>
         </AxisLabel>
 
