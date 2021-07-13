@@ -26,7 +26,7 @@ const Permanence = () => {
 
   return (
     <Box as='figure' sx={{ width: '80%', height: '330px' }}>
-      <Chart log x={[0.6, 1000]} y={[1, 1000]}>
+      <Chart log x={[0.6, 2000]} y={[1, 2000]}>
         <Ticks bottom values={[1, 10, 100, 1000]} />
         <TickLabels bottom values={[1, 10, 100, 1000]} />
         <Ticks left values={[10, 100, 1000]} />
