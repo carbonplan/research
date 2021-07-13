@@ -40,7 +40,8 @@ export const meta = {
     { label: 'Use the calculator', href: '/research/dac-calculator' },
     {
       label: 'Read the paper',
-      href: 'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract',
+      href:
+        'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract',
     },
   ]}
 />

@@ -321,7 +321,8 @@ module.exports = {
         },
         {
           date: '05-20-2020',
-          note: 'Updated mechanism validation based on notes from project website.',
+          note:
+            'Updated mechanism validation based on notes from project website.',
         },
       ],
     },
@@ -2562,7 +2563,8 @@ module.exports = {
         },
         {
           date: '05-30-2020',
-          note: 'Updated comment on mechanism, and updated comment and increased score on additionality, after project developer identified a mistake in how the report described information about the counterfactual.',
+          note:
+            'Updated comment on mechanism, and updated comment and increased score on additionality, after project developer identified a mistake in how the report described information about the counterfactual.',
         },
       ],
     },

@@ -28,18 +28,22 @@ export default {
   'compliance.report': {
     number: 4,
     note: 'Calculated from the Q2 2020 Compliance Instrument Report',
-    url: 'https://ww2.arb.ca.gov/sites/default/files/2020-07/2020_q2_complianceinstrumentreport.pdf',
+    url:
+      'https://ww2.arb.ca.gov/sites/default/files/2020-07/2020_q2_complianceinstrumentreport.pdf',
   },
   'burn.area': {
     number: 5,
-    note: 'The exact burned area is moderately sensitive to the processing method. Under maximally conservative parameters, we found the burned area to remain at or above 64%. See our Jupyter Notebook for full details.',
-    url: 'https://github.com/carbonplan/notebooks/blob/master/offset-project-fire/fire_analysis.ipynb',
+    note:
+      'The exact burned area is moderately sensitive to the processing method. Under maximally conservative parameters, we found the burned area to remain at or above 64%. See our Jupyter Notebook for full details.',
+    url:
+      'https://github.com/carbonplan/notebooks/blob/master/offset-project-fire/fire_analysis.ipynb',
   },
   'mortality.estimation': {
     number: 6,
     title:
       'Based on an area-weighted average from Table 2 in a USFS Report on the fire and using common burn severities of 10% mortality in "Low Mortality", 10-75% mortality in "Mixed Mortality", and 75% mortality in "High Mortality" categories.',
-    url: 'https://scholarsbank.uoregon.edu/xmlui/bitstream/handle/1794/7103/B%26B_Fire_Recovery_Project_ROD.pdf?sequence=1',
+    url:
+      'https://scholarsbank.uoregon.edu/xmlui/bitstream/handle/1794/7103/B%26B_Fire_Recovery_Project_ROD.pdf?sequence=1',
   },
   'stabilization.targets': {
     number: 7,
@@ -47,7 +51,8 @@ export default {
     title:
       'Climate Stabilization Targets: Emissions, Concentrations, and Impacts over Decades to Millennia',
     journal: 'Washington, DC: The National Academies Press',
-    url: 'https://www.nap.edu/catalog/12877/climate-stabilization-targets-emissions-concentrations-and-impacts-over-decades-to',
+    url:
+      'https://www.nap.edu/catalog/12877/climate-stabilization-targets-emissions-concentrations-and-impacts-over-decades-to',
   },
   'sleeter.2019': {
     number: 8,
