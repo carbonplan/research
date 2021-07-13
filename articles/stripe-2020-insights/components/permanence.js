@@ -2,7 +2,7 @@ import { Box } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 import {
   Chart,
-  Axis,
+  Grid,
   AxisLabel,
   Ticks,
   TickLabels,
@@ -25,18 +25,28 @@ const Permanence = () => {
   const { theme } = useThemeUI()
 
   return (
-    <Box as='figure' sx={{ width: '80%', height: '330px' }}>
+    <Box
+      as='figure'
+      sx={{
+        width: '100%',
+        height: '330px',
+        mt: [6, 6, 6, 7],
+        mb: [4, 4, 4, 5],
+      }}
+    >
       <Chart log x={[0.6, 2000]} y={[1, 2000]}>
+        <Grid vertical horizontal count={3} />
         <Ticks bottom values={[1, 10, 100, 1000]} />
         <TickLabels bottom values={[1, 10, 100, 1000]} />
         <Ticks left values={[10, 100, 1000]} />
         <TickLabels left values={[10, 100, 1000]} />
-        <Axis left bottom />
-        <AxisLabel align='center' left>
-          <Box sx={{ textTransform: 'none' }}>PRICE $/tCO₂</Box>
+        <AxisLabel left align='left'>
+          Price&nbsp;
+          <Box sx={{ textTransform: 'none', color: 'secondary' }}>$/tCO₂</Box>
         </AxisLabel>
-        <AxisLabel align='center' bottom>
-          <Box sx={{ textTransform: 'none' }}>PERMANENCE years</Box>
+        <AxisLabel bottom>
+          Permanence&nbsp;
+          <Box sx={{ textTransform: 'none', color: 'secondary' }}>years</Box>
         </AxisLabel>
 
         <Plot>
