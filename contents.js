@@ -1,5 +1,25 @@
 const Contents = [
   {
+    title: "A buyer's guide to soil carbon offsets",
+    tags: ['article', 'dataset'],
+    summary:
+      'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
+    date: '07-15-2021',
+    version: '1.0.0',
+    color: 'orange',
+    icon: 'article-012/crop-small',
+    links: [
+      {
+        label: 'Read article',
+        href: '/research/soil-protocols-explainer',
+      },
+      {
+        label: 'Browse protocols',
+        href: '/research/soil-protocols',
+      },
+    ],
+  },
+  {
     title: 'Depth matters for soil carbon accounting',
     tags: ['article'],
     summary:
@@ -42,8 +62,8 @@ const Contents = [
       'Forests in the United States are already at risk from wildfire, drought, and insects, and climate change is making it worse. We combined satellite and ecological data with climate models to project future risks to forest carbon. Along with a preprint, we are releasing open data, open software, and an interactive web map.',
     date: '05-20-2021',
     version: '1.0.0',
-    color: 'orange',
-    icon: 'article-009/forest-fire-small',
+    color: 'red',
+    icon: 'article-009/forest-fire-small-red',
     links: [
       {
         label: 'Read article',

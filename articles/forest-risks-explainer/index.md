@@ -27,10 +27,10 @@ export const meta = {
     'Jeremy Freeman',
     'Joseph J. Hamman',
   ],
-  color: 'orange',
+  color: 'red',
   summary:
     'A detailed look at the disturbance risks to forest carbon under future climate conditions.',
-  background: 'article-009/forest-fire',
+  background: 'article-009/forest-fire-red',
   card: 'forest-risks-explainer',
 }
 

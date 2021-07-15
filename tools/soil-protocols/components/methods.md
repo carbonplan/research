@@ -1,0 +1,9 @@
+We focused our evaluation on four key metrics that together speak to the robustness of each protocol and help determine whether their credits reflect quantifiable carbon removal that would otherwise not occur. Our key metrics are: the _rigor_ of protocol calculations, the _durability_ of carbon storage claims, the presence of environmental and social _safeguards_, and the _additionality_ of projects’ climate claims. We also noted the agricultural practices credited by each protocol and constructed the overall timeline of activities considered.
+
+For each of the four key metrics, we assigned a qualitative score (from 1 to 3) as indicated by filled-in squares. Based on these component scores, we determined an aggregate rating for each protocol (from 1 to 5) as indicated by check marks.
+
+In the table above, you can click to expand several elements to see more detailed information. By clicking the plus sign next to each protocol name, you can see basic information about the protocol and its activity timeline. By clicking the plus on a column name, you can read more about each metric and how we analyzed it. Finally, by clicking on each entry within the table, you can read more about each specific metric for each protocol.
+
+You can download all of our analysis results in [CSV](https://storage.googleapis.com/carbonplan-research/articles/soil-protocols/CarbonPlan-Soil-Protocols.csv) or [JSON](https://storage.googleapis.com/carbonplan-research/articles/soil-protocols/CarbonPlan-Soil-Protocols.json) format. These files include all the same data as rendered on this website, alongside additional comments and references for each individual field.
+
+If you identify an issue with our analysis, please send us an [email](mailto:feedback@carbonplan.org). We are committed to updating and improving our methods over time, and will gladly consider suggestions or engage with potential collaborators.

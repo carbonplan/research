@@ -3,6 +3,7 @@ import ForestRisks from './forest-risks'
 import CDRDatabase from './cdr-database'
 import PermanenceCalculator from './permanence-calculator'
 import DACCalculator from './dac-calculator'
+import SoilProtocols from './soil-protocols'
 
 export {
   ForestOffsets,
@@ -10,4 +11,5 @@ export {
   CDRDatabase,
   PermanenceCalculator,
   DACCalculator,
+  SoilProtocols,
 }
