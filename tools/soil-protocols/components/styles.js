@@ -39,7 +39,7 @@ export const styles = {
       color: 'orange',
       fontFamily: 'faux',
       letterSpacing: 'faux',
-      lineHeight: 1.2
+      lineHeight: 1.2,
     },
     comment: {
       fontSize: [0, 0, 0, 1],
