@@ -1317,7 +1317,7 @@ export const protocols = {
             reference:
               'A-Biotic Accounting Module, Section 2.1; A-Smallscale Accounting Module, Section 2.1; A-Biotic Supporting Documentation, Section 2',
             comment:
-              'modeling approach depends on size of project and project emissions. Small projects in the US use default IPCC Tier 1 and 2 equations from the 2006 Guidelines for Agriculture, Forestry and Other Land Use (AFOLU) that form the basis of the calculations. Larger projects in the US use the A-Smallscale tool and/or COMET-Farm to model project emissions. Projects outside the US use A-Biotic tool, which uses an unspecified process-based model.',
+              'Modeling approach depends on size of project and project emissions. Small projects in the US use default IPCC Tier 1 and 2 equations from the 2006 Guidelines for Agriculture, Forestry and Other Land Use (AFOLU) that form the basis of the calculations. Larger projects in the US use the A-Smallscale tool and/or COMET-Farm to model project emissions. Projects outside the US use A-Biotic tool, which uses an unspecified process-based model.',
           },
           notes:
             'Baseline scenario can be set based on common practice, historical trends, and scientific literature and is fixed for the duration of the crediting period. The project scenario is estimated, and must be recalculated and reported at the time of verification. Models may be used if they are approved by the methodology and/or the ACR Standard. The specific quantification methodologies applied in the baseline and project scenarios are A-Microscale, A-Smallscale, and A-Biotic, the choice of which is contingent on project size and location (A-Biotic is applicable outside the US). ',
