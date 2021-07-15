@@ -8,6 +8,7 @@ const Index = () => {
     id: 'soil-protocols',
     title: 'Soil carbon protocols',
     color: 'orange',
+    card: 'soil-protocols',
     summary: 'A comparison of protocols that credit soil carbon.',
   }
 
