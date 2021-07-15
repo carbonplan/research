@@ -2,7 +2,7 @@ import { useThemeUI } from 'theme-ui'
 
 const Logo = () => {
   const context = useThemeUI()
-  const { primary, green, background } = context.theme.colors
+  const { primary, pink, background } = context.theme.colors
 
   return (
     <svg
@@ -13,10 +13,10 @@ const Logo = () => {
     >
       <style type='text/css'>
         {`
-  .st0-pc{fill:none;stroke:${primary};stroke-miterlimit:10;}
-  .st1-pc{opacity:0.2;fill:${primary};}
-  .st2-pc{opacity:0.6;fill:${primary};}
-  .st3-pc{fill:${primary};}
+  .st0-pc{fill:none;stroke:${pink};stroke-miterlimit:10;}
+  .st1-pc{opacity:0.2;fill:${pink};}
+  .st2-pc{opacity:0.6;fill:${pink};}
+  .st3-pc{fill:${pink};}
   `}
       </style>
       <g>

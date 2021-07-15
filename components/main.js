@@ -9,6 +9,7 @@ import {
   CDRDatabase,
   PermanenceCalculator,
   DACCalculator,
+  SoilProtocols,
 } from './tool-logos'
 
 const sx = {
@@ -45,6 +46,12 @@ const initYear = {
 
 const tools = [
   {
+    logo: <SoilProtocols />,
+    color: 'orange',
+    label: 'Soil Protocols',
+    href: '/research/soil-protocols',
+  },
+  {
     logo: <ForestOffsets />,
     color: 'green',
     label: 'Forest Offsets',
@@ -52,7 +59,7 @@ const tools = [
   },
   {
     logo: <ForestRisks />,
-    color: 'orange',
+    color: 'red',
     label: 'Forest Risks',
     href: '/research/forest-risks',
   },
@@ -67,12 +74,6 @@ const tools = [
     color: 'pink',
     label: 'Permanence calculator',
     href: '/research/permanence-calculator',
-  },
-  {
-    logo: <DACCalculator />,
-    color: 'purple',
-    label: 'DAC Calculator',
-    href: '/research/dac-calculator',
   },
 ]
 

@@ -13,7 +13,15 @@ import contents from '../contents'
 
 const prefix = 'https://images.carbonplan.org'
 
-const Tool = ({ title, description, meta, children }) => {
+const Tool = ({
+  title,
+  description,
+  meta,
+  contentWidth = [6, 10],
+  descriptionWidth = [6, 6, 6, 6],
+  quickLookStart = 8,
+  children,
+}) => {
   return (
     <Layout
       card={`${prefix}/social/${meta.card}.png`}
@@ -43,7 +51,7 @@ const Tool = ({ title, description, meta, children }) => {
             </Button>
           </Column>
         </Box>
-        <Column start={[1, 2]} width={[6, 6, 6, 6]}>
+        <Column start={[1, 2]} width={descriptionWidth}>
           <Box sx={{}}>
             <Box as='h1' variant='styles.h1' sx={{ mt: [5, 7, 7, 8] }}>
               {title}
@@ -53,12 +61,12 @@ const Tool = ({ title, description, meta, children }) => {
             </Box>
           </Box>
         </Column>
-        <QuickLook start={8} color={meta.color} tool={true}>
+        <QuickLook start={quickLookStart} color={meta.color} tool={true}>
           {meta.summary}
         </QuickLook>
       </Row>
       <Row>
-        <Column start={[1, 2]} width={[6, 10]} sx={{ mb: [8, 8, 9, 10] }}>
+        <Column start={[1, 2]} width={contentWidth} sx={{ mb: [8, 8, 9, 10] }}>
           {children}
         </Column>
       </Row>
