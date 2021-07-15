@@ -20,20 +20,21 @@ const sx = {
     borderColor: 'inherit',
     verticalAlign: 'inherit',
     textAlign: 'left',
-    fontWeight: 'inherit',
+    fontWeight: 'normal',
   },
   header: {
     fontSize: [0, 0, 0, 1],
     mb: [3, 0, 0, 0],
+    fontWeight: 'normal',
   },
 }
 
 const fields = [
   'practices',
   'rigor',
+  'additionality',
   'durability',
   'safeguards',
-  'additionality',
   'rating',
 ]
 
