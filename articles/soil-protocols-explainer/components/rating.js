@@ -6,7 +6,7 @@ const Rating = ({ color, value }) => {
     <Box
       sx={{
         position: 'relative',
-        mt: ['0px', '1px', '1px', '2px'],
+        mt: ['-2px', '1px', '1px', '2px'],
         ml: ['0px'],
         width: '100%',
       }}
@@ -23,8 +23,8 @@ const Rating = ({ color, value }) => {
           <Check
             sx={{
               position: 'relative',
-              width: ['12px', '14px', '14px', '14px'],
-              height: ['12px', '14px', '14px', '14px'],
+              width: ['9px', '14px', '14px', '14px'],
+              height: ['9px', '14px', '14px', '14px'],
               opacity: d < value ? 1 : 0.3,
               stroke: 'orange',
               strokeWidth: 1.5,
