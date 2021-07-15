@@ -19,7 +19,7 @@ export const meta = {
   number: 12,
   version: '1.0.0',
   date: '07-15-2021',
-  title: 'A buyer’s guide to soil carbon',
+  title: 'A buyer’s guide to soil carbon offsets',
   authors: [
     'Jane Zelikova',
     'Freya Chay',
