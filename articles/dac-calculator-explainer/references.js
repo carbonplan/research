@@ -23,11 +23,13 @@ export default {
     url: 'https://doi.org/10.1126/sciadv.aaz5120',
   },
   'grubert.twitter': {
-    note: 'Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.',
+    note:
+      'Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.',
     url: 'https://twitter.com/emilygrubert/status/1353155080061669376',
   },
   'horizontal.defaults': {
-    note: 'These defaults correspond to the horizontal flow (HF) scenarios from McQueen et al. (2021)',
+    note:
+      'These defaults correspond to the horizontal flow (HF) scenarios from McQueen et al. (2021)',
   },
   'socolow.2011': {
     authors: 'Socolow et al.',
@@ -53,7 +55,8 @@ export default {
     url: 'https://pubs.acs.org/doi/10.1021/es502887y',
   },
   'vertical.defaults': {
-    note: 'This scenario is comparable to the vertical flow (VF) scenario described in McQueen et al. (2021).',
+    note:
+      'This scenario is comparable to the vertical flow (VF) scenario described in McQueen et al. (2021).',
   },
   'keith.2018': {
     authors: 'D Keith et al.',

@@ -78,6 +78,7 @@ export default {
     title:
       'Managing Uncertainty in Carbon Offsets: Insights from California’s Standardized Approach',
     journal: 'Climate Policy (in press)',
-    url: 'https://law.stanford.edu/publications/managing-uncertainty-in-carbon-offsets-insights-from-californias-standardized-approach/',
+    url:
+      'https://law.stanford.edu/publications/managing-uncertainty-in-carbon-offsets-insights-from-californias-standardized-approach/',
   },
 }

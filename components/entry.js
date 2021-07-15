@@ -13,8 +13,17 @@ import { mix } from '@theme-ui/color'
 import Icon from './icon'
 
 const Entry = ({ info, first, final }) => {
-  let { title, color, tags, authors, version, date, icon, summary, links } =
-    info
+  let {
+    title,
+    color,
+    tags,
+    authors,
+    version,
+    date,
+    icon,
+    summary,
+    links,
+  } = info
 
   color = color || 'text'
 
