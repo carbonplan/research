@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef, memo } from 'react'
-import { useThemeUI, Box, Divider, Grid, Input, Text } from 'theme-ui'
-import { Row, Column, Slider } from '@carbonplan/components'
+import { useState, useEffect, useRef } from 'react'
+import { Box } from 'theme-ui'
+import { Input, Row, Column, Slider } from '@carbonplan/components'
 import ParamChart from './charts/param-chart'
 import ParamDescription from './parameter-description'
 import AnimateHeight from 'react-animate-height'
@@ -9,9 +9,7 @@ const Parameter = ({ param, data, state }) => {
   const [value, setValue] = state
   const [expanded, setExpanded] = useState(false)
   const [displayValue, setDisplayValue] = useState(value)
-  const [inputFocus, setInputFocus] = useState(false)
   const inputRef = useRef(null)
-  const { theme } = useThemeUI()
 
   const handleEnter = (e) => {
     if (e.key == 'Enter') {
@@ -20,7 +18,6 @@ const Parameter = ({ param, data, state }) => {
   }
 
   const updateParamValueFromInput = () => {
-    setInputFocus(false)
     let v = parseFloat(displayValue)
     if (!isNaN(v)) {
       if (v < param.validRange[0]) {
@@ -60,36 +57,15 @@ const Parameter = ({ param, data, state }) => {
           >
             <Input
               type='text'
+              size='md'
               ref={inputRef}
               sx={{
                 textAlign: 'left',
                 color: 'purple',
-                fontSize: [4, 4, 4, 5],
                 fontFamily: 'mono',
                 letterSpacing: 'mono',
-                borderStyle: 'solid',
-                borderColor: inputFocus ? 'primary' : 'secondary',
-                borderWidth: '0px',
-                borderRadius: '0px',
-                p: [1, 1, 1],
-                pl: [0, 0, 0],
-                transition: '0.15s',
-                borderBottomWidth: '1px',
-                'input::-webkit-outer-spin-button': {
-                  WebkitAppearance: 'none',
-                  margin: 0,
-                },
-                'input::-webkit-inner-spin-button': {
-                  WebkitAppearance: 'none',
-                  margin: 0,
-                },
-                ':focus-visible': {
-                  outline: 'none !important',
-                  background: 'none !important',
-                },
               }}
               onKeyPress={handleEnter}
-              onFocus={() => setInputFocus(true)}
               onChange={updateParamDisplayValue}
               onBlur={updateParamValueFromInput}
               value={displayValue}
