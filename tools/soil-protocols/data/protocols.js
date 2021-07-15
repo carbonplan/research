@@ -234,7 +234,7 @@ export const protocols = {
             reference:
               'Improved Tillage Module v1.0, Section 7.1; Soil Organic Carbon Framework Methodology v1.0, Section 7.1',
             comment:
-              'SOC can be quantified either with direct measurements (Approach 1) or using modelling approaches or default factors (Approach 2 or 3).',
+              'SOC can be quantified either with direct measurements (Approach 1) or using modeling approaches or default factors (Approach 2 or 3).',
           },
           sampling_approach: {
             value: 3,
@@ -1317,12 +1317,12 @@ export const protocols = {
             reference:
               'A-Biotic Accounting Module, Section 2.1; A-Smallscale Accounting Module, Section 2.1; A-Biotic Supporting Documentation, Section 2',
             comment:
-              'Modelling approach depends on size of project and project emissions. Small projects in the US use default IPCC Tier 1 and 2 equations from the 2006 Guidelines for Agriculture, Forestry and Other Land Use (AFOLU) that form the basis of the calculations. Larger projects in the US use the A-Smallscale tool and/or COMET-Farm to model project emissions. Projects outside the US use A-Biotic tool, which uses an unspecified process-based model.',
+              'modeling approach depends on size of project and project emissions. Small projects in the US use default IPCC Tier 1 and 2 equations from the 2006 Guidelines for Agriculture, Forestry and Other Land Use (AFOLU) that form the basis of the calculations. Larger projects in the US use the A-Smallscale tool and/or COMET-Farm to model project emissions. Projects outside the US use A-Biotic tool, which uses an unspecified process-based model.',
           },
           notes:
             'Baseline scenario can be set based on common practice, historical trends, and scientific literature and is fixed for the duration of the crediting period. The project scenario is estimated, and must be recalculated and reported at the time of verification. Models may be used if they are approved by the methodology and/or the ACR Standard. The specific quantification methodologies applied in the baseline and project scenarios are A-Microscale, A-Smallscale, and A-Biotic, the choice of which is contingent on project size and location (A-Biotic is applicable outside the US). ',
           comments:
-            'SOC crediting is not empirical and relies entirely on modelling. Direct sampling is not required. Where sampling is used, sampling quality varies with the size of the project. Sampling depth is not specified, and other critical soil variables like bulk density or equivalent soil mass are not measured. The modeling approach and rigor varies with the size of the project, but guidance is generally insufficient to ensure an appropriate modeling approach is applied. ',
+            'SOC crediting is not empirical and relies entirely on modeling. Direct sampling is not required. Where sampling is used, sampling quality varies with the size of the project. Sampling depth is not specified, and other critical soil variables like bulk density or equivalent soil mass are not measured. The modeling approach and rigor varies with the size of the project, but guidance is generally insufficient to ensure an appropriate modeling approach is applied. ',
         },
       },
       safeguards: {
@@ -2176,7 +2176,7 @@ export const protocols = {
       notes:
         'Protocol credits any activities that increase the carbon stocks on agricultural land. It was published in 2011. ',
       comments:
-        'Two projects have been credited under this protocol ([VCS1225](https://registry.verra.org/app/projectDetail/VCS/1225) and [VCS1704](https://registry.verra.org/app/projectDetail/VCS/1704)), and 3 projects are under development ([VCS1246](https://registry.verra.org/app/projectDetail/VCS/1246), [VCS 1711](https://registry.verra.org/app/projectDetail/VCS/1711), [VCS1944](https://registry.verra.org/app/projectDetail/VCS/1944), [VCS2075](https://registry.verra.org/app/projectDetail/VCS/2075), and [VCS2485](https://registry.verra.org/app/projectDetail/VCS/2485)). Protocol relies heavily on external CDM tools. Note that the protocol as written references the VCS Standard v3.1 for general guidance on crediting and verification. However, the VCS Standard v3.1 appears to be decomissioned, so we evaluate the protocol with reference to the current VCS Standard v4.1. ',
+        'Two projects have been credited under this protocol ([VCS1225](https://registry.verra.org/app/projectDetail/VCS/1225) and [VCS1704](https://registry.verra.org/app/projectDetail/VCS/1704)), and five projects are under development ([VCS1246](https://registry.verra.org/app/projectDetail/VCS/1246), [VCS 1711](https://registry.verra.org/app/projectDetail/VCS/1711), [VCS1944](https://registry.verra.org/app/projectDetail/VCS/1944), [VCS2075](https://registry.verra.org/app/projectDetail/VCS/2075), and [VCS2485](https://registry.verra.org/app/projectDetail/VCS/2485)). Protocol relies heavily on external CDM tools. Note that the protocol as written references the VCS Standard v3.1 for general guidance on crediting and verification. However, the VCS Standard v3.1 appears to be decomissioned, so we evaluate the protocol with reference to the current VCS Standard v4.1. ',
       timeline: {
         activity: [-5, 0],
         crediting: [-5, 20],
@@ -2367,7 +2367,7 @@ export const protocols = {
           notes:
             'Methodology assumes soil carbon remains constant or decreases over time in absence of the project activities. Both baseline and project scenario SOC are modeled using RothC. Other emissions sources are calculated for both the baseline and project scenarios using CDM tools.',
           comments:
-            'SOC crediting is not empirical and relies entirely on modelling. Direct sampling is not required. The modeled soil depth of 30cm is insufficient to capture the full effect of project activities on SOC and other critical soil variables like bulk density or equivalent soil mass are estimated or not considered. There is no sampling to true-up model projections.',
+            'SOC crediting is not empirical and relies entirely on modeling. Direct sampling is not required. The modeled soil depth of 30cm is insufficient to capture the full effect of project activities on SOC and other critical soil variables like bulk density or equivalent soil mass are estimated or not considered. There is no sampling to true-up model projections.',
         },
       },
       safeguards: {
@@ -2623,7 +2623,7 @@ export const protocols = {
           notes:
             'The baseline scenario is determined by a three year historic period. Sampling methodology is not specified, but generally required to follow "established best practices." Sampling is not required, and estimation via unspecified remote sensing methodologies is allowed. Models are not specified, but must be demonstrated in the peer-reviewed literature to accurately model outcomes of practices used in projects. Protocol anticipates the use of measurement and re-measurement of soil organic carbon, instead of modeling, but the approach is not currently specified and depends on future protocol revisions to establish applicable performance benchmarks. Default IPCC parameters are used to calculate certain CO\u2082, CH\u2084, and N\u2082O fluxes that are unrelated to soil organic carbon stock changes and methanogenesis.',
           comments:
-            'SOC crediting is not empirical and relies entirely on modelling. Direct sampling is not required; the optional soil sampling depth of 30cm is insufficient to capture the full effect of project activities on SOC. Other critical soil variables like bulk density or equivalent soil mass are not measured. The only available quantification method is a model-based extrapolation of an unspecified sample that could be taken as far back as five years before the project start date. The methodology includes flexibility to replace soil sampling with estimation from remote sensing. There is insufficient guidance to ensure an appropriately rigorous modeling approach is applied.',
+            'SOC crediting is not empirical and relies entirely on modeling. Direct sampling is not required; the optional soil sampling depth of 30cm is insufficient to capture the full effect of project activities on SOC. Other critical soil variables like bulk density or equivalent soil mass are not measured. The only available quantification method is a model-based extrapolation of an unspecified sample that could be taken as far back as five years before the project start date. The methodology includes flexibility to replace soil sampling with estimation from remote sensing. There is insufficient guidance to ensure an appropriately rigorous modeling approach is applied.',
         },
       },
       safeguards: {
@@ -3165,12 +3165,12 @@ export const protocols = {
             value: 'Flexible / Process-based',
             reference: 'VM0026, Section 8.2.8',
             comment:
-              'Two quantification options are provided for the project scenario: sampling only, or modeling with sample-based calibration. The modelling approach must comply with the requirements for models as set out in the VCS rules. If a biogeochemical model is used, it needs to be appropriate for the region and its use should be documented in scientific journals, university theses, local research studies or work carried out by the project proponent). The example of the CENTURY model is provided.',
+              'Two quantification options are provided for the project scenario: sampling only, or modeling with sample-based calibration. The modeling approach must comply with the requirements for models as set out in the VCS rules. If a biogeochemical model is used, it needs to be appropriate for the region and its use should be documented in scientific journals, university theses, local research studies or work carried out by the project proponent). The example of the CENTURY model is provided.',
           },
           notes:
             'The baseline and project scenarios can be quantified using sampling only, or modeled with sample-based calibration. Model selection follows broader VCS guidelines. Direct measurements of SOC are required in the absence of peer-reviewed studies (eg, scientific journals, university theses, or work carried out by the project proponent) that demonstrate that the use of the selected model is valid for the project region. Sampling does not require randomization or provide guidance for stratification but there is guidance for selection of soil depth, which is set to be a minimum of 30 cm or as deep as the affected layers.',
           comments:
-            'SOC crediting is not empirical and relies entirely on modelling. Direct sampling is required in one of the two SOC quantification approaches. The sampling depth of 30cm is insufficient to capture the full effect of project activities on SOC and sampling guidelines are notably flexible, allowing minimal sampling rigor. SOC crediting may rely entirely on modeling. There is insufficient guidance to ensure an appropriately rigorous modeling approach is applied.',
+            'SOC crediting is not empirical and relies entirely on modeling. Direct sampling is required in one of the two SOC quantification approaches. The sampling depth of 30cm is insufficient to capture the full effect of project activities on SOC and sampling guidelines are notably flexible, allowing minimal sampling rigor. SOC crediting may rely entirely on modeling. There is insufficient guidance to ensure an appropriately rigorous modeling approach is applied.',
         },
       },
       safeguards: {
