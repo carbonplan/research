@@ -64,8 +64,6 @@ const Parameter = ({ param, data, state }) => {
                 color: 'purple',
                 fontFamily: 'mono',
                 letterSpacing: 'mono',
-                pb: [2],
-                pt: [2],
                 mt: [0, 0, 2, 0],
               }}
               onKeyPress={handleEnter}
