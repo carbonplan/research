@@ -11,25 +11,16 @@ const List = ({ category, year }) => {
     )
   }
 
-  const compare = (a, b) => {
-    const da = new Date(a.date.replace(/-/g, '/'))
-    const db = new Date(b.date.replace(/-/g, '/'))
-    return (da < db) - (da > db)
-  }
-
   return (
     <Box>
-      {contents
-        .filter(inFilter)
-        .sort(compare)
-        .map((d, ix) => (
-          <Entry
-            key={d.title}
-            info={d}
-            first={ix == 0}
-            final={ix === contents.filter(inFilter).length - 1}
-          ></Entry>
-        ))}
+      {contents.filter(inFilter).map((d, ix) => (
+        <Entry
+          key={d.title}
+          info={d}
+          first={ix == 0}
+          final={ix === contents.filter(inFilter).length - 1}
+        ></Entry>
+      ))}
     </Box>
   )
 }
