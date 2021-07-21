@@ -77,7 +77,7 @@ const tools = [
   },
 ]
 
-const Main = ({ expanded }) => {
+const Main = ({ contents, expanded }) => {
   const [category, setCategory] = useState(initCategory)
   const [year, setYear] = useState(initYear)
 
@@ -204,7 +204,7 @@ const Main = ({ expanded }) => {
           width={[6, 7, 7, 7]}
           sx={{ mt: ['-3px', '0px', '-1px', '0px'] }}
         >
-          <List category={category} year={year} />
+          <List category={category} year={year} contents={contents} />
         </Column>
       </Row>
     </Box>

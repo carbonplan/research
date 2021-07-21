@@ -1,9 +1,7 @@
 import { Box } from 'theme-ui'
-import { default as NextLink } from 'next/link'
 import Entry from './entry'
-import contents from '../contents'
 
-const List = ({ category, year }) => {
+const List = ({ category, contents, year }) => {
   const inFilter = (d) => {
     return (
       d.tags.some((t) => category[t]) &&

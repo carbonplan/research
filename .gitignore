@@ -3,6 +3,3 @@
 .next
 .vscode
 /node_modules
-
-# automatically generated
-contents.js

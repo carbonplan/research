@@ -4,9 +4,8 @@
   "description": "directory of carbonplan notes, notebooks, primers, data, and models",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run build-index && NODE_ENV=development next -p 4000",
-    "build": "npm run build-index && next build",
-    "build-index": "node build.js && prettier --write 'contents.js'",
+    "dev": "NODE_ENV=development next -p 4000",
+    "build": "next build",
     "start": "next start",
     "format": "npm run format-js && npm run format-md",
     "format-js": "prettier --write '*.js' '{tools,components,lib,pages,articles}/**/*.js'",
@@ -39,6 +38,8 @@
     "d3-scale": "^3.2.3",
     "d3-selection": "^2.0.0",
     "d3-shape": "^2.1.0",
+    "extract-mdx-metadata": "^1.0.0",
+    "fs": "^0.0.1-security",
     "mapbox-gl": "^1.13.1",
     "next": "^10.2.0",
     "react": "^16.14.0",
@@ -53,7 +54,6 @@
     "vega-lite": "5.0.0"
   },
   "devDependencies": {
-    "extract-mdx-metadata": "^1.0.0",
     "glob": "^7.1.7",
     "prettier": "2.3.0"
   }
