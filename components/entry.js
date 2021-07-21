@@ -13,17 +13,7 @@ import { mix } from '@theme-ui/color'
 import Icon from './icon'
 
 const Entry = ({ info, first, final }) => {
-  let {
-    title,
-    color,
-    tags,
-    authors,
-    version,
-    date,
-    icon,
-    summary,
-    links,
-  } = info
+  let { title, color, tags, date, icon, extendedSummary, links } = info
 
   color = color || 'text'
 
@@ -138,7 +128,7 @@ const Entry = ({ info, first, final }) => {
                 display: ['none', 'block', 'block', 'block'],
               }}
             >
-              {summary}
+              {extendedSummary}
             </Box>
             <Box
               sx={{
@@ -188,7 +178,7 @@ const Entry = ({ info, first, final }) => {
         </Row>
         <Box sx={{ display: ['initial', 'none', 'none', 'none'] }}>
           <Box sx={{ my: [3], fontSize: [2, 2, 2, 3], lineHeight: 1.35 }}>
-            {summary}
+            {extendedSummary}
           </Box>
           <Box sx={{ mt: [3], display: 'block' }}>
             <LinkGroup links={links} />

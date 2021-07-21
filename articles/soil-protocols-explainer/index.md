@@ -15,7 +15,6 @@ import TimelineSummary from './components/timeline-summary'
 import references from './references'
 
 export const meta = {
-  id: 'soil-protocols-explainer',
   number: 12,
   version: '1.0.0',
   date: '07-15-2021',
@@ -31,6 +30,20 @@ export const meta = {
   background: 'article-012/crop',
   summary:
     'Lessons learned from a systematic review of 14 protocols for soil carbon offsets.',
+  extendedSummary:
+    'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
+  icon: 'article-012/crop-small',
+  tags: ['article', 'dataset'],
+  links: [
+    {
+      label: 'Read article',
+      href: '/research/soil-protocols-explainer',
+    },
+    {
+      label: 'Browse protocols',
+      href: '/research/soil-protocols',
+    },
+  ],
 }
 
 # A buyer’s guide to soil carbon offsets

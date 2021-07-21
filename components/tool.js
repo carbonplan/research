@@ -9,7 +9,6 @@ import {
 } from '@carbonplan/components'
 import { Left } from '@carbonplan/icons'
 import QuickLook from './quick-look'
-import contents from '../contents'
 
 const prefix = 'https://images.carbonplan.org'
 

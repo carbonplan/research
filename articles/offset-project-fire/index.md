@@ -31,6 +31,21 @@ export const meta = {
   summary:
     'A major fire in Oregon illustrates the challenges of managing forest carbon permanence',
   quotes: [],
+  tags: ['article'],
+  extendedSummary:
+    'Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.',
+  icon: 'article-004/forest-small',
+  links: [
+    {
+      label: 'Read article',
+      href: '/research/offset-project-fire',
+    },
+    {
+      label: 'Grist coverage',
+      href:
+        'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
+    },
+  ],
 }
 
 # Carbon offsets burning

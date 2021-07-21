@@ -23,6 +23,25 @@ export const meta = {
   background: 'article-005/leaf',
   summary:
     'How to compare the long-term cost of temporary and permanent carbon removal',
+  tags: ['tool', 'article'],
+  extendedSummary:
+    'Our interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to learn about the methods and implications.',
+  icon: 'article-005/leaf-small',
+  links: [
+    {
+      label: 'Read article',
+      href: '/research/permanence-calculator-explainer',
+    },
+    {
+      label: 'Use tool',
+      href: '/research/permanence-calculator',
+    },
+    {
+      label: 'ClimateWorks post',
+      href:
+        'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
+    },
+  ],
 }
 
 # The cost of temporary carbon removal

@@ -25,6 +25,20 @@ export const meta = {
   background: 'article-000/road',
   summary:
     'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
+  tags: ['article', 'dataset'],
+  extendedSummary:
+    "We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Explore our database of project reports or read the article for our main takeaways and lessons learned.",
+  icon: 'article-000/road-small',
+  links: [
+    {
+      label: 'Read article',
+      href: '/research/stripe-2020-insights',
+    },
+    {
+      label: 'Explore database',
+      href: '/research/cdr-database',
+    },
+  ],
 }
 
 # Insights from our first project reports

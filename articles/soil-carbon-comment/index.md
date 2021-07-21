@@ -22,6 +22,31 @@ export const meta = {
   background: 'article-001/soil',
   summary:
     'Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols',
+  tags: ['comment', 'article'],
+  extendedSummary:
+    'There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.',
+  icon: 'article-001/soil-small',
+  links: [
+    {
+      label: 'Read article',
+      href: '/research/soil-carbon-comment',
+    },
+    {
+      label: 'MIT Tech Review coverage',
+      href:
+        'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
+    },
+    {
+      label: 'Read comment letter #1',
+      href:
+        'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
+    },
+    {
+      label: 'Read comment letter #2',
+      href:
+        'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
+    },
+  ],
 }
 
 # Getting soil <br/> carbon right

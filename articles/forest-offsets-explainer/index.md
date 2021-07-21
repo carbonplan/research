@@ -33,6 +33,30 @@ export const meta = {
   quotes: [],
   card: 'forest-offsets-explainer',
   background: 'article-008/ash',
+  tags: ['article', 'dataset', 'tool', 'publication'],
+  extendedSummary:
+    "California's forest offset program is worth over $2 billion. We analyzed detailed public records to show how statistical flaws in the program's design have led to over-crediting — at a scale of tens of millions of tCO₂ and hundreds of millions of dollars.",
+  version: '1.0.0',
+  icon: 'article-008/ash-small',
+  links: [
+    {
+      label: 'Read article',
+      href: '/research/forest-offsets-explainer',
+    },
+    {
+      label: 'Read preprint',
+      href: 'https://doi.org/10.1101/2021.04.28.441870',
+    },
+    {
+      label: 'Browse map',
+      href: '/research/forest-offsets',
+    },
+    {
+      label: 'ProPublica / MIT Tech Review coverage',
+      href:
+        'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
+    },
+  ],
 }
 
 # Systematic <span style={{whiteSpace: 'nowrap'}}>over-crediting</span> <br/> of forest offsets
