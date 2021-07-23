@@ -53,8 +53,7 @@ export const meta = {
     },
     {
       label: 'ProPublica / MIT Tech Review coverage',
-      href:
-        'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
+      href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
     },
   ],
 }
@@ -71,8 +70,7 @@ export const meta = {
     { label: 'Browse map', href: '/research/forest-offsets' },
     {
       label: 'Press coverage',
-      href:
-        'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
+      href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
     },
     {
       label: 'FAQ',

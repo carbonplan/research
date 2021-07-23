@@ -38,8 +38,7 @@ export const meta = {
     },
     {
       label: 'ClimateWorks post',
-      href:
-        'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
+      href: 'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
     },
   ],
 }

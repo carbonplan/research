@@ -42,8 +42,7 @@ export const meta = {
     },
     {
       label: 'Grist coverage',
-      href:
-        'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
+      href: 'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
     },
   ],
 }

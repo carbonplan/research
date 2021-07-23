@@ -67,12 +67,8 @@ const Calculator = () => {
   }
 
   const longCostDisplay = () => {
-    const {
-      switchingTime,
-      switchingTimeActive,
-      longCostCurve,
-      longCostArray,
-    } = options
+    const { switchingTime, switchingTimeActive, longCostCurve, longCostArray } =
+      options
     if (switchingTimeActive && longCostArray.length > 0) {
       return longCostArray[Math.max(switchingTime - 1, 0)]
     } else {
