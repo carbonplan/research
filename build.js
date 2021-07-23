@@ -6,7 +6,7 @@ const externalContents = require('./external-contents')
 
 const existing = glob.sync('./pages/research/!(index.js)')
 existing.forEach((f) => {
-  fs.rmSync(f)
+  if (fs.rmSync) return fs.rmSync(f)
 })
 
 // Build pages and contents.js from articles
