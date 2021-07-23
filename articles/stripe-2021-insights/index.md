@@ -25,10 +25,10 @@ export const meta = {
   color: 'secondary',
   card: 'stripe-2021-insights',
   background: 'article-010/curve',
-  summary:
+  quickLook:
     "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement.",
   tags: ['article', 'dataset'],
-  extendedSummary:
+  summary:
     "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
   icon: 'article-010/curve-small',
   links: [

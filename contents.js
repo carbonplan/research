@@ -14,9 +14,9 @@ const contents = [
     color: 'orange',
     card: 'soil-protocols-explainer',
     background: 'article-012/crop',
-    summary:
+    quickLook:
       'Lessons learned from a systematic review of 14 protocols for soil carbon offsets.',
-    extendedSummary:
+    summary:
       'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
     icon: 'article-012/crop-small',
     tags: ['article', 'dataset'],
@@ -41,10 +41,10 @@ const contents = [
     color: 'orange',
     card: 'soil-depth-sampling',
     background: 'article-011/tillage',
-    summary:
+    quickLook:
       'Why depth is important for soil carbon sampling, and how to avoid key mistakes.',
     tags: ['article'],
-    extendedSummary:
+    summary:
       'Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls.',
     icon: 'article-011/tillage-small',
     links: [{ label: 'Read article', href: '/research/soil-depth-sampling' }],
@@ -65,10 +65,10 @@ const contents = [
     color: 'secondary',
     card: 'stripe-2021-insights',
     background: 'article-010/curve',
-    summary:
+    quickLook:
       "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement.",
     tags: ['article', 'dataset'],
-    extendedSummary:
+    summary:
       "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
     icon: 'article-010/curve-small',
     links: [
@@ -93,12 +93,12 @@ const contents = [
       'Joseph J. Hamman',
     ],
     color: 'red',
-    summary:
+    quickLook:
       'A detailed look at the disturbance risks to forest carbon under future climate conditions.',
     background: 'article-009/forest-fire-red',
     card: 'forest-risks-explainer',
     tags: ['article', 'dataset', 'tool', 'publication'],
-    extendedSummary:
+    summary:
       'Forests in the United States are already at risk from wildfire, drought, and insects, and climate change is making it worse. We combined satellite and ecological data with climate models to project future risks to forest carbon. Along with a preprint, we are releasing open data, open software, and an interactive web map.',
     version: '1.0.0',
     icon: 'article-009/forest-fire-small-red',
@@ -126,13 +126,13 @@ const contents = [
       'Danny Cullenward',
     ],
     color: 'green',
-    summary:
+    quickLook:
       "Statistical and ecological analysis reveals crediting errors in California's forest carbon offsets program",
     quotes: [],
     card: 'forest-offsets-explainer',
     background: 'article-008/ash',
     tags: ['article', 'dataset', 'tool', 'publication'],
-    extendedSummary:
+    summary:
       "California's forest offset program is worth over $2 billion. We analyzed detailed public records to show how statistical flaws in the program's design have led to over-crediting — at a scale of tens of millions of tCO₂ and hundreds of millions of dollars.",
     version: '1.0.0',
     icon: 'article-008/ash-small',
@@ -163,12 +163,12 @@ const contents = [
       'Jeremy Freeman',
     ],
     color: 'secondary',
-    summary:
+    quickLook:
       "Project reports and lessons learned from analyzing proposals for Microsoft's 2021 Carbon Removal procurement",
     background: 'article-007/sign',
     card: 'microsoft-2021-insights',
     tags: ['article', 'dataset'],
-    extendedSummary:
+    summary:
       "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
     icon: 'article-007/sign-small',
     links: [
@@ -191,10 +191,10 @@ const contents = [
     date: '02-01-2021',
     background: 'article-006/wind',
     card: 'dac-calculator-explainer',
-    summary:
+    quickLook:
       'How the cost of direct air capture varies under different energy scenarios',
     tags: ['article', 'tool'],
-    extendedSummary:
+    summary:
       'Our interactive tool helps explore the cost of direct air capture (DAC) coupled to stand alone energy sources. Try the tool, or read the article to learn more about the model.',
     icon: 'article-006/wind-small',
     links: [
@@ -209,7 +209,7 @@ const contents = [
   {
     title: 'CDR Primer',
     tags: ['publication'],
-    extendedSummary:
+    summary:
       'A new resource on the fundamentals of carbon dioxide removal and its role in addressing the climate crisis. Our team helped write, edit, and produce this free, online digital book.',
     date: '01-14-2021',
     version: '1.0.0',
@@ -220,7 +220,7 @@ const contents = [
   {
     title: 'Letter to Taskforce on Scaling Voluntary Carbon Markets',
     tags: ['comment'],
-    extendedSummary:
+    summary:
       "A coordinated effort to standardize and scale today's voluntary offsets market is underway. We submitted a joint letter with Carbon Direct and the Berkeley Carbon Trading Project detailing how the Taskforce is ignoring the problem of poor quality rampant in today's market. That problem needs to be addressed first.",
     date: '01-05-2021',
     version: '1.0.0',
@@ -248,10 +248,10 @@ const contents = [
     date: '12-09-2020',
     card: 'permanence-calculator-explainer',
     background: 'article-005/leaf',
-    summary:
+    quickLook:
       'How to compare the long-term cost of temporary and permanent carbon removal',
     tags: ['tool', 'article'],
-    extendedSummary:
+    summary:
       'Our interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to learn about the methods and implications.',
     icon: 'article-005/leaf-small',
     links: [
@@ -284,11 +284,11 @@ const contents = [
     date: '09-17-2020',
     card: 'offset-project-fire',
     background: 'article-004/forest',
-    summary:
+    quickLook:
       'A major fire in Oregon illustrates the challenges of managing forest carbon permanence',
     quotes: [],
     tags: ['article'],
-    extendedSummary:
+    summary:
       'Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.',
     icon: 'article-004/forest-small',
     links: [
@@ -314,10 +314,10 @@ const contents = [
     date: '07-24-2020',
     card: 'carbon-removal-mechanisms',
     background: 'article-003/pipes',
-    summary:
+    quickLook:
       'How different carbon removal projects interact with the global carbon cycle',
     tags: ['article'],
-    extendedSummary:
+    summary:
       'Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.',
     icon: 'article-003/pipes-small',
     links: [
@@ -327,7 +327,7 @@ const contents = [
   {
     title: 'Climate-driven risks to forest carbon',
     tags: ['publication'],
-    extendedSummary:
+    summary:
       'Team members contributed to a review paper on physical risks to forest carbon, like fire, drought, and insects, and why that matters for thinking about the role of forests in climate change mitigation.',
     date: '06-23-2020',
     version: '1.0.0',
@@ -351,10 +351,10 @@ const contents = [
     date: '06-01-2020',
     card: 'soil-carbon-comment',
     background: 'article-001/soil',
-    summary:
+    quickLook:
       'Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols',
     tags: ['comment', 'article'],
-    extendedSummary:
+    summary:
       'There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.',
     icon: 'article-001/soil-small',
     links: [
@@ -383,10 +383,10 @@ const contents = [
     date: '05-18-2020',
     card: 'stripe-2020-insights-gray',
     background: 'article-000/road',
-    summary:
+    quickLook:
       'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
     tags: ['article', 'dataset'],
-    extendedSummary:
+    summary:
       "We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Explore our database of project reports or read the article for our main takeaways and lessons learned.",
     icon: 'article-000/road-small',
     links: [

@@ -21,7 +21,7 @@ const Article = ({ children, meta, references }) => {
   return (
     <Layout
       card={`${prefix}/social/${meta.card}.png`}
-      description={meta.summary + '.'}
+      description={meta.quickLook + '.'}
       title={meta.title.toLowerCase() + ' / research / carbonplan'}
       links={'local'}
       metadata={'scroll'}
@@ -240,7 +240,7 @@ const Article = ({ children, meta, references }) => {
             <Closing />
           </Column>
           <QuickLook color={meta.color} start={9}>
-            {meta.summary}
+            {meta.quickLook}
           </QuickLook>
         </Row>
       </Box>

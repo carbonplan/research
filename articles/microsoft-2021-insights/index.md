@@ -24,12 +24,12 @@ export const meta = {
     'Jeremy Freeman',
   ],
   color: 'secondary',
-  summary:
+  quickLook:
     "Project reports and lessons learned from analyzing proposals for Microsoft's 2021 Carbon Removal procurement",
   background: 'article-007/sign',
   card: 'microsoft-2021-insights',
   tags: ['article', 'dataset'],
-  extendedSummary:
+  summary:
     "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
   icon: 'article-007/sign-small',
   links: [

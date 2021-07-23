@@ -20,10 +20,10 @@ export const meta = {
   date: '07-24-2020',
   card: 'carbon-removal-mechanisms',
   background: 'article-003/pipes',
-  summary:
+  quickLook:
     'How different carbon removal projects interact with the global carbon cycle',
   tags: ['article'],
-  extendedSummary:
+  summary:
     'Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.',
   icon: 'article-003/pipes-small',
 }

@@ -25,7 +25,7 @@ const Tool = ({
     <Layout
       card={`${prefix}/social/${meta.card}.png`}
       metadata={false}
-      description={meta.summary + '.'}
+      description={meta.quickLook + '.'}
       title={meta.title.toLowerCase() + ' / research / carbonplan'}
       links={'local'}
       nav={'research'}
@@ -61,7 +61,7 @@ const Tool = ({
           </Box>
         </Column>
         <QuickLook start={quickLookStart} color={meta.color} tool={true}>
-          {meta.summary}
+          {meta.quickLook}
         </QuickLook>
       </Row>
       <Row>

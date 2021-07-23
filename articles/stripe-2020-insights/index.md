@@ -22,10 +22,10 @@ export const meta = {
   date: '05-18-2020',
   card: 'stripe-2020-insights-gray',
   background: 'article-000/road',
-  summary:
+  quickLook:
     'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
   tags: ['article', 'dataset'],
-  extendedSummary:
+  summary:
     "We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Explore our database of project reports or read the article for our main takeaways and lessons learned.",
   icon: 'article-000/road-small',
   links: [

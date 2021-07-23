@@ -26,13 +26,13 @@ export const meta = {
     'Danny Cullenward',
   ],
   color: 'green',
-  summary:
+  quickLook:
     "Statistical and ecological analysis reveals crediting errors in California's forest carbon offsets program",
   quotes: [],
   card: 'forest-offsets-explainer',
   background: 'article-008/ash',
   tags: ['article', 'dataset', 'tool', 'publication'],
-  extendedSummary:
+  summary:
     "California's forest offset program is worth over $2 billion. We analyzed detailed public records to show how statistical flaws in the program's design have led to over-crediting — at a scale of tens of millions of tCO₂ and hundreds of millions of dollars.",
   version: '1.0.0',
   icon: 'article-008/ash-small',

@@ -26,9 +26,9 @@ export const meta = {
   color: 'orange',
   card: 'soil-protocols-explainer',
   background: 'article-012/crop',
-  summary:
+  quickLook:
     'Lessons learned from a systematic review of 14 protocols for soil carbon offsets.',
-  extendedSummary:
+  summary:
     'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
   icon: 'article-012/crop-small',
   tags: ['article', 'dataset'],
