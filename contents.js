@@ -145,8 +145,7 @@ const contents = [
       { label: 'Browse map', href: '/research/forest-offsets' },
       {
         label: 'ProPublica / MIT Tech Review coverage',
-        href:
-          'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
+        href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
       },
     ],
   },
@@ -225,8 +224,7 @@ const contents = [
     links: [
       {
         label: 'Read comment letter',
-        href:
-          'https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf',
+        href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf',
       },
       { label: 'Taskforce website', href: 'https://www.iif.com/tsvcm' },
       {
@@ -259,8 +257,7 @@ const contents = [
       { label: 'Use tool', href: '/research/permanence-calculator' },
       {
         label: 'ClimateWorks post',
-        href:
-          'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
+        href: 'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
       },
     ],
   },
@@ -293,8 +290,7 @@ const contents = [
       { label: 'Read article', href: '/research/offset-project-fire' },
       {
         label: 'Grist coverage',
-        href:
-          'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
+        href: 'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
       },
     ],
   },
@@ -336,8 +332,7 @@ const contents = [
       { label: 'Read paper', href: 'https://doi.org/10.1126/science.aaz7005' },
       {
         label: 'Rolling Stone coverage',
-        href:
-          'https://www.rollingstone.com/politics/politics-features/tree-planting-wont-stop-climate-crisis-1020500/',
+        href: 'https://www.rollingstone.com/politics/politics-features/tree-planting-wont-stop-climate-crisis-1020500/',
       },
     ],
   },
@@ -361,18 +356,15 @@ const contents = [
       { label: 'Read article', href: '/research/soil-carbon-comment' },
       {
         label: 'MIT Tech Review coverage',
-        href:
-          'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
+        href: 'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
       },
       {
         label: 'Read comment letter #1',
-        href:
-          'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
+        href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
       },
       {
         label: 'Read comment letter #2',
-        href:
-          'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
+        href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
       },
     ],
   },
