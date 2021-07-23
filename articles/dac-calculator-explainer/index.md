@@ -1,7 +1,6 @@
 import { Link } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import Links from '../../components/links'
-import Article from '../../components/article'
 import FigureCaption from '../../components/figure-caption'
 import Endnote from '../../components/endnote'
 import Inline from '../../components/inline'
@@ -11,7 +10,6 @@ import SectionBreak from '../../components/section-break'
 import BoundaryCondition from './components/boundary-condition'
 import ParameterScenario from './components/parameter-scenario'
 import CostSummary from './components/cost-summary'
-import references from './references'
 
 export const meta = {
   id: 'dac-calculator-explainer',
@@ -230,9 +228,3 @@ N McQueen, J Wilcox, J Hamman, J Freeman (2021) “The cost of direct air captur
 CarbonPlan received no specific financial support for this work. Noah McQueen is a Ph.D. Student at the University of Pennsylvania and Jennifer Wilcox is a Professor at the University of Pennsylvania.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

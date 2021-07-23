@@ -15,8 +15,23 @@ glob('./articles/**/index.md', async (err, filePaths) => {
 
   // Construct pages/research
   articleContents.forEach(({ id }) => {
-    const page = `import Index from '../../articles/${id}/index.md'
-    export default Index
+    const hasReferences = glob.sync(`./articles/${id}/references.js`).length > 0
+    const referencesImport = hasReferences
+      ? `import references from '../../articles/${id}/references'`
+      : ''
+
+    const page = `
+    import Index, {meta} from '../../articles/${id}/index.md'
+    ${referencesImport}
+    import Article from '../../components/article'
+
+    const Content = () => (
+      <Article references={${hasReferences ? 'references' : '{}'}} meta={meta}>
+        <Index />
+      </Article>
+    )
+
+    export default Content
     `
     fs.writeFileSync(`./pages/research/${id}.js`, page)
   })

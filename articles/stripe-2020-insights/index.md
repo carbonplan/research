@@ -1,4 +1,3 @@
-import Article from '../../components/article'
 import Links from '../../components/links'
 import SectionBreak from '../../components/section-break'
 import PullQuote from '../../components/pull-quote'
@@ -203,5 +202,3 @@ D Cullenward, J Hamman, J Freeman (2020) “Insights from our first project repo
 CarbonPlan and Stripe entered into an agreement in which Stripe shared the project proposals it received in response to its 2020 Negative Emissions Purchase in advance of their public release. We provided feedback to Stripe on its program and were compensated by Stripe for our time. Our work was independent and Stripe did not exercise any control over it. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not represent the views of Stripe or any other other organizations.
 
 </Endnote>
-
-export default ({ children }) => <Article meta={meta}>{children}</Article>

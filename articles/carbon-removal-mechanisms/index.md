@@ -1,11 +1,9 @@
-import Article from '../../components/article'
 import Cite from '../../components/cite'
 import CiteGroup from '../../components/cite-group'
 import Endnote from '../../components/endnote'
 import PullQuote from '../../components/pull-quote'
 import SectionBreak from '../../components/section-break'
 import Cycle from './components/cycle'
-import references from './references'
 
 export const meta = {
   id: 'carbon-removal-mechanisms',
@@ -303,9 +301,3 @@ T Rinberg, D Cullenward, J Hamman, J Freeman (2020) “Carbon removal mechanisms
 CarbonPlan received no specific financial support for this work.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

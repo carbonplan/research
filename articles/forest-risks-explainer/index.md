@@ -1,7 +1,6 @@
 import { Box } from 'theme-ui'
 import { Table } from '@carbonplan/components'
 import Links from '../../components/links'
-import Article from '../../components/article'
 import Endnote from '../../components/endnote'
 import Cite from '../../components/cite'
 import CiteGroup from '../../components/cite-group'
@@ -9,7 +8,6 @@ import SectionBreak from '../../components/section-break'
 import FigureCaption from '../../components/figure-caption'
 import RiskMaps from './components/risk-maps'
 import RiskTrajectories from './components/risk-trajectories'
-import references from './references'
 
 export const meta = {
   id: 'forest-risks-explainer',
@@ -223,9 +221,3 @@ CarbonPlan received a grant from Microsoft AI for Earth to support this work. Mi
 [William R.L. Anderegg](http://www.anderegglab.net/) is a professor at the University of Utah, [Grayson Badgley](https://www.gbadgley.com) is a Postdoctoral Scientist at Black Rock Forest and Columbia University, [Jeffrey A. Hicke](https://webpages.uidaho.edu/~jhicke/) is a professor at the University of Idaho, [John A. Abatzoglou](http://www.climatologylab.org/) is a professor at UC Merced, and [Anna Trugman](http://trugmanlab.geog.ucsb.edu) is a professor at UC Santa Barbara.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

@@ -1,5 +1,4 @@
 import { Box } from 'theme-ui'
-import Article from '../../components/article'
 import SectionBreak from '../../components/section-break'
 import Links from '../../components/links'
 import Cite from '../../components/cite'
@@ -11,7 +10,6 @@ import AnalysisExplanation from './components/analysis-explanation'
 import ProjectAnalysis from './components/project-analysis'
 import SouthernCascades from './components/southern-cascades'
 import Triangle from './components/triangle'
-import references from './references'
 
 export const meta = {
   id: 'forest-offsets-explainer',
@@ -229,9 +227,3 @@ CarbonPlan received a grant from Microsoft AI for Earth to support the portion o
 [Grayson Badgley](https://www.gbadgley.com) is a Postdoctoral Scientist at Black Rock Forest and Columbia University, [Barbara Haya](https://gspp.berkeley.edu/faculty-and-impact/faculty/barbara-haya) is a Research Fellow and Director of the Berkeley Carbon Trading Project at UC Berkeley, [Anna Trugman](http://trugmanlab.geog.ucsb.edu) is a professor at UC Santa Barbara, and [William R.L. Anderegg](http://www.anderegglab.net/) is a professor at the University of Utah.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

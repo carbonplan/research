@@ -1,6 +1,5 @@
 import { Box } from 'theme-ui'
 import { Link } from '@carbonplan/components'
-import Article from '../../components/article'
 import Cite from '../../components/cite'
 import CiteGroup from '../../components/cite-group'
 import Links from '../../components/links'
@@ -8,7 +7,6 @@ import PullQuote from '../../components/pull-quote'
 import Endnote from '../../components/endnote'
 import SectionBreak from '../../components/section-break'
 import Conclusions from './components/conclusions'
-import references from './references'
 
 export const meta = {
   id: 'soil-carbon-comment',
@@ -164,9 +162,3 @@ D Cullenward, J Hamman, J Freeman (2020) “Getting soil carbon right” CarbonP
 CarbonPlan received no financial support for this work and has no financial conflicts of interest with the Climate Action Reserve or Indigo Ag.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

@@ -1,5 +1,4 @@
 import { Link } from '@carbonplan/components'
-import Article from '../../components/article'
 import PullQuote from '../../components/pull-quote'
 import Cite from '../../components/cite'
 import CiteGroup from '../../components/cite-group'
@@ -12,7 +11,6 @@ import MetricTable from './components/metric-table'
 import RecommendationTable from './components/recommendation-table'
 import ScoreSummary from './components/score-summary'
 import TimelineSummary from './components/timeline-summary'
-import references from './references'
 
 export const meta = {
   number: 12,
@@ -220,9 +218,3 @@ J Zelikova, F Chay, J Freeman, D Cullenward (2021) “A buyer’s guide to soil 
 CarbonPlan received [funding from Microsoft](https://carbonplan.org/funding) to support the analysis of these protocols. Microsoft did not exercise any control over this work. CarbonPlan and the authors are solely responsible for the content of the analysis and this writeup, which do not represent the views of any other organizations or individuals.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

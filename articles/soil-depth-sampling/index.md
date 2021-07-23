@@ -1,4 +1,3 @@
-import Article from '../../components/article'
 import PullQuote from '../../components/pull-quote'
 import SectionBreak from '../../components/section-break'
 import Endnote from '../../components/endnote'
@@ -9,7 +8,6 @@ import CiteGroup from '../../components/cite-group'
 import Depth from './components/depth'
 import Density from './components/density'
 import Country from './components/country'
-import references from './references'
 
 export const meta = {
   id: 'soil-depth-sampling',
@@ -183,9 +181,3 @@ CarbonPlan and the authors are solely responsible for the content of this writeu
 Reference herein to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not necessarily constitute or imply its endorsement, recommendation, or favoring by the U.S. government or the Lawrence Livermore National Security, LLC. The views and opinions of authors expressed herein do not necessarily state or reflect those of the U.S. government or the Lawrence Livermore National Security, LLC, and shall not be used for advertising or product endorsement purposes.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

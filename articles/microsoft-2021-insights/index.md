@@ -1,5 +1,4 @@
 import { CheckCircle } from '@carbonplan/icons'
-import Article from '../../components/article'
 import Links from '../../components/links'
 import PullQuote from '../../components/pull-quote'
 import Endnote from '../../components/endnote'
@@ -209,5 +208,3 @@ F Chay, D Cullenward, J Hamman, J Freeman (2021) “Insights from analyzing a ne
 CarbonPlan received no specific financial support for this work, although Microsoft is supporting CarbonPlan’s research on [other topics](https://carbonplan.org/funding). Microsoft provided CarbonPlan with early access to now-public proposals for the purpose of this analysis. CarbonPlan received no access to information about projects beyond what Microsoft has made publicly available. Microsoft did not exercise any control over this work, nor did they use this information in their decision making. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not represent the views of Microsoft or any other other organizations.
 
 </Endnote>
-
-export default ({ children }) => <Article meta={meta}>{children}</Article>
