@@ -34,28 +34,19 @@ export const meta = {
   icon: 'article-006/wind-small',
   links: [
     {
-      label: 'Read article',
-      href: '/research/dac-calculator-explainer',
+      label: 'Use calculator',
+      href: '/research/dac-calculator',
     },
     {
-      label: 'Use tool',
-      href: '/research/dac-calculator',
+      label: 'Read paper',
+      href: 'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract',
     },
   ],
 }
 
 # The cost of direct air capture
 
-<Links
-  color='purple'
-  data={[
-    { label: 'Use the calculator', href: '/research/dac-calculator' },
-    {
-      label: 'Read the paper',
-      href: 'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract',
-    },
-  ]}
-/>
+<Links color='purple' data={meta.links} />
 
 Direct air capture (DAC) is a technology that removes carbon dioxide (CO₂) from the air using chemicals. There are several types. Solid sorbent and liquid solvent DAC are in use today. Others are emerging, such as electro-swing, humidity-swing, and mineralization-based.
 

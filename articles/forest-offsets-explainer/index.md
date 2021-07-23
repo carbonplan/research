@@ -38,10 +38,6 @@ export const meta = {
   icon: 'article-008/ash-small',
   links: [
     {
-      label: 'Read article',
-      href: '/research/forest-offsets-explainer',
-    },
-    {
       label: 'Read preprint',
       href: 'https://doi.org/10.1101/2021.04.28.441870',
     },
@@ -50,23 +46,6 @@ export const meta = {
       href: '/research/forest-offsets',
     },
     {
-      label: 'ProPublica / MIT Tech Review coverage',
-      href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
-    },
-  ],
-}
-
-# Systematic <span style={{whiteSpace: 'nowrap'}}>over-crediting</span> <br/> of forest offsets
-
-<Links
-  color='green'
-  data={[
-    {
-      label: 'Read preprint',
-      href: 'https://doi.org/10.1101/2021.04.28.441870',
-    },
-    { label: 'Browse map', href: '/research/forest-offsets' },
-    {
       label: 'Press coverage',
       href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
     },
@@ -74,8 +53,12 @@ export const meta = {
       label: 'FAQ',
       href: '/research/forest-offsets-explainer-faq',
     },
-  ]}
-/>
+  ],
+}
+
+# Systematic <span style={{whiteSpace: 'nowrap'}}>over-crediting</span> <br/> of forest offsets
+
+<Links color='green' data={meta.links} />
 
 Carbon offsets are widely used by individuals, corporations, and governments to mitigate their greenhouse gas emissions. Because offsets effectively allow pollution to continue, however, they must reflect real climate benefits.
 

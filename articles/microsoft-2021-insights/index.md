@@ -34,10 +34,6 @@ export const meta = {
   icon: 'article-007/sign-small',
   links: [
     {
-      label: 'Read article',
-      href: '/research/microsoft-2021-insights',
-    },
-    {
       label: 'Explore database',
       href: '/research/cdr-database',
     },
@@ -46,10 +42,7 @@ export const meta = {
 
 # Insights from analyzing a new round of carbon removal projects
 
-<Links
-  color='secondary'
-  data={[{ label: 'Browse the database', href: '/research/cdr-database' }]}
-/>
+<Links color='secondary' data={meta.links} />
 
 CarbonPlan analyzes carbon removal projects and programs because we believe these activities will play an important role in addressing the climate crisis. In 2020, we began building a publicly accessible [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal project reports. The purpose of this database is to help engender a culture of openness, transparency, and accountability for those participating in the field of carbon removal.
 

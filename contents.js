@@ -144,9 +144,10 @@ const contents = [
       },
       { label: 'Browse map', href: '/research/forest-offsets' },
       {
-        label: 'ProPublica / MIT Tech Review coverage',
+        label: 'Press coverage',
         href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
       },
+      { label: 'FAQ', href: '/research/forest-offsets-explainer-faq' },
     ],
   },
   {
@@ -198,7 +199,11 @@ const contents = [
     icon: 'article-006/wind-small',
     links: [
       { label: 'Read article', href: '/research/dac-calculator-explainer' },
-      { label: 'Use tool', href: '/research/dac-calculator' },
+      { label: 'Use calculator', href: '/research/dac-calculator' },
+      {
+        label: 'Read paper',
+        href: 'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract',
+      },
     ],
   },
   {
@@ -228,7 +233,7 @@ const contents = [
       },
       { label: 'Taskforce website', href: 'https://www.iif.com/tsvcm' },
       {
-        label: 'Financial Times coverage',
+        label: 'Press coverage',
         href: 'https://www.ft.com/content/de5e8631-bdf2-4c2e-8b7f-83c0c80cdea8',
       },
     ],
@@ -254,7 +259,7 @@ const contents = [
         label: 'Read article',
         href: '/research/permanence-calculator-explainer',
       },
-      { label: 'Use tool', href: '/research/permanence-calculator' },
+      { label: 'Use calculator', href: '/research/permanence-calculator' },
       {
         label: 'ClimateWorks post',
         href: 'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
@@ -289,7 +294,7 @@ const contents = [
     links: [
       { label: 'Read article', href: '/research/offset-project-fire' },
       {
-        label: 'Grist coverage',
+        label: 'Press coverage',
         href: 'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
       },
     ],
@@ -331,7 +336,7 @@ const contents = [
     links: [
       { label: 'Read paper', href: 'https://doi.org/10.1126/science.aaz7005' },
       {
-        label: 'Rolling Stone coverage',
+        label: 'Press coverage',
         href: 'https://www.rollingstone.com/politics/politics-features/tree-planting-wont-stop-climate-crisis-1020500/',
       },
     ],
@@ -355,7 +360,7 @@ const contents = [
     links: [
       { label: 'Read article', href: '/research/soil-carbon-comment' },
       {
-        label: 'MIT Tech Review coverage',
+        label: 'Press coverage',
         href: 'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
       },
       {

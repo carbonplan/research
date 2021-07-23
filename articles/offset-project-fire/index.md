@@ -35,11 +35,7 @@ export const meta = {
   icon: 'article-004/forest-small',
   links: [
     {
-      label: 'Read article',
-      href: '/research/offset-project-fire',
-    },
-    {
-      label: 'Grist coverage',
+      label: 'Press coverage',
       href: 'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
     },
   ],

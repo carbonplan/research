@@ -37,10 +37,6 @@ export const meta = {
   icon: 'article-009/forest-fire-small-red',
   links: [
     {
-      label: 'Read article',
-      href: '/research/forest-risks-explainer',
-    },
-    {
       label: 'Read preprint',
       href: 'https://doi.org/10.1101/2021.05.11.443688',
     },
@@ -53,16 +49,7 @@ export const meta = {
 
 # Risks to forest carbon in a changing climate
 
-<Links
-  color={meta.color}
-  data={[
-    {
-      label: 'Read preprint',
-      href: 'https://doi.org/10.1101/2021.05.11.443688',
-    },
-    { label: 'Browse map', href: '/research/forest-risks' },
-  ]}
-/>
+<Links color={meta.color} data={meta.links} />
 
 Climate change, with its hotter summers and drier atmosphere, is poised to exacerbate the wildfires, insect outbreaks, and drought conditions that already threaten forests in the United States.<Cite id='seidl.2017'/> We set out to analyze these risks, with the goal of supporting data-driven decisions about the role forests can play in climate policy.
 

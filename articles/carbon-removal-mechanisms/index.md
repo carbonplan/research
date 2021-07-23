@@ -26,12 +26,6 @@ export const meta = {
   extendedSummary:
     'Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.',
   icon: 'article-003/pipes-small',
-  links: [
-    {
-      label: 'Read article',
-      href: '/research/carbon-removal-mechanisms',
-    },
-  ],
 }
 
 # Carbon removal mechanisms

@@ -34,10 +34,6 @@ export const meta = {
   tags: ['article', 'dataset'],
   links: [
     {
-      label: 'Read article',
-      href: '/research/soil-protocols-explainer',
-    },
-    {
       label: 'Browse protocols',
       href: '/research/soil-protocols',
     },
@@ -46,15 +42,7 @@ export const meta = {
 
 # A buyer’s guide to soil carbon offsets
 
-<Links
-  color='orange'
-  data={[
-    {
-      label: 'Browse protocols',
-      href: '/research/soil-protocols',
-    },
-  ]}
-/>
+<Links color='orange' data={meta.links} />
 
 Voluntary carbon markets are [ramping up efforts](https://grist.org/agriculture/us-carbon-removal-capture-offset-forests-farms-trees-soil/) to credit soil carbon removal, with [federal lawmakers](https://www.politico.com/news/2021/06/24/senate-farmers-carbon-agriculture-496029) and [state regulators](https://ww2.arb.ca.gov/resources/documents/nwl-implementation-draft) eager to follow suit.
 

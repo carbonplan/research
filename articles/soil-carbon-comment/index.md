@@ -26,11 +26,7 @@ export const meta = {
   icon: 'article-001/soil-small',
   links: [
     {
-      label: 'Read article',
-      href: '/research/soil-carbon-comment',
-    },
-    {
-      label: 'MIT Tech Review coverage',
+      label: 'Press coverage',
       href: 'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
     },
     {
@@ -46,23 +42,7 @@ export const meta = {
 
 # Getting soil <br/> carbon right
 
-<Links
-  color='orange'
-  data={[
-    {
-      label: 'Comment letter #1',
-      href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
-    },
-    {
-      label: 'Comment letter #2',
-      href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
-    },
-    {
-      label: 'Press coverage',
-      href: 'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
-    },
-  ]}
-/>
+<Links color='orange' data={meta.links} />
 
 There are good reasons to be [excited](https://carbon180.org/leading-with-soil) about better soil management practices for carbon removal. Agricultural practices that increase soil carbon storage have the potential to provide benefits both for farmers and ranchers and for the global climate. In turn, working with the agricultural sector could help engage people and organizations that haven’t been the focus of most climate action to date. The complexities of soil carbon quantification, however, pose challenges for designing financial crediting systems.
 

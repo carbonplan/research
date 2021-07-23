@@ -27,11 +27,7 @@ export const meta = {
   icon: 'article-005/leaf-small',
   links: [
     {
-      label: 'Read article',
-      href: '/research/permanence-calculator-explainer',
-    },
-    {
-      label: 'Use tool',
+      label: 'Use calculator',
       href: '/research/permanence-calculator',
     },
     {
@@ -43,12 +39,7 @@ export const meta = {
 
 # The cost of temporary carbon removal
 
-<Links
-  color='pink'
-  data={[
-    { label: 'Use the calculator', href: '/research/permanence-calculator' },
-  ]}
-/>
+<Links color='pink' data={meta.links} />
 
 Carbon removal costs are everywhere in climate discussions — this project costs $10, that one costs $200. Policymakers and corporate planners look to metrics to inform their decisions, and cost per ton of carbon dioxide ($/tCO₂) has become a near-universal unit of measure.
 
