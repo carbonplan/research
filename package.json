@@ -4,9 +4,9 @@
   "description": "directory of carbonplan notes, notebooks, primers, data, and models",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run build-index && NODE_ENV=development next -p 4000",
-    "build": "npm run build-index && next build",
-    "build-index": "node build.js && prettier --write contents.js 'pages/research/!(index).js'",
+    "dev": "npm run build-pages && NODE_ENV=development next -p 4000",
+    "build": "npm run build-pages && next build",
+    "build-pages": "node build.js && prettier --write contents.js 'pages/research/!(index).js'",
     "start": "next start",
     "format": "npm run format-js && npm run format-md",
     "format-js": "prettier --write '*.js' '{tools,components,lib,pages,articles}/**/*.js'",
