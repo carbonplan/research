@@ -4,15 +4,56 @@ const glob = require('glob')
 const extractMdxMeta = require('extract-mdx-metadata')
 const externalContents = require('./external-contents')
 
-glob('./articles/**/index.md', async (err, files) => {
-  const internalContents = await Promise.all(files.map((d) => getMetadata(d)))
-  const combined = internalContents.concat(externalContents)
+const existing = glob.sync('./pages/research/!(index.js)')
+existing.forEach((f) => {
+  fs.rm(f, {}, (err) => {
+    err && console.error(err)
+  })
+})
 
+// Build pages and contents.js from articles
+glob('./articles/**/index.md', async (err, filePaths) => {
+  const articleContents = await Promise.all(filePaths.map(getMetadata))
+
+  // Construct pages/research
+  articleContents.forEach(({ id }) => {
+    const page = `import Index from '../../articles/${id}/index.md'
+    export default Index
+    `
+    fs.writeFileSync(`./pages/research/${id}.js`, page)
+  })
+
+  // Construct contents.js
+  const combined = articleContents.concat(externalContents)
   const sorted = combined.sort((a, b) => new Date(b.date) - new Date(a.date))
-
   const contents = `const contents = ${JSON.stringify(sorted)}
     export default contents`
   fs.writeFileSync('./contents.js', contents)
+})
+
+// Build pages for extra markdown content
+glob('./articles/**/!(index).md', (err, filePaths) => {
+  filePaths.forEach((filePath) => {
+    const [prefix] = filePath.match(/[^\/]+(?=\/(\w|\d|-)+.md)/)
+    const [suffix] = filePath.match(/[^\/]+(?=\.md)/)
+
+    const page = `import Content from '../../articles/${prefix}/${suffix}.md'
+    export default Content
+    `
+    fs.writeFileSync(`./pages/research/${prefix}-${suffix}.js`, page)
+  })
+})
+
+// Build pages for tools
+glob('./tools/*/index.js', (err, filePaths) => {
+  filePaths.forEach((filePath) => {
+    const [toolName] = filePath.match(/[^\/]+(?=\/index\.js)/)
+
+    const page = `import Tool from '../../tools/${toolName}/index.js'
+    export default Tool
+    `
+    fs.writeFileSync(`./pages/research/${toolName}.js`, page)
+  })
 })
 
 async function getMetadata(path) {

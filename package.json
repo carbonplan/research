@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npm run build-index && NODE_ENV=development next -p 4000",
     "build": "npm run build-index && next build",
-    "build-index": "node build.js && prettier --write 'contents.js'",
+    "build-index": "node build.js && prettier --write contents.js 'pages/research/!(index).js'",
     "start": "next start",
     "format": "npm run format-js && npm run format-md",
     "format-js": "prettier --write '*.js' '{tools,components,lib,pages,articles}/**/*.js'",

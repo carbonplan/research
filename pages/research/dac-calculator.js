@@ -1,3 +1,2 @@
-import Index from '../../tools/dac-calculator/index.js'
-
-export default Index
+import Tool from '../../tools/dac-calculator/index.js'
+export default Tool
