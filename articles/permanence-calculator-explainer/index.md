@@ -15,6 +15,7 @@ export const meta = {
   version: '1.0.0',
   color: 'pink',
   title: 'The cost of temporary carbon removal',
+  indexTitle: 'Permanence calculator',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '12-09-2020',
   card: 'permanence-calculator-explainer',

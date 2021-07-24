@@ -23,6 +23,7 @@ export const meta = {
     'Jeremy Freeman',
   ],
   title: 'The cost of direct air capture',
+  indexTitle: 'DAC cost calculator',
   date: '02-01-2021',
   background: 'article-006/wind',
   card: 'dac-calculator-explainer',
