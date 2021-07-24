@@ -9,7 +9,7 @@ const Index = () => {
     title: 'Permanence calculator',
     color: 'pink',
     card: 'permanence-calculator-explainer',
-    summary:
+    quickLook:
       'How to compare the long-term cost of temporary and permanent carbon removal',
   }
 

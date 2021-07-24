@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Climate-driven risks to forest carbon",
+    "tags": ["publication"],
+    "summary": "Team members contributed to a review paper on physical risks to forest carbon, like fire, drought, and insects, and why that matters for thinking about the role of forests in climate change mitigation.",
+    "date": "06-23-2020",
+    "version": "1.0.0",
+    "color": "green",
+    "icon": "article-002/forest-small",
+    "links": [
+      {
+        "label": "Read paper",
+        "href": "https://doi.org/10.1126/science.aaz7005"
+      },
+      {
+        "label": "Press coverage",
+        "href": "https://www.rollingstone.com/politics/politics-features/tree-planting-wont-stop-climate-crisis-1020500/"
+      }
+    ]
+  },
+  {
+    "title": "Letter to Taskforce on Scaling Voluntary Carbon Markets",
+    "tags": ["comment"],
+    "summary": "A coordinated effort to standardize and scale today's voluntary offsets market is underway. We submitted a joint letter with Carbon Direct and the Berkeley Carbon Trading Project detailing how the Taskforce is ignoring the problem of poor quality rampant in today's market. That problem needs to be addressed first.",
+    "date": "01-05-2021",
+    "version": "1.0.0",
+    "color": "yellow",
+    "icon": "shared/typewriter-yellow",
+    "links": [
+      {
+        "label": "Read comment letter",
+        "href": "https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf"
+      },
+      {
+        "label": "Taskforce website",
+        "href": "https://www.iif.com/tsvcm"
+      },
+      {
+        "label": "Press coverage",
+        "href": "https://www.ft.com/content/de5e8631-bdf2-4c2e-8b7f-83c0c80cdea8"
+      }
+    ]
+  },
+  {
+    "title": "CDR Primer",
+    "tags": ["publication"],
+    "summary": "A new resource on the fundamentals of carbon dioxide removal and its role in addressing the climate crisis. Our team helped write, edit, and produce this free, online digital book.",
+    "date": "01-14-2021",
+    "version": "1.0.0",
+    "icon": "shared/cdr-primer",
+    "color": "teal",
+    "links": [
+      {
+        "label": "Read the Primer",
+        "href": "https://cdrprimer.org"
+      }
+    ]
+  }
+]

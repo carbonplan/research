@@ -1,7 +1,6 @@
 import { Link } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import Links from '../../components/links'
-import Article from '../../components/article'
 import FigureCaption from '../../components/figure-caption'
 import Endnote from '../../components/endnote'
 import Inline from '../../components/inline'
@@ -11,7 +10,6 @@ import SectionBreak from '../../components/section-break'
 import BoundaryCondition from './components/boundary-condition'
 import ParameterScenario from './components/parameter-scenario'
 import CostSummary from './components/cost-summary'
-import references from './references'
 
 export const meta = {
   id: 'dac-calculator-explainer',
@@ -25,26 +23,31 @@ export const meta = {
     'Jeremy Freeman',
   ],
   title: 'The cost of direct air capture',
+  indexTitle: 'DAC cost calculator',
   date: '02-01-2021',
   background: 'article-006/wind',
   card: 'dac-calculator-explainer',
-  summary:
+  quickLook:
     'How the cost of direct air capture varies under different energy scenarios',
+  tags: ['article', 'tool'],
+  summary:
+    'Our interactive tool helps explore the cost of direct air capture (DAC) coupled to stand alone energy sources. Try the tool, or read the article to learn more about the model.',
+  icon: 'article-006/wind-small',
+  links: [
+    {
+      label: 'Use calculator',
+      href: '/research/dac-calculator',
+    },
+    {
+      label: 'Read paper',
+      href: 'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract',
+    },
+  ],
 }
 
 # The cost of direct air capture
 
-<Links
-  color='purple'
-  data={[
-    { label: 'Use the calculator', href: '/research/dac-calculator' },
-    {
-      label: 'Read the paper',
-      href:
-        'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract',
-    },
-  ]}
-/>
+<Links color='purple' data={meta.links} />
 
 Direct air capture (DAC) is a technology that removes carbon dioxide (CO₂) from the air using chemicals. There are several types. Solid sorbent and liquid solvent DAC are in use today. Others are emerging, such as electro-swing, humidity-swing, and mineralization-based.
 
@@ -217,9 +220,3 @@ N McQueen, J Wilcox, J Hamman, J Freeman (2021) “The cost of direct air captur
 CarbonPlan received no specific financial support for this work. Noah McQueen is a Ph.D. Student at the University of Pennsylvania and Jennifer Wilcox is a Professor at the University of Pennsylvania.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

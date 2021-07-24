@@ -21,7 +21,7 @@ export const meta = {
     'William R L Anderegg',
     'Danny Cullenward',
   ],
-  summary: 'FAQ for our article Systematic over-crediting of forest offsets',
+  quickLook: 'FAQ for our article Systematic over-crediting of forest offsets',
 }
 
 # FAQ

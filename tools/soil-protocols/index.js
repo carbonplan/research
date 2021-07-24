@@ -9,13 +9,13 @@ const Index = () => {
     title: 'Soil carbon protocols',
     color: 'orange',
     card: 'soil-protocols',
-    summary: 'A comparison of protocols that credit soil carbon.',
+    quickLook: 'A comparison of protocols that credit soil carbon.',
   }
 
   const description = (
     <span>
       Several emerging standards and markets sell credits for soil carbon
-      sequestration. We sytematically{' '}
+      sequestration. We systematically{' '}
       <Link href='/research/soil-protocols-explainer'>analyzed them</Link>. This
       interactive table lets you explore protocols, metrics, and our evaluation.
       Consider it a buyer's guide to soil carbon offsets.

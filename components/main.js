@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { Box, Link, Divider } from 'theme-ui'
 import { Row, Column, Tray, Filter } from '@carbonplan/components'
 import List from './list'
@@ -77,9 +77,20 @@ const tools = [
   },
 ]
 
-const Main = ({ expanded }) => {
+const Main = ({ expanded, contents }) => {
   const [category, setCategory] = useState(initCategory)
   const [year, setYear] = useState(initYear)
+
+  const items = useMemo(
+    () =>
+      contents.filter(
+        (d) =>
+          d.tags.some((t) => category[t]) &&
+          year[new Date(d.date.replace(/-/g, '/')).getFullYear()]
+      ),
+
+    [category, year]
+  )
 
   const FilterContents = () => {
     return (
@@ -204,7 +215,7 @@ const Main = ({ expanded }) => {
           width={[6, 7, 7, 7]}
           sx={{ mt: ['-3px', '0px', '-1px', '0px'] }}
         >
-          <List category={category} year={year} />
+          <List items={items} />
         </Column>
       </Row>
     </Box>

@@ -1,5 +1,4 @@
 import { CheckCircle } from '@carbonplan/icons'
-import Article from '../../components/article'
 import Links from '../../components/links'
 import PullQuote from '../../components/pull-quote'
 import Endnote from '../../components/endnote'
@@ -25,18 +24,25 @@ export const meta = {
     'Jeremy Freeman',
   ],
   color: 'secondary',
-  summary:
+  quickLook:
     "Project reports and lessons learned from analyzing proposals for Microsoft's 2021 Carbon Removal procurement",
   background: 'article-007/sign',
   card: 'microsoft-2021-insights',
+  tags: ['article', 'dataset'],
+  summary:
+    "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
+  icon: 'article-007/sign-small',
+  links: [
+    {
+      label: 'Explore database',
+      href: '/research/cdr-database',
+    },
+  ],
 }
 
 # Insights from analyzing a new round of carbon removal projects
 
-<Links
-  color='secondary'
-  data={[{ label: 'Browse the database', href: '/research/cdr-database' }]}
-/>
+<Links color='secondary' data={meta.links} />
 
 CarbonPlan analyzes carbon removal projects and programs because we believe these activities will play an important role in addressing the climate crisis. In 2020, we began building a publicly accessible [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal project reports. The purpose of this database is to help engender a culture of openness, transparency, and accountability for those participating in the field of carbon removal.
 
@@ -195,5 +201,3 @@ F Chay, D Cullenward, J Hamman, J Freeman (2021) “Insights from analyzing a ne
 CarbonPlan received no specific financial support for this work, although Microsoft is supporting CarbonPlan’s research on [other topics](https://carbonplan.org/funding). Microsoft provided CarbonPlan with early access to now-public proposals for the purpose of this analysis. CarbonPlan received no access to information about projects beyond what Microsoft has made publicly available. Microsoft did not exercise any control over this work, nor did they use this information in their decision making. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not represent the views of Microsoft or any other other organizations.
 
 </Endnote>
-
-export default ({ children }) => <Article meta={meta}>{children}</Article>

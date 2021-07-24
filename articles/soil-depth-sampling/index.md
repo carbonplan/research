@@ -1,4 +1,3 @@
-import Article from '../../components/article'
 import PullQuote from '../../components/pull-quote'
 import SectionBreak from '../../components/section-break'
 import Endnote from '../../components/endnote'
@@ -9,7 +8,6 @@ import CiteGroup from '../../components/cite-group'
 import Depth from './components/depth'
 import Density from './components/density'
 import Country from './components/country'
-import references from './references'
 
 export const meta = {
   id: 'soil-depth-sampling',
@@ -27,8 +25,12 @@ export const meta = {
   color: 'orange',
   card: 'soil-depth-sampling',
   background: 'article-011/tillage',
-  summary:
+  quickLook:
     'Why depth is important for soil carbon sampling, and how to avoid key mistakes.',
+  tags: ['article'],
+  summary:
+    'Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls.',
+  icon: 'article-011/tillage-small',
 }
 
 # Depth matters for soil carbon accounting
@@ -173,9 +175,3 @@ CarbonPlan and the authors are solely responsible for the content of this writeu
 Reference herein to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not necessarily constitute or imply its endorsement, recommendation, or favoring by the U.S. government or the Lawrence Livermore National Security, LLC. The views and opinions of authors expressed herein do not necessarily state or reflect those of the U.S. government or the Lawrence Livermore National Security, LLC, and shall not be used for advertising or product endorsement purposes.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

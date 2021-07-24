@@ -1,4 +1,3 @@
-import Article from '../../components/article'
 import FigureCaption from '../../components/figure-caption'
 import Inline from '../../components/inline'
 import Cite from '../../components/cite'
@@ -8,7 +7,6 @@ import Endnote from '../../components/endnote'
 import Closing from '../../components/closing'
 import FireMap from './components/fire-map'
 import RiskScenarios from './components/risk-scenarios'
-import references from './references'
 
 export const meta = {
   id: 'offset-project-fire',
@@ -28,9 +26,19 @@ export const meta = {
   date: '09-17-2020',
   card: 'offset-project-fire',
   background: 'article-004/forest',
-  summary:
+  quickLook:
     'A major fire in Oregon illustrates the challenges of managing forest carbon permanence',
   quotes: [],
+  tags: ['article'],
+  summary:
+    'Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.',
+  icon: 'article-004/forest-small',
+  links: [
+    {
+      label: 'Press coverage',
+      href: 'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
+    },
+  ],
 }
 
 # Carbon offsets burning
@@ -140,9 +148,3 @@ CarbonPlan received no specific financial support for this work.
 [Claudia Herbert](https://nature.berkeley.edu/stephenslab/lab-members/claudia-herbert/) and [Jared Stapp](https://ourenvironment.berkeley.edu/people/jared-r-stapp) are PhD students at UC Berkeley, [Grayson Badgley](https://www.gbadgley.com/) is a postdoctoral scientist at the Black Rock Forest Consortium and Columbia University, and [William R.L. Anderegg](https://faculty.utah.edu/u6003057-WILLIAM_ANDEREGG/research/index.hml) is a professor at the University of Utah.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

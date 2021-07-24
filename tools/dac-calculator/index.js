@@ -9,7 +9,7 @@ const Index = () => {
     title: 'DAC cost calculator',
     color: 'purple',
     card: 'dac-calculator',
-    summary:
+    quickLook:
       'How the cost of direct air capture varies under different energy scenarios',
   }
 

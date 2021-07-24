@@ -1,4 +1,3 @@
-import Article from '../../components/article'
 import Links from '../../components/links'
 import SectionBreak from '../../components/section-break'
 import PullQuote from '../../components/pull-quote'
@@ -23,16 +22,23 @@ export const meta = {
   date: '05-18-2020',
   card: 'stripe-2020-insights-gray',
   background: 'article-000/road',
-  summary:
+  quickLook:
     'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
+  tags: ['article', 'dataset'],
+  summary:
+    "We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Explore our database of project reports or read the article for our main takeaways and lessons learned.",
+  icon: 'article-000/road-small',
+  links: [
+    {
+      label: 'Explore database',
+      href: '/research/cdr-database',
+    },
+  ],
 }
 
 # Insights from our first project reports
 
-<Links
-  color='secondary'
-  data={[{ label: 'Browse the database', href: '/research/cdr-database' }]}
-/>
+<Links color='secondary' data={meta.links} />
 
 At CarbonPlan we analyze carbon removal projects, programs, and technologies. We believe that carbon removal (or "negative emissions") will play an important role in addressing the climate crisis, and we want to help engender a culture of openness, transparency, and accountability. Our hope is that sharing data and insights can benefit the field as a whole — to complement the work of the inventors, scientists, entrepreneurs, and activists who are making climate solutions a reality.
 
@@ -189,5 +195,3 @@ D Cullenward, J Hamman, J Freeman (2020) “Insights from our first project repo
 CarbonPlan and Stripe entered into an agreement in which Stripe shared the project proposals it received in response to its 2020 Negative Emissions Purchase in advance of their public release. We provided feedback to Stripe on its program and were compensated by Stripe for our time. Our work was independent and Stripe did not exercise any control over it. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not represent the views of Stripe or any other other organizations.
 
 </Endnote>
-
-export default ({ children }) => <Article meta={meta}>{children}</Article>

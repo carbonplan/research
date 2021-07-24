@@ -1,7 +1,6 @@
 import { Box } from 'theme-ui'
 import { Table } from '@carbonplan/components'
 import Links from '../../components/links'
-import Article from '../../components/article'
 import Endnote from '../../components/endnote'
 import Cite from '../../components/cite'
 import CiteGroup from '../../components/cite-group'
@@ -9,7 +8,6 @@ import SectionBreak from '../../components/section-break'
 import FigureCaption from '../../components/figure-caption'
 import RiskMaps from './components/risk-maps'
 import RiskTrajectories from './components/risk-trajectories'
-import references from './references'
 
 export const meta = {
   id: 'forest-risks-explainer',
@@ -28,24 +26,30 @@ export const meta = {
     'Joseph J. Hamman',
   ],
   color: 'red',
-  summary:
+  quickLook:
     'A detailed look at the disturbance risks to forest carbon under future climate conditions.',
   background: 'article-009/forest-fire-red',
   card: 'forest-risks-explainer',
-}
-
-# Risks to forest carbon in a changing climate
-
-<Links
-  color={meta.color}
-  data={[
+  tags: ['article', 'dataset', 'tool', 'publication'],
+  summary:
+    'Forests in the United States are already at risk from wildfire, drought, and insects, and climate change is making it worse. We combined satellite and ecological data with climate models to project future risks to forest carbon. Along with a preprint, we are releasing open data, open software, and an interactive web map.',
+  version: '1.0.0',
+  icon: 'article-009/forest-fire-small-red',
+  links: [
     {
       label: 'Read preprint',
       href: 'https://doi.org/10.1101/2021.05.11.443688',
     },
-    { label: 'Browse map', href: '/research/forest-risks' },
-  ]}
-/>
+    {
+      label: 'Browse map',
+      href: '/research/forest-risks',
+    },
+  ],
+}
+
+# Risks to forest carbon in a changing climate
+
+<Links color={meta.color} data={meta.links} />
 
 Climate change, with its hotter summers and drier atmosphere, is poised to exacerbate the wildfires, insect outbreaks, and drought conditions that already threaten forests in the United States.<Cite id='seidl.2017'/> We set out to analyze these risks, with the goal of supporting data-driven decisions about the role forests can play in climate policy.
 
@@ -204,9 +208,3 @@ CarbonPlan received a grant from Microsoft AI for Earth to support this work. Mi
 [William R.L. Anderegg](http://www.anderegglab.net/) is a professor at the University of Utah, [Grayson Badgley](https://www.gbadgley.com) is a Postdoctoral Scientist at Black Rock Forest and Columbia University, [Jeffrey A. Hicke](https://webpages.uidaho.edu/~jhicke/) is a professor at the University of Idaho, [John A. Abatzoglou](http://www.climatologylab.org/) is a professor at UC Merced, and [Anna Trugman](http://trugmanlab.geog.ucsb.edu) is a professor at UC Santa Barbara.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

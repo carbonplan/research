@@ -13,17 +13,7 @@ import { mix } from '@theme-ui/color'
 import Icon from './icon'
 
 const Entry = ({ info, first, final }) => {
-  let {
-    title,
-    color,
-    tags,
-    authors,
-    version,
-    date,
-    icon,
-    summary,
-    links,
-  } = info
+  let { indexTitle, title, color, tags, date, icon, summary, links } = info
 
   color = color || 'text'
 
@@ -113,7 +103,7 @@ const Entry = ({ info, first, final }) => {
                 tabIndex='-1'
                 href={links[0].href}
               >
-                {title}
+                {indexTitle || title}
               </Link>
             </Box>
             <Box

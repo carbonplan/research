@@ -4,8 +4,9 @@
   "description": "directory of carbonplan notes, notebooks, primers, data, and models",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development next -p 4000",
-    "build": "next build",
+    "dev": "npm run build-pages && NODE_ENV=development next -p 4000",
+    "build": "npm run build-pages && next build",
+    "build-pages": "node build.js && prettier --write contents.js 'pages/research/!(index).js'",
     "start": "next start",
     "format": "npm run format-js && npm run format-md",
     "format-js": "prettier --write '*.js' '{tools,components,lib,pages,articles}/**/*.js'",
@@ -52,6 +53,8 @@
     "vega-lite": "5.0.0"
   },
   "devDependencies": {
+    "extract-mdx-metadata": "^1.0.0",
+    "glob": "^7.1.7",
     "prettier": "2.3.0"
   }
 }

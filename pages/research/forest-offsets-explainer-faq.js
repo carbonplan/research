@@ -1,3 +1,2 @@
-import FAQ from '../../articles/forest-offsets-explainer/faq.md'
-
-export default FAQ
+import Content from '../../articles/forest-offsets-explainer/faq.md'
+export default Content

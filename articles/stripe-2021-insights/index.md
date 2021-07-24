@@ -1,5 +1,4 @@
 import { CheckCircle } from '@carbonplan/icons'
-import Article from '../../components/article'
 import PullQuote from '../../components/pull-quote'
 import SectionBreak from '../../components/section-break'
 import Endnote from '../../components/endnote'
@@ -26,16 +25,23 @@ export const meta = {
   color: 'secondary',
   card: 'stripe-2021-insights',
   background: 'article-010/curve',
-  summary:
+  quickLook:
     "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement.",
+  tags: ['article', 'dataset'],
+  summary:
+    "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
+  icon: 'article-010/curve-small',
+  links: [
+    {
+      label: 'Explore database',
+      href: '/research/cdr-database',
+    },
+  ],
 }
 
 # New lessons from reviewing carbon removal proposals
 
-<Links
-  color='secondary'
-  data={[{ label: 'Browse the database', href: '/research/cdr-database' }]}
-/>
+<Links color='secondary' data={meta.links} />
 
 CarbonPlan began building a public [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal proposal analyses in 2020. We’ve previously published insights from our analysis of [Stripe’s 2020 purchase](https://carbonplan.org/research/stripe-2020-insights) and [Microsoft’s 2021 purchase](https://carbonplan.org/research/microsoft-2021-insights). We are now updating the database to include an analysis of 23 new proposals submitted in response to [Stripe’s Spring 2021 carbon removal purchase](https://stripe.com/newsroom/news/spring-21-carbon-removal-purchases).
 
@@ -169,5 +175,3 @@ F Chay, J Zelikova, D Cullenward, J Hamman, J Freeman (2021) “New lessons from
 CarbonPlan received [funding from Stripe](https://carbonplan.org/funding) to support the development of the new, open source carbon removal application referenced in this article and used by Stripe for their 2021 carbon removal solicitation. Stripe provided CarbonPlan with early access to now-public proposals for the purpose of this analysis. CarbonPlan received no access to information about projects beyond what Stripe has made publicly available. Stripe did not exercise any control over this work, nor did they use this information in their decision making. CarbonPlan received [funding from ClimateWorks](https://carbonplan.org/funding) to support the analysis of the technological carbon removal proposals. The rest of the work was supported through our unrestricted funding. CarbonPlan is solely responsible for the content of its project reports and this writeup, which do not represent the views of ClimateWorks, Stripe, or any other other organizations.
 
 </Endnote>
-
-export default ({ children }) => <Article meta={meta}>{children}</Article>

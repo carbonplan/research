@@ -1,5 +1,4 @@
 import { Link } from '@carbonplan/components'
-import Article from '../../components/article'
 import PullQuote from '../../components/pull-quote'
 import Cite from '../../components/cite'
 import CiteGroup from '../../components/cite-group'
@@ -12,10 +11,8 @@ import MetricTable from './components/metric-table'
 import RecommendationTable from './components/recommendation-table'
 import ScoreSummary from './components/score-summary'
 import TimelineSummary from './components/timeline-summary'
-import references from './references'
 
 export const meta = {
-  id: 'soil-protocols-explainer',
   number: 12,
   version: '1.0.0',
   date: '07-15-2021',
@@ -29,21 +26,23 @@ export const meta = {
   color: 'orange',
   card: 'soil-protocols-explainer',
   background: 'article-012/crop',
-  summary:
+  quickLook:
     'Lessons learned from a systematic review of 14 protocols for soil carbon offsets.',
-}
-
-# A buyer’s guide to soil carbon offsets
-
-<Links
-  color='orange'
-  data={[
+  summary:
+    'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
+  icon: 'article-012/crop-small',
+  tags: ['article', 'dataset'],
+  links: [
     {
       label: 'Browse protocols',
       href: '/research/soil-protocols',
     },
-  ]}
-/>
+  ],
+}
+
+# A buyer’s guide to soil carbon offsets
+
+<Links color='orange' data={meta.links} />
 
 Voluntary carbon markets are [ramping up efforts](https://grist.org/agriculture/us-carbon-removal-capture-offset-forests-farms-trees-soil/) to credit soil carbon removal, with [federal lawmakers](https://www.politico.com/news/2021/06/24/senate-farmers-carbon-agriculture-496029) and [state regulators](https://ww2.arb.ca.gov/resources/documents/nwl-implementation-draft) eager to follow suit.
 
@@ -207,9 +206,3 @@ J Zelikova, F Chay, J Freeman, D Cullenward (2021) “A buyer’s guide to soil 
 CarbonPlan received [funding from Microsoft](https://carbonplan.org/funding) to support the analysis of these protocols. Microsoft did not exercise any control over this work. CarbonPlan and the authors are solely responsible for the content of the analysis and this writeup, which do not represent the views of any other organizations or individuals.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

@@ -1,7 +1,6 @@
 import { Link } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import Links from '../../components/links'
-import Article from '../../components/article'
 import Cite from '../../components/cite'
 import CiteGroup from '../../components/cite-group'
 import PullQuote from '../../components/pull-quote'
@@ -9,7 +8,6 @@ import Endnote from '../../components/endnote'
 import SectionBreak from '../../components/section-break'
 import Scenario from './components/scenario'
 import Parameters from './components/parameters'
-import references from './references'
 
 export const meta = {
   id: 'permanence-calculator-explainer',
@@ -17,22 +15,32 @@ export const meta = {
   version: '1.0.0',
   color: 'pink',
   title: 'The cost of temporary carbon removal',
+  indexTitle: 'Permanence calculator',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '12-09-2020',
   card: 'permanence-calculator-explainer',
   background: 'article-005/leaf',
-  summary:
+  quickLook:
     'How to compare the long-term cost of temporary and permanent carbon removal',
+  tags: ['tool', 'article'],
+  summary:
+    'Our interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to learn about the methods and implications.',
+  icon: 'article-005/leaf-small',
+  links: [
+    {
+      label: 'Use calculator',
+      href: '/research/permanence-calculator',
+    },
+    {
+      label: 'ClimateWorks post',
+      href: 'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
+    },
+  ],
 }
 
 # The cost of temporary carbon removal
 
-<Links
-  color='pink'
-  data={[
-    { label: 'Use the calculator', href: '/research/permanence-calculator' },
-  ]}
-/>
+<Links color='pink' data={meta.links} />
 
 Carbon removal costs are everywhere in climate discussions — this project costs $10, that one costs $200. Policymakers and corporate planners look to metrics to inform their decisions, and cost per ton of carbon dioxide ($/tCO₂) has become a near-universal unit of measure.
 
@@ -256,9 +264,3 @@ D Cullenward, J Hamman, J Freeman (2020) “The cost of temporary carbon removal
 CarbonPlan received a grant from the ClimateWorks Foundation to support this work. ClimateWorks did not exercise any control over the output. CarbonPlan is solely responsible for the content of this writeup, which does not necessarily reflect the views of ClimateWorks, those who provided feedback, or any other individuals or organizations.
 
 </Endnote>
-
-export default ({ children }) => (
-  <Article references={references} meta={meta}>
-    {children}
-  </Article>
-)

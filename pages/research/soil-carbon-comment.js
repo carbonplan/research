@@ -1,3 +1,11 @@
-import Index from '../../articles/soil-carbon-comment/index.md'
+import Index, { meta } from '../../articles/soil-carbon-comment/index.md'
+import references from '../../articles/soil-carbon-comment/references'
+import Article from '../../components/article'
 
-export default Index
+const Content = () => (
+  <Article references={references} meta={meta}>
+    <Index />
+  </Article>
+)
+
+export default Content

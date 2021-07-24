@@ -37,6 +37,32 @@ npm run dev
 
 and then visit `http://localhost:4000/research` in your browser.
 
+## adding new content
+
+To generate pages for any newly added content, you can start a development version of the site or explicitly run:
+
+```shell
+npm run build-pages
+```
+
+and commit the generated files.
+
+### articles
+
+New articles should be added to `articles/` with the article content exported from `articles/{article-name}/index.md`. From this file, be sure to also export a `meta` object that supports rendering content on the index page.
+
+### tools
+
+Tools should be exported from `tools/{tool-name}/index.js` in order to have pages automatically built for them.
+
+### external content
+
+External content can be added as an entry to `external-contents.json`.
+
+### additional pages
+
+Additional mdx-built pages are automatically generated when added to `articles/{related-article-name}/{additional-page-name}.md`. The route will be prefixed with the related article name.
+
 ## license
 
 All the code in this repository is [MIT](https://choosealicense.com/licenses/mit/) licensed, but we request that you please provide attribution if reusing any of our digital content (graphics, logo, articles, etc.).
