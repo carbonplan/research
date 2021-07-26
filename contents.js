@@ -2,7 +2,7 @@ const contents = [
   {
     id: 'soil-protocols-explainer',
     number: 12,
-    version: '1.0.0',
+    version: '1.1.0',
     date: '07-15-2021',
     title: 'A buyer’s guide to soil carbon offsets',
     authors: [
