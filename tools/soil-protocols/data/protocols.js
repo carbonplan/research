@@ -27,6 +27,10 @@ export const protocols = {
           href: 'https://globalgoals.goldstandard.org/standards/203_V1.2.1_AR_LUF-Activity-Requirements.pdf',
         },
         {
+          name: 'Safeguarding Principles & Requirements v1.2',
+          href: 'https://globalgoals.goldstandard.org/103-par-safeguarding-principles-requirements/',
+        },
+        {
           name: 'VMD0021 Estimation of Stocks in the Soil Carbon Pool v1.0',
           href: 'https://verra.org/wp-content/uploads/2018/03/VMD0021-Estimation-of-Stocks-in-the-Soil-Carbon-Pool-v1.0.pdf), \n[ICRAF Protocol',
         },
@@ -248,16 +252,16 @@ export const protocols = {
         },
       },
       safeguards: {
-        score: 1,
+        score: 3,
         details: {
           landowner_protections: {
-            value: 'No',
-            reference: 'Not described',
+            value: 'Yes',
+            reference: 'Safeguarding Principles & Requirements',
             comment: '',
           },
           community_engagement: {
-            value: 'No',
-            reference: 'Not described',
+            value: 'Yes',
+            reference: 'Safeguarding Principles & Requirements',
             comment: '',
           },
           data_privacy: {
@@ -265,12 +269,21 @@ export const protocols = {
             reference: 'Not described',
             comment: '',
           },
-          notes: 'Protocol does not address any safeguards. ',
-          comments: 'No safeguards are provided or required.',
+          notes:
+            'Protocol has a generally applicable safeguards document. Our initial analysis did not identify this document, and therefore our original score (1/3) failed to account for its contents. We regret the error.',
+          comments:
+            'Protocol safeguards include numerous procedural and substantive standards to address landowner protections and community engagement. These standards are general rather than specific to soil carbon. We were unable to identify any privacy-related protections.',
         },
       },
-      rating: { score: 1 },
+      rating: { score: 2 },
     },
+    revisions: [
+      { date: '07-15-2021', note: 'First release.' },
+      {
+        date: '07-26-2021',
+        note: 'Added a document for review (Safeguarding Principles). Updated the safeguards sub-metrics, safeguards score, and overall rating to reflect the newly included document. Additional details regarding this change can be found at https://carbonplan.org/research/soil-protocols-explainer-gold-standard-response.',
+      },
+    ],
   },
   SOIL002: {
     id: 'SOIL002',
@@ -526,6 +539,7 @@ export const protocols = {
       },
       rating: { score: 1 },
     },
+    revisions: [{ date: '07-15-2021', note: 'First release.' }],
   },
   SOIL003: {
     id: 'SOIL003',
@@ -761,7 +775,7 @@ export const protocols = {
         },
       },
       safeguards: {
-        score: 2,
+        score: 3,
         details: {
           landowner_protections: {
             value: 'Yes',
@@ -788,6 +802,13 @@ export const protocols = {
       },
       rating: { score: 1 },
     },
+    revisions: [
+      { date: '07-15-2021', note: 'First release.' },
+      {
+        date: '07-26-2021',
+        note: 'Corrected safegards score from a 2/3 to a 3/3 to reflect scoring rubric.',
+      },
+    ],
   },
   SOIL004: {
     id: 'SOIL004',
@@ -1049,6 +1070,7 @@ export const protocols = {
       },
       rating: { score: 1 },
     },
+    revisions: [{ date: '07-15-2021', note: 'First release.' }],
   },
   SOIL005: {
     id: 'SOIL005',
@@ -1322,6 +1344,7 @@ export const protocols = {
       },
       rating: { score: 1 },
     },
+    revisions: [{ date: '07-15-2021', note: 'First release.' }],
   },
   SOIL006: {
     id: 'SOIL006',
@@ -1591,6 +1614,7 @@ export const protocols = {
       },
       rating: { score: 1 },
     },
+    revisions: [{ date: '07-15-2021', note: 'First release.' }],
   },
   SOIL007: {
     id: 'SOIL007',
@@ -1833,6 +1857,7 @@ export const protocols = {
       },
       rating: { score: 2 },
     },
+    revisions: [{ date: '07-15-2021', note: 'First release.' }],
   },
   SOIL008: {
     id: 'SOIL008',
@@ -2092,6 +2117,7 @@ export const protocols = {
       },
       rating: { score: 2 },
     },
+    revisions: [{ date: '07-15-2021', note: 'First release.' }],
   },
   SOIL009: {
     id: 'SOIL009',
@@ -2348,6 +2374,7 @@ export const protocols = {
       },
       rating: { score: 1 },
     },
+    revisions: [{ date: '07-15-2021', note: 'First release.' }],
   },
   SOIL010: {
     id: 'SOIL010',
@@ -2599,6 +2626,7 @@ export const protocols = {
       },
       rating: { score: 2 },
     },
+    revisions: [{ date: '07-15-2021', note: 'First release.' }],
   },
   SOIL011: {
     id: 'SOIL011',
@@ -2867,6 +2895,7 @@ export const protocols = {
       },
       rating: { score: 3 },
     },
+    revisions: [{ date: '07-15-2021', note: 'First release.' }],
   },
   SOIL012: {
     id: 'SOIL012',
@@ -3130,6 +3159,7 @@ export const protocols = {
       },
       rating: { score: 1 },
     },
+    revisions: [{ date: '07-15-2021', note: 'First release.' }],
   },
   SOIL013: {
     id: 'SOIL013',
@@ -3386,6 +3416,7 @@ export const protocols = {
       },
       rating: { score: 3 },
     },
+    revisions: [{ date: '07-15-2021', note: 'First release.' }],
   },
   SOIL014: {
     id: 'SOIL014',
@@ -3403,7 +3434,7 @@ export const protocols = {
       status: 'No projects yet',
       projects: 'N/A',
       notes:
-        'Protocol primarily provides methods for quantification of soil carbon sequstration. It was published in 2020. ',
+        'Protocol primarily provides methods for quantification of soil carbon sequestration. It was published in 2020. ',
       comments:
         'Protocol provides a standardized tool to support SDG 15.3.1., as well as any project related to SOC sequestration and the newly launched FAO RECSOIL initiative. While publicly available,  this protocol does not appear to have been incorporated into a credit issuing program. Thus, metrics associated with credit issuance are based on protocol recommendations or appear as N/A. Note that the timeline above does not include an "activity" bar. This protocol does not speak to limits on activity backdating, and since it isn\'t currently part of a full crediting system, we choose not to render an assumption about this eligibility criteria. ',
       timeline: {
@@ -3624,5 +3655,6 @@ export const protocols = {
       },
       rating: { score: 2 },
     },
+    revisions: [{ date: '07-15-2021', note: 'First release.' }],
   },
 }

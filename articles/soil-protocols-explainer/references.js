@@ -35,6 +35,10 @@ export default {
   'additionality.comment': {
     note: 'We note that asking projects for this kind of information is not particularly reliable, as of course projects have the incentive to make an unbalanced case. But that is exactly why protocols are supposed to help filter out the less-credible claims, and therefore why the lack of rigorous standards is a problem.',
   },
+  'safeguards.update': {
+    note: "This section has been modified to reflect a revision we made to our evaluation of Gold Standard's safeguard requirements.",
+    url: '/research/soil-protocols-explainer-gold-standard-response',
+  },
   'crediting.example': {
     note: 'For example, if only 80% of the climate benefits achieved by the project are from carbon removal, then a buyer who wants to make a carbon removal claim might consider purchasing 1.25 credits for every ton of carbon removal the buyer seeks to claim.',
   },

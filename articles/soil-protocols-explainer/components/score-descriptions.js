@@ -5,7 +5,7 @@ export const scoreDescriptions = {
     3: 'Protocol uses empirical crediting based directly on soil sampling and overall quality of both sampling and modeling is as high as possible.',
   },
   additionality: {
-    1: 'No additionality test or a transparently cynical and ineffective test that is designed to create the appearance of a robust additionality screen.',
+    1: 'No additionality test, or an ineffective additionality test, or a transparently cynical test that is designed to create the appearance of a robust additionality screen.',
     2: 'A project-level or programmatic additionality test that is not adequately grounded in real-world data about the existing adoption of all creditable agricultural practices, and/or is implemented at a level of geographic resolution that masks real-world market trends.',
     3: 'A rigorous project-level or programmatic additionality test that takes into account real data about the existing adoption of all creditable agricultural practices at a level of geographic resolution that accurately reflects real-world market trends.',
   },
