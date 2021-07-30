@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Box, Link, Divider } from 'theme-ui'
-import { Row, Column, Tray, Filter } from '@carbonplan/components'
+import { Row, Column, Tray, Group, Filter } from '@carbonplan/components'
 import List from './list'
 import Heading from './heading'
 import {
@@ -94,12 +94,20 @@ const Main = ({ expanded, contents }) => {
 
   const FilterContents = () => {
     return (
-      <Filter
-        filters={{ category: category, year: year }}
-        setFilters={{ category: setCategory, year: setYear }}
-        filterLabels={{ category: 'Category', year: 'Year' }}
-        filterList={['year', 'category']}
-      />
+      <Group spacing='md'>
+        <Filter
+          values={year}
+          setValues={setYear}
+          label='Filter by year'
+          showAll
+        />
+        <Filter
+          values={category}
+          setValues={setCategory}
+          label='Filter by category'
+          showAll
+        />
+      </Group>
     )
   }
 
