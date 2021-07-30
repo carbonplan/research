@@ -28,7 +28,7 @@ const contents = [
   {
     id: 'soil-depth-sampling',
     number: 11,
-    version: '1.0.0',
+    version: '1.0.1',
     date: '06-17-2021',
     title: 'Depth matters for soil carbon accounting',
     authors: [
