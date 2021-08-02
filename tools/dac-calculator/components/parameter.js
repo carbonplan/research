@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { Box } from 'theme-ui'
 import { Input, Row, Column, Slider } from '@carbonplan/components'
 import ParamChart from './charts/param-chart'
@@ -9,12 +9,11 @@ const Parameter = ({ param, data, state }) => {
   const [value, setValue] = state
   const [expanded, setExpanded] = useState(false)
   const [displayValue, setDisplayValue] = useState(value)
-  const inputRef = useRef(null)
 
-  const handleEnter = (e) => {
-    if (e.key == 'Enter') {
-      inputRef.current.blur()
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    updateParamValueFromInput()
   }
 
   const updateParamValueFromInput = () => {
@@ -55,28 +54,29 @@ const Parameter = ({ param, data, state }) => {
               top: ['10%', '10%', param.offset ? param.offset[0] : '54%'],
             }}
           >
-            <Input
-              type='text'
-              size='md'
-              ref={inputRef}
-              sx={{
-                textAlign: 'left',
-                color: 'purple',
-                fontFamily: 'mono',
-                letterSpacing: 'mono',
-                width: '100%',
-                mt: [0, 0, '9px', -1],
-              }}
-              onKeyPress={handleEnter}
-              onChange={updateParamDisplayValue}
-              onBlur={updateParamValueFromInput}
-              value={displayValue}
-            />
-            <ParamDescription
-              param={param}
-              expanded={expanded}
-              setExpanded={setExpanded}
-            />
+            <form onSubmit={handleSubmit}>
+              <Input
+                type='text'
+                size='md'
+                sx={{
+                  textAlign: 'left',
+                  color: 'purple',
+                  fontFamily: 'mono',
+                  letterSpacing: 'mono',
+                  width: '100%',
+                  mt: [0, 0, '9px', -1],
+                }}
+                // onKeyPress={handleEnter}
+                onChange={updateParamDisplayValue}
+                onBlur={updateParamValueFromInput}
+                value={displayValue}
+              />
+              <ParamDescription
+                param={param}
+                expanded={expanded}
+                setExpanded={setExpanded}
+              />
+            </form>
           </Box>
         </Column>
         <Column start={[1, 3]} width={[6, 5, 4, 4]}>
