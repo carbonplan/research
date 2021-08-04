@@ -37,7 +37,7 @@ As we noted in our original post, the fragmented nature of protocol documentatio
 
 As researchers, it is ultimately our responsibility to navigate this complexity, but the fact that it is often difficult to identify the universe of relevant policy documents indicates a broader problem. Complexity makes the diligence process time- and resource-intensive, not simple and clear. That’s a problem in a sector, like soil carbon, where there are documented examples of organizations using complexity to render their true standards opaque. (To be clear, we have no reason to think Gold Standard is doing so.)
 
-## Correction 02 — Score definition
+## Correction 02 — Additionality score definition
 
 Second, Mr. Hewlett describes CarbonPlan’s analysis as concluding that Gold Standard “doesn't require or is ‘transparently cynical’ about additionality.” We presume this is because we gave Gold Standard’s protocol a score of 1 out of 3 possible points for Additionality. Mr. Hewlett’s comments have prompted us to clarify our definition, but not to change the application of that definition nor the score Gold Standard received.
 
@@ -69,7 +69,7 @@ In our view, the standards for physical sampling under Approach 1 are robust. Th
 
 We have since confirmed with Gold Standard staff that only projects adopting Approach 1 are required to use direct soil sampling to calculate the number of credits earned, with Approaches 2 and 3 relying on model and parameter-based calculations instead. Furthermore, we confirmed that, contrary to Mr. Hewlett’s assertion, Approaches 2 and 3 do _not_ require soil sampling to validate the accuracy of their model- or calculation-based methods. Thus, our original interpretation that the protocol does not require soil sampling either as a basis for crediting or for model validation is correct, and Mr. Hewlett’s public comments are not.
 
-We understand that Gold Standard is considering updates to the validation requirements for Approaches 2 and 3 that are expected early next year and that could require direct soil sampling. Gold Standard has also indicated that it has “reviewed and rejected” some model-based project proposals, and thus applies higher minimum standards than what is contained in the protocol itself. Nevertheless, we confirmed that the protocol does not require soil sampling for Approaches 2 and 3, neither as the basis for crediting or to validate model-based calculations — exactly as we indicated in our original analysis.
+We understand that Gold Standard is considering updates to the validation requirements for Approaches 2 and 3 that are expected early next year and that could require direct soil sampling. Gold Standard has also indicated that it has “reviewed and rejected” some model-based project proposals, and thus applies higher minimum standards than what is contained in the protocol itself. Nevertheless, we confirmed that the protocol does not require soil sampling for Approaches 2 and 3, neither as the basis for crediting nor to validate model-based calculations — exactly as we indicated in our original analysis.
 
 ## Why we conducted a “desk evaluation” of protocols
 
