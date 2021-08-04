@@ -164,7 +164,7 @@ Our safeguards metric looks at the adequacy of protocol requirements to protect 
 
 <ScoreSummary id='safeguards' />
 
-Only two of the protocols reviewed (Gold Standard and Plan Vivo) included requirements around landowner protections, data privacy, or community engagement. Most are simply silent. In a couple of cases, protocols gesture towards these issues with recommendations or plans for future engagement, but these provisions are far from robust and lack specificity.<Cite id='safeguards.update'/>
+Only two of the protocols reviewed (Gold Standard and Plan Vivo) included requirements around landowner protections, data privacy, or community engagement.<Cite id='safeguards.update'/> Most are simply silent. In a couple of cases, protocols gesture towards these issues with recommendations or plans for future engagement, but these provisions are far from robust and lack specificity.
 
 As researchers without deep expertise in social and local environmental safeguards, we hesitate to say what should be required or how to ensure that standards deliver more than a box-checking exercise. Nevertheless, the common absence of even superficial standards was notable in a sector where land use decisions can have profound impacts on communities and local environments.
 
