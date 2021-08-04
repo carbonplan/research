@@ -4,7 +4,7 @@ import Supplement from '../../components/supplement'
 
 export const meta = {
   id: 'soil-protocols-gold-standard-response',
-  date: '07-26-2021',
+  date: '08-04-2021',
   title: 'gold standard response / a buyer’s guide to soil carbon offsets',
   back: '/research/soil-protocols-explainer',
   color: 'orange',
