@@ -31,12 +31,12 @@ const Article = ({ children, meta }) => {
           start={[1, 1]}
           width={[2]}
           dr={1}
-          sx={{ mb: [-3, '-120px', 0, 0], mt: [3, '91px', '106px', '119px'] }}
+          sx={{ mb: [-2, -4, 0, 0], mt: [3, 4, '109px', '154px'] }}
         >
           <Button
             href={meta.back}
-            size='xs'
             inverted
+            size='xs'
             prefix={<Left />}
             sx={{ ml: ['-2px', '-2px', '-2px', '-2px'] }}
           >
