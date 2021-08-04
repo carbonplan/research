@@ -41,7 +41,7 @@ export const protocols = {
       notes:
         'Protocol presents guidance to quantify GHG emissions from implementing conservation tillage practices. It was published in 2020. ',
       comments:
-        'The Tillage Module must be read alongside four other documents to form a complete picture of this protocol. There is significant optionality in its implementation, which makes interpretation and analysis more difficult. ',
+        'The Tillage Module must be read alongside several other documents to form a complete picture of this protocol. There is significant optionality in its implementation, which makes interpretation and analysis more difficult. ',
       timeline: {
         activity: [-5, 0],
         crediting: [-3, 10],
@@ -124,7 +124,7 @@ export const protocols = {
           notes:
             'Eligible practices include conservation tillage, or any form of minimum or reduced tillage, where residue, mulch, or sod is left on the soil surface to protect soil and conserve moisture. ',
           comments:
-            'Methodology focuses entirely on conservation or reduced tillage and does not apply to the implementation of no-till practices. .',
+            'Methodology focuses entirely on conservation or reduced tillage and does not apply to the implementation of no-till practices.',
         },
       },
       additionality: {
@@ -248,7 +248,7 @@ export const protocols = {
           notes:
             'The primary GHG monitored with all SOC project activities is CO\u2082; CH\u2084 and N\u2082O monitoring is not required. The baseline scenario is defined by the land management practices during 5 years prior to the project start date, default conventional tillage. Three approaches can be used to quantify the baseline and project scenarios: (1) onsite direct measurements, (2) calculations from peer-reviewed publications or models, or (3) application of default factors (IPCC tier 1 or 2, with preference for tier 2).',
           comments:
-            'Protocol allows for purely model-based crediting, but also permits empirical crediting at the discretion of users. Direct sampling is not required, but if sampling is applied, the methodology is robust. If modeling is applied, there is not enough guidance provided to ensure an appropriate modeling approach and the model used does not have to be publicly available. Not all GHG emission sources that may be affected by the project activity are included. This protocol stands out for having robust sampling requirements that are optional, and weak modeling requirements that can be used instead \u2014 potentially leading to either high or low rigor outcomes, depending on project choices. ',
+            'Protocol allows for purely model-based crediting, but also permits empirical crediting at the discretion of users. Direct sampling is not required, but if sampling is applied, the methodology is robust. If modeling is applied, there is not enough guidance provided to ensure an appropriate modeling approach and the model used does not have to be publicly available. Not all GHG emission sources that may be affected by the project activity are included. This protocol stands out for having robust sampling requirements that are optional, and weak modeling requirements that can be used instead \u2014 potentially leading to either high or low rigor outcomes, depending on project choices. (Update: Gold Standard has indicated it is revisiting validation requirements for Approaches 2 and 3, with new rules expected in early 2022 that could require soil sampling.)',
         },
       },
       safeguards: {
@@ -280,8 +280,8 @@ export const protocols = {
     revisions: [
       { date: '07-15-2021', note: 'First release.' },
       {
-        date: '07-26-2021',
-        note: 'Added a document for review (Safeguarding Principles). Updated the safeguards sub-metrics, safeguards score, and overall rating to reflect the newly included document. Additional details regarding this change can be found at https://carbonplan.org/research/soil-protocols-explainer-gold-standard-response.',
+        date: '08-04-2021',
+        note: 'Added a document for review (Safeguarding Principles). Updated the metadata comment, safeguards sub-metrics, safeguards score, and overall rating to reflect the newly included document. Updated rigor comment to reflect planned changes to sampling requirements, per direct correspondence with Gold Standard. Additional details regarding these changes can be found at https://carbonplan.org/research/soil-protocols-explainer-gold-standard-response.',
       },
     ],
   },
@@ -717,7 +717,7 @@ export const protocols = {
             value: 'Estimated',
             reference: 'Implied',
             comment:
-              'Neither the SHAMBA Approved Approach, the SHAMBA Methodology, nor other protocol documents mention bulk density. However, the Roth-C model is used and the inclusion bulk density in order to estimate SOC',
+              'Neither the SHAMBA Approved Approach, the SHAMBA Methodology, nor other protocol documents mention bulk density. However, the Roth-C model is used and the inclusion bulk density in order to estimate SOC.',
           },
           depth: {
             value: '30 cm',
@@ -795,7 +795,7 @@ export const protocols = {
             comment: '',
           },
           notes:
-            'Protocol addresses landowner rights and community engagement, but not data privacy.',
+            'Protocol has a generally applicable safeguards document that addresses landowner rights and community engagement, but not data privacy. Establishing at least two of three safeguard categories leads to a score of 3/3 points for Safeguards. Our initial score (2/3) was incosistent with this rubric. We regret the error.',
           comments:
             'Landowner protections and community engagement are pre-requisite eligibility requirements.',
         },
@@ -805,8 +805,8 @@ export const protocols = {
     revisions: [
       { date: '07-15-2021', note: 'First release.' },
       {
-        date: '07-26-2021',
-        note: 'Corrected safegards score from a 2/3 to a 3/3 to reflect scoring rubric.',
+        date: '08-04-2021',
+        note: 'Corrected safeguards score from a 2/3 to a 3/3 to reflect scoring rubric.',
       },
     ],
   },
@@ -2334,7 +2334,7 @@ export const protocols = {
           },
           sampling_approach: {
             value: 'N/A',
-            reference: 'Not discussed',
+            reference: 'Not described',
             comment: 'No soil sampling is required.',
           },
           model: {
@@ -3469,13 +3469,13 @@ export const protocols = {
           },
           onsite_verification: {
             value: 'None',
-            reference: 'Not discussed',
+            reference: 'Not described',
             comment:
               'See GSOL MRV Protocol, Section 9 for a general discussion of monitoring and verification. The protocol contemplates third-party verification by parties acceptable to FAO, based on a set of documentation requirements. There is no discussion of site visits or sampling verification. ',
           },
           sampling_verification: {
             value: 'None',
-            reference: 'Not discussed',
+            reference: 'Not described',
             comment:
               'See GSOL MRV Protocol, Section 9 for a general discussion of monitoring and verification. The protocol contemplates third-party verification by parties acceptable to FAO, based on a set of documentation requirements. There is no discussion of site visits or sampling verification. ',
           },
@@ -3487,14 +3487,14 @@ export const protocols = {
           },
           permanence: {
             value: 8,
-            reference: 'Not discussed',
+            reference: 'Not described',
             comment:
               'See GSOL MRV Protocol, Section 4.5 for a general discussion of permanence. This protocol is not associated with a crediting scheme, and therefore no formal crediting period or permanence periods are defined. However, protocol does require that the total duration of the project is at least 8 consecutive years to collect enough data to demonstrate soil carbon sequestration compared to a baseline scenario and baseline period. We report this as a lower permanence bound for a crediting scheme using this protocol. Despite the protocol defining the "permanence" concept as the "period of time in which a specific carbon pool is stored," no time dimension is given to the expectation or requirements beyond the 8-year project crediting period necessary to provide sufficient certainty in SOC calculations. ',
           },
           notes:
             'Technically there is no buffer pool, but all projects must take a 5% deduction to account for permanence risks so we record the protocol as having a buffer pool-like feature. No permanence horizon is defined. There is no leakage test. The protocol states that it is expected a minumum of 8 years is needed to demonstrate soil carbon sequestation relative to the baseline scenario. Monitoring and general documentation requirements for verification are provided, but do not indicate any reuqirement for site visits or independent sampling from third-party verifiers. ',
           comments:
-            'In essence, the protocol addresses permanence risks by applying a 5% discount to the nominal number of credits calculated. No permanence horizon is defined and there are not sufficient details to understand what verificaiton processes would be required beyond the nature of documents and reports that are to be verified. ',
+            'In essence, the protocol addresses permanence risks by applying a 5% discount to the nominal number of credits calculated. No permanence horizon is defined and there are not sufficient details to understand what verification processes would be required beyond the nature of documents and reports that are to be verified. ',
         },
       },
       practices: {
@@ -3527,30 +3527,30 @@ export const protocols = {
         details: {
           financial: {
             value: 'None',
-            reference: 'Not discussed',
+            reference: 'Not described',
             comment:
               'See GSOL MRV Protocol, Section 7 for a general discussion of additionality. ',
           },
           performance: {
             value: 'None',
-            reference: 'Not discussed',
+            reference: 'Not described',
             comment:
               'See GSOL MRV Protocol, Section 7 for a general discussion of additionality. ',
           },
           other: {
             value: 'None',
-            reference: 'Not discussed',
+            reference: 'Not described',
             comment:
               'See GSOL MRV Protocol, Section 7 for a general discussion of additionality. ',
           },
           activity_backdating: {
             value: 'N/A',
-            reference: 'Not discussed',
+            reference: 'Not described',
             comment: '',
           },
           crediting_backdating: {
             value: 'N/A',
-            reference: 'Not discussed',
+            reference: 'Not described',
             comment: '',
           },
           notes: 'There is no additionality test used in the protocol. ',
@@ -3655,6 +3655,9 @@ export const protocols = {
       },
       rating: { score: 2 },
     },
-    revisions: [{ date: '07-15-2021', note: 'First release.' }],
+    revisions: [
+      { date: '07-15-2021', note: 'First release.' },
+      { date: '08-04-2021', note: 'Fixed typo.' },
+    ],
   },
 }
