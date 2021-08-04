@@ -2,7 +2,7 @@ const contents = [
   {
     id: 'soil-protocols-explainer',
     number: 12,
-    version: '1.0.0',
+    version: '1.1.0',
     date: '07-15-2021',
     title: 'A buyer’s guide to soil carbon offsets',
     authors: [
@@ -15,7 +15,7 @@ const contents = [
     card: 'soil-protocols-explainer',
     background: 'article-012/crop',
     quickLook:
-      'Lessons learned from a systematic review of 14 protocols for soil carbon offsets.',
+      'Lessons learned from a systematic review of 14 protocols for soil carbon offsets',
     summary:
       'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
     icon: 'article-012/crop-small',
@@ -23,6 +23,10 @@ const contents = [
     links: [
       { label: 'Read article', href: '/research/soil-protocols-explainer' },
       { label: 'Browse protocols', href: '/research/soil-protocols' },
+      {
+        label: 'Response to Gold Standard',
+        href: '/research/soil-protocols-explainer-gold-standard-response',
+      },
     ],
   },
   {

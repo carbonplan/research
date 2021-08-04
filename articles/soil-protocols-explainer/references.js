@@ -35,6 +35,25 @@ export default {
   'additionality.comment': {
     note: 'We note that asking projects for this kind of information is not particularly reliable, as of course projects have the incentive to make an unbalanced case. But that is exactly why protocols are supposed to help filter out the less-credible claims, and therefore why the lack of rigorous standards is a problem.',
   },
+  'safeguards.update': {
+    note: (
+      <span>
+        Our original analysis failed to identify a registry-wide Gold Standard
+        safeguards policy, as explained further{' '}
+        <Link
+          sx={{ color: 'orange', '&:hover': { color: 'text' } }}
+          href='/research/soil-protocols-explainer-gold-standard-response'
+        >
+          here
+        </Link>
+        . As a result, we assigned a score of 1/3 to Gold Standard. After
+        reviewing the document we missed, we assigned a score of 3/3 to Gold
+        Standard. In addition, although we had correctly identified the
+        components of Plan Vivo's safeguards, we assigned a score of 2/3 instead
+        of the 3/3 our rubric required. We regret both errors.
+      </span>
+    ),
+  },
   'crediting.example': {
     note: 'For example, if only 80% of the climate benefits achieved by the project are from carbon removal, then a buyer who wants to make a carbon removal claim might consider purchasing 1.25 credits for every ton of carbon removal the buyer seeks to claim.',
   },

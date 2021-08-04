@@ -14,7 +14,7 @@ import TimelineSummary from './components/timeline-summary'
 
 export const meta = {
   number: 12,
-  version: '1.0.0',
+  version: '1.1.0',
   date: '07-15-2021',
   title: 'A buyer’s guide to soil carbon offsets',
   authors: [
@@ -27,7 +27,7 @@ export const meta = {
   card: 'soil-protocols-explainer',
   background: 'article-012/crop',
   quickLook:
-    'Lessons learned from a systematic review of 14 protocols for soil carbon offsets.',
+    'Lessons learned from a systematic review of 14 protocols for soil carbon offsets',
   summary:
     'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
   icon: 'article-012/crop-small',
@@ -36,6 +36,10 @@ export const meta = {
     {
       label: 'Browse protocols',
       href: '/research/soil-protocols',
+    },
+    {
+      label: 'Response to Gold Standard',
+      href: '/research/soil-protocols-explainer-gold-standard-response',
     },
   ],
 }
@@ -160,9 +164,9 @@ Our safeguards metric looks at the adequacy of protocol requirements to protect 
 
 <ScoreSummary id='safeguards' />
 
-With only one partial exception, no protocols include strong requirements around landowner protections, data privacy, or community engagement. Most are simply silent. In a couple of cases, protocols gesture towards these issues with recommendations or plans for future engagement, but these provisions are far from robust and lack specificity.
+Only two of the protocols reviewed (Gold Standard and Plan Vivo) included requirements around landowner protections, data privacy, or community engagement.<Cite id='safeguards.update'/> Most are simply silent. In a couple of cases, protocols gesture towards these issues with recommendations or plans for future engagement, but these provisions are far from robust and lack specificity.
 
-As researchers without deep expertise in social and local environmental safeguards, we hesitate to say what should be required or how to ensure that standards deliver more than a box-checking exercise. Nevertheless, the near-total absence of even superficial standards was notable in a sector where land use decisions can have profound impacts on communities and local environments.
+As researchers without deep expertise in social and local environmental safeguards, we hesitate to say what should be required or how to ensure that standards deliver more than a box-checking exercise. Nevertheless, the common absence of even superficial standards was notable in a sector where land use decisions can have profound impacts on communities and local environments.
 
 ## Conclusions
 
