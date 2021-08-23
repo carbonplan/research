@@ -26,7 +26,7 @@
     "@carbonplan/charts": "^2.0.0",
     "@carbonplan/components": "^9.1.0",
     "@carbonplan/icons": "^1.0.0",
-    "@carbonplan/theme": "^6.0.1",
+    "@carbonplan/theme": "^7.0.0-alpha.0",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.2.3",
     "@theme-ui/color": "^0.10.0",
