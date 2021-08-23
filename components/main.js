@@ -166,12 +166,6 @@ const Main = ({ expanded, contents }) => {
                     opacity: 1,
                     position: 'relative',
                     width: '100%',
-                    height: [
-                      '150px',
-                      '150px',
-                      '125px',
-                      'max(calc((2 * (100vw - 48px * 13) / 12 + 48px) * 2 / 3), 150px)',
-                    ],
                     transition: 'opacity 0.15s',
                   }}
                 >
