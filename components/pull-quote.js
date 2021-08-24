@@ -14,13 +14,13 @@ const PullQuote = ({ color, children }) => {
           '0px',
           '0px',
           'calc(7 * 100vw / 12 - 20px)',
-          'min(calc(7 * 100vw / 12 - 28px), 1092px)',
+          'calc(7 * 100vw / 12 - 28px)',
         ],
         width: [
           '100%',
           '100%',
           'calc(2 * 100vw / 12 - 34px)',
-          'min(calc(2 * 100vw / 12 - 54px), 272px)',
+          'calc(2 * 100vw / 12 - 54px)',
         ],
         display: ['none', 'none', 'initial'],
       }}

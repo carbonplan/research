@@ -62,12 +62,17 @@ const Cite = ({ id, data, hide = false }) => {
         sx={{
           float: ['none', 'none', 'right', 'right'],
           clear: ['none', 'none', 'right', 'right'],
-          mr: [0, 0, 'calc(-24.5vw)', 'max(calc(-24.3vw), -468px)'],
+          mr: [
+            0,
+            0,
+            'calc(-1 * (3 * (100vw - 32px * 13) / 12 + 32px * 3))',
+            'calc(-1 * (3 * (100vw - 48px * 13) / 12 + 48px * 3))',
+          ],
           width: [
             'calc(4 * 100vw / 6 - 30px)',
             'calc(4 * 100vw / 8 - 42px)',
-            '30.3%',
-            '29.6%',
+            'calc(2 * (100vw - 32px * 13) / 12 + 32px)',
+            'calc(2 * (100vw - 48px * 13) / 12 + 48px)',
           ],
           ml: [0, 'calc(1 * 100vw / 8)', 0, 0],
           mt: [3, 3, 0, 0],
