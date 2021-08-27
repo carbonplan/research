@@ -43,7 +43,7 @@ const Entry = ({ info, first, final }) => {
             sx={{ display: ['initial', 'none', 'none', 'none'] }}
           >
             {icon && (
-              <Link href={links[0].href}>
+              <Link href={links[0].href} tracking>
                 <Icon icon={icon} color={color} />
               </Link>
             )}
@@ -102,6 +102,7 @@ const Entry = ({ info, first, final }) => {
                 }}
                 tabIndex='-1'
                 href={links[0].href}
+                tracking
               >
                 {indexTitle || title}
               </Link>
@@ -170,7 +171,7 @@ const Entry = ({ info, first, final }) => {
                 ))}
             </Box>
             {icon && (
-              <Link tabIndex='-1' href={links[0].href}>
+              <Link tabIndex='-1' href={links[0].href} tracking>
                 <Icon icon={icon} color={color} />
               </Link>
             )}
@@ -204,6 +205,7 @@ function LinkGroup({ links }) {
           mr: [4, 4, 4, 5],
         }}
         suffix={<RotatingArrow />}
+        tracking
       >
         {link.label}
       </Button>
