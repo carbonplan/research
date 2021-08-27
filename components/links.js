@@ -20,6 +20,7 @@ const Links = ({ data, color }) => {
               mb: [1, 0, 0, 0],
             }}
             suffix={<RotatingArrow />}
+            tracking
           >
             {d.label}
           </Button>
