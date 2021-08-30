@@ -1105,12 +1105,12 @@ export const protocols = {
         },
       ],
       parties: ['Winrock International'],
-      status: 'No projects yet',
+      status: 'Inactive',
       projects: 'N/A',
       notes:
-        'Protocol provides credits changes to SOC and emissions as a result of grazing and land management practices. It was published in 2014. ',
+        'Protocol credits changes to SOC and emissions as a result of grazing and land management practices. It was published in 2014 and is now inactive. No projects were credited under this protocol during its active period. ',
       comments:
-        'The overall quantification approaches and rigor depend on the location (in or outside the US) and size of the project. Small projects rely on default factors while larger projects include more complex modeling approaches. The significant optionality in its implementation makes interpretation and analysis more difficult. ',
+        'Following publication of this analysis, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. The overall quantification approaches and rigor depend on the location (in or outside the US) and size of the project. Small projects rely on default factors while larger projects include more complex modeling approaches. The significant optionality in its implementation makes interpretation and analysis more difficult. ',
       timeline: {
         activity: [-3, 0],
         crediting: [-3, 40],
@@ -1173,7 +1173,7 @@ export const protocols = {
           notes:
             "Buffer pool contribution can come from the current project, from any other vintage held by the ACR registry, or a combination of the two. All buffer contributions, deductibles, and ACR offset credit (ERT) replacements (in the case of intentional reversals) may be made in ERTs of any type and vintage or another insurance product may be proposed as a risk mitigation mechanism at ACR's discretion. Verification requires a site visit to verify practices. Crediting Periods may be renewed without limitation, with re-assessment of the project baseline every 40 years. Monitoring by periodic (10 year) analyses of soil samples for model validation is required.",
           comments:
-            'The contribution of ACR offset credits (ERTs) of any vintage or project means buffer contributions can be made with old or poor quality ERTs that are not selling on the market, not meaningfully addressing risk associated with the specific project. Projects can get credit for positive leakage, but there are no guardrails against double-counting or inaccurate counting. ',
+            'Following publication of this analysis, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. The contribution of ACR offset credits (ERTs) of any vintage or project means buffer contributions can be made with old or poor quality ERTs that are not selling on the market, not meaningfully addressing risk associated with the specific project. Projects can get credit for positive leakage, but there are no guardrails against double-counting or inaccurate counting. ',
         },
       },
       practices: {
@@ -1200,7 +1200,7 @@ export const protocols = {
           notes:
             'Eligible projects must be implemented on a beef or dairy livestock operation. Any grazing and land management project that affects identified GHG sources and pools is eligible under this methodology (e.g. feedlot operations, feed composition, changing intensity of grazing, grassland management, manure management, fertilizer management, or a range of other mitigation practices).',
           comments:
-            'Essentially any project that affects GHG sources and carbon pools is eligible for crediting.  Emission reductions related to livestock feed production may be creditable under this methodology if not claimed by other parties.',
+            'Following publication of this analysis, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. Essentially any project that affects GHG sources and carbon pools is eligible for crediting under this protocol. Emission reductions related to livestock feed production may be creditable under this methodology if not claimed by other parties. ',
         },
       },
       additionality: {
@@ -1239,7 +1239,7 @@ export const protocols = {
           notes:
             'The protocol allows projects to establish additionality by showing that practices have an adoption rate of less than 5% in "reference regions" (for "early adopters"). For projects in the United States, a reference region is an individual state; for other countries, a similar jurisdictional unit of analysis applies. Alternatively, projects can also demonstrate additionality using a combined common practice and barriers test from the general ACR Standard methodology. "Early adopter" projects are allowed to backdate activity and crediting up to 10 years, whereas all other projects can do so for a maxium of 3 years instead.  ',
           comments:
-            'Protocol differs slightly from ACR\'s Compost protocol, which applies the standard ACR additionality tests. ACR\'s grazing protocol creates the additional potential for an "a priori" or "early adopter" additionality finding based on a 5% common practice threshold.',
+            'Following publication of this analysis, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. Protocol differs slightly from ACR\'s Compost protocol, which applies the standard ACR additionality tests. ACR\'s grazing protocol creates the additional potential for an "a priori" or "early adopter" additionality finding based on a 5% common practice threshold. ',
         },
       },
       rigor: {
@@ -1317,7 +1317,7 @@ export const protocols = {
           notes:
             'Baseline scenario can be set based on common practice, historical trends, and scientific literature and is fixed for the duration of the crediting period. The project scenario is estimated, and must be recalculated and reported at the time of verification. Models may be used if they are approved by the methodology and/or the ACR Standard. The specific quantification methodologies applied in the baseline and project scenarios are A-Microscale, A-Smallscale, and A-Biotic, the choice of which is contingent on project size and location (A-Biotic is applicable outside the US). ',
           comments:
-            'SOC crediting is not empirical and relies entirely on modeling. Direct sampling is not required. Where sampling is used, sampling quality varies with the size of the project. Sampling depth is not specified, and other critical soil variables like bulk density or equivalent soil mass are not measured. The modeling approach and rigor varies with the size of the project, but guidance is generally insufficient to ensure an appropriate modeling approach is applied. ',
+            'Following publication of this analysis, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. SOC crediting is not empirical and relies entirely on modeling. Direct sampling is not required. Where sampling is used, sampling quality varies with the size of the project. Sampling depth is not specified, and other critical soil variables like bulk density or equivalent soil mass are not measured. The modeling approach and rigor varies with the size of the project, but guidance is generally insufficient to ensure an appropriate modeling approach is applied. ',
         },
       },
       safeguards: {
@@ -1339,12 +1339,19 @@ export const protocols = {
             comment: '',
           },
           notes: 'Protocol does not address any safeguards. ',
-          comments: 'No safeguards are provided or required.',
+          comments:
+            'Following publication of this analysis, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. No safeguards are provided or required.',
         },
       },
       rating: { score: 1 },
     },
-    revisions: [{ date: '07-15-2021', note: 'First release.' }],
+    revisions: [
+      { date: '07-15-2021', note: 'First release.' },
+      {
+        date: '08-10-2021',
+        note: 'Following publication, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. We updated the protocol status and comments on each metric to reflect protocol inacivity.',
+      },
+    ],
   },
   SOIL006: {
     id: 'SOIL006',
@@ -1376,12 +1383,12 @@ export const protocols = {
         'Marin Carbon Project',
         "UC Berkeley Professor Whendee Silver's Lab",
       ],
-      status: 'No projects yet',
+      status: 'Inactive',
       projects: 'N/A',
       notes:
-        'Protocol accounts for the carbon sequestration and avoided GHG emissions as a result of compost additions to grazed grasslands. It was published in 2014. ',
+        'Protocol accounts for the carbon sequestration and avoided GHG emissions as a result of compost additions to grazed grasslands. It was published in 2014 and is now inactive. No projects were credited under this protocol during its active period. ',
       comments:
-        'The one project ([ACR460](https://acr2.apx.com/mymodule/reg/prjView.asp?id1=460)) using this protocol is cancelled on the registry. ',
+        'Following publication of this analysis, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. The one project ([ACR460](https://acr2.apx.com/mymodule/reg/prjView.asp?id1=460)) using this protocol is cancelled on the registry. ',
       timeline: {
         activity: [-3, 0],
         crediting: [-3, 10],
@@ -1443,7 +1450,7 @@ export const protocols = {
           notes:
             "Buffer pool contribution can come from the current project, from any other vintage held by the ACR registry, or a combination of the two. All buffer contributions, deductibles, and ACR offset credit (ERT) replacements (in the case of intentional reversals) may be made in ERTs of any type and vintage or another insurance product may be proposed as a risk mitigation mechanism at ACR's discretion. Verification requires a site visit to verify practices. Crediting Periods may be renewed without limitation, with re-assessment of the project baseline every 40 years. Monitoring by periodic (10 year) analyses of soil samples for model validation is required.",
           comments:
-            'The contribution of ACR offset credits (ERTs) of any vintage or project means buffer contributions can be made with old or poor quality ERTs that are not selling on the market, not meaningfully addressing risk associated with the specific project. Projects can get credit for positive leakage, but there are no guardrails against double-counting or inaccurate counting. ',
+            'Following publication of this analysis, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. The contribution of ACR offset credits (ERTs) of any vintage or project means buffer contributions can be made with old or poor quality ERTs that are not selling on the market, not meaningfully addressing risk associated with the specific project. Projects can get credit for positive leakage, but there are no guardrails against double-counting or inaccurate counting. ',
         },
       },
       practices: {
@@ -1470,7 +1477,7 @@ export const protocols = {
           notes:
             'The only eligible activity is compost addition to grazing land.',
           comments:
-            'Geographical constraint to United States is implied, not stated.',
+            "Following publication of this analysis, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. Protocol's geographical constraint to United States is implied, not stated.",
         },
       },
       additionality: {
@@ -1508,7 +1515,7 @@ export const protocols = {
           notes:
             'The protocol requires an undefined common practice test and allows a project to select one of three "barrier" tests, one of which is a project-level financial additionality test. As a result, a performance-based common practice additionality test is required and a financial additionality test is optional.',
           comments:
-            'Because the common practice test is not defined in the protocol, its strength is arguably very weak. However, we do not yet see widespread application of compost to grazed grasslands, so the lack of a meaningful common practice test might not be particularly concerning as of this writing. ',
+            'Following publication of this analysis, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity.  Because the common practice test is not defined in the protocol, its strength is arguably very weak. However, we do not yet see widespread application of compost to grazed grasslands, so the lack of a meaningful common practice test might not be particularly concerning as of this writing. ',
         },
       },
       rigor: {
@@ -1587,7 +1594,7 @@ export const protocols = {
           notes:
             'Under the baseline scenario, the model is used to simulate any on-going changes to SOC, including potential continuing loss of SOC. Soil samples and field measurements are required to validate the models. The accounting for GHG is rigorous and includes appropriate accounting for compost sources.',
           comments:
-            'SOC crediting is not empirical and relies entirely on modeling. Direct sampling is required only for model validation. The overall sampling approach is only moderately rigorous and the sampling depth of 20cm is insufficient to capture the full effects of a range of agricultural practices. The flexibility in modeling approaches, coupled with low sampling quality, raises concerns about overall rigor. ',
+            'Following publication of this analysis, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. SOC crediting is not empirical and relies entirely on modeling. Direct sampling is required only for model validation. The overall sampling approach is only moderately rigorous and the sampling depth of 20cm is insufficient to capture the full effects of a range of agricultural practices. The flexibility in modeling approaches, coupled with low sampling quality, raises concerns about overall rigor. ',
         },
       },
       safeguards: {
@@ -1609,12 +1616,19 @@ export const protocols = {
             comment: '',
           },
           notes: 'Protocol does not address any safeguards. ',
-          comments: 'No safeguards are provided or required.',
+          comments:
+            'Following publication of this analysis, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. No safeguards are provided or required.',
         },
       },
       rating: { score: 1 },
     },
-    revisions: [{ date: '07-15-2021', note: 'First release.' }],
+    revisions: [
+      { date: '07-15-2021', note: 'First release.' },
+      {
+        date: '08-10-2021',
+        note: 'Following publication, ACR informed us that they had withdrawn this protocol from active use based on technical concerns about the protocol methods and/or models involved. Although no projects were credited under these standards, we continue to report our results for posterity. We updated the protocol status and comments on each metric to reflect protocol inacivity.',
+      },
+    ],
   },
   SOIL007: {
     id: 'SOIL007',
