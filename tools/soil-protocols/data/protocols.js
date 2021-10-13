@@ -3712,13 +3712,13 @@ export const protocols = {
         },
       ],
       parties: ['CER'],
-      status: 'Project in development',
+      status: 'Projects in development',
       projects:
         "See CER's [Emission Reduction Fund Project Register](http://www.cleanenergyregulator.gov.au/ERF/project-and-contracts-registers/project-register).  ",
       notes:
         'Protocol credits increases to soil carbon from a broad variety of agricultural activities using empirical soil sampling. It was published in 2018. ',
       comments:
-        "Protocol is developed by the Australian Clean Energy Regulator (CER). As of September 2021, there are about 150 projects using this protocol as registered on CER's [Emission Reduction Fund Project Register](http://www.cleanenergyregulator.gov.au/ERF/project-and-contracts-registers/project-register).",
+        "Protocol is developed by the Australian Clean Energy Regulator (CER). As of October 2021, there are about 150 projects using this protocol as registered on CER's [Emission Reduction Fund Project Register](http://www.cleanenergyregulator.gov.au/ERF/project-and-contracts-registers/project-register).",
       timeline: {
         activity: [0, 5],
         crediting: [0, 25],
@@ -3775,7 +3775,7 @@ export const protocols = {
           notes:
             'All projects must take a 5% deduction to account for permanence risks. Projects may elect between a 25-year and 100-year permanence obligation. For projects with a 25-year permanence obligation, a 20% crediting discount is applied. An uncertainty deduction is applied based on the variance of collected soil samples. An additional temporary discount (50%) is applied for projects who are seeking credit after completing a single round of sampling after the baseline sampling. This discounted carbon is earned back as project continues to record soil carbon above the baseline measurements.',
           comments:
-            'Technically there is no buffer pool. Since there is a mandatory risk of reversal deduction, we record the protocol as having a buffer pool-like feature. The protocol addresses durability risks not via a buffer pool with a dynamic management regime, but by explicit discounting of credit issuance. Per the [Carbon Farming Initiative Act](https://www.legislation.gov.au/Details/C2020C00281) (2011) (see Sections 90-91), if there is a reversal, the regulator has the ability to obligate the landowner to manage such that the soil carbon stock returns to previously reported values. Alternatively, a project may make good on a reversal by relinquishing an equivalent number of ACCU credits.',
+            'Technically there is no buffer pool. Since there is a mandatory risk of reversal deduction, we record the protocol as having a buffer pool-like feature. The protocol addresses durability risks not via a buffer pool with a dynamic management regime, but by explicit discounting of credit issuance. Per the [Carbon Farming Initiative Act](https://www.legislation.gov.au/Details/C2020C00281) (2011) (see Sections 90-91 and Section 97), if there is a reversal, the regulator has the ability to obligate the landowner to manage such that the soil carbon stock returns to previously reported values. Alternatively, a project may make good on a reversal by relinquishing an equivalent number of ACCU credits.',
         },
       },
       practices: {
@@ -4043,7 +4043,7 @@ export const protocols = {
           notes:
             'All projects must take a 5% deduction to account for permanence risks. Projects may elect between a 25-year and 100-year permanence obligation. For projects with a 25-year permanence obligation, a 20% crediting discount is applied. ',
           comments:
-            'Technically there is no buffer pool. Since there is a mandatory risk of reversal deduction, we record the protocol as having a buffer pool-like feature. The protocol addresses durability risks not via a buffer pool with a dynamic management regime, but by explicit discounting of credit issuance. Per the [Carbon Farming Initiative Act](https://www.legislation.gov.au/Details/C2020C00281) (2011) (see Sections 90-91), if there is a reversal, the regulator has the ability to obligate the landowner to manage such that the soil carbon stock returns to previously reported values. Alternatively, a project may make good on a reversal by relinquishing an equivalent number of ACCU credits. However, because this protocol does not involve any soil sampling, there is no obvious mechanism by which to observe a reversal that would require these protections.',
+            'Technically there is no buffer pool. Since there is a mandatory risk of reversal deduction, we record the protocol as having a buffer pool-like feature. The protocol addresses durability risks not via a buffer pool with a dynamic management regime, but by explicit discounting of credit issuance. Per the [Carbon Farming Initiative Act](https://www.legislation.gov.au/Details/C2020C00281) (2011) (see Sections 90-91 and Section 97), if there is a reversal, the regulator has the ability to obligate the landowner to manage such that the soil carbon stock returns to previously reported values. Alternatively, a project may make good on a reversal by relinquishing an equivalent number of ACCU credits. However, because this protocol does not involve any soil sampling, there is no obvious mechanism by which to observe a reversal that would require these protections.',
         },
       },
       practices: {
@@ -4105,7 +4105,7 @@ export const protocols = {
           notes:
             'To screen for additionality, protocol relies on the requirement that a project has not begun to be implemented at the point of registration. This newness screen includes a consideration of previous financial or investment decisions that indicate pre-existing comitments to pursue a management practice, but we do not classify this as a financial additionality test as there is no required demonstration of the role of carbon finance in enabling a new management practice. ',
           comments:
-            'While protocol requires and tracks the implementation of a new management practice, protocol may credit changes to soil carbon resulting from a broader suite of ongoing practices. The newness requirement may not screen out practices that would have been implemented in the absence of carbon finance. ',
+            'While the protocol requires and tracks the implementation of a new management practice, the newness requirement may not screen out practices that would have been implemented in the absence of carbon finance. Because this protocol uses default parameters to calculate carbon savings, which provides a strong incentive to developers to preferentially select profitable locations for development, it may be particularly vulnerable to adverse selection outcomes. ',
         },
       },
       rigor: {
@@ -4246,7 +4246,7 @@ export const protocols = {
       notes:
         'Protocol credits increases to soil carbon and decreases to fuel use through no-till management. It was published in 2012 and replaced the 2009 Quantification Protocol for Tillage System Management.',
       comments:
-        'Protocol has been withdrawn after a [finding](https://www.alberta.ca/assets/documents/aeos-memo-withdrawal-quantification-protocol-conservation-cropping.pdf) that the credited activities are no longer considered additional. Existing projects may be credited through the end of 2021, but no new projects may be developed under it. 47 projects have been developed under the Conservation Cropping protocol according to listings on the [Alberta Emissions Offset Registry](https://alberta.csaregistries.ca/GHGR_Listing/AEOR_Listing.aspx). An additional [75 projects](https://alberta.csaregistries.ca/GHGR_Listing/AEOR_Listing.aspx) were developed under the preceding Tillage System Management protocol.',
+        'Protocol has been withdrawn after a [finding](https://www.alberta.ca/assets/documents/aeos-memo-withdrawal-quantification-protocol-conservation-cropping.pdf) that the credited activities no longer pass the applicable additionality tests. Existing projects may be credited through the end of 2021, but no new projects may be developed. 47 projects have been developed under the Conservation Cropping protocol according to listings on the [Alberta Emissions Offset Registry](https://alberta.csaregistries.ca/GHGR_Listing/AEOR_Listing.aspx). An additional [75 projects](https://alberta.csaregistries.ca/GHGR_Listing/AEOR_Listing.aspx) were developed under the preceding Tillage System Management protocol. Note that the timeline above does not include an "crediting" or "permanence" bar. This is because the crediting and permanece periods are defined relative to a programatic end date rather than relative to a project\'s start date. See the durability metric for more details. We render 20 years of activity backdating to indicate that the protocol is agnostic to the timing of activity implementation. ',
       timeline: {
         activity: [-20, 0],
         crediting: [0, 0],
@@ -4306,9 +4306,9 @@ export const protocols = {
               'Protocol pairs a discount factor based on a regional reveral rates (see Quantification Methodology, p.2) with the assertion that resulting credits are permanent. Since no permanence obligation mechanism exists beyond the end of the crediting period, we report the permanence as "N/A." ',
           },
           notes:
-            'Technically there is no buffer pool, but all projects must make a 7.5% or 12.5% deduction to account for permanence risks so we record the protocol as having a buffer pool-like feature. Extensive verification guidance is provided, and verification includes site visits.',
+            'Technically there is no buffer pool. However, all projects must make a 7.5% or 12.5% deduction to account for permanence risks, so we record the protocol as having a buffer pool-like feature. Extensive verification guidance is provided, and verification includes site visits.',
           comments:
-            'In essence, the protocol addresses permanence risks by applying a discount to the nominal number of credits calculated, and uses this to assert credited sequestration is permanent in perpetuity. The crediting period is defined relative to a fixed crediting end date (the end of 2021) rather than being a fixed time period defined relative to a project start date. We thus report crediting period as N/A. Protocol pairs a discount factor based on a regional reveral rates with the assertion that resulting credits are permanent. Since no permanence obligation mechanism exists beyond the end of the crediting period, we also report the permanence period as "N/A."  ',
+            'In essence, the protocol addresses permanence risks by applying a discount to the nominal number of credits calculated, and uses this to assert credited sequestration is permanent in perpetuity. The crediting period is defined relative to a fixed crediting end date (the end of 2021) rather than as a time period defined relative to a project start date. We thus report crediting period as N/A. Since no permanence obligation mechanism exists beyond the end of the crediting period, we also report the permanence period as "N/A." Protocol pairs a discount factor based on a regional reveral rates with the assertion that resulting credits are permanent.  ',
         },
       },
       practices: {
@@ -4331,7 +4331,7 @@ export const protocols = {
             comment: '',
           },
           notes:
-            'Protocol credits soil carbon sequestration, lower nitrous oxide emissions from soils, and emission reductions from farm equipment as a result of no-till management practices. Some projects may be credited for consequences to changes in cropping practices as well.  ',
+            'Protocol credits soil carbon sequestration, lower nitrous oxide emissions from soils, and emission reductions from farm equipment as a result of no-till management practices. Some projects may be credited for changes in cropping practices as well.  ',
           comments: 'None',
         },
       },
@@ -4372,7 +4372,7 @@ export const protocols = {
           notes:
             'Additionality of a credited activity is asessed during protocol development or review rather than on a project-by-project basis. The first step in the assessment of additionality is a common practice test. Activities are deemed additional if their penetration rate is less than 40%. If penetration is greater than 40%, or if penetration rate cannot be asessed, activities may be deemed additional via the demonstration of a financial, technological, or other barrier. As a result, a performance-based common practice additionality test is required, a financial additionality test is optional, and other barrier analysis is optional.',
           comments:
-            'The combination of a relatively high common practice threshold and vague criteria for passing barriers tests makes this a week screen for additionality. The protocol was [withdrawn](https://www.alberta.ca/assets/documents/aeos-memo-withdrawal-quantification-protocol-conservation-cropping.pdf) after the government issued a finding on non-additionality. ',
+            'The combination of a relatively high common practice threshold and vague criteria for passing barriers tests makes this a week screen for additionality. The protocol was [withdrawn](https://www.alberta.ca/assets/documents/aeos-memo-withdrawal-quantification-protocol-conservation-cropping.pdf) after the government issued a finding of non-additionality. ',
         },
       },
       rigor: {
@@ -4442,7 +4442,7 @@ export const protocols = {
             comment: '',
           },
           notes:
-            'Crediting is based on regional sequestration factors. Rather than developing project-specific baselines, regional adoption rates for full, reduced, and no-till activities are converted into a discount factor applied to the sequestration factor used to calculate credits.',
+            'Crediting is based on regional sequestration factors. Rather than developing project-specific baselines, regional adoption rates for full, reduced, and no-till activities are converted into a discount factor applied to the default factor used to calculate credits.',
           comments:
             'SOC crediting is not empirical and relies entirely on calculation from regional default factors. Quantification methodology is subject to deviation requests. ',
         },

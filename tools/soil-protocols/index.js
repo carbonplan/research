@@ -19,7 +19,6 @@ const Index = () => {
       and our evaluation. Read more about our{' '}
       <Link href='/research/soil-protocols-explainer'>initial analysis</Link>{' '}
       and <Link href='/blog/soil-protocols-added'>subsequent additions</Link>.
-      Consider it a buyer's guide to soil carbon offsets.
     </span>
   )
 

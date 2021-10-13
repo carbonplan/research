@@ -50,7 +50,7 @@ const Additionality = ({ data }) => {
           data={data.other}
           field='additionality.other'
           success={data.other.value === 'Required'}
-          label='Barrier analysis'
+          label='Other tests'
         />
       </Group>
       <Break />
