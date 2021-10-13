@@ -13,13 +13,25 @@ import { mix } from '@theme-ui/color'
 import Icon from './icon'
 
 const Entry = ({ info, first, final }) => {
-  let { indexTitle, title, color, tags, date, icon, summary, links } = info
+  let {
+    indexTitle,
+    title,
+    color,
+    tags,
+    date,
+    icon,
+    summary,
+    links,
+    primaryLink,
+  } = info
 
   color = color || 'text'
 
   if (color == 'secondary') {
     color = mix('primary', 'background', 0.6)
   }
+
+  const linkIndex = primaryLink || 0
 
   return (
     <Box sx={{}}>
@@ -43,7 +55,7 @@ const Entry = ({ info, first, final }) => {
             sx={{ display: ['initial', 'none', 'none', 'none'] }}
           >
             {icon && (
-              <Link href={links[0].href} tracking>
+              <Link href={links[linkIndex].href} tracking>
                 <Icon icon={icon} color={color} />
               </Link>
             )}
@@ -101,7 +113,7 @@ const Entry = ({ info, first, final }) => {
                   },
                 }}
                 tabIndex='-1'
-                href={links[0].href}
+                href={links[linkIndex].href}
                 tracking
               >
                 {indexTitle || title}
@@ -171,7 +183,7 @@ const Entry = ({ info, first, final }) => {
                 ))}
             </Box>
             {icon && (
-              <Link tabIndex='-1' href={links[0].href} tracking>
+              <Link tabIndex='-1' href={links[linkIndex].href} tracking>
                 <Icon icon={icon} color={color} />
               </Link>
             )}
