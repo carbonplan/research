@@ -1,6 +1,14 @@
 import { Link } from '@carbonplan/components'
 
 export default {
+  'protocols.added': {
+    note: 'Since the initial release of this article, we have added analysis of three protocols to our database. We describe them in a follow-up blog post.',
+    url: 'https://carbonplan.org/blog/soil-protocols-added',
+  },
+  'figure.update': {
+    note: 'This figure does not include three protocols that now appear in our database. An updated version of this figure can be found in our follow-up blog post.',
+    url: 'https://carbonplan.org/blog/soil-protocols-added',
+  },
   'avoided.comment': {
     note: 'Technically, increases to soil carbon stocks themselves include a mixture of carbon removal and avoiding carbon loss, though the combined effect of these mechanisms is often referred to as carbon removal.',
   },

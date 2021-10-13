@@ -36,6 +36,8 @@ const sx = {
   },
 }
 
+const isNA = (v) => v[0] === 0 && v[1] === 0
+
 const Timeline = ({ data }) => {
   const breakpoint = useBreakpointIndex({ defaultIndex: 0 })
   const hasActivity = data.activity !== 'N/A'
@@ -125,17 +127,19 @@ const Timeline = ({ data }) => {
         </Plot>
         {hasActivity && (
           <Point x={data.activity[0]} y={1}>
-            <Box sx={sx.label}>Activity</Box>
+            <Box sx={sx.label}>Activity{isNA(data.activity) && ' — N/A'}</Box>
           </Point>
         )}
         <Point x={data.crediting[0]} y={2}>
-          <Box sx={sx.label}>Crediting</Box>
+          <Box sx={sx.label}>Crediting{isNA(data.crediting) && ' — N/A'}</Box>
         </Point>
         <Point x={data.permanence[0]} y={3}>
-          <Box sx={sx.label}>Permanence</Box>
+          <Box sx={sx.label}>Permanence{isNA(data.permanence) && ' — N/A'}</Box>
         </Point>
         <Point x={data.verification[0]} y={4}>
-          <Box sx={sx.label}>Verification</Box>
+          <Box sx={sx.label}>
+            Verification{isNA(data.verification) && ' — N/A'}
+          </Box>
         </Point>
       </Chart>
     </Box>
