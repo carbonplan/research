@@ -46,7 +46,7 @@ export const meta = {
       href: '/blog/soil-protocols-added',
     },
   ],
-  primaryLink: 3,
+  primaryLink: 2,
 }
 
 # A buyer’s guide to soil carbon offsets

@@ -31,7 +31,7 @@ const Entry = ({ info, first, final }) => {
     color = mix('primary', 'background', 0.6)
   }
 
-  const linkIndex = primaryLink || 0
+  const linkIndex = primaryLink ? primaryLink + 1 : 0
 
   return (
     <Box sx={{}}>

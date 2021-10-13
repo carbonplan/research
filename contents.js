@@ -29,7 +29,7 @@ const contents = [
       },
       { label: 'Protocol additions', href: '/blog/soil-protocols-added' },
     ],
-    primaryLink: 3,
+    primaryLink: 2,
   },
   {
     id: 'soil-depth-sampling',
