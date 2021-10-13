@@ -3452,7 +3452,7 @@ export const protocols = {
       comments:
         'Protocol provides a standardized tool to support SDG 15.3.1., as well as any project related to SOC sequestration and the newly launched FAO RECSOIL initiative. While publicly available,  this protocol does not appear to have been incorporated into a credit issuing program. Thus, metrics associated with credit issuance are based on protocol recommendations or appear as N/A. Note that the timeline above does not include an "activity" bar. This protocol does not speak to limits on activity backdating, and since it isn\'t currently part of a full crediting system, we choose not to render an assumption about this eligibility criteria. ',
       timeline: {
-        activity: 'N/A',
+        activity: [0, 0],
         crediting: [0, 8],
         registration: [0],
         verification: [0, 2, 4, 6, 8],
@@ -3672,6 +3672,813 @@ export const protocols = {
     revisions: [
       { date: '07-15-2021', note: 'First release.' },
       { date: '08-04-2021', note: 'Fixed typo.' },
+    ],
+  },
+  SOIL015: {
+    id: 'SOIL015',
+    name: 'Australia Measurement',
+    entity: 'CER',
+    details: {
+      protocol:
+        'Measurement of Soil Carbon Sequestration in Agricultural Systems',
+      links: [
+        {
+          name: 'F2018L00089: Carbon Credits Measurement of Soil Carbon Sequestration in Agricultural Systems) Methodology Determination 2018',
+          href: 'https://www.legislation.gov.au/Details/F2018L00089',
+        },
+        {
+          name: 'C2020C00281: Carbon Credits (Carbon Farming Initiative) Act of 2011',
+          href: 'https://www.legislation.gov.au/Details/C2020C00281',
+        },
+        {
+          name: 'F2021C00686: Carbon Credits (Carbon Farming Initiative) Rule 2015',
+          href: 'https://www.legislation.gov.au/Details/F2021C00686',
+        },
+        {
+          name: 'Supplement to the Carbon Credits (Carbon Farming Initiative\u2014Measurement of Soil Carbon Sequestration in Agricultural Systems) Methodology Determination 2018, v1.2',
+          href: 'https://www.industry.gov.au/sites/default/files/2020-07/supplement-soil-carbon-agricultural-systems.pdf',
+        },
+        {
+          name: 'C2019C00253: Clean Energy Regulator Act 2011',
+          href: 'https://www.legislation.gov.au/Details/C2019C00253',
+        },
+        {
+          name: 'F2017C00509: National Greenhouse and Energy Reporting (Audit) Determination 2009',
+          href: 'https://www.legislation.gov.au/Details/F2017C00509',
+        },
+        {
+          name: 'Simple Methodology Guide (2020)',
+          href: 'http://www.cleanenergyregulator.gov.au/DocumentAssets/Documents/Understanding%20your%20soil%20carbon%20-%20Simple%20method%20guide.pdf',
+        },
+      ],
+      parties: ['CER'],
+      status: 'Projects in development',
+      projects:
+        "See CER's [Emission Reduction Fund Project Register](http://www.cleanenergyregulator.gov.au/ERF/project-and-contracts-registers/project-register).  ",
+      notes:
+        'Protocol credits increases to soil carbon from a broad variety of agricultural activities using empirical soil sampling. It was published in 2018. ',
+      comments:
+        "Protocol is developed by the Australian Clean Energy Regulator (CER). As of October 2021, there are about 150 projects using this protocol as registered on CER's [Emission Reduction Fund Project Register](http://www.cleanenergyregulator.gov.au/ERF/project-and-contracts-registers/project-register).",
+      timeline: {
+        activity: [0, 5],
+        crediting: [0, 25],
+        registration: [0],
+        verification: [0, 5, 10, 15, 20, 25],
+        permanence: [0, 25],
+      },
+    },
+    metrics: {
+      durability: {
+        score: 2,
+        details: {
+          buffer_pool: {
+            value: 'Required',
+            reference: 'C2020C00281, Section 16(2)',
+            comment:
+              'Protocol requires a 5% risk of reversal discount to be applied. Projects may choose between a 25 year and 100 year permanence period obligation. If a 25 year permanence period is chosen, a 20% discount is applied in crediting net abatement. ',
+          },
+          leakage_test: {
+            value: 'Required',
+            reference: 'C2020C00281, Section 16(2)',
+            comment:
+              'Protocol requires a 5% risk of reversal discount to be applied. Projects may choose between a 25 year and 100 year permanence period obligation. If a 25 year permanence period is chosen, a 20% discount is applied in crediting net abatement. ',
+          },
+          uncertainty_deduction: {
+            value: 'Required',
+            reference: 'C2020C00281, Section 16(2)',
+            comment:
+              'Protocol requires a 5% risk of reversal discount to be applied. Projects may choose between a 25 year and 100 year permanence period obligation. If a 25 year permanence period is chosen, a 20% discount is applied in crediting net abatement. ',
+          },
+          onsite_verification: {
+            value: 'None',
+            reference: 'Not described',
+            comment:
+              'See C2020C00281 (Sections 13 and 76), F2021C00686 (Part 6, Division 3), and F2017C00509 (Section 3.14(1)) for a general discussion of the audit process. Auditors may but are not required to gather evidence onsite. See this [CER site](http://www.cleanenergyregulator.gov.au/Infohub/Audits/Pages/Forms%20and%20resources/Audit%20determination%20handbook/Audit-requirements-for-programmes-administered-by-the-Clean-Energy-Regulator.aspx#143-Emissions-Reduction-Fund-audits) for a summary description of audit requirements. \n\n[TK: I\'m confused about the relationship between "monitoring powers" / inspections \u2013 see the Act Part 18 \u2013 and auditing requirements. I believe the inspections and audits are separate types of engagements, but I am not clear what exactly would trigger an inspection.]',
+          },
+          sampling_verification: {
+            value: 'None',
+            reference: 'Not described ',
+            comment:
+              'See C2020C00281 (Sections 13 and 76), F2021C00686 (Part 6, Division 3), and F2017C00509 (Section 3.14(1)) for a general discussion of the audit process. Auditors may, but are not required, to gather evidence onsite. See this [CER site](http://www.cleanenergyregulator.gov.au/Infohub/Audits/Pages/Forms%20and%20resources/Audit%20determination%20handbook/Audit-requirements-for-programmes-administered-by-the-Clean-Energy-Regulator.aspx#143-Emissions-Reduction-Fund-audits) for a summary description of audit requirements. \n',
+          },
+          crediting_period: {
+            value: 25,
+            reference: 'C2020C00281, Part 5',
+            comment: 'No crediting period renewals are permitted. ',
+          },
+          permanence: {
+            value: 25,
+            reference: 'C2020C00281, Section 27(3)(e-f)',
+            comment:
+              'Projects may choose between a 25 year and 100 year permanence period obligation. If a 25 year permanence period is chosen, a 20% discount is applied in crediting net abatement. See C2020C00281, Section 16(2).',
+          },
+          notes:
+            'All projects must take a 5% deduction to account for permanence risks. Projects may elect between a 25-year and 100-year permanence obligation. For projects with a 25-year permanence obligation, a 20% crediting discount is applied. An uncertainty deduction is applied based on the variance of collected soil samples. An additional temporary discount (50%) is applied for projects who are seeking credit after completing a single round of sampling after the baseline sampling. This discounted carbon is earned back as project continues to record soil carbon above the baseline measurements.',
+          comments:
+            'Technically there is no buffer pool. Since there is a mandatory risk of reversal deduction, we record the protocol as having a buffer pool-like feature. The protocol addresses durability risks not via a buffer pool with a dynamic management regime, but by explicit discounting of credit issuance. Per the [Carbon Farming Initiative Act](https://www.legislation.gov.au/Details/C2020C00281) (2011) (see Sections 90-91 and Section 97), if there is a reversal, the regulator has the ability to obligate the landowner to manage such that the soil carbon stock returns to previously reported values. Alternatively, a project may make good on a reversal by relinquishing an equivalent number of ACCU credits.',
+        },
+      },
+      practices: {
+        value: { tillage: 1, cropping: 0, inputs: 1, grazing: 1, other: 1 },
+        details: {
+          included: {
+            value: ['Tillage', 'Inputs', 'Grazing', 'Other'],
+            reference: 'F2018L00089, Section 7(2)(a)',
+            comment: '',
+          },
+          geographies: {
+            value: 'Australia ',
+            reference: 'F2018L00089, Section 7(1)(c)',
+            comment: '',
+          },
+          cobenefits: {
+            value: 'None ',
+            reference: 'Not described',
+            comment: '',
+          },
+          notes:
+            'Methodology can be applied in any Australian agricultural system where at least one new eligible practice has been implemented. ',
+          comments:
+            'Projects may also be eligible for crediting under this protocol if the project area was previously determined eligible under the [Sequestering Carbon in Soils in Grazing Systems Methodology](https://www.legislation.gov.au/Details/F2018C00120). The Grazing Systems Methodology was [revoked in 2018](https://www.legislation.gov.au/Details/F2018L01113), and no new projects may be developed under it. ',
+        },
+      },
+      additionality: {
+        score: 2,
+        details: {
+          financial: {
+            value: 'None',
+            reference: 'Not described',
+            comment:
+              'See F2018L00089, Section 21 and C2020C00281, Section 27(4A) for a general discussion of additionality.',
+          },
+          performance: {
+            value: 'None',
+            reference: 'Not described',
+            comment:
+              'See F2018L00089, Section 21 and C2020C00281, Section 27(4A) for a general discussion of additionality.',
+          },
+          other: {
+            value: 'Required ',
+            reference: 'F2018L00089, Section 21; C2020C00281, Section 27(4A)',
+            comment:
+              'Protocol requires projects to comply with the Carbon Credit Act\'s "newness requirement," i.e. that a project has not begun to be implemented at the point of registration. The protocol makes an exception for the preparation of a management strategy before a new management activity actually starts. ',
+          },
+          activity_backdating: {
+            value: 0,
+            reference: 'F2018L00089, Section 10',
+            comment: '',
+          },
+          crediting_backdating: {
+            value: 0,
+            reference: 'F2018L00089, Schedule 1 and Section 16(1)(b)',
+            comment:
+              'Crediting is based on a comparison of soil measurments at two points of time. The baseline measurment may only be performed after project registration. ',
+          },
+          notes:
+            'To screen for additionality, protocol relies on the requirement that a project has not begun to be implemented at the point of registration. This newness screen includes a consideration of previous financial or investment decisions that indicate pre-existing comitments to pursue a management practice, but we do not classify this as a financial additionality test as there is no required demonstration of the role of carbon finance in enabling a new management practice. ',
+          comments:
+            "To be eligible, project must adopt a management activity that is new or materially different than what has been practiced over the previous 10 years. The activity must be implemented after the project is declared eligible to generate offsets and maintained until the end of the project's permanence period. While protocol requires and tracks the implementation of a new management practice, protocol may credit changes to soil carbon resulting from a broader suite of ongoing practices. The newness requirement may not screen out practices that would have been implemented in the absence of carbon finance. ",
+        },
+      },
+      rigor: {
+        score: 3,
+        details: {
+          ghgs: {
+            value: ['CO\u2082', 'CH\u2084', 'N\u2082O'],
+            reference: 'F2018L00089, Section 23',
+            comment: '',
+          },
+          bulk_density: {
+            value: 'Measured ',
+            reference:
+              'F2018L00089, Schedule 1, Section 5; Supplement, Section D.4',
+            comment: '',
+          },
+          depth: {
+            value: '30 cm',
+            reference: 'F2018L00089, Section 19(a); Supplement, Section C.2',
+            comment:
+              'If soil profile is altered (e.g. tilling), sampling depth must be at least 10cm below the depth of the alteration. ',
+          },
+          equivalent_soil_mass: {
+            value: 'Required',
+            reference: 'F2018L00089, Schedule 1, Sections 5 and 6',
+            comment: '',
+          },
+          uncertainty: {
+            value: 'Required',
+            reference: 'F2018L00089, Schedule 1, Division 3',
+            comment: '',
+          },
+          baseline_type: {
+            value: 'Fixed',
+            reference: 'F2018L00089, Schedule 1',
+            comment:
+              'Changes to SOC are calculated by comparing measurement from additional sampling rounds to a fixed baseline determined in the baseline sampling round. ',
+          },
+          baseline_scenario: {
+            value: 'Sampling required',
+            reference: 'F2018L00089, Section 16(1)(b)',
+            comment: '',
+          },
+          project_scenario: {
+            value: 'Sampling required',
+            reference: 'F2018L00089, Section 16(1)(c) and Schedule 1',
+            comment: '',
+          },
+          empirical_crediting: {
+            value: 'Yes',
+            reference: 'F2018L00089, Sections 24-26 and Schedule 1',
+            comment: '',
+          },
+          sampling_approach: {
+            value: 3,
+            reference: 'F2018L00089, Sections 18 and 19; Supplement, Parts A-D',
+            comment:
+              'Stratification and sample randomization are required. Random sampling locations must be reported for sampling is performed, and there is a clear process for communicating if those locations must be modified because of a legitimate obstacle. Protocol outlines clear reporting expections around sampling methodology.',
+          },
+          model: { value: 'N/A', reference: 'Not described', comment: '' },
+          notes:
+            'The protocol is based on empirical sampling at the beginning of the project and at least every 5 years thereafter. Soil sampling requirements are detailed and rigorous.',
+          comments:
+            'SOC crediting is empirical and relies on rigorous direct sampling with stratification and randomized sampling. Eligibility rules specifically protect against the application of ineligible or untracked organic matter. ',
+        },
+      },
+      safeguards: {
+        score: 3,
+        details: {
+          landowner_protections: {
+            value: 'Yes',
+            reference: 'C2020C00281, Section 28A; Simplified Method Guide, p.6',
+            comment:
+              'Projects are required to seek formal consent from all stakeholders who hold an interest in the land.',
+          },
+          community_engagement: {
+            value: 'No',
+            reference: 'Not described',
+            comment: '',
+          },
+          data_privacy: {
+            value: 'Yes',
+            reference: 'C2019C00253, Part 3',
+            comment:
+              "The Clean Energy Regulator is bound by the provisions of the Clean Energy Regulator Act (2011), the Privacy Act, the NGER Act, and otherwise applicable law regarding the disclosure of personal information collected from project participants. See CER's [Disclaimer, disclosure and privacy](http://www.cleanenergyregulator.gov.au/NGER/About-the-National-Greenhouse-and-Energy-Reporting-scheme/Disclaimer-disclosure-and-privacy) page for additional details. The Clean Energy Regulator Act (2011) provides exemptions for disclosures of protected information related to climate policy (Section 44) and specifically for the development of carbon credit methodologies (Section 47(1)(a)).",
+          },
+          notes:
+            'Protocol requires formal consent to the offset project from all stakeholders who hold an interest in the land. The Clean Energy Regulator is subject to clear legislative guidance about the disclosure and privacy of project participant information. ',
+          comments:
+            'Under the [Carbon Farming Initiative Act](https://www.legislation.gov.au/Details/C2020C00281) (Sections 44 and 47), the regulator may disclose or use protected information related to offset projects for the purposes of climate change law or for the development of new methodologies. ',
+        },
+      },
+      rating: { score: 4 },
+    },
+    revisions: [
+      {
+        date: '10-13-2021',
+        note: 'This protocol was added to our analysis after we recieved feedback from various stakeholders that including compliance protocols in the review would be helpful. See [our blog post](http://carbonplan.org/blog/soil-protocols-added) for more detail.',
+      },
+    ],
+  },
+  SOIL016: {
+    id: 'SOIL016',
+    name: 'Australia Estimation',
+    entity: 'CER',
+    details: {
+      protocol:
+        'Estimating Sequestration of Carbon in Soil Using Default Values',
+      links: [
+        {
+          name: 'F2018C00126: Carbon Credits (Carbon Farming Initiative\u2014Estimating Sequestration of Carbon in Soil Using Default Values) Methodology Determination 2015',
+          href: 'https://www.legislation.gov.au/Details/F2018C00126',
+        },
+        {
+          name: 'C2020C00281: Carbon Credits (Carbon Farming Initiative) Act of 2011',
+          href: 'https://www.legislation.gov.au/Details/C2020C00281',
+        },
+        {
+          name: 'F2021C00686: Carbon Credits (Carbon Farming Initiative) Rule 2015',
+          href: 'https://www.legislation.gov.au/Details/F2021C00686',
+        },
+        {
+          name: 'C2019C00253: Clean Energy Regulator Act 2011',
+          href: 'https://www.legislation.gov.au/Details/C2019C00253',
+        },
+        {
+          name: 'F2017C00509: National Greenhouse and Energy Reporting (Audit) Determination 2009',
+          href: 'https://www.legislation.gov.au/Details/F2017C00509',
+        },
+        {
+          name: 'A Guide to the Estimating Sequestration of Carbon in Soil Using Default Values Method',
+          href: 'http://www.cleanenergyregulator.gov.au/DocumentAssets/Documents/A%20guide%20to%20the%20estimating%20sequestration%20of%20carbon%20in%20soil%20using%20default%20values%20method.pdf',
+        },
+        {
+          name: 'Sequestration Value Maps',
+          href: 'https://www.industry.gov.au/regulations-and-standards/methods-for-the-emissions-reduction-fund/estimating-sequestration-of-carbon-in-soil-using-default-values-method',
+        },
+        {
+          name: 'FullCAM',
+          href: 'http://www.fullcam.com/FullCAMServer2020/Help/114_RothC.htm',
+        },
+      ],
+      parties: ['CER'],
+      status: 'No projects yet',
+      projects: 'N/A',
+      notes:
+        'Protocol credits increases to soil carbon from a broad variety of agricultural activities as estimated by default factors. It was published in 2015. ',
+      comments:
+        "Protocol is developed by the Australian Clean Energy Regulator (CER). As of October 2021, no projects using this protocol are listed on CER's [Emission Reduction Fund Project Register](http://www.cleanenergyregulator.gov.au/ERF/project-and-contracts-registers/project-register).",
+      timeline: {
+        activity: [0, 5],
+        crediting: [0, 25],
+        registration: [0],
+        verification: [0, 8, 16],
+        permanence: [0, 25],
+      },
+    },
+    metrics: {
+      durability: {
+        score: 2,
+        details: {
+          buffer_pool: {
+            value: 'Required',
+            reference: 'C2020C00281, Section 16(2)',
+            comment:
+              'Protocol requires a 5% risk of reversal discount to be applied. Projects may choose between a 25 year and 100 year permanence period obligation. If a 25 year permanence period is chosen, a 20% discount is applied in crediting net abatement. ',
+          },
+          leakage_test: {
+            value: 'Required',
+            reference: 'C2020C00281, Section 16(2)',
+            comment:
+              'Protocol requires a 5% risk of reversal discount to be applied. Projects may choose between a 25 year and 100 year permanence period obligation. If a 25 year permanence period is chosen, a 20% discount is applied in crediting net abatement. ',
+          },
+          uncertainty_deduction: {
+            value: 'Required',
+            reference: 'C2020C00281, Section 16(2)',
+            comment:
+              'Protocol requires a 5% risk of reversal discount to be applied. Projects may choose between a 25 year and 100 year permanence period obligation. If a 25 year permanence period is chosen, a 20% discount is applied in crediting net abatement. ',
+          },
+          onsite_verification: {
+            value: 'None',
+            reference: 'N/A',
+            comment:
+              'See C2020C00281 (Sections 13 and 76), F2018C00126 (Part 6, Division 3), and F2017C00509 (Section 3.14(1)) for a general discussion of the audit process. Auditors may, but are not required, to gather evidence onsite. See this [CER site](http://www.cleanenergyregulator.gov.au/Infohub/Audits/Pages/Forms%20and%20resources/Audit%20determination%20handbook/Audit-requirements-for-programmes-administered-by-the-Clean-Energy-Regulator.aspx#143-Emissions-Reduction-Fund-audits) for a summary description of audit requirements. ',
+          },
+          sampling_verification: {
+            value: 'None',
+            reference: 'N/A',
+            comment:
+              'See C2020C00281 (Sections 13 and 76), F2018C00126 (Part 6, Division 3), and F2017C00509 (Section 3.14(1)) for a general discussion of the audit process. Auditors may, but are not required, to gather evidence onsite. See this [CER site](http://www.cleanenergyregulator.gov.au/Infohub/Audits/Pages/Forms%20and%20resources/Audit%20determination%20handbook/Audit-requirements-for-programmes-administered-by-the-Clean-Energy-Regulator.aspx#143-Emissions-Reduction-Fund-audits) for a summary description of audit requirements. ',
+          },
+          crediting_period: {
+            value: 25,
+            reference: 'C2020C00281, Part 5',
+            comment: 'No crediting period renewals are permitted. ',
+          },
+          permanence: {
+            value: 25,
+            reference: 'C2020C00281, Section 27(3)(e-f)',
+            comment:
+              'Projects may choose between a 25 year and 100 year permanence period obligation. If a 25 year permanence period is chosen, a 20% discount is applied in crediting net abatement. ',
+          },
+          notes:
+            'All projects must take a 5% deduction to account for permanence risks. Projects may elect between a 25-year and 100-year permanence obligation. For projects with a 25-year permanence obligation, a 20% crediting discount is applied. ',
+          comments:
+            'Technically there is no buffer pool. Since there is a mandatory risk of reversal deduction, we record the protocol as having a buffer pool-like feature. The protocol addresses durability risks not via a buffer pool with a dynamic management regime, but by explicit discounting of credit issuance. Per the [Carbon Farming Initiative Act](https://www.legislation.gov.au/Details/C2020C00281) (2011) (see Sections 90-91 and Section 97), if there is a reversal, the regulator has the ability to obligate the landowner to manage such that the soil carbon stock returns to previously reported values. Alternatively, a project may make good on a reversal by relinquishing an equivalent number of ACCU credits. However, because this protocol does not involve any soil sampling, there is no obvious mechanism by which to observe a reversal that would require these protections.',
+        },
+      },
+      practices: {
+        value: { tillage: 0, cropping: 0, inputs: 1, grazing: 0, other: 1 },
+        details: {
+          included: {
+            value: ['Inputs', 'Grazing', 'Other'],
+            reference: 'F2018C00126, Section 9',
+            comment: '',
+          },
+          geographies: {
+            value: 'Australia',
+            reference: 'F2018C00126, Section 11; FullCAM',
+            comment:
+              "The project must be carried out on land for which FullCAM data exists. FullCAM is the Full Carbon Accounting Model used to model forest and soil carbon stocks in Australia's National Greenhouse Gas Inventory. Its soil component uses the well-known RothC model. ",
+          },
+          cobenefits: {
+            value: 'None ',
+            reference: 'Not described',
+            comment: '',
+          },
+          notes:
+            'Projects must pursue one of three activity options: sustainable intensification, stubble retention, or conversion to pasture. "Sustainable intensification" requires undertaking two of the following management activities: nutrient managment, soil acidity management, new irrigation or pasture renovation. If more than two activities are carried out, only two will be credited. ',
+          comments: 'None',
+        },
+      },
+      additionality: {
+        score: 1,
+        details: {
+          financial: {
+            value: 'None',
+            reference: 'Not described',
+            comment:
+              'See F2018C00126, Section 44 and C2020C00281, Section 27(4A) for a general discussion of additionality.',
+          },
+          performance: {
+            value: 'None',
+            reference: 'Not described',
+            comment:
+              'See F2018C00126, Section 44 and C2020C00281, Section 27(4A) for a general discussion of additionality.',
+          },
+          other: {
+            value: 'Required',
+            reference: 'F2018C00126, Section 44; C2020C00281, Section 27(4A)',
+            comment:
+              'Protocol requires projects to comply with the Carbon Credit Act\'s "newness requirement," i.e. that a project has not begun to be implemented at the point of registration. The protocol makes an exception for the preparation of management strategies before a new management activity actually starts. ',
+          },
+          activity_backdating: {
+            value: 0,
+            reference: 'F2018C00126, Section 44; C2020C00281, Section 27(4A)',
+            comment: '',
+          },
+          crediting_backdating: {
+            value: 0,
+            reference: 'F2018C00126, Section 49',
+            comment:
+              'Crediting is based on multiplying the duration of the project, starting at project registration, by a default rate of carbon sequestration. ',
+          },
+          notes:
+            'To screen for additionality, protocol relies on the requirement that a project has not begun to be implemented at the point of registration. This newness screen includes a consideration of previous financial or investment decisions that indicate pre-existing comitments to pursue a management practice, but we do not classify this as a financial additionality test as there is no required demonstration of the role of carbon finance in enabling a new management practice. ',
+          comments:
+            'While the protocol requires and tracks the implementation of a new management practice, the newness requirement may not screen out practices that would have been implemented in the absence of carbon finance. Because this protocol uses default parameters to calculate carbon savings, which provides a strong incentive to developers to preferentially select profitable locations for development, it may be particularly vulnerable to adverse selection outcomes. ',
+        },
+      },
+      rigor: {
+        score: 1,
+        details: {
+          ghgs: {
+            value: ['CO\u2082', 'CH\u2084', 'N\u2082O'],
+            reference: 'F2018C00126, Section 46',
+            comment: '',
+          },
+          bulk_density: {
+            value: 'Estimated',
+            reference: 'Inferred',
+            comment:
+              'Quantification relies the FullCAM model. FullCAM in turn relies on the RothC model, which calculates SOC stocks taking into account bulk density. Since no sampling is required by this protocol, we infer bulk density is estimated.',
+          },
+          depth: {
+            value: 'Unspecified',
+            reference: 'FullCAM',
+            comment:
+              'FullCAM relies on the RothC model to estimate soil carbon changes.',
+          },
+          equivalent_soil_mass: {
+            value: 'Unspecified',
+            reference: 'Not described',
+            comment:
+              'FullCAM relies on the RothC model to estimate soil carbon changes. Because there is no sampling in this protocol, equivalent soil mass corrections are unlikely to be relevant. ',
+          },
+          uncertainty: {
+            value: 'None',
+            reference: 'Not described',
+            comment:
+              'The protocol relies on Sequestration Value Maps for key parameters. These parameters are generated by the FullCAM model, which is based on the RothC model. The parameters are fixed values and do not indicate any uncertainty quantification. ',
+          },
+          baseline_type: {
+            value: 'Fixed',
+            reference: 'F2018C00126, Section 49(5)',
+            comment:
+              "Creditable SOC change is calculated by multiplying a default value over the period the activity was carried out for. This implies a fixed baseline against which each year's increment is credited. ",
+          },
+          baseline_scenario: {
+            value: 'No sampling / Default parameters',
+            reference: 'F2018C00126, Section 49',
+            comment:
+              'Default parameters are expressed in terms of tCO\u2082e/ha-yr that is accumulated beyond the baseline scenario, based on modeling, not sampling.',
+          },
+          project_scenario: {
+            value: 'No sampling / Default parameters',
+            reference: 'F2018C00126, Section 49',
+            comment: '',
+          },
+          empirical_crediting: {
+            value: 'No',
+            reference: 'F2018C00126, Section 49',
+            comment: 'No sampling is involved.',
+          },
+          sampling_approach: {
+            value: 'N/A',
+            reference: 'N/A',
+            comment: 'No sampling is involved.',
+          },
+          model: {
+            value: 'FullCAM (based on RothC)',
+            reference:
+              'F2018C00126, Section 49; A Guide to the Estimating Sequestration of Carbon in Soil Using Default Values Method, p.5',
+            comment:
+              'Default parameters were developed using the FullCAM model, which is based on the RothC model.',
+          },
+          notes:
+            'Crediting is based on a set of regional, default sequestration rates, represented in three "Sequestration Value Maps." Regionalized rates are expressed in tCO\u2082e/ha-yr. Projects are credited by multiplying the duration of the project by the map-derived rate of carbon sequestration. The default values are derived from the FullCAM model, which in turn relies on the RothC model to estimate changes to soil carbon. ',
+          comments:
+            'SOC crediting is not empirical and relies entirely on calculation from default factors. Default factors vary by activity and location, but not any other project-specific information.',
+        },
+      },
+      safeguards: {
+        score: 3,
+        details: {
+          landowner_protections: {
+            value: 'Yes',
+            reference: 'C2020C00281, Section 28A; Simplified Method Guide, p.6',
+            comment:
+              'Projects are required to seek formal consent from all stakeholders who hold an interest in the land.',
+          },
+          community_engagement: {
+            value: 'No',
+            reference: 'Not described',
+            comment: '',
+          },
+          data_privacy: {
+            value: 'Yes',
+            reference: 'C2019C00253, Part 3',
+            comment:
+              "The Clean Energy Regulator is bound by the provisions of the Clean Energy Regulator Act (2011), the Privacy Act, the NGER Act, and otherwise applicable law regarding the disclosure of personal information collected from project participants. See CER's [Disclaimer, disclosure and privacy](http://www.cleanenergyregulator.gov.au/NGER/About-the-National-Greenhouse-and-Energy-Reporting-scheme/Disclaimer-disclosure-and-privacy) page for additional details. The Clean Energy Regulator Act (2011) provides exemptions for disclosures of protected information related to climate policy (Section 44) and specifically for the development of carbon credit methodologies (Section 47(1)(a)).",
+          },
+          notes:
+            'Protocol requires formal consent to the offset project from all stakeholders who hold an interest in the land. The Clean Energy Regulator is subject to clear legislative guidance about the disclosure and privacy of project participant information. ',
+          comments:
+            'Under the [Carbon Farming Initiative Act](https://www.legislation.gov.au/Details/C2020C00281) (Sections 44 and 47), the regulator may disclose or use protected information related to offset projects for the purposes of climate change law or for the development of new methodologies. ',
+        },
+      },
+      rating: { score: 2 },
+    },
+    revisions: [
+      {
+        date: '10-13-2021',
+        note: 'This protocol was added to our analysis after we recieved feedback from various stakeholders that including compliance protocols in the review would be helpful. See [our blog post](http://carbonplan.org/blog/soil-protocols-added) for more detail.',
+      },
+    ],
+  },
+  SOIL017: {
+    id: 'SOIL017',
+    name: 'Alberta Cropping',
+    entity: 'Alberta',
+    details: {
+      protocol: 'Quantification Protocol for Conservation Cropping',
+      links: [
+        {
+          name: 'Quantification Protocol for Conservation Cropping, v1.0',
+          href: 'https://open.alberta.ca/dataset/b99725e1-5d2a-4427-baa8-14b9ec6c6a24/resource/db11dd55-ce34-4472-9b8b-cb3b30214803/download/6744004-2012-quantification-protocol-conservation-cropping-april-2012-version-1.0-2012-04-02.pdf), \n[Memo of Withdrawal',
+        },
+        {
+          name: 'Technical Guidance for the Assessment of Additionality, v1.0',
+          href: 'https://open.alberta.ca/dataset/ae43faff-6405-443d-a07a-d541d04c52f0/resource/679a62bd-7196-4665-a6b7-341af6d96578/download/assessmentadditionality-may31-2018.pdf',
+        },
+        {
+          name: 'Technical Guidance for Osset Protocol Development and Revision, v2.0',
+          href: 'https://open.alberta.ca/dataset/db089833-59cc-404b-99ed-56b51bbd9242/resource/726366d0-25fa-4bd8-b333-3df78eed1eb2/download/offsetprotocoldevelopment-jul31-2018.pdf',
+        },
+        {
+          name: 'Standard for Validation, Verification and Audit, v5.1',
+          href: 'https://open.alberta.ca/dataset/26b45734-4765-41cf-965c-ec945a6e4581/resource/877ab169-145e-4f32-b2dc-6e2ce498f113/download/aep-tier-standard-validation-verification-and-audit-version-5-1.pdf',
+        },
+      ],
+      parties: ['Alberta'],
+      status: 'Credits issued',
+      projects:
+        'See [Alberta Emissions Offset Registry listings](https://alberta.csaregistries.ca/GHGR_Listing/AEOR_Listing.aspx). ',
+      notes:
+        'Protocol credits increases to soil carbon and decreases to fuel use through no-till management. It was published in 2012 and replaced the 2009 Quantification Protocol for Tillage System Management.',
+      comments:
+        'Protocol has been withdrawn after a [finding](https://www.alberta.ca/assets/documents/aeos-memo-withdrawal-quantification-protocol-conservation-cropping.pdf) that the credited activities no longer pass the applicable additionality tests. Existing projects may be credited through the end of 2021, but no new projects may be developed. 47 projects have been developed under the Conservation Cropping protocol according to listings on the [Alberta Emissions Offset Registry](https://alberta.csaregistries.ca/GHGR_Listing/AEOR_Listing.aspx). An additional [75 projects](https://alberta.csaregistries.ca/GHGR_Listing/AEOR_Listing.aspx) were developed under the preceding Tillage System Management protocol. Note that the timeline above does not include an "crediting" or "permanence" bar. This is because the crediting and permanece periods are defined relative to a programatic end date rather than relative to a project\'s start date. See the durability metric for more details. We render 20 years of activity backdating to indicate that the protocol is agnostic to the timing of activity implementation. ',
+      timeline: {
+        activity: [-20, 0],
+        crediting: [0, 0],
+        registration: [0],
+        verification: [0],
+        permanence: [0, 0],
+      },
+    },
+    metrics: {
+      durability: {
+        score: 1,
+        details: {
+          buffer_pool: {
+            value: 'Required',
+            reference:
+              'Quantification Protocol, p.2; Technical Guidance for Offset protocol Development and Revision, Section 5.3.2',
+            comment:
+              "A 7.5 or 12.5% discount factor based on regional rates of reversal is applied. These credits aren't managed in a tradition buffer pool, and instead are considered permanently retired against future liabilities. If a project experiences a reversal of more than 10% of the field area, those affected fields may not be used to calculate credits with the default factors for the year affected by the reversal. ",
+          },
+          leakage_test: {
+            value: 'Required',
+            reference:
+              'Quantification Protocol, p.2; Technical Guidance for Offset protocol Development and Revision, Section 5.3.2',
+            comment:
+              "A 7.5 or 12.5% discount factor based on regional rates of reversal is applied. These credits aren't managed in a tradition buffer pool, and instead are considered permanently retired against future liabilities. If a project experiences a reversal of more than 10% of the field area, those affected fields may not be used to calculate credits with the default factors for the year affected by the reversal. ",
+          },
+          uncertainty_deduction: {
+            value: 'Required',
+            reference:
+              'Quantification Protocol, p.2; Technical Guidance for Offset protocol Development and Revision, Section 5.3.2',
+            comment:
+              "A 7.5 or 12.5% discount factor based on regional rates of reversal is applied. These credits aren't managed in a tradition buffer pool, and instead are considered permanently retired against future liabilities. If a project experiences a reversal of more than 10% of the field area, those affected fields may not be used to calculate credits with the default factors for the year affected by the reversal. ",
+          },
+          onsite_verification: {
+            value: 'Required',
+            reference:
+              'Standard for Validation, Verification and Audit, Sections 4.1',
+            comment: '',
+          },
+          sampling_verification: {
+            value: 'N/A',
+            reference: 'Not appliable',
+            comment:
+              'Quantification of SOC change is based on default factors provided by the protocol. Verification may include a field investigation (See Quantification Methodology, p.98), but neither quantification nor verification require soil sampling. ',
+          },
+          crediting_period: {
+            value: 'N/A',
+            reference:
+              'Standard for Developers, Section 11; Quantification Protocol, p.vii, p.2, p.9 and p.12',
+            comment:
+              'Various crediting periods are identified. The Standards for Developers document suggests crediting periods are a default 8 years, extendable to 10 years with permission from the regulator; however, the core protocol document suggests a 20-year period. In practice, it appears that projects could earn credits for every year the protocol was in operation. Because it did not operate for 20 years past the initial benchmark year, there appears to not have been any formal resolution of its crediting period.',
+          },
+          permanence: {
+            value: 'N/A',
+            reference: 'Not described ',
+            comment:
+              'Protocol pairs a discount factor based on a regional reveral rates (see Quantification Methodology, p.2) with the assertion that resulting credits are permanent. Since no permanence obligation mechanism exists beyond the end of the crediting period, we report the permanence as "N/A." ',
+          },
+          notes:
+            'Technically there is no buffer pool. However, all projects must make a 7.5% or 12.5% deduction to account for permanence risks, so we record the protocol as having a buffer pool-like feature. Extensive verification guidance is provided, and verification includes site visits.',
+          comments:
+            'In essence, the protocol addresses permanence risks by applying a discount to the nominal number of credits calculated, and uses this to assert credited sequestration is permanent in perpetuity. The crediting period is defined relative to a fixed crediting end date (the end of 2021) rather than as a time period defined relative to a project start date. We thus report crediting period as N/A. Since no permanence obligation mechanism exists beyond the end of the crediting period, we also report the permanence period as "N/A." Protocol pairs a discount factor based on a regional reveral rates with the assertion that resulting credits are permanent.  ',
+        },
+      },
+      practices: {
+        value: { tillage: 1, cropping: 1, inputs: 0, grazing: 0, other: 0 },
+        details: {
+          included: {
+            value: ['Tillage', 'Cropping'],
+            reference:
+              'Quantification Protocol, Sections 1.0, 1.1 (p.2), 1.2 and Appendix F',
+            comment: '',
+          },
+          geographies: {
+            value: 'Alberta',
+            reference: 'Quantification Protocol, Section 1.2',
+            comment: 'Specifically Dry Prairie and Parkland ecozones. ',
+          },
+          cobenefits: {
+            value: 'None ',
+            reference: 'Not described',
+            comment: '',
+          },
+          notes:
+            'Protocol credits soil carbon sequestration, lower nitrous oxide emissions from soils, and emission reductions from farm equipment as a result of no-till management practices. Some projects may be credited for changes in cropping practices as well.  ',
+          comments: 'None',
+        },
+      },
+      additionality: {
+        score: 1,
+        details: {
+          financial: {
+            value: 'Allowed',
+            reference:
+              'Technical Guidance for the Assessment of Additionality, Sections 6.2 and 6.3',
+            comment: '',
+          },
+          performance: {
+            value: 'Required',
+            reference:
+              'Technical Guidance for the Assessment of Additionality, Sections 6.2 and 6.3',
+            comment:
+              'An activity is considered "business as usual" if it has a >40% penetration rate. In this case, additionality may be proven via a barriers test. ',
+          },
+          other: {
+            value: 'Allowed',
+            reference:
+              'Technical Guidance for the Assessment of Additionality, Sections 6.2 and 6.3',
+            comment: '',
+          },
+          activity_backdating: {
+            value: 'N/A',
+            reference: 'Standard for Developers, Division 3, Section 10',
+            comment:
+              'Protocol does not screen projects based on their historical engagement with the project activity. The only specification provided is that crediting must begin when the credited activity starts.',
+          },
+          crediting_backdating: {
+            value: 0,
+            reference: 'Standard for Developers, Division 3, Section 10',
+            comment:
+              'The offset start date for a non-grouped project is the day project plans are submitted to the Registry. In the case of an aggregated project, crediting may be backdated up to 4 months. ',
+          },
+          notes:
+            'Additionality of a credited activity is asessed during protocol development or review rather than on a project-by-project basis. The first step in the assessment of additionality is a common practice test. Activities are deemed additional if their penetration rate is less than 40%. If penetration is greater than 40%, or if penetration rate cannot be asessed, activities may be deemed additional via the demonstration of a financial, technological, or other barrier. As a result, a performance-based common practice additionality test is required, a financial additionality test is optional, and other barrier analysis is optional.',
+          comments:
+            'The combination of a relatively high common practice threshold and vague criteria for passing barriers tests makes this a week screen for additionality. The protocol was [withdrawn](https://www.alberta.ca/assets/documents/aeos-memo-withdrawal-quantification-protocol-conservation-cropping.pdf) after the government issued a finding of non-additionality. ',
+        },
+      },
+      rigor: {
+        score: 1,
+        details: {
+          ghgs: {
+            value: ['CO\u2082', 'CH\u2084', 'N\u2082O'],
+            reference: 'Quantification Protocol, Tables 2 and 6 ',
+            comment: '',
+          },
+          bulk_density: {
+            value: 'Unspecified',
+            reference: 'Not described',
+            comment:
+              'Various secondary sources suggest the protocol relid on the [CENTURY 4.0 model](https://www2.nrel.colostate.edu/projects/century/MANUAL/html_manual/man96.html), which estimates bulk denisity (as opposed to measuring it). Because we cannot determine the depth directly from protocol documents, however, we leave the term as "unspecified." ',
+          },
+          depth: {
+            value: 'Unspecified',
+            reference: 'Not described',
+            comment:
+              'Various secondary sources suggest the protocol relid on the [CENTURY 4.0 model](https://www2.nrel.colostate.edu/projects/century/MANUAL/html_manual/man96.html), which uses a depth of 30cm. Because we cannot determine the depth directly from protocol documents, however, we leave the term as "unspecified." ',
+          },
+          equivalent_soil_mass: {
+            value: 'None ',
+            reference: 'Not described',
+            comment: '',
+          },
+          uncertainty: {
+            value: 'None',
+            reference: 'Not described',
+            comment: '',
+          },
+          baseline_type: {
+            value: 'Fixed ',
+            reference: 'Quantification Protocol, Section 2.0',
+            comment:
+              'Activities are credited based on annual incremental increases in soil carbon discounted for 2006 sector-level adoption. A fixed baseline assumption is baked into the default factors used to calculated carbon sequestration. ',
+          },
+          baseline_scenario: {
+            value: 'No sampling / Default parameters',
+            reference: 'Quantification Protocol, Section 2.0',
+            comment:
+              'Projects do not have to establish individual baselines. Instead, projects are discounted based on a regional performance-standard baseline, which is based off of regional adoption rates for full, reduced, and no-till activities. ',
+          },
+          project_scenario: {
+            value: 'No sampling / Default parameters',
+            reference:
+              'Quantification Protocol, Table 7 and Appendixes A and C ',
+            comment: '',
+          },
+          empirical_crediting: {
+            value: 'No',
+            reference:
+              'Quantification Protocol, Table 7 and Appendixes A and C',
+            comment: '',
+          },
+          sampling_approach: {
+            value: 'N/A',
+            reference: 'Not described',
+            comment:
+              'Soil carbon changes based on default parameters, not sampling.',
+          },
+          model: {
+            value: 'Default factors',
+            reference:
+              'Quantification Protocol, Table 7 and Appendixes A and C',
+            comment: '',
+          },
+          notes:
+            'Crediting is based on regional sequestration factors. Rather than developing project-specific baselines, regional adoption rates for full, reduced, and no-till activities are converted into a discount factor applied to the default factor used to calculate credits.',
+          comments:
+            'SOC crediting is not empirical and relies entirely on calculation from regional default factors. Quantification methodology is subject to deviation requests. ',
+        },
+      },
+      safeguards: {
+        score: 2,
+        details: {
+          landowner_protections: {
+            value: 'No',
+            reference: 'Standard for Developers, Part 2, Section 1.5.1',
+            comment:
+              'Landowner consent is required, but no explicit protections are involved for other potentially impacted stakeholders. ',
+          },
+          community_engagement: {
+            value: 'No ',
+            reference: 'Not described',
+            comment: '',
+          },
+          data_privacy: {
+            value: 'Yes',
+            reference: '',
+            comment:
+              'The Government of Alberta is subject to various general privacy protections that also apply in this context. ',
+          },
+          notes:
+            'The Government of Alberta is subject to general legislative guidance about the disclosure and privacy of project participant information. ',
+          comments: 'None',
+        },
+      },
+      rating: { score: 1 },
+    },
+    revisions: [
+      {
+        date: '10-13-2021',
+        note: 'This protocol was added to our analysis after we recieved feedback from various stakeholders that including compliance protocols in the review would be helpful. See [our blog post](http://carbonplan.org/blog/soil-protocols-added) for more detail.',
+      },
     ],
   },
 }

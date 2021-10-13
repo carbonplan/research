@@ -91,6 +91,7 @@ export const Entry = ({
           {hasDefinition && showDefinition && (
             <Box sx={styles.details.definition}>{glossary[field]}</Box>
           )}
+          {(!hasDefinition || !showDefinition) && <></>}
         </AnimateHeight>
       </Box>
       <Box sx={{ position: 'relative' }}>

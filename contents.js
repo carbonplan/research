@@ -2,7 +2,7 @@ const contents = [
   {
     id: 'soil-protocols-explainer',
     number: 12,
-    version: '1.1.0',
+    version: '1.2.0',
     date: '07-15-2021',
     title: 'A buyer’s guide to soil carbon offsets',
     authors: [
@@ -27,7 +27,9 @@ const contents = [
         label: 'Response to Gold Standard',
         href: '/research/soil-protocols-explainer-gold-standard-response',
       },
+      { label: 'Protocol additions', href: '/blog/soil-protocols-added' },
     ],
+    primaryLink: 2,
   },
   {
     id: 'soil-depth-sampling',

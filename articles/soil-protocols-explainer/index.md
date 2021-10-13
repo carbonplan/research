@@ -14,7 +14,7 @@ import TimelineSummary from './components/timeline-summary'
 
 export const meta = {
   number: 12,
-  version: '1.1.0',
+  version: '1.2.0',
   date: '07-15-2021',
   title: 'A buyer’s guide to soil carbon offsets',
   authors: [
@@ -41,7 +41,12 @@ export const meta = {
       label: 'Response to Gold Standard',
       href: '/research/soil-protocols-explainer-gold-standard-response',
     },
+    {
+      label: 'Protocol additions',
+      href: '/blog/soil-protocols-added',
+    },
   ],
+  primaryLink: 2,
 }
 
 # A buyer’s guide to soil carbon offsets
@@ -56,7 +61,7 @@ Improving soil health and ecosystems is unequivocally positive. But determining 
 
 A number of protocols for crediting soil carbon have emerged to tackle this complexity. Some were developed by third-party offset registries like Verra and Gold Standard, while others come from new companies like Nori and the Regen Network. Each protocol specifies the detailed rules under which projects claim credits that can be sold to buyers. More than a dozen protocols exist, and they vary across key dimensions like scientific rigor, additionality, and durability. As a result, getting to the bottom of what these different protocols require is not an easy task.
 
-To help address the opacity in today’s market, we systematically reviewed 14 soil carbon protocols on 33 technical dimensions. We focused on protocols that were publicly available and could be used to certify or issue credits for soil carbon removal — activities that draw carbon out of the atmosphere and sequester it in soil. We excluded protocols still in development or that credit solely on the basis of avoided emissions.
+To help address the opacity in today’s market, we systematically reviewed 14 soil carbon protocols on 33 technical dimensions.<Cite id='protocols.added'/> We focused on protocols that were publicly available and could be used to certify or issue credits for soil carbon removal — activities that draw carbon out of the atmosphere and sequester it in soil. We excluded protocols still in development or that credit solely on the basis of avoided emissions.
 
 Our findings reveal that robust crediting of soil carbon is hard and that none of the existing protocols is doing enough to guarantee good outcomes. While this conclusion doesn’t mean that all projects are generating low-quality credits, the lack of rigorous standards makes it hard to ensure good climate outcomes in the voluntary market. Buyers that care about quality must screen candidate projects themselves, while developers of high-integrity projects must compete against those who might take advantage of lax standards. The additional due diligence required today could limit the role soil carbon can play in effective climate strategy and highlights the need for systematic market reforms.
 
@@ -68,7 +73,7 @@ We reviewed publicly available voluntary market protocols used to credit activit
 
 Each metric includes a set of descriptive attributes that together inform a qualitative score on a scale from 1 to 3. Based on four individual metric scores, we assigned each protocol an overall rating from 1 to 5. We also harmonized metadata for each protocol, categorized which agricultural practices were included, and produced a timeline showing the relationship between project activity, crediting, verification, and claimed permanence. The full results, including comments and references for all dimensions we evaluated, are available as an [interactive table](/research/soil-protocols) as well as downloadable [CSV](https://storage.googleapis.com/carbonplan-research/articles/soil-protocols/CarbonPlan-Soil-Protocols.csv) and [JSON](https://storage.googleapis.com/carbonplan-research/articles/soil-protocols/CarbonPlan-Soil-Protocols.json) files.
 
-In the chart below, we summarize our results by showing scores for rigor, additionality, durability, and safeguards, alongside our overall rating across the full set of protocols.
+In the chart below, we summarize our results by showing scores for rigor, additionality, durability, and safeguards, alongside our overall rating across the full set of protocols.<Cite id='figure.update'/>
 
 <MetricHistogram />
 <FigureCaption number={1}>
@@ -194,6 +199,12 @@ We acknowledge that our review sets a high bar for what a protocol should achiev
 More optimistically, we hope our analysis helps clear the path for individual projects that seek to deliver higher-quality outcomes. Screening for such projects will be time-consuming, and rigorous sampling and quantification will be expensive. But that’s the true cost of robust climate action — and until the standards in voluntary markets improve, it’s a cost that buyers who care about quality must bear.
 
 <SectionBreak />
+
+<Endnote label='Update'>
+
+On October 13th, 2021 we updated our database with analysis of three additional protocols. Two are from Australia and one is from Alberta, Canada. Although they were designed by governments, their credits can also be used by voluntary actors. The results of that analysis are described in a separate [blog post](/blog/soil-protocols-added).
+
+</Endnote>
 
 <Endnote label='Credits'>
 

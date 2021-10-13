@@ -15,10 +15,10 @@ const Index = () => {
   const description = (
     <span>
       Several emerging standards and markets sell credits for soil carbon
-      sequestration. We systematically{' '}
-      <Link href='/research/soil-protocols-explainer'>analyzed them</Link>. This
-      interactive table lets you explore protocols, metrics, and our evaluation.
-      Consider it a buyer's guide to soil carbon offsets.
+      sequestration. This interactive table lets you explore protocols, metrics,
+      and our evaluation. Read more about our{' '}
+      <Link href='/research/soil-protocols-explainer'>initial analysis</Link>{' '}
+      and <Link href='/blog/soil-protocols-added'>subsequent additions</Link>.
     </span>
   )
 
