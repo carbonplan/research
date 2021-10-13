@@ -202,7 +202,7 @@ More optimistically, we hope our analysis helps clear the path for individual pr
 
 <Endnote label='Update'>
 
-On October 13th, 2021 we updated our database with analysis of three additional protocols. Two are from Australia and one is from Alberta. Although they were designed by governments, their credits can also be used by voluntary actors. The results of that analysis are described in a separate [blog post](/blog/soil-protocols-added).
+On October 13th, 2021 we updated our database with analysis of three additional protocols. Two are from Australia and one is from Alberta, Canada. Although they were designed by governments, their credits can also be used by voluntary actors. The results of that analysis are described in a separate [blog post](/blog/soil-protocols-added).
 
 </Endnote>
 
