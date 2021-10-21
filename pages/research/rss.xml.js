@@ -68,7 +68,7 @@ export async function getServerSideProps(context) {
     return
   }
   const xml = getRssXml()
-  res.setHeader('Content-Type', 'text/xml')
+  res.setHeader('Content-Type', 'application/xml')
   res.write(xml)
   res.end()
 
