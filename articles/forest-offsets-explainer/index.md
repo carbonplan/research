@@ -38,8 +38,8 @@ export const meta = {
   icon: 'article-008/ash-small',
   links: [
     {
-      label: 'Read preprint',
-      href: 'https://doi.org/10.1101/2021.04.28.441870',
+      label: 'Read publication',
+      href: 'https://doi.org/10.1111/gcb.15943',
     },
     {
       label: 'Browse map',
