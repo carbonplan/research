@@ -38,7 +38,7 @@ export const meta = {
   icon: 'article-008/ash-small',
   links: [
     {
-      label: 'Read publication',
+      label: 'Read paper',
       href: 'https://doi.org/10.1111/gcb.15943',
     },
     {

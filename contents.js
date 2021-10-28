@@ -144,7 +144,7 @@ const contents = [
     icon: 'article-008/ash-small',
     links: [
       { label: 'Read article', href: '/research/forest-offsets-explainer' },
-      { label: 'Read publication', href: 'https://doi.org/10.1111/gcb.15943' },
+      { label: 'Read paper', href: 'https://doi.org/10.1111/gcb.15943' },
       { label: 'Browse map', href: '/research/forest-offsets' },
       {
         label: 'Press coverage',
