@@ -11,10 +11,6 @@ import {
 
 const YEAR_TICKS = [2020, 2030, 2040, 2050, 2060, 2070, 2080, 2090, 2100]
 const Chart = ({ data }) => {
-  if (!data) {
-    return null
-  }
-
   return (
     <Box
       sx={{
@@ -38,9 +34,8 @@ const Chart = ({ data }) => {
 
         <Axis bottom left />
         <Plot>
-          {data.map((line, i) => (
-            <Line key={i} data={line} color='red' />
-          ))}
+          {data &&
+            data.map((line, i) => <Line key={i} data={line} color='red' />)}
           <Line
             color='gray'
             sx={{ 'stroke-dasharray': '8 4' }}
