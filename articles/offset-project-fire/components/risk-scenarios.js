@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from 'react'
-import { Box, Grid, Divider } from 'theme-ui'
+import { useState, useEffect } from 'react'
+import { Box } from 'theme-ui'
 import { Row, Column } from '@carbonplan/components'
 import Chart from './chart'
 const random = require('d3-random')
@@ -109,17 +109,11 @@ const RiskScenarios = () => {
         .map((d) => d * buffer * mortality)
         .map(cumsum(0))
         .map((d) => Math.min(1, d))
-      const packed = transformed.map((y, x) => {
-        return {
-          x: 2020 + x,
-          y: y,
-          i: i,
-        }
-      })
+      const packed = transformed.map((y, x) => [2020 + x, y])
       combined.push(packed)
     }
 
-    setData(combined.flat())
+    setData(combined)
   }, [risk, mortality])
 
   return (
