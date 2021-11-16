@@ -55,7 +55,7 @@ const ParameterScenario = ({
               mt: ['13px', '13px', 4],
             }}
           >
-            <Donut results={results} initWidth={150} />
+            <Donut results={results} maxWidth={150} center />
           </Box>
         </Column>
         <Column start={[4, 5, 5, 5]} width={[3, 2, 2, 2]}>

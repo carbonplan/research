@@ -73,19 +73,19 @@ const CostSummary = ({
           <Divider sx={{ mt: [0], mr: [0, 0, 3, 3] }} />
           <Box sx={sx.title}>NGCC</Box>
           <Box sx={sx.cost}>${NGCCTotalCost.toFixed(0)}</Box>
-          <Donut results={NGCCResults} initWidth={125} />
+          <Donut results={NGCCResults} maxWidth={125} />
         </Box>
         <Box sx={{ textAlign: 'left' }}>
           <Divider sx={{ mt: [0], mr: [0, 0, 3, 3] }} />
           <Box sx={sx.title}>Wind</Box>
           <Box sx={sx.cost}>${windTotalCost.toFixed(0)}</Box>
-          <Donut results={windResults} initWidth={125} />
+          <Donut results={windResults} maxWidth={125} />
         </Box>
         <Box sx={{ textAlign: 'left' }}>
           <Divider sx={{ mt: [0], mr: [0, 0, 3, 3] }} />
           <Box sx={sx.title}>Solar</Box>
           <Box sx={sx.cost}>${solarTotalCost.toFixed(0)}</Box>
-          <Donut results={solarResults} initWidth={125} />
+          <Donut results={solarResults} maxWidth={125} />
         </Box>
         <Box sx={{ position: 'relative' }}>
           <Legend />
