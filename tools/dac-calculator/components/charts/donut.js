@@ -24,7 +24,7 @@ const Donut = ({ results }) => {
         <Plot square>
           <DonutComponent
             data={values}
-            innerRadius={0.26}
+            innerRadius={0.23}
             color={cost < 0 ? 'gray' : 'purple'}
           />
         </Plot>

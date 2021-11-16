@@ -25,13 +25,14 @@ const Donut = ({ results, maxWidth, center = false }) => {
         width: '100%',
         maxWidth: center ? undefined : maxWidth,
         height: maxWidth,
+        ml: center ? undefined : 1,
       }}
     >
       <Chart padding={{ left: 0, bottom: 0 }}>
         <Plot square>
           <DonutComponent
             data={values}
-            innerRadius={0.26}
+            innerRadius={0.24}
             color={disabled ? 'gray' : 'purple'}
           />
         </Plot>
