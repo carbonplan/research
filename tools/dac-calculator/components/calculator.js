@@ -224,7 +224,7 @@ const Calculator = () => {
                   <Row columns={[3]}>
                     <Column start={[1]} width={[2]}>
                       <Box sx={{ pt: [2], ml: ['-6px'] }}>
-                        <Donut params={{ results: results }}></Donut>
+                        <Donut results={results}></Donut>
                       </Box>
                     </Column>
                   </Row>
