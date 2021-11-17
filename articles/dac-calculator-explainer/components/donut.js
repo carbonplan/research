@@ -8,7 +8,7 @@ const DonutChart = ({ results, initWidth, sx }) => {
 
   const updateWidth = () => {
     if (container.current) {
-      const newWidth = container.current.offsetWidth
+      const newWidth = container.current.offsetWidth * 0.85
       if (newWidth < initWidth) {
         setWidth(newWidth)
       } else {

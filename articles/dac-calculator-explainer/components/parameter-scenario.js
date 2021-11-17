@@ -52,8 +52,7 @@ const ParameterScenario = ({
           <Box
             sx={{
               textAlign: ['left', 'center', 'center', 'center'],
-              mt: ['13px', '13px', '26px', 4],
-              width: ['85%', '85%', '100%', '100%'],
+              mt: ['13px', '13px', '26px', '27px'],
               margin: 'auto',
             }}
           >

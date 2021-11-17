@@ -29,7 +29,6 @@ const sx = {
     mb: ['11px'],
   },
   donut: {
-    width: ['85%', '85%', '85%', '100%'],
     ml: ['4px'],
     mb: ['10px'],
   },
@@ -78,25 +77,19 @@ const CostSummary = ({
           <Divider sx={{ mt: [0], mr: [0, 0, 3, 3] }} />
           <Box sx={sx.title}>NGCC</Box>
           <Box sx={sx.cost}>${NGCCTotalCost.toFixed(0)}</Box>
-          <Box sx={sx.donut}>
-            <Donut results={NGCCResults} initWidth={125} />
-          </Box>
+          <Donut results={NGCCResults} initWidth={125} sx={sx.donut} />
         </Box>
         <Box sx={{ textAlign: 'left' }}>
           <Divider sx={{ mt: [0], mr: [0, 0, 3, 3] }} />
           <Box sx={sx.title}>Wind</Box>
           <Box sx={sx.cost}>${windTotalCost.toFixed(0)}</Box>
-          <Box sx={sx.donut}>
-            <Donut results={windResults} initWidth={125} />
-          </Box>
+          <Donut results={windResults} initWidth={125} sx={sx.donut} />
         </Box>
         <Box sx={{ textAlign: 'left' }}>
           <Divider sx={{ mt: [0], mr: [0, 0, 3, 3] }} />
           <Box sx={sx.title}>Solar</Box>
           <Box sx={sx.cost}>${solarTotalCost.toFixed(0)}</Box>
-          <Box sx={sx.donut}>
-            <Donut results={solarResults} initWidth={125} />
-          </Box>
+          <Donut results={solarResults} initWidth={125} sx={sx.donut} />
         </Box>
         <Box sx={{ position: 'relative' }}>
           <Legend />
