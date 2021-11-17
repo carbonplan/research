@@ -1,7 +1,7 @@
 import { Box } from 'theme-ui'
-import { Chart, Plot, Donut as DonutComponent } from '@carbonplan/charts'
+import { Chart, Plot, Donut } from '@carbonplan/charts'
 
-const Donut = ({ results }) => {
+const DonutChart = ({ results }) => {
   const cost = results['Total Cost [$/tCO2 Net Removed]']
 
   const values = []
@@ -22,7 +22,7 @@ const Donut = ({ results }) => {
     <Box sx={{ width: 200, height: 200 }}>
       <Chart padding={{ left: 0, bottom: 0 }}>
         <Plot square>
-          <DonutComponent
+          <Donut
             data={values}
             innerRadius={0.23}
             color={cost < 0 ? 'gray' : 'purple'}
@@ -33,4 +33,4 @@ const Donut = ({ results }) => {
   )
 }
 
-export default Donut
+export default DonutChart
