@@ -1,9 +1,34 @@
+import { useEffect, useState, useRef } from 'react'
 import { Box } from 'theme-ui'
 import { Chart, Plot, Donut } from '@carbonplan/charts'
 
-const DonutChart = ({ results, maxWidth, center = false }) => {
-  const disabled = results['Total Cost [$/tCO2]'] === 'N/A'
+const DonutChart = ({ results, initWidth, sx }) => {
+  const [width, setWidth] = useState(null)
+  const container = useRef(null)
 
+  const updateWidth = () => {
+    if (container.current) {
+      const newWidth = container.current.offsetWidth
+      if (newWidth < initWidth) {
+        setWidth(newWidth)
+      } else {
+        setWidth(initWidth)
+      }
+    }
+  }
+
+  useEffect(() => {
+    updateWidth()
+  }, [container.current])
+
+  useEffect(() => {
+    window.addEventListener('resize', updateWidth)
+    return () => {
+      window.removeEventListener('resize', updateWidth)
+    }
+  }, [])
+
+  const disabled = results['Total Cost [$/tCO2]'] === 'N/A'
   const values = []
 
   if (disabled) {
@@ -20,24 +45,25 @@ const DonutChart = ({ results, maxWidth, center = false }) => {
   }
 
   return (
-    <Box
-      sx={{
-        width: '100%',
-        maxWidth: center ? undefined : maxWidth,
-        height: maxWidth,
-        ml: center ? undefined : 1,
-      }}
-    >
-      <Chart padding={{ left: 0, bottom: 0 }}>
-        <Plot square>
-          <Donut
-            range={[0.32, 1]}
-            data={values}
-            innerRadius={0.24}
-            color={disabled ? 'gray' : 'purple'}
-          />
-        </Plot>
-      </Chart>
+    <Box ref={container}>
+      <Box
+        sx={{
+          width,
+          height: width,
+          ...sx,
+        }}
+      >
+        <Chart padding={{ left: 0, bottom: 0 }}>
+          <Plot square>
+            <Donut
+              range={[0.32, 1]}
+              data={values}
+              innerRadius={0.23}
+              color={disabled ? 'gray' : 'purple'}
+            />
+          </Plot>
+        </Chart>
+      </Box>
     </Box>
   )
 }

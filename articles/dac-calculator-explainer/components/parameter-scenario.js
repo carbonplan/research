@@ -51,11 +51,20 @@ const ParameterScenario = ({
           <Divider />
           <Box
             sx={{
-              textAlign: ['left', 'center', 'center'],
-              mt: ['13px', '13px', 4],
+              textAlign: ['left', 'center', 'center', 'center'],
+              mt: ['13px', '13px', '26px', 4],
+              width: ['85%', '85%', '100%', '100%'],
+              margin: 'auto',
             }}
           >
-            <Donut results={results} maxWidth={150} center />
+            <Donut
+              results={results}
+              initWidth={150}
+              sx={{
+                margin: 'auto',
+                mt: '16px',
+              }}
+            />
           </Box>
         </Column>
         <Column start={[4, 5, 5, 5]} width={[3, 2, 2, 2]}>
