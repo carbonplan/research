@@ -31,6 +31,7 @@ const DonutChart = ({ results, maxWidth, center = false }) => {
       <Chart padding={{ left: 0, bottom: 0 }}>
         <Plot square>
           <Donut
+            range={[0.32, 1]}
             data={values}
             innerRadius={0.24}
             color={disabled ? 'gray' : 'purple'}
