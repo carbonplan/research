@@ -19,13 +19,13 @@ const DonutChart = ({ results }) => {
   }
 
   return (
-    <Box sx={{ width: 200, height: 200 }}>
+    <Box sx={{ width: 200, height: 200, mt: '4px', ml: '5px', mb: '10px' }}>
       <Chart padding={{ left: 0, bottom: 0 }}>
         <Plot square>
           <Donut
             range={[0.32, 1]}
             data={values}
-            innerRadius={0.23}
+            innerRadius={0.225}
             color={cost < 0 ? 'gray' : 'purple'}
           />
         </Plot>
