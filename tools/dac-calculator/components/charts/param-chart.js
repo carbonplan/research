@@ -22,7 +22,13 @@ const ParamChart = ({ param, data }) => {
       : param.displayRange
 
   return (
-    <Box sx={{ ml: ['-6px'], width: '100%', height: param.chartHeight }}>
+    <Box
+      sx={{
+        ml: ['-6px'],
+        width: 'calc(100% - 36px)',
+        height: param.chartHeight,
+      }}
+    >
       <Chart
         x={domain}
         y={[0, 800]}
