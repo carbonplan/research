@@ -45,7 +45,7 @@ const Parameter = ({ param, data, state }) => {
   }, [value])
 
   return (
-    <Box sx={{ mb: [5] }}>
+    <Box sx={{ mb: [6] }}>
       <Row columns={[6, 6]}>
         <Column start={[1, 1]} width={[6, 2, 2, 2]}>
           <Box
