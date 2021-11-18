@@ -32,7 +32,7 @@ const ParamChart = ({ param, data }) => {
       >
         <Axis bottom right />
         <Ticks bottom right />
-        <TickLabels right />
+        <TickLabels right format={(d) => `$${d}`} />
         <TickLabels bottom values={param.tickLabels} />
         <Plot sx={{ pb: '2px' }}>
           <StackedBar
