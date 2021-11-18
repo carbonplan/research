@@ -5,7 +5,7 @@ import GroupDescription from './group-description'
 const ParameterGroup = ({ group, data, state }) => {
   return (
     <Box sx={{ mb: [3] }}>
-      <Box sx={{ mb: [5] }}>
+      <Box sx={{ mb: [7] }}>
         <GroupDescription group={group} />
         {group.parameters.map((p) => {
           if (

@@ -19,7 +19,7 @@ const dacParameters = [
         scale: 'log',
         width: 0.8,
         chartHeight: 180,
-        offset: ['67%', '170px'],
+        offset: ['78%', '170px'],
         show: true,
       },
     ],
