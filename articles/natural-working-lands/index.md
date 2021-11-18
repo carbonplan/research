@@ -59,9 +59,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <FigureCaption number={4}>
   Inferring net emissions over time and across parameter combinations. The same
   model and procedure from Figure 3 is used here, but net emissions are inferred
-  for individual years. Each point represents a combination of source datasets
-  (4 options for net emissions, 2 options for fire data). Only GFED fire data is
-  available for 2021, so there are four points rather than 8.{' '}
+  within rolling 10-year time windows. Each point represents a combination of
+  source datasets (4 options for net emissions, 2 options for fire data). The
+  time for each point is the end of the corresponding 10-year window. Only GFED
+  fire data is available for 2021, so there are four points rather than 8.{' '}
 </FigureCaption>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -73,7 +74,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   estimate of net emissions related to forests and fires. Those estimates use
   the same model and procedure as in Figures 3 and 4, but with the specific
   parameter combination of Holland et al. (for the net emissions dataset) and
-  CARB (for the fire dataset).
+  CARB (for the fire dataset), and with estimates calculated on a year-by-year
+  basis, rather than the rolling window used in Figure 4.
 </FigureCaption>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
