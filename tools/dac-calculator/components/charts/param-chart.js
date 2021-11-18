@@ -45,7 +45,6 @@ const ParamChart = ({ param, data }) => {
             test={param.displayName === 'Electric Req'}
             data={data.map(([x, ...yValues]) => [x, 0, ...yValues])}
             color='purple'
-            range={[0.1, 0.9]}
             width={param.width}
           />
         </Plot>
