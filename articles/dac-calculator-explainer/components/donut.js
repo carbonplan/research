@@ -56,7 +56,6 @@ const DonutChart = ({ results, initWidth, sx }) => {
         <Chart padding={{ left: 0, bottom: 0 }}>
           <Plot square>
             <Donut
-              range={[0.32, 1]}
               data={values}
               innerRadius={0.23}
               color={disabled ? 'gray' : 'purple'}

@@ -23,7 +23,6 @@ const DonutChart = ({ results }) => {
       <Chart padding={{ left: 0, bottom: 0 }}>
         <Plot square>
           <Donut
-            range={[0.32, 1]}
             data={values}
             innerRadius={0.225}
             color={cost < 0 ? 'gray' : 'purple'}
