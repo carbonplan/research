@@ -1,17 +1,12 @@
 import { useEffect, useState, useRef } from 'react'
-import { Vega } from 'react-vega'
-import { useThemeUI, Box } from 'theme-ui'
-var vegaLite = require('vega-lite')
+import { Box } from 'theme-ui'
+import { Chart, Plot, Donut } from '@carbonplan/charts'
 
-const Donut = ({ results, initWidth, innerRadius }) => {
-  const [spec, setSpec] = useState(null)
-  const [loaded, setLoaded] = useState(false)
+const DonutChart = ({ results, initWidth, sx }) => {
   const [width, setWidth] = useState(null)
   const container = useRef(null)
-  const { theme } = useThemeUI()
-  const { rawColors: colors } = theme
 
-  const updateWidth = (node) => {
+  const updateWidth = () => {
     if (container.current) {
       const newWidth = container.current.offsetWidth * 0.85
       if (newWidth < initWidth) {
@@ -23,130 +18,53 @@ const Donut = ({ results, initWidth, innerRadius }) => {
   }
 
   useEffect(() => {
-    updateWidth(container)
+    updateWidth()
   }, [container.current])
 
   useEffect(() => {
-    let id = null
-    const listener = () => {
-      clearTimeout(id)
-      id = setTimeout(() => {
-        updateWidth(container)
-      }, 150)
-    }
-    window.addEventListener('resize', listener)
+    window.addEventListener('resize', updateWidth)
     return () => {
-      window.removeEventListener('resize', listener)
+      window.removeEventListener('resize', updateWidth)
     }
   }, [])
 
-  useEffect(() => {
-    const config = {
-      background: null,
-      cursor: 'pointer',
-      view: {
-        stroke: null,
-      },
-    }
-
-    const spec = {
-      data: {
-        name: 'values',
-      },
-      mark: {
-        type: 'arc',
-        innerRadius: width * 0.2333,
-      },
-      encoding: {
-        theta: {
-          field: 'fraction',
-          type: 'quantitative',
-          scale: { domain: [0, 1] },
-        },
-        opacity: {
-          field: 'index',
-          type: 'quantitative',
-          scale: { domain: [0, 3], range: [0.3, 0.9] },
-          legend: null,
-        },
-        color: {
-          field: 'color',
-          type: 'quantitative',
-          scale: {
-            domain: [0, 1],
-            range: [colors.secondary, colors.purple],
-          },
-          legend: null,
-        },
-      },
-    }
-
-    setSpec(vegaLite.compile(spec, { config: config }).spec)
-    setLoaded(true)
-  }, [theme, width])
-
   const disabled = results['Total Cost [$/tCO2]'] === 'N/A'
+  const values = []
 
-  const values = [
-    {
-      category: 'CAPITAL RECOVERY',
-      index: disabled ? 1 : 0,
-      color: disabled ? 0 : 1,
-      value: results['Capital Recovery [$/tCO2eq]'],
-      fraction: disabled
-        ? 1
-        : results['Capital Recovery [$/tCO2eq]'] /
-          results['Total Cost [$/tCO2]'],
-    },
-    {
-      category: 'FIXED O&M',
-      index: 1,
-      color: 1,
-      value: results['Fixed O&M [$/tCO2eq]'],
-      fraction: disabled
-        ? 0
-        : results['Fixed O&M [$/tCO2eq]'] / results['Total Cost [$/tCO2]'],
-    },
-    {
-      category: 'VARIABLE O&M',
-      index: 3,
-      color: 1,
-      value: results['Variable O&M [$/tCO2eq]'],
-      fraction: disabled
-        ? 0
-        : results['Variable O&M [$/tCO2eq]'] / results['Total Cost [$/tCO2]'],
-    },
-  ]
-
-  if (results['Natural Gas Cost [$/tCO2]'] > 0) {
-    values.push({
-      category: 'NATURAL GAS',
-      index: 2,
-      color: 1,
-      value: results['Natural Gas Cost [$/tCO2]'],
-      fraction: disabled
-        ? 0
-        : results['Natural Gas Cost [$/tCO2]'] / results['Total Cost [$/tCO2]'],
-    })
+  if (disabled) {
+    values.push(1)
+  } else {
+    values.push(
+      results['Capital Recovery [$/tCO2eq]'],
+      results['Fixed O&M [$/tCO2eq]'],
+      results['Variable O&M [$/tCO2eq]']
+    )
+    if (results['Natural Gas Cost [$/tCO2]'] > 0) {
+      values.push(results['Natural Gas Cost [$/tCO2]'])
+    }
   }
 
-  const height = width
-
   return (
-    <Box ref={container} sx={{ width: '100%' }}>
-      {loaded && width && (
-        <Vega
-          width={width}
-          height={height}
-          data={{ values: values }}
-          renderer={'svg'}
-          actions={false}
-          spec={spec}
-        />
-      )}
-      {(!loaded || !width) && <Box sx={{ height: height + 14 }}></Box>}
+    <Box ref={container}>
+      <Box
+        sx={{
+          width,
+          height: width,
+          ...sx,
+        }}
+      >
+        <Chart padding={{ left: 0, bottom: 0 }}>
+          <Plot square>
+            <Donut
+              data={values}
+              innerRadius={0.23}
+              color={disabled ? 'gray' : 'purple'}
+            />
+          </Plot>
+        </Chart>
+      </Box>
     </Box>
   )
 }
 
-export default Donut
+export default DonutChart
