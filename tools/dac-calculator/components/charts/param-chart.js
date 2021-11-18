@@ -7,34 +7,41 @@ import {
   AxisLabel,
   Plot,
   Bar,
+  StackedBar,
 } from '@carbonplan/charts'
 
 const ParamChart = ({ param, data }) => {
-  const domain = [data[0][0], data[data.length - 1][0]]
-  // const range = data.reduce(
-  //   (accum, [x, ...values]) => {
-  //     const min = Math.min(...values)
-  //     const max = Math.max(...values)
-
-  //     if (typeof accum[0] !== 'number' || accum[0] > min) {
-  //       accum[0] = min
-  //     }
-  //     if (typeof accum[1] !== 'number' || accum[1] < max) {
-  //       accum[1] = max
-  //     }
-
-  //     return accum
-  //   },
-  //   [null, null]
-  // )
+  const domain =
+    param.scale == 'linear'
+      ? [
+          param.validRange[0] -
+            (param.validRange[1] - param.validRange[0]) * 0.04,
+          param.validRange[1] +
+            (param.validRange[1] - param.validRange[0]) * 0.04,
+        ]
+      : param.displayRange
 
   return (
-    <Box sx={{ ml: ['-6px'], width: '100%', height: 200 }}>
-      <Chart x={domain} y={[0, 800]} logx={param.scale === 'log'}>
+    <Box sx={{ ml: ['-6px'], width: '100%', height: param.chartHeight }}>
+      <Chart
+        x={domain}
+        y={[0, 800]}
+        logx={param.scale === 'log'}
+        padding={{ left: 0, bottom: 0, right: 0, top: 0 }}
+        axisPadding={{ left: 0, right: 0, top: 0, bottom: 0 }}
+      >
+        <Axis bottom right />
         <Ticks bottom right />
-        <TickLabels bottom right />
-        <Plot>
-          <Bar data={data.map((d) => [d[0], d[d.length - 1]])} color='purple' />
+        <TickLabels right />
+        <TickLabels bottom values={param.tickLabels} />
+        <Plot sx={{ pb: '2px' }}>
+          <StackedBar
+            test={param.displayName === 'Electric Req'}
+            data={data.map(([x, ...yValues]) => [x, 0, ...yValues])}
+            color='purple'
+            range={[0.1, 0.9]}
+            width={param.width}
+          />
         </Plot>
       </Chart>
     </Box>

@@ -90,8 +90,8 @@ const Parameter = ({ param, data, state }) => {
             <ParamChart param={param} data={data}></ParamChart>
             <Box
               sx={{
-                width: ['calc(100% - 54px)'],
-                top: param.offset ? param.offset[1] : '118px',
+                width: ['calc(100% - 14px)'],
+                top: param.offset ? param.offset[1] : '110px',
                 position: 'absolute',
               }}
             >
