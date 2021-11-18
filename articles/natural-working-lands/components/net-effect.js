@@ -23,18 +23,18 @@ const init = {
     CARB: false,
   },
   emissions: {
-    'holland': true,
-    'gonzalez': false,
-    'christensen': false,
-    'AB 1504': false
-  }
+    holland: true,
+    gonzalez: false,
+    christensen: false,
+    'AB 1504': false,
+  },
 }
 
 const Figure = () => {
   const [fireOptions, setFireOptions] = useState(init.fire)
   const [emissionsOptions, setEmissionsOptions] = useState(init.emissions)
 
-  const [results, setResults] = useState({fire: 0, residual: 0, net: 0})
+  const [results, setResults] = useState({ fire: 0, residual: 0, net: 0 })
 
   useEffect(() => {
     const net = netData[getOption(emissionsOptions)]
@@ -43,15 +43,19 @@ const Figure = () => {
 
     const fireValue = [
       averageOverRange(fire, net.range),
-      averageOverRange(fire, [2001,2010]),
-      averageOverRange(fire, [2011,2020])
+      averageOverRange(fire, [2001, 2010]),
+      averageOverRange(fire, [2011, 2020]),
     ]
     const residualValue = netValue - fireValue[0]
 
     setResults({
-      fire: fireValue, 
+      fire: fireValue,
       residual: [residualValue, residualValue, residualValue],
-      net: [net.value, residualValue + fireValue[1], residualValue + fireValue[2]], 
+      net: [
+        net.value,
+        residualValue + fireValue[1],
+        residualValue + fireValue[2],
+      ],
     })
   }, [fireOptions, emissionsOptions])
 
@@ -69,50 +73,72 @@ const Figure = () => {
           <Filter values={fireOptions} setValues={setFireOptions} />
         </Column>
       </Row>
-      <Box sx={{ width: '100%', height: '270px', mt: [6]}}>
-      <Chart x={[-1, 15]} y={[-40, 60]} padding={{ bottom: 20, right: 0, left: 60 }}>
-        <AxisLabel left align='left'>
-          CO₂ emissions&nbsp;
-          <Box as='span' sx={{ textTransform: 'none', color: 'secondary' }}>
-            MMT / year
-          </Box>
-        </AxisLabel>
-        <Grid horizontal />
-        <TickLabels left />
-        <Ticks left />
-        <Plot>
-          <Rect color='red' x={bar(1)} y={[0, results.fire[0]]} />
-          <Rect color='green' x={bar(2)} y={[0, results.residual[0]]} />
-          <Rect color='yellow' x={bar(3)} y={[0, results.net[0]]} />
-          <Rect color='red' x={bar(6)} y={[0, results.fire[1]]} />
-          <Rect color='green' x={bar(7)} y={[0, results.residual[1]]} />
-          <Rect color='yellow' x={bar(8)} y={[0, results.net[1]]} />
-          <Rect color='red' x={bar(11)} y={[0, results.fire[2]]} />
-          <Rect color='green' x={bar(12)} y={[0, results.residual[2]]} />
-          <Rect color='yellow' x={bar(13)} y={[0, results.net[2]]} />
-        </Plot>
-        <Label x={1.25} y={-25.5}>{netData[getOption(emissionsOptions)].range.join('-')}</Label>
-        <Label x={6.25} y={-25.5}>2001-2010</Label>
-        <Label x={11.25} y={-25.5}>2011-2020</Label>
-        <Label x={-0.5} y={54} sx={{color: 'red'}}>Fire emissions</Label>
-        <Label x={-0.5} y={47} sx={{color: 'green'}}>Residual sink (inferred)</Label>
-        <Label x={-0.5} y={40} sx={{color: 'yellow'}}>Net emissions</Label>
-      </Chart>
-    </Box>
+      <Box sx={{ width: '100%', height: '270px', mt: [6] }}>
+        <Chart
+          x={[-1, 15]}
+          y={[-40, 60]}
+          padding={{ bottom: 20, right: 0, left: 60 }}
+        >
+          <AxisLabel left align='left'>
+            CO₂ emissions&nbsp;
+            <Box as='span' sx={{ textTransform: 'none', color: 'secondary' }}>
+              MMT / year
+            </Box>
+          </AxisLabel>
+          <Grid horizontal />
+          <TickLabels left />
+          <Ticks left />
+          <Plot>
+            <Rect color='red' x={bar(1)} y={[0, results.fire[0]]} />
+            <Rect color='green' x={bar(2)} y={[0, results.residual[0]]} />
+            <Rect color='yellow' x={bar(3)} y={[0, results.net[0]]} />
+            <Rect color='red' x={bar(6)} y={[0, results.fire[1]]} />
+            <Rect color='green' x={bar(7)} y={[0, results.residual[1]]} />
+            <Rect color='yellow' x={bar(8)} y={[0, results.net[1]]} />
+            <Rect color='red' x={bar(11)} y={[0, results.fire[2]]} />
+            <Rect color='green' x={bar(12)} y={[0, results.residual[2]]} />
+            <Rect color='yellow' x={bar(13)} y={[0, results.net[2]]} />
+          </Plot>
+          <Label x={1.25} y={-25.5}>
+            {netData[getOption(emissionsOptions)].range.join('-')}
+          </Label>
+          <Label x={6.25} y={-25.5}>
+            2001-2010
+          </Label>
+          <Label x={11.25} y={-25.5}>
+            2011-2020
+          </Label>
+          <Label x={-0.5} y={54} sx={{ color: 'red' }}>
+            Fire emissions
+          </Label>
+          <Label x={-0.5} y={47} sx={{ color: 'green' }}>
+            Residual sink (inferred)
+          </Label>
+          <Label x={-0.5} y={40} sx={{ color: 'yellow' }}>
+            Net emissions
+          </Label>
+        </Chart>
+      </Box>
     </Box>
   )
 }
 
-const BarChart = ({results, first, index}) => {
+const BarChart = ({ results, first, index }) => {
   return (
     <Box sx={{ width: '100%', height: '225px' }}>
-      <Chart x={[0.5, 3.5]} y={[-60, 60]} padding={{ bottom: 0, right: 0, left: 60 }}>
-        {first && <AxisLabel left align='left'>
-          CO₂ emissions&nbsp;
-          <Box as='span' sx={{ textTransform: 'none', color: 'secondary' }}>
-            MMT / year
-          </Box>
-        </AxisLabel>}
+      <Chart
+        x={[0.5, 3.5]}
+        y={[-60, 60]}
+        padding={{ bottom: 0, right: 0, left: 60 }}
+      >
+        {first && (
+          <AxisLabel left align='left'>
+            CO₂ emissions&nbsp;
+            <Box as='span' sx={{ textTransform: 'none', color: 'secondary' }}>
+              MMT / year
+            </Box>
+          </AxisLabel>
+        )}
         <Grid horizontal />
         {first && <TickLabels left />}
         {first && <Ticks left />}

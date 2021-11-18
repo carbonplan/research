@@ -1,10 +1,17 @@
 export const getOption = (options) => {
-  return Object.keys(options)[Object.keys(options).map(d => options[d]).indexOf(true)]
+  return Object.keys(options)[
+    Object.keys(options)
+      .map((d) => options[d])
+      .indexOf(true)
+  ]
 }
 
 export const averageOverRange = (data, range) => {
-  return data
-      .filter(d => d[0] >= range[0] && d[0] <= range[1])
-      .map(d => d[1])
-      .reduce( (a, b) => a + b, 0) / (range[1] - range[0] + 1)
+  return (
+    data
+      .filter((d) => d[0] >= range[0] && d[0] <= range[1])
+      .map((d) => d[1])
+      .reduce((a, b) => a + b, 0) /
+    (range[1] - range[0] + 1)
+  )
 }

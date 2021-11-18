@@ -14,10 +14,11 @@ import { data as netData } from './data/net-effect'
 import { data as fireData } from './data/fire-emissions'
 import { getOption, averageOverRange } from './utils'
 
-const years = Array(22).fill(0).map((_,i) => i + 2000)
+const years = Array(22)
+  .fill(0)
+  .map((_, i) => i + 2000)
 
 const Figure = () => {
-
   let data = []
 
   for (let k = 0; k < years.length; k++) {
@@ -25,7 +26,10 @@ const Figure = () => {
     const fire = fireData['CARB']
     const residual = net.value - averageOverRange(fire, net.range)
     const result = residual + averageOverRange(fire, [years[k], years[k]])
-    const baseline = inventoryData.ghg_inventory.slice(3, inventoryData.ghg_inventory.length)[k][1]
+    const baseline = inventoryData.ghg_inventory.slice(
+      3,
+      inventoryData.ghg_inventory.length
+    )[k][1]
     data.push([years[k], baseline + result])
   }
 
@@ -53,15 +57,14 @@ const Figure = () => {
               width={2}
             />
             <Line
-              data={inventoryData.ghg_inventory.slice(3, inventoryData.ghg_inventory.length - 1)}
+              data={inventoryData.ghg_inventory.slice(
+                3,
+                inventoryData.ghg_inventory.length - 1
+              )}
               color='yellow'
               width={2}
             />
-             <Line
-              data={data}
-              color='orange'
-              width={2}
-            />
+            <Line data={data} color='orange' width={2} />
           </Plot>
           <Label x={2000.25} y={440}>
             AB32 2020 Limit
