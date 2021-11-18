@@ -1,5 +1,21 @@
 const contents = [
   {
+    id: 'natural-working-lands',
+    number: 12,
+    version: '1.0.0',
+    date: '11-17-2021',
+    title: 'Title',
+    authors: ['Oriana Chegwidden', 'Sadie Frank', 'Danny Cullenward'],
+    color: 'yellow',
+    quickLook: 'Quicklook...',
+    background: '',
+    card: 'natural-working-lands',
+    tags: ['article'],
+    summary: 'Summary...',
+    icon: '',
+    links: [{ label: 'Read article', href: '/research/natural-working-lands' }],
+  },
+  {
     id: 'soil-protocols-explainer',
     number: 12,
     version: '1.2.0',
