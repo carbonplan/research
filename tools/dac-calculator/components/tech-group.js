@@ -39,7 +39,7 @@ const TechGroup = ({ name, group, data, state }) => {
         </Box>
       </Box>
       {expanded && !(name == 'Advanced NGCC') && (
-        <Box sx={{ mb: [4] }}>
+        <Box sx={{ mb: [7] }}>
           {group.map(
             (p) =>
               p.show && (
