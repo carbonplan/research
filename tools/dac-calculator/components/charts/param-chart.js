@@ -4,9 +4,7 @@ import {
   Axis,
   Ticks,
   TickLabels,
-  AxisLabel,
   Plot,
-  Bar,
   StackedBar,
 } from '@carbonplan/charts'
 
@@ -42,7 +40,6 @@ const ParamChart = ({ param, data }) => {
         <TickLabels bottom values={param.tickLabels} />
         <Plot sx={{ pb: '2px' }}>
           <StackedBar
-            test={param.displayName === 'Electric Req'}
             data={data.map(([x, ...yValues]) => [x, 0, ...yValues])}
             color='purple'
             width={param.width}
