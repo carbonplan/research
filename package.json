@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
-    "@carbonplan/charts": "2.1.1-develop.0",
+    "@carbonplan/charts": "2.1.1-develop.1",
     "@carbonplan/components": "^10.1.1",
     "@carbonplan/icons": "^1.0.0",
     "@carbonplan/theme": "^7.0.0",
