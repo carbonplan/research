@@ -49,7 +49,8 @@
     "rehype-react": "^6.2.1",
     "rehype-slug": "^4.0.1",
     "remark-rehype": "^8.1.0",
-    "theme-ui": "^0.10.0"
+    "theme-ui": "^0.10.0",
+    "topojson-client": "^3.1.0"
   },
   "devDependencies": {
     "extract-mdx-metadata": "^1.0.0",
