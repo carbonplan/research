@@ -14,7 +14,7 @@ const dacParameters = [
         initValue: 1000000,
         validRange: [500000, 10000000],
         displayRange: [445000, 1e7 + 1300000],
-        tickLabels: [1000000, 2000000, 3000000, 5000000],
+        tickLabels: [1000000, 2000000, 5000000],
         step: 50000,
         scale: 'log',
         width: 0.8,
