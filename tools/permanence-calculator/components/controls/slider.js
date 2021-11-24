@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useThemeUI, Box } from 'theme-ui'
-import { Row, Column, Slider } from '@carbonplan/components'
+import { Input, Row, Column, Slider } from '@carbonplan/components'
 import LabeledToggle from '../labeled-toggle'
 import { darken } from '@theme-ui/color'
 
@@ -20,15 +20,17 @@ const Control = ({
   max = max ? max : 1
   step = step ? step : 0.1
 
+  const [displayValue, setDisplayValue] = useState(value)
+
   const format = (value) => {
     if (units == 'dollars') {
       return `$${value.toFixed(0)}`
     } else if (name == 'discount rate') {
-      return `${(value * 100).toFixed(1)}%`
+      return `${value}%`
     } else if (name == 'project risk') {
-      return `${(value * 100).toFixed(1)}%`
+      return `${value}%`
     } else {
-      return value.toFixed(0)
+      return value
     }
   }
 
@@ -42,6 +44,43 @@ const Control = ({
       setOptional(active)
     }
   }, [active])
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    updateParamValueFromInput()
+  }
+
+  const updateParamValueFromInput = () => {
+    let v = parseFloat(displayValue)
+    if (!isNaN(v)) {
+      if (v < min) {
+        v = min
+      }
+      if (v > max) {
+        v = max
+      }
+      setValue(v)
+      setDisplayValue(v)
+    } else {
+      setDisplayValue(value)
+    }
+  }
+
+  const updateParamValue = (e) => {
+    setValue(parseFloat(e.target.value))
+  }
+
+  const updateParamDisplayValue = (e) => {
+    let normalized = e.target.value
+    if (name === 'discount rate' || name === 'project risk') {
+      normalized = normalized.replace('%', '')
+    }
+    setDisplayValue(normalized)
+  }
+
+  useEffect(() => {
+    setDisplayValue(value)
+  }, [value])
 
   return (
     <Box
@@ -95,29 +134,25 @@ const Control = ({
       </Row>
       <Row columns={[6, 6, 5, 5]}>
         <Column start={[1]} width={[2, 1, 1, 1]}>
-          <Box
-            sx={{
-              borderStyle: 'solid',
-              borderColor: 'primary',
-              borderWidth: '0px',
-              borderBottomWidth: '1px',
-              pb: [1],
-              pt: [2],
-            }}
-          >
-            <Box
+          <form onSubmit={handleSubmit}>
+            <Input
+              type='text'
+              size='md'
               sx={{
-                display: 'inline-block',
+                textAlign: 'left',
                 color: active ? 'pink' : 'muted',
-                fontSize: [4],
                 fontFamily: 'mono',
-                letterSpacing: '0.03em',
+                letterSpacing: 'mono',
                 transition: '0.2s',
+                width: '100%',
+                pb: [1],
+                pt: ['12px'],
               }}
-            >
-              {format(value)}
-            </Box>
-          </Box>
+              onChange={updateParamDisplayValue}
+              onBlur={updateParamValueFromInput}
+              value={format(displayValue)}
+            />
+          </form>
           <Box
             sx={{
               color: 'secondary',
@@ -136,11 +171,11 @@ const Control = ({
               width: ['100%'],
               color: active ? 'pink' : 'muted',
               backgroundColor: active ? 'secondary' : 'muted',
-              mt: ['42px'],
+              mt: ['42px', '42px', '42px', '55px'],
               pointerEvents: active ? 'all' : 'none',
             }}
             value={value}
-            onChange={(e) => setValue(parseFloat(e.target.value))}
+            onChange={updateParamValue}
             min={min}
             max={max}
             step={step}

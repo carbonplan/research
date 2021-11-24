@@ -108,11 +108,19 @@ const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
     .attr('stroke-width', 2)
     .attr('d', createLine)
 
-  focus
-    .selectAll('.' + className)
-    .data(points)
-    .enter()
-    .append('circle')
+  let circles
+
+  if (fixed) {
+    circles = focus.append('circle').datum(points[0])
+  } else {
+    circles = focus
+      .selectAll('.' + className)
+      .data(points)
+      .enter()
+      .append('circle')
+  }
+
+  circles
     .attr('r', 8.0)
     .attr('cx', function (d) {
       return x(d[0])
@@ -124,7 +132,7 @@ const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
     .style('cursor', 'pointer')
     .style('fill', theme.colors.pink)
 
-  focus.selectAll('.' + className).call(dragger)
+  circles.call(dragger)
 
   svg
     .append('text')
@@ -201,6 +209,7 @@ const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
         [0, d[1]],
         [100, d[1]],
       ])
+      circles.datum([50, d[1]])
     }
     current
       .attr('x', x(d[0]))
@@ -216,7 +225,24 @@ const CostCurve = (container, theme, value, setValue, name, scales, fixed) => {
     current.style('opacity', 0)
   }
 
-  const update = (data) => {}
+  const update = (v) => {
+    if (fixed) {
+      points = [[50, Math.min(v, scales.y[1])]]
+      pathPoints = [
+        [0, Math.min(v, scales.y[1])],
+        [100, Math.min(v, scales.y[1])],
+      ]
+    }
+    path.datum(pathPoints).attr('d', createLine)
+    circles
+      .datum(points[0])
+      .attr('cx', function (d) {
+        return x(d[0])
+      })
+      .attr('cy', function (d) {
+        return y(d[1])
+      })
+  }
 
   return { update: update }
 }
