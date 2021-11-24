@@ -1,11 +1,9 @@
 import { useRef, useState, useEffect } from 'react'
 import { useThemeUI, Box, Grid, Slider } from 'theme-ui'
 import { darken } from '@theme-ui/color'
-import { Row, Column } from '@carbonplan/components'
+import { Row, Column, Input } from '@carbonplan/components'
 import LabeledToggle from '../labeled-toggle'
 import CostCurve from '../charts/cost-curve'
-
-let chart = null
 
 const Curve = ({
   name,
@@ -13,15 +11,17 @@ const Curve = ({
   units,
   value,
   setValue,
-  displayValue,
   scales,
+  displayMethod,
 }) => {
   const container = useRef(null)
   const { theme } = useThemeUI()
+  const [chart, setChart] = useState(null)
   const [isVariable, setIsVariable] = useState(false)
+  const [displayValue, setDisplayValue] = useState(value[0][1])
 
-  useEffect(() => {
-    chart = new CostCurve(
+  const initializeChart = () => {
+    const out = new CostCurve(
       container,
       theme,
       value,
@@ -30,6 +30,12 @@ const Curve = ({
       scales,
       !isVariable
     )
+
+    setChart(out)
+  }
+
+  useEffect(() => {
+    initializeChart()
 
     return function cleanup() {
       container.current.innerHTML = ''
@@ -43,15 +49,7 @@ const Curve = ({
       clearTimeout(id)
       id = setTimeout(() => {
         if (container.current.offsetWidth > 0) {
-          chart = new CostCurve(
-            container,
-            theme,
-            value,
-            setValue,
-            name,
-            scales,
-            !isVariable
-          )
+          initializeChart()
         }
       }, 150)
     }
@@ -61,11 +59,53 @@ const Curve = ({
     return () => {
       window.removeEventListener('resize', listener)
     }
-  }, [theme])
+  }, [theme, isVariable, value])
 
   const format = (value) => {
-    return `$${value.toFixed(0)}`
+    return `$${value}`
   }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    updateParamValueFromInput()
+  }
+
+  const updateParamValueFromInput = () => {
+    let v = parseInt(displayValue)
+    if (!isNaN(v)) {
+      if (v < 0) {
+        v = 0
+      }
+      if (v > 9999) {
+        v = 9999
+      }
+      setValue([
+        [0, v],
+        [20, v],
+        [40, v],
+        [60, v],
+        [80, v],
+        [100, v],
+      ])
+      setDisplayValue(v)
+      if (!isVariable && chart) chart.update(v)
+    } else {
+      setDisplayValue(parseInt(value[0][1]))
+    }
+  }
+
+  const updateParamDisplayValue = (e) => {
+    let normalized = e.target.value.replace('$', '')
+    setDisplayValue(normalized)
+  }
+
+  useEffect(() => {
+    if (!isVariable) {
+      setDisplayValue(parseInt(value[0][1]))
+    } else {
+      setDisplayValue(parseInt(displayMethod))
+    }
+  }, [value])
 
   return (
     <Box
@@ -117,28 +157,26 @@ const Curve = ({
       </Row>
       <Row columns={[6, 6, 5, 5]}>
         <Column start={[1]} width={[2, 1, 1, 1]}>
-          <Box
-            sx={{
-              borderStyle: 'solid',
-              borderColor: 'primary',
-              borderWidth: '0px',
-              borderBottomWidth: '1px',
-              pb: [1],
-              pt: [2],
-            }}
-          >
-            <Box
+          <form onSubmit={handleSubmit}>
+            <Input
+              type='text'
+              size='md'
               sx={{
-                display: 'inline-block',
+                textAlign: 'left',
                 color: 'pink',
-                fontSize: [4],
                 fontFamily: 'mono',
                 letterSpacing: 'mono',
+                transition: '0.2s',
+                width: '100%',
+                pb: [1],
+                pt: ['12px'],
               }}
-            >
-              {format(displayValue)}
-            </Box>
-          </Box>
+              onChange={updateParamDisplayValue}
+              onBlur={updateParamValueFromInput}
+              value={format(displayValue)}
+              disabled={isVariable ? true : false}
+            />
+          </form>
           <Box
             sx={{
               color: 'secondary',
@@ -152,7 +190,7 @@ const Curve = ({
           </Box>
         </Column>
         <Column start={[3, 2, 2, 2]} width={[5, 5, 4, 4]}>
-          <Box sx={{ mt: ['5px'], ml: ['-10px'] }}>
+          <Box sx={{ mt: ['9px', '9px', '9px', '11px'], ml: ['-10px'] }}>
             <Box ref={container} sx={{ height: '200px', width: '100%' }} />
           </Box>
         </Column>

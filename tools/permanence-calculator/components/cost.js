@@ -24,7 +24,7 @@ const Cost = ({
   const years = Array(horizon + shortDuration)
     .fill(0)
     .map((_, i) => i)
-  const discount = years.map((y) => 1 / Math.pow(1 + discountRate, y))
+  const discount = years.map((y) => 1 / Math.pow(1 + discountRate / 100, y))
 
   const simulate = () => {
     let counter = 0
@@ -57,7 +57,7 @@ const Cost = ({
   const projectFail = () => {
     let counter = 1
     while (counter < shortDuration) {
-      if (Math.random() < projectRisk) {
+      if (Math.random() < projectRisk / 100) {
         return counter
       } else {
         counter += 1
@@ -121,7 +121,7 @@ const Cost = ({
       <Box
         sx={{
           display: ['inline-block', 'inline-block', 'block'],
-          fontSize: [3, 3, 6, 7],
+          fontSize: [4, 4, 6, 7],
           fontFamily: 'mono',
           letterSpacing: '0.02em',
           color: 'pink',
@@ -157,7 +157,7 @@ const Cost = ({
       <Box
         sx={{
           display: ['inline-block', 'inline-block', 'block'],
-          fontSize: [3, 3, 6, 7],
+          fontSize: [4, 4, 6, 7],
           fontFamily: 'mono',
           letterSpacing: '0.02em',
           color: 'pink',

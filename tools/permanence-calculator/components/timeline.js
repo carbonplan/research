@@ -20,7 +20,7 @@ const Timeline = ({ options }) => {
     const years = Array(101)
       .fill(0)
       .map((_, i) => i)
-    const discount = years.map((y) => 1 / Math.pow(1 + discountRate, y))
+    const discount = years.map((y) => 1 / Math.pow(1 + discountRate / 100, y))
 
     const discountFunction = years.map((year) => {
       return {

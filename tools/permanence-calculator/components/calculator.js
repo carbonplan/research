@@ -9,9 +9,9 @@ import Cost from './cost'
 
 const Calculator = () => {
   const initOptions = {
-    discountRate: 0.03,
+    discountRate: 3,
     shortDuration: 10,
-    projectRisk: 0.1,
+    projectRisk: 10,
     switchingTime: 50,
     switchingTimeActive: true,
     horizon: 1000,
@@ -174,8 +174,8 @@ const Calculator = () => {
                 value={get('discountRate')}
                 setValue={set('discountRate')}
                 min={0}
-                max={0.1}
-                step={0.001}
+                max={10}
+                step={0.1}
               />
               <Slider
                 name='project risk'
@@ -184,8 +184,8 @@ const Calculator = () => {
                 value={get('projectRisk')}
                 setValue={set('projectRisk')}
                 min={0}
-                max={0.1}
-                step={0.001}
+                max={10}
+                step={0.1}
               />
               <Curve
                 name='temporary cost'
@@ -193,16 +193,20 @@ const Calculator = () => {
                 units='$/tCO₂ (initial)'
                 value={get('shortCostCurve')}
                 setValue={set('shortCostCurve')}
-                displayValue={shortCostDisplay()}
+                displayMethod={shortCostDisplay()}
                 scales={{ x: [0, 100], y: [0, 100] }}
               />
               <Curve
                 name='permanent cost'
                 description='What is the cost of permanent carbon removal over time?'
-                units='$/tCO₂ (switch time)'
+                units={
+                  options['switchingTimeActive']
+                    ? '$/tCO₂ (switch time)'
+                    : '$/tCO₂ (initial)'
+                }
                 value={get('longCostCurve')}
                 setValue={set('longCostCurve')}
-                displayValue={longCostDisplay()}
+                displayMethod={longCostDisplay()}
                 scales={{ x: [0, 100], y: [0, 1000] }}
               />
             </Box>
