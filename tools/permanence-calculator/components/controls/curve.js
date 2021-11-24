@@ -76,8 +76,8 @@ const Curve = ({
       if (v < 0) {
         v = 0
       }
-      if (v > 5000) {
-        v = 5000
+      if (v > 9999) {
+        v = 9999
       }
       setValue([
         [0, v],
