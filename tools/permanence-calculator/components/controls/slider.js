@@ -73,7 +73,9 @@ const Control = ({
   const updateParamDisplayValue = (e) => {
     let normalized = e.target.value
     if (name === 'discount rate' || name === 'project risk') {
-      normalized = normalized.replace('%', '')
+      normalized = normalized.replace(/[^0-9.]/g, '')
+    } else {
+      normalized = normalized.replace(/[^0-9]/g, '')
     }
     setDisplayValue(normalized)
   }

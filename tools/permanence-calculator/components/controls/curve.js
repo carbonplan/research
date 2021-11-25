@@ -95,7 +95,7 @@ const Curve = ({
   }
 
   const updateParamDisplayValue = (e) => {
-    let normalized = e.target.value.replace('$', '')
+    let normalized = e.target.value.replace(/[^0-9]/g, '')
     setDisplayValue(normalized)
   }
 
