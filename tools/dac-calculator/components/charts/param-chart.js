@@ -32,13 +32,13 @@ const ParamChart = ({ param, data }) => {
         y={[0, 800]}
         logx={param.scale === 'log'}
         padding={{ left: 0, bottom: 0, right: 0, top: 0 }}
-        axisPadding={{ left: 6, right: 6, top: 0, bottom: 0 }}
+        axisPadding={{ left: 6, right: 6, top: 0, bottom: 2 }}
       >
         <Axis right />
         <Ticks bottom right />
         <TickLabels right format={(d) => `$${d}`} />
         <TickLabels bottom values={param.tickLabels} />
-        <Plot sx={{ pb: '2px' }}>
+        <Plot>
           <StackedBar
             data={data.map(([x, ...yValues]) => [x, 0, ...yValues])}
             color='purple'
