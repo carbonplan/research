@@ -32,9 +32,9 @@ const ParamChart = ({ param, data }) => {
         y={[0, 800]}
         logx={param.scale === 'log'}
         padding={{ left: 0, bottom: 0, right: 0, top: 0 }}
-        axisPadding={{ left: 0, right: 0, top: 0, bottom: 0 }}
+        axisPadding={{ left: 6, right: 6, top: 0, bottom: 0 }}
       >
-        <Axis bottom right />
+        <Axis right />
         <Ticks bottom right />
         <TickLabels right format={(d) => `$${d}`} />
         <TickLabels bottom values={param.tickLabels} />

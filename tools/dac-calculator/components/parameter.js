@@ -92,6 +92,7 @@ const Parameter = ({ param, data, state }) => {
               sx={{
                 width: ['calc(100% - 48px)'],
                 top: param.offset ? param.offset[1] : '110px',
+                px: ['4px', '6px', '6px', '8px'],
                 position: 'absolute',
               }}
             >
