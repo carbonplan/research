@@ -64,7 +64,7 @@ const Parameter = ({ param, data, state }) => {
                   fontFamily: 'mono',
                   letterSpacing: 'mono',
                   width: '100%',
-                  mt: [0, 0, '9px', -1],
+                  mt: [0, 0, '8px', -1],
                 }}
                 // onKeyPress={handleEnter}
                 onChange={updateParamDisplayValue}
@@ -124,7 +124,7 @@ const Parameter = ({ param, data, state }) => {
                   maxWidth: '600px',
                   fontSize: [2, 2, 2, 3],
                   color: 'purple',
-                  mt: [2, 2, 2, 3],
+                  mt: [5, 5, 6, 6],
                 }}
               >
                 {param.description}
