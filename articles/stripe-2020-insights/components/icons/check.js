@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx, Box } from 'theme-ui'
+import { Box } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 
 const Check = ({ closed, color }) => {
@@ -15,7 +14,8 @@ const Check = ({ closed, color }) => {
         mt: closed ? ['-3px'] : [0],
       }}
     >
-      <svg
+      <Box
+        as='svg'
         height={closed ? '18px' : '22px'}
         width={closed ? '18px' : '22px'}
         stroke='none'
@@ -34,7 +34,7 @@ const Check = ({ closed, color }) => {
             <circle cx='13' cy='13' r='12' />
           </>
         )}
-      </svg>
+      </Box>
     </span>
   )
 }

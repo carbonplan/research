@@ -49,7 +49,7 @@ const Timeline = ({ options }) => {
     }
 
     return function cleanup() {
-      container.current.innerHTML = ''
+      if (container.current) container.current.innerHTML = ''
     }
   }, [theme])
 
