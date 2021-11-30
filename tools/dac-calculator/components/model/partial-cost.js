@@ -82,7 +82,7 @@ function calcForOneParam(model, p, params) {
       results['Capital Recovery [$/tCO2eq Net Removed]'],
     ].reduce((accum, el, i) => {
       if (results['Total Cost [$/tCO2 Net Removed]'] < 0) {
-        accum.push(1000)
+        accum.push(-1)
       } else if (i < 1) {
         accum.push(el)
       } else {
@@ -125,7 +125,7 @@ function calcForOneTechParam(model, tech, p, params) {
       results['Capital Recovery [$/tCO2eq Net Removed]'],
     ].reduce((accum, el, i) => {
       if (results['Total Cost [$/tCO2 Net Removed]'] < 0) {
-        accum.push(1000)
+        accum.push(-1)
       } else if (i < 1) {
         accum.push(el)
       } else {
