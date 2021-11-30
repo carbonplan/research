@@ -59,7 +59,7 @@ const ParamChart = ({ param, data }) => {
             <Bar
               data={invalidValues}
               color='secondary'
-              sx={{ opacity: 0.9 }}
+              fillOpacity={0.6}
               width={param.width}
             />
           )}
