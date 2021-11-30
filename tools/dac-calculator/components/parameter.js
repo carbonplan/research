@@ -45,13 +45,13 @@ const Parameter = ({ param, data, state }) => {
   }, [value])
 
   return (
-    <Box sx={{ mb: [6] }}>
+    <Box sx={{ mb: [3] }}>
       <Row columns={[6, 6]}>
         <Column start={[1, 1]} width={[6, 2, 2, 2]}>
           <Box
             sx={{
               position: 'relative',
-              top: ['10%', '10%', param.offset ? param.offset[0] : '67%'],
+              top: ['10%', '10%', param.offset ? param.offset[0] : '60%'],
             }}
           >
             <form onSubmit={handleSubmit}>
@@ -91,7 +91,7 @@ const Parameter = ({ param, data, state }) => {
             <Box
               sx={{
                 width: ['calc(100% - 48px)'],
-                top: param.offset ? param.offset[1] : '108px',
+                top: param.offset ? param.offset[1] : '126px',
                 px: ['4px', '6px', '6px', '8px'],
                 position: 'absolute',
               }}
@@ -124,7 +124,7 @@ const Parameter = ({ param, data, state }) => {
                   maxWidth: '600px',
                   fontSize: [2, 2, 2, 3],
                   color: 'purple',
-                  mt: [5, 5, 6, 6],
+                  mt: [2, 2, 2, 3],
                 }}
               >
                 {param.description}
