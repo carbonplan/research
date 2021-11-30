@@ -5,6 +5,7 @@ import {
   Ticks,
   TickLabels,
   Plot,
+  Bar,
   StackedBar,
 } from '@carbonplan/charts'
 
@@ -18,6 +19,18 @@ const ParamChart = ({ param, data }) => {
             (param.validRange[1] - param.validRange[0]) * 0.04,
         ]
       : param.displayRange
+
+  const { validValues, invalidValues } = data.reduce(
+    (accum, [x, ...yValues]) => {
+      if (yValues.find((v) => v === 1000)) {
+        accum.invalidValues.push([x, 1000])
+      } else {
+        accum.validValues.push([x, 0, ...yValues])
+      }
+      return accum
+    },
+    { validValues: [], invalidValues: [] }
+  )
 
   return (
     <Box
@@ -39,11 +52,17 @@ const ParamChart = ({ param, data }) => {
         <TickLabels right format={(d) => `$${d}`} />
         <TickLabels bottom values={param.tickLabels} />
         <Plot>
-          <StackedBar
-            data={data.map(([x, ...yValues]) => [x, 0, ...yValues])}
-            color='purple'
-            width={param.width}
-          />
+          {validValues.length > 0 && (
+            <StackedBar data={validValues} color='purple' width={param.width} />
+          )}
+          {invalidValues.length > 0 && (
+            <Bar
+              data={invalidValues}
+              color='secondary'
+              sx={{ opacity: 0.9 }}
+              width={param.width}
+            />
+          )}
         </Plot>
       </Chart>
     </Box>
