@@ -22,7 +22,7 @@ const ParamChart = ({ param, data }) => {
 
   const { validValues, invalidValues } = data.reduce(
     (accum, [x, ...yValues]) => {
-      if (yValues.find((v) => v === 1000)) {
+      if (yValues.find((v) => v < 0)) {
         accum.invalidValues.push([x, 1000])
       } else {
         accum.validValues.push([x, 0, ...yValues])
