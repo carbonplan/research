@@ -22,7 +22,7 @@ const ParameterGroup = ({ group, data, state }) => {
                 param={p}
                 data={data[p.name]}
                 state={state[p.name]}
-              ></Parameter>
+              />
             )
           )
         })}

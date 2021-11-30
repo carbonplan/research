@@ -51,7 +51,7 @@ const Parameter = ({ param, data, state }) => {
           <Box
             sx={{
               position: 'relative',
-              top: ['10%', '10%', param.offset ? param.offset[0] : '54%'],
+              top: ['10%', '10%', param.offset ? param.offset[0] : '60%'],
             }}
           >
             <form onSubmit={handleSubmit}>
@@ -64,7 +64,7 @@ const Parameter = ({ param, data, state }) => {
                   fontFamily: 'mono',
                   letterSpacing: 'mono',
                   width: '100%',
-                  mt: [0, 0, '9px', -1],
+                  mt: [0, 0, '8px', -1],
                 }}
                 // onKeyPress={handleEnter}
                 onChange={updateParamDisplayValue}
@@ -90,8 +90,9 @@ const Parameter = ({ param, data, state }) => {
             <ParamChart param={param} data={data}></ParamChart>
             <Box
               sx={{
-                width: ['calc(100% - 54px)'],
-                top: param.offset ? param.offset[1] : '118px',
+                width: ['calc(100% - 48px)'],
+                top: param.offset ? param.offset[1] : '126px',
+                px: ['4px', '6px', '6px', '8px'],
                 position: 'absolute',
               }}
             >

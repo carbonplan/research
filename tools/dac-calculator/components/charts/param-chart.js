@@ -1,157 +1,51 @@
-import { useEffect, useState, useRef } from 'react'
-import { Vega } from 'react-vega'
-import { useThemeUI, Box } from 'theme-ui'
-
-var vegaLite = require('vega-lite')
+import { Box } from 'theme-ui'
+import {
+  Chart,
+  Axis,
+  Ticks,
+  TickLabels,
+  Plot,
+  StackedBar,
+} from '@carbonplan/charts'
 
 const ParamChart = ({ param, data }) => {
-  const [spec, setSpec] = useState(null)
-  const [loaded, setLoaded] = useState(false)
-  const [width, setWidth] = useState(null)
-  const [barWidth, setBarWidth] = useState(15)
-  const container = useRef(null)
-  const { theme } = useThemeUI()
-  const { secondary, text, purple } = theme.rawColors
-
-  const updateWidth = (container) => {
-    if (container.current) {
-      const newWidth = container.current.offsetWidth - 48
-      setWidth(newWidth)
-      setBarWidth(newWidth * 0.0392)
-    }
-  }
-
-  useEffect(() => {
-    updateWidth(container)
-  }, [container.current])
-
-  useEffect(() => {
-    let id = null
-    const listener = () => {
-      clearTimeout(id)
-      id = setTimeout(() => {
-        updateWidth(container)
-      }, 150)
-    }
-    window.addEventListener('resize', listener)
-    return () => {
-      window.removeEventListener('resize', listener)
-    }
-  }, [])
-
-  useEffect(() => {
-    const config = {
-      background: null,
-      padding: { left: 0, right: 10, top: 0, bottom: 0 },
-      axis: {
-        grid: false,
-        labelFontSize: theme.fontSizes[1],
-        labelFont: theme.fonts.mono,
-        labelColor: text,
-        titleFont: theme.fonts.mono,
-        titleFontSize: theme.fontSizes[1],
-        titleColor: text,
-        domain: true,
-        tickOffset: 0,
-        labelPadding: 5,
-        titlePadding: 10,
-      },
-      view: {
-        stroke: 'none',
-      },
-    }
-
-    const spec = {
-      data: {
-        name: 'values',
-      },
-      mark: {
-        type: 'bar',
-        color: purple,
-        width: barWidth,
-        clip: true,
-      },
-      encoding: {
-        x: {
-          field: 'x',
-          type: 'quantitative',
-          scale: {
-            domain:
-              param.scale == 'linear'
-                ? [
-                    param.validRange[0] -
-                      (param.validRange[1] - param.validRange[0]) * 0.04,
-                    param.validRange[1] +
-                      (param.validRange[1] - param.validRange[0]) * 0.04,
-                  ]
-                : param.displayRange,
-            type: param.scale,
-            nice: false,
-            padding: 0,
-          },
-          axis: {
-            title: null,
-            domainWidth: 0,
-            offset: 6,
-            labelBound: true,
-            labelFlush: false,
-            format: '~f',
-            labelSeparation: 8,
-          },
-        },
-        y: {
-          field: 'y',
-          aggregate: 'sum',
-          type: 'quantitative',
-          scale: {
-            domain: [0, 800],
-            padding: 0,
-            nice: false,
-          },
-          axis: {
-            title: null,
-            orient: 'right',
-            padding: 0,
-            offset: 5,
-            format: '$0f',
-          },
-        },
-        fillOpacity: {
-          field: 'o',
-          type: 'quantitative',
-          scale: { domain: [0, 3], range: [0.3, 0.9] },
-          legend: null,
-        },
-        color: {
-          field: 'c',
-          type: 'quantitative',
-          scale: {
-            domain: [0, 1],
-            range: [secondary, purple],
-          },
-          legend: null,
-        },
-      },
-    }
-    setSpec(vegaLite.compile(spec, { config: config }).spec)
-    setLoaded(true)
-  }, [theme, param, barWidth])
-
-  const height = param.chartHeight
+  const domain =
+    param.scale == 'linear'
+      ? [
+          param.validRange[0] -
+            (param.validRange[1] - param.validRange[0]) * 0.04,
+          param.validRange[1] +
+            (param.validRange[1] - param.validRange[0]) * 0.04,
+        ]
+      : param.displayRange
 
   return (
-    <Box ref={container} sx={{ ml: ['-6px'] }}>
-      {loaded && width && (
-        <Vega
-          width={width}
-          height={height}
-          data={{ values: data }}
-          renderer={'svg'}
-          actions={false}
-          spec={spec}
-        />
-      )}
-      {(!loaded || !width) && <Box sx={{ height: height + 41 }}></Box>}
+    <Box
+      sx={{
+        ml: ['-6px'],
+        width: 'calc(100% - 36px)',
+        height: param.chartHeight,
+      }}
+    >
+      <Chart
+        x={domain}
+        y={[0, 800]}
+        logx={param.scale === 'log'}
+        padding={{ left: 0, right: 0, top: 0, bottom: 22 }}
+        axisPadding={{ left: 6, right: 6, top: 0, bottom: 2 }}
+      >
+        <Axis right />
+        <Ticks bottom right />
+        <TickLabels right format={(d) => `$${d}`} />
+        <TickLabels bottom values={param.tickLabels} />
+        <Plot>
+          <StackedBar
+            data={data.map(([x, ...yValues]) => [x, 0, ...yValues])}
+            color='purple'
+            width={param.width}
+          />
+        </Plot>
+      </Chart>
     </Box>
   )
 }

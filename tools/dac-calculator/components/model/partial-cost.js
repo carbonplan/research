@@ -64,47 +64,35 @@ function calcX(p) {
  * @return {!Array<object>}
  */
 function calcForOneParam(model, p, params) {
-  let tempResults
   const chartData = []
 
   const origValue = params[p.name].valueOf() // copy original value
 
   const x = calcX(p)
 
-  let cost
-
-  for (var j = 0, k = x.length; j < k; j++) {
+  for (var j = 0; j < x.length; j++) {
     params[p.name] = x[j]
     model.setParams(params)
-    tempResults = model.compute()
-    cost = tempResults['Total Cost [$/tCO2 Net Removed]']
-    chartData.push({
-      x: x[j],
-      y: cost < 0 ? 1000 : tempResults['Variable O&M [$/tCO2eq Net Removed]'],
-      o: cost < 0 ? 1 : 3,
-      c: cost < 0 ? 0 : 1,
-    })
-    chartData.push({
-      x: x[j],
-      y: cost < 0 ? 1000 : tempResults['Natural Gas Cost [$/tCO2 Net Removed]'],
-      o: cost < 0 ? 1 : 2,
-      c: cost < 0 ? 0 : 1,
-    })
-    chartData.push({
-      x: x[j],
-      y: cost < 0 ? 1000 : tempResults['Fixed O&M [$/tCO2eq Net Removed]'],
-      o: cost < 0 ? 1 : 1,
-      c: cost < 0 ? 0 : 1,
-    })
-    chartData.push({
-      x: x[j],
-      y:
-        cost < 0
-          ? 1000
-          : tempResults['Capital Recovery [$/tCO2eq Net Removed]'],
-      o: cost < 0 ? 1 : 0,
-      c: cost < 0 ? 0 : 1,
-    })
+    const results = model.compute()
+
+    const yValues = [
+      results['Variable O&M [$/tCO2eq Net Removed]'],
+      results['Natural Gas Cost [$/tCO2 Net Removed]'],
+      results['Fixed O&M [$/tCO2eq Net Removed]'],
+      results['Capital Recovery [$/tCO2eq Net Removed]'],
+    ].reduce((accum, el, i) => {
+      if (results['Total Cost [$/tCO2 Net Removed]'] < 0) {
+        accum.push(1000)
+      } else if (i < 1) {
+        accum.push(el)
+      } else {
+        accum.push(accum[i - 1] + el)
+      }
+
+      return accum
+    }, [])
+
+    chartData.push([x[j], ...yValues])
   }
   params[p.name] = origValue // replace original value
   return chartData
@@ -120,47 +108,34 @@ function calcForOneParam(model, p, params) {
  * @return {!Array<object>}
  */
 function calcForOneTechParam(model, tech, p, params) {
-  let tempResults
-
   const origValue = params['Technology'][tech][p.name].valueOf() // copy original value
   const chartData = []
 
   const x = calcX(p)
 
-  let cost
-
-  for (var j = 0, k = x.length; j < k; j++) {
+  for (var j = 0; j < x.length; j++) {
     params['Technology'][tech][p.name] = x[j]
     model.setParams(params)
-    tempResults = model.compute()
-    cost = tempResults['Total Cost [$/tCO2 Net Removed]']
-    chartData.push({
-      x: x[j],
-      y: cost < 0 ? 1000 : tempResults['Natural Gas Cost [$/tCO2 Net Removed]'],
-      o: cost < 0 ? 1 : 2,
-      c: cost < 0 ? 0 : 1,
-    })
-    chartData.push({
-      x: x[j],
-      y: cost < 0 ? 1000 : tempResults['Variable O&M [$/tCO2eq Net Removed]'],
-      o: cost < 0 ? 1 : 3,
-      c: cost < 0 ? 0 : 1,
-    })
-    chartData.push({
-      x: x[j],
-      y: cost < 0 ? 1000 : tempResults['Fixed O&M [$/tCO2eq Net Removed]'],
-      o: cost < 0 ? 1 : 1,
-      c: cost < 0 ? 0 : 1,
-    })
-    chartData.push({
-      x: x[j],
-      y:
-        cost < 0
-          ? 1000
-          : tempResults['Capital Recovery [$/tCO2eq Net Removed]'],
-      o: cost < 0 ? 1 : 0,
-      c: cost < 0 ? 0 : 1,
-    })
+    const results = model.compute()
+
+    const yValues = [
+      results['Variable O&M [$/tCO2eq Net Removed]'],
+      results['Fixed O&M [$/tCO2eq Net Removed]'],
+      results['Natural Gas Cost [$/tCO2 Net Removed]'],
+      results['Capital Recovery [$/tCO2eq Net Removed]'],
+    ].reduce((accum, el, i) => {
+      if (results['Total Cost [$/tCO2 Net Removed]'] < 0) {
+        accum.push(1000)
+      } else if (i < 1) {
+        accum.push(el)
+      } else {
+        accum.push(accum[i - 1] + el)
+      }
+
+      return accum
+    }, [])
+
+    chartData.push([x[j], ...yValues])
   }
   params['Technology'][tech][p.name] = origValue // replace original value
   return chartData
