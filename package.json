@@ -24,7 +24,7 @@
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
     "@carbonplan/charts": "^2.2.0",
-    "@carbonplan/components": "^10.1.1",
+    "@carbonplan/components": "^10.4.0",
     "@carbonplan/icons": "^1.0.0",
     "@carbonplan/theme": "^7.0.0",
     "@mdx-js/loader": "^1.6.22",
@@ -41,14 +41,14 @@
     "d3-selection": "^2.0.0",
     "d3-shape": "^2.1.0",
     "mapbox-gl": "^1.13.1",
-    "next": "^10.2.0",
-    "react": "^16.14.0",
+    "next": "^12.0.4",
+    "react": "^17.0.2",
     "react-animate-height": "^2.0.23",
-    "react-dom": "^16.14.0",
+    "react-dom": "^17.0.2",
     "rehype-react": "^6.2.1",
     "rehype-slug": "^4.0.1",
     "remark-rehype": "^8.1.0",
-    "theme-ui": "^0.10.0",
+    "theme-ui": "^0.12.1",
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {

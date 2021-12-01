@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx, Box } from 'theme-ui'
+import { Box } from 'theme-ui'
 import { shade, mix } from '@theme-ui/color'
 import { Row, Column } from '@carbonplan/components'
 
@@ -65,7 +64,7 @@ const Cycle = ({ tag, data, labels, intro }) => {
   const element = (tag, shift) => {
     const down = () => {
       return (
-        <g sx={{ stroke: sxFlux({ from: 'atmosphere', to: tag }) }}>
+        <Box as='g' sx={{ stroke: sxFlux({ from: 'atmosphere', to: tag }) }}>
           <g transform='translate(12.8,22.5)'>
             // left edge
             <line x1='26' y1='68' x2='21.5' y2='63' />
@@ -74,13 +73,13 @@ const Cycle = ({ tag, data, labels, intro }) => {
             // shaft
             <line x1='26' y1='68' x2='26' y2='16' />
           </g>
-        </g>
+        </Box>
       )
     }
 
     const up = () => {
       return (
-        <g sx={{ stroke: sxFlux({ from: tag, to: 'atmosphere' }) }}>
+        <Box as='g' sx={{ stroke: sxFlux({ from: tag, to: 'atmosphere' }) }}>
           <g transform='translate(12.8,22.5)'>
             // shaft
             <line x1='13' y1='16' x2='13' y2='68' />
@@ -89,21 +88,22 @@ const Cycle = ({ tag, data, labels, intro }) => {
             // left edge
             <line x1='13' y1='16' x2='8.5' y2='21' />
           </g>
-        </g>
+        </Box>
       )
     }
 
     const circle = () => {
       return (
-        <g sx={{ fill: mix(sxStock(tag), 'background', 0.5) }}>
+        <Box as='g' sx={{ fill: mix(sxStock(tag), 'background', 0.5) }}>
           <circle cx='33.6' cy='91.1' r='18' />
-        </g>
+        </Box>
       )
     }
 
     const avoided = () => {
       return (
-        <g
+        <Box
+          as='g'
           sx={{
             stroke: sxFluxAvoided({ from: tag, to: 'atmosphere' }),
             display: sxFluxAvoided({
@@ -115,7 +115,8 @@ const Cycle = ({ tag, data, labels, intro }) => {
         >
           <g transform='translate(12.8,22.5)'>
             // hidden line
-            <line
+            <Box
+              as='line'
               x1='13'
               y1='16'
               x2='13'
@@ -125,7 +126,8 @@ const Cycle = ({ tag, data, labels, intro }) => {
             // highlighted line
             <line x1='13' y1='60' x2='13' y2='68' />
             // right edge
-            <line
+            <Box
+              as='line'
               x1='13'
               y1='16'
               x2='17.5'
@@ -133,7 +135,8 @@ const Cycle = ({ tag, data, labels, intro }) => {
               sx={{ stroke: mix('secondary', 'background', 0.4) }}
             />
             // left edge
-            <line
+            <Box
+              as='line'
               x1='13'
               y1='16'
               x2='8.5'
@@ -141,9 +144,15 @@ const Cycle = ({ tag, data, labels, intro }) => {
               sx={{ stroke: mix('secondary', 'background', 0.4) }}
             />
           </g>
-          <circle sx={{ fill: 'background' }} cx='25.9' cy='74' r='6.7' />
+          <Box
+            as='circle'
+            sx={{ fill: 'background' }}
+            cx='25.9'
+            cy='74'
+            r='6.7'
+          />
           <line x1='20.4' y1='77.3' x2='30.7' y2='70' />
-        </g>
+        </Box>
       )
     }
 
@@ -209,14 +218,18 @@ const Cycle = ({ tag, data, labels, intro }) => {
     }
     return (
       <g transform={`translate(${shift},0)`}>
-        <g sx={{ stroke: sxFlux({ from: from, to: to }, true) }} transform={t}>
+        <Box
+          as='g'
+          sx={{ stroke: sxFlux({ from: from, to: to }, true) }}
+          transform={t}
+        >
           // top edge
           <line x1='43' y1='23.3' x2='48' y2='19.2' />
           // bottom edge
           <line x1='48' y1='27.4' x2='43' y2='23.3' />
           // shaft
           <line x1='43' y1='23.3' x2='70.3' y2='23.3' />
-        </g>
+        </Box>
       </g>
     )
   }
@@ -226,13 +239,14 @@ const Cycle = ({ tag, data, labels, intro }) => {
     if (check === 'geologic') check = 'geological'
     if (check === 'fuels') check = 'fuel'
     return (
-      <text
+      <Box
+        as='text'
         x={shift}
         y='126'
         sx={{ fill: data.stock[check] || intro ? 'primary' : 'muted' }}
       >
         {stock}
-      </text>
+      </Box>
     )
   }
 
@@ -253,7 +267,8 @@ const Cycle = ({ tag, data, labels, intro }) => {
               fill='none'
               viewBox='6 16 335 110'
             >
-              <rect
+              <Box
+                as='rect'
                 sx={{ fill: mix('muted', 'background', 0.5) }}
                 x='6.3'
                 y='21.4'
@@ -278,7 +293,8 @@ const Cycle = ({ tag, data, labels, intro }) => {
 
               {labels && (
                 <>
-                  <g
+                  <Box
+                    as='g'
                     sx={{
                       fill: 'text',
                       textTransform: 'uppercase',
@@ -294,7 +310,7 @@ const Cycle = ({ tag, data, labels, intro }) => {
                     {label('Material', 148)}
                     {label('Land', 228)}
                     {label('Ocean', 293)}
-                  </g>
+                  </Box>
                 </>
               )}
             </svg>

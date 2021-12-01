@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx, Box } from 'theme-ui'
+import { Box } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 
 const Exclamation = ({ closed, color }) => {
@@ -15,7 +14,8 @@ const Exclamation = ({ closed, color }) => {
         mt: closed ? ['-3px'] : [0],
       }}
     >
-      <svg
+      <Box
+        as='svg'
         height={closed ? '18px' : '22px'}
         width={closed ? '18px' : '22px'}
         stroke='none'
@@ -40,7 +40,7 @@ const Exclamation = ({ closed, color }) => {
             <line x1='13' y1='6.9' x2='13' y2='15.0' />
           </>
         )}
-      </svg>
+      </Box>
     </span>
   )
 }
