@@ -11,7 +11,7 @@ const techData = {
       step: 500,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -32,7 +32,7 @@ const techData = {
       maxSteps: 10,
       scale: 'linear',
       width: 0.4,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -46,7 +46,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -60,7 +60,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -74,7 +74,7 @@ const techData = {
       step: 0.01,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -88,7 +88,7 @@ const techData = {
       step: 0.1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
   ],
@@ -104,7 +104,7 @@ const techData = {
       step: 100,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -124,7 +124,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -138,7 +138,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -152,7 +152,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -166,7 +166,7 @@ const techData = {
       step: 100,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -180,7 +180,7 @@ const techData = {
       step: 0.01,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -194,7 +194,7 @@ const techData = {
       step: 0.1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -208,7 +208,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
   ],
@@ -224,7 +224,7 @@ const techData = {
       step: 100,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -235,7 +235,7 @@ const techData = {
       step: 100,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: false,
     },
     {
@@ -249,7 +249,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -263,7 +263,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -277,7 +277,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -291,7 +291,7 @@ const techData = {
       step: 100,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -305,7 +305,7 @@ const techData = {
       step: 0.01,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -319,7 +319,7 @@ const techData = {
       step: 0.1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -333,7 +333,7 @@ const techData = {
       step: 0.1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -347,7 +347,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
   ],
@@ -363,7 +363,7 @@ const techData = {
       step: 100,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -383,7 +383,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -397,7 +397,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -411,7 +411,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -425,7 +425,7 @@ const techData = {
       step: 0.01,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -439,7 +439,7 @@ const techData = {
       step: 0.1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -451,7 +451,7 @@ const techData = {
       step: 0.1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: false,
     },
   ],
@@ -467,7 +467,7 @@ const techData = {
       step: 100,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -487,7 +487,7 @@ const techData = {
       step: 10,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -501,7 +501,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -515,7 +515,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -529,7 +529,7 @@ const techData = {
       step: 1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -543,7 +543,7 @@ const techData = {
       step: 0.1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
     {
@@ -557,7 +557,7 @@ const techData = {
       step: 0.1,
       scale: 'linear',
       width: 0.8,
-      chartHeight: 120,
+      chartHeight: 160,
       show: true,
     },
   ],
