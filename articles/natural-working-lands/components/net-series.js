@@ -26,10 +26,11 @@ const years = Array(13)
   .map((_, i) => i + 2000)
 
 const Figure = () => {
-  let data = []
+  let lineData = []
 
   for (let i = 0; i < emissionsOptions.length; i++) {
     for (let j = 0; j < fireOptions.length; j++) {
+      let data = []
       for (let k = 0; k < years.length; k++) {
         const net = netData[emissionsOptions[i]]
         const fire = fireData[fireOptions[j]]
@@ -38,10 +39,11 @@ const Figure = () => {
           residual + averageOverRange(fire, [years[k], years[k] + 9])
         data.push([years[k] + 9, result])
       }
+      lineData.push(data)
     }
   }
 
-  data = data.filter((d) => !isNaN(d[0]) && !isNaN(d[1]))
+  //data = data.filter((d) => !isNaN(d[0]) && !isNaN(d[1]))
 
   return (
     <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
@@ -62,7 +64,9 @@ const Figure = () => {
           <TickLabels bottom />
           <Ticks bottom />
           <Plot>
-            <Scatter data={data} color='yellow' />
+            {lineData.map((d, i) => (
+              <Line key={i} data={d} color='yellow' width={2} />
+            ))}
           </Plot>
         </Chart>
       </Box>

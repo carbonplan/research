@@ -37,8 +37,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <FireEmissions />
 <FigureCaption number={2}>
-  Comparison of fire emissions estimates over time from CARB (yellow) and GFED
-  (red). GFED estimates in 2021 only include January through September.
+  Comparison of fire emissions estimates over time from GFED (solid red) and
+  CARB (dashed red). GFED estimates in 2021 only include January through
+  September.
 </FigureCaption>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -67,15 +68,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<GHGSeries />
+<GHGSeries mode='b' />
+<GHGSeries mode='a' />
 <FigureCaption number={5}>
-  Inferring combined GHG inventories. Yellow line and gray line replot the same
-  data from Figure 1. Orange line combines GHG inventory emissions with an
-  estimate of net emissions related to forests and fires. Those estimates use
-  the same model and procedure as in Figures 3 and 4, but with the specific
-  parameter combination of Holland et al. (for the net emissions dataset) and
-  CARB (for the fire dataset), and with estimates calculated on a year-by-year
-  basis, rather than the rolling window used in Figure 4.
+  Inferring combined GHG inventories. Anthropogenic inventory emissions
+  replotted from Figure 1 (yellow line). The GHG inventory is summed with an
+  estimate of net emissions under different parameter combinations to infer
+  emissions incorporating forests (orange lines). For the "rolling average" (top
+  panel) those net estimates from the analysis shown in Figure 4, where fire
+  data are averaged within 10 year rolling windows. For the "fixed average"
+  (bottom panel) we instead use the entire window of 2000 to 2020 when averaging
+  fire data. The paramter combination corresponding to AB 1504 (for net
+  emissions) and CARB (for fire data) is shown with a dashed line.
 </FigureCaption>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

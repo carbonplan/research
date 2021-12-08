@@ -29,8 +29,9 @@ const Figure = () => {
           <Plot>
             <Line
               data={data.CARB.slice(3, data.CARB.length - 1)}
-              color='yellow'
+              color='red'
               width={2}
+              sx={{ strokeDasharray: 4 }}
             />
             <Line
               data={data.GFED.slice(0, data.GFED.length)}
@@ -38,10 +39,10 @@ const Figure = () => {
               width={2}
             />
           </Plot>
-          <Label x={2002.5} y={41} sx={{ color: 'yellow' }}>
+          <Label x={2002.5} y={38} sx={{ color: 'red' }}>
             Fire (ARB)
           </Label>
-          <Label x={1998.5} y={55} sx={{ color: 'red' }}>
+          <Label x={1998.5} y={54} sx={{ color: 'red' }}>
             Fire (GFED)
           </Label>
           <Label x={1996.5} y={190}>
