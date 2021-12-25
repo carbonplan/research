@@ -12,7 +12,6 @@ import { Left } from '@carbonplan/icons'
 import QuickLook from './quick-look'
 import Closing from './closing'
 import SectionBreak from './section-break'
-import { utils } from '@carbonplan/components'
 
 const prefix = 'https://images.carbonplan.org'
 
@@ -26,7 +25,7 @@ const Article = ({ children, meta }) => {
       metadata={'scroll'}
       nav={'research'}
     >
-      <Row sx={{ mb: [8, 8, 9, 10] }}>
+      <Row>
         <Column
           start={[1, 1]}
           width={[2]}
