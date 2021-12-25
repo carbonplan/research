@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Box } from 'theme-ui'
 import { Row, Column } from '@carbonplan/components'
 import Chart from './chart'
-const random = require('d3-random')
+import { randomBinomial } from 'd3-random'
 
 const Radio = ({ value, label, current, set }) => {
   const handleClick = () => {
@@ -104,7 +104,7 @@ const RiskScenarios = () => {
     let combined = []
 
     for (let i = 0; i < 10; i++) {
-      const values = Array.from({ length: 81 }, random.randomBinomial(1, risk))
+      const values = Array.from({ length: 81 }, randomBinomial(1, risk))
       const transformed = values
         .map((d) => d * buffer * mortality)
         .map(cumsum(0))
