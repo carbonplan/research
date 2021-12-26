@@ -135,7 +135,6 @@ const Article = ({ children, meta, references }) => {
         sx={{
           px: [0, 0, 0],
           pt: [0, 0, meta.background ? '275px' : '100px'],
-          mb: [8, 8, 9, 10],
         }}
       >
         <Row>

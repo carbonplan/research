@@ -65,7 +65,7 @@ const Tool = ({
         </QuickLook>
       </Row>
       <Row>
-        <Column start={[1, 2]} width={contentWidth} sx={{ mb: [8, 8, 9, 10] }}>
+        <Column start={[1, 2]} width={contentWidth}>
           {children}
         </Column>
       </Row>

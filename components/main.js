@@ -112,7 +112,7 @@ const Main = ({ expanded, contents }) => {
   }
 
   return (
-    <Box sx={{ mb: [8, 8, 9, 10] }}>
+    <Box>
       <Heading
         description={
           <span>
