@@ -1,10 +1,10 @@
-import FigureCaption from '../../components/figure-caption'
+import {
+  FigureCaption,
+  Cite,
+  SectionDivider,
+  Endnote,
+} from '@carbonplan/layouts'
 import Inline from '../../components/inline'
-import Cite from '../../components/cite'
-import CiteGroup from '../../components/cite-group'
-import SectionBreak from '../../components/section-break'
-import Endnote from '../../components/endnote'
-import Closing from '../../components/closing'
 import FireMap from './components/fire-map'
 import RiskScenarios from './components/risk-scenarios'
 
@@ -55,7 +55,7 @@ California runs the largest carbon market in North America. This program establi
 
 One way companies subject to California’s carbon market can comply with its requirements is by buying forest offset credits. It works like this: the climate regulator first awards tradeable offsets credits to forest owners that manage their lands to increase forest carbon stocks relative to a business-as-usual scenario. Companies can acquire these offset credits and increase their emissions, on the theory that higher emissions are fully offset by the preservation and enhancement of a forest somewhere else.
 
-Although forests provide many environmental and social benefits, one critical challenge forests face as a climate solution is the permanence or durability of the carbon they store. When trees die — whether through fire, drought, or other ecological processes — much of the carbon stored in roots, wood, and soil is released back into the atmosphere. Many threats to forest carbon permanence will only get worse as the planet warms, increasing the chances that forest carbon will be released to the atmosphere.<CiteGroup ids={['krawchuk.2009', 'moritz.2020', 'williams.2016']}/>
+Although forests provide many environmental and social benefits, one critical challenge forests face as a climate solution is the permanence or durability of the carbon they store. When trees die — whether through fire, drought, or other ecological processes — much of the carbon stored in roots, wood, and soil is released back into the atmosphere. Many threats to forest carbon permanence will only get worse as the planet warms, increasing the chances that forest carbon will be released to the atmosphere.<Cite ids={['krawchuk.2009', 'moritz.2020', 'williams.2016']}/>
 
 The 2020 fire season, while unfortunately intense, provides a useful case study for evaluating just how prepared the California offsets program is for managing the permanence risks of forest carbon in a warming climate.
 
@@ -111,7 +111,7 @@ Relatively conservative assumptions still present a worrying picture. In a scena
 
 As long as the buffer pool has “priced” climate-related risks adequately, even the most severe wildfires or other future disturbances wouldn’t undermine the goal of using forests to meet climate targets.
 
-But have we priced these risks correctly? The scenarios examined here strongly suggest undercapitalization of the buffer pool and the urgent need for California to update how climate risks are treated by the forest carbon buffer pool.<CiteGroup ids={['sleeter.2019', 'anderegg.2020']}/>
+But have we priced these risks correctly? The scenarios examined here strongly suggest undercapitalization of the buffer pool and the urgent need for California to update how climate risks are treated by the forest carbon buffer pool.<Cite ids={['sleeter.2019', 'anderegg.2020']}/>
 
 The already unprecedented — and on-going — fire year provides a sobering example of the importance of considering risk and permanence in a scientifically rigorous way in the context of forest carbon, carbon removal, and climate policy.
 

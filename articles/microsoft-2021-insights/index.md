@@ -1,10 +1,12 @@
-import { CheckCircle } from '@carbonplan/icons'
-import Links from '../../components/links'
-import PullQuote from '../../components/pull-quote'
-import Endnote from '../../components/endnote'
-import SectionBreak from '../../components/section-break'
+import {
+  ExternalLinks,
+  PullQuote,
+  Endnote,
+  SectionDivider,
+  FigureCaption,
+} from '@carbonplan/layouts'
 import Inline from '../../components/inline'
-import FigureCaption from '../../components/figure-caption'
+import InlineCheck from '../../components/inline-check'
 import Distributions from './components/distributions'
 import Numbers from './components/numbers'
 import Validation from './components/validation'
@@ -42,7 +44,7 @@ export const meta = {
 
 # Insights from analyzing a new round of carbon removal projects
 
-<Links color='secondary' data={meta.links} />
+<ExternalLinks color='secondary' data={meta.links} />
 
 CarbonPlan analyzes carbon removal projects and programs because we believe these activities will play an important role in addressing the climate crisis. In 2020, we began building a publicly accessible [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal project reports. The purpose of this database is to help engender a culture of openness, transparency, and accountability for those participating in the field of carbon removal.
 
@@ -92,7 +94,7 @@ Distributions of volume and permanence across projects reveal familiar patterns,
   or realistic.
 </FigureCaption>
 
-To help guide interpretation of these metrics, we validate with a <CheckCircle sx={{position: 'relative', width: [25, 25, 25, 30], height: [19, 19, 19, 22], strokeWidth: [1.5, 1.5, 1.5, 2], px: [1], top: ['4px']}}/> the mechanism, volume, negativity, and permanence of each project if we can independently confirm claims with reasonable confidence, based on the best available science, data, and public documentation. Where we don’t feel confident about validation, we simply report the project claim without giving it a <CheckCircle sx={{position: 'relative', width: [25, 25, 25, 30], height: [19, 19, 19, 22], strokeWidth: [1.5, 1.5, 1.5, 2], px: [1], top: ['4px']}}/>. In the case of additionality (would the claimed climate benefits occur without the project?) and specificity (was there enough information for us to perform our analysis?) we assign a qualitative score on a scale of 1 to 3.
+To help guide interpretation of these metrics, we validate with a <InlineCheck/> the mechanism, volume, negativity, and permanence of each project if we can independently confirm claims with reasonable confidence, based on the best available science, data, and public documentation. Where we don’t feel confident about validation, we simply report the project claim without giving it a <InlineCheck/>. In the case of additionality (would the claimed climate benefits occur without the project?) and specificity (was there enough information for us to perform our analysis?) we assign a qualitative score on a scale of 1 to 3.
 
 For this update to our database, we have also included a cross-cutting project score on a 5-point scale. This score integrates our efforts to validate projects across all metrics, with 1 point each for validation of mechanism, volume, negativity, and permanence. We then add 1 point for a perfect score on additionality, or subtract 1 point for the lowest score on additionality.
 

@@ -1,6 +1,6 @@
 import { Box, Link } from 'theme-ui'
 import { Row, Column } from '@carbonplan/components'
-import Supplement from '../../components/supplement'
+import { Supplement } from '@carbonplan/layouts/pubs'
 
 export const meta = {
   id: 'soil-protocols-gold-standard-response',

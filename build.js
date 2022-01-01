@@ -23,7 +23,7 @@ glob('./articles/**/index.md', async (err, filePaths) => {
     const page = `
     import Index, {meta} from '../../articles/${id}/index.md'
     ${referencesImport}
-    import Article from '../../components/article'
+    import { Article } from '@carbonplan/layouts'
 
     const Content = () => (
       <Article references={${hasReferences ? 'references' : '{}'}} meta={meta}>

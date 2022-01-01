@@ -1,9 +1,11 @@
 import { Box } from 'theme-ui'
-import SectionBreak from '../../components/section-break'
-import Links from '../../components/links'
-import Cite from '../../components/cite'
-import FigureCaption from '../../components/figure-caption'
-import Endnote from '../../components/endnote'
+import {
+  ExternalLinks,
+  SectionDivider,
+  Cite,
+  FigureCaption,
+  Endnote,
+} from '@carbonplan/layouts'
 import SummaryResults from './components/summary-results'
 import ProgramOverview from './components/program-overview'
 import AnalysisExplanation from './components/analysis-explanation'
@@ -58,7 +60,7 @@ export const meta = {
 
 # Systematic <span style={{whiteSpace: 'nowrap'}}>over-crediting</span> <br/> of forest offsets
 
-<Links color='green' data={meta.links} />
+<ExternalLinks color='green' data={meta.links} />
 
 Carbon offsets are widely used by individuals, corporations, and governments to mitigate their greenhouse gas emissions. Because offsets effectively allow pollution to continue, however, they must reflect real climate benefits.
 

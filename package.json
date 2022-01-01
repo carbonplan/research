@@ -24,8 +24,9 @@
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
     "@carbonplan/charts": "^2.2.0",
-    "@carbonplan/components": "^11.0.6",
+    "@carbonplan/components": "11.1.0-develop.1",
     "@carbonplan/icons": "^1.0.0",
+    "@carbonplan/layouts": "1.0.0-develop.22",
     "@carbonplan/theme": "^7.0.0",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.2.3",

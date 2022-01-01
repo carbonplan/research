@@ -1,12 +1,12 @@
-import { Link } from 'theme-ui'
-import { default as NextLink } from 'next/link'
-import Links from '../../components/links'
-import FigureCaption from '../../components/figure-caption'
-import Endnote from '../../components/endnote'
+import { Link } from '@carbonplan/components'
+import {
+  ExternalLinks,
+  FigureCaption,
+  Endnote,
+  Cite,
+  SectionDivider,
+} from '@carbonplan/layouts'
 import Inline from '../../components/inline'
-import Cite from '../../components/cite'
-import CiteGroup from '../../components/cite-group'
-import SectionBreak from '../../components/section-break'
 import BoundaryCondition from './components/boundary-condition'
 import ParameterScenario from './components/parameter-scenario'
 import CostSummary from './components/cost-summary'
@@ -47,7 +47,7 @@ export const meta = {
 
 # The cost of direct air capture
 
-<Links color='purple' data={meta.links} />
+<ExternalLinks color='purple' data={meta.links} />
 
 Direct air capture (DAC) is a technology that removes carbon dioxide (CO₂) from the air using chemicals. There are several types. Solid sorbent and liquid solvent DAC are in use today. Others are emerging, such as electro-swing, humidity-swing, and mineralization-based.
 
@@ -63,7 +63,7 @@ Analyzing the cost of DAC also requires considering any associated greenhouse ga
 
 In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system.<Cite id='mcqueen.2021.b'/> They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO₂ released during combustion, and six all-electric non-fossil systems.
 
-To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an open source <NextLink href={'/research/dac-calculator'} passHref={true}><Link>interactive calculator</Link></NextLink> based directly on the model from the paper. The model is written in JavaScript and runs natively in the browser.
+To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an open source <Link href={'/research/dac-calculator'}>interactive calculator</Link> based directly on the model from the paper. The model is written in JavaScript and runs natively in the browser.
 
 Here we explain the design of the model and the parameter space, and highlight some key insights.
 

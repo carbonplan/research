@@ -1,8 +1,15 @@
 import { useMemo, useState } from 'react'
 import { Box, Link, Divider } from 'theme-ui'
-import { Row, Column, Tray, Group, Filter } from '@carbonplan/components'
+import {
+  Row,
+  Column,
+  Tray,
+  Group,
+  Heading,
+  Filter,
+} from '@carbonplan/components'
 import List from './list'
-import Heading from './heading'
+
 import {
   ForestOffsets,
   ForestRisks,
@@ -124,6 +131,8 @@ const Main = ({ expanded, contents }) => {
             removal and climate solutions.
           </span>
         }
+        descriptionStart={[1, 4, 6, 6]}
+        descriptionWidth={[6, 5, 5, 5]}
       >
         Research
       </Heading>

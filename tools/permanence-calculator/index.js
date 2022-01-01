@@ -1,6 +1,6 @@
 import { Box } from 'theme-ui'
 import { Link } from '@carbonplan/components'
-import Tool from '../../components/tool'
+import { Tool } from '@carbonplan/layouts'
 import Calculator from './components/calculator'
 
 const Index = () => {

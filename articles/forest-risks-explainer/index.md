@@ -1,11 +1,12 @@
 import { Box } from 'theme-ui'
 import { Table } from '@carbonplan/components'
-import Links from '../../components/links'
-import Endnote from '../../components/endnote'
-import Cite from '../../components/cite'
-import CiteGroup from '../../components/cite-group'
-import SectionBreak from '../../components/section-break'
-import FigureCaption from '../../components/figure-caption'
+import {
+  ExternalLinks,
+  Endnote,
+  Cite,
+  SectionDivider,
+  FigureCaption,
+} from '@carbonplan/layouts'
 import RiskMaps from './components/risk-maps'
 import RiskTrajectories from './components/risk-trajectories'
 
@@ -49,7 +50,7 @@ export const meta = {
 
 # Risks to forest carbon in a changing climate
 
-<Links color={meta.color} data={meta.links} />
+<ExternalLinks color={meta.color} data={meta.links} />
 
 Climate change, with its hotter summers and drier atmosphere, is poised to exacerbate the wildfires, insect outbreaks, and drought conditions that already threaten forests in the United States.<Cite id='seidl.2017'/> We set out to analyze these risks, with the goal of supporting data-driven decisions about the role forests can play in climate policy.
 

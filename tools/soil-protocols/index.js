@@ -1,6 +1,6 @@
 import { Box, Themed, Link } from 'theme-ui'
-import { default as NextLink } from 'next/link'
-import Tool from '../../components/tool'
+import { Link } from '@carbonplan/components'
+import { Tool } from '@carbonplan/layouts'
 import Main from './components/main'
 
 const Index = () => {

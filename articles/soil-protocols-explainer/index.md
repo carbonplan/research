@@ -1,11 +1,12 @@
 import { Link } from '@carbonplan/components'
-import PullQuote from '../../components/pull-quote'
-import Cite from '../../components/cite'
-import CiteGroup from '../../components/cite-group'
-import SectionBreak from '../../components/section-break'
-import Endnote from '../../components/endnote'
-import Links from '../../components/links'
-import FigureCaption from '../../components/figure-caption'
+import {
+  PullQuote,
+  Cite,
+  SectionDivider,
+  Endnote,
+  ExternalLinks,
+  FigureCaption,
+} from '@carbonplan/layouts'
 import MetricHistogram from './components/metric-histogram'
 import MetricTable from './components/metric-table'
 import RecommendationTable from './components/recommendation-table'
@@ -51,7 +52,7 @@ export const meta = {
 
 # A buyer’s guide to soil carbon offsets
 
-<Links color='orange' data={meta.links} />
+<ExternalLinks color='orange' data={meta.links} />
 
 Voluntary carbon markets are [ramping up efforts](https://grist.org/agriculture/us-carbon-removal-capture-offset-forests-farms-trees-soil/) to credit soil carbon removal, with [federal lawmakers](https://www.politico.com/news/2021/06/24/senate-farmers-carbon-agriculture-496029) and [state regulators](https://ww2.arb.ca.gov/resources/documents/nwl-implementation-draft) eager to follow suit.
 
@@ -105,7 +106,7 @@ Our rigor metric analyzes the scientific integrity and methodological robustness
 
 In our view, robust soil carbon crediting requires empirical measurements. But we repeatedly found protocols relying partially or completely on modeling to quantify and credit soil carbon gains. Only 3 of 14 protocols require direct sampling as the basis for issuing soil carbon credits (which we call “empirical crediting”). Others require sampling to calibrate or parameterize models, but not to issue credits. Several protocols do not require sampling at all, relying exclusively on models to estimate soil carbon changes and issue credits.
 
-This pattern is concerning because models are imperfect analogs when it comes to soil carbon. They rely on a number of assumptions which may not be applicable in specific contexts and can lead to incorrect predictions of soil carbon outcomes.<CiteGroup ids={['sanderman.2010', 'ogle.2007']} /> For example, models routinely make assumptions about the persistence and accrual of soil carbon over time, including that it increases linearly, that fields are in a state of equilibrium, and that proxy measurements like remote sensing can accurately conceptualize ecosystem processes. The most rigorous models still use measurements for calibration, and thus depend on high-quality sampling approaches.
+This pattern is concerning because models are imperfect analogs when it comes to soil carbon. They rely on a number of assumptions which may not be applicable in specific contexts and can lead to incorrect predictions of soil carbon outcomes.<Cite ids={['sanderman.2010', 'ogle.2007']} /> For example, models routinely make assumptions about the persistence and accrual of soil carbon over time, including that it increases linearly, that fields are in a state of equilibrium, and that proxy measurements like remote sensing can accurately conceptualize ecosystem processes. The most rigorous models still use measurements for calibration, and thus depend on high-quality sampling approaches.
 
 Where sampling is required in today’s protocols, the quality requirements are generally poor. With only a few exceptions, protocols fail to require rigorous stratification, sampling randomization, adequate sampling density to encompass the within-site variation, and <Link href='/research/soil-depth-sampling'>sampling beyond the top 30cm</Link> to include the entire volume of soil impacted by agricultural activities. Even protocols with the highest rigor scores still have weaknesses — BCarbon’s protocol, for example, does not provide specific guidance on sampling depth, and it does not track additional greenhouse gases, leaving open the possibility of boosting local soil carbon gains with external amendments like fertilizer without properly accounting for their emissions.
 

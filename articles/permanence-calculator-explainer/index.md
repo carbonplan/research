@@ -1,11 +1,11 @@
-import { Link } from 'theme-ui'
-import { default as NextLink } from 'next/link'
-import Links from '../../components/links'
-import Cite from '../../components/cite'
-import CiteGroup from '../../components/cite-group'
-import PullQuote from '../../components/pull-quote'
-import Endnote from '../../components/endnote'
-import SectionBreak from '../../components/section-break'
+import { Link } from '@carbonplan/components'
+import {
+  ExternalLinks,
+  Cite,
+  PullQuote,
+  Endnote,
+  SectionDivider,
+} from '@carbonplan/layouts'
 import Scenario from './components/scenario'
 import Parameters from './components/parameters'
 
@@ -40,7 +40,7 @@ export const meta = {
 
 # The cost of temporary carbon removal
 
-<Links color='pink' data={meta.links} />
+<ExternalLinks color='pink' data={meta.links} />
 
 Carbon removal costs are everywhere in climate discussions — this project costs $10, that one costs $200. Policymakers and corporate planners look to metrics to inform their decisions, and cost per ton of carbon dioxide ($/tCO₂) has become a near-universal unit of measure.
 
@@ -56,7 +56,7 @@ Over the past few months, we’ve received several questions from companies look
 
 Some helpful academic thinking on these questions exists,<CiteGroup ids={['herzog.2003', 'kim.2008', 'costa.2000']}/> but we haven’t been able to point anyone to a simple tool that illustrates and facilitates the comparisons that decision makers need to make.
 
-So we <NextLink href={'/research/permanence-calculator'} passHref={true}><Link>built one</Link></NextLink>.
+So we <Link href={'/research/permanence-calculator'}>built one</Link>.
 
 As we explain below, our calculator shows how the initial cost of a temporary carbon removal can be far smaller than the total cost of achieving permanent climate benefits. By analogy to the decision of whether to rent an apartment or buy a house — which the New York Times analyzed in a [“rent versus buy” calculator](https://www.nytimes.com/interactive/2014/upshot/buy-rent-calculator.html) that inspired this project — we want to know if continued temporary removal (“rent”) is more or less expensive than procuring permanent removal today (“buy”). By putting temporary and permanent carbon removal options on equal footing, our calculator shows how to make a transparent and balanced comparison of competing climate strategies.
 

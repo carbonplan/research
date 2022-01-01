@@ -1,16 +1,15 @@
-import Links from '../../components/links'
-import SectionBreak from '../../components/section-break'
-import PullQuote from '../../components/pull-quote'
-import FigureCaption from '../../components/figure-caption'
-import Endnote from '../../components/endnote'
+import {
+  ExternalLinks,
+  SectionDivider,
+  PullQuote,
+  FigureCaption,
+  Endnote,
+} from '@carbonplan/layouts'
 import Inline from '../../components/inline'
-import Question from './components/icons/question'
-import Check from './components/icons/check'
-import Ex from './components/icons/ex'
-import Exclamation from './components/icons/exclamation'
 import Permanence from './components/permanence'
 import Table from './components/table'
 import Metrics from './components/metrics'
+import InlineCheck from './components/inline-check'
 
 export const meta = {
   id: 'stripe-2020-insights',
@@ -38,7 +37,7 @@ export const meta = {
 
 # Insights from our first project reports
 
-<Links color='secondary' data={meta.links} />
+<ExternalLinks color='secondary' data={meta.links} />
 
 At CarbonPlan we analyze carbon removal projects, programs, and technologies. We believe that carbon removal (or "negative emissions") will play an important role in addressing the climate crisis, and we want to help engender a culture of openness, transparency, and accountability. Our hope is that sharing data and insights can benefit the field as a whole — to complement the work of the inventors, scientists, entrepreneurs, and activists who are making climate solutions a reality.
 
@@ -68,7 +67,7 @@ After multiple rounds of internal discussion, the CarbonPlan team decided on sev
 
 <Metrics />
 
-For the first four metrics — mechanism, volume, negativity, and permanence — we attempted to independently validate projects’ claims. We gave projects a <Check closed={true}/> when we could validate a claim with reasonable confidence. Where we didn’t feel confident about validating claims, we left the entry blank, generally erring on the side of caution and respectfulness. We also indicated what kind of additional information would be useful in comments. As we develop better methods, and as we and the community learn more about these and other projects, we expect to be able to validate more claims with confidence.
+For the first four metrics — mechanism, volume, negativity, and permanence — we attempted to independently validate projects’ claims. We gave projects a <InlineCheck/> when we could validate a claim with reasonable confidence. Where we didn’t feel confident about validating claims, we left the entry blank, generally erring on the side of caution and respectfulness. We also indicated what kind of additional information would be useful in comments. As we develop better methods, and as we and the community learn more about these and other projects, we expect to be able to validate more claims with confidence.
 
 An additional key point for the first metric — mechanism — is that some projects do not currently remove carbon dioxide from the atmosphere. Rather, some avoid emissions that would otherwise occur, including by sourcing and transforming existing biogenic or industrial emissions into more stable storage. These projects could all become a component of a carbon removal system in the future, however. For example, a project that sequesters CO₂ from an industrial waste stream today could begin sourcing CO₂ from direct air capture or biogenic energy tomorrow. We try to clearly point out each of these cases in our reports, and we plan to more thoroughly explore this nuanced distinction in a future post.
 
@@ -90,7 +89,7 @@ There’s a lot of information in our [project reports](https://carbonplan.org/r
 
 Perhaps the most important finding is how often we found ourselves unable to confidently and independently validate metrics.
 
-We were able to assign a <Check closed={true}/> for many projects on mechanism, for which we generally have existing published literature and data, and in several cases also on permanence. We were less often able to assign a <Check closed={true}/> on volume or negativity, reflecting the additional complexity of these dimensions.
+We were able to assign a <InlineCheck/> for many projects on mechanism, for which we generally have existing published literature and data, and in several cases also on permanence. We were less often able to assign a <InlineCheck/> on volume or negativity, reflecting the additional complexity of these dimensions.
 
 <Table />
 <FigureCaption number={1}>
@@ -110,7 +109,7 @@ We were able to assign a <Check closed={true}/> for many projects on mechanism, 
   presents a challenge for any one organization to evaluate
 </PullQuote>
 
-The absence of a <Check closed={true}/> should not necessarily be interpreted as a critique. Most of the time, it reflects a lack of information or certainty. Over time, we intend to develop our capacity to reach more definitive answers across our metrics, and hope that as a community we learn more about the science and data underlying these projects. We also offer suggestions below for how future procurement processes can elicit more useful information from projects for the purpose of analysis. Fundamentally, however, the complexity of carbon removal solutions across so many technologies presents a challenge for any one organization to evaluate.
+The absence of a <InlineCheck/> should not necessarily be interpreted as a critique. Most of the time, it reflects a lack of information or certainty. Over time, we intend to develop our capacity to reach more definitive answers across our metrics, and hope that as a community we learn more about the science and data underlying these projects. We also offer suggestions below for how future procurement processes can elicit more useful information from projects for the purpose of analysis. Fundamentally, however, the complexity of carbon removal solutions across so many technologies presents a challenge for any one organization to evaluate.
 
 ## The permanence gap
 
