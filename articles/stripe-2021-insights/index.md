@@ -160,7 +160,7 @@ Moving forward, we hope the open source application materials developed here pro
 
 We also have a favor to ask of you! CarbonPlan will continue to develop and share methods for evaluating carbon removal solutions in collaboration with the scientific community. If you have found value in this work – either the database of public reports or the summary articles – we’d be grateful to hear what you have used, or additional features or products you might find useful. Reach out at hello@carbonplan.org or on twitter [@carbonplanorg](https://twitter.com/carbonplanorg).
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label='Credits'>
 

@@ -1,4 +1,4 @@
-import { Box, Themed, Link } from 'theme-ui'
+import { Box, Themed } from 'theme-ui'
 import { Link } from '@carbonplan/components'
 import { Tool } from '@carbonplan/layouts'
 import Main from './components/main'

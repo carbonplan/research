@@ -115,7 +115,7 @@ But have we priced these risks correctly? The scenarios examined here strongly s
 
 The already unprecedented — and on-going — fire year provides a sobering example of the importance of considering risk and permanence in a scientifically rigorous way in the context of forest carbon, carbon removal, and climate policy.
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label={'Documentation'}>
 
@@ -129,7 +129,7 @@ We have not reached out to the Confederated Tribes of Warm Springs Reservation o
 
 </Endnote>
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label='Credits'>
 

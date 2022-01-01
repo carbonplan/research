@@ -274,7 +274,7 @@ The answer depends on the goals. If an organization wants to “purchase” carb
 
 Other sponsor organizations may be interested in supporting technologies that have the potential to become components of carbon removal systems, but which do not currently remove atmospheric CO₂ today. This philosophy could be a critical driver to accelerate change in the coming years, but it risks confusion with current carbon removal efforts. We recommend that such sponsor organizations explicitly frame their mission as advancing a particular theory of technological change and/or research investment, so as to clarify their goals and potential strategic risks.
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label='Credits'>
 

@@ -121,7 +121,7 @@ With default settings, the calculator yields the highest cost for solar, second 
 
 Here we explore three alternative scenarios in detail: a higher cost NGCC scenario, a lower cost wind scenario, and an NGCC scenario with a higher leakage rate.
 
-To model higher cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Cite id='socolow.2011'/> including corrections from two additional follow-on analyses.<CiteGroup ids={['mazzotti.2013', 'zeman.2014']}/> In using these reports we are assuming a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Cite id='vertical.defaults'/>
+To model higher cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Cite id='socolow.2011'/> including corrections from two additional follow-on analyses.<Cite ids={['mazzotti.2013', 'zeman.2014']}/> In using these reports we are assuming a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Cite id='vertical.defaults'/>
 
 <ParameterScenario
   energySource={'NGCC'}
@@ -203,7 +203,7 @@ We encourage you to explore how the cost of DAC changes with different economic 
 
 We hope our interactive calculator provides intuition and transparency around the complex, high-dimensional parameter relationships underlying the cost of DAC. Along with understanding the technology itself, and finding opportunities to lower costs, evaluating different cost scenarios and energy systems can help with siting DAC facilities. Far more information and modeling is of course required for actual design, engineering, and planning, but experimenting with this tool could be the first step in evaluating existing approaches — or developing new ones.
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label='Credits'>
 

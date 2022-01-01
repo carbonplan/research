@@ -56,7 +56,7 @@ Climate change, with its hotter summers and drier atmosphere, is poised to exace
 
 Forests are a key part of the global carbon cycle, sequestering carbon dioxide and storing it in the biomass of trees. Unfortunately, that sequestered carbon is only kept from the atmosphere while trees remain alive. When trees die, most of the carbon they sequestered is released back into the atmosphere, either immediately (e.g. during a fire) or slowly (e.g. through decomposition following drought or insect-related mortality).
 
-While disturbance processes play key roles in healthy forest ecosystems,<Cite id='attiwill.1994'/> rising tree mortality risks can severely limit forests' ability to sequester carbon over long timescales.<CiteGroup ids={['kurz.2008', 'wang.2021']}/> In some forests, disturbance risks could become so severe as to turn a net sink of carbon into a source.<CiteGroup ids={['hubau.2020', 'holland.2019']}/>
+While disturbance processes play key roles in healthy forest ecosystems,<Cite id='attiwill.1994'/> rising tree mortality risks can severely limit forests' ability to sequester carbon over long timescales.<Cite ids={['kurz.2008', 'wang.2021']}/> In some forests, disturbance risks could become so severe as to turn a net sink of carbon into a source.<Cite ids={['hubau.2020', 'holland.2019']}/>
 
 Better characterizing risks to forests can help us understand the role of forests in climate change mitigation and target key areas for adaptation and conservation. In this article and the accompanying [map tool](https://carbonplan.org/research/forest-risks) we summarize the results of [a collaborative study](https://doi.org/10.1101/2021.05.11.443688) in which we used statistical models to predict increases in climate-sensitive risks throughout the 21st century. Our results highlight how the resilience of US forest carbon management depends critically on global greenhouse gas emission scenarios. Reducing global emissions lowers risks, whereas higher emissions make forest carbon storage highly uncertain — especially in regions like the western US.
 
@@ -174,7 +174,7 @@ This research leveraged a growing ecosystem of powerful, cloud-based open source
 
 As with all of our work, we aim to improve these methods and models over time, as we and others work on and better understand these problems. For an issue as important to the public as understanding future climate risk, we hope to keep demonstrating the value of doing the work in the open.
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label='Brief methods'>
 

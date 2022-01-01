@@ -177,7 +177,7 @@ If an organization wants to look broadly across multiple sectors, parallel track
 
 To improve our own analysis capabilities, we are developing open source methods for evaluating projects on a technology-by-technology basis in close collaboration with the academic community. Examples include models of direct air capture project cost and scale (with Jennifer Wilcox) and models for evaluating forest carbon removal potential and physical reversal risks (with Bill Anderegg). These kinds of models will enable more systematic analysis and comparison within and across project categories, as well as identify information that sponsors could collect from proposals to facilitate comparison and evaluation.
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label='Credits'>
 

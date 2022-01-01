@@ -107,7 +107,7 @@ But carbon credits aren’t the only way to support soil carbon. An alternative 
 
 Meanwhile, any efforts built around carbon offset credits should be transparent, subject to third-party verification, and capable of thorough validation by financially independent organizations.
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label='Updates'>
 
@@ -126,7 +126,7 @@ After reviewing an updated version of the draft protocol, we submitted a second 
 
 </Endnote>
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label='Credits'>
 

@@ -143,7 +143,7 @@ Second, the issues raised above certainly do not rule out the overall potential 
 
 Soil carbon measurements that sample deeper than 30 cm and use equivalent mass accounting are a critical component of any high-integrity soil carbon accounting — but far from the only piece of the puzzle.
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label='Brief methods'>
 

@@ -6,7 +6,7 @@ import {
   FigureCaption,
 } from '@carbonplan/layouts'
 import Inline from '../../components/inline'
-import InlineCheck from '../../components/inline-check'
+import InlineCheck from './components/inline-check'
 import Distributions from './components/distributions'
 import Numbers from './components/numbers'
 import Validation from './components/validation'
@@ -186,7 +186,7 @@ Moving forward, we recommend that both buyers and sellers demand standardized, p
 
 As we learn more, CarbonPlan will continue to develop and share methods for evaluating projects in close collaboration with the scientific community. We will also continue to expand our database of public reports to help keep the ecosystem pointed towards the highest-quality outcomes.
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label='Credits'>
 

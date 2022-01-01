@@ -189,7 +189,7 @@ We are also committed to subjecting our work to critical review from our peers. 
 
 It is precisely on issues of such critical importance to the public where we believe this open, transparent approach to science and government accountability matters most.
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label='Credits'>
 

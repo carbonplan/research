@@ -199,7 +199,7 @@ We acknowledge that our review sets a high bar for what a protocol should achiev
 
 More optimistically, we hope our analysis helps clear the path for individual projects that seek to deliver higher-quality outcomes. Screening for such projects will be time-consuming, and rigorous sampling and quantification will be expensive. But that’s the true cost of robust climate action — and until the standards in voluntary markets improve, it’s a cost that buyers who care about quality must bear.
 
-<SectionBreak />
+<SectionDivider />
 
 <Endnote label='Update'>
 
