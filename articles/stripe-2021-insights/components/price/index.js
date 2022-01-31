@@ -89,7 +89,13 @@ const Price = () => {
           Stripe 2021
         </Tag>
       </Box>
-      <Box sx={{ width: '100%', height: '275px', my: [4, 4, 4, 5] }}>
+      <Box
+        sx={{
+          width: '100%',
+          height: ['275px', '275px', '275px', '350px'],
+          my: [4, 4, 4, 5],
+        }}
+      >
         <Chart log x={[10, 1000000]} y={[1, 20000]}>
           <Grid vertical horizontal count={4} />
           <Ticks left bottom count={4} />

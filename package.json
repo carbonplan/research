@@ -8,6 +8,8 @@
     "build": "npm run build-pages && next build",
     "build-pages": "node build.js && prettier --write contents.js 'pages/research/!(index).js'",
     "start": "next start",
+    "test": "jest --watch",
+    "test:ci": "jest --ci --reporters='default'",
     "format": "npm run format-js && npm run format-md",
     "format-js": "prettier --write '*.js' '{tools,components,lib,pages,articles}/**/*.js'",
     "format-md": "prettier --write README.md 'articles/**/*.md' --parser mdx"
@@ -23,12 +25,13 @@
   },
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
-    "@carbonplan/charts": "^2.2.0",
+    "@carbonplan/charts": "^2.6.0",
     "@carbonplan/components": "^11.0.6",
     "@carbonplan/icons": "^1.0.0",
     "@carbonplan/theme": "^7.0.0",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.2.3",
+    "@react-spring/web": "^9.4.2",
     "@theme-ui/color": "^0.12.1",
     "@theme-ui/css": "^0.12.1",
     "@theme-ui/match-media": "^0.12.1",
@@ -36,6 +39,7 @@
     "d3-fetch": "^3.0.1",
     "d3-geo": "^3.0.1",
     "d3-interpolate": "^3.0.1",
+    "d3-polygon": "^2.0.0",
     "d3-random": "^3.0.1",
     "d3-scale": "^4.0.2",
     "d3-selection": "^3.0.0",
@@ -52,8 +56,10 @@
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {
+    "babel-jest": "^27.4.6",
     "extract-mdx-metadata": "^1.0.0",
     "glob": "^7.1.7",
+    "jest": "^27.4.7",
     "prettier": "2.3.0"
   }
 }
