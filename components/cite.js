@@ -18,7 +18,7 @@ const Wrapper = ({ url, children, sx }) => {
   }
 }
 
-const Cite = ({ id, data, hide = false }) => {
+const Cite = ({ id, data, sx, sxLabel, sxReference, hide = false }) => {
   const { references, color } = useReferences()
   if (!Object.keys(references).includes(id)) {
     throw Error(`referencee ${id} not found`)
@@ -41,7 +41,7 @@ const Cite = ({ id, data, hide = false }) => {
   }
 
   return (
-    <Box as='span' sx={{ userSelect: 'none' }}>
+    <Box as='span' sx={{ userSelect: 'none', ...sx }}>
       <Box
         as='span'
         onMouseOver={toggleOn}
@@ -53,6 +53,7 @@ const Cite = ({ id, data, hide = false }) => {
           color: color,
           transition: 'color 0.2s ease-in-out',
           display: hide ? 'none' : 'initial',
+          ...sxLabel,
         }}
       >
         <sup>{data.number}</sup>
@@ -85,6 +86,7 @@ const Cite = ({ id, data, hide = false }) => {
             'initial',
             'initial',
           ],
+          ...sxReference,
         }}
       >
         <Box as='span' onMouseOver={toggleOn} onMouseOut={toggleOff}>
