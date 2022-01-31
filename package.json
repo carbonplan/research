@@ -32,9 +32,9 @@
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.2.3",
     "@react-spring/web": "^9.4.2",
-    "@theme-ui/color": "^0.12.1",
-    "@theme-ui/css": "^0.12.1",
-    "@theme-ui/match-media": "^0.12.1",
+    "@theme-ui/color": "^0.13.1",
+    "@theme-ui/css": "^0.13.1",
+    "@theme-ui/match-media": "^0.13.1",
     "d3-drag": "^3.0.0",
     "d3-fetch": "^3.0.1",
     "d3-geo": "^3.0.1",
@@ -52,7 +52,7 @@
     "rehype-react": "^6.2.1",
     "rehype-slug": "^4.0.1",
     "remark-rehype": "^8.1.0",
-    "theme-ui": "^0.12.1",
+    "theme-ui": "^0.13.1",
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {
