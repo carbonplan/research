@@ -1,5 +1,35 @@
 const contents = [
   {
+    id: 'ton-year-explainer',
+    number: 13,
+    version: '1.0.0',
+    date: '01-31-2022',
+    title: 'Unpacking ton-year accounting',
+    authors: [
+      'Freya Chay',
+      'Grayson Badgley',
+      'Kata Martin',
+      'Jeremy Freeman',
+      'Joe Hamman',
+      'Danny Cullenward',
+    ],
+    color: 'pink',
+    card: 'ton-year-explainer',
+    background: 'article-013/blowing',
+    quickLook: 'Explaining methods used to value temporary carbon storage',
+    summary:
+      'Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods.',
+    icon: 'article-013/blowing-small',
+    tags: ['article'],
+    links: [
+      { label: 'Read article', href: '/research/ton-year-explainer' },
+      {
+        label: 'Our critique of NCX’s methods',
+        href: 'https://carbonplan.org/blog/ton-year-ncx',
+      },
+    ],
+  },
+  {
     id: 'soil-protocols-explainer',
     number: 12,
     version: '1.2.0',
@@ -48,7 +78,7 @@ const contents = [
     card: 'soil-depth-sampling',
     background: 'article-011/tillage',
     quickLook:
-      'Why depth is important for soil carbon sampling, and how to avoid key mistakes.',
+      'Why depth is important for soil carbon sampling, and how to avoid key mistakes',
     tags: ['article'],
     summary:
       'Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls.',
@@ -72,7 +102,7 @@ const contents = [
     card: 'stripe-2021-insights',
     background: 'article-010/curve',
     quickLook:
-      "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement.",
+      "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement",
     tags: ['article', 'dataset'],
     summary:
       "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
@@ -100,7 +130,7 @@ const contents = [
     ],
     color: 'red',
     quickLook:
-      'A detailed look at the disturbance risks to forest carbon under future climate conditions.',
+      'A detailed look at the disturbance risks to forest carbon under future climate conditions',
     background: 'article-009/forest-fire-red',
     card: 'forest-risks-explainer',
     tags: ['article', 'dataset', 'tool', 'publication'],
