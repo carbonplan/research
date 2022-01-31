@@ -6,6 +6,7 @@ import Endnote from '../../components/endnote'
 import FigureCaption from '../../components/figure-caption'
 import TableCaption from '../../components/table-caption'
 import PullQuote from '../../components/pull-quote'
+import Links from '../../components/links'
 import EmissionsChart from './components/emissions-chart'
 import MethodsChart from './components/methods-chart'
 import ValueChart from './components/value-chart'
@@ -45,6 +46,8 @@ export const meta = {
 }
 
 # Unpacking ton-year accounting
+
+<Links color='secondary' data={meta.links} />
 
 To reach net-zero emissions and limit global warming, we’ll need to dramatically cut emissions and remove gigatons of carbon dioxide from the atmosphere for storage.<Cite id='bergman.2021' sxReference={{mt: [3, 3, 3, 4]}} /> Although we ultimately need to reduce emissions and permanently remove carbon from the atmosphere, significant investment has gone into shorter-term interventions that delay emissions or remove carbon for temporary storage — typically involving forestry and agricultural activities in the land sector.<Cite id='joppa.2021'/>
 
