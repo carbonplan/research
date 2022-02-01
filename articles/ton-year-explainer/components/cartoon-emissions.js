@@ -62,15 +62,51 @@ const Svg = () => {
     >
       <path
         d='M14 118V78.905L17.541 54H24.0784L27.0746 78.905L55.6754 69.638V78.905L87 69.638V118'
-        stroke='#EBEBEC'
+        stroke={theme.colors.primary}
       />
-      <rect x='24.5' y='91.5' width='52' height='15' stroke='#EBEBEC' />
-      <line x1='24' y1='98.5' x2='77' y2='98.5' stroke='white' />
-      <line x1='51.5' y1='91' x2='51.5' y2='107' stroke='white' />
-      <line x1='41.5' y1='91' x2='41.5' y2='107' stroke='white' />
-      <line x1='32.5' y1='91' x2='32.5' y2='107' stroke='white' />
-      <line x1='68.5' y1='91' x2='68.5' y2='107' stroke='white' />
-      <line x1='60.5' y1='91' x2='60.5' y2='107' stroke='white' />
+      <rect
+        x='24.5'
+        y='91.5'
+        width='52'
+        height='15'
+        stroke={theme.colors.primary}
+      />
+      <line x1='24' y1='98.5' x2='77' y2='98.5' stroke={theme.colors.primary} />
+      <line
+        x1='51.5'
+        y1='91'
+        x2='51.5'
+        y2='107'
+        stroke={theme.colors.primary}
+      />
+      <line
+        x1='41.5'
+        y1='91'
+        x2='41.5'
+        y2='107'
+        stroke={theme.colors.primary}
+      />
+      <line
+        x1='32.5'
+        y1='91'
+        x2='32.5'
+        y2='107'
+        stroke={theme.colors.primary}
+      />
+      <line
+        x1='68.5'
+        y1='91'
+        x2='68.5'
+        y2='107'
+        stroke={theme.colors.primary}
+      />
+      <line
+        x1='60.5'
+        y1='91'
+        x2='60.5'
+        y2='107'
+        stroke={theme.colors.primary}
+      />
       <Box
         as='circle'
         cx='133'
@@ -224,7 +260,7 @@ const Svg = () => {
       />
       <path
         d='M67.8536 4.35355C68.0488 4.15829 68.0488 3.84171 67.8536 3.64645L64.6716 0.464466C64.4763 0.269204 64.1597 0.269204 63.9645 0.464466C63.7692 0.659728 63.7692 0.976311 63.9645 1.17157L66.7929 4L63.9645 6.82843C63.7692 7.02369 63.7692 7.34027 63.9645 7.53553C64.1597 7.7308 64.4763 7.7308 64.6716 7.53553L67.8536 4.35355ZM41 4.5H67.5V3.5H41V4.5ZM21.5 44V24H20.5V44H21.5ZM41 3.5C29.6782 3.5 20.5 12.6782 20.5 24H21.5C21.5 13.2304 30.2304 4.5 41 4.5V3.5Z'
-        fill='#EBEBEC'
+        fill={theme.colors.primary}
       />
       <Box
         as='circle'
