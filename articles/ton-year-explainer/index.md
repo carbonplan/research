@@ -18,7 +18,7 @@ import references from './references'
 
 export const meta = {
   number: 13,
-  version: '1.0.0',
+  version: '1.0.1',
   date: '01-31-2022',
   title: 'Unpacking ton-year accounting',
   authors: [
@@ -95,7 +95,7 @@ To demonstrate this calculation, we provide a simplified (but physically unreali
 
 To compare the ton-year cost of an emission with a temporary storage project, the “benefit” of temporary carbon storage must also be calculated in ton-years. Although there are many methods for this benefit calculation, we’ll explain two prominent approaches here: the Moura Costa<Cite id='mouracosta.2000'/> and Lashof<Cite id='fearnside.2000'/> methods.
 
-Moura Costa calculates the benefit of carbon storage in the most straightforward way possible: count up the number of tons stored and multiply by the storage duration. In other words, Moura Costa looks at the carbon storage provided by the trees, but does not does not directly quantify atmospheric outcomes nor consider the potential impact of re-emission after the temporary storage period. Figure 2 shows this benefit calculation applied to an example project which stores 1 tCO₂ in a tree for two years, then re-emits that CO₂ into the atmosphere. Moura Costa calculates a 2 ton-year benefit for the project.
+Moura Costa calculates the benefit of carbon storage in the most straightforward way possible: count up the number of tons stored and multiply by the storage duration. In other words, Moura Costa looks at the carbon storage provided by the trees, but does not directly quantify atmospheric outcomes nor consider the potential impact of re-emission after the temporary storage period. Figure 2 shows this benefit calculation applied to an example project which stores 1 tCO₂ in a tree for two years, then re-emits that CO₂ into the atmosphere. Moura Costa calculates a 2 ton-year benefit for the project.
 
 Lashof, in contrast, looks only at atmospheric outcomes and assumes that temporarily stored carbon is fully re-emitted at the end of the storage period. Lashof calculates the benefit of temporary carbon storage by asking how many ton-years of atmospheric impact are avoided within the specified time horizon. So if temporary carbon storage pushes some of the impact of an emission out past the chosen time horizon, Lashof considers that a quantifiable benefit. For the same Figure 2 example project and a time horizon of four years, Lashof calculates a 0.5 ton-year benefit — only one quarter of the benefit calculated by Moura Costa.
 
