@@ -29,7 +29,7 @@ const Permanence = () => {
       as='figure'
       sx={{
         width: '100%',
-        height: '330px',
+        height: ['330px', '330px', '330px', '400px'],
         mt: [6, 6, 6, 7],
         mb: [4, 4, 4, 5],
       }}

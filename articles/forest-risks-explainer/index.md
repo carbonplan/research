@@ -28,7 +28,7 @@ export const meta = {
   ],
   color: 'red',
   quickLook:
-    'A detailed look at the disturbance risks to forest carbon under future climate conditions.',
+    'A detailed look at the disturbance risks to forest carbon under future climate conditions',
   background: 'article-009/forest-fire-red',
   card: 'forest-risks-explainer',
   tags: ['article', 'dataset', 'tool', 'publication'],
