@@ -44,8 +44,18 @@ const ParamChart = ({ param, data }) => {
         x={domain}
         y={[0, 800]}
         logx={param.scale === 'log'}
-        padding={{ left: 0, right: 0, top: 0, bottom: 22 }}
-        axisPadding={{ left: 6, right: 6, top: 0, bottom: 2 }}
+        padding={{
+          left: 0,
+          right: [0, 0, 0, 3],
+          top: 0,
+          bottom: 22,
+        }}
+        axisPadding={{
+          left: 6,
+          right: 6,
+          top: 0,
+          bottom: 2,
+        }}
       >
         <Axis right />
         <Ticks bottom right />
