@@ -46,7 +46,7 @@ const ParamChart = ({ param, data }) => {
         logx={param.scale === 'log'}
         padding={{
           left: 0,
-          right: [0, 0, 0, 3],
+          right: [0, 0, 0, 4],
           top: 0,
           bottom: 22,
         }}
