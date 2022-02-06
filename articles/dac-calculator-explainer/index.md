@@ -1,12 +1,5 @@
-import { Link } from '@carbonplan/components'
-import {
-  ExternalLinks,
-  FigureCaption,
-  Endnote,
-  Cite,
-  SectionDivider,
-} from '@carbonplan/layouts'
-import Inline from '../../components/inline'
+import { Link, Colors, FigureCaption } from '@carbonplan/components'
+import { Endnote, Cite } from '@carbonplan/layouts'
 import BoundaryCondition from './components/boundary-condition'
 import ParameterScenario from './components/parameter-scenario'
 import CostSummary from './components/cost-summary'
@@ -45,10 +38,6 @@ export const meta = {
   ],
 }
 
-# The cost of direct air capture
-
-<ExternalLinks color='purple' data={meta.links} />
-
 Direct air capture (DAC) is a technology that removes carbon dioxide (CO₂) from the air using chemicals. There are several types. Solid sorbent and liquid solvent DAC are in use today. Others are emerging, such as electro-swing, humidity-swing, and mineralization-based.
 
 In all types of DAC, chemicals selectively bind CO₂ from the air, typically at ambient conditions (room temperature and pressure). Once the chemical has bound an adequate amount of CO₂, the system releases the CO₂ at elevated temperature and/or decreased pressure. Once the CO₂ is released, it can be captured, and, if high purity, compressed, transported, and stored.
@@ -78,8 +67,8 @@ Our calculator estimates the cost of a given DAC technology explicitly linked to
 <BoundaryCondition />
 <FigureCaption number={1}>
   Boundary conditions for the DAC cost calculator.{' '}
-  <Inline sx={{ color: 'purple' }}>Purple</Inline> box bounds the components
-  considered for our analysis.
+  <Colors.Purple>Purple</Colors.Purple> box bounds the components considered for
+  our analysis.
 </FigureCaption>
 
 Each of these cost components in turn depend on parameters, which are presented in the calculator as interactive sliders. Above each slider, a chart shows how the total net removed cost will change as you vary that parameter, conditional on the current setting of the others. So, as you change each parameter, not only can you see how the total cost changes, but you can also see how it affects sensitivity to the other parameters. Finally, a dropdown at the top lets you choose between three different sources of energy, which we will now describe.
@@ -203,9 +192,7 @@ We encourage you to explore how the cost of DAC changes with different economic 
 
 We hope our interactive calculator provides intuition and transparency around the complex, high-dimensional parameter relationships underlying the cost of DAC. Along with understanding the technology itself, and finding opportunities to lower costs, evaluating different cost scenarios and energy systems can help with siting DAC facilities. Far more information and modeling is of course required for actual design, engineering, and planning, but experimenting with this tool could be the first step in evaluating existing approaches — or developing new ones.
 
-<SectionDivider />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Noah and Jennifer developed the underlying model with their collaborators Michael J. Desmond, Robert H. Socolow, and Peter Psarras. All authors of this article developed the concept for an interactive version. Joe implemented the model in JavaScript, with Noah’s guidance. Joe and Jeremy developed and implemented the interactive graphics with input from Jonny Black of [Ordinary Things](https://ot.studio). All authors contributed to writing the article.
 

@@ -1,12 +1,6 @@
 import { Box } from 'theme-ui'
 import { Link } from '@carbonplan/components'
-import {
-  ExternalLinks,
-  Cite,
-  PullQuote,
-  Endnote,
-  SectionDivider,
-} from '@carbonplan/layouts'
+import { Cite, PullQuote, Endnote } from '@carbonplan/layouts'
 import Conclusions from './components/conclusions'
 
 export const meta = {
@@ -41,9 +35,13 @@ export const meta = {
   ],
 }
 
-# Getting soil <br/> carbon right
-
-<ExternalLinks color='orange' data={meta.links} />
+export const title = (
+  <span>
+    Getting soil
+    <br />
+    carbon right
+  </span>
+)
 
 There are good reasons to be [excited](https://carbon180.org/leading-with-soil) about better soil management practices for carbon removal. Agricultural practices that increase soil carbon storage have the potential to provide benefits both for farmers and ranchers and for the global climate. In turn, working with the agricultural sector could help engage people and organizations that haven’t been the focus of most climate action to date. The complexities of soil carbon quantification, however, pose challenges for designing financial crediting systems.
 
@@ -107,28 +105,13 @@ But carbon credits aren’t the only way to support soil carbon. An alternative 
 
 Meanwhile, any efforts built around carbon offset credits should be transparent, subject to third-party verification, and capable of thorough validation by financially independent organizations.
 
-<SectionDivider />
-
-<Endnote label='Updates'>
-
-<Box
-  sx={{
-    color: 'secondary',
-    fontFamily: 'mono',
-    letterSpacing: 'mono',
-    fontSize: [2, 2, 2, 3],
-  }}
->
-  AUG 25 2020
-</Box>
+<Endnote label='Update — Aug 25 2020' divider>
 
 After reviewing an updated version of the draft protocol, we submitted a second <Link href='https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf' tracking>comment letter</Link> on remaining concerns and additional issues.
 
 </Endnote>
 
-<SectionDivider />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Danny led the effort to write the comment letters and drafted the first version of this article. All authors contributed to writing the comment letters and the article. Collaborators Jane Zelikova and Grayson Badgley contributed to the comment letters, but were not involved in writing this article.
 

@@ -45,7 +45,7 @@ const Chart = ({ data }) => {
             ))}
           <Line
             color='gray'
-            sx={{ 'stroke-dasharray': '8 4' }}
+            sx={{ strokeDasharray: '8 4' }}
             data={[
               [2018, 0.2],
               [2103, 0.2],

@@ -1,10 +1,5 @@
-import {
-  PullQuote,
-  SectionDivider,
-  Endnote,
-  FigureCaption,
-  Cite,
-} from '@carbonplan/layouts'
+import { FigureCaption } from '@carbonplan/components'
+import { PullQuote, Endnote, Cite } from '@carbonplan/layouts'
 import Depth from './components/depth'
 import Density from './components/density'
 import Country from './components/country'
@@ -32,8 +27,6 @@ export const meta = {
     'Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls.',
   icon: 'article-011/tillage-small',
 }
-
-# Depth matters for soil carbon accounting
 
 Agricultural soils have lost a vast amount of carbon to the atmosphere due to human activities,<Cite id='sanderman.2017'/> contributing to climate change. Scientists and policy makers are now debating whether putting some of this carbon back in the ground would be an effective climate change mitigation strategy.<Cite id='minasny.2017'/>
 
@@ -143,9 +136,7 @@ Second, the issues raised above certainly do not rule out the overall potential 
 
 Soil carbon measurements that sample deeper than 30 cm and use equivalent mass accounting are a critical component of any high-integrity soil carbon accounting — but far from the only piece of the puzzle.
 
-<SectionDivider />
-
-<Endnote label='Brief methods'>
+<Endnote label='Brief methods' divider>
 
 For the data synthesis (Figure 1) we digitized figures from six published papers that summarized the relative effect of no-till relative to conventional tillage (as defined in each paper). We converted data reported as ratios into percentages, and in two cases where the lower boundary of the deepest sampling interval was not defined we set it equal to one meter.
 

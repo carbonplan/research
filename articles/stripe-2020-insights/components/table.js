@@ -67,19 +67,6 @@ const Table = () => {
   const context = useThemeUI()
   const theme = context.theme
 
-  const Inline = ({ name, display }) => {
-    return (
-      <Text
-        sx={{
-          display: 'inline-block',
-          color: tags[name],
-        }}
-      >
-        {display ? display : name}
-      </Text>
-    )
-  }
-
   const order = ['forests', 'soil', 'biomass', 'dac', 'mineralization', 'ocean']
 
   return (

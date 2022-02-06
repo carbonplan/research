@@ -1,12 +1,6 @@
 import { Box } from 'theme-ui'
-import { Table } from '@carbonplan/components'
-import {
-  ExternalLinks,
-  Endnote,
-  Cite,
-  SectionDivider,
-  FigureCaption,
-} from '@carbonplan/layouts'
+import { Table, FigureCaption } from '@carbonplan/components'
+import { Endnote, Cite } from '@carbonplan/layouts'
 import RiskMaps from './components/risk-maps'
 import RiskTrajectories from './components/risk-trajectories'
 
@@ -47,10 +41,6 @@ export const meta = {
     },
   ],
 }
-
-# Risks to forest carbon in a changing climate
-
-<ExternalLinks color={meta.color} data={meta.links} />
 
 Climate change, with its hotter summers and drier atmosphere, is poised to exacerbate the wildfires, insect outbreaks, and drought conditions that already threaten forests in the United States.<Cite id='seidl.2017'/> We set out to analyze these risks, with the goal of supporting data-driven decisions about the role forests can play in climate policy.
 
@@ -174,9 +164,7 @@ This research leveraged a growing ecosystem of powerful, cloud-based open source
 
 As with all of our work, we aim to improve these methods and models over time, as we and others work on and better understand these problems. For an issue as important to the public as understanding future climate risk, we hope to keep demonstrating the value of doing the work in the open.
 
-<SectionDivider />
-
-<Endnote label='Brief methods'>
+<Endnote label='Brief methods' divider>
 
 Our work is described in detail in our [preprint](https://doi.org/10.1101/2021.05.11.443688). Here we describe some of our methods in brief. Projections are based upon simulations from the Coupled Model Intercomparison Project Phase 6 (CMIP6). We used results from six global climate models (GCM) and unless otherwise stated all results reflect the multi-model mean. We produced risk projections on a 4km equal area grid for all regions in the continental US that were at least 50% forested in 2016 based on the [National Land Cover Database](https://www.mrlc.gov/data/nlcd-land-cover-conus-all-years). Depending on the risk, we produced either monthly (fire) or decadal (insects and drought) projections. We then aggregated projections to create rolling 20-year means of disturbance risk.
 
@@ -188,7 +176,7 @@ A more detailed description of our approach is available in the Methods and Data
 
 </Endnote>
 
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 This work was highly collaborative, with all team members playing critical roles. Oriana led the fire modeling and helped develop the downscaled climate data, and Bill and Anna led the drought and insect modeling. Grayson developed the FIA processing pipeline and helped review the modeling work. Danny helped guide the framing and connections to policy. John and Jeff provided critical insights on the fire and drought / insect models, respectively. Jeremy implemented early versions of the models and helped guide the project. Joe architected the climate downscaling and technical infrastructure and helped guide the project as a whole. Oriana and Jeremy designed the web graphics. All authors contributed to reviewing the analysis and writing the article.
 

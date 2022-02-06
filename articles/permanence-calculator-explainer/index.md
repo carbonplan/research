@@ -1,11 +1,5 @@
 import { Link } from '@carbonplan/components'
-import {
-  ExternalLinks,
-  Cite,
-  PullQuote,
-  Endnote,
-  SectionDivider,
-} from '@carbonplan/layouts'
+import { Cite, PullQuote, Endnote } from '@carbonplan/layouts'
 import Scenario from './components/scenario'
 import Parameters from './components/parameters'
 
@@ -37,10 +31,6 @@ export const meta = {
     },
   ],
 }
-
-# The cost of temporary carbon removal
-
-<ExternalLinks color='pink' data={meta.links} />
 
 Carbon removal costs are everywhere in climate discussions — this project costs $10, that one costs $200. Policymakers and corporate planners look to metrics to inform their decisions, and cost per ton of carbon dioxide ($/tCO₂) has become a near-universal unit of measure.
 
@@ -247,9 +237,7 @@ Our calculator puts projects that temporarily remove CO₂ from the atmosphere o
 
 Notably, the full cost of relying on temporary carbon removal is higher than the upfront and relatively low cost of most temporary carbon removal projects today, with the extent of the difference dependent on key parameter choices. By making these choices explicit and transparent, the calculator helps decision-makers consistently explore the full costs of competing climate strategies across a range of assumptions.
 
-<SectionDivider />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Danny developed the model and wrote the first draft of the article. Jeremy implemented the model and designed the interactive web tool. Joe provided feedback on the model. All authors contributed to writing the article. The authors thank Gernot Wagner, Frances Moore, Toly Rinberg, and Rafael Broze for helpful feedback.
 

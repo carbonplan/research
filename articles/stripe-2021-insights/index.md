@@ -1,11 +1,6 @@
-import {
-  PullQuote,
-  SectionDivider,
-  Endnote,
-  ExternalLinks,
-  FigureCaption,
-} from '@carbonplan/layouts'
-import Inline from '../../components/inline'
+import { LinkGroup, FigureCaption, Colors } from '@carbonplan/components'
+import { PullQuote, Endnote } from '@carbonplan/layouts'
+import { Themed } from 'theme-ui'
 import InlineCheck from './components/inline-check'
 import Numbers from './components/numbers'
 import Distributions from './components/distributions'
@@ -40,10 +35,6 @@ export const meta = {
     },
   ],
 }
-
-# New lessons from reviewing carbon removal proposals
-
-<ExternalLinks color='secondary' data={meta.links} />
 
 CarbonPlan began building a public [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal proposal analyses in 2020. We’ve previously published insights from our analysis of [Stripe’s 2020 purchase](https://carbonplan.org/research/stripe-2020-insights) and [Microsoft’s 2021 purchase](https://carbonplan.org/research/microsoft-2021-insights). We are now updating the database to include an analysis of 23 new proposals submitted in response to [Stripe’s Spring 2021 carbon removal purchase](https://stripe.com/newsroom/news/spring-21-carbon-removal-purchases).
 
@@ -81,21 +72,17 @@ Using the [now-public proposals](https://github.com/stripe/carbon-removal-source
 
 Below we show distributions of two key metrics, volume and permanence, in an interactive where you can compare the three batches of proposals we’ve evaluated thus far. Compared to previous rounds, Permanence values are higher (due to Stripe’s criteria) and volumes are generally lower (likely due to limited supplies that meet these strict criteria).
 
-<!-- prettier-ignore -->
 <Distributions />
 <FigureCaption number={2}>
   Distributions of volume (above) and permanence (below) across six project
-  categories:{' '}<Inline sx={{ color: 'green' }}>forests</Inline>
-  {', '}
-  <Inline sx={{ color: 'orange' }}>soil</Inline>
-  {', '}
-  <Inline sx={{ color: 'yellow' }}>biomass</Inline>
-  {', '}
-  <Inline sx={{ color: 'teal' }}>ocean</Inline>
-  {', '}
-  <Inline sx={{ color: 'grey' }}>mineralization</Inline>
-  {', '}
-  <Inline sx={{ color: 'purple' }}>direct air capture</Inline>. Each circle represents a project, and curves show the distribution using a kernel density estimate. Permanence values and volumes reflect proposal claims, and are not necessarily accurate or realistic. You can compare volume and permanence distributions between the  RFPs we’ve analyzed using the toggle in the upper left. 
+  categories: <Colors.Green>forests</Colors.Green>,{' '}
+  <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+  <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
+  <Colors.Purple>direct air capture</Colors.Purple>. Each circle represents a
+  project, and curves show the distribution using a kernel density estimate.
+  Permanence values and volumes reflect proposal claims, and are not necessarily
+  accurate or realistic. You can compare volume and permanence distributions
+  between the RFPs we’ve analyzed using the toggle in the upper left.
 </FigureCaption>
 
 As a reminder, volume claims vary widely depending on project stage and assumed delivery timelines, and are reported here on a gross basis that does not reflect projects’ own greenhouse gas emissions. We attempt to document nuances in the database notes and comments. Volumes should not be compared directly without paying careful attention to project details.
@@ -160,9 +147,7 @@ Moving forward, we hope the open source application materials developed here pro
 
 We also have a favor to ask of you! CarbonPlan will continue to develop and share methods for evaluating carbon removal solutions in collaboration with the scientific community. If you have found value in this work – either the database of public reports or the summary articles – we’d be grateful to hear what you have used, or additional features or products you might find useful. Reach out at hello@carbonplan.org or on twitter [@carbonplanorg](https://twitter.com/carbonplanorg).
 
-<SectionDivider />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Freya led data analysis and wrote the first draft of the article. All authors contributed to analyzing the data and writing the article. Joe and Jeremy designed and built the data architecture and web tools.
 

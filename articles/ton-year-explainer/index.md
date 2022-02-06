@@ -1,13 +1,10 @@
-import { Link } from '@carbonplan/components'
 import {
-  Cite,
-  SectionDivider,
-  Endnote,
+  Link,
+  LinkGroup,
   FigureCaption,
   TableCaption,
-  PullQuote,
-  ExternalLinks,
-} from '@carbonplan/layouts'
+} from '@carbonplan/components'
+import { Endnote, Cite, PullQuote } from '@carbonplan/layouts'
 import EmissionsChart from './components/emissions-chart'
 import MethodsChart from './components/methods-chart'
 import ValueChart from './components/value-chart'
@@ -45,10 +42,6 @@ export const meta = {
     },
   ],
 }
-
-# Unpacking ton-year accounting
-
-<ExternalLinks color={meta.color} data={meta.links} />
 
 To reach net-zero emissions and limit global warming, we’ll need to dramatically cut emissions and remove gigatons of carbon dioxide from the atmosphere for storage.<Cite id='bergman.2021' sxReference={{mt: [3, 3, 3, 4]}} /> Although we ultimately need to reduce emissions and permanently remove carbon from the atmosphere, significant investment has gone into shorter-term interventions that delay emissions or remove carbon for temporary storage — typically involving forestry and agricultural activities in the land sector.<Cite id='joppa.2021'/>
 
@@ -262,9 +255,7 @@ Moving forward, it is critical to develop a clear and consistent framework for a
 
 Finally, we’ve implemented the [ton-year accounting methods](https://github.com/carbonplan/ton-year) described in this explainer in a Python package that you can find on GitHub alongside examples of how to use it. We hope this is helpful for building intuition and unpacking ton-year claims. Please reach out with questions, iterate on the package, and share what you discover!
 
-<SectionDivider />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 Freya performed the research and led the development of the underlying ton-year code with help from Grayson. Freya, Grayson, and Danny contributed to interpreting the results and writing the explainer. Kata and Jeremy developed the graphics, with Kata leading the development of the interactive figures. Joe supported work on the ton-year code.
 
 Please cite as:

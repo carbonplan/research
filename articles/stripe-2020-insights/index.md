@@ -1,11 +1,5 @@
-import {
-  ExternalLinks,
-  SectionDivider,
-  PullQuote,
-  FigureCaption,
-  Endnote,
-} from '@carbonplan/layouts'
-import Inline from '../../components/inline'
+import { FigureCaption, Colors } from '@carbonplan/components'
+import { PullQuote, Endnote } from '@carbonplan/layouts'
 import Permanence from './components/permanence'
 import Table from './components/table'
 import Metrics from './components/metrics'
@@ -34,10 +28,6 @@ export const meta = {
     },
   ],
 }
-
-# Insights from our first project reports
-
-<ExternalLinks color='secondary' data={meta.links} />
 
 At CarbonPlan we analyze carbon removal projects, programs, and technologies. We believe that carbon removal (or "negative emissions") will play an important role in addressing the climate crisis, and we want to help engender a culture of openness, transparency, and accountability. Our hope is that sharing data and insights can benefit the field as a whole — to complement the work of the inventors, scientists, entrepreneurs, and activists who are making climate solutions a reality.
 
@@ -95,13 +85,12 @@ We were able to assign a <InlineCheck/> for many projects on mechanism, for whic
 <FigureCaption number={1}>
   Each column is a metric, and each row shows our ratings for an individual
   project. Colors represent project categories:{' '}
-  <Inline sx={{ color: 'green' }}>forests</Inline>,{' '}
-  <Inline sx={{ color: 'orange' }}>soil</Inline>,{' '}
-  <Inline sx={{ color: 'yellow' }}>biomass</Inline>,{' '}
-  <Inline sx={{ color: 'purple' }}>direct air capture</Inline>,{' '}
-  <Inline sx={{ color: 'grey' }}>mineralization</Inline>, and{' '}
-  <Inline sx={{ color: 'teal' }}>ocean</Inline>. Click the arrow in each row to
-  see the report for that project.
+  <Colors.Green>forests</Colors.Green>, <Colors.Orange>soil</Colors.Orange>,{' '}
+  <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+  <Colors.Purple>direct air capture</Colors.Purple>,{' '}
+  <Colors.Grey>mineralization</Colors.Grey>, and{' '}
+  <Colors.Teal>ocean</Colors.Teal>. Click the arrow in each row to see the
+  report for that project.
 </FigureCaption>
 
 <PullQuote color={meta.color}>
@@ -119,20 +108,15 @@ Carbon dioxide remains active in the atmospheric carbon cycle for hundreds to th
 
 The projects we analyzed clustered into two distinct groups: those with permanence horizons that match the scale of the climate problem, and those that don’t. For example, projects seeking to store CO₂ underground in geologic reservoirs or in stable mineralized form have a plausible claim to carbon removal on the scale of 1000 years or more. Biochar projects, too, are likely to retain a significant fraction of their carbon in stable form for hundreds of years or more. In contrast, others that seek to store carbon in soils or forests tend to claim much shorter time horizons — some as few as one year, but more commonly between 10 and 100 years.
 
-<!-- prettier-ignore-start -->
-
 <Permanence />
 <FigureCaption number={2}>
   Each point shows the price and permanence for an individual project. Colors
-  represent project categories: <Inline sx={{ color: 'green' }}>forests</Inline>
-  , <Inline sx={{ color: 'orange' }}>soil</Inline>,{' '}
-  <Inline sx={{ color: 'yellow' }}>biomass</Inline>,{' '}
-  <Inline sx={{ color: 'purple' }}>direct air capture</Inline>,{' '}
-  <Inline sx={{ color: 'grey' }}>mineralization</Inline>, and{' '}
-  <Inline sx={{ color: 'teal' }}>ocean</Inline>.
+  represent project categories: <Colors.Green>forests</Colors.Green>,{' '}
+  <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+  <Colors.Purple>direct air capture</Colors.Purple>,{' '}
+  <Colors.Grey>mineralization</Colors.Grey>, and{' '}
+  <Colors.Teal>ocean</Colors.Teal>.
 </FigureCaption>
-
-<!-- prettier-ignore-end -->
 
 Whether temporary storage can be made reliable over longer time periods turns on whether permanence risks are physical or socioeconomic. We are optimistic that physical risks can be well characterized by rigorous science. For example, projects storing carbon in forests need to promise that these carbon stocks will remain. Quantitative analysis can help predict the vulnerability of a specific location or species in a changing climate for risk factors like fire, drought, or insect-related tree mortality.
 
@@ -177,9 +161,7 @@ If an organization wants to look broadly across multiple sectors, parallel track
 
 To improve our own analysis capabilities, we are developing open source methods for evaluating projects on a technology-by-technology basis in close collaboration with the academic community. Examples include models of direct air capture project cost and scale (with Jennifer Wilcox) and models for evaluating forest carbon removal potential and physical reversal risks (with Bill Anderegg). These kinds of models will enable more systematic analysis and comparison within and across project categories, as well as identify information that sponsors could collect from proposals to facilitate comparison and evaluation.
 
-<SectionDivider />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Danny wrote the first draft of the article. Joe and Jeremy designed and implemented the graphics. All authors contributed to analyzing the data and writing the article.
 

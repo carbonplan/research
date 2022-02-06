@@ -1,12 +1,5 @@
-import { Link } from '@carbonplan/components'
-import {
-  PullQuote,
-  Cite,
-  SectionDivider,
-  Endnote,
-  ExternalLinks,
-  FigureCaption,
-} from '@carbonplan/layouts'
+import { Link, FigureCaption } from '@carbonplan/components'
+import { PullQuote, Cite, Endnote } from '@carbonplan/layouts'
 import MetricHistogram from './components/metric-histogram'
 import MetricTable from './components/metric-table'
 import RecommendationTable from './components/recommendation-table'
@@ -49,10 +42,6 @@ export const meta = {
   ],
   primaryLink: 2,
 }
-
-# A buyer’s guide to soil carbon offsets
-
-<ExternalLinks color='orange' data={meta.links} />
 
 Voluntary carbon markets are [ramping up efforts](https://grist.org/agriculture/us-carbon-removal-capture-offset-forests-farms-trees-soil/) to credit soil carbon removal, with [federal lawmakers](https://www.politico.com/news/2021/06/24/senate-farmers-carbon-agriculture-496029) and [state regulators](https://ww2.arb.ca.gov/resources/documents/nwl-implementation-draft) eager to follow suit.
 
@@ -199,9 +188,7 @@ We acknowledge that our review sets a high bar for what a protocol should achiev
 
 More optimistically, we hope our analysis helps clear the path for individual projects that seek to deliver higher-quality outcomes. Screening for such projects will be time-consuming, and rigorous sampling and quantification will be expensive. But that’s the true cost of robust climate action — and until the standards in voluntary markets improve, it’s a cost that buyers who care about quality must bear.
 
-<SectionDivider />
-
-<Endnote label='Update'>
+<Endnote label='Update' divider>
 
 On October 13th, 2021 we updated our database with analysis of three additional protocols. Two are from Australia and one is from Alberta, Canada. Although they were designed by governments, their credits can also be used by voluntary actors. The results of that analysis are described in a separate [blog post](/blog/soil-protocols-added).
 

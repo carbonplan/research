@@ -1,10 +1,5 @@
-import {
-  ExternalLinks,
-  PullQuote,
-  Endnote,
-  SectionDivider,
-  FigureCaption,
-} from '@carbonplan/layouts'
+import { FigureCaption } from '@carbonplan/components'
+import { PullQuote, Endnote } from '@carbonplan/layouts'
 import Inline from '../../components/inline'
 import InlineCheck from './components/inline-check'
 import Distributions from './components/distributions'
@@ -41,10 +36,6 @@ export const meta = {
     },
   ],
 }
-
-# Insights from analyzing a new round of carbon removal projects
-
-<ExternalLinks color='secondary' data={meta.links} />
 
 CarbonPlan analyzes carbon removal projects and programs because we believe these activities will play an important role in addressing the climate crisis. In 2020, we began building a publicly accessible [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal project reports. The purpose of this database is to help engender a culture of openness, transparency, and accountability for those participating in the field of carbon removal.
 
@@ -186,9 +177,7 @@ Moving forward, we recommend that both buyers and sellers demand standardized, p
 
 As we learn more, CarbonPlan will continue to develop and share methods for evaluating projects in close collaboration with the scientific community. We will also continue to expand our database of public reports to help keep the ecosystem pointed towards the highest-quality outcomes.
 
-<SectionDivider />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Freya led data analysis and wrote the first draft of the article. Joe and Jeremy designed and built the data architecture and web tools. All authors contributed to analyzing the data and writing the article.
 

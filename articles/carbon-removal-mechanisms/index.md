@@ -1,4 +1,4 @@
-import { Cite, Endnote, PullQuote, SectionDivider } from '@carbonplan/layouts'
+import { Cite, Endnote, PullQuote } from '@carbonplan/layouts'
 import Cycle from './components/cycle'
 
 export const meta = {
@@ -23,8 +23,6 @@ export const meta = {
     'Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.',
   icon: 'article-003/pipes-small',
 }
-
-# Carbon removal mechanisms
 
 Carbon removal is an exciting field because there are so many methods.
 
@@ -274,9 +272,7 @@ The answer depends on the goals. If an organization wants to “purchase” carb
 
 Other sponsor organizations may be interested in supporting technologies that have the potential to become components of carbon removal systems, but which do not currently remove atmospheric CO₂ today. This philosophy could be a critical driver to accelerate change in the coming years, but it risks confusion with current carbon removal efforts. We recommend that such sponsor organizations explicitly frame their mission as advancing a particular theory of technological change and/or research investment, so as to clarify their goals and potential strategic risks.
 
-<SectionDivider />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Danny, Jeremy, and Toly developed the concepts and typology. All authors developed the concept for the graphics (with input from Jonny Black of [Ordinary Things](https://ot.studio)). Jeremy implemented the graphics. All authors contributed to writing the article.
 

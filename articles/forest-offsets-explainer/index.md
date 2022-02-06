@@ -1,11 +1,6 @@
 import { Box } from 'theme-ui'
-import {
-  ExternalLinks,
-  SectionDivider,
-  Cite,
-  FigureCaption,
-  Endnote,
-} from '@carbonplan/layouts'
+import { FigureCaption } from '@carbonplan/components'
+import { Cite, Endnote } from '@carbonplan/layouts'
 import SummaryResults from './components/summary-results'
 import ProgramOverview from './components/program-overview'
 import AnalysisExplanation from './components/analysis-explanation'
@@ -58,9 +53,13 @@ export const meta = {
   ],
 }
 
-# Systematic <span style={{whiteSpace: 'nowrap'}}>over-crediting</span> <br/> of forest offsets
-
-<ExternalLinks color='green' data={meta.links} />
+export const title = (
+  <span>
+    Systematic <span style={{ whiteSpace: 'nowrap' }}>over-crediting</span>
+    <br />
+    of forest offsets
+  </span>
+)
 
 Carbon offsets are widely used by individuals, corporations, and governments to mitigate their greenhouse gas emissions. Because offsets effectively allow pollution to continue, however, they must reflect real climate benefits.
 
@@ -189,15 +188,13 @@ We are also committed to subjecting our work to critical review from our peers. 
 
 It is precisely on issues of such critical importance to the public where we believe this open, transparent approach to science and government accountability matters most.
 
-<SectionDivider />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Grayson, Danny, Jeremy, and Joe designed the research; Grayson digitized the project report data; Grayson, Danny, Jeremy, Joe, and Barbara performed the research and analyzed the data; all authors contributed to interpreting the results and writing the paper. Jeremy developed the interactive graphics with input from Jonny Black of [Ordinary Things](https://ot.studio/).
 
-A version of this work is currently under peer review and is available now via the following preprint:
+A journal article on this work is published at Global Change Biology and can be cited as:
 
-G Badgley, J Freeman, J Hamman, B Haya, A T Trugman, W R L Anderegg, D Cullenward (2021) “Systematic over-crediting in California’s forest carbon offsets program” bioRxiv doi: [10.1101/2021.04.28.441870](https://doi.org/10.1101/2021.04.28.441870)
+G Badgley, J Freeman, J Hamman, B Haya, A T Trugman, W R L Anderegg, D Cullenward (2021) “Systematic over-crediting in California’s forest carbon offsets program” Global Change Biology [doi:10.1111/gcb.15943](https://doi.org/10.1111/gcb.15943)
 
 Please cite this web article as:
 
