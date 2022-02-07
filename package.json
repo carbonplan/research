@@ -26,7 +26,7 @@
     "@carbonplan/charts": "^2.6.0",
     "@carbonplan/components": "11.2.0-develop.5",
     "@carbonplan/icons": "^1.0.0",
-    "@carbonplan/layouts": "1.0.0-develop.34",
+    "@carbonplan/layouts": "1.0.0-develop.35",
     "@carbonplan/theme": "^7.0.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
