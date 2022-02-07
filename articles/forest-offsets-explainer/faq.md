@@ -107,7 +107,7 @@ Both CarbonPlan’s study and the CARB protocol calculate common practice using 
 
 One of the important features of the FIA database is that it changes over time. For example, the Forest Service enters new data as new field surveys are completed. The Forest Service also sometimes retroactively updates older reported data. As a result, there is no single FIA database, but rather different versions that are made available at different points in time. While we would have liked to have used the exact same version of the database to conduct our analysis, none was made publicly available. As a result, we had to use a newer copy.
 
-For our new study, we used a contemporary version of the FIA database. This does not mean that we used “newer” data reporting forest carbon levels during years that weren’t part of CARB’s calculations. Instead, we relied only on older FIA ‘inventories’ in the larger FIA database — i.e. the same sets of plot measurements. As described in our extended methods:
+For our new study, we used a contemporary version of the FIA database. This does not mean that we used “newer” data reporting forest carbon levels during years that weren’t part of CARB’s calculations. Instead, we relied only on older FIA ‘inventories’ in the larger FIA database — i.e. the same sets of plot measurements. As described in our extended methods (page 6):
 
 > Whenever possible, we reported the carbon estimates as the median of
 > inventories ending between 2010 and 2013, so as to be consistent with the
@@ -117,7 +117,7 @@ For our new study, we used a contemporary version of the FIA database. This does
 
 We are well aware that the FIA database is mutable over time. CarbonPlan’s academic collaborators have published widely on the use of FIA data in forest ecology applications in journals such as [Science](https://dx.doi.org/10.1126/science.aab1833), [Nature Climate Change](https://dx.doi.org/10.1038/s41558-020-00919-1), [Proceedings of the National Academy of Sciences](https://dx.doi.org/10.1073%2Fpnas.1917521117), and [New Phytologist](https://dx.doi.org/10.1111/nph.13477). Several of these publications also included U.S. Forest Service researchers who work on the FIA program. In our new work, we also relied on the peer-reviewed [rFIA software package](https://www.fs.fed.us/nrs/pubs/jrnl/2020/nrs_2020_stanke_001.pdf), which was developed by forest ecologists and statisticians with co-authors from the U.S. Forest Service.
 
-Drawing on this collective knowledge and experience, our team designed multiple methodological safeguards to ensure that our results are robust:
+Drawing on this collective knowledge and experience, our team designed multiple methodological safeguards to ensure that our results are robust (described in extended methods, page 9):
 
 > As outlined in the Brief methods and described in detail below, these small
 > differences are highly unlikely to influence our analysis of over- or under-
@@ -165,7 +165,7 @@ This approach allows us to isolate the effect of varying forest types from any d
 
 ### Any remaining bias suggests more (not less) over-crediting
 
-After showing that our estimates are accurate and developing a method to avoid bias, we analyzed our data to check for remaining bias that could prejudice our results. We wrote:
+After showing that our estimates are accurate and developing a method to avoid bias, we analyzed our data to check for remaining bias that could prejudice our results. We wrote (in extended methods, page 14):
 
 > Note also that any systematic bias in our estimates of CP<sub>0</sub> relative
 > to CP<sub>ARB</sub> could potentially overestimate (or underestimate) our
