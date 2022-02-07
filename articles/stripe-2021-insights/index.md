@@ -1,7 +1,7 @@
 import { LinkGroup, FigureCaption, Colors } from '@carbonplan/components'
 import { PullQuote, Endnote } from '@carbonplan/layouts'
 import { Themed } from 'theme-ui'
-import InlineCheck from './components/inline-check'
+import InlineCheck from '../../components/inline-check'
 import Numbers from './components/numbers'
 import Distributions from './components/distributions'
 import Price from './components/price'

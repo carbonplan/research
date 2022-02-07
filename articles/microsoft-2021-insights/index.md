@@ -1,6 +1,6 @@
 import { FigureCaption, Colors } from '@carbonplan/components'
 import { PullQuote, Endnote } from '@carbonplan/layouts'
-import InlineCheck from './components/inline-check'
+import InlineCheck from '../../components/inline-check'
 import Distributions from './components/distributions'
 import Numbers from './components/numbers'
 import Validation from './components/validation'

@@ -1,9 +1,9 @@
 import { FigureCaption, Colors } from '@carbonplan/components'
 import { PullQuote, Endnote } from '@carbonplan/layouts'
+import InlineCheck from '../../components/inline-check'
 import Permanence from './components/permanence'
 import Table from './components/table'
 import Metrics from './components/metrics'
-import InlineCheck from './components/inline-check'
 
 export const meta = {
   id: 'stripe-2020-insights',
