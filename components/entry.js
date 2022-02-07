@@ -6,6 +6,7 @@ import {
   Tag,
   Link,
   Button,
+  LinkGroup,
   formatDate,
 } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
@@ -152,7 +153,13 @@ const Entry = ({ info, first, final }) => {
               }}
             >
               <Box sx={{ mb: [-1] }}>
-                <LinkGroup links={links} />
+                <LinkGroup
+                  inverted
+                  tracking
+                  members={links}
+                  spacing={[4, 4, 4, 5]}
+                  sx={{ mt: '14px', mb: '2px' }}
+                />
               </Box>
             </Box>
           </Column>
@@ -194,35 +201,18 @@ const Entry = ({ info, first, final }) => {
             {summary}
           </Box>
           <Box sx={{ mt: [3], display: 'block' }}>
-            <LinkGroup links={links} />
+            <LinkGroup
+              inverted
+              tracking
+              members={links}
+              spacing={[4, 4, 4, 5]}
+              sx={{ mt: '18px', mb: '-2px' }}
+            />
           </Box>
         </Box>
       </Box>
     </Box>
   )
-}
-
-function LinkGroup({ links }) {
-  return links.map((link, i) => {
-    return (
-      <Button
-        key={i}
-        inverted
-        href={link.href}
-        size='xs'
-        sx={{
-          display: 'inline-block',
-          mb: ['6px'],
-          mt: ['5px'],
-          mr: [4, 4, 4, 5],
-        }}
-        suffix={<RotatingArrow />}
-        tracking
-      >
-        {link.label}
-      </Button>
-    )
-  })
 }
 
 export default memo(Entry)

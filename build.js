@@ -16,17 +16,26 @@ glob('./articles/**/index.md', async (err, filePaths) => {
   // Construct pages/research
   articleContents.forEach(({ id }) => {
     const hasReferences = glob.sync(`./articles/${id}/references.js`).length > 0
+    const hasCustomTitle = fs
+      .readFileSync(`./articles/${id}/index.md`, 'utf-8')
+      .includes('export const displayTitle')
     const referencesImport = hasReferences
       ? `import references from '../../articles/${id}/references'`
       : ''
+    const titleImport = hasCustomTitle
+      ? `import { displayTitle } from '../../articles/${id}/index.md'`
+      : ''
 
     const page = `
-    import Index, {meta} from '../../articles/${id}/index.md'
+    import Index, { meta } from '../../articles/${id}/index.md'
+    ${titleImport}
     ${referencesImport}
-    import Article from '../../components/article'
+    import { Article } from '@carbonplan/layouts'
 
     const Content = () => (
-      <Article references={${hasReferences ? 'references' : '{}'}} meta={meta}>
+      <Article references={${
+        hasReferences ? 'references' : '{}'
+      }} meta={meta} displayTitle={${hasCustomTitle ? 'displayTitle' : 'null'}}>
         <Index />
       </Article>
     )

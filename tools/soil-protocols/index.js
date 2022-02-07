@@ -1,6 +1,6 @@
-import { Box, Themed, Link } from 'theme-ui'
-import { default as NextLink } from 'next/link'
-import Tool from '../../components/tool'
+import { Box, Themed } from 'theme-ui'
+import { Link } from '@carbonplan/components'
+import { Tool } from '@carbonplan/layouts'
 import Main from './components/main'
 
 const Index = () => {
@@ -25,7 +25,6 @@ const Index = () => {
   return (
     <Tool
       meta={meta}
-      title={meta.title}
       description={description}
       contentWidth={[6, 8, 10, 10]}
       descriptionWidth={[6, 7, 7, 7]}

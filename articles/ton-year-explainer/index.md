@@ -1,12 +1,10 @@
-import { Link } from '@carbonplan/components'
-import Cite from '../../components/cite'
-import CiteGroup from '../../components/cite-group'
-import SectionBreak from '../../components/section-break'
-import Endnote from '../../components/endnote'
-import FigureCaption from '../../components/figure-caption'
-import TableCaption from '../../components/table-caption'
-import PullQuote from '../../components/pull-quote'
-import Links from '../../components/links'
+import {
+  Link,
+  LinkGroup,
+  FigureCaption,
+  TableCaption,
+} from '@carbonplan/components'
+import { Endnote, Cite, PullQuote } from '@carbonplan/layouts'
 import EmissionsChart from './components/emissions-chart'
 import MethodsChart from './components/methods-chart'
 import ValueChart from './components/value-chart'
@@ -40,14 +38,10 @@ export const meta = {
   links: [
     {
       label: 'Our critique of NCX’s methods',
-      href: 'https://carbonplan.org/blog/ton-year-ncx',
+      href: '/blog/ton-year-ncx',
     },
   ],
 }
-
-# Unpacking ton-year accounting
-
-<Links color={meta.color} data={meta.links} />
 
 To reach net-zero emissions and limit global warming, we’ll need to dramatically cut emissions and remove gigatons of carbon dioxide from the atmosphere for storage.<Cite id='bergman.2021' sxReference={{mt: [3, 3, 3, 4]}} /> Although we ultimately need to reduce emissions and permanently remove carbon from the atmosphere, significant investment has gone into shorter-term interventions that delay emissions or remove carbon for temporary storage — typically involving forestry and agricultural activities in the land sector.<Cite id='joppa.2021'/>
 
@@ -173,7 +167,7 @@ It is also true that by comparing the ton-years of CO₂ in the atmosphere direc
   justifies the emission of more than 1 tCO₂ — an indefensible outcome.
 </TableCaption>
 
-We are not the first people to make these observations about the Moura Costa method,<CiteGroup ids={['brandao.2013', 'levasseur.2012b']}/> but since the method has been used, we believe these concerns bear repeating.
+We are not the first people to make these observations about the Moura Costa method,<Cite ids={['brandao.2013', 'levasseur.2012b']}/> but since the method has been used, we believe these concerns bear repeating.
 
 In sum, ton-year accounting methods can produce equivalence claims that say something useful about cumulative radiative forcing, but may fail to capture other important climate outcomes. Because the Moura Costa method produces physical claims that don’t match atmospheric outcomes, we don’t think it should be used.
 
@@ -230,7 +224,7 @@ The Climate Action Reserve (CAR) provides a ton-year accounting option in some o
 
 The startup NCX (formerly known as SilviaTerra) has released at least two white papers describing ton-year methods for bundling 1-year forest harvest delays into offset credits and is currently developing an [offsets protocol](https://ncx.com/our-verified-carbon-standard-concept-note-approval/) with the registry Verra. Both NCX versions are described in the table above.
 
-NCX’s current [white paper](https://f.hubspotusercontent20.net/hubfs/9337776/Papers/Forests%20and%20Carbon_A%20Guide%20for%20Buyers%20and%20Policymakers_SilviaTerra2020_v0.4.pdf) asserts that temporarily storing 30.8 tCO₂ for one year is equivalent to the impact of emitting 1 tCO₂. To better understand this claim, we independently replicated NCX’s calculation using detailed methods helpfully provided by NCX in response to our inquiry. While we understand that NCX markets its approach as using a distinct methodology,<CiteGroup ids={['jenkins.2021', 'parisa.2021']}/> [our analysis](https://github.com/carbonplan/ton-year/blob/main/notebooks/ncx-equivalency.ipynb) shows that their approach is conceptually identical to the Lashof method with one important difference — NCX’s ton-year calculations apply a 3.3% discount rate.
+NCX’s current [white paper](https://f.hubspotusercontent20.net/hubfs/9337776/Papers/Forests%20and%20Carbon_A%20Guide%20for%20Buyers%20and%20Policymakers_SilviaTerra2020_v0.4.pdf) asserts that temporarily storing 30.8 tCO₂ for one year is equivalent to the impact of emitting 1 tCO₂. To better understand this claim, we independently replicated NCX’s calculation using detailed methods helpfully provided by NCX in response to our inquiry. While we understand that NCX markets its approach as using a distinct methodology,<Cite ids={['jenkins.2021', 'parisa.2021']}/> [our analysis](https://github.com/carbonplan/ton-year/blob/main/notebooks/ncx-equivalency.ipynb) shows that their approach is conceptually identical to the Lashof method with one important difference — NCX’s ton-year calculations apply a 3.3% discount rate.
 
 The choice to apply a discount rate is more complicated than it may appear. If the goal of ton-year accounting is to produce equivalence claims about physical climate outcomes, applying a discount rate breaks that relationship and invalidates any claim to physical equivalence. Both temporary carbon storage and emitting CO₂ result in quantifiable changes to the Earth’s energy balance and we should compare them directly, no discounting required.
 
@@ -261,9 +255,7 @@ Moving forward, it is critical to develop a clear and consistent framework for a
 
 Finally, we’ve implemented the [ton-year accounting methods](https://github.com/carbonplan/ton-year) described in this explainer in a Python package that you can find on GitHub alongside examples of how to use it. We hope this is helpful for building intuition and unpacking ton-year claims. Please reach out with questions, iterate on the package, and share what you discover!
 
-<SectionBreak />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 Freya performed the research and led the development of the underlying ton-year code with help from Grayson. Freya, Grayson, and Danny contributed to interpreting the results and writing the explainer. Kata and Jeremy developed the graphics, with Kata leading the development of the interactive figures. Joe supported work on the ton-year code.
 
 Please cite as:

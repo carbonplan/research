@@ -1,9 +1,10 @@
 import Index, { meta } from '../../articles/offset-project-fire/index.md'
+
 import references from '../../articles/offset-project-fire/references'
-import Article from '../../components/article'
+import { Article } from '@carbonplan/layouts'
 
 const Content = () => (
-  <Article references={references} meta={meta}>
+  <Article references={references} meta={meta} displayTitle={null}>
     <Index />
   </Article>
 )

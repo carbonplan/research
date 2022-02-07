@@ -2,7 +2,7 @@ const contents = [
   {
     id: 'ton-year-explainer',
     number: 13,
-    version: '1.0.0',
+    version: '1.0.1',
     date: '01-31-2022',
     title: 'Unpacking ton-year accounting',
     authors: [
@@ -23,10 +23,7 @@ const contents = [
     tags: ['article'],
     links: [
       { label: 'Read article', href: '/research/ton-year-explainer' },
-      {
-        label: 'Our critique of NCX’s methods',
-        href: 'https://carbonplan.org/blog/ton-year-ncx',
-      },
+      { label: 'Our critique of NCX’s methods', href: '/blog/ton-year-ncx' },
     ],
   },
   {

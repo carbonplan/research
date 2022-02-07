@@ -1,10 +1,5 @@
-import PullQuote from '../../components/pull-quote'
-import SectionBreak from '../../components/section-break'
-import Endnote from '../../components/endnote'
-import Links from '../../components/links'
-import FigureCaption from '../../components/figure-caption'
-import Cite from '../../components/cite'
-import CiteGroup from '../../components/cite-group'
+import { FigureCaption } from '@carbonplan/components'
+import { PullQuote, Endnote, Cite } from '@carbonplan/layouts'
 import Depth from './components/depth'
 import Density from './components/density'
 import Country from './components/country'
@@ -33,8 +28,6 @@ export const meta = {
   icon: 'article-011/tillage-small',
 }
 
-# Depth matters for soil carbon accounting
-
 Agricultural soils have lost a vast amount of carbon to the atmosphere due to human activities,<Cite id='sanderman.2017'/> contributing to climate change. Scientists and policy makers are now debating whether putting some of this carbon back in the ground would be an effective climate change mitigation strategy.<Cite id='minasny.2017'/>
 
 At the federal level, policymakers at the US Department of Agriculture are [considering approaches](https://www.federalregister.gov/documents/2021/03/16/2021-05287/notice-of-request-for-public-comment-on-the-executive-order-on-tackling-the-climate-crisis-at-home) for crediting soil carbon. In California, regulators have developed a “Natural and Working Lands” [emissions inventory](https://ww2.arb.ca.gov/nwl-inventory) that includes soil carbon and have indicated they may [incorporate soil carbon](https://resources.ca.gov/Initiatives/Expanding-Nature-Based-Solutions) into an upcoming climate policy planning process. For these efforts to succeed, however, we need rigorous and effective measurement approaches.
@@ -49,7 +42,7 @@ To learn why, read on.
 
 No-till farming was developed and promoted in the mid-20th century as an erosion control measure.<Cite id='moldenhauer.1983'/> Under conventional tillage, soil is broken up and mixed mechanically. In no-till farming, soil disturbance is minimized and crop residues are left on the soil surface. Reducing or eliminating tillage improves water infiltration rates and protects against wind and water erosion. Reducing tillage also improves soil structure, allowing “aggregates” (intact clumps of soil) to form when they otherwise would have been broken into smaller pieces.<Cite id='li.2019'/> Aggregates are often carbon rich, and are thought to have a role in protecting organic matter from decay.<Cite id='chaplot.2015'/>
 
-Although this suggests that eliminating or reducing tillage might be a way to increase the overall amount of carbon stored in soil, the relationship between tillage and soil carbon storage remains a heavily debated topic.<Cite id='baker.2007'/> No fewer than 11 synthesis papers published in the past five years have addressed the relationship between tillage and soil carbon storage.<CiteGroup ids={['xiao.2020','haddaway.2017','sun.2020', ,'mondal.2020','du.2017','meurer.2018','ogle.2019','li.2020','nunes.2020','nicoloso.2021','bai.2019']}/> These papers each analyzed data from hundreds of individual studies. While the synthesis papers analyzed many of the same studies, they reached a range of conclusions. Some have concluded that tillage has no statistically detectable effect on overall soil carbon storage, while others have identified positive effects or indicated that tillage effects depend on other factors such as climate and soil type
+Although this suggests that eliminating or reducing tillage might be a way to increase the overall amount of carbon stored in soil, the relationship between tillage and soil carbon storage remains a heavily debated topic.<Cite id='baker.2007'/> No fewer than 11 synthesis papers published in the past five years have addressed the relationship between tillage and soil carbon storage.<Cite ids={['xiao.2020','haddaway.2017','sun.2020', ,'mondal.2020','du.2017','meurer.2018','ogle.2019','li.2020','nunes.2020','nicoloso.2021','bai.2019']}/> These papers each analyzed data from hundreds of individual studies. While the synthesis papers analyzed many of the same studies, they reached a range of conclusions. Some have concluded that tillage has no statistically detectable effect on overall soil carbon storage, while others have identified positive effects or indicated that tillage effects depend on other factors such as climate and soil type
 
 Sampling depth is likely a key source of the disagreement. It has two main effects, which we call the “carbon redistribution effect” and “density change effect”. We’ll describe each in turn.
 
@@ -77,7 +70,7 @@ Increases in soil carbon at the surface do not always reflect what happens deepe
 
 Very shallow sampling (e.g. 15&nbsp;cm) is likely to overestimate carbon storage benefits from no-till agriculture. Sampling to the IPCC-recommended minimum depth of 30&nbsp;cm is likely to reduce the error, given that the plow layer typically extends 25-30&nbsp;cm deep and therefore a 30&nbsp;cm sampling depth will pick up more of the overall effect. However, the majority of the 11 studies cited above found statistically detectable reductions in soil carbon under no-till relative to conventional tillage at depths greater than 30&nbsp;cm, suggesting that the carbon redistribution effect can extend below the typical lower boundary of the plow layer. One possible explanation is that tillage encourages rooting below 30 cm, particularly in colder climates, and therefore adoption of no-till farming reduces carbon inputs from deep rooting.
 
-For all this complexity, one thing is clear: it is hard to evaluate the total effect of no-till agriculture on soil organic carbon if sampling stops at 30&nbsp;cm. One older paper that reported effects in terms of absolute carbon units suggests that 0.9 tCO₂ / ha (95% confidence interval +/- 0.55) might be lost between 30 and 40 cm on average.<Cite id='luo.2010'/> This value appears consistent with more recent estimates specific to cool temperate climates, although it may not apply well in warmer climates. The tillage experiments that sampled deeper than 30&nbsp;cm are only a small subset of the total number of experiments (roughly 25% or less across papers). Sampling to depths greater than 30&nbsp;cm in future studies could help to answer these questions and reduce the risk that carbon benefits of no-till are overestimated. Without prescribing an exact depth, we suggest best practice is to sample the full rooting depth of the crop being surveyed (canonically, 1&nbsp;m).<CiteGroup ids={['olson.2015','lal.2018']}/>
+For all this complexity, one thing is clear: it is hard to evaluate the total effect of no-till agriculture on soil organic carbon if sampling stops at 30&nbsp;cm. One older paper that reported effects in terms of absolute carbon units suggests that 0.9 tCO₂ / ha (95% confidence interval +/- 0.55) might be lost between 30 and 40 cm on average.<Cite id='luo.2010'/> This value appears consistent with more recent estimates specific to cool temperate climates, although it may not apply well in warmer climates. The tillage experiments that sampled deeper than 30&nbsp;cm are only a small subset of the total number of experiments (roughly 25% or less across papers). Sampling to depths greater than 30&nbsp;cm in future studies could help to answer these questions and reduce the risk that carbon benefits of no-till are overestimated. Without prescribing an exact depth, we suggest best practice is to sample the full rooting depth of the crop being surveyed (canonically, 1&nbsp;m).<Cite ids={['olson.2015','lal.2018']}/>
 
 ## The density change effect
 
@@ -99,7 +92,7 @@ The difference in soil density under no-till versus conventional tillage can aff
   unchanged.
 </FigureCaption>
 
-This potential measurement artifact is easy to avoid. Soil scientists have devised a method for reporting carbon stocks based on soil mass instead of soil volume.<CiteGroup ids={['gifford.2003','wendt.2013']}/> Using this “equivalent soil mass” accounting requires taking soil samples at multiple depth intervals. These intervals can be analyzed separately or combined in pre-calculated amounts to reduce analysis costs.<Cite id='virto.2012'/> The equivalent soil mass method uses a mathematical function to weight the data from different depth intervals, yielding an estimate of the carbon stored in a given mass of soil within an area of land. The extra mathematical step makes this method slightly more complicated, but it doesn’t require new equipment or significantly increase costs.
+This potential measurement artifact is easy to avoid. Soil scientists have devised a method for reporting carbon stocks based on soil mass instead of soil volume.<Cite ids={['gifford.2003','wendt.2013']}/> Using this “equivalent soil mass” accounting requires taking soil samples at multiple depth intervals. These intervals can be analyzed separately or combined in pre-calculated amounts to reduce analysis costs.<Cite id='virto.2012'/> The equivalent soil mass method uses a mathematical function to weight the data from different depth intervals, yielding an estimate of the carbon stored in a given mass of soil within an area of land. The extra mathematical step makes this method slightly more complicated, but it doesn’t require new equipment or significantly increase costs.
 
 A subset of the papers on no-till and soil carbon have explicitly compared conventional accounting and equivalent soil mass accounting. They found that the effect of no-till is smaller when equivalent soil mass accounting is used. Thus, failing to incorporate this correction could overestimate the effects of no-till.
 
@@ -143,9 +136,7 @@ Second, the issues raised above certainly do not rule out the overall potential 
 
 Soil carbon measurements that sample deeper than 30 cm and use equivalent mass accounting are a critical component of any high-integrity soil carbon accounting — but far from the only piece of the puzzle.
 
-<SectionBreak />
-
-<Endnote label='Brief methods'>
+<Endnote label='Brief methods' divider>
 
 For the data synthesis (Figure 1) we digitized figures from six published papers that summarized the relative effect of no-till relative to conventional tillage (as defined in each paper). We converted data reported as ratios into percentages, and in two cases where the lower boundary of the deepest sampling interval was not defined we set it equal to one meter.
 

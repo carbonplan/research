@@ -1,6 +1,6 @@
 import { Box } from 'theme-ui'
 import { Link } from '@carbonplan/components'
-import Tool from '../../components/tool'
+import { Tool } from '@carbonplan/layouts'
 import Calculator from './components/calculator'
 
 const Index = () => {
@@ -12,8 +12,6 @@ const Index = () => {
     quickLook:
       'How the cost of direct air capture varies under different energy scenarios',
   }
-
-  const title = 'DAC cost calculator'
 
   const description = (
     <span>
@@ -35,7 +33,7 @@ const Index = () => {
   )
 
   return (
-    <Tool meta={meta} title={title} description={description}>
+    <Tool meta={meta} description={description}>
       <Calculator></Calculator>
     </Tool>
   )

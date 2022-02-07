@@ -1,8 +1,4 @@
-import Cite from '../../components/cite'
-import CiteGroup from '../../components/cite-group'
-import Endnote from '../../components/endnote'
-import PullQuote from '../../components/pull-quote'
-import SectionBreak from '../../components/section-break'
+import { Cite, Endnote, PullQuote } from '@carbonplan/layouts'
 import Cycle from './components/cycle'
 
 export const meta = {
@@ -28,8 +24,6 @@ export const meta = {
   icon: 'article-003/pipes-small',
 }
 
-# Carbon removal mechanisms
-
 Carbon removal is an exciting field because there are so many methods.
 
 Methods are often categorized by technology or sector — such as forests, soil, or direct air capture, as we do with category tags in our [project reports](https://carbonplan.org/reports).
@@ -46,7 +40,7 @@ We hope this article helps bring clarity to the carbon removal conversation.
 
 Carbon removal must be considered in the context of the [global carbon cycle](https://www.globalcarbonproject.org/) — the exchange of carbon, in various chemical states, between the land, ocean, atmosphere, and geosphere. Each reservoir has a “stock” of carbon stored, and carbon “fluxes” between reservoirs, with billions of tons of carbon (GtC) moving through the system every year.
 
-Increased carbon in the atmosphere causes warming at the Earth’s surface. Since the 1750s, atmospheric carbon has increased by roughly 30% (from ~590 to ~870 GtC), with human emissions (~10 GtC/year) now constituting about 5% of the total atmosphere/ocean and atmosphere/land fluxes combined.<CiteGroup ids={['friedlingstein.2019', 'ciais.2013']}/> (These numbers ignore the important, but smaller, role of changes in other greenhouse gas concentrations and emissions.) The efficacy and impact of any carbon removal effort depends on its relative scale and how it interfaces with the background cycle.
+Increased carbon in the atmosphere causes warming at the Earth’s surface. Since the 1750s, atmospheric carbon has increased by roughly 30% (from ~590 to ~870 GtC), with human emissions (~10 GtC/year) now constituting about 5% of the total atmosphere/ocean and atmosphere/land fluxes combined.<Cite ids={['friedlingstein.2019', 'ciais.2013']}/> (These numbers ignore the important, but smaller, role of changes in other greenhouse gas concentrations and emissions.) The efficacy and impact of any carbon removal effort depends on its relative scale and how it interfaces with the background cycle.
 
 To help the reader develop intuition about carbon removal, we use “intervention diagrams” to succinctly illustrate the impact of specific projects. A blank diagram looks like this:
 
@@ -278,9 +272,7 @@ The answer depends on the goals. If an organization wants to “purchase” carb
 
 Other sponsor organizations may be interested in supporting technologies that have the potential to become components of carbon removal systems, but which do not currently remove atmospheric CO₂ today. This philosophy could be a critical driver to accelerate change in the coming years, but it risks confusion with current carbon removal efforts. We recommend that such sponsor organizations explicitly frame their mission as advancing a particular theory of technological change and/or research investment, so as to clarify their goals and potential strategic risks.
 
-<SectionBreak />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Danny, Jeremy, and Toly developed the concepts and typology. All authors developed the concept for the graphics (with input from Jonny Black of [Ordinary Things](https://ot.studio)). Jeremy implemented the graphics. All authors contributed to writing the article.
 

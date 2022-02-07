@@ -9,10 +9,7 @@
     "build-pages": "node build.js && prettier --write contents.js 'pages/research/!(index).js'",
     "start": "next start",
     "test": "jest --watch",
-    "test:ci": "jest --ci --reporters='default'",
-    "format": "npm run format-js && npm run format-md",
-    "format-js": "prettier --write '*.js' '{tools,components,lib,pages,articles}/**/*.js'",
-    "format-md": "prettier --write README.md 'articles/**/*.md' --parser mdx"
+    "test:ci": "jest --ci --reporters='default'"
   },
   "repository": {
     "type": "git",
@@ -24,10 +21,12 @@
     "url": "https://github.com/carbonplan/research/issues"
   },
   "homepage": "https://github.com/carbonplan/research#readme",
+  "prettier": "@carbonplan/prettier",
   "dependencies": {
     "@carbonplan/charts": "^2.7.0",
-    "@carbonplan/components": "^11.0.6",
+    "@carbonplan/components": "^11.2.0",
     "@carbonplan/icons": "^1.0.0",
+    "@carbonplan/layouts": "^1.0.0",
     "@carbonplan/theme": "^7.0.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -59,6 +58,7 @@
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {
+    "@carbonplan/prettier": "^1.2.0",
     "babel-jest": "^27.4.6",
     "extract-mdx-metadata": "^1.0.0",
     "glob": "^7.1.7",

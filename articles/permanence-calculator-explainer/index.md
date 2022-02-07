@@ -1,11 +1,5 @@
-import { Link } from 'theme-ui'
-import { default as NextLink } from 'next/link'
-import Links from '../../components/links'
-import Cite from '../../components/cite'
-import CiteGroup from '../../components/cite-group'
-import PullQuote from '../../components/pull-quote'
-import Endnote from '../../components/endnote'
-import SectionBreak from '../../components/section-break'
+import { Link } from '@carbonplan/components'
+import { Cite, PullQuote, Endnote } from '@carbonplan/layouts'
 import Scenario from './components/scenario'
 import Parameters from './components/parameters'
 
@@ -38,10 +32,6 @@ export const meta = {
   ],
 }
 
-# The cost of temporary carbon removal
-
-<Links color='pink' data={meta.links} />
-
 Carbon removal costs are everywhere in climate discussions — this project costs $10, that one costs $200. Policymakers and corporate planners look to metrics to inform their decisions, and cost per ton of carbon dioxide ($/tCO₂) has become a near-universal unit of measure.
 
 But are all tons the same?
@@ -54,9 +44,9 @@ When two carbon removal projects each claim a $/tCO₂ cost, directly comparing 
 
 Over the past few months, we’ve received several questions from companies looking to procure carbon removal and normalize the cost of competing projects with different storage durations. For example, how should one compare a $20/tCO₂ soil carbon project that promises to lock up CO₂ for 10 years with a $700/tCO₂ direct air capture and geological sequestration project that promises effectively permanent carbon storage?
 
-Some helpful academic thinking on these questions exists,<CiteGroup ids={['herzog.2003', 'kim.2008', 'costa.2000']}/> but we haven’t been able to point anyone to a simple tool that illustrates and facilitates the comparisons that decision makers need to make.
+Some helpful academic thinking on these questions exists,<Cite ids={['herzog.2003', 'kim.2008', 'costa.2000']}/> but we haven’t been able to point anyone to a simple tool that illustrates and facilitates the comparisons that decision makers need to make.
 
-So we <NextLink href={'/research/permanence-calculator'} passHref={true}><Link>built one</Link></NextLink>.
+So we <Link href={'/research/permanence-calculator'}>built one</Link>.
 
 As we explain below, our calculator shows how the initial cost of a temporary carbon removal can be far smaller than the total cost of achieving permanent climate benefits. By analogy to the decision of whether to rent an apartment or buy a house — which the New York Times analyzed in a [“rent versus buy” calculator](https://www.nytimes.com/interactive/2014/upshot/buy-rent-calculator.html) that inspired this project — we want to know if continued temporary removal (“rent”) is more or less expensive than procuring permanent removal today (“buy”). By putting temporary and permanent carbon removal options on equal footing, our calculator shows how to make a transparent and balanced comparison of competing climate strategies.
 
@@ -85,7 +75,7 @@ Before walking through what the calculator can teach us, we’ll discuss some of
 
 A net present value framework translates costs that arise in future years into present-year terms by discounting the future costs according to an exponentially compounding discount function. When discount rates are small — either zero, or close to zero — future costs remain large in present-day terms. For example, the 2006 [Stern Review on the Economics of Climate Change](https://www.lse.ac.uk/granthaminstitute/publication/the-economics-of-climate-change-the-stern-review/) famously used a discount rate of 1.5% and made a case for aggressive climate action in part on that basis. When discount rates grow past a few percentage points, however, even large costs from tomorrow’s climate impacts appear small in present-day terms.
 
-Net present value calculations are ethically and philosophically fraught in the context of climate change economics because they impose value judgments about the welfare of future generations and assume that wealth today will become greater wealth tomorrow.<CiteGroup ids={['kelleher.2018', 'drupp.2018']}/> Choosing a discount rate that resembles typical, real-world interest rates minimizes the net present value of costs imposed on people living in the future. For example, under a 10% discount rate, a climate impact that causes $1 million worth of damage in 100 years costs about $73 in net present terms. Many people would say that it isn’t ethical for an individual today to become $73 richer if the result is that someone in 100 years experiences a $1 million loss, but that’s effectively what an economic discounting framework says is rational: if that $73 earns a reliable 10% per year, it’ll fully cover the $1 million damage bill that comes due in 100 years.
+Net present value calculations are ethically and philosophically fraught in the context of climate change economics because they impose value judgments about the welfare of future generations and assume that wealth today will become greater wealth tomorrow.<Cite ids={['kelleher.2018', 'drupp.2018']}/> Choosing a discount rate that resembles typical, real-world interest rates minimizes the net present value of costs imposed on people living in the future. For example, under a 10% discount rate, a climate impact that causes $1 million worth of damage in 100 years costs about $73 in net present terms. Many people would say that it isn’t ethical for an individual today to become $73 richer if the result is that someone in 100 years experiences a $1 million loss, but that’s effectively what an economic discounting framework says is rational: if that $73 earns a reliable 10% per year, it’ll fully cover the $1 million damage bill that comes due in 100 years.
 
 These dynamics naturally lead to the concern that people will act selfishly today and harm the generations of tomorrow, just as has been the case with greenhouse gas pollution since the industrial revolution. A related concern is that people might pursue cheap and temporary carbon removal today on the promise of investing in more expensive and effective approaches tomorrow — but when tomorrow comes, there’s no guarantee of following through.
 
@@ -247,9 +237,7 @@ Our calculator puts projects that temporarily remove CO₂ from the atmosphere o
 
 Notably, the full cost of relying on temporary carbon removal is higher than the upfront and relatively low cost of most temporary carbon removal projects today, with the extent of the difference dependent on key parameter choices. By making these choices explicit and transparent, the calculator helps decision-makers consistently explore the full costs of competing climate strategies across a range of assumptions.
 
-<SectionBreak />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Danny developed the model and wrote the first draft of the article. Jeremy implemented the model and designed the interactive web tool. Joe provided feedback on the model. All authors contributed to writing the article. The authors thank Gernot Wagner, Frances Moore, Toly Rinberg, and Rafael Broze for helpful feedback.
 

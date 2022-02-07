@@ -1,8 +1,6 @@
 import { Box, Link } from 'theme-ui'
 import { Row, Column } from '@carbonplan/components'
-import Blockquote from '../../components/blockquote'
-import Code from '../../components/code'
-import Supplement from '../../components/supplement'
+import { Supplement } from '@carbonplan/layouts'
 import CommonPractice from './components/common-practice'
 
 export const meta = {
@@ -109,29 +107,25 @@ Both CarbonPlan’s study and the CARB protocol calculate common practice using 
 
 One of the important features of the FIA database is that it changes over time. For example, the Forest Service enters new data as new field surveys are completed. The Forest Service also sometimes retroactively updates older reported data. As a result, there is no single FIA database, but rather different versions that are made available at different points in time. While we would have liked to have used the exact same version of the database to conduct our analysis, none was made publicly available. As a result, we had to use a newer copy.
 
-For our new study, we used a contemporary version of the FIA database. This does not mean that we used “newer” data reporting forest carbon levels during years that weren’t part of CARB’s calculations. Instead, we relied only on older FIA ‘inventories’ in the larger FIA database — i.e. the same sets of plot measurements. As described in our extended methods:
+For our new study, we used a contemporary version of the FIA database. This does not mean that we used “newer” data reporting forest carbon levels during years that weren’t part of CARB’s calculations. Instead, we relied only on older FIA ‘inventories’ in the larger FIA database — i.e. the same sets of plot measurements. As described in our extended methods (page 6):
 
-<Blockquote source={'Extended Methods / page 6'}>
-  Whenever possible, we reported the carbon estimates as the median of
-  inventories ending between 2010 and 2013, so as to be consistent with the
-  snapshot of FIA data used by CARB to produce its own estimates of common
-  practice. In the rare cases where no inventory period ended between 2010 and
-  2013, we took the median of all inventories from 2013 onward.
-</Blockquote>
+> Whenever possible, we reported the carbon estimates as the median of
+> inventories ending between 2010 and 2013, so as to be consistent with the
+> snapshot of FIA data used by CARB to produce its own estimates of common
+> practice. In the rare cases where no inventory period ended between 2010 and
+> 2013, we took the median of all inventories from 2013 onward.
 
 We are well aware that the FIA database is mutable over time. CarbonPlan’s academic collaborators have published widely on the use of FIA data in forest ecology applications in journals such as [Science](https://dx.doi.org/10.1126/science.aab1833), [Nature Climate Change](https://dx.doi.org/10.1038/s41558-020-00919-1), [Proceedings of the National Academy of Sciences](https://dx.doi.org/10.1073%2Fpnas.1917521117), and [New Phytologist](https://dx.doi.org/10.1111/nph.13477). Several of these publications also included U.S. Forest Service researchers who work on the FIA program. In our new work, we also relied on the peer-reviewed [rFIA software package](https://www.fs.fed.us/nrs/pubs/jrnl/2020/nrs_2020_stanke_001.pdf), which was developed by forest ecologists and statisticians with co-authors from the U.S. Forest Service.
 
-Drawing on this collective knowledge and experience, our team designed multiple methodological safeguards to ensure that our results are robust:
+Drawing on this collective knowledge and experience, our team designed multiple methodological safeguards to ensure that our results are robust (described in extended methods, page 9):
 
-<Blockquote source={'Extended Methods / page 9'}>
-  As outlined in the Brief methods and described in detail below, these small
-  differences are highly unlikely to influence our analysis of over- or under-
-  crediting because we calculate proportional changes in common practice, each
-  derived from the same underlying data, thereby isolating the effect of how FIA
-  data is aggregated to calculate common practice, as opposed to uninformative
-  differences between our estimates of common practice and the [FIA] values used
-  by [CARB in the] US Forest Project protocol.
-</Blockquote>
+> As outlined in the Brief methods and described in detail below, these small
+> differences are highly unlikely to influence our analysis of over- or under-
+> crediting because we calculate proportional changes in common practice, each
+> derived from the same underlying data, thereby isolating the effect of how FIA
+> data is aggregated to calculate common practice, as opposed to uninformative
+> differences between our estimates of common practice and the [FIA] values used
+> by [CARB in the] US Forest Project protocol.
 
 Three independent reasons provide confidence that our methods and results are robust to any potential changes in the FIA database over the last six years. First, we can show that our reproduction of CARB’s common practice numbers — which were calculated by the U.S. Forest Service for the 2015 protocol — are highly accurate on both an assessment-area and project-level basis. Second, we introduced a methodological step to ensure that any error in reproducing CARB’s common practices is isolated and avoided in our alternative estimate of common practice. Third, we show that the statistical bias in our method is minor and suggests we might be under-estaimting the extent of over-crediting, rather than reported exaggerated estimates. We address each issue in turn.
 
@@ -155,29 +149,15 @@ Had we simply calculated our alternative common practice concept and directly us
 
 Instead, we estimated a variable called CP<sub>NEW</sub> as follows and used it to estimate the number of offset credits a project should have received based on CARB’s protocol rules
 
-<Code>
-  CP<sub>NEW</sub> = (CP<sub>1</sub> / CP<sub>0</sub>) * CP<sub>ARB</sub>
-</Code>
+> CP<sub>NEW</sub> = (CP<sub>1</sub> / CP<sub>0</sub>) \* CP<sub>ARB</sub>
 
 Where:
 
-<Code>
-  CP<sub>ARB</sub> ={' '}
-  <Box as='span' sx={{ fontFamily: 'faux' }}>
-    common practice number from CARB
-  </Box>
-  <br />
-  <br />
-  CP<sub>0</sub> = <Box as='span' sx={{ fontFamily: 'faux' }}>
-    our re-estimate of CARB’s common practice number
-  </Box>
-  <br />
-  <br />
-  CP<sub>1</sub> ={' '}
-  <Box as='span' sx={{ fontFamily: 'faux' }}>
-    our alternative species-specific common practice
-  </Box>
-</Code>
+> CP<sub>ARB</sub> = common practice number from CARB
+>
+> CP<sub>0</sub> = our re-estimate of CARB’s common practice number
+>
+> CP<sub>1</sub> = our alternative species-specific common practice
 
 Thus, our approach scales CARB’s own estimate of common practice (CP<sub>ARB</sub>), which is taken directly from the 2015 forest protocol, by the ratio of our estimate of a species-specific common practice number (CP<sub>1</sub>) to our re-estimate of CARB’s original common practice number (CP<sub>0</sub>).
 
@@ -185,22 +165,21 @@ This approach allows us to isolate the effect of varying forest types from any d
 
 ### Any remaining bias suggests more (not less) over-crediting
 
-After showing that our estimates are accurate and developing a method to avoid bias, we analyzed our data to check for remaining bias that could prejudice our results. We wrote:
+After showing that our estimates are accurate and developing a method to avoid bias, we analyzed our data to check for remaining bias that could prejudice our results. We wrote (in extended methods, page 14):
 
-<Blockquote source={'Extended Methods / page 14'}>
-  Note also that any systematic bias in our estimates of CP<sub>0</sub> relative
-  to CP<sub>ARB</sub> could potentially overestimate (or underestimate) our
-  re-crediting calculations. Specifically, if we systematically overestimated CP
-  <sub>0</sub>, then we underestimated over-crediting; similarly, if we systematically
-  underestimated CP<sub>0</sub>, then we overestimated over-crediting. As reported
-  above, our estimates of CP<sub>0</sub> are well matched to CP<sub>ARB</sub> (R²
-  = 0.94, RMSE = 9.76), and on average were 3.2% higher than CP<sub>ARB</sub>. If
-  anything, the fact that we overestimate CP
-  <sub>ARB</sub> likely makes our overall finding of net over-crediting
-  conservative. In addition, we found no evidence for a systematic relationship
-  between error in our estimate of CP<sub>0</sub> and our estimates of crediting
-  error (r = 0.06).
-</Blockquote>
+> Note also that any systematic bias in our estimates of CP<sub>0</sub> relative
+> to CP<sub>ARB</sub> could potentially overestimate (or underestimate) our
+> re-crediting calculations. Specifically, if we systematically overestimated CP
+>
+> <sub>0</sub>, then we underestimated over-crediting; similarly, if we
+> systematically underestimated CP<sub>0</sub>, then we overestimated
+> over-crediting. As reported above, our estimates of CP<sub>0</sub> are well matched
+> to CP<sub>ARB</sub> (R² = 0.94, RMSE = 9.76), and on average were 3.2% higher
+> than CP<sub>ARB</sub>. If anything, the fact that we overestimate CP
+> <sub>ARB</sub> likely makes our overall finding of net over-crediting
+> conservative. In addition, we found no evidence for a systematic relationship
+> between error in our estimate of CP<sub>0</sub> and our estimates of crediting
+> error (r = 0.06).
 
 In other words, our reproduction of CARB’s common practice (CP<sub>0</sub>) is a little too high on average; and because the formula for our alternative estimate of common practice (CP<sub>NEW</sub>) divides by our re-estimate of CARB’s common practice (CP<sub>0</sub>), our alternative common practice variable is too low; and because increases in our alternative common practice result in more over-crediting, our estimate of over-crediting is conservative.
 

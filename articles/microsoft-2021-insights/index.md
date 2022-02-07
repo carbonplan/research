@@ -1,10 +1,6 @@
-import { CheckCircle } from '@carbonplan/icons'
-import Links from '../../components/links'
-import PullQuote from '../../components/pull-quote'
-import Endnote from '../../components/endnote'
-import SectionBreak from '../../components/section-break'
-import Inline from '../../components/inline'
-import FigureCaption from '../../components/figure-caption'
+import { FigureCaption, Colors } from '@carbonplan/components'
+import { PullQuote, Endnote } from '@carbonplan/layouts'
+import InlineCheck from '../../components/inline-check'
 import Distributions from './components/distributions'
 import Numbers from './components/numbers'
 import Validation from './components/validation'
@@ -40,10 +36,6 @@ export const meta = {
   ],
 }
 
-# Insights from analyzing a new round of carbon removal projects
-
-<Links color='secondary' data={meta.links} />
-
 CarbonPlan analyzes carbon removal projects and programs because we believe these activities will play an important role in addressing the climate crisis. In 2020, we began building a publicly accessible [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal project reports. The purpose of this database is to help engender a culture of openness, transparency, and accountability for those participating in the field of carbon removal.
 
 We previously summarized [our insights](https://carbonplan.org/research/stripe-2020-insights) from analyzing 24 proposals submitted in response to [Stripe’s first carbon removal purchase](https://stripe.com/blog/first-negative-emissions-purchases). We are now releasing a major update to our database, adding analysis of 161 proposals submitted in response to [Microsoft’s 2021 carbon removal purchase](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4MDlc). We also took this opportunity to redesign the [web interface](https://carbonplan.org/research/cdr-database) for improved performance and usability.
@@ -76,23 +68,16 @@ Distributions of volume and permanence across projects reveal familiar patterns,
 <Distributions />
 <FigureCaption number={2}>
   Distributions of volume (above) and permanence (below) across six project
-  categories:{' '}<Inline sx={{ color: 'green' }}>forests</Inline>
-  {', '}
-  <Inline sx={{ color: 'orange' }}>soil</Inline>
-  {', '}
-  <Inline sx={{ color: 'yellow' }}>biomass</Inline>
-  {', '}
-  <Inline sx={{ color: 'teal' }}>ocean</Inline>
-  {', '}
-  <Inline sx={{ color: 'grey' }}>mineralization</Inline>
-  {', '}
-  <Inline sx={{ color: 'purple' }}>direct air capture</Inline>. Each circle
+  categories: <Colors.Green>forests</Colors.Green>,{' '}
+  <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+  <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
+  <Colors.Purple>direct air capture</Colors.Purple>. Each circle
   represents a project, and curves show the distribution using a kernel density
   estimate. Values reflect project proposals and may not necessarily be accurate
   or realistic.
 </FigureCaption>
 
-To help guide interpretation of these metrics, we validate with a <CheckCircle sx={{position: 'relative', width: [25, 25, 25, 30], height: [19, 19, 19, 22], strokeWidth: [1.5, 1.5, 1.5, 2], px: [1], top: ['4px']}}/> the mechanism, volume, negativity, and permanence of each project if we can independently confirm claims with reasonable confidence, based on the best available science, data, and public documentation. Where we don’t feel confident about validation, we simply report the project claim without giving it a <CheckCircle sx={{position: 'relative', width: [25, 25, 25, 30], height: [19, 19, 19, 22], strokeWidth: [1.5, 1.5, 1.5, 2], px: [1], top: ['4px']}}/>. In the case of additionality (would the claimed climate benefits occur without the project?) and specificity (was there enough information for us to perform our analysis?) we assign a qualitative score on a scale of 1 to 3.
+To help guide interpretation of these metrics, we validate with a <InlineCheck/> the mechanism, volume, negativity, and permanence of each project if we can independently confirm claims with reasonable confidence, based on the best available science, data, and public documentation. Where we don’t feel confident about validation, we simply report the project claim without giving it a <InlineCheck/>. In the case of additionality (would the claimed climate benefits occur without the project?) and specificity (was there enough information for us to perform our analysis?) we assign a qualitative score on a scale of 1 to 3.
 
 For this update to our database, we have also included a cross-cutting project score on a 5-point scale. This score integrates our efforts to validate projects across all metrics, with 1 point each for validation of mechanism, volume, negativity, and permanence. We then add 1 point for a perfect score on additionality, or subtract 1 point for the lowest score on additionality.
 
@@ -109,18 +94,10 @@ In our previous round of analysis, we often found ourselves unable to confidentl
 <!-- prettier-ignore -->
 <Validation />
 <FigureCaption number={3}>
-  Fraction of validated projects across five metrics and six project categories:{' '}
-  <Inline sx={{ color: 'green' }}>forests</Inline>
-  {', '}
-  <Inline sx={{ color: 'orange' }}>soil</Inline>
-  {', '}
-  <Inline sx={{ color: 'yellow' }}>biomass</Inline>
-  {', '}
-  <Inline sx={{ color: 'teal' }}>ocean</Inline>
-  {', '}
-  <Inline sx={{ color: 'grey' }}>mineralization</Inline>
-  {', '}
-  <Inline sx={{ color: 'purple' }}>direct air capture</Inline>. Each bar shows
+  Fraction of validated projects across five metrics and six project categories:{' '}<Colors.Green>forests</Colors.Green>,{' '}
+  <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+  <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
+  <Colors.Purple>direct air capture</Colors.Purple>. Each bar shows
   the fraction of projects (from 0 to 1) in that category for which we were able
   to validate the given metric. In the case of additionality, which uses a 3
   point scale, validation here is defined as a score of at least 2.
@@ -184,9 +161,7 @@ Moving forward, we recommend that both buyers and sellers demand standardized, p
 
 As we learn more, CarbonPlan will continue to develop and share methods for evaluating projects in close collaboration with the scientific community. We will also continue to expand our database of public reports to help keep the ecosystem pointed towards the highest-quality outcomes.
 
-<SectionBreak />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Freya led data analysis and wrote the first draft of the article. Joe and Jeremy designed and built the data architecture and web tools. All authors contributed to analyzing the data and writing the article.
 

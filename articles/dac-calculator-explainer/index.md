@@ -1,12 +1,5 @@
-import { Link } from 'theme-ui'
-import { default as NextLink } from 'next/link'
-import Links from '../../components/links'
-import FigureCaption from '../../components/figure-caption'
-import Endnote from '../../components/endnote'
-import Inline from '../../components/inline'
-import Cite from '../../components/cite'
-import CiteGroup from '../../components/cite-group'
-import SectionBreak from '../../components/section-break'
+import { Link, Colors, FigureCaption } from '@carbonplan/components'
+import { Endnote, Cite } from '@carbonplan/layouts'
 import BoundaryCondition from './components/boundary-condition'
 import ParameterScenario from './components/parameter-scenario'
 import CostSummary from './components/cost-summary'
@@ -45,10 +38,6 @@ export const meta = {
   ],
 }
 
-# The cost of direct air capture
-
-<Links color='purple' data={meta.links} />
-
 Direct air capture (DAC) is a technology that removes carbon dioxide (CO₂) from the air using chemicals. There are several types. Solid sorbent and liquid solvent DAC are in use today. Others are emerging, such as electro-swing, humidity-swing, and mineralization-based.
 
 In all types of DAC, chemicals selectively bind CO₂ from the air, typically at ambient conditions (room temperature and pressure). Once the chemical has bound an adequate amount of CO₂, the system releases the CO₂ at elevated temperature and/or decreased pressure. Once the CO₂ is released, it can be captured, and, if high purity, compressed, transported, and stored.
@@ -63,7 +52,7 @@ Analyzing the cost of DAC also requires considering any associated greenhouse ga
 
 In a recent [paper](https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract), McQueen et al. evaluated the cost of co-constructing a solvent DAC process with its energy system.<Cite id='mcqueen.2021.b'/> They evaluated two energy systems that burn natural gas onsite for heat and electricity, capturing nearly all of the CO₂ released during combustion, and six all-electric non-fossil systems.
 
-To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an open source <NextLink href={'/research/dac-calculator'} passHref={true}><Link>interactive calculator</Link></NextLink> based directly on the model from the paper. The model is written in JavaScript and runs natively in the browser.
+To help build intuition for how different factors influence the cost of DAC in these scenarios, we built an open source <Link href={'/research/dac-calculator'}>interactive calculator</Link> based directly on the model from the paper. The model is written in JavaScript and runs natively in the browser.
 
 Here we explain the design of the model and the parameter space, and highlight some key insights.
 
@@ -78,8 +67,8 @@ Our calculator estimates the cost of a given DAC technology explicitly linked to
 <BoundaryCondition />
 <FigureCaption number={1}>
   Boundary conditions for the DAC cost calculator.{' '}
-  <Inline sx={{ color: 'purple' }}>Purple</Inline> box bounds the components
-  considered for our analysis.
+  <Colors.Purple>Purple</Colors.Purple> box bounds the components considered for
+  our analysis.
 </FigureCaption>
 
 Each of these cost components in turn depend on parameters, which are presented in the calculator as interactive sliders. Above each slider, a chart shows how the total net removed cost will change as you vary that parameter, conditional on the current setting of the others. So, as you change each parameter, not only can you see how the total cost changes, but you can also see how it affects sensitivity to the other parameters. Finally, a dropdown at the top lets you choose between three different sources of energy, which we will now describe.
@@ -121,7 +110,7 @@ With default settings, the calculator yields the highest cost for solar, second 
 
 Here we explore three alternative scenarios in detail: a higher cost NGCC scenario, a lower cost wind scenario, and an NGCC scenario with a higher leakage rate.
 
-To model higher cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Cite id='socolow.2011'/> including corrections from two additional follow-on analyses.<CiteGroup ids={['mazzotti.2013', 'zeman.2014']}/> In using these reports we are assuming a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Cite id='vertical.defaults'/>
+To model higher cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Cite id='socolow.2011'/> including corrections from two additional follow-on analyses.<Cite ids={['mazzotti.2013', 'zeman.2014']}/> In using these reports we are assuming a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Cite id='vertical.defaults'/>
 
 <ParameterScenario
   energySource={'NGCC'}
@@ -203,9 +192,7 @@ We encourage you to explore how the cost of DAC changes with different economic 
 
 We hope our interactive calculator provides intuition and transparency around the complex, high-dimensional parameter relationships underlying the cost of DAC. Along with understanding the technology itself, and finding opportunities to lower costs, evaluating different cost scenarios and energy systems can help with siting DAC facilities. Far more information and modeling is of course required for actual design, engineering, and planning, but experimenting with this tool could be the first step in evaluating existing approaches — or developing new ones.
 
-<SectionBreak />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Noah and Jennifer developed the underlying model with their collaborators Michael J. Desmond, Robert H. Socolow, and Peter Psarras. All authors of this article developed the concept for an interactive version. Joe implemented the model in JavaScript, with Noah’s guidance. Joe and Jeremy developed and implemented the interactive graphics with input from Jonny Black of [Ordinary Things](https://ot.studio). All authors contributed to writing the article.
 

@@ -1,10 +1,7 @@
-import { CheckCircle } from '@carbonplan/icons'
-import PullQuote from '../../components/pull-quote'
-import SectionBreak from '../../components/section-break'
-import Endnote from '../../components/endnote'
-import Links from '../../components/links'
-import Inline from '../../components/inline'
-import FigureCaption from '../../components/figure-caption'
+import { LinkGroup, FigureCaption, Colors } from '@carbonplan/components'
+import { PullQuote, Endnote } from '@carbonplan/layouts'
+import { Themed } from 'theme-ui'
+import InlineCheck from '../../components/inline-check'
 import Numbers from './components/numbers'
 import Distributions from './components/distributions'
 import Price from './components/price'
@@ -38,10 +35,6 @@ export const meta = {
     },
   ],
 }
-
-# New lessons from reviewing carbon removal proposals
-
-<Links color='secondary' data={meta.links} />
 
 CarbonPlan began building a public [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal proposal analyses in 2020. We’ve previously published insights from our analysis of [Stripe’s 2020 purchase](https://carbonplan.org/research/stripe-2020-insights) and [Microsoft’s 2021 purchase](https://carbonplan.org/research/microsoft-2021-insights). We are now updating the database to include an analysis of 23 new proposals submitted in response to [Stripe’s Spring 2021 carbon removal purchase](https://stripe.com/newsroom/news/spring-21-carbon-removal-purchases).
 
@@ -79,21 +72,17 @@ Using the [now-public proposals](https://github.com/stripe/carbon-removal-source
 
 Below we show distributions of two key metrics, volume and permanence, in an interactive where you can compare the three batches of proposals we’ve evaluated thus far. Compared to previous rounds, Permanence values are higher (due to Stripe’s criteria) and volumes are generally lower (likely due to limited supplies that meet these strict criteria).
 
-<!-- prettier-ignore -->
 <Distributions />
 <FigureCaption number={2}>
   Distributions of volume (above) and permanence (below) across six project
-  categories:{' '}<Inline sx={{ color: 'green' }}>forests</Inline>
-  {', '}
-  <Inline sx={{ color: 'orange' }}>soil</Inline>
-  {', '}
-  <Inline sx={{ color: 'yellow' }}>biomass</Inline>
-  {', '}
-  <Inline sx={{ color: 'teal' }}>ocean</Inline>
-  {', '}
-  <Inline sx={{ color: 'grey' }}>mineralization</Inline>
-  {', '}
-  <Inline sx={{ color: 'purple' }}>direct air capture</Inline>. Each circle represents a project, and curves show the distribution using a kernel density estimate. Permanence values and volumes reflect proposal claims, and are not necessarily accurate or realistic. You can compare volume and permanence distributions between the  RFPs we’ve analyzed using the toggle in the upper left. 
+  categories: <Colors.Green>forests</Colors.Green>,{' '}
+  <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+  <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
+  <Colors.Purple>direct air capture</Colors.Purple>. Each circle represents a
+  project, and curves show the distribution using a kernel density estimate.
+  Permanence values and volumes reflect proposal claims, and are not necessarily
+  accurate or realistic. You can compare volume and permanence distributions
+  between the RFPs we’ve analyzed using the toggle in the upper left.
 </FigureCaption>
 
 As a reminder, volume claims vary widely depending on project stage and assumed delivery timelines, and are reported here on a gross basis that does not reflect projects’ own greenhouse gas emissions. We attempt to document nuances in the database notes and comments. Volumes should not be compared directly without paying careful attention to project details.
@@ -130,7 +119,7 @@ Our analytical framework, and all the procurement processes we have analyzed, ha
 
 First, a volume-sale framework does not necessarily solicit the kinds of information needed to identify a robust research approach. At minimum, evaluating research requires seeing a clear presentation of testable hypotheses and planned experimental approaches.
 
-Second, evaluating novel research may require a different orientation toward uncertainty. In our analysis, we currently give a <CheckCircle sx={{position: 'relative', width: [25, 25, 25, 30], height: [19, 19, 19, 22], strokeWidth: [1.5, 1.5, 1.5, 2], px: [1], top: ['4px']}}/> for a metric if we can independently confirm a proposal’s claim with reasonable confidence. An early-stage project with active research questions may — quite reasonably — be difficult to validate because there’s simply not enough science or data. But within our current framework the lack of a <CheckCircle sx={{position: 'relative', width: [25, 25, 25, 30], height: [19, 19, 19, 22], strokeWidth: [1.5, 1.5, 1.5, 2], px: [1], top: ['4px']}}/> conflates the inherent uncertainty of an open research question with potentially concerning questions about the validity of a more mature project. Ideally early-stage proposals containing open research questions would be distinguished upstream and subject to separate evaluation.
+Second, evaluating novel research may require a different orientation toward uncertainty. In our analysis, we currently give a <InlineCheck/> for a metric if we can independently confirm a proposal’s claim with reasonable confidence. An early-stage project with active research questions may — quite reasonably — be difficult to validate because there’s simply not enough science or data. But within our current framework the lack of a <InlineCheck/> conflates the inherent uncertainty of an open research question with potentially concerning questions about the validity of a more mature project. Ideally early-stage proposals containing open research questions would be distinguished upstream and subject to separate evaluation.
 
 If the private sector continues to support early-stage carbon removal projects — as opposed to, say, government-funded research programs — we recommend buyers and grantors develop parallel solicitation and funding structures tailored to early-stage projects with open research questions.
 
@@ -158,9 +147,7 @@ Moving forward, we hope the open source application materials developed here pro
 
 We also have a favor to ask of you! CarbonPlan will continue to develop and share methods for evaluating carbon removal solutions in collaboration with the scientific community. If you have found value in this work – either the database of public reports or the summary articles – we’d be grateful to hear what you have used, or additional features or products you might find useful. Reach out at hello@carbonplan.org or on twitter [@carbonplanorg](https://twitter.com/carbonplanorg).
 
-<SectionBreak />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Freya led data analysis and wrote the first draft of the article. All authors contributed to analyzing the data and writing the article. Joe and Jeremy designed and built the data architecture and web tools.
 

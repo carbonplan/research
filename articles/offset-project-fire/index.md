@@ -1,10 +1,5 @@
-import FigureCaption from '../../components/figure-caption'
-import Inline from '../../components/inline'
-import Cite from '../../components/cite'
-import CiteGroup from '../../components/cite-group'
-import SectionBreak from '../../components/section-break'
-import Endnote from '../../components/endnote'
-import Closing from '../../components/closing'
+import { FigureCaption, Colors } from '@carbonplan/components'
+import { Cite, Endnote } from '@carbonplan/layouts'
 import FireMap from './components/fire-map'
 import RiskScenarios from './components/risk-scenarios'
 
@@ -55,7 +50,7 @@ California runs the largest carbon market in North America. This program establi
 
 One way companies subject to California’s carbon market can comply with its requirements is by buying forest offset credits. It works like this: the climate regulator first awards tradeable offsets credits to forest owners that manage their lands to increase forest carbon stocks relative to a business-as-usual scenario. Companies can acquire these offset credits and increase their emissions, on the theory that higher emissions are fully offset by the preservation and enhancement of a forest somewhere else.
 
-Although forests provide many environmental and social benefits, one critical challenge forests face as a climate solution is the permanence or durability of the carbon they store. When trees die — whether through fire, drought, or other ecological processes — much of the carbon stored in roots, wood, and soil is released back into the atmosphere. Many threats to forest carbon permanence will only get worse as the planet warms, increasing the chances that forest carbon will be released to the atmosphere.<CiteGroup ids={['krawchuk.2009', 'moritz.2020', 'williams.2016']}/>
+Although forests provide many environmental and social benefits, one critical challenge forests face as a climate solution is the permanence or durability of the carbon they store. When trees die — whether through fire, drought, or other ecological processes — much of the carbon stored in roots, wood, and soil is released back into the atmosphere. Many threats to forest carbon permanence will only get worse as the planet warms, increasing the chances that forest carbon will be released to the atmosphere.<Cite ids={['krawchuk.2009', 'moritz.2020', 'williams.2016']}/>
 
 The 2020 fire season, while unfortunately intense, provides a useful case study for evaluating just how prepared the California offsets program is for managing the permanence risks of forest carbon in a warming climate.
 
@@ -80,8 +75,8 @@ Estimating forest carbon losses due to fire first requires estimating the area b
 <FireMap />
 <FigureCaption number={1}>
   Intersection between the Riverside / Beachie Creek / Lionshead fire and forest
-  offset project ACR260. <Inline sx={{ color: 'red' }}>Red</Inline> area shows
-  cumulative area burned through the date selected on the slider.
+  offset project ACR260. <Colors.Red>Red</Colors.Red> area shows cumulative area
+  burned through the date selected on the slider.
 </FigureCaption>
 
 Second, we need to estimate the fraction of carbon lost due to fire-related mortality. Estimating carbon loss will ultimately require detailed assessment on the ground, which we lack today. As a historical reference point, the 2003 B&B fire, which burned nearby under similar conditions, ultimately killed almost half the trees it encountered.<Cite id='mortality.estimation'/> Though the situation in Oregon is still evolving, we can calculate the carbon impacts that would arise from a similar outcome in this incident. At a 50% loss of carbon in the 72% of the ACR260 project area burned through September 17, the Lionshead Fire will have reversed 963,534 credits (about 4% of the total buffer pool). In a worst case scenario in which the entirety of the project burns and all credited carbon is lost, more than 11% of the buffer pool could be depleted.
@@ -99,10 +94,9 @@ Our model starts by asking what would happen in a year where the same number of 
 <RiskScenarios />
 <FigureCaption number={2}>
   A simple stochastic model predicts buffer pool depletion as a function of the
-  severity and frequency of fires. Individual{' '}
-  <Inline sx={{ color: 'red' }}>red</Inline> lines show different simulations.
-  The dashed line at 20% shows the approximate fraction of the buffer pool for
-  fire.
+  severity and frequency of fires. Individual <Colors.Red>red</Colors.Red> lines
+  show different simulations. The dashed line at 20% shows the approximate
+  fraction of the buffer pool for fire.
 </FigureCaption>
 
 Under a scenario in which carbon loss is 50% in burned areas and events of this magnitude occur once every 4 years, fire alone could consume the entirety of the buffer pool by 2100, despite the fact that the buffer pool is intended to insure against many other non-fire risks.
@@ -111,13 +105,11 @@ Relatively conservative assumptions still present a worrying picture. In a scena
 
 As long as the buffer pool has “priced” climate-related risks adequately, even the most severe wildfires or other future disturbances wouldn’t undermine the goal of using forests to meet climate targets.
 
-But have we priced these risks correctly? The scenarios examined here strongly suggest undercapitalization of the buffer pool and the urgent need for California to update how climate risks are treated by the forest carbon buffer pool.<CiteGroup ids={['sleeter.2019', 'anderegg.2020']}/>
+But have we priced these risks correctly? The scenarios examined here strongly suggest undercapitalization of the buffer pool and the urgent need for California to update how climate risks are treated by the forest carbon buffer pool.<Cite ids={['sleeter.2019', 'anderegg.2020']}/>
 
 The already unprecedented — and on-going — fire year provides a sobering example of the importance of considering risk and permanence in a scientifically rigorous way in the context of forest carbon, carbon removal, and climate policy.
 
-<SectionBreak />
-
-<Endnote label={'Documentation'}>
+<Endnote label={'Documentation'} divider>
 
 All analyses and data underlying this article are open source and [available online](https://github.com/carbonplan/notebooks/tree/master/offset-project-fire). The fire data is from NASA's Fire Information for Resource Management System (FIRMS), the buffer pool data is from the California Air Resource Board’s database of offset credit issuances, and the offset project geometries are from the American Carbon Registry project database. Our Jupyter notebooks show how we worked with these raw data sources and estimated all the numbers reported in the article. This article itself (including the map visualization and the calculator) is also open source and [available in this repository](https://github.com/carbonplan/research/tree/master/articles/offset-project-fire).
 
@@ -129,9 +121,7 @@ We have not reached out to the Confederated Tribes of Warm Springs Reservation o
 
 </Endnote>
 
-<SectionBreak />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Claudia and Jared identified the project and its proximity to the fire. Joe and Jeremy analyzed the fire data with input from Claudia and Jared. Danny, Joe, Grayson, and William developed the future projection and protocol buffer pool models. Jeremy designed and implemented the web visualizations. Joe packaged the data and code for sharing. All authors contributed to writing the article. Photograph by [Jared Stapp](https://www.jaredstapp.com/) used with permission.
 

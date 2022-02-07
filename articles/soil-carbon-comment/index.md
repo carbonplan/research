@@ -1,11 +1,6 @@
 import { Box } from 'theme-ui'
 import { Link } from '@carbonplan/components'
-import Cite from '../../components/cite'
-import CiteGroup from '../../components/cite-group'
-import Links from '../../components/links'
-import PullQuote from '../../components/pull-quote'
-import Endnote from '../../components/endnote'
-import SectionBreak from '../../components/section-break'
+import { Cite, PullQuote, Endnote } from '@carbonplan/layouts'
 import Conclusions from './components/conclusions'
 
 export const meta = {
@@ -40,9 +35,13 @@ export const meta = {
   ],
 }
 
-# Getting soil <br/> carbon right
-
-<Links color='orange' data={meta.links} />
+export const displayTitle = (
+  <span>
+    Getting soil
+    <br />
+    carbon right
+  </span>
+)
 
 There are good reasons to be [excited](https://carbon180.org/leading-with-soil) about better soil management practices for carbon removal. Agricultural practices that increase soil carbon storage have the potential to provide benefits both for farmers and ranchers and for the global climate. In turn, working with the agricultural sector could help engage people and organizations that haven’t been the focus of most climate action to date. The complexities of soil carbon quantification, however, pose challenges for designing financial crediting systems.
 
@@ -52,9 +51,9 @@ Below, we review why quantifying soil carbon is so challenging and summarize our
 
 ## Why soil carbon is challenging
 
-Agricultural practices such as adding cover crops, changing from conventional tillage to no-tillage, or applying soil amendments, have the potential to both improve crop health and remove additional carbon dioxide from the atmosphere. The challenge is that these effects are hard to measure. Accurate quantification relies on physical sampling and soil carbon content measurements, but soil carbon content varies substantially across soil depth, individual plots, spatial locations within a plot (even at the scale of a few meters), and time.<CiteGroup ids={['sanderman.2010', 'poeplau.2014', 'cotrufo.2018']}/> Future changes in land management practices can also reverse gains. Addressing that variability requires careful sampling methods, baseline estimation, meta analysis, and interpretation and projection that is guided, but not replaced, by models.<CiteGroup ids={['paustian.2017', 'campbell.2015']} />
+Agricultural practices such as adding cover crops, changing from conventional tillage to no-tillage, or applying soil amendments, have the potential to both improve crop health and remove additional carbon dioxide from the atmosphere. The challenge is that these effects are hard to measure. Accurate quantification relies on physical sampling and soil carbon content measurements, but soil carbon content varies substantially across soil depth, individual plots, spatial locations within a plot (even at the scale of a few meters), and time.<Cite ids={['sanderman.2010', 'poeplau.2014', 'cotrufo.2018']}/> Future changes in land management practices can also reverse gains. Addressing that variability requires careful sampling methods, baseline estimation, meta analysis, and interpretation and projection that is guided, but not replaced, by models.<Cite ids={['paustian.2017', 'campbell.2015']} />
 
-Compared to forests, soil carbon science hasn’t benefited from decades of extensive public data collection and model verification. In the US, for example, the Forest Service has been operating its national [Forest Inventory and Analysis program](https://www.fia.fs.fed.us/about/about_us/index.php) since 1930, producing a wealth of public information that can directly guide efforts to manage and quantify forest carbon. Several soil monitoring networks around the world are underway to help bridge this gap,<CiteGroup ids={['wesemael.2011', 'orgiazzi.2017']} /> but considerable uncertainty and much future work remains. <Cite id='smith.2019' />
+Compared to forests, soil carbon science hasn’t benefited from decades of extensive public data collection and model verification. In the US, for example, the Forest Service has been operating its national [Forest Inventory and Analysis program](https://www.fia.fs.fed.us/about/about_us/index.php) since 1930, producing a wealth of public information that can directly guide efforts to manage and quantify forest carbon. Several soil monitoring networks around the world are underway to help bridge this gap,<Cite ids={['wesemael.2011', 'orgiazzi.2017']} /> but considerable uncertainty and much future work remains. <Cite id='smith.2019' />
 
 Forest carbon quantification has also benefited from advances in remote sensing technology, with air and satellite-based methods providing increasingly accurate insights into above-ground forest carbon stocks. In contrast, while accurately inferring soil carbon from remote measurement could become feasible in the future, physical samples are required for high resolution estimates today. Remote sensing for soil is an active area of research, and will require extensive benchmarking, calibration, and validation with public data.
 
@@ -106,28 +105,13 @@ But carbon credits aren’t the only way to support soil carbon. An alternative 
 
 Meanwhile, any efforts built around carbon offset credits should be transparent, subject to third-party verification, and capable of thorough validation by financially independent organizations.
 
-<SectionBreak />
-
-<Endnote label='Updates'>
-
-<Box
-  sx={{
-    color: 'secondary',
-    fontFamily: 'mono',
-    letterSpacing: 'mono',
-    fontSize: [2, 2, 2, 3],
-  }}
->
-  AUG 25 2020
-</Box>
+<Endnote label='Update — Aug 25 2020' divider>
 
 After reviewing an updated version of the draft protocol, we submitted a second <Link href='https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf' tracking>comment letter</Link> on remaining concerns and additional issues.
 
 </Endnote>
 
-<SectionBreak />
-
-<Endnote label='Credits'>
+<Endnote label='Credits' divider>
 
 Danny led the effort to write the comment letters and drafted the first version of this article. All authors contributed to writing the comment letters and the article. Collaborators Jane Zelikova and Grayson Badgley contributed to the comment letters, but were not involved in writing this article.
 
