@@ -51,9 +51,10 @@ export const meta = {
       href: '/research/forest-offsets-explainer-faq',
     },
   ],
+  customDisplayTitle: true,
 }
 
-export const title = (
+export const displayTitle = (
   <span>
     Systematic <span style={{ whiteSpace: 'nowrap' }}>over-crediting</span>
     <br />

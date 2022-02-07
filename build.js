@@ -14,21 +14,28 @@ glob('./articles/**/index.md', async (err, filePaths) => {
   const articleContents = await Promise.all(filePaths.map(getMetadata))
 
   // Construct pages/research
-  articleContents.forEach(({ id }) => {
+  articleContents.forEach((article) => {
+    const { id, customDisplayTitle } = article
     const hasReferences = glob.sync(`./articles/${id}/references.js`).length > 0
     const referencesImport = hasReferences
       ? `import references from '../../articles/${id}/references'`
       : ''
+    const titleImport = customDisplayTitle
+      ? `import { displayTitle } from '../../articles/${id}/index.md'`
+      : ''
 
     const page = `
-    import Index, {meta, title} from '../../articles/${id}/index.md'
+    import Index, { meta } from '../../articles/${id}/index.md'
+    ${titleImport}
     ${referencesImport}
     import { Article } from '@carbonplan/layouts'
 
     const Content = () => (
       <Article references={${
         hasReferences ? 'references' : '{}'
-      }} meta={meta} title={title}>
+      }} meta={meta} displayTitle={${
+      customDisplayTitle ? 'displayTitle' : 'null'
+    }}>
         <Index />
       </Article>
     )
