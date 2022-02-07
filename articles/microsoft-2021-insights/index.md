@@ -1,6 +1,5 @@
-import { FigureCaption } from '@carbonplan/components'
+import { FigureCaption, Colors } from '@carbonplan/components'
 import { PullQuote, Endnote } from '@carbonplan/layouts'
-import Inline from '../../components/inline'
 import InlineCheck from './components/inline-check'
 import Distributions from './components/distributions'
 import Numbers from './components/numbers'
@@ -69,17 +68,10 @@ Distributions of volume and permanence across projects reveal familiar patterns,
 <Distributions />
 <FigureCaption number={2}>
   Distributions of volume (above) and permanence (below) across six project
-  categories:{' '}<Inline sx={{ color: 'green' }}>forests</Inline>
-  {', '}
-  <Inline sx={{ color: 'orange' }}>soil</Inline>
-  {', '}
-  <Inline sx={{ color: 'yellow' }}>biomass</Inline>
-  {', '}
-  <Inline sx={{ color: 'teal' }}>ocean</Inline>
-  {', '}
-  <Inline sx={{ color: 'grey' }}>mineralization</Inline>
-  {', '}
-  <Inline sx={{ color: 'purple' }}>direct air capture</Inline>. Each circle
+  categories: <Colors.Green>forests</Colors.Green>,{' '}
+  <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+  <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
+  <Colors.Purple>direct air capture</Colors.Purple>. Each circle
   represents a project, and curves show the distribution using a kernel density
   estimate. Values reflect project proposals and may not necessarily be accurate
   or realistic.
@@ -102,18 +94,10 @@ In our previous round of analysis, we often found ourselves unable to confidentl
 <!-- prettier-ignore -->
 <Validation />
 <FigureCaption number={3}>
-  Fraction of validated projects across five metrics and six project categories:{' '}
-  <Inline sx={{ color: 'green' }}>forests</Inline>
-  {', '}
-  <Inline sx={{ color: 'orange' }}>soil</Inline>
-  {', '}
-  <Inline sx={{ color: 'yellow' }}>biomass</Inline>
-  {', '}
-  <Inline sx={{ color: 'teal' }}>ocean</Inline>
-  {', '}
-  <Inline sx={{ color: 'grey' }}>mineralization</Inline>
-  {', '}
-  <Inline sx={{ color: 'purple' }}>direct air capture</Inline>. Each bar shows
+  Fraction of validated projects across five metrics and six project categories:{' '}<Colors.Green>forests</Colors.Green>,{' '}
+  <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+  <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
+  <Colors.Purple>direct air capture</Colors.Purple>. Each bar shows
   the fraction of projects (from 0 to 1) in that category for which we were able
   to validate the given metric. In the case of additionality, which uses a 3
   point scale, validation here is defined as a score of at least 2.
