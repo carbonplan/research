@@ -24,9 +24,9 @@
   "prettier": "@carbonplan/prettier",
   "dependencies": {
     "@carbonplan/charts": "^2.6.0",
-    "@carbonplan/components": "11.2.0-develop.7",
+    "@carbonplan/components": "11.2.0-develop.8",
     "@carbonplan/icons": "^1.0.0",
-    "@carbonplan/layouts": "1.0.0-develop.37",
+    "@carbonplan/layouts": "1.0.0-develop.38",
     "@carbonplan/theme": "^7.0.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",

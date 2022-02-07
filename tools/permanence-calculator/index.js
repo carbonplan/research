@@ -13,8 +13,6 @@ const Index = () => {
       'How to compare the long-term cost of temporary and permanent carbon removal',
   }
 
-  const title = 'Permanence calculator'
-
   const description = (
     <span>
       The effects of CO₂ emissions last for hundreds to thousands of years. The
@@ -27,7 +25,7 @@ const Index = () => {
   )
 
   return (
-    <Tool meta={meta} title={title} description={description}>
+    <Tool meta={meta} description={description}>
       <Calculator></Calculator>
     </Tool>
   )

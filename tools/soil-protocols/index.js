@@ -25,7 +25,6 @@ const Index = () => {
   return (
     <Tool
       meta={meta}
-      title={meta.title}
       description={description}
       contentWidth={[6, 8, 10, 10]}
       descriptionWidth={[6, 7, 7, 7]}

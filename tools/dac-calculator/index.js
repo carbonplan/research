@@ -13,8 +13,6 @@ const Index = () => {
       'How the cost of direct air capture varies under different energy scenarios',
   }
 
-  const title = 'DAC cost calculator'
-
   const description = (
     <span>
       The cost of direct air capture (DAC) depends on several factors. Our
@@ -35,7 +33,7 @@ const Index = () => {
   )
 
   return (
-    <Tool meta={meta} title={title} description={description}>
+    <Tool meta={meta} description={description}>
       <Calculator></Calculator>
     </Tool>
   )
