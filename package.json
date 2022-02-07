@@ -23,7 +23,7 @@
   "homepage": "https://github.com/carbonplan/research#readme",
   "prettier": "@carbonplan/prettier",
   "dependencies": {
-    "@carbonplan/charts": "^2.6.0",
+    "@carbonplan/charts": "^2.7.0",
     "@carbonplan/components": "^11.2.0",
     "@carbonplan/icons": "^1.0.0",
     "@carbonplan/layouts": "^1.0.0",
