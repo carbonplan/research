@@ -33,7 +33,6 @@ export const meta = {
       href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
     },
   ],
-  customDisplayTitle: true,
 }
 
 export const displayTitle = (

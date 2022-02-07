@@ -14,13 +14,15 @@ glob('./articles/**/index.md', async (err, filePaths) => {
   const articleContents = await Promise.all(filePaths.map(getMetadata))
 
   // Construct pages/research
-  articleContents.forEach((article) => {
-    const { id, customDisplayTitle } = article
+  articleContents.forEach(({ id }) => {
     const hasReferences = glob.sync(`./articles/${id}/references.js`).length > 0
+    const hasCustomTitle = fs
+      .readFileSync(`./articles/${id}/index.md`, 'utf-8')
+      .includes('export const displayTitle')
     const referencesImport = hasReferences
       ? `import references from '../../articles/${id}/references'`
       : ''
-    const titleImport = customDisplayTitle
+    const titleImport = hasCustomTitle
       ? `import { displayTitle } from '../../articles/${id}/index.md'`
       : ''
 
@@ -33,9 +35,7 @@ glob('./articles/**/index.md', async (err, filePaths) => {
     const Content = () => (
       <Article references={${
         hasReferences ? 'references' : '{}'
-      }} meta={meta} displayTitle={${
-      customDisplayTitle ? 'displayTitle' : 'null'
-    }}>
+      }} meta={meta} displayTitle={${hasCustomTitle ? 'displayTitle' : 'null'}}>
         <Index />
       </Article>
     )

@@ -51,7 +51,6 @@ export const meta = {
       href: '/research/forest-offsets-explainer-faq',
     },
   ],
-  customDisplayTitle: true,
 }
 
 export const displayTitle = (

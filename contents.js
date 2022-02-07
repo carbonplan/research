@@ -179,7 +179,6 @@ const contents = [
       },
       { label: 'FAQ', href: '/research/forest-offsets-explainer-faq' },
     ],
-    customDisplayTitle: true,
   },
   {
     id: 'microsoft-2021-insights',
@@ -405,7 +404,6 @@ const contents = [
         href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
       },
     ],
-    customDisplayTitle: true,
   },
   {
     id: 'stripe-2020-insights',
