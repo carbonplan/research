@@ -10,14 +10,9 @@ export function getServerSideProps({ res }) {
   const pages = fs
     .readdirSync('pages/research')
     .filter((staticPage) => {
-      return ![
-        '_app.js',
-        '_document.js',
-        'index.js',
-        '404.js',
-        'rss.xml.js',
-        'contents.json.js',
-      ].includes(staticPage)
+      return !['index.js', '404.js', 'rss.xml.js', 'contents.json.js'].includes(
+        staticPage
+      )
     })
     .map((page) => page.replace('.js', ''))
     .map((page) => {
