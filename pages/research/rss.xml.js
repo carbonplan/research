@@ -3,7 +3,7 @@ import contents from '../../contents'
 const contentsRssXml = () => {
   let latestArticleDate
   let rssItemsXml = ''
-  contents
+  contents.articles
     .filter(({ id }) => id)
     .forEach(({ id, date, title, summary }) => {
       const [month, day, year] = date.split('-').map((s, i) =>
