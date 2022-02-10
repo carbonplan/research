@@ -8,6 +8,7 @@ export function getServerSideProps({ res }) {
   const pages = contents.articles
     .concat(contents.tools)
     .concat(contents.extras)
+    .filter((content) => content.id)
     .map(({ date, id }) => {
       const result = { page: `research/${id}` }
       if (date) {
