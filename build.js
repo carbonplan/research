@@ -1,5 +1,4 @@
 const fs = require('fs')
-const path = require('path')
 const glob = require('glob')
 const extractMdxMeta = require('extract-mdx-metadata')
 const externalContents = require('./external-contents')
@@ -12,8 +11,12 @@ existing.forEach((f) => {
 })
 
 // Build pages and contents.js from articles
-glob('./articles/**/index.md', async (err, filePaths) => {
-  const articleContents = await Promise.all(filePaths.map(getMetadata))
+glob('./articles/**/index.md', async (err, articlePaths) => {
+  const articleContents = await Promise.all(articlePaths.map(getMetadata))
+  const combined = articleContents.concat(externalContents)
+  const sortedArticles = combined.sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  )
 
   // Construct pages/research
   articleContents.forEach(({ id }) => {
@@ -47,36 +50,43 @@ glob('./articles/**/index.md', async (err, filePaths) => {
     fs.writeFileSync(`./pages/research/${id}.js`, page)
   })
 
-  // Construct contents.js
-  const combined = articleContents.concat(externalContents)
-  const sorted = combined.sort((a, b) => new Date(b.date) - new Date(a.date))
-  const contents = `const contents = ${JSON.stringify(sorted)}
-    export default contents`
-  fs.writeFileSync('./contents.js', contents)
-})
+  // Build pages for extra markdown content
+  glob('./articles/**/!(index).md', (err, extraPaths) => {
+    const extras = []
+    extraPaths.forEach((filePath) => {
+      const [prefix] = filePath.match(/[^\/]+(?=\/(\w|\d|-)+.md)/)
+      const [suffix] = filePath.match(/[^\/]+(?=\.md)/)
 
-// Build pages for extra markdown content
-glob('./articles/**/!(index).md', (err, filePaths) => {
-  filePaths.forEach((filePath) => {
-    const [prefix] = filePath.match(/[^\/]+(?=\/(\w|\d|-)+.md)/)
-    const [suffix] = filePath.match(/[^\/]+(?=\.md)/)
-
-    const page = `import Content from '../../articles/${prefix}/${suffix}.md'
+      const page = `import Content from '../../articles/${prefix}/${suffix}.md'
     export default Content
     `
-    fs.writeFileSync(`./pages/research/${prefix}-${suffix}.js`, page)
-  })
-})
+      extras.push({ id: `${prefix}-${suffix}` })
 
-// Build pages for tools
-glob('./tools/*/index.js', (err, filePaths) => {
-  filePaths.forEach((filePath) => {
-    const [toolName] = filePath.match(/[^\/]+(?=\/index\.js)/)
+      fs.writeFileSync(`./pages/research/${prefix}-${suffix}.js`, page)
+    })
 
-    const page = `import Tool from '../../tools/${toolName}/index.js'
-    export default Tool
-    `
-    fs.writeFileSync(`./pages/research/${toolName}.js`, page)
+    // Build pages for tools
+    glob('./tools/*/index.js', (err, toolPaths) => {
+      const tools = []
+      toolPaths.forEach((filePath) => {
+        const [toolName] = filePath.match(/[^\/]+(?=\/index\.js)/)
+
+        const page = `import Tool from '../../tools/${toolName}/index.js'
+        export default Tool
+        `
+        tools.push({ id: toolName })
+        fs.writeFileSync(`./pages/research/${toolName}.js`, page)
+
+        // Construct contents.js
+        const contents = `const contents = ${JSON.stringify({
+          articles: sortedArticles,
+          tools,
+          extras,
+        })}
+        export default contents`
+        fs.writeFileSync('./contents.js', contents)
+      })
+    })
   })
 })
 

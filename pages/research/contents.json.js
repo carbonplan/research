@@ -1,5 +1,3 @@
-import fs from 'fs'
-
 import contents from '../../contents'
 
 function Contents() {
@@ -7,19 +5,13 @@ function Contents() {
 }
 
 export function getServerSideProps({ res }) {
-  const pages = fs
-    .readdirSync('pages/research')
-    .filter((staticPage) => {
-      return !['index.js', '404.js', 'rss.xml.js', 'contents.json.js'].includes(
-        staticPage
-      )
-    })
-    .map((page) => page.replace('.js', ''))
-    .map((page) => {
-      const articleContent = contents.find((c) => c.id === page)
-      const result = { page: `research/${page}` }
-      if (articleContent) {
-        const [month, day, year] = articleContent.date.split('-')
+  const pages = contents.articles
+    .concat(contents.tools)
+    .concat(contents.extras)
+    .map(({ date, id }) => {
+      const result = { page: `research/${id}` }
+      if (date) {
+        const [month, day, year] = date.split('-')
         result.date = `${year}-${month}-${day}`
       }
       return result

@@ -14,11 +14,11 @@ const Index = () => {
       }
       card={'https://images.carbonplan.org/social/research.png'}
       links={'local'}
-      metadata={`COUNT: ${contents.length}`}
+      metadata={`COUNT: ${contents.articles.length}`}
       nav={'research'}
       settings={{ value: expanded, onClick: () => setExpanded(!expanded) }}
     >
-      <Main expanded={expanded} contents={contents} />
+      <Main expanded={expanded} contents={contents.articles} />
     </Layout>
   )
 }
