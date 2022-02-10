@@ -8,7 +8,7 @@ const Index = () => {
 
   return (
     <Layout
-      title={'research / carbonplan'}
+      title={'Research – CarbonPlan'}
       description={
         'Articles, tools, and commentary on carbon removal and climate solutions.'
       }
