@@ -21,7 +21,7 @@ const sx = {
   },
 }
 
-const List = ({ label, items, limit = 4, Entries }) => {
+const List = ({ label, items, width = 7, limit = 4, Entries }) => {
   const [expanded, setExpanded] = useState(false)
   const visibleItems = useMemo(() => {
     if (items.length <= limit || expanded) {
@@ -62,8 +62,8 @@ const List = ({ label, items, limit = 4, Entries }) => {
           </Box>
         </Column>
         <Column
-          start={[1, 1, 5, 5]}
-          width={[6, 8, 7, 7]}
+          start={[1, 1, 12 - width, 12 - width]}
+          width={[6, 8, width, width]}
           sx={{ mt: ['-3px', '0px', '-1px', '0px'] }}
         >
           <Entries items={visibleItems} />

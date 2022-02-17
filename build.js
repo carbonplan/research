@@ -88,11 +88,6 @@ glob('./tools/*/index.js', (err, toolPaths) => {
           `
     tools.push({ id: toolName })
     fs.writeFileSync(`./pages/research/${toolName}.js`, page)
-
-    // Construct contents/tools.js
-    const contents = `const tools = ${JSON.stringify(tools)}
-          export default tools`
-    fs.writeFileSync('./contents/tools.js', contents)
   })
 })
 
