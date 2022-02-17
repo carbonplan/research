@@ -137,4 +137,6 @@ CarbonPlan received no specific financial support for this work.
 
 [Claudia Herbert](https://nature.berkeley.edu/stephenslab/lab-members/claudia-herbert/) and [Jared Stapp](https://ourenvironment.berkeley.edu/people/jared-r-stapp) are PhD students at UC Berkeley, [Grayson Badgley](https://www.gbadgley.com/) is a postdoctoral scientist at the Black Rock Forest Consortium and Columbia University, and [William R.L. Anderegg](https://faculty.utah.edu/u6003057-WILLIAM_ANDEREGG/research/index.hml) is a professor at the University of Utah.
 
+Article text and figures made available under a [CC-BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/). Implementation of interactive visualizations made available under an [MIT license](https://github.com/carbonplan/research/blob/main/LICENSE).
+
 </Endnote>

@@ -196,4 +196,6 @@ CarbonPlan received a grant from Microsoft AI for Earth to support this work. Mi
 
 [William R.L. Anderegg](http://www.anderegglab.net/) is a professor at the University of Utah, [Grayson Badgley](https://www.gbadgley.com) is a Postdoctoral Scientist at Black Rock Forest and Columbia University, [Jeffrey A. Hicke](https://webpages.uidaho.edu/~jhicke/) is a professor at the University of Idaho, [John A. Abatzoglou](http://www.climatologylab.org/) is a professor at UC Merced, and [Anna Trugman](http://trugmanlab.geog.ucsb.edu) is a professor at UC Santa Barbara.
 
+Article text and figures made available under a [CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/) license. Implementation of interactive visualizations made available under an [MIT license](https://github.com/carbonplan/research/blob/main/LICENSE). Associated [analysis package](https://github.com/carbonplan/forest-risks) made available under an [MIT license](https://github.com/carbonplan/forest-risks/blob/main/LICENSE). Associated [map explorer](https://github.com/carbonplan/forest-risks-web) made available under [MIT license](https://github.com/carbonplan/forest-risks-web/blob/main/LICENSE).
+
 </Endnote>

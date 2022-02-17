@@ -251,4 +251,6 @@ D Cullenward, J Hamman, J Freeman (2020) “The cost of temporary carbon removal
 
 CarbonPlan received a grant from the ClimateWorks Foundation to support this work. ClimateWorks did not exercise any control over the output. CarbonPlan is solely responsible for the content of this writeup, which does not necessarily reflect the views of ClimateWorks, those who provided feedback, or any other individuals or organizations.
 
+Article text and figures made available under a [CC-BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/). Implementation of [permanence calculator](https://github.com/carbonplan/research/tree/main/tools/permanence-calculator) made available under an [MIT license](https://github.com/carbonplan/research/blob/main/LICENSE).
+
 </Endnote>

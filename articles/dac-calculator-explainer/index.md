@@ -206,4 +206,6 @@ N McQueen, J Wilcox, J Hamman, J Freeman (2021) “The cost of direct air captur
 
 CarbonPlan received no specific financial support for this work. Noah McQueen is a Ph.D. Student at the University of Pennsylvania and Jennifer Wilcox is a Professor at the University of Pennsylvania.
 
+Article text and figures made available under a [CC-BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/). Open source implementation of the [DAC cost calculator](https://carbonplan.org/research/dac-calculator) made available under an [MIT license](https://github.com/carbonplan/research/blob/main/LICENSE).
+
 </Endnote>

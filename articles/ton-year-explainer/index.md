@@ -267,6 +267,6 @@ F Chay, G Badgley, K Martin, J Freeman, J Hamman, D Cullenward (2022) “'Unpack
 <Endnote label='Terms'>
 CarbonPlan received no specific financial support for this work. No one except the authors of the paper exercised control over the research process or products. The authors are solely responsible for the content of this writeup, which does not reflect the views of any other individuals or organizations.
 
-Article text and figures made available under a [CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/) license. Implementation of interactive visualizations made available under an [MIT license](https://github.com/carbonplan/research/blob/main/LICENSE). Open source package for [ton-year accounting methods](https://github.com/carbonplan/ton-year) made available under an [MIT license](https://github.com/carbonplan/ton-year/blob/main/licenses/LICENSE).
+Article text and figures made available under a [CC-BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/). Implementation of interactive visualizations made available under an [MIT license](https://github.com/carbonplan/research/blob/main/LICENSE). Open source [package for ton-year accounting methods](https://github.com/carbonplan/ton-year) made available under an [MIT license](https://github.com/carbonplan/ton-year/blob/main/licenses/LICENSE).
 
 </Endnote>
