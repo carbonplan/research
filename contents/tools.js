@@ -41,7 +41,7 @@ const tools = [
   {
     id: 'cdr-database',
     logo: <CDRDatabase />,
-    color: 'gray',
+    color: 'secondary',
     label: 'CDR Database',
   },
   {
