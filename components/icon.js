@@ -12,7 +12,6 @@ const Icon = ({ color, icon, link }) => {
         display: ['inline-block'],
         width: ['100px', '120px', '120px', '150px'],
         height: ['100px', '120px', '120px', '150px'],
-        mt: [0, 4, 4, 4],
         float: ['none', 'right', 'right', 'right'],
         position: 'relative',
         borderRadius: '50%',

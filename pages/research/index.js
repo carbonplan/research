@@ -4,8 +4,6 @@ import Main from '../../components/main'
 import contents from '../../contents/articles'
 
 const Index = () => {
-  const [expanded, setExpanded] = useState(false)
-
   return (
     <Layout
       title={'Research – CarbonPlan'}
@@ -16,9 +14,8 @@ const Index = () => {
       links={'local'}
       metadata={`COUNT: ${contents.length}`}
       nav={'research'}
-      settings={{ value: expanded, onClick: () => setExpanded(!expanded) }}
     >
-      <Main expanded={expanded} contents={contents} />
+      <Main contents={contents} />
     </Layout>
   )
 }

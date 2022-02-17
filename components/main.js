@@ -1,4 +1,3 @@
-import { useMemo, useState } from 'react'
 import { Box, Link, Divider } from 'theme-ui'
 import {
   Row,
@@ -18,8 +17,17 @@ import {
   DACCalculator,
   SoilProtocols,
 } from './tool-logos'
+import { articles } from '../contents/index'
 
 const sx = {
+  heading: {
+    mb: [3, 3, 3, 4],
+    fontSize: [3, 3, 3, 4],
+    fontFamily: 'heading',
+    letterSpacing: 'smallcaps',
+    textTransform: 'uppercase',
+    color: 'primary',
+  },
   highlight: {
     mb: [3, 3, 3, 4],
     fontSize: [3, 3, 3, 4],
@@ -85,40 +93,7 @@ const tools = [
   },
 ]
 
-const Main = ({ expanded, contents }) => {
-  const [category, setCategory] = useState(initCategory)
-  const [year, setYear] = useState(initYear)
-
-  const items = useMemo(
-    () =>
-      contents.filter(
-        (d) =>
-          d.tags.some((t) => category[t]) &&
-          year[new Date(d.date.replace(/-/g, '/')).getFullYear()]
-      ),
-
-    [category, year]
-  )
-
-  const FilterContents = () => {
-    return (
-      <Group spacing='md'>
-        <Filter
-          values={year}
-          setValues={setYear}
-          label='Filter by year'
-          showAll
-        />
-        <Filter
-          values={category}
-          setValues={setCategory}
-          label='Filter by category'
-          showAll
-        />
-      </Group>
-    )
-  }
-
+const Main = () => {
   return (
     <Box>
       <Heading
@@ -137,12 +112,9 @@ const Main = ({ expanded, contents }) => {
       >
         Research
       </Heading>
-      <Tray expanded={expanded}>
-        <FilterContents />
-      </Tray>
       <Row sx={{ mb: [4, 5, 6, 7] }}>
         <Column start={[1, 1, 2, 2]} width={[5]}>
-          <Box sx={sx.highlight}>Tool highlights</Box>
+          <Box sx={sx.heading}>Tool highlights</Box>
         </Column>
         {tools.map((d, i) => {
           return (
@@ -221,7 +193,7 @@ const Main = ({ expanded, contents }) => {
         <Column
           start={[1, 1, 2, 2]}
           width={[6, 6, 2, 2]}
-          sx={{ display: ['none', 'none', 'initial', 'intial'] }}
+          sx={{ display: ['none', 'none', 'initial', 'initial'] }}
         >
           <Box
             sx={{
@@ -230,15 +202,17 @@ const Main = ({ expanded, contents }) => {
               height: 'auto',
             }}
           >
-            <FilterContents />
+            <Box sx={{ ...sx.heading, mt: ['-6px', '-6px', '-6px', '-7px'] }}>
+              Articles
+            </Box>
           </Box>
         </Column>
         <Column
-          start={[1, 2, 5, 5]}
-          width={[6, 7, 7, 7]}
+          start={[1, 1, 5, 5]}
+          width={[6, 8, 7, 7]}
           sx={{ mt: ['-3px', '0px', '-1px', '0px'] }}
         >
-          <List items={items} />
+          <List items={articles} />
         </Column>
       </Row>
     </Box>
