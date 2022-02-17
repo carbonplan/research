@@ -9,6 +9,57 @@ import {
 import { mix } from '@theme-ui/color'
 import Icon from './icon'
 
+const Date = ({ date, sx }) => {
+  return (
+    <Box
+      sx={{
+        color: 'secondary',
+        fontFamily: 'mono',
+        letterSpacing: '0.05em',
+        fontSize: [1, 1, 1, 2],
+        userSelect: 'none',
+        textTransform: 'uppercase',
+        whiteSpace: 'nowrap',
+        ...sx,
+      }}
+    >
+      {formatDate(date)}
+    </Box>
+  )
+}
+
+const Inner = ({ summary, links, sx }) => (
+  <Box sx={sx}>
+    <Box
+      sx={{
+        mt: [2],
+        mb: [1],
+        fontSize: [2, 2, 2, 3],
+        lineHeight: 1.35,
+      }}
+    >
+      {summary}
+    </Box>
+    <Box
+      sx={{
+        mt: ['12px'],
+        fontSize: [2, 2, 2, 3],
+        userSelect: 'none',
+      }}
+    >
+      <Box sx={{ mb: [-1] }}>
+        <LinkGroup
+          inverted
+          tracking
+          members={links}
+          spacing={[4, 4, 4, 5]}
+          sx={{ mt: '14px', mb: '2px' }}
+        />
+      </Box>
+    </Box>
+  </Box>
+)
+
 const Article = ({ info, first, final }) => {
   let {
     indexTitle,
@@ -35,7 +86,7 @@ const Article = ({ info, first, final }) => {
       id='box'
       sx={{
         pb: final ? [2, 3, 4, 5] : [4, 6, 6, 7],
-        pt: first ? 0 : [4, 5, 6, 7],
+        pt: first ? [4, 0] : [4, 5, 6, 7],
         borderStyle: 'solid',
         borderColor: 'muted',
         borderWidth: '0px',
@@ -46,31 +97,22 @@ const Article = ({ info, first, final }) => {
         <Column
           start={[3, 1, 1, 1]}
           width={[2, 2, 1, 1]}
-          sx={{ order: [2, 1, 1, 1] }}
+          sx={{
+            order: [4, 4, 1, 1],
+            display: ['none', 'none', 'inherit', 'inherit'],
+          }}
         >
-          <Box
-            sx={{
-              color: 'secondary',
-              fontFamily: 'mono',
-              letterSpacing: '0.05em',
-              fontSize: [1, 1, 1, 2],
-              userSelect: 'none',
-              textTransform: 'uppercase',
-              whiteSpace: 'nowrap',
-            }}
-          >
-            {formatDate(date)}{' '}
-          </Box>
+          <Date date={date} />
         </Column>
         <Column
-          start={[3, 2, 2, 2]}
+          start={[3, 3, 2, 2]}
           width={[4, 5, 4, 4]}
-          sx={{ order: [3, 2, 2, 2] }}
+          sx={{ order: [2, 2, 2, 2] }}
         >
           <Box
             sx={{
               mb: ['14px'],
-              mt: ['-26px', '-26px', '-17px', '-26px'],
+              mt: [0, 0, '-17px', '-26px'],
               ml: ['-1px'],
               lineHeight: 'heading',
               fontFamily: 'heading',
@@ -101,38 +143,34 @@ const Article = ({ info, first, final }) => {
               {indexTitle || title}
             </Link>
           </Box>
-          <Box
-            sx={{
-              mt: [2],
-              mb: [1],
-              fontSize: [2, 2, 2, 3],
-              lineHeight: 1.35,
-            }}
-          >
-            {summary}
-          </Box>
-          <Box
-            sx={{
-              mt: ['12px'],
-              fontSize: [2, 2, 2, 3],
-              userSelect: 'none',
-            }}
-          >
-            <Box sx={{ mb: [-1] }}>
-              <LinkGroup
-                inverted
-                tracking
-                members={links}
-                spacing={[4, 4, 4, 5]}
-                sx={{ mt: '14px', mb: '2px' }}
-              />
-            </Box>
-          </Box>
+
+          <Date
+            date={date}
+            sx={{ display: ['inherit', 'inherit', 'none', 'none'] }}
+          />
+
+          <Inner
+            summary={summary}
+            links={links}
+            sx={{ display: ['none', 'inherit', 'inherit', 'inherit'] }}
+          />
         </Column>
+
         <Column
-          start={[1, 7, 6, 6]}
+          start={1}
+          width={6}
+          sx={{
+            order: [3, 3, 4, 4],
+            display: ['inherit', 'none', 'none', 'none'],
+          }}
+        >
+          <Inner summary={summary} links={links} />
+        </Column>
+
+        <Column
+          start={[1, 1, 6, 6]}
           width={[2, 2, 2, 2]}
-          sx={{ order: [1, 3, 3, 3] }}
+          sx={{ order: [1, 1, 3, 3] }}
         >
           <Link tabIndex='-1' href={links[linkIndex].href} tracking>
             <Icon icon={icon} color={color} />

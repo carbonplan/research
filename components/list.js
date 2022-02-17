@@ -21,7 +21,7 @@ const sx = {
   },
 }
 
-const List = ({ label, items, width = 7, limit = 4, Entries }) => {
+const List = ({ label, items, selected, width = 7, limit = 4, Entries }) => {
   const [expanded, setExpanded] = useState(false)
   const visibleItems = useMemo(() => {
     if (items.length <= limit || expanded) {
@@ -30,8 +30,19 @@ const List = ({ label, items, width = 7, limit = 4, Entries }) => {
       return items.slice(0, limit)
     }
   }, [expanded, items, limit])
+
   return (
-    <Box sx={{ mb: [4, 6, 6, 7] }}>
+    <Box
+      sx={{
+        mb: [4, 6, 6, 7],
+        display: [
+          selected ? 'inherit' : 'none',
+          selected ? 'inherit' : 'none',
+          'inherit',
+          'inherit',
+        ],
+      }}
+    >
       <Row>
         <Column start={[1, 1, 2, 2]} width={[6, 8, 10, 10]}>
           <Divider
