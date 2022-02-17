@@ -1,13 +1,7 @@
 import { Box, Flex } from 'theme-ui'
-import {
-  Row,
-  Column,
-  Link,
-  LinkGroup,
-  formatDate,
-  Tag,
-} from '@carbonplan/components'
+import { Row, Column, Link, LinkGroup, Tag } from '@carbonplan/components'
 import { mix } from '@theme-ui/color'
+import Date from './date'
 
 const Publication = ({ info, start }) => {
   let { title, journal, color, date, summary, links, primaryLink } = info
@@ -46,19 +40,7 @@ const Publication = ({ info, start }) => {
       >
         <Box>
           <Flex sx={{ justifyContent: 'space-between', mb: 2 }}>
-            <Box
-              sx={{
-                color: 'secondary',
-                fontFamily: 'mono',
-                letterSpacing: '0.05em',
-                fontSize: [1, 1, 1, 2],
-                userSelect: 'none',
-                textTransform: 'uppercase',
-                whiteSpace: 'nowrap',
-              }}
-            >
-              {formatDate(date)}
-            </Box>
+            <Date date={date} />
             {journal && <Tag sx={{ color: 'secondary' }}>{journal}</Tag>}
           </Flex>
 

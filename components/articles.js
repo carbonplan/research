@@ -1,32 +1,8 @@
 import { Box } from 'theme-ui'
-import {
-  Row,
-  Column,
-  Link,
-  LinkGroup,
-  formatDate,
-} from '@carbonplan/components'
+import { Row, Column, Link, LinkGroup } from '@carbonplan/components'
 import { mix } from '@theme-ui/color'
 import Icon from './icon'
-
-const Date = ({ date, sx }) => {
-  return (
-    <Box
-      sx={{
-        color: 'secondary',
-        fontFamily: 'mono',
-        letterSpacing: '0.05em',
-        fontSize: [1, 1, 1, 2],
-        userSelect: 'none',
-        textTransform: 'uppercase',
-        whiteSpace: 'nowrap',
-        ...sx,
-      }}
-    >
-      {formatDate(date)}
-    </Box>
-  )
-}
+import Date from './date'
 
 const Inner = ({ summary, links, sx }) => (
   <Box sx={sx}>
