@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Layout } from '@carbonplan/components'
 import Main from '../../components/main'
 import contents from '../../contents/articles'

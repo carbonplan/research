@@ -1,7 +1,8 @@
 import { Box, Link } from 'theme-ui'
 import { Row, Column, Heading } from '@carbonplan/components'
 import List from './list'
-import Article from './article'
+import Articles from './articles'
+import Publications from './publications'
 
 import {
   ForestOffsets,
@@ -11,7 +12,7 @@ import {
   DACCalculator,
   SoilProtocols,
 } from './tool-logos'
-import { articles } from '../contents/index'
+import { articles, publications, comments } from '../contents/index'
 
 const sx = {
   heading: {
@@ -159,7 +160,9 @@ const Main = () => {
         })}
       </Row>
 
-      <List label='Articles' items={articles} Entry={Article} />
+      <List label='Articles' items={articles} Entries={Articles} />
+      <List label='Publications' items={publications} Entries={Publications} />
+      <List label='Comment letters' items={comments} Entries={Publications} />
     </Box>
   )
 }

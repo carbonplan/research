@@ -21,7 +21,7 @@ const sx = {
   },
 }
 
-const List = ({ label, items, limit = 5, Entry }) => {
+const List = ({ label, items, limit = 4, Entries }) => {
   const [expanded, setExpanded] = useState(false)
   const visibleItems = useMemo(() => {
     if (items.length <= limit || expanded) {
@@ -31,7 +31,7 @@ const List = ({ label, items, limit = 5, Entry }) => {
     }
   }, [expanded, items, limit])
   return (
-    <>
+    <Box sx={{ mb: [4, 6, 6, 7] }}>
       <Row>
         <Column start={[1, 1, 2, 2]} width={[6, 8, 10, 10]}>
           <Divider
@@ -66,16 +66,7 @@ const List = ({ label, items, limit = 5, Entry }) => {
           width={[6, 8, 7, 7]}
           sx={{ mt: ['-3px', '0px', '-1px', '0px'] }}
         >
-          <Box>
-            {visibleItems.map((d, ix) => (
-              <Entry
-                key={d.title}
-                info={d}
-                first={ix == 0}
-                final={ix === visibleItems.length - 1}
-              />
-            ))}
-          </Box>
+          <Entries items={visibleItems} />
           {items.length > limit && (
             <Box
               onClick={() => setExpanded(!expanded)}
@@ -102,7 +93,7 @@ const List = ({ label, items, limit = 5, Entry }) => {
           )}
         </Column>
       </Row>
-    </>
+    </Box>
   )
 }
 

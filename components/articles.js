@@ -143,4 +143,19 @@ const Article = ({ info, first, final }) => {
   )
 }
 
-export default Article
+const Articles = ({ items }) => {
+  return (
+    <Box>
+      {items.map((d, i) => (
+        <Article
+          key={d.title}
+          info={d}
+          first={i == 0}
+          final={i === items.length - 1}
+        />
+      ))}
+    </Box>
+  )
+}
+
+export default Articles
