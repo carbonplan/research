@@ -1,13 +1,7 @@
-import { Box, Link, Divider } from 'theme-ui'
-import {
-  Row,
-  Column,
-  Tray,
-  Group,
-  Heading,
-  Filter,
-} from '@carbonplan/components'
+import { Box, Link } from 'theme-ui'
+import { Row, Column, Heading } from '@carbonplan/components'
 import List from './list'
+import Article from './article'
 
 import {
   ForestOffsets,
@@ -44,20 +38,6 @@ const sx = {
     textTransform: 'uppercase',
     transition: 'opacity 0.15s',
   },
-}
-
-const initCategory = {
-  article: true,
-  tool: true,
-  comment: true,
-  publication: true,
-  dataset: true,
-}
-
-const initYear = {
-  2020: true,
-  2021: true,
-  2022: true,
 }
 
 const tools = [
@@ -178,43 +158,8 @@ const Main = () => {
           )
         })}
       </Row>
-      <Row>
-        <Column start={[1, 1, 2, 2]} width={[6, 8, 10, 10]}>
-          <Divider
-            sx={{
-              mt: [0],
-              mb: [4, 5, 6, 7],
-              display: ['none', 'block', 'block', 'block'],
-            }}
-          />
-        </Column>
-      </Row>
-      <Row sx={{ mb: [0] }}>
-        <Column
-          start={[1, 1, 2, 2]}
-          width={[6, 6, 2, 2]}
-          sx={{ display: ['none', 'none', 'initial', 'initial'] }}
-        >
-          <Box
-            sx={{
-              position: 'sticky',
-              top: ['106px', '106px', '106px', '120px'],
-              height: 'auto',
-            }}
-          >
-            <Box sx={{ ...sx.heading, mt: ['-6px', '-6px', '-6px', '-7px'] }}>
-              Articles
-            </Box>
-          </Box>
-        </Column>
-        <Column
-          start={[1, 1, 5, 5]}
-          width={[6, 8, 7, 7]}
-          sx={{ mt: ['-3px', '0px', '-1px', '0px'] }}
-        >
-          <List items={articles} />
-        </Column>
-      </Row>
+
+      <List label='Articles' items={articles} Entry={Article} />
     </Box>
   )
 }

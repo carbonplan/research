@@ -9,7 +9,7 @@ import {
 import { mix } from '@theme-ui/color'
 import Icon from './icon'
 
-const Entry = ({ info, first, final }) => {
+const Article = ({ info, first, final }) => {
   let {
     indexTitle,
     title,
@@ -143,4 +143,4 @@ const Entry = ({ info, first, final }) => {
   )
 }
 
-export default Entry
+export default Article
