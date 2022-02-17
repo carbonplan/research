@@ -1,4 +1,5 @@
-contents.js linguist-generated=true
+contents/*.js linguist-generated=true
+contents/index.js linguist-generated=false
 pages/research/*.js linguist-generated=true
 pages/research/index.js linguist-generated=false
 pages/research/rss.xml.js linguist-generated=false

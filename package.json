@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npm run build-pages && NODE_ENV=development next -p 4000",
     "build": "npm run build-pages && next build",
-    "build-pages": "node build.js && prettier --write contents.js 'pages/research/!(index).js'",
+    "build-pages": "node build.js && prettier --write contents 'pages/research/!(index).js'",
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci --reporters='default'"

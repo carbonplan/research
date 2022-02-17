@@ -1,13 +1,13 @@
-import contents from '../../contents'
+import { articles, tools, extras } from '../../contents/index'
 
 function Contents() {
   // getServerSideProps will do the heavy lifting
 }
 
 export function getServerSideProps({ res }) {
-  const pages = contents.articles
-    .concat(contents.tools)
-    .concat(contents.extras)
+  const pages = articles
+    .concat(tools)
+    .concat(extras)
     .filter((content) => content.id)
     .map(({ date, id }) => {
       const result = { page: `research/${id}` }
