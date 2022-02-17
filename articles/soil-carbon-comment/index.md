@@ -125,4 +125,6 @@ D Cullenward, J Hamman, J Freeman (2020) “Getting soil carbon right” CarbonP
 
 CarbonPlan received no financial support for this work and has no financial conflicts of interest with the Climate Action Reserve or Indigo Ag.
 
+Article text and figures made available under a [CC-BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
+
 </Endnote>

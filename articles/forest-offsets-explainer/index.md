@@ -208,4 +208,6 @@ CarbonPlan received a grant from Microsoft AI for Earth to support the portion o
 
 [Grayson Badgley](https://www.gbadgley.com) is a Postdoctoral Scientist at Black Rock Forest and Columbia University, [Barbara Haya](https://gspp.berkeley.edu/faculty-and-impact/faculty/barbara-haya) is a Research Fellow and Director of the Berkeley Carbon Trading Project at UC Berkeley, [Anna Trugman](http://trugmanlab.geog.ucsb.edu) is a professor at UC Santa Barbara, and [William R.L. Anderegg](http://www.anderegglab.net/) is a professor at the University of Utah.
 
+Article text and figures made available under a [CC-BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
+
 </Endnote>

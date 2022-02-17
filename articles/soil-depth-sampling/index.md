@@ -165,4 +165,6 @@ CarbonPlan and the authors are solely responsible for the content of this writeu
 
 Reference herein to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not necessarily constitute or imply its endorsement, recommendation, or favoring by the U.S. government or the Lawrence Livermore National Security, LLC. The views and opinions of authors expressed herein do not necessarily state or reflect those of the U.S. government or the Lawrence Livermore National Security, LLC, and shall not be used for advertising or product endorsement purposes.
 
+Article text and figures made available under a [CC-BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/). Implementation of interactive visualizations made available under an [MIT license](https://github.com/carbonplan/research/blob/main/LICENSE).
+
 </Endnote>

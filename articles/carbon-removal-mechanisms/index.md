@@ -286,4 +286,6 @@ T Rinberg, D Cullenward, J Hamman, J Freeman (2020) “Carbon removal mechanisms
 
 CarbonPlan received no specific financial support for this work.
 
+Article text and figures made available under a [CC-BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
+
 </Endnote>

@@ -208,4 +208,6 @@ J Zelikova, F Chay, J Freeman, D Cullenward (2021) “A buyer’s guide to soil 
 
 CarbonPlan received [funding from Microsoft](https://carbonplan.org/funding) to support the analysis of these protocols. Microsoft did not exercise any control over this work. CarbonPlan and the authors are solely responsible for the content of the analysis and this writeup, which do not represent the views of any other organizations or individuals.
 
+Article text and figures made available under a [CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/) license. Implementation of [soil protocols database](https://github.com/carbonplan/research/tree/main/tools/soil-protocols) made available under an [MIT license](https://github.com/carbonplan/research/blob/main/LICENSE). Content of soil protocols database made available under a [CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/) license.
+
 </Endnote>
