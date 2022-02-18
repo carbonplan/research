@@ -85,7 +85,7 @@ const Highlights = () => {
     <>
       <Row>
         <Column start={[1, 1, 2, 2]} width={[6, 8, 3, 3]}>
-          <Box sx={sx.heading}>Latest</Box>
+          <Box sx={sx.heading}>Recent</Box>
         </Column>
         <Column start={[1, 1, 6, 6]} width={[6, 8, 6, 6]}>
           <Box
