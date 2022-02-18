@@ -59,14 +59,16 @@ const Article = ({ info, first, final }) => {
 
   return (
     <Box
-      id='box'
       sx={{
-        pb: final ? [2, 3, 4, 5] : [4, 6, 6, 7],
-        pt: first ? [4, 0] : [4, 5, 6, 7],
+        my: [0, 0, 6, 7],
+        py: [4, 5, 0, 0],
         borderStyle: 'solid',
         borderColor: 'muted',
         borderWidth: '0px',
-        borderTopWidth: first ? ['1px', '0px'] : '1px',
+        borderTopWidth: ['1px', '1px', 0, 0],
+        borderLeftWidth: ['0px', '0px', '1px', '1px'],
+        pl: [0, 5, 5, 6],
+        ml: [0, -5, -5, -6],
       }}
     >
       <Row columns={[6, 8, 8, 7]}>
@@ -159,7 +161,7 @@ const Article = ({ info, first, final }) => {
 
 const Articles = ({ items }) => {
   return (
-    <Box>
+    <Box sx={{ pt: [4, 0], pb: [2, 3, 4, 5] }}>
       {items.map((d, i) => (
         <Article
           key={d.title}
