@@ -52,7 +52,8 @@ const SECTIONS = ['tools', 'articles', 'publications', 'comments']
 
 const sx = {
   heading: {
-    mb: [3, 3, 3, 4],
+    mt: [4, 4, 0, 0],
+    mb: [3, 3, 4, 5],
     fontSize: [3, 3, 3, 4],
     fontFamily: 'heading',
     letterSpacing: 'smallcaps',
@@ -81,61 +82,68 @@ const sx = {
 
 const Highlights = () => {
   return (
-    <Row sx={{ mb: [0, 0, 5, 5] }}>
-      <Column start={[1, 1, 2, 2]} width={[6, 8, 3, 3]}>
-        <Box sx={sx.heading}>Latest</Box>
-        {SECTIONS.map((section) => (
+    <>
+      <Row>
+        <Column start={[1, 1, 2, 2]} width={[6, 8, 3, 3]}>
+          <Box sx={sx.heading}>Latest</Box>
+        </Column>
+        <Column start={[1, 1, 6, 6]} width={[6, 8, 6, 6]}>
           <Box
-            key={section}
             sx={{
-              borderStyle: 'solid',
-              borderColor: 'muted',
-              borderWidth: '0px',
-              borderBottomWidth: '1px',
-              mb: [3, 3, 3, 4],
+              ...sx.heading,
+              display: ['none', 'none', 'inherit', 'inherit'],
             }}
           >
-            <Button
-              href={`#${section}`}
-              sx={{ ...sx.heading, color: 'secondary' }}
-              suffix={<Down />}
-            >
-              {section}
-            </Button>
+            Highlights
           </Box>
-        ))}
+        </Column>
+      </Row>
+      <Row sx={{ mb: [0, 0, 5, 5] }}>
+        <Column start={[1, 1, 2, 2]} width={[6, 8, 3, 3]}>
+          {SECTIONS.map((section) => (
+            <Box
+              key={section}
+              sx={{
+                borderStyle: 'solid',
+                borderColor: 'muted',
+                borderWidth: '0px',
+                borderBottomWidth: '1px',
+                mb: [3, 3, 3, 4],
+              }}
+            >
+              <Button
+                href={`#${section}`}
+                sx={{ ...sx.heading, my: [3, 3, 3, 4], color: 'secondary' }}
+                suffix={<Down />}
+              >
+                {section}
+              </Button>
+            </Box>
+          ))}
 
-        <Box
-          sx={{
-            ...sx.heading,
-            display: ['inherit', 'inherit', 'none', 'none'],
-          }}
-        >
-          Highlights
-        </Box>
+          <Box
+            sx={{
+              ...sx.heading,
+              display: ['inherit', 'inherit', 'none', 'none'],
+            }}
+          >
+            Highlights
+          </Box>
 
-        <Highlight {...HIGHLIGHTS.small} sx={{ mt: [0, 0, 5, 6] }} />
-      </Column>
+          <Highlight {...HIGHLIGHTS.small} sx={{ mt: [0, 0, 5, 6] }} />
+        </Column>
 
-      <Column start={[1, 1, 6, 6]} width={[6, 8, 6, 6]} sx={sx.columnDivider}>
-        <Box
-          sx={{
-            ...sx.heading,
-            display: ['none', 'none', 'inherit', 'inherit'],
-          }}
-        >
-          Highlights
-        </Box>
+        <Column start={[1, 1, 6, 6]} width={[6, 8, 6, 6]} sx={sx.columnDivider}>
+          <Highlight {...HIGHLIGHTS.large[0]} />
 
-        <Highlight {...HIGHLIGHTS.large[0]} />
+          <Divider />
 
-        <Divider />
+          <Highlight {...HIGHLIGHTS.large[1]} sx={{ pb: [0, 0, 0, 0] }} />
 
-        <Highlight {...HIGHLIGHTS.large[1]} sx={{ pb: [0, 0, 0, 0] }} />
-
-        <Divider sx={{ display: ['inherit', 'inherit', 'none', 'none'] }} />
-      </Column>
-    </Row>
+          <Divider sx={{ display: ['inherit', 'inherit', 'none', 'none'] }} />
+        </Column>
+      </Row>
+    </>
   )
 }
 
