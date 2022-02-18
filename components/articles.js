@@ -81,7 +81,7 @@ const Article = ({ info, first, final }) => {
           <Date
             date={date}
             sx={{
-              width: [null, null, 'calc(100% + 15spx)', 'calc(100% + 30px)'],
+              width: [null, null, 'calc(100% + 15px)', 'calc(100% + 30px)'],
             }}
           />
         </Column>
