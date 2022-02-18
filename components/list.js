@@ -22,15 +22,7 @@ const sx = {
   },
 }
 
-const List = ({
-  id,
-  label,
-  items,
-  selected,
-  width = 7,
-  limit = 4,
-  Entries,
-}) => {
+const List = ({ id, label, items, selected, limit = 4, Entries }) => {
   const index = useBreakpointIndex()
   const showAllItems = index < 2
   const [expanded, setExpanded] = useState(false)
@@ -54,72 +46,36 @@ const List = ({
         ],
       }}
     >
-      <Row>
-        <Column start={[1, 1, 2, 2]} width={[6, 8, 10, 10]}>
-          <Divider
-            sx={{
-              mt: [0],
-              mb: [4, 5, 6, 7],
-              display: ['none', 'block', 'block', 'block'],
-            }}
-          />
-        </Column>
-      </Row>
-      <Row sx={{ mb: [0] }}>
-        <Column
-          start={[1, 1, 2, 2]}
-          width={[6, 6, 2, 2]}
-          sx={{ display: ['none', 'none', 'initial', 'initial'] }}
-        >
+      <Divider
+        sx={{
+          mt: [0],
+          mb: [4, 5, 6, 7],
+          display: ['none', 'block', 'block', 'block'],
+        }}
+      />
+      <Box id={id} sx={{ scrollMarginTop: [null, null, '105px', '121px'] }}>
+        <Entries items={visibleItems} />
+        {!showAllItems && items.length > limit && (
           <Box
+            onClick={() => setExpanded(!expanded)}
             sx={{
-              position: 'sticky',
-              top: ['106px', '106px', '106px', '120px'],
-              scrollMarginTop: ['106px', '106px', '106px', '120px'],
-              height: 'auto',
+              ...sx.expander,
+              transition: 'color 0.25s',
+              '@media (hover: hover) and (pointer: fine)': {
+                '&:hover': {
+                  color: 'primary',
+                },
+                [`&:hover > #${id}-expander`]: {
+                  stroke: 'primary',
+                },
+              },
             }}
           >
-            <Box
-              as='h2'
-              id={id}
-              sx={{ ...sx.heading, mt: ['-6px', '-6px', '-6px', '-7px'] }}
-            >
-              {label}
-            </Box>
+            <Expander id={`${id}-expander`} value={expanded} sx={{ mr: 2 }} />
+            Show all
           </Box>
-        </Column>
-        <Column
-          start={[1, 1, 12 - width, 12 - width]}
-          width={[6, 8, width, width]}
-          sx={{ mt: ['-3px', '0px', '-1px', '0px'] }}
-        >
-          <Entries items={visibleItems} />
-          {!showAllItems && items.length > limit && (
-            <Box
-              onClick={() => setExpanded(!expanded)}
-              sx={{
-                ...sx.expander,
-                transition: 'color 0.25s',
-                '@media (hover: hover) and (pointer: fine)': {
-                  '&:hover': {
-                    color: 'primary',
-                  },
-                  [`&:hover > #${label}-expander`]: {
-                    stroke: 'primary',
-                  },
-                },
-              }}
-            >
-              <Expander
-                id={`${label}-expander`}
-                value={expanded}
-                sx={{ mr: 2 }}
-              />
-              Show all
-            </Box>
-          )}
-        </Column>
-      </Row>
+        )}
+      </Box>
     </Box>
   )
 }

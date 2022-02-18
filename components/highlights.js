@@ -1,6 +1,5 @@
 import { Box, Divider } from 'theme-ui'
 import { Button, Row, Column } from '@carbonplan/components'
-import { Down } from '@carbonplan/icons'
 import Highlight from './highlight'
 import { TonYear } from './highlight-images'
 
@@ -32,8 +31,6 @@ const HIGHLIGHTS = [
     logo: <TonYear />,
   },
 ]
-
-const SECTIONS = ['tools', 'articles', 'publications', 'comments']
 
 const sx = {
   heading: {
@@ -67,66 +64,24 @@ const sx = {
 
 const Highlights = () => {
   return (
-    <>
-      <Row>
-        <Column start={[1, 1, 2, 2]} width={[6, 8, 3, 3]}>
-          <Box sx={sx.heading}>Recent</Box>
-        </Column>
-        <Column start={[1, 1, 6, 6]} width={[6, 8, 6, 6]}>
-          <Box
-            sx={{
-              ...sx.heading,
-              display: ['none', 'none', 'inherit', 'inherit'],
-            }}
-          >
-            Highlights
-          </Box>
-        </Column>
-      </Row>
-      <Row sx={{ mb: [0, 0, 5, 5] }}>
-        <Column start={[1, 1, 2, 2]} width={[6, 8, 3, 3]}>
-          {SECTIONS.map((section) => (
-            <Box
-              key={section}
-              sx={{
-                borderStyle: 'solid',
-                borderColor: 'muted',
-                borderWidth: '0px',
-                borderBottomWidth: '1px',
-                mb: [3, 3, 3, 4],
-              }}
-            >
-              <Button
-                href={`#${section}`}
-                sx={{ ...sx.heading, my: [3, 3, 3, 4], color: 'secondary' }}
-                suffix={<Down />}
-              >
-                {section}
-              </Button>
-            </Box>
-          ))}
+    <Box>
+      <Box
+        sx={{
+          ...sx.heading,
+          display: ['inherit', 'inherit', 'none', 'none'],
+        }}
+      >
+        Highlights
+      </Box>
 
-          <Box
-            sx={{
-              ...sx.heading,
-              display: ['inherit', 'inherit', 'none', 'none'],
-            }}
-          >
-            Highlights
-          </Box>
-        </Column>
+      <Highlight {...HIGHLIGHTS[0]} />
 
-        <Column start={[1, 1, 6, 6]} width={[6, 8, 6, 6]} sx={sx.columnDivider}>
-          <Highlight {...HIGHLIGHTS[0]} />
+      <Divider />
 
-          <Divider />
+      <Highlight {...HIGHLIGHTS[1]} sx={{ pb: [0, 0, 0, 0] }} />
 
-          <Highlight {...HIGHLIGHTS[1]} sx={{ pb: [0, 0, 0, 0] }} />
-
-          <Divider sx={{ display: ['inherit', 'inherit', 'none', 'none'] }} />
-        </Column>
-      </Row>
-    </>
+      <Divider sx={{ display: ['inherit', 'inherit', 'none', 'none'] }} />
+    </Box>
   )
 }
 
