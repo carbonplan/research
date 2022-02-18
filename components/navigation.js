@@ -1,5 +1,6 @@
 import { Box } from 'theme-ui'
 import { Button } from '@carbonplan/components'
+import { forwardRef } from 'react'
 
 const SECTIONS = [
   { id: 'tools', label: 'Tools' },
@@ -18,7 +19,7 @@ const sx = {
     textTransform: 'uppercase',
   },
 }
-const Navigation = () => {
+const Navigation = forwardRef(({ active }, ref) => {
   return (
     <Box
       sx={{
@@ -27,6 +28,7 @@ const Navigation = () => {
         scrollMarginTop: ['106px', '106px', '106px', '120px'],
         height: 'auto',
       }}
+      ref={ref}
     >
       {SECTIONS.map(({ id, label }) => (
         <Box
@@ -41,7 +43,11 @@ const Navigation = () => {
         >
           <Button
             href={`#${id}`}
-            sx={{ ...sx.heading, my: [3, 3, 3, 4], color: 'secondary' }}
+            sx={{
+              ...sx.heading,
+              my: [3, 3, 3, 4],
+              color: active === id ? 'primary' : 'secondary',
+            }}
           >
             {label}
           </Button>
@@ -49,6 +55,6 @@ const Navigation = () => {
       ))}
     </Box>
   )
-}
+})
 
 export default Navigation

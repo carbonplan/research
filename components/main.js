@@ -1,5 +1,5 @@
 import { Box } from 'theme-ui'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Column, Filter, Heading, Row } from '@carbonplan/components'
 
 import { articles, publications, comments, tools } from '../contents/index'
@@ -22,7 +22,32 @@ const sx = {
 }
 
 const Main = () => {
+  const navRef = useRef(null)
+  const listRefs = {
+    tools: useRef(null),
+    articles: useRef(null),
+    publications: useRef(null),
+    comments: useRef(null),
+  }
+  const [scrolled, setScrolled] = useState(null)
   const [selected, setSelected] = useState('articles')
+
+  useEffect(() => {
+    const scrollListener = () => {
+      const navBottom = navRef.current?.getBoundingClientRect()?.bottom
+      const active = Object.keys(listRefs)
+        .reverse()
+        .find((key) => {
+          const ref = listRefs[key]
+          return navBottom > ref.current?.getBoundingClientRect()?.top
+        })
+      setScrolled(active)
+    }
+    window.addEventListener('scroll', scrollListener)
+    return () => {
+      window.removeEventListener('scroll', scrollListener)
+    }
+  }, [])
 
   return (
     <Box>
@@ -60,7 +85,7 @@ const Main = () => {
       </Row>
       <Row>
         <Column start={[1, 1, 2, 2]} width={[6, 8, 2, 2]}>
-          <Navigation />
+          <Navigation ref={navRef} active={scrolled} />
         </Column>
         <Column start={[1, 1, 5, 5]} width={[6, 8, 7, 7]}>
           <Highlights />
@@ -72,6 +97,7 @@ const Main = () => {
             Entries={Tools}
             width={8}
             limit={8}
+            ref={listRefs.tools}
           />
           <List
             label='Articles'
@@ -80,6 +106,7 @@ const Main = () => {
             items={articles}
             width={8}
             Entries={Articles}
+            ref={listRefs.articles}
           />
           <List
             label='Publications'
@@ -87,6 +114,7 @@ const Main = () => {
             selected={selected === 'publications'}
             items={publications}
             Entries={Publications}
+            ref={listRefs.publications}
           />
           <List
             label='Comment letters'
@@ -94,6 +122,7 @@ const Main = () => {
             selected={selected === 'comments'}
             items={comments}
             Entries={Publications}
+            ref={listRefs.comments}
           />
         </Column>
       </Row>
