@@ -7,33 +7,7 @@ import Publications from './publications'
 import { articles, publications, comments, tools } from '../contents/index'
 import Tools from './tools'
 import { useState } from 'react'
-
-const sx = {
-  heading: {
-    mb: [3, 3, 3, 4],
-    fontSize: [3, 3, 3, 4],
-    fontFamily: 'heading',
-    letterSpacing: 'smallcaps',
-    textTransform: 'uppercase',
-    color: 'primary',
-  },
-  highlight: {
-    mb: [3, 3, 3, 4],
-    fontSize: [3, 3, 3, 4],
-    fontFamily: 'heading',
-    letterSpacing: 'smallcaps',
-    textTransform: 'uppercase',
-    color: 'secondary',
-  },
-  tool: {
-    color: 'secondary',
-    fontSize: [1, 1, 1, 2],
-    fontFamily: 'mono',
-    letterSpacing: 'mono',
-    textTransform: 'uppercase',
-    transition: 'opacity 0.15s',
-  },
-}
+import Highlights from './highlights'
 
 const Main = () => {
   const [selected, setSelected] = useState('articles')
@@ -57,6 +31,8 @@ const Main = () => {
         Research
       </Heading>
 
+      <Highlights />
+
       <Filter
         values={{
           articles: selected === 'articles',
@@ -70,6 +46,7 @@ const Main = () => {
 
       <List
         label='Tools'
+        id='tools'
         selected={selected === 'tools'}
         items={tools}
         Entries={Tools}
@@ -77,18 +54,21 @@ const Main = () => {
       />
       <List
         label='Articles'
+        id='articles'
         selected={selected === 'articles'}
         items={articles}
         Entries={Articles}
       />
       <List
         label='Publications'
+        id='publications'
         selected={selected === 'publications'}
         items={publications}
         Entries={Publications}
       />
       <List
         label='Comment letters'
+        id='comments'
         selected={selected === 'comments'}
         items={comments}
         Entries={Publications}

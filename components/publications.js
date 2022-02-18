@@ -23,7 +23,6 @@ const Publication = ({ info, start }) => {
         borderColor: 'muted',
         borderWidth: '0px',
         borderTopWidth: ['1px', '1px', '0px'],
-        borderWidth: '0px',
         borderLeftWidth: ['0px', '0px', '1px', '1px'],
         pl: [0, 5, 5, 6],
         ml: [0, -5, -5, -6],

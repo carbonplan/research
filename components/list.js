@@ -21,7 +21,15 @@ const sx = {
   },
 }
 
-const List = ({ label, items, selected, width = 7, limit = 4, Entries }) => {
+const List = ({
+  id,
+  label,
+  items,
+  selected,
+  width = 7,
+  limit = 4,
+  Entries,
+}) => {
   const [expanded, setExpanded] = useState(false)
   const visibleItems = useMemo(() => {
     if (items.length <= limit || expanded) {
@@ -67,7 +75,11 @@ const List = ({ label, items, selected, width = 7, limit = 4, Entries }) => {
               height: 'auto',
             }}
           >
-            <Box sx={{ ...sx.heading, mt: ['-6px', '-6px', '-6px', '-7px'] }}>
+            <Box
+              as='h2'
+              id={id}
+              sx={{ ...sx.heading, mt: ['-6px', '-6px', '-6px', '-7px'] }}
+            >
               {label}
             </Box>
           </Box>
