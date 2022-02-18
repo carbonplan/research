@@ -1,4 +1,5 @@
 import { Box, Divider } from 'theme-ui'
+import { useBreakpointIndex } from '@theme-ui/match-media'
 import { Row, Column, Expander } from '@carbonplan/components'
 import { useMemo, useState } from 'react'
 
@@ -30,14 +31,16 @@ const List = ({
   limit = 4,
   Entries,
 }) => {
+  const index = useBreakpointIndex()
+  const showAllItems = index < 2
   const [expanded, setExpanded] = useState(false)
   const visibleItems = useMemo(() => {
-    if (items.length <= limit || expanded) {
+    if (showAllItems || items.length <= limit || expanded) {
       return items
     } else {
       return items.slice(0, limit)
     }
-  }, [expanded, items, limit])
+  }, [expanded, items, limit, showAllItems])
 
   return (
     <Box
@@ -90,7 +93,7 @@ const List = ({
           sx={{ mt: ['-3px', '0px', '-1px', '0px'] }}
         >
           <Entries items={visibleItems} />
-          {items.length > limit && (
+          {!showAllItems && items.length > limit && (
             <Box
               onClick={() => setExpanded(!expanded)}
               sx={{
