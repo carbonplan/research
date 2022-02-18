@@ -69,31 +69,26 @@ const Article = ({ info, first, final }) => {
         borderTopWidth: first ? ['1px', '0px'] : '1px',
       }}
     >
-      <Row columns={[6, 8, 7, 7]}>
+      <Row columns={[6, 8, 8, 7]}>
         <Column
           start={[3, 1, 1, 1]}
-          width={[2, 2, 1, 1]}
+          width={[2, 2, 2, 2]}
           sx={{
             order: [4, 4, 1, 1],
             display: ['none', 'none', 'inherit', 'inherit'],
+            mb: 2,
           }}
         >
-          <Date
-            date={date}
-            sx={{
-              width: [null, null, 'calc(100% + 15px)', 'calc(100% + 30px)'],
-            }}
-          />
+          <Date date={date} />
         </Column>
         <Column
-          start={[3, 3, 2, 2]}
-          width={[4, 5, 4, 4]}
+          start={[3, 3, 1, 1]}
+          width={[4, 5, 5, 5]}
           sx={{ order: [2, 2, 2, 2] }}
         >
           <Box
             sx={{
               mb: ['14px'],
-              mt: [0, 0, '-17px', '-26px'],
               ml: ['-1px'],
               lineHeight: 'heading',
               fontFamily: 'heading',
@@ -149,7 +144,7 @@ const Article = ({ info, first, final }) => {
         </Column>
 
         <Column
-          start={[1, 1, 6, 6]}
+          start={[1, 1, 7, 6]}
           width={[2, 2, 2, 2]}
           sx={{ order: [1, 1, 3, 3] }}
         >

@@ -58,6 +58,7 @@ const Main = () => {
         id='articles'
         selected={selected === 'articles'}
         items={articles}
+        width={8}
         Entries={Articles}
       />
       <List
