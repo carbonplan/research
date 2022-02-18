@@ -1,4 +1,5 @@
 import { Box, Flex } from 'theme-ui'
+import { useBreakpointIndex } from '@theme-ui/match-media'
 import { Row, Column, Link, LinkGroup, Tag } from '@carbonplan/components'
 import { mix } from '@theme-ui/color'
 import Date from './date'
@@ -15,9 +16,7 @@ const Publication = ({ info, start }) => {
   const linkIndex = primaryLink ? primaryLink + 1 : 0
 
   return (
-    <Column
-      start={start}
-      width={[6, 6, 3, 3]}
+    <Box
       sx={{
         borderStyle: 'solid',
         borderColor: 'muted',
@@ -30,83 +29,88 @@ const Publication = ({ info, start }) => {
         mb: [3, 5, 5, 6],
       }}
     >
-      <Flex
+      <Flex sx={{ justifyContent: 'space-between', mb: 2 }}>
+        <Date date={date} />
+        {journal && (
+          <Tag sx={{ color: 'secondary', textAlign: 'right' }}>{journal}</Tag>
+        )}
+      </Flex>
+
+      <Box
         sx={{
-          height: '100%',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
+          mb: ['14px'],
+          ml: ['-1px'],
+          lineHeight: 'heading',
+          fontFamily: 'heading',
+          fontSize: [3, 4, 4, 5],
+          color: color,
         }}
       >
-        <Box>
-          <Flex sx={{ justifyContent: 'space-between', mb: 2 }}>
-            <Date date={date} />
-            {journal && (
-              <Tag sx={{ color: 'secondary', textAlign: 'right' }}>
-                {journal}
-              </Tag>
-            )}
-          </Flex>
-
-          <Box
-            sx={{
-              mb: ['14px'],
-              ml: ['-1px'],
-              lineHeight: 'heading',
-              fontFamily: 'heading',
-              fontSize: [3, 4, 4, 5],
-              color: color,
-            }}
-          >
-            <Link
-              sx={{
-                transition: 'color 0.15s',
-                textDecoration: 'none',
+        <Link
+          sx={{
+            transition: 'color 0.15s',
+            textDecoration: 'none',
+            color: color,
+            '@media (hover: hover) and (pointer: fine)': {
+              '&:hover': {
+                color: 'primary',
+              },
+            },
+            '@media (hover: none) and (pointer: coarse)': {
+              '&:hover': {
                 color: color,
-                '@media (hover: hover) and (pointer: fine)': {
-                  '&:hover': {
-                    color: 'primary',
-                  },
-                },
-                '@media (hover: none) and (pointer: coarse)': {
-                  '&:hover': {
-                    color: color,
-                  },
-                },
-              }}
-              tabIndex='-1'
-              href={links[linkIndex].href}
-              tracking
-            >
-              {title}
-            </Link>
-          </Box>
-          {summary}
-        </Box>
+              },
+            },
+          }}
+          tabIndex='-1'
+          href={links[linkIndex].href}
+          tracking
+        >
+          {title}
+        </Link>
+      </Box>
+      {summary}
 
-        <Box>
-          <LinkGroup
-            inverted
-            tracking
-            members={links}
-            spacing={[4, 4, 4, 5]}
-            sx={{ mt: '14px', mb: '2px' }}
-          />
-        </Box>
-      </Flex>
-    </Column>
+      <LinkGroup
+        inverted
+        tracking
+        members={links}
+        spacing={[4, 4, 4, 5]}
+        sx={{ mt: '14px', mb: '2px' }}
+      />
+    </Box>
   )
 }
 
 const Publications = ({ items }) => {
+  const index = useBreakpointIndex()
+
   return (
     <Row columns={[6, 8, 7, 7]}>
-      {items.map((d, i) => (
-        <Publication
-          key={d.title}
-          info={d}
-          start={i % 2 ? [1, 2, 5, 5] : [1, 2, 1, 1]}
-        />
-      ))}
+      <Column start={[1, 1, 1, 1]} width={[6, 8, 3, 3]}>
+        {items
+          .filter((d, i) => index < 2 || i % 2 === 0)
+          .map((d, i) => (
+            <Publication
+              key={d.title}
+              info={d}
+              start={i % 2 ? [1, 2, 5, 5] : [1, 2, 1, 1]}
+            />
+          ))}
+      </Column>
+      {index >= 2 && (
+        <Column start={[1, 1, 5, 5]} width={[6, 6, 3, 3]}>
+          {items
+            .filter((d, i) => i % 2 === 1)
+            .map((d, i) => (
+              <Publication
+                key={d.title}
+                info={d}
+                start={i % 2 ? [1, 2, 5, 5] : [1, 2, 1, 1]}
+              />
+            ))}
+        </Column>
+      )}
     </Row>
   )
 }
