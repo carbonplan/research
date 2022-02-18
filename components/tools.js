@@ -13,7 +13,7 @@ const sx = {
 }
 
 const Tool = ({ info, start }) => {
-  const { color, id, logo, label } = info
+  const { color, id, logo, title, summary } = info
   return (
     <Column start={start} width={[3, 2, 2, 2]} sx={{ mb: [3, 5, 5, 6] }}>
       <Link
@@ -61,7 +61,16 @@ const Tool = ({ info, start }) => {
           {logo}
         </Box>
         <Box id='tool' sx={{ ...sx.tool, mt: [2, 2, 2, 3] }}>
-          {label}
+          {title}
+        </Box>
+        <Box
+          sx={{
+            my: [1],
+            fontSize: [2, 2, 2, 3],
+            lineHeight: 1.35,
+          }}
+        >
+          {summary}
         </Box>
       </Link>
     </Column>
@@ -70,7 +79,16 @@ const Tool = ({ info, start }) => {
 
 const Tools = ({ items }) => {
   return (
-    <Row columns={[6, 8, 8, 8]}>
+    <Row
+      columns={[6, 8, 8, 8]}
+      sx={{
+        pt: [4, 0],
+        borderStyle: 'solid',
+        borderColor: 'muted',
+        borderWidth: '0px',
+        borderTopWidth: ['1px', '0px'],
+      }}
+    >
       {items.map((d, i) => (
         <Tool
           key={d.id}
