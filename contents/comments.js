@@ -1,5 +1,22 @@
 const comments = [
   {
+    title:
+      'Comments to the United States Department of Agriculture on climate-smart commodity markets',
+    summary: 'TK',
+    date: '11-01-2021',
+    color: 'orange',
+    links: [
+      {
+        label: 'Read comment letter',
+        href: 'https://files.carbonplan.org/USDA-CSAF-Comment-Letter-11-01-21.pdf',
+      },
+      {
+        label: 'Read blog post',
+        href: 'https://carbonplan.org/blog/usda-csaf-comment',
+      },
+    ],
+  },
+  {
     title: 'Letter to Taskforce on Scaling Voluntary Carbon Markets',
     summary:
       "A coordinated effort to standardize and scale today's voluntary offsets market is underway. We submitted a joint letter with Carbon Direct and the Berkeley Carbon Trading Project detailing how the Taskforce is ignoring the problem of poor quality rampant in today's market. That problem needs to be addressed first.",
