@@ -1,5 +1,6 @@
 import { Box } from 'theme-ui'
 import { useEffect, useRef, useState } from 'react'
+import { useRouter } from 'next/router'
 import { Column, Filter, Heading, Row } from '@carbonplan/components'
 
 import { articles, publications, comments, tools } from '../contents/index'
@@ -22,6 +23,7 @@ const sx = {
 }
 
 const Main = () => {
+  const router = useRouter()
   const navRef = useRef(null)
   const listRefs = {
     tools: useRef(null),
@@ -85,10 +87,28 @@ const Main = () => {
       </Row>
       <Row>
         <Column start={[1, 1, 2, 2]} width={[6, 8, 2, 2]}>
-          <Navigation ref={navRef} active={scrolled} />
+          <Navigation
+            ref={navRef}
+            scrolled={scrolled}
+            setSelected={setSelected}
+          />
         </Column>
         <Column start={[1, 1, 5, 5]} width={[6, 8, 7, 7]}>
           <Highlights />
+          <Filter
+            values={{
+              tools: selected === 'tools',
+              articles: selected === 'articles',
+              publications: selected === 'publications',
+              comments: selected === 'comments',
+            }}
+            setValues={(obj) => {
+              const key = Object.keys(obj).find((k) => obj[k])
+              router.push(`research#${key}`)
+              setSelected(key)
+            }}
+            sx={{ display: ['inherit', 'inherit', 'none', 'none'], my: 3 }}
+          />
           <List
             label='Tools'
             id='tools'
@@ -126,17 +146,6 @@ const Main = () => {
           />
         </Column>
       </Row>
-
-      {/* <Filter
-        values={{
-          articles: selected === 'articles',
-          tools: selected === 'tools',
-          publications: selected === 'publications',
-          comments: selected === 'comments',
-        }}
-        setValues={(obj) => setSelected(Object.keys(obj).find((k) => obj[k]))}
-        sx={{ display: ['inherit', 'inherit', 'none', 'none'], my: 3 }}
-      /> */}
     </Box>
   )
 }

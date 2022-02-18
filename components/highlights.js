@@ -1,5 +1,4 @@
 import { Box, Divider } from 'theme-ui'
-import { Button, Row, Column } from '@carbonplan/components'
 import Highlight from './highlight'
 import { TonYear } from './highlight-images'
 

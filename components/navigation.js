@@ -1,5 +1,6 @@
 import { Box } from 'theme-ui'
 import { Button } from '@carbonplan/components'
+import { Down } from '@carbonplan/icons'
 import { forwardRef } from 'react'
 
 const SECTIONS = [
@@ -19,7 +20,7 @@ const sx = {
     textTransform: 'uppercase',
   },
 }
-const Navigation = forwardRef(({ active }, ref) => {
+const Navigation = forwardRef(({ scrolled, setSelected }, ref) => {
   return (
     <Box
       sx={{
@@ -42,12 +43,19 @@ const Navigation = forwardRef(({ active }, ref) => {
           }}
         >
           <Button
+            onClick={() => setSelected(id)}
             href={`#${id}`}
             sx={{
               ...sx.heading,
               my: [3, 3, 3, 4],
-              color: active === id ? 'primary' : 'secondary',
+              color:
+                scrolled === id
+                  ? ['secondary', 'secondary', 'primary', 'primary']
+                  : 'secondary',
             }}
+            suffix={
+              <Down sx={{ display: ['inherit', 'inherit', 'none', 'none'] }} />
+            }
           >
             {label}
           </Button>
