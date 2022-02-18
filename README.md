@@ -55,9 +55,13 @@ New articles should be added to `articles/` with the article content exported fr
 
 Tools should be exported from `tools/{tool-name}/index.js` in order to have pages automatically built for them.
 
-### external content
+### publications
 
-External content can be added as an entry to `external-contents.json`.
+Publications can be added as an entry to `contents/publications.js`.
+
+### comments
+
+Comment letters can be added as an entry to `contents/comments.js`.
 
 ### additional pages
 

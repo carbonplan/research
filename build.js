@@ -1,7 +1,6 @@
 const fs = require('fs')
 const glob = require('glob')
 const extractMdxMeta = require('extract-mdx-metadata')
-const externalContents = require('./external-contents')
 
 const existing = glob.sync(
   './pages/research/!(index.js|rss.xml.js|contents.json.js)'
@@ -13,7 +12,6 @@ existing.forEach((f) => {
 // Build pages and contents.js from articles
 glob('./articles/**/index.md', async (err, articlePaths) => {
   const articleContents = await Promise.all(articlePaths.map(getMetadata))
-  // const combined = articleContents.concat(externalContents)
   const sortedArticles = articleContents.sort(
     (a, b) => new Date(b.date) - new Date(a.date)
   )
