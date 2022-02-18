@@ -4,8 +4,8 @@ import { Down } from '@carbonplan/icons'
 import Highlight from './highlight'
 import { TonYear } from './highlight-images'
 
-const HIGHLIGHTS = {
-  small: {
+const HIGHLIGHTS = [
+  {
     id: 'ton-year-explainer',
     date: '01-31-2022',
     title: 'Unpacking ton-year accounting',
@@ -18,35 +18,20 @@ const HIGHLIGHTS = {
     ],
     logo: <TonYear />,
   },
-  large: [
-    {
-      id: 'ton-year-explainer',
-      date: '01-31-2022',
-      title: 'Unpacking ton-year accounting',
-      color: 'pink',
-      summary:
-        'Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods.',
-      links: [
-        { label: 'Read article', href: '/research/ton-year-explainer' },
-        { label: 'Our critique of NCX’s methods', href: '/blog/ton-year-ncx' },
-      ],
-      logo: <TonYear />,
-    },
-    {
-      id: 'ton-year-explainer',
-      date: '01-31-2022',
-      title: 'Unpacking ton-year accounting',
-      color: 'pink',
-      summary:
-        'Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods.',
-      links: [
-        { label: 'Read article', href: '/research/ton-year-explainer' },
-        { label: 'Our critique of NCX’s methods', href: '/blog/ton-year-ncx' },
-      ],
-      logo: <TonYear />,
-    },
-  ],
-}
+  {
+    id: 'ton-year-explainer',
+    date: '01-31-2022',
+    title: 'Unpacking ton-year accounting',
+    color: 'pink',
+    summary:
+      'Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods.',
+    links: [
+      { label: 'Read article', href: '/research/ton-year-explainer' },
+      { label: 'Our critique of NCX’s methods', href: '/blog/ton-year-ncx' },
+    ],
+    logo: <TonYear />,
+  },
+]
 
 const SECTIONS = ['tools', 'articles', 'publications', 'comments']
 
@@ -129,16 +114,14 @@ const Highlights = () => {
           >
             Highlights
           </Box>
-
-          <Highlight {...HIGHLIGHTS.small} sx={{ mt: [0, 0, 5, 6] }} />
         </Column>
 
         <Column start={[1, 1, 6, 6]} width={[6, 8, 6, 6]} sx={sx.columnDivider}>
-          <Highlight {...HIGHLIGHTS.large[0]} />
+          <Highlight {...HIGHLIGHTS[0]} />
 
           <Divider />
 
-          <Highlight {...HIGHLIGHTS.large[1]} sx={{ pb: [0, 0, 0, 0] }} />
+          <Highlight {...HIGHLIGHTS[1]} sx={{ pb: [0, 0, 0, 0] }} />
 
           <Divider sx={{ display: ['inherit', 'inherit', 'none', 'none'] }} />
         </Column>
