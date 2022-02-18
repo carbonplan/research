@@ -75,6 +75,7 @@ const List = ({
             sx={{
               position: 'sticky',
               top: ['106px', '106px', '106px', '120px'],
+              scrollMarginTop: ['106px', '106px', '106px', '120px'],
               height: 'auto',
             }}
           >
