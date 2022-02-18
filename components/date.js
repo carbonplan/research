@@ -11,7 +11,6 @@ const Date = ({ date, sx }) => {
         fontSize: [1, 1, 1, 2],
         userSelect: 'none',
         textTransform: 'uppercase',
-        whiteSpace: 'nowrap',
         ...sx,
       }}
     >

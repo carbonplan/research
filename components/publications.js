@@ -40,7 +40,11 @@ const Publication = ({ info, start }) => {
         <Box>
           <Flex sx={{ justifyContent: 'space-between', mb: 2 }}>
             <Date date={date} />
-            {journal && <Tag sx={{ color: 'secondary' }}>{journal}</Tag>}
+            {journal && (
+              <Tag sx={{ color: 'secondary', textAlign: 'right' }}>
+                {journal}
+              </Tag>
+            )}
           </Flex>
 
           <Box

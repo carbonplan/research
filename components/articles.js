@@ -78,7 +78,12 @@ const Article = ({ info, first, final }) => {
             display: ['none', 'none', 'inherit', 'inherit'],
           }}
         >
-          <Date date={date} />
+          <Date
+            date={date}
+            sx={{
+              width: [null, null, 'calc(100% + 15spx)', 'calc(100% + 30px)'],
+            }}
+          />
         </Column>
         <Column
           start={[3, 3, 2, 2]}
