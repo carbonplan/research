@@ -97,7 +97,11 @@ const Publications = ({ items }) => {
   return (
     <Row columns={[6, 8, 7, 7]}>
       {items.map((d, i) => (
-        <Publication info={d} start={i % 2 ? [1, 2, 5, 5] : [1, 2, 1, 1]} />
+        <Publication
+          key={d.title}
+          info={d}
+          start={i % 2 ? [1, 2, 5, 5] : [1, 2, 1, 1]}
+        />
       ))}
     </Row>
   )
