@@ -72,7 +72,7 @@ const Main = () => {
 
       <Row>
         <Column start={[1, 1, 2, 2]} width={[6, 8, 2, 2]}>
-          <Box sx={sx.heading}>Recent</Box>
+          <Box sx={sx.heading}>Sections</Box>
         </Column>
         <Column start={[1, 1, 5, 5]} width={[6, 8, 6, 6]}>
           <Box
