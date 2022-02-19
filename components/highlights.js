@@ -73,11 +73,23 @@ const Highlights = () => {
         Highlights
       </Box>
 
-      <Highlight {...HIGHLIGHTS[0]} />
+      <Box
+        sx={{
+          pl: [0, 0, 5, 6],
+          ml: [0, 0, -5, -6],
+          mb: [4, 6, 6, 7],
+          borderStyle: 'solid',
+          borderColor: 'muted',
+          borderWidth: '0px',
+          borderLeftWidth: ['0px', '0px', '1px', '1px'],
+        }}
+      >
+        <Highlight {...HIGHLIGHTS[0]} />
 
-      <Divider />
+        <Divider />
 
-      <Highlight {...HIGHLIGHTS[1]} sx={{ pb: [0, 0, 0, 0] }} />
+        <Highlight {...HIGHLIGHTS[1]} sx={{ pb: [0, 0, 0, 0] }} />
+      </Box>
 
       <Divider sx={{ display: ['inherit', 'inherit', 'none', 'none'] }} />
     </Box>
