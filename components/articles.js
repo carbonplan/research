@@ -36,7 +36,7 @@ const Inner = ({ summary, links, sx }) => (
   </Box>
 )
 
-const Article = ({ info, first, final }) => {
+const Article = ({ info, first }) => {
   let {
     indexTitle,
     title,
@@ -65,10 +65,10 @@ const Article = ({ info, first, final }) => {
         borderStyle: 'solid',
         borderColor: 'muted',
         borderWidth: '0px',
-        borderTopWidth: ['1px', '1px', 0, 0],
+        borderTopWidth: first ? 0 : ['1px', '1px', 0, 0],
         borderLeftWidth: ['0px', '0px', '1px', '1px'],
-        pl: [0, 5, 5, 6],
-        ml: [0, -5, -5, -6],
+        pl: [0, 0, 5, 6],
+        ml: [0, 0, -5, -6],
       }}
     >
       <Row columns={[6, 8, 8, 7]}>
@@ -161,14 +161,9 @@ const Article = ({ info, first, final }) => {
 
 const Articles = ({ items }) => {
   return (
-    <Box sx={{ pt: [4, 0], pb: [2, 3, 4, 5] }}>
+    <Box sx={{ pt: [4, 0] }}>
       {items.map((d, i) => (
-        <Article
-          key={d.title}
-          info={d}
-          first={i == 0}
-          final={i === items.length - 1}
-        />
+        <Article key={d.title} info={d} first={i == 0} />
       ))}
     </Box>
   )

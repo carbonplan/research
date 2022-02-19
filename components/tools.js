@@ -88,8 +88,8 @@ const Tools = ({ items }) => {
         borderWidth: '0px',
         borderTopWidth: ['1px', '0px'],
         borderLeftWidth: ['0px', '1px'],
-        pl: [0, 5, 5, 6],
-        ml: [0, -5, -5, -6],
+        pl: [0, 0, 5, 6],
+        ml: [0, 0, -5, -6],
       }}
     >
       {items.map((d, i) => (
