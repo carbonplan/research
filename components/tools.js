@@ -80,7 +80,7 @@ const Tool = ({ info, start }) => {
 const Tools = ({ items }) => {
   return (
     <Row
-      columns={[6, 8, 8, 8]}
+      columns={[6, 8, 7, 7]}
       sx={{
         pt: [4, 0],
         borderStyle: 'solid',
@@ -99,8 +99,8 @@ const Tools = ({ items }) => {
           start={[
             1 + (i % 2) * 3,
             1 + (i % 4) * 2,
-            1 + (i % 4) * 2,
-            1 + (i % 4) * 2,
+            1 + (i % 3) * 2,
+            1 + (i % 3) * 2,
           ]}
         />
       ))}

@@ -71,7 +71,7 @@ const Article = ({ info, first }) => {
         ml: [0, 0, -5, -6],
       }}
     >
-      <Row columns={[6, 8, 8, 7]}>
+      <Row columns={[6, 8, 7, 7]}>
         <Column
           start={[3, 1, 1, 1]}
           width={[2, 2, 2, 2]}

@@ -116,7 +116,7 @@ const Main = () => {
             items={tools}
             Entries={Tools}
             width={8}
-            limit={8}
+            limit={6}
             ref={listRefs.tools}
           />
           <List
