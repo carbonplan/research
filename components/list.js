@@ -5,12 +5,12 @@ import { Expander } from '@carbonplan/components'
 
 const sx = {
   heading: {
-    mb: [3, 3, 3, 4],
+    mt: [4, 4, 0, 0],
+    mb: [3, 3, 4, 5],
     fontSize: [3, 3, 3, 4],
     fontFamily: 'heading',
     letterSpacing: 'smallcaps',
     textTransform: 'uppercase',
-    color: 'primary',
   },
   expander: {
     color: 'secondary',
@@ -59,43 +59,24 @@ const List = forwardRef(
           ],
         }}
       >
-        <Box
+        <Divider
           sx={{
-            ml: [0, 0, -5, -6],
+            width: '100%',
+            mt: [0],
             mb: [4, 5, 6, 7],
+            display: ['none', 'none', 'inherit', 'inherit'],
+          }}
+        />
+
+        <Box
+          id={showAllItems ? undefined : id}
+          sx={{
+            ...sx.heading,
+            scrollMarginTop: [null, null, '98px', '116px'],
+            display: ['none', 'none', 'inherit', 'inherit'],
           }}
         >
-          <Flex
-            sx={{
-              width: '100%',
-              gap: 4,
-              justifyContent: 'space-between',
-              alignContent: 'center',
-            }}
-          >
-            <Box
-              id={showAllItems ? undefined : id}
-              sx={{
-                scrollMarginTop: [null, null, '98px', '116px'],
-                flex: '0 0 auto',
-                mt: -2,
-                fontSize: 2,
-                fontFamily: 'heading',
-                letterSpacing: 'smallcaps',
-                textTransform: 'uppercase',
-                display: ['none', 'none', 'inherit', 'inherit'],
-              }}
-            >
-              {label}
-            </Box>
-
-            <Divider
-              sx={{
-                width: '100%',
-                mt: [0],
-              }}
-            />
-          </Flex>
+          {label}
         </Box>
 
         <Box
