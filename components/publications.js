@@ -4,7 +4,7 @@ import { Row, Column, Link, LinkGroup, Tag } from '@carbonplan/components'
 import { mix } from '@theme-ui/color'
 import Date from './date'
 
-const Publication = ({ info, start }) => {
+const Publication = ({ info, first }) => {
   let { title, journal, color, date, summary, links, primaryLink } = info
 
   color = color || 'text'
@@ -21,11 +21,11 @@ const Publication = ({ info, start }) => {
         borderStyle: 'solid',
         borderColor: 'muted',
         borderWidth: '0px',
-        borderTopWidth: ['1px', '1px', '0px'],
+        borderTopWidth: first ? 0 : ['1px', '1px', '0px'],
         borderLeftWidth: ['0px', '0px', '1px', '1px'],
         pl: [0, 5, 5, 6],
         ml: [0, -5, -5, -6],
-        pt: [4, 5, 0, 0],
+        pt: first ? 0 : [4, 5, 0, 0],
         mb: [3, 5, 5, 6],
       }}
     >
@@ -95,6 +95,7 @@ const Publications = ({ items }) => {
               key={d.title}
               info={d}
               start={i % 2 ? [1, 2, 5, 5] : [1, 2, 1, 1]}
+              first={i === 0}
             />
           ))}
       </Column>

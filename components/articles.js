@@ -65,6 +65,7 @@ const Article = ({ info, first }) => {
         borderStyle: 'solid',
         borderColor: 'muted',
         borderWidth: '0px',
+        pt: first ? 0 : undefined,
         borderTopWidth: first ? 0 : ['1px', '1px', 0, 0],
         borderLeftWidth: ['0px', '0px', '1px', '1px'],
         pl: [0, 0, 5, 6],
