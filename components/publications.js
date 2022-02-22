@@ -83,7 +83,7 @@ const Publication = ({ info, first }) => {
 }
 
 const Publications = ({ items }) => {
-  const index = useBreakpointIndex()
+  const index = useBreakpointIndex({ defaultIndex: 2 })
 
   return (
     <Row columns={[6, 8, 7, 7]}>

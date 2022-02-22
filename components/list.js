@@ -24,7 +24,7 @@ const sx = {
 
 const List = forwardRef(
   ({ id, label, items, selected, limit = 4, Entries }, ref) => {
-    const index = useBreakpointIndex()
+    const index = useBreakpointIndex({ defaultIndex: 2 })
     const showAllItems = index < 2
     const [{ expanded, initial }, setExpanded] = useState({
       expanded: false,

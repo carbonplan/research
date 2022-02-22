@@ -20,7 +20,7 @@ const sx = {
   },
 }
 const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
-  const index = useBreakpointIndex()
+  const index = useBreakpointIndex({ defaultIndex: 2 })
   return (
     <Box
       sx={{

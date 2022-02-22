@@ -23,7 +23,7 @@ const Main = () => {
   }
   const [scrolled, setScrolled] = useState(null)
   const [selected, setSelected] = useState({ id: 'highlights', scroll: true })
-  const index = useBreakpointIndex()
+  const index = useBreakpointIndex({ defaultIndex: 2 })
 
   const selectSection = (id, scroll = true) => {
     router.push({ pathname: '/research', query: { section: id } }, undefined, {
