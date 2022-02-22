@@ -65,7 +65,7 @@ const List = forwardRef(
             <Box
               id={showAllItems ? undefined : id}
               sx={{
-                scrollMarginTop: [null, null, '107px', '125px'],
+                scrollMarginTop: [null, null, '98px', '116px'],
                 flex: '0 0 auto',
                 mt: -2,
                 fontSize: 2,
