@@ -63,9 +63,9 @@ const List = forwardRef(
             }}
           >
             <Box
-              id={id}
+              id={showAllItems ? undefined : id}
               sx={{
-                scrollMarginTop: ['115px', '148px', '105px', '121px'],
+                scrollMarginTop: [null, null, '107px', '125px'],
                 flex: '0 0 auto',
                 mt: -2,
                 fontSize: 2,
@@ -87,7 +87,10 @@ const List = forwardRef(
           </Flex>
         </Box>
 
-        <Box>
+        <Box
+          id={showAllItems ? id : undefined}
+          sx={{ scrollMarginTop: ['148px', '154px'] }}
+        >
           <Entries items={visibleItems} />
           {!showAllItems && items.length > limit && (
             <Box
