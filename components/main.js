@@ -34,6 +34,19 @@ const Main = () => {
   const [scrolled, setScrolled] = useState(null)
   const [selected, setSelected] = useState('articles')
 
+  const selectSection = (id, scroll = true) => {
+    router.push({ pathname: '/research', query: { section: id } }, undefined, {
+      scroll: false,
+    })
+
+    if (scroll) {
+      document.querySelector(`#${id}`).scrollIntoView({
+        behavior: 'smooth',
+      })
+    }
+    setSelected(id)
+  }
+
   useEffect(() => {
     const scrollListener = () => {
       const navBottom = navRef.current?.getBoundingClientRect()?.bottom
@@ -90,7 +103,7 @@ const Main = () => {
           <Navigation
             ref={navRef}
             scrolled={scrolled}
-            setSelected={setSelected}
+            selectSection={selectSection}
           />
         </Column>
         <Column start={[1, 1, 5, 5]} width={[6, 8, 7, 7]}>
@@ -104,8 +117,7 @@ const Main = () => {
             }}
             setValues={(obj) => {
               const key = Object.keys(obj).find((k) => obj[k])
-              router.push(`research#${key}`)
-              setSelected(key)
+              selectSection(key, false)
             }}
             sx={{ display: ['inherit', 'inherit', 'none', 'none'], my: 3 }}
           />

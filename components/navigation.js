@@ -20,7 +20,7 @@ const sx = {
     textTransform: 'uppercase',
   },
 }
-const Navigation = forwardRef(({ scrolled, setSelected }, ref) => {
+const Navigation = forwardRef(({ scrolled, selectSection }, ref) => {
   return (
     <Box
       sx={{
@@ -43,8 +43,7 @@ const Navigation = forwardRef(({ scrolled, setSelected }, ref) => {
           }}
         >
           <Button
-            onClick={() => setSelected(id)}
-            href={`#${id}`}
+            onClick={() => selectSection(id)}
             sx={{
               ...sx.heading,
               my: [3, 3, 3, 4],
