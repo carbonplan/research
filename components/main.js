@@ -32,20 +32,28 @@ const Main = () => {
     comments: useRef(null),
   }
   const [scrolled, setScrolled] = useState(null)
-  const [selected, setSelected] = useState('articles')
+  const [selected, setSelected] = useState({ id: 'tools', scroll: true })
 
   const selectSection = (id, scroll = true) => {
     router.push({ pathname: '/research', query: { section: id } }, undefined, {
       scroll: false,
     })
+    setSelected({ id, scroll })
+  }
 
-    if (scroll) {
-      document.querySelector(`#${id}`).scrollIntoView({
+  useEffect(() => {
+    if (
+      router.query.section &&
+      selected.id &&
+      router.query.section !== selected.id
+    ) {
+      setSelected({ id: router.query.section, scroll: selected.scroll })
+    } else if (selected.scroll && router.query.section) {
+      document.querySelector(`#${router.query.section}`).scrollIntoView({
         behavior: 'smooth',
       })
     }
-    setSelected(id)
-  }
+  }, [selected, router.query.section])
 
   useEffect(() => {
     const scrollListener = () => {
@@ -110,10 +118,10 @@ const Main = () => {
           <Highlights />
           <Filter
             values={{
-              tools: selected === 'tools',
-              articles: selected === 'articles',
-              publications: selected === 'publications',
-              comments: selected === 'comments',
+              tools: selected.id === 'tools',
+              articles: selected.id === 'articles',
+              publications: selected.id === 'publications',
+              comments: selected.id === 'comments',
             }}
             setValues={(obj) => {
               const key = Object.keys(obj).find((k) => obj[k])
@@ -124,7 +132,7 @@ const Main = () => {
           <List
             label='Tools'
             id='tools'
-            selected={selected === 'tools'}
+            selected={selected.id === 'tools'}
             items={tools}
             Entries={Tools}
             width={8}
@@ -134,7 +142,7 @@ const Main = () => {
           <List
             label='Articles'
             id='articles'
-            selected={selected === 'articles'}
+            selected={selected.id === 'articles'}
             items={articles}
             width={8}
             Entries={Articles}
@@ -143,7 +151,7 @@ const Main = () => {
           <List
             label='Publications'
             id='publications'
-            selected={selected === 'publications'}
+            selected={selected.id === 'publications'}
             items={publications}
             Entries={Publications}
             ref={listRefs.publications}
@@ -151,7 +159,7 @@ const Main = () => {
           <List
             label='Comment letters'
             id='comments'
-            selected={selected === 'comments'}
+            selected={selected.id === 'comments'}
             items={comments}
             Entries={Publications}
             ref={listRefs.comments}
