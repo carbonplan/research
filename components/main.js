@@ -1,7 +1,7 @@
 import { Box } from 'theme-ui'
 import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
-import { Column, Filter, Heading, Row } from '@carbonplan/components'
+import { Column, Heading, Row } from '@carbonplan/components'
 
 import { articles, publications, comments, tools } from '../contents/index'
 import List from './list'
@@ -25,7 +25,8 @@ const sx = {
 const Main = () => {
   const router = useRouter()
   const navRef = useRef(null)
-  const listRefs = {
+  const sectionRefs = {
+    highlights: useRef(null),
     tools: useRef(null),
     articles: useRef(null),
     publications: useRef(null),
@@ -58,12 +59,13 @@ const Main = () => {
   useEffect(() => {
     const scrollListener = () => {
       const navBottom = navRef.current?.getBoundingClientRect()?.bottom
-      const active = Object.keys(listRefs)
-        .reverse()
-        .find((key) => {
-          const ref = listRefs[key]
-          return navBottom > ref.current?.getBoundingClientRect()?.top
-        })
+      const active =
+        Object.keys(sectionRefs)
+          .reverse()
+          .find((key) => {
+            const ref = sectionRefs[key]
+            return navBottom > ref.current?.getBoundingClientRect()?.top
+          }) || 'highlights'
       setScrolled(active)
     }
     window.addEventListener('scroll', scrollListener)
@@ -93,42 +95,15 @@ const Main = () => {
 
       <Row>
         <Column start={[1, 1, 2, 2]} width={[6, 8, 2, 2]}>
-          <Box sx={sx.heading}>Sections</Box>
-        </Column>
-        <Column start={[1, 1, 5, 5]} width={[6, 8, 6, 6]}>
-          <Box
-            sx={{
-              ...sx.heading,
-              display: ['none', 'none', 'inherit', 'inherit'],
-            }}
-          >
-            Highlights
-          </Box>
-        </Column>
-      </Row>
-      <Row>
-        <Column start={[1, 1, 2, 2]} width={[6, 8, 2, 2]}>
           <Navigation
             ref={navRef}
+            selected={selected.id}
             scrolled={scrolled}
             selectSection={selectSection}
           />
         </Column>
         <Column start={[1, 1, 5, 5]} width={[6, 8, 7, 7]}>
-          <Highlights />
-          <Filter
-            values={{
-              tools: selected.id === 'tools',
-              articles: selected.id === 'articles',
-              publications: selected.id === 'publications',
-              comments: selected.id === 'comments',
-            }}
-            setValues={(obj) => {
-              const key = Object.keys(obj).find((k) => obj[k])
-              selectSection(key, false)
-            }}
-            sx={{ display: ['inherit', 'inherit', 'none', 'none'], my: 3 }}
-          />
+          <Highlights selected={selected.id === 'highlights'} />
           <List
             label='Tools'
             id='tools'
@@ -137,7 +112,7 @@ const Main = () => {
             Entries={Tools}
             width={8}
             limit={6}
-            ref={listRefs.tools}
+            ref={sectionRefs.tools}
           />
           <List
             label='Articles'
@@ -146,7 +121,7 @@ const Main = () => {
             items={articles}
             width={8}
             Entries={Articles}
-            ref={listRefs.articles}
+            ref={sectionRefs.articles}
           />
           <List
             label='Publications'
@@ -154,7 +129,7 @@ const Main = () => {
             selected={selected.id === 'publications'}
             items={publications}
             Entries={Publications}
-            ref={listRefs.publications}
+            ref={sectionRefs.publications}
           />
           <List
             label='Comment letters'
@@ -162,7 +137,7 @@ const Main = () => {
             selected={selected.id === 'comments'}
             items={comments}
             Entries={Publications}
-            ref={listRefs.comments}
+            ref={sectionRefs.comments}
           />
         </Column>
       </Row>

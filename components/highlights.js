@@ -1,3 +1,4 @@
+import { forwardRef } from 'react'
 import { Box, Divider } from 'theme-ui'
 import Highlight from './highlight'
 import { TonYear } from './highlight-images'
@@ -61,13 +62,24 @@ const sx = {
   },
 }
 
-const Highlights = () => {
+const Highlights = forwardRef(({ selected }, ref) => {
   return (
-    <Box>
+    <Box
+      ref={ref}
+      id='highlights'
+      sx={{
+        display: [
+          selected ? 'inherit' : 'none',
+          selected ? 'inherit' : 'none',
+          'inherit',
+          'inherit',
+        ],
+      }}
+    >
       <Box
         sx={{
           ...sx.heading,
-          display: ['inherit', 'inherit', 'none', 'none'],
+          display: ['none', 'none', 'inherit', 'inherit'],
         }}
       >
         Highlights
@@ -94,6 +106,6 @@ const Highlights = () => {
       <Divider sx={{ display: ['inherit', 'inherit', 'none', 'none'] }} />
     </Box>
   )
-}
+})
 
 export default Highlights

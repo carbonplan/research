@@ -1,5 +1,5 @@
 import { forwardRef, useEffect, useMemo, useState } from 'react'
-import { Box, Divider, Flex } from 'theme-ui'
+import { Box, Divider } from 'theme-ui'
 import { useBreakpointIndex } from '@theme-ui/match-media'
 import { Expander } from '@carbonplan/components'
 

@@ -1,9 +1,10 @@
 import { Box } from 'theme-ui'
 import { Button } from '@carbonplan/components'
-import { Down } from '@carbonplan/icons'
 import { forwardRef } from 'react'
+import { useBreakpointIndex } from '@theme-ui/match-media'
 
 const SECTIONS = [
+  { id: 'highlights', label: 'Highlights' },
   { id: 'tools', label: 'Tools' },
   { id: 'articles', label: 'Articles' },
   { id: 'publications', label: 'Publications' },
@@ -20,7 +21,8 @@ const sx = {
     textTransform: 'uppercase',
   },
 }
-const Navigation = forwardRef(({ scrolled, selectSection }, ref) => {
+const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
+  const index = useBreakpointIndex()
   return (
     <Box
       sx={{
@@ -43,18 +45,17 @@ const Navigation = forwardRef(({ scrolled, selectSection }, ref) => {
           }}
         >
           <Button
-            onClick={() => selectSection(id)}
+            onClick={() => selectSection(id, index >= 2)}
             sx={{
               ...sx.heading,
               my: [3, 3, 3, 4],
-              color:
-                scrolled === id
-                  ? ['secondary', 'secondary', 'primary', 'primary']
-                  : 'secondary',
+              color: [
+                selected === id ? 'primary' : 'secondary',
+                selected === id ? 'primary' : 'secondary',
+                scrolled === id ? 'primary' : 'secondary',
+                scrolled === id ? 'primary' : 'secondary',
+              ],
             }}
-            suffix={
-              <Down sx={{ display: ['inherit', 'inherit', 'none', 'none'] }} />
-            }
           >
             {label}
           </Button>
