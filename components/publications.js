@@ -42,7 +42,7 @@ const Publication = ({ info, first }) => {
           ml: ['-1px'],
           lineHeight: 'heading',
           fontFamily: 'heading',
-          fontSize: [3, 4, 4, 5],
+          fontSize: [4, 5, 4, 5],
           color: color,
         }}
       >
@@ -87,7 +87,7 @@ const Publications = ({ items }) => {
 
   return (
     <Row columns={[6, 8, 7, 7]}>
-      <Column start={[1, 1, 1, 1]} width={[6, 8, 3, 3]}>
+      <Column start={[1, 1, 1, 1]} width={[6, 8, 4, 3]}>
         {items
           .filter((d, i) => index < 2 || i % 2 === 0)
           .map((d, i) => (
