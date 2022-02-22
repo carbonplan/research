@@ -50,6 +50,7 @@ const List = forwardRef(
       <Box
         ref={ref}
         sx={{
+          mt: [4, 4, 0, 0],
           mb: [4, 6, 6, 7],
           display: [
             selected ? 'inherit' : 'none',
