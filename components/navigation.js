@@ -1,4 +1,4 @@
-import { Box } from 'theme-ui'
+import { Box, Divider } from 'theme-ui'
 import { Button } from '@carbonplan/components'
 import { forwardRef } from 'react'
 import { useBreakpointIndex } from '@theme-ui/match-media'
@@ -13,9 +13,7 @@ const SECTIONS = [
 
 const sx = {
   heading: {
-    mt: [4, 4, 0, 0],
-    mb: [3, 3, 4, 5],
-    fontSize: [3, 3, 3, 4],
+    fontSize: [2, 2, 3, 4],
     fontFamily: 'heading',
     letterSpacing: 'smallcaps',
     textTransform: 'uppercase',
@@ -27,9 +25,11 @@ const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
     <Box
       sx={{
         position: 'sticky',
-        top: ['106px', '106px', '106px', '120px'],
-        scrollMarginTop: ['106px', '106px', '106px', '120px'],
+        top: ['56px', '56px', '106px', '120px'],
+        pt: [2, 2, 0, 0],
         height: 'auto',
+        bg: 'background',
+        zIndex: 501,
       }}
       ref={ref}
     >
@@ -37,18 +37,19 @@ const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
         <Box
           key={id}
           sx={{
+            display: ['inline-block', 'inline-block', 'block'],
+            mr: [4, 4, 0],
             borderStyle: 'solid',
             borderColor: 'muted',
             borderWidth: '0px',
-            borderBottomWidth: '1px',
-            mb: [3, 3, 3, 4],
+            borderBottomWidth: [0, 0, '1px'],
           }}
         >
           <Button
             onClick={() => selectSection(id, index >= 2)}
             sx={{
               ...sx.heading,
-              my: [3, 3, 3, 4],
+              my: [1, 1, 3, 4],
               color: [
                 selected === id ? 'primary' : 'secondary',
                 selected === id ? 'primary' : 'secondary',
@@ -61,6 +62,8 @@ const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
           </Button>
         </Box>
       ))}
+
+      <Divider sx={{ display: ['inherit', 'inherit', 'none'] }} />
     </Box>
   )
 })

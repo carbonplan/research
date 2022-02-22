@@ -2,6 +2,7 @@ import { Box } from 'theme-ui'
 import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
 import { Column, Heading, Row } from '@carbonplan/components'
+import { useBreakpointIndex } from '@theme-ui/match-media'
 
 import { articles, publications, comments, tools } from '../contents/index'
 import List from './list'
@@ -10,17 +11,6 @@ import Publications from './publications'
 import Tools from './tools'
 import Highlights from './highlights'
 import Navigation from './navigation'
-
-const sx = {
-  heading: {
-    mt: [4, 4, 0, 0],
-    mb: [3, 3, 4, 5],
-    fontSize: [3, 3, 3, 4],
-    fontFamily: 'heading',
-    letterSpacing: 'smallcaps',
-    textTransform: 'uppercase',
-  },
-}
 
 const Main = () => {
   const router = useRouter()
@@ -34,6 +24,7 @@ const Main = () => {
   }
   const [scrolled, setScrolled] = useState(null)
   const [selected, setSelected] = useState({ id: 'tools', scroll: true })
+  const index = useBreakpointIndex()
 
   const selectSection = (id, scroll = true) => {
     router.push({ pathname: '/research', query: { section: id } }, undefined, {
@@ -94,15 +85,26 @@ const Main = () => {
       </Heading>
 
       <Row>
-        <Column start={[1, 1, 2, 2]} width={[6, 8, 2, 2]}>
-          <Navigation
-            ref={navRef}
-            selected={selected.id}
-            scrolled={scrolled}
-            selectSection={selectSection}
-          />
-        </Column>
+        {index >= 2 && (
+          <Column start={[1, 1, 2, 2]} width={[6, 8, 2, 2]}>
+            <Navigation
+              ref={navRef}
+              selected={selected.id}
+              scrolled={scrolled}
+              selectSection={selectSection}
+            />
+          </Column>
+        )}
         <Column start={[1, 1, 5, 5]} width={[6, 8, 7, 7]}>
+          {index < 2 && (
+            <Navigation
+              ref={navRef}
+              selected={selected.id}
+              scrolled={scrolled}
+              selectSection={selectSection}
+            />
+          )}
+
           <Highlights selected={selected.id === 'highlights'} />
           <List
             label='Tools'
