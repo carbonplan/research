@@ -33,7 +33,7 @@ const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
       }}
       ref={ref}
     >
-      {SECTIONS.map(({ id, label }) => (
+      {SECTIONS.map(({ id, label }, i) => (
         <Box
           key={id}
           sx={{
@@ -50,6 +50,7 @@ const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
             sx={{
               ...sx.heading,
               my: [1, 1, 3, 4],
+              mt: [1, 1, i === 0 ? 0 : 3, i === 0 ? 0 : 4],
               color: [
                 selected === id ? 'primary' : 'secondary',
                 selected === id ? 'primary' : 'secondary',

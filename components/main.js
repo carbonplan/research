@@ -15,15 +15,14 @@ import Navigation from './navigation'
 const Main = () => {
   const router = useRouter()
   const navRef = useRef(null)
-  const sectionRefs = {
-    highlights: useRef(null),
+  const listRefs = {
     tools: useRef(null),
     articles: useRef(null),
     publications: useRef(null),
     comments: useRef(null),
   }
   const [scrolled, setScrolled] = useState(null)
-  const [selected, setSelected] = useState({ id: 'tools', scroll: true })
+  const [selected, setSelected] = useState({ id: 'highlights', scroll: true })
   const index = useBreakpointIndex()
 
   const selectSection = (id, scroll = true) => {
@@ -51,10 +50,10 @@ const Main = () => {
     const scrollListener = () => {
       const navBottom = navRef.current?.getBoundingClientRect()?.bottom
       const active =
-        Object.keys(sectionRefs)
+        Object.keys(listRefs)
           .reverse()
           .find((key) => {
-            const ref = sectionRefs[key]
+            const ref = listRefs[key]
             return navBottom > ref.current?.getBoundingClientRect()?.top
           }) || 'highlights'
       setScrolled(active)
@@ -86,7 +85,11 @@ const Main = () => {
 
       <Row>
         {index >= 2 && (
-          <Column start={[1, 1, 2, 2]} width={[6, 8, 2, 2]}>
+          <Column
+            start={[1, 1, 2, 2]}
+            width={[6, 8, 2, 2]}
+            sx={{ mt: [0, 0, '2px'] }}
+          >
             <Navigation
               ref={navRef}
               selected={selected.id}
@@ -114,7 +117,7 @@ const Main = () => {
             Entries={Tools}
             width={8}
             limit={6}
-            ref={sectionRefs.tools}
+            ref={listRefs.tools}
           />
           <List
             label='Articles'
@@ -123,7 +126,7 @@ const Main = () => {
             items={articles}
             width={8}
             Entries={Articles}
-            ref={sectionRefs.articles}
+            ref={listRefs.articles}
           />
           <List
             label='Publications'
@@ -131,7 +134,7 @@ const Main = () => {
             selected={selected.id === 'publications'}
             items={publications}
             Entries={Publications}
-            ref={sectionRefs.publications}
+            ref={listRefs.publications}
           />
           <List
             label='Comment letters'
@@ -139,7 +142,7 @@ const Main = () => {
             selected={selected.id === 'comments'}
             items={comments}
             Entries={Publications}
-            ref={sectionRefs.comments}
+            ref={listRefs.comments}
           />
         </Column>
       </Row>
