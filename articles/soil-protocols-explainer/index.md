@@ -25,7 +25,6 @@ export const meta = {
   summary:
     'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
   icon: 'article-012/crop-small',
-  tags: ['article', 'dataset'],
   links: [
     {
       label: 'Browse protocols',

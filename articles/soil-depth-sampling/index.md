@@ -22,7 +22,6 @@ export const meta = {
   background: 'article-011/tillage',
   quickLook:
     'Why depth is important for soil carbon sampling, and how to avoid key mistakes',
-  tags: ['article'],
   summary:
     'Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls.',
   icon: 'article-011/tillage-small',

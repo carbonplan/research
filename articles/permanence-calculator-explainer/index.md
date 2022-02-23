@@ -16,7 +16,6 @@ export const meta = {
   background: 'article-005/leaf',
   quickLook:
     'How to compare the long-term cost of temporary and permanent carbon removal',
-  tags: ['tool', 'article'],
   summary:
     'Our interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to learn about the methods and implications.',
   icon: 'article-005/leaf-small',

@@ -20,7 +20,6 @@ const articles = [
     summary:
       'Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods.',
     icon: 'article-013/blowing-small',
-    tags: ['article'],
     links: [
       { label: 'Read article', href: '/research/ton-year-explainer' },
       { label: 'Our critique of NCX’s methods', href: '/blog/ton-year-ncx' },
@@ -46,7 +45,6 @@ const articles = [
     summary:
       'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
     icon: 'article-012/crop-small',
-    tags: ['article', 'dataset'],
     links: [
       { label: 'Read article', href: '/research/soil-protocols-explainer' },
       { label: 'Browse protocols', href: '/research/soil-protocols' },
@@ -76,7 +74,6 @@ const articles = [
     background: 'article-011/tillage',
     quickLook:
       'Why depth is important for soil carbon sampling, and how to avoid key mistakes',
-    tags: ['article'],
     summary:
       'Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls.',
     icon: 'article-011/tillage-small',
@@ -100,7 +97,6 @@ const articles = [
     background: 'article-010/curve',
     quickLook:
       "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement",
-    tags: ['article', 'dataset'],
     summary:
       "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
     icon: 'article-010/curve-small',
@@ -130,7 +126,6 @@ const articles = [
       'A detailed look at the disturbance risks to forest carbon under future climate conditions',
     background: 'article-009/forest-fire-red',
     card: 'forest-risks-explainer',
-    tags: ['article', 'dataset', 'tool', 'publication'],
     summary:
       'Forests in the United States are already at risk from wildfire, drought, and insects, and climate change is making it worse. We combined satellite and ecological data with climate models to project future risks to forest carbon. Along with a preprint, we are releasing open data, open software, and an interactive web map.',
     version: '1.0.0',
@@ -164,7 +159,6 @@ const articles = [
     quotes: [],
     card: 'forest-offsets-explainer',
     background: 'article-008/ash',
-    tags: ['article', 'dataset', 'tool', 'publication'],
     summary:
       "California's forest offset program is worth over $2 billion. We analyzed detailed public records to show how statistical flaws in the program's design have led to over-crediting — at a scale of tens of millions of tCO₂ and hundreds of millions of dollars.",
     version: '1.0.0',
@@ -197,7 +191,6 @@ const articles = [
       "Project reports and lessons learned from analyzing proposals for Microsoft's 2021 Carbon Removal procurement",
     background: 'article-007/sign',
     card: 'microsoft-2021-insights',
-    tags: ['article', 'dataset'],
     summary:
       "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
     icon: 'article-007/sign-small',
@@ -224,7 +217,6 @@ const articles = [
     card: 'dac-calculator-explainer',
     quickLook:
       'How the cost of direct air capture varies under different energy scenarios',
-    tags: ['article', 'tool'],
     summary:
       'Our interactive tool helps explore the cost of direct air capture (DAC) coupled to stand alone energy sources. Try the tool, or read the article to learn more about the model.',
     icon: 'article-006/wind-small',
@@ -250,7 +242,6 @@ const articles = [
     background: 'article-005/leaf',
     quickLook:
       'How to compare the long-term cost of temporary and permanent carbon removal',
-    tags: ['tool', 'article'],
     summary:
       'Our interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to learn about the methods and implications.',
     icon: 'article-005/leaf-small',
@@ -287,7 +278,6 @@ const articles = [
     quickLook:
       'A major fire in Oregon illustrates the challenges of managing forest carbon permanence',
     quotes: [],
-    tags: ['article'],
     summary:
       'Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.',
     icon: 'article-004/forest-small',
@@ -316,7 +306,6 @@ const articles = [
     background: 'article-003/pipes',
     quickLook:
       'How different carbon removal projects interact with the global carbon cycle',
-    tags: ['article'],
     summary:
       'Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.',
     icon: 'article-003/pipes-small',
@@ -336,7 +325,6 @@ const articles = [
     background: 'article-001/soil',
     quickLook:
       'Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols',
-    tags: ['comment', 'article'],
     summary:
       'There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.',
     icon: 'article-001/soil-small',
@@ -368,7 +356,6 @@ const articles = [
     background: 'article-000/road',
     quickLook:
       'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
-    tags: ['article', 'dataset'],
     summary:
       "We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Explore our database of project reports or read the article for our main takeaways and lessons learned.",
     icon: 'article-000/road-small',

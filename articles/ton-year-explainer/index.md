@@ -34,7 +34,6 @@ export const meta = {
   summary:
     'Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods.',
   icon: 'article-013/blowing-small',
-  tags: ['article'],
   links: [
     {
       label: 'Our critique of NCX’s methods',

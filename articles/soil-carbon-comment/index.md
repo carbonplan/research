@@ -15,7 +15,6 @@ export const meta = {
   background: 'article-001/soil',
   quickLook:
     'Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols',
-  tags: ['comment', 'article'],
   summary:
     'There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.',
   icon: 'article-001/soil-small',

@@ -24,7 +24,6 @@ export const meta = {
   background: 'article-010/curve',
   quickLook:
     "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement",
-  tags: ['article', 'dataset'],
   summary:
     "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
   icon: 'article-010/curve-small',
