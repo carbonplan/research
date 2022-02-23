@@ -7,10 +7,11 @@ import Date from './date'
 const Publication = ({ info, first }) => {
   let { title, journal, color, date, summary, links, primaryLink } = info
 
+  const hoverColor = color ? 'text' : 'secondary'
   color = color || 'text'
 
   if (color == 'secondary') {
-    color = mix('primary', 'background', 0.6)
+    color = mix('primary', 'background', 0.7)
   }
 
   const linkIndex = primaryLink ? primaryLink + 1 : 0
@@ -26,23 +27,26 @@ const Publication = ({ info, first }) => {
         pl: [0, 5, 5, 6],
         ml: [0, -5, -5, -6],
         pt: first ? 0 : [4, 5, 0, 0],
-        mb: [3, 5, 5, 6],
+        mb: [3, 5, 6, 6],
       }}
     >
       <Flex sx={{ justifyContent: 'space-between', mb: [3, 3, 2] }}>
         <Date date={date} />
         {journal && (
-          <Tag sx={{ color: 'secondary', textAlign: 'right' }}>{journal}</Tag>
+          <Tag sx={{ color: 'secondary', textAlign: 'right', mt: '-1px' }}>
+            {journal}
+          </Tag>
         )}
       </Flex>
 
       <Box
         sx={{
-          mb: ['14px'],
+          mb: ['14px', '14px', '12px', '14px'],
           ml: ['-1px'],
-          lineHeight: 'heading',
+          mt: journal && ['-3px'],
+          lineHeight: 1.1,
           fontFamily: 'heading',
-          fontSize: [4, 5, 4, 5],
+          fontSize: [4, 4, 4, 5],
           color: color,
         }}
       >
@@ -53,12 +57,12 @@ const Publication = ({ info, first }) => {
             color: color,
             '@media (hover: hover) and (pointer: fine)': {
               '&:hover': {
-                color: 'primary',
+                color: hoverColor,
               },
             },
             '@media (hover: none) and (pointer: coarse)': {
               '&:hover': {
-                color: color,
+                color: color || 'text',
               },
             },
           }}
@@ -87,7 +91,7 @@ const Publications = ({ items }) => {
 
   return (
     <Row columns={[6, 8, 7, 7]}>
-      <Column start={[1, 1, 1, 1]} width={[6, 8, 4, 3]}>
+      <Column start={[1, 1, 1, 1]} width={[6, 8, 3, 3]}>
         {items
           .filter((d, i) => index < 2 || i % 2 === 0)
           .map((d, i) => (
@@ -100,7 +104,7 @@ const Publications = ({ items }) => {
           ))}
       </Column>
       {index >= 2 && (
-        <Column start={[1, 1, 5, 5]} width={[6, 6, 3, 3]}>
+        <Column start={[1, 1, 5, 5]} width={[6, 8, 3, 3]}>
           {items
             .filter((d, i) => i % 2 === 1)
             .map((d, i) => (

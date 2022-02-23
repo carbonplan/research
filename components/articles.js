@@ -52,7 +52,7 @@ const Article = ({ info, first }) => {
   color = color || 'text'
 
   if (color == 'secondary') {
-    color = mix('primary', 'background', 0.6)
+    color = mix('primary', 'background', 0.7)
   }
 
   const linkIndex = primaryLink ? primaryLink + 1 : 0
@@ -80,11 +80,11 @@ const Article = ({ info, first }) => {
         <Column start={1} width={[4, 5, 5, 5]}>
           <Box
             sx={{
-              mb: ['14px'],
+              mb: ['8px', '15px', '14px', '14px'],
               ml: ['-1px'],
               lineHeight: 'heading',
               fontFamily: 'heading',
-              fontSize: [4, 5, 5, 6],
+              fontSize: [4, 4, 5, 6],
               color: color,
             }}
           >

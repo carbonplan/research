@@ -17,6 +17,7 @@ const sx = {
     fontFamily: 'heading',
     letterSpacing: 'smallcaps',
     textTransform: 'uppercase',
+    lineHeight: 1.1,
   },
 }
 const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
@@ -34,9 +35,9 @@ const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
     >
       <Box
         sx={{
-          mx: [-4, -5, 0, 0],
-          px: [4, 5, 0, 0],
-          py: [2, 2, 0, 0],
+          mx: [-3, -4, 0, 0],
+          px: [3, 4, 0, 0],
+          py: [2, 3, 0, 0],
           borderStyle: 'solid',
           borderColor: 'muted',
           borderWidth: '0px',

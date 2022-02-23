@@ -1,7 +1,6 @@
 const publications = [
   {
-    title:
-      "Systematic over-crediting in California's forest carbon offsets program",
+    title: 'Systematic over-crediting',
     date: '10-20-2021',
     color: 'green',
     summary:
@@ -39,8 +38,8 @@ const publications = [
     summary:
       'A new resource on the fundamentals of carbon dioxide removal and its role in addressing the climate crisis. Our team helped write, edit, and produce this free, online digital book.',
     date: '01-14-2021',
-    color: 'teal',
     journal: 'Book',
+    color: 'secondary',
     links: [
       {
         label: 'Read the Primer',

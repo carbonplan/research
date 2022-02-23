@@ -21,7 +21,7 @@ const comments = [
     summary:
       "A coordinated effort to standardize and scale today's voluntary offsets market is underway. We submitted a joint letter with Carbon Direct and the Berkeley Carbon Trading Project detailing how the Taskforce is ignoring the problem of poor quality rampant in today's market. That problem needs to be addressed first.",
     date: '01-05-2021',
-    color: 'primary',
+    color: 'yellow',
     links: [
       {
         label: 'Read comment letter',

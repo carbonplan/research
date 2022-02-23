@@ -22,11 +22,22 @@ const Tool = ({ info, start }) => {
           display: 'block',
           mb: [4, 0, 0, 0],
           textDecoration: 'none',
+          pl: [4, 5, 5, 6],
+          ml: [-4, -5, -5, -6],
+          borderLeft: ({ colors }) => [
+            'none',
+            'none',
+            start[2] === 1 ? `solid 1px ${colors.muted}` : 'none',
+            start[3] === 1 ? `solid 1px ${colors.muted}` : 'none',
+          ],
           '@media (hover: hover) and (pointer: fine)': {
             '&:hover > #logo': {
               opacity: 0.7,
             },
             '&:hover > #tool': {
+              opacity: 0.7,
+            },
+            '&:hover > #summary': {
               opacity: 0.7,
             },
           },
@@ -64,10 +75,12 @@ const Tool = ({ info, start }) => {
           {title}
         </Box>
         <Box
+          id='summary'
           sx={{
             my: [1],
             fontSize: [2, 2, 2, 3],
             lineHeight: 1.35,
+            transition: 'opacity 0.15s',
           }}
         >
           {summary}
@@ -82,10 +95,6 @@ const Tools = ({ items }) => {
     <Row
       columns={[6, 8, 7, 7]}
       sx={{
-        borderStyle: 'solid',
-        borderColor: 'muted',
-        borderWidth: '0px',
-        borderLeftWidth: ['0px', '1px'],
         pl: [0, 0, 5, 6],
         ml: [0, 0, -5, -6],
       }}

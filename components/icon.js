@@ -10,8 +10,8 @@ const Icon = ({ color, icon, link }) => {
       sx={{
         cursor: 'pointer',
         display: ['inline-block'],
-        width: ['100px', '120px', '120px', '150px'],
-        height: ['100px', '120px', '120px', '150px'],
+        width: ['80px', '120px', '120px', '150px'],
+        height: ['80px', '120px', '120px', '150px'],
         float: ['none', 'none', 'right', 'right'],
         position: 'relative',
         borderRadius: '50%',

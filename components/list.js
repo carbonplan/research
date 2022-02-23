@@ -93,6 +93,8 @@ const List = forwardRef(
               sx={{
                 ...sx.expander,
                 transition: 'color 0.25s',
+                cursor: 'pointer',
+                width: 'fit-content',
                 '@media (hover: hover) and (pointer: fine)': {
                   '&:hover': {
                     color: 'primary',
@@ -103,8 +105,18 @@ const List = forwardRef(
                 },
               }}
             >
-              <Expander id={`${id}-expander`} value={expanded} sx={{ mr: 2 }} />
-              Show all
+              <Expander
+                id={`${id}-expander`}
+                value={expanded}
+                sx={{
+                  position: 'relative',
+                  mr: 2,
+                  ml: '-3px',
+                  top: '1px',
+                  width: [20, 20, 21, 22],
+                }}
+              />
+              {expanded ? 'Show fewer' : 'Show more'}
             </Box>
           )}
         </Box>
