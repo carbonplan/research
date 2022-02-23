@@ -77,7 +77,7 @@ const Article = ({ info, first }) => {
         <Column start={1} width={[6, 6, 2, 2]} sx={{ mb: [3, 3, 2] }}>
           <Date date={date} />
         </Column>
-        <Column start={1} width={[4, 5, 5, 5]}>
+        <Column start={1} width={[4, 6, 5, 5]}>
           <Box
             sx={{
               mb: ['8px', '15px', '14px', '14px'],

@@ -15,11 +15,11 @@ const Highlight = ({
   sx,
 }) => {
   return (
-    <Box sx={{ py: [4, 3, 3, 4], ...sx }}>
+    <Box sx={{ py: [4, 4, 3, 4], ...sx }}>
       <Date date={date} sx={{ mb: [3, 3, 2] }} />
       <Box
         sx={{
-          mb: ['14px'],
+          mb: ['15px'],
           ml: ['-1px'],
           lineHeight: 'heading',
           fontFamily: 'heading',

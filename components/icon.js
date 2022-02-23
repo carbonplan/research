@@ -10,8 +10,8 @@ const Icon = ({ color, icon, link }) => {
       sx={{
         cursor: 'pointer',
         display: ['inline-block'],
-        width: ['80px', '120px', '120px', '150px'],
-        height: ['80px', '120px', '120px', '150px'],
+        width: ['80px', '120px', '130px', '150px'],
+        height: ['80px', '120px', '130px', '150px'],
         float: ['none', 'none', 'right', 'right'],
         position: 'relative',
         borderRadius: '50%',
@@ -24,7 +24,7 @@ const Icon = ({ color, icon, link }) => {
           },
           '&:hover > #arrow': {
             opacity: 1,
-            left: ['20px', '22px', '22px', '30px'],
+            left: ['-10px', '-22px', '-30px', '30px'],
           },
         },
       }}
@@ -51,8 +51,8 @@ const Icon = ({ color, icon, link }) => {
         sx={{
           fontFamily: 'faux',
           position: 'absolute',
-          top: ['-14px', '-20px', '-20px', '-24px'],
-          left: ['10px', '10px', '10px', '10px'],
+          top: ['-25px', '-20px', '-15px', '-24px'],
+          left: ['-20px', '-42px', '-50px', '10px'],
           width: '100%',
           height: '100%',
           display: 'inline-block',
@@ -61,6 +61,7 @@ const Icon = ({ color, icon, link }) => {
           color: 'text',
           zIndex: 500,
           transition: '0.25s',
+          display: ['none', 'initial', 'initial', 'intial'],
           opacity: 0,
         }}
       >

@@ -5,6 +5,8 @@ import {
   PermanenceCalculator,
   DACCalculator,
   SoilProtocols,
+  ComplianceUsers,
+  ForestCarbon,
 } from '../components/tool-logos'
 
 const tools = [
@@ -25,7 +27,7 @@ const tools = [
   },
   {
     id: 'compliance-users',
-    logo: <DACCalculator />,
+    logo: <ComplianceUsers />,
     color: 'blue',
     summary: 'Tracking the users of compliance offsets.',
     title: 'Compliance users',
@@ -54,7 +56,7 @@ const tools = [
   },
   {
     id: 'forest-carbon',
-    logo: <DACCalculator />,
+    logo: <ForestCarbon />,
     color: 'green',
     summary: 'Mapping emissions related to forest carbon.',
     title: 'Forest Carbon',
