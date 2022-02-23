@@ -1,4 +1,4 @@
-import { Box, Divider } from 'theme-ui'
+import { Box } from 'theme-ui'
 import { Button } from '@carbonplan/components'
 import { forwardRef } from 'react'
 import { useBreakpointIndex } from '@theme-ui/match-media'
@@ -25,46 +25,56 @@ const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
     <Box
       sx={{
         position: 'sticky',
-        top: ['56px', '56px', '106px', '120px'],
-        pt: [2, 2, 0, 0],
+        top: ['55px', '55px', '106px', '120px'],
         height: 'auto',
         bg: 'background',
         zIndex: 501,
       }}
       ref={ref}
     >
-      {SECTIONS.map(({ id, label }, i) => (
-        <Box
-          key={id}
-          sx={{
-            display: ['inline-block', 'inline-block', 'block'],
-            mr: [4, 4, 0],
-            borderStyle: 'solid',
-            borderColor: 'muted',
-            borderWidth: '0px',
-            borderBottomWidth: [0, 0, '1px'],
-          }}
-        >
-          <Button
-            onClick={() => selectSection(id, index >= 2)}
+      <Box
+        sx={{
+          mx: [-4, -5, 0, 0],
+          px: [4, 5, 0, 0],
+          py: [2, 2, 0, 0],
+          borderStyle: 'solid',
+          borderColor: 'muted',
+          borderWidth: '0px',
+          borderTopWidth: ['1px', '1px', 0],
+          borderBottomWidth: ['1px', '1px', 0],
+        }}
+      >
+        {SECTIONS.map(({ id, label }, i) => (
+          <Box
+            key={id}
             sx={{
-              ...sx.heading,
-              my: [1, 1, 3, 4],
-              mt: [1, 1, i === 0 ? 0 : 3, i === 0 ? 0 : 4],
-              color: [
-                selected === id ? 'primary' : 'secondary',
-                selected === id ? 'primary' : 'secondary',
-                scrolled === id ? 'primary' : 'secondary',
-                scrolled === id ? 'primary' : 'secondary',
-              ],
+              display: ['inline-block', 'inline-block', 'block'],
+              mr: [4, 4, 0],
+              borderStyle: 'solid',
+              borderColor: 'muted',
+              borderWidth: '0px',
+              borderBottomWidth: [0, 0, '1px'],
             }}
           >
-            {label}
-          </Button>
-        </Box>
-      ))}
-
-      <Divider sx={{ display: ['inherit', 'inherit', 'none'] }} />
+            <Button
+              onClick={() => selectSection(id, index >= 2)}
+              sx={{
+                ...sx.heading,
+                my: [1, 1, 3, 4],
+                mt: [1, 1, i === 0 ? 0 : 3, i === 0 ? 0 : 4],
+                color: [
+                  selected === id ? 'primary' : 'secondary',
+                  selected === id ? 'primary' : 'secondary',
+                  scrolled === id ? 'primary' : 'secondary',
+                  scrolled === id ? 'primary' : 'secondary',
+                ],
+              }}
+            >
+              {label}
+            </Button>
+          </Box>
+        ))}
+      </Box>
     </Box>
   )
 })
