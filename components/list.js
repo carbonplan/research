@@ -73,8 +73,9 @@ const List = forwardRef(
           id={showAllItems ? undefined : id}
           sx={{
             ...sx.heading,
-            scrollMarginTop: [null, null, '98px', '116px'],
+            scrollMarginTop: [null, null, '103px', '117px'],
             display: ['none', 'none', 'inherit', 'inherit'],
+            mb: [4, 5, 6, 7],
           }}
         >
           {label}
