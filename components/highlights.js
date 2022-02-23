@@ -42,11 +42,6 @@ const sx = {
     textTransform: 'uppercase',
   },
   columnDivider: {
-    borderStyle: 'solid',
-    borderColor: 'muted',
-    borderWidth: '0px',
-    borderTopWidth: ['1px', '1px', '0px'],
-    borderLeftWidth: ['0px', '0px', '1px', '1px'],
     pl: [
       0,
       0,
@@ -81,25 +76,14 @@ const Highlights = forwardRef(({ selected }, ref) => {
         sx={{
           ...sx.heading,
           display: ['none', 'none', 'inherit', 'inherit'],
+          mb: [4, 5, 6, 7],
         }}
       >
         Highlights
       </Box>
 
-      <Box
-        sx={{
-          pl: [0, 0, 5, 6],
-          ml: [0, 0, -5, -6],
-          mb: [4, 6, 6, 7],
-          borderStyle: 'solid',
-          borderColor: 'muted',
-          borderWidth: '0px',
-          borderLeftWidth: ['0px', '0px', '1px', '1px'],
-        }}
-      >
+      <Box sx={{}}>
         <Highlight {...HIGHLIGHTS[0]} />
-
-        <Divider />
 
         <Highlight {...HIGHLIGHTS[1]} sx={{ pb: [0, 0, 0, 0] }} />
       </Box>

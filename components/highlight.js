@@ -15,7 +15,22 @@ const Highlight = ({
   sx,
 }) => {
   return (
-    <Box sx={{ py: [4, 4, 3, 4], ...sx }}>
+    <Box
+      sx={{
+        pt: [4, 4, 0, 0],
+        pb: [4, 4, 3, 4],
+        mb: [0, 0, 6, 7],
+        pl: [4, 5, 5, 6],
+        ml: [-4, -5, -5, -6],
+        borderLeft: ({ colors }) => [
+          'none',
+          'none',
+          `solid 1px ${colors.muted}`,
+          `solid 1px ${colors.muted}`,
+        ],
+        ...sx,
+      }}
+    >
       <Date date={date} sx={{ mb: [3, 3, 2] }} />
       <Box
         sx={{
