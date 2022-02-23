@@ -49,13 +49,12 @@ const Main = () => {
   useEffect(() => {
     const scrollListener = () => {
       const navBottom = navRef.current?.getBoundingClientRect()?.bottom
-      const active =
-        Object.keys(listRefs)
-          .reverse()
-          .find((key) => {
-            const ref = listRefs[key]
-            return navBottom > ref.current?.getBoundingClientRect()?.top
-          }) || 'highlights'
+      const active = Object.keys(listRefs)
+        .reverse()
+        .find((key) => {
+          const ref = listRefs[key]
+          return navBottom > ref.current?.getBoundingClientRect()?.top
+        })
       setScrolled(active)
     }
     window.addEventListener('scroll', scrollListener)
