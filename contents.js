@@ -1,6 +1,24 @@
 const contents = {
   articles: [
     {
+      id: 'natural-working-lands',
+      number: 14,
+      version: '1.0.0',
+      date: '03-01-2022',
+      title: 'Title',
+      authors: ['Oriana Chegwidden', 'Sadie Frank', 'Danny Cullenward'],
+      color: 'yellow',
+      quickLook: 'Quicklook...',
+      background: '',
+      card: 'natural-working-lands',
+      tags: ['article'],
+      summary: 'Summary...',
+      icon: '',
+      links: [
+        { label: 'Read article', href: '/research/natural-working-lands' },
+      ],
+    },
+    {
       id: 'ton-year-explainer',
       number: 13,
       version: '1.0.1',
