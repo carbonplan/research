@@ -29,7 +29,7 @@ const Publication = ({ info, first }) => {
         mb: [3, 5, 5, 6],
       }}
     >
-      <Flex sx={{ justifyContent: 'space-between', mb: 2 }}>
+      <Flex sx={{ justifyContent: 'space-between', mb: [3, 3, 2] }}>
         <Date date={date} />
         {journal && (
           <Tag sx={{ color: 'secondary', textAlign: 'right' }}>{journal}</Tag>

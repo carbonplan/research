@@ -74,22 +74,10 @@ const Article = ({ info, first }) => {
       }}
     >
       <Row columns={[6, 8, 7, 7]}>
-        <Column
-          start={[3, 1, 1, 1]}
-          width={[2, 2, 2, 2]}
-          sx={{
-            order: [4, 4, 1, 1],
-            display: ['none', 'none', 'inherit', 'inherit'],
-            mb: 2,
-          }}
-        >
+        <Column start={1} width={[6, 6, 2, 2]} sx={{ mb: [3, 3, 2] }}>
           <Date date={date} />
         </Column>
-        <Column
-          start={[3, 3, 1, 1]}
-          width={[4, 5, 5, 5]}
-          sx={{ order: [2, 2, 2, 2] }}
-        >
+        <Column start={1} width={[4, 5, 5, 5]}>
           <Box
             sx={{
               mb: ['14px'],
@@ -124,11 +112,6 @@ const Article = ({ info, first }) => {
             </Link>
           </Box>
 
-          <Date
-            date={date}
-            sx={{ display: ['inherit', 'inherit', 'none', 'none'] }}
-          />
-
           <Inner
             summary={summary}
             links={links}
@@ -137,24 +120,23 @@ const Article = ({ info, first }) => {
         </Column>
 
         <Column
-          start={1}
-          width={6}
-          sx={{
-            order: [3, 3, 4, 4],
-            display: ['inherit', 'none', 'none', 'none'],
-          }}
-        >
-          <Inner summary={summary} links={links} />
-        </Column>
-
-        <Column
-          start={[1, 1, 7, 6]}
-          width={[2, 2, 2, 2]}
-          sx={{ order: [1, 1, 3, 3] }}
+          start={[5, 7, 7, 6]}
+          width={2}
+          sx={{ textAlign: 'right', mt: [-5, 0] }}
         >
           <Link tabIndex='-1' href={links[linkIndex].href} tracking>
             <Icon icon={icon} color={color} />
           </Link>
+        </Column>
+
+        <Column
+          start={1}
+          width={6}
+          sx={{
+            display: ['inherit', 'none', 'none', 'none'],
+          }}
+        >
+          <Inner summary={summary} links={links} />
         </Column>
       </Row>
     </Box>

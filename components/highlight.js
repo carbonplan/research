@@ -16,7 +16,7 @@ const Highlight = ({
 }) => {
   return (
     <Box sx={{ py: [3, 3, 3, 4], ...sx }}>
-      <Date date={date} sx={{ mb: 2 }} />
+      <Date date={date} sx={{ mb: [3, 3, 2] }} />
       <Box
         sx={{
           mb: ['14px'],
