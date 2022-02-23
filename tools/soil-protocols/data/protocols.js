@@ -3437,10 +3437,10 @@ export const protocols = {
     name: 'FAO',
     entity: 'FAO',
     details: {
-      protocol: 'GSOL MRV Protocol',
+      protocol: 'GSOC MRV Protocol',
       links: [
         {
-          name: 'GSOL MRV Protocol',
+          name: 'GSOC MRV Protocol',
           href: 'http://www.fao.org/3/cb0509en/cb0509en.pdf',
         },
       ],
@@ -3465,19 +3465,19 @@ export const protocols = {
         details: {
           buffer_pool: {
             value: 'Required',
-            reference: 'GSOL MRV Protocol, Section 4.5',
+            reference: 'GSOC MRV Protocol, Section 4.5',
             comment:
               'Protocol requires 5% risk of reversal discount to be applied to all sequestration/removal projects. Protocol is not currently associated with a crediting system, and no formal buffer pool is associated with this protocol. ',
           },
           leakage_test: {
             value: 'Required',
-            reference: 'GSOL MRV Protocol, Section 4.5',
+            reference: 'GSOC MRV Protocol, Section 4.5',
             comment:
               'Protocol requires 5% risk of reversal discount to be applied to all sequestration/removal projects. Protocol is not currently associated with a crediting system, and no formal buffer pool is associated with this protocol. ',
           },
           uncertainty_deduction: {
             value: 'Required',
-            reference: 'GSOL MRV Protocol, Section 4.5',
+            reference: 'GSOC MRV Protocol, Section 4.5',
             comment:
               'Protocol requires 5% risk of reversal discount to be applied to all sequestration/removal projects. Protocol is not currently associated with a crediting system, and no formal buffer pool is associated with this protocol. ',
           },
@@ -3485,17 +3485,17 @@ export const protocols = {
             value: 'None',
             reference: 'Not described',
             comment:
-              'See GSOL MRV Protocol, Section 9 for a general discussion of monitoring and verification. The protocol contemplates third-party verification by parties acceptable to FAO, based on a set of documentation requirements. There is no discussion of site visits or sampling verification. ',
+              'See GSOC MRV Protocol, Section 9 for a general discussion of monitoring and verification. The protocol contemplates third-party verification by parties acceptable to FAO, based on a set of documentation requirements. There is no discussion of site visits or sampling verification. ',
           },
           sampling_verification: {
             value: 'None',
             reference: 'Not described',
             comment:
-              'See GSOL MRV Protocol, Section 9 for a general discussion of monitoring and verification. The protocol contemplates third-party verification by parties acceptable to FAO, based on a set of documentation requirements. There is no discussion of site visits or sampling verification. ',
+              'See GSOC MRV Protocol, Section 9 for a general discussion of monitoring and verification. The protocol contemplates third-party verification by parties acceptable to FAO, based on a set of documentation requirements. There is no discussion of site visits or sampling verification. ',
           },
           crediting_period: {
             value: 8,
-            reference: 'GSOL MRV Protocol, Section 5.3',
+            reference: 'GSOC MRV Protocol, Section 5.3',
             comment:
               'This protocol is not associated with a crediting scheme, and therefore there no formal crediting period is defined. However, protocol does require that the total duration of the project is at least eight consecutive years to collect enough data to demonstrate soil carbon sequestration compared to a baseline scenario and baseline period. We report this as a lower bound for a crediting scheme using this protocol. ',
           },
@@ -3503,7 +3503,7 @@ export const protocols = {
             value: 8,
             reference: 'Not described',
             comment:
-              'See GSOL MRV Protocol, Section 4.5 for a general discussion of permanence. This protocol is not associated with a crediting scheme, and therefore no formal crediting period or permanence periods are defined. However, protocol does require that the total duration of the project is at least 8 consecutive years to collect enough data to demonstrate soil carbon sequestration compared to a baseline scenario and baseline period. We report this as a lower permanence bound for a crediting scheme using this protocol. Despite the protocol defining the "permanence" concept as the "period of time in which a specific carbon pool is stored," no time dimension is given to the expectation or requirements beyond the 8-year project crediting period necessary to provide sufficient certainty in SOC calculations. ',
+              'See GSOC MRV Protocol, Section 4.5 for a general discussion of permanence. This protocol is not associated with a crediting scheme, and therefore no formal crediting period or permanence periods are defined. However, protocol does require that the total duration of the project is at least 8 consecutive years to collect enough data to demonstrate soil carbon sequestration compared to a baseline scenario and baseline period. We report this as a lower permanence bound for a crediting scheme using this protocol. Despite the protocol defining the "permanence" concept as the "period of time in which a specific carbon pool is stored," no time dimension is given to the expectation or requirements beyond the 8-year project crediting period necessary to provide sufficient certainty in SOC calculations. ',
           },
           notes:
             'Technically there is no buffer pool, but all projects must take a 5% deduction to account for permanence risks so we record the protocol as having a buffer pool-like feature. No permanence horizon is defined. There is no leakage test. The protocol states that it is expected a minumum of 8 years is needed to demonstrate soil carbon sequestation relative to the baseline scenario. Monitoring and general documentation requirements for verification are provided, but do not indicate any reuqirement for site visits or independent sampling from third-party verifiers. ',
@@ -3516,14 +3516,14 @@ export const protocols = {
         details: {
           included: {
             value: ['Grazing', 'Cropping', 'Inputs', 'Tillage', 'Other'],
-            reference: 'GSOL MRV Protocol, Section 4.3',
+            reference: 'GSOC MRV Protocol, Section 4.3',
             comment: '',
           },
           geographies: {
             value: 'Global',
             reference: 'Implied',
             comment:
-              'GSOL MRV Protocol, Section 4.2 for general discussion of eligible lands. No specific geographic limitations provided.',
+              'GSOC MRV Protocol, Section 4.2 for general discussion of eligible lands. No specific geographic limitations provided.',
           },
           cobenefits: {
             value: 'None',
@@ -3543,19 +3543,19 @@ export const protocols = {
             value: 'None',
             reference: 'Not described',
             comment:
-              'See GSOL MRV Protocol, Section 7 for a general discussion of additionality. ',
+              'See GSOC MRV Protocol, Section 7 for a general discussion of additionality. ',
           },
           performance: {
             value: 'None',
             reference: 'Not described',
             comment:
-              'See GSOL MRV Protocol, Section 7 for a general discussion of additionality. ',
+              'See GSOC MRV Protocol, Section 7 for a general discussion of additionality. ',
           },
           other: {
             value: 'None',
             reference: 'Not described',
             comment:
-              'See GSOL MRV Protocol, Section 7 for a general discussion of additionality. ',
+              'See GSOC MRV Protocol, Section 7 for a general discussion of additionality. ',
           },
           activity_backdating: {
             value: 'N/A',
@@ -3577,65 +3577,65 @@ export const protocols = {
         details: {
           ghgs: {
             value: ['CO\u2082', 'CH\u2084', 'N\u2082O'],
-            reference: 'GSOL MRV Protocol, Section 7.2',
+            reference: 'GSOC MRV Protocol, Section 7.2',
             comment: '',
           },
           bulk_density: {
             value: 'Measured',
-            reference: 'GSOL MRV Protocol, Sections 8.1 and A3.6',
+            reference: 'GSOC MRV Protocol, Sections 8.1 and A3.6',
             comment:
               'Bulk density is quantified using direct measurement methods, specifically the undisturbed (intact) core method and the excavation method',
           },
           depth: {
             value: '30 cm',
-            reference: 'GSOL MRV Protocol, Section A3.4',
+            reference: 'GSOC MRV Protocol, Section A3.4',
             comment:
               'Sampling down to 30cm is required, but sampling down to 1m is recommended, distinguishing between soil layers.',
           },
           equivalent_soil_mass: {
             value: 'Required ',
-            reference: 'GSOL MRV Protocol, Section A4.2',
+            reference: 'GSOC MRV Protocol, Section A4.2',
             comment: '',
           },
           uncertainty: {
             value: 'None',
-            reference: 'GSOL MRV Protocol, Annex 3, Section A3.1.1',
+            reference: 'GSOC MRV Protocol, Annex 3, Section A3.1.1',
             comment:
               'There is no explicit guidance on how to estimate uncertainty in SOC stock changes, although optional guidance is provided on how to select an appropriate number of sample sites based on uncertainty analysis and basic statistics. ',
           },
           baseline_type: {
             value: 'Dynamic',
             reference:
-              'GSOL MRV Protocol, Sections 7.1, 8.2, 8.3 (Table 1), and A1.3',
+              'GSOC MRV Protocol, Sections 7.1, 8.2, 8.3 (Table 1), and A1.3',
             comment:
               'Baseline SOC is modeled for a 20-year period, using historic and projected activity data ',
           },
           baseline_scenario: {
             value: 'Sampling required / Modeling required',
-            reference: 'GSOL MRV Protocol, Sections 8.1, 8.2 and A1.3',
+            reference: 'GSOC MRV Protocol, Sections 8.1, 8.2 and A1.3',
             comment:
               'Baseline scenario requires soil sampling and periodic modeling updates. ',
           },
           project_scenario: {
             value: 'Sampling required / Modeling required',
-            reference: 'GSOL MRV Protocol, Sections 8.1 and 8.2',
+            reference: 'GSOC MRV Protocol, Sections 8.1 and 8.2',
             comment: '',
           },
           empirical_crediting: {
             value: 'Yes',
-            reference: 'GSOL MRV Protocol, Sections 8.1 and 8.2',
+            reference: 'GSOC MRV Protocol, Sections 8.1 and 8.2',
             comment:
-              'This protocol is not associated with a crediting system. Given the extensive sampling required under the monitoring approach (see GSOL MRV Protocol, Section 8), anyone employing the FAO protocol methods to issue credits would issue those credits on the basis of empirical measurements. ',
+              'This protocol is not associated with a crediting system. Given the extensive sampling required under the monitoring approach (see GSOC MRV Protocol, Section 8), anyone employing the FAO protocol methods to issue credits would issue those credits on the basis of empirical measurements. ',
           },
           sampling_approach: {
             value: 3,
-            reference: 'GSOL MRV Protocol, Annex 3, Section 3.1.1',
+            reference: 'GSOC MRV Protocol, Annex 3, Section 3.1.1',
             comment:
               'Pre-sampling is required to describe the within-site variation and determine sampling density per stratum to ensure low across-sample variation. The pre-sampling is used to guide estimation of the number of samples needed to determine SOC stock change with an acceptable level of uncertainty and to detect an expected difference between two successive sampling rounds. It is also recommended that samples be collected from a minimum of 5 composites of 5-15 soil cores to form a composite sample, and a minimum of 3 strata within each site. ',
           },
           model: {
             value: 'Flexible / Undefined',
-            reference: 'GSOL MRV Protocol, Sections 7.1 and 8.2',
+            reference: 'GSOC MRV Protocol, Sections 7.1 and 8.2',
             comment:
               'Evidence from scientific journals, university theses, local research studies or work carried out by the project proponent to demonstrate that the SOC model is appropriate for the agroecological zone where the project is located.',
           },
@@ -3672,6 +3672,10 @@ export const protocols = {
     revisions: [
       { date: '07-15-2021', note: 'First release.' },
       { date: '08-04-2021', note: 'Fixed typo.' },
+      {
+        date: '02-22-2022',
+        note: 'Fixed typo (GSOL --> GSOC in protocol name).',
+      },
     ],
   },
   SOIL015: {
