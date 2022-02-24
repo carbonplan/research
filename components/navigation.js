@@ -65,7 +65,7 @@ const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
                 if (manuallyScroll) {
                   window.scrollTo({
                     left: 0,
-                    top: index === 0 ? 183 : 147,
+                    top: index === 0 ? 183 : 148,
                     behavior: 'smooth',
                   })
                 }
