@@ -19,7 +19,7 @@ const HIGHLIGHTS = [
   },
   {
     id: 'soil-protocols',
-    date: '10-13-2022',
+    date: '10-13-2021',
     href: '/blog/soil-protocols-added',
     title: 'Soil carbon protocols',
     color: 'orange',
