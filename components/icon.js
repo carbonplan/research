@@ -24,7 +24,7 @@ const Icon = ({ color, icon, link }) => {
           },
           '&:hover > #arrow': {
             opacity: 1,
-            left: ['-10px', '-22px', '-30px', '30px'],
+            left: ['20px', '19px', '24px', '25px'],
           },
         },
       }}
@@ -51,8 +51,8 @@ const Icon = ({ color, icon, link }) => {
         sx={{
           fontFamily: 'faux',
           position: 'absolute',
-          top: ['-25px', '-20px', '-15px', '-24px'],
-          left: ['-20px', '-42px', '-50px', '10px'],
+          top: ['-14px', '0px', '0px', '0px'],
+          left: ['0px', '0px', '0px', '0px'],
           width: '100%',
           height: '100%',
           display: 'inline-block',
@@ -63,9 +63,15 @@ const Icon = ({ color, icon, link }) => {
           transition: '0.25s',
           display: ['none', 'initial', 'initial', 'intial'],
           opacity: 0,
+          textAlign: 'left',
         }}
       >
-        →
+        <Box
+          as='span'
+          sx={{ position: 'relative', top: [0, '-19px', '-15px', '-25px'] }}
+        >
+          →
+        </Box>
       </Text>
     </Box>
   )
