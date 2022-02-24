@@ -83,7 +83,7 @@ const List = forwardRef(
 
         <Box
           id={showAllItems ? id : undefined}
-          sx={{ scrollMarginTop: ['148px', '154px'] }}
+          sx={{ scrollMarginTop: ['170px', '138px'] }}
         >
           <Entries items={visibleItems} />
           {!showAllItems && items.length > limit && (
