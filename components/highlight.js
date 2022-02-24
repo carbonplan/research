@@ -34,18 +34,25 @@ const Highlight = ({
       <Date date={date} sx={{ mb: [3, 3, 2] }} />
       <Box
         sx={{
-          mb: ['15px'],
+          mb: ['15px', '14px', '15px', '15px'],
           ml: ['-1px'],
-          lineHeight: 'heading',
-          fontFamily: 'heading',
-          fontSize: [4, 5, 5, 6],
         }}
       >
         <Button
           href={href || `research/${id}`}
           tracking
-          suffix={<RotatingArrow color={color} />}
+          suffix={
+            <RotatingArrow
+              color={color}
+              sx={{ width: [20, 20, 26, 36], height: [20, 20, 26, 36] }}
+            />
+          }
           size='md'
+          sx={{
+            lineHeight: 'heading',
+            fontFamily: 'heading',
+            fontSize: [4, 4, 5, 6],
+          }}
         >
           {title}
         </Button>

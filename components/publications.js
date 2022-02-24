@@ -41,7 +41,7 @@ const Publication = ({ info, first }) => {
 
       <Box
         sx={{
-          mb: ['14px', '14px', '12px', '14px'],
+          mb: ['14px', '13px', '12px', '14px'],
           ml: ['-1px'],
           mt: journal && ['-3px'],
           lineHeight: 1.1,
