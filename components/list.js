@@ -1,4 +1,4 @@
-import { forwardRef, useEffect, useMemo, useState } from 'react'
+import { forwardRef, useMemo, useState } from 'react'
 import { Box, Divider } from 'theme-ui'
 import { useBreakpointIndex } from '@theme-ui/match-media'
 import { Expander } from '@carbonplan/components'
@@ -26,10 +26,7 @@ const List = forwardRef(
   ({ id, label, items, selected, limit = 4, Entries }, ref) => {
     const index = useBreakpointIndex({ defaultIndex: 2 })
     const showAllItems = index < 2
-    const [{ expanded, initial }, setExpanded] = useState({
-      expanded: false,
-      initial: true,
-    })
+    const [expanded, setExpanded] = useState(false)
     const visibleItems = useMemo(() => {
       if (showAllItems || items.length <= limit || expanded) {
         return items
@@ -37,14 +34,6 @@ const List = forwardRef(
         return items.slice(0, limit)
       }
     }, [expanded, items, limit, showAllItems])
-
-    useEffect(() => {
-      if (!initial && !expanded && !showAllItems) {
-        document.querySelector(`#${id}`).scrollIntoView({
-          behavior: 'smooth',
-        })
-      }
-    }, [expanded, showAllItems, initial])
 
     return (
       <Box
@@ -88,9 +77,7 @@ const List = forwardRef(
           <Entries items={visibleItems} />
           {!showAllItems && items.length > limit && (
             <Box
-              onClick={() =>
-                setExpanded({ expanded: !expanded, initial: false })
-              }
+              onClick={() => setExpanded(!expanded)}
               sx={{
                 ...sx.expander,
                 transition: 'color 0.25s',
