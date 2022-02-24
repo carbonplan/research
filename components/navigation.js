@@ -1,6 +1,7 @@
 import { Box } from 'theme-ui'
 import { Button } from '@carbonplan/components'
 import { forwardRef } from 'react'
+import { useBreakpointIndex } from '@theme-ui/match-media'
 
 const SECTIONS = [
   { id: 'highlights', label: 'Highlights' },
@@ -20,6 +21,8 @@ const sx = {
   },
 }
 const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
+  const index = useBreakpointIndex({ defaultIndex: 2 })
+
   return (
     <Box
       sx={{
@@ -56,7 +59,18 @@ const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
             }}
           >
             <Button
-              onClick={() => selectSection(id)}
+              onClick={() => {
+                const manuallyScroll = index < 2
+                // Explicitly scroll navigation into view on mobile and tablet
+                if (manuallyScroll) {
+                  window.scrollTo({
+                    left: 0,
+                    top: index === 0 ? 183 : 147,
+                    behavior: 'smooth',
+                  })
+                }
+                selectSection(id, !manuallyScroll)
+              }}
               sx={{
                 ...sx.heading,
                 my: [1, 1, 3, 4],
