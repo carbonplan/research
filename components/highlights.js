@@ -1,34 +1,36 @@
 import { forwardRef } from 'react'
 import { Box, Divider } from 'theme-ui'
 import Highlight from './highlight'
-import { TonYear } from './highlight-images'
+import { TonYear, SoilProtocols } from './highlight-images'
 
 const HIGHLIGHTS = [
   {
     id: 'ton-year-explainer',
     date: '01-31-2022',
-    title: 'Unpacking ton-year accounting',
+    title: 'Ton-year accounting',
     color: 'pink',
     summary:
-      'Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods.',
+      "There's growing interest in methods to value temporary carbon storage. In two recent pieces, we explain a practice called ton-year accounting, and raise concerns about how it's being used in practice.",
     links: [
-      { label: 'Read article', href: '/research/ton-year-explainer' },
+      { label: 'Explainer article', href: '/research/ton-year-explainer' },
       { label: 'Our critique of NCX’s methods', href: '/blog/ton-year-ncx' },
     ],
     logo: <TonYear />,
   },
   {
-    id: 'ton-year-explainer',
-    date: '01-31-2022',
-    title: 'Unpacking ton-year accounting',
-    color: 'pink',
+    id: 'soil-protocols',
+    date: '10-13-2022',
+    href: '/blog/soil-protocols-added',
+    title: 'Soil carbon protocols',
+    color: 'orange',
     summary:
-      'Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods.',
+      'Voluntary carbon markets are ramping up efforts to credit soil carbon. We have now systematically reviewed 17 protocols that certify or issue credits for soil carbon removal.',
     links: [
-      { label: 'Read article', href: '/research/ton-year-explainer' },
-      { label: 'Our critique of NCX’s methods', href: '/blog/ton-year-ncx' },
+      { label: 'Protocol database', href: '/research/soil-protocols' },
+      { label: 'Explainer article', href: '/research/soil-protocol-explainer' },
+      { label: 'Update post', href: '/blog/soil-protocols-added' },
     ],
-    logo: <TonYear />,
+    logo: <SoilProtocols />,
   },
 ]
 

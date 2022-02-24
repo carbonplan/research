@@ -54,7 +54,6 @@ const articles = [
       },
       { label: 'Protocol additions', href: '/blog/soil-protocols-added' },
     ],
-    primaryLink: 2,
   },
   {
     id: 'soil-depth-sampling',
