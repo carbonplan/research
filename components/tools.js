@@ -27,8 +27,8 @@ const Tool = ({ info, start }) => {
           borderLeft: ({ colors }) => [
             'none',
             'none',
-            start[2] === 1 ? `solid 1px ${colors.muted}` : 'none',
-            start[3] === 1 ? `solid 1px ${colors.muted}` : 'none',
+            `solid 1px ${colors.muted}`,
+            `solid 1px ${colors.muted}`,
           ],
           '@media (hover: hover) and (pointer: fine)': {
             '&:hover > #logo': {
@@ -106,8 +106,8 @@ const Tools = ({ items }) => {
           start={[
             1 + (i % 2) * 3,
             1 + (i % 4) * 2,
-            1 + (i % 3) * 2,
-            1 + (i % 3) * 2,
+            1 + (i % 2) * 3,
+            1 + (i % 2) * 3,
           ]}
         />
       ))}
