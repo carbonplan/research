@@ -37,17 +37,7 @@ const Inner = ({ summary, links, sx }) => (
 )
 
 const Article = ({ info, first }) => {
-  let {
-    indexTitle,
-    title,
-    color,
-    tags,
-    date,
-    icon,
-    summary,
-    links,
-    primaryLink,
-  } = info
+  let { title, color, tags, date, icon, summary, links, primaryLink } = info
 
   color = color || 'text'
 
@@ -108,7 +98,7 @@ const Article = ({ info, first }) => {
               href={links[linkIndex].href}
               tracking
             >
-              {indexTitle || title}
+              {title}
             </Link>
           </Box>
 
