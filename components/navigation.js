@@ -60,6 +60,7 @@ const Navigation = forwardRef(({ scrolled, selected, selectSection }, ref) => {
               sx={{
                 ...sx.heading,
                 my: [1, 1, 3, 4],
+                pb: [0, 0, '2px', '2px'],
                 mt: [1, 1, i === 0 ? 0 : 3, i === 0 ? 0 : 4],
                 color: [
                   selected === id ? 'primary' : 'secondary',
