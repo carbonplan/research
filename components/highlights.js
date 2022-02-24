@@ -63,7 +63,7 @@ const Highlights = forwardRef(({ selected }, ref) => {
       ref={ref}
       id='highlights'
       sx={{
-        scrollMarginTop: ['146px', '138px', '258px', '341px'],
+        scrollMarginTop: ['123px', '114px', '258px', '341px'],
         display: [
           selected ? 'inherit' : 'none',
           selected ? 'inherit' : 'none',

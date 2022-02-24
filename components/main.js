@@ -26,7 +26,7 @@ const Main = () => {
     comments: useRef(null),
   }
   const [scrolled, setScrolled] = useState(null)
-  const [selected, setSelected] = useState('highlights')
+  const [selected, setSelected] = useState({ id: 'highlights', scroll: true })
   const index = useBreakpointIndex({ defaultIndex: 2 })
 
   const selectSection = (id, scroll = true) => {
@@ -37,9 +37,13 @@ const Main = () => {
   }
 
   useEffect(() => {
-    if (router.query.section && selected && router.query.section !== selected) {
-      setSelected(router.query.section)
-    } else if (router.query.section) {
+    if (
+      router.query.section &&
+      selected.id &&
+      router.query.section !== selected.id
+    ) {
+      setSelected({ id: router.query.section, scroll: selected.scroll })
+    } else if (selected.scroll && router.query.section) {
       document.querySelector(`#${router.query.section}`).scrollIntoView({
         behavior: 'smooth',
       })
@@ -91,7 +95,7 @@ const Main = () => {
           >
             <Navigation
               ref={navRef}
-              selected={selected}
+              selected={selected.id}
               scrolled={scrolled}
               selectSection={selectSection}
             />
@@ -101,17 +105,17 @@ const Main = () => {
           {index < 2 && (
             <Navigation
               ref={navRef}
-              selected={selected}
+              selected={selected.id}
               scrolled={scrolled}
               selectSection={selectSection}
             />
           )}
 
-          <Highlights selected={selected === 'highlights'} />
+          <Highlights selected={selected.id === 'highlights'} />
           <List
             label='Tools'
             id='tools'
-            selected={selected === 'tools'}
+            selected={selected.id === 'tools'}
             items={tools}
             Entries={Tools}
             width={8}
@@ -121,7 +125,7 @@ const Main = () => {
           <List
             label='Articles'
             id='articles'
-            selected={selected === 'articles'}
+            selected={selected.id === 'articles'}
             items={articles}
             width={8}
             Entries={Articles}
@@ -130,7 +134,7 @@ const Main = () => {
           <List
             label='Publications'
             id='publications'
-            selected={selected === 'publications'}
+            selected={selected.id === 'publications'}
             items={sortByDate(publications)}
             Entries={Publications}
             ref={listRefs.publications}
@@ -138,7 +142,7 @@ const Main = () => {
           <List
             label='Comment letters'
             id='comments'
-            selected={selected === 'comments'}
+            selected={selected.id === 'comments'}
             items={sortByDate(comments)}
             Entries={Publications}
             ref={listRefs.comments}
