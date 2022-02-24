@@ -1,6 +1,7 @@
 const publications = [
   {
-    title: 'Systematic over-crediting',
+    title:
+      "Systematic over-crediting in California's forest carbon offsets program",
     date: '10-20-2021',
     color: 'green',
     summary:
