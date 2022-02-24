@@ -11,7 +11,7 @@ const Publication = ({ info, first }) => {
   color = color || 'text'
 
   if (color == 'secondary') {
-    color = mix('primary', 'background', 0.7)
+    color = mix('primary', 'background', 0.65)
   }
 
   const linkIndex = primaryLink ? primaryLink + 1 : 0

@@ -24,7 +24,7 @@ const Icon = ({ color, icon, link }) => {
           },
           '&:hover > #arrow': {
             opacity: 1,
-            left: ['20px', '19px', '24px', '25px'],
+            left: ['20px', '19px', '25px', '25px'],
           },
         },
       }}

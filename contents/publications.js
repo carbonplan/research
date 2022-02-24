@@ -4,7 +4,7 @@ const publications = [
     date: '10-20-2021',
     color: 'green',
     summary:
-      "California's forest offset program is worth over $2 billion. We analyzed detailed public records to show how statistical flaws in the program's design have led to over-crediting — at a scale of tens of millions of tCO₂ and hundreds of millions of dollars.",
+      "Our paper evaluating the design of California's prominent forest carbon offsets program and demonstrate that its climate-equivalence claims fall far short on the basis of directly observable evidence.",
     journal: 'Global Change Biology',
     links: [
       { label: 'Read paper', href: 'https://doi.org/10.1111/gcb.15943' },
@@ -23,7 +23,7 @@ const publications = [
     color: 'red',
     journal: 'biorxiv',
     summary:
-      'Forests in the United States are already at risk from wildfire, drought, and insects, and climate change is making it worse. We combined satellite and ecological data with climate models to project future risks to forest carbon. Along with a preprint, we are releasing open data, open software, and an interactive web map.',
+      'A paper quantifying the key climate drivers that fuel risks to forests in the United States from wildfire, drought, and insects, and projecting those risks over the 21st century.',
     links: [
       {
         label: 'Read preprint',

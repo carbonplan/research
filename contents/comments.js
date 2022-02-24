@@ -70,9 +70,10 @@ const comments = [
     ],
   },
   {
-    title: 'Soil carbon letter #2',
+    title:
+      'Followup Comments to the Climate Action Reserve on the Soil Enrichment Protocol',
     summary:
-      "A coordinated effort to standardize and scale today's voluntary offsets market is underway. We submitted a joint letter with Carbon Direct and the Berkeley Carbon Trading Project detailing how the Taskforce is ignoring the problem of poor quality rampant in today's market. That problem needs to be addressed first.",
+      'The Climate Action Reserve produced a draft protocol for crediting soil carbon. In our comments we raised several technical concerns, and we also highlighted important issues related to conflicts of interest in the protocol development process.',
     date: '08-25-2020',
     color: 'orange',
     links: [
@@ -87,9 +88,10 @@ const comments = [
     ],
   },
   {
-    title: 'Soil carbon letter #1',
+    title:
+      'Comments to the Climate Action Reserve on the Soil Enrichment Protocol',
     summary:
-      "A coordinated effort to standardize and scale today's voluntary offsets market is underway. We submitted a joint letter with Carbon Direct and the Berkeley Carbon Trading Project detailing how the Taskforce is ignoring the problem of poor quality rampant in today's market. That problem needs to be addressed first.",
+      'The Climate Action Reserve produced a draft protocol for crediting soil carbon. In our comments we raised several technical concerns, and we also highlighted important issues related to conflicts of interest in the protocol development process.',
     date: '05-18-2020',
     color: 'orange',
     links: [

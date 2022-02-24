@@ -97,6 +97,7 @@ const Tools = ({ items }) => {
       sx={{
         pl: [0, 0, 5, 6],
         ml: [0, 0, -5, -6],
+        pt: [1, 1, 0, 0],
       }}
     >
       {items.map((d, i) => (

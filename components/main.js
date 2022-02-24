@@ -12,6 +12,10 @@ import Tools from './tools'
 import Highlights from './highlights'
 import Navigation from './navigation'
 
+const sortByDate = (items) => {
+  return items.sort((a, b) => new Date(b.date) - new Date(a.date))
+}
+
 const Main = () => {
   const router = useRouter()
   const navRef = useRef(null)
@@ -127,7 +131,7 @@ const Main = () => {
             label='Publications'
             id='publications'
             selected={selected === 'publications'}
-            items={publications}
+            items={sortByDate(publications)}
             Entries={Publications}
             ref={listRefs.publications}
           />
@@ -135,7 +139,7 @@ const Main = () => {
             label='Comment letters'
             id='comments'
             selected={selected === 'comments'}
-            items={comments}
+            items={sortByDate(comments)}
             Entries={Publications}
             ref={listRefs.comments}
           />
