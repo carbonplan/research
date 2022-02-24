@@ -86,7 +86,7 @@ const Highlights = forwardRef(({ selected }, ref) => {
 
       <Box sx={{}}>
         <Highlight {...HIGHLIGHTS[0]} />
-
+        <Divider sx={{ display: ['inherit', 'inherit', 'none', 'none'] }} />
         <Highlight {...HIGHLIGHTS[1]} sx={{ pb: [0, 0, 0, 0] }} />
       </Box>
     </Box>
