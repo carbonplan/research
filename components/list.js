@@ -38,6 +38,7 @@ const List = forwardRef(
       }
     }, [expanded, items, limit, showAllItems])
 
+    // Scroll to top of section when expander is closed
     useEffect(() => {
       if (!initial && !expanded && !showAllItems) {
         document.querySelector(`#${id}`).scrollIntoView({

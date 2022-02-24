@@ -26,37 +26,45 @@ const Main = () => {
     comments: useRef(null),
   }
   const [scrolled, setScrolled] = useState(null)
-  const [selected, setSelected] = useState('highlights')
   const index = useBreakpointIndex({ defaultIndex: 2 })
+  const selected = router.query.section || 'highlights'
+
+  const scrollToSection = (id) => {
+    if (index < 2) {
+      window.scrollTo({
+        left: 0,
+        top: index === 0 ? 183 : 148,
+        behavior: 'smooth',
+      })
+    } else {
+      document.querySelector(`#${id}`).scrollIntoView({
+        behavior: 'smooth',
+      })
+    }
+  }
 
   const selectSection = (id) => {
-    router.replace(
-      { pathname: '/research', query: { section: id } },
-      undefined,
-      {
-        scroll: false,
-      }
-    )
-    setSelected(id)
+    if (id !== router.query.section) {
+      // Update query when not already set
+      router.replace(
+        { pathname: '/research', query: { section: id } },
+        undefined,
+        {
+          scroll: false,
+        }
+      )
+    } else {
+      // Explicitly scroll to section when query is unchanged
+      scrollToSection(id)
+    }
   }
 
   useEffect(() => {
-    if (router.query.section && selected && router.query.section !== selected) {
-      setSelected(router.query.section)
-    } else if (router.query.section) {
-      if (index < 2) {
-        window.scrollTo({
-          left: 0,
-          top: index === 0 ? 183 : 148,
-          behavior: 'smooth',
-        })
-      } else {
-        document.querySelector(`#${router.query.section}`).scrollIntoView({
-          behavior: 'smooth',
-        })
-      }
+    // Scroll to active section on initialization of query, on query change, or when screen size changes
+    if (router.query.section) {
+      scrollToSection(router.query.section)
     }
-  }, [selected, router.query.section, index])
+  }, [router.query.section, index])
 
   useEffect(() => {
     const scrollListener = () => {
