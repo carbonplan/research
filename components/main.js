@@ -30,16 +30,16 @@ const Main = () => {
   const index = useBreakpointIndex({ defaultIndex: 2 })
 
   const selectSection = (id) => {
-    router.push({ pathname: '/research', query: { section: id } }, undefined, {
+    router.push({ pathname: '/research', hash: id }, undefined, {
       scroll: false,
     })
     setSelected(id)
   }
 
   useEffect(() => {
-    if (router.query.section && selected && router.query.section !== selected) {
-      setSelected(router.query.section)
-    } else if (router.query.section) {
+    if (router.hash && selected && router.hash !== selected) {
+      setSelected(router.hash)
+    } else if (router.hash) {
       if (index < 2) {
         window.scrollTo({
           left: 0,
@@ -47,12 +47,12 @@ const Main = () => {
           behavior: 'smooth',
         })
       } else {
-        document.querySelector(`#${router.query.section}`).scrollIntoView({
+        document.querySelector(`#${router.hash}`).scrollIntoView({
           behavior: 'smooth',
         })
       }
     }
-  }, [selected, router.query.section, index])
+  }, [selected, router.hash, index])
 
   useEffect(() => {
     const scrollListener = () => {
