@@ -35,8 +35,6 @@ export const meta = {
   ],
 }
 
-# Carbon offsets burning
-
 In the middle of a record fire season on the US West Coast, the [Lionshead Fire](http://inciweb.nwcg.gov/incident/7049/) in Oregon burned through one of the largest forest carbon offset projects participating in [California’s carbon market](https://ww2.arb.ca.gov/our-work/programs/cap-and-trade-program). Beyond the tragic effects on local communities and hazardous regional air quality, the expected carbon losses from this fire illustrate how California’s approach of using forests to mitigate climate change may need re-evaluation.
 
 Here we analyze how future fires might affect California’s offset program and compare these likely consequences to its “buffer pool” insurance mechanism designed to protect against forest carbon loss. While quantifying the full carbon impact of the Lionshead Fire will require additional information, the available evidence highlights the risks to forest carbon permanence, many of which are accelerating in a warming climate.
