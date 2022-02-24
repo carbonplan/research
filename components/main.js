@@ -30,9 +30,13 @@ const Main = () => {
   const index = useBreakpointIndex({ defaultIndex: 2 })
 
   const selectSection = (id) => {
-    router.push({ pathname: '/research', query: { section: id } }, undefined, {
-      scroll: false,
-    })
+    router.replace(
+      { pathname: '/research', query: { section: id } },
+      undefined,
+      {
+        scroll: false,
+      }
+    )
     setSelected(id)
   }
 
