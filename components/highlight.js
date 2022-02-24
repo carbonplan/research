@@ -1,5 +1,5 @@
 import { Box } from 'theme-ui'
-import { Button, LinkGroup } from '@carbonplan/components'
+import { Button, LinkGroup, Row, Column } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
 import Date from './date'
 
@@ -58,16 +58,20 @@ const Highlight = ({
         </Button>
       </Box>
 
-      <Box
-        sx={{
-          mt: [2],
-          mb: [1],
-          fontSize: [2, 2, 2, 3],
-          lineHeight: 1.35,
-        }}
-      >
-        {summary}
-      </Box>
+      <Row columns={[6, 8, 7, 7]}>
+        <Column start={[1]} width={[6, 8, 6, 6]}>
+          <Box
+            sx={{
+              mt: [2],
+              mb: [1],
+              fontSize: [2, 2, 2, 3],
+              lineHeight: 1.35,
+            }}
+          >
+            {summary}
+          </Box>
+        </Column>
+      </Row>
       <Box
         sx={{
           mt: ['12px'],
