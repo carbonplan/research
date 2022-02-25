@@ -34,7 +34,7 @@ const Highlight = ({
       <Date date={date} sx={{ mb: [3, 3, 2] }} />
       <Box
         sx={{
-          mb: ['15px', '14px', '15px', '15px'],
+          mb: ['8px', '15px', '14px', '14px'],
           ml: ['-1px'],
         }}
       >
@@ -62,7 +62,6 @@ const Highlight = ({
         <Column start={[1]} width={[6, 8, 6, 6]}>
           <Box
             sx={{
-              mt: [2],
               mb: [1],
               fontSize: [2, 2, 2, 3],
               lineHeight: 1.35,

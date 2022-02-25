@@ -73,7 +73,7 @@ const Publication = ({ info, first }) => {
           {title}
         </Link>
       </Box>
-      {summary}
+      <Box sx={{ fontSize: [2, 2, 2, 3] }}>{summary}</Box>
 
       <LinkGroup
         inverted
