@@ -5,7 +5,7 @@ import { mix } from '@theme-ui/color'
 import Date from './date'
 
 const Publication = ({ info, first }) => {
-  let { title, journal, color, date, summary, links, primaryLink } = info
+  let { title, href, journal, color, date, summary, links } = info
 
   const hoverColor = color ? 'text' : 'secondary'
   color = color || 'text'
@@ -13,8 +13,6 @@ const Publication = ({ info, first }) => {
   if (color == 'secondary') {
     color = mix('primary', 'background', 0.65)
   }
-
-  const linkIndex = primaryLink ? primaryLink + 1 : 0
 
   return (
     <Box
@@ -82,7 +80,7 @@ const Publication = ({ info, first }) => {
             },
           }}
           tabIndex='-1'
-          href={links[linkIndex].href}
+          href={href}
           tracking
         >
           {title}
@@ -90,12 +88,14 @@ const Publication = ({ info, first }) => {
       </Box>
       <Box sx={{ fontSize: [2, 2, 2, 3] }}>{summary}</Box>
 
-      <LinkGroup
-        inverted
-        tracking
-        members={links}
-        sx={{ mt: '14px', mb: '2px' }}
-      />
+      {links && (
+        <LinkGroup
+          inverted
+          tracking
+          members={links}
+          sx={{ mt: '14px', mb: '2px' }}
+        />
+      )}
     </Box>
   )
 }

@@ -9,46 +9,45 @@ const Inner = ({ summary, links, sx }) => (
     <Box
       sx={{
         mt: [2],
-        mb: [1],
         fontSize: [2, 2, 2, 3],
         lineHeight: 1.35,
       }}
     >
       {summary}
     </Box>
-    <Box
-      sx={{
-        mt: ['12px'],
-        fontSize: [2, 2, 2, 3],
-        userSelect: 'none',
-      }}
-    >
-      <Box sx={{ mb: [-1] }}>
-        <LinkGroup
-          members={links}
-          size='xs'
-          inverted
-          tracking
-          sx={{
-            mt: '14px',
-            mb: '2px',
-          }}
-        />
+    {links && (
+      <Box
+        sx={{
+          mt: ['12px'],
+          fontSize: [2, 2, 2, 3],
+          userSelect: 'none',
+        }}
+      >
+        <Box sx={{ mb: [-1] }}>
+          <LinkGroup
+            members={links}
+            size='xs'
+            inverted
+            tracking
+            sx={{
+              mt: '14px',
+              mb: '2px',
+            }}
+          />
+        </Box>
       </Box>
-    </Box>
+    )}
   </Box>
 )
 
 const Article = ({ info, first }) => {
-  let { title, color, tags, date, icon, summary, links, primaryLink } = info
-
+  let { id, title, color, date, icon, summary, links } = info
+  const href = `/research/${id}`
   color = color || 'text'
 
   if (color == 'secondary') {
     color = mix('primary', 'background', 0.65)
   }
-
-  const linkIndex = primaryLink ? primaryLink + 1 : 0
 
   return (
     <Box
@@ -98,7 +97,7 @@ const Article = ({ info, first }) => {
                 },
               }}
               tabIndex='-1'
-              href={links[linkIndex].href}
+              href={href}
               tracking
             >
               {title}
@@ -117,7 +116,7 @@ const Article = ({ info, first }) => {
           width={2}
           sx={{ textAlign: 'right', mt: [-5, 0] }}
         >
-          <Link tabIndex='-1' href={links[linkIndex].href} tracking>
+          <Link tabIndex='-1' href={href} tracking>
             <Icon icon={icon} color={color} />
           </Link>
         </Column>

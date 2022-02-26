@@ -21,7 +21,6 @@ const articles = [
       'Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods.',
     icon: 'article-013/blowing-small',
     links: [
-      { label: 'Read article', href: '/research/ton-year-explainer' },
       { label: 'Our critique of NCX’s methods', href: '/blog/ton-year-ncx' },
     ],
   },
@@ -46,7 +45,6 @@ const articles = [
       'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
     icon: 'article-012/crop-small',
     links: [
-      { label: 'Read article', href: '/research/soil-protocols-explainer' },
       { label: 'Browse protocols', href: '/research/soil-protocols' },
       {
         label: 'Response to Gold Standard',
@@ -76,7 +74,6 @@ const articles = [
     summary:
       'Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls.',
     icon: 'article-011/tillage-small',
-    links: [{ label: 'Read article', href: '/research/soil-depth-sampling' }],
   },
   {
     id: 'stripe-2021-insights',
@@ -99,10 +96,7 @@ const articles = [
     summary:
       "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
     icon: 'article-010/curve-small',
-    links: [
-      { label: 'Read article', href: '/research/stripe-2021-insights' },
-      { label: 'Explore database', href: '/research/cdr-database' },
-    ],
+    links: [{ label: 'Explore database', href: '/research/cdr-database' }],
   },
   {
     id: 'forest-risks-explainer',
@@ -130,7 +124,6 @@ const articles = [
     version: '1.0.0',
     icon: 'article-009/forest-fire-small-red',
     links: [
-      { label: 'Read article', href: '/research/forest-risks-explainer' },
       {
         label: 'Read preprint',
         href: 'https://doi.org/10.1101/2021.05.11.443688',
@@ -163,7 +156,6 @@ const articles = [
     version: '1.0.0',
     icon: 'article-008/ash-small',
     links: [
-      { label: 'Read article', href: '/research/forest-offsets-explainer' },
       { label: 'Read paper', href: 'https://doi.org/10.1111/gcb.15943' },
       { label: 'Browse map', href: '/research/forest-offsets' },
       {
@@ -193,10 +185,7 @@ const articles = [
     summary:
       "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
     icon: 'article-007/sign-small',
-    links: [
-      { label: 'Read article', href: '/research/microsoft-2021-insights' },
-      { label: 'Explore database', href: '/research/cdr-database' },
-    ],
+    links: [{ label: 'Explore database', href: '/research/cdr-database' }],
   },
   {
     id: 'dac-calculator-explainer',
@@ -219,7 +208,6 @@ const articles = [
       'Our interactive tool helps explore the cost of direct air capture (DAC) coupled to stand alone energy sources. Try the tool, or read the article to learn more about the model.',
     icon: 'article-006/wind-small',
     links: [
-      { label: 'Read article', href: '/research/dac-calculator-explainer' },
       { label: 'Use calculator', href: '/research/dac-calculator' },
       {
         label: 'Read paper',
@@ -243,10 +231,6 @@ const articles = [
       'Our interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to learn about the methods and implications.',
     icon: 'article-005/leaf-small',
     links: [
-      {
-        label: 'Read article',
-        href: '/research/permanence-calculator-explainer',
-      },
       { label: 'Use calculator', href: '/research/permanence-calculator' },
       {
         label: 'ClimateWorks post',
@@ -279,7 +263,6 @@ const articles = [
       'Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.',
     icon: 'article-004/forest-small',
     links: [
-      { label: 'Read article', href: '/research/offset-project-fire' },
       {
         label: 'Press coverage',
         href: 'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
@@ -306,9 +289,6 @@ const articles = [
     summary:
       'Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.',
     icon: 'article-003/pipes-small',
-    links: [
-      { label: 'Read article', href: '/research/carbon-removal-mechanisms' },
-    ],
   },
   {
     id: 'soil-carbon-comment',
@@ -326,7 +306,6 @@ const articles = [
       'There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.',
     icon: 'article-001/soil-small',
     links: [
-      { label: 'Read article', href: '/research/soil-carbon-comment' },
       {
         label: 'Press coverage',
         href: 'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
@@ -356,10 +335,7 @@ const articles = [
     summary:
       "We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Explore our database of project reports or read the article for our main takeaways and lessons learned.",
     icon: 'article-000/road-small',
-    links: [
-      { label: 'Read article', href: '/research/stripe-2020-insights' },
-      { label: 'Explore database', href: '/research/cdr-database' },
-    ],
+    links: [{ label: 'Explore database', href: '/research/cdr-database' }],
   },
 ]
 export default articles

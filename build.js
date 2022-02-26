@@ -98,17 +98,8 @@ async function getMetadata(path) {
     throw new Error(`Invalid article path: ${path}`)
   }
 
-  const links = [
-    {
-      label: 'Read article',
-      href: `/research/${id}`,
-    },
-    ...(meta.links || []),
-  ]
-
   return {
     id: id[0],
     ...meta,
-    links,
   }
 }
