@@ -27,7 +27,10 @@ const HIGHLIGHTS = [
       'Voluntary carbon markets are ramping up efforts to credit soil carbon. We have now systematically reviewed 17 protocols that certify or issue credits for soil carbon removal.',
     links: [
       { label: 'Protocol database', href: '/research/soil-protocols' },
-      { label: 'Explainer article', href: '/research/soil-protocol-explainer' },
+      {
+        label: 'Explainer article',
+        href: '/research/soil-protocols-explainer',
+      },
       { label: 'Update post', href: '/blog/soil-protocols-added' },
     ],
     logo: <SoilProtocols />,
