@@ -25,11 +25,14 @@ const Inner = ({ summary, links, sx }) => (
     >
       <Box sx={{ mb: [-1] }}>
         <LinkGroup
+          members={links}
+          size='xs'
           inverted
           tracking
-          members={links}
-          spacing={[4, 4, 4, 5]}
-          sx={{ mt: '14px', mb: '2px' }}
+          sx={{
+            mt: '14px',
+            mb: '2px',
+          }}
         />
       </Box>
     </Box>

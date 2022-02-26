@@ -1,4 +1,4 @@
-import { LinkGroup, FigureCaption, Colors } from '@carbonplan/components'
+import { FigureCaption, Colors } from '@carbonplan/components'
 import { PullQuote, Endnote } from '@carbonplan/layouts'
 import { Themed } from 'theme-ui'
 import InlineCheck from '../../components/inline-check'

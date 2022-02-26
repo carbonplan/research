@@ -24,7 +24,7 @@
   "prettier": "@carbonplan/prettier",
   "dependencies": {
     "@carbonplan/charts": "^2.7.0",
-    "@carbonplan/components": "^11.2.3",
+    "@carbonplan/components": "^11.3.0",
     "@carbonplan/icons": "^1.0.0",
     "@carbonplan/layouts": "^1.1.3",
     "@carbonplan/theme": "^7.0.0",

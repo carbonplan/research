@@ -83,7 +83,6 @@ const Highlight = ({
             inverted
             tracking
             members={links}
-            spacing={[4, 4, 4, 5]}
             sx={{ mt: '14px', mb: '2px' }}
           />
         </Box>
