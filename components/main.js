@@ -79,6 +79,8 @@ const Main = () => {
       setScrolled(active)
     }
     window.addEventListener('scroll', scrollListener)
+
+    scrollListener() // Try setting scrolled on mount
     return () => {
       history.scrollRestoration = 'auto'
       window.removeEventListener('scroll', scrollListener)
