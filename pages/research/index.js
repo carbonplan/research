@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import { Layout, Guide } from '@carbonplan/components'
+import { Layout } from '@carbonplan/components'
 import Main from '../../components/main'
-import contents from '../../contents'
+import { default as articles } from '../../contents/articles'
+import { default as comments } from '../../contents/comments'
+import { default as tools } from '../../contents/tools'
+import { default as publications } from '../../contents/publications'
 
 const Index = () => {
-  const [expanded, setExpanded] = useState(false)
-
   return (
     <Layout
       title={'Research – CarbonPlan'}
@@ -14,11 +14,12 @@ const Index = () => {
       }
       card={'https://images.carbonplan.org/social/research.png'}
       links={'local'}
-      metadata={`COUNT: ${contents.articles.length}`}
+      metadata={`COUNT: ${
+        articles.length + comments.length + publications.length + tools.length
+      }`}
       nav={'research'}
-      settings={{ value: expanded, onClick: () => setExpanded(!expanded) }}
     >
-      <Main expanded={expanded} contents={contents.articles} />
+      <Main contents={articles} />
     </Layout>
   )
 }

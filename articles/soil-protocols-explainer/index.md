@@ -25,22 +25,20 @@ export const meta = {
   summary:
     'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
   icon: 'article-012/crop-small',
-  tags: ['article', 'dataset'],
   links: [
     {
-      label: 'Browse protocols',
+      label: 'Database tool',
       href: '/research/soil-protocols',
+    },
+    {
+      label: 'Update blog post',
+      href: '/blog/soil-protocols-added',
     },
     {
       label: 'Response to Gold Standard',
       href: '/research/soil-protocols-explainer-gold-standard-response',
     },
-    {
-      label: 'Protocol additions',
-      href: '/blog/soil-protocols-added',
-    },
   ],
-  primaryLink: 2,
 }
 
 Voluntary carbon markets are [ramping up efforts](https://grist.org/agriculture/us-carbon-removal-capture-offset-forests-farms-trees-soil/) to credit soil carbon removal, with [federal lawmakers](https://www.politico.com/news/2021/06/24/senate-farmers-carbon-agriculture-496029) and [state regulators](https://ww2.arb.ca.gov/resources/documents/nwl-implementation-draft) eager to follow suit.

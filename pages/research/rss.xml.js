@@ -1,9 +1,9 @@
-import contents from '../../contents'
+import articles from '../../contents/articles'
 
 const contentsRssXml = () => {
   let latestArticleDate
   let rssItemsXml = ''
-  contents.articles
+  articles
     .filter(({ id }) => id)
     .forEach(({ id, date, title, summary }) => {
       const [month, day, year] = date.split('-').map((s, i) =>

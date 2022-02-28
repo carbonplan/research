@@ -1,4 +1,4 @@
-import { LinkGroup, FigureCaption, Colors } from '@carbonplan/components'
+import { FigureCaption, Colors } from '@carbonplan/components'
 import { PullQuote, Endnote } from '@carbonplan/layouts'
 import { Themed } from 'theme-ui'
 import InlineCheck from '../../components/inline-check'
@@ -24,13 +24,12 @@ export const meta = {
   background: 'article-010/curve',
   quickLook:
     "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement",
-  tags: ['article', 'dataset'],
   summary:
-    "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
+    "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.",
   icon: 'article-010/curve-small',
   links: [
     {
-      label: 'Explore database',
+      label: 'Database tool',
       href: '/research/cdr-database',
     },
   ],

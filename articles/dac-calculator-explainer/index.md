@@ -16,23 +16,21 @@ export const meta = {
     'Jeremy Freeman',
   ],
   title: 'The cost of direct air capture',
-  indexTitle: 'DAC cost calculator',
   date: '02-01-2021',
   background: 'article-006/wind',
   card: 'dac-calculator-explainer',
   quickLook:
     'How the cost of direct air capture varies under different energy scenarios',
-  tags: ['article', 'tool'],
   summary:
-    'Our interactive tool helps explore the cost of direct air capture (DAC) coupled to stand alone energy sources. Try the tool, or read the article to learn more about the model.',
+    'We developed an interactive tool for exploring the cost of direct air capture (DAC) coupled to stand alone energy sources. Read this article, explore the calculator tool, or read the associated publication to learn more.',
   icon: 'article-006/wind-small',
   links: [
     {
-      label: 'Use calculator',
+      label: 'Calculator tool',
       href: '/research/dac-calculator',
     },
     {
-      label: 'Read paper',
+      label: 'Related publication',
       href: 'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract',
     },
   ],

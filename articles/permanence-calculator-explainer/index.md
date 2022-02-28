@@ -9,20 +9,18 @@ export const meta = {
   version: '1.0.0',
   color: 'pink',
   title: 'The cost of temporary carbon removal',
-  indexTitle: 'Permanence calculator',
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '12-09-2020',
   card: 'permanence-calculator-explainer',
   background: 'article-005/leaf',
   quickLook:
     'How to compare the long-term cost of temporary and permanent carbon removal',
-  tags: ['tool', 'article'],
   summary:
-    'Our interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to learn about the methods and implications.',
+    'We built an interactive tool to help compare the long-term cost of temporary and permanent carbon removal. Read this article or try the calculator tool to learn about the methods and implications.',
   icon: 'article-005/leaf-small',
   links: [
     {
-      label: 'Use calculator',
+      label: 'Calculator tool',
       href: '/research/permanence-calculator',
     },
     {

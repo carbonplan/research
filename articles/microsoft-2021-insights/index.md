@@ -24,13 +24,12 @@ export const meta = {
     "Project reports and lessons learned from analyzing proposals for Microsoft's 2021 Carbon Removal procurement",
   background: 'article-007/sign',
   card: 'microsoft-2021-insights',
-  tags: ['article', 'dataset'],
   summary:
-    "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
+    "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.",
   icon: 'article-007/sign-small',
   links: [
     {
-      label: 'Explore database',
+      label: 'Database tool',
       href: '/research/cdr-database',
     },
   ],

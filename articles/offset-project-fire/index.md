@@ -24,7 +24,6 @@ export const meta = {
   quickLook:
     'A major fire in Oregon illustrates the challenges of managing forest carbon permanence',
   quotes: [],
-  tags: ['article'],
   summary:
     'Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.',
   icon: 'article-004/forest-small',

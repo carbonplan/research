@@ -18,7 +18,6 @@ export const meta = {
   background: 'article-003/pipes',
   quickLook:
     'How different carbon removal projects interact with the global carbon cycle',
-  tags: ['article'],
   summary:
     'Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.',
   icon: 'article-003/pipes-small',
