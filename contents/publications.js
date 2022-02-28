@@ -9,8 +9,11 @@ const publications = [
       "Our paper evaluating the design of California's prominent forest carbon offsets program and demonstrate that its climate-equivalence claims fall far short on the basis of directly observable evidence.",
     journal: 'Global Change Biology',
     links: [
-      { label: 'Read article', href: '/research/forest-offsets-explainer' },
-      { label: 'Browse map', href: '/research/forest-offsets' },
+      {
+        label: 'Explainer article',
+        href: '/research/forest-offsets-explainer',
+      },
+      { label: 'Map tool', href: '/research/forest-offsets' },
       {
         label: 'Press coverage',
         href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
@@ -27,8 +30,8 @@ const publications = [
     summary:
       'A paper quantifying the key climate drivers that fuel risks to forests in the United States from wildfire, drought, and insects, and projecting those risks over the 21st century.',
     links: [
-      { label: 'Read article', href: '/research/forest-risks-explainer' },
-      { label: 'Browse map', href: '/research/forest-risks' },
+      { label: 'Explainer article', href: '/research/forest-risks-explainer' },
+      { label: 'Map tool', href: '/research/forest-risks' },
     ],
   },
   {

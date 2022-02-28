@@ -45,12 +45,12 @@ const articles = [
       'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
     icon: 'article-012/crop-small',
     links: [
-      { label: 'Browse protocols', href: '/research/soil-protocols' },
+      { label: 'Database tool', href: '/research/soil-protocols' },
+      { label: 'Update post', href: '/blog/soil-protocols-added' },
       {
         label: 'Response to Gold Standard',
         href: '/research/soil-protocols-explainer-gold-standard-response',
       },
-      { label: 'Protocol additions', href: '/blog/soil-protocols-added' },
     ],
   },
   {
@@ -94,9 +94,9 @@ const articles = [
     quickLook:
       "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement",
     summary:
-      "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
+      "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.",
     icon: 'article-010/curve-small',
-    links: [{ label: 'Explore database', href: '/research/cdr-database' }],
+    links: [{ label: 'Database tool', href: '/research/cdr-database' }],
   },
   {
     id: 'forest-risks-explainer',
@@ -124,11 +124,8 @@ const articles = [
     version: '1.0.0',
     icon: 'article-009/forest-fire-small-red',
     links: [
-      {
-        label: 'Read preprint',
-        href: 'https://doi.org/10.1101/2021.05.11.443688',
-      },
-      { label: 'Browse map', href: '/research/forest-risks' },
+      { label: 'Preprint', href: 'https://doi.org/10.1101/2021.05.11.443688' },
+      { label: 'Map tool', href: '/research/forest-risks' },
     ],
   },
   {
@@ -156,8 +153,8 @@ const articles = [
     version: '1.0.0',
     icon: 'article-008/ash-small',
     links: [
-      { label: 'Read paper', href: 'https://doi.org/10.1111/gcb.15943' },
-      { label: 'Browse map', href: '/research/forest-offsets' },
+      { label: 'Publication', href: 'https://doi.org/10.1111/gcb.15943' },
+      { label: 'Map tool', href: '/research/forest-offsets' },
       {
         label: 'Press coverage',
         href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
@@ -183,9 +180,9 @@ const articles = [
     background: 'article-007/sign',
     card: 'microsoft-2021-insights',
     summary:
-      "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
+      "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.",
     icon: 'article-007/sign-small',
-    links: [{ label: 'Explore database', href: '/research/cdr-database' }],
+    links: [{ label: 'Database tool', href: '/research/cdr-database' }],
   },
   {
     id: 'dac-calculator-explainer',
@@ -205,12 +202,12 @@ const articles = [
     quickLook:
       'How the cost of direct air capture varies under different energy scenarios',
     summary:
-      'Our interactive tool helps explore the cost of direct air capture (DAC) coupled to stand alone energy sources. Try the tool, or read the article to learn more about the model.',
+      'We developed an interactive tool for exploring the cost of direct air capture (DAC) coupled to stand alone energy sources. Read this article, explore the calculator tool, or read the associated publication to learn more.',
     icon: 'article-006/wind-small',
     links: [
-      { label: 'Use calculator', href: '/research/dac-calculator' },
+      { label: 'Calculator tool', href: '/research/dac-calculator' },
       {
-        label: 'Read paper',
+        label: 'Publication',
         href: 'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract',
       },
     ],
@@ -228,10 +225,10 @@ const articles = [
     quickLook:
       'How to compare the long-term cost of temporary and permanent carbon removal',
     summary:
-      'Our interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to learn about the methods and implications.',
+      'We built an interactive tool to help compare the long-term cost of temporary and permanent carbon removal. Read this article or try the calculator tool to learn about the methods and implications.',
     icon: 'article-005/leaf-small',
     links: [
-      { label: 'Use calculator', href: '/research/permanence-calculator' },
+      { label: 'Calculator tool', href: '/research/permanence-calculator' },
       {
         label: 'ClimateWorks post',
         href: 'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
@@ -311,11 +308,11 @@ const articles = [
         href: 'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
       },
       {
-        label: 'Read comment letter #1',
+        label: 'Comment letter #1',
         href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
       },
       {
-        label: 'Read comment letter #2',
+        label: 'Comment letter #2',
         href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
       },
     ],
@@ -333,9 +330,9 @@ const articles = [
     quickLook:
       'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
     summary:
-      "We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Explore our database of project reports or read the article for our main takeaways and lessons learned.",
+      "We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Read this article or explore our database of project reports for our main takeaways and lessons learned.",
     icon: 'article-000/road-small',
-    links: [{ label: 'Explore database', href: '/research/cdr-database' }],
+    links: [{ label: 'Database tool', href: '/research/cdr-database' }],
   },
 ]
 export default articles

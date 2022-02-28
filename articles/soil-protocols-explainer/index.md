@@ -27,16 +27,16 @@ export const meta = {
   icon: 'article-012/crop-small',
   links: [
     {
-      label: 'Browse protocols',
+      label: 'Database tool',
       href: '/research/soil-protocols',
+    },
+    {
+      label: 'Update post',
+      href: '/blog/soil-protocols-added',
     },
     {
       label: 'Response to Gold Standard',
       href: '/research/soil-protocols-explainer-gold-standard-response',
-    },
-    {
-      label: 'Protocol additions',
-      href: '/blog/soil-protocols-added',
     },
   ],
 }

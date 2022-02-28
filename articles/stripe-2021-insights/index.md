@@ -25,11 +25,11 @@ export const meta = {
   quickLook:
     "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement",
   summary:
-    "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Explore our updated database of project reports or read the article for our takeaways and lessons learned.",
+    "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.",
   icon: 'article-010/curve-small',
   links: [
     {
-      label: 'Explore database',
+      label: 'Database tool',
       href: '/research/cdr-database',
     },
   ],

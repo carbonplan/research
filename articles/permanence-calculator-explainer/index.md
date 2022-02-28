@@ -16,11 +16,11 @@ export const meta = {
   quickLook:
     'How to compare the long-term cost of temporary and permanent carbon removal',
   summary:
-    'Our interactive tool helps compare the long-term cost of temporary and permanent carbon removal. Try the tool, or read the article to learn about the methods and implications.',
+    'We built an interactive tool to help compare the long-term cost of temporary and permanent carbon removal. Read this article or try the calculator tool to learn about the methods and implications.',
   icon: 'article-005/leaf-small',
   links: [
     {
-      label: 'Use calculator',
+      label: 'Calculator tool',
       href: '/research/permanence-calculator',
     },
     {

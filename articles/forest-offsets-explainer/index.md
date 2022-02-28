@@ -34,11 +34,11 @@ export const meta = {
   icon: 'article-008/ash-small',
   links: [
     {
-      label: 'Read paper',
+      label: 'Publication',
       href: 'https://doi.org/10.1111/gcb.15943',
     },
     {
-      label: 'Browse map',
+      label: 'Map tool',
       href: '/research/forest-offsets',
     },
     {

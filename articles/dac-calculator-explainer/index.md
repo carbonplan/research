@@ -22,15 +22,15 @@ export const meta = {
   quickLook:
     'How the cost of direct air capture varies under different energy scenarios',
   summary:
-    'Our interactive tool helps explore the cost of direct air capture (DAC) coupled to stand alone energy sources. Try the tool, or read the article to learn more about the model.',
+    'We developed an interactive tool for exploring the cost of direct air capture (DAC) coupled to stand alone energy sources. Read this article, explore the calculator tool, or read the associated publication to learn more.',
   icon: 'article-006/wind-small',
   links: [
     {
-      label: 'Use calculator',
+      label: 'Calculator tool',
       href: '/research/dac-calculator',
     },
     {
-      label: 'Read paper',
+      label: 'Publication',
       href: 'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract',
     },
   ],

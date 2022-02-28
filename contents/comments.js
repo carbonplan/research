@@ -9,7 +9,7 @@ const comments = [
     date: '02-14-2022',
     links: [
       {
-        label: 'Read blog post',
+        label: 'Blog post',
         href: 'https://carbonplan.org/blog/occ-risk-comment',
       },
     ],
@@ -32,7 +32,7 @@ const comments = [
     color: 'orange',
     links: [
       {
-        label: 'Read blog post',
+        label: 'Blog post',
         href: 'https://carbonplan.org/blog/usda-csaf-comment',
       },
     ],
@@ -65,7 +65,7 @@ const comments = [
     color: 'orange',
     links: [
       {
-        label: 'Read article',
+        label: 'Explainer article',
         href: '/research/soil-carbon-comment',
       },
     ],
@@ -80,7 +80,7 @@ const comments = [
     color: 'orange',
     links: [
       {
-        label: 'Read article',
+        label: 'Explainer article',
         href: '/research/soil-carbon-comment',
       },
     ],

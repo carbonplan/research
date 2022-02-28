@@ -31,11 +31,11 @@ export const meta = {
   icon: 'article-009/forest-fire-small-red',
   links: [
     {
-      label: 'Read preprint',
+      label: 'Preprint',
       href: 'https://doi.org/10.1101/2021.05.11.443688',
     },
     {
-      label: 'Browse map',
+      label: 'Map tool',
       href: '/research/forest-risks',
     },
   ],

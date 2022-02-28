@@ -20,13 +20,13 @@ const HIGHLIGHTS = [
   {
     id: 'soil-protocols',
     date: '10-13-2021',
-    href: '/blog/soil-protocols-added',
+    href: '/research/soil-protocols',
     title: 'Soil carbon protocols',
     color: 'orange',
     summary:
       'Voluntary carbon markets are ramping up efforts to credit soil carbon. We have now systematically reviewed 17 protocols that certify or issue credits for soil carbon removal.',
     links: [
-      { label: 'Protocol database', href: '/research/soil-protocols' },
+      { label: 'Database tool', href: '/research/soil-protocols' },
       {
         label: 'Explainer article',
         href: '/research/soil-protocols-explainer',
