@@ -45,7 +45,8 @@ const Main = () => {
 
   const selectSection = (id) => {
     if (id !== router.query.section) {
-      // Update query when not already set
+      // Update query when not already set and allow scroll manipulation
+      history.scrollRestoration = 'manual'
       router.replace(
         { pathname: '/research', query: { section: id } },
         undefined,
@@ -61,7 +62,7 @@ const Main = () => {
 
   useEffect(() => {
     // Scroll to active section on initialization of query, on query change, or when screen size changes
-    if (router.query.section) {
+    if (router.query.section && history.scrollRestoration === 'manual') {
       scrollToSection(router.query.section)
     }
   }, [router.query.section, index])
@@ -79,6 +80,7 @@ const Main = () => {
     }
     window.addEventListener('scroll', scrollListener)
     return () => {
+      history.scrollRestoration = 'auto'
       window.removeEventListener('scroll', scrollListener)
     }
   }, [])
