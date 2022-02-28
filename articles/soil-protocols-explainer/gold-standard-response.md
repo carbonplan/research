@@ -6,7 +6,6 @@ export const meta = {
   id: 'soil-protocols-gold-standard-response',
   date: '08-04-2021',
   title: 'Response to Gold Standard',
-  back: '/research/soil-protocols-explainer',
   color: 'orange',
   card: 'soil-protocols-explainer',
   quickLook:
