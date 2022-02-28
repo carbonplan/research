@@ -46,7 +46,7 @@ const articles = [
     icon: 'article-012/crop-small',
     links: [
       { label: 'Database tool', href: '/research/soil-protocols' },
-      { label: 'Update post', href: '/blog/soil-protocols-added' },
+      { label: 'Update blog post', href: '/blog/soil-protocols-added' },
       {
         label: 'Response to Gold Standard',
         href: '/research/soil-protocols-explainer-gold-standard-response',

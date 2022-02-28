@@ -31,7 +31,7 @@ const HIGHLIGHTS = [
         label: 'Explainer article',
         href: '/research/soil-protocols-explainer',
       },
-      { label: 'Update post', href: '/blog/soil-protocols-added' },
+      { label: 'Update blog post', href: '/blog/soil-protocols-added' },
     ],
     logo: <SoilProtocols />,
   },

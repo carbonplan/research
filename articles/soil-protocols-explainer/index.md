@@ -31,7 +31,7 @@ export const meta = {
       href: '/research/soil-protocols',
     },
     {
-      label: 'Update post',
+      label: 'Update blog post',
       href: '/blog/soil-protocols-added',
     },
     {
