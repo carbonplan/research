@@ -2,11 +2,12 @@ import { Box, Text } from 'theme-ui'
 
 const prefix = 'https://images.carbonplan.org'
 
-const Icon = ({ color, icon, link }) => {
+const Icon = ({ color, icon, hovered }) => {
   return (
     <Box
       id='container'
       tabIndex='-1'
+      className={hovered && 'hovered'}
       sx={{
         cursor: 'pointer',
         display: ['inline-block'],
@@ -19,10 +20,10 @@ const Icon = ({ color, icon, link }) => {
         borderColor: 'primary',
         borderWidth: '0px',
         '@media (hover: hover) and (pointer: fine)': {
-          '&:hover > #background': {
+          '&:hover > #background, &.hovered > #background': {
             opacity: 0.5,
           },
-          '&:hover > #arrow': {
+          '&:hover > #arrow, &.hovered > #arrow': {
             opacity: 1,
             left: ['20px', '19px', '25px', '25px'],
           },
@@ -52,7 +53,6 @@ const Icon = ({ color, icon, link }) => {
           fontFamily: 'faux',
           position: 'absolute',
           top: ['-14px', '0px', '0px', '0px'],
-          left: ['0px', '0px', '0px', '0px'],
           width: '100%',
           height: '100%',
           display: 'inline-block',
@@ -62,7 +62,8 @@ const Icon = ({ color, icon, link }) => {
           zIndex: 500,
           transition: '0.25s',
           display: ['none', 'initial', 'initial', 'intial'],
-          opacity: 0,
+          left: ['0px', '0px', '0px', '0px'],
+          opacity: hovered ? 1 : 0,
           textAlign: 'left',
         }}
       >

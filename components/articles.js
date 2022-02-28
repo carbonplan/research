@@ -3,6 +3,7 @@ import { Row, Column, Link, LinkGroup } from '@carbonplan/components'
 import { mix } from '@theme-ui/color'
 import Icon from './icon'
 import Date from './date'
+import { useState } from 'react'
 
 const Inner = ({ summary, links, sx }) => (
   <Box sx={sx}>
@@ -41,6 +42,7 @@ const Inner = ({ summary, links, sx }) => (
 )
 
 const Article = ({ info, first }) => {
+  const [hovered, setHovered] = useState(false)
   let { id, title, color, date, icon, summary, links } = info
   const href = `/research/${id}`
   color = color || 'text'
@@ -99,6 +101,8 @@ const Article = ({ info, first }) => {
               tabIndex='-1'
               href={href}
               tracking
+              onMouseOver={() => setHovered(true)}
+              onMouseOut={() => setHovered(false)}
             >
               {title}
             </Link>
@@ -117,7 +121,7 @@ const Article = ({ info, first }) => {
           sx={{ textAlign: 'right', mt: [-5, 0] }}
         >
           <Link tabIndex='-1' href={href} tracking>
-            <Icon icon={icon} color={color} />
+            <Icon icon={icon} color={color} hovered={hovered} />
           </Link>
         </Column>
 
