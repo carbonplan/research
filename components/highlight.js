@@ -39,7 +39,7 @@ const Highlight = ({
         }}
       >
         <Button
-          href={href || `research/${id}`}
+          href={href || `/research/${id}`}
           tracking
           suffix={
             <RotatingArrow

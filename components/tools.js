@@ -17,7 +17,7 @@ const Tool = ({ info, start }) => {
   return (
     <Column start={start} width={[3, 2, 2, 2]} sx={{ mb: [3, 5, 5, 6] }}>
       <Link
-        href={`research/${id}`}
+        href={`/research/${id}`}
         sx={{
           display: 'block',
           mb: [4, 0, 0, 0],
