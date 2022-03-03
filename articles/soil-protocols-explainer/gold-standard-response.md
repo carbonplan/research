@@ -130,4 +130,8 @@ For clarity and transparency, we are posting Mr. Hewlett’s full comments here.
 >
 > There are some valid findings, including for our own standard. We will look at those seriously, as we always do, to identify opportunities for improvement. But please engage with us before you post incorrect findings, I promise our door is open.
 
-export default ({ children }) => <Supplement meta={meta}>{children}</Supplement>
+export default ({ children }) => (
+  <Supplement meta={meta} back='/research/soil-protocols-explainer'>
+    {children}
+  </Supplement>
+)
