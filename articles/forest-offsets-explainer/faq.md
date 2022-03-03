@@ -204,4 +204,8 @@ Finally, we would like to clarify that one member of our author team has formall
 
 Rather than address our scientific analysis on its merits, CARB has responded with an unconvincing legal argument and ad hominem attacks on our integrity as researchers.
 
-export default ({ children }) => <Supplement meta={meta}>{children}</Supplement>
+export default ({ children }) => (
+  <Supplement meta={meta} back='/research/forest-offsets-explainer'>
+    {children}
+  </Supplement>
+)
