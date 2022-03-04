@@ -1,123 +1,91 @@
-import { useMemo, useState } from 'react'
-import { Box, Link, Divider } from 'theme-ui'
-import {
-  Row,
-  Column,
-  Tray,
-  Group,
-  Heading,
-  Filter,
-} from '@carbonplan/components'
+import { Box } from 'theme-ui'
+import { useEffect, useRef, useState } from 'react'
+import { useRouter } from 'next/router'
+import { Column, Heading, Row } from '@carbonplan/components'
+import { useBreakpointIndex } from '@theme-ui/match-media'
+
+import { articles, publications, comments, tools } from '../contents/index'
 import List from './list'
+import Articles from './articles'
+import Publications from './publications'
+import Tools from './tools'
+import Highlights from './highlights'
+import Navigation from './navigation'
 
-import {
-  ForestOffsets,
-  ForestRisks,
-  CDRDatabase,
-  PermanenceCalculator,
-  DACCalculator,
-  SoilProtocols,
-} from './tool-logos'
-
-const sx = {
-  highlight: {
-    mb: [3, 3, 3, 4],
-    fontSize: [3, 3, 3, 4],
-    fontFamily: 'heading',
-    letterSpacing: 'smallcaps',
-    textTransform: 'uppercase',
-    color: 'secondary',
-  },
-  tool: {
-    color: 'secondary',
-    fontSize: [1, 1, 1, 2],
-    fontFamily: 'mono',
-    letterSpacing: 'mono',
-    textTransform: 'uppercase',
-    transition: 'opacity 0.15s',
-  },
+const sortByDate = (items) => {
+  return items.sort((a, b) => new Date(b.date) - new Date(a.date))
 }
 
-const initCategory = {
-  article: true,
-  tool: true,
-  comment: true,
-  publication: true,
-  dataset: true,
-}
-
-const initYear = {
-  2020: true,
-  2021: true,
-  2022: true,
-}
-
-const tools = [
-  {
-    logo: <SoilProtocols />,
-    color: 'orange',
-    label: 'Soil Protocols',
-    href: '/research/soil-protocols',
-  },
-  {
-    logo: <ForestOffsets />,
-    color: 'green',
-    label: 'Forest Offsets',
-    href: '/research/forest-offsets',
-  },
-  {
-    logo: <ForestRisks />,
-    color: 'red',
-    label: 'Forest Risks',
-    href: '/research/forest-risks',
-  },
-  {
-    logo: <CDRDatabase />,
-    color: 'gray',
-    label: 'CDR Database',
-    href: '/research/cdr-database',
-  },
-  {
-    logo: <PermanenceCalculator />,
-    color: 'pink',
-    label: 'Permanence calculator',
-    href: '/research/permanence-calculator',
-  },
-]
-
-const Main = ({ expanded, contents }) => {
-  const [category, setCategory] = useState(initCategory)
-  const [year, setYear] = useState(initYear)
-
-  const items = useMemo(
-    () =>
-      contents.filter(
-        (d) =>
-          d.tags.some((t) => category[t]) &&
-          year[new Date(d.date.replace(/-/g, '/')).getFullYear()]
-      ),
-
-    [category, year]
-  )
-
-  const FilterContents = () => {
-    return (
-      <Group spacing='md'>
-        <Filter
-          values={year}
-          setValues={setYear}
-          label='Filter by year'
-          showAll
-        />
-        <Filter
-          values={category}
-          setValues={setCategory}
-          label='Filter by category'
-          showAll
-        />
-      </Group>
-    )
+const Main = () => {
+  const router = useRouter()
+  const navRef = useRef(null)
+  const listRefs = {
+    tools: useRef(null),
+    articles: useRef(null),
+    publications: useRef(null),
+    comments: useRef(null),
   }
+  const [scrolled, setScrolled] = useState(null)
+  const index = useBreakpointIndex({ defaultIndex: 2 })
+  const selected = router.query.section || 'highlights'
+
+  const scrollToSection = (id) => {
+    if (index < 2) {
+      window.scrollTo({
+        left: 0,
+        top: index === 0 ? 183 : 148,
+        behavior: 'smooth',
+      })
+    } else {
+      document.querySelector(`#${id}`).scrollIntoView({
+        behavior: 'smooth',
+      })
+    }
+  }
+
+  const selectSection = (id) => {
+    if (id !== router.query.section) {
+      // Update query when not already set and allow scroll manipulation
+      history.scrollRestoration = 'manual'
+      router.replace(
+        { pathname: '/research', query: { section: id } },
+        undefined,
+        {
+          scroll: false,
+        }
+      )
+    } else {
+      // Explicitly scroll to section when query is unchanged
+      scrollToSection(id)
+    }
+  }
+
+  useEffect(() => {
+    // Scroll to active section on initialization of query, on query change, or when screen size changes
+    if (router.query.section && history.scrollRestoration === 'manual') {
+      scrollToSection(router.query.section)
+    }
+  }, [router.query.section, index])
+
+  useEffect(() => {
+    const scrollListener = () => {
+      const navBottom = navRef.current?.getBoundingClientRect()?.bottom
+      const active = Object.keys(listRefs)
+        .reverse()
+        .find((key) => {
+          const ref = listRefs[key]
+          return navBottom > ref.current?.getBoundingClientRect()?.top
+        })
+      setScrolled(active)
+    }
+    window.addEventListener('scroll', scrollListener)
+
+    scrollListener() // Try setting scrolled on mount
+    return () => {
+      history.scrollRestoration = 'auto'
+      window.removeEventListener('scroll', scrollListener)
+    }
+  }, [])
 
   return (
     <Box>
@@ -137,108 +105,68 @@ const Main = ({ expanded, contents }) => {
       >
         Research
       </Heading>
-      <Tray expanded={expanded}>
-        <FilterContents />
-      </Tray>
-      <Row sx={{ mb: [4, 5, 6, 7] }}>
-        <Column start={[1, 1, 2, 2]} width={[5]}>
-          <Box sx={sx.highlight}>Tool highlights</Box>
-        </Column>
-        {tools.map((d, i) => {
-          return (
-            <Column
-              key={i}
-              start={[1 + (i % 2) * 3, 1 + i * 2, 2 + i * 2, 2 + i * 2]}
-              width={[3, 2, 2, 2]}
-              sx={{
-                display: i < 4 ? 'block' : ['none', 'none', 'block', 'block'],
-              }}
-            >
-              <Link
-                href={d.href}
-                sx={{
-                  display: 'block',
-                  mb: [4, 0, 0, 0],
-                  textDecoration: 'none',
-                  '@media (hover: hover) and (pointer: fine)': {
-                    '&:hover > #logo': {
-                      opacity: 0.7,
-                    },
-                    '&:hover > #tool': {
-                      opacity: 0.7,
-                    },
-                  },
-                }}
-              >
-                <Box
-                  id='logo'
-                  sx={{
-                    opacity: 1,
-                    position: 'relative',
-                    width: '100%',
-                    height: [
-                      '150px',
-                      '150px',
-                      '125px',
-                      'max(calc((2 * (100vw - 48px * 13) / 12 + 48px) * 3 / 5), 150px)',
-                    ],
-                    transition: 'opacity 0.15s',
-                  }}
-                >
-                  <Box
-                    sx={{
-                      opacity: 0.5,
-                      position: 'absolute',
-                      bg: d.color,
-                      left: 0,
-                      top: 0,
-                      width: '100%',
-                      height: '100%',
-                    }}
-                  />
-                  {d.logo}
-                </Box>
-                <Box id='tool' sx={{ ...sx.tool, mt: [2, 2, 2, 3] }}>
-                  {d.label}
-                </Box>
-              </Link>
-            </Column>
-          )
-        })}
-      </Row>
+
       <Row>
-        <Column start={[1, 1, 2, 2]} width={[6, 8, 10, 10]}>
-          <Divider
-            sx={{
-              mt: [0],
-              mb: [4, 5, 6, 7],
-              display: ['none', 'block', 'block', 'block'],
-            }}
-          />
-        </Column>
-      </Row>
-      <Row sx={{ mb: [0] }}>
-        <Column
-          start={[1, 1, 2, 2]}
-          width={[6, 6, 2, 2]}
-          sx={{ display: ['none', 'none', 'initial', 'intial'] }}
-        >
-          <Box
-            sx={{
-              position: 'sticky',
-              top: ['106px', '106px', '106px', '120px'],
-              height: 'auto',
-            }}
+        {index >= 2 && (
+          <Column
+            start={[1, 1, 2, 2]}
+            width={[6, 8, 2, 2]}
+            sx={{ mt: [0, 0, '2px'] }}
           >
-            <FilterContents />
-          </Box>
-        </Column>
-        <Column
-          start={[1, 2, 5, 5]}
-          width={[6, 7, 7, 7]}
-          sx={{ mt: ['-3px', '0px', '-1px', '0px'] }}
-        >
-          <List items={items} />
+            <Navigation
+              ref={navRef}
+              selected={selected}
+              scrolled={scrolled}
+              selectSection={selectSection}
+            />
+          </Column>
+        )}
+        <Column start={[1, 1, 5, 5]} width={[6, 8, 7, 7]}>
+          {index < 2 && (
+            <Navigation
+              ref={navRef}
+              selected={selected}
+              scrolled={scrolled}
+              selectSection={selectSection}
+            />
+          )}
+
+          <Highlights selected={selected === 'highlights'} />
+          <List
+            label='Tools'
+            id='tools'
+            selected={selected === 'tools'}
+            items={tools}
+            Entries={Tools}
+            width={8}
+            limit={6}
+            ref={listRefs.tools}
+          />
+          <List
+            label='Articles'
+            id='articles'
+            selected={selected === 'articles'}
+            items={articles}
+            width={8}
+            Entries={Articles}
+            ref={listRefs.articles}
+          />
+          <List
+            label='Publications'
+            id='publications'
+            selected={selected === 'publications'}
+            items={sortByDate(publications)}
+            Entries={Publications}
+            ref={listRefs.publications}
+          />
+          <List
+            label='Comment letters'
+            id='comments'
+            selected={selected === 'comments'}
+            items={sortByDate(comments)}
+            Entries={Publications}
+            ref={listRefs.comments}
+          />
         </Column>
       </Row>
     </Box>

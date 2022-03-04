@@ -24,7 +24,6 @@ export const meta = {
   quickLook:
     'A major fire in Oregon illustrates the challenges of managing forest carbon permanence',
   quotes: [],
-  tags: ['article'],
   summary:
     'Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.',
   icon: 'article-004/forest-small',
@@ -35,8 +34,6 @@ export const meta = {
     },
   ],
 }
-
-# Carbon offsets burning
 
 In the middle of a record fire season on the US West Coast, the [Lionshead Fire](http://inciweb.nwcg.gov/incident/7049/) in Oregon burned through one of the largest forest carbon offset projects participating in [California’s carbon market](https://ww2.arb.ca.gov/our-work/programs/cap-and-trade-program). Beyond the tragic effects on local communities and hazardous regional air quality, the expected carbon losses from this fire illustrate how California’s approach of using forests to mitigate climate change may need re-evaluation.
 

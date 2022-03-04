@@ -2,30 +2,30 @@ import { Box, Text } from 'theme-ui'
 
 const prefix = 'https://images.carbonplan.org'
 
-const Icon = ({ color, icon, link }) => {
+const Icon = ({ color, icon, hovered }) => {
   return (
     <Box
       id='container'
       tabIndex='-1'
+      className={hovered && 'hovered'}
       sx={{
         cursor: 'pointer',
         display: ['inline-block'],
-        width: ['100px', '120px', '120px', '150px'],
-        height: ['100px', '120px', '120px', '150px'],
-        mt: [0, 4, 4, 4],
-        float: ['none', 'right', 'right', 'right'],
+        width: ['80px', '120px', '130px', '150px'],
+        height: ['80px', '120px', '130px', '150px'],
+        float: ['none', 'none', 'right', 'right'],
         position: 'relative',
         borderRadius: '50%',
         borderStyle: 'solid',
         borderColor: 'primary',
         borderWidth: '0px',
         '@media (hover: hover) and (pointer: fine)': {
-          '&:hover > #background': {
+          '&:hover > #background, &.hovered > #background': {
             opacity: 0.5,
           },
-          '&:hover > #arrow': {
+          '&:hover > #arrow, &.hovered > #arrow': {
             opacity: 1,
-            left: ['20px', '22px', '22px', '30px'],
+            left: ['20px', '19px', '25px', '25px'],
           },
         },
       }}
@@ -52,8 +52,7 @@ const Icon = ({ color, icon, link }) => {
         sx={{
           fontFamily: 'faux',
           position: 'absolute',
-          top: ['-14px', '-20px', '-20px', '-24px'],
-          left: ['10px', '10px', '10px', '10px'],
+          top: ['-14px', '0px', '0px', '0px'],
           width: '100%',
           height: '100%',
           display: 'inline-block',
@@ -62,10 +61,18 @@ const Icon = ({ color, icon, link }) => {
           color: 'text',
           zIndex: 500,
           transition: '0.25s',
-          opacity: 0,
+          display: ['none', 'initial', 'initial', 'intial'],
+          left: ['0px', '0px', '0px', '0px'],
+          opacity: hovered ? 1 : 0,
+          textAlign: 'left',
         }}
       >
-        →
+        <Box
+          as='span'
+          sx={{ position: 'relative', top: [0, '-19px', '-15px', '-25px'] }}
+        >
+          →
+        </Box>
       </Text>
     </Box>
   )
