@@ -5,7 +5,7 @@ const contents = {
       number: 14,
       version: '1.0.0',
       date: '03-01-2022',
-      title: 'Title',
+      title: 'Fire, forests, and greenhouse gas inventories',
       authors: ['Oriana Chegwidden', 'Sadie Frank', 'Danny Cullenward'],
       color: 'yellow',
       quickLook: 'Quicklook...',
