@@ -19,7 +19,7 @@ import { data as fireData } from './data/fire-emissions'
 import { getOption, averageOverRange } from './utils'
 
 const fireOptions = ['GFED', 'CARB']
-const emissionsOptions = ['holland', 'gonzalez', 'christensen', 'AB 1504']
+const emissionsOptions = Object.keys(netData)
 //const years = Array(8).fill(0).map((_,i) => i + 2005)
 const years = Array(13)
   .fill(0)

@@ -23,7 +23,7 @@ const Figure = ({ mode = 'a' }) => {
       .map((_, i) => i + 2000)
 
     const fireOptions = ['GFED', 'CARB']
-    const emissionsOptions = ['holland', 'gonzalez', 'christensen', 'AB 1504']
+    const emissionsOptions = Object.keys(netData)
 
     for (let i = 0; i < emissionsOptions.length; i++) {
       for (let j = 0; j < fireOptions.length; j++) {
@@ -48,7 +48,7 @@ const Figure = ({ mode = 'a' }) => {
       .map((_, i) => i + 2000)
 
     const fireOptions = ['GFED', 'CARB']
-    const emissionsOptions = ['holland', 'gonzalez', 'christensen', 'AB 1504']
+    const emissionsOptions = Object.keys(netData)
 
     let counter = 0
     for (let i = 0; i < emissionsOptions.length; i++) {

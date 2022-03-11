@@ -25,8 +25,8 @@ const init = {
   emissions: {
     holland: true,
     gonzalez: false,
-    christensen: false,
-    'AB 1504': false,
+    'AB-1504 2015': false,
+    'AB-1504 2019': false,
   },
 }
 
