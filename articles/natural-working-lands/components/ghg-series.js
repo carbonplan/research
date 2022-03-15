@@ -77,7 +77,7 @@ const Figure = ({ mode = 'a' }) => {
       }}
     >
       <Box sx={{ width: '100%', height: '300px' }}>
-        <Chart x={[1999, 2022]} y={[390, 515]}>
+        <Chart x={[1999, 2022]} y={[340, 550]}>
           <AxisLabel left align='left'>
             CO₂ emissions&nbsp;
             <Box as='span' sx={{ textTransform: 'none', color: 'secondary' }}>
@@ -115,20 +115,20 @@ const Figure = ({ mode = 'a' }) => {
               width={2}
             />
           </Plot>
-          <Label x={2017} y={495} sx={{ color: 'gray' }}>
+          <Label x={2017} y={540} sx={{ color: 'gray' }}>
             {mode === 'a' ? 'Fixed averages' : 'Rolling averages'}
           </Label>
-          <Label x={2000.25} y={440}>
+          <Label x={2000.25} y={448}>
             AB32 2020 Limit
           </Label>
           {mode === 'b' && (
             <>
-              <Label x={2009.25} y={485} sx={{ color: 'yellow' }}>
+              <Label x={2006.25} y={525} sx={{ color: 'yellow' }}>
                 Anthropogenic
                 <br />
                 GHG inventory
               </Label>
-              <Label x={2006.25} y={423} sx={{ color: 'orange' }}>
+              <Label x={2006.25} y={405} sx={{ color: 'orange' }}>
                 Anthropogenic GHG Inventory +
                 <br />
                 Forest-related emissions

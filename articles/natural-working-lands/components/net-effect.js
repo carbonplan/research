@@ -76,7 +76,7 @@ const Figure = () => {
       <Box sx={{ width: '100%', height: '270px', mt: [6] }}>
         <Chart
           x={[-1, 15]}
-          y={[-40, 60]}
+          y={[-60, 80]}
           padding={{ bottom: 20, right: 0, left: 60 }}
         >
           <AxisLabel left align='left'>
@@ -99,22 +99,22 @@ const Figure = () => {
             <Rect color='green' x={bar(12)} y={[0, results.residual[2]]} />
             <Rect color='yellow' x={bar(13)} y={[0, results.net[2]]} />
           </Plot>
-          <Label x={1.25} y={-25.5}>
+          <Label x={1.25} y={-45}>
             {netData[getOption(emissionsOptions)].range.join('-')}
           </Label>
-          <Label x={6.25} y={-25.5}>
+          <Label x={6.25} y={-45}>
             2001-2010
           </Label>
-          <Label x={11.25} y={-25.5}>
+          <Label x={11.25} y={-45}>
             2011-2020
           </Label>
-          <Label x={-0.5} y={54} sx={{ color: 'red' }}>
+          <Label x={-0.5} y={75} sx={{ color: 'red' }}>
             Fire emissions
           </Label>
-          <Label x={-0.5} y={47} sx={{ color: 'green' }}>
+          <Label x={-0.5} y={65} sx={{ color: 'green' }}>
             Residual sink (inferred)
           </Label>
-          <Label x={-0.5} y={40} sx={{ color: 'yellow' }}>
+          <Label x={-0.5} y={55} sx={{ color: 'yellow' }}>
             Net emissions
           </Label>
         </Chart>
