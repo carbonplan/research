@@ -121,7 +121,7 @@ Future work should focus on targeted research and development of large-scale sea
 
 <GrowthChart />
 <FigureCaption number={3}>
-  Growth of seaweed farming required to reach 2030 and 2050 goals of 1Gt CO₂-eq
+  Growth of seaweed farming required to reach 2030 and 2050 goals of 1 Gt CO₂-eq
   annually for sinking and biomass products. For reference, 350K km² is
   approximately 0.1% of the world’s oceans.
 </FigureCaption>
