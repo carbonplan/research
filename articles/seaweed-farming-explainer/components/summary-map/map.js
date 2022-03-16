@@ -107,7 +107,7 @@ const Map = () => {
             setClim={setClim}
             setClimStep={10}
             label='Cost'
-            units={map === 'sink' ? '$ / tCO₂' : '$ / tCO₂e'}
+            units={map === 'sinking' ? '$ / tCO₂' : '$ / tCO₂e'}
           />
         </Box>
       </Box>
