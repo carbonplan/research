@@ -22,7 +22,7 @@ const Map = ({ location, locations, setLocation }) => {
   }, [])
 
   return (
-    <Box sx={{ width: ['75%', '300%', '100%', '100%'] }}>
+    <Box sx={{ width: ['75%', '100%', '100%', '100%'] }}>
       <Box as='svg' viewBox={`0 0 ${width} ${height - 10}`}>
         <defs>
           <Box
