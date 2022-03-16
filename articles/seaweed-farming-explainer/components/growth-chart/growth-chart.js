@@ -27,14 +27,17 @@ const sx = {
     fontFamily: 'mono',
     letterSpacing: 'mono',
     textTransform: 'uppercase',
-    fontSize: [2, 4, 4, '28px'],
+    fontSize: [0, 4, 4, '28px'],
+    mt: [2, 0, 0, 0],
+    ml: [-1, 0, 0, 0],
   },
   label: {
     maxWidth: ['70px', '120px', '120px', '200px'],
-    fontSize: [1, 1, 1, 2],
+    fontSize: [0, 1, 1, 2],
     fontFamily: 'faux',
     letterSpacing: 'faux',
     mt: [0],
+    ml: [-1, 0, 0, 0],
   },
 }
 

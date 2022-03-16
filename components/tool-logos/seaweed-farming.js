@@ -35,8 +35,9 @@ const Logo = () => {
       height='100%'
       preserveAspectRatio='xMidYMid slice'
     >
-      {squares.map((d) => (
+      {squares.map((d, i) => (
         <rect
+          key={i}
           x={d[1] * 10}
           y={d[0] * 10}
           width={10.2}

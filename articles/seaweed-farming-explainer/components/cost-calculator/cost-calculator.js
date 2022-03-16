@@ -185,7 +185,7 @@ const CostCalculator = () => {
         }}
       >
         <Column start={[1, 1, 1, 1]} width={[6, 6, 3, 3]} sx={sx.column}>
-          <Flex sx={{ gap: 3 }}>
+          <Flex sx={{ gap: 3, pb: [1, 0, 0, 0] }}>
             <Box sx={sx.heading}>Target</Box>
             <Filter
               values={{
