@@ -73,7 +73,7 @@ const SpatialValues = ({ location, locations, setLocation, sx, target }) => {
       <Flex
         sx={{
           flexDirection: ['column', 'row-reverse', 'column', 'column'],
-          gap: [2, 0, 4, 4],
+          gap: ['12px', 0, 4, 4],
         }}
       >
         <Map
