@@ -139,11 +139,15 @@ const GrowthChart = () => {
             y={yMax}
             align='right'
             verticalAlign='top'
-            sx={{ mt: [2] }}
+            sx={{ mt: [2], maxWidth: ['100px', '100%'] }}
           >
             Area required
             <br />
-            for 1 Gt CO₂
+            for 1{' '}
+            <Box as='span' sx={{ textTransform: 'none' }}>
+              Gt
+            </Box>{' '}
+            CO₂
             {target === 'products' ? (
               <Box as='span' sx={{ textTransform: 'none' }}>
                 eq
