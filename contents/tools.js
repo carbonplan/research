@@ -7,9 +7,18 @@ import {
   SoilProtocols,
   ComplianceUsers,
   ForestCarbon,
+  SeaweedFarming,
 } from '../components/tool-logos'
 
 const tools = [
+  {
+    id: 'seaweed-farming',
+    logo: <SeaweedFarming />,
+    color: 'teal',
+    summary:
+      'A database of reports on carbon dioxide removal project proposals.',
+    title: 'Seaweed Farming',
+  },
   {
     id: 'cdr-database',
     logo: <CDRDatabase />,

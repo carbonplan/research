@@ -1,5 +1,39 @@
 const articles = [
   {
+    id: 'seaweed-farming-explainer',
+    number: 14,
+    version: '1.0.0',
+    date: '03-16-2022',
+    color: 'teal',
+    title: 'Mapping seaweed farming potential',
+    authors: [
+      'Julianne DeAngelo',
+      'Steven Davis',
+      'Benjamin Saenz',
+      'Isabella Arzeno-Soltero',
+      'Matthew Long',
+      'Christina Frieder',
+      'Kristen Davis',
+      'Kata Martin',
+      'Freya Chay',
+      'Jeremy Freeman',
+      'Joseph Hamman',
+    ],
+    card: 'seaweed-farming-explainer',
+    background: 'article-014/seaweed',
+    quickLook:
+      'A new tool for exploring seaweed-based CDR and biomass products',
+    tags: ['article'],
+    summary:
+      'We developed an interactive tool for mapping the potential of seaweed farming for carbon removal and biomass products. Read this article, explore the interactive map, or read the associated preprints to learn more.',
+    icon: 'article-014/seaweed-small',
+    links: [
+      { label: 'Map tool', href: '/research/seaweed-farming' },
+      { label: 'Preprint #1', href: 'https://doi.org/10.31223/X5PG9V' },
+      { label: 'Preprint #2', href: 'https://doi.org/10.31223/X52P8Z' },
+    ],
+  },
+  {
     id: 'ton-year-explainer',
     number: 13,
     version: '1.0.1',
