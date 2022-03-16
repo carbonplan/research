@@ -58,6 +58,7 @@ const Map = ({ location, locations, setLocation }) => {
               cy={projection(point)[1]}
               r='10'
               sx={{
+                r: [11.6, 10, 10, 10],
                 fill: location === i ? 'teal' : 'secondary',
                 transition: 'fill 0.2s',
                 '&:hover': {
