@@ -55,7 +55,7 @@ To contribute to such climate goals, seaweed farming would have to expand tremen
 
 In the case of seaweed carbon removal, the carbon removed by sinking seaweed does not remain sequestered permanently, since large-scale ocean circulation might cause much of the carbon to resurface after a few hundred years.<Cite id='siegel.2021' /> It is also unclear what fraction of seaweed carbon is ultimately removed from the atmosphere given dynamics of air-sea fluxes and downstream effects on biological productivity.<Cite ids={['bach.2021', 'harrison.2018']} /> These potential inefficiencies and uncertainties need to be considered when assessing the viability of sinking seaweed as a scalable carbon removal strategy.
 
-Similarly, potential avoided emissions from seaweed will depend on the type and source of agricultural products being displaced. For example, growing soybeans releases considerable quantities of non-CO₂ GHGs on average; using farmed seaweed to displace soy protein in animal feed could avoid 0.7 tons of CO₂-eq GHGs per ton of dry seaweed that would have otherwise been emitted by producing soybeans.<Cite id='hong.2021' /> The size of the market for seaweed-derived products will further depend on demand and reliable market values for such seaweed-based products.
+Similarly, potential avoided emissions from seaweed will depend on the type and source of agricultural products being displaced. For example, growing soybeans releases considerable quantities of non-CO₂ GHGs on average; using farmed seaweed to displace soy protein in animal feed could avoid 0.7 tons of CO₂e GHGs per ton of dry seaweed that would have otherwise been emitted by producing soybeans.<Cite id='hong.2021' /> The size of the market for seaweed-derived products will further depend on demand and reliable market values for such seaweed-based products.
 
 The productivity, costs, and potential climate benefits of seaweed farming are spatially heterogeneous and scale-dependent, and it is important to evaluate the key sensitivities and trade-offs relevant to investors and decision-makers. We have developed coupled biophysical and technoeconomic models to begin answering these questions. Here we explain those models and the interactive tool we built to make them more accessible. We also discuss key insights and priorities for future research. For a deeper dive into our technoeconomic model and analysis, you can try the [map explorer tool](https://carbonplan.org/research/seaweed-farming) or read our [preprint](https://doi.org/10.31223/X5PG9V).
 
@@ -122,12 +122,12 @@ Future work should focus on targeted research and development of large-scale sea
 
 <GrowthChart />
 <FigureCaption number={3}>
-  Growth of seaweed farming required to reach 2030 and 2050 goals of 1 Gt CO₂-eq
+  Growth of seaweed farming required to reach 2030 and 2050 goals of 1 Gt CO₂e
   annually for sinking and biomass products. For reference, 350K km² is
   approximately 0.1% of the world’s oceans.
 </FigureCaption>
 
-Producing seaweed in the lowest-cost areas to reach 1 Gt CO₂-eq of emissions avoided or 1 Gt CO₂ removal by 2050 would entail the area farmed to increase by roughly 13% or 17% per year, respectively, compared to the 2000-2018 seaweed farming industrial growth rate of 6%. Achieving the same level of climate benefits from seaweed by 2030 increases the implied expansion rate of farms to roughly 44% or 60% per year for emissions avoided or carbon removed, respectively.
+Producing seaweed in the lowest-cost areas to reach 1 Gt CO₂e of emissions avoided or 1 Gt CO₂ removal by 2050 would entail the area farmed to increase by roughly 13% or 17% per year, respectively, compared to the 2000-2018 seaweed farming industrial growth rate of 6%. Achieving the same level of climate benefits from seaweed by 2030 increases the implied expansion rate of farms to roughly 44% or 60% per year for emissions avoided or carbon removed, respectively.
 
 The outlook for a massive scale-up of seaweed climate benefits is thus decidedly murky, but we hope our model and our interactive mapping tool provide insight for decision-makers and researchers who might be considering seaweed farming as part of a more comprehensive emissions reduction or carbon removal strategy.
 
