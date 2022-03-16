@@ -150,7 +150,7 @@ const GrowthChart = () => {
             CO₂
             {target === 'products' ? (
               <Box as='span' sx={{ textTransform: 'none' }}>
-                eq
+                e
               </Box>
             ) : (
               ''

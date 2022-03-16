@@ -57,7 +57,7 @@ In the case of seaweed carbon removal, the carbon removed by sinking seaweed doe
 
 Similarly, potential avoided emissions from seaweed will depend on the type and source of agricultural products being displaced. For example, growing soybeans releases considerable quantities of non-CO₂ GHGs on average; using farmed seaweed to displace soy protein in animal feed could avoid 0.7 tons of CO₂-eq GHGs per ton of dry seaweed that would have otherwise been emitted by producing soybeans.<Cite id='hong.2021' /> The size of the market for seaweed-derived products will further depend on demand and reliable market values for such seaweed-based products.
 
-The productivity, costs, and potential climate benefits of seaweed farming are spatially heterogeneous and scale-dependent, and it is important to evaluate the key sensitivities and trade-offs relevant to investors and decision-makers. We have developed coupled biophysical and technoeconomic models to begin answering these questions. Here we explain those models and the interactive tool we built to make them more accessible. We also discuss key insights and priorities for future research. For a deeper dive into our model and analysis, you can try the [map explorer tool](https://carbonplan.org/research/seaweed-farming) or read our [preprint](https://doi.org/10.31223/X5PG9V).
+The productivity, costs, and potential climate benefits of seaweed farming are spatially heterogeneous and scale-dependent, and it is important to evaluate the key sensitivities and trade-offs relevant to investors and decision-makers. We have developed coupled biophysical and technoeconomic models to begin answering these questions. Here we explain those models and the interactive tool we built to make them more accessible. We also discuss key insights and priorities for future research. For a deeper dive into our technoeconomic model and analysis, you can try the [map explorer tool](https://carbonplan.org/research/seaweed-farming) or read our [preprint](https://doi.org/10.31223/X5PG9V).
 
 ## Technoeconomic model
 
@@ -79,7 +79,8 @@ The core behavior of the model is demonstrated in Figure 1, which shows the prim
   location. Sliders adjust the values of technoeconomic parameters used by the
   model. Values at the top report the production cost, the climate benefit, and
   the removal cost (for sinking) or mitigation cost (for products), which can be
-  obtained as the production cost divided by the climate benefit.
+  obtained as the production cost divided by the climate benefit (less product
+  value in the case of mitigation cost).
 </FigureCaption>
 
 ## Assumptions and caveats
