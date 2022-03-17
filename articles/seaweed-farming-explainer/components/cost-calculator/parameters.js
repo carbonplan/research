@@ -1,8 +1,7 @@
 import { Box, Flex } from 'theme-ui'
 import { Badge, Slider } from '@carbonplan/components'
 import { useRef, useState } from 'react'
-
-import { PARAMETERS } from './model'
+import { PARAMETERS } from '@carbonplan/seaweed-farming-model'
 
 const sx = {
   parameterLabel: {

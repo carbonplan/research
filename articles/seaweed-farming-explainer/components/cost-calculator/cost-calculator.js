@@ -1,10 +1,13 @@
-import { format } from 'd3-format'
 import { useState } from 'react'
 import { Box, Divider, Flex } from 'theme-ui'
 import { Column, Filter, Row } from '@carbonplan/components'
+import {
+  PARAMETERS,
+  calculateBenefit,
+  calculateCost,
+} from '@carbonplan/seaweed-farming-model'
 
 import { formatValue } from './utils'
-import { PARAMETERS, calculateBenefit, calculateCost } from './model'
 import Parameters from './parameters'
 import SpatialValues from './spatial-values'
 
