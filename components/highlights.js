@@ -82,6 +82,7 @@ const Highlights = forwardRef(({ selected }, ref) => {
           ...sx.heading,
           display: ['none', 'none', 'inherit', 'inherit'],
           mb: [4, 5, 6, 7],
+          mt: [0, 0, 0, '-1px'],
         }}
       >
         Highlights
