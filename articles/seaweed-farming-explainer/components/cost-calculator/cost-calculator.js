@@ -7,82 +7,10 @@ import {
   calculateCost,
 } from '@carbonplan/seaweed-farming-model'
 
+import locations from './locations.json'
 import { formatValue } from './utils'
 import Parameters from './parameters'
 import SpatialValues from './spatial-values'
-
-const LOCATIONS = [
-  {
-    key: 'pacific',
-    point: [-90, 2],
-    values: {
-      seaweed_dw: 7939.91552734375,
-      d2p: 192.85289001464844,
-      fseq_transport: 0.9930768013000488,
-      d2sink: 0.0,
-      species: 'tropical red',
-      depth: 2016.75,
-      nharv: 8.0,
-      wave_height: 1.4342491626739502,
-    },
-  },
-  {
-    key: 'north_sea',
-    point: [0, 58],
-    values: {
-      seaweed_dw: 1636.282470703125,
-      d2p: 29.229372024536133,
-      fseq_transport: 0.7799999713897705,
-      d2sink: 428.871826171875,
-      species: 'temperate brown',
-      depth: 131.5,
-      nharv: 2.0,
-      wave_height: 1.8970307111740112,
-    },
-  },
-  {
-    key: 'alaska',
-    point: [-165, 55],
-    values: {
-      seaweed_dw: 1316.7147216796875,
-      d2p: 99.7650146484375,
-      fseq_transport: 0.9700000286102295,
-      d2sink: 115.72320556640625,
-      species: 'temperate brown',
-      depth: 91.25,
-      nharv: 1.0,
-      wave_height: 1.9661271572113037,
-    },
-  },
-  {
-    key: 'argentina',
-    point: [-66, -46],
-    values: {
-      seaweed_dw: 2587.830322265625,
-      d2p: 103.04915618896484,
-      fseq_transport: 0.44999998807907104,
-      d2sink: 273.8975830078125,
-      species: 'temperate brown',
-      depth: 104.0,
-      nharv: 2.0,
-      wave_height: 1.3610966205596924,
-    },
-  },
-  {
-    key: 'yellow_sea',
-    point: [124.5, 33.3],
-    values: {
-      seaweed_dw: 972.8525390625,
-      d2p: 167.25067138671875,
-      fseq_transport: 0.9700000286102295,
-      d2sink: 748.9559936523438,
-      species: 'temperate brown',
-      depth: 72.0,
-      nharv: 1.0,
-      wave_height: 1.2413867712020874,
-    },
-  },
-]
 
 const sx = {
   column: {
@@ -149,7 +77,7 @@ const CostCalculator = () => {
   const [parameters, setParameters] = useState(INITIAL_PARAMETERS)
 
   const benefitUnits = target === 'sinking' ? 'tCO₂' : 'tCO₂e'
-  const { values } = LOCATIONS[location]
+  const { values } = locations[location]
 
   const benefit = calculateBenefit(target, values, parameters)
   const cost = calculateCost(target, values, parameters)
@@ -203,7 +131,7 @@ const CostCalculator = () => {
           <Divider sx={{ mt: [1, 1, 2, 2], mb: [3, 3, 4, 4] }} />
 
           <SpatialValues
-            locations={LOCATIONS}
+            locations={locations}
             setLocation={setLocation}
             location={location}
             target={target}
