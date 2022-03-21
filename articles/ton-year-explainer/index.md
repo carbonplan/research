@@ -1,5 +1,5 @@
 import { Link, FigureCaption, TableCaption } from '@carbonplan/components'
-import { Endnote, Cite, PullQuote } from '@carbonplan/layouts'
+import { Endnote, Cite, Figure, PullQuote } from '@carbonplan/layouts'
 import EmissionsChart from './components/emissions-chart'
 import MethodsChart from './components/methods-chart'
 import ValueChart from './components/value-chart'
@@ -69,15 +69,17 @@ If CO₂ stayed in the atmosphere permanently, the impact of an emission in ton-
 
 To demonstrate this calculation, we provide a simplified (but physically unrealistic) example in the figure below. In this example, 1 tCO₂ is emitted at t=0 and removed from the atmosphere by natural processes over four years. In the first year, the 1 tCO₂ results in 1 ton-year of atmospheric impact. In the second year, only 0.5 tCO₂ remains, resulting in another 0.5 ton-years of impact. Summing each year’s atmospheric impact over the 4 year time horizon results in a total cost of 2 ton-years.
 
-<CartoonEmissions />
-<FigureCaption number={1}>
-  A simplified example of calculating the ton-year cost of an emission. In this
-  example, 1 tCO₂ is emitted at t=0 and removed from the atmosphere by natural
-  processes over four years. The emission’s ton-year impact is summed over the
-  time horizon to calculate the total ton-year cost of the emission. This
-  example is physically unrealistic because real CO₂ emissions affect
-  atmospheric CO₂ concentrations for millennia.{' '}
-</FigureCaption>
+<Figure>
+  <CartoonEmissions />
+  <FigureCaption number={1}>
+    A simplified example of calculating the ton-year cost of an emission. In
+    this example, 1 tCO₂ is emitted at t=0 and removed from the atmosphere by
+    natural processes over four years. The emission’s ton-year impact is summed
+    over the time horizon to calculate the total ton-year cost of the emission.
+    This example is physically unrealistic because real CO₂ emissions affect
+    atmospheric CO₂ concentrations for millennia.
+  </FigureCaption>
+</Figure>
 
 ### Step 04 — Calculating the ton-years of a carbon storage solution
 
@@ -87,17 +89,19 @@ Moura Costa calculates the benefit of carbon storage in the most straightforward
 
 Lashof, in contrast, looks only at atmospheric outcomes and assumes that temporarily stored carbon is fully re-emitted at the end of the storage period. Lashof calculates the benefit of temporary carbon storage by asking how many ton-years of atmospheric impact are avoided within the specified time horizon. So if temporary carbon storage pushes some of the impact of an emission out past the chosen time horizon, Lashof considers that a quantifiable benefit. For the same Figure 2 example project and a time horizon of four years, Lashof calculates a 0.5 ton-year benefit — only one quarter of the benefit calculated by Moura Costa.
 
-<CartoonProject />
-<FigureCaption number={2}>
-  A simplified example of calculating the ton-year benefit of temporary carbon
-  storage according to two ton-year accounting methods: Moura Costa and Lashof.
-  In this example, a project stores 1 tCO₂ in a tree for two years, then
-  re-emits that carbon into the atmosphere. The emitted CO₂ is removed from the
-  atmosphere by natural processes over four years. Moura Costa calculates a 2
-  ton-year benefit, while Lashof calculates a 0.5 ton-year benefit. This example
-  is physically unrealistic because real CO₂ emissions affect the atmosphere for
-  hundreds of thousands of years.{' '}
-</FigureCaption>
+<Figure>
+  <CartoonProject />
+  <FigureCaption number={2}>
+    A simplified example of calculating the ton-year benefit of temporary carbon
+    storage according to two ton-year accounting methods: Moura Costa and
+    Lashof. In this example, a project stores 1 tCO₂ in a tree for two years,
+    then re-emits that carbon into the atmosphere. The emitted CO₂ is removed
+    from the atmosphere by natural processes over four years. Moura Costa
+    calculates a 2 ton-year benefit, while Lashof calculates a 0.5 ton-year
+    benefit. This example is physically unrealistic because real CO₂ emissions
+    affect the atmosphere for hundreds of thousands of years.
+  </FigureCaption>
+</Figure>
 
 ### Step 05 — Making an equivalence claim
 
@@ -117,13 +121,15 @@ Rather than explicitly incorporating these processes, which operate over timesca
 
 Using the same cost and benefit logic described above, ton-year accounting integrates under these curves (rather than using addition and multiplication as shown in our simplified example) to calculate the ton-year cost of CO₂ residing in the atmosphere. In Figure 3, you can use the time horizon slider to see how the ton-year cost of emitting 1 tCO₂ is calculated by integrating under a CO₂ emission curve.<Cite id='joos.2013'/>
 
-<EmissionsChart />
-<FigureCaption number={3}>
-  Ton-year methods calculate the ton-year cost of CO₂ in the atmosphere by
-  integrating under a curve that represents the proportion of an emission
-  remaining in the atmosphere as a function of time (Joos et al., 2013). Drag
-  the slider to change the time horizon.
-</FigureCaption>
+<Figure>
+  <EmissionsChart />
+  <FigureCaption number={3}>
+    Ton-year methods calculate the ton-year cost of CO₂ in the atmosphere by
+    integrating under a curve that represents the proportion of an emission
+    remaining in the atmosphere as a function of time (Joos et al., 2013). Drag
+    the slider to change the time horizon.
+  </FigureCaption>
+</Figure>
 
 When ton-year accounting takes the integral of the CO₂ emission curve, it approximates the amount of extra energy trapped in the climate system by a CO₂ emission — a concept known as cumulative radiative forcing. Excess energy trapped in the climate system causes harmful and effectively irreversible climate impacts, like glacier melt and sea-level rise,<Cite id='solomon.2009'/> so even temporary reductions yield positive climate benefits.
 

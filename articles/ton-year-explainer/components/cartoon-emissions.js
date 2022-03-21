@@ -416,126 +416,124 @@ const Svg = () => {
 
 const CartoonEmissions = () => {
   return (
-    <Box as='figure' sx={{ mt: ['26px', 6, 6, 8], mb: [4, 4, 4, 5] }}>
-      <Row columns={[6]}>
-        <Column start={1} width={[6, 6, 6, 6]}>
-          <Box sx={{ position: 'relative', height: heights.div }}>
-            <Box
-              sx={{ position: 'absolute', width: '100%', height: heights.div }}
+    <Row columns={[6]} sx={{ mt: ['26px', 6, 6, 8] }}>
+      <Column start={1} width={[6, 6, 6, 6]}>
+        <Box sx={{ position: 'relative', height: heights.div }}>
+          <Box
+            sx={{ position: 'absolute', width: '100%', height: heights.div }}
+          >
+            <Chart
+              x={[0, 6]}
+              y={[0, 1]}
+              clamp={false}
+              padding={{ top: 88, left: 0, bottom: 46 }}
             >
-              <Chart
-                x={[0, 6]}
-                y={[0, 1]}
-                clamp={false}
-                padding={{ top: 88, left: 0, bottom: 46 }}
+              <TickLabels bottom />
+              <Ticks bottom />
+              <Axis bottom />
+              <Grid vertical />
+              <AxisLabel bottom align='right' units='years'>
+                Time
+              </AxisLabel>
+              <Label x={0.5} y={1.1} width={1} align='center' sx={sx.label}>
+                +1
+              </Label>
+              <Label x={1.5} y={1.1} width={1} align='center' sx={sx.label}>
+                +0.5
+              </Label>
+              <Label x={2.5} y={1.1} width={1} align='center' sx={sx.label}>
+                +0.3
+              </Label>
+              <Label x={3.5} y={1.1} width={1} align='center' sx={sx.label}>
+                +0.2
+              </Label>
+              <Label
+                x={2}
+                y={1.21}
+                width={4}
+                align='center'
+                verticalAlign='bottom'
+                sx={sx.label}
               >
-                <TickLabels bottom />
-                <Ticks bottom />
-                <Axis bottom />
-                <Grid vertical />
-                <AxisLabel bottom align='right' units='years'>
-                  Time
-                </AxisLabel>
-                <Label x={0.5} y={1.1} width={1} align='center' sx={sx.label}>
-                  +1
-                </Label>
-                <Label x={1.5} y={1.1} width={1} align='center' sx={sx.label}>
-                  +0.5
-                </Label>
-                <Label x={2.5} y={1.1} width={1} align='center' sx={sx.label}>
-                  +0.3
-                </Label>
-                <Label x={3.5} y={1.1} width={1} align='center' sx={sx.label}>
-                  +0.2
-                </Label>
-                <Label
-                  x={2}
-                  y={1.21}
-                  width={4}
-                  align='center'
-                  verticalAlign='bottom'
-                  sx={sx.label}
-                >
-                  <Box sx={{ textTransform: 'none', fontSize: [1, 1, 1, 2] }}>
-                    (Cost of emission)
-                  </Box>
-                  2 ton-years
-                </Label>
-                <Label x={4.45} y={1.3}>
-                  Time horizon
-                  <br />
-                  (4 years)
-                </Label>
-                <Plot>
-                  <Line
-                    data={[
-                      [4, 0],
-                      [4, 1.45],
-                    ]}
-                    sx={{
-                      stroke: 'secondary',
-                      strokeWidth: 1,
-                      strokeDasharray: 4,
-                    }}
-                  />
-                  <Line
-                    data={[
-                      [0, 1.165],
-                      [4, 1.165],
-                    ]}
-                    sx={{
-                      stroke: 'yellow',
-                      strokeWidth: 1,
-                    }}
-                  />
-                  <Line
-                    data={[
-                      [4.15, 1.45],
-                      [4.4, 1.45],
-                    ]}
-                    sx={{
-                      stroke: 'secondary',
-                      strokeWidth: 1,
-                    }}
-                  />
-                  <Line
-                    data={[
-                      [4.4, 1.45],
-                      [4.55, 1.35],
-                    ]}
-                    sx={{
-                      stroke: 'secondary',
-                      strokeWidth: 1,
-                    }}
-                  />
-                </Plot>
-              </Chart>
-            </Box>
+                <Box sx={{ textTransform: 'none', fontSize: [1, 1, 1, 2] }}>
+                  (Cost of emission)
+                </Box>
+                2 ton-years
+              </Label>
+              <Label x={4.45} y={1.3}>
+                Time horizon
+                <br />
+                (4 years)
+              </Label>
+              <Plot>
+                <Line
+                  data={[
+                    [4, 0],
+                    [4, 1.45],
+                  ]}
+                  sx={{
+                    stroke: 'secondary',
+                    strokeWidth: 1,
+                    strokeDasharray: 4,
+                  }}
+                />
+                <Line
+                  data={[
+                    [0, 1.165],
+                    [4, 1.165],
+                  ]}
+                  sx={{
+                    stroke: 'yellow',
+                    strokeWidth: 1,
+                  }}
+                />
+                <Line
+                  data={[
+                    [4.15, 1.45],
+                    [4.4, 1.45],
+                  ]}
+                  sx={{
+                    stroke: 'secondary',
+                    strokeWidth: 1,
+                  }}
+                />
+                <Line
+                  data={[
+                    [4.4, 1.45],
+                    [4.55, 1.35],
+                  ]}
+                  sx={{
+                    stroke: 'secondary',
+                    strokeWidth: 1,
+                  }}
+                />
+              </Plot>
+            </Chart>
+          </Box>
+          <Box
+            sx={{
+              zIndex: -1,
+              position: 'absolute',
+              bottom: 0,
+              mb: '45px',
+              height: heights.svg,
+              width: '100%',
+            }}
+          >
+            <Svg />
             <Box
               sx={{
-                zIndex: -1,
-                position: 'absolute',
-                bottom: 0,
-                mb: '45px',
-                height: heights.svg,
-                width: '100%',
+                ...sx.co2Label,
+                bottom: ['103%', '103%', '103%', '101%'],
+                left: ['1%', '2%', '2%', '2%'],
               }}
             >
-              <Svg />
-              <Box
-                sx={{
-                  ...sx.co2Label,
-                  bottom: ['103%', '103%', '103%', '101%'],
-                  left: ['1%', '2%', '2%', '2%'],
-                }}
-              >
-                CO₂
-              </Box>
+              CO₂
             </Box>
           </Box>
-        </Column>
-      </Row>
-    </Box>
+        </Box>
+      </Column>
+    </Row>
   )
 }
 
