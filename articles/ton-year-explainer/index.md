@@ -165,7 +165,7 @@ It is also true that by comparing the ton-years of CO₂ in the atmosphere direc
 
 <Figure>
   <EquivalenceTable />
-  <TableCaption as='figcaption' number={1}>
+  <TableCaption number={1}>
     The Moura Costa method allows for the claim that temporarily storing 1 tCO₂
     justifies the emission of more than 1 tCO₂ — an indefensible outcome.
   </TableCaption>
