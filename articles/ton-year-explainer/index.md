@@ -165,7 +165,7 @@ It is also true that by comparing the ton-years of CO₂ in the atmosphere direc
 
 <Figure>
   <EquivalenceTable />
-  <TableCaption number={1}>
+  <TableCaption as='figcaption' number={1}>
     The Moura Costa method allows for the claim that temporarily storing 1 tCO₂
     justifies the emission of more than 1 tCO₂ — an indefensible outcome.
   </TableCaption>
@@ -202,7 +202,7 @@ This diversity can also be seen in real examples of how ton-year accounting has 
 
 <Figure as='table'>
   <ExamplesTable />
-  <TableCaption as='caption' number={2}>
+  <TableCaption number={2}>
     Ton-year accounting methods have been and are being used in the offsets
     industry with a diversity of method and parameter choices. CAR (2020) refers
     to the Climate Action Reserve’s implementation of ton-year accounting in its{' '}
