@@ -24,7 +24,7 @@ const ParameterScenario = ({
   }
 
   return (
-    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+    <Box>
       <Row columns={[6]} sx={{ pb: [2, 2, 2, 3] }}>
         <Column start={[1]} width={[6, 2, 2, 2]}>
           <Divider sx={{ mb: [3] }} />

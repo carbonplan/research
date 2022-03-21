@@ -1,5 +1,5 @@
 import { FigureCaption, Colors } from '@carbonplan/components'
-import { PullQuote, Endnote } from '@carbonplan/layouts'
+import { PullQuote, Endnote, Figure } from '@carbonplan/layouts'
 import { Themed } from 'theme-ui'
 import InlineCheck from '../../components/inline-check'
 import Numbers from './components/numbers'
@@ -61,28 +61,33 @@ We excluded one proposal that presented a mechanism to reduce total radiative fo
 
 Because [Stripe’s purchase criteria](https://stripe.com/blog/first-negative-emissions-purchases#criteria-table) identify >1000 year carbon storage as a key target, the fraction of projects across categories differed from what we’ve seen previously. Notably, there were no forest or soil projects proposed in this solicitation. Volumes were also lower, and prices higher.
 
-<Numbers />
-<FigureCaption number={1}>
-  Summary numbers across the project proposals we analyzed. All fractions are
-  expressed in terms of volume (in units of gross tCO₂).
-</FigureCaption>
+<Figure>
+  <Numbers />
+  <FigureCaption number={1}>
+    Summary numbers across the project proposals we analyzed. All fractions are
+    expressed in terms of volume (in units of gross tCO₂).
+  </FigureCaption>
+</Figure>
 
 Using the [now-public proposals](https://github.com/stripe/carbon-removal-source-materials), project websites, and published literature, we analyzed each proposal on the basis of [seven harmonized metrics](https://carbonplan.org/research/cdr-database/methods).
 
 Below we show distributions of two key metrics, volume and permanence, in an interactive where you can compare the three batches of proposals we’ve evaluated thus far. Compared to previous rounds, Permanence values are higher (due to Stripe’s criteria) and volumes are generally lower (likely due to limited supplies that meet these strict criteria).
 
-<Distributions />
-<FigureCaption number={2}>
-  Distributions of volume (above) and permanence (below) across six project
-  categories: <Colors.Green>forests</Colors.Green>,{' '}
-  <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
-  <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
-  <Colors.Purple>direct air capture</Colors.Purple>. Each circle represents a
-  project, and curves show the distribution using a kernel density estimate.
-  Permanence values and volumes reflect proposal claims, and are not necessarily
-  accurate or realistic. You can compare volume and permanence distributions
-  between the RFPs we’ve analyzed using the toggle in the upper left.
-</FigureCaption>
+<Figure>
+  <Distributions />
+  <FigureCaption number={2}>
+    Distributions of volume (above) and permanence (below) across six project
+    categories: <Colors.Green>forests</Colors.Green>,{' '}
+    <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+    <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
+    <Colors.Purple>direct air capture</Colors.Purple>. Each circle represents a
+    project, and curves show the distribution using a kernel density estimate.
+    Permanence values and volumes reflect proposal claims, and are not
+    necessarily accurate or realistic. You can compare volume and permanence
+    distributions between the RFPs we’ve analyzed using the toggle in the upper
+    left.
+  </FigureCaption>
+</Figure>
 
 As a reminder, volume claims vary widely depending on project stage and assumed delivery timelines, and are reported here on a gross basis that does not reflect projects’ own greenhouse gas emissions. We attempt to document nuances in the database notes and comments. Volumes should not be compared directly without paying careful attention to project details.
 
@@ -90,17 +95,20 @@ This is the second time Stripe proposals have included public offer prices expre
 
 Below we show the distributions of our price and volume metrics in an interactive where you can compare the two batches of Stripe proposals.
 
-<Price />
-<FigureCaption number={3}>
-  Comparing price vs volume for all projects from the 2020 and 2021 Stripe RFPs.
-  You can compare results using the toggle in the upper left. Only projects with
-  an overall rating of 2 or higher are shown, so as to ensure a minimal degree
-  of robustness in the data. All values are self-reported and should be
-  interpreted with care. Due to reporting inconsistencies, volumes are shown as
-  gross removal (tCO₂) whereas prices are shown as net negative removal (offered
-  $/net tCO₂). For the Stripe 2021 RFP data, where we had estimates of net
-  removal, we confirmed overall trends were similar using those values instead.
-</FigureCaption>
+<Figure>
+  <Price />
+  <FigureCaption number={3}>
+    Comparing price vs volume for all projects from the 2020 and 2021 Stripe
+    RFPs. You can compare results using the toggle in the upper left. Only
+    projects with an overall rating of 2 or higher are shown, so as to ensure a
+    minimal degree of robustness in the data. All values are self-reported and
+    should be interpreted with care. Due to reporting inconsistencies, volumes
+    are shown as gross removal (tCO₂) whereas prices are shown as net negative
+    removal (offered $/net tCO₂). For the Stripe 2021 RFP data, where we had
+    estimates of net removal, we confirmed overall trends were similar using
+    those values instead.
+  </FigureCaption>
+</Figure>
 
 The data show a shift toward lower volumes and higher prices, which would seem consistent with Stripe’s strong requirements around permanence. As we obtain more public data on CDR prices, more analysis of price trends and learning curves will become possible.
 

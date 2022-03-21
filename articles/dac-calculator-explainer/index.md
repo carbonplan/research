@@ -1,5 +1,5 @@
 import { Link, Colors, FigureCaption } from '@carbonplan/components'
-import { Endnote, Cite } from '@carbonplan/layouts'
+import { Endnote, Cite, Figure } from '@carbonplan/layouts'
 import BoundaryCondition from './components/boundary-condition'
 import ParameterScenario from './components/parameter-scenario'
 import CostSummary from './components/cost-summary'
@@ -62,12 +62,14 @@ Techno-economic analyses (TEAs) for emerging technologies, such as DAC, rely hea
 
 Our calculator estimates the cost of a given DAC technology explicitly linked to the energy resource used to power it. In other words, the cost not only includes building the DAC facility, but also building the energy infrastructure. We do not, however, include costs for CO₂ transportation or storage. In the case of natural gas with carbon capture and storage, the carbon capture process is inside the boundary, but transportation and storage is outside. The “boundary condition” diagram below shows which costs are included.
 
-<BoundaryCondition />
-<FigureCaption number={1}>
-  Boundary conditions for the DAC cost calculator.{' '}
-  <Colors.Purple>Purple</Colors.Purple> box bounds the components considered for
-  our analysis.
-</FigureCaption>
+<Figure>
+  <BoundaryCondition />
+  <FigureCaption number={1}>
+    Boundary conditions for the DAC cost calculator.{' '}
+    <Colors.Purple>Purple</Colors.Purple> box bounds the components considered
+    for our analysis.
+  </FigureCaption>
+</Figure>
 
 Each of these cost components in turn depend on parameters, which are presented in the calculator as interactive sliders. Above each slider, a chart shows how the total net removed cost will change as you vary that parameter, conditional on the current setting of the others. So, as you change each parameter, not only can you see how the total cost changes, but you can also see how it affects sensitivity to the other parameters. Finally, a dropdown at the top lets you choose between three different sources of energy, which we will now describe.
 
@@ -87,100 +89,109 @@ The third scenario uses solar photovoltaics (PV) to continuously power the DAC p
 
 With default settings, the calculator yields the highest cost for solar, second highest for wind, and lowest for NGCC.<Cite id='horizontal.defaults'/> But, as we will explore, these costs reflect just one specific set of assumptions.
 
-<CostSummary
-  windTotalCost={365.476}
-  windVariableOM={4}
-  windFixedOM={63.834}
-  windCapitalRecovery={297.642}
-  solarTotalCost={435.853}
-  solarVariableOM={4}
-  solarFixedOM={67.679}
-  solarCapitalRecovery={364.174}
-  NGCCTotalCost={264.979}
-  NGCCVariableOM={7.332}
-  NGCCFixedOM={42.157}
-  NGCCCapitalRecovery={182.271}
-  NGCCNaturalGas={33.219}
-/>
-<FigureCaption number={2}>
-  Net removed costs ($/tCO₂eq) for three energy configurations.
-</FigureCaption>
+<Figure>
+  <CostSummary
+    windTotalCost={365.476}
+    windVariableOM={4}
+    windFixedOM={63.834}
+    windCapitalRecovery={297.642}
+    solarTotalCost={435.853}
+    solarVariableOM={4}
+    solarFixedOM={67.679}
+    solarCapitalRecovery={364.174}
+    NGCCTotalCost={264.979}
+    NGCCVariableOM={7.332}
+    NGCCFixedOM={42.157}
+    NGCCCapitalRecovery={182.271}
+    NGCCNaturalGas={33.219}
+  />
+  <FigureCaption number={2}>
+    Net removed costs ($/tCO₂eq) for three energy configurations.
+  </FigureCaption>
+</Figure>
 
 Here we explore three alternative scenarios in detail: a higher cost NGCC scenario, a lower cost wind scenario, and an NGCC scenario with a higher leakage rate.
 
 To model higher cost NGCC, we use parameters from a DAC facility described in a 2011 report from the American Physical Societies,<Cite id='socolow.2011'/> including corrections from two additional follow-on analyses.<Cite ids={['mazzotti.2013', 'zeman.2014']}/> In using these reports we are assuming a higher DAC plant cost and slightly higher electricity and thermal energy requirements than some other estimates.<Cite id='vertical.defaults'/>
 
-<ParameterScenario
-  energySource={'NGCC'}
-  capEx={2027}
-  electricReq={1.7}
-  thermalReq={7.2}
-  leakage={2.2}
-  totalCost={434}
-  variableOM={8.032}
-  fixedOM={43.874}
-  naturalGas={41.576}
-  capitalRecovery={340.47}
-/>
-
-<FigureCaption number={3}>
-  Summary for a higher cost NGCC scenario.
-</FigureCaption>
+<Figure>
+  <ParameterScenario
+    energySource={'NGCC'}
+    capEx={2027}
+    electricReq={1.7}
+    thermalReq={7.2}
+    leakage={2.2}
+    totalCost={434}
+    variableOM={8.032}
+    fixedOM={43.874}
+    naturalGas={41.576}
+    capitalRecovery={340.47}
+  />
+  <FigureCaption number={3}>
+    Summary for a higher cost NGCC scenario.
+  </FigureCaption>
+</Figure>
 
 To model a hypothetical lower cost wind scenario, we keep the default capital expenses the same, which are based on a DAC facility described in Keith et al. (2018),<Cite id='keith.2018'/> and we assume lower electricity and thermal energy requirements.
 
-<ParameterScenario
-  energySource={'wind'}
-  capEx={936}
-  electricReq={0.6}
-  thermalReq={4.4}
-  totalCost={313}
-  variableOM={4}
-  fixedOM={56.37}
-  naturalGas={0}
-  capitalRecovery={252.37}
-/>
-<FigureCaption number={4}>
-  Summary for a lower cost wind scenario.
-</FigureCaption>
+<Figure>
+  <ParameterScenario
+    energySource={'wind'}
+    capEx={936}
+    electricReq={0.6}
+    thermalReq={4.4}
+    totalCost={313}
+    variableOM={4}
+    fixedOM={56.37}
+    naturalGas={0}
+    capitalRecovery={252.37}
+  />
+  <FigureCaption number={4}>
+    Summary for a lower cost wind scenario.
+  </FigureCaption>
+</Figure>
 
 Finally, returning to the higher cost NGCC example, we can further consider increasing the natural gas leakage rate from the default of 2.2% to 3.7%. With these parameters, net removed cost increases to $490, higher than for any of the scenarios considered thus far.
 
-<ParameterScenario
-  energySource={'NGCC'}
-  capEx={2027}
-  electricReq={1.7}
-  thermalReq={7.2}
-  leakage={3.7}
-  totalCost={490}
-  variableOM={9.077}
-  fixedOM={49.577}
-  naturalGas={46.982}
-  capitalRecovery={384.736}
-/>
-<FigureCaption number={5}>
-  Summary for a higher cost NGCC scenario with higher leakage.
-</FigureCaption>
+<Figure>
+  <ParameterScenario
+    energySource={'NGCC'}
+    capEx={2027}
+    electricReq={1.7}
+    thermalReq={7.2}
+    leakage={3.7}
+    totalCost={490}
+    variableOM={9.077}
+    fixedOM={49.577}
+    naturalGas={46.982}
+    capitalRecovery={384.736}
+  />
+  <FigureCaption number={5}>
+    Summary for a higher cost NGCC scenario with higher leakage.
+  </FigureCaption>
+</Figure>
 
 As these comparisons show, the energy source on its own does not determine how scenarios stack up — the full parameter space matters.
 
 For NGCC in particular, is it also possible for emissions to be so high that the system no longer achieves carbon removal. This would occur in the above scenario if we were to use a GWP20 of 86 for methane instead of a GWP100 of 32. Even with a GWP100 of 32, higher electricity and thermal requirements coupled to even higher leakage rates could result in no net removal, as shown here, though note that these are extremely high values.
 
-<ParameterScenario
-  energySource={'NGCC'}
-  capEx={2027}
-  electricReq={6.5}
-  thermalReq={9.1}
-  leakage={6.9}
-  totalCost={'N/A'}
-  variableOM={'N/A'}
-  fixedOM={'N/A'}
-  naturalGas={'N/A'}
-  capitalRecovery={'N/A'}
-/>
-<FigureCaption number={6}>
-  Summary for an NGCC scenario that does not achieve carbon removal.
-</FigureCaption>
+<Figure>
+  <ParameterScenario
+    energySource={'NGCC'}
+    capEx={2027}
+    electricReq={6.5}
+    thermalReq={9.1}
+    leakage={6.9}
+    totalCost={'N/A'}
+    variableOM={'N/A'}
+    fixedOM={'N/A'}
+    naturalGas={'N/A'}
+    capitalRecovery={'N/A'}
+  />
+  <FigureCaption number={6}>
+    Summary for an NGCC scenario that does not achieve carbon removal.
+  </FigureCaption>
+</Figure>
 
 A final note is that not all parameter combinations may be feasible. For example, the calculator allows users to set operating and maintenance costs to $0/tCO₂, but this would not be considered an achievable value for realistic DAC systems.
 

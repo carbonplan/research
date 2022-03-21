@@ -200,7 +200,7 @@ With a time horizon of 1000 years, the cost of an emission is about 310 ton-year
 
 This diversity can also be seen in real examples of how ton-year accounting has been used in the offsets industry (Table 2).
 
-<Figure as='table'>
+<Figure>
   <ExamplesTable />
   <TableCaption number={2}>
     Ton-year accounting methods have been and are being used in the offsets

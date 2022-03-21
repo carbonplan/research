@@ -1,5 +1,5 @@
 import { FigureCaption } from '@carbonplan/components'
-import { PullQuote, Endnote, Cite } from '@carbonplan/layouts'
+import { PullQuote, Endnote, Figure, Cite } from '@carbonplan/layouts'
 import Depth from './components/depth'
 import Density from './components/density'
 import Country from './components/country'
@@ -51,17 +51,19 @@ Tillage mixes the top layer of soil, commonly called the “plow layer” in an 
 
 We illustrate this pattern in Figure 1, which shows data from six papers that each compared conventional tillage with no-till across hundreds of individual experiments. All reported changes in soil organic carbon using relative units: they show the difference in the amount of carbon under conventional tillage versus no-till relative to the amount of carbon under conventional tillage. While these relative values do not tell us how much carbon was lost or gained by the soil in absolute terms, they are easy to understand and compare across studies.
 
-<Depth />
-<FigureCaption number={1}>
-  Reported effect sizes for conversion to no-till as a function of depth from
-  six synthesis papers, in order from left to right: Bai et al. (2019), Mondal
-  et al. (2020), Xiao et al. (2020), Nunes et al. (2020), Du et al. (2017), and
-  Angers et al. (2008). Relative carbon increases under no-till are shown in
-  orange, while losses are shown in gray. The number above each chart shows the
-  value for that dataset at the position of the horizontal line. Du et al.
-  (2017) and Angers et al. (2008) reported geometric mean effect sizes; the
-  remaining studies reported arithmetic mean effect sizes.
-</FigureCaption>
+<Figure>
+  <Depth />
+  <FigureCaption number={1}>
+    Reported effect sizes for conversion to no-till as a function of depth from
+    six synthesis papers, in order from left to right: Bai et al. (2019), Mondal
+    et al. (2020), Xiao et al. (2020), Nunes et al. (2020), Du et al. (2017),
+    and Angers et al. (2008). Relative carbon increases under no-till are shown
+    in orange, while losses are shown in gray. The number above each chart shows
+    the value for that dataset at the position of the horizontal line. Du et al.
+    (2017) and Angers et al. (2008) reported geometric mean effect sizes; the
+    remaining studies reported arithmetic mean effect sizes.
+  </FigureCaption>
+</Figure>
 
 The impact of tillage on soil carbon seems to depend on the environment. In some contexts – colder, wetter climates, for instance – increased carbon at the surface and reduced carbon at depth tend to offset each other. In warmer and drier environments, reduced carbon storage at depth seems to be less common and the overall effect of no-till on carbon storage may be positive. These conclusions depend on how climate and soil type are taken into account across studies, however, so it is not surprising that different papers have found different answers.
 
@@ -83,13 +85,15 @@ Tillage breaks up the soil structure, essentially “fluffing up” the soil and
 
 The difference in soil density under no-till versus conventional tillage can affect carbon stock estimates. We illustrate this in Figure 2. On the left, a field is sampled to a fixed depth of 30 cm and carbon stocks are calculated at that depth. After conversion to no-till, the density of the plow layer increases, shifting the soil surface downwards slightly. If the same volume (or depth) of soil is then collected, soil particles that would have been left out before are now included, leading to a larger carbon stock estimate. This larger carbon stock estimate would be entirely due to changing the frame of reference for sampling.
 
-<Density />
-<FigureCaption number={2}>
-  Conversion to no-till agriculture increases soil density in the plow layer. If
-  a fixed sampling depth is used, more soil is counted. Failing to account for
-  this artifact results in extra carbon even if the actual carbon stock remains
-  unchanged.
-</FigureCaption>
+<Figure>
+  <Density />
+  <FigureCaption number={2}>
+    Conversion to no-till agriculture increases soil density in the plow layer.
+    If a fixed sampling depth is used, more soil is counted. Failing to account
+    for this artifact results in extra carbon even if the actual carbon stock
+    remains unchanged.
+  </FigureCaption>
+</Figure>
 
 This potential measurement artifact is easy to avoid. Soil scientists have devised a method for reporting carbon stocks based on soil mass instead of soil volume.<Cite ids={['gifford.2003','wendt.2013']}/> Using this “equivalent soil mass” accounting requires taking soil samples at multiple depth intervals. These intervals can be analyzed separately or combined in pre-calculated amounts to reduce analysis costs.<Cite id='virto.2012'/> The equivalent soil mass method uses a mathematical function to weight the data from different depth intervals, yielding an estimate of the carbon stored in a given mass of soil within an area of land. The extra mathematical step makes this method slightly more complicated, but it doesn’t require new equipment or significantly increase costs.
 
@@ -103,17 +107,19 @@ To illustrate the potential for sampling depth issues to impact crediting outcom
 
 We ran three simulations corresponding to low, medium, or high magnitudes of error. In the medium case — a 3% increase in density over the top 20 cm — failing to account for density would lead to over-reporting of true soil carbon gains of 367 million tCO₂, equivalent to 58% of the [total annual emissions from the US agricultural sector](https://www.epa.gov/ghgemissions/inventory-us-greenhouse-gas-emissions-and-sinks-1990-2019) in 2019.
 
-<Country />
-<FigureCaption number={3}>
-  Simulating the potential scale of a measurement artifact related to density.
-  The color of each dot shows the scale of the potential error in units of tCO₂
-  / ha. The three scenarios correspond to an increase of 1% of density in the
-  top 10 cm, 3% in the top 20 cm, or 5% in the top 30 cm, which result in a low,
-  medium, or high magnitude of error, respectively, if density is not corrected
-  for. If applied across all available land, the total magnitude of error under
-  the three scenarios would be 61 million tCO₂, 367 million tCO₂, or 913 million
-  tCO₂.
-</FigureCaption>
+<Figure>
+  <Country />
+  <FigureCaption number={3}>
+    Simulating the potential scale of a measurement artifact related to density.
+    The color of each dot shows the scale of the potential error in units of
+    tCO₂ / ha. The three scenarios correspond to an increase of 1% of density in
+    the top 10 cm, 3% in the top 20 cm, or 5% in the top 30 cm, which result in
+    a low, medium, or high magnitude of error, respectively, if density is not
+    corrected for. If applied across all available land, the total magnitude of
+    error under the three scenarios would be 61 million tCO₂, 367 million tCO₂,
+    or 913 million tCO₂.
+  </FigureCaption>
+</Figure>
 
 This calculation is meant to be illustrative, not conclusive. It is unlikely that 100% of US croplands would enroll in carbon programs crediting no-till practices, and presumably at least some would use measurement techniques that account for the density change effect. The SSURGO data we used also do not contain information about tillage, so our calculations do not directly simulate conversion to no-till. Albeit highly approximate, our analysis illustrates how a seemingly small measurement artifact can add up to a lot of mistakenly credited carbon over a large land area.
 

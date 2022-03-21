@@ -64,39 +64,37 @@ const Bar = ({ width, label, value, color }) => {
 const ProgramOverview = () => {
   const { theme } = useThemeUI()
   return (
-    <Box sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
-      <Box sx={{ width: '100%' }}>
-        <Bar
-          width={1}
-          label={'All credits'}
-          value={program.arbocs.total}
-          color='secondary'
-        />
-        <Bar
-          width={program.arbocs.forestProjects / program.arbocs.total}
-          label={'Forest credits'}
-          value={program.arbocs.forestProjects}
-          color='secondary'
-        />
-        <Bar
-          width={program.arbocs.ifmProjects / program.arbocs.total}
-          label={'IFM credits'}
-          value={program.arbocs.ifmProjects}
-          color='secondary'
-        />
-        <Bar
-          width={program.arbocs.upfrontProjects / program.arbocs.total}
-          label={'Upfront credits'}
-          value={program.arbocs.upfrontProjects}
-          color='secondary'
-        />
-        <Bar
-          width={program.overCrediting.analyzed / program.arbocs.total}
-          label={'Analyzed credits'}
-          value={program.overCrediting.analyzed}
-          color='green'
-        />
-      </Box>
+    <Box sx={{ width: '100%' }}>
+      <Bar
+        width={1}
+        label={'All credits'}
+        value={program.arbocs.total}
+        color='secondary'
+      />
+      <Bar
+        width={program.arbocs.forestProjects / program.arbocs.total}
+        label={'Forest credits'}
+        value={program.arbocs.forestProjects}
+        color='secondary'
+      />
+      <Bar
+        width={program.arbocs.ifmProjects / program.arbocs.total}
+        label={'IFM credits'}
+        value={program.arbocs.ifmProjects}
+        color='secondary'
+      />
+      <Bar
+        width={program.arbocs.upfrontProjects / program.arbocs.total}
+        label={'Upfront credits'}
+        value={program.arbocs.upfrontProjects}
+        color='secondary'
+      />
+      <Bar
+        width={program.overCrediting.analyzed / program.arbocs.total}
+        label={'Analyzed credits'}
+        value={program.overCrediting.analyzed}
+        color='green'
+      />
     </Box>
   )
 }

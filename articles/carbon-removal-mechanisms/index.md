@@ -1,4 +1,4 @@
-import { Cite, Endnote, PullQuote } from '@carbonplan/layouts'
+import { Cite, Endnote, Figure, PullQuote } from '@carbonplan/layouts'
 import Cycle from './components/cycle'
 
 export const meta = {
@@ -43,12 +43,14 @@ Increased carbon in the atmosphere causes warming at the Earth’s surface. Sinc
 
 To help the reader develop intuition about carbon removal, we use “intervention diagrams” to succinctly illustrate the impact of specific projects. A blank diagram looks like this:
 
-<Cycle
-  intro={true}
-  labels={true}
-  tag={'mineralization'}
-  data={{ stock: {}, flux: [] }}
-/>
+<Figure>
+  <Cycle
+    intro={true}
+    labels={true}
+    tag={'mineralization'}
+    data={{ stock: {}, flux: [] }}
+  />
+</Figure>
 
 For any given project, we use colors to highlight which stocks are involved and which fluxes are enhanced or blocked. We dim the others.
 
@@ -60,38 +62,44 @@ With this diagram in hand, let’s build our intuition by first stepping through
 
 Consider the process of storing carbon dioxide in mineral form via injection into basaltic rock, which results in effectively permanent CO₂ storage. Using our diagram, we show geologic storage by filling in the appropriate circle indicating where carbon is ultimately stored.
 
-<Cycle
-  labels={true}
-  tag={'mineralization'}
-  data={{ stock: { geological: true }, flux: [] }}
-/>
+<Figure>
+  <Cycle
+    labels={true}
+    tag={'mineralization'}
+    data={{ stock: { geological: true }, flux: [] }}
+  />
+</Figure>
 
 Does geologic injection lead to carbon removal? The answer depends on where the CO₂ came from.
 
 Let’s imagine the CO₂ is waste from some industrial process that burns a carbon-based fossil fuel. Injecting the captured CO₂ from a fossil energy waste stream into geologic storage permanently stores CO₂, but has not taken it out of the atmosphere because the source of the carbon was a fossil fuel and was destined for the atmosphere if not captured first. As a result of the project’s decision to capture and store carbon, CO₂ emissions that might have otherwise occurred are avoided instead. We call this outcome “avoided emissions” and distinguish it from “carbon removal.” We diagram it with a crossed out circle blocking the arrow from fuels to the atmosphere, and drawing a horizontal arrow from fuels to geologic storage.
 
-<Cycle
-  labels={true}
-  tag={'mineralization'}
-  data={{
-    stock: { fuel: true, geological: true },
-    flux: [
-      { from: 'fuel', to: 'atmosphere', type: 'avoided' },
-      { from: 'fuel', to: 'geological', type: 'enhanced' },
-    ],
-  }}
-/>
+<Figure>
+  <Cycle
+    labels={true}
+    tag={'mineralization'}
+    data={{
+      stock: { fuel: true, geological: true },
+      flux: [
+        { from: 'fuel', to: 'atmosphere', type: 'avoided' },
+        { from: 'fuel', to: 'geological', type: 'enhanced' },
+      ],
+    }}
+  />
+</Figure>
 
 Now consider an alternative source of CO₂: the atmosphere. Suppose a project captures CO₂ from the atmosphere using direct air capture technology, and then injects pure CO₂ into the ground. This project performs carbon removal because it reduces atmospheric CO₂ and stores it in another stock. We draw this scenario by highlighting an arrow straight from the atmosphere to geologic storage. Compared to the previous example, the end location of storage remains the same, but the source of the CO₂ — and thus the source of the flux — has changed. (As drawn, this scenario assumes that direct air capture is powered by zero-carbon energy; otherwise, we would also include an arrow from fuels to the atmosphere to reflect the fact that the project leads to both atmospheric emissions and carbon removal.)
 
-<Cycle
-  labels={true}
-  tag={'dac'}
-  data={{
-    stock: { geological: true, land: false, ocean: false, material: false },
-    flux: [{ from: 'atmosphere', to: 'geological', type: 'enhanced' }],
-  }}
-/>
+<Figure>
+  <Cycle
+    labels={true}
+    tag={'dac'}
+    data={{
+      stock: { geological: true, land: false, ocean: false, material: false },
+      flux: [{ from: 'atmosphere', to: 'geological', type: 'enhanced' }],
+    }}
+  />
+</Figure>
 
 We distinguish these two scenarios because precision is necessary for accurate characterization and decision-making, not because one is necessarily better or worse for the climate. Either can be good or bad, depending on the context.
 
@@ -99,17 +107,19 @@ For example, when evaluating a carbon removal project, we must consider all of t
 
 Similarly, if the captured CO₂ is used to create a synthetic fuel or to extract further fossil fuels through a process called “enhanced oil recovery,” then the overall process might accomplish little to no net carbon removal. In some circumstances, it could even emit more than it removes while continuing to enable fossil fuel production. We would diagram such a project as follows.
 
-<Cycle
-  labels={true}
-  tag={'dac'}
-  data={{
-    stock: { fuel: true },
-    flux: [
-      { from: 'atmosphere', to: 'fuel', type: 'enhanced' },
-      { from: 'fuel', to: 'atmosphere', type: 'enhanced' },
-    ],
-  }}
-/>
+<Figure>
+  <Cycle
+    labels={true}
+    tag={'dac'}
+    data={{
+      stock: { fuel: true },
+      flux: [
+        { from: 'atmosphere', to: 'fuel', type: 'enhanced' },
+        { from: 'fuel', to: 'atmosphere', type: 'enhanced' },
+      ],
+    }}
+  />
+</Figure>
 
 As this diagram suggests, a project’s efficacy depends on the scale of gross carbon removal (down arrow) relative to the scale of gross project emissions (up arrow). In our [project reports](https://carbonplan.org/reports) we use a summary metric called “Negativity” to capture this important aspect of projects’ lifecycle emissions. If a project performs carbon removal, but its Negativity is near 0, then it’s not an effective way of delivering climate benefits.
 
@@ -129,14 +139,16 @@ Viewed in isolation, a tree performs carbon removal, at least for the period of 
 
 In our diagram, we show the simple case of a growing forest with a circle representing the storage of carbon in the land, and an arrow representing a flux of CO₂ from the atmosphere into the land.
 
-<Cycle
-  labels={true}
-  tag={'forests'}
-  data={{
-    stock: { geological: false, land: true, ocean: false, material: false },
-    flux: [{ from: 'atmosphere', to: 'land', type: 'enhanced' }],
-  }}
-/>
+<Figure>
+  <Cycle
+    labels={true}
+    tag={'forests'}
+    data={{
+      stock: { geological: false, land: true, ocean: false, material: false },
+      flux: [{ from: 'atmosphere', to: 'land', type: 'enhanced' }],
+    }}
+  />
+</Figure>
 
 The accounting becomes more complex for projects that change existing ecological systems.
 
@@ -148,17 +160,19 @@ But what if someone agrees to not cut down a forest they were otherwise planning
 
 These projects avoid emissions because cutting down the trees would have caused emissions in two ways — first, the industrial processes of harvesting cause emissions on their own, and second, the dead biomass leftover would decompose and emit CO₂. But they are also carbon removal because the trees left standing will continue to capture carbon from the atmosphere, with the total amount depending on their age and growth relative to saturation. We can show this in our diagram by combining the two arrows.
 
-<Cycle
-  labels={true}
-  tag={'forests'}
-  data={{
-    stock: { geological: false, land: true, ocean: false, material: false },
-    flux: [
-      { from: 'atmosphere', to: 'land', type: 'enhanced' },
-      { from: 'land', to: 'atmosphere', type: 'avoided' },
-    ],
-  }}
-/>
+<Figure>
+  <Cycle
+    labels={true}
+    tag={'forests'}
+    data={{
+      stock: { geological: false, land: true, ocean: false, material: false },
+      flux: [
+        { from: 'atmosphere', to: 'land', type: 'enhanced' },
+        { from: 'land', to: 'atmosphere', type: 'avoided' },
+      ],
+    }}
+  />
+</Figure>
 
 These projects address the same stock as before, but the intervention affects the flux both to and from the atmosphere. As this example illustrates, understanding a project’s net impact always depends on what would have happened in the absence of the intervention.
 
@@ -172,31 +186,35 @@ From a narrow perspective, decomposition of biomass exposed to the atmosphere re
 
 In our diagram, we include a special storage location for such durable “materials” and we indicate a flux from land biomass into this more permanent stock. We do not, however, indicate a flux from the atmosphere into the biomass because these projects are solely responsible for the conversion, not the biomass production. Rather, we indicate an avoided emission from the land back into the atmosphere.
 
-<Cycle
-  labels={true}
-  tag={'biomass'}
-  data={{
-    stock: { geological: false, land: true, ocean: false, material: true },
-    flux: [
-      { from: 'land', to: 'material', type: 'enhanced' },
-      { from: 'land', to: 'atmosphere', type: 'avoided' },
-    ],
-  }}
-/>
+<Figure>
+  <Cycle
+    labels={true}
+    tag={'biomass'}
+    data={{
+      stock: { geological: false, land: true, ocean: false, material: true },
+      flux: [
+        { from: 'land', to: 'material', type: 'enhanced' },
+        { from: 'land', to: 'atmosphere', type: 'avoided' },
+      ],
+    }}
+  />
+</Figure>
 
 In some cases, one could reasonably argue that the broader system, including both biomass production and conversion into biochar, performs carbon removal. In this broader system, carbon fluxes from the atmosphere into land biomass; some remains as biomass; and some is stored for a long duration as biochar. Strictly from a carbon cycle perspective, it’s rather similar to the combination of direct air capture and geological sequestration described above. We could diagram that more complete system as follows.
 
-<Cycle
-  labels={true}
-  tag={'biomass'}
-  data={{
-    stock: { geological: false, land: true, ocean: false, material: true },
-    flux: [
-      { from: 'land', to: 'material', type: 'enhanced' },
-      { from: 'atmosphere', to: 'land', type: 'enhanced' },
-    ],
-  }}
-/>
+<Figure>
+  <Cycle
+    labels={true}
+    tag={'biomass'}
+    data={{
+      stock: { geological: false, land: true, ocean: false, material: true },
+      flux: [
+        { from: 'land', to: 'material', type: 'enhanced' },
+        { from: 'atmosphere', to: 'land', type: 'enhanced' },
+      ],
+    }}
+  />
+</Figure>
 
 But how should we label any individual project? Ultimately, it’s a judgement call. Where the situation is ambiguous, we prefer to define the system boundaries based on the project itself, rather than the abstract technology or method, because funding and decision making occur at the level of these projects. If a project manages an end-to-end system that produces biomass and converts it to biochar, then we would say the project performs carbon removal. If instead a project procures biomass from elsewhere and makes biochar, then we would say the project avoids emissions.
 
@@ -208,47 +226,53 @@ Consider the case of creating bio-oil from sawdust and then injecting that bio-o
 
 First, we consider the narrowest boundary condition. For this scenario, we assume that the bio-oil has already been produced and that without the project, the bio-oil would be burned to produce CO₂ emissions. In this case, the project is avoiding emissions by geologically sequestering the bio-oil instead.
 
-<Cycle
-  labels={true}
-  tag={'biomass'}
-  data={{
-    stock: { geological: true, material: true },
-    flux: [
-      { from: 'material', to: 'geological', type: 'enhanced' },
-      { from: 'material', to: 'atmosphere', type: 'avoided' },
-    ],
-  }}
-/>
+<Figure>
+  <Cycle
+    labels={true}
+    tag={'biomass'}
+    data={{
+      stock: { geological: true, material: true },
+      flux: [
+        { from: 'material', to: 'geological', type: 'enhanced' },
+        { from: 'material', to: 'atmosphere', type: 'avoided' },
+      ],
+    }}
+  />
+</Figure>
 
 Second, we could broaden the boundary to start with the sawdust. If we assume that without the project the sawdust would decompose and produce CO₂ emissions, then the project is again avoiding emissions, in this case by processing the sawdust into bio-oil and geologically sequestering it.
 
-<Cycle
-  labels={true}
-  tag={'biomass'}
-  data={{
-    stock: { geological: true, land: true, material: true },
-    flux: [
-      { from: 'land', to: 'material', type: 'enhanced' },
-      { from: 'material', to: 'geological', type: 'enhanced' },
-      { from: 'land', to: 'atmosphere', type: 'avoided' },
-    ],
-  }}
-/>
+<Figure>
+  <Cycle
+    labels={true}
+    tag={'biomass'}
+    data={{
+      stock: { geological: true, land: true, material: true },
+      flux: [
+        { from: 'land', to: 'material', type: 'enhanced' },
+        { from: 'material', to: 'geological', type: 'enhanced' },
+        { from: 'land', to: 'atmosphere', type: 'avoided' },
+      ],
+    }}
+  />
+</Figure>
 
 Third, we might consider an even broader boundary that begins with the biomass production itself. Here, we assume that without the project the biomass would not have been grown. In that case, the project performs carbon removal by growing biomass, converting it into bio-oil, and geologically sequestering it.
 
-<Cycle
-  labels={true}
-  tag={'biomass'}
-  data={{
-    stock: { geological: true, material: true, land: true },
-    flux: [
-      { from: 'material', to: 'geological', type: 'enhanced' },
-      { from: 'land', to: 'material', type: 'enhanced' },
-      { from: 'atmosphere', to: 'land', type: 'enhanced' },
-    ],
-  }}
-/>
+<Figure>
+  <Cycle
+    labels={true}
+    tag={'biomass'}
+    data={{
+      stock: { geological: true, material: true, land: true },
+      flux: [
+        { from: 'material', to: 'geological', type: 'enhanced' },
+        { from: 'land', to: 'material', type: 'enhanced' },
+        { from: 'atmosphere', to: 'land', type: 'enhanced' },
+      ],
+    }}
+  />
+</Figure>
 
 As these alternative perspectives illustrate, the same basic project type can act as carbon removal or as two different variants of avoided emissions, depending on the boundary conditions we draw and the role of the project we consider within that boundary.
 

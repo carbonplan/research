@@ -55,10 +55,7 @@ const Map = () => {
   const colormap = useThemedColormap('cool').slice(20)
 
   return (
-    <Box
-      as='figure'
-      sx={{ mt: [6, 6, 6, 7], pb: [2, 2, 2, 3], mb: [4, 4, 4, 5] }}
-    >
+    <Box sx={{ pb: [2, 2, 2, 3] }}>
       <Flex sx={{ gap: 3 }}>
         <Box
           sx={{

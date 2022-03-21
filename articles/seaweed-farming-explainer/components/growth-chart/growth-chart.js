@@ -92,7 +92,7 @@ const GrowthChart = () => {
   })
 
   return (
-    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+    <Box>
       <Flex sx={{ gap: 3, mb: 3 }}>
         <Box sx={sx.heading}>Target</Box>
         <Filter

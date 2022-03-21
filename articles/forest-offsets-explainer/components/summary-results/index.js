@@ -41,7 +41,7 @@ const sx = {
 const SummaryResults = () => {
   const { theme } = useThemeUI()
   return (
-    <Box sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+    <Box>
       <Row columns={[6, 6]}>
         <Column start={[1, 1]} width={[3, 3]}>
           <Box sx={{ ...sx.group }}>

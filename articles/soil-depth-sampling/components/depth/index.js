@@ -35,7 +35,7 @@ const Depth = () => {
   }, [])
 
   return (
-    <Box sx={{ mt: [7, 7, 7, 8], mb: [5] }}>
+    <Box>
       <Grid
         columns={[
           'repeat(3, 1fr)',

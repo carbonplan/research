@@ -1,5 +1,5 @@
 import { FigureCaption, Colors } from '@carbonplan/components'
-import { PullQuote, Endnote } from '@carbonplan/layouts'
+import { PullQuote, Endnote, Figure } from '@carbonplan/layouts'
 import InlineCheck from '../../components/inline-check'
 import Permanence from './components/permanence'
 import Table from './components/table'
@@ -54,7 +54,9 @@ Making our work public is also an opportunity to reflect on what can and cannot 
 
 After multiple rounds of internal discussion, the CarbonPlan team decided on seven harmonized metrics for analyzing and comparing projects:
 
-<Metrics />
+<Figure as='div'>
+  <Metrics />
+</Figure>
 
 For the first four metrics — mechanism, volume, negativity, and permanence — we attempted to independently validate projects’ claims. We gave projects a <InlineCheck/> when we could validate a claim with reasonable confidence. Where we didn’t feel confident about validating claims, we left the entry blank, generally erring on the side of caution and respectfulness. We also indicated what kind of additional information would be useful in comments. As we develop better methods, and as we and the community learn more about these and other projects, we expect to be able to validate more claims with confidence.
 
@@ -80,17 +82,19 @@ Perhaps the most important finding is how often we found ourselves unable to con
 
 We were able to assign a <InlineCheck/> for many projects on mechanism, for which we generally have existing published literature and data, and in several cases also on permanence. We were less often able to assign a <InlineCheck/> on volume or negativity, reflecting the additional complexity of these dimensions.
 
-<Table />
-<FigureCaption number={1}>
-  Each column is a metric, and each row shows our ratings for an individual
-  project. Colors represent project categories:{' '}
-  <Colors.Green>forests</Colors.Green>, <Colors.Orange>soil</Colors.Orange>,{' '}
-  <Colors.Yellow>biomass</Colors.Yellow>,{' '}
-  <Colors.Purple>direct air capture</Colors.Purple>,{' '}
-  <Colors.Grey>mineralization</Colors.Grey>, and{' '}
-  <Colors.Teal>ocean</Colors.Teal>. Click the arrow in each row to see the
-  report for that project.
-</FigureCaption>
+<Figure>
+  <Table />
+  <FigureCaption number={1}>
+    Each column is a metric, and each row shows our ratings for an individual
+    project. Colors represent project categories:{' '}
+    <Colors.Green>forests</Colors.Green>, <Colors.Orange>soil</Colors.Orange>,{' '}
+    <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+    <Colors.Purple>direct air capture</Colors.Purple>,{' '}
+    <Colors.Grey>mineralization</Colors.Grey>, and{' '}
+    <Colors.Teal>ocean</Colors.Teal>. Click the arrow in each row to see the
+    report for that project.
+  </FigureCaption>
+</Figure>
 
 <PullQuote color={meta.color}>
   The complexity of carbon removal solutions across so many technologies
@@ -107,15 +111,17 @@ Carbon dioxide remains active in the atmospheric carbon cycle for hundreds to th
 
 The projects we analyzed clustered into two distinct groups: those with permanence horizons that match the scale of the climate problem, and those that don’t. For example, projects seeking to store CO₂ underground in geologic reservoirs or in stable mineralized form have a plausible claim to carbon removal on the scale of 1000 years or more. Biochar projects, too, are likely to retain a significant fraction of their carbon in stable form for hundreds of years or more. In contrast, others that seek to store carbon in soils or forests tend to claim much shorter time horizons — some as few as one year, but more commonly between 10 and 100 years.
 
-<Permanence />
-<FigureCaption number={2}>
-  Each point shows the price and permanence for an individual project. Colors
-  represent project categories: <Colors.Green>forests</Colors.Green>,{' '}
-  <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
-  <Colors.Purple>direct air capture</Colors.Purple>,{' '}
-  <Colors.Grey>mineralization</Colors.Grey>, and{' '}
-  <Colors.Teal>ocean</Colors.Teal>.
-</FigureCaption>
+<Figure>
+  <Permanence />
+  <FigureCaption number={2}>
+    Each point shows the price and permanence for an individual project. Colors
+    represent project categories: <Colors.Green>forests</Colors.Green>,{' '}
+    <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+    <Colors.Purple>direct air capture</Colors.Purple>,{' '}
+    <Colors.Grey>mineralization</Colors.Grey>, and{' '}
+    <Colors.Teal>ocean</Colors.Teal>.
+  </FigureCaption>
+</Figure>
 
 Whether temporary storage can be made reliable over longer time periods turns on whether permanence risks are physical or socioeconomic. We are optimistic that physical risks can be well characterized by rigorous science. For example, projects storing carbon in forests need to promise that these carbon stocks will remain. Quantitative analysis can help predict the vulnerability of a specific location or species in a changing climate for risk factors like fire, drought, or insect-related tree mortality.
 

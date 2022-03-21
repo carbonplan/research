@@ -1,5 +1,6 @@
 import { Box } from 'theme-ui'
 import { Table } from '@carbonplan/components'
+import { Figure } from '@carbonplan/layouts'
 
 const Top = ({ children }) => {
   return (
@@ -78,21 +79,22 @@ const table = [
 
 const Parameters = ({}) => {
   return (
-    <Table
-      header='Parameters'
-      columns={[6]}
-      color='pink'
-      start={[
-        [1, 1, 1, 1],
-        [1, 4, 4, 4],
-      ]}
-      width={[
-        [6, 3, 3, 3],
-        [6, 3, 3, 3],
-      ]}
-      data={table}
-      sx={{ my: [6, 6, 6, 7] }}
-    />
+    <Figure as='div'>
+      <Table
+        header='Parameters'
+        columns={[6]}
+        color='pink'
+        start={[
+          [1, 1, 1, 1],
+          [1, 4, 4, 4],
+        ]}
+        width={[
+          [6, 3, 3, 3],
+          [6, 3, 3, 3],
+        ]}
+        data={table}
+      />
+    </Figure>
   )
 }
 

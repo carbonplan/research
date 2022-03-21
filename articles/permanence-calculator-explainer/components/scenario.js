@@ -2,6 +2,7 @@ import { Box, Grid, Divider } from 'theme-ui'
 import { scaleLinear } from 'd3-scale'
 import { line } from 'd3-shape'
 import { Row, Column } from '@carbonplan/components'
+import { Figure } from '@carbonplan/layouts'
 
 const Scenario = ({
   projectDuration,
@@ -81,7 +82,7 @@ const Scenario = ({
   }
 
   return (
-    <Box as='figure' sx={{ my: [6, 6, 6, 7] }}>
+    <Figure>
       <Row columns={[6]}>
         <Column start={[1]} width={[3]}>
           <Row columns={[2]}>
@@ -182,7 +183,7 @@ const Scenario = ({
         </Column>
       </Row>
       <Divider sx={{ width: ['100%'] }} />
-    </Box>
+    </Figure>
   )
 }
 

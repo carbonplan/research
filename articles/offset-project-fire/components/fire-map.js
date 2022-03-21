@@ -81,14 +81,7 @@ const FireMap = () => {
   }, [])
 
   return (
-    <Box
-      as='figure'
-      sx={{
-        mt: [6, 6, 6, 7],
-        mb: [4, 4, 4, 5],
-        position: 'relative',
-      }}
-    >
+    <Box sx={{ position: 'relative' }}>
       <Divider />
       <Box
         ref={container}

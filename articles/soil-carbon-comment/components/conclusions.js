@@ -1,5 +1,6 @@
 import { Box } from 'theme-ui'
 import { Table } from '@carbonplan/components'
+import { Figure } from '@carbonplan/layouts'
 
 const additionality = [
   [
@@ -117,11 +118,7 @@ const TableWrapper = ({ data, header, first = false }) => {
 
 const Conclusions = () => {
   return (
-    <Box
-      sx={{
-        my: [6, 6, 6, 7],
-      }}
-    >
+    <Figure as='div'>
       <TableWrapper header='Additionality' data={additionality} first={true} />
       <TableWrapper header='Model selection' data={modelSelection} />
       <TableWrapper
@@ -129,7 +126,7 @@ const Conclusions = () => {
         data={samplingAndVerification}
       />
       <TableWrapper header='Permanence' data={permanence} />
-    </Box>
+    </Figure>
   )
 }
 

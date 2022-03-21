@@ -4,7 +4,7 @@ import Timeline from './timeline'
 
 const TimelineSummary = () => {
   return (
-    <Box sx={{ mt: [6, 6, 6, 7], mb: [5] }}>
+    <Box>
       <Timeline
         label='Typical'
         data={{ activity: [-10, 0], crediting: [-5, 10] }}

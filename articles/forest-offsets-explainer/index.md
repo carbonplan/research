@@ -1,6 +1,6 @@
 import { Box } from 'theme-ui'
 import { FigureCaption } from '@carbonplan/components'
-import { Cite, Endnote } from '@carbonplan/layouts'
+import { Cite, Endnote, Figure } from '@carbonplan/layouts'
 import SummaryResults from './components/summary-results'
 import ProgramOverview from './components/program-overview'
 import AnalysisExplanation from './components/analysis-explanation'
@@ -64,14 +64,16 @@ Carbon offsets are widely used by individuals, corporations, and governments to 
 
 To better understand whether these climate claims hold up in practice, we performed a comprehensive evaluation of California's forest carbon offsets program — the largest such program in existence, worth more than $2 billion. Our analysis of crediting errors demonstrates that a large fraction of the credits in the program do not reflect real climate benefits. The scale of the problem is enormous: 29% of the offsets we analyzed are over-credited, totaling 30 million tCO₂e worth approximately $410 million.
 
-<SummaryResults />
-<FigureCaption number={1}>
-  Summary of results from our analysis of crediting error, in terms of net
-  over-crediting, percentage relative to the projects we analyzed, and value in
-  dollars assuming a credit value of $13.67. Each credit represents 1 tCO₂e.
-  Ranges report 5th and 95th percentiles of a bootstrapped distribution forming
-  a 90% confidence interval.
-</FigureCaption>
+<Figure>
+  <SummaryResults />
+  <FigureCaption number={1}>
+    Summary of results from our analysis of crediting error, in terms of net
+    over-crediting, percentage relative to the projects we analyzed, and value
+    in dollars assuming a credit value of $13.67. Each credit represents 1
+    tCO₂e. Ranges report 5th and 95th percentiles of a bootstrapped distribution
+    forming a 90% confidence interval.
+  </FigureCaption>
+</Figure>
 
 This article provides an overview of how we identified crediting errors in California's offsets program. For a deeper dive on our methods and analysis, you can read [our preprint](https://doi.org/10.1101/2021.04.28.441870). To better understand its implications, you can read [a story](https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere) by Lisa Song (ProPublica) and James Temple (MIT Technology Review) that covers and contextualizes our findings. Finally, you can browse [an interactive online map](https://carbonplan.org/research/forest-offsets) of the projects we analyzed, or download the open source [data](https://doi.org/10.5281/zenodo.4630712) and [code](https://github.com/carbonplan/forest-offsets) that underlies our analysis.
 
@@ -81,26 +83,31 @@ Carbon offset programs issue credits to projects that purport to avoid greenhous
 
 California’s offsets program plays a central role in the state's prominent cap-and-trade program. While it is open to many kinds of offset projects, most credits come from forest projects, which can take place anywhere in the continental United States and southern Alaska. You might think these projects involve growing new forests, but the vast majority instead involve a practice called "improved forest management" (IFM). An IFM project claims to increase forest carbon storage through changes in existing forest management practices, such as increasing the length of timber harvest rotations.
 
-<ProgramOverview />
-<FigureCaption number={2}>
-  California's forest carbon offsets program by the numbers. Each credit is
-  worth 1 tCO₂e. We analyzed 65 IFM projects for which sufficient public data
-  were available, totaling 102 million upfront IFM credits. These represent
-  about two-thirds of all forest offsets, and about one half of California’s
-  entire offsets program.
-</FigureCaption>
+<Figure>
+  <ProgramOverview />
+  <FigureCaption number={2}>
+    California's forest carbon offsets program by the numbers. Each credit is
+    worth 1 tCO₂e. We analyzed 65 IFM projects for which sufficient public data
+    were available, totaling 102 million upfront IFM credits. These represent
+    about two-thirds of all forest offsets, and about one half of California’s
+    entire offsets program.
+  </FigureCaption>
+</Figure>
 
 The critical aspect of California’s forest offsets program is that it awards large volumes of credits at the start of a project when carbon stocks exceed regional averages. These "upfront" credits to IFM projects are responsible for more than half of the total carbon offsets program, and more than two-thirds of all forest credits.
 
 How are these credits awarded? Projects provide "baseline" scenarios that are meant to represent the average amount of carbon that would remain under a typical harvest scenario. The difference between the initial carbon and this baseline determines the credits awarded. To prevent unrealistic baseline scenarios, the protocol requires that the average carbon stored in a baseline scenario stays above a value called "common practice," which is defined by the average regional carbon stocks from putatively similar forest types.
 
-<AnalysisExplanation />
-<FigureCaption number={3}>
-  IFM projects are awarded upfront credits based on the difference between
-  "initial carbon" stocks and the 100-year projected "baseline average." Under
-  protocol rules, baseline averages cannot be lower than common practice. Thus,
-  erroneously low estimates of common practice can lead to over-crediting.
-</FigureCaption>
+<Figure>
+  <AnalysisExplanation />
+  <FigureCaption number={3}>
+    IFM projects are awarded upfront credits based on the difference between
+    "initial carbon" stocks and the 100-year projected "baseline average." Under
+    protocol rules, baseline averages cannot be lower than common practice.
+    Thus, erroneously low estimates of common practice can lead to
+    over-crediting.
+  </FigureCaption>
+</Figure>
 
 As it happens, about 90% of projects report baseline averages that are equal to or within just 5% of the minimum common practice number. Thus, crediting is determined almost entirely by the value of common practice — and if common practice is set too low, that means projects are getting excess credits that do not reflect real climate benefits.
 
@@ -120,16 +127,18 @@ But ACR189 wasn’t an exception. We found this same pattern over and over again
 
 To quantify these errors systematically, we replaced projects’ common practice numbers with an independent, species-specific estimate. We then used the protocol rules to recalculate how many credits each project should have received using this more ecologically robust approach. (We also checked to make sure we could accurately reproduce the most recent common practice numbers and the number of credits projects actually received, in order to be confident in our ability to estimate any over- or under-crediting.)
 
-<ProjectAnalysis />
-<FigureCaption number={4}>
-  We estimate crediting error by re-calculating the number of credits that would
-  have been awarded to forest offset projects with a more ecologically robust
-  measure of common practice. The extent of crediting error is shown as a
-  percent of each project's total credits (top) and in units of tCO₂e (middle).
-  For comparison we also show the total credits awarded to the project (bottom).
-  Use the menu to sort by the different metrics, and select individual bars to
-  see more info for that project.
-</FigureCaption>
+<Figure>
+  <ProjectAnalysis />
+  <FigureCaption number={4}>
+    We estimate crediting error by re-calculating the number of credits that
+    would have been awarded to forest offset projects with a more ecologically
+    robust measure of common practice. The extent of crediting error is shown as
+    a percent of each project's total credits (top) and in units of tCO₂e
+    (middle). For comparison we also show the total credits awarded to the
+    project (bottom). Use the menu to sort by the different metrics, and select
+    individual bars to see more info for that project.
+  </FigureCaption>
+</Figure>
 
 Our analysis relied on the [digitized project records](https://doi.org/10.5281/zenodo.4630684) described above, as well as public data from the US Forest Service [Forest Inventory Analysis](https://www.fia.fs.fed.us/) program and the open source [rFIA package](https://github.com/hunter-stanke/rFIA). Our methods are described in detail in [our preprint](https://doi.org/10.1101/2021.04.28.441870) and all of the [code](https://github.com/carbonplan/forest-offsets) and [additional data](https://doi.org/10.5281/zenodo.4630712) underlying our analysis is open source and fully reproducible.
 
@@ -143,27 +152,30 @@ The fundamental challenge with awarding upfront offset credits lies in defining 
 
 This is best illustrated in the spatial pattern of projects in the Southern Cascades region described above. This "supersection" — the California program’s term for the large regions over which carbon averages are calculated — is actually composed of three smaller subregions. The subregion on the western edge features relatively wet, carbon-dense forests. But this subregion is combined with two others, which have drier and less-carbon-dense forests. Because the common practice averages across all three subregions, an "average" forest in the western subregion is automatically eligible for upfront credits — simply due to a [statistical artifact](https://en.wikipedia.org/wiki/Modifiable_areal_unit_problem), and without creating any real benefits to the climate. Almost all of the supersection’s projects cluster within this area, where they benefit from a statistical error and inappropriately enable regulated polluters to increase their emissions.
 
-<SouthernCascades />
-<FigureCaption number={5}>
-  In the Southern Cascades supersection, three subregions (or "ecosections")
-  with distinct local carbon patterns were averaged together to yield a common
-  practice number that distorts ecological reality. The number in each subregion
-  shows the relative carbon compared to the supersection average, in units of
-  tCO₂ per acre. The western-most carbon-rich subregion (
-  <Box as='span' sx={{ color: 'green' }}>
-    green
-  </Box>
-  ) contains almost all of this supersection’s offset projects <span
-    style={{ whiteSpace: 'nowrap' }}
-  >
-    (<Triangle />)
-  </span>, which earn credits simply by having forests with higher carbon levels
-  than the supersection average. Select a project <span
-    style={{ whiteSpace: 'nowrap' }}
-  >
-    (<Triangle />)
-  </span> to see details including ID, developer, and our estimate of crediting error.
-</FigureCaption>
+<Figure>
+  <SouthernCascades />
+  <FigureCaption number={5}>
+    In the Southern Cascades supersection, three subregions (or "ecosections")
+    with distinct local carbon patterns were averaged together to yield a common
+    practice number that distorts ecological reality. The number in each
+    subregion shows the relative carbon compared to the supersection average, in
+    units of tCO₂ per acre. The western-most carbon-rich subregion (
+    <Box as='span' sx={{ color: 'green' }}>
+      green
+    </Box>
+    ) contains almost all of this supersection’s offset projects <span
+      style={{ whiteSpace: 'nowrap' }}
+    >
+      (<Triangle />)
+    </span>, which earn credits simply by having forests with higher carbon levels
+    than the supersection average. Select a project <span
+      style={{ whiteSpace: 'nowrap' }}
+    >
+      (<Triangle />)
+    </span> to see details including ID, developer, and our estimate of crediting
+    error.
+  </FigureCaption>
+</Figure>
 
 While the Southern Cascades is an extreme example, any form of averaging creates an opportunity for adverse selection. Biogeographers have long understood the challenge of drawing firm boundaries around ecological regions or categories of species. While boundaries help communicate with outside audiences, border regions are complex areas where the characteristics of separate regions interact. Any program based on such boundaries must be continually reviewed to ensure the kind of adverse selection described here is not taking place.
 

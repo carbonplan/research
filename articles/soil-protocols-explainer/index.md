@@ -1,5 +1,5 @@
 import { Link, FigureCaption } from '@carbonplan/components'
-import { PullQuote, Cite, Endnote } from '@carbonplan/layouts'
+import { PullQuote, Cite, Endnote, Figure } from '@carbonplan/layouts'
 import MetricHistogram from './components/metric-histogram'
 import MetricTable from './components/metric-table'
 import RecommendationTable from './components/recommendation-table'
@@ -63,21 +63,23 @@ Each metric includes a set of descriptive attributes that together inform a qual
 
 In the chart below, we summarize our results by showing scores for rigor, additionality, durability, and safeguards, alongside our overall rating across the full set of protocols.<Cite id='figure.update'/>
 
-<MetricHistogram />
-<FigureCaption number={1}>
-  Summary table of our results. Each protocol is a row. The first four columns
-  show scores along four individual metrics (each on a scale from 1 to 3) and
-  the final column shows the overall rating (on a scale from 1 to 5). For more
-  details, check out the{' '}
-  <Link
-    href='/research/soil-protocols'
-    sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
-  >
-    interactive version
-  </Link>{' '}
-  of this table. Abbreviations: Grazing (G), Compost (C) Improved Agriculture
-  (IA), Sustainable Agriculture (SA), Fire + Grazing (FG)
-</FigureCaption>
+<Figure>
+  <MetricHistogram />
+  <FigureCaption number={1}>
+    Summary table of our results. Each protocol is a row. The first four columns
+    show scores along four individual metrics (each on a scale from 1 to 3) and
+    the final column shows the overall rating (on a scale from 1 to 5). For more
+    details, check out the{' '}
+    <Link
+      href='/research/soil-protocols'
+      sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
+    >
+      interactive version
+    </Link>{' '}
+    of this table. Abbreviations: Grazing (G), Compost (C) Improved Agriculture
+    (IA), Sustainable Agriculture (SA), Fire + Grazing (FG)
+  </FigureCaption>
+</Figure>
 
 Before describing our results, it is useful to highlight two methodological challenges we faced. The first concerns the different greenhouse gas emissions and carbon cycle processes involved in this area. Most of the protocols we reviewed credit some combination of carbon removal and avoided emissions, including CO₂ emissions unrelated to soil carbon (e.g. tractor use), and in some cases other greenhouse gases like N₂O and CH₄ that result from fertilizer use, grazing animals, or anaerobic decomposition.<Cite id='avoided.comment'/> No protocols track carbon removal and avoided emissions separately, so buyers looking to focus exclusively on carbon removal must decipher this distinction themselves.
 
@@ -117,13 +119,15 @@ Beyond explicit additionality tests, how a protocol treats the timing of activit
 
 To help visualize how key project milestones impact crediting, we created a timeline for each protocol that shows when an eligible activity could have been implemented relative to project registration, and for what period soil carbon changes can be credited. Here we show two hypothetical timelines representing typical and more rigorous approaches.
 
-<TimelineSummary />
-<FigureCaption number={2}>
-  Hypothetical timelines showing when eligible activities could be implemented
-  relative to the start of project implementation. The typical case we observed
-  allows for a long period of backdating (above) whereas a more rigorous
-  timeline restricts this window (below).
-</FigureCaption>
+<Figure>
+  <TimelineSummary />
+  <FigureCaption number={2}>
+    Hypothetical timelines showing when eligible activities could be implemented
+    relative to the start of project implementation. The typical case we
+    observed allows for a long period of backdating (above) whereas a more
+    rigorous timeline restricts this window (below).
+  </FigureCaption>
+</Figure>
 
 In the typical timeline, relevant activities can be implemented 5 to 10 years prior to project registration — something we found in 10 of 14 protocols. Some protocols allow projects to earn “back-credits” for the entirety of that historical period; others restrict the crediting window while still allowing older practice changes to earn credits going forward. If a buyer wants confidence that their purchase creates climate benefits that would not have happened otherwise, either type of backdating raises concerns.
 
@@ -176,7 +180,9 @@ One of our most striking results is that most protocols set a low bar on soil sa
 
 We have a three-step recommendation for buyers or to anyone else looking to fund carbon removal projects involving soil.
 
-<RecommendationTable />
+<Figure as='div'>
+  <RecommendationTable />
+</Figure>
 
 Depending on their goals, we suggest that buyers also pay careful attention to distinguishing carbon removal from avoided emissions. Many of the protocols credit reductions in multiple greenhouse gases (such as avoided methane or nitrous oxide emissions), yet we have not found any evidence that registries distinguish carbon removal and avoided emissions in the credits they issue. We recommend that buyers who seek to specifically procure carbon removal ask projects to distinguish the share of total credits attributable to carbon removal from overall emission reductions. This information can be used to discount the carbon removal benefit of an individual credit.<Cite id='crediting.example' />
 
