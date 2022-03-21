@@ -25,9 +25,9 @@
   "dependencies": {
     "@carbonplan/charts": "^2.7.0",
     "@carbonplan/colormaps": "^3.0.2",
-    "@carbonplan/components": "^11.3.0",
+    "@carbonplan/components": "^11.4.1",
     "@carbonplan/icons": "^1.0.0",
-    "@carbonplan/layouts": "^1.4.0",
+    "@carbonplan/layouts": "^2.0.0",
     "@carbonplan/minimaps": "^1.0.0",
     "@carbonplan/seaweed-farming-model": "^1.0.0",
     "@carbonplan/theme": "^7.0.0",
@@ -37,9 +37,9 @@
     "@mdx-js/react": "^1.6.22",
     "@next/mdx": "^10.2.3",
     "@react-spring/web": "^9.4.2",
-    "@theme-ui/color": "^0.13.1",
-    "@theme-ui/css": "^0.13.1",
-    "@theme-ui/match-media": "^0.13.1",
+    "@theme-ui/color": "^0.14.0",
+    "@theme-ui/css": "^0.14.0",
+    "@theme-ui/match-media": "^0.14.0",
     "d3-drag": "^3.0.0",
     "d3-fetch": "^3.0.1",
     "d3-geo": "^3.0.1",
@@ -57,7 +57,7 @@
     "rehype-react": "^6.2.1",
     "rehype-slug": "^4.0.1",
     "remark-rehype": "^8.1.0",
-    "theme-ui": "^0.13.1",
+    "theme-ui": "^0.14.0",
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {

@@ -112,7 +112,7 @@ const MethodsChart = () => {
     benefitPosition.left = 'calc(0.2 * (100% - 70px) + 75px)'
   }
   return (
-    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+    <Box>
       <Flex sx={{ mb: 3, gap: [3, 5, 5, 6] }}>
         <Box>
           <Box sx={sx.filterLabel}>Method</Box>

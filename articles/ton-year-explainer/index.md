@@ -143,15 +143,17 @@ Unfortunately, there is no objective framework for balancing these potentially c
 
 The great thing about physical equivalence claims based on cumulative radiative forcing is that we can check them. Figure 4 shows the Moura Costa and Lashof benefit calculations applied to a more realistic project scenario. In the illustrated project scenario, 1 tCO₂ is stored for 20 years before it is fully re-emitted to the atmosphere. All calculations are performed with a time horizon of 100 years.
 
-<MethodsChart method='Moura-Costa' />
-<FigureCaption number={4}>
-  Different ton-year methods produce different claims about the benefit of the
-  same temporary carbon storage. For a project that stores 1 CO₂ for 20 years
-  before re-emitting it to the atmosphere and a 100 year time horizon, Moura
-  Costa calculates a 20 ton-year benefit while Lashof calculates an 8.4 ton-year
-  benefit. The timescale toggle provides context for how a 100 year time horizon
-  compares to the long-lived nature of atmospheric CO₂.
-</FigureCaption>
+<Figure>
+  <MethodsChart method='Moura-Costa' />
+  <FigureCaption number={4}>
+    Different ton-year methods produce different claims about the benefit of the
+    same temporary carbon storage. For a project that stores 1 CO₂ for 20 years
+    before re-emitting it to the atmosphere and a 100 year time horizon, Moura
+    Costa calculates a 20 ton-year benefit while Lashof calculates an 8.4
+    ton-year benefit. The timescale toggle provides context for how a 100 year
+    time horizon compares to the long-lived nature of atmospheric CO₂.
+  </FigureCaption>
+</Figure>
 
 If Moura Costa and Lashof are both making physical equivalence claims about the same temporary storage, how can they come up with different answers?
 
@@ -161,11 +163,13 @@ When we try to do this for Moura Costa, however, we encounter a problem. To comp
 
 It is also true that by comparing the ton-years of CO₂ in the atmosphere directly to the ton-years of CO₂ in storage, Moura Costa distorts the core, physical logic of ton-year accounting and significantly exaggerates the climate benefits of temporary storage. A clear illustration of this problem is that Moura Costa allows for the claim that temporarily storing 1 tCO₂ justifies the emission of more than 1 tCO₂ — an indefensible outcome (Table 1).
 
-<EquivalenceTable />
-<TableCaption number={1}>
-  The Moura Costa method allows for the claim that temporarily storing 1 tCO₂
-  justifies the emission of more than 1 tCO₂ — an indefensible outcome.
-</TableCaption>
+<Figure>
+  <EquivalenceTable />
+  <TableCaption number={1}>
+    The Moura Costa method allows for the claim that temporarily storing 1 tCO₂
+    justifies the emission of more than 1 tCO₂ — an indefensible outcome.
+  </TableCaption>
+</Figure>
 
 We are not the first people to make these observations about the Moura Costa method,<Cite ids={['brandao.2013', 'levasseur.2012b']}/> but since the method has been used, we believe these concerns bear repeating.
 
@@ -175,50 +179,54 @@ In sum, ton-year accounting methods can produce equivalence claims that say some
 
 Figure 5 lets you explore how choosing a ton-year accounting method and modifying input parameters can dramatically affect the apparent value of temporary storage. Based on user-specified parameters, Figure 5 shows the ton-year cost of an emission, the ton-year benefit of temporary storage, and the corresponding equivalence ratio calculated by the Moura Costa and Lashof methods.
 
-<ValueChart />
-<FigureCaption number={5}>
-  The choice of a ton-year accounting method and input parameters can
-  dramatically affect the apparent value of temporary storage. Based on the
-  chosen parameters, the ton-year cost of emitting 1 tCO₂ (top) and ton-year
-  benefit of temporarily storing 1 tCO₂ (middle) are calculated according to
-  both the Moura Costa and Lashof methods. The storage amount needed for
-  equivalence (the “equivalence ratio”) is calculated by dividing the ton-year
-  cost of an emission by the ton-year benefit of the temporary storage (bottom).
-  The parameters can be modified by moving the sliders or typing in values. Note
-  that discount rates should be applied with extreme caution since they break
-  the claim of physical equivalence. Displayed values less than 1 are rounded to
-  three significant digits.
-</FigureCaption>
+<Figure>
+  <ValueChart />
+  <FigureCaption number={5}>
+    The choice of a ton-year accounting method and input parameters can
+    dramatically affect the apparent value of temporary storage. Based on the
+    chosen parameters, the ton-year cost of emitting 1 tCO₂ (top) and ton-year
+    benefit of temporarily storing 1 tCO₂ (middle) are calculated according to
+    both the Moura Costa and Lashof methods. The storage amount needed for
+    equivalence (the “equivalence ratio”) is calculated by dividing the ton-year
+    cost of an emission by the ton-year benefit of the temporary storage
+    (bottom). The parameters can be modified by moving the sliders or typing in
+    values. Note that discount rates should be applied with extreme caution
+    since they break the claim of physical equivalence. Displayed values less
+    than 1 are rounded to three significant digits.
+  </FigureCaption>
+</Figure>
 
 With a time horizon of 1000 years, the cost of an emission is about 310 ton-years. Lashof calculates that 1 tCO₂ stored for 1 year would result in an approximately 0.235 ton-year benefit, so for “equivalence”, we’d need to store about 1319 tCO₂ for 1 year (310.161 / 0.235 = 1319.45). Moura Costa, in contrast, calculates we need to store only around 310 tCO₂ for 1 year (310.161 / 1 = 310.161). Changing the time horizon to 100 years drops the Lashof and Moura Costa equivalence claims to 128 tCO₂ and 52 tCO₂ stored for 1 year, respectively.
 
 This diversity can also be seen in real examples of how ton-year accounting has been used in the offsets industry (Table 2).
 
-<ExamplesTable />
-<TableCaption number={2}>
-  Ton-year accounting methods have been and are being used in the offsets
-  industry with a diversity of method and parameter choices. CAR (2020) refers
-  to the Climate Action Reserve’s implementation of ton-year accounting in its{' '}
-  <Link
-    href='https://www.climateactionreserve.org/how/protocols/soil-enrichment/'
-    sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
-  >
-    Soil Enrichment Protocol
-  </Link>
-  . NCX (2020) refers to the method described in NCX’s <Link
-    href='https://ncx.com/wp-content/uploads/2021/06/Forests-and-Carbon_A-Guide-for-Buyers-and-Policymakers_SilviaTerra2020_v0.4-2-1.pdf'
-    sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
-  >
-    Version 0.4 white paper
-  </Link>. NCX (2021) refers to the method described in NCX’s <Link
-    href='https://f.hubspotusercontent20.net/hubfs/9337776/Papers/Forests%20and%20Carbon_A%20Guide%20for%20Buyers%20and%20Policymakers_SilviaTerra2020_v0.4.pdf'
-    sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
-  >
-    Version 0.5 white paper
-  </Link>. Each column in the table uses a distinct ton-year accounting method. To
-  ground these industry examples in the rest of the conversation, we include an example
-  using the Lashof method for comparison.
-</TableCaption>
+<Figure as='table'>
+  <ExamplesTable />
+  <TableCaption as='caption' number={2}>
+    Ton-year accounting methods have been and are being used in the offsets
+    industry with a diversity of method and parameter choices. CAR (2020) refers
+    to the Climate Action Reserve’s implementation of ton-year accounting in its{' '}
+    <Link
+      href='https://www.climateactionreserve.org/how/protocols/soil-enrichment/'
+      sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
+    >
+      Soil Enrichment Protocol
+    </Link>
+    . NCX (2020) refers to the method described in NCX’s <Link
+      href='https://ncx.com/wp-content/uploads/2021/06/Forests-and-Carbon_A-Guide-for-Buyers-and-Policymakers_SilviaTerra2020_v0.4-2-1.pdf'
+      sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
+    >
+      Version 0.4 white paper
+    </Link>. NCX (2021) refers to the method described in NCX’s <Link
+      href='https://f.hubspotusercontent20.net/hubfs/9337776/Papers/Forests%20and%20Carbon_A%20Guide%20for%20Buyers%20and%20Policymakers_SilviaTerra2020_v0.4.pdf'
+      sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
+    >
+      Version 0.5 white paper
+    </Link>. Each column in the table uses a distinct ton-year accounting method.
+    To ground these industry examples in the rest of the conversation, we include
+    an example using the Lashof method for comparison.
+  </TableCaption>
+</Figure>
 
 The Climate Action Reserve (CAR) provides a ton-year accounting option in some of its published protocols, including its [Soil Enrichment Protocol](https://www.climateactionreserve.org/how/protocols/soil-enrichment/). CAR’s ton-year method asserts that 1 tCO₂ stored for 100 years is equivalent to 1 tCO₂ emitted. For projects that do not want to commit to CAR’s standard 100-year permanence obligation, CAR gives 1/100th of a credit for each year 1 tCO₂ is stored. (CAR’s calculation of partial credit is distinct from any other published ton-year approach that we’ve come across; it relies on the assumption that 100-years is “permanent” and gives partial credit for anything less.)
 
