@@ -59,7 +59,7 @@ While existing registries and protocols purport to standardize aspects of carbon
 
 Using the public proposals, project websites, registry listings, and published literature, we analyzed each of the 161 proposals on the basis of [seven harmonized metrics](https://carbonplan.org/research/cdr-database/methods).
 
-<Figure as='div'>
+<Figure>
   <Metrics />
 </Figure>
 

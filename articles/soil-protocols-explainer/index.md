@@ -180,7 +180,7 @@ One of our most striking results is that most protocols set a low bar on soil sa
 
 We have a three-step recommendation for buyers or to anyone else looking to fund carbon removal projects involving soil.
 
-<Figure as='div'>
+<Figure>
   <RecommendationTable />
 </Figure>
 

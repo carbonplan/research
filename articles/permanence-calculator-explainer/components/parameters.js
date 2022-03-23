@@ -78,7 +78,7 @@ const table = [
 
 const Parameters = ({}) => {
   return (
-    <Figure as='div'>
+    <Figure>
       <Table
         header='Parameters'
         columns={[6]}

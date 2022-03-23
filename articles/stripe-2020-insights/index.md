@@ -54,7 +54,7 @@ Making our work public is also an opportunity to reflect on what can and cannot 
 
 After multiple rounds of internal discussion, the CarbonPlan team decided on seven harmonized metrics for analyzing and comparing projects:
 
-<Figure as='div'>
+<Figure>
   <Metrics />
 </Figure>
 

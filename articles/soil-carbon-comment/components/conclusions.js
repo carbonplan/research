@@ -116,7 +116,7 @@ const TableWrapper = ({ data, header, first = false }) => {
 
 const Conclusions = () => {
   return (
-    <Figure as='div'>
+    <Figure>
       <TableWrapper header='Additionality' data={additionality} first={true} />
       <TableWrapper header='Model selection' data={modelSelection} />
       <TableWrapper
