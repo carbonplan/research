@@ -1,5 +1,5 @@
-import { FigureCaption, Colors } from '@carbonplan/components'
-import { PullQuote, Endnote, Figure } from '@carbonplan/layouts'
+import { Figure, FigureCaption, Colors } from '@carbonplan/components'
+import { PullQuote, Endnote } from '@carbonplan/layouts'
 import InlineCheck from '../../components/inline-check'
 import Permanence from './components/permanence'
 import Table from './components/table'

@@ -1,5 +1,5 @@
-import { FigureCaption, Colors } from '@carbonplan/components'
-import { Cite, Endnote, Figure } from '@carbonplan/layouts'
+import { Figure, FigureCaption, Colors } from '@carbonplan/components'
+import { Cite, Endnote } from '@carbonplan/layouts'
 import FireMap from './components/fire-map'
 import RiskScenarios from './components/risk-scenarios'
 

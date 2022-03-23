@@ -1,5 +1,5 @@
-import { FigureCaption } from '@carbonplan/components'
-import { PullQuote, Endnote, Figure, Cite } from '@carbonplan/layouts'
+import { Figure, FigureCaption } from '@carbonplan/components'
+import { PullQuote, Endnote, Cite } from '@carbonplan/layouts'
 import Depth from './components/depth'
 import Density from './components/density'
 import Country from './components/country'

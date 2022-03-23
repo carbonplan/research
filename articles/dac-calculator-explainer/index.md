@@ -1,5 +1,5 @@
-import { Link, Colors, FigureCaption } from '@carbonplan/components'
-import { Endnote, Cite, Figure } from '@carbonplan/layouts'
+import { Link, Colors, Figure, FigureCaption } from '@carbonplan/components'
+import { Endnote, Cite } from '@carbonplan/layouts'
 import BoundaryCondition from './components/boundary-condition'
 import ParameterScenario from './components/parameter-scenario'
 import CostSummary from './components/cost-summary'

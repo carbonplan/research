@@ -1,6 +1,6 @@
 import { Box } from 'theme-ui'
-import { Table, FigureCaption } from '@carbonplan/components'
-import { Endnote, Cite, Figure } from '@carbonplan/layouts'
+import { Table, Figure, FigureCaption } from '@carbonplan/components'
+import { Endnote, Cite } from '@carbonplan/layouts'
 import RiskMaps from './components/risk-maps'
 import RiskTrajectories from './components/risk-trajectories'
 

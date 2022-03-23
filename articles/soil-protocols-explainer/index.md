@@ -1,5 +1,5 @@
-import { Link, FigureCaption } from '@carbonplan/components'
-import { PullQuote, Cite, Endnote, Figure } from '@carbonplan/layouts'
+import { Link, Figure, FigureCaption } from '@carbonplan/components'
+import { PullQuote, Cite, Endnote } from '@carbonplan/layouts'
 import MetricHistogram from './components/metric-histogram'
 import MetricTable from './components/metric-table'
 import RecommendationTable from './components/recommendation-table'

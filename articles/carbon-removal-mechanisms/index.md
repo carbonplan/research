@@ -1,4 +1,5 @@
-import { Cite, Endnote, Figure, PullQuote } from '@carbonplan/layouts'
+import { Cite, Endnote, PullQuote } from '@carbonplan/layouts'
+import { Figure } from '@carbonplan/components'
 import Cycle from './components/cycle'
 
 export const meta = {

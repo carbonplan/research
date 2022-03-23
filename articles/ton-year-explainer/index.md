@@ -1,5 +1,10 @@
-import { Link, FigureCaption, TableCaption } from '@carbonplan/components'
-import { Endnote, Cite, Figure, PullQuote } from '@carbonplan/layouts'
+import {
+  Link,
+  Figure,
+  FigureCaption,
+  TableCaption,
+} from '@carbonplan/components'
+import { Endnote, Cite, PullQuote } from '@carbonplan/layouts'
 import EmissionsChart from './components/emissions-chart'
 import MethodsChart from './components/methods-chart'
 import ValueChart from './components/value-chart'

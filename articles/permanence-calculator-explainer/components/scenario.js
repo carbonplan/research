@@ -1,8 +1,7 @@
-import { Box, Grid, Divider } from 'theme-ui'
+import { Box, Divider } from 'theme-ui'
 import { scaleLinear } from 'd3-scale'
 import { line } from 'd3-shape'
-import { Row, Column } from '@carbonplan/components'
-import { Figure } from '@carbonplan/layouts'
+import { Figure, Row, Column } from '@carbonplan/components'
 
 const Scenario = ({
   projectDuration,

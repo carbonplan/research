@@ -1,5 +1,5 @@
-import { Link, FigureCaption } from '@carbonplan/components'
-import { Article, Cite, Endnote, Figure, PullQuote } from '@carbonplan/layouts'
+import { Link, Figure, FigureCaption } from '@carbonplan/components'
+import { Article, Cite, Endnote, PullQuote } from '@carbonplan/layouts'
 
 import CostCalculator from './components/cost-calculator'
 import GrowthChart from './components/growth-chart'

@@ -1,9 +1,6 @@
-import { Box, Divider } from 'theme-ui'
-import { Row, Column } from '@carbonplan/components'
-import { Figure } from '@carbonplan/layouts'
+import { Divider } from 'theme-ui'
+import { Figure, Row, Column } from '@carbonplan/components'
 import Squares from './squares'
-import Rating from './rating'
-import { sx } from './styles'
 import { scoreDescriptions } from './score-descriptions'
 
 const Entry = ({ start, id, label, value }) => {

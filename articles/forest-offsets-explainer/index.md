@@ -1,6 +1,6 @@
 import { Box } from 'theme-ui'
-import { FigureCaption } from '@carbonplan/components'
-import { Cite, Endnote, Figure } from '@carbonplan/layouts'
+import { Figure, FigureCaption } from '@carbonplan/components'
+import { Cite, Endnote } from '@carbonplan/layouts'
 import SummaryResults from './components/summary-results'
 import ProgramOverview from './components/program-overview'
 import AnalysisExplanation from './components/analysis-explanation'

@@ -1,6 +1,4 @@
-import { Box } from 'theme-ui'
-import { Table } from '@carbonplan/components'
-import { Figure } from '@carbonplan/layouts'
+import { Figure, Table } from '@carbonplan/components'
 
 const additionality = [
   [
