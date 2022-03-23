@@ -89,7 +89,7 @@ const Country = ({ map, selected, locations }) => {
   }, [])
 
   return (
-    <Box>
+    <Box sx={{ mb: [5, 5, 5, 6] }}>
       <Row columns={[6]}>
         <Column start={[1]} width={[3, 4, 4, 4]}>
           <Box

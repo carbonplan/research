@@ -45,7 +45,7 @@ const sx = {
 
 const MetricHistogram = () => {
   return (
-    <Box>
+    <Box sx={{ mb: [5, 5, 5, 6] }}>
       <Row columns={[6]} sx={{ pb: ['1px'], mb: [1], mt: [8, 0, 0, 0] }}>
         <Column start={[2]} width={[1]}>
           <Box sx={sx.header}>Rigor</Box>

@@ -251,7 +251,7 @@ const Cycle = ({ tag, data, labels, intro }) => {
   }
 
   return (
-    <Row columns={[6]}>
+    <Row columns={[6]} sx={{ mb: [6, 6, 6, 7] }}>
       <Column start={[1]} width={[6, 5, 5, 5]}>
         <Box
           sx={{
