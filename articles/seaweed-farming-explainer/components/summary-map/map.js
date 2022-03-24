@@ -82,8 +82,10 @@ const Map = () => {
         <Minimap projection={getCustomProjection}>
           <Path
             stroke={theme.colors.primary}
+            fill={theme.colors.background}
             source={'https://cdn.jsdelivr.net/npm/world-atlas@2/land-110m.json'}
             feature={'land'}
+            opacity={1}
           />
           <Graticule stroke={theme.colors.primary} />
           <Sphere fill={theme.colors.background} />
