@@ -186,11 +186,11 @@ This work was highly collaborative, with all team members playing critical roles
 
 A version of this work has been submitted for peer review and is available via the following preprint:
 
-W R L Anderegg, O S Chegwidden, G Badgley, A T Trugman, D Cullenward, J A Abatzoglou, J A Hicke, J Freeman, J Hamman (2020) “Climate risks to carbon sequestration in US forests” bioRxiv [10.1101/2021.05.11.443688](https://doi.org/10.1101/2021.05.11.443688)
+W R L Anderegg, O S Chegwidden, G Badgley, A T Trugman, D Cullenward, J A Abatzoglou, J A Hicke, J Freeman, J Hamman (2021) “Climate risks to carbon sequestration in US forests” bioRxiv [10.1101/2021.05.11.443688](https://doi.org/10.1101/2021.05.11.443688)
 
 Please cite this web article as:
 
-O S Chegwidden, W R L Anderegg, G Badgley, D Cullenward, J A Abatzoglou, J A Hicke, A T Trugman, J Freeman, J Hamman (2020) “Risks to forest carbon in a changing climate” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/forest-risks-explainer</span>
+O S Chegwidden, W R L Anderegg, G Badgley, D Cullenward, J A Abatzoglou, J A Hicke, A T Trugman, J Freeman, J Hamman (2021) “Risks to forest carbon in a changing climate” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/forest-risks-explainer</span>
 
 </Endnote>
 
