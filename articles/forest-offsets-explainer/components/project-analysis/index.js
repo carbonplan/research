@@ -417,7 +417,7 @@ const ProjectAnalysis = () => {
     : null
 
   return (
-    <Box sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+    <Box>
       <Box>
         <Row columns={[6, 6, 6, 6]}>
           <Column start={[1]} width={[6, 3, 3, 3]}>

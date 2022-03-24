@@ -83,7 +83,6 @@ const RiskTrajectories = () => {
   return (
     <Box
       sx={{
-        mt: [6, 6, 6, 7],
         mb: [6, 6, 6, 7],
       }}
     >

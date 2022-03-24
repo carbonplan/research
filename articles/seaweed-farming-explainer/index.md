@@ -1,5 +1,5 @@
-import { Link, FigureCaption } from '@carbonplan/components'
-import { Article, Endnote, Cite, PullQuote } from '@carbonplan/layouts'
+import { Link, Figure, FigureCaption } from '@carbonplan/components'
+import { Article, Cite, Endnote, PullQuote } from '@carbonplan/layouts'
 
 import CostCalculator from './components/cost-calculator'
 import GrowthChart from './components/growth-chart'
@@ -71,17 +71,19 @@ G-MACMODS is a nutrient-constrained, biophysical macroalgal growth model with in
 
 The core behavior of the model is demonstrated in Figure 1, which shows the primary output variables in a small set of example spatial locations. By varying the inputs and seeing changes in the outputs you can build some intuition for the model’s behavior.
 
-<CostCalculator />
-<FigureCaption number={1}>
-  Interactive calculator for exploring the costs of growing seaweed alongside
-  its potential climate benefits for seaweed sinking or biomass products.
-  Circles on the map can be selected to populate biophysical parameters for each
-  location. Sliders adjust the values of technoeconomic parameters used by the
-  model. Values at the top report the production cost, the climate benefit, and
-  the removal cost (for sinking) or mitigation cost (for products), which can be
-  obtained as the production cost divided by the climate benefit (less product
-  value in the case of mitigation cost).
-</FigureCaption>
+<Figure>
+  <CostCalculator />
+  <FigureCaption number={1}>
+    Interactive calculator for exploring the costs of growing seaweed alongside
+    its potential climate benefits for seaweed sinking or biomass products.
+    Circles on the map can be selected to populate biophysical parameters for
+    each location. Sliders adjust the values of technoeconomic parameters used
+    by the model. Values at the top report the production cost, the climate
+    benefit, and the removal cost (for sinking) or mitigation cost (for
+    products), which can be obtained as the production cost divided by the
+    climate benefit (less product value in the case of mitigation cost).
+  </FigureCaption>
+</Figure>
 
 ## Assumptions and caveats
 
@@ -109,23 +111,27 @@ Our model and tool help highlight important targets for research and innovation.
 
 Even if seed and capital costs are minimized, seaweed-based CDR seems likely to be more expensive than alternatives like direct air capture, and it is not clear that there are viable and large markets for seaweed products. These factors, combined with the challenges inherent to verification and monitoring as well as the potential for ecosystem disruption, suggest that expansion of seaweed cultivation should be approached with caution.
 
-<SummaryMap />
-<FigureCaption number={2}>
-  Estimated costs of using farmed seaweed for carbon removal (sinking) or
-  avoiding GHG emissions (feed, food, fuel). Maps show optimistically low net
-  costs (5<sup>th</sup> percentile) from ambient nutrient simulations.
-</FigureCaption>
+<Figure>
+  <SummaryMap />
+  <FigureCaption number={2}>
+    Estimated costs of using farmed seaweed for carbon removal (sinking) or
+    avoiding GHG emissions (feed, food, fuel). Maps show optimistically low net
+    costs (5<sup>th</sup> percentile) from ambient nutrient simulations.
+  </FigureCaption>
+</Figure>
 
 ## Looking ahead
 
 Future work should focus on targeted research and development of large-scale seaweed farms in the most economically-feasible locations to further reduce uncertainties. In particular, the biophysical uncertainty surrounding the atmospheric removal fraction (the amount that growing and sinking seaweed reduces atmospheric CO₂) must be resolved to appropriately assess and validate seaweed as a negative emissions strategy. Among the economic uncertainties, reducing uncertainty in the availability and size of markets for seaweed products is especially important, and reducing uncertainty in the cost of capital and seeded line through deployment of more large farms will help clarify the economic potential of seaweed farming at scales relevant to the global carbon budget. Additionally, the seaweed farming industry would have to expand at unprecedented rates for seaweed to provide gigaton-scale climate benefits annually, as shown in Figure 3.
 
-<GrowthChart />
-<FigureCaption number={3}>
-  Growth of seaweed farming required to reach 2030 and 2050 goals of 1 Gt CO₂e
-  annually for sinking and biomass products. For reference, 350K km² is
-  approximately 0.1% of the world’s oceans.
-</FigureCaption>
+<Figure>
+  <GrowthChart />
+  <FigureCaption number={3}>
+    Growth of seaweed farming required to reach 2030 and 2050 goals of 1 Gt CO₂e
+    annually for sinking and biomass products. For reference, 350K km² is
+    approximately 0.1% of the world’s oceans.
+  </FigureCaption>
+</Figure>
 
 Producing seaweed in the lowest-cost areas to reach 1 Gt CO₂e of emissions avoided or 1 Gt CO₂ removal by 2050 would entail the area farmed to increase by roughly 13% or 17% per year, respectively, compared to the 2000-2018 seaweed farming industrial growth rate of 6%. Achieving the same level of climate benefits from seaweed by 2030 increases the implied expansion rate of farms to roughly 44% or 60% per year for emissions avoided or carbon removed, respectively.
 

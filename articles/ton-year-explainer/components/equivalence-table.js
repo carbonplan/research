@@ -35,60 +35,54 @@ const sx = {
 
 const EquivalenceTable = () => {
   return (
-    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
-      <Row columns={[6]}>
-        <Column start={[1]} width={[3]}>
-          <Row columns={[2]}>
-            <Box sx={sx.group}>
-              <Box sx={sx.label}>
-                Storage <br />
-                amount
-              </Box>
-              {EQUIVALENCE_VALUES.map((_, i) => (
-                <Box sx={sx.number} key={i}>
-                  1<Box sx={sx.units}>tCO₂</Box>
-                </Box>
-              ))}
+    <Row columns={[6]}>
+      <Column start={[1]} width={[3]}>
+        <Row columns={[2]}>
+          <Box sx={sx.group}>
+            <Box sx={sx.label}>
+              Storage <br />
+              amount
             </Box>
-            <Box sx={sx.group}>
-              <Box sx={sx.label}>
-                Storage <br />
-                period
+            {EQUIVALENCE_VALUES.map((_, i) => (
+              <Box sx={sx.number} key={i}>
+                1<Box sx={sx.units}>tCO₂</Box>
               </Box>
-              {EQUIVALENCE_VALUES.map(([delay]) => (
-                <Box sx={sx.number} key={delay}>
-                  {delay}
-                  <Box sx={sx.units}>
-                    <Box
-                      sx={{ display: ['none', 'none', 'initial', 'initial'] }}
-                    >
-                      years
-                    </Box>
-                    <Box
-                      sx={{ display: ['initial', 'initial', 'none', 'none'] }}
-                    >
-                      y
-                    </Box>
+            ))}
+          </Box>
+          <Box sx={sx.group}>
+            <Box sx={sx.label}>
+              Storage <br />
+              period
+            </Box>
+            {EQUIVALENCE_VALUES.map(([delay]) => (
+              <Box sx={sx.number} key={delay}>
+                {delay}
+                <Box sx={sx.units}>
+                  <Box sx={{ display: ['none', 'none', 'initial', 'initial'] }}>
+                    years
+                  </Box>
+                  <Box sx={{ display: ['initial', 'initial', 'none', 'none'] }}>
+                    y
                   </Box>
                 </Box>
-              ))}
-            </Box>
-          </Row>
-        </Column>
-        <Column start={[4]} width={[3]} sx={sx.group}>
-          <Box sx={sx.label}>
-            Equivalent <br />
-            emissions
+              </Box>
+            ))}
           </Box>
-          {EQUIVALENCE_VALUES.map(([delay, value]) => (
-            <Box sx={sx.number} key={delay}>
-              {value}
-              <Box sx={sx.units}>tCO₂</Box>
-            </Box>
-          ))}
-        </Column>
-      </Row>
-    </Box>
+        </Row>
+      </Column>
+      <Column start={[4]} width={[3]} sx={sx.group}>
+        <Box sx={sx.label}>
+          Equivalent <br />
+          emissions
+        </Box>
+        {EQUIVALENCE_VALUES.map(([delay, value]) => (
+          <Box sx={sx.number} key={delay}>
+            {value}
+            <Box sx={sx.units}>tCO₂</Box>
+          </Box>
+        ))}
+      </Column>
+    </Row>
   )
 }
 

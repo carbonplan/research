@@ -1,5 +1,5 @@
 import { Box } from 'theme-ui'
-import { Table, FigureCaption } from '@carbonplan/components'
+import { Table, Figure, FigureCaption } from '@carbonplan/components'
 import { Endnote, Cite } from '@carbonplan/layouts'
 import RiskMaps from './components/risk-maps'
 import RiskTrajectories from './components/risk-trajectories'
@@ -55,33 +55,34 @@ We analyzed the historical relationship between climate conditions and three key
 
 We projected risks to forests based on three future climate scenarios (“shared socioeconomic pathways” or SSPs)<Cite id='riahi.2017'/> using data from the Coupled Model Intercomparison Project Phase 6 (CMIP6).<Cite id='eyring.2016'/> These scenarios incorporate socioeconomic and climate factors to describe different future levels of emissions and subsequent climate change.
 
-<Table
-  columns={6}
-  start={[
-    [1, 1, 1, 1],
-    [1, 3, 3, 3],
-  ]}
-  width={[
-    [6, 2, 2, 2],
-    [6, 4, 4, 4],
-  ]}
-  index={true}
-  sx={{ my: [6, 6, 6, 7] }}
-  data={[
-    [
-      'SSP2-4.5 (low)',
-      'A more optimistic scenario that models emissions declining beginning mid-century, though they remain net-positive throughout the 21st century',
-    ],
-    [
-      'SSP3-7.0 (medium)',
-      'Emissions increases through the 21st century, similar to current expectations for global emissions given current policy commitments',
-    ],
-    [
-      'SSP5-8.5 (high)',
-      'A scenario in which world governments fail to enact significant climate policy and aggressively exploit conventional fossil energy resources',
-    ],
-  ]}
-/>
+<Figure>
+  <Table
+    columns={6}
+    start={[
+      [1, 1, 1, 1],
+      [1, 3, 3, 3],
+    ]}
+    width={[
+      [6, 2, 2, 2],
+      [6, 4, 4, 4],
+    ]}
+    index={true}
+    data={[
+      [
+        'SSP2-4.5 (low)',
+        'A more optimistic scenario that models emissions declining beginning mid-century, though they remain net-positive throughout the 21st century',
+      ],
+      [
+        'SSP3-7.0 (medium)',
+        'Emissions increases through the 21st century, similar to current expectations for global emissions given current policy commitments',
+      ],
+      [
+        'SSP5-8.5 (high)',
+        'A scenario in which world governments fail to enact significant climate policy and aggressively exploit conventional fossil energy resources',
+      ],
+    ]}
+  />
+</Figure>
 
 Although SSP2-4.5 is the lowest emissions scenario we include, it is considered “middle-of-the-road” in terms of the [full suite of scenarios](https://gmd.copernicus.org/articles/13/3571/2020/) and still results in warming that exceeds the limits set by the Paris Agreement. Note that there is significant uncertainty as to the likelihood of some of these scenarios given current trends, but together they offer a view at the range of future outcomes.
 
@@ -89,32 +90,34 @@ Our full high-resolution results can be browsed in a live [web mapping tool](htt
 
 Note that projected "risk" here means slightly different things for the different forms of disturbance. Fire risk represents the probability of at least one moderate or high severity fire within a 20 year period. Drought and insect risks represent the expected mortality (as a fraction) over a 20 year period related to each of the factors. While qualitatively comparable, full harmonization would require further assumptions about the fraction of biomass lost in fires and expected background levels of mortality.
 
-<RiskMaps />
-<FigureCaption number={1}>
-  Risks to forests projected through the 21st century.{' '}
-  <Box as='span' sx={{ color: 'orange' }}>
-    Fire
-  </Box>{' '}
-  risk represents the probability of at least one moderate or high severity fire
-  within a twenty year period.{' '}
-  <Box as='span' sx={{ color: 'pink' }}>
-    Drought
-  </Box>{' '}
-  and{' '}
-  <Box as='span' sx={{ color: 'blue' }}>
-    insect
-  </Box>{' '}
-  risks represent the expected mortality (as a fraction) related to each of the
-  factors. Adjusting the sliders next to each panel raises or lowers the
-  threshold for when a pixel will appear, denoting a location at or exceeding
-  that risk level. The{' '}
-  <Box as='span' sx={{ color: 'green' }}>
-    biomass
-  </Box>{' '}
-  map shows, as a reference, locations with an estimated biomass of at least 1
-  tC/ha in 2020. Pan through years (lower right) or change emissions scenario
-  (lower left) to see risks change.
-</FigureCaption>
+<Figure>
+  <RiskMaps />
+  <FigureCaption number={1}>
+    Risks to forests projected through the 21st century.{' '}
+    <Box as='span' sx={{ color: 'orange' }}>
+      Fire
+    </Box>{' '}
+    risk represents the probability of at least one moderate or high severity
+    fire within a twenty year period.{' '}
+    <Box as='span' sx={{ color: 'pink' }}>
+      Drought
+    </Box>{' '}
+    and{' '}
+    <Box as='span' sx={{ color: 'blue' }}>
+      insect
+    </Box>{' '}
+    risks represent the expected mortality (as a fraction) related to each of
+    the factors. Adjusting the sliders next to each panel raises or lowers the
+    threshold for when a pixel will appear, denoting a location at or exceeding
+    that risk level. The{' '}
+    <Box as='span' sx={{ color: 'green' }}>
+      biomass
+    </Box>{' '}
+    map shows, as a reference, locations with an estimated biomass of at least 1
+    tC/ha in 2020. Pan through years (lower right) or change emissions scenario
+    (lower left) to see risks change.
+  </FigureCaption>
+</Figure>
 
 Historically, areas with high wildfire risk (regions covered with orange dots) are predominantly in the mountains of the western US, especially California, the northern Rocky Mountains, and the southwest. Areas of high mortality for insects and drought were generally in the Rocky Mountains of Idaho, Montana, and Colorado.
 
@@ -130,20 +133,22 @@ Our insect and drought models were partially limited by noisy observational fore
 
 In the future, all US-averaged risks are projected to increase in severity throughout the 21st century. Changes depend substantially on emissions scenario, with modeled increases by 2090 ranging from 4-14x for fire and 1.3-1.8x for drought and insects. However, the severity of the risk change will depend on location, which you can explore in the interactive graphic below.
 
-<RiskTrajectories />
-<FigureCaption number={2}>
-  Trajectory of risks under three future climate change emissions scenarios:{' '}
-  <Box as='span' sx={{ color: 'red' }}>
-    SSP5-8.5 (high)
-  </Box>
-  , <Box as='span' sx={{ color: 'yellow' }}>
-    SSP3-7.0 (medium)
-  </Box>, and <Box as='span' sx={{ color: 'teal' }}>
-    SSP2-4.5 (low)
-  </Box>. Averaging risks regionally (upper left) reveals how risks depend on location.
-  The ensemble mean of 6 global climate models is dark while light traces indicate
-  each individual ensemble member. Historical period shown in gray.
-</FigureCaption>
+<Figure>
+  <RiskTrajectories />
+  <FigureCaption number={2}>
+    Trajectory of risks under three future climate change emissions scenarios:{' '}
+    <Box as='span' sx={{ color: 'red' }}>
+      SSP5-8.5 (high)
+    </Box>
+    , <Box as='span' sx={{ color: 'yellow' }}>
+      SSP3-7.0 (medium)
+    </Box>, and <Box as='span' sx={{ color: 'teal' }}>
+      SSP2-4.5 (low)
+    </Box>. Averaging risks regionally (upper left) reveals how risks depend on location.
+    The ensemble mean of 6 global climate models is dark while light traces indicate
+    each individual ensemble member. Historical period shown in gray.
+  </FigureCaption>
+</Figure>
 
 The west coast, which is already beleaguered by fire risk, has the potential to experience intense growth in risk such that by 2090 fire risk could exceed 50% in the high emissions scenario. By the end of the century, the historically low-fire risk southeast could have levels of fire risks similar to the present-day west coast. Increases in drought mortality are most striking in the southwest, where climate change could increase drought mortality by about 3x. As mentioned above, projections are more uncertain for drought and insect mortality, and vary depending on the decade and the underlying individual climate model (with individual model scenarios shown in pale traces, compared to the multi-model mean shown with thicker lines).
 

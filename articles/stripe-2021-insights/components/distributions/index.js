@@ -23,7 +23,7 @@ const Distributions = () => {
   }
 
   return (
-    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+    <Box>
       <Box
         sx={{
           fontFamily: 'heading',

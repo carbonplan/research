@@ -85,7 +85,7 @@ const CostCalculator = () => {
     (target === 'products' ? cost - parameters.productValue : cost) / benefit
 
   return (
-    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+    <Box>
       <Row columns={6}>
         <Column start={1} width={2} sx={sx.column}>
           <Total label='Production cost' value={cost} units='$ / ton DW' />

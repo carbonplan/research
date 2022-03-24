@@ -48,7 +48,7 @@ const RiskMaps = () => {
   }, [])
 
   return (
-    <Box sx={{ mt: [6, 6, 6, 7], mb: [5, 5, 5, 6] }}>
+    <Box sx={{ mb: [5, 5, 5, 6] }}>
       <Row columns={[6, 6]}>
         <Panel
           position={'left'}

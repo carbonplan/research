@@ -71,7 +71,7 @@ const CostSummary = ({
     'Total Cost [$/tCO2]': solarTotalCost,
   }
   return (
-    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+    <Box>
       <Grid columns={[3, 3, 4]} gap={[4, 5, 4, 6]} sx={{ pb: [0] }}>
         <Box sx={{ textAlign: 'left' }}>
           <Divider sx={{ mt: [0], mr: [0, 0, 3, 3] }} />

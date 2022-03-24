@@ -1,4 +1,4 @@
-import { FigureCaption, Colors } from '@carbonplan/components'
+import { Figure, FigureCaption, Colors } from '@carbonplan/components'
 import { PullQuote, Endnote } from '@carbonplan/layouts'
 import InlineCheck from '../../components/inline-check'
 import Distributions from './components/distributions'
@@ -47,34 +47,40 @@ In early 2020, Microsoft announced a [commitment to purchase carbon removal](htt
 
 We received early access to these now-public proposals to perform our independent analysis. We evaluated 161 of 189 proposals, excluding 28 because of missing, incomplete, or duplicative information (see Figure 1).
 
-<Numbers />
-<FigureCaption number={1}>
-  Summary numbers across the project proposals we analyzed. All fractions are
-  expressed in terms of volume (which is in units of tCO₂).
-</FigureCaption>
+<Figure>
+  <Numbers />
+  <FigureCaption number={1}>
+    Summary numbers across the project proposals we analyzed. All fractions are
+    expressed in terms of volume (which is in units of tCO₂).
+  </FigureCaption>
+</Figure>
 
 While existing registries and protocols purport to standardize aspects of carbon removal procurement, we were struck by the enormous diversity of proposals. 16 registries and 45 unique protocols were represented — and still, less than 30% of projects had any affiliation with a registry or protocol. As [highlighted by Carbon Direct](https://carbon-direct.com/responsible-carbon-removal-means-putting-science-first/), we also found that the existence of registry listings did not reliably predict project quality one way or the other, although projects on registries were likely to feature more public project documentation than those that were not.
 
 Using the public proposals, project websites, registry listings, and published literature, we analyzed each of the 161 proposals on the basis of [seven harmonized metrics](https://carbonplan.org/research/cdr-database/methods).
 
-<Metrics />
+<Figure>
+  <Metrics />
+</Figure>
 
 Metric validation is done on the basis of project proposals, which may or may not reflect reality; we do not purport to verify what projects claim, only to analyze the consistency and validity of the claims themselves. Volume in particular, must be interpreted with care because applicants appear to have made different, diverging assumptions around what numbers to report. We saw offers of volumes already generated, volumes to be generated in the coming year, and volumes to be generated over the next decade or more. This variety, which we attempt to document in the database notes and comments, reflects the complex reality of what projects are attempting to achieve on the ground — a reality that buyers must understand to make responsible decisions. As a result, the numbers should not be compared on an apples-to-apples basis without paying close attention to the details.
 
 Distributions of volume and permanence across projects reveal familiar patterns, with notable categorical distinctions (Figure 2). Forest and soil projects tend to have the largest volumes and the lowest permanence, though we again caution that volumes should not be taken at face value. Permanence is generally higher for biomass projects, and 1000+ years or more is common for mineralization and direct air capture. Volumes claimed for these categories vary widely, depending on whether projects proposed prototypes in progress, speculative future plans, or something in between. All three direct air capture projects, in particular, proposed scaling up existing deployments and thus offered very large volumes.
 
 <!-- prettier-ignore -->
-<Distributions />
-<FigureCaption number={2}>
-  Distributions of volume (above) and permanence (below) across six project
-  categories: <Colors.Green>forests</Colors.Green>,{' '}
-  <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
-  <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
-  <Colors.Purple>direct air capture</Colors.Purple>. Each circle
-  represents a project, and curves show the distribution using a kernel density
-  estimate. Values reflect project proposals and may not necessarily be accurate
-  or realistic.
-</FigureCaption>
+<Figure>
+  <Distributions />
+  <FigureCaption number={2}>
+    Distributions of volume (above) and permanence (below) across six project
+    categories: <Colors.Green>forests</Colors.Green>,{' '}
+    <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+    <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
+    <Colors.Purple>direct air capture</Colors.Purple>. Each circle
+    represents a project, and curves show the distribution using a kernel density
+    estimate. Values reflect project proposals and may not necessarily be accurate
+    or realistic.
+  </FigureCaption>
+</Figure>
 
 To help guide interpretation of these metrics, we validate with a <InlineCheck/> the mechanism, volume, negativity, and permanence of each project if we can independently confirm claims with reasonable confidence, based on the best available science, data, and public documentation. Where we don’t feel confident about validation, we simply report the project claim without giving it a <InlineCheck/>. In the case of additionality (would the claimed climate benefits occur without the project?) and specificity (was there enough information for us to perform our analysis?) we assign a qualitative score on a scale of 1 to 3.
 
@@ -91,16 +97,18 @@ We learned a lot performing this analysis, both from the content of the proposal
 In our previous round of analysis, we often found ourselves unable to confidently and independently validate projects’ claims. That was also the case here (see Figure 3).
 
 <!-- prettier-ignore -->
-<Validation />
-<FigureCaption number={3}>
-  Fraction of validated projects across five metrics and six project categories:{' '}<Colors.Green>forests</Colors.Green>,{' '}
-  <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
-  <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
-  <Colors.Purple>direct air capture</Colors.Purple>. Each bar shows
-  the fraction of projects (from 0 to 1) in that category for which we were able
-  to validate the given metric. In the case of additionality, which uses a 3
-  point scale, validation here is defined as a score of at least 2.
-</FigureCaption>
+<Figure>
+  <Validation />
+  <FigureCaption number={3}>
+    Fraction of validated projects across five metrics and six project categories:{' '}<Colors.Green>forests</Colors.Green>,{' '}
+    <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
+    <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
+    <Colors.Purple>direct air capture</Colors.Purple>. Each bar shows
+    the fraction of projects (from 0 to 1) in that category for which we were able
+    to validate the given metric. In the case of additionality, which uses a 3
+    point scale, validation here is defined as a score of at least 2.
+  </FigureCaption>
+</Figure>
 
 The missing information tended to vary by project category.
 
@@ -128,15 +136,17 @@ Across all metrics and categories, our ability to validate project claims depend
 
 Permanence is a critical dimension when considering carbon removal. Carbon dioxide emissions create an effectively permanent climate problem, so carbon removal needs to provide durable and ideally permanent storage. The recently proposed [Oxford Taxonomy of Offsets](https://www.smithschool.ox.ac.uk/publications/reports/Oxford-Offsetting-Principles-2020.pdf) distinguishes projects based on their mechanism (avoided emissions or carbon removal) and the permanence of any applicable carbon storage (short or long duration). The framework encourages buyers seeking to offset their emissions to shift their procurement decisions toward Type 5 (long duration carbon removal) as much as possible — and only after making deep cuts to existing emissions.
 
-<Oxford />
-<FigureCaption number={4}>
-  Categorizing projects using the Oxford Taxonomy. Fractions falling into each
-  category are expressed in terms of volume relative to the set purchased by
-  Microsoft. Fractions were similar when expressed relative to the full set of
-  proposals. Durations of “short” and “long” storage do not have strict
-  definitions in the Oxford Taxonomy, so we assumed a threshold of 500 years to
-  separate the categories.
-</FigureCaption>
+<Figure>
+  <Oxford />
+  <FigureCaption number={4}>
+    Categorizing projects using the Oxford Taxonomy. Fractions falling into each
+    category are expressed in terms of volume relative to the set purchased by
+    Microsoft. Fractions were similar when expressed relative to the full set of
+    proposals. Durations of “short” and “long” storage do not have strict
+    definitions in the Oxford Taxonomy, so we assumed a threshold of 500 years
+    to separate the categories.
+  </FigureCaption>
+</Figure>
 
 Microsoft’s RFP solicited carbon removal, so it nominally considered only Types 4 and 5. The project proposals, however, included avoided emissions and carbon removal each with both short- and long-lived storage (Types 2 through 5).
 

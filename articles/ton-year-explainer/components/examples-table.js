@@ -78,8 +78,6 @@ const table = [
 const ExamplesTable = () => {
   return (
     <Table
-      as='figure'
-      sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}
       columns={[4, 6, 6, 6]}
       start={[
         [1, 1, 1, 1],

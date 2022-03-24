@@ -25,7 +25,7 @@
   "dependencies": {
     "@carbonplan/charts": "^2.7.0",
     "@carbonplan/colormaps": "^3.0.2",
-    "@carbonplan/components": "^11.3.0",
+    "@carbonplan/components": "^11.5.0",
     "@carbonplan/icons": "^1.0.0",
     "@carbonplan/layouts": "^1.4.0",
     "@carbonplan/minimaps": "^1.0.0",
@@ -38,6 +38,7 @@
     "@next/mdx": "^10.2.3",
     "@react-spring/web": "^9.4.2",
     "@theme-ui/color": "^0.13.1",
+    "@theme-ui/core": "^0.13.1",
     "@theme-ui/css": "^0.13.1",
     "@theme-ui/match-media": "^0.13.1",
     "d3-drag": "^3.0.0",
