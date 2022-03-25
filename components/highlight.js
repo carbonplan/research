@@ -1,4 +1,4 @@
-import { Box } from 'theme-ui'
+import { Box, Image, useColorMode } from 'theme-ui'
 import { Button, LinkGroup, Row, Column } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
 import Date from './date'
@@ -14,12 +14,14 @@ const Highlight = ({
   logo,
   sx,
 }) => {
+  const [colorMode] = useColorMode()
+
   return (
     <Box
       sx={{
         pt: [4, 4, 0, 0],
-        pb: [4, 4, 3, 4],
-        mb: [0, 0, 6, 7],
+        pb: [0, 0, 0, 0],
+        mb: [0, 0, 7, 8],
         pl: [4, 5, 5, 6],
         ml: [-4, -5, -5, -6],
         borderLeft: ({ colors }) => [
@@ -43,7 +45,7 @@ const Highlight = ({
           tracking
           suffix={
             <RotatingArrow
-              color={color}
+              color={'primary'}
               sx={{ width: [20, 20, 26, 36], height: [20, 20, 26, 36] }}
             />
           }
@@ -87,7 +89,14 @@ const Highlight = ({
           />
         </Box>
       </Box>
-      {logo}
+      <Row columns={6} sx={{ mt: [4, 5, 5, 6] }}>
+        <Column start={1} width={6}>
+          <Image
+            sx={{ width: '100%' }}
+            src={colorMode === 'light' ? logo.light : logo.dark}
+          />
+        </Column>
+      </Row>
     </Box>
   )
 }
