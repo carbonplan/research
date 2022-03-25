@@ -19,10 +19,6 @@ const HIGHLIGHTS = [
         href: '/research/seaweed-farming-explainer',
       },
     ],
-    logo: {
-      dark: '/Seaweed-Farming-Dark.png',
-      light: '/Seaweed-Farming-Light.png',
-    },
   },
   {
     id: 'ton-year-explainer',
@@ -35,7 +31,6 @@ const HIGHLIGHTS = [
       { label: 'Explainer article', href: '/research/ton-year-explainer' },
       { label: 'Our critique of NCX’s methods', href: '/blog/ton-year-ncx' },
     ],
-    logo: { dark: '/Ton-Year-Dark.png', light: '/Ton-Year-Light.png' },
   },
 ]
 
