@@ -1,7 +1,11 @@
-import { Box } from 'theme-ui'
-import { Button, LinkGroup, Row, Column } from '@carbonplan/components'
+import { Box, Image, useColorMode } from 'theme-ui'
+import { Button, LinkGroup, Row, Column, Link } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
 import Date from './date'
+
+const highlightImageUrl = (id, mode) => {
+  return `https://images.carbonplan.org/highlights/${id}-${mode}.png`
+}
 
 const Highlight = ({
   id,
@@ -14,12 +18,14 @@ const Highlight = ({
   logo,
   sx,
 }) => {
+  const [colorMode] = useColorMode()
+
   return (
     <Box
       sx={{
         pt: [4, 4, 0, 0],
-        pb: [4, 4, 3, 4],
-        mb: [0, 0, 6, 7],
+        pb: [0, 0, 0, 0],
+        mb: [0, 0, 7, 8],
         pl: [4, 5, 5, 6],
         ml: [-4, -5, -5, -6],
         borderLeft: ({ colors }) => [
@@ -43,7 +49,7 @@ const Highlight = ({
           tracking
           suffix={
             <RotatingArrow
-              color={color}
+              color={'primary'}
               sx={{ width: [20, 20, 26, 36], height: [20, 20, 26, 36] }}
             />
           }
@@ -87,7 +93,30 @@ const Highlight = ({
           />
         </Box>
       </Box>
-      {logo}
+      <Row columns={6} sx={{ mt: [4, 5, 5, 6] }}>
+        <Column start={1} width={6}>
+          <Link href={href || `/research/${id}`}>
+            <Image
+              sx={{
+                width: '100%',
+                aspectRatio: '4 / 1',
+                opacity: 1,
+                transition: 'opacity 0.15s',
+                '@media (hover: hover) and (pointer: fine)': {
+                  '&:hover': {
+                    opacity: 0.6,
+                  },
+                },
+              }}
+              src={
+                colorMode === 'light'
+                  ? highlightImageUrl(id, 'light')
+                  : highlightImageUrl(id, 'dark')
+              }
+            />
+          </Link>
+        </Column>
+      </Row>
     </Box>
   )
 }
