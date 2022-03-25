@@ -95,6 +95,7 @@ const Highlight = ({
             <Image
               sx={{
                 width: '100%',
+                aspectRatio: '4 / 1',
                 opacity: 1,
                 transition: 'opacity 0.15s',
                 '@media (hover: hover) and (pointer: fine)': {
