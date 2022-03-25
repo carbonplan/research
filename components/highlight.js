@@ -3,6 +3,10 @@ import { Button, LinkGroup, Row, Column, Link } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
 import Date from './date'
 
+const highlightImageUrl = (id, mode) => {
+  return `https://images.carbonplan.org/highlights/${id}-${mode}.png`
+}
+
 const Highlight = ({
   id,
   href,
@@ -104,7 +108,11 @@ const Highlight = ({
                   },
                 },
               }}
-              src={colorMode === 'light' ? logo.light : logo.dark}
+              src={
+                colorMode === 'light'
+                  ? highlightImageUrl(id, 'light')
+                  : highlightImageUrl(id, 'dark')
+              }
             />
           </Link>
         </Column>
