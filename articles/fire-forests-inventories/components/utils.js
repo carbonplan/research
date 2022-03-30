@@ -1,9 +1,5 @@
 export const getOption = (options) => {
-  return Object.keys(options)[
-    Object.keys(options)
-      .map((d) => options[d])
-      .indexOf(true)
-  ]
+  return Object.keys(options).find((key) => options[key])
 }
 
 export const averageOverRange = (data, range) => {

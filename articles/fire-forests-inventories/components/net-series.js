@@ -44,7 +44,7 @@ const Figure = () => {
   }
 
   return (
-    <Box sx={{ width: '100%', height: '300px', mt: [6] }}>
+    <Box sx={{ width: '100%', height: '300px' }}>
       <Chart x={[2008, 2022]} y={[-60, 80]}>
         <AxisLabel left align='left'>
           Net CO₂ emissions&nbsp;

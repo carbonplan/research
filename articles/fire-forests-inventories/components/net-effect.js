@@ -9,10 +9,10 @@ import {
   Grid,
   Label,
   Ticks,
+  Rect,
   AxisLabel,
   TickLabels,
 } from '@carbonplan/charts'
-import Rect from './rect'
 import { data as netData } from './data/net-effect'
 import { data as fireData } from './data/fire-emissions'
 import { getOption, averageOverRange } from './utils'
@@ -120,35 +120,6 @@ const Figure = () => {
         </Chart>
       </Box>
     </>
-  )
-}
-
-const BarChart = ({ results, first, index }) => {
-  return (
-    <Box sx={{ width: '100%', height: '225px' }}>
-      <Chart
-        x={[0.5, 3.5]}
-        y={[-60, 60]}
-        padding={{ bottom: 0, right: 0, left: 60 }}
-      >
-        {first && (
-          <AxisLabel left align='left'>
-            CO₂ emissions&nbsp;
-            <Box as='span' sx={{ textTransform: 'none', color: 'secondary' }}>
-              MMT / year
-            </Box>
-          </AxisLabel>
-        )}
-        <Grid horizontal />
-        {first && <TickLabels left />}
-        {first && <Ticks left />}
-        <Plot>
-          <Circle x={1} y={results.fire[index]} />
-          <Circle x={2} y={results.residual[index]} />
-          <Circle x={3} y={results.net[index]} />
-        </Plot>
-      </Chart>
-    </Box>
   )
 }
 

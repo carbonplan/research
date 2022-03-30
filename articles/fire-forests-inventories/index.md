@@ -21,7 +21,6 @@ export const meta = {
     'Megafires likely make California forests a net source of carbon dioxide emissions',
   background: 'article-015/abacus',
   card: 'fire-forests-inventories',
-  tags: ['article'],
   summary:
     'Should policymakers track net greenhouse gas emissions across the energy and lands sectors, and if so, how? We explored the complex choices required to account for forests and power plants in the same emissions inventory.',
   icon: 'article-015/abacus-small',
