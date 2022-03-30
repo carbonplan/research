@@ -85,7 +85,7 @@ const Figure = () => {
         <Label x={2000.25} y={448}>
           AB 32 2020 Limit
         </Label>
-        <Label x={2006.25} y={525} sx={{ color: 'yellow' }}>
+        <Label x={2006.25} y={521} sx={{ color: 'yellow' }}>
           Anthropogenic
           <br />
           GHG inventory

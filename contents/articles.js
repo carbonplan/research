@@ -7,11 +7,13 @@ const articles = [
     title: 'Fire, forests, and greenhouse gas inventories in California',
     authors: ['Oriana Chegwidden', 'Sadie Frank', 'Danny Cullenward'],
     color: 'yellow',
-    quickLook: 'Quicklook...',
+    quickLook:
+      'Megafires likely make California forests a net source of carbon dioxide emissions',
     background: 'article-015/abacus',
     card: 'fire-forests-inventories',
     tags: ['article'],
-    summary: 'Summary...',
+    summary:
+      'Should policymakers track net greenhouse gas emissions across the energy and lands sectors, and if so, how? We explored the complex choices required to account for forests and power plants in the same emissions inventory.',
     icon: 'article-015/abacus-small',
   },
   {
