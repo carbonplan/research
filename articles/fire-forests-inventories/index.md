@@ -15,7 +15,12 @@ export const meta = {
   version: '1.0.0',
   date: '03-30-2022',
   title: 'Fire, forests, and greenhouse gas inventories in California',
-  authors: ['Oriana Chegwidden', 'Sadie Frank', 'Danny Cullenward'],
+  authors: [
+    'Oriana Chegwidden',
+    'Grayson Badgley',
+    'Sadie Frank',
+    'Danny Cullenward',
+  ],
   color: 'yellow',
   quickLook:
     'Megafires likely make California forests a net source of carbon dioxide emissions',
@@ -187,11 +192,11 @@ Finally, these observations suggest policymakers may want to consider different 
 
 <Endnote label='Credits'>
 
-Oriana developed the analysis with input from Sadie, Grayson, and Danny. Jeremy helped design and implement figures. All authors contributed to writing the article.
+Oriana developed the analysis with input from Sadie, Grayson, and Danny. All authors contributed to writing the article. Thanks to Jeremy for help designing and implementing figures.
 
 Please cite as:
 
-O Chegwidden, S Frank, D Cullenward (2022) “Fire, forests, and greenhouse gas inventories in California” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/fire-forests-inventories</span>
+O Chegwidden, G Badgley, S Frank, D Cullenward (2022) “Fire, forests, and greenhouse gas inventories in California” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/fire-forests-inventories</span>
 
 </Endnote>
 

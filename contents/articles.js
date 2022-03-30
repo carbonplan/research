@@ -5,7 +5,12 @@ const articles = [
     version: '1.0.0',
     date: '03-30-2022',
     title: 'Fire, forests, and greenhouse gas inventories in California',
-    authors: ['Oriana Chegwidden', 'Sadie Frank', 'Danny Cullenward'],
+    authors: [
+      'Oriana Chegwidden',
+      'Grayson Badgley',
+      'Sadie Frank',
+      'Danny Cullenward',
+    ],
     color: 'yellow',
     quickLook:
       'Megafires likely make California forests a net source of carbon dioxide emissions',
