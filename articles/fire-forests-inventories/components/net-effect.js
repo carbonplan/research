@@ -62,7 +62,7 @@ const Figure = () => {
   const bar = (v) => [v - 0.25, v + 0.25]
 
   return (
-    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+    <>
       <Row columns={6}>
         <Column start={1} width={3}>
           <Heading>Net emissions dataset</Heading>
@@ -119,7 +119,7 @@ const Figure = () => {
           </Label>
         </Chart>
       </Box>
-    </Box>
+    </>
   )
 }
 

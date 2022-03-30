@@ -67,7 +67,7 @@ categories.forEach((d) => {
 
 const Numbers = () => {
   return (
-    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+    <Box>
       <Grid
         sx={{ width: '100%', columnGap: [4, 5, 5, 6], rowGap: [1] }}
         columns={[3]}

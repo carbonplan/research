@@ -1,8 +1,6 @@
-import { Box, Divider } from 'theme-ui'
-import { Row, Column } from '@carbonplan/components'
+import { Divider } from 'theme-ui'
+import { Figure, Row, Column } from '@carbonplan/components'
 import Squares from './squares'
-import Rating from './rating'
-import { sx } from './styles'
 import { scoreDescriptions } from './score-descriptions'
 
 const Entry = ({ start, id, label, value }) => {
@@ -28,13 +26,13 @@ const Entry = ({ start, id, label, value }) => {
 
 const ScoreSummary = ({ id }) => {
   return (
-    <Box sx={{ mt: [6, 6, 6, 7], mb: [6, 6, 6, 7] }}>
+    <Figure>
       <Divider sx={{ mb: [5, 5, 5, 6] }} />
       <Entry value={3} id={id} />
       <Entry value={2} id={id} />
       <Entry value={1} id={id} />
       <Divider sx={{ mt: [5, 5, 5, 6] }} />
-    </Box>
+    </Figure>
   )
 }
 

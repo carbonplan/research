@@ -251,73 +251,71 @@ const Cycle = ({ tag, data, labels, intro }) => {
   }
 
   return (
-    <Box sx={{ mt: [6, 6, 6, 7], mb: [6, 6, 6, 7] }}>
-      <Row columns={[6]}>
-        <Column start={[1]} width={[6, 5, 5, 5]}>
-          <Box
-            sx={{
-              width: ['100%'],
-            }}
+    <Row columns={[6]} sx={{ mb: [6, 6, 6, 7] }}>
+      <Column start={[1]} width={[6, 5, 5, 5]}>
+        <Box
+          sx={{
+            width: ['100%'],
+          }}
+        >
+          <svg
+            stroke='none'
+            strokeWidth='2px'
+            strokeLinecap='round'
+            strokeMiterlimit='10'
+            fill='none'
+            viewBox='6 16 335 110'
           >
-            <svg
-              stroke='none'
-              strokeWidth='2px'
-              strokeLinecap='round'
-              strokeMiterlimit='10'
-              fill='none'
-              viewBox='6 16 335 110'
-            >
-              <Box
-                as='rect'
-                sx={{ fill: mix('muted', 'background', 0.5) }}
-                x='6.3'
-                y='21.4'
-                width='333.8'
-                height='33'
-                rx='17'
-              />
+            <Box
+              as='rect'
+              sx={{ fill: mix('muted', 'background', 0.5) }}
+              x='6.3'
+              y='21.4'
+              width='333.8'
+              height='33'
+              rx='17'
+            />
 
-              <g transform=''>
-                {arrow('land', 'material', 78)}
-                {arrow('material', 'geological', 43)}
-                {arrow('fuel', 'geological', 60, 1)}
-              </g>
+            <g transform=''>
+              {arrow('land', 'material', 78)}
+              {arrow('material', 'geological', 43)}
+              {arrow('fuel', 'geological', 60, 1)}
+            </g>
 
-              <g transform='translate(0,0)'>
-                {element('fuel', 0)}
-                {element('geological', 70)}
-                {element('material', 140)}
-                {element('land', 210)}
-                {element('ocean', 280)}
-              </g>
+            <g transform='translate(0,0)'>
+              {element('fuel', 0)}
+              {element('geological', 70)}
+              {element('material', 140)}
+              {element('land', 210)}
+              {element('ocean', 280)}
+            </g>
 
-              {labels && (
-                <>
-                  <Box
-                    as='g'
-                    sx={{
-                      fill: 'text',
-                      textTransform: 'uppercase',
-                      fontFamily: 'heading',
-                      fontSize: ['12px'],
-                    }}
-                  >
-                    <text x='131' y='26'>
-                      Atmosphere
-                    </text>
-                    {label('Fuels', 16)}
-                    {label('Geologic', 73)}
-                    {label('Material', 148)}
-                    {label('Land', 228)}
-                    {label('Ocean', 293)}
-                  </Box>
-                </>
-              )}
-            </svg>
-          </Box>
-        </Column>
-      </Row>
-    </Box>
+            {labels && (
+              <>
+                <Box
+                  as='g'
+                  sx={{
+                    fill: 'text',
+                    textTransform: 'uppercase',
+                    fontFamily: 'heading',
+                    fontSize: ['12px'],
+                  }}
+                >
+                  <text x='131' y='26'>
+                    Atmosphere
+                  </text>
+                  {label('Fuels', 16)}
+                  {label('Geologic', 73)}
+                  {label('Material', 148)}
+                  {label('Land', 228)}
+                  {label('Ocean', 293)}
+                </Box>
+              </>
+            )}
+          </svg>
+        </Box>
+      </Column>
+    </Row>
   )
 }
 

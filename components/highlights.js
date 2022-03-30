@@ -5,6 +5,22 @@ import { TonYear, SoilProtocols } from './highlight-images'
 
 const HIGHLIGHTS = [
   {
+    id: 'seaweed-farming',
+    date: '03-16-2022',
+    href: '/research/seaweed-farming',
+    title: 'Mapping seaweed farming potential',
+    color: 'teal',
+    summary:
+      'Interest in farming seaweed for carbon removal is ramping up. We collaborated with a research team to build an interactive tool for mapping seaweed farming potential, and wrote an explainer summarizing the results.',
+    links: [
+      { label: 'Map tool', href: '/research/seaweed-farming' },
+      {
+        label: 'Explainer article',
+        href: '/research/seaweed-farming-explainer',
+      },
+    ],
+  },
+  {
     id: 'ton-year-explainer',
     date: '01-31-2022',
     title: 'Ton-year accounting',
@@ -15,25 +31,6 @@ const HIGHLIGHTS = [
       { label: 'Explainer article', href: '/research/ton-year-explainer' },
       { label: 'Our critique of NCX’s methods', href: '/blog/ton-year-ncx' },
     ],
-    logo: <TonYear />,
-  },
-  {
-    id: 'soil-protocols',
-    date: '10-13-2021',
-    href: '/research/soil-protocols',
-    title: 'Soil carbon protocols',
-    color: 'orange',
-    summary:
-      'Voluntary carbon markets are ramping up efforts to credit soil carbon. We have now systematically reviewed 17 protocols that certify or issue credits for soil carbon removal.',
-    links: [
-      { label: 'Database tool', href: '/research/soil-protocols' },
-      {
-        label: 'Explainer article',
-        href: '/research/soil-protocols-explainer',
-      },
-      { label: 'Update blog post', href: '/blog/soil-protocols-added' },
-    ],
-    logo: <SoilProtocols />,
   },
 ]
 
@@ -82,13 +79,14 @@ const Highlights = forwardRef(({ selected }, ref) => {
           ...sx.heading,
           display: ['none', 'none', 'inherit', 'inherit'],
           mb: [4, 5, 6, 7],
+          mt: [0, 0, 0, '-1px'],
         }}
       >
         Highlights
       </Box>
 
       <Box sx={{}}>
-        <Highlight {...HIGHLIGHTS[0]} />
+        <Highlight {...HIGHLIGHTS[0]} sx={{ pb: [4, 4, 0, 0] }} />
         <Divider sx={{ display: ['inherit', 'inherit', 'none', 'none'] }} />
         <Highlight {...HIGHLIGHTS[1]} sx={{ pb: [0, 0, 0, 0] }} />
       </Box>

@@ -755,14 +755,12 @@ const Svg = () => {
       />
       <path
         d='M94.8803 95.8988C96.3708 94.8152 97.5847 93.3815 98.4197 91.7186C99.2547 90.0556 99.6864 88.212 99.6784 86.3429C99.6336 83.2894 98.4429 80.3699 96.3519 78.1875C94.261 76.0051 91.4296 74.7263 88.4424 74.6153C89.9476 72.6258 90.7598 70.1801 90.7503 67.6656C90.7503 64.5717 89.5474 61.6045 87.4061 59.4168C85.2647 57.2291 82.3605 56 79.3322 56H79.0285C76.0002 56 73.096 57.2291 70.9547 59.4168C68.8133 61.6045 67.6104 64.5717 67.6104 67.6656C67.6104 70.1494 68.3989 72.5662 69.8575 74.5533C66.7859 74.5859 63.851 75.8556 61.6903 78.0863C59.5296 80.317 58.3177 83.3287 58.3179 86.4671C58.3053 88.3745 58.7533 90.2556 59.6219 91.944C60.4906 93.6324 61.7533 95.076 63.2982 96.147C61.7031 96.2652 60.1463 96.7032 58.7168 97.436C57.2873 98.1688 56.0131 99.1822 54.9669 100.418C53.9207 101.654 53.1231 103.088 52.6195 104.639C52.1159 106.19 51.9162 107.827 52.0319 109.457C52.1475 111.087 52.5763 112.677 53.2935 114.138C54.0108 115.598 55.0026 116.9 56.2124 117.969C57.4221 119.038 58.8261 119.853 60.344 120.367C61.862 120.882 63.4643 121.086 65.0595 120.967H94.5766C97.7982 121.041 100.917 119.805 103.246 117.53C105.575 115.255 106.924 112.128 106.997 108.836C107.069 105.545 105.859 102.359 103.632 99.9793C101.406 97.5996 98.3448 96.2211 95.1233 96.147L94.8803 95.8988Z'
-        stroke='white'
-        stroke-linejoin='bevel'
+        strokeLinejoin='bevel'
         stroke={theme.colors.primary}
       />
       <path
         d='M184.88 95.8988C186.371 94.8152 187.585 93.3815 188.42 91.7186C189.255 90.0556 189.686 88.212 189.678 86.3429C189.634 83.2894 188.443 80.3699 186.352 78.1875C184.261 76.0051 181.43 74.7263 178.442 74.6153C179.948 72.6258 180.76 70.1801 180.75 67.6656C180.75 64.5717 179.547 61.6045 177.406 59.4168C175.265 57.2291 172.36 56 169.332 56H169.029C166 56 163.096 57.2291 160.955 59.4168C158.813 61.6045 157.61 64.5717 157.61 67.6656C157.61 70.1494 158.399 72.5662 159.858 74.5533C156.786 74.5859 153.851 75.8556 151.69 78.0863C149.53 80.317 148.318 83.3287 148.318 86.4671C148.305 88.3745 148.753 90.2556 149.622 91.944C150.491 93.6324 151.753 95.076 153.298 96.147C151.703 96.2652 150.146 96.7032 148.717 97.436C147.287 98.1688 146.013 99.1822 144.967 100.418C143.921 101.654 143.123 103.088 142.619 104.639C142.116 106.19 141.916 107.827 142.032 109.457C142.148 111.087 142.576 112.677 143.294 114.138C144.011 115.598 145.003 116.9 146.212 117.969C147.422 119.038 148.826 119.853 150.344 120.367C151.862 120.882 153.464 121.086 155.059 120.967H184.577C187.798 121.041 190.917 119.805 193.246 117.53C195.575 115.255 196.924 112.128 196.997 108.836C197.069 105.545 195.859 102.359 193.632 99.9793C191.406 97.5996 188.345 96.2211 185.123 96.147L184.88 95.8988Z'
-        stroke='white'
-        stroke-linejoin='bevel'
+        strokeLinejoin='bevel'
         stroke={theme.colors.primary}
       />
     </Box>
@@ -771,188 +769,186 @@ const Svg = () => {
 
 const CartoonProject = () => {
   return (
-    <Box as='figure' sx={{ mt: ['26px', 6, 6, 8], mb: [4, 4, 4, 5] }}>
-      <Row columns={[6]}>
-        <Column start={1} width={[6, 6, 6, 6]}>
-          <Box sx={{ position: 'relative', height: heights.div }}>
-            <Box
-              sx={{ position: 'absolute', width: '100%', height: heights.div }}
+    <Row columns={[6]} sx={{ mt: ['26px', 6, 6, 8] }}>
+      <Column start={1} width={[6, 6, 6, 6]}>
+        <Box sx={{ position: 'relative', height: heights.div }}>
+          <Box
+            sx={{ position: 'absolute', width: '100%', height: heights.div }}
+          >
+            <Chart
+              x={[0, 6]}
+              y={[0, 1]}
+              clamp={false}
+              padding={{ top: 88, left: 0, bottom: 46 }}
             >
-              <Chart
-                x={[0, 6]}
-                y={[0, 1]}
-                clamp={false}
-                padding={{ top: 88, left: 0, bottom: 46 }}
+              <TickLabels bottom />
+              <Ticks bottom />
+              <Axis bottom />
+              <Grid vertical />
+              <AxisLabel bottom align='right' units='years'>
+                Time
+              </AxisLabel>
+              <Label x={0.5} y={1.1} width={1} align='center' sx={sx.label}>
+                +1
+              </Label>
+              <Label x={1.5} y={1.1} width={1} align='center' sx={sx.label}>
+                +1
+              </Label>
+              <Label
+                x={2.5}
+                y={1.1}
+                width={1}
+                align='center'
+                sx={{ ...sx.label, color: 'pink' }}
               >
-                <TickLabels bottom />
-                <Ticks bottom />
-                <Axis bottom />
-                <Grid vertical />
-                <AxisLabel bottom align='right' units='years'>
-                  Time
-                </AxisLabel>
-                <Label x={0.5} y={1.1} width={1} align='center' sx={sx.label}>
-                  +1
-                </Label>
-                <Label x={1.5} y={1.1} width={1} align='center' sx={sx.label}>
-                  +1
-                </Label>
-                <Label
-                  x={2.5}
-                  y={1.1}
-                  width={1}
-                  align='center'
-                  sx={{ ...sx.label, color: 'pink' }}
+                +1
+              </Label>
+              <Label
+                x={3.5}
+                y={1.1}
+                width={1}
+                align='center'
+                sx={{ ...sx.label, color: 'pink' }}
+              >
+                +0.5
+              </Label>
+              <Label
+                x={4.5}
+                y={1.1}
+                width={1}
+                align='center'
+                sx={{ ...sx.label, color: 'pink' }}
+              >
+                +0.3
+              </Label>
+              <Label
+                x={5.5}
+                y={1.1}
+                width={1}
+                align='center'
+                sx={{ ...sx.label, color: 'pink' }}
+              >
+                +0.2
+              </Label>
+              <Label
+                x={1}
+                y={1.21}
+                width={4}
+                align='center'
+                verticalAlign='bottom'
+                sx={sx.label}
+              >
+                <Box sx={{ textTransform: 'none', fontSize: [1, 1, 1, 2] }}>
+                  (Moura Costa)
+                </Box>
+                2{' '}
+                <Box
+                  as='span'
+                  sx={{ display: ['none', 'none', 'none', 'initial'] }}
                 >
-                  +1
-                </Label>
-                <Label
-                  x={3.5}
-                  y={1.1}
-                  width={1}
-                  align='center'
-                  sx={{ ...sx.label, color: 'pink' }}
+                  Ton-years
+                </Box>
+                <Box
+                  as='span'
+                  sx={{ display: ['initial', 'initial', 'initial', 'none'] }}
                 >
-                  +0.5
-                </Label>
-                <Label
-                  x={4.5}
-                  y={1.1}
-                  width={1}
-                  align='center'
-                  sx={{ ...sx.label, color: 'pink' }}
+                  T-YRS
+                </Box>
+              </Label>
+              <Label
+                x={5}
+                y={1.21}
+                width={2}
+                align='center'
+                verticalAlign='bottom'
+                sx={{ ...sx.label, color: 'pink' }}
+              >
+                <Box sx={{ textTransform: 'none', fontSize: [1, 1, 1, 2] }}>
+                  (Lashof)
+                </Box>
+                0.5{' '}
+                <Box
+                  as='span'
+                  sx={{ display: ['none', 'none', 'none', 'initial'] }}
                 >
-                  +0.3
-                </Label>
-                <Label
-                  x={5.5}
-                  y={1.1}
-                  width={1}
-                  align='center'
-                  sx={{ ...sx.label, color: 'pink' }}
+                  Ton-years
+                </Box>
+                <Box
+                  as='span'
+                  sx={{ display: ['initial', 'initial', 'initial', 'none'] }}
                 >
-                  +0.2
-                </Label>
-                <Label
-                  x={1}
-                  y={1.21}
-                  width={4}
-                  align='center'
-                  verticalAlign='bottom'
-                  sx={sx.label}
-                >
-                  <Box sx={{ textTransform: 'none', fontSize: [1, 1, 1, 2] }}>
-                    (Moura Costa)
-                  </Box>
-                  2{' '}
-                  <Box
-                    as='span'
-                    sx={{ display: ['none', 'none', 'none', 'initial'] }}
-                  >
-                    Ton-years
-                  </Box>
-                  <Box
-                    as='span'
-                    sx={{ display: ['initial', 'initial', 'initial', 'none'] }}
-                  >
-                    T-YRS
-                  </Box>
-                </Label>
-                <Label
-                  x={5}
-                  y={1.21}
-                  width={2}
-                  align='center'
-                  verticalAlign='bottom'
-                  sx={{ ...sx.label, color: 'pink' }}
-                >
-                  <Box sx={{ textTransform: 'none', fontSize: [1, 1, 1, 2] }}>
-                    (Lashof)
-                  </Box>
-                  0.5{' '}
-                  <Box
-                    as='span'
-                    sx={{ display: ['none', 'none', 'none', 'initial'] }}
-                  >
-                    Ton-years
-                  </Box>
-                  <Box
-                    as='span'
-                    sx={{ display: ['initial', 'initial', 'initial', 'none'] }}
-                  >
-                    T-YRS
-                  </Box>
-                </Label>
+                  T-YRS
+                </Box>
+              </Label>
 
-                <Plot>
-                  <Line
-                    data={[
-                      [4, 0],
-                      [4, 1.4],
-                    ]}
-                    sx={{
-                      stroke: 'secondary',
-                      strokeWidth: 1,
-                      strokeDasharray: 4,
-                    }}
-                  />
-                  <Line
-                    data={[
-                      [0, 1.165],
-                      [2, 1.165],
-                    ]}
-                    sx={{
-                      stroke: 'green',
-                      strokeWidth: 1,
-                    }}
-                  />
-                  <Line
-                    data={[
-                      [4, 1.165],
-                      [6, 1.165],
-                    ]}
-                    sx={{
-                      stroke: 'pink',
-                      strokeWidth: 1,
-                    }}
-                  />
-                </Plot>
-              </Chart>
+              <Plot>
+                <Line
+                  data={[
+                    [4, 0],
+                    [4, 1.4],
+                  ]}
+                  sx={{
+                    stroke: 'secondary',
+                    strokeWidth: 1,
+                    strokeDasharray: 4,
+                  }}
+                />
+                <Line
+                  data={[
+                    [0, 1.165],
+                    [2, 1.165],
+                  ]}
+                  sx={{
+                    stroke: 'green',
+                    strokeWidth: 1,
+                  }}
+                />
+                <Line
+                  data={[
+                    [4, 1.165],
+                    [6, 1.165],
+                  ]}
+                  sx={{
+                    stroke: 'pink',
+                    strokeWidth: 1,
+                  }}
+                />
+              </Plot>
+            </Chart>
+          </Box>
+          <Box
+            sx={{
+              zIndex: -1,
+              position: 'absolute',
+              bottom: 0,
+              mb: '45px',
+              height: heights.svg,
+              width: '100%',
+            }}
+          >
+            <Svg />
+            <Box
+              sx={{
+                ...sx.co2Label,
+                bottom: ['17%', '22%', '22%', '22%'],
+                left: ['0.5%', '2%', '2%', '2%'],
+              }}
+            >
+              CO₂
             </Box>
             <Box
               sx={{
-                zIndex: -1,
-                position: 'absolute',
-                bottom: 0,
-                mb: '45px',
-                height: heights.svg,
-                width: '100%',
+                ...sx.co2Label,
+                bottom: '85%',
+                left: '37%',
               }}
             >
-              <Svg />
-              <Box
-                sx={{
-                  ...sx.co2Label,
-                  bottom: ['17%', '22%', '22%', '22%'],
-                  left: ['0.5%', '2%', '2%', '2%'],
-                }}
-              >
-                CO₂
-              </Box>
-              <Box
-                sx={{
-                  ...sx.co2Label,
-                  bottom: '85%',
-                  left: '37%',
-                }}
-              >
-                CO₂
-              </Box>
+              CO₂
             </Box>
           </Box>
-        </Column>
-      </Row>
-    </Box>
+        </Box>
+      </Column>
+    </Row>
   )
 }
 

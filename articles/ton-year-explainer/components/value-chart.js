@@ -115,134 +115,132 @@ const ValueChart = () => {
   const lashofAmount = impact / lashofBenefit
 
   return (
-    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
-      <Row columns={6}>
-        <Column start={1} width={6}>
-          <Parameters
-            timeHorizon={timeHorizon}
-            setTimeHorizon={setTimeHorizon}
-            delay={delay}
-            setDelay={setDelay}
-            discountRate={discountRate}
-            setDiscountRate={setDiscountRate}
-          />
-        </Column>
-        <Column start={1} width={6}>
-          <Box sx={{ mt: [0, 2, 3, 3], width: '100%', height: '300px' }}>
-            <Chart x={[0, 1000]} y={[1, 10.5]} padding={{ left: 0, top: 16 }}>
-              <Ticks bottom />
-              <TickLabels bottom />
-              <AxisLabel bottom units='ton-years'>
-                Impact
-              </AxisLabel>
-              <Grid vertical />
-              <Label
-                x={0}
-                y={10.25}
-                sx={{ ...sx.label, mt: [0, 0, 0, 0], color: 'primary' }}
-              >
-                Ton-year cost of 1{' '}
-                <Box as='span' sx={{ textTransform: 'none' }}>
-                  tCO₂
-                </Box>{' '}
-                emission
-              </Label>
-              <Label x={0} y={5.75} sx={{ ...sx.label, color: 'primary' }}>
-                Ton-year benefit of temporary{' '}
-                <Box
-                  as='br'
-                  sx={{ display: ['initial', 'initial', 'none', 'none'] }}
-                />
-                storage of 1{' '}
-                <Box as='span' sx={{ textTransform: 'none' }}>
-                  tCO₂
-                </Box>
-              </Label>
+    <Row columns={6}>
+      <Column start={1} width={6}>
+        <Parameters
+          timeHorizon={timeHorizon}
+          setTimeHorizon={setTimeHorizon}
+          delay={delay}
+          setDelay={setDelay}
+          discountRate={discountRate}
+          setDiscountRate={setDiscountRate}
+        />
+      </Column>
+      <Column start={1} width={6}>
+        <Box sx={{ mt: [0, 2, 3, 3], width: '100%', height: '300px' }}>
+          <Chart x={[0, 1000]} y={[1, 10.5]} padding={{ left: 0, top: 16 }}>
+            <Ticks bottom />
+            <TickLabels bottom />
+            <AxisLabel bottom units='ton-years'>
+              Impact
+            </AxisLabel>
+            <Grid vertical />
+            <Label
+              x={0}
+              y={10.25}
+              sx={{ ...sx.label, mt: [0, 0, 0, 0], color: 'primary' }}
+            >
+              Ton-year cost of 1{' '}
+              <Box as='span' sx={{ textTransform: 'none' }}>
+                tCO₂
+              </Box>{' '}
+              emission
+            </Label>
+            <Label x={0} y={5.75} sx={{ ...sx.label, color: 'primary' }}>
+              Ton-year benefit of temporary{' '}
+              <Box
+                as='br'
+                sx={{ display: ['initial', 'initial', 'none', 'none'] }}
+              />
+              storage of 1{' '}
+              <Box as='span' sx={{ textTransform: 'none' }}>
+                tCO₂
+              </Box>
+            </Label>
 
-              <Plot>
-                <Rect x={[0, Math.max(1, impact)]} y={[8, 9]} color='yellow' />
-                <Rect
-                  x={[0, Math.max(1, mcBenefit)]}
-                  y={[3.5, 4.5]}
-                  color='green'
-                />
-                <Rect
-                  x={[0, Math.max(1, lashofBenefit)]}
-                  y={[1.9, 2.9]}
-                  color='pink'
-                />
-              </Plot>
-
-              <BarLabel value={impact} y={9} color='yellow' />
-              <BarLabel
-                value={mcBenefit}
-                y={4.5}
+            <Plot>
+              <Rect x={[0, Math.max(1, impact)]} y={[8, 9]} color='yellow' />
+              <Rect
+                x={[0, Math.max(1, mcBenefit)]}
+                y={[3.5, 4.5]}
                 color='green'
-                label={<span>Moura&nbsp;Costa</span>}
               />
-              <BarLabel
-                value={lashofBenefit}
-                y={2.9}
+              <Rect
+                x={[0, Math.max(1, lashofBenefit)]}
+                y={[1.9, 2.9]}
                 color='pink'
-                label='Lashof'
               />
-            </Chart>
-          </Box>
-        </Column>
-        <Column start={1} width={6}>
-          <Box sx={{ mt: [2, 0, 0, 0], width: '100%', height: '180px' }}>
-            <Chart x={[0, 1500]} y={[1, 6]} padding={{ left: 0, top: 16 }}>
-              <Ticks bottom values={[0, 300, 600, 900, 1200, 1500]} />
-              <TickLabels bottom values={[0, 300, 600, 900, 1200, 1500]} />
-              <Grid vertical values={[0, 300, 600, 900, 1200, 1500]} />
+            </Plot>
 
-              <AxisLabel bottom units='unitless'>
-                Equivalence Ratio
-              </AxisLabel>
-              <Label x={0} y={5.75} sx={{ ...sx.label, color: 'primary' }}>
-                Storage amount needed to{' '}
-                <Box
-                  as='br'
-                  sx={{ display: ['initial', 'initial', 'none', 'none'] }}
-                />
-                offset 1{' '}
-                <Box as='span' sx={{ textTransform: 'none' }}>
-                  tCO₂
-                </Box>{' '}
-                emission
-              </Label>
+            <BarLabel value={impact} y={9} color='yellow' />
+            <BarLabel
+              value={mcBenefit}
+              y={4.5}
+              color='green'
+              label={<span>Moura&nbsp;Costa</span>}
+            />
+            <BarLabel
+              value={lashofBenefit}
+              y={2.9}
+              color='pink'
+              label='Lashof'
+            />
+          </Chart>
+        </Box>
+      </Column>
+      <Column start={1} width={6}>
+        <Box sx={{ mt: [2, 0, 0, 0], width: '100%', height: '180px' }}>
+          <Chart x={[0, 1500]} y={[1, 6]} padding={{ left: 0, top: 16 }}>
+            <Ticks bottom values={[0, 300, 600, 900, 1200, 1500]} />
+            <TickLabels bottom values={[0, 300, 600, 900, 1200, 1500]} />
+            <Grid vertical values={[0, 300, 600, 900, 1200, 1500]} />
 
-              <Plot>
-                <Rect
-                  x={[0, Math.max(1.5, mcAmount)]}
-                  y={[3.5, 4.5]}
-                  color='green'
-                />
-                <Rect
-                  x={[0, Math.max(1.5, lashofAmount)]}
-                  y={[1.9, 2.9]}
-                  color='pink'
-                />
-              </Plot>
+            <AxisLabel bottom units='unitless'>
+              Equivalence Ratio
+            </AxisLabel>
+            <Label x={0} y={5.75} sx={{ ...sx.label, color: 'primary' }}>
+              Storage amount needed to{' '}
+              <Box
+                as='br'
+                sx={{ display: ['initial', 'initial', 'none', 'none'] }}
+              />
+              offset 1{' '}
+              <Box as='span' sx={{ textTransform: 'none' }}>
+                tCO₂
+              </Box>{' '}
+              emission
+            </Label>
 
-              <BarLabel
-                value={mcAmount}
-                y={4.62}
+            <Plot>
+              <Rect
+                x={[0, Math.max(1.5, mcAmount)]}
+                y={[3.5, 4.5]}
                 color='green'
-                label={<span>Moura&nbsp;Costa</span>}
               />
-              <BarLabel
-                value={lashofAmount}
-                y={2.97}
+              <Rect
+                x={[0, Math.max(1.5, lashofAmount)]}
+                y={[1.9, 2.9]}
                 color='pink'
-                label='Lashof'
-                max={750}
               />
-            </Chart>
-          </Box>
-        </Column>
-      </Row>
-    </Box>
+            </Plot>
+
+            <BarLabel
+              value={mcAmount}
+              y={4.62}
+              color='green'
+              label={<span>Moura&nbsp;Costa</span>}
+            />
+            <BarLabel
+              value={lashofAmount}
+              y={2.97}
+              color='pink'
+              label='Lashof'
+              max={750}
+            />
+          </Chart>
+        </Box>
+      </Column>
+    </Row>
   )
 }
 

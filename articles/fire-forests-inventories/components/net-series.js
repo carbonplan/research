@@ -43,42 +43,38 @@ const Figure = () => {
     }
   }
 
-  //data = data.filter((d) => !isNaN(d[0]) && !isNaN(d[1]))
-
   return (
-    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
-      <Box sx={{ width: '100%', height: '300px', mt: [6] }}>
-        <Chart x={[2008, 2022]} y={[-60, 80]}>
-          <AxisLabel left align='left'>
-            Net CO₂ emissions&nbsp;
-            <Box as='span' sx={{ textTransform: 'none', color: 'secondary' }}>
-              MMT / year
-            </Box>
-          </AxisLabel>
-          <AxisLabel bottom align='right'>
-            Year
-          </AxisLabel>
-          <Grid horizontal vertical />
-          <TickLabels left />
-          <Ticks left />
-          <TickLabels bottom />
-          <Ticks bottom />
+    <Box sx={{ width: '100%', height: '300px', mt: [6] }}>
+      <Chart x={[2008, 2022]} y={[-60, 80]}>
+        <AxisLabel left align='left'>
+          Net CO₂ emissions&nbsp;
+          <Box as='span' sx={{ textTransform: 'none', color: 'secondary' }}>
+            MMT / year
+          </Box>
+        </AxisLabel>
+        <AxisLabel bottom align='right'>
+          Year
+        </AxisLabel>
+        <Grid horizontal vertical />
+        <TickLabels left />
+        <Ticks left />
+        <TickLabels bottom />
+        <Ticks bottom />
 
-          <Plot>
-            <Line
-              data={[
-                [1999, 0],
-                [2022, 0],
-              ]}
-              color='secondary'
-              width={2}
-            />
-            {lineData.map((d, i) => (
-              <Line key={i} data={d} color='yellow' width={2} />
-            ))}
-          </Plot>
-        </Chart>
-      </Box>
+        <Plot>
+          <Line
+            data={[
+              [1999, 0],
+              [2022, 0],
+            ]}
+            color='secondary'
+            width={2}
+          />
+          {lineData.map((d, i) => (
+            <Line key={i} data={d} color='yellow' width={2} />
+          ))}
+        </Plot>
+      </Chart>
     </Box>
   )
 }

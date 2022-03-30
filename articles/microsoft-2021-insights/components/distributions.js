@@ -30,7 +30,7 @@ const sx = {
 
 const Distributions = () => {
   return (
-    <Box as='figure' sx={{ mt: [6, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+    <Box>
       <Box sx={{ my: [4] }}>
         <Box sx={sx.label}>
           Volume <Box sx={sx.units}>tCO₂</Box>
