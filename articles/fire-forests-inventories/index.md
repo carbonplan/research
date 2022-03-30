@@ -187,7 +187,7 @@ Finally, these observations suggest policymakers may want to consider different 
 
 <Endnote label='Credits'>
 
-Ori developed the analysis with input from Sadie and Danny. All authors contributed to writing the article.
+Oriana developed the analysis with input from Sadie, Grayson, and Danny. Jeremy helped design and implement figures. All authors contributed to writing the article.
 
 Please cite as:
 
