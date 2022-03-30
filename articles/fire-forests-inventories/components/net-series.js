@@ -10,10 +10,10 @@ import {
   Grid,
   Label,
   Ticks,
+  Rect,
   AxisLabel,
   TickLabels,
 } from '@carbonplan/charts'
-import Rect from './rect'
 import { data as netData } from './data/net-effect'
 import { data as fireData } from './data/fire-emissions'
 import { getOption, averageOverRange } from './utils'
