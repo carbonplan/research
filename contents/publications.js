@@ -1,5 +1,30 @@
 const publications = [
   {
+    date: '03-31-2022',
+    title: 'Ocean solutions in the carbon market',
+    href: 'https://issuu.com/journaloceantechnology/docs/e-jot_vol17n1_interactive_book_lr_flipbook',
+    color: 'teal',
+    summary:
+      'A short article outlining the challenges of incorporating ocean-based CDR into carbon markets, and the need for those who know the science to track claims carefully and help others do the same.',
+    journal: 'The Journal of Ocean Technology',
+  },
+  {
+    date: '02-12-2022',
+    title: 'Economic and biophysical limits to seaweed-based climate solutions',
+    href: 'https://doi.org/10.31223/X5PG9V',
+    color: 'teal',
+    summary:
+      'A paper using coupled seaweed growth and technoeconomic models to better understand the potential role of seaweed farming for carbon removal and biomass products.',
+    journal: 'EarthArXiv',
+    links: [
+      {
+        label: 'Explainer article',
+        href: '/research/seaweed-farming-explainer',
+      },
+      { label: 'Map tool', href: '/research/seaweed-farming' },
+    ],
+  },
+  {
     date: '10-20-2021',
     title:
       "Systematic over-crediting in California's forest carbon offsets program",
