@@ -5,7 +5,7 @@ const publications = [
     href: 'https://issuu.com/journaloceantechnology/docs/e-jot_vol17n1_interactive_book_lr_flipbook',
     color: 'teal',
     summary:
-      'A short article outlining the challenges of incorporating ocean-based CDR into carbon markets, and the need for those who know the science to track claims carefully and help others do the same.',
+      'A short article outlining the challenges of incorporating ocean-based CDR into carbon markets and the need for those who know the science to track claims carefully and help others do the same.',
     journal: 'The Journal of Ocean Technology',
   },
   {
