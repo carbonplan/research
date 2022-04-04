@@ -71,7 +71,7 @@ const Tool = ({ info, start }) => {
           />
           {logo}
         </Box>
-        <Box id='tool' sx={{ ...sx.tool, mt: [2, 2, 2, 3] }}>
+        <Box id='tool' sx={{ ...sx.tool, mt: ['12px', '12px', '12px', 3] }}>
           {title}
         </Box>
         <Box
