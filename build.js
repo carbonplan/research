@@ -44,7 +44,7 @@ export async function getStaticProps() {
 
   return {
     props: propUrls.reduce(
-      (accum, prop, i) => ({ ...accum, [prop]: values[i] }),
+      (accum, [prop], i) => ({ ...accum, [prop]: values[i] }),
       {}
     ),
   }
