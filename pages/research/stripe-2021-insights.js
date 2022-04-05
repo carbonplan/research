@@ -2,9 +2,9 @@ import Index, { meta } from '../../articles/stripe-2021-insights/index.md'
 
 import { Article } from '@carbonplan/layouts'
 
-const Content = () => (
+const Content = (props) => (
   <Article references={{}} meta={meta} displayTitle={null}>
-    <Index />
+    <Index {...props} />
   </Article>
 )
 

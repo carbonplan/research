@@ -5,9 +5,9 @@ import Index, {
 import references from '../../articles/permanence-calculator-explainer/references'
 import { Article } from '@carbonplan/layouts'
 
-const Content = () => (
+const Content = (props) => (
   <Article references={references} meta={meta} displayTitle={null}>
-    <Index />
+    <Index {...props} />
   </Article>
 )
 

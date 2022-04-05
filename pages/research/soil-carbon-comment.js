@@ -3,9 +3,9 @@ import { displayTitle } from '../../articles/soil-carbon-comment/index.md'
 import references from '../../articles/soil-carbon-comment/references'
 import { Article } from '@carbonplan/layouts'
 
-const Content = () => (
+const Content = (props) => (
   <Article references={references} meta={meta} displayTitle={displayTitle}>
-    <Index />
+    <Index {...props} />
   </Article>
 )
 
