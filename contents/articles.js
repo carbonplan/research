@@ -53,6 +53,12 @@ const articles = [
       { label: 'Preprint #1', href: 'https://doi.org/10.31223/X5PG9V' },
       { label: 'Preprint #2', href: 'https://doi.org/10.31223/X52P8Z' },
     ],
+    staticPropUrls: {
+      zarray:
+        'https://cmip6downscaling.blob.core.windows.net/flow-outputs/results/pyramids/cmip6/raw/year/ScenarioMIP.AS-RCEC.TaiESM1.ssp245.day.gn.r1i1p1f1.tasmax/0/date_str/.zarray',
+      zmetadata:
+        'https://cmip6downscaling.blob.core.windows.net/flow-outputs/results/pyramids/cmip6/raw/year/ScenarioMIP.AS-RCEC.TaiESM1.ssp245.day.gn.r1i1p1f1.tasmax/.zmetadata',
+    },
   },
   {
     id: 'ton-year-explainer',

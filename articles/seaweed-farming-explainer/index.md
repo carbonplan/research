@@ -1,3 +1,4 @@
+import { Box } from 'theme-ui'
 import { Link, Figure, FigureCaption } from '@carbonplan/components'
 import { Article, Cite, Endnote, PullQuote } from '@carbonplan/layouts'
 
@@ -47,7 +48,18 @@ export const meta = {
       href: 'https://doi.org/10.31223/X52P8Z',
     },
   ],
+  staticPropUrls: {
+    zarray:
+      'https://cmip6downscaling.blob.core.windows.net/flow-outputs/results/pyramids/cmip6/raw/year/ScenarioMIP.AS-RCEC.TaiESM1.ssp245.day.gn.r1i1p1f1.tasmax/0/date_str/.zarray',
+    zmetadata:
+      'https://cmip6downscaling.blob.core.windows.net/flow-outputs/results/pyramids/cmip6/raw/year/ScenarioMIP.AS-RCEC.TaiESM1.ssp245.day.gn.r1i1p1f1.tasmax/.zmetadata',
+  },
 }
+
+## Testing rendering from static props
+
+zarray dtype: <Box sx={{color: 'secondary'}} children={props.zarray.dtype}/>
+zmetadata keys: <Box sx={{color: 'secondary'}} children={Object.keys(props.zmetadata.metadata).map((k) => <Box>{k}</Box>)}/>
 
 Meeting global climate goals will require drastic reductions in fossil CO₂ emissions as well as gigaton-scale removal of CO₂ from the atmosphere.<Cite ids={['gasser.2015', 'deangelo.2021']} /> Farmed seaweed (macroalgae) may help on both fronts: it may reduce emissions by substituting for more emissions-intensive energy and agricultural products, or it may be sunk into the deep sea as a form of carbon dioxide removal (CDR) (also referred to as carbon sequestration). In contrast to other biomass-based energy or carbon management strategies, pathways involving seaweed would not require land, fresh water, or macronutrient fertilizers.
 
