@@ -19,6 +19,12 @@ export const meta = {
   card: 'toucan-crypto-offsets',
   background: 'article-016/zombie',
   icon: 'article-016/zombie-small-wide',
+  links: [
+    {
+      label: 'Press coverage',
+      href: 'https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=cryptocurrencies-v2',
+    },
+  ],
 }
 
 As if carbon markets weren’t complicated enough, efforts to integrate carbon offsets and blockchain technologies are [growing](https://www.wsj.com/articles/cryptocurrency-traders-move-into-carbon-markets-11641826402) [in popularity](https://www.wired.co.uk/article/toucon-crypto-carbon-credits). Proponents of regenerative finance (ReFi) and carbon-based decentralized finance (DeFi) argue that blockchain-backed carbon offsets will facilitate increased transparency, deeper liquidity, and possibly higher voluntary carbon market prices that encourage greater emission reductions off the blockchain.

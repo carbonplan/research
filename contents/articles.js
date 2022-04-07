@@ -13,6 +13,12 @@ const articles = [
     card: 'toucan-crypto-offsets',
     background: 'article-016/zombie',
     icon: 'article-016/zombie-small-wide',
+    links: [
+      {
+        label: 'Press coverage',
+        href: 'https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=cryptocurrencies-v2',
+      },
+    ],
   },
   {
     id: 'fire-forests-inventories',
