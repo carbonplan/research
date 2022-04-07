@@ -1,5 +1,20 @@
 const articles = [
   {
+    id: 'toucan-crypto-offsets',
+    number: 16,
+    date: '04-07-2022',
+    title: 'Zombies on the blockchain',
+    authors: ['Grayson Badgley', 'Danny Cullenward'],
+    color: 'grey',
+    summary:
+      'We analyzed the flow of carbon offset credits from conventional registries to the blockchain. Our work shows that nearly all of these credits have been excluded from conventional markets.',
+    quickLook:
+      'The blockchain is giving new life to once-dead, low-quality offset credits',
+    card: 'toucan-crypto-offsets',
+    background: 'article-016/zombie',
+    icon: 'article-016/zombie-small-wide',
+  },
+  {
     id: 'fire-forests-inventories',
     number: 15,
     version: '1.0.0',
