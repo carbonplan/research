@@ -15,6 +15,8 @@ import {
   Grid,
 } from '@carbonplan/charts'
 
+// data from https://github.com/carbonplan/toucan-crypto-offsets/tree/main/data
+
 const data = {
   BCT: {
     '2021-10-19': null,

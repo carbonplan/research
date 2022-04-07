@@ -14,6 +14,8 @@ import {
   Grid,
 } from '@carbonplan/charts'
 
+// data from https://github.com/carbonplan/toucan-crypto-offsets/tree/main/data
+
 const data = {
   2003: 880,
   2005: 1390062,
