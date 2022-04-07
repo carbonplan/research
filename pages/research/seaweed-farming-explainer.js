@@ -1,6 +1,7 @@
 import Index, { meta } from '../../articles/seaweed-farming-explainer/index.md'
 
 import references from '../../articles/seaweed-farming-explainer/references'
+
 import { Article } from '@carbonplan/layouts'
 
 const Content = (props) => (

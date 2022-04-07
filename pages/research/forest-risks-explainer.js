@@ -1,6 +1,7 @@
 import Index, { meta } from '../../articles/forest-risks-explainer/index.md'
 
 import references from '../../articles/forest-risks-explainer/references'
+
 import { Article } from '@carbonplan/layouts'
 
 const Content = (props) => (

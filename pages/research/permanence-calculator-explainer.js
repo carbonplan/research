@@ -3,6 +3,7 @@ import Index, {
 } from '../../articles/permanence-calculator-explainer/index.md'
 
 import references from '../../articles/permanence-calculator-explainer/references'
+
 import { Article } from '@carbonplan/layouts'
 
 const Content = (props) => (

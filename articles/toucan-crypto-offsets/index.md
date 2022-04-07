@@ -54,7 +54,7 @@ Although proponents of ReFi like to emphasize the environmental goals of their m
 But the real money likely comes from converting BCTs to KLIMA tokens. In its initial months, KLIMA commanded [market prices](https://coinmarketcap.com/currencies/klimadao/) that were much higher — over $1000 and as high as the mid-$3000s for a brief moment. The market for KLIMA has since collapsed. By mid-January, prices had fallen to $100 and have continued to slide downward, with prices near $20 as of this writing. Anyone who bought KLIMA at $2000 might be upset that current prices are a factor of 100 lower, but a price of $20 is still a strong incentive to bring Verra credits — some worth just a few dollars in conventional markets — on chain.
 
 <Figure>
-  <Prices />
+  <Prices data={props.prices} />
   <FigureCaption number={1}>
     Market prices for Toucan Protocol Base Carbon Tokens (BCT) and KlimaDAO
     tokens (KLIMA). Although BCT prices have been reasonably stable in the $3-8
@@ -111,7 +111,7 @@ When Toucan first established its bridging protocol, it made Verra credits with 
 We were surprised to find that nearly all (99.9 percent) of Verra credits transferred to BCTs have an initial crediting period prior to 2016, meaning that they would be ineligible for carbon offsetting use in the international aviation CORSIA program. This finding is particularly important, as standard market contracts for conventional offsets are being designed around CORSIA eligibility, such as CME Group’s [CBL Global Emissions Offset futures](https://www.cmegroup.com/trading/energy/cbl-global-emissions-offset-futures.html) index. Almost none of the credits moving on chain through Toucan would be eligible for conventional market trading through standardized contracts.
 
 <Figure>
-  <Retirements />
+  <Retirements data={props.retirements} />
   <FigureCaption number={2}>
     The number of Verra offset credits bridged to Toucan BCTs, aggregated by the
     earliest reported vintage year associated with each offset project. A

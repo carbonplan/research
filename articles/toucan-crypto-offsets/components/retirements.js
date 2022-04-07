@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import { Box } from 'theme-ui'
 import { format } from 'd3-format'
 import {
@@ -14,41 +13,8 @@ import {
   Grid,
 } from '@carbonplan/charts'
 
-// data from https://github.com/carbonplan/toucan-crypto-offsets/tree/main/data
-
-const data = {
-  2003: 880,
-  2005: 1390062,
-  2006: 4805854,
-  2007: 752582,
-  2008: 3099786,
-  2009: 3821685,
-  2010: 2704663,
-  2011: 2864839,
-  2012: 423235,
-  2013: 1172559,
-  2014: 170933,
-  2015: 434080,
-  2016: 12831,
-  2017: 650,
-  2018: 3,
-}
-
-const counts = Object.keys(data).map((k) => [parseInt(k), data[k]])
-
-const Retirements = ({ name }) => {
-  // const [counts, setCounts] = useState([])
-
-  // useEffect(() => {
-  //   fetch(
-  //     'https://raw.githubusercontent.com/carbonplan/toucan-crypto-explainer/main/data/toucan_retirements_by_minimum_vintage.json?token=GHSAT0AAAAAABHMSV3JCUFKSGNL4TUKGKDGYSE22DQ'
-  //   )
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       setCounts(Object.keys(data).map((k) => [parseInt(k), data[k]]))
-  //     })
-  // }, [])
-
+const Retirements = ({ data }) => {
+  const counts = Object.keys(data).map((k) => [parseInt(k), data[k]])
   const formatter = format('~s')
 
   return (

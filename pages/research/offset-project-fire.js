@@ -1,6 +1,7 @@
 import Index, { meta } from '../../articles/offset-project-fire/index.md'
 
 import references from '../../articles/offset-project-fire/references'
+
 import { Article } from '@carbonplan/layouts'
 
 const Content = (props) => (

@@ -22,40 +22,28 @@ glob('./articles/**/index.md', async (err, articlePaths) => {
   fs.writeFileSync('./contents/articles.js', contents)
 
   // Construct pages/research
-  articleContents.forEach(({ id, staticPropUrls }) => {
+  articleContents.forEach(({ id }) => {
     const hasReferences = glob.sync(`./articles/${id}/references.js`).length > 0
+    const hasStaticProps =
+      glob.sync(`./articles/${id}/get-static-props.js`).length > 0
     const hasCustomTitle = fs
       .readFileSync(`./articles/${id}/index.md`, 'utf-8')
       .includes('export const displayTitle')
     const referencesImport = hasReferences
       ? `import references from '../../articles/${id}/references'`
       : ''
+    const staticPropsImport = hasStaticProps
+      ? `import getStaticProps from '../../articles/${id}/get-static-props'`
+      : ''
     const titleImport = hasCustomTitle
       ? `import { displayTitle } from '../../articles/${id}/index.md'`
-      : ''
-    const getStaticProps = staticPropUrls
-      ? `
-export async function getStaticProps() {
-  const propUrls = ${JSON.stringify(
-    Object.keys(staticPropUrls).map((key) => [key, staticPropUrls[key]])
-  )}
-  const responses = await Promise.all(propUrls.map(([prop, url]) => fetch(url)))
-  const values = await Promise.all(responses.map((res) => res.json()))
-
-  return {
-    props: propUrls.reduce(
-      (accum, [prop], i) => ({ ...accum, [prop]: values[i] }),
-      {}
-    ),
-  }
-}
-`
       : ''
 
     const page = `
     import Index, { meta } from '../../articles/${id}/index.md'
     ${titleImport}
     ${referencesImport}
+    ${staticPropsImport}
     import { Article } from '@carbonplan/layouts'
 
     const Content = (props) => (
@@ -66,7 +54,7 @@ export async function getStaticProps() {
       </Article>
     )
 
-    ${getStaticProps}
+    ${hasStaticProps ? 'export {getStaticProps}' : ''}
 
     export default Content
     `

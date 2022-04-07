@@ -1,6 +1,7 @@
 import Index, { meta } from '../../articles/ton-year-explainer/index.md'
 
 import references from '../../articles/ton-year-explainer/references'
+
 import { Article } from '@carbonplan/layouts'
 
 const Content = (props) => (

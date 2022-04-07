@@ -1,6 +1,7 @@
 import Index, { meta } from '../../articles/carbon-removal-mechanisms/index.md'
 
 import references from '../../articles/carbon-removal-mechanisms/references'
+
 import { Article } from '@carbonplan/layouts'
 
 const Content = (props) => (
