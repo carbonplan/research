@@ -1,5 +1,13 @@
 const comments = [
   {
+    color: 'pink',
+    title: 'Comments to Verra on the proposed updates to the VCS Program',
+    href: 'https://files.carbonplan.org/Verra-Ton-Year-Comment-Letter-04-08-22.pdf',
+    summary:
+      'Verra has proposed adopting ton-year accounting to credit temporary carbon storage. Our comments raise concerns that ton-year accounting is inconsistent with net-zero goals and long-term temperature targets. The proposed changes also raise unique additionality challenges which must be addressed.',
+    date: '04-08-2022',
+  },
+  {
     color: 'secondary',
     title:
       'Comments to the Office of the Comptroller of the Currency on climate-related financial risk',
