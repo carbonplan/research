@@ -1,5 +1,13 @@
 const comments = [
   {
+    color: 'green',
+    title: "Comments to Verra on NCX's proposed harvest deferral methodology",
+    href: 'https://files.carbonplan.org/Verra-NCX-Harvest-Deferral-Comment-Letter-04-21-2022.pdf',
+    summary:
+      "NCX has developed a methodology for crediting short-term forest harvest delays using Verra's ton-year accounting option. Our comments reiterate the concern that ton-year accounting is inconsistent with net-zero goals. We also explain why the methodology fails to protect against the unique additionality risks introduced by ton-year accounting.",
+    date: '04-21-2022',
+  },
+  {
     color: 'pink',
     title: 'Comments to Verra on the proposed updates to the VCS Program',
     href: 'https://files.carbonplan.org/Verra-Ton-Year-Comment-Letter-04-08-22.pdf',
