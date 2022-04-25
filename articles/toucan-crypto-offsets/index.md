@@ -17,8 +17,8 @@ export const meta = {
   quickLook:
     'The blockchain is giving new life to once-dead, low-quality offset credits',
   card: 'toucan-crypto-offsets',
-  background: 'article-016/zombie',
-  icon: 'article-016/zombie-small-wide',
+  background: 'articles/016/zombie',
+  icon: 'articles/016/zombie-small-wide',
   links: [
     {
       label: 'Press coverage',

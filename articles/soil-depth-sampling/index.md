@@ -19,12 +19,12 @@ export const meta = {
   ],
   color: 'orange',
   card: 'soil-depth-sampling',
-  background: 'article-011/tillage',
+  background: 'articles/011/tillage',
   quickLook:
     'Why depth is important for soil carbon sampling, and how to avoid key mistakes',
   summary:
     'Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls.',
-  icon: 'article-011/tillage-small',
+  icon: 'articles/011/tillage-small',
 }
 
 Agricultural soils have lost a vast amount of carbon to the atmosphere due to human activities,<Cite id='sanderman.2017'/> contributing to climate change. Scientists and policy makers are now debating whether putting some of this carbon back in the ground would be an effective climate change mitigation strategy.<Cite id='minasny.2017'/>

@@ -23,12 +23,12 @@ export const meta = {
   color: 'red',
   quickLook:
     'A detailed look at the disturbance risks to forest carbon under future climate conditions',
-  background: 'article-009/forest-fire-red',
+  background: 'articles/009/forest-fire-red',
   card: 'forest-risks-explainer',
   summary:
     'Forests in the United States are already at risk from wildfire, drought, and insects, and climate change is making it worse. We combined satellite and ecological data with climate models to project future risks to forest carbon. Along with a preprint, we are releasing open data, open software, and an interactive web map.',
   version: '1.0.0',
-  icon: 'article-009/forest-fire-small-red',
+  icon: 'articles/009/forest-fire-small-red',
   links: [
     {
       label: 'Preprint',

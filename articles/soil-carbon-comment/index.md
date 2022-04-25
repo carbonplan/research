@@ -12,12 +12,12 @@ export const meta = {
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '06-01-2020',
   card: 'soil-carbon-comment',
-  background: 'article-001/soil',
+  background: 'articles/001/soil',
   quickLook:
     'Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols',
   summary:
     'There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.',
-  icon: 'article-001/soil-small',
+  icon: 'articles/001/soil-small',
   links: [
     {
       label: 'Press coverage',

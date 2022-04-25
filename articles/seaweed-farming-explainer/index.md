@@ -27,12 +27,12 @@ export const meta = {
     'Joseph Hamman',
   ],
   card: 'seaweed-farming-explainer',
-  background: 'article-014/seaweed',
+  background: 'articles/014/seaweed',
   quickLook: 'A new tool for exploring seaweed-based CDR and biomass products',
   tags: ['article'],
   summary:
     'We developed an interactive tool for mapping the potential of seaweed farming for carbon removal and biomass products. Read this article, explore the interactive map, or read the associated preprints to learn more.',
-  icon: 'article-014/seaweed-small',
+  icon: 'articles/014/seaweed-small',
   links: [
     {
       label: 'Map tool',
