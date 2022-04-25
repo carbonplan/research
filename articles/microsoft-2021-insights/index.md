@@ -22,11 +22,11 @@ export const meta = {
   color: 'secondary',
   quickLook:
     "Project reports and lessons learned from analyzing proposals for Microsoft's 2021 Carbon Removal procurement",
-  background: 'article-007/sign',
+  background: 'articles/007/sign',
   card: 'microsoft-2021-insights',
   summary:
     "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.",
-  icon: 'article-007/sign-small',
+  icon: 'articles/007/sign-small',
   links: [
     {
       label: 'Database tool',

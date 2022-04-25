@@ -21,12 +21,12 @@ export const meta = {
   ],
   color: 'secondary',
   card: 'stripe-2021-insights',
-  background: 'article-010/curve',
+  background: 'articles/010/curve',
   quickLook:
     "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement",
   summary:
     "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.",
-  icon: 'article-010/curve-small',
+  icon: 'articles/010/curve-small',
   links: [
     {
       label: 'Database tool',

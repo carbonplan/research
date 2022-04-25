@@ -14,12 +14,12 @@ export const meta = {
   authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
   date: '05-18-2020',
   card: 'stripe-2020-insights-gray',
-  background: 'article-000/road',
+  background: 'articles/000/road',
   quickLook:
     'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
   summary:
     "We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Read this article or explore our database of project reports for our main takeaways and lessons learned.",
-  icon: 'article-000/road-small',
+  icon: 'articles/000/road-small',
   links: [
     {
       label: 'Database tool',

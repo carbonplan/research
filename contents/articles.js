@@ -11,8 +11,8 @@ const articles = [
     quickLook:
       'The blockchain is giving new life to once-dead, low-quality offset credits',
     card: 'toucan-crypto-offsets',
-    background: 'article-016/zombie',
-    icon: 'article-016/zombie-small-wide',
+    background: 'articles/016/zombie',
+    icon: 'articles/016/zombie-small-wide',
     links: [
       {
         label: 'Press coverage',
@@ -35,11 +35,11 @@ const articles = [
     color: 'yellow',
     quickLook:
       'Megafires likely make California forests a net source of carbon dioxide emissions',
-    background: 'article-015/abacus',
+    background: 'articles/015/abacus',
     card: 'fire-forests-inventories',
     summary:
       'Should policymakers track net greenhouse gas emissions across the energy and lands sectors, and if so, how? We explored the complex choices required to account for forests and power plants in the same emissions inventory.',
-    icon: 'article-015/abacus-small',
+    icon: 'articles/015/abacus-small',
   },
   {
     id: 'seaweed-farming-explainer',
@@ -62,13 +62,13 @@ const articles = [
       'Joseph Hamman',
     ],
     card: 'seaweed-farming-explainer',
-    background: 'article-014/seaweed',
+    background: 'articles/014/seaweed',
     quickLook:
       'A new tool for exploring seaweed-based CDR and biomass products',
     tags: ['article'],
     summary:
       'We developed an interactive tool for mapping the potential of seaweed farming for carbon removal and biomass products. Read this article, explore the interactive map, or read the associated preprints to learn more.',
-    icon: 'article-014/seaweed-small',
+    icon: 'articles/014/seaweed-small',
     links: [
       { label: 'Map tool', href: '/research/seaweed-farming' },
       { label: 'Preprint #1', href: 'https://doi.org/10.31223/X5PG9V' },
@@ -91,11 +91,11 @@ const articles = [
     ],
     color: 'pink',
     card: 'ton-year-explainer',
-    background: 'article-013/blowing',
+    background: 'articles/013/blowing',
     quickLook: 'Explaining methods used to value temporary carbon storage',
     summary:
       'Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods.',
-    icon: 'article-013/blowing-small',
+    icon: 'articles/013/blowing-small',
     links: [
       { label: 'Our critique of NCX’s methods', href: '/blog/ton-year-ncx' },
     ],
@@ -114,12 +114,12 @@ const articles = [
     ],
     color: 'orange',
     card: 'soil-protocols-explainer',
-    background: 'article-012/crop',
+    background: 'articles/012/crop',
     quickLook:
       'Lessons learned from a systematic review of 14 protocols for soil carbon offsets',
     summary:
       'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
-    icon: 'article-012/crop-small',
+    icon: 'articles/012/crop-small',
     links: [
       { label: 'Database tool', href: '/research/soil-protocols' },
       { label: 'Update blog post', href: '/blog/soil-protocols-added' },
@@ -144,12 +144,12 @@ const articles = [
     ],
     color: 'orange',
     card: 'soil-depth-sampling',
-    background: 'article-011/tillage',
+    background: 'articles/011/tillage',
     quickLook:
       'Why depth is important for soil carbon sampling, and how to avoid key mistakes',
     summary:
       'Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls.',
-    icon: 'article-011/tillage-small',
+    icon: 'articles/011/tillage-small',
   },
   {
     id: 'stripe-2021-insights',
@@ -166,12 +166,12 @@ const articles = [
     ],
     color: 'secondary',
     card: 'stripe-2021-insights',
-    background: 'article-010/curve',
+    background: 'articles/010/curve',
     quickLook:
       "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement",
     summary:
       "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.",
-    icon: 'article-010/curve-small',
+    icon: 'articles/010/curve-small',
     links: [{ label: 'Database tool', href: '/research/cdr-database' }],
   },
   {
@@ -193,12 +193,12 @@ const articles = [
     color: 'red',
     quickLook:
       'A detailed look at the disturbance risks to forest carbon under future climate conditions',
-    background: 'article-009/forest-fire-red',
+    background: 'articles/009/forest-fire-red',
     card: 'forest-risks-explainer',
     summary:
       'Forests in the United States are already at risk from wildfire, drought, and insects, and climate change is making it worse. We combined satellite and ecological data with climate models to project future risks to forest carbon. Along with a preprint, we are releasing open data, open software, and an interactive web map.',
     version: '1.0.0',
-    icon: 'article-009/forest-fire-small-red',
+    icon: 'articles/009/forest-fire-small-red',
     links: [
       { label: 'Preprint', href: 'https://doi.org/10.1101/2021.05.11.443688' },
       { label: 'Map tool', href: '/research/forest-risks' },
@@ -223,11 +223,11 @@ const articles = [
       "Statistical and ecological analysis reveals crediting errors in California's forest carbon offsets program",
     quotes: [],
     card: 'forest-offsets-explainer',
-    background: 'article-008/ash',
+    background: 'articles/008/ash',
     summary:
       "California's forest offset program is worth over $2 billion. We analyzed detailed public records to show how statistical flaws in the program's design have led to over-crediting — at a scale of tens of millions of tCO₂ and hundreds of millions of dollars.",
     version: '1.0.0',
-    icon: 'article-008/ash-small',
+    icon: 'articles/008/ash-small',
     links: [
       { label: 'Publication', href: 'https://doi.org/10.1111/gcb.15943' },
       { label: 'Map tool', href: '/research/forest-offsets' },
@@ -253,11 +253,11 @@ const articles = [
     color: 'secondary',
     quickLook:
       "Project reports and lessons learned from analyzing proposals for Microsoft's 2021 Carbon Removal procurement",
-    background: 'article-007/sign',
+    background: 'articles/007/sign',
     card: 'microsoft-2021-insights',
     summary:
       "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.",
-    icon: 'article-007/sign-small',
+    icon: 'articles/007/sign-small',
     links: [{ label: 'Database tool', href: '/research/cdr-database' }],
   },
   {
@@ -273,13 +273,13 @@ const articles = [
     ],
     title: 'The cost of direct air capture',
     date: '02-01-2021',
-    background: 'article-006/wind',
+    background: 'articles/006/wind',
     card: 'dac-calculator-explainer',
     quickLook:
       'How the cost of direct air capture varies under different energy scenarios',
     summary:
       'We developed an interactive tool for exploring the cost of direct air capture (DAC) coupled to stand alone energy sources. Read this article, explore the calculator tool, or read the associated publication to learn more.',
-    icon: 'article-006/wind-small',
+    icon: 'articles/006/wind-small',
     links: [
       { label: 'Calculator tool', href: '/research/dac-calculator' },
       {
@@ -297,12 +297,12 @@ const articles = [
     authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
     date: '12-09-2020',
     card: 'permanence-calculator-explainer',
-    background: 'article-005/leaf',
+    background: 'articles/005/leaf',
     quickLook:
       'How to compare the long-term cost of temporary and permanent carbon removal',
     summary:
       'We built an interactive tool to help compare the long-term cost of temporary and permanent carbon removal. Read this article or try the calculator tool to learn about the methods and implications.',
-    icon: 'article-005/leaf-small',
+    icon: 'articles/005/leaf-small',
     links: [
       { label: 'Calculator tool', href: '/research/permanence-calculator' },
       {
@@ -328,13 +328,13 @@ const articles = [
     ],
     date: '09-17-2020',
     card: 'offset-project-fire',
-    background: 'article-004/forest',
+    background: 'articles/004/forest',
     quickLook:
       'A major fire in Oregon illustrates the challenges of managing forest carbon permanence',
     quotes: [],
     summary:
       'Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.',
-    icon: 'article-004/forest-small',
+    icon: 'articles/004/forest-small',
     links: [
       {
         label: 'Press coverage',
@@ -356,12 +356,12 @@ const articles = [
     ],
     date: '07-24-2020',
     card: 'carbon-removal-mechanisms',
-    background: 'article-003/pipes',
+    background: 'articles/003/pipes',
     quickLook:
       'How different carbon removal projects interact with the global carbon cycle',
     summary:
       'Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.',
-    icon: 'article-003/pipes-small',
+    icon: 'articles/003/pipes-small',
   },
   {
     id: 'soil-carbon-comment',
@@ -372,12 +372,12 @@ const articles = [
     authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
     date: '06-01-2020',
     card: 'soil-carbon-comment',
-    background: 'article-001/soil',
+    background: 'articles/001/soil',
     quickLook:
       'Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols',
     summary:
       'There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.',
-    icon: 'article-001/soil-small',
+    icon: 'articles/001/soil-small',
     links: [
       {
         label: 'Press coverage',
@@ -402,12 +402,12 @@ const articles = [
     authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
     date: '05-18-2020',
     card: 'stripe-2020-insights-gray',
-    background: 'article-000/road',
+    background: 'articles/000/road',
     quickLook:
       'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
     summary:
       "We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Read this article or explore our database of project reports for our main takeaways and lessons learned.",
-    icon: 'article-000/road-small',
+    icon: 'articles/000/road-small',
     links: [{ label: 'Database tool', href: '/research/cdr-database' }],
   },
 ]
