@@ -1,0 +1,64 @@
+{
+  "krawchuk.2009": {
+    "number": 1,
+    "authors": "M A Krawchuk et al.",
+    "year": 2009,
+    "title": "Global pyrogeography: the current and future distribution of wildfire",
+    "journal": "PLOS One",
+    "url": "https://doi.org/10.1371/journal.pone.0005102"
+  },
+  "moritz.2020": {
+    "number": 2,
+    "authors": "M A Moritz et al.",
+    "year": 2020,
+    "title": "Climate change and disruptions to global fire activity",
+    "journal": "Ecosphere",
+    "url": "https://doi.org/10.1890/ES11-00345.1"
+  },
+  "williams.2016": {
+    "number": 3,
+    "authors": "A P Williams & J T Abatzoglou",
+    "year": 2016,
+    "title": "Recent advances and remaining uncertainties in resolving past and future climate effects on global fire activity",
+    "journal": "Current Climate Change Reports",
+    "url": "https://doi.org/10.1007/s40641-016-0031-0"
+  },
+  "compliance.report": {
+    "number": 4,
+    "note": "Calculated from the Q2 2020 Compliance Instrument Report",
+    "url": "https://ww2.arb.ca.gov/sites/default/files/2020-07/2020_q2_complianceinstrumentreport.pdf"
+  },
+  "burn.area": {
+    "number": 5,
+    "note": "The exact burned area is moderately sensitive to the processing method. Under maximally conservative parameters, we found the burned area to remain at or above 64%. See our Jupyter Notebook for full details.",
+    "url": "https://github.com/carbonplan/notebooks/blob/master/offset-project-fire/fire_analysis.ipynb"
+  },
+  "mortality.estimation": {
+    "number": 6,
+    "title": "Based on an area-weighted average from Table 2 in a USFS Report on the fire and using common burn severities of 10% mortality in \"Low Mortality\", 10-75% mortality in \"Mixed Mortality\", and 75% mortality in \"High Mortality\" categories.",
+    "url": "https://scholarsbank.uoregon.edu/xmlui/bitstream/handle/1794/7103/B%26B_Fire_Recovery_Project_ROD.pdf?sequence=1"
+  },
+  "stabilization.targets": {
+    "number": 7,
+    "authors": "National Research Council",
+    "title": "Climate Stabilization Targets: Emissions, Concentrations, and Impacts over Decades to Millennia",
+    "journal": "Washington, DC: The National Academies Press",
+    "url": "https://www.nap.edu/catalog/12877/climate-stabilization-targets-emissions-concentrations-and-impacts-over-decades-to"
+  },
+  "sleeter.2019": {
+    "number": 8,
+    "authors": "B M Sleeter et al.",
+    "title": "Effects of 21st‐century climate, land use, and disturbances on ecosystem carbon balance in California",
+    "year": 2019,
+    "journal": "Global Change Biology",
+    "url": " https://doi.org/10.1111/gcb.14677"
+  },
+  "anderegg.2020": {
+    "number": 9,
+    "authors": "W R L Anderegg et al.",
+    "year": 2020,
+    "title": "Climate-driven risks to the climate mitigation potential of forests",
+    "journal": "Science",
+    "url": "https://doi.org/10.1126/science.aaz7005"
+  }
+}

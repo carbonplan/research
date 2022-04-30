@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Box } from 'theme-ui'
 import { Row, Column } from '@carbonplan/components'
-import Chart from './chart'
 import { randomBinomial } from 'd3-random'
+import Chart from './utils/chart'
 
 const Radio = ({ value, label, current, set }) => {
   const handleClick = () => {

@@ -4,9 +4,9 @@
   "description": "directory of carbonplan notes, notebooks, primers, data, and models",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run build-pages && NODE_ENV=development next -p 4000",
-    "build": "npm run build-pages && next build",
-    "build-pages": "node build.js && prettier --write contents 'pages/research/!(index).js'",
+    "dev": "NODE_ENV=development next -p 4000",
+    "build": "next build",
+    "build-figures": "node build-figures.js && prettier --write figures.js",
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci --reporters='default'"
@@ -50,8 +50,10 @@
     "d3-scale": "^4.0.2",
     "d3-selection": "^3.0.0",
     "d3-shape": "^3.0.1",
+    "gray-matter": "^4.0.3",
     "mapbox-gl": "^1.13.1",
     "next": "^12.0.5",
+    "next-mdx-remote": "^3.0.8",
     "react": "^17.0.2",
     "react-animate-height": "^2.0.23",
     "react-dom": "^17.0.2",
@@ -64,7 +66,6 @@
   "devDependencies": {
     "@carbonplan/prettier": "^1.2.0",
     "babel-jest": "^27.4.6",
-    "extract-mdx-metadata": "^1.0.0",
     "glob": "^7.1.7",
     "jest": "^27.4.7",
     "prettier": "2.3.0"

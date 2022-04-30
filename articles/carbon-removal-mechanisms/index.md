@@ -1,28 +1,20 @@
-import { Cite, Endnote, PullQuote } from '@carbonplan/layouts'
-import { Figure } from '@carbonplan/components'
-import Cycle from './components/cycle'
-
-export const meta = {
-  id: 'carbon-removal-mechanisms',
-  number: 3,
-  version: '1.0.0',
-  color: 'grey',
-  title: 'Carbon removal mechanisms',
-  authors: [
-    'Toly Rinberg',
-    'Danny Cullenward',
-    'Joseph Hamman',
-    'Jeremy Freeman',
-  ],
-  date: '07-24-2020',
-  card: 'carbon-removal-mechanisms',
-  background: 'articles/003/pipes',
-  quickLook:
-    'How different carbon removal projects interact with the global carbon cycle',
-  summary:
-    'Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.',
-  icon: 'articles/003/pipes-small',
-}
+---
+id: carbon-removal-mechanisms
+version: 1.0.0
+color: grey
+title: Carbon removal mechanisms
+authors:
+  - Toly Rinberg
+  - Danny Cullenward
+  - Joseph Hamman
+  - Jeremy Freeman
+date: 07-24-2020
+card: carbon-removal-mechanisms
+background: articles/003/pipes
+quickLook: How different carbon removal projects interact with the global carbon cycle
+summary: Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.
+icon: articles/003/pipes-small
+---
 
 Carbon removal is an exciting field because there are so many methods.
 
@@ -283,7 +275,7 @@ Considering the full carbon cycle impacts of a project is a complex task, and ma
 
 First, if we’re considering avoided emissions among carbon removal projects, where should we as a community draw the line?
 
-<PullQuote color={meta.color}>
+<PullQuote>
   A clear typology is needed to categorize and contextualize projects in the
   broader field of climate mitigation
 </PullQuote>

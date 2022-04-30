@@ -2,9 +2,9 @@ import { useThemeUI, Box, Text, Grid, Button, Divider } from 'theme-ui'
 import { useState, useEffect, useRef } from 'react'
 import { Slider } from '@carbonplan/components'
 import mapboxgl from 'mapbox-gl'
-import style from './style'
-import dates from './dates'
-import Enhancers from './enhancers'
+import style from './utils/style'
+import dates from './utils/dates'
+import Enhancers from './utils/enhancers'
 
 const FireMap = () => {
   const container = useRef(null)

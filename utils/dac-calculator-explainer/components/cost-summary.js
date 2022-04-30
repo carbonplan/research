@@ -1,6 +1,6 @@
 import { Box, Grid, Divider } from 'theme-ui'
-import Donut from './donut'
-import Legend from './legend'
+import Donut from './utils/donut'
+import Legend from './utils/legend'
 
 const results = {
   'Capital Recovery [$/tCO2eq]': 20,
