@@ -32,16 +32,11 @@ const COMPONENTS = {
   TableCaption,
 }
 
-const Page = ({ id, source, frontMatter, number, references }) => {
+const Page = ({ id, source, frontMatter, references }) => {
   const components = useMDXComponents()
 
   return (
-    <Article
-      meta={frontMatter}
-      number={number}
-      references={references}
-      displayTitle={null}
-    >
+    <Article meta={frontMatter} references={references} displayTitle={null}>
       <MDXRemote
         {...source}
         components={{
@@ -77,9 +72,8 @@ export const getStaticProps = async ({ params }) => {
     props: {
       id: params.id,
       source: mdxSource,
-      frontMatter: data,
+      frontMatter: { ...data, number },
       references,
-      number,
     },
   }
 }
