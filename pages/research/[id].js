@@ -6,13 +6,20 @@ import path from 'path'
 import { useMDXComponents } from '@mdx-js/react'
 
 import { Box } from 'theme-ui'
-import { Article, Cite, Endnote, PullQuote } from '@carbonplan/layouts'
+import {
+  Article,
+  Cite,
+  Endnote,
+  PullQuote,
+  Sidenote,
+} from '@carbonplan/layouts'
 import {
   Blockquote,
   Link,
   Colors,
   Figure,
   FigureCaption,
+  Table,
   TableCaption,
 } from '@carbonplan/components'
 
@@ -27,8 +34,10 @@ const COMPONENTS = {
   ...Colors,
   Endnote,
   PullQuote,
+  Sidenote,
   Figure,
   FigureCaption,
+  Table,
   TableCaption,
 }
 

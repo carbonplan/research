@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=development next -p 4000",
     "build": "next build",
-    "build-figures": "node build-figures.js && prettier --write figures.js",
+    "build-figures": "node build-figures.js && prettier --write figures.js 'articles/**/figures.js'",
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci --reporters='default'"

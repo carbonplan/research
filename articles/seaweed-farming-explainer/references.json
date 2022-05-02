@@ -1,0 +1,78 @@
+{
+  "gasser.2015": {
+    "authors": "T Gasser et al.",
+    "year": 2015,
+    "title": "Negative emissions physically needed to keep global warming below 2°C",
+    "journal": "Nature Communications",
+    "url": "https://doi.org/10.1038/ncomms8958"
+  },
+  "deangelo.2021": {
+    "authors": "J DeAngelo et al.",
+    "year": 2021,
+    "title": "Energy systems in scenarios at net-zero CO₂ emissions",
+    "journal": "Nature Communications",
+    "url": "https://doi.org/10.1038/s41467-021-26356-y"
+  },
+  "van den burg.2016": {
+    "authors": "S van den Burg et al.",
+    "year": 2016,
+    "title": "The economic feasibility of seaweed production in the North Sea",
+    "journal": "Aquaculture Economics and Management",
+    "url": "https://doi.org/10.1080/13657305.2016.1177859"
+  },
+  "correa.2016": {
+    "authors": "T Correa et al.",
+    "year": 2016,
+    "title": "Production and economic assessment of giant kelp Macrocystis pyrifera cultivation for abalone feed in the south of Chile",
+    "journal": "Aquaculture Research",
+    "url": "https://doi.org/10.1111/are.12529"
+  },
+  "camus.2019": {
+    "authors": "C Camus et al.",
+    "year": 2019,
+    "title": "Revisiting the economic profitability of giant kelp Macrocystis pyrifera (Ochrophyta) cultivation in Chile",
+    "journal": "Aquaculture",
+    "url": "https://doi.org/10.1016/j.aquaculture.2018.12.030"
+  },
+  "capron.2020": {
+    "authors": "M Capron et al.",
+    "year": 2020,
+    "title": "AdjustaDepth TechnoEconomic Analysis",
+    "journal": "ARPA-E Phase 1 Contract DE-AR0000916"
+  },
+  "siegel.2021": {
+    "authors": "D A Siegel et al.",
+    "year": 2021,
+    "title": "Assessing the sequestration time scales of some ocean-based carbon dioxide reduction strategies",
+    "journal": "Environmental Research Letters",
+    "url": "https://doi.org/10.1088/1748-9326/ac0be0"
+  },
+  "bach.2021": {
+    "authors": "L Bach et al.",
+    "year": 2021,
+    "title": "Testing the climate intervention potential of ocean afforestation using the Great Atlantic Sargassum Belt",
+    "journal": "Nature Communications",
+    "url": "https://doi.org/10.1038/s41467-021-22837-2"
+  },
+  "harrison.2018": {
+    "authors": "C S Harrison et al.",
+    "year": 2018,
+    "title": "Mesoscale effects on carbon export: A global perspective",
+    "journal": "Global Biogeochemical Cycles",
+    "url": "https://doi.org/10.1002/2017GB005751"
+  },
+  "hong.2021": {
+    "authors": "C Hong et al.",
+    "year": 2021,
+    "title": "Global and regional drivers of land-use emissions in 1961–2017",
+    "journal": "Nature",
+    "url": "https://doi.org/10.1038/s41586-020-03138-y"
+  },
+  "arzeno-soltero.2022": {
+    "authors": "I Arzeno-Soltero et al.",
+    "year": 2022,
+    "title": "Biophysical potential and uncertainties of global seaweed farming",
+    "journal": "EarthArXiv",
+    "url": "https://doi.org/10.31223/X52P8Z"
+  }
+}

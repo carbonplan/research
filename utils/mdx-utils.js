@@ -14,14 +14,20 @@ const articles = fs.readdirSync(ARTICLES_PATH)
 const articleMetadata = articles
   .map((id) => {
     const source = fs.readFileSync(path.join(ARTICLES_PATH, `${id}/index.md`))
-    const references = fs.readFileSync(
-      path.join(ARTICLES_PATH, `${id}/references.json`)
-    )
+    let references
+    try {
+      references = fs.readFileSync(
+        path.join(ARTICLES_PATH, `${id}/references.json`)
+      )
+      references = JSON.parse(references)
+    } catch {
+      references = {}
+    }
     const { data } = matter(source)
     return {
       ...data,
       id,
-      references: JSON.parse(references),
+      references,
     }
   })
   .sort((a, b) => new Date(b.date) - new Date(a.date))

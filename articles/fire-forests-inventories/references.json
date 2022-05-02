@@ -1,0 +1,36 @@
+{
+  "mastrandrea.2020": {
+    "year": 2020,
+    "authors": "M D Mastrandrea et al.",
+    "title": "Assessing California's progress toward its 2020 greenhouse gas emissions limit",
+    "journal": "Energy Policy",
+    "url": "https://doi.org/10.1016/j.enpol.2019.111219"
+  },
+  "carb.2020": {
+    "year": 2020,
+    "authors": "California Air Resources Board",
+    "title": "An Inventory of Ecosystem Carbon in California’s Natural & Working Lands – 2018 Edition",
+    "url": "https://ww3.arb.ca.gov/cc/inventory/pubs/nwl_inventory.pdf"
+  },
+  "gonzalez.2015": {
+    "year": 2015,
+    "authors": "P Gonzalez et al.",
+    "title": "Aboveground live carbon stock changes of California wildland ecosystems, 2001–2010",
+    "journal": "Forest Ecology and Management",
+    "url": "https://doi.org/10.1016/j.foreco.2015.03.040"
+  },
+  "holland.2019": {
+    "year": 2019,
+    "authors": "T G Holland et al.",
+    "title": "Source or Sink? A comparison of Landfire- and FIA-based estimates of change in aboveground live tree carbon in California's forests",
+    "journal": "Environmental Research Letters",
+    "url": "https://doi.org/10.1088/1748-9326/ab1aca"
+  },
+  "christensen.2017": {
+    "year": 2017,
+    "authors": "G A Christensen et al.",
+    "title": "AB 1504 California Forest Ecosystem and Harvested Wood Product Carbon Inventory: 2006 – 2015",
+    "journal": "California Department of Forestry and Fire Protection",
+    "url": "https://bof.fire.ca.gov/media/7833/1-final_ab_1504_california_forest_ecosystem_and_harvested_wood_product_carbon_inventory_2006-2015_ada.pdf"
+  }
+}

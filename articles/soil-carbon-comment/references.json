@@ -1,0 +1,74 @@
+{
+  "sanderman.2010": {
+    "number": 1,
+    "authors": "J. Sanderman & J. A. Baldock",
+    "year": 2010,
+    "title": "Accounting for soil carbon sequestration in national inventories: a soil scientist’s perspective",
+    "journal": "Environmental Research Letters",
+    "url": "https://doi.org/10.1088/1748-9326/5/3/034003"
+  },
+  "poeplau.2014": {
+    "number": 2,
+    "authors": "C. Poeplau & A. Don",
+    "year": 2014,
+    "title": "Carbon sequestration in agricultural soils via cultivation of cover crops – A meta-analysis",
+    "journal": "Agriculture, Ecosystems and Environment",
+    "url": "https://doi.org/10.1016/j.agee.2014.10.024"
+  },
+  "cotrufo.2018": {
+    "number": 3,
+    "authors": "M. F. Cotrufo et al.",
+    "year": 2018,
+    "title": "Soil carbon storage informed by particulate and mineral-associated organic matter",
+    "journal": "Nature Geoscience",
+    "url": "https://doi.org/10.1038/s41561-019-0484-6"
+  },
+  "paustian.2017": {
+    "number": 4,
+    "authors": "K. Paustian et al.",
+    "year": 2017,
+    "title": "Field‐ and farm‐scale assessment of soil greenhouse gas mitigation using COMET‐Farm",
+    "journal": "Agronomy Monographs",
+    "url": "https://doi.org/10.2134/agronmonogr59.c16"
+  },
+  "campbell.2015": {
+    "number": 5,
+    "authors": "E. E. Campbell & K. Paustian",
+    "year": 2015,
+    "title": "Current developments in soil organic matter modeling and the expansion of model applications: a review",
+    "journal": "Environmental Research Letters",
+    "url": "https://doi.org/10.1088/1748-9326/10/12/123004"
+  },
+  "wesemael.2011": {
+    "number": 6,
+    "authors": "B. van Wesemael et al.",
+    "year": 2011,
+    "title": "How can soil monitoring networks be used to improve predictions of organic carbon pool dynamics and CO2 fluxes in agricultural soils?",
+    "journal": "Plant and Soil",
+    "url": "https://doi.org/10.1007/s11104-010-0567-z"
+  },
+  "orgiazzi.2017": {
+    "number": 7,
+    "authors": "A. Orgiazzi et al.",
+    "year": 2017,
+    "title": "LUCAS Soil, the largest expandable soil dataset for Europe: a review",
+    "journal": "European Journal of Soil Science",
+    "url": "https://doi.org/10.1111/ejss.12499"
+  },
+  "smith.2019": {
+    "number": 8,
+    "authors": "P. Smith et al.",
+    "year": 2019,
+    "title": "How to measure, report and verify soil carbon change to realize the potential of soil carbon sequestration for atmospheric greenhouse gas removal",
+    "journal": "Global Change Biology",
+    "url": "https://doi.org/10.1111/gcb.14815"
+  },
+  "haya.2020": {
+    "number": 9,
+    "authors": "B. Haya et al.",
+    "year": 2019,
+    "title": "Managing Uncertainty in Carbon Offsets: Insights from California’s Standardized Approach",
+    "journal": "Climate Policy (in press)",
+    "url": "https://law.stanford.edu/publications/managing-uncertainty-in-carbon-offsets-insights-from-californias-standardized-approach/"
+  }
+}

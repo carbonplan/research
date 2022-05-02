@@ -1,0 +1,72 @@
+{
+  "seidl.2017": {
+    "year": 2017,
+    "authors": "R Seidl et al.",
+    "title": "Forest disturbances under climate change",
+    "journal": "Nature Climate Change",
+    "url": "https://doi.org/10.1038/nclimate3303"
+  },
+  "attiwill.1994": {
+    "year": 1994,
+    "journal": "Forest Ecology & Management",
+    "authors": "P M Attiwill et al.",
+    "title": "The disturbance of forest ecosystems: the ecological basis for conservative management",
+    "url": "http://dx.doi.org/10.1016/0378-1127(94)90114-7"
+  },
+  "kurz.2008": {
+    "year": 2008,
+    "authors": "W A Kurz et al.",
+    "journal": "PNAS",
+    "title": "Risk of natural disturbances makes future contribution of Canada's forests to the global carbon cycle highly uncertain",
+    "url": "https://doi.org/10.1073/pnas.0708133105"
+  },
+  "wang.2021": {
+    "year": 2021,
+    "authors": "J A Wang et al.",
+    "journal": "Nature Climate Change",
+    "title": "Disturbance suppresses the aboveground carbon sink in North American boreal forests",
+    "url": "https://doi.org/10.1038/s41558-021-01027-4"
+  },
+  "hubau.2020": {
+    "year": 2020,
+    "authors": "W Hubau et al.",
+    "journal": "Nature",
+    "title": "Asynchronous carbon sink saturation in African and Amazonian tropical forests",
+    "url": "https://doi.org/10.1038/s41586-020-2035-0"
+  },
+  "holland.2019": {
+    "year": 2019,
+    "authors": "T G Holland et al.",
+    "journal": "Environmental Research Letters",
+    "title": "Source or Sink? A comparison of Landfire- and FIA-based estimates of change in aboveground live tree carbon in California’s forests",
+    "url": "https://doi.org/10.1088/1748-9326/ab1aca"
+  },
+  "riahi.2017": {
+    "year": 2017,
+    "authors": "K Riahi et al.",
+    "journal": "Global Environmental Change",
+    "title": "The Shared Socioeconomic Pathways and their energy, land use, and greenhouse gas emissions implications: An overview",
+    "url": "https://doi.org/10.1016/j.gloenvcha.2016.05.009"
+  },
+  "eyring.2016": {
+    "year": 2016,
+    "authors": "V Eyring et al.",
+    "journal": "Geoscientific Model Development",
+    "title": "Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimental design and organization",
+    "url": "https://doi.org/10.5194/gmd-9-1937-2016"
+  },
+  "abatzoglou.2016": {
+    "year": 2016,
+    "journal": "PNAS",
+    "authors": "J T Abatzoglou & A P Williams",
+    "title": "Impact of anthropogenic climate change on wildfire across western US forests",
+    "url": "https://doi.org/10.1073/pnas.1607171113"
+  },
+  "abernathey.2021": {
+    "year": 2021,
+    "journal": "IEEE",
+    "authors": "R P Abernathey et al.",
+    "title": "Cloud-native repositories for big scientific data",
+    "url": "https://doi.org/10.1109/MCSE.2021.3059437"
+  }
+}
