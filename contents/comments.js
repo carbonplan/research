@@ -1,5 +1,13 @@
 const comments = [
   {
+    color: 'secondary',
+    title: 'Comments to the European Commission on certifying carbon removal',
+    href: 'https://files.carbonplan.org/EU-CDR-Certification-Comment-Letter-05-02-2022.pdf',
+    summary:
+      "The European Commission is proposing to develop rules to certify carbon removal. Our comments recommend the Commission develop independent standards that exceed current market practices. We include a list of relevant research papers to inform the Commission's deliberations.",
+    date: '05-02-2022',
+  },
+  {
     color: 'green',
     title: "Comments to Verra on NCX's proposed harvest deferral methodology",
     href: 'https://files.carbonplan.org/Verra-NCX-Harvest-Deferral-Comment-Letter-04-21-2022.pdf',
