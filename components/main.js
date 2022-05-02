@@ -11,6 +11,7 @@ import Publications from './publications'
 import Tools from './tools'
 import Highlights from './highlights'
 import Navigation from './navigation'
+import { useCustomScroll } from './scroll'
 
 const sortByDate = (items) => {
   return items.sort((a, b) => new Date(b.date) - new Date(a.date))
@@ -26,6 +27,7 @@ const Main = () => {
     comments: useRef(null),
   }
   const [scrolled, setScrolled] = useState(null)
+  const customScroll = useCustomScroll()
   const index = useBreakpointIndex({ defaultIndex: 2 })
   const selected = router.query.section || 'highlights'
 
@@ -46,7 +48,7 @@ const Main = () => {
   const selectSection = (id) => {
     if (id !== router.query.section) {
       // Update query when not already set and allow scroll manipulation
-      history.scrollRestoration = 'manual'
+      customScroll.current = true
       router.replace(
         { pathname: '/research', query: { section: id } },
         undefined,
@@ -62,7 +64,7 @@ const Main = () => {
 
   useEffect(() => {
     // Scroll to active section on initialization of query, on query change, or when screen size changes
-    if (router.query.section && history.scrollRestoration === 'manual') {
+    if (router.query.section && customScroll.current) {
       scrollToSection(router.query.section)
     }
   }, [router.query.section, index])
