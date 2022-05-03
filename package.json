@@ -4,8 +4,8 @@
   "description": "directory of carbonplan notes, notebooks, primers, data, and models",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development next -p 4000",
-    "build": "next build",
+    "dev": "npm run build-figures && NODE_ENV=development next -p 4000",
+    "build": "npm run build-figures && next build",
     "build-figures": "node build-figures.js && prettier --write figures.js 'articles/**/figures.js'",
     "start": "next start",
     "test": "jest --watch",
