@@ -49,7 +49,9 @@ To make figures accessible for rendering in article and/or supplement MDX, you c
 npm run build-figures
 ```
 
-This will automatically populate a `articles/{article-name}/figures.js` file for every article that is missing one and reconstruct the combined export in `components/mdx/figures.js`. New articles' `figures.js` will be prepopulated with dynamic imports of every `articles/{article-name}/components/{figure-name}.js`. The contents of the `figures.js` can be overwritten to handle custom figure exporting and naming schemes.
+This will automatically populate a `articles/{article-name}/figures.js` file for every article that is missing one and reconstruct the combined export in `components/mdx/figures.js`.
+
+New `figures.js` will be prepopulated with dynamic imports of every `articles/{article-name}/components/{figure-name}.js`. The contents of the `figures.js` can be overwritten to handle custom figure exporting and naming schemes.
 
 #### display titles
 
