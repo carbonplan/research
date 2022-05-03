@@ -1,4 +1,4 @@
-const formattedTitles = {
+const displayTitles = {
   'forest-offsets-explainer': (
     <span>
       Systematic <span style={{ whiteSpace: 'nowrap' }}>over-crediting</span>
@@ -15,4 +15,4 @@ const formattedTitles = {
   ),
 }
 
-export default formattedTitles
+export default displayTitles

@@ -1,7 +1,7 @@
 const fs = require('fs')
 const glob = require('glob')
 
-glob.sync('./figures.js').forEach((f) => {
+glob.sync('./components/mdx/figures.js').forEach((f) => {
   if (fs.rmSync) return fs.rmSync(f)
 })
 
@@ -51,7 +51,7 @@ const combineFigures = () => {
   const figurePaths = glob.sync('./articles/**/figures.js')
   const figureMapping = figurePaths.map((figurePath) => {
     const [articleId] = figurePath.match(/[^\/]+(?=\/figures\.js)/)
-    const importPath = figurePath.replace(/\.js/, '')
+    const importPath = figurePath.replace(/\.\//, '../../').replace(/\.js/, '')
     const importName = articleId.replace(/-\w/g, (text) =>
       text.replace(/-/, '').toUpperCase()
     )
@@ -72,7 +72,7 @@ ${figureMapping
   .join(',\n')}
 }
 `
-  fs.writeFileSync('./figures.js', file)
+  fs.writeFileSync('./components/mdx/figures.js', file)
 }
 
 createMissingFigures()

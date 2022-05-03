@@ -29,8 +29,7 @@ import {
   supplementMetadata,
   ARTICLES_PATH,
 } from '../../utils/mdx'
-import figures from '../../figures'
-import formattedTitles from '../../formatted-titles'
+import { displayTitles, figures } from '../../components/mdx'
 
 const ARTICLE_COMPONENTS = {
   blockquote: Blockquote,
@@ -62,7 +61,7 @@ const Page = ({ articleId, type, source, frontMatter, references }) => {
         <Article
           meta={frontMatter}
           references={references}
-          displayTitle={formattedTitles[articleId]}
+          displayTitle={displayTitles[articleId]}
         >
           <MDXRemote
             {...source}
