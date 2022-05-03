@@ -28,14 +28,6 @@ links:
     href: /research/forest-offsets-explainer-faq
 ---
 
-export const displayTitle = (
-  <span>
-    Systematic <span style={{ whiteSpace: 'nowrap' }}>over-crediting</span>
-    <br />
-    of forest offsets
-  </span>
-)
-
 Carbon offsets are widely used by individuals, corporations, and governments to mitigate their greenhouse gas emissions. Because offsets effectively allow pollution to continue, however, they must reflect real climate benefits.
 
 To better understand whether these climate claims hold up in practice, we performed a comprehensive evaluation of California's forest carbon offsets program — the largest such program in existence, worth more than $2 billion. Our analysis of crediting errors demonstrates that a large fraction of the credits in the program do not reflect real climate benefits. The scale of the problem is enormous: 29% of the offsets we analyzed are over-credited, totaling 30 million tCO₂e worth approximately $410 million.

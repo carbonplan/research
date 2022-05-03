@@ -23,14 +23,6 @@ links:
     href: https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf
 ---
 
-export const displayTitle = (
-  <span>
-    Getting soil
-    <br />
-    carbon right
-  </span>
-)
-
 There are good reasons to be [excited](https://carbon180.org/leading-with-soil) about better soil management practices for carbon removal. Agricultural practices that increase soil carbon storage have the potential to provide benefits both for farmers and ranchers and for the global climate. In turn, working with the agricultural sector could help engage people and organizations that haven’t been the focus of most climate action to date. The complexities of soil carbon quantification, however, pose challenges for designing financial crediting systems.
 
 This post provides context for a comment letter we submitted to the Climate Action Reserve concerning one such effort, its draft [Soil Enrichment Protocol](https://www.climateactionreserve.org/how/protocols/soil-enrichment/). We were proud to work with our collaborators [Dr. Grayson Badgley](https://www.gbadgley.com/) (a member of the expert workgroup for this protocol and an expert in remote sensing) and [Dr. Jane Zelikova](https://carbon180.org/team) (Chief Scientist at Carbon180, Research Scientist at the University of Wyoming, and an expert in climate change science), who joined the letter.

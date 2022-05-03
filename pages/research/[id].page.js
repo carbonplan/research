@@ -30,6 +30,7 @@ import {
   ARTICLES_PATH,
 } from '../../utils/mdx'
 import figures from '../../figures'
+import formattedTitles from '../../formatted-titles'
 
 const ARTICLE_COMPONENTS = {
   blockquote: Blockquote,
@@ -58,7 +59,11 @@ const Page = ({ articleId, type, source, frontMatter, references }) => {
   switch (type) {
     case 'article':
       return (
-        <Article meta={frontMatter} references={references} displayTitle={null}>
+        <Article
+          meta={frontMatter}
+          references={references}
+          displayTitle={formattedTitles[articleId]}
+        >
           <MDXRemote
             {...source}
             components={{
