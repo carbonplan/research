@@ -19,8 +19,7 @@ quickLook: A major fire in Oregon illustrates the challenges of managing forest 
 summary: Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.
 icon: articles/004/forest-small
 links:
-  -
-    label: Press coverage
+  - label: Press coverage
     href: https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/
 ---
 
@@ -62,8 +61,8 @@ Estimating forest carbon losses due to fire first requires estimating the area b
   <FireMap />
   <FigureCaption number={1}>
     Intersection between the Riverside / Beachie Creek / Lionshead fire and
-    forest offset project ACR260. <Red>Red</Red> area shows
-    cumulative area burned through the date selected on the slider.
+    forest offset project ACR260. <Red>Red</Red> area shows cumulative area
+    burned through the date selected on the slider.
   </FigureCaption>
 </Figure>
 
@@ -83,9 +82,9 @@ Our model starts by asking what would happen in a year where the same number of 
   <RiskScenarios />
   <FigureCaption number={2}>
     A simple stochastic model predicts buffer pool depletion as a function of
-    the severity and frequency of fires. Individual <Red>red</Red>{' '}
-    lines show different simulations. The dashed line at 20% shows the
-    approximate fraction of the buffer pool for fire.
+    the severity and frequency of fires. Individual <Red>red</Red> lines show
+    different simulations. The dashed line at 20% shows the approximate fraction
+    of the buffer pool for fire.
   </FigureCaption>
 </Figure>
 
