@@ -1,5 +1,5 @@
 import { publications, comments, tools } from '../contents/index'
-import { articleMetadata, supplementMetadata } from './mdx-utils'
+import { articleMetadata, supplementMetadata } from './mdx'
 
 export const getCombinedContents = () => {
   return {

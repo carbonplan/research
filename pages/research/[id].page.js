@@ -28,7 +28,7 @@ import {
   articleMetadata,
   supplementMetadata,
   ARTICLES_PATH,
-} from '../../utils/mdx-utils'
+} from '../../utils/mdx'
 import figures from '../../figures'
 
 const ARTICLE_COMPONENTS = {
