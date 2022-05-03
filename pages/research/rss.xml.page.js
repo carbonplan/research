@@ -1,6 +1,6 @@
-import articles from '../../contents/articles'
+import { getCombinedContents } from '../../utils/contents'
 
-const contentsRssXml = () => {
+const contentsRssXml = (articles) => {
   let latestArticleDate
   let rssItemsXml = ''
   articles
@@ -36,8 +36,8 @@ const contentsRssXml = () => {
   }
 }
 
-const getRssXml = () => {
-  const { rssItemsXml, latestArticleDate } = contentsRssXml()
+const getRssXml = (articles) => {
+  const { rssItemsXml, latestArticleDate } = contentsRssXml(articles)
 
   return `<?xml version="1.0" ?>
         <rss
@@ -67,7 +67,8 @@ export async function getServerSideProps(context) {
   if (!res) {
     return
   }
-  const xml = getRssXml()
+  const { articles } = getCombinedContents()
+  const xml = getRssXml(articles)
   res.setHeader('Content-Type', 'application/xml')
   res.write(xml)
   res.end()

@@ -1,11 +1,8 @@
 import { Layout } from '@carbonplan/components'
 import Main from '../../components/main'
-import { default as articles } from '../../contents/articles'
-import { default as comments } from '../../contents/comments'
-import { default as tools } from '../../contents/tools'
-import { default as publications } from '../../contents/publications'
+import { getCombinedContents } from '../../utils/contents'
 
-const Index = () => {
+const Index = ({ articles, count }) => {
   return (
     <Layout
       title={'Research – CarbonPlan'}
@@ -14,14 +11,24 @@ const Index = () => {
       }
       card={'https://images.carbonplan.org/social/research.png'}
       links={'local'}
-      metadata={`COUNT: ${
-        articles.length + comments.length + publications.length + tools.length
-      }`}
+      metadata={`COUNT: ${count}`}
       nav={'research'}
     >
-      <Main contents={articles} />
+      <Main articles={articles} />
     </Layout>
   )
+}
+
+export const getStaticProps = () => {
+  const { articles, comments, publications, tools } = getCombinedContents()
+
+  return {
+    props: {
+      articles,
+      count:
+        articles.length + comments.length + publications.length + tools.length,
+    },
+  }
 }
 
 export default Index

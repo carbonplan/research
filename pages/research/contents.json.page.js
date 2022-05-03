@@ -1,10 +1,11 @@
-import { articles, tools, extras } from '../../contents/index'
+import { getCombinedContents } from '../../utils/contents'
 
 function Contents() {
   // getServerSideProps will do the heavy lifting
 }
 
 export function getServerSideProps({ res }) {
+  const { articles, tools, extras } = getCombinedContents()
   const pages = articles
     .concat(tools)
     .concat(extras)
