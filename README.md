@@ -37,23 +37,27 @@ npm run dev
 
 and then visit `http://localhost:4000/research` in your browser.
 
-## adding new content
-
-To generate pages for any newly added content, you can start a development version of the site or explicitly run:
-
-```shell
-npm run build-pages
-```
-
-and commit the generated files.
-
 ### articles
 
-New articles should be added to `articles/` with the article content exported from `articles/{article-name}/index.md`. From this file, be sure to also export a `meta` object that supports rendering content on the index page.
+New articles should be added to `articles/` with the article content exported from `articles/{article-name}/index.md`.
+
+#### figures
+
+To make figures accessible for rendering in article and/or supplement MDX, you can start a development version of the site or explicitly run:
+
+```shell
+npm run build-figures
+```
+
+This will automatically populate a `articles/{article-name}/figures.js` file for every article that is missing one and reconstruct the combined export in `components/mdx/figures.js`. New articles' `figures.js` will be prepopulated with dynamic imports of every `articles/{article-name}/components/{figure-name}.js`. The contents of the `figures.js` can be overwritten to handle custom figure exporting and naming schemes.
+
+#### display titles
+
+To override the default formatting of an article title, you may add custom JSX to use for your article in `components/mdx/display-titles.js`
 
 ### tools
 
-Tools should be exported from `tools/{tool-name}/index.js` in order to have pages automatically built for them. Entries for tools should be added `contents/tools.js` to support rendering content on the index page.
+Tools should be added directly to `pages/research/` using the `.page.js` extension. Entries for tools should be added `contents/tools.js` to support rendering content on the index page.
 
 ### publications
 
