@@ -1,25 +1,11 @@
-import { Box, Link } from 'theme-ui'
-import { Row, Column } from '@carbonplan/components'
-import { Supplement } from '@carbonplan/layouts'
-import CommonPractice from './components/common-practice'
-
-export const meta = {
-  id: 'forest-offsets-explainer-faq',
-  date: '05-12-2021',
-  title: 'Systematic over-crediting of forest offsets FAQ',
-  color: 'green',
-  card: 'forest-offsets-explainer',
-  authors: [
-    'Grayson Badgley',
-    'Jeremy Freeman',
-    'Joseph Hamman',
-    'Barbara Haya',
-    'Anna Trugman',
-    'William R L Anderegg',
-    'Danny Cullenward',
-  ],
-  quickLook: 'FAQ for our article Systematic over-crediting of forest offsets',
-}
+---
+date: 05-12-2021
+title: Systematic over-crediting of forest offsets FAQ
+color: green
+card: forest-offsets-explainer
+quickLook: FAQ for our article Systematic over-crediting of forest offsets
+back: /research/forest-offsets-explainer
+---
 
 # FAQ
 
@@ -41,20 +27,8 @@ export const meta = {
   we developed this FAQ.
   <br />
   <br />
-  Prepared by{' '}
-  {meta.authors.map((d, i) => {
-    return (
-      <span key={i}>
-        <span key={i} style={{ whiteSpace: 'nowrap', display: 'inline-block' }}>
-          {' '}
-          {i == meta.authors.length - 1 ? ' and ' : ''}
-          {d}
-          {i == meta.authors.length - 1 ? '.' : ', '}
-        </span>{' '}
-        <span> </span>
-      </span>
-    )
-  })}
+  Prepared by Grayson Badgley, Jeremy Freeman, Joseph Hamman, Barbara Haya, Anna
+  Trugman, William R L Anderegg, and Danny Cullenward.
 </Box>
 
 ## 01 — Does the paper’s “alternative common practice” estimates lead to lower precision relative to the approach taken by the Climate Action Reserve and the California Air Resources Board?
@@ -203,9 +177,3 @@ Second, our paper’s results do not focus on concerns about project additionali
 Finally, we would like to clarify that one member of our author team has formally participated in litigation involving CARB. While in law school, Dr. Cullenward worked with the Stanford Environmental Law Clinic to provide legal representation to a group of climate scientists as “friends of the court” in a separate lawsuit, Rocky Mountain Farmers Union v. Corey, 730 F.3d 1070 (9th Cir. 2013). The clinic’s clients successfully supported CARB’s arguments in response to an industry lawsuit challenging the state’s Low Carbon Fuel Standard.
 
 Rather than address our scientific analysis on its merits, CARB has responded with an unconvincing legal argument and ad hominem attacks on our integrity as researchers.
-
-export default ({ children }) => (
-  <Supplement meta={meta} back='/research/forest-offsets-explainer'>
-    {children}
-  </Supplement>
-)

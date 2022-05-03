@@ -1,16 +1,11 @@
-import { Box, Link } from 'theme-ui'
-import { Row, Column } from '@carbonplan/components'
-import { Supplement } from '@carbonplan/layouts'
-
-export const meta = {
-  id: 'soil-protocols-gold-standard-response',
-  date: '08-04-2021',
-  title: 'Response to Gold Standard',
-  color: 'orange',
-  card: 'soil-protocols-explainer',
-  quickLook:
-    'Response to comments from Gold Standard on our review of soil carbon offset protocols',
-}
+---
+date: 08-04-2021
+title: Response to Gold Standard
+color: orange
+card: soil-protocols-explainer
+quickLook: Response to comments from Gold Standard on our review of soil carbon offset protocols
+back: '/research/soil-protocols-explainer'
+---
 
 # Response to Gold Standard
 
@@ -129,9 +124,3 @@ For clarity and transparency, we are posting Mr. Hewlett’s full comments here.
 > <br />
 >
 > There are some valid findings, including for our own standard. We will look at those seriously, as we always do, to identify opportunities for improvement. But please engage with us before you post incorrect findings, I promise our door is open.
-
-export default ({ children }) => (
-  <Supplement meta={meta} back='/research/soil-protocols-explainer'>
-    {children}
-  </Supplement>
-)

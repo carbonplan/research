@@ -17,6 +17,9 @@ const figures = {
     import('./components/southern-cascades/index.js')
   ),
   Triangle: dynamic(() => import('./components/triangle.js')),
+  CommonPractice: dynamic(() =>
+    import('./components/common-practice/index.js')
+  ),
 }
 
 export default figures

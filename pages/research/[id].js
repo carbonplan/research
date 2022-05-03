@@ -1,8 +1,8 @@
 import fs from 'fs'
 import matter from 'gray-matter'
+import path from 'path'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
-import path from 'path'
 import { useMDXComponents } from '@mdx-js/react'
 
 import { Box } from 'theme-ui'
@@ -12,6 +12,7 @@ import {
   Endnote,
   PullQuote,
   Sidenote,
+  Supplement,
 } from '@carbonplan/layouts'
 import {
   Blockquote,
@@ -23,10 +24,14 @@ import {
   TableCaption,
 } from '@carbonplan/components'
 
-import { articleMetadata, ARTICLES_PATH } from '../../utils/mdx-utils'
+import {
+  articleMetadata,
+  supplementMetadata,
+  ARTICLES_PATH,
+} from '../../utils/mdx-utils'
 import figures from '../../figures'
 
-const COMPONENTS = {
+const ARTICLE_COMPONENTS = {
   blockquote: Blockquote,
   Box,
   Link,
@@ -41,30 +46,67 @@ const COMPONENTS = {
   TableCaption,
 }
 
-const Page = ({ id, source, frontMatter, references }) => {
+const SUPPLEMENT_COMPONENTS = {
+  blockquote: Blockquote,
+  Box,
+  Link,
+}
+
+const Page = ({ articleId, type, source, frontMatter, references }) => {
   const components = useMDXComponents()
 
-  return (
-    <Article meta={frontMatter} references={references} displayTitle={null}>
-      <MDXRemote
-        {...source}
-        components={{
-          ...components,
-          ...COMPONENTS,
-          PullQuote: (props) => (
-            <PullQuote color={frontMatter.color} {...props} />
-          ),
-          ...figures[id],
-        }}
-      />
-    </Article>
-  )
+  switch (type) {
+    case 'article':
+      return (
+        <Article meta={frontMatter} references={references} displayTitle={null}>
+          <MDXRemote
+            {...source}
+            components={{
+              ...components,
+              ...ARTICLE_COMPONENTS,
+              PullQuote: (props) => (
+                <PullQuote color={frontMatter.color} {...props} />
+              ),
+              ...figures[articleId],
+            }}
+          />
+        </Article>
+      )
+    case 'supplement':
+      return (
+        <Supplement meta={frontMatter} back={frontMatter.back}>
+          <MDXRemote
+            {...source}
+            components={{
+              ...components,
+              ...SUPPLEMENT_COMPONENTS,
+              ...figures[articleId],
+            }}
+          />
+        </Supplement>
+      )
+    default:
+      throw new Error(
+        `Unexpected page type: ${type}. Must be one of: 'article', 'supplement'.`
+      )
+  }
 }
 
 export const getStaticProps = async ({ params }) => {
-  const articlePath = path.join(ARTICLES_PATH, `${params.id}/index.md`)
-  const source = fs.readFileSync(articlePath)
-  const { number, references } = articleMetadata.find((d) => d.id === params.id)
+  let type
+  let metadata = articleMetadata.find((d) => d.id === params.id)
+  if (metadata) {
+    type = 'article'
+  } else {
+    metadata = supplementMetadata.find((d) => d.id === params.id)
+    type = 'supplement'
+  }
+
+  if (!metadata) {
+    throw new Error(`No metadata found for id: ${params.id}`)
+  }
+
+  const source = fs.readFileSync(path.join(ARTICLES_PATH, metadata.path))
 
   const { content, data } = matter(source)
 
@@ -79,21 +121,25 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      id: params.id,
+      articleId: metadata.articleId ?? params.id,
+      type,
       source: mdxSource,
-      frontMatter: { ...data, number },
-      references,
+      frontMatter: { ...data, number: metadata.number ?? 0 },
+      references: metadata.references ?? {},
     },
   }
 }
 
 export const getStaticPaths = async () => {
-  const paths = articleMetadata
-    // Map the path into the static paths object required by Next.js
-    .map(({ id }) => ({ params: { id } }))
+  const articlePaths = articleMetadata.map(({ id }) => ({
+    params: { id },
+  }))
+  const supplementPaths = supplementMetadata.map(({ id }) => ({
+    params: { id },
+  }))
 
   return {
-    paths,
+    paths: [...articlePaths, ...supplementPaths],
     fallback: false,
   }
 }

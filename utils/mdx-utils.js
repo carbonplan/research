@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const glob = require('glob')
 const matter = require('gray-matter')
 
 // Utils based on examples in https://github.com/vercel/next.js/tree/canary/examples/with-mdx-remote
@@ -28,12 +29,29 @@ const articleMetadata = articles
       ...data,
       id,
       references,
+      path: `${id}/index.md`,
     }
   })
   .sort((a, b) => new Date(b.date) - new Date(a.date))
   .map((meta, idx) => ({ ...meta, number: articles.length - 1 - idx }))
 
+const supplementMetadata = glob
+  .sync('./articles/**/!(index).md')
+  .map((supplementPath) => {
+    const [articleId] = supplementPath.match(/[^\/]+(?=\/[^\/]+\.md)/)
+    const [fileName] = supplementPath.match(/[^\/]+(?=\.md)/)
+    const source = fs.readFileSync(supplementPath)
+    const { data } = matter(source)
+    return {
+      ...data,
+      articleId,
+      id: `${articleId}-${fileName}`,
+      path: `${articleId}/${fileName}.md`,
+    }
+  })
+
 module.exports = {
   ARTICLES_PATH,
   articleMetadata,
+  supplementMetadata,
 }
