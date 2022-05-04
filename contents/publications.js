@@ -1,5 +1,15 @@
 const publications = [
   {
+    date: '04-29-2022',
+    title:
+      'California’s forest carbon offsets buffer pool is severely undercapitalized',
+    href: 'https://doi.org/10.1101/2022.04.27.488938',
+    color: 'green',
+    summary:
+      'A preprint analyzing the design of California’s forest carbon offset insurance program shows that the state has not adequately addressed the risks of wildfire and sudden oak death.',
+    journal: 'bioRxiv',
+  },
+  {
     date: '03-31-2022',
     title: 'Ocean solutions in the carbon market',
     href: 'https://issuu.com/journaloceantechnology/docs/e-jot_vol17n1_interactive_book_lr_flipbook',
@@ -51,7 +61,7 @@ const publications = [
     title: 'Climate risks to carbon sequestration in US forests',
     href: 'https://doi.org/10.1101/2021.05.11.443688',
     color: 'red',
-    journal: 'biorxiv',
+    journal: 'bioRxiv',
     summary:
       'A paper quantifying the key climate drivers that fuel risks to forests in the United States from wildfire, drought, and insects, and projecting those risks over the 21st century.',
     links: [
