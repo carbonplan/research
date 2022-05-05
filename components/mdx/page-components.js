@@ -169,11 +169,6 @@ const components = {
     Triangle: dynamic(() =>
       import('../../articles/forest-offsets-explainer/components/triangle.js')
     ),
-    CommonPractice: dynamic(() =>
-      import(
-        '../../articles/forest-offsets-explainer/components/common-practice/index.js'
-      )
-    ),
   },
   'microsoft-2021-insights': {
     InlineCheck: dynamic(() => import('../inline-check.js')),
@@ -254,6 +249,14 @@ const components = {
       import('../../articles/stripe-2020-insights/components/table.js')
     ),
   },
+  'forest-offsets-explainer-faq': {
+    CommonPractice: dynamic(() =>
+      import(
+        '../../articles/forest-offsets-explainer/components/common-practice/index.js'
+      )
+    ),
+  },
+  'soil-protocols-explainer-gold-standard-response': {},
 }
 
 export default components

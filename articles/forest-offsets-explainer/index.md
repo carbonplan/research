@@ -39,8 +39,6 @@ components:
     src: ./components/southern-cascades/index.js
   - name: Triangle
     src: ./components/triangle.js
-  - name: CommonPractice
-    src: ./components/common-practice/index.js
 ---
 
 Carbon offsets are widely used by individuals, corporations, and governments to mitigate their greenhouse gas emissions. Because offsets effectively allow pollution to continue, however, they must reflect real climate benefits.

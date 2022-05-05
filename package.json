@@ -4,9 +4,9 @@
   "description": "directory of carbonplan notes, notebooks, primers, data, and models",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run build-article-components && NODE_ENV=development next -p 4000",
-    "build": "npm run build-article-components && next build",
-    "build-article-components": "node build-article-components.js && prettier --write components/mdx/article-components.js",
+    "dev": "npm run build-components && NODE_ENV=development next -p 4000",
+    "build": "npm run build-components && next build",
+    "build-components": "node build-components.js && prettier --write components/mdx/page-components.js",
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci --reporters='default'"

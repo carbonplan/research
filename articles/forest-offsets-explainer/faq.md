@@ -13,6 +13,9 @@ authors:
   - Danny Cullenward
 quickLook: FAQ for our article Systematic over-crediting of forest offsets
 back: /research/forest-offsets-explainer
+components:
+  - name: CommonPractice
+    src: ./components/common-practice/index.js
 ---
 
 # FAQ

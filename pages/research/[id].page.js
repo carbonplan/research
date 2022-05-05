@@ -29,7 +29,7 @@ import {
   supplementMetadata,
   ARTICLES_PATH,
 } from '../../utils/mdx'
-import { displayTitles, articleComponents } from '../../components/mdx'
+import { displayTitles, pageComponents } from '../../components/mdx'
 
 const ARTICLE_COMPONENTS = {
   blockquote: Blockquote,
@@ -52,7 +52,7 @@ const SUPPLEMENT_COMPONENTS = {
   Link,
 }
 
-const Page = ({ articleId, type, source, frontMatter, references }) => {
+const Page = ({ id, type, source, frontMatter, references }) => {
   const components = useMDXComponents()
 
   switch (type) {
@@ -61,7 +61,7 @@ const Page = ({ articleId, type, source, frontMatter, references }) => {
         <Article
           meta={frontMatter}
           references={references}
-          displayTitle={displayTitles[articleId]}
+          displayTitle={displayTitles[id]}
         >
           <MDXRemote
             {...source}
@@ -71,7 +71,7 @@ const Page = ({ articleId, type, source, frontMatter, references }) => {
               PullQuote: (props) => (
                 <PullQuote color={frontMatter.color} {...props} />
               ),
-              ...articleComponents[articleId],
+              ...pageComponents[id],
             }}
           />
         </Article>
@@ -84,7 +84,7 @@ const Page = ({ articleId, type, source, frontMatter, references }) => {
             components={{
               ...components,
               ...SUPPLEMENT_COMPONENTS,
-              ...articleComponents[articleId],
+              ...pageComponents[id],
             }}
           />
         </Supplement>
@@ -128,7 +128,7 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      articleId: metadata.articleId ?? params.id,
+      id: params.id,
       type,
       source: mdxSource,
       frontMatter: { ...rest, number: metadata.number ?? 0 },
