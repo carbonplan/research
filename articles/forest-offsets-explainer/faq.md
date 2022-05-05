@@ -3,6 +3,14 @@ date: 05-12-2021
 title: Systematic over-crediting of forest offsets FAQ
 color: green
 card: forest-offsets-explainer
+authors:
+  - Grayson Badgley
+  - Jeremy Freeman
+  - Joseph Hamman
+  - Barbara Haya
+  - Anna Trugman
+  - William R L Anderegg
+  - Danny Cullenward
 quickLook: FAQ for our article Systematic over-crediting of forest offsets
 back: /research/forest-offsets-explainer
 ---
@@ -27,8 +35,20 @@ back: /research/forest-offsets-explainer
   we developed this FAQ.
   <br />
   <br />
-  Prepared by Grayson Badgley, Jeremy Freeman, Joseph Hamman, Barbara Haya, Anna
-  Trugman, William R L Anderegg, and Danny Cullenward.
+  Prepared by{' '}
+  {authors.map((d, i) => {
+    return (
+      <span key={i}>
+        <span key={i} style={{ whiteSpace: 'nowrap', display: 'inline-block' }}>
+          {' '}
+          {i == authors.length - 1 ? ' and ' : ''}
+          {d}
+          {i == authors.length - 1 ? '.' : ', '}
+        </span>{' '}
+        <span> </span>
+      </span>
+    )
+  })}
 </Box>
 
 ## 01 — Does the paper’s “alternative common practice” estimates lead to lower precision relative to the approach taken by the Climate Action Reserve and the California Air Resources Board?
