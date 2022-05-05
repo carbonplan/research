@@ -16,6 +16,15 @@ icon: articles/000/road-small
 links:
   - label: Database tool
     href: /research/cdr-database
+components:
+  - name: InlineCheck
+    src: ../../components/inline-check.js
+  - name: Metrics
+    src: ./components/metrics.js
+  - name: Permanence
+    src: ./components/permanence.js
+  - name: Table
+    src: ./components/table.js
 ---
 
 At CarbonPlan we analyze carbon removal projects, programs, and technologies. We believe that carbon removal (or "negative emissions") will play an important role in addressing the climate crisis, and we want to help engender a culture of openness, transparency, and accountability. Our hope is that sharing data and insights can benefit the field as a whole — to complement the work of the inventors, scientists, entrepreneurs, and activists who are making climate solutions a reality.

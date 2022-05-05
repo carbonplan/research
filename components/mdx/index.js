@@ -1,2 +1,2 @@
 export { default as displayTitles } from './display-titles'
-export { default as figures } from './figures'
+export { default as articleComponents } from './article-components'

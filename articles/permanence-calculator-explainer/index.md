@@ -18,6 +18,11 @@ links:
     href: /research/permanence-calculator
   - label: ClimateWorks post
     href: https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/
+components:
+  - name: Parameters
+    src: ./components/parameters.js
+  - name: Scenario
+    src: ./components/scenario.js
 ---
 
 Carbon removal costs are everywhere in climate discussions — this project costs $10, that one costs $200. Policymakers and corporate planners look to metrics to inform their decisions, and cost per ton of carbon dioxide ($/tCO₂) has become a near-universal unit of measure.

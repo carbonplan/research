@@ -21,6 +21,11 @@ icon: articles/004/forest-small
 links:
   - label: Press coverage
     href: https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/
+components:
+  - name: FireMap
+    src: ./components/fire-map.js
+  - name: RiskScenarios
+    src: ./components/risk-scenarios.js
 ---
 
 In the middle of a record fire season on the US West Coast, the [Lionshead Fire](http://inciweb.nwcg.gov/incident/7049/) in Oregon burned through one of the largest forest carbon offset projects participating in [California’s carbon market](https://ww2.arb.ca.gov/our-work/programs/cap-and-trade-program). Beyond the tragic effects on local communities and hazardous regional air quality, the expected carbon losses from this fire illustrate how California’s approach of using forests to mitigate climate change may need re-evaluation.

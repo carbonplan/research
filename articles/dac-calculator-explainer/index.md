@@ -20,6 +20,13 @@ links:
     href: /research/dac-calculator
   - label: Related publication
     href: https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract
+components:
+  - name: BoundaryCondition
+    src: ./components/boundary-condition.js
+  - name: CostSummary
+    src: ./components/cost-summary.js
+  - name: ParameterScenario
+    src: ./components/parameter-scenario.js
 ---
 
 Direct air capture (DAC) is a technology that removes carbon dioxide (CO₂) from the air using chemicals. There are several types. Solid sorbent and liquid solvent DAC are in use today. Others are emerging, such as electro-swing, humidity-swing, and mineralization-based.

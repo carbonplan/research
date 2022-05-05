@@ -1,28 +1,36 @@
 ---
-  version: 1.2.0
-  date: 07-15-2021
-  title: A buyer’s guide to soil carbon offsets
-  authors:
-    - Jane Zelikova
-    - Freya Chay
-    - Jeremy Freeman
-    - Danny Cullenward
-  color: orange
-  card: soil-protocols-explainer
-  background: articles/012/crop
-  quickLook: Lessons learned from a systematic review of 14 protocols for soil carbon offsets
-  summary: We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.
-  icon: articles/012/crop-small
-  links:
-    -
-      label: Database tool
-      href: /research/soil-protocols
-    -
-      label: Update blog post
-      href: /blog/soil-protocols-added
-    -
-      label: Response to Gold Standard
-      href: /research/soil-protocols-explainer-gold-standard-response
+version: 1.2.0
+date: 07-15-2021
+title: A buyer’s guide to soil carbon offsets
+authors:
+  - Jane Zelikova
+  - Freya Chay
+  - Jeremy Freeman
+  - Danny Cullenward
+color: orange
+card: soil-protocols-explainer
+background: articles/012/crop
+quickLook: Lessons learned from a systematic review of 14 protocols for soil carbon offsets
+summary: We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.
+icon: articles/012/crop-small
+links:
+  - label: Database tool
+    href: /research/soil-protocols
+  - label: Update blog post
+    href: /blog/soil-protocols-added
+  - label: Response to Gold Standard
+    href: /research/soil-protocols-explainer-gold-standard-response
+components:
+  - name: MetricHistogram
+    src: ./components/metric-histogram.js
+  - name: MetricTable
+    src: ./components/metric-table.js
+  - name: RecommendationTable
+    src: ./components/recommendation-table.js
+  - name: ScoreSummary
+    src: ./components/score-summary.js
+  - name: TimelineSummary
+    src: ./components/timeline-summary.js
 ---
 
 Voluntary carbon markets are [ramping up efforts](https://grist.org/agriculture/us-carbon-removal-capture-offset-forests-farms-trees-soil/) to credit soil carbon removal, with [federal lawmakers](https://www.politico.com/news/2021/06/24/senate-farmers-carbon-agriculture-496029) and [state regulators](https://ww2.arb.ca.gov/resources/documents/nwl-implementation-draft) eager to follow suit.

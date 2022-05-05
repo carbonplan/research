@@ -24,6 +24,11 @@ links:
     href: https://doi.org/10.1101/2021.05.11.443688
   - label: Map tool
     href: /research/forest-risks
+components:
+  - name: RiskMaps
+    src: ./components/risk-maps/index.js
+  - name: RiskTrajectories
+    src: ./components/risk-trajectories/index.js
 ---
 
 Climate change, with its hotter summers and drier atmosphere, is poised to exacerbate the wildfires, insect outbreaks, and drought conditions that already threaten forests in the United States.<Cite id='seidl.2017'/> We set out to analyze these risks, with the goal of supporting data-driven decisions about the role forests can play in climate policy.

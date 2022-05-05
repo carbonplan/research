@@ -18,6 +18,15 @@ icon: articles/010/curve-small
 links:
   - label: Database tool
     href: /research/cdr-database
+components:
+  - name: InlineCheck
+    src: ../../components/inline-check.js
+  - name: Distributions
+    src: ./components/distributions/index.js
+  - name: Numbers
+    src: ./components/numbers.js
+  - name: Price
+    src: ./components/price/index.js
 ---
 
 CarbonPlan began building a public [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal proposal analyses in 2020. We’ve previously published insights from our analysis of [Stripe’s 2020 purchase](https://carbonplan.org/research/stripe-2020-insights) and [Microsoft’s 2021 purchase](https://carbonplan.org/research/microsoft-2021-insights). We are now updating the database to include an analysis of 23 new proposals submitted in response to [Stripe’s Spring 2021 carbon removal purchase](https://stripe.com/newsroom/news/spring-21-carbon-removal-purchases).

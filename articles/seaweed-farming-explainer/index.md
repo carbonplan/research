@@ -28,6 +28,13 @@ links:
     href: https://doi.org/10.31223/X5PG9V
   - label: 'Preprint #2'
     href: https://doi.org/10.31223/X52P8Z
+components:
+  - name: CostCalculator
+    src: ./components/cost-calculator/index.js
+  - name: GrowthChart
+    src: ./components/growth-chart/index.js
+  - name: SummaryMap
+    src: ./components/summary-map/index.js
 ---
 
 Meeting global climate goals will require drastic reductions in fossil CO₂ emissions as well as gigaton-scale removal of CO₂ from the atmosphere.<Cite ids={['gasser.2015', 'deangelo.2021']} /> Farmed seaweed (macroalgae) may help on both fronts: it may reduce emissions by substituting for more emissions-intensive energy and agricultural products, or it may be sunk into the deep sea as a form of carbon dioxide removal (CDR) (also referred to as carbon sequestration). In contrast to other biomass-based energy or carbon management strategies, pathways involving seaweed would not require land, fresh water, or macronutrient fertilizers.

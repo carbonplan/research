@@ -29,7 +29,7 @@ import {
   supplementMetadata,
   ARTICLES_PATH,
 } from '../../utils/mdx'
-import { displayTitles, figures } from '../../components/mdx'
+import { displayTitles, articleComponents } from '../../components/mdx'
 
 const ARTICLE_COMPONENTS = {
   blockquote: Blockquote,
@@ -71,7 +71,7 @@ const Page = ({ articleId, type, source, frontMatter, references }) => {
               PullQuote: (props) => (
                 <PullQuote color={frontMatter.color} {...props} />
               ),
-              ...figures[articleId],
+              ...articleComponents[articleId],
             }}
           />
         </Article>
@@ -84,7 +84,7 @@ const Page = ({ articleId, type, source, frontMatter, references }) => {
             components={{
               ...components,
               ...SUPPLEMENT_COMPONENTS,
-              ...figures[articleId],
+              ...articleComponents[articleId],
             }}
           />
         </Supplement>
@@ -114,13 +114,16 @@ export const getStaticProps = async ({ params }) => {
 
   const { content, data } = matter(source)
 
+  // Omit components paths from metadata passed to page
+  const { components, ...rest } = data
+
   const mdxSource = await serialize(content, {
     // Optionally pass remark/rehype plugins
     mdxOptions: {
       remarkPlugins: [],
       rehypePlugins: [],
     },
-    scope: data,
+    scope: rest,
   })
 
   return {
@@ -128,7 +131,7 @@ export const getStaticProps = async ({ params }) => {
       articleId: metadata.articleId ?? params.id,
       type,
       source: mdxSource,
-      frontMatter: { ...data, number: metadata.number ?? 0 },
+      frontMatter: { ...rest, number: metadata.number ?? 0 },
       references: metadata.references ?? {},
     },
   }

@@ -26,6 +26,21 @@ links:
     href: https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere
   - label: FAQ
     href: /research/forest-offsets-explainer-faq
+components:
+  - name: SummaryResults
+    src: ./components/summary-results/index.js
+  - name: ProgramOverview
+    src: ./components/program-overview/index.js
+  - name: AnalysisExplanation
+    src: ./components/analysis-explanation/index.js
+  - name: ProjectAnalysis
+    src: ./components/project-analysis/index.js
+  - name: SouthernCascades
+    src: ./components/southern-cascades/index.js
+  - name: Triangle
+    src: ./components/triangle.js
+  - name: CommonPractice
+    src: ./components/common-practice/index.js
 ---
 
 Carbon offsets are widely used by individuals, corporations, and governments to mitigate their greenhouse gas emissions. Because offsets effectively allow pollution to continue, however, they must reflect real climate benefits.

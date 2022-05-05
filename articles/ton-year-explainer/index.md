@@ -18,6 +18,21 @@ icon: articles/013/blowing-small
 links:
   - label: Our critique of NCX’s methods
     href: /blog/ton-year-ncx
+components:
+  - name: CartoonEmissions
+    src: ./components/cartoon-emissions.js
+  - name: CartoonProject
+    src: ./components/cartoon-project.js
+  - name: EmissionsChart
+    src: ./components/emissions-chart.js
+  - name: EquivalenceTable
+    src: ./components/equivalence-table.js
+  - name: ExamplesTable
+    src: ./components/examples-table.js
+  - name: MethodsChart
+    src: ./components/methods-chart.js
+  - name: ValueChart
+    src: ./components/value-chart.js
 ---
 
 To reach net-zero emissions and limit global warming, we’ll need to dramatically cut emissions and remove gigatons of carbon dioxide from the atmosphere for storage.<Cite id='bergman.2021' sxReference={{mt: [3, 3, 3, 4]}} /> Although we ultimately need to reduce emissions and permanently remove carbon from the atmosphere, significant investment has gone into shorter-term interventions that delay emissions or remove carbon for temporary storage — typically involving forestry and agricultural activities in the land sector.<Cite id='joppa.2021'/>

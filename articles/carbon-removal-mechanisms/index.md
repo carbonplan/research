@@ -14,6 +14,9 @@ background: articles/003/pipes
 quickLook: How different carbon removal projects interact with the global carbon cycle
 summary: Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches.
 icon: articles/003/pipes-small
+components:
+  - name: Cycle
+    src: ./components/cycle.js
 ---
 
 Carbon removal is an exciting field because there are so many methods.

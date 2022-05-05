@@ -17,6 +17,19 @@ icon: articles/007/sign-small
 links:
   - label: Database tool
     href: /research/cdr-database
+components:
+  - name: InlineCheck
+    src: ../../components/inline-check.js
+  - name: Distributions
+    src: ./components/distributions.js
+  - name: Metrics
+    src: ./components/metrics.js
+  - name: Numbers
+    src: ./components/numbers.js
+  - name: Oxford
+    src: ./components/oxford.js
+  - name: Validation
+    src: ./components/validation.js
 ---
 
 CarbonPlan analyzes carbon removal projects and programs because we believe these activities will play an important role in addressing the climate crisis. In 2020, we began building a publicly accessible [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal project reports. The purpose of this database is to help engender a culture of openness, transparency, and accountability for those participating in the field of carbon removal.
