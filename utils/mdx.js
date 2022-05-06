@@ -9,7 +9,9 @@ const matter = require('gray-matter')
 const ARTICLES_PATH = path.join(process.cwd(), 'articles')
 
 // articles is the list of all article folders inside the ARTICLES_PATH directory
-const articles = fs.readdirSync(ARTICLES_PATH)
+const articles = fs
+  .readdirSync(ARTICLES_PATH)
+  .filter((p) => p.match(/^[\w|\d|-]+$/))
 
 // articleMetadata is the list metadata objects for all articles
 const articleMetadata = articles
