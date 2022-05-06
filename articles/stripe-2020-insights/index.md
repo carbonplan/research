@@ -1,32 +1,31 @@
-import { Figure, FigureCaption, Colors } from '@carbonplan/components'
-import { PullQuote, Endnote } from '@carbonplan/layouts'
-import InlineCheck from '../../components/inline-check'
-import Permanence from './components/permanence'
-import Table from './components/table'
-import Metrics from './components/metrics'
-
-export const meta = {
-  id: 'stripe-2020-insights',
-  number: 0,
-  version: '1.1.0',
-  color: 'secondary',
-  title: 'Insights from our first project reports',
-  authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
-  date: '05-18-2020',
-  card: 'stripe-2020-insights-gray',
-  background: 'articles/000/road',
-  quickLook:
-    'Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase',
-  summary:
-    "We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Read this article or explore our database of project reports for our main takeaways and lessons learned.",
-  icon: 'articles/000/road-small',
-  links: [
-    {
-      label: 'Database tool',
-      href: '/research/cdr-database',
-    },
-  ],
-}
+---
+id: stripe-2020-insights
+version: 1.1.0
+color: secondary
+title: Insights from our first project reports
+authors:
+  - Danny Cullenward
+  - Joseph Hamman
+  - Jeremy Freeman
+date: 05-18-2020
+card: stripe-2020-insights-gray
+background: articles/000/road
+quickLook: Project reports and lessons learned from analyzing proposals for Stripe’s 2020 Negative Emissions Purchase
+summary: We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Read this article or explore our database of project reports for our main takeaways and lessons learned.
+icon: articles/000/road-small
+links:
+  - label: Database tool
+    href: /research/cdr-database
+components:
+  - name: InlineCheck
+    src: ../../components/inline-check.js
+  - name: Metrics
+    src: ./components/metrics.js
+  - name: Permanence
+    src: ./components/permanence.js
+  - name: Table
+    src: ./components/table.js
+---
 
 At CarbonPlan we analyze carbon removal projects, programs, and technologies. We believe that carbon removal (or "negative emissions") will play an important role in addressing the climate crisis, and we want to help engender a culture of openness, transparency, and accountability. Our hope is that sharing data and insights can benefit the field as a whole — to complement the work of the inventors, scientists, entrepreneurs, and activists who are making climate solutions a reality.
 
@@ -42,7 +41,7 @@ We performed an independent analysis of the 24 project proposals. Faced with a w
 
 Our goals were to harmonize metrics and concepts across a range of projects; to analyze and validate claims made by projects where possible, based on the best available science and data; and to better understand challenges and opportunities facing organizations seeking climate solutions. As a result of our focus on cross-cutting issues, we played a different role than the domain experts whom governments and companies typically engage to evaluate project proposals in specific subject-matter areas.
 
-<PullQuote color={meta.color}>
+<PullQuote>
   We are making public all analysis, methods, and commentary from our process
 </PullQuote>
 
@@ -86,17 +85,15 @@ We were able to assign a <InlineCheck/> for many projects on mechanism, for whic
   <Table />
   <FigureCaption number={1}>
     Each column is a metric, and each row shows our ratings for an individual
-    project. Colors represent project categories:{' '}
-    <Colors.Green>forests</Colors.Green>, <Colors.Orange>soil</Colors.Orange>,{' '}
-    <Colors.Yellow>biomass</Colors.Yellow>,{' '}
-    <Colors.Purple>direct air capture</Colors.Purple>,{' '}
-    <Colors.Grey>mineralization</Colors.Grey>, and{' '}
-    <Colors.Teal>ocean</Colors.Teal>. Click the arrow in each row to see the
-    report for that project.
+    project. Colors represent project categories: <Green>forests</Green>,{' '}
+    <Orange>soil</Orange>, <Yellow>biomass</Yellow>,{' '}
+    <Purple>direct air capture</Purple>, <Grey>mineralization</Grey>, and{' '}
+    <Teal>ocean</Teal>. Click the arrow in each row to see the report for that
+    project.
   </FigureCaption>
 </Figure>
 
-<PullQuote color={meta.color}>
+<PullQuote>
   The complexity of carbon removal solutions across so many technologies
   presents a challenge for any one organization to evaluate
 </PullQuote>
@@ -115,11 +112,9 @@ The projects we analyzed clustered into two distinct groups: those with permanen
   <Permanence />
   <FigureCaption number={2}>
     Each point shows the price and permanence for an individual project. Colors
-    represent project categories: <Colors.Green>forests</Colors.Green>,{' '}
-    <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
-    <Colors.Purple>direct air capture</Colors.Purple>,{' '}
-    <Colors.Grey>mineralization</Colors.Grey>, and{' '}
-    <Colors.Teal>ocean</Colors.Teal>.
+    represent project categories: <Green>forests</Green>, <Orange>soil</Orange>,{' '}
+    <Yellow>biomass</Yellow>, <Purple>direct air capture</Purple>,{' '}
+    <Grey>mineralization</Grey>, and <Teal>ocean</Teal>.
   </FigureCaption>
 </Figure>
 
@@ -139,7 +134,7 @@ Evaluating additionality is difficult because the counterfactual scenario agains
 
 If this sounds like a lot, it is! Unfortunately, the history of project-level additionality claims is not a positive story. Project proponents know the most about their own activities, including how feasible their work might be without outside investment — an information asymmetry that can reduce transparency. We analyzed several cases where additionality appears to be a significant concern and provide commentary to describe the issues we encountered. Because additionality is so complicated, we believe that rigorous assessment requires careful analysis, extensive data, and transparency.
 
-<PullQuote color={meta.color}>
+<PullQuote>
   A long-term investment orientation can help avoid some of the most challenging
   features of carbon offsets
 </PullQuote>

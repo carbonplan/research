@@ -1,0 +1,174 @@
+{
+  "sanderman.2017": {
+    "year": 2017,
+    "authors": "J Sanderman et al.",
+    "title": "Soil carbon debt of 12,000 years of human land use",
+    "journal": "PNAS",
+    "url": "https://doi.org/10.1073/pnas.1706103114"
+  },
+  "minasny.2017": {
+    "year": 2017,
+    "authors": "B Minasny et al.",
+    "title": "Soil carbon 4 per mille",
+    "journal": "Geoderma",
+    "url": "https://doi.org/10.1016/j.geoderma.2017.01.002"
+  },
+  "moldenhauer.1983": {
+    "year": 1983,
+    "authors": "W C Moldenhauer al.",
+    "title": "Conservation tillage for erosion control",
+    "journal": "Journal of Soil and Water Conservation",
+    "url": "https://www.jswconline.org/content/38/3/144"
+  },
+  "li.2019": {
+    "year": 2019,
+    "authors": "Y Li et al.",
+    "title": "Residue retention and minimum tillage improve physical environment of the soil in croplands: A global meta-analysis",
+    "journal": "Soil and Tillage Research",
+    "url": "https://doi.org/10.1016/j.still.2019.06.009"
+  },
+  "chaplot.2015": {
+    "year": 2015,
+    "authors": "V Chaplot & M Cooper",
+    "title": "Soil aggregate stability to predict organic carbon outputs from soils",
+    "journal": "Geoderma"
+  },
+  "baker.2007": {
+    "year": 2007,
+    "authors": "J M Baker et al.",
+    "title": "Tillage and soil carbon sequestration—What do we really know?",
+    "journal": "Agriculture, Ecosystems & Environment"
+  },
+  "xiao.2020": {
+    "year": 2020,
+    "authors": "L Xiao et al.",
+    "title": "Evaluating soil organic carbon stock changes induced by no-tillage based on fixed depth and equivalent soil mass approaches",
+    "journal": "Agriculture, Ecosystems & Environment"
+  },
+  "haddaway.2017": {
+    "year": 2017,
+    "authors": "N R Haddaway et al.",
+    "title": "How does tillage intensity affect soil organic carbon? A systematic review",
+    "journal": "Environ Evid"
+  },
+  "sun.2020": {
+    "year": 2020,
+    "authors": "W Sun et al.",
+    "title": "Climate drives global soil carbon sequestration and crop yield changes under conservation agriculture",
+    "journal": "Glob Change Biol"
+  },
+  "mondal.2020": {
+    "year": 2020,
+    "authors": "S Mondal et al.",
+    "title": "A global analysis of the impact of zero‐tillage on soil physical condition, organic carbon content, and plant root response",
+    "journal": "Land Degrad Dev",
+    "url": "https://doi.org/10.1002/ldr.3470"
+  },
+  "du.2017": {
+    "year": 2017,
+    "authors": "Z Du et al.",
+    "title": "The effect of no-till on organic C storage in Chinese soils should not be overemphasized: A meta-analysis",
+    "journal": "Agriculture, Ecosystems & Environment"
+  },
+  "meurer.2018": {
+    "year": 2018,
+    "authors": "K H E Meurer et al.",
+    "title": "Tillage intensity affects total SOC stocks in boreo-temperate regions only in the topsoil—A systematic review using an ESM approach",
+    "journal": "Earth-Science Reviews"
+  },
+  "ogle.2019": {
+    "year": 2019,
+    "authors": "S M Ogle et al.",
+    "title": "Climate and soil characteristics determine where no-till management can store carbon in soils and mitigate greenhouse gas emissions",
+    "journal": "Sci Rep"
+  },
+  "li.2020": {
+    "year": 2020,
+    "authors": "Y Li et al.",
+    "title": "Residue retention promotes soil carbon accumulation in minimum tillage systems: Implications for conservation agriculture",
+    "journal": "Science of The Total Environment"
+  },
+  "nunes.2020": {
+    "year": 2020,
+    "authors": "M R Nunes et al.",
+    "title": "Biological soil health indicators respond to tillage intensity: A US meta-analysis",
+    "journal": "Geoderma"
+  },
+  "nicoloso.2021": {
+    "year": 2021,
+    "authors": "R S Nicoloso & C W Rice",
+    "title": "Intensification of no-till agricultural systems: An opportunity for carbon sequestration",
+    "journal": "Soil Sci Soc Am J (accepted author manuscript)",
+    "url": "https://doi.org/10.1002/saj2.20260"
+  },
+  "bai.2019": {
+    "year": 2019,
+    "authors": "X Bai et al.",
+    "title": "Matocha, Responses of soil carbon sequestration to climate‐smart agriculture practices: A meta‐analysis",
+    "journal": "Glob Change Biol"
+  },
+  "luo.2010": {
+    "year": 2010,
+    "authors": "Z Luo et al.",
+    "title": "Can no-tillage stimulate carbon sequestration in agricultural soils? A meta-analysis of paired experiments",
+    "journal": "Agriculture, Ecosystems & Environment"
+  },
+  "olson.2015": {
+    "year": 2015,
+    "authors": "K R Olson & M M Al-Kaisi",
+    "title": "The importance of soil sampling depth for accurate account of soil organic carbon sequestration, storage, retention and loss",
+    "journal": "CATENA"
+  },
+  "lal.2018": {
+    "year": 2018,
+    "authors": "R Lal",
+    "title": "Digging deeper: A holistic perspective of factors affecting soil organic carbon sequestration in agroecosystems",
+    "journal": "Glob Change Biol"
+  },
+  "gifford.2003": {
+    "year": 2003,
+    "authors": "R M Gifford & M L Roderick",
+    "title": "Soil carbon stocks and bulk density: spatial or cumulative mass coordinates as a basis of expression?",
+    "journal": "Global Change Biol"
+  },
+  "wendt.2013": {
+    "year": 2013,
+    "authors": "J W Wendt & S Hauser",
+    "title": "An equivalent soil mass procedure for monitoring soil organic carbon in multiple soil layers",
+    "journal": "European Journal of Soil Science"
+  },
+  "virto.2012": {
+    "year": 2012,
+    "authors": "I Virto et al.",
+    "title": "Carbon input differences as the main factor explaining the variability in soil organic C storage in no-tilled compared to inversion tilled agrosystems",
+    "journal": "Biogeochemistry"
+  },
+  "ssurgo.2016": {
+    "year": 2016,
+    "title": "U. S. D. O. A. Natural Resources Conservation Service, Gridded Soil Survey Geographic Database (gSSURGO)",
+    "url": "https://doi.org/10.15482/USDA.ADC/1255234"
+  },
+  "boryan.2011": {
+    "year": 2011,
+    "authors": "C Boryan et al.",
+    "title": "Monitoring US agriculture: the US Department of Agriculture, National Agricultural Statistics Service, Cropland Data Layer Program",
+    "journal": "Geocarto International"
+  },
+  "claasen.2018": {
+    "year": 2018,
+    "authors": "R Claasen et al.",
+    "title": "Tillage intensity and conservation cropping in the United States"
+  },
+  "olson.2014": {
+    "year": 2014,
+    "authors": "K R Olson et al.",
+    "title": "Examining the paired comparison method approach for determining soil organic carbon sequestration rates",
+    "journal": " Journal of Soil and Water Conservation"
+  },
+  "olson.2014b": {
+    "year": 2014,
+    "authors": "K R Olson et al.",
+    "title": "Experimental consideration, treatments, and methods in determining soil organic carbon sequestration rates",
+    "journal": "Soil Science Society of America Journal"
+  }
+}

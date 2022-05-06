@@ -1,0 +1,62 @@
+{
+  "mcqueen.2021": {
+    "authors": "N McQueen et al.",
+    "year": 2021,
+    "title": "Analysis and Quantification of Negative Emissions",
+    "journal": "CDR Primer",
+    "editors": "J Wilcox, B Kolosz, J Freeman",
+    "url": "https://cdrprimer.org/read/chapter-4"
+  },
+  "mcqueen.2021.b": {
+    "authors": "N McQueen et al.",
+    "year": 2021,
+    "title": "Natural gas vs. electricity for solvent-based direct air capture",
+    "journal": "Frontiers in Climate",
+    "url": "https://doi.org/10.3389/fclim.2020.618644"
+  },
+  "zhang.2020": {
+    "authors": "Y Zhang et al.",
+    "year": 2020,
+    "title": "Quantifying methane emissions from the largest oil-producing basin in the United States from space",
+    "journal": "Science Advances",
+    "url": "https://doi.org/10.1126/sciadv.aaz5120"
+  },
+  "grubert.twitter": {
+    "note": "Thanks to Emily Grubert for calling out this point and providing a complementary analysis in a recent discussion.",
+    "url": "https://twitter.com/emilygrubert/status/1353155080061669376"
+  },
+  "horizontal.defaults": {
+    "note": "These defaults correspond to the horizontal flow (HF) scenarios from McQueen et al. (2021)"
+  },
+  "socolow.2011": {
+    "authors": "Socolow et al.",
+    "year": 2011,
+    "title": "Direct air capture of CO₂ with chemicals: A technology assessment for the APS panel on public affairs",
+    "journal": "American Physical Society",
+    "url": "https://www.aps.org/policy/reports/assessments/upload/dac2011.pdf"
+  },
+  "mazzotti.2013": {
+    "authors": "M Mazzotti et al.",
+    "year": 2013,
+    "title": "Direct air capture of CO₂ with chemicals: optimization of a two-loop hydroxide carbonate system using a countercurrent air-liquid contactor",
+    "journal": "Climatic Change",
+    "url": "https://link.springer.com/article/10.1007/s10584-012-0679-y"
+  },
+  "zeman.2014": {
+    "authors": "F Zeman",
+    "year": 2014,
+    "title": "Reducing the Cost of Ca-Based Direct Air Capture of CO₂",
+    "journal": "Environ. Sci. Technol.",
+    "url": "https://pubs.acs.org/doi/10.1021/es502887y"
+  },
+  "vertical.defaults": {
+    "note": "This scenario is comparable to the vertical flow (VF) scenario described in McQueen et al. (2021)."
+  },
+  "keith.2018": {
+    "authors": "D Keith et al.",
+    "year": 2018,
+    "title": "A Process for Capturing CO₂ from the Atmosphere",
+    "journal": "Joule",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2542435118302253"
+  }
+}

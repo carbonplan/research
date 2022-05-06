@@ -37,23 +37,50 @@ npm run dev
 
 and then visit `http://localhost:4000/research` in your browser.
 
-## adding new content
-
-To generate pages for any newly added content, you can start a development version of the site or explicitly run:
-
-```shell
-npm run build-pages
-```
-
-and commit the generated files.
-
 ### articles
 
-New articles should be added to `articles/` with the article content exported from `articles/{article-name}/index.md`. From this file, be sure to also export a `meta` object that supports rendering content on the index page.
+New articles should be added to `articles/` with the article content exported from `articles/{article-name}/index.md`.
+
+#### components
+
+Beyond the default set of components available to each article, extra components (e.g. figures and tables) must be configured using the `components` key in the MDX frontmatter. Any named exports corresponding to the `name` key will be considered first, followed by the default export.
+
+```yaml
+components:
+  - name: ComponentName
+    src: ./path/to/component
+```
+
+You may also use components imported from external packages. For example,
+
+```yaml
+components:
+  - name: Sun
+    src: '@carbonplan/icons'
+```
+
+You may also specify an `exportName` that is distinct from the `name` used for reference within MDX. For example,
+
+```yaml
+components:
+  - name: ThemedLink
+    src: theme-ui
+    exportName: Link
+```
+
+To wire through components for availability in MDX, you can start a development version of the site or explicitly run:
+
+```shell
+npm run build-components
+```
+
+#### display titles
+
+To override the default formatting of an article title, you may add custom JSX to use for your article in `components/mdx/display-titles.js`
 
 ### tools
 
-Tools should be exported from `tools/{tool-name}/index.js` in order to have pages automatically built for them. Entries for tools should be added `contents/tools.js` to support rendering content on the index page.
+Tools should be added directly to `pages/research/` using the `.page.js` extension. Entries for tools should be added `contents/tools.js` to support rendering content on the index page.
 
 ### publications
 

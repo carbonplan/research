@@ -1,7 +1,7 @@
 import { Box, Divider, Grid } from 'theme-ui'
 import { Row, Column } from '@carbonplan/components'
-import Donut from './donut'
-import LegendWithValues from './legend-with-values'
+import Donut from './utils/donut'
+import LegendWithValues from './utils/legend-with-values'
 
 const ParameterScenario = ({
   energySource,

@@ -1,40 +1,33 @@
-import { Link, Colors, Figure, FigureCaption } from '@carbonplan/components'
-import { Endnote, Cite } from '@carbonplan/layouts'
-import BoundaryCondition from './components/boundary-condition'
-import ParameterScenario from './components/parameter-scenario'
-import CostSummary from './components/cost-summary'
-
-export const meta = {
-  id: 'dac-calculator-explainer',
-  number: 6,
-  version: '1.0.0',
-  color: 'purple',
-  authors: [
-    'Noah McQueen',
-    'Jennifer Wilcox',
-    'Joseph Hamman',
-    'Jeremy Freeman',
-  ],
-  title: 'The cost of direct air capture',
-  date: '02-01-2021',
-  background: 'articles/006/wind',
-  card: 'dac-calculator-explainer',
-  quickLook:
-    'How the cost of direct air capture varies under different energy scenarios',
-  summary:
-    'We developed an interactive tool for exploring the cost of direct air capture (DAC) coupled to stand alone energy sources. Read this article, explore the calculator tool, or read the associated publication to learn more.',
-  icon: 'articles/006/wind-small',
-  links: [
-    {
-      label: 'Calculator tool',
-      href: '/research/dac-calculator',
-    },
-    {
-      label: 'Related publication',
-      href: 'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract',
-    },
-  ],
-}
+---
+id: dac-calculator-explainer
+number: 6
+version: 1.0.0
+color: purple
+authors:
+  - Noah McQueen
+  - Jennifer Wilcox
+  - Joseph Hamman
+  - Jeremy Freeman
+title: The cost of direct air capture
+date: 02-01-2021
+background: articles/006/wind
+card: dac-calculator-explainer
+quickLook: How the cost of direct air capture varies under different energy scenarios
+summary: We developed an interactive tool for exploring the cost of direct air capture (DAC) coupled to stand alone energy sources. Read this article, explore the calculator tool, or read the associated publication to learn more.
+icon: articles/006/wind-small
+links:
+  - label: Calculator tool
+    href: /research/dac-calculator
+  - label: Related publication
+    href: https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/abstract
+components:
+  - name: BoundaryCondition
+    src: ./components/boundary-condition.js
+  - name: CostSummary
+    src: ./components/cost-summary.js
+  - name: ParameterScenario
+    src: ./components/parameter-scenario.js
+---
 
 Direct air capture (DAC) is a technology that removes carbon dioxide (CO₂) from the air using chemicals. There are several types. Solid sorbent and liquid solvent DAC are in use today. Others are emerging, such as electro-swing, humidity-swing, and mineralization-based.
 
@@ -65,9 +58,8 @@ Our calculator estimates the cost of a given DAC technology explicitly linked to
 <Figure>
   <BoundaryCondition />
   <FigureCaption number={1}>
-    Boundary conditions for the DAC cost calculator.{' '}
-    <Colors.Purple>Purple</Colors.Purple> box bounds the components considered
-    for our analysis.
+    Boundary conditions for the DAC cost calculator. <Purple>Purple</Purple> box
+    bounds the components considered for our analysis.
   </FigureCaption>
 </Figure>
 

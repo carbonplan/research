@@ -1,39 +1,36 @@
-import { Figure, FigureCaption, Colors } from '@carbonplan/components'
-import { PullQuote, Endnote } from '@carbonplan/layouts'
-import InlineCheck from '../../components/inline-check'
-import Distributions from './components/distributions'
-import Numbers from './components/numbers'
-import Validation from './components/validation'
-import Oxford from './components/oxford'
-import Metrics from './components/metrics'
-
-export const meta = {
-  id: 'microsoft-2021-insights',
-  number: 7,
-  version: '1.1.0',
-  date: '03-17-2021',
-  title: 'Insights from analyzing a new round of carbon removal projects',
-  authors: [
-    'Freya Chay',
-    'Danny Cullenward',
-    'Joseph Hamman',
-    'Jeremy Freeman',
-  ],
-  color: 'secondary',
-  quickLook:
-    "Project reports and lessons learned from analyzing proposals for Microsoft's 2021 Carbon Removal procurement",
-  background: 'articles/007/sign',
-  card: 'microsoft-2021-insights',
-  summary:
-    "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.",
-  icon: 'articles/007/sign-small',
-  links: [
-    {
-      label: 'Database tool',
-      href: '/research/cdr-database',
-    },
-  ],
-}
+---
+id: microsoft-2021-insights
+version: 1.1.0
+date: 03-17-2021
+title: Insights from analyzing a new round of carbon removal projects
+authors:
+  - Freya Chay
+  - Danny Cullenward
+  - Joseph Hamman
+  - Jeremy Freeman
+color: secondary
+quickLook: Project reports and lessons learned from analyzing proposals for Microsoft's 2021 Carbon Removal procurement
+background: articles/007/sign
+card: microsoft-2021-insights
+summary: We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.
+icon: articles/007/sign-small
+links:
+  - label: Database tool
+    href: /research/cdr-database
+components:
+  - name: InlineCheck
+    src: ../../components/inline-check.js
+  - name: Distributions
+    src: ./components/distributions.js
+  - name: Metrics
+    src: ./components/metrics.js
+  - name: Numbers
+    src: ./components/numbers.js
+  - name: Oxford
+    src: ./components/oxford.js
+  - name: Validation
+    src: ./components/validation.js
+---
 
 CarbonPlan analyzes carbon removal projects and programs because we believe these activities will play an important role in addressing the climate crisis. In 2020, we began building a publicly accessible [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal project reports. The purpose of this database is to help engender a culture of openness, transparency, and accountability for those participating in the field of carbon removal.
 
@@ -72,10 +69,10 @@ Distributions of volume and permanence across projects reveal familiar patterns,
   <Distributions />
   <FigureCaption number={2}>
     Distributions of volume (above) and permanence (below) across six project
-    categories: <Colors.Green>forests</Colors.Green>,{' '}
-    <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
-    <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
-    <Colors.Purple>direct air capture</Colors.Purple>. Each circle
+    categories: <Green>forests</Green>,{' '}
+    <Orange>soil</Orange>, <Yellow>biomass</Yellow>,{' '}
+    <Teal>ocean</Teal>, <Grey>mineralization</Grey>,{' '}
+    <Purple>direct air capture</Purple>. Each circle
     represents a project, and curves show the distribution using a kernel density
     estimate. Values reflect project proposals and may not necessarily be accurate
     or realistic.
@@ -100,10 +97,10 @@ In our previous round of analysis, we often found ourselves unable to confidentl
 <Figure>
   <Validation />
   <FigureCaption number={3}>
-    Fraction of validated projects across five metrics and six project categories:{' '}<Colors.Green>forests</Colors.Green>,{' '}
-    <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
-    <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
-    <Colors.Purple>direct air capture</Colors.Purple>. Each bar shows
+    Fraction of validated projects across five metrics and six project categories:{' '}<Green>forests</Green>,{' '}
+    <Orange>soil</Orange>, <Yellow>biomass</Yellow>,{' '}
+    <Teal>ocean</Teal>, <Grey>mineralization</Grey>,{' '}
+    <Purple>direct air capture</Purple>. Each bar shows
     the fraction of projects (from 0 to 1) in that category for which we were able
     to validate the given metric. In the case of additionality, which uses a 3
     point scale, validation here is defined as a score of at least 2.
@@ -122,7 +119,7 @@ Negativity is similarly critical for direct air capture (DAC) projects, which ma
 
 Mineralization projects fell into two categories: surface mineralization with olivine, and CO₂ utilization in building materials like concrete and manufactured limestone. Validation of volumes for surface mineralization would benefit from clearer reporting on timelines, process models, and assumptions used to estimate cumulative carbon removals. Validation of utilization projects would benefit from reporting standards that differentiate CO₂ utilization from climate benefits generated by displacing conventional processes. Standards also need to distinguish between utilization of waste CO₂ (which is an avoided emission) and atmospheric CO₂ (which is carbon removal).
 
-<PullQuote color={meta.color}>
+<PullQuote>
   Today's private markets are not supplying the level of disclosure required to
   fully vet these efforts, which makes screening more difficult and expensive
   for those seeking quality outcomes.

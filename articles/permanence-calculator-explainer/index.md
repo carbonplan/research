@@ -1,34 +1,29 @@
-import { Link } from '@carbonplan/components'
-import { Cite, PullQuote, Endnote } from '@carbonplan/layouts'
-import Scenario from './components/scenario'
-import Parameters from './components/parameters'
-
-export const meta = {
-  id: 'permanence-calculator-explainer',
-  number: 5,
-  version: '1.0.0',
-  color: 'pink',
-  title: 'The cost of temporary carbon removal',
-  authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
-  date: '12-09-2020',
-  card: 'permanence-calculator-explainer',
-  background: 'articles/005/leaf',
-  quickLook:
-    'How to compare the long-term cost of temporary and permanent carbon removal',
-  summary:
-    'We built an interactive tool to help compare the long-term cost of temporary and permanent carbon removal. Read this article or try the calculator tool to learn about the methods and implications.',
-  icon: 'articles/005/leaf-small',
-  links: [
-    {
-      label: 'Calculator tool',
-      href: '/research/permanence-calculator',
-    },
-    {
-      label: 'ClimateWorks post',
-      href: 'https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/',
-    },
-  ],
-}
+---
+id: permanence-calculator-explainer
+version: 1.0.0
+color: pink
+title: The cost of temporary carbon removal
+authors:
+  - Danny Cullenward
+  - Joseph Hamman
+  - Jeremy Freeman
+date: 12-09-2020
+card: permanence-calculator-explainer
+background: articles/005/leaf
+quickLook: How to compare the long-term cost of temporary and permanent carbon removal
+summary: We built an interactive tool to help compare the long-term cost of temporary and permanent carbon removal. Read this article or try the calculator tool to learn about the methods and implications.
+icon: articles/005/leaf-small
+links:
+  - label: Calculator tool
+    href: /research/permanence-calculator
+  - label: ClimateWorks post
+    href: https://www.climateworks.org/blog/addressing-critical-challenges-in-carbon-dioxide-removal/
+components:
+  - name: Parameters
+    src: ./components/parameters.js
+  - name: Scenario
+    src: ./components/scenario.js
+---
 
 Carbon removal costs are everywhere in climate discussions — this project costs $10, that one costs $200. Policymakers and corporate planners look to metrics to inform their decisions, and cost per ton of carbon dioxide ($/tCO₂) has become a near-universal unit of measure.
 
@@ -52,7 +47,7 @@ As we explain below, our calculator shows how the initial cost of a temporary ca
 
 Our calculator lets you compare the permanence-adjusted costs of different carbon removal strategies based on a set of input parameters.
 
-<PullQuote color={meta.color}>
+<PullQuote>
   The calculator normalizes projects with different temporal dimensions into
   long-term strategies that achieve comparable climate benefits
 </PullQuote>

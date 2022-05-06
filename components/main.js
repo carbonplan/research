@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { Column, Heading, Row } from '@carbonplan/components'
 import { useBreakpointIndex } from '@theme-ui/match-media'
 
-import { articles, publications, comments, tools } from '../contents/index'
+import { publications, comments, tools } from '../contents/index'
 import List from './list'
 import Articles from './articles'
 import Publications from './publications'
@@ -17,7 +17,7 @@ const sortByDate = (items) => {
   return items.sort((a, b) => new Date(b.date) - new Date(a.date))
 }
 
-const Main = () => {
+const Main = ({ articles }) => {
   const router = useRouter()
   const navRef = useRef(null)
   const listRefs = {

@@ -1,35 +1,31 @@
-import { Figure, FigureCaption } from '@carbonplan/components'
-import { Endnote, Cite } from '@carbonplan/layouts'
-
-import {
-  GHGInventory,
-  FireEmissions,
-  NetEffect,
-  NetSeries,
-  GHGSeries,
-} from './components'
-
-export const meta = {
-  id: 'fire-forests-inventories',
-  number: 15,
-  version: '1.0.0',
-  date: '03-30-2022',
-  title: 'Fire, forests, and greenhouse gas inventories in California',
-  authors: [
-    'Oriana Chegwidden',
-    'Grayson Badgley',
-    'Sadie Frank',
-    'Danny Cullenward',
-  ],
-  color: 'yellow',
-  quickLook:
-    'Megafires likely make California forests a net source of carbon dioxide emissions',
-  background: 'articles/015/abacus',
-  card: 'fire-forests-inventories',
-  summary:
-    'Should policymakers track net greenhouse gas emissions across the energy and lands sectors, and if so, how? We explored the complex choices required to account for forests and power plants in the same emissions inventory.',
-  icon: 'articles/015/abacus-small',
-}
+---
+id: fire-forests-inventories
+version: 1.0.0
+date: 03-30-2022
+title: Fire, forests, and greenhouse gas inventories in California
+authors:
+  - Oriana Chegwidden
+  - Grayson Badgley
+  - Sadie Frank
+  - Danny Cullenward
+color: yellow
+quickLook: Megafires likely make California forests a net source of carbon dioxide emissions
+background: articles/015/abacus
+card: fire-forests-inventories
+summary: Should policymakers track net greenhouse gas emissions across the energy and lands sectors, and if so, how? We explored the complex choices required to account for forests and power plants in the same emissions inventory.
+icon: articles/015/abacus-small
+components:
+  - name: FireEmissions
+    src: ./components/fire-emissions.js
+  - name: GHGInventory
+    src: ./components/ghg-inventory.js
+  - name: GHGSeries
+    src: ./components/ghg-series.js
+  - name: NetEffect
+    src: ./components/net-effect.js
+  - name: NetSeries
+    src: ./components/net-series.js
+---
 
 Policymakers are increasingly interested in natural ecosystems’ ability to store carbon in land-based sinks, such as trees and soil. Preserving or enhancing carbon sinks like forests or ranchlands is seen by many as a key way to lock up carbon that would otherwise contribute to increased warming. The fact that natural sinks store carbon has led some governments to explore the use of carbon sinks in their economy-wide planning — for instance, to achieve an emission reduction target or net-zero goal.
 

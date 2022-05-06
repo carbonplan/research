@@ -1,0 +1,103 @@
+{
+  "bergman.2021": {
+    "authors": "A Bergman & A Rinberg",
+    "year": 2021,
+    "title": "The case for carbon dioxide removal: From science to justice",
+    "journal": "CDR Primer",
+    "editors": "J Wilcox, B Kolosz, J Freeman",
+    "url": "https://cdrprimer.org/read/chapter-1#sec-1-4"
+  },
+  "joppa.2021": {
+    "authors": "L Joppa et al.",
+    "year": 2021,
+    "title": "Microsoft’s million-tonne CO₂-removal purchase—lessons for net zero",
+    "journal": "Nature",
+    "url": "https://doi.org/10.1038/d41586-021-02606-3"
+  },
+  "levasseur.2012a": {
+    "authors": "A Levasseur et al.",
+    "year": 2012,
+    "title": "Valuing temporary carbon storage",
+    "journal": "Nature Climate Change",
+    "url": "https://doi.org/10.1038/nclimate1335"
+  },
+  "mouracosta.2000": {
+    "authors": "P Moura Costa and C Wilson",
+    "year": 2000,
+    "title": "An equivalence factor between CO₂ avoided emissions and sequestration – description and applications in forestry",
+    "journal": "Mitigation and Adaptation Strategies for Global Change ",
+    "url": "https://doi.org/10.1023/A:1009697625521"
+  },
+  "fearnside.2000": {
+    "authors": "P M Fearnside et al.",
+    "year": 2000,
+    "title": "Accounting for time in mitigating global warming through land-use change and forestry",
+    "journal": "Mitigation and Adaptation Strategies for Global Change",
+    "url": "https://doi.org/10.1023/A:1009625122628"
+  },
+  "pierrehumbert.2014": {
+    "authors": "R T Pierrehumbert",
+    "year": 2014,
+    "title": "Short-lived climate pollution",
+    "journal": "Annual Review of Earth and Planetary Sciences",
+    "url": "https://doi.org/10.1146/annurev-earth-060313-054843"
+  },
+  "irf.note": {
+    "note": "Impulse response function models have broad and well-established applications in climate science, separate from ton-year accounting."
+  },
+  "joos.2013": {
+    "authors": "F Joos et al.",
+    "year": 2013,
+    "title": "Carbon dioxide and climate impulse response functions for the computation of greenhouse gas metrics: A multi-model analysis",
+    "journal": "Atmospheric Chemistry and Physics",
+    "url": "https://doi.org/10.5194/acp-13-2793-2013"
+  },
+  "solomon.2009": {
+    "authors": "S Solomon et al.",
+    "year": 2009,
+    "title": "Irreversible climate change due to carbon dioxide emissions",
+    "journal": "Proceedings of the National Academy of Sciences",
+    "url": "https://doi.org/10.1073/pnas.0812721106"
+  },
+  "kirschbaum.2006": {
+    "authors": "M U F Kirschbaum",
+    "year": 2006,
+    "title": "Temporary carbon sequestration cannot prevent climate change",
+    "journal": "Mitigation and Adaptation Strategies for Global Change",
+    "url": "https://doi.org/10.1007/s11027-006-9027-8"
+  },
+  "brandao.2013": {
+    "authors": "M Brandão et al.",
+    "year": 2013,
+    "title": "Key issues and options in accounting for carbon sequestration and temporary storage in life cycle assessment and carbon footprinting",
+    "journal": "The International Journal of Life Cycle Assessment volume",
+    "url": "https://doi.org/10.1007/s11367-012-0451-6"
+  },
+  "levasseur.2012b": {
+    "authors": "A Levasseur et al.",
+    "year": 2012,
+    "title": "Assessing temporary carbon sequestration and storage projects through land use, land-use change and forestry: Comparison of dynamic life cycle assessment with ton-year approaches",
+    "journal": "Climatic Change",
+    "url": "https://doi.org/10.1007/s10584-012-0473-x"
+  },
+  "jenkins.2021": {
+    "authors": "Jenkins et al.",
+    "year": 2021,
+    "title": "Achieving \"permanence\" with short-term, high-magnitude carbon sequestration in forests",
+    "journal": "AGU 2021 Poster",
+    "url": "https://agu2021fallmeeting-agu.ipostersessions.com/Default.aspx?s=93-9F-22-C2-9D-E7-47-9C-46-65-33-12-9E-10-AE-9F&pdfprint=true"
+  },
+  "parisa.2021": {
+    "authors": "Z Parisa et al.",
+    "year": 2021,
+    "title": "The time value of carbon storage",
+    "journal": "Research Square",
+    "url": "https://doi.org/10.21203/rs.3.rs-966946/v1"
+  },
+  "groom.2021": {
+    "authors": "B Groom and F Venmans",
+    "year": 2021,
+    "title": "The social value of offsets",
+    "url": "https://www.frbsf.org/economic-research/events/2021/december/ben-groom-climate-seminar/"
+  }
+}

@@ -1,52 +1,45 @@
-import {
-  Link,
-  Figure,
-  FigureCaption,
-  TableCaption,
-} from '@carbonplan/components'
-import { Endnote, Cite, PullQuote } from '@carbonplan/layouts'
-import EmissionsChart from './components/emissions-chart'
-import MethodsChart from './components/methods-chart'
-import ValueChart from './components/value-chart'
-import CartoonEmissions from './components/cartoon-emissions'
-import CartoonProject from './components/cartoon-project'
-import EquivalenceTable from './components/equivalence-table'
-import ExamplesTable from './components/examples-table'
-import references from './references'
-
-export const meta = {
-  number: 13,
-  version: '1.0.1',
-  date: '01-31-2022',
-  title: 'Unpacking ton-year accounting',
-  authors: [
-    'Freya Chay',
-    'Grayson Badgley',
-    'Kata Martin',
-    'Jeremy Freeman',
-    'Joe Hamman',
-    'Danny Cullenward',
-  ],
-  color: 'pink',
-  card: 'ton-year-explainer',
-  background: 'articles/013/blowing',
-  quickLook: 'Explaining methods used to value temporary carbon storage',
-  summary:
-    'Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods.',
-  icon: 'articles/013/blowing-small',
-  links: [
-    {
-      label: 'Our critique of NCX’s methods',
-      href: '/blog/ton-year-ncx',
-    },
-  ],
-}
+---
+version: 1.0.1
+date: 01-31-2022
+title: Unpacking ton-year accounting
+authors:
+  - Freya Chay
+  - Grayson Badgley
+  - Kata Martin
+  - Jeremy Freeman
+  - Joe Hamman
+  - Danny Cullenward
+color: pink
+card: ton-year-explainer
+background: articles/013/blowing
+quickLook: Explaining methods used to value temporary carbon storage
+summary: Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods.
+icon: articles/013/blowing-small
+links:
+  - label: Our critique of NCX’s methods
+    href: /blog/ton-year-ncx
+components:
+  - name: CartoonEmissions
+    src: ./components/cartoon-emissions.js
+  - name: CartoonProject
+    src: ./components/cartoon-project.js
+  - name: EmissionsChart
+    src: ./components/emissions-chart.js
+  - name: EquivalenceTable
+    src: ./components/equivalence-table.js
+  - name: ExamplesTable
+    src: ./components/examples-table.js
+  - name: MethodsChart
+    src: ./components/methods-chart.js
+  - name: ValueChart
+    src: ./components/value-chart.js
+---
 
 To reach net-zero emissions and limit global warming, we’ll need to dramatically cut emissions and remove gigatons of carbon dioxide from the atmosphere for storage.<Cite id='bergman.2021' sxReference={{mt: [3, 3, 3, 4]}} /> Although we ultimately need to reduce emissions and permanently remove carbon from the atmosphere, significant investment has gone into shorter-term interventions that delay emissions or remove carbon for temporary storage — typically involving forestry and agricultural activities in the land sector.<Cite id='joppa.2021'/>
 
 We know temporary carbon storage provides some value for meeting our climate goals, but it’s unclear how much. Surprisingly, there isn’t a clear intellectual framework for thinking about the climate benefits of temporary carbon storage. Answers vary based on which climate outcomes are considered and depend on normative decisions like the time horizon over which value is calculated.
 
-Despite this big-picture ambiguity, many people equate the benefits of temporary carbon storage with the impacts from carbon dioxide emissions. Usually, this assertion is implicit — for example, each time an offset credit representing 10, 50, or 100 years of carbon storage is used to justify the emission of a ton of CO₂.<Cite id='berkeley.note'/> Other times the assertion is explicit. In particular, we’ve noticed growing interest in a family of methods called ton-year accounting, which directly value carbon storage based on its duration. These methods are used by companies to bundle short-duration carbon storage, such as [1-year forest harvest delays](https://f.hubspotusercontent20.net/hubfs/9337776/Papers/Forests%20and%20Carbon_A%20Guide%20for%20Buyers%20and%20Policymakers_SilviaTerra2020_v0.4.pdf), into carbon offsets that are marketed as equivalent to more permanent climate mitigation efforts.
+Despite this big-picture ambiguity, many people equate the benefits of temporary carbon storage with the impacts from carbon dioxide emissions. Usually, this assertion is implicit — for example, each time an offset credit representing 10, 50, or 100 years of carbon storage is used to justify the emission of a ton of CO₂.<Sidenote>[The Berkeley Carbon Trading Project](https://gspp.berkeley.edu/faculty-and-impact/centers/cepp/projects/berkeley-carbon-trading-project/offsets-database) estimates that land-sector offset projects have generated more than 640 million tCO₂e worth of offset credits, most of which are non-permanent storage.</Sidenote> Other times the assertion is explicit. In particular, we’ve noticed growing interest in a family of methods called ton-year accounting, which directly value carbon storage based on its duration. These methods are used by companies to bundle short-duration carbon storage, such as [1-year forest harvest delays](https://f.hubspotusercontent20.net/hubfs/9337776/Papers/Forests%20and%20Carbon_A%20Guide%20for%20Buyers%20and%20Policymakers_SilviaTerra2020_v0.4.pdf), into carbon offsets that are marketed as equivalent to more permanent climate mitigation efforts.
 
 Because different ton-year accounting methods paint different pictures about the value of temporary carbon storage, it can be hard to parse what’s going on under the hood. We wrote this explainer to walk through how ton-year accounting works, to articulate ton-year accounting’s implicit assumptions about how temporary carbon storage should be valued, and to highlight crucial differences between the most prominent ton-year accounting methods.
 
@@ -140,7 +133,7 @@ When ton-year accounting takes the integral of the CO₂ emission curve, it appr
 
 It is this concept of cumulative radiative forcing that underlies the most plausible ton-year accounting equivalence claims. Emitting CO₂ results in a quantifiable amount of extra energy being added to the climate system. We can also calculate how much less energy is added to the climate system because of temporary CO₂ storage. When these two quantities balance out, ton-year accounting can claim that the emission and the temporary storage are equivalent from the standpoint of cumulative radiative forcing.
 
-But we have to ask if this version of “equivalence” is sufficient. Ultimately that involves a critical normative judgment — the timeframe over which the ton-year comparison is made. To take this to an extreme, balancing climate impacts over just 10 years would clearly misrepresent the physical reality of CO₂’s long lifetime in the atmosphere, but there’s nothing stopping someone from using a 10-year horizon within ton-year accounting.<Cite id='gwp.note'/>
+But we have to ask if this version of “equivalence” is sufficient. Ultimately that involves a critical normative judgment — the timeframe over which the ton-year comparison is made. To take this to an extreme, balancing climate impacts over just 10 years would clearly misrepresent the physical reality of CO₂’s long lifetime in the atmosphere, but there’s nothing stopping someone from using a 10-year horizon within ton-year accounting.<Sidenote>The choice of a time horizon in ton-year accounting and the calculation of global warming potentials (GWPs) share many of the same challenges and trade-offs. For a summary of the GWP time horizon discussion with references, see [Sarofim & Giordano 2018](https://doi.org/10.5194/esd-9-1013-2018).</Sidenote>
 
 Another notable shortcoming is that cumulative radiative forcing is not the only climate outcome we might care about. There are other climate impacts which are primarily determined by the absolute amount of CO₂ in the atmosphere at a given point in time, rather than the total energy trapped in the climate system over time.<Cite id='kirschbaum.2006'/> These outcomes include long-term temperature targets like 1.5 or 2 degrees. In these cases, storing a ton of CO₂ today but releasing it decades from now may simply kick the can down the road. It’s absolutely possible that temporary carbon storage looks beneficial through the lens of cumulative radiative forcing, but may be neutral or even counterproductive through the lens of temperature targets after the temporary storage ends.
 
@@ -245,7 +238,7 @@ If instead the goal is to produce equivalence claims about economic outcomes, th
 
 By applying a discount rate, NCX makes an economic equivalence claim rather than a physical equivalence claim. The specifics of their approach to economic valuation raise significant questions about their claimed equivalence ratios, which we’ve written about in an accompanying [blog post](https://carbonplan.org/blog/ton-year-ncx). We are also concerned that NCX markets its credits as producing “equivalent climate impacts” compared to permanent carbon storage, when in fact the use of a discount rate allows for greater climate impacts tomorrow in exchange for temporary climate benefits today.
 
-<PullQuote color={meta.color}>
+<PullQuote>
   When companies overestimate the physical value of temporary storage, they
   issue more credits than the climate benefits they can back up
 </PullQuote>

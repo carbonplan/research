@@ -1,39 +1,32 @@
-import { Figure, FigureCaption, Colors } from '@carbonplan/components'
-import { Cite, Endnote } from '@carbonplan/layouts'
-import FireMap from './components/fire-map'
-import RiskScenarios from './components/risk-scenarios'
-
-export const meta = {
-  id: 'offset-project-fire',
-  number: 4,
-  version: '1.0.0',
-  color: 'red',
-  title: 'Carbon offsets burning',
-  authors: [
-    'Claudia Herbert',
-    'Jared Stapp',
-    'Grayson Badgley',
-    'William R L Anderegg',
-    'Danny Cullenward',
-    'Joseph Hamman',
-    'Jeremy Freeman',
-  ],
-  date: '09-17-2020',
-  card: 'offset-project-fire',
-  background: 'articles/004/forest',
-  quickLook:
-    'A major fire in Oregon illustrates the challenges of managing forest carbon permanence',
-  quotes: [],
-  summary:
-    'Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.',
-  icon: 'articles/004/forest-small',
-  links: [
-    {
-      label: 'Press coverage',
-      href: 'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
-    },
-  ],
-}
+---
+id: offset-project-fire
+number: 4,
+version: 1.0.0
+color: red
+title: Carbon offsets burning
+authors:
+  - Claudia Herbert
+  - Jared Stapp
+  - Grayson Badgley
+  - William R L Anderegg
+  - Danny Cullenward
+  - Joseph Hamman
+  - Jeremy Freeman
+date: 09-17-2020
+card: offset-project-fire
+background: articles/004/forest
+quickLook: A major fire in Oregon illustrates the challenges of managing forest carbon permanence
+summary: Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project.
+icon: articles/004/forest-small
+links:
+  - label: Press coverage
+    href: https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/
+components:
+  - name: FireMap
+    src: ./components/fire-map.js
+  - name: RiskScenarios
+    src: ./components/risk-scenarios.js
+---
 
 In the middle of a record fire season on the US West Coast, the [Lionshead Fire](http://inciweb.nwcg.gov/incident/7049/) in Oregon burned through one of the largest forest carbon offset projects participating in [California’s carbon market](https://ww2.arb.ca.gov/our-work/programs/cap-and-trade-program). Beyond the tragic effects on local communities and hazardous regional air quality, the expected carbon losses from this fire illustrate how California’s approach of using forests to mitigate climate change may need re-evaluation.
 
@@ -73,8 +66,8 @@ Estimating forest carbon losses due to fire first requires estimating the area b
   <FireMap />
   <FigureCaption number={1}>
     Intersection between the Riverside / Beachie Creek / Lionshead fire and
-    forest offset project ACR260. <Colors.Red>Red</Colors.Red> area shows
-    cumulative area burned through the date selected on the slider.
+    forest offset project ACR260. <Red>Red</Red> area shows cumulative area
+    burned through the date selected on the slider.
   </FigureCaption>
 </Figure>
 
@@ -94,9 +87,9 @@ Our model starts by asking what would happen in a year where the same number of 
   <RiskScenarios />
   <FigureCaption number={2}>
     A simple stochastic model predicts buffer pool depletion as a function of
-    the severity and frequency of fires. Individual <Colors.Red>red</Colors.Red>{' '}
-    lines show different simulations. The dashed line at 20% shows the
-    approximate fraction of the buffer pool for fire.
+    the severity and frequency of fires. Individual <Red>red</Red> lines show
+    different simulations. The dashed line at 20% shows the approximate fraction
+    of the buffer pool for fire.
   </FigureCaption>
 </Figure>
 

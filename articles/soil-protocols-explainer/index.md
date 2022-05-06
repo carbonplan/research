@@ -1,45 +1,37 @@
-import { Link, Figure, FigureCaption } from '@carbonplan/components'
-import { PullQuote, Cite, Endnote } from '@carbonplan/layouts'
-import MetricHistogram from './components/metric-histogram'
-import MetricTable from './components/metric-table'
-import RecommendationTable from './components/recommendation-table'
-import ScoreSummary from './components/score-summary'
-import TimelineSummary from './components/timeline-summary'
-
-export const meta = {
-  number: 12,
-  version: '1.2.0',
-  date: '07-15-2021',
-  title: 'A buyer’s guide to soil carbon offsets',
-  authors: [
-    'Jane Zelikova',
-    'Freya Chay',
-    'Jeremy Freeman',
-    'Danny Cullenward',
-  ],
-  color: 'orange',
-  card: 'soil-protocols-explainer',
-  background: 'articles/012/crop',
-  quickLook:
-    'Lessons learned from a systematic review of 14 protocols for soil carbon offsets',
-  summary:
-    'We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.',
-  icon: 'articles/012/crop-small',
-  links: [
-    {
-      label: 'Database tool',
-      href: '/research/soil-protocols',
-    },
-    {
-      label: 'Update blog post',
-      href: '/blog/soil-protocols-added',
-    },
-    {
-      label: 'Response to Gold Standard',
-      href: '/research/soil-protocols-explainer-gold-standard-response',
-    },
-  ],
-}
+---
+version: 1.2.0
+date: 07-15-2021
+title: A buyer’s guide to soil carbon offsets
+authors:
+  - Jane Zelikova
+  - Freya Chay
+  - Jeremy Freeman
+  - Danny Cullenward
+color: orange
+card: soil-protocols-explainer
+background: articles/012/crop
+quickLook: Lessons learned from a systematic review of 14 protocols for soil carbon offsets
+summary: We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways.
+icon: articles/012/crop-small
+links:
+  - label: Database tool
+    href: /research/soil-protocols
+  - label: Update blog post
+    href: /blog/soil-protocols-added
+  - label: Response to Gold Standard
+    href: /research/soil-protocols-explainer-gold-standard-response
+components:
+  - name: MetricHistogram
+    src: ./components/metric-histogram.js
+  - name: MetricTable
+    src: ./components/metric-table.js
+  - name: RecommendationTable
+    src: ./components/recommendation-table.js
+  - name: ScoreSummary
+    src: ./components/score-summary.js
+  - name: TimelineSummary
+    src: ./components/timeline-summary.js
+---
 
 Voluntary carbon markets are [ramping up efforts](https://grist.org/agriculture/us-carbon-removal-capture-offset-forests-farms-trees-soil/) to credit soil carbon removal, with [federal lawmakers](https://www.politico.com/news/2021/06/24/senate-farmers-carbon-agriculture-496029) and [state regulators](https://ww2.arb.ca.gov/resources/documents/nwl-implementation-draft) eager to follow suit.
 
@@ -161,7 +153,7 @@ Our safeguards metric looks at the adequacy of protocol requirements to protect 
 
 <ScoreSummary id='safeguards' />
 
-Only two of the protocols reviewed (Gold Standard and Plan Vivo) included requirements around landowner protections, data privacy, or community engagement.<Cite id='safeguards.update'/> Most are simply silent. In a couple of cases, protocols gesture towards these issues with recommendations or plans for future engagement, but these provisions are far from robust and lack specificity.
+Only two of the protocols reviewed (Gold Standard and Plan Vivo) included requirements around landowner protections, data privacy, or community engagement.<Sidenote>Our original analysis failed to identify a registry-wide Gold Standard safeguards policy, as explained further [here](/research/soil-protocols-explainer-gold-standard-response). As a result, we assigned a score of 1/3 to Gold Standard. After reviewing the document we missed, we assigned a score of 3/3 to Gold Standard. In addition, although we had correctly identified the components of Plan Vivo's safeguards, we assigned a score of 2/3 instead of the 3/3 our rubric required. We regret both errors.</Sidenote> Most are simply silent. In a couple of cases, protocols gesture towards these issues with recommendations or plans for future engagement, but these provisions are far from robust and lack specificity.
 
 As researchers without deep expertise in social and local environmental safeguards, we hesitate to say what should be required or how to ensure that standards deliver more than a box-checking exercise. Nevertheless, the common absence of even superficial standards was notable in a sector where land use decisions can have profound impacts on communities and local environments.
 
@@ -169,7 +161,7 @@ As researchers without deep expertise in social and local environmental safeguar
 
 In the vast majority of cases, the standards set by these protocols cannot be used to provide confidence around project quality. Buyers can’t rely on existing protocols to know whether a project was rigorously credited, and sellers can’t invoke or rely on the status quo rules to demonstrate quality. The question of defining a good project must be answered, instead, outside of the voluntary market’s formal rules.
 
-<PullQuote color={meta.color}>
+<PullQuote>
   Buyers can’t rely on existing protocols to know whether a project was
   rigorously credited
 </PullQuote>

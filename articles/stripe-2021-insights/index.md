@@ -1,39 +1,33 @@
-import { Figure, FigureCaption, Colors } from '@carbonplan/components'
-import { PullQuote, Endnote } from '@carbonplan/layouts'
-import { Themed } from 'theme-ui'
-import InlineCheck from '../../components/inline-check'
-import Numbers from './components/numbers'
-import Distributions from './components/distributions'
-import Price from './components/price'
-
-export const meta = {
-  id: 'stripe-2021-insights',
-  number: 10,
-  version: '1.0.0',
-  date: '05-26-2021',
-  title: 'New lessons from reviewing carbon removal proposals',
-  authors: [
-    'Freya Chay',
-    'Jane Zelikova',
-    'Danny Cullenward',
-    'Joseph Hamman',
-    'Jeremy Freeman',
-  ],
-  color: 'secondary',
-  card: 'stripe-2021-insights',
-  background: 'articles/010/curve',
-  quickLook:
-    "Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement",
-  summary:
-    "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.",
-  icon: 'articles/010/curve-small',
-  links: [
-    {
-      label: 'Database tool',
-      href: '/research/cdr-database',
-    },
-  ],
-}
+---
+id: stripe-2021-insights
+version: 1.0.0
+date: 05-26-2021
+title: New lessons from reviewing carbon removal proposals
+authors:
+  - Freya Chay
+  - Jane Zelikova
+  - Danny Cullenward
+  - Joseph Hamman
+  - Jeremy Freeman
+color: secondary
+card: stripe-2021-insights
+background: articles/010/curve
+quickLook: Project reports and lessons learned from analyzing proposals for Stripe's Spring 2021 Carbon Removal procurement
+summary: We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned.
+icon: articles/010/curve-small
+links:
+  - label: Database tool
+    href: /research/cdr-database
+components:
+  - name: InlineCheck
+    src: ../../components/inline-check.js
+  - name: Distributions
+    src: ./components/distributions/index.js
+  - name: Numbers
+    src: ./components/numbers.js
+  - name: Price
+    src: ./components/price/index.js
+---
 
 CarbonPlan began building a public [database](https://carbonplan.org/research/cdr-database) of carbon dioxide removal proposal analyses in 2020. We’ve previously published insights from our analysis of [Stripe’s 2020 purchase](https://carbonplan.org/research/stripe-2020-insights) and [Microsoft’s 2021 purchase](https://carbonplan.org/research/microsoft-2021-insights). We are now updating the database to include an analysis of 23 new proposals submitted in response to [Stripe’s Spring 2021 carbon removal purchase](https://stripe.com/newsroom/news/spring-21-carbon-removal-purchases).
 
@@ -47,7 +41,7 @@ Early in 2021, we collaborated with Stripe to design a [new carbon removal appli
 
 The new carbon removal application features a set of general questions relevant to all project categories, accompanied by category-specific supplements that seek additional detail. The application materials currently include supplements for Direct Air Capture (DAC), Biomass, Surface Mineralization, Oceans, Geologic Injection, and CO₂ Utilization. Projects complete one or more supplements according to their approach. The project [Climeworks](http://climeworks.com), for example, would fill out the DAC supplement and the Geologic Injection supplement; [Charm Industrial](https://charmindustrial.com/) would fill out the Biomass supplement and the Geologic Injection supplement; [CarbonCure](http://carboncure.com) would fill out the Utilization supplement; and [Project Vesta](http://projectvesta.org) would fill out the Surface Mineralization supplement and the Ocean supplement.
 
-<PullQuote color={meta.color}>
+<PullQuote>
   The application is open source and available for re-use and iteration
 </PullQuote>
 
@@ -77,15 +71,13 @@ Below we show distributions of two key metrics, volume and permanence, in an int
   <Distributions />
   <FigureCaption number={2}>
     Distributions of volume (above) and permanence (below) across six project
-    categories: <Colors.Green>forests</Colors.Green>,{' '}
-    <Colors.Orange>soil</Colors.Orange>, <Colors.Yellow>biomass</Colors.Yellow>,{' '}
-    <Colors.Teal>ocean</Colors.Teal>, <Colors.Grey>mineralization</Colors.Grey>,{' '}
-    <Colors.Purple>direct air capture</Colors.Purple>. Each circle represents a
-    project, and curves show the distribution using a kernel density estimate.
-    Permanence values and volumes reflect proposal claims, and are not
-    necessarily accurate or realistic. You can compare volume and permanence
-    distributions between the RFPs we’ve analyzed using the toggle in the upper
-    left.
+    categories: <Green>forests</Green>, <Orange>soil</Orange>,{' '}
+    <Yellow>biomass</Yellow>, <Teal>ocean</Teal>, <Grey>mineralization</Grey>,{' '}
+    <Purple>direct air capture</Purple>. Each circle represents a project, and
+    curves show the distribution using a kernel density estimate. Permanence
+    values and volumes reflect proposal claims, and are not necessarily accurate
+    or realistic. You can compare volume and permanence distributions between
+    the RFPs we’ve analyzed using the toggle in the upper left.
   </FigureCaption>
 </Figure>
 
@@ -116,7 +108,7 @@ The data show a shift toward lower volumes and higher prices, which would seem c
 
 We were excited by the strong presence of novel carbon removal approaches, which are a testament to the creativity of the growing carbon removal community.
 
-<PullQuote color={meta.color}>
+<PullQuote>
   We were excited by the strong presence of novel carbon removal approaches
 </PullQuote>
 

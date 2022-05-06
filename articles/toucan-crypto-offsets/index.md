@@ -1,31 +1,25 @@
-import { Box, Link } from 'theme-ui'
-import { Figure, FigureCaption } from '@carbonplan/components'
-import { Article, Endnote, PullQuote, Sidenote } from '@carbonplan/layouts'
-
-import Prices from './components/prices'
-import Retirements from './components/retirements'
-
-export const meta = {
-  id: 'toucan-crypto-offsets',
-  number: 16,
-  date: '04-07-2022',
-  title: 'Zombies on the blockchain',
-  authors: ['Grayson Badgley', 'Danny Cullenward'],
-  color: 'grey',
-  summary:
-    'We analyzed the flow of carbon offset credits from conventional registries to the blockchain. Our work shows that nearly all of these credits have been excluded from conventional markets.',
-  quickLook:
-    'The blockchain is giving new life to once-dead, low-quality offset credits',
-  card: 'toucan-crypto-offsets',
-  background: 'articles/016/zombie',
-  icon: 'articles/016/zombie-small-wide',
-  links: [
-    {
-      label: 'Press coverage',
-      href: 'https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=cryptocurrencies-v2',
-    },
-  ],
-}
+---
+id: toucan-crypto-offsets
+date: 04-07-2022
+title: Zombies on the blockchain
+authors:
+  - Grayson Badgley
+  - Danny Cullenward
+color: grey
+summary: We analyzed the flow of carbon offset credits from conventional registries to the blockchain. Our work shows that nearly all of these credits have been excluded from conventional markets.
+quickLook: The blockchain is giving new life to once-dead, low-quality offset credits
+card: toucan-crypto-offsets
+background: articles/016/zombie
+icon: articles/016/zombie-small-wide
+links:
+  - label: Press coverage
+    href: https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=cryptocurrencies-v2
+components:
+  - name: Prices
+    src: ./components/prices.js
+  - name: Retirements
+    src: ./components/retirements.js
+---
 
 As if carbon markets weren’t complicated enough, efforts to integrate carbon offsets and blockchain technologies are [growing](https://www.wsj.com/articles/cryptocurrency-traders-move-into-carbon-markets-11641826402) [in popularity](https://www.wired.co.uk/article/toucon-crypto-carbon-credits). Proponents of regenerative finance (ReFi) and carbon-based decentralized finance (DeFi) argue that blockchain-backed carbon offsets will facilitate increased transparency, deeper liquidity, and possibly higher voluntary carbon market prices that encourage greater emission reductions off the blockchain.
 
@@ -41,9 +35,9 @@ We focus on the transfer of conventional offset credits from the incumbent carbo
 
 In the world of conventional offset registries, projects follow special rules called carbon offset protocols to earn carbon offset credits. For example, a forest management or clean energy project that follows an applicable Verra offsets protocol earns credits called Verified Carbon Units (VCUs). Each VCU is meant to represent 1 ton of CO₂-equivalent, and can be traded freely or permanently retired to make a unique claim on its associated climate benefits.
 
-Today’s blockchain-based carbon credits originate from conventional registry systems, using the same protocols developed and managed by the registries. Most of these credits migrate to the blockchain through the [Toucan Protocol](https://toucan.earth/), which issues Base Carbon Tokens (BCTs).<Sidenote>Other alternative systems are emerging to bridge registry credits, such as <Link href='https://mco2token.moss.earth/' sx={{color: 'inherit', '&:hover': {color: 'inherit'}}}>MOSS</Link> and <Link href='https://medium.com/@C_3' sx={{color: 'inherit', '&:hover': {color: 'inherit'}}}>C3</Link>, though the market for Toucan BCTs is the largest as of this writing.</Sidenote>
+Today’s blockchain-based carbon credits originate from conventional registry systems, using the same protocols developed and managed by the registries. Most of these credits migrate to the blockchain through the [Toucan Protocol](https://toucan.earth/), which issues Base Carbon Tokens (BCTs).<Sidenote>Other alternative systems are emerging to bridge registry credits, such as [MOSS](https://mco2token.moss.earth/) and [C3](https://medium.com/@C_3), though the market for Toucan BCTs is the largest as of this writing.</Sidenote>
 
-To generate a BCT, a user must have an account with Verra and follow a set of steps to [bridge](https://docs.toucan.earth/protocol/bridge/carbon-bridge) registry-based credits to their new blockchain home. The core process involves retiring VCUs on Verra’s registry and marking the retirement “beneficiary” listing with a cryptographic key that identifies the blockchain wallet that seeks BCTs from Toucan. Once the required steps are completed on Toucan’s side, BCTs are issued on the blockchain to represent carbon claims that began as VCUs.<Sidenote>Toucan has also indicated an interest in working with other registries, notably <Link href='https://www.goldstandard.org/' sx={{color: 'inherit', '&:hover': {color: 'inherit'}}}>Gold Standard</Link>, but so far it appears that transfers are only occurring through Verra.</Sidenote>
+To generate a BCT, a user must have an account with Verra and follow a set of steps to [bridge](https://docs.toucan.earth/protocol/bridge/carbon-bridge) registry-based credits to their new blockchain home. The core process involves retiring VCUs on Verra’s registry and marking the retirement “beneficiary” listing with a cryptographic key that identifies the blockchain wallet that seeks BCTs from Toucan. Once the required steps are completed on Toucan’s side, BCTs are issued on the blockchain to represent carbon claims that began as VCUs.<Sidenote>Toucan has also indicated an interest in working with other registries, notably [Gold Standard](https://www.goldstandard.org/), but so far it appears that transfers are only occurring through Verra.</Sidenote>
 
 ## A pot of crypto gold
 
@@ -72,7 +66,7 @@ Our analysis reveals two significant problems: (1) a suite of what we call “zo
 
 ## Zombie projects
 
-<PullQuote color={meta.color}>
+<PullQuote>
   When the crypto market places higher value on BCTs and KLIMA tokens, these
   products can bring formerly defunct offset projects back to life
 </PullQuote>
@@ -99,7 +93,7 @@ A second, related problem concerns the age and quality of credits moving through
 
 Carbon market analysts have long pointed to the [backlog of old vintage credits](https://theconversation.com/outdated-carbon-credits-from-old-wind-and-solar-farms-are-threatening-climate-change-efforts-151456), raising questions about whether these old credits reflect real climate benefits. As debates over market standards have evolved in the world of conventional carbon markets, key market segments have adopted eligibility rules that prohibit the use of older credits to address the greatest risks of non-additional crediting outcomes.
 
-<PullQuote color={meta.color}>
+<PullQuote>
   Nearly all (99.9 percent) of bridged credits are ineligible for CORSIA and
   standard market contracts
 </PullQuote>
@@ -152,7 +146,7 @@ We worry that this is too little, too late. Not only have tens of millions of cr
 
 We would be remiss if we didn’t observe the structural problem at the root of Toucan’s dilemma. The concept of smart contracts that offer broad eligibility for generating new carbon tokens from existing assets rests on the premise that somebody else has solved the credit quality problem. In this case, Toucan has assumed that Verra has already done the work. But as Toucan is now recognizing, Verra continues to host a number of questionable projects and protocols, via which new credits continue to be issued in response to novel demand from blockchain buyers.
 
-<PullQuote color={meta.color}>
+<PullQuote>
   This regulatory arbitrage was made possible by the very same smart contract
   features that attract users to blockchain-based systems to turn a quick profit
 </PullQuote>

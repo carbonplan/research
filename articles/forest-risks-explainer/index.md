@@ -1,45 +1,35 @@
-import { Box } from 'theme-ui'
-import { Table, Figure, FigureCaption } from '@carbonplan/components'
-import { Endnote, Cite } from '@carbonplan/layouts'
-import RiskMaps from './components/risk-maps'
-import RiskTrajectories from './components/risk-trajectories'
-
-export const meta = {
-  id: 'forest-risks-explainer',
-  number: 9,
-  date: '05-20-2021',
-  title: 'Risks to forest carbon in a changing climate',
-  authors: [
-    'Oriana S. Chegwidden',
-    'William R L Anderegg',
-    'Grayson Badgley',
-    'Danny Cullenward',
-    'John A. Abatzoglou',
-    'Jeffrey A. Hicke',
-    'Anna T. Trugman',
-    'Jeremy Freeman',
-    'Joseph J. Hamman',
-  ],
-  color: 'red',
-  quickLook:
-    'A detailed look at the disturbance risks to forest carbon under future climate conditions',
-  background: 'articles/009/forest-fire-red',
-  card: 'forest-risks-explainer',
-  summary:
-    'Forests in the United States are already at risk from wildfire, drought, and insects, and climate change is making it worse. We combined satellite and ecological data with climate models to project future risks to forest carbon. Along with a preprint, we are releasing open data, open software, and an interactive web map.',
-  version: '1.0.0',
-  icon: 'articles/009/forest-fire-small-red',
-  links: [
-    {
-      label: 'Preprint',
-      href: 'https://doi.org/10.1101/2021.05.11.443688',
-    },
-    {
-      label: 'Map tool',
-      href: '/research/forest-risks',
-    },
-  ],
-}
+---
+id: forest-risks-explainer
+date: 05-20-2021
+title: Risks to forest carbon in a changing climate
+authors:
+  - Oriana S. Chegwidden
+  - William R L Anderegg
+  - Grayson Badgley
+  - Danny Cullenward
+  - John A. Abatzoglou
+  - Jeffrey A. Hicke
+  - Anna T. Trugman
+  - Jeremy Freeman
+  - Joseph J. Hamman
+color: red
+quickLook: A detailed look at the disturbance risks to forest carbon under future climate conditions
+background: articles/009/forest-fire-red
+card: forest-risks-explainer
+summary: Forests in the United States are already at risk from wildfire, drought, and insects, and climate change is making it worse. We combined satellite and ecological data with climate models to project future risks to forest carbon. Along with a preprint, we are releasing open data, open software, and an interactive web map.
+version: 1.0.0
+icon: articles/009/forest-fire-small-red
+links:
+  - label: Preprint
+    href: https://doi.org/10.1101/2021.05.11.443688
+  - label: Map tool
+    href: /research/forest-risks
+components:
+  - name: RiskMaps
+    src: ./components/risk-maps/index.js
+  - name: RiskTrajectories
+    src: ./components/risk-trajectories/index.js
+---
 
 Climate change, with its hotter summers and drier atmosphere, is poised to exacerbate the wildfires, insect outbreaks, and drought conditions that already threaten forests in the United States.<Cite id='seidl.2017'/> We set out to analyze these risks, with the goal of supporting data-driven decisions about the role forests can play in climate policy.
 

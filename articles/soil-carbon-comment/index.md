@@ -1,46 +1,30 @@
-import { Box } from 'theme-ui'
-import { Link } from '@carbonplan/components'
-import { Cite, PullQuote, Endnote } from '@carbonplan/layouts'
-import Conclusions from './components/conclusions'
-
-export const meta = {
-  id: 'soil-carbon-comment',
-  number: 1,
-  version: '1.1.0',
-  color: 'orange',
-  title: 'Getting soil carbon right',
-  authors: ['Danny Cullenward', 'Joseph Hamman', 'Jeremy Freeman'],
-  date: '06-01-2020',
-  card: 'soil-carbon-comment',
-  background: 'articles/001/soil',
-  quickLook:
-    'Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols',
-  summary:
-    'There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.',
-  icon: 'articles/001/soil-small',
-  links: [
-    {
-      label: 'Press coverage',
-      href: 'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
-    },
-    {
-      label: 'Comment letter #1',
-      href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
-    },
-    {
-      label: 'Comment letter #2',
-      href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
-    },
-  ],
-}
-
-export const displayTitle = (
-  <span>
-    Getting soil
-    <br />
-    carbon right
-  </span>
-)
+---
+id: soil-carbon-comment
+number: 1,
+version: 1.1.0
+color: orange
+title: Getting soil carbon right
+authors:
+  - Danny Cullenward
+  - Joseph Hamman
+  - Jeremy Freeman
+date: 06-01-2020
+card: soil-carbon-comment
+background: articles/001/soil
+quickLook: Why the science of soil carbon quantification is complicated, and why getting the details right matters for soil carbon protocols
+summary: There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity.
+icon: articles/001/soil-small
+links:
+  - label: Press coverage
+    href: https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/
+  - label: 'Comment letter #1'
+    href: https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf
+  - label: 'Comment letter #2'
+    href: https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf
+components:
+  - name: Conclusions
+    src: ./components/conclusions.js
+---
 
 There are good reasons to be [excited](https://carbon180.org/leading-with-soil) about better soil management practices for carbon removal. Agricultural practices that increase soil carbon storage have the potential to provide benefits both for farmers and ranchers and for the global climate. In turn, working with the agricultural sector could help engage people and organizations that haven’t been the focus of most climate action to date. The complexities of soil carbon quantification, however, pose challenges for designing financial crediting systems.
 
@@ -64,7 +48,7 @@ Given the enormous challenges in designing a carbon offset protocol to quantify 
 
 ### Conflict of interest
 
-<PullQuote color={meta.color}>
+<PullQuote>
   Success requires independence between the development of the rules and their
   application to specific projects or companies
 </PullQuote>
@@ -83,7 +67,7 @@ Our technical comments focused on four issues — additionality, model selection
 
 ## Why do we care?
 
-<PullQuote color={meta.color}>
+<PullQuote>
   Protocols and standards must represent the most accurate approaches to
   calculating climate benefits
 </PullQuote>

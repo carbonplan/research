@@ -1,53 +1,41 @@
-import { Link, Figure, FigureCaption } from '@carbonplan/components'
-import { Article, Cite, Endnote, PullQuote } from '@carbonplan/layouts'
-
-import CostCalculator from './components/cost-calculator'
-import GrowthChart from './components/growth-chart'
-import SummaryMap from './components/summary-map'
-import references from './references'
-
-export const meta = {
-  id: 'seaweed-farming-explainer',
-  number: 14,
-  version: '1.0.0',
-  date: '03-16-2022',
-  color: 'teal',
-  title: 'Mapping seaweed farming potential',
-  authors: [
-    'Julianne DeAngelo',
-    'Steven Davis',
-    'Benjamin Saenz',
-    'Isabella Arzeno-Soltero',
-    'Matthew Long',
-    'Christina Frieder',
-    'Kristen Davis',
-    'Kata Martin',
-    'Freya Chay',
-    'Jeremy Freeman',
-    'Joseph Hamman',
-  ],
-  card: 'seaweed-farming-explainer',
-  background: 'articles/014/seaweed',
-  quickLook: 'A new tool for exploring seaweed-based CDR and biomass products',
-  tags: ['article'],
-  summary:
-    'We developed an interactive tool for mapping the potential of seaweed farming for carbon removal and biomass products. Read this article, explore the interactive map, or read the associated preprints to learn more.',
-  icon: 'articles/014/seaweed-small',
-  links: [
-    {
-      label: 'Map tool',
-      href: '/research/seaweed-farming',
-    },
-    {
-      label: 'Preprint #1',
-      href: 'https://doi.org/10.31223/X5PG9V',
-    },
-    {
-      label: 'Preprint #2',
-      href: 'https://doi.org/10.31223/X52P8Z',
-    },
-  ],
-}
+---
+id: seaweed-farming-explainer
+version: 1.0.0
+date: 03-16-2022
+color: teal
+title: Mapping seaweed farming potential
+authors:
+  - Julianne DeAngelo
+  - Steven Davis
+  - Benjamin Saenz
+  - Isabella Arzeno-Soltero
+  - Matthew Long
+  - Christina Frieder
+  - Kristen Davis
+  - Kata Martin
+  - Freya Chay
+  - Jeremy Freeman
+  - Joseph Hamman
+card: seaweed-farming-explainer
+background: articles/014/seaweed
+quickLook: A new tool for exploring seaweed-based CDR and biomass products
+summary: We developed an interactive tool for mapping the potential of seaweed farming for carbon removal and biomass products. Read this article, explore the interactive map, or read the associated preprints to learn more.
+icon: articles/014/seaweed-small
+links:
+  - label: Map tool
+    href: /research/seaweed-farming
+  - label: 'Preprint #1'
+    href: https://doi.org/10.31223/X5PG9V
+  - label: 'Preprint #2'
+    href: https://doi.org/10.31223/X52P8Z
+components:
+  - name: CostCalculator
+    src: ./components/cost-calculator/index.js
+  - name: GrowthChart
+    src: ./components/growth-chart/index.js
+  - name: SummaryMap
+    src: ./components/summary-map/index.js
+---
 
 Meeting global climate goals will require drastic reductions in fossil CO₂ emissions as well as gigaton-scale removal of CO₂ from the atmosphere.<Cite ids={['gasser.2015', 'deangelo.2021']} /> Farmed seaweed (macroalgae) may help on both fronts: it may reduce emissions by substituting for more emissions-intensive energy and agricultural products, or it may be sunk into the deep sea as a form of carbon dioxide removal (CDR) (also referred to as carbon sequestration). In contrast to other biomass-based energy or carbon management strategies, pathways involving seaweed would not require land, fresh water, or macronutrient fertilizers.
 

@@ -1,31 +1,28 @@
-import { Figure, FigureCaption } from '@carbonplan/components'
-import { PullQuote, Endnote, Cite } from '@carbonplan/layouts'
-import Depth from './components/depth'
-import Density from './components/density'
-import Country from './components/country'
-
-export const meta = {
-  id: 'soil-depth-sampling',
-  number: 11,
-  version: '1.0.1',
-  date: '06-17-2021',
-  title: 'Depth matters for soil carbon accounting',
-  authors: [
-    'Eric Slessarev',
-    'Jane Zelikova',
-    'Joe Hamman',
-    'Danny Cullenward',
-    'Jeremy Freeman',
-  ],
-  color: 'orange',
-  card: 'soil-depth-sampling',
-  background: 'articles/011/tillage',
-  quickLook:
-    'Why depth is important for soil carbon sampling, and how to avoid key mistakes',
-  summary:
-    'Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls.',
-  icon: 'articles/011/tillage-small',
-}
+---
+id: soil-depth-sampling
+version: 1.0.1
+date: 06-17-2021
+title: Depth matters for soil carbon accounting
+authors:
+  - Eric Slessarev
+  - Jane Zelikova
+  - Joe Hamman
+  - Danny Cullenward
+  - Jeremy Freeman
+color: orange
+card: soil-depth-sampling
+background: articles/011/tillage
+quickLook: Why depth is important for soil carbon sampling, and how to avoid key mistakes
+summary: Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls.
+icon: articles/011/tillage-small
+components:
+  - name: Depth
+    src: ./components/depth/index.js
+  - name: Density
+    src: ./components/density/index.js
+  - name: Country
+    src: ./components/country/index.js
+---
 
 Agricultural soils have lost a vast amount of carbon to the atmosphere due to human activities,<Cite id='sanderman.2017'/> contributing to climate change. Scientists and policy makers are now debating whether putting some of this carbon back in the ground would be an effective climate change mitigation strategy.<Cite id='minasny.2017'/>
 

@@ -1,64 +1,45 @@
-import { Box } from 'theme-ui'
-import { Figure, FigureCaption } from '@carbonplan/components'
-import { Cite, Endnote } from '@carbonplan/layouts'
-import SummaryResults from './components/summary-results'
-import ProgramOverview from './components/program-overview'
-import AnalysisExplanation from './components/analysis-explanation'
-import ProjectAnalysis from './components/project-analysis'
-import SouthernCascades from './components/southern-cascades'
-import Triangle from './components/triangle'
-
-export const meta = {
-  id: 'forest-offsets-explainer',
-  number: 8,
-  date: '04-29-2021',
-  title: 'Systematic over-crediting of forest offsets',
-  authors: [
-    'Grayson Badgley',
-    'Jeremy Freeman',
-    'Joseph Hamman',
-    'Barbara Haya',
-    'Anna Trugman',
-    'William R L Anderegg',
-    'Danny Cullenward',
-  ],
-  color: 'green',
-  quickLook:
-    "Statistical and ecological analysis reveals crediting errors in California's forest carbon offsets program",
-  quotes: [],
-  card: 'forest-offsets-explainer',
-  background: 'articles/008/ash',
-  summary:
-    "California's forest offset program is worth over $2 billion. We analyzed detailed public records to show how statistical flaws in the program's design have led to over-crediting — at a scale of tens of millions of tCO₂ and hundreds of millions of dollars.",
-  version: '1.0.0',
-  icon: 'articles/008/ash-small',
-  links: [
-    {
-      label: 'Publication',
-      href: 'https://doi.org/10.1111/gcb.15943',
-    },
-    {
-      label: 'Map tool',
-      href: '/research/forest-offsets',
-    },
-    {
-      label: 'Press coverage',
-      href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
-    },
-    {
-      label: 'FAQ',
-      href: '/research/forest-offsets-explainer-faq',
-    },
-  ],
-}
-
-export const displayTitle = (
-  <span>
-    Systematic <span style={{ whiteSpace: 'nowrap' }}>over-crediting</span>
-    <br />
-    of forest offsets
-  </span>
-)
+---
+id: forest-offsets-explainer
+date: 04-29-2021
+title: Systematic over-crediting of forest offsets
+authors:
+  - Grayson Badgley
+  - Jeremy Freeman
+  - Joseph Hamman
+  - Barbara Haya
+  - Anna Trugman
+  - William R L Anderegg
+  - Danny Cullenward
+color: green
+quickLook: Statistical and ecological analysis reveals crediting errors in California's forest carbon offsets program
+card: forest-offsets-explainer
+background: articles/008/ash
+summary: California's forest offset program is worth over $2 billion. We analyzed detailed public records to show how statistical flaws in the program's design have led to over-crediting — at a scale of tens of millions of tCO₂ and hundreds of millions of dollars.
+version: 1.0.0
+icon: articles/008/ash-small
+links:
+  - label: Publication
+    href: https://doi.org/10.1111/gcb.15943
+  - label: Map tool
+    href: /research/forest-offsets
+  - label: Press coverage
+    href: https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere
+  - label: FAQ
+    href: /research/forest-offsets-explainer-faq
+components:
+  - name: SummaryResults
+    src: ./components/summary-results/index.js
+  - name: ProgramOverview
+    src: ./components/program-overview/index.js
+  - name: AnalysisExplanation
+    src: ./components/analysis-explanation/index.js
+  - name: ProjectAnalysis
+    src: ./components/project-analysis/index.js
+  - name: SouthernCascades
+    src: ./components/southern-cascades/index.js
+  - name: Triangle
+    src: ./components/triangle.js
+---
 
 Carbon offsets are widely used by individuals, corporations, and governments to mitigate their greenhouse gas emissions. Because offsets effectively allow pollution to continue, however, they must reflect real climate benefits.
 
