@@ -32,9 +32,9 @@ const buildComponents = () => {
       '${id}': {${imports
           .map(
             ({ name, src, exportName }) =>
-              `${name}: dynamic(() => import('${src}')${
-                exportName ? `.then((mod) => mod.${exportName})` : ''
-              })`
+              `${name}: dynamic(() => import('${src}').then((mod) => mod.${
+                exportName ?? name
+              } || mod.default))`
           )
           .join(',')}}
       `

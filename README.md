@@ -43,13 +43,12 @@ New articles should be added to `articles/` with the article content exported fr
 
 #### components
 
-Beyond the default set of components available to each article, extra components (e.g. figures and tables) must be configured using the `components` key in the MDX frontmatter.
+Beyond the default set of components available to each article, extra components (e.g. figures and tables) must be configured using the `components` key in the MDX frontmatter. Any named exports corresponding to the `name` key (or `exportName` when provided) will be considered first, followed by the default export.
 
 ```yaml
 components:
   - name: ComponentName
     src: ./path/to/component
-    exportName: ExportedComponentName # not required for default exports
 ```
 
 You may also use components imported from external packages. For example,
@@ -58,7 +57,15 @@ You may also use components imported from external packages. For example,
 components:
   - name: Sun
     src: '@carbonplan/icons'
-    exportName: Sun
+```
+
+You may also specify an `exportName` that is distinct from the `name` used for reference within MDX. For example,
+
+```yaml
+components:
+  - name: ThemedLink
+    src: theme-ui
+    exportName: Link
 ```
 
 To wire through components for availability in MDX, you can start a development version of the site or explicitly run:
