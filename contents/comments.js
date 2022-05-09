@@ -1,5 +1,20 @@
 const comments = [
   {
+    color: 'grey',
+    title:
+      'Comments to the White House Office of Science and Technology Policy on digital assets',
+    href: 'https://files.carbonplan.org/OSTP-Digital-Assets-Comment-Letter-05-09-2022.pdf',
+    summary:
+      'The White House Office of Science and Technology Policy (OSTP) issued a request for information on the energy and climate implications of blockchain technologies. We wrote to share our analysis of the pipeline of offset credits that have migrated "on chain" from Verra, via Toucan Protocol.',
+    date: '05-09-2022',
+    links: [
+      {
+        label: 'Explainer article',
+        href: '/research/toucan-crypto-offsets',
+      },
+    ],
+  },
+  {
     color: 'secondary',
     title: 'Comments to the European Commission on certifying carbon removal',
     href: 'https://files.carbonplan.org/EU-CDR-Certification-Comment-Letter-05-02-2022.pdf',

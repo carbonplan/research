@@ -14,6 +14,8 @@ icon: articles/016/zombie-small-wide
 links:
   - label: Press coverage
     href: https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=cryptocurrencies-v2
+  - label: Comment letter
+    href: https://files.carbonplan.org/OSTP-Digital-Assets-Comment-Letter-05-09-2022.pdf
 components:
   - name: Prices
     src: ./components/prices.js
