@@ -20,8 +20,8 @@ summary: Forests in the United States are already at risk from wildfire, drought
 version: 1.0.0
 icon: articles/009/forest-fire-small-red
 links:
-  - label: Preprint
-    href: https://doi.org/10.1101/2021.05.11.443688
+  - label: Publication
+    href: https://doi.org/10.1111/ele.14018
   - label: Map tool
     href: /research/forest-risks
 components:

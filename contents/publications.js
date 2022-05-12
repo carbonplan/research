@@ -57,11 +57,12 @@ const publications = [
     ],
   },
   {
-    date: '05-20-2021',
-    title: 'Climate risks to carbon sequestration in US forests',
-    href: 'https://doi.org/10.1101/2021.05.11.443688',
+    date: '05-11-2022',
+    title:
+      'Future climate risks from stress, insects and fire across US forests',
+    href: 'https://doi.org/10.1111/ele.14018',
     color: 'red',
-    journal: 'bioRxiv',
+    journal: 'Ecology Letters',
     summary:
       'A paper quantifying the key climate drivers that fuel risks to forests in the United States from wildfire, drought, and insects, and projecting those risks over the 21st century.',
     links: [
