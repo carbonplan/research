@@ -1,5 +1,19 @@
 const publications = [
   {
+    date: '05-11-2022',
+    title:
+      'Future climate risks from stress, insects and fire across US forests',
+    href: 'https://doi.org/10.1111/ele.14018',
+    color: 'red',
+    journal: 'Ecology Letters',
+    summary:
+      'A paper quantifying the key climate drivers that fuel risks to forests in the United States from wildfire, drought, and insects, and projecting those risks over the 21st century.',
+    links: [
+      { label: 'Explainer article', href: '/research/forest-risks-explainer' },
+      { label: 'Map tool', href: '/research/forest-risks' },
+    ],
+  },
+  {
     date: '04-29-2022',
     title:
       'California’s forest carbon offsets buffer pool is severely undercapitalized',
@@ -54,20 +68,6 @@ const publications = [
         href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
       },
       { label: 'FAQ', href: '/research/forest-offsets-explainer-faq' },
-    ],
-  },
-  {
-    date: '05-11-2022',
-    title:
-      'Future climate risks from stress, insects and fire across US forests',
-    href: 'https://doi.org/10.1111/ele.14018',
-    color: 'red',
-    journal: 'Ecology Letters',
-    summary:
-      'A paper quantifying the key climate drivers that fuel risks to forests in the United States from wildfire, drought, and insects, and projecting those risks over the 21st century.',
-    links: [
-      { label: 'Explainer article', href: '/research/forest-risks-explainer' },
-      { label: 'Map tool', href: '/research/forest-risks' },
     ],
   },
   {
