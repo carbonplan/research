@@ -13,8 +13,12 @@ import Highlights from './highlights'
 import Navigation from './navigation'
 import { useCustomScroll } from './scroll'
 
+const getDate = (dateStr) => {
+  const [month, day, year] = dateStr.split('-')
+  return new Date(year, month - 1, day)
+}
 const sortByDate = (items) => {
-  return items.sort((a, b) => new Date(b.date) - new Date(a.date))
+  return items.sort((a, b) => getDate(b.date) - getDate(a.date))
 }
 
 const Main = ({ articles }) => {
