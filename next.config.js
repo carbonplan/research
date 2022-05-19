@@ -13,4 +13,7 @@ const withMDX = require('@next/mdx')({
 module.exports = withMDX({
   pageExtensions: ['page.jsx', 'page.js', 'page.md', 'page.mdx'],
   assetPrefix: isDev ? '' : 'https://research.carbonplan.org',
+  experimental: {
+    scrollRestoration: true,
+  },
 })
