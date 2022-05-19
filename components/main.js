@@ -58,6 +58,7 @@ const Main = ({ articles }) => {
         undefined,
         {
           scroll: false,
+          shallow: true,
         }
       )
     } else {
