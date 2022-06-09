@@ -6,8 +6,8 @@ const SECTIONS = [
   { id: 'highlights', label: 'Highlights' },
   { id: 'tools', label: 'Tools' },
   { id: 'articles', label: 'Articles' },
+  { id: 'commentary', label: 'Commentary' },
   { id: 'publications', label: 'Publications' },
-  { id: 'comments', label: 'Comment letters' },
 ]
 
 const sx = {

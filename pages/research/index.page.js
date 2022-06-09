@@ -2,7 +2,7 @@ import { Layout } from '@carbonplan/components'
 import Main from '../../components/main'
 import { getCombinedContents } from '../../utils/contents'
 
-const Index = ({ articles, count }) => {
+const Index = ({ articles, commentary, count }) => {
   return (
     <Layout
       title={'Research – CarbonPlan'}
@@ -14,19 +14,25 @@ const Index = ({ articles, count }) => {
       metadata={`COUNT: ${count}`}
       nav={'research'}
     >
-      <Main articles={articles} />
+      <Main articles={articles} commentary={commentary} />
     </Layout>
   )
 }
 
 export const getStaticProps = () => {
-  const { articles, comments, publications, tools } = getCombinedContents()
+  const { articles, commentary, comments, publications, tools } =
+    getCombinedContents()
 
   return {
     props: {
       articles,
+      commentary,
       count:
-        articles.length + comments.length + publications.length + tools.length,
+        articles.length +
+        commentary.length +
+        comments.length +
+        publications.length +
+        tools.length,
     },
   }
 }

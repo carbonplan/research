@@ -23,7 +23,7 @@ const sx = {
 }
 
 const List = forwardRef(
-  ({ id, label, items, selected, limit = 4, Entries }, ref) => {
+  ({ id, label, items, selected, filter, limit = 4, Entries }, ref) => {
     const index = useBreakpointIndex({ defaultIndex: 2 })
     const showAllItems = index < 2
     const [{ expanded, initial }, setExpanded] = useState({
@@ -34,9 +34,9 @@ const List = forwardRef(
       if (showAllItems || items.length <= limit || expanded) {
         return items
       } else {
-        return items.slice(0, limit)
+        return filter ? filter(items) : items.slice(0, limit)
       }
-    }, [expanded, items, limit, showAllItems])
+    }, [expanded, items, filter, limit, showAllItems])
 
     // Scroll to top of section when expander is closed
     useEffect(() => {
