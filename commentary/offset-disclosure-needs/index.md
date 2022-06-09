@@ -9,7 +9,6 @@ date: 02-08-2022
 summary: Voluntary carbon markets don't provide investors with adequate data about who is using offset credits, nor what kinds of climate claims those credits justify. Simple disclosures would fix this gap.
 card: offset-disclosure-needs
 color: yellow
-commentary: true
 links:
   - label: Link One
     href: https://grist.org

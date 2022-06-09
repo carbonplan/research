@@ -27,8 +27,8 @@ import {
 
 import {
   articleMetadata,
+  commentaryMetadata,
   supplementMetadata,
-  ARTICLES_PATH,
 } from '../../utils/mdx'
 import { displayTitles, pageComponents } from '../../components/mdx'
 
@@ -118,17 +118,24 @@ export const getStaticProps = async ({ params }) => {
   let type
   let metadata = articleMetadata.find((d) => d.id === params.id)
   if (metadata) {
-    type = metadata.commentary ? 'commentary' : 'article'
+    type = 'article'
   } else {
-    metadata = supplementMetadata.find((d) => d.id === params.id)
-    type = 'supplement'
+    metadata = commentaryMetadata.find((d) => d.id === params.id)
+    if (metadata) {
+      type = 'commentary'
+    } else {
+      metadata = supplementMetadata.find((d) => d.id === params.id)
+      type = 'supplement'
+    }
   }
+
+  console.log('supplementMetadata', supplementMetadata)
 
   if (!metadata) {
     throw new Error(`No metadata found for id: ${params.id}`)
   }
 
-  const source = fs.readFileSync(path.join(ARTICLES_PATH, metadata.path))
+  const source = fs.readFileSync(metadata.path)
 
   const { content, data } = matter(source)
 
@@ -159,12 +166,15 @@ export const getStaticPaths = async () => {
   const articlePaths = articleMetadata.map(({ id }) => ({
     params: { id },
   }))
+  const commentaryPaths = commentaryMetadata.map(({ id }) => ({
+    params: { id },
+  }))
   const supplementPaths = supplementMetadata.map(({ id }) => ({
     params: { id },
   }))
 
   return {
-    paths: [...articlePaths, ...supplementPaths],
+    paths: [...articlePaths, ...commentaryPaths, ...supplementPaths],
     fallback: false,
   }
 }
