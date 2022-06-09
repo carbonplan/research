@@ -59,6 +59,7 @@ const components = {
       ).then((mod) => mod.SummaryMap || mod.default)
     ),
   },
+  'offset-disclosure-needs': {},
   'ton-year-explainer': {
     CartoonEmissions: dynamic(() =>
       import(

@@ -1,0 +1,37 @@
+{
+  "test.1": {
+    "authors": "T Gasser et al.",
+    "year": 2015,
+    "title": "Negative emissions physically needed to keep global warming below 2°C",
+    "journal": "Nature Communications",
+    "url": "https://doi.org/10.1038/ncomms8958"
+  },
+  "test.2": {
+    "authors": "J DeAngelo et al.",
+    "year": 2021,
+    "title": "Energy systems in scenarios at net-zero CO₂ emissions",
+    "journal": "Nature Communications",
+    "url": "https://doi.org/10.1038/s41467-021-26356-y"
+  },
+  "test.3": {
+    "authors": "S van den Burg et al.",
+    "year": 2016,
+    "title": "The economic feasibility of seaweed production in the North Sea",
+    "journal": "Aquaculture Economics and Management",
+    "url": "https://doi.org/10.1080/13657305.2016.1177859"
+  },
+  "test.4": {
+    "authors": "T Correa et al.",
+    "year": 2016,
+    "title": "Production and economic assessment of giant kelp Macrocystis pyrifera cultivation for abalone feed in the south of Chile",
+    "journal": "Aquaculture Research",
+    "url": "https://doi.org/10.1111/are.12529"
+  },
+  "test.5": {
+    "authors": "C Camus et al.",
+    "year": 2019,
+    "title": "Revisiting the economic profitability of giant kelp Macrocystis pyrifera (Ochrophyta) cultivation in Chile",
+    "journal": "Aquaculture",
+    "url": "https://doi.org/10.1016/j.aquaculture.2018.12.030"
+  }
+}

@@ -9,6 +9,7 @@ import { Box } from 'theme-ui'
 import {
   Article,
   Cite,
+  Commentary,
   Endnote,
   PullQuote,
   Sidenote,
@@ -76,6 +77,23 @@ const Page = ({ id, type, source, frontMatter, references }) => {
           />
         </Article>
       )
+    case 'commentary':
+      return (
+        <Commentary
+          meta={frontMatter}
+          references={references}
+          displayTitle={displayTitles[id]}
+        >
+          <MDXRemote
+            {...source}
+            components={{
+              ...components,
+              ...ARTICLE_COMPONENTS,
+              ...pageComponents[id],
+            }}
+          />
+        </Commentary>
+      )
     case 'supplement':
       return (
         <Supplement meta={frontMatter} back={frontMatter.back}>
@@ -100,7 +118,7 @@ export const getStaticProps = async ({ params }) => {
   let type
   let metadata = articleMetadata.find((d) => d.id === params.id)
   if (metadata) {
-    type = 'article'
+    type = metadata.commentary ? 'commentary' : 'article'
   } else {
     metadata = supplementMetadata.find((d) => d.id === params.id)
     type = 'supplement'
