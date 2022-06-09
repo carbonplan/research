@@ -1,10 +1,10 @@
 import { Box, Flex } from 'theme-ui'
 import { useBreakpointIndex } from '@theme-ui/match-media'
-import { Row, Column, Link, LinkGroup } from '@carbonplan/components'
+import { Row, Column, Link, LinkGroup, Tag } from '@carbonplan/components'
 import { mix } from '@theme-ui/color'
 import Date from './date'
 
-const Item = ({ info, first }) => {
+const Item = ({ info, first, letter }) => {
   let { title, href, color, date, summary, links } = info
 
   const hoverColor = color ? 'text' : 'secondary'
@@ -30,6 +30,27 @@ const Item = ({ info, first }) => {
     >
       <Flex sx={{ justifyContent: 'space-between', mb: [3, 3, 2] }}>
         <Date date={date} />
+
+        {letter && (
+          <Box
+            sx={{
+              mb: [1],
+              mt: ['-8px', '-8px', '-4px', '-3px'],
+              textAlign: 'right',
+            }}
+          >
+            <Tag
+              sx={{
+                color: 'secondary',
+                lineHeight: 1.8,
+                display: 'initial',
+                width: 'fit-content',
+              }}
+            >
+              Comment Letter
+            </Tag>
+          </Box>
+        )}
       </Flex>
 
       <Box
@@ -103,9 +124,7 @@ const Letter = ({ info, first }) => {
         mb: [3, 5, 6, 6],
       }}
     >
-      <Flex sx={{ justifyContent: 'space-between', mb: [3, 3, 2] }}>
-        <Date date={date} />
-      </Flex>
+      <Date date={date} sx={{ mb: [3, 3, 2] }} />
 
       <Box
         sx={{
@@ -159,11 +178,29 @@ const Commentary = ({ items }) => {
         {items
           .filter((d) => index < 2 || d.type === 'commentary')
           .map((d, i) => (
-            <Item key={d.title} info={d} start={[1, 2, 1, 1]} first={i === 0} />
+            <Item
+              key={d.title}
+              info={d}
+              start={[1, 2, 1, 1]}
+              first={i === 0}
+              letter={d.type === 'letter'}
+            />
           ))}
       </Column>
       {index >= 2 && (
         <Column start={[1, 1, 6, 6]} width={[6, 8, 2, 2]}>
+          <Box
+            sx={{
+              color: 'secondary',
+              fontFamily: 'mono',
+              letterSpacing: '0.05em',
+              fontSize: [1, 1, 1, 2],
+              textTransform: 'uppercase',
+              mb: [0, 0, 4, 5],
+            }}
+          >
+            Comment Letters
+          </Box>
           {items
             .filter((d) => d.type === 'letter')
             .map((d) => (
