@@ -5,7 +5,8 @@ import { mix } from '@theme-ui/color'
 import Date from './date'
 
 const Item = ({ info, first, letter }) => {
-  let { title, href, color, date, summary, links } = info
+  console.log(info)
+  let { title, href, color, date, summary, links, id } = info
 
   const hoverColor = color ? 'text' : 'secondary'
   color = color || 'text'
@@ -81,7 +82,7 @@ const Item = ({ info, first, letter }) => {
             },
           }}
           tabIndex='-1'
-          href={href}
+          href={id ? `/research/${id}` : href}
           tracking
         >
           {title}
