@@ -129,8 +129,6 @@ export const getStaticProps = async ({ params }) => {
     }
   }
 
-  console.log('supplementMetadata', supplementMetadata)
-
   if (!metadata) {
     throw new Error(`No metadata found for id: ${params.id}`)
   }

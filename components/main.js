@@ -56,8 +56,6 @@ const Main = ({ articles, commentary }) => {
   const selected = router.query.section || 'highlights'
 
   const combinedCommentary = useMemo(() => {
-    console.log('recalculating combined commentary')
-
     const combined = [
       ...commentary.map((c) => ({ ...c, type: 'commentary' })),
       ...comments.map((l) => ({ ...l, type: 'letter' })),

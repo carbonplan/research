@@ -5,7 +5,6 @@ import { mix } from '@theme-ui/color'
 import Date from './date'
 
 const Item = ({ info, first, letter }) => {
-  console.log(info)
   let { title, href, color, date, summary, links, id } = info
 
   const hoverColor = color ? 'text' : 'secondary'
