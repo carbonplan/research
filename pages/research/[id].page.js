@@ -1,6 +1,5 @@
 import fs from 'fs'
 import matter from 'gray-matter'
-import path from 'path'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import { useMDXComponents } from '@mdx-js/react'
