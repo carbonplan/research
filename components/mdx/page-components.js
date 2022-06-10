@@ -59,7 +59,6 @@ const components = {
       ).then((mod) => mod.SummaryMap || mod.default)
     ),
   },
-  'offset-disclosure-needs': {},
   'ton-year-explainer': {
     CartoonEmissions: dynamic(() =>
       import(
@@ -310,6 +309,7 @@ const components = {
       )
     ),
   },
+  'offset-disclosure-needs': {},
   'forest-offsets-explainer-faq': {
     CommonPractice: dynamic(() =>
       import(

@@ -5,24 +5,19 @@ const matter = require('gray-matter')
 
 // Utils based on examples in https://github.com/vercel/next.js/tree/canary/examples/with-mdx-remote
 
-// ARTICLES_PATH is useful when you want to get the path to a specific file
-const ARTICLES_PATH = path.join(process.cwd(), 'articles')
-
 // articles is the list of all article folders inside the ARTICLES_PATH directory
 const articles = fs
-  .readdirSync(ARTICLES_PATH)
+  .readdirSync(path.join(process.cwd(), 'articles'))
   .filter((p) => p.match(/^[\w|\d|-]+$/))
-
-// COMMENTARY_PATH is useful when you want to get the path to a specific file
-const COMMENTARY_PATH = path.join(process.cwd(), 'commentary')
 
 // commentary is the list of all commentary folders inside the COMMENTARY_PATH directory
 const commentary = fs
-  .readdirSync(COMMENTARY_PATH)
+  .readdirSync(path.join(process.cwd(), 'commentary'))
   .filter((p) => p.match(/^[\w|\d|-]+$/))
 
-const getMetadata = (ids, directory) =>
-  ids
+const getMetadata = (ids, folder) => {
+  const directory = path.join(process.cwd(), folder)
+  return ids
     .map((id) => {
       const source = fs.readFileSync(path.join(directory, `${id}/index.md`))
       let references
@@ -39,11 +34,13 @@ const getMetadata = (ids, directory) =>
         ...data,
         id,
         references,
+        folder,
         path: `${directory}/${id}/index.md`,
       }
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .map((meta, idx) => ({ ...meta, number: ids.length - 1 - idx }))
+}
 
 const supplementMetadata = glob
   .sync('./@(articles|commentary)/**/!(index).md')
@@ -53,19 +50,21 @@ const supplementMetadata = glob
     const source = fs.readFileSync(supplementPath)
     const { data } = matter(source)
 
-    const directory = supplementPath.match(/\.\/articles/)
-      ? ARTICLES_PATH
-      : COMMENTARY_PATH
+    const folder = supplementPath.match(/\.\/articles/)
+      ? 'articles'
+      : 'commentary'
+    const directory = path.join(process.cwd(), folder)
     return {
       ...data,
-      id,
+      parentId: id,
+      folder: folder,
       id: `${id}-${fileName}`,
       path: `${directory}/${id}/${fileName}.md`,
     }
   })
 
 module.exports = {
-  articleMetadata: getMetadata(articles, ARTICLES_PATH),
-  commentaryMetadata: getMetadata(commentary, COMMENTARY_PATH),
+  articleMetadata: getMetadata(articles, 'articles'),
+  commentaryMetadata: getMetadata(commentary, 'commentary'),
   supplementMetadata,
 }

@@ -1,24 +1,30 @@
 const fs = require('fs')
 const glob = require('glob')
-const { articleMetadata, supplementMetadata } = require('./utils/mdx.js')
+const {
+  articleMetadata,
+  commentaryMetadata,
+  supplementMetadata,
+} = require('./utils/mdx.js')
 
 glob.sync('./components/mdx/page-components.js').forEach((f) => {
   if (fs.rmSync) return fs.rmSync(f)
 })
 
 const buildComponents = () => {
-  const componentMapping = [...articleMetadata, ...supplementMetadata].map(
-    ({ articleId, id, components = [] }) => ({
-      id,
-      imports: components.map(({ name, src, exportName }) => ({
-        name,
-        exportName,
-        src: src
-          .replace(/^\.\//, `../../articles/${articleId ?? id}/`)
-          .replace('../../components/', '../'),
-      })),
-    })
-  )
+  const componentMapping = [
+    ...articleMetadata,
+    ...commentaryMetadata,
+    ...supplementMetadata,
+  ].map(({ parentId, folder, id, components = [] }) => ({
+    id,
+    imports: components.map(({ name, src, exportName }) => ({
+      name,
+      exportName,
+      src: src
+        .replace(/^\.\//, `../../${folder}/${parentId ?? id}/`)
+        .replace('../../components/', '../'),
+    })),
+  }))
 
   const file = `
   import dynamic from 'next/dynamic'
