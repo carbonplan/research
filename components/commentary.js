@@ -31,14 +31,14 @@ const Item = ({ info, first, letter }) => {
       <Flex sx={{ justifyContent: 'space-between', mb: [3, 3, 2] }}>
         <Date date={date} />
 
-        {letter && (
-          <Box
-            sx={{
-              mb: [1],
-              mt: ['-8px', '-8px', '-4px', '-3px'],
-              textAlign: 'right',
-            }}
-          >
+        <Box
+          sx={{
+            mb: [1],
+            mt: ['-8px', '-8px', '-4px', '-3px'],
+            textAlign: 'right',
+          }}
+        >
+          {letter ? (
             <Tag
               sx={{
                 color: 'secondary',
@@ -49,8 +49,10 @@ const Item = ({ info, first, letter }) => {
             >
               Comment Letter
             </Tag>
-          </Box>
-        )}
+          ) : (
+            <Box sx={{ height: ['0px', '0px', '25.2px', '28.8px'] }} />
+          )}
+        </Box>
       </Flex>
 
       <Box

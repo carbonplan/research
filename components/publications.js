@@ -30,14 +30,14 @@ const Publication = ({ info, first }) => {
     >
       <Flex sx={{ justifyContent: 'space-between', mb: [3, 3, 2] }}>
         <Date date={date} />
-        {journal && (
-          <Box
-            sx={{
-              mb: [1],
-              mt: ['-8px', '-8px', '-4px', '-3px'],
-              textAlign: 'right',
-            }}
-          >
+        <Box
+          sx={{
+            mb: [1],
+            mt: ['-8px', '-8px', '-4px', '-3px'],
+            textAlign: 'right',
+          }}
+        >
+          {journal ? (
             <Tag
               sx={{
                 color: 'secondary',
@@ -48,8 +48,10 @@ const Publication = ({ info, first }) => {
             >
               {journal}
             </Tag>
-          </Box>
-        )}
+          ) : (
+            <Box sx={{ height: ['0px', '0px', '25.2px', '28.8px'] }} />
+          )}
+        </Box>
       </Flex>
 
       <Box
