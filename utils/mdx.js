@@ -45,8 +45,8 @@ const getMetadata = (ids, folder) => {
 const supplementMetadata = glob
   .sync('./@(articles|commentary)/**/!(index).md')
   .map((supplementPath) => {
-    const [id] = supplementPath.match(/[^\/]+(?=\/[^\/]+\.md)/)
-    const [fileName] = supplementPath.match(/[^\/]+(?=\.md)/)
+    const [id] = supplementPath.match(/[^/]+(?=\/[^/]+\.md)/)
+    const [fileName] = supplementPath.match(/[^/]+(?=\.md)/)
     const source = fs.readFileSync(supplementPath)
     const { data } = matter(source)
 
