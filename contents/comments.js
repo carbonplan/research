@@ -1,5 +1,20 @@
 const comments = [
   {
+    color: 'secondary',
+    title:
+      'Comments to the Securities and Exchange Commission on climate-related financial disclosures',
+    href: 'https://files.carbonplan.org/SEC-Climate-Disclosures-Comment-Letter-06-16-2022.pdf',
+    summary:
+      'We commented in support of the proposed Securities and Exchange Commission (SEC) regulation that would require climate-related financial disclosures from publicly-traded companies. Our comments focus on the disclosure of carbon offsets and related financial risks.',
+    date: '06-16-2022',
+    links: [
+      {
+        label: 'Blog post',
+        href: 'https://carbonplan.org/blog/climate-financial-risks',
+      },
+    ],
+  },
+  {
     color: 'grey',
     title:
       'Comments to the White House Office of Science and Technology Policy on digital assets',
