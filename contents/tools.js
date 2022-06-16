@@ -1,5 +1,6 @@
 import {
-  ForestOffsets,
+  ForestOffsetsCrediting,
+  ForestOffsetsFires,
   ForestRisks,
   CDRDatabase,
   PermanenceCalculator,
@@ -48,12 +49,20 @@ const tools = [
     title: 'Soil Protocols',
   },
   {
-    id: 'forest-offsets',
-    logo: <ForestOffsets />,
-    color: 'green',
+    id: 'forest-offsets-fires',
+    logo: <ForestOffsetsFires />,
+    color: 'red',
     summary:
       'Mapping forest carbon offset projects and their intersections with fires.',
-    title: 'Forest Offsets',
+    title: 'Offsets Fires',
+  },
+  {
+    id: 'forest-offsets-crediting',
+    logo: <ForestOffsetsCrediting />,
+    color: 'green',
+    summary:
+      'Mapping our over-crediting analysis of forest carbon offset projects.',
+    title: 'Offsets Crediting',
   },
   {
     id: 'forest-risks',

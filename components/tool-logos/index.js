@@ -1,4 +1,5 @@
-export { default as ForestOffsets } from './forest-offsets'
+export { default as ForestOffsetsCrediting } from './forest-offsets-crediting'
+export { default as ForestOffsetsFires } from './forest-offsets-fires'
 export { default as ForestRisks } from './forest-risks'
 export { default as ForestCarbon } from './forest-carbon'
 export { default as CDRDatabase } from './cdr-database'
