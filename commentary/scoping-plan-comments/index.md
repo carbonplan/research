@@ -6,7 +6,7 @@ authors:
 date: 05-17-2022
 summary: California’s net-zero climate plan is long on carbon removal, short on details, and based on flawed analysis.
 card: scoping-plan-comments
-color: secondary
+color: yellow
 components:
   - name: EmissionsTable
     src: ./components/emissions-table.js
