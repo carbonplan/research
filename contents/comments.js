@@ -32,11 +32,23 @@ const comments = [
     title: "Letter to Verra Re: NCX's proposed harvest deferral methodology",
     href: 'https://files.carbonplan.org/Verra-NCX-Harvest-Deferral-Comment-Letter-04-21-2022.pdf',
     date: '04-21-2022',
+    links: [
+      {
+        label: 'Blog post',
+        href: '/research/ton-year-verra',
+      },
+    ],
   },
   {
     title: 'Letter to Verra Re: Proposed updates to the VCS Program',
     href: 'https://files.carbonplan.org/Verra-Ton-Year-Comment-Letter-04-08-22.pdf',
     date: '04-08-2022',
+    links: [
+      {
+        label: 'Blog post',
+        href: '/research/ton-year-verra',
+      },
+    ],
   },
   {
     title:
