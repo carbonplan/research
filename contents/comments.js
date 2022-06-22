@@ -1,6 +1,18 @@
 const comments = [
   {
     title:
+      'Letter to the Securities and Exchange Commission Re: Climate-related financial disclosures',
+    href: 'https://files.carbonplan.org/SEC-Climate-Disclosures-Comment-Letter-06-16-2022.pdf',
+    date: '06-16-2022',
+    links: [
+      {
+        label: 'Blog post',
+        href: 'https://carbonplan.org/blog/climate-financial-risks',
+      },
+    ],
+  },
+  {
+    title:
       'Letter to White House Office of Science and Technology Policy Re: Digital assets',
     href: 'https://files.carbonplan.org/OSTP-Digital-Assets-Comment-Letter-05-09-2022.pdf',
     date: '05-09-2022',
