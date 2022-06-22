@@ -27,12 +27,12 @@ const filterCommentary = (items) => {
   let letters = 0
 
   return items.filter((item) => {
-    if (item.type === 'commentary' && commentary < 5) {
+    if (item.type === 'commentary' && commentary < 3) {
       commentary++
       return true
     }
 
-    if (item.type === 'letter' && letters < 3) {
+    if (item.type === 'letter' && letters < 4) {
       letters++
       return true
     }
