@@ -6,8 +6,8 @@ const comments = [
     date: '06-16-2022',
     links: [
       {
-        label: 'Blog post',
-        href: 'https://carbonplan.org/blog/climate-financial-risks',
+        label: 'Commentary',
+        href: 'https://carbonplan.org/research/climate-financial-risks',
       },
     ],
   },

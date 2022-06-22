@@ -309,7 +309,42 @@ const components = {
       )
     ),
   },
+  'scoping-plan-comments': {
+    EmissionsTable: dynamic(() =>
+      import(
+        '../../commentary/scoping-plan-comments/components/emissions-table.js'
+      ).then((mod) => mod.EmissionsTable || mod.default)
+    ),
+    EmissionsTargets: dynamic(() =>
+      import(
+        '../../commentary/scoping-plan-comments/components/emissions-targets.js'
+      ).then((mod) => mod.EmissionsTargets || mod.default)
+    ),
+    EmissionsPlans: dynamic(() =>
+      import(
+        '../../commentary/scoping-plan-comments/components/emissions-plans.js'
+      ).then((mod) => mod.EmissionsPlans || mod.default)
+    ),
+    DifferenceTable: dynamic(() =>
+      import(
+        '../../commentary/scoping-plan-comments/components/difference-table.js'
+      ).then((mod) => mod.DifferenceTable || mod.default)
+    ),
+  },
   'offset-disclosure-needs': {},
+  'ton-year-ncx': {
+    TableHundred: dynamic(() =>
+      import('../../commentary/ton-year-ncx/components/table-hundred.js').then(
+        (mod) => mod.TableHundred || mod.default
+      )
+    ),
+    TableThousand: dynamic(() =>
+      import('../../commentary/ton-year-ncx/components/table-thousand.js').then(
+        (mod) => mod.TableThousand || mod.default
+      )
+    ),
+  },
+  'climate-financial-risks': {},
   'forest-offsets-explainer-faq': {
     CommonPractice: dynamic(() =>
       import(

@@ -29,7 +29,10 @@ const HIGHLIGHTS = [
       "There's growing interest in methods to value temporary carbon storage. In two recent pieces, we explain a practice called ton-year accounting, and raise concerns about how it's being used in practice.",
     links: [
       { label: 'Explainer article', href: '/research/ton-year-explainer' },
-      { label: 'Our critique of NCX’s methods', href: '/blog/ton-year-ncx' },
+      {
+        label: 'Our critique of NCX’s methods',
+        href: '/research/ton-year-ncx',
+      },
     ],
   },
 ]
