@@ -1,7 +1,7 @@
 const comments = [
   {
     title:
-      'Letter to the Securities and Exchange Commission Re: Climate-related financial disclosures',
+      'Letter to the U.S. Securities and Exchange Commission Re: Climate-related financial disclosures',
     href: 'https://files.carbonplan.org/SEC-Climate-Disclosures-Comment-Letter-06-16-2022.pdf',
     date: '06-16-2022',
     links: [
@@ -13,7 +13,7 @@ const comments = [
   },
   {
     title:
-      'Letter to White House Office of Science and Technology Policy Re: Digital assets',
+      'Letter to the White House Office of Science and Technology Policy Re: Digital assets',
     href: 'https://files.carbonplan.org/OSTP-Digital-Assets-Comment-Letter-05-09-2022.pdf',
     date: '05-09-2022',
     links: [
@@ -24,7 +24,7 @@ const comments = [
     ],
   },
   {
-    title: 'Letter to European Commission Re: Certifying carbon removal',
+    title: 'Letter to the European Commission Re: Certifying carbon removal',
     href: 'https://files.carbonplan.org/EU-CDR-Certification-Comment-Letter-05-02-2022.pdf',
     date: '05-02-2022',
   },
@@ -52,7 +52,7 @@ const comments = [
   },
   {
     title:
-      'Letter to Office of the Comptroller of the Currency Re: Climate-related financial risk',
+      'Letter to the Office of the Comptroller of the Currency Re: Climate-related financial risk',
     href: 'https://files.carbonplan.org/OCC-Climate-Risks-Comments-02-14-2022.pdf',
     date: '02-14-2022',
     links: [
@@ -70,7 +70,7 @@ const comments = [
   {
     date: '11-01-2021',
     title:
-      'Letter to United States Department of Agriculture Re: Climate-smart commodity markets',
+      'Letter to the U.S. Department of Agriculture Re: Climate-smart commodity markets',
     href: 'https://files.carbonplan.org/USDA-CSAF-Comment-Letter-11-01-21.pdf',
     links: [
       {
@@ -82,7 +82,7 @@ const comments = [
   {
     date: '01-05-2021',
     title:
-      'Letter to Taskforce Scaling Voluntary Carbon Markets Re: Initial recommendations',
+      'Letter to the Taskforce Scaling Voluntary Carbon Markets Re: Initial recommendations',
     href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf',
     links: [
       {
@@ -97,7 +97,8 @@ const comments = [
   },
   {
     date: '08-25-2020',
-    title: 'Letter to Climate Action Reserve Re: Soil Enrichment Protocol #2',
+    title:
+      'Letter to the Climate Action Reserve Re: Soil Enrichment Protocol #2',
     href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
     links: [
       {
@@ -108,7 +109,8 @@ const comments = [
   },
   {
     date: '05-18-2020',
-    title: 'Letter to Climate Action Reserve Re: Soil Enrichment Protocol #1',
+    title:
+      'Letter to the Climate Action Reserve Re: Soil Enrichment Protocol #1',
     href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
     links: [
       {
