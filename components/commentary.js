@@ -4,7 +4,7 @@ import { Row, Column, Link, LinkGroup, Tag } from '@carbonplan/components'
 import { mix } from '@theme-ui/color'
 import Date from './date'
 
-const Item = ({ info, first, letter }) => {
+const Item = ({ info, first, type }) => {
   let { title, href, color, date, summary, links, id } = info
 
   const hoverColor = color ? 'text' : 'secondary'
@@ -38,20 +38,17 @@ const Item = ({ info, first, letter }) => {
             textAlign: 'right',
           }}
         >
-          {letter ? (
-            <Tag
-              sx={{
-                color: 'secondary',
-                lineHeight: 1.8,
-                display: 'initial',
-                width: 'fit-content',
-              }}
-            >
-              Comment Letter
-            </Tag>
-          ) : (
-            <Box sx={{ height: ['0px', '0px', '25.2px', '28.8px'] }} />
-          )}
+          <Tag
+            sx={{
+              color: 'secondary',
+              lineHeight: 1.8,
+              display: ['initial', 'initial', 'none', 'none'],
+              width: 'fit-content',
+            }}
+          >
+            {type === 'letter' ? 'Comment Letter' : 'Policy Brief'}
+          </Tag>
+          <Box sx={{ height: ['0px', '0px', '25.2px', '28.8px'] }} />
         </Box>
       </Flex>
 
@@ -177,6 +174,20 @@ const Commentary = ({ items }) => {
   return (
     <Row columns={[6, 8, 7, 7]}>
       <Column start={[1, 1, 1, 1]} width={[6, 8, 4, 4]}>
+        <Box
+          sx={{
+            color: 'secondary',
+            fontFamily: 'mono',
+            letterSpacing: '0.05em',
+            fontSize: [1, 1, 1, 2],
+            textTransform: 'uppercase',
+            display: ['none', 'none', 'block', 'block'],
+            mb: [0, 0, 4, 5],
+          }}
+        >
+          Policy Briefs
+        </Box>
+
         {items
           .filter((d) => index < 2 || d.type === 'commentary')
           .map((d, i) => (
@@ -185,7 +196,7 @@ const Commentary = ({ items }) => {
               info={d}
               start={[1, 2, 1, 1]}
               first={i === 0}
-              letter={d.type === 'letter'}
+              type={d.type}
             />
           ))}
       </Column>
