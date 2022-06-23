@@ -18,6 +18,8 @@ icon: articles/013/blowing-small
 links:
   - label: Our critique of NCX’s methods
     href: /research/ton-year-ncx
+  - label: Comment letters to Verra
+    href: /blog/ton-year-verra
 components:
   - name: CartoonEmissions
     src: ./components/cartoon-emissions.js
