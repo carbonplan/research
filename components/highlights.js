@@ -33,6 +33,10 @@ const HIGHLIGHTS = [
         label: 'Our critique of NCX’s methods',
         href: '/research/ton-year-ncx',
       },
+      {
+        label: 'Comment letters to Verra',
+        href: '/blog/ton-year-verra',
+      },
     ],
   },
 ]
