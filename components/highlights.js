@@ -18,6 +18,10 @@ const HIGHLIGHTS = [
         label: 'Explainer article',
         href: '/research/seaweed-farming-explainer',
       },
+      {
+        label: 'Followup blog post',
+        href: '/blog/seaweed-farming-clarifications',
+      },
     ],
   },
   {
