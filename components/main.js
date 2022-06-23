@@ -1,5 +1,5 @@
 import { Box } from 'theme-ui'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
 import { Column, Heading, Row } from '@carbonplan/components'
 import { useBreakpointIndex } from '@theme-ui/match-media'
@@ -22,25 +22,6 @@ const sortByDate = (items) => {
   return items.sort((a, b) => getDate(b.date) - getDate(a.date))
 }
 
-const filterCommentary = (items) => {
-  let commentary = 0
-  let letters = 0
-
-  return items.filter((item) => {
-    if (item.type === 'commentary' && commentary < 3) {
-      commentary++
-      return true
-    }
-
-    if (item.type === 'letter' && letters < 4) {
-      letters++
-      return true
-    }
-
-    return false
-  })
-}
-
 const Main = ({ articles, commentary }) => {
   const router = useRouter()
   const navRef = useRef(null)
@@ -54,15 +35,6 @@ const Main = ({ articles, commentary }) => {
   const customScroll = useCustomScroll()
   const index = useBreakpointIndex({ defaultIndex: 2 })
   const selected = router.query.section || 'highlights'
-
-  const combinedCommentary = useMemo(() => {
-    const combined = [
-      ...commentary.map((c) => ({ ...c, type: 'commentary' })),
-      ...comments.map((l) => ({ ...l, type: 'letter' })),
-    ]
-
-    return sortByDate(combined)
-  }, [commentary])
 
   const scrollToSection = (id) => {
     if (index < 2) {
@@ -191,8 +163,6 @@ const Main = ({ articles, commentary }) => {
             selected={selected === 'commentary'}
             comments={comments}
             commentary={commentary}
-            items={combinedCommentary}
-            filter={filterCommentary}
             Entries={Commentary}
             ref={listRefs.commentary}
           />

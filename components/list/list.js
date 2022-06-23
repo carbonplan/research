@@ -5,7 +5,7 @@ import ListExpander from './list-expander'
 import ListWrapper from './list-wrapper'
 
 const List = forwardRef(
-  ({ id, label, items, selected, filter, limit = 4, Entries }, ref) => {
+  ({ id, label, items, selected, limit = 4, Entries }, ref) => {
     const index = useBreakpointIndex({ defaultIndex: 2 })
     const showAllItems = index < 2
     const [{ expanded, initial }, setExpanded] = useState({
@@ -16,9 +16,9 @@ const List = forwardRef(
       if (showAllItems || items.length <= limit || expanded) {
         return items
       } else {
-        return filter ? filter(items) : items.slice(0, limit)
+        return items.slice(0, limit)
       }
-    }, [expanded, items, filter, limit, showAllItems])
+    }, [expanded, items, limit, showAllItems])
 
     // Scroll to top of section when expander is closed
     useEffect(() => {
