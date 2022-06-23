@@ -1,6 +1,5 @@
 import fs from 'fs'
 import matter from 'gray-matter'
-import path from 'path'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import { useMDXComponents } from '@mdx-js/react'
@@ -9,6 +8,7 @@ import { Box } from 'theme-ui'
 import {
   Article,
   Cite,
+  Commentary,
   Endnote,
   PullQuote,
   Sidenote,
@@ -26,8 +26,8 @@ import {
 
 import {
   articleMetadata,
+  commentaryMetadata,
   supplementMetadata,
-  ARTICLES_PATH,
 } from '../../utils/mdx'
 import { displayTitles, pageComponents } from '../../components/mdx'
 
@@ -76,6 +76,23 @@ const Page = ({ id, type, source, frontMatter, references }) => {
           />
         </Article>
       )
+    case 'commentary':
+      return (
+        <Commentary
+          meta={frontMatter}
+          references={references}
+          displayTitle={displayTitles[id]}
+        >
+          <MDXRemote
+            {...source}
+            components={{
+              ...components,
+              ...ARTICLE_COMPONENTS,
+              ...pageComponents[id],
+            }}
+          />
+        </Commentary>
+      )
     case 'supplement':
       return (
         <Supplement meta={frontMatter} back={frontMatter.back}>
@@ -102,15 +119,20 @@ export const getStaticProps = async ({ params }) => {
   if (metadata) {
     type = 'article'
   } else {
-    metadata = supplementMetadata.find((d) => d.id === params.id)
-    type = 'supplement'
+    metadata = commentaryMetadata.find((d) => d.id === params.id)
+    if (metadata) {
+      type = 'commentary'
+    } else {
+      metadata = supplementMetadata.find((d) => d.id === params.id)
+      type = 'supplement'
+    }
   }
 
   if (!metadata) {
     throw new Error(`No metadata found for id: ${params.id}`)
   }
 
-  const source = fs.readFileSync(path.join(ARTICLES_PATH, metadata.path))
+  const source = fs.readFileSync(metadata.path)
 
   const { content, data } = matter(source)
 
@@ -141,12 +163,15 @@ export const getStaticPaths = async () => {
   const articlePaths = articleMetadata.map(({ id }) => ({
     params: { id },
   }))
+  const commentaryPaths = commentaryMetadata.map(({ id }) => ({
+    params: { id },
+  }))
   const supplementPaths = supplementMetadata.map(({ id }) => ({
     params: { id },
   }))
 
   return {
-    paths: [...articlePaths, ...supplementPaths],
+    paths: [...articlePaths, ...commentaryPaths, ...supplementPaths],
     fallback: false,
   }
 }

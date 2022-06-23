@@ -17,7 +17,9 @@ summary: Ton-year accounting is used to quantify the value of temporary carbon s
 icon: articles/013/blowing-small
 links:
   - label: Our critique of NCX’s methods
-    href: /blog/ton-year-ncx
+    href: /research/ton-year-ncx
+  - label: Comment letters to Verra
+    href: /blog/ton-year-verra
 components:
   - name: CartoonEmissions
     src: ./components/cartoon-emissions.js
@@ -236,7 +238,7 @@ The choice to apply a discount rate is more complicated than it may appear. If t
 
 If instead the goal is to produce equivalence claims about economic outcomes, things get more complicated. Calculating the economic value of temporary carbon storage requires translating CO₂ emissions into economic damages. To do this, economists use “damage functions” that take variables like future temperatures and sea-level rise as inputs and generate costs in terms of dollars. Climate economists apply discount rates to those calculated costs to represent them in net present value calculations—a well-established practice we wrote about [here](https://carbonplan.org/research/permanence-calculator-explainer). There are good reasons to think about the economic trade-offs of different climate solutions via net present value calculations, but doing so adds layers of complexity and normative decision-making that must be navigated with care.
 
-By applying a discount rate, NCX makes an economic equivalence claim rather than a physical equivalence claim. The specifics of their approach to economic valuation raise significant questions about their claimed equivalence ratios, which we’ve written about in an accompanying [blog post](https://carbonplan.org/blog/ton-year-ncx). We are also concerned that NCX markets its credits as producing “equivalent climate impacts” compared to permanent carbon storage, when in fact the use of a discount rate allows for greater climate impacts tomorrow in exchange for temporary climate benefits today.
+By applying a discount rate, NCX makes an economic equivalence claim rather than a physical equivalence claim. The specifics of their approach to economic valuation raise significant questions about their claimed equivalence ratios, which we’ve written about in an accompanying [policy brief](/research/ton-year-ncx). We are also concerned that NCX markets its credits as producing “equivalent climate impacts” compared to permanent carbon storage, when in fact the use of a discount rate allows for greater climate impacts tomorrow in exchange for temporary climate benefits today.
 
 <PullQuote>
   When companies overestimate the physical value of temporary storage, they

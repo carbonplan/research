@@ -5,8 +5,9 @@ import { Column, Heading, Row } from '@carbonplan/components'
 import { useBreakpointIndex } from '@theme-ui/match-media'
 
 import { publications, comments, tools } from '../contents/index'
-import List from './list'
+import List, { CommentaryList } from './list'
 import Articles from './articles'
+import Commentary from './commentary'
 import Publications from './publications'
 import Tools from './tools'
 import Highlights from './highlights'
@@ -21,14 +22,14 @@ const sortByDate = (items) => {
   return items.sort((a, b) => getDate(b.date) - getDate(a.date))
 }
 
-const Main = ({ articles }) => {
+const Main = ({ articles, commentary }) => {
   const router = useRouter()
   const navRef = useRef(null)
   const listRefs = {
     tools: useRef(null),
     articles: useRef(null),
+    commentary: useRef(null),
     publications: useRef(null),
-    comments: useRef(null),
   }
   const [scrolled, setScrolled] = useState(null)
   const customScroll = useCustomScroll()
@@ -145,7 +146,6 @@ const Main = ({ articles }) => {
             selected={selected === 'tools'}
             items={tools}
             Entries={Tools}
-            width={8}
             limit={6}
             ref={listRefs.tools}
           />
@@ -154,9 +154,17 @@ const Main = ({ articles }) => {
             id='articles'
             selected={selected === 'articles'}
             items={articles}
-            width={8}
             Entries={Articles}
             ref={listRefs.articles}
+          />
+          <CommentaryList
+            label='Commentary'
+            id='commentary'
+            selected={selected === 'commentary'}
+            comments={comments}
+            commentary={commentary}
+            Entries={Commentary}
+            ref={listRefs.commentary}
           />
           <List
             label='Publications'
@@ -165,14 +173,6 @@ const Main = ({ articles }) => {
             items={sortByDate(publications)}
             Entries={Publications}
             ref={listRefs.publications}
-          />
-          <List
-            label='Comment letters'
-            id='comments'
-            selected={selected === 'comments'}
-            items={sortByDate(comments)}
-            Entries={Publications}
-            ref={listRefs.comments}
           />
         </Column>
       </Row>

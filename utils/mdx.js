@@ -5,55 +5,66 @@ const matter = require('gray-matter')
 
 // Utils based on examples in https://github.com/vercel/next.js/tree/canary/examples/with-mdx-remote
 
-// ARTICLES_PATH is useful when you want to get the path to a specific file
-const ARTICLES_PATH = path.join(process.cwd(), 'articles')
-
 // articles is the list of all article folders inside the ARTICLES_PATH directory
 const articles = fs
-  .readdirSync(ARTICLES_PATH)
+  .readdirSync(path.join(process.cwd(), 'articles'))
   .filter((p) => p.match(/^[\w|\d|-]+$/))
 
-// articleMetadata is the list metadata objects for all articles
-const articleMetadata = articles
-  .map((id) => {
-    const source = fs.readFileSync(path.join(ARTICLES_PATH, `${id}/index.md`))
-    let references
-    try {
-      references = fs.readFileSync(
-        path.join(ARTICLES_PATH, `${id}/references.json`)
-      )
-      references = JSON.parse(references)
-    } catch {
-      references = {}
-    }
-    const { data } = matter(source)
-    return {
-      ...data,
-      id,
-      references,
-      path: `${id}/index.md`,
-    }
-  })
-  .sort((a, b) => new Date(b.date) - new Date(a.date))
-  .map((meta, idx) => ({ ...meta, number: articles.length - 1 - idx }))
+// commentary is the list of all commentary folders inside the COMMENTARY_PATH directory
+const commentary = fs
+  .readdirSync(path.join(process.cwd(), 'commentary'))
+  .filter((p) => p.match(/^[\w|\d|-]+$/))
+
+const getMetadata = (ids, folder) => {
+  const directory = path.join(process.cwd(), folder)
+  return ids
+    .map((id) => {
+      const source = fs.readFileSync(path.join(directory, `${id}/index.md`))
+      let references
+      try {
+        references = fs.readFileSync(
+          path.join(directory, `${id}/references.json`)
+        )
+        references = JSON.parse(references)
+      } catch {
+        references = {}
+      }
+      const { data } = matter(source)
+      return {
+        ...data,
+        id,
+        references,
+        folder,
+        path: `${directory}/${id}/index.md`,
+      }
+    })
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .map((meta, idx) => ({ ...meta, number: ids.length - 1 - idx }))
+}
 
 const supplementMetadata = glob
-  .sync('./articles/**/!(index).md')
+  .sync('./@(articles|commentary)/**/!(index).md')
   .map((supplementPath) => {
-    const [articleId] = supplementPath.match(/[^\/]+(?=\/[^\/]+\.md)/)
-    const [fileName] = supplementPath.match(/[^\/]+(?=\.md)/)
+    const [id] = supplementPath.match(/[^/]+(?=\/[^/]+\.md)/)
+    const [fileName] = supplementPath.match(/[^/]+(?=\.md)/)
     const source = fs.readFileSync(supplementPath)
     const { data } = matter(source)
+
+    const folder = supplementPath.match(/\.\/articles/)
+      ? 'articles'
+      : 'commentary'
+    const directory = path.join(process.cwd(), folder)
     return {
       ...data,
-      articleId,
-      id: `${articleId}-${fileName}`,
-      path: `${articleId}/${fileName}.md`,
+      parentId: id,
+      folder: folder,
+      id: `${id}-${fileName}`,
+      path: `${directory}/${id}/${fileName}.md`,
     }
   })
 
 module.exports = {
-  ARTICLES_PATH,
-  articleMetadata,
+  articleMetadata: getMetadata(articles, 'articles'),
+  commentaryMetadata: getMetadata(commentary, 'commentary'),
   supplementMetadata,
 }

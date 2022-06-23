@@ -28,6 +28,8 @@ links:
     href: https://doi.org/10.31223/X5PG9V
   - label: 'Preprint #2'
     href: https://doi.org/10.31223/X52P8Z
+  - label: Followup blog post
+    href: /blog/seaweed-farming-clarifications
 components:
   - name: CostCalculator
     src: ./components/cost-calculator/index.js

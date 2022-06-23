@@ -7,6 +7,7 @@
     "dev": "npm run build-components && NODE_ENV=development next -p 4000",
     "build": "npm run build-components && next build",
     "build-components": "node build-components.js && prettier --write components/mdx/page-components.js",
+    "build-cards": "node build-cards.js",
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci --reporters='default'"
@@ -27,7 +28,7 @@
     "@carbonplan/colormaps": "^3.0.2",
     "@carbonplan/components": "^11.5.1",
     "@carbonplan/icons": "^1.0.0",
-    "@carbonplan/layouts": "^2.2.1",
+    "@carbonplan/layouts": "^2.4.1",
     "@carbonplan/minimaps": "^1.0.0",
     "@carbonplan/seaweed-farming-model": "^1.0.0",
     "@carbonplan/theme": "^7.0.0",
@@ -68,6 +69,7 @@
     "babel-jest": "^27.4.6",
     "glob": "^7.1.7",
     "jest": "^27.4.7",
-    "prettier": "2.3.0"
+    "prettier": "2.3.0",
+    "puppeteer": "^10.4.0"
   }
 }
