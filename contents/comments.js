@@ -35,7 +35,7 @@ const comments = [
     links: [
       {
         label: 'Blog post',
-        href: '/research/ton-year-verra',
+        href: '/blog/ton-year-verra',
       },
     ],
   },
@@ -46,7 +46,7 @@ const comments = [
     links: [
       {
         label: 'Blog post',
-        href: '/research/ton-year-verra',
+        href: '/blog/ton-year-verra',
       },
     ],
   },
@@ -97,7 +97,7 @@ const comments = [
   },
   {
     date: '08-25-2020',
-    title: 'Letter to Climate Action Reserve Re: Soil Enrichment Protocol',
+    title: 'Letter to Climate Action Reserve Re: Soil Enrichment Protocol #2',
     href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
     links: [
       {
@@ -108,7 +108,7 @@ const comments = [
   },
   {
     date: '05-18-2020',
-    title: 'Letter to Climate Action Reserve Re: Soil Enrichment Protocol',
+    title: 'Letter to Climate Action Reserve Re: Soil Enrichment Protocol #1',
     href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
     links: [
       {
