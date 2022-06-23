@@ -152,7 +152,7 @@ const Letter = ({ info, first }) => {
           href={href}
           tracking
         >
-          {title}
+          <Box>{title}</Box>
         </Link>
       </Box>
 
