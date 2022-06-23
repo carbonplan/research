@@ -47,8 +47,8 @@ const Main = ({ articles, commentary }) => {
   const listRefs = {
     tools: useRef(null),
     articles: useRef(null),
+    commentary: useRef(null),
     publications: useRef(null),
-    comments: useRef(null),
   }
   const [scrolled, setScrolled] = useState(null)
   const customScroll = useCustomScroll()
@@ -192,7 +192,7 @@ const Main = ({ articles, commentary }) => {
             items={combinedCommentary}
             filter={filterCommentary}
             Entries={Commentary}
-            ref={listRefs.comments}
+            ref={listRefs.commentary}
           />
           <List
             label='Publications'
