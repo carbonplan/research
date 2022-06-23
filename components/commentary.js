@@ -168,7 +168,7 @@ const Letter = ({ info, first }) => {
   )
 }
 
-const Commentary = ({ items }) => {
+const Commentary = ({ items, commentaryExpander, commentsExpander }) => {
   const index = useBreakpointIndex({ defaultIndex: 2 })
 
   return (
@@ -199,6 +199,8 @@ const Commentary = ({ items }) => {
               type={d.type}
             />
           ))}
+
+        {commentaryExpander}
       </Column>
       {index >= 2 && (
         <Column start={[1, 1, 6, 6]} width={[6, 8, 2, 2]}>
@@ -219,6 +221,8 @@ const Commentary = ({ items }) => {
             .map((d) => (
               <Letter key={d.title} info={d} start={[1, 2, 1, 1]} />
             ))}
+
+          {commentsExpander}
         </Column>
       )}
     </Row>

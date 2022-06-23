@@ -5,7 +5,7 @@ import { Column, Heading, Row } from '@carbonplan/components'
 import { useBreakpointIndex } from '@theme-ui/match-media'
 
 import { publications, comments, tools } from '../contents/index'
-import List from './list'
+import List, { CommentaryList } from './list'
 import Articles from './articles'
 import Commentary from './commentary'
 import Publications from './publications'
@@ -185,10 +185,12 @@ const Main = ({ articles, commentary }) => {
             Entries={Articles}
             ref={listRefs.articles}
           />
-          <List
+          <CommentaryList
             label='Commentary'
             id='commentary'
             selected={selected === 'commentary'}
+            comments={comments}
+            commentary={commentary}
             items={combinedCommentary}
             filter={filterCommentary}
             Entries={Commentary}
