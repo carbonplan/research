@@ -10,8 +10,8 @@ summary: Voluntary carbon markets don't provide investors with adequate data abo
 card: offset-disclosure-needs
 color: secondary
 links:
-  - label: Comment letter
-    href: https://files.carbonplan.org/SEC-Climate-Disclosures-Comment-Letter-06-16-2022.pdf
+  - label: Comments to the SEC
+    href: https://carbonplan.org/blog/sec-offset-disclosure
 ---
 
 Interest in net-zero-aligned investing is [significant and growing](https://www.climatepolicyinitiative.org/netzerofinancetracker/?page=institutions&view=all). BlackRock, the largest asset manager in the world, [recently wrote](https://www.blackrock.com/corporate/investor-relations/transition-investing) in a client letter that “the issue … is no longer whether the net zero transition will happen but how.” [Financial-industry-led coalitions](https://www.gfanzero.com) managing trillions of dollars have committed to net-zero climate targets that will be implemented via [net-zero transition plans](https://carbonplan.org/blog/climate-financial-risks).
