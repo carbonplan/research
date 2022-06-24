@@ -44,24 +44,10 @@ const Main = ({ articles, commentary }) => {
         behavior: 'smooth',
       })
     } else {
-      // Only attempt to scroll to recognized sections
-      if (
-        ![
-          'highlights',
-          'tools',
-          'articles',
-          'comments',
-          'commentary',
-          'publications',
-        ].includes(id)
-      ) {
-        return
-      }
-
       // Map former #comments section to the new #commentary section
       const selector = id === 'comments' ? '#commentary' : `#${id}`
 
-      document.querySelector(selector).scrollIntoView({
+      document.querySelector(selector)?.scrollIntoView({
         behavior: 'smooth',
       })
     }
