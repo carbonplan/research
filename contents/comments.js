@@ -6,8 +6,8 @@ const comments = [
     date: '06-16-2022',
     links: [
       {
-        label: 'Policy brief',
-        href: 'https://carbonplan.org/research/climate-financial-risks',
+        label: 'Blog post',
+        href: 'https://carbonplan.org/blog/sec-offset-disclosure',
       },
     ],
   },
