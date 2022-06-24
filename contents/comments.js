@@ -1,7 +1,7 @@
 const comments = [
   {
     title:
-      'Letter to the U.S. Securities and Exchange Commission re: Climate-related financial disclosures',
+      'U.S. Securities and Exchange Commission re: Climate-related financial disclosures',
     href: 'https://files.carbonplan.org/SEC-Climate-Disclosures-Comment-Letter-06-16-2022.pdf',
     date: '06-16-2022',
     links: [
@@ -13,7 +13,7 @@ const comments = [
   },
   {
     title:
-      'Letter to the White House Office of Science and Technology Policy re: Digital assets',
+      'White House Office of Science and Technology Policy re: Digital assets',
     href: 'https://files.carbonplan.org/OSTP-Digital-Assets-Comment-Letter-05-09-2022.pdf',
     date: '05-09-2022',
     links: [
@@ -24,12 +24,12 @@ const comments = [
     ],
   },
   {
-    title: 'Letter to the European Commission re: Certifying carbon removal',
+    title: 'European Commission re: Certifying carbon removal',
     href: 'https://files.carbonplan.org/EU-CDR-Certification-Comment-Letter-05-02-2022.pdf',
     date: '05-02-2022',
   },
   {
-    title: "Letter to Verra re: NCX's proposed harvest deferral methodology",
+    title: "Verra re: NCX's proposed harvest deferral methodology",
     href: 'https://files.carbonplan.org/Verra-NCX-Harvest-Deferral-Comment-Letter-04-21-2022.pdf',
     date: '04-21-2022',
     links: [
@@ -40,7 +40,7 @@ const comments = [
     ],
   },
   {
-    title: 'Letter to Verra re: Proposed updates to the VCS Program',
+    title: 'Verra re: Proposed updates to the VCS Program',
     href: 'https://files.carbonplan.org/Verra-Ton-Year-Comment-Letter-04-08-22.pdf',
     date: '04-08-2022',
     links: [
@@ -52,7 +52,7 @@ const comments = [
   },
   {
     title:
-      'Letter to the Office of the Comptroller of the Currency re: Climate-related financial risk',
+      'Office of the Comptroller of the Currency re: Climate-related financial risk',
     href: 'https://files.carbonplan.org/OCC-Climate-Risks-Comments-02-14-2022.pdf',
     date: '02-14-2022',
     links: [
@@ -64,13 +64,12 @@ const comments = [
   },
   {
     date: '02-01-2022',
-    title: 'Letter to NASA re: Open source science',
+    title: 'NASA re: Open source science',
     href: 'https://files.carbonplan.org/NASA-OSS-Data-RFI-Comments-02-01-2022.pdf',
   },
   {
     date: '11-01-2021',
-    title:
-      'Letter to the U.S. Department of Agriculture re: Climate-smart commodity markets',
+    title: 'U.S. Department of Agriculture re: Climate-smart commodity markets',
     href: 'https://files.carbonplan.org/USDA-CSAF-Comment-Letter-11-01-21.pdf',
     links: [
       {
@@ -82,7 +81,7 @@ const comments = [
   {
     date: '01-05-2021',
     title:
-      'Letter to the Taskforce Scaling Voluntary Carbon Markets re: Initial recommendations',
+      'Taskforce Scaling Voluntary Carbon Markets re: Initial recommendations',
     href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf',
     links: [
       {
@@ -97,8 +96,7 @@ const comments = [
   },
   {
     date: '08-25-2020',
-    title:
-      'Letter to the Climate Action Reserve re: Soil Enrichment Protocol #2',
+    title: 'Climate Action Reserve re: Soil Enrichment Protocol #2',
     href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
     links: [
       {
@@ -109,8 +107,7 @@ const comments = [
   },
   {
     date: '05-18-2020',
-    title:
-      'Letter to the Climate Action Reserve re: Soil Enrichment Protocol #1',
+    title: 'Climate Action Reserve re: Soil Enrichment Protocol #1',
     href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
     links: [
       {
