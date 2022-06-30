@@ -64,7 +64,7 @@ const Tool = ({ info, start }) => {
                 opacity: 0.5,
                 position: 'absolute',
                 backgroundImage: ({ colors }) =>
-                  `linear-gradient(to top, ${colors.purple}, ${colors.pink}, ${colors.red}, ${colors.orange}, ${colors.yellow})`,
+                  `linear-gradient(to top right, ${colors.purple}, ${colors.pink}, ${colors.red}, ${colors.orange}, ${colors.yellow})`,
                 left: 0,
                 top: 0,
                 width: '100%',

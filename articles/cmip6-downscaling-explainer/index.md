@@ -15,6 +15,8 @@ color: secondary
 summary: Downscaled datasets form the basis of climate impacts and risk analysis, but there are many ways to downscale. We’re releasing data and tools for this foundational step in the climate change planning process.
 quickLook: A new release of global downscaled climate data spanning multiple downscaling methods
 card: cmip6-downscaling-explainer
+background: articles/017/magnifier
+icon: articles/017/magnifier-small
 links:
   - label: Map tool
     href: /research/cmip6-downscaling
@@ -196,18 +198,24 @@ In the following table, we detail how you might use these data and tools dependi
         'Methods Developer',
         'I want to inspect your downscaling methods, and either try to reproduce them or implement a change.',
         <span>
-          Visit our <Link href='TK'>GitHub repository</Link> where the analysis
-          code and all routines to reproduce the datasets are publicly
-          available.
+          Visit our{' '}
+          <Link href='https://github.com/carbonplan/cmip6-downscaling'>
+            GitHub repository
+          </Link>{' '}
+          where the analysis code and all routines to reproduce the datasets are
+          publicly available.
         </span>,
       ],
       [
         'Impacts Modeler',
         'I want to subset the full dataset to develop an impact model in my preferred coding environment. I might want to download the data locally, or I might want to work in the cloud.',
         <span>
-          Try our <Link href='TK'>sample Jupyter notebook</Link> where we show
-          you how you can access the data, perform example analytics, and
-          download a subset.
+          Try our{' '}
+          <Link href='https://github.com/carbonplan/cmip6-downscaling/blob/main/notebooks/accessing_data_example.ipynb'>
+            sample Jupyter notebook
+          </Link>{' '}
+          where we show you how you can access the data, perform example
+          analytics, and download a subset.
         </span>,
       ],
       [
