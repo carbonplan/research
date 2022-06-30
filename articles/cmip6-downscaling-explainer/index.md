@@ -42,7 +42,7 @@ We are releasing a new global downscaled climate data product spanning multiple 
     for an example summer day in the 2080s. Values are maximum near-surface
     temperature. Moving the slider to the right shows sample output from the
     MRI-ESM2-0 climate model at a ~125 km resolution. Moving the slider to the
-    left reveals the same output downscaled via the GARD-MV method at ~25km
+    left reveals the same output downscaled via the GARD-MV method at ~25 km
     resolution. The spatial resolution increases, revealing mountain ranges and
     coastlines that were not visible in the coarse GCM data.
   </FigureCaption>
@@ -78,7 +78,7 @@ While the broad goals of downscaling are easy to define, there are many differen
 
 ## What we’re releasing
 
-We are releasing a new collection of [downscaled datasets](/research/cmip6-downscaling) produced from multiple statistical downscaling methods, alongside a companion [map tool](https://carbonplan.org/research/cmip6-downscaling-explainer) to explore the data. We used climate change simulations from up to 6 global climate models from CMIP6 and 3 different future emissions scenarios, and we applied four different downscaling methods: MACA,<Cite id='abatzoglou.2011'/>, DeepSD,<Cite id='vandal.2017'/> and two implementations of GARD,<Cite id='gutmann.2022'/> (Table 1). We chose to run a modest number of GCMs and scenarios, and instead focused on developing, testing, and implementing multiple downscaling methods. There is no one correct downscaling method, and we do not suggest any of our implementations is an optimal dataset. Rather, we hope our focus on methodological diversity complements existing efforts, and will help the research and applications communities evaluate uncertainties associated with downscaled data products.
+We are releasing a new collection of downscaled datasets produced from multiple statistical downscaling methods, alongside a companion [map tool](/research/cmip6-downscaling) to explore the data. We used climate change simulations from up to 6 global climate models from CMIP6 and 3 different future emissions scenarios, and we applied four different downscaling methods: MACA,<Cite id='abatzoglou.2011'/>, DeepSD,<Cite id='vandal.2017'/> and two implementations of GARD<Cite id='gutmann.2022'/> (Table 1). We chose to run a modest number of GCMs and scenarios, and instead focused on developing, testing, and implementing multiple downscaling methods. There is no one correct downscaling method, and we do not suggest any of our implementations is an optimal dataset. Rather, we hope our focus on methodological diversity complements existing efforts, and will help the research and applications communities evaluate uncertainties associated with downscaled data products.
 
 Our datasets include projections of daily maximum and minimum temperature and precipitation through the end of the 21st century for the entire globe at a 0.25 degree resolution (approximately 25 km x 25 km)<Sidenote>The MACA method was not implemented over Antarctica</Sidenote>. We trained all models on the ERA5 reanalysis product.<Cite id='hersbach.2020'/> In the theme of open data development, we welcome feedback from the scientific community so as to guide future improvements. We anticipate releasing updates to expand or refine the collection of dataset.
 
