@@ -43,28 +43,12 @@ const Inner = ({ summary, links, sx }) => (
 
 const Article = ({ info, first }) => {
   const [hovered, setHovered] = useState(false)
-  let { id, title, color, gradient, date, icon, summary, links } = info
+  let { id, title, color, date, icon, summary, links } = info
   const href = `/research/${id}`
   color = color || 'text'
 
   if (color == 'secondary') {
     color = mix('primary', 'background', 0.65)
-  }
-
-  let colorStyle
-
-  if (gradient) {
-    colorStyle = {
-      backgroundImage: ({ colors }) =>
-        `linear-gradient(to top right, ${colors.purple}, ${colors.pink}, ${colors.red}, ${colors.orange}, ${colors.yellow})`,
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-      MozBackgroundClip: 'text',
-      MozTextFillColor: 'transparent',
-      pb: ['3px'],
-    }
-  } else {
-    colorStyle = { color: color }
   }
 
   return (
@@ -95,7 +79,7 @@ const Article = ({ info, first }) => {
               lineHeight: 'heading',
               fontFamily: 'heading',
               fontSize: [4, 4, 5, 6],
-              ...colorStyle,
+              color: color,
             }}
           >
             <Link
