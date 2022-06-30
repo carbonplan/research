@@ -9,9 +9,17 @@ import {
   ComplianceUsers,
   ForestCarbon,
   SeaweedFarming,
+  CMIP6Downscaling,
 } from '../components/tool-logos'
 
 const tools = [
+  {
+    id: 'cmip6-downscaling',
+    logo: <CMIP6Downscaling />,
+    color: 'warm',
+    summary: 'Interactive mapping tool for global downscaled climate data.',
+    title: 'CMIP6 Downscaling',
+  },
   {
     id: 'seaweed-farming',
     logo: <SeaweedFarming />,
