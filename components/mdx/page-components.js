@@ -3,6 +3,23 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'cmip6-downscaling-explainer': {
+    DownscaledData: dynamic(() =>
+      import(
+        '../../articles/cmip6-downscaling-explainer/components/downscaled-data.js'
+      ).then((mod) => mod.DownscaledData || mod.default)
+    ),
+    Ecosystem: dynamic(() =>
+      import(
+        '../../articles/cmip6-downscaling-explainer/components/ecosystem.js'
+      ).then((mod) => mod.Ecosystem || mod.default)
+    ),
+    Downscaling: dynamic(() =>
+      import(
+        '../../articles/cmip6-downscaling-explainer/components/downscaling.js'
+      ).then((mod) => mod.Downscaling || mod.default)
+    ),
+  },
   'toucan-crypto-offsets': {
     Prices: dynamic(() =>
       import('../../articles/toucan-crypto-offsets/components/prices.js').then(

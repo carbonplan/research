@@ -58,17 +58,33 @@ const Tool = ({ info, start }) => {
             transition: 'opacity 0.15s',
           }}
         >
-          <Box
-            sx={{
-              opacity: 0.5,
-              position: 'absolute',
-              bg: color,
-              left: 0,
-              top: 0,
-              width: '100%',
-              height: '100%',
-            }}
-          />
+          {['warm'].includes(color) && (
+            <Box
+              sx={{
+                opacity: 0.5,
+                position: 'absolute',
+                backgroundImage: ({ colors }) =>
+                  `linear-gradient(to top right, ${colors.purple}, ${colors.pink}, ${colors.red}, ${colors.orange}, ${colors.yellow})`,
+                left: 0,
+                top: 0,
+                width: '100%',
+                height: '100%',
+              }}
+            />
+          )}
+          {!['warm'].includes(color) && (
+            <Box
+              sx={{
+                opacity: 0.5,
+                position: 'absolute',
+                bg: color,
+                left: 0,
+                top: 0,
+                width: '100%',
+                height: '100%',
+              }}
+            />
+          )}
           {logo}
         </Box>
         <Box id='tool' sx={{ ...sx.tool, mt: ['12px', '12px', '12px', 3] }}>
