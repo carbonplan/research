@@ -24,7 +24,7 @@ const DownloadReport = () => {
         size='lg'
         href='https://files.carbonplan.org/CDR-Scale-Barriers.pdf'
         suffix={
-          <>
+          <span className='arrow-wrapper'>
             <RotatingArrow
               className='arrow'
               sx={{ ...sx, ml: [0], color: 'teal' }}
@@ -32,10 +32,10 @@ const DownloadReport = () => {
             <RotatingArrow className='arrow' sx={{ ...sx, color: 'green' }} />
             <RotatingArrow className='arrow' sx={{ ...sx, color: 'orange' }} />
             <RotatingArrow className='arrow' sx={{ ...sx, color: 'yellow' }} />
-          </>
+          </span>
         }
         sx={{
-          '&:hover > #suffix-span > .arrow': {
+          '&:hover .arrow-wrapper > .arrow': {
             transform: 'rotate(45deg)',
             color: 'secondary',
           },
