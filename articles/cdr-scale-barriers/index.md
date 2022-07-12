@@ -160,7 +160,7 @@ First, stakeholders expressed dissatisfaction about how two major standard-setti
 
 <BigQuote
   category='system actor'
-  quote='There are lots of entrenched interests during the consultation period. Particularly the temporary removals and carbon capture crowd - they will try to obfuscate what [CDR’s] definition is and try to redefine permanence...'
+  quote='There are lots of entrenched interests during the consultation period. Particularly the temporary removals and carbon capture crowd — they will try to obfuscate what [CDR’s] definition is and try to redefine permanence ...'
 />
 
 <BigQuote
