@@ -10,10 +10,10 @@ authors:
   - Jeremy Freeman
 color: secondary
 quickLook: A survey of carbon removal stakeholder perceptions and priorities
-background: articles/018/building-darker
+background: articles/018/building-even-darker
 card: cdr-scale-barriers
 summary: What are the key challenges facing the carbon removal industry? We conducted structured interviews with 37 stakeholders to understand how they perceive market barriers.
-icon: articles/018/building-small
+icon: articles/018/building-small-even-darker
 links:
   - label: Download report
     href: https://files.carbonplan.org/CDR-Scale-Barriers.pdf

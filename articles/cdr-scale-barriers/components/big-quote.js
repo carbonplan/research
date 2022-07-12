@@ -42,7 +42,7 @@ const BigQuote = ({ category, quote }) => {
         </Box>
       </Box>
       <Row columns={6}>
-        <Column start={1} width={5}>
+        <Column start={1} width={[5, 5, 5, 4]}>
           <Box
             sx={{
               color: COLORS[category],
