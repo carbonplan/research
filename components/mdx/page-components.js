@@ -3,6 +3,18 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'cdr-scale-barriers': {
+    BigQuote: dynamic(() =>
+      import('../../articles/cdr-scale-barriers/components/big-quote.js').then(
+        (mod) => mod.BigQuote || mod.default
+      )
+    ),
+    DownloadReport: dynamic(() =>
+      import(
+        '../../articles/cdr-scale-barriers/components/download-report.js'
+      ).then((mod) => mod.DownloadReport || mod.default)
+    ),
+  },
   'cmip6-downscaling-explainer': {
     DownscaledData: dynamic(() =>
       import(
