@@ -1,6 +1,13 @@
 const comments = [
   {
     title:
+      'Washington Department of Ecology re: California forest carbon offsets',
+    href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/Washington-Ecology-Offsets-Comment-Letter-07-15-2022.pdf',
+    date: '07-15-2022',
+  },
+
+  {
+    title:
       'U.S. Securities and Exchange Commission re: Climate-related financial disclosures',
     href: 'https://files.carbonplan.org/SEC-Climate-Disclosures-Comment-Letter-06-16-2022.pdf',
     date: '06-16-2022',
@@ -66,6 +73,17 @@ const comments = [
     date: '02-01-2022',
     title: 'NASA re: Open source science',
     href: 'https://files.carbonplan.org/NASA-OSS-Data-RFI-Comments-02-01-2022.pdf',
+  },
+  {
+    title: 'PCAF and SBTi re: Net-zero standards',
+    href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/PCAF-SBTi-Net-Zero-Comment-Letter-12-20-2021.pdf',
+    date: '12-20-2021',
+    links: [
+      {
+        label: 'Policy brief',
+        href: 'https://carbonplan.org/research/climate-financial-risks',
+      },
+    ],
   },
   {
     date: '11-01-2021',
