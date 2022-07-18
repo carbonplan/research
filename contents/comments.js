@@ -2,7 +2,7 @@ const comments = [
   {
     title:
       'Washington Department of Ecology re: California forest carbon offsets',
-    href: 'https://files.carbonplan.org/files/Washington-Ecology-Offsets-Comment-Letter-07-15-2022.pdf',
+    href: 'https://files.carbonplan.org/Washington-Ecology-Offsets-Comment-Letter-07-15-2022.pdf',
     date: '07-15-2022',
   },
 
