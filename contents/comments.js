@@ -2,7 +2,7 @@ const comments = [
   {
     title:
       'Washington Department of Ecology re: California forest carbon offsets',
-    href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/Washington-Ecology-Offsets-Comment-Letter-07-15-2022.pdf',
+    href: 'https://files.carbonplan.org/files/Washington-Ecology-Offsets-Comment-Letter-07-15-2022.pdf',
     date: '07-15-2022',
   },
 
@@ -76,7 +76,7 @@ const comments = [
   },
   {
     title: 'PCAF and SBTi re: Net-zero standards',
-    href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/PCAF-SBTi-Net-Zero-Comment-Letter-12-20-2021.pdf',
+    href: 'https://files.carbonplan.org/PCAF-SBTi-Net-Zero-Comment-Letter-12-20-2021.pdf',
     date: '12-20-2021',
     links: [
       {
@@ -100,7 +100,7 @@ const comments = [
     date: '01-05-2021',
     title:
       'Taskforce Scaling Voluntary Carbon Markets re: Initial recommendations',
-    href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf',
+    href: 'https://files.carbonplan.org/Offset-Task-Force-Comment-Letter-01-05-2021.pdf',
     links: [
       {
         label: 'Taskforce website',
@@ -115,7 +115,7 @@ const comments = [
   {
     date: '08-25-2020',
     title: 'Climate Action Reserve re: Soil Enrichment Protocol #2',
-    href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
+    href: 'https://files.carbonplan.org/Soil-Carbon-Comment-Letter-08-25-2020.pdf',
     links: [
       {
         label: 'Explainer article',
@@ -126,7 +126,7 @@ const comments = [
   {
     date: '05-18-2020',
     title: 'Climate Action Reserve re: Soil Enrichment Protocol #1',
-    href: 'https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
+    href: 'https://files.carbonplan.org/Soil-Carbon-Comment-Letter-05-18-2020.pdf',
     links: [
       {
         label: 'Explainer article',
