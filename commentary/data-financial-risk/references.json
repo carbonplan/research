@@ -1,0 +1,72 @@
+{
+  "dolan.2021": {
+    "authors": "Dolan et al.",
+    "year": 2021,
+    "title": "Evaluating the economic impact of water scarcity in a changing world",
+    "journal": "Nature Communications",
+    "url": "https://doi.org/10.1038/s41467-021-22194-0"
+  },
+  "taylor.2012": {
+    "authors": "Taylor et al.",
+    "year": 2012,
+    "title": "An overview of CMIP5 and the experiment design",
+    "journal": "Bulletin of the American Meteorological Society",
+    "url": "https://doi.org/10.1175/BAMS-D-11-00094.1"
+  },
+  "eyring.2016": {
+    "authors": "Eyring et al.",
+    "year": 2016,
+    "title": "Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimental design and organization",
+    "journal": "Geoscientific Model Development",
+    "url": "https://doi.org/10.5194/gmd-9-1937-2016"
+  },
+  "möller.2022": {
+    "authors": "Möller et al. (eds.)",
+    "year": 2022,
+    "title": "Annex II: Glossary",
+    "journal": "Climate Change 2022: Impacts, Adaptation, and Vulnerability. Contribution of Working Group II to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change",
+    "url": "https://www.ipcc.ch/report/ar6/wg2/"
+  },
+  "fiedler.2021": {
+    "authors": "Fiedler et al.",
+    "year": 2021,
+    "title": "Business risk and the emergence of climate analytics",
+    "journal": "Nature Climate Change",
+    "url": "https://doi.org/10.1038/s41558-020-00984-6"
+  },
+  "seneviratne.2021": {
+    "authors": "Seneviratne et al. (eds.)",
+    "year": 2021,
+    "title": "Weather and Climate Extreme Events in a Changing Climate",
+    "journal": "Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change",
+    "url": "https://www.ipcc.ch/report/ar6/wg1/"
+  },
+  "raupach.2021": {
+    "authors": "Raupach et al.",
+    "year": 2021,
+    "title": "The effects of climate change on hailstorms",
+    "journal": "Nature Reviews Earth & Environment",
+    "url": "https://doi.org/10.1038/s43017-020-00133-9"
+  },
+  "tabari.2021": {
+    "authors": "Tabari et al.",
+    "year": 2021,
+    "title": "Comparison of statistical downscaling methods for climate change impact analysis on precipitation-driven drought",
+    "journal": "Hydrology and Earth System Sciences",
+    "url": "https://doi.org/10.5194/hess-25-3493-2021"
+  },
+  "sunyer.2015": {
+    "authors": "Sunyer et al.",
+    "year": 2015,
+    "title": "Inter-comparison of statistical downscaling methods for projection of extreme precipitation in Europe",
+    "journal": "Hydrology and Earth System Sciences",
+    "url": "https://doi.org/10.5194/hess-19-1827-2015"
+  },
+  "abatzoglou.2011": {
+    "authors": "Abatzoglou et al.",
+    "year": 2011,
+    "title": "A comparison of statistical downscaling methods suited for wildfire applications",
+    "journal": "International Journal of Climatology",
+    "url": "https://doi.org/10.1002/joc.2312"
+  }
+}
