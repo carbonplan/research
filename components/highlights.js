@@ -1,7 +1,6 @@
 import { forwardRef } from 'react'
 import { Box, Divider } from 'theme-ui'
 import Highlight from './highlight'
-import { TonYear, SoilProtocols } from './highlight-images'
 
 const HIGHLIGHTS = [
   {
