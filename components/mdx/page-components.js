@@ -338,6 +338,7 @@ const components = {
       )
     ),
   },
+  'data-financial-risk': {},
   'scoping-plan-comments': {
     EmissionsTable: dynamic(() =>
       import(

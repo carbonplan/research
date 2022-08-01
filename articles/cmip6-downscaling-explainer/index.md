@@ -20,6 +20,8 @@ icon: articles/017/magnifier-small
 links:
   - label: Map tool
     href: /research/cmip6-downscaling
+  - label: Policy brief
+    href: /research/data-financial-risk
 components:
   - name: DownscaledData
     src: ./components/downscaled-data.js
