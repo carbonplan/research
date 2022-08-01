@@ -6,6 +6,7 @@ authors:
   - Oriana Chegwidden
 date: 08-01-2022
 summary: Companies, government agencies, and consumers increasingly seek data on future physical climate risks. Better communication, transparency, and accessibility would help improve these physical financial risk assessments.
+card: data-financial-risk
 color: secondary
 links:
   - label: Downscaling map tool
