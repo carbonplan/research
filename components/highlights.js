@@ -4,41 +4,34 @@ import Highlight from './highlight'
 
 const HIGHLIGHTS = [
   {
-    id: 'seaweed-farming',
-    date: '03-16-2022',
-    href: '/research/seaweed-farming',
-    title: 'Mapping seaweed farming potential',
-    color: 'teal',
-    summary:
-      'Interest in farming seaweed for carbon removal is ramping up. We collaborated with a research team to build an interactive tool for mapping seaweed farming potential, and wrote an explainer summarizing the results.',
+    id: 'cmip6-downscaling',
+    date: '06-30-2022',
+    title: 'CMIP6 downscaling',
+    summary: 'TK',
+    href: '/research/cmip6-downscaling',
     links: [
-      { label: 'Map tool', href: '/research/seaweed-farming' },
+      { label: 'Map tool', href: '/research/cmip6-downscaling' },
       {
         label: 'Explainer article',
-        href: '/research/seaweed-farming-explainer',
+        href: '/research/cmip6-downscaling-explainer',
       },
       {
-        label: 'Followup blog post',
-        href: '/blog/seaweed-farming-clarifications',
+        label: 'Policy brief',
+        href: '/research/data-financial-risk',
       },
     ],
   },
   {
-    id: 'ton-year-explainer',
-    date: '01-31-2022',
-    title: 'Ton-year accounting',
-    color: 'pink',
-    summary:
-      "There's growing interest in methods to value temporary carbon storage. In two recent pieces, we explain a practice called ton-year accounting, and raise concerns about how it's being used in practice.",
+    id: 'cdr-scale-barriers',
+    date: '07-12-2022',
+    href: '/research/cdr-scale-barriers',
+    title:
+      'Barriers to scaling the long-duration carbon dioxide removal industry',
+    summary: 'TK',
     links: [
-      { label: 'Explainer article', href: '/research/ton-year-explainer' },
       {
-        label: 'Our critique of NCX’s methods',
-        href: '/research/ton-year-ncx',
-      },
-      {
-        label: 'Comment letters to Verra',
-        href: '/blog/ton-year-verra',
+        label: 'Download report',
+        href: 'https://files.carbonplan.org/CDR-Scale-Barriers.pdf',
       },
     ],
   },
