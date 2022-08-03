@@ -7,7 +7,8 @@ const HIGHLIGHTS = [
     id: 'cmip6-downscaling',
     date: '06-30-2022',
     title: 'CMIP6 downscaling',
-    summary: 'TK',
+    summary:
+      'Downscaled datasets form the basis of climate impacts and risk analysis. We released a new globally downscaled climate dataset spanning multiple downscaling methods, alongside an intereactive map tool, and explainer article, and a policy brief.',
     href: '/research/cmip6-downscaling',
     links: [
       { label: 'Map tool', href: '/research/cmip6-downscaling' },
@@ -27,7 +28,8 @@ const HIGHLIGHTS = [
     href: '/research/cdr-scale-barriers',
     title:
       'Barriers to scaling the long-duration carbon dioxide removal industry',
-    summary: 'TK',
+    summary:
+      'What are the key challenges facing the carbon removal industry? We surveyed 37 stakeholders to better understand priorities, perceptions, and challenges facing the industry. Read our summary article or download the full report.',
     links: [
       {
         label: 'Download report',
