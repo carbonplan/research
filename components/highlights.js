@@ -1,45 +1,39 @@
 import { forwardRef } from 'react'
 import { Box, Divider } from 'theme-ui'
 import Highlight from './highlight'
-import { TonYear, SoilProtocols } from './highlight-images'
 
 const HIGHLIGHTS = [
   {
-    id: 'seaweed-farming',
-    date: '03-16-2022',
-    href: '/research/seaweed-farming',
-    title: 'Mapping seaweed farming potential',
-    color: 'teal',
+    id: 'cmip6-downscaling',
+    date: '06-30-2022',
+    title: 'CMIP6 downscaling',
     summary:
-      'Interest in farming seaweed for carbon removal is ramping up. We collaborated with a research team to build an interactive tool for mapping seaweed farming potential, and wrote an explainer summarizing the results.',
+      'Downscaled datasets form the basis of climate impacts and risk analysis. We released new globally downscaled climate datasets spanning multiple downscaling methods, alongside an interactive map tool, an explainer article, and a policy brief.',
+    href: '/research/cmip6-downscaling',
     links: [
-      { label: 'Map tool', href: '/research/seaweed-farming' },
+      { label: 'Map tool', href: '/research/cmip6-downscaling' },
       {
         label: 'Explainer article',
-        href: '/research/seaweed-farming-explainer',
+        href: '/research/cmip6-downscaling-explainer',
       },
       {
-        label: 'Followup blog post',
-        href: '/blog/seaweed-farming-clarifications',
+        label: 'Policy brief',
+        href: '/research/data-financial-risk',
       },
     ],
   },
   {
-    id: 'ton-year-explainer',
-    date: '01-31-2022',
-    title: 'Ton-year accounting',
-    color: 'pink',
+    id: 'cdr-scale-barriers',
+    date: '07-12-2022',
+    href: '/research/cdr-scale-barriers',
+    title:
+      'Barriers to scaling the long-duration carbon dioxide removal industry',
     summary:
-      "There's growing interest in methods to value temporary carbon storage. In two recent pieces, we explain a practice called ton-year accounting, and raise concerns about how it's being used in practice.",
+      'What are the key challenges facing the carbon removal industry? We surveyed 37 stakeholders to better understand priorities, perceptions, and challenges facing the industry. Read our summary article or download the full report.',
     links: [
-      { label: 'Explainer article', href: '/research/ton-year-explainer' },
       {
-        label: 'Our critique of NCX’s methods',
-        href: '/research/ton-year-ncx',
-      },
-      {
-        label: 'Comment letters to Verra',
-        href: '/blog/ton-year-verra',
+        label: 'Download report',
+        href: 'https://files.carbonplan.org/CDR-Scale-Barriers.pdf',
       },
     ],
   },
