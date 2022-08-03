@@ -8,7 +8,7 @@ const HIGHLIGHTS = [
     date: '06-30-2022',
     title: 'CMIP6 downscaling',
     summary:
-      'Downscaled datasets form the basis of climate impacts and risk analysis. We released a new globally downscaled climate dataset spanning multiple downscaling methods, alongside an intereactive map tool, and explainer article, and a policy brief.',
+      'Downscaled datasets form the basis of climate impacts and risk analysis. We released new globally downscaled climate datasets spanning multiple downscaling methods, alongside an interactive map tool, an explainer article, and a policy brief.',
     href: '/research/cmip6-downscaling',
     links: [
       { label: 'Map tool', href: '/research/cmip6-downscaling' },
