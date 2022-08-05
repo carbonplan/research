@@ -1,5 +1,21 @@
 const publications = [
   {
+    date: '08-05-2022',
+    title:
+      'California’s forest carbon offsets buffer pool is severely undercapitalized',
+    href: 'https://doi.org/10.3389/ffgc.2022.930426',
+    color: 'green',
+    summary:
+      "An actuarial analysis of California's forest carbon offset insurance program shows that it fails to adequately address risks from wildfire and sudden oak death.",
+    journal: 'Frontiers',
+    links: [
+      {
+        label: 'Press coverage',
+        href: 'https://www.nationalgeographic.com/environment/article/forests-as-carbon-offsets-climate-change-has-other-plans',
+      },
+    ],
+  },
+  {
     date: '05-11-2022',
     title:
       'Future climate risks from stress, insects and fire across US forests',
@@ -12,16 +28,6 @@ const publications = [
       { label: 'Explainer article', href: '/research/forest-risks-explainer' },
       { label: 'Map tool', href: '/research/forest-risks' },
     ],
-  },
-  {
-    date: '04-29-2022',
-    title:
-      'California’s forest carbon offsets buffer pool is severely undercapitalized',
-    href: 'https://doi.org/10.1101/2022.04.27.488938',
-    color: 'green',
-    summary:
-      'A preprint analyzing the design of California’s forest carbon offset insurance program shows that the state has not adequately addressed the risks of wildfire and sudden oak death.',
-    journal: 'bioRxiv',
   },
   {
     date: '03-31-2022',
