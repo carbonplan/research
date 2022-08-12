@@ -1,11 +1,16 @@
 const comments = [
   {
     title:
+      'Voluntary Carbon Markets Integrity Initiative re: Provisional Claims Code of Practice',
+    href: 'https://files.carbonplan.org/VCMI-Comment-Letter-08-12-2022.pdf',
+    date: '08-12-2022',
+  },
+  {
+    title:
       'Washington Department of Ecology re: California forest carbon offsets',
     href: 'https://files.carbonplan.org/Washington-Ecology-Offsets-Comment-Letter-07-15-2022.pdf',
     date: '07-15-2022',
   },
-
   {
     title:
       'U.S. Securities and Exchange Commission re: Climate-related financial disclosures',
