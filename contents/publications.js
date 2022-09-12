@@ -1,5 +1,15 @@
 const publications = [
   {
+    date: '09-12-2022',
+    title:
+      'Using remote sensing to quantify the additional climate benefits of California forest carbon offset projects',
+    href: 'https://doi.org/10.1111/gcb.16380',
+    color: 'green',
+    summary:
+      'An ex post analysis shows that credited carbon sequestration in California projects is likely non-additional. These findings illustrate the importance of using dynamic baseline controls to credit carbon.',
+    journal: 'Global Change Biology',
+  },
+  {
     date: '08-05-2022',
     title:
       'California’s forest carbon offsets buffer pool is severely undercapitalized',
