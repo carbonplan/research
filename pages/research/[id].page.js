@@ -3,6 +3,7 @@ import matter from 'gray-matter'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import { useMDXComponents } from '@mdx-js/react'
+import slug from 'rehype-slug'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { Box } from 'theme-ui'
@@ -151,7 +152,7 @@ export const getStaticProps = async ({ params }) => {
     // Optionally pass remark/rehype plugins
     mdxOptions: {
       remarkPlugins: [],
-      rehypePlugins: [],
+      rehypePlugins: [slug],
     },
     scope: rest,
   })
