@@ -58,7 +58,7 @@ const supplementMetadata = glob
       ...data,
       parentId: id,
       folder: folder,
-      id: `${id}-${fileName}`,
+      id: data.slug ?? `${id}-${fileName}`,
       path: `${directory}/${id}/${fileName}.md`,
     }
   })

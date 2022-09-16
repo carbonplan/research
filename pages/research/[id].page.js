@@ -3,7 +3,9 @@ import matter from 'gray-matter'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import { useMDXComponents } from '@mdx-js/react'
-
+import slug from 'rehype-slug'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 import { Box } from 'theme-ui'
 import {
   Article,
@@ -54,6 +56,13 @@ const SUPPLEMENT_COMPONENTS = {
 
 const Page = ({ id, type, source, frontMatter, references }) => {
   const components = useMDXComponents()
+  const router = useRouter()
+
+  useEffect(() => {
+    if (window.location.hash) {
+      router.push({ hash: window.location.hash })
+    }
+  }, [])
 
   switch (type) {
     case 'article':
@@ -143,7 +152,7 @@ export const getStaticProps = async ({ params }) => {
     // Optionally pass remark/rehype plugins
     mdxOptions: {
       remarkPlugins: [],
-      rehypePlugins: [],
+      rehypePlugins: [slug],
     },
     scope: rest,
   })
