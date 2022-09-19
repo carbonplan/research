@@ -25,12 +25,12 @@ A system for CDR MRV must produce robust, quantitative estimates of net carbon r
 
 With the aim of contributing to a solid foundation for future conversations about CDR MRV, Frontier and CarbonPlan collaborated to develop an [interactive tool](carbonplan.org/research/cdr-verification) that allows users to explore the quantification capacity and key uncertainties we see in different CDR pathways today. The interactive tool currently includes our assessment of six CDR pathways:
 
-- Direct Air Capture (DAC)
-- Biomass Carbon Removal and Storage (BiCRS)
-- Enhanced Weathering (EW)
-- Ocean Alkalinity Enhancement (OAE)
-- Terrestrial Biomass Sinking
-- Ocean Biomass Sinking.
+- Direct air capture (DAC)
+- Biomass carbon removal and storage (BiCRS)
+- Enhanced weathering
+- Ocean alkalinity enhancement (OAE)
+- Terrestrial biomass sinking
+- Ocean biomass sinking
 
 We chose these pathways based on approaches that are currently a part of [Stripe’s permanent CDR portfolio](https://stripe.com/climate). This is not an exhaustive set of long-duration CDR approaches, and we hope to assess additional CDR pathways in the future.
 
@@ -38,7 +38,7 @@ For each CDR pathway, we identified components of the process that must be quant
 
 We rolled up our element-level assessment of uncertainty into a pathway Verification Confidence Level (VCL) rating, which represents our high-level assessment of how confidently outcomes from a particular CDR pathway can be quantified using the best methods and tools available today. VCLs range from 1, which represents the most uncertain pathway, to 5, which indicates a high-confidence outcome.
 
-Read our [explainer](carbonplan.org/research/cdr-verification-explainer) for a summary of the key takeaways and tensions that emerged from the process of building this tool. Read [Frontier’s post](TK) to learn how they are incorporating lessons into their upcoming purchase cycles.
+Read our [explainer](carbonplan.org/research/cdr-verification-explainer) for a summary of the key takeaways and tensions that emerged from the process of building this tool. Read [Frontier’s post](http://frontierclimate.com/writing/quantifying-delivered-cdr) to learn how they are incorporating lessons into their upcoming purchase cycles.
 
 ## Uncertainty mapping — framework
 
@@ -56,7 +56,7 @@ Drawing from the best quantification approaches available today, we characterize
   <UncertaintyDimensions />
 </Figure>
 
-Throughout the uncertainty mapping we distinguish between CDR pathways, CDR approaches, and CDR projects. Within a CDR pathway like Ocean Alkalinity Enhancement, there may be several distinct approaches — for example, introducing alkalinity directly into the ocean in an aqueous form or through mineral dissolution. Similarly, there may be multiple projects trying to implement a given CDR approach in the real world using different execution strategies. Our uncertainty mapping primarily applies to CDR approaches, meaning that it describes the range in which projects are likely to operate, but it does not directly characterize the uncertainty related to any particular project. We try to indicate clearly where project execution strategies may create meaningful differences in uncertainty characterization.
+Throughout the uncertainty mapping, we distinguish between CDR pathways, CDR approaches, and CDR projects. Within a CDR pathway like ocean alkalinity enhancement, there may be several distinct approaches — for example, introducing alkalinity directly into the ocean in an aqueous form or through mineral dissolution. Similarly, there may be multiple projects trying to implement a given CDR approach in the real world using different execution strategies. Our uncertainty mapping primarily applies to CDR approaches, meaning that it describes the range in which projects are likely to operate, but it does not directly characterize the uncertainty related to any particular project. We try to indicate clearly where project execution strategies may create meaningful differences in uncertainty characterization.
 
 ### 01 — Uncertainty impact
 
@@ -92,7 +92,7 @@ In this uncertainty mapping exercise, we focused on the specific steps required 
 
 ### Normalizing net carbon removal to atmospheric outcomes
 
-Quantifying net carbon removal requires a standard frame of reference. Across our work here we defined net carbon removal specifically as the net mass of CO₂ removed from the atmosphere. The alternative framing we considered, but ultimately disfavored, was defining net carbon removal as the net mass of CO₂ moved from the fast carbon cycle to the slow carbon cycle. As explained further below, this decision affects the quantification of some pathways, particularly Ocean Biomass Sinking.
+Quantifying net carbon removal requires a standard frame of reference. Across our work here we defined net carbon removal specifically as the net mass of CO₂ removed from the atmosphere. The alternative framing we considered, but ultimately disfavored, was defining net carbon removal as the net mass of CO₂ moved from the fast carbon cycle to the slow carbon cycle. As explained further below, this decision affects the quantification of some pathways, particularly ocean biomass sinking.
 
 When we burn fossil fuels, we move carbon that was part of the slow carbon cycle (geosphere) into one part of the fast carbon cycle (atmosphere). Fossil emissions increase the [total amount of carbon in the atmosphere for millennia](https://www.annualreviews.org/doi/abs/10.1146/annurev.earth.031208.100206), with impacts including long-term warming and ocean acidification. Accordingly, some define net carbon removal based on moving carbon in the reverse direction — from the fast carbon cycle back into the slow carbon cycle.
 
@@ -102,7 +102,7 @@ The fast-to-slow framing also simplifies the quantification of net carbon remova
 
 Despite the attractive qualities of the fast-to-slow framing, we think it’s important to normalize the quantification of net carbon removal to atmospheric outcomes for all CDR pathways. In the fast carbon cycle, carbon is partitioned between reservoirs like the atmosphere, the surface ocean, and terrestrial vegetation — all of which exchange carbon flows through a variety of mechanisms. If one perturbs any of these reservoirs, it takes time for the other reservoirs to equilibrate. Since the primary function of CDR in the foreseeable future is compensating for ongoing, hard-to-abate emissions in a net-zero framework, we think it is most appropriate to normalize claimed outcomes to the atmosphere. In other words, we think CDR “compensation” claims are only appropriate if one emits a ton of CO₂ into the atmosphere and takes a ton back out of the atmosphere and stores it for a reasonably comparable duration.
 
-In addition to affecting Ocean Biomass Sinking, this framing also has implications for approaches where an upfront action results in removals over time — like enhanced weathering — and for BiCRS approaches that rely on biomass feedstocks. In the case of Enhanced Weathering, normalizing to atmospheric outcomes means that credited removals should accumulate over time based on the weathering curve of applied minerals. For BiCRS, credited removals should reflect the counterfactual decay time of biomass feedstock.
+In addition to affecting ocean biomass sinking, this framing also has implications for approaches where an upfront action results in removals over time — like enhanced weathering — and for biomass carbon removal and storage (BiCRS) approaches that rely on biomass feedstocks. In the case of Enhanced Weathering, normalizing to atmospheric outcomes means that credited removals should accumulate over time based on the weathering curve of applied minerals. For BiCRS, credited removals should reflect the counterfactual decay time of biomass feedstock.
 
 We recognize that understanding the role of carbon removal in the context of temperature management or cleaning up historic emissions requires a consideration of the partitioning dynamics between fast-cycle reservoirs. It also requires consideration of potential trade-offs between taking carbon out of the atmosphere versus other parts of the fast carbon cycle, which may, for example, represent trade-offs between temperature and ocean acidification benefits. For the time being, however, we encourage others to similarly quantify net carbon removal with respect to atmospheric outcomes for all CDR pathways to enable comparability and interpretability of claimed outcomes in the context of net-zero frameworks.
 
@@ -122,7 +122,7 @@ A failure to consider larger system impacts has the potential to skew the percei
 
 When considering project MRV, the issue of counterfactuals is both challenging and important. In our uncertainty mapping, we include emissions associated with potential secondary effects of CDR activities. For example, if a biomass feedstock currently serves a function that will need to be replaced (e.g. being tilled into the field to provide soil nutrients), we think the emissions associated with the replacement (e.g., additional fertilizer application) must be included in the quantification of net carbon removal achieved. However, we recognize that these secondary effects rely on a counterfactual assumption about what would have happened in the absence of the CDR activities.
 
-In general, we focus on counterfactuals about existing uses and their associated secondary effects rather than potential uses in the future. For example, we think agricultural feedstocks for BiCRS should be evaluated based on their current utilization (e.g., for animal feed or soil nutrients) rather than potential future uses that are not normally practiced today (e.g., use in alternative bioenergy applications). We recognize that the counterfactual for existing utilization should also be flexible to be reevaluated in the future if prevailing practices change.
+In general, we focus on counterfactuals about existing uses and their associated secondary effects rather than potential uses in the future. For example, we think agricultural feedstocks for biomass carbon removal and storage (BiCRS) should be evaluated based on their current utilization (e.g., for animal feed or soil nutrients) rather than potential future uses that are not normally practiced today (e.g., use in alternative bioenergy applications). We recognize that the counterfactual for existing utilization should also be flexible to be reevaluated in the future if prevailing practices change.
 
 ## Verification Confidence Levels (VCLs)
 
@@ -134,9 +134,9 @@ Our analysis of a pathway’s component uncertainties directly determines its VC
   <VCLTable />
 </Figure>
 
-Constructing the VCL based on the count of medium, high, or very high uncertainties does mean that pathways with more steps are more likely to receive a low VCL. If the component uncertainties are independent, we think this is an appropriate outcome. For example, the chain of uncertainties within the Ocean Biomass Sinking pathway are unlikely to be correlated — the uncertainty around macroalgae cultivation is not correlated to the uncertainty around air-sea gas exchange. In contrast, this construction could be problematic if component uncertainties are correlated. For example, in BiCRS, the uncertainties associated with the counterfactual feedstock storage, counterfactual feedstock use, and indirect land use change are all a function of the choice of feedstock — and therefore the presence of multiple uncertainty components could bias VCL assignments to this pathway downward.
+Constructing the VCL based on the count of medium, high, or very high uncertainties does mean that pathways with more steps are more likely to receive a low VCL. If the component uncertainties are independent, we think this is an appropriate outcome. For example, the chain of uncertainties within the ocean biomass sinking pathway are unlikely to be correlated — the uncertainty around macroalgae cultivation is not correlated to the uncertainty around air-sea gas exchange. In contrast, this construction could be problematic if component uncertainties are correlated. For example, in BiCRS, the uncertainties associated with the counterfactual feedstock storage, counterfactual feedstock use, and indirect land use change are all a function of the choice of feedstock — and therefore the presence of multiple uncertainty components could bias VCL assignments to this pathway downward.
 
-Most pathways are associated with a range of VCLs, rather than a single VCL, due to the diversity of approaches within a given pathway. To continue the example used above, an Ocean Alkalinity Enhancement (OAE) project could introduce alkalinity directly (e.g., via aqueous NaOH) or in a mineral form that has to dissolve to release alkalinity (e.g., olivine). The dissolution and precipitation dynamics of the mineral approach lead to significant uncertainty about how much alkalinity is actually introduced to the surface ocean and therefore how much carbon removal occurs. As a result, we classify mineral-based OAE as VCL 1-2, direct alkalinity addition as VCL 3, and the OAE pathway as a whole as VCL 1-3. A pathway-level VCL does not guarantee that individual projects within that pathway are executing on best practice quantification approaches. For example, even though OAE is classified as VCL 2-3, an OAE project could fail to carefully characterize their alkalinity additions and functionally be at VCL 1.
+Most pathways are associated with a range of VCLs, rather than a single VCL, due to the diversity of approaches within a given pathway. To continue the example used above, an ocean alkalinity enhancement (OAE) project could introduce alkalinity directly (e.g., via aqueous NaOH) or in a mineral form that has to dissolve to release alkalinity (e.g., olivine). The dissolution and precipitation dynamics of the mineral approach lead to significant uncertainty about how much alkalinity is actually introduced to the surface ocean and therefore how much carbon removal occurs. As a result, we classify mineral-based OAE as VCL 1-2, direct alkalinity addition as VCL 3, and the OAE pathway as a whole as VCL 1-3. A pathway-level VCL does not guarantee that individual projects within that pathway are executing on best practice quantification approaches. For example, even though OAE is classified as VCL 2-3, an OAE project could fail to carefully characterize their alkalinity additions and functionally be at VCL 1.
 
 Like the uncertainty mapping, the pathway VCL ranges represent a current snapshot of the field that will change over time through research and innovation. Investing in low-VCL pathways to reduce uncertainties will help enable the development of novel CDR approaches with high potential. In short, we think a low VCL should be a barrier to scaling, but not a barrier to exploration.
 

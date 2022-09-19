@@ -34,7 +34,7 @@ links:
   - label: Methods
     href: /research/cdr-verification-methods
   - label: Frontier post
-    href: TK
+    href: http://frontierclimate.com/writing/quantifying-delivered-cdr
 ---
 
 The growth and integrity of permanent carbon dioxide removal (CDR) will require developing robust approaches to measurement, reporting, and verification (MRV) <Sidenote>The acronym MRV can also be defined as "monitoring, reporting, and verification." Some also refer to MMRV, "measurement, monitoring, reporting, and verification."</Sidenote>. High-quality MRV should produce trustworthy, quantitative estimates of real-world outcomes, and communicate those findings and the methods underlying them in a consistent and transparent manner.
@@ -43,16 +43,16 @@ To date, investments in CDR, including via the [purchase of carbon credits](http
 
 To help inform CDR MRV efforts moving forward, Frontier and CarbonPlan collaborated on an [interactive tool](carbonplan.org/research/cdr-verification) that maps out the key uncertainties associated with quantifying net carbon removal and storage durability outcomes for six CDR pathways:
 
-- Direct Air Capture
-- Biomass Carbon Removal and Storage
-- Enhanced Weathering
-- Ocean Alkalinity Enhancement
-- Terrestrial Biomass Sinking
-- Ocean Biomass Sinking
+- Direct air capture
+- Biomass carbon removal and storage
+- Enhanced weathering
+- Ocean alkalinity enhancement
+- Terrestrial biomass sinking
+- Ocean biomass sinking
 
 Together we also developed a metric called the Verification Confidence Level (VCL), which summarizes our uncertainty mapping for each pathway and represents our confidence that carbon removal outcomes can be accurately quantified using the best scientific understanding, measurement, and modeling approaches available today.
 
-Below, we explain the uncertainty mapping and VCL metric in more detail and share key takeaways and tensions that will inform our work moving forward. Alongside this explainer, read [Frontier’s post](TK) to learn how Frontier is incorporating lessons from this work into their purchasing strategy.
+Below, we explain the uncertainty mapping and VCL metric in more detail and share key takeaways and tensions that will inform our work moving forward. Alongside this explainer, read [Frontier’s post](http://frontierclimate.com/writing/quantifying-delivered-cdr) to learn how Frontier is incorporating lessons from this work into their purchasing strategy.
 
 ## Uncertainty mapping
 
@@ -60,7 +60,7 @@ Robust quantification of carbon removal and storage durability is critical for u
 
 The goal of our uncertainty mapping is to systematically identify (1) what needs to be quantified to estimate net carbon removal and carbon storage durability, (2) what can be measured or modeled today to make those estimates, and (3) what uncertainties remain even when relying on the best available quantification approaches. Since CDR pathways are diverse in approach and maturity, the tools available to make key quantitative estimates vary greatly — as do their associated uncertainties.
 
-With input from more than 30 CDR companies, external scientific experts, and system actors,<Sidenote>See the full list of parties who gave input in [our methods](/research/cdr-verification-methods#acknowledgments). Any errors remain our sole responsibility.</Sidenote> we identified a set of quantification components for each CDR pathway that govern estimates of net carbon removal and storage durability.
+With input from more than 30 CDR companies, external scientific experts, and system actors,<Sidenote>See the full list of parties who gave input in [our methods](/research/cdr-verification-methods#acknowledgments). Any errors remain our sole responsibility.</Sidenote> we identified a set of quantification components for each CDR pathway that governs estimates of net carbon removal and storage durability.
 
 <Figure>
   <PathwayDiagram />
@@ -80,7 +80,7 @@ Drawing from the best quantification approaches available today, we characterize
   <UncertaintyDimensions />
 </Figure>
 
-Throughout the uncertainty mapping we distinguish between CDR pathways, CDR approaches, and CDR projects. Within a CDR pathway like Ocean Alkalinity Enhancement, there may be several distinct approaches — for example, introducing alkalinity directly into the ocean in an aqueous form or through mineral dissolution. Similarly, there may be multiple projects trying to implement a given CDR approach in the real world using different execution strategies. Our uncertainty mapping primarily applies to CDR approaches, meaning that it describes the range in which projects are likely to operate, but it does not directly characterize the uncertainty related to any particular project. We try to indicate clearly where project execution strategies may create meaningful differences in uncertainty characterization.
+Throughout the uncertainty mapping, we distinguish between CDR pathways, CDR approaches, and CDR projects. Within a CDR pathway like ocean alkalinity enhancement, there may be several distinct approaches — for example, introducing alkalinity directly into the ocean in an aqueous form or through mineral dissolution. Similarly, there may be multiple projects trying to implement a given CDR approach in the real world using different execution strategies. Our uncertainty mapping primarily applies to CDR approaches, meaning that it describes the range in which projects are likely to operate, but it does not directly characterize the uncertainty related to any particular project. We try to indicate clearly where project execution strategies may create meaningful differences in uncertainty characterization.
 
 ### 01 — Uncertainty impact
 
@@ -90,7 +90,7 @@ Note that this metric represents a combination of both how wide a component’s 
 
 ### 02 — Uncertainty type
 
-The second dimension we considered was the type of unknown underlying a given quantification uncertainty. We identified three uncertainty types which we think provide intuition about the kinds of efforts needed to reduce uncertainty over time.
+The second dimension we considered was the type of unknown underlying a given quantification uncertainty. We identified three uncertainty types that we think provide intuition about the kinds of efforts needed to reduce uncertainty over time.
 
 Execution uncertainties relate to the execution or operation of a project, its reporting, or its calculations. In most cases, execution uncertainty pertains to how well we know what was done — for example, how many tons of macroalgae grew or how much CO₂ was injected for geologic storage? These drivers of uncertainty can often be mitigated through careful deployment of existing tools and practices.
 
@@ -104,22 +104,21 @@ Finally, we labeled each component to indicate our perspective on who should be 
 
 In cases where uncertainty depends on a project’s operational choices or could be appropriately addressed through project-specific R&D efforts, we assigned project responsibility. In cases where reducing uncertainty requires broader scientific research or cross-project coordination that cannot (or should not) be carried out by a single project, we assigned system responsibility.
 
-With the system responsibility classification, our intent is not to imply that projects can ignore these uncertainties, but rather to emphasize that some differentiation exists between developing deployment capacity and working on the fundamental science. We believe fundamental science should be shared across the field rather than being the responsibility or intellectual property of a single project. Incentive systems, in turn, must be thoughtfully designed to encourage project contributions to reducing system uncertainties.
+With the system responsibility classification, our intent is not to imply that projects can ignore these uncertainties, but rather to emphasize that some differentiation exists between developing deployment capacity and working on the fundamental science. We believe fundamental science should be shared across the field rather than being the responsibility or intellectual property of a single project. Incentive systems, in turn, must be thoughtfully designed to encourage project contributions to the reduction of system uncertainties.
 
 ## Verification Confidence Levels (VCLs)
 
-To summarize the uncertainty mapping, we developed the Verification Confidence Level (VCL) metric. The VCL range for each pathway assesses the extent to which net carbon removal and durability can be confidendently quantified using the best approaches available today. We hope the field will work together to shift these VCL ranges to the right over time, and in the process, carefully consider the trade-offs presented by different CDR approaches between uncertainty, cost, and potential for scale.
+To summarize the uncertainty mapping, we developed the Verification Confidence Level (VCL) metric. The VCL range for each pathway assesses the extent to which net carbon removal and durability can be confidently quantified using the best approaches available today. We hope the field will work together to shift these VCL ranges to the right over time, and in the process, carefully consider the trade-offs different CDR approaches present between uncertainty, cost, and potential for scale.
 
 <Figure>
   <VCLChart />
   <FigureCaption number={2}>
     The Verification Confidence Level (VCL) metric represents our confidence
     that carbon removal and storage durability outcomes can be accurately
-    quantified using the best scientific understanding, instrumentation,
-    modeling and methodologies available today. Each CDR pathway is associated
-    with a range of VCLs, which captures differences between potential
-    approaches within each pathway and the associated quantification
-    uncertainties.
+    quantified using the best scientific understanding, measurement, and
+    modeling approaches available today. Each CDR pathway is associated with a
+    range of VCLs, which captures differences between potential approaches
+    within each pathway and the associated quantification uncertainties.
   </FigureCaption>
 </Figure>
 
@@ -129,7 +128,7 @@ Our analysis of a pathway’s component uncertainties directly determines its VC
   <VCLTable />
 </Figure>
 
-Most pathways are associated with a range of VCLs, rather than a single VCL, due to the diversity of approaches within a given pathway. To continue the example used above, an Ocean Alkalinity Enhancement (OAE) project could introduce alkalinity directly (e.g., via aqueous NaOH) or in a mineral form that has to dissolve to release alkalinity (e.g., olivine). The dissolution and precipitation dynamics of the mineral approach lead to significant uncertainty about how much alkalinity is actually introduced to the surface ocean and therefore how much carbon removal occurs. As a result, we classify mineral-based OAE as VCL 1-2, direct alkalinity addition as VCL 3, and the OAE pathway as a whole as VCL 1-3. A pathway-level VCL does not guarantee that individual projects within that pathway are executing on best practice quantification approaches. For example, even though OAE is classified as VCL 2-3, an OAE project could fail to carefully characterize their alkalinity additions and functionally be at VCL 1.
+Most pathways are associated with a range of VCLs, rather than a single VCL, due to the diversity of approaches within a given pathway. To continue the example used above, an ocean alkalinity enhancement (OAE) project could introduce alkalinity directly (e.g., via aqueous NaOH) or in a mineral form that has to dissolve to release alkalinity (e.g., olivine). The dissolution and precipitation dynamics of the mineral approach lead to significant uncertainty about how much alkalinity is actually introduced to the surface ocean and, therefore, how much carbon removal occurs. As a result, we classify mineral-based OAE as VCL 1-2, direct alkalinity addition as VCL 3, and the OAE pathway as a whole as VCL 1-3. A pathway-level VCL does not guarantee that individual projects within that pathway are executing on best practice quantification approaches. For example, even though OAE is classified as VCL 2-3, an OAE project could fail to carefully characterize their alkalinity additions and functionally be at VCL 1.
 
 Like the uncertainty mapping, the pathway VCL ranges represent a current snapshot of the field that will change over time through research and innovation. Investing in low-VCL pathways to reduce uncertainties will help enable the development of novel CDR approaches with high potential. In short, we think a low VCL should be a barrier to scaling, but not a barrier to exploration.
 
@@ -159,7 +158,7 @@ First, because uncertainty should be factored into any credited tons, determinin
 
 Second, when quantification of outcomes is highly uncertain, the characterization of uncertainty itself becomes more uncertain. Under these conditions, crediting tons is potentially problematic as an incorrect understanding of a fundamental piece of the system could inappropriately credit a significant number of tons. While our VCL metric doesn’t explicitly estimate the risk of these “unknown unknowns,” we believe that the risks are correlated with the VCL metric.
 
-How to draw the line between ton mode and exploration mode is inescapably subjective, so it will likely be challenging to set up a sharp threshold between the two. We hope our VCL metric can [help inform](TK) these decisions.
+How to draw the line between ton mode and exploration mode is inescapably subjective, so it will likely be challenging to set up a sharp threshold between the two. We hope our VCL metric can [help inform](http://frontierclimate.com/writing/quantifying-delivered-cdr) these decisions.
 
 Ultimately, we believe buyers should match their goals to the level of uncertainty in each CDR pathway. If one aims to justify carbon accounting claims with purchased tons, it is more appropriate to purchase from high-VCL pathways that are ready for “ton mode.” Buying from low-VCL pathways in “exploration mode” can be a high-leverage strategy to help the ecosystem develop, but the goal should be supporting projects that contribute to our collective understanding of the efficacy and safety of early-stage approaches — not purchasing credits to make carbon accounting claims.
 
@@ -175,11 +174,11 @@ Another system responsibility is the development of structures — organizations
 
 There’s a lot of work left to do when it comes to CDR MRV. We’re excited to see a community forming around this topic, and we hope this work contributes to the conversation.
 
-With a shared vision and commitment to high-integrity outcomes, we hope it will be possible to create a CDR ecosystem that (1) is transparent about uncertainty and ensures that climate claims made publicly are true, (2) supports innovation and exploration, (3) does not scale approaches until there is confidence about their efficacy and safety, (4) incentivizes efforts that reduce project and system-level uncertainties over time, and (5) avoids performative compliance and incorporates learning quickly. A systematic approach to characterizing the readiness of MRV across CDR pathways will be necessary to get there.
+With a shared vision and commitment to high-integrity outcomes, we hope it will be possible to create a CDR ecosystem that (1) is transparent about uncertainty and ensures that climate claims made publicly are true, (2) supports innovation and exploration, (3) does not scale approaches until there is confidence about their efficacy and safety, (4) incentivizes efforts that reduce project- and system-level uncertainties over time, and (5) avoids performative compliance and incorporates learning quickly. A systematic approach to characterizing the readiness of MRV across CDR pathways will be necessary to get there.
 
-In the near term, we recognize that buyers, CDR companies, and scientific experts will have to work together to fill the gaps. You can [read more in their post](TK) about how Frontier — as a leading early buyer — will incorporate learnings from this assessment into their purchasing approach.
+In the near term, we recognize that buyers, CDR companies, and scientific experts will have to work together to fill the gaps. You can [read more in their post](http://frontierclimate.com/writing/quantifying-delivered-cdr) about how Frontier — as a leading early buyer — will incorporate learnings from this assessment into their purchasing approach.
 
-In the medium term, there might be a role for a new, independent, third-party organization to establish MRV best practices and coordinate verification efforts across different pathways. There may also be a role for third-parties with deep expertise and capacity in specific pathways to provide more targeted measurement, modeling, and/or auditing services. These roles could potentially be filled by non-profits, for-profits, or government agencies — but in any configuration it will be critical to avoid conflicts of interest.
+In the medium term, there might be a role for a new, independent, third-party organization to establish MRV best practices and coordinate verification efforts across different pathways. There may also be a role for third-parties with deep expertise and capacity in specific pathways to provide more targeted measurement, modeling, and/or auditing services. These roles could potentially be filled by nonprofits, for-profits, or government agencies — but in any configuration it will be critical to avoid conflicts of interest.
 
 Moving forward, both of our teams look forward to continued engagement on this topic. We plan to update this tool on at least an annual basis — both to reflect changes within pathways that are already included in the tool, as well as to add pathways like the mineralization of mine tailings, biochar, direct ocean capture, and terrestrial biomass burial. As always, we invite your feedback at any point along the way.
 
@@ -187,7 +186,7 @@ We will also be looking for opportunities to support the conversation through we
 
 <Endnote label='Credits' divider>
 
-Freya, Joanna, and Zeke led the uncertainty mapping and development of the VCL framework, with support from Frontier and CarbonPlan team members. Freya wrote the first draft of the article. All authors contributed to the analysis and writing the article. Kata built the web tool with help from Jeremy and Raphael Hagen.
+Freya, Joanna, and Zeke led the uncertainty mapping and development of the VCL framework, with support from Frontier and CarbonPlan team members. Freya wrote the first draft of the article. All authors contributed to the analysis and to writing the article. Kata built the web tool with help from Jeremy and Raphael Hagen.
 
 This work was informed by the input and feedback from more than [30 external parties](/research/cdr-verification-methods#acknowledgments), including independent scientists, CDR companies, and other ecosystem actors. The authors are solely responsible for any remaining mistakes or omissions.
 
@@ -199,8 +198,8 @@ F Chay, J Klitzke, Z Hausfather, K Martin, J Freeman, D Cullenward (2022) “Ver
 
 <Endnote label='Terms'>
 
-CarbonPlan and Frontier collaborated on this work using their own individual funding resources. CarbonPlan used unrestricted funding from Additional Ventures to support our engagement, and previously provided modest paid consulting services associated with Stripe’s [first two purchase rounds in 2020 and 2021](https://carbonplan.org/funding). The authors are solely responsible for the content of the analysis and this writeup, which do not represent the views of any other organizations or individuals.
+CarbonPlan and Frontier collaborated on this work using their own individual funding resources. CarbonPlan used unrestricted funding from Additional Ventures to support our engagement, and previously provided modest paid consulting services associated with Stripe’s [first two purchase rounds in 2020 and 2021](https://carbonplan.org/funding). The authors are solely responsible for the content of the analysis and this write-up, which do not represent the views of any other organizations or individuals.
 
-Article text and figures made available under a CC-BY 4.0 International license. Implementation of uncertainty mapping tool made available under an MIT license. Uncertainty mapping content made available under a CC-BY 4.0 International license.
+Article text and figures are made available under a CC-BY 4.0 International license. Implementation of the uncertainty mapping tool is made available under an MIT license. Uncertainty mapping content is made available under a CC-BY 4.0 International license.
 
 </Endnote>
