@@ -21,7 +21,6 @@ const tools = [
     summary:
       'Interactive tool for understanding Verification Confidence Levels (VCLs) for carbon removal.',
     title: 'CDR Verification Framework',
-    hideInIndex: true,
   },
   {
     id: 'cmip6-downscaling',
