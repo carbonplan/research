@@ -3,6 +3,33 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'cdr-verification-explainer': {
+    PathwayDiagram: dynamic(() =>
+      import(
+        '../../articles/cdr-verification-explainer/components/pathway-diagram.js'
+      ).then((mod) => mod.PathwayDiagram || mod.default)
+    ),
+    UncertaintyDimensions: dynamic(() =>
+      import(
+        '../../articles/cdr-verification-explainer/components/uncertainty-dimensions.js'
+      ).then((mod) => mod.UncertaintyDimensions || mod.default)
+    ),
+    VCLChart: dynamic(() =>
+      import(
+        '../../articles/cdr-verification-explainer/components/vcl-chart.js'
+      ).then((mod) => mod.VCLChart || mod.default)
+    ),
+    VCLTable: dynamic(() =>
+      import(
+        '../../articles/cdr-verification-explainer/components/vcl-table.js'
+      ).then((mod) => mod.VCLTable || mod.default)
+    ),
+    Equation: dynamic(() =>
+      import(
+        '../../articles/cdr-verification-explainer/components/equation.js'
+      ).then((mod) => mod.Equation || mod.default)
+    ),
+  },
   'cdr-scale-barriers': {
     BigQuote: dynamic(() =>
       import('../../articles/cdr-scale-barriers/components/big-quote.js').then(
@@ -375,6 +402,29 @@ const components = {
     ),
   },
   'climate-financial-risks': {},
+  'cdr-verification-methods': {
+    Figure: dynamic(() =>
+      import('@carbonplan/components').then((mod) => mod.Figure || mod.default)
+    ),
+    Table: dynamic(() =>
+      import('@carbonplan/components').then((mod) => mod.Table || mod.default)
+    ),
+    TableCaption: dynamic(() =>
+      import('@carbonplan/components').then(
+        (mod) => mod.TableCaption || mod.default
+      )
+    ),
+    UncertaintyDimensions: dynamic(() =>
+      import(
+        '../../articles/cdr-verification-explainer/components/uncertainty-dimensions.js'
+      ).then((mod) => mod.UncertaintyDimensions || mod.default)
+    ),
+    VCLTable: dynamic(() =>
+      import(
+        '../../articles/cdr-verification-explainer/components/vcl-table.js'
+      ).then((mod) => mod.VCLTable || mod.default)
+    ),
+  },
   'forest-offsets-explainer-faq': {
     CommonPractice: dynamic(() =>
       import(
