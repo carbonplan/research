@@ -5,7 +5,6 @@ card: cdr-verification-explainer
 quickLook: TK
 back: /research/cdr-verification-explainer
 slug: cdr-verification-methods
-fileId: 1n-vM-AySdneugQ_niZuoBVEX_a7S37aq3vzRwV71euY
 components:
   - name: Figure
     src: '@carbonplan/components'

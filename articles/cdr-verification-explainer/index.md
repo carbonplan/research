@@ -16,7 +16,7 @@ summary: We developed an interactive tool to map quantification capacity and unc
 icon: articles/019/tape-small
 background: articles/019/tape
 card: cdr-verification-explainer
-fileId: 1xf6Uvrolq1dPtzV4KUrd21dDxdhWvsBgcvpnD2v65Vk
+hideInIndex: true
 components:
   - name: PathwayDiagram
     src: ./components/pathway-diagram.js
