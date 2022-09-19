@@ -39,7 +39,7 @@ We rolled up our element-level assessment of uncertainty into a pathway Verifica
 
 Read our [explainer](carbonplan.org/research/cdr-verification-explainer) for a summary of the key takeaways and tensions that emerged from the process of building this tool. Read [Frontier’s post](http://frontierclimate.com/writing/quantifying-delivered-cdr) to learn how they are incorporating lessons into their upcoming purchase cycles.
 
-## Uncertainty mapping — framework
+## Uncertainty mapping — Framework
 
 Robust quantification of carbon removal and storage durability is critical for understanding the real-world outcomes and performance of different CDR approaches over time. Ideally, CDR outcomes would be quantified within a broader MRV system that sets clear standards and facilitates trustworthy data acquisition and reporting. In the absence of such a system, it is important that both CDR projects and CDR buyers work toward high-quality quantification approaches.
 
@@ -81,7 +81,7 @@ In cases where uncertainty depends on a project’s operational choices or could
 
 With the system responsibility classification, our intent is not to imply that projects can ignore these uncertainties, but rather to emphasize that some differentiation exists between developing deployment capacity and working on the fundamental science. We believe fundamental science should be shared across the field rather than being the responsibility or intellectual property of a single project. Incentive systems, in turn, must be thoughtfully designed to encourage project contributions to reducing system uncertainties.
 
-## Uncertainty mapping — methodological decisions
+## Uncertainty mapping — Methodological decisions
 
 In addition to outlining the framework we used to map uncertainty across the pathways, we wanted to highlight a few methodological decisions that we think are important for interpreting our results.
 
@@ -101,7 +101,7 @@ The fast-to-slow framing also simplifies the quantification of net carbon remova
 
 Despite the attractive qualities of the fast-to-slow framing, we think it’s important to normalize the quantification of net carbon removal to atmospheric outcomes for all CDR pathways. In the fast carbon cycle, carbon is partitioned between reservoirs like the atmosphere, the surface ocean, and terrestrial vegetation — all of which exchange carbon flows through a variety of mechanisms. If one perturbs any of these reservoirs, it takes time for the other reservoirs to equilibrate. Since the primary function of CDR in the foreseeable future is compensating for ongoing, hard-to-abate emissions in a net-zero framework, we think it is most appropriate to normalize claimed outcomes to the atmosphere. In other words, we think CDR “compensation” claims are only appropriate if one emits a ton of CO₂ into the atmosphere and takes a ton back out of the atmosphere and stores it for a reasonably comparable duration.
 
-In addition to affecting ocean biomass sinking, this framing also has implications for approaches where an upfront action results in removals over time — like enhanced weathering — and for biomass carbon removal and storage (BiCRS) approaches that rely on biomass feedstocks. In the case of Enhanced Weathering, normalizing to atmospheric outcomes means that credited removals should accumulate over time based on the weathering curve of applied minerals. For BiCRS, credited removals should reflect the counterfactual decay time of biomass feedstock.
+In addition to affecting ocean biomass sinking, this framing also has implications for approaches where an upfront action results in removals over time — like enhanced weathering — and for biomass carbon removal and storage (BiCRS) approaches that rely on biomass feedstocks. In the case of enhanced weathering, normalizing to atmospheric outcomes means that credited removals should accumulate over time based on the weathering curve of applied minerals. For BiCRS, credited removals should reflect the counterfactual decay time of biomass feedstock.
 
 We recognize that understanding the role of carbon removal in the context of temperature management or cleaning up historic emissions requires a consideration of the partitioning dynamics between fast-cycle reservoirs. It also requires consideration of potential trade-offs between taking carbon out of the atmosphere versus other parts of the fast carbon cycle, which may, for example, represent trade-offs between temperature and ocean acidification benefits. For the time being, however, we encourage others to similarly quantify net carbon removal with respect to atmospheric outcomes for all CDR pathways to enable comparability and interpretability of claimed outcomes in the context of net-zero frameworks.
 
@@ -115,11 +115,11 @@ It is not clear to us which option is preferable in cases where the avoided emis
 
 ### Consistency around secondary impacts
 
-A failure to consider larger system impacts has the potential to skew the perceived benefits of CDR pathways. We hope to avoid this by promoting an expansive view that includes both direct and indirect effects of each CDR pathway. For example, we think the potential for indirect land use change must be considered for any approach that relies on a biomass feedstock. Similarly, we think the secondary energy system impacts of new energy demand must be considered for energy intensive approaches like DAC or Electrochemical OAE.
+A failure to consider larger system impacts has the potential to skew the perceived benefits of CDR pathways. We hope to avoid this by promoting an expansive view that includes both direct and indirect effects of each CDR pathway. For example, we think the potential for indirect land use change must be considered for any approach that relies on a biomass feedstock. Similarly, we think the secondary energy system impacts of new energy demand must be considered for energy intensive approaches like DAC or electrochemical OAE.
 
 ### Navigating counterfactuals
 
-When considering project MRV, the issue of counterfactuals is both challenging and important. In our uncertainty mapping, we include emissions associated with potential secondary effects of CDR activities. For example, if a biomass feedstock currently serves a function that will need to be replaced (e.g. being tilled into the field to provide soil nutrients), we think the emissions associated with the replacement (e.g., additional fertilizer application) must be included in the quantification of net carbon removal achieved. However, we recognize that these secondary effects rely on a counterfactual assumption about what would have happened in the absence of the CDR activities.
+When considering project MRV, the issue of counterfactuals is both challenging and important. In our uncertainty mapping, we include emissions associated with potential secondary effects of CDR activities. For example, if a biomass feedstock currently serves a function that will need to be replaced (e.g., being tilled into the field to provide soil nutrients), we think the emissions associated with the replacement (e.g., additional fertilizer application) must be included in the quantification of net carbon removal achieved. However, we recognize that these secondary effects rely on a counterfactual assumption about what would have happened in the absence of the CDR activities.
 
 In general, we focus on counterfactuals about existing uses and their associated secondary effects rather than potential uses in the future. For example, we think agricultural feedstocks for biomass carbon removal and storage (BiCRS) should be evaluated based on their current utilization (e.g., for animal feed or soil nutrients) rather than potential future uses that are not normally practiced today (e.g., use in alternative bioenergy applications). We recognize that the counterfactual for existing utilization should also be flexible to be reevaluated in the future if prevailing practices change.
 
