@@ -147,7 +147,7 @@ const Main = ({ articles, commentary }) => {
             label='Tools'
             id='tools'
             selected={selected === 'tools'}
-            items={tools}
+            items={tools.filter((d) => !d.hideInIndex)}
             Entries={Tools}
             limit={6}
             ref={listRefs.tools}
@@ -156,7 +156,7 @@ const Main = ({ articles, commentary }) => {
             label='Articles'
             id='articles'
             selected={selected === 'articles'}
-            items={articles}
+            items={articles.filter((d) => !d.hideInIndex)}
             Entries={Articles}
             ref={listRefs.articles}
           />

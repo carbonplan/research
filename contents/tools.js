@@ -10,9 +10,19 @@ import {
   ForestCarbon,
   SeaweedFarming,
   CMIP6Downscaling,
+  CDRVerification,
 } from '../components/tool-logos'
 
 const tools = [
+  {
+    id: 'cdr-verification',
+    logo: <CDRVerification />,
+    color: 'secondary',
+    summary:
+      'Interactive tool for understanding Verification Confidence Levels (VCLs) for carbon removal.',
+    title: 'CDR Verification Framework',
+    hideInIndex: true,
+  },
   {
     id: 'cmip6-downscaling',
     logo: <CMIP6Downscaling />,
