@@ -22,7 +22,7 @@ components:
 
 A system for CDR MRV must produce robust, quantitative estimates of net carbon removal and storage durability for different CDR pathways. Since CDR pathways are diverse in their approach and maturity, the tools available to make those estimates vary greatly — as do their associated uncertainties.
 
-With the aim of contributing to a solid foundation for future conversations about CDR MRV, Frontier and CarbonPlan collaborated to develop an [interactive tool](carbonplan.org/research/cdr-verification) that allows users to explore the quantification capacity and key uncertainties we see in different CDR pathways today. The interactive tool currently includes our assessment of six CDR pathways:
+With the aim of contributing to a solid foundation for future conversations about CDR MRV, Frontier and CarbonPlan collaborated to develop an [interactive tool](https://carbonplan.org/research/cdr-verification) that allows users to explore the quantification capacity and key uncertainties we see in different CDR pathways today. The interactive tool currently includes our assessment of six CDR pathways:
 
 - Direct air capture (DAC)
 - Biomass carbon removal and storage (BiCRS)
