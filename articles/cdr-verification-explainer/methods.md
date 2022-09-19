@@ -171,7 +171,7 @@ At multiple points in the process, we have received important input and feedback
       ],
       [
         'Scientific Experts',
-        'Bill Collins (LBNL), David Ho (University of Hawai’i), Fabiano Ximenes (NSW Government), Jens Hartmann (Institut für Geologie), Kate Maher (Stanford), Matt Long (NCAR), Newsha Ajami (LBNL), Pura Bithakre (LBNL), Sarah Saltzer (Stanford), Sophie Gill (University of Oxford), Susana García López (Heriod-Watt University)',
+        'Bill Collins (LBNL), David Ho (University of Hawaiʻi at Mānoa), Fabiano Ximenes (NSW Government), Jens Hartmann (Institut für Geologie), Kate Maher (Stanford), Matt Long (NCAR), Newsha Ajami (LBNL), Pura Bithakre (LBNL), Sarah Saltzer (Stanford), Sophie Gill (University of Oxford), Susana García López (Heriod-Watt University)',
       ],
       [
         'Ecosystem Actors',
