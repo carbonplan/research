@@ -33,7 +33,7 @@ const Methods = () => {
         net emissions and factored into net removed cost using a GWP100 of 32.
         Additionally, the model assumes that all the natural gas combusted for
         thermal energy is co-captured by the process, resulting in no emissions
-        from combustion. A leakge rate parameter accounts for natural gas
+        from combustion. A leakage rate parameter accounts for natural gas
         leakage, which has been reported as high as 3.7% in the Permian Basin
         region of the United States.
       </Themed.p>
