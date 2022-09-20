@@ -4,6 +4,29 @@ import Highlight from './highlight'
 
 const HIGHLIGHTS = [
   {
+    id: 'cdr-verification',
+    date: '09-19-2022',
+    href: '/research/cdr-verification',
+    title: 'CDR verification framework',
+    summary:
+      'We developed an interactive tool to map quantification capacity and uncertainty across CDR pathways. Read this article, explore the interactive tool, or read Frontier’s post to learn more.',
+    links: [
+      { label: 'Interactive tool', href: '/research/cdr-verification' },
+      {
+        label: 'Explainer article',
+        href: '/research/cdr-verification-explainer',
+      },
+      {
+        label: 'Methods',
+        href: '/research/cdr-verification-methods',
+      },
+      {
+        label: 'Frontier post',
+        href: 'http://frontierclimate.com/writing/quantifying-delivered-cdr',
+      },
+    ],
+  },
+  {
     id: 'cmip6-downscaling',
     date: '06-30-2022',
     title: 'CMIP6 downscaling',
@@ -19,21 +42,6 @@ const HIGHLIGHTS = [
       {
         label: 'Policy brief',
         href: '/research/data-financial-risk',
-      },
-    ],
-  },
-  {
-    id: 'cdr-scale-barriers',
-    date: '07-12-2022',
-    href: '/research/cdr-scale-barriers',
-    title:
-      'Barriers to scaling the long-duration carbon dioxide removal industry',
-    summary:
-      'What are the key challenges facing the carbon removal industry? We surveyed 37 stakeholders to better understand priorities, perceptions, and challenges facing the industry. Read our summary article or download the full report.',
-    links: [
-      {
-        label: 'Download report',
-        href: 'https://files.carbonplan.org/CDR-Scale-Barriers.pdf',
       },
     ],
   },
