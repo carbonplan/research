@@ -70,6 +70,6 @@
     "glob": "^7.1.7",
     "jest": "^27.4.7",
     "prettier": "2.3.0",
-    "puppeteer": "^10.4.0"
+    "puppeteer": "^18.0.3"
   }
 }
