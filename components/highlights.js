@@ -9,7 +9,7 @@ const HIGHLIGHTS = [
     href: '/research/cdr-verification',
     title: 'CDR verification framework',
     summary:
-      'We developed an interactive tool to map quantification capacity and uncertainty across CDR pathways. Read this article, explore the interactive tool, or read Frontier’s post to learn more.',
+      'We developed an interactive tool to map quantification capacity and uncertainty across CDR pathways. Explore the interactive tool, read the article, or read Frontier’s post to learn more.',
     links: [
       { label: 'Interactive tool', href: '/research/cdr-verification' },
       {
