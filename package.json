@@ -28,7 +28,7 @@
     "@carbonplan/colormaps": "^3.0.2",
     "@carbonplan/components": "^11.8.1",
     "@carbonplan/icons": "^1.0.0",
-    "@carbonplan/layouts": "^2.4.2",
+    "@carbonplan/layouts": "^2.4.4",
     "@carbonplan/minimaps": "^1.1.0",
     "@carbonplan/seaweed-farming-model": "^1.0.0",
     "@carbonplan/theme": "^7.0.0",
