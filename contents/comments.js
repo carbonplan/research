@@ -1,5 +1,10 @@
 const comments = [
   {
+    title: 'Australian Independent Review Panel re: Climate integrity of ACCUs',
+    href: 'https://files.carbonplan.org/ACCU-Review-Comment-Letter-09-27-2022.pdf',
+    date: '09-27-2022',
+  },
+  {
     title:
       'Voluntary Carbon Markets Integrity Initiative re: Provisional Claims Code of Practice',
     href: 'https://files.carbonplan.org/VCMI-Comment-Letter-08-12-2022.pdf',
