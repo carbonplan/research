@@ -1,0 +1,77 @@
+{
+  "badgley.2022": {
+    "authors": "G Badgley et al.",
+    "year": 2022,
+    "title": "Systematic over-crediting in California’s forest carbon offsets program",
+    "journal": "Global Change Biology",
+    "url": "https://doi.org/10.1111/gcb.15943"
+  },
+  "west.2020": {
+    "authors": "T A P West et al.",
+    "year": 2020,
+    "title": "Overstated carbon emission reductions from voluntary REDD+ projects in the Brazilian Amazon",
+    "journal": "PNAS",
+    "url": "https://doi.org/10.1073/pnas.2004334117"
+  },
+  "coffield.2022": {
+    "authors": "S Coffield et al.",
+    "year": 2022,
+    "title": "Using remote sensing to quantify the additional climate benefits of California forest offset projects",
+    "journal": "Global Change Biology",
+    "url": "https://doi.org/10.1111/gcb.16380"
+  },
+  "kallbekken.2022": {
+    "authors": "S Kallbekken & D G Victor",
+    "year": 2022,
+    "title": "A cleaner future for flight — aviation needs a radical redesign",
+    "journal": "Nature",
+    "url": "https://doi.org/10.1038/d41586-022-02963-7"
+  },
+  "bctp.2022": {
+    "authors": "UC Berkeley Carbon Trading Project",
+    "year": 2022,
+    "title": "Voluntary Registry Offset Database, Version 5",
+    "url": "https://gspp.berkeley.edu/faculty-and-impact/centers/cepp/projects/berkeley-carbon-trading-project/offsets-database "
+  },
+  "schneider.2009": {
+    "authors": "L Schneider",
+    "year": 2009,
+    "title": "Assessing the additionality of CDM projects: practical experiences and lessons learned",
+    "journal": "Climate Policy",
+    "url": "https://doi.org/10.3763/cpol.2008.0533"
+  },
+  "fankhauser.2022": {
+    "authors": "S Fankhauser et al.",
+    "year": 2022,
+    "title": "The meaning of net zero and how to get it right",
+    "journal": "Nature Climate Change",
+    "url": "https://doi.org/10.1038/s41558-021-01245-w"
+  },
+  "allen.2022": {
+    "authors": "M Allen et al.",
+    "year": 2022,
+    "title": "Net Zero: Science, Origins, and Implications",
+    "journal": "Annual Review of Environment and Resources",
+    "url": "https://doi.org/10.1146/annurev-environ-112320-105050"
+  },
+  "badgley.2022b": {
+    "authors": "G Badgley et al.",
+    "year": 2022,
+    "title": "California’s buffer pool is severely undercapitalized",
+    "journal": "Frontiers in Forests and Global Change",
+    "url": "https://doi.org/10.3389/ffgc.2022.930426"
+  },
+  "joppa.2021": {
+    "authors": "L Joppa et al.",
+    "year": 2021,
+    "title": "Microsoft’s million-tonne CO₂-removal purchase — lessons for net zero",
+    "journal": "Nature",
+    "url": "https://doi.org/10.1038/d41586-021-02606-3"
+  },
+  "allen.2020": {
+    "authors": "M Allen et al.",
+    "year": 2020,
+    "title": "The Oxford Principles for Net Zero Aligned Carbon Offsetting",
+    "url": "https://www.smithschool.ox.ac.uk/research/oxford-offsetting-principles"
+  }
+}
