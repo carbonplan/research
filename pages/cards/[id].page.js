@@ -35,7 +35,7 @@ const Card = ({ title, authors, date, color }) => {
               mt: '-10px',
             }}
           >
-            blog / carbonplan
+            commentary / carbonplan
           </Box>
           <Box
             as='h1'
