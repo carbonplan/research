@@ -365,6 +365,18 @@ const components = {
       )
     ),
   },
+  'verra-integrity-council': {
+    CreditHierarchy: dynamic(() =>
+      import(
+        '../../commentary/verra-integrity-council/components/credit-hierarchy.js'
+      ).then((mod) => mod.CreditHierarchy || mod.default)
+    ),
+    CreditIssuance: dynamic(() =>
+      import(
+        '../../commentary/verra-integrity-council/components/credit-issuance.js'
+      ).then((mod) => mod.CreditIssuance || mod.default)
+    ),
+  },
   'data-financial-risk': {},
   'scoping-plan-comments': {
     EmissionsTable: dynamic(() =>
