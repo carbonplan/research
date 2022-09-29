@@ -25,6 +25,8 @@ async function getScreenshot(id) {
   await page.setViewport({ width: 1200, height: 630 })
   await page.goto(baseUrl + '/cards/' + id)
   await page.waitForSelector('#final-authors')
+  // Wait for 0.5 seconds to ensure that fonts load
+  await new Promise((resolve) => setTimeout(resolve, 500))
   const file = await page.screenshot()
   await page.close()
 
