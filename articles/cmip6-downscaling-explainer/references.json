@@ -1,114 +1,107 @@
 {
   "lopez.2020": {
-    "authors": "Lopez-Cantu et al.",
+    "authors": "T Lopez-Cantu et al.",
     "year": 2020,
     "title": "Uncertainties in Future U.S. Extreme Precipitation From Downscaled Climate Projections",
     "journal": "Geophysical Research Letters",
     "url": "https://doi.org/10.1029/2019GL086797"
   },
   "khan.2006": {
-    "authors": "Khan et al.",
+    "authors": "M S Khan et al.",
     "year": 2006,
     "title": "Uncertainty analysis of statistical downscaling methods",
     "journal": "Journal of Hydrology",
     "url": "https://doi.org/10.1016/j.jhydrol.2005.06.035"
   },
   "chen.2013": {
-    "authors": "Chen et al.",
+    "authors": "J Chen et al.",
     "year": 2013,
     "title": "Performance and uncertainty evaluation of empirical downscaling methods in quantifying the climate change impacts on hydrology over two North American river basins",
     "journal": "Journal of Hydrology",
     "url": "https://doi.org/10.1016/j.jhydrol.2012.11.062"
   },
   "wootten.2017": {
-    "authors": "Wootten et al.",
+    "authors": "A Wootten et al.",
     "year": 2017,
     "title": "Characterizing Sources of Uncertainty from Global Climate Models and Downscaling Techniques",
     "journal": "Journal of Applied Meteorology and Climatology",
     "url": "https://doi.org/10.1175/JAMC-D-17-0087.1"
   },
   "gutmann.2022": {
-    "note": "Gutmann et al., in review"
+    "note": "E D Gutmann et al., in review"
   },
   "abatzoglou.2011": {
-    "authors": "Abatzoglou et al.",
+    "authors": "J T Abatzoglou et al.",
     "year": 2011,
     "title": "A comparison of statistical downscaling methods suited for wildfire applications",
     "journal": "International Journal of Climatology",
     "url": "https://doi.org/10.1002/joc.2312"
   },
   "vandal.2017": {
-    "authors": "Vandel et al.",
+    "authors": "T Vandel et al.",
     "year": 2017,
     "title": "DeepSD: Generating High Resolution Climate Change Projections through Single Image Super-Resolution",
     "journal": "Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
     "url": "https://doi.org/10.1145/3097983.3098004"
   },
   "sunyer.2015": {
-    "authors": "Sunyer et al.",
+    "authors": "M A Sunyer et al.",
     "year": 2015,
     "title": "Inter-comparison of statistical downscaling methods for projection of extreme precipitation in Europe",
     "journal": "Hydrology and Earth System Sciences",
     "url": "https://doi.org/10.5194/hess-19-1827-2015"
   },
   "werner.2016": {
-    "authors": "Werner et al.",
+    "authors": "A T Werner et al.",
     "year": 2016,
     "title": "Hydrologic extremes – an intercomparison of multiple gridded statistical downscaling methods",
     "journal": "Hydrology and Earth System Sciences",
     "url": "https://doi.org/10.5194/hess-20-1483-2016"
   },
   "mullan.2015": {
-    "authors": "Mullan et al.",
+    "authors": "D Mullan et al.",
     "year": 2015,
     "title": "Validation of non-stationary precipitation series for site-specific impact assessment: comparison of two statistical downscaling techniques",
     "journal": "Climate Dynamics",
     "url": "https://doi.org/10.1007/s00382-015-2626-x"
   },
   "tabari.2020": {
-    "authors": "Tabari et al.",
+    "authors": "H Tabari et al.",
     "year": 2020,
     "title": "Comparison of statistical downscaling methods for climate change impact analysis on precipitation-driven drought",
     "journal": "Hydrology and Earth System Sciences",
     "url": "https://hess.copernicus.org/articles/25/3493/2021/"
   },
   "wood.2004": {
-    "authors": "Wood et al.",
+    "authors": "A W Wood et al.",
     "year": 2004,
     "title": "Hydrologic Implications of Dynamical and Statistical Approaches to Downscaling Climate Model Outputs",
     "journal": "Climatic Change",
     "url": "https://doi.org/10.1023/B:CLIM.0000013685.99609.9e"
   },
   "dai.2006": {
-    "authors": "Dai et al.",
+    "authors": "A Dai et al.",
     "year": 2006,
     "title": "Precipitation Characteristics in Eighteen Coupled Climate Models",
     "journal": "Journal of Climate",
     "url": "https://doi.org/10.1175/JCLI3884.1"
   },
   "chegwidden.2019": {
-    "authors": "Chegwidden et al.",
+    "authors": "O S Chegwidden et al.",
     "year": 2019,
     "title": "How Do Modeling Decisions Affect the Spread Among Hydrologic Climate Change Projections? Exploring a Large Ensemble of Simulations Across a Diversity of Hydroclimates",
     "journal": "Earth's Future",
-    "url": " https://doi.org/10.1029/2018EF001047"
-  },
-  "chegwidden.2019": {
-    "authors": "Chegwidden et al.",
-    "year": 2019,
-    "title": "How Do Modeling Decisions Affect the Spread Among Hydrologic Climate Change Projections? Exploring a Large Ensemble of Simulations Across a Diversity of Hydroclimates",
-    "journal": "Earth's Future",
-    "url": " https://doi.org/10.1029/2018EF001047"
+    "url": "https://doi.org/10.1029/2018EF001047"
   },
   "hersbach.2020": {
-    "authors": "Hersbach et al.",
+    "authors": "H Hersbach et al.",
     "year": 2020,
     "title": "The ERA5 global reanalysis",
     "journal": "Quaterly Journal of the Royal Meteorlogical Society",
     "url": "https://doi.org/10.1002/qj.3803"
   },
   "cannon.2015": {
-    "authors": "Cannon et al.",
+    "authors": "A J Cannon et al.",
     "year": 2015,
     "title": "Bias Correction of GCM Precipitation by Quantile Mapping: How Well Do Methods Preserve Changes in Quantiles and Extremes?",
     "journal": "Journal of Climate",

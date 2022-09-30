@@ -7,7 +7,7 @@
     "url": "https://doi.org/10.5194/essd-11-1783-2019"
   },
   "ciais.2013": {
-    "authors": "P. Ciais et al.",
+    "authors": "P Ciais et al.",
     "year": 2013,
     "title": "Carbon and Other Biogeochemical Cycles",
     "journal": "Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change",
@@ -28,21 +28,21 @@
     "url": "https://doi.org/10.1080/14693062.2020.1781035"
   },
   "martin.2018": {
-    "authors": "A. R. Martin et al.",
+    "authors": "A R Martin et al.",
     "year": 2018,
     "title": "Global patterns in wood carbon concentration across the world’s trees and forests",
     "journal": "Nature Geoscience",
     "url": "https://doi.org/10.1038/s41561-018-0246-x"
   },
   "lewis.2019": {
-    "authors": "S. L. Lewis et al.",
+    "authors": "S L Lewis et al.",
     "year": 2019,
     "title": "Restoring natural forests is the best way to remove atmospheric carbon",
     "journal": "Nature",
     "url": "https://doi.org/10.1038/d41586-019-01026-8"
   },
   "hepburn.2019": {
-    "authors": "C. Hepburn et al.",
+    "authors": "C Hepburn et al.",
     "year": "2019",
     "title": "The technological and economic prospects for CO₂ utilization and removal",
     "journal": "Nature",
@@ -56,7 +56,7 @@
     "url": "https://doi.org/10.1111/gcbb.12553"
   },
   "campbell.2018": {
-    "authors": "J. L. Campbell et al.",
+    "authors": "J L Campbell et al.",
     "year": "2018",
     "title": "Potential carbon storage in biochar made from logging residue: Basic principles and Southern Oregon case studies",
     "journal": "PLOS ONE",
