@@ -11,6 +11,8 @@ summary: A blistering critique from the carbon offset registry with a dominant â
 color: yellow
 card: verra-integrity-council
 links:
+  - label: Press coverage
+    href: https://www.protocol.com/climate/verra-voluntary-carbon-offset-market
   - label: Comments to the Integrity Council
     href: https://files.carbonplan.org/IC-VCM-Consultation-09-27-2022.pdf
 components:
