@@ -1,5 +1,17 @@
 const comments = [
   {
+    title:
+      'U.S. Commodity Futures Trading Commission re: Climate-Related Financial Risk',
+    href: 'https://files.carbonplan.org/CFTC-Climate-Risk-RFI-Comment-Letter-10-07-2022.pdf',
+    date: '10-07-2022',
+    links: [
+      {
+        label: 'Policy brief',
+        href: 'https://carbonplan.org/research/verra-integrity-council',
+      },
+    ],
+  },
+  {
     title: 'Australian Independent Review Panel re: Climate integrity of ACCUs',
     href: 'https://files.carbonplan.org/ACCU-Review-Comment-Letter-09-27-2022.pdf',
     date: '09-27-2022',
