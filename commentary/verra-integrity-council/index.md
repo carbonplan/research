@@ -15,6 +15,8 @@ links:
     href: https://www.protocol.com/climate/verra-voluntary-carbon-offset-market
   - label: Comments to the Integrity Council
     href: https://files.carbonplan.org/IC-VCM-Consultation-09-27-2022.pdf
+  - label: Comments to the CFTC
+    href: https://files.carbonplan.org/CFTC-Climate-Risk-RFI-Comment-Letter-10-07-2022.pdf
 components:
   - name: CreditHierarchy
     src: ./components/credit-hierarchy.js
