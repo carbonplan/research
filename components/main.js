@@ -103,12 +103,12 @@ const Main = ({ articles, commentary }) => {
       <Heading
         description={
           <span>
-            Articles, tools, and commentary on carbon
+            Articles, tools, and commentary on
             <Box
               as='br'
               sx={{ display: ['none', 'initial', 'initial', 'initial'] }}
             />{' '}
-            removal and climate solutions.
+            climate services and solutions.
           </span>
         }
         descriptionStart={[1, 4, 6, 6]}

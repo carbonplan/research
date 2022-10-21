@@ -7,7 +7,7 @@ const Index = ({ articles, commentary, count }) => {
     <Layout
       title={'Research – CarbonPlan'}
       description={
-        'Articles, tools, and commentary on carbon removal and climate solutions.'
+        'Articles, tools, and commentary on climate services and solutions.'
       }
       card={'https://images.carbonplan.org/social/research.png'}
       links={'local'}
