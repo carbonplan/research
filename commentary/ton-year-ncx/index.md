@@ -78,10 +78,9 @@ A shift in framing from physics to economics is no small matter. Despite relying
 > <br />
 > [...]
 > <br />
-> <br />
-> In summary, a targeted short-term IFM strategy not only offers equivalence to
-> “permanent tons” of impact, but does so with greater flexibility in terms of
-> storage and with greater assurance against reversals.”
+> In summary, a targeted short-term IFM strategy not only offers equivalence to “permanent
+> tons” of impact, but does so with greater flexibility in terms of storage and with
+> greater assurance against reversals.”
 
 That’s not correct; the _physical_ climate benefits of delaying 30.8 tCO₂ by one year are strictly less than the benefit of permanently avoiding 1 tCO₂ emitted today. Instead, what NCX’s calculations show is that, under a precise set of economic assumptions, the expected _economic value_ of a 1-year delay in emitting 30.8 tCO₂ is equivalent to the expected _economic value_ of emitting 1 tCO₂ today.
 
