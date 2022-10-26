@@ -83,29 +83,16 @@ Note that projected "risk" here means slightly different things for the differen
 <Figure>
   <RiskMaps />
   <FigureCaption number={1}>
-    Risks to forests projected through the 21st century.{' '}
-    <Box as='span' sx={{ color: 'orange' }}>
-      Fire
-    </Box>{' '}
-    risk represents the probability of at least one moderate or high severity
-    fire within a twenty year period.{' '}
-    <Box as='span' sx={{ color: 'pink' }}>
-      Drought
-    </Box>{' '}
-    and{' '}
-    <Box as='span' sx={{ color: 'blue' }}>
-      insect
-    </Box>{' '}
+    Risks to forests projected through the 21st century. <Orange>Fire</Orange>
+    risk represents the probability of at least one moderate or high severity fire
+    within a twenty year period. <Pink>Drought</Pink> and <Blue>insect</Blue>
     risks represent the expected mortality (as a fraction) related to each of
     the factors. Adjusting the sliders next to each panel raises or lowers the
     threshold for when a pixel will appear, denoting a location at or exceeding
-    that risk level. The{' '}
-    <Box as='span' sx={{ color: 'green' }}>
-      biomass
-    </Box>{' '}
-    map shows, as a reference, locations with an estimated biomass of at least 1
-    tC/ha in 2020. Pan through years (lower right) or change emissions scenario
-    (lower left) to see risks change.
+    that risk level. The <Green>biomass</Green> map shows, as a reference,
+    locations with an estimated biomass of at least 1 tC/ha in 2020. Pan through
+    years (lower right) or change emissions scenario (lower left) to see risks
+    change.
   </FigureCaption>
 </Figure>
 
@@ -126,17 +113,12 @@ In the future, all US-averaged risks are projected to increase in severity throu
 <Figure>
   <RiskTrajectories />
   <FigureCaption number={2}>
-    Trajectory of risks under three future climate change emissions scenarios:{' '}
-    <Box as='span' sx={{ color: 'red' }}>
-      SSP5-8.5 (high)
-    </Box>
-    , <Box as='span' sx={{ color: 'yellow' }}>
-      SSP3-7.0 (medium)
-    </Box>, and <Box as='span' sx={{ color: 'teal' }}>
-      SSP2-4.5 (low)
-    </Box>. Averaging risks regionally (upper left) reveals how risks depend on location.
-    The ensemble mean of 6 global climate models is dark while light traces indicate
-    each individual ensemble member. Historical period shown in gray.
+    Trajectory of risks under three future climate change emissions scenarios:
+    <Red>SSP5-8.5 (high)</Red>, <Yellow>SSP3-7.0 (medium)</Yellow>, and
+    <Teal>SSP2-4.5 (low)</Teal>. Averaging risks regionally (upper left) reveals
+    how risks depend on location. The ensemble mean of 6 global climate models
+    is dark while light traces indicate each individual ensemble member.
+    Historical period shown in gray.
   </FigureCaption>
 </Figure>
 

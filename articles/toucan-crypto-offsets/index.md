@@ -58,7 +58,7 @@ But the real money likely comes from converting BCTs to KLIMA tokens. In its ini
     initial (and remarkable) highs. Nevertheless, even recent KLIMA prices in
     the neighborhood of $20 per token represent a significant arbitrage
     potential for conventional Verra offset credits that were once worth just a
-    few dollars each.{' '}
+    few dollars each.
   </FigureCaption>
 </Figure>
 
@@ -125,22 +125,24 @@ These findings strongly suggest that many — if not the vast majority — of th
 
 Although we are concerned that blockchain-based approaches are amplifying shortcomings in existing carbon markets and end-running standards put in place to address known problems, we aren’t the first to notice this problem. In fact, a [recent post on Toucan’s governance forum](https://governance.toucan.earth/t/increase-quality-of-the-base-carbon-tonne-bct/39) addresses the problems of zombie projects and old credit vintages:
 
-> <Box as='p' sx={{ mb: '1em !important' }}>
->   The Toucan team got behind the ‘sweep the floor’ narrative of Klima DAO for
->   BCT, but given our mission we want to shift the narrative and focus on
->   financing higher quality projects.
-> </Box>
-> <Box as='p' sx={{ my: '1em !important' }}>
->   However this narrative and effect only works in the case where there is a
->   finite supply of these lower credits that can be ‘swept up’, and with the
->   constant issuing of cheap renewable credits which are continually brought on
->   chain as soon as the price of on chain BCT develops a premium over the
->   lowest cost of production.
-> </Box>
-> The Toucan team would therefore like to increase the quality of the Base
-> Carbon Tonne by moving the earliest vintage start date from 2008 to something
-> like 2012 or 2014, in order to increase the lowest cost of production, and the
-> minimum quality TCO2s permitted into BCT.
+> {<Box as='p' sx={{ mb: '1em !important' }}>
+> The Toucan team got behind the ‘sweep the floor’ narrative of Klima DAO for
+> BCT, but given our mission we want to shift the narrative and focus on
+> financing higher quality projects.
+>
+> </Box>}
+{<Box as='p' sx={{ my: '1em !important' }}>
+However this narrative and effect only works in the case where there is a
+finite supply of these lower credits that can be ‘swept up’, and with the
+constant issuing of cheap renewable credits which are continually brought on
+chain as soon as the price of on chain BCT develops a premium over the
+lowest cost of production.
+
+</Box>}
+The Toucan team would therefore like to increase the quality of the Base
+Carbon Tonne by moving the earliest vintage start date from 2008 to something
+like 2012 or 2014, in order to increase the lowest cost of production, and the
+minimum quality TCO2s permitted into BCT.
 
 We worry that this is too little, too late. Not only have tens of millions of credits already migrated on chain, but a vintage-year cut-off date of 2012 or 2014 does little to address quality concerns going forward. Restrictions by vintage year still allow older projects to bridge credits from newer vintage years, despite significant concerns about the climate additionality of many older projects’ fundamental claims. Other programs have explicitly prohibited these kinds of credits on quality grounds. For example, CORSIA’s rules exclude credits from any project that has ever generated credits prior to 2016 — no matter a credit’s vintage year.
 

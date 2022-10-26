@@ -141,20 +141,11 @@ This is best illustrated in the spatial pattern of projects in the Southern Casc
     practice number that distorts ecological reality. The number in each
     subregion shows the relative carbon compared to the supersection average, in
     units of tCO₂ per acre. The western-most carbon-rich subregion (
-    <Box as='span' sx={{ color: 'green' }}>
-      green
-    </Box>
-    ) contains almost all of this supersection’s offset projects <span
-      style={{ whiteSpace: 'nowrap' }}
-    >
-      (<Triangle />)
-    </span>, which earn credits simply by having forests with higher carbon levels
-    than the supersection average. Select a project <span
-      style={{ whiteSpace: 'nowrap' }}
-    >
-      (<Triangle />)
-    </span> to see details including ID, developer, and our estimate of crediting
-    error.
+    <Green>green</Green>) contains almost all of this supersection’s offset
+    projects <Triangle />, which earn credits simply by having forests with
+    higher carbon levels than the supersection average. Select a project{' '}
+    <Triangle /> to see details including ID, developer, and our estimate of
+    crediting error.
   </FigureCaption>
 </Figure>
 

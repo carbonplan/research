@@ -205,25 +205,15 @@ This diversity can also be seen in real examples of how ton-year accounting has 
   <TableCaption number={2}>
     Ton-year accounting methods have been and are being used in the offsets
     industry with a diversity of method and parameter choices. CAR (2020) refers
-    to the Climate Action Reserve’s implementation of ton-year accounting in its{' '}
-    <Link
-      href='https://www.climateactionreserve.org/how/protocols/soil-enrichment/'
-      sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
-    >
-      Soil Enrichment Protocol
-    </Link>
-    . NCX (2020) refers to the method described in NCX’s <Link
-      href='https://ncx.com/wp-content/uploads/2021/06/Forests-and-Carbon_A-Guide-for-Buyers-and-Policymakers_SilviaTerra2020_v0.4-2-1.pdf'
-      sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
-    >
-      Version 0.4 white paper
-    </Link>. NCX (2021) refers to the method described in NCX’s <Link
-      href='https://f.hubspotusercontent20.net/hubfs/9337776/Papers/Forests%20and%20Carbon_A%20Guide%20for%20Buyers%20and%20Policymakers_SilviaTerra2020_v0.4.pdf'
-      sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
-    >
-      Version 0.5 white paper
-    </Link>. Each column in the table uses a distinct ton-year accounting method.
-    To ground these industry examples in the rest of the conversation, we include
+    to the Climate Action Reserve’s implementation of ton-year accounting in its
+    [Soil Enrichment
+    Protocol](https://www.climateactionreserve.org/how/protocols/soil-enrichment/).
+    NCX (2020) refers to the method described in NCX’s [Version 0.4 white
+    paper](https://ncx.com/wp-content/uploads/2021/06/Forests-and-Carbon_A-Guide-for-Buyers-and-Policymakers_SilviaTerra2020_v0.4-2-1.pdf).
+    NCX (2021) refers to the method described in NCX’s [Version 0.5 white
+    paper](https://f.hubspotusercontent20.net/hubfs/9337776/Papers/Forests%20and%20Carbon_A%20Guide%20for%20Buyers%20and%20Policymakers_SilviaTerra2020_v0.4.pdf).
+    Each column in the table uses a distinct ton-year accounting method. To
+    ground these industry examples in the rest of the conversation, we include
     an example using the Lashof method for comparison.
   </TableCaption>
 </Figure>
