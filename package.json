@@ -37,7 +37,7 @@
     "@emotion/styled": "^11.6.0",
     "@mdx-js/loader": "^2.1.5",
     "@mdx-js/react": "^2.1.5",
-    "@next/mdx": "^10.2.3",
+    "@next/mdx": "^12.3.1",
     "@react-spring/web": "^9.4.2",
     "@theme-ui/color": "^0.15.3",
     "@theme-ui/core": "^0.15.3",
@@ -64,7 +64,8 @@
     "rehype-slug": "^4.0.1",
     "remark-rehype": "^8.1.0",
     "theme-ui": "^0.15.3",
-    "topojson-client": "^3.1.0"
+    "topojson-client": "^3.1.0",
+    "unified": "^10.1.2"
   },
   "devDependencies": {
     "@carbonplan/prettier": "^1.2.0",

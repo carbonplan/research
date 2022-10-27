@@ -4,8 +4,6 @@ import { Box, Flex, Container } from 'theme-ui'
 import { Guide, Row, Column, Button } from '@carbonplan/components'
 import { Arrow, Left } from '@carbonplan/icons'
 import { protocols } from '../data'
-import About from './about.md'
-import Methods from './methods.md'
 import Metric from './metric'
 import EntryMobile from './entry-mobile'
 
