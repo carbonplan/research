@@ -37,7 +37,7 @@ For each CDR pathway, we identified components of the process that must be quant
 
 We rolled up our element-level assessment of uncertainty into a pathway Verification Confidence Level (VCL) rating, which represents our high-level assessment of how confidently outcomes from a particular CDR pathway can be quantified using the best methods and tools available today. VCLs range from 1, which represents the most uncertain pathway, to 5, which indicates a high-confidence outcome.
 
-Read our [explainer](carbonplan.org/research/cdr-verification-explainer) for a summary of the key takeaways and tensions that emerged from the process of building this tool. Read [Frontier’s post](http://frontierclimate.com/writing/quantifying-delivered-cdr) to learn how they are incorporating lessons into their upcoming purchase cycles.
+Read our [explainer](/research/cdr-verification-explainer) for a summary of the key takeaways and tensions that emerged from the process of building this tool. Read [Frontier’s post](http://frontierclimate.com/writing/quantifying-delivered-cdr) to learn how they are incorporating lessons into their upcoming purchase cycles.
 
 ## Uncertainty mapping — Framework
 
