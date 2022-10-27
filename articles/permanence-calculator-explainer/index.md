@@ -236,7 +236,7 @@ Danny developed the model and wrote the first draft of the article. Jeremy imple
 
 Please cite as:
 
-D Cullenward, J Hamman, J Freeman (2020) “The cost of temporary carbon removal” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/permanence-calculator-explainer</span>
+D Cullenward, J Hamman, J Freeman (2020) “The cost of temporary carbon removal” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/permanence-calculator-explainer](https://carbonplan.org/research/permanence-calculator-explainer)</span>
 
 </Endnote>
 

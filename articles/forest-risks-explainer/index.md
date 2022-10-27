@@ -162,7 +162,7 @@ W R L Anderegg, O S Chegwidden, G Badgley, A T Trugman, D Cullenward, J A Abatzo
 
 Please cite this web article as:
 
-O S Chegwidden, W R L Anderegg, G Badgley, D Cullenward, J A Abatzoglou, J A Hicke, A T Trugman, J Freeman, J Hamman (2021) “Risks to forest carbon in a changing climate” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/forest-risks-explainer</span>
+O S Chegwidden, W R L Anderegg, G Badgley, D Cullenward, J A Abatzoglou, J A Hicke, A T Trugman, J Freeman, J Hamman (2021) “Risks to forest carbon in a changing climate” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/forest-risks-explainer](https://carbonplan.org/research/forest-risks-explainer)</span>
 
 </Endnote>
 

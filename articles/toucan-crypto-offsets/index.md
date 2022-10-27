@@ -175,7 +175,7 @@ Grayson and Danny performed the analysis and wrote the article.
 
 Please cite this web article as:
 
-G Badgley and D Cullenward (2022) “Zombies on the blockchain” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/crypto-toucan-explainer</span>
+G Badgley and D Cullenward (2022) “Zombies on the blockchain” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/crypto-toucan-explainer](https://carbonplan.org/research/crypto-toucan-explainer)</span>
 
 </Endnote>
 

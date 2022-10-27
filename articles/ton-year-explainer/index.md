@@ -258,7 +258,7 @@ Freya performed the research and led the development of the underlying ton-year 
 
 Please cite as:
 
-F Chay, G Badgley, K Martin, J Freeman, J Hamman, D Cullenward (2022) “'Unpacking ton-year accounting” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/ton-year-explainer</span>
+F Chay, G Badgley, K Martin, J Freeman, J Hamman, D Cullenward (2022) “'Unpacking ton-year accounting” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/ton-year-explainer](https://carbonplan.org/research/ton-year-explainer)</span>
 
 </Endnote>
 

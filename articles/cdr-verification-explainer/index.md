@@ -191,7 +191,7 @@ This work was informed by the input and feedback from more than [30 external par
 
 Please cite as:
 
-F Chay, J Klitzke, Z Hausfather, K Martin, J Freeman, D Cullenward (2022) “Verification Confidence Levels for carbon dioxide removal” CarbonPlan https://carbonplan.org/research/cdr-verification-explainer
+F Chay, J Klitzke, Z Hausfather, K Martin, J Freeman, D Cullenward (2022) “Verification Confidence Levels for carbon dioxide removal” CarbonPlan [https://carbonplan.org/research/cdr-verification-explainer](https://carbonplan.org/research/cdr-verification-explainer)
 
 </Endnote>
 

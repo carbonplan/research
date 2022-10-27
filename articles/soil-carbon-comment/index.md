@@ -100,7 +100,7 @@ Danny led the effort to write the comment letters and drafted the first version 
 
 Please cite as:
 
-D Cullenward, J Hamman, J Freeman (2020) “Getting soil carbon right” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/soil-carbon-comment</span>
+D Cullenward, J Hamman, J Freeman (2020) “Getting soil carbon right” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/soil-carbon-comment](https://carbonplan.org/research/soil-carbon-comment)</span>
 
 </Endnote>
 

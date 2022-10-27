@@ -181,7 +181,7 @@ G Badgley, J Freeman, J Hamman, B Haya, A T Trugman, W R L Anderegg, D Cullenwar
 
 Please cite this web article as:
 
-G Badgley, J Freeman, J Hamman, B Haya, A T Trugman, W R L Anderegg, D Cullenward (2021) “Systematic over-crediting of forest offsets” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/forest-offsets-explainer</span>
+G Badgley, J Freeman, J Hamman, B Haya, A T Trugman, W R L Anderegg, D Cullenward (2021) “Systematic over-crediting of forest offsets” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/forest-offsets-explainer](https://carbonplan.org/research/forest-offsets-explainer)</span>
 
 </Endnote>
 

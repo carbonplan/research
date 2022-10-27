@@ -190,7 +190,7 @@ The author team collectively developed and implemented the project. Jane led the
 
 Please cite as:
 
-J Zelikova, F Chay, J Freeman, D Cullenward (2021) “A buyer’s guide to soil carbon offsets” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/soil-protocols-explainer</span>
+J Zelikova, F Chay, J Freeman, D Cullenward (2021) “A buyer’s guide to soil carbon offsets” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/soil-protocols-explainer](https://carbonplan.org/research/soil-protocols-explainer)</span>
 
 </Endnote>
 

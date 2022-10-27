@@ -192,7 +192,7 @@ Oriana developed the analysis with input from Sadie, Grayson, and Danny. All aut
 
 Please cite as:
 
-O Chegwidden, G Badgley, S Frank, D Cullenward (2022) “Fire, forests, and greenhouse gas inventories in California” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/fire-forests-inventories</span>
+O Chegwidden, G Badgley, S Frank, D Cullenward (2022) “Fire, forests, and greenhouse gas inventories in California” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/fire-forests-inventories](https://carbonplan.org/research/fire-forests-inventories)</span>
 
 </Endnote>
 

@@ -183,7 +183,7 @@ All authors helped design the project and [interview questions](https://files.ca
 
 Please cite as:
 
-N Merchant, F Chay, D Cullenward, J Freeman (2022) “Barriers to scaling the long-duration carbon dioxide removal industry” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/cdr-scale-barriers</span>
+N Merchant, F Chay, D Cullenward, J Freeman (2022) “Barriers to scaling the long-duration carbon dioxide removal industry” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/cdr-scale-barriers](https://carbonplan.org/research/cdr-scale-barriers)</span>
 
 The full report is available as a PDF in two versions: [dark mode](https://files.carbonplan.org/CDR-Scale-Barriers.pdf) and [light mode](https://files.carbonplan.org/CDR-Scale-Barriers-Light.pdf).
 

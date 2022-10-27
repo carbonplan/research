@@ -121,7 +121,7 @@ Claudia and Jared identified the project and its proximity to the fire. Joe and 
 
 Please cite as:
 
-C Herbert, J Stapp, G Badgley, W R L Anderegg, D Cullenward, J Hamman, J Freeman (2020) “Carbon offsets burning” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/offset-project-fire</span>
+C Herbert, J Stapp, G Badgley, W R L Anderegg, D Cullenward, J Hamman, J Freeman (2020) “Carbon offsets burning” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/offset-project-fire](https://carbonplan.org/research/offset-project-fire)</span>
 
 </Endnote>
 

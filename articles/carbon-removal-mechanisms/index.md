@@ -297,7 +297,7 @@ Danny, Jeremy, and Toly developed the concepts and typology. All authors develop
 
 Please cite as:
 
-T Rinberg, D Cullenward, J Hamman, J Freeman (2020) “Carbon removal mechanisms” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/carbon-removal-mechanisms</span>
+T Rinberg, D Cullenward, J Hamman, J Freeman (2020) “Carbon removal mechanisms” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/carbon-removal-mechanisms](https://carbonplan.org/research/carbon-removal-mechanisms)</span>
 
 </Endnote>
 

@@ -165,7 +165,7 @@ All authors contributed to the writing of the commentary.
 
 Please cite this web article as:
 
-D Cullenward, S Frank, F Chay, J Freeman (2022) “Verra’s broadside against the Integrity Council props up the status quo" CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/verra-integrity-council</span>
+D Cullenward, S Frank, F Chay, J Freeman (2022) “Verra’s broadside against the Integrity Council props up the status quo" CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/verra-integrity-council](https://carbonplan.org/research/forest-risks-explainer)</span>
 
 </Endnote>
 

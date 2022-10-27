@@ -154,7 +154,7 @@ Eric developed the initial concept for the analysis with input from Danny and Je
 
 Please cite as:
 
-E Slessarev, J Zelikova, J Hamman, D Cullenward, J Freeman (2021) “Depth matters for soil carbon accounting” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/soil-depth-sampling</span>
+E Slessarev, J Zelikova, J Hamman, D Cullenward, J Freeman (2021) “Depth matters for soil carbon accounting” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/soil-depth-sampling](https://carbonplan.org/research/soil-depth-sampling)</span>
 
 </Endnote>
 

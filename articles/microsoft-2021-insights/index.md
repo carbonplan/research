@@ -169,7 +169,7 @@ Freya led data analysis and wrote the first draft of the article. Joe and Jeremy
 
 Please cite as:
 
-F Chay, D Cullenward, J Hamman, J Freeman (2021) “Insights from analyzing a new round of carbon removal projects” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/microsoft-2021-insights</span>
+F Chay, D Cullenward, J Hamman, J Freeman (2021) “Insights from analyzing a new round of carbon removal projects” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/microsoft-2021-insights](https://carbonplan.org/research/microsoft-2021-insights)</span>
 
 </Endnote>
 

@@ -165,7 +165,7 @@ Danny wrote the first draft of the article. Joe and Jeremy designed and implemen
 
 Please cite as:
 
-D Cullenward, J Hamman, J Freeman (2020) “Insights from our first project reports” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/stripe-2020-insights</span>
+D Cullenward, J Hamman, J Freeman (2020) “Insights from our first project reports” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/stripe-2020-insights](https://carbonplan.org/research/stripe-2020-insights)</span>
 
 </Endnote>
 
