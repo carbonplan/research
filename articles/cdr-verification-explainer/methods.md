@@ -2,7 +2,7 @@
 date: 09-19-2022
 title: CDR Verification Framework — Methods
 card: cdr-verification-explainer
-quickLook: TK
+quickLook: Methods for our CDR Verification Framework
 back: /research/cdr-verification-explainer
 slug: cdr-verification-methods
 components:
