@@ -76,8 +76,8 @@ A shift in framing from physics to economics is no small matter. Despite relying
 > “Applying a 3.3% discount rate, we find that 1 ton of CO₂e … is equal to 30.8 ton-years today. Mathematically, removing 30.8 ton-years from the atmosphere today achieves the same impact as 1 ton CO₂e. So, removing and storing 30.8 tons CO₂ for one year, this year, has an equivalent climate impact to removing 1 ton CO₂e, or 1 “permanent” ton.
 >
 > <br />
-> [...]
 > <br />
+> [...]
 > <br />
 > In summary, a targeted short-term IFM strategy not only offers equivalence to
 > “permanent tons” of impact, but does so with greater flexibility in terms of

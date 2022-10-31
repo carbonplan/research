@@ -199,7 +199,7 @@ Noah and Jennifer developed the underlying model with their collaborators Michae
 
 Please cite as:
 
-N McQueen, J Wilcox, J Hamman, J Freeman (2021) “The cost of direct air capture” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/dac-calculator-explainer</span>
+N McQueen, J Wilcox, J Hamman, J Freeman (2021) “The cost of direct air capture” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/dac-calculator-explainer](https://carbonplan.org/research/dac-calculator-explainer)</span>
 
 </Endnote>
 

@@ -116,15 +116,16 @@ Verra hasn’t yet addressed its [backlog of old renewable energy credits](https
 <Figure>
   <CreditIssuance />
   <FigureCaption number={2}>
-Global credit issuance by category and registry. The voluntary carbon market is dominated by one registry (Verra) and two categories of projects (Renewable Energy, Forestry and Land Use). Verra has issued about 67% of global market supply, with all other registries contributing about 33% in total. Renewable Energy credits constitute 37% of Verra’s issuance and 32% of global totals. Forest and Land Use credits constitute 54% of Verra’s issuance and 48% of global totals. Combined, all other credit types constitute just 8% of Verra’s issuance and 20% of global totals. Source:{' '}
-    <Link
-      sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
-      href='https://gspp.berkeley.edu/faculty-and-impact/centers/cepp/projects/berkeley-carbon-trading-project/offsets-database'
-    >
-      UC Berkeley Carbon Trading Project
-    </Link>
-    .
-
+    Global credit issuance by category and registry. The voluntary carbon market
+    is dominated by one registry (Verra) and two categories of projects
+    (Renewable Energy, Forestry and Land Use). Verra has issued about 67% of
+    global market supply, with all other registries contributing about 33% in
+    total. Renewable Energy credits constitute 37% of Verra’s issuance and 32%
+    of global totals. Forest and Land Use credits constitute 54% of Verra’s
+    issuance and 48% of global totals. Combined, all other credit types
+    constitute just 8% of Verra’s issuance and 20% of global totals. Source: [UC
+    Berkeley Carbon Trading
+    Project](https://gspp.berkeley.edu/faculty-and-impact/centers/cepp/projects/berkeley-carbon-trading-project/offsets-database).
   </FigureCaption>
 </Figure>
 
@@ -164,7 +165,7 @@ All authors contributed to the writing of the commentary.
 
 Please cite this web article as:
 
-D Cullenward, S Frank, F Chay, J Freeman (2022) “Verra’s broadside against the Integrity Council props up the status quo" CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/verra-integrity-council</span>
+D Cullenward, S Frank, F Chay, J Freeman (2022) “Verra’s broadside against the Integrity Council props up the status quo" CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/verra-integrity-council](https://carbonplan.org/research/forest-risks-explainer)</span>
 
 </Endnote>
 

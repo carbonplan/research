@@ -141,20 +141,11 @@ This is best illustrated in the spatial pattern of projects in the Southern Casc
     practice number that distorts ecological reality. The number in each
     subregion shows the relative carbon compared to the supersection average, in
     units of tCO₂ per acre. The western-most carbon-rich subregion (
-    <Box as='span' sx={{ color: 'green' }}>
-      green
-    </Box>
-    ) contains almost all of this supersection’s offset projects <span
-      style={{ whiteSpace: 'nowrap' }}
-    >
-      (<Triangle />)
-    </span>, which earn credits simply by having forests with higher carbon levels
-    than the supersection average. Select a project <span
-      style={{ whiteSpace: 'nowrap' }}
-    >
-      (<Triangle />)
-    </span> to see details including ID, developer, and our estimate of crediting
-    error.
+    <Green>green</Green>) contains almost all of this supersection’s offset
+    projects <Triangle />, which earn credits simply by having forests with
+    higher carbon levels than the supersection average. Select a project{' '}
+    <Triangle /> to see details including ID, developer, and our estimate of
+    crediting error.
   </FigureCaption>
 </Figure>
 
@@ -190,7 +181,7 @@ G Badgley, J Freeman, J Hamman, B Haya, A T Trugman, W R L Anderegg, D Cullenwar
 
 Please cite this web article as:
 
-G Badgley, J Freeman, J Hamman, B Haya, A T Trugman, W R L Anderegg, D Cullenward (2021) “Systematic over-crediting of forest offsets” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/forest-offsets-explainer</span>
+G Badgley, J Freeman, J Hamman, B Haya, A T Trugman, W R L Anderegg, D Cullenward (2021) “Systematic over-crediting of forest offsets” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/forest-offsets-explainer](https://carbonplan.org/research/forest-offsets-explainer)</span>
 
 </Endnote>
 

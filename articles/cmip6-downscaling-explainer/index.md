@@ -242,7 +242,7 @@ Looking ahead, we are eager for others to explore these downscaling implementati
 
 Oriana wrote the article, with support from Jeremy, Kata, Joe, and Sadie. Oriana, Cindy (now at Meta), Max, and Joe implemented the downscaling methods. Raphael executed the dataset production. Kata and Jeremy created the map tool and article figures. John Abatzoglou (UC Merced) and Ethan Gutmann (NCAR) advised on the implementation of MACA and En-GARD, respectively.
 
-O Chegwidden, R Hagen, K Martin, M Jones, A Banihirwe, C Chiao, S Frank, J Freeman, J Hamman (2022) “Open data and tools for multiple methods of global climate downscaling" CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/cmip6-downscaling-explainer</span>
+O Chegwidden, R Hagen, K Martin, M Jones, A Banihirwe, C Chiao, S Frank, J Freeman, J Hamman (2022) “Open data and tools for multiple methods of global climate downscaling" CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/cmip6-downscaling-explainer](https://carbonplan.org/research/cmip6-downscaling-explainer)</span>
 
 </Endnote>
 

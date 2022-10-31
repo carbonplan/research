@@ -133,7 +133,7 @@ Julianne and Steven developed the underlying technoeconomic model with their col
 
 Please cite as:
 
-J DeAngelo, S Davis, B Saenz, I Arzeno-Soltero, M Long, C Frieder, K Davis, K Martin, F Chay, J Freeman, J Hamman (2022) “Mapping seaweed farming potential for CDR and biomass products” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/seaweed-farming-explainer</span>
+J DeAngelo, S Davis, B Saenz, I Arzeno-Soltero, M Long, C Frieder, K Davis, K Martin, F Chay, J Freeman, J Hamman (2022) “Mapping seaweed farming potential for CDR and biomass products” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/seaweed-farming-explainer](https://carbonplan.org/research/seaweed-farming-explainer)</span>
 
 </Endnote>
 

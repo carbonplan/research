@@ -7,6 +7,7 @@ const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
   options: {
     rehypePlugins: [slug],
+    format: 'mdx',
   },
 })
 

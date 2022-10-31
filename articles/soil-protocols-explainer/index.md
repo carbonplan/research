@@ -61,14 +61,8 @@ In the chart below, we summarize our results by showing scores for rigor, additi
     Summary table of our results. Each protocol is a row. The first four columns
     show scores along four individual metrics (each on a scale from 1 to 3) and
     the final column shows the overall rating (on a scale from 1 to 5). For more
-    details, check out the{' '}
-    <Link
-      href='/research/soil-protocols'
-      sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
-    >
-      interactive version
-    </Link>{' '}
-    of this table. Abbreviations: Grazing (G), Compost (C) Improved Agriculture
+    details, check out the [interactive version](/research/soil-protocols) of
+    this table. Abbreviations: Grazing (G), Compost (C) Improved Agriculture
     (IA), Sustainable Agriculture (SA), Fire + Grazing (FG)
   </FigureCaption>
 </Figure>
@@ -196,7 +190,7 @@ The author team collectively developed and implemented the project. Jane led the
 
 Please cite as:
 
-J Zelikova, F Chay, J Freeman, D Cullenward (2021) “A buyer’s guide to soil carbon offsets” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/soil-protocols-explainer</span>
+J Zelikova, F Chay, J Freeman, D Cullenward (2021) “A buyer’s guide to soil carbon offsets” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/soil-protocols-explainer](https://carbonplan.org/research/soil-protocols-explainer)</span>
 
 </Endnote>
 

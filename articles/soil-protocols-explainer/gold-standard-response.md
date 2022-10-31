@@ -9,7 +9,7 @@ back: '/research/soil-protocols-explainer'
 
 # Response to Gold Standard
 
-<Box sx={{ color: 'secondary', fontSize: [2, 2, 2, 3] }}>
+<Box sx={{ color: 'secondary', '& p': { fontSize: [2, 2, 2, 3] } }}>
   We are publishing a response to a public criticism of our analysis of soil
   carbon offset protocols. Response prepared by Freya Chay, Jeremy Freeman, and
   Danny Cullenward.

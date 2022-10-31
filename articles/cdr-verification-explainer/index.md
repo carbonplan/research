@@ -83,7 +83,7 @@ Throughout the uncertainty mapping, we distinguish between CDR pathways, CDR app
 
 ### 01 — Uncertainty impact
 
-The first dimension we considered was the extent to which the uncertainty associated with a given component could impact the final estimate of carbon removal or storage duration. We classified the potential uncertainty impact of each component as having a negligible (<1%), low (1-5%), medium (5-20%), high (20-50%), or very high (>50%) potential impact. In some cases, project-level choices made within a single CDR pathway could notably change uncertainty estimates — for example, choosing among several potential biomass feedstocks or storage strategies might substantially increase or decrease uncertainty. In such cases, we assigned a range of potential impacts.
+The first dimension we considered was the extent to which the uncertainty associated with a given component could impact the final estimate of carbon removal or storage duration. We classified the potential uncertainty impact of each component as having a negligible ({'<'}1%), low (1-5%), medium (5-20%), high (20-50%), or very high ({'>'}50%) potential impact. In some cases, project-level choices made within a single CDR pathway could notably change uncertainty estimates — for example, choosing among several potential biomass feedstocks or storage strategies might substantially increase or decrease uncertainty. In such cases, we assigned a range of potential impacts.
 
 Note that this metric represents a combination of both how wide a component’s uncertainty bounds are (assuming the best practice quantification approach is followed) as well as how important the component is to the overall calculation of carbon removal or storage durability. For example, a highly uncertain component could have a low uncertainty impact if it plays a minor role in determining net carbon removal. Conversely, if the component plays a major role, it could have a relatively high uncertainty impact even if it can be estimated with only modest uncertainty.
 
@@ -191,7 +191,7 @@ This work was informed by the input and feedback from more than [30 external par
 
 Please cite as:
 
-F Chay, J Klitzke, Z Hausfather, K Martin, J Freeman, D Cullenward (2022) “Verification Confidence Levels for carbon dioxide removal” CarbonPlan https://carbonplan.org/research/cdr-verification-explainer
+F Chay, J Klitzke, Z Hausfather, K Martin, J Freeman, D Cullenward (2022) “Verification Confidence Levels for carbon dioxide removal” CarbonPlan [https://carbonplan.org/research/cdr-verification-explainer](https://carbonplan.org/research/cdr-verification-explainer)
 
 </Endnote>
 

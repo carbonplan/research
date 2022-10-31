@@ -152,7 +152,7 @@ Freya led data analysis and wrote the first draft of the article. All authors co
 
 Please cite as:
 
-F Chay, J Zelikova, D Cullenward, J Hamman, J Freeman (2021) “New lessons from reviewing carbon removal proposals” CarbonPlan <span style={{overflowWrap: 'break-word'}}>https://carbonplan.org/research/stripe-2021-insights</span>
+F Chay, J Zelikova, D Cullenward, J Hamman, J Freeman (2021) “New lessons from reviewing carbon removal proposals” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/stripe-2021-insights](https://carbonplan.org/research/stripe-2021-insights)</span>
 
 </Endnote>
 

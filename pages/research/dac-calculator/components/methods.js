@@ -1,4 +1,4 @@
-import { Box, Text, Themed } from 'theme-ui'
+import { Box, Text } from 'theme-ui'
 import { Link } from '@carbonplan/components'
 
 const Methods = () => {
@@ -15,7 +15,7 @@ const Methods = () => {
       >
         Brief Methods
       </Text>
-      <Themed.p>
+      <Box as='p' variant='styles.p'>
         This calculator computes the{' '}
         <Link href='https://cdrprimer.org/read/chapter-4#sec-4-3' tracking>
           net removed cost
@@ -25,8 +25,8 @@ const Methods = () => {
         capture and storage (NGCC), wind, and solar. The model estimates the
         levelized cost of energy, capital expenses, and operation and
         maintenance costs.
-      </Themed.p>
-      <Themed.p>
+      </Box>
+      <Box as='p' variant='styles.p'>
         For natural gas, the model assumes that combustion for electricity
         production is coupled with carbon capture at 90% capture efficiency. The
         remaining 10% of emissions from electricity production are considered
@@ -36,14 +36,14 @@ const Methods = () => {
         from combustion. A leakage rate parameter accounts for natural gas
         leakage, which has been reported as high as 3.7% in the Permian Basin
         region of the United States.
-      </Themed.p>
-      <Themed.p>
+      </Box>
+      <Box as='p' variant='styles.p'>
         Given the definition of net removed cost, it is possible to create
         parameter scenarios with NGCC that do not achieve net carbon removal,
         because emissions are too large. We show this case with gray bars in the
         calculator.
-      </Themed.p>
-      <Themed.p>
+      </Box>
+      <Box as='p' variant='styles.p'>
         The entire model is implemented natively in JavaScript and{' '}
         <Link
           tracking
@@ -64,12 +64,12 @@ const Methods = () => {
         by McQueen et al. (2021). There may be small differences (± $10) between
         the model outputs above and the results in the paper due to
         implementation differences.
-      </Themed.p>
-      <Themed.p>
+      </Box>
+      <Box as='p' variant='styles.p'>
         Read our{' '}
         <Link href={'/research/dac-calculator-explainer'}>article</Link> for
         more information.
-      </Themed.p>
+      </Box>
     </Box>
   )
 }

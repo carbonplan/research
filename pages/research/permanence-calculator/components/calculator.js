@@ -1,4 +1,4 @@
-import { Box, Grid, Container, Divider, Themed } from 'theme-ui'
+import { Box, Divider } from 'theme-ui'
 import { useState, useEffect } from 'react'
 import { piecewise, quantize, interpolateNumber } from 'd3-interpolate'
 import { Row, Column, Link } from '@carbonplan/components'
@@ -215,8 +215,10 @@ const Calculator = () => {
         <Row columns={[6, 6, 10, 10]} sx={{ mb: [0], mt: [2, 3, -4, -8] }}>
           <Column start={[1, 1, 1, 1]} width={[6, 6, 5, 5]}>
             <Divider />
-            <Themed.h2>Methods</Themed.h2>
-            <Themed.p>
+            <Box as='h2' variant='styles.h2'>
+              Methods
+            </Box>
+            <Box as='p' variant='styles.p'>
               We model a decision-maker seeking to achieve permanent climate
               benefits, whether by paying directly for permanent CO₂ removal or
               by sequentially renewing temporary carbon removal projects over a
@@ -224,14 +226,14 @@ const Calculator = () => {
               the end of each project period. At any point, the decision-maker
               can switch to a permanent carbon removal alternative and stop
               purchasing renewals (or never, if this option is turned off).
-            </Themed.p>
-            <Themed.p>
+            </Box>
+            <Box as='p' variant='styles.p'>
               If project risk is greater than 0%, each project has a probability
               of failing each year according to an independent Bernoulli trial,
               and in the event of a failure, another temporary project is
               immediately purchased.
-            </Themed.p>
-            <Themed.p>
+            </Box>
+            <Box as='p' variant='styles.p'>
               We calculate the amount that must be budgeted to sustain the
               temporary removals over time, including the cost of the eventual
               permanent solution if and whenever the switch is made. All future
@@ -241,18 +243,20 @@ const Calculator = () => {
               deterministic except for the stochastic project failure. For every
               parameter setting, we run the model 50 times and report the mean
               and standard deviation.
-            </Themed.p>
-            <Themed.p>
+            </Box>
+            <Box as='p' variant='styles.p'>
               For more details, read our{' '}
               <Link href={'/research/permanence-calculator-explainer'}>
                 article
               </Link>{' '}
               on this calculator.
-            </Themed.p>
-            <Themed.h2>Support</Themed.h2>
-            <Themed.p>
+            </Box>
+            <Box as='h2' variant='styles.h2'>
+              Support
+            </Box>
+            <Box as='p' variant='styles.p'>
               This work was generously funded by the ClimateWorks Foundation.
-            </Themed.p>
+            </Box>
           </Column>
         </Row>
       </Box>

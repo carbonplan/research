@@ -67,21 +67,16 @@ Second, CARB’s decision to focus half its attention on 2035 scenarios resulted
   />
   <TableCaption number={1}>
     Carbon dioxide removal (CDR) needs by scenario (uncorrected). CDR in 2045 is
-    reported directly from E3’s modeling{' '}
-    <Link
-      href='https://ww2.arb.ca.gov/sites/default/files/2022-05/2022-draft-sp-PATHWAYS-data-E3.xlsx'
-      sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
-    >
-      spreadsheet
-    </Link>
-    , without correction for a known error with land-sector modeling. The percentage
-    reliance on CDR in 2045 reports the quotient from dividing this number by 431
-    million tCO₂e, the 1990 emissions baseline against which California climate targets
-    are expressed. The percentage reliance on emission reductions reflects the fact
-    that each scenario is projected to result in ongoing net emissions of 15 million
-    tCO₂e per year in 2045, rather than net-zero emissions, due to the erroneous
-    treatment of the natural and working lands (NWL) sector as described in the next
-    section of this post.
+    reported directly from E3’s modeling
+    [spreadsheet](https://ww2.arb.ca.gov/sites/default/files/2022-05/2022-draft-sp-PATHWAYS-data-E3.xlsx),
+    without correction for a known error with land-sector modeling. The
+    percentage reliance on CDR in 2045 reports the quotient from dividing this
+    number by 431 million tCO₂e, the 1990 emissions baseline against which
+    California climate targets are expressed. The percentage reliance on
+    emission reductions reflects the fact that each scenario is projected to
+    result in ongoing net emissions of 15 million tCO₂e per year in 2045, rather
+    than net-zero emissions, due to the erroneous treatment of the natural and
+    working lands (NWL) sector as described in the next section of this post.
   </TableCaption>
 </Figure>
 

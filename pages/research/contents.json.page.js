@@ -5,8 +5,9 @@ function Contents() {
 }
 
 export function getServerSideProps({ res }) {
-  const { articles, tools, extras } = getCombinedContents()
+  const { articles, commentary, tools, extras } = getCombinedContents()
   const pages = articles
+    .concat(commentary)
     .concat(tools)
     .concat(extras)
     .filter((content) => content.id)

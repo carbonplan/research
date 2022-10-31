@@ -20,38 +20,13 @@ components:
 
 # FAQ
 
-<Box sx={{ color: 'secondary', fontSize: [2, 2, 2, 3] }}>
-  We are publishing responses to frequently asked technical questions about our
-  recent article{' '}
-  <Link
-    sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
-    href='/research/forest-offsets-explainer'
-  >
-    Systematic over-crediting of forest offsets
-  </Link>
-  . Most of these questions can be answered by reading our <Link
-    href='https://www.biorxiv.org/content/10.1101/2021.04.28.441870v1.article-info'
-    sx={{ color: 'secondary', '&:hover': { color: 'primary' } }}
-  >
-    preprint
-  </Link>, including the extended methods. To make this information more accessible,
-  we developed this FAQ.
-  <br />
-  <br />
-  Prepared by{' '}
-  {authors.map((d, i) => {
-    return (
-      <span key={i}>
-        <span key={i} style={{ whiteSpace: 'nowrap', display: 'inline-block' }}>
-          {' '}
-          {i == authors.length - 1 ? ' and ' : ''}
-          {d}
-          {i == authors.length - 1 ? '.' : ', '}
-        </span>{' '}
-        <span> </span>
-      </span>
-    )
-  })}
+<Box sx={{ color: 'secondary', '& p': { fontSize: [2, 2, 2, 3] }, '& a': { color: 'secondary', '&:hover': { color: 'primary' }}}}>
+We are publishing responses to frequently asked technical questions about our
+recent article [Systematic over-crediting of forest offsets](/research/forest-offsets-explainer). Most of these questions can be answered by reading our [preprint](https://www.biorxiv.org/content/10.1101/2021.04.28.441870v1.article-info), including the extended methods. To make this information more accessible,
+we developed this FAQ.
+
+Prepared by {authors.map((name, i) => i === authors.length - 1 ? `and ${name}` : name).join(', ')}.
+
 </Box>
 
 ## 01 — Does the paper’s “alternative common practice” estimates lead to lower precision relative to the approach taken by the Climate Action Reserve and the California Air Resources Board?
@@ -165,17 +140,16 @@ After showing that our estimates are accurate and developing a method to avoid b
 
 > Note also that any systematic bias in our estimates of CP<sub>0</sub> relative
 > to CP<sub>ARB</sub> could potentially overestimate (or underestimate) our
-> re-crediting calculations. Specifically, if we systematically overestimated CP
->
-> <sub>0</sub>, then we underestimated over-crediting; similarly, if we
+> re-crediting calculations. Specifically, if we systematically overestimated
+> CP<sub>0</sub>, then we underestimated over-crediting; similarly, if we
 > systematically underestimated CP<sub>0</sub>, then we overestimated
 > over-crediting. As reported above, our estimates of CP<sub>0</sub> are well matched
 > to CP<sub>ARB</sub> (R² = 0.94, RMSE = 9.76), and on average were 3.2% higher
-> than CP<sub>ARB</sub>. If anything, the fact that we overestimate CP
-> <sub>ARB</sub> likely makes our overall finding of net over-crediting
-> conservative. In addition, we found no evidence for a systematic relationship
-> between error in our estimate of CP<sub>0</sub> and our estimates of crediting
-> error (r = 0.06).
+> than CP<sub>ARB</sub>. If anything, the fact that we overestimate <>CP<sub>ARB</sub></>
+> likely makes our overall finding of net over-crediting conservative.
+> In addition, we found no evidence for a systematic relationship between error in
+> our estimate of CP<sub>0</sub> and our estimates of crediting error (r =
+> 0.06).
 
 In other words, our reproduction of CARB’s common practice (CP<sub>0</sub>) is a little too high on average; and because the formula for our alternative estimate of common practice (CP<sub>NEW</sub>) divides by our re-estimate of CARB’s common practice (CP<sub>0</sub>), our alternative common practice variable is too low; and because increases in our alternative common practice result in more over-crediting, our estimate of over-crediting is conservative.
 
