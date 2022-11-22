@@ -11,8 +11,8 @@ color: yellow
 summary: We summarize a public comment letter from 16 organizations to the Science Based Targets initiative (SBTi) on recommendations for the treatment of carbon removal in their net-zero standard.
 card: sbti-carbon-removal
 links:
-  - label: Comment letter
-    href: https://grist.org
+  - label: Comments to SBTi
+    href: https://files.carbonplan.org/SBTi-Carbon-Removal-Letter-11-22-2022
 components:
   - name: FigureTwo
     src: ./components/figure-two.js
