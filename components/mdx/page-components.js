@@ -365,6 +365,13 @@ const components = {
       )
     ),
   },
+  'sbti-carbon-removal': {
+    FigureTwo: dynamic(() =>
+      import(
+        '../../commentary/sbti-carbon-removal/components/figure-two.js'
+      ).then((mod) => mod.FigureTwo || mod.default)
+    ),
+  },
   'verra-integrity-council': {
     CreditHierarchy: dynamic(() =>
       import(
