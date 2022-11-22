@@ -1,5 +1,16 @@
 const comments = [
   {
+    title: 'Science Based Targets initiative re: Carbon removal guidance',
+    href: 'https://files.carbonplan.org/SBTi-Carbon-Removal-Letter-11-22-2022',
+    date: '11-22-2022',
+    links: [
+      {
+        label: 'Policy brief',
+        href: 'https://carbonplan.org/research/sbti-carbon-removal',
+      },
+    ],
+  },
+  {
     title:
       'UNFCCC Article 6.4 Mechanism Supervisory Body re: Carbon removal guidance',
     href: 'https://files.carbonplan.org/Article-6_4-Supervisory-Body-Comment-Letter-10-10-2022.pdf',
