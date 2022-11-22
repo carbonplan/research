@@ -1,7 +1,7 @@
 const comments = [
   {
     title: 'Science Based Targets initiative re: Carbon removal guidance',
-    href: 'https://files.carbonplan.org/SBTi-Carbon-Removal-Letter-11-22-2022',
+    href: 'https://files.carbonplan.org/SBTi-Carbon-Removal-Letter-11-22-2022.pdf',
     date: '11-22-2022',
     links: [
       {

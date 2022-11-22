@@ -12,7 +12,7 @@ summary: We summarize a public comment letter from 16 organizations to the Scien
 card: sbti-carbon-removal
 links:
   - label: Comments to SBTi
-    href: https://files.carbonplan.org/SBTi-Carbon-Removal-Letter-11-22-2022
+    href: https://files.carbonplan.org/SBTi-Carbon-Removal-Letter-11-22-2022.pdf
 components:
   - name: FigureTwo
     src: ./components/figure-two.js
