@@ -33,3 +33,7 @@ Figure 2 of the SBTI net-zero standard indicates that companies should invest in
 </Figure>
 
 Together, these changes would enhance the credibility of the SBTi standard by clarifying how net-zero aligned companies should approach near-term purchases of permanent carbon removal. Guidelines from a leading standard like SBTi could play an important role in facilitating the investment in permanent carbon removal that is needed to achieve mid-century, net-zero goals.
+
+## Update — Nov 28 2022
+
+The Science Based Targets initiative posted [a thoughtful acknowledgment](https://sciencebasedtargets.org/news/the-net-zero-standard-and-carbon-removals) that welcomes our letter, emphasizes the primacy of companies’ emission reductions in SBTi’s net-zero standard (which we fully support), and promises additional engagement in 2023. We look forward to the opportunity to work with SBTi and other stakeholders going forward, and appreciate SBTi’s leadership.
