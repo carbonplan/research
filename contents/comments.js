@@ -1,5 +1,17 @@
 const comments = [
   {
+    title:
+      'Greenhouse Gas Protocol re: Draft Land Sector and Removals Guidance',
+    href: 'https://files.carbonplan.org/GHG-Protocol-Letter-11-30-2022.pdf',
+    date: '11-30-2022',
+    links: [
+      {
+        label: 'Explainer article',
+        href: 'https://carbonplan.org/research/ton-year-explainer',
+      },
+    ],
+  },
+  {
     title: 'Science Based Targets initiative re: Carbon removal guidance',
     href: 'https://files.carbonplan.org/SBTi-Carbon-Removal-Letter-11-22-2022.pdf',
     date: '11-22-2022',
