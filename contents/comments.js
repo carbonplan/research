@@ -1,5 +1,16 @@
 const comments = [
   {
+    title: 'Federal Insurance Office re: Climate-related financial risk',
+    href: 'https://files.carbonplan.org/FIO-Climate-Related-Financial-Risk-12-20-2022.pdf',
+    date: '12-20-2022',
+    links: [
+      {
+        label: 'Blog post',
+        href: 'https://carbonplan.org/blog/climate-risks-insurance',
+      },
+    ],
+  },
+  {
     title: 'California Air Resources Board re: Forest carbon offset workshop',
     href: 'https://files.carbonplan.org/CARB-Forest-Offsets-Workshop-Comment-Letter-12-15-2022.pdf',
     date: '12-15-2022',
