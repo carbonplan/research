@@ -1,5 +1,23 @@
 const publications = [
   {
+    date: '12-23-2022',
+    title:
+      'Economic and biophysical limits to seaweed farming for climate change mitigation',
+    href: 'https://doi.org/10.1038/s41477-022-01305-9',
+    color: 'teal',
+    summary:
+      'A paper using coupled seaweed growth and technoeconomic models to better understand the potential role of seaweed farming for carbon removal and biomass products.',
+    journal: 'Nature Plants',
+    links: [
+      {
+        label: 'Explainer article',
+        href: '/research/seaweed-farming-explainer',
+      },
+      { label: 'Map tool', href: '/research/seaweed-farming' },
+    ],
+  },
+
+  {
     date: '09-12-2022',
     title:
       'Using remote sensing to quantify the additional climate benefits of California forest carbon offset projects',
@@ -47,22 +65,6 @@ const publications = [
     summary:
       'A short article outlining the challenges of incorporating ocean-based CDR into carbon markets and the need for those who know the science to track claims carefully and help others do the same.',
     journal: 'The Journal of Ocean Technology',
-  },
-  {
-    date: '02-12-2022',
-    title: 'Economic and biophysical limits to seaweed-based climate solutions',
-    href: 'https://doi.org/10.31223/X5PG9V',
-    color: 'teal',
-    summary:
-      'A paper using coupled seaweed growth and technoeconomic models to better understand the potential role of seaweed farming for carbon removal and biomass products.',
-    journal: 'EarthArXiv',
-    links: [
-      {
-        label: 'Explainer article',
-        href: '/research/seaweed-farming-explainer',
-      },
-      { label: 'Map tool', href: '/research/seaweed-farming' },
-    ],
   },
   {
     date: '10-20-2021',
