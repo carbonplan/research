@@ -22,10 +22,12 @@ components:
 
 <Box sx={{ color: 'secondary', '& p': { fontSize: [2, 2, 2, 3] }, '& a': { color: 'secondary', '&:hover': { color: 'primary' }}}}>
 We are publishing responses to frequently asked technical questions about our
-recent article [Systematic over-crediting of forest offsets](/research/forest-offsets-explainer). Most of these questions can be answered by reading the [paper](https://doi.org/10.1111/gcb.15943), including the extended methods. To make this information more accessible,
+recent article [Systematic over-crediting of forest offsets](/research/forest-offsets-explainer). Most of these questions can be answered by reading our [preprint](https://www.biorxiv.org/content/10.1101/2021.04.28.441870v1.article-info), including the extended methods. To make this information more accessible,
 we developed this FAQ.
 
 Prepared by {authors.map((name, i) => i === authors.length - 1 ? `and ${name}` : name).join(', ')}.
+
+Update: the [paper](https://doi.org/10.1111/gcb.15943) has since been published in _Global Change Biology_.
 
 </Box>
 
