@@ -27,6 +27,8 @@ we developed this FAQ.
 
 Prepared by {authors.map((name, i) => i === authors.length - 1 ? `and ${name}` : name).join(', ')}.
 
+Update: the [paper](https://doi.org/10.1111/gcb.15943) has since been published in _Global Change Biology_.
+
 </Box>
 
 ## 01 — Does the paper’s “alternative common practice” estimates lead to lower precision relative to the approach taken by the Climate Action Reserve and the California Air Resources Board?

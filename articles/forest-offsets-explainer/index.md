@@ -56,7 +56,7 @@ To better understand whether these climate claims hold up in practice, we perfor
   </FigureCaption>
 </Figure>
 
-This article provides an overview of how we identified crediting errors in California's offsets program. For a deeper dive on our methods and analysis, you can read [our preprint](https://doi.org/10.1101/2021.04.28.441870). To better understand its implications, you can read [a story](https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere) by Lisa Song (ProPublica) and James Temple (MIT Technology Review) that covers and contextualizes our findings. Finally, you can browse [an interactive online map](https://carbonplan.org/research/forest-offsets-crediting) of the projects we analyzed, or download the open source [data](https://doi.org/10.5281/zenodo.4630712) and [code](https://github.com/carbonplan/forest-offsets) that underlies our analysis.
+This article provides an overview of how we identified crediting errors in California's offsets program. For a deeper dive on our methods and analysis, you can read [the paper](https://doi.org/10.1111/gcb.15943). To better understand its implications, you can read [a story](https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere) by Lisa Song (ProPublica) and James Temple (MIT Technology Review) that covers and contextualizes our findings. Finally, you can browse [an interactive online map](https://carbonplan.org/research/forest-offsets-crediting) of the projects we analyzed, or download the open source [data](https://doi.org/10.5281/zenodo.4630712) and [code](https://github.com/carbonplan/forest-offsets) that underlies our analysis.
 
 ## Background
 
@@ -121,7 +121,7 @@ To quantify these errors systematically, we replaced projects’ common practice
   </FigureCaption>
 </Figure>
 
-Our analysis relied on the [digitized project records](https://doi.org/10.5281/zenodo.4630684) described above, as well as public data from the US Forest Service [Forest Inventory Analysis](https://www.fia.fs.fed.us/) program and the open source [rFIA package](https://github.com/hunter-stanke/rFIA). Our methods are described in detail in [our preprint](https://doi.org/10.1101/2021.04.28.441870) and all of the [code](https://github.com/carbonplan/forest-offsets) and [additional data](https://doi.org/10.5281/zenodo.4630712) underlying our analysis is open source and fully reproducible.
+Our analysis relied on the [digitized project records](https://doi.org/10.5281/zenodo.4630684) described above, as well as public data from the US Forest Service [Forest Inventory Analysis](https://www.fia.fs.fed.us/) program and the open source [rFIA package](https://github.com/hunter-stanke/rFIA). Our methods are described in detail in [the paper](https://doi.org/10.1111/gcb.15943) and all of the [code](https://github.com/carbonplan/forest-offsets) and [additional data](https://doi.org/10.5281/zenodo.4630712) underlying our analysis is open source and fully reproducible.
 
 Across the program as a whole, we estimate net over-crediting of 30 million tCO₂e total (90% CI: 20.5 to 38.6 million tCO₂e) or 29.4% of the credits we analyzed (90% CI: 20.1 to 37.8%). At recent market prices of $13.67 per offset credit,<Cite id='market.transfers'/> these excess credits are worth $410 million (90% CI: $280 to $528 million) — and likely more, as market prices would rise if market regulators took steps to correct for over-crediting.
 
