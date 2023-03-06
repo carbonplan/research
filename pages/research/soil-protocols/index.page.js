@@ -19,6 +19,7 @@ const Index = () => {
       and our evaluation. Read more about our{' '}
       <Link href='/research/soil-protocols-explainer'>initial analysis</Link>{' '}
       and <Link href='/blog/soil-protocols-added'>subsequent additions</Link>.
+      This tool was updated as of October 2021.
     </span>
   )
 
