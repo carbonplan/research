@@ -421,29 +421,6 @@ const components = {
     ),
   },
   'climate-financial-risks': {},
-  'cdr-verification-methods': {
-    Figure: dynamic(() =>
-      import('@carbonplan/components').then((mod) => mod.Figure || mod.default)
-    ),
-    Table: dynamic(() =>
-      import('@carbonplan/components').then((mod) => mod.Table || mod.default)
-    ),
-    TableCaption: dynamic(() =>
-      import('@carbonplan/components').then(
-        (mod) => mod.TableCaption || mod.default
-      )
-    ),
-    UncertaintyDimensions: dynamic(() =>
-      import(
-        '../../articles/cdr-verification-explainer/components/uncertainty-dimensions.js'
-      ).then((mod) => mod.UncertaintyDimensions || mod.default)
-    ),
-    VCLTable: dynamic(() =>
-      import(
-        '../../articles/cdr-verification-explainer/components/vcl-table.js'
-      ).then((mod) => mod.VCLTable || mod.default)
-    ),
-  },
   'forest-offsets-explainer-faq': {
     CommonPractice: dynamic(() =>
       import(
