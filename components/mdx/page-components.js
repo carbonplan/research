@@ -365,6 +365,28 @@ const components = {
       )
     ),
   },
+  'ton-year-quebec': {
+    EquivalenceChart: dynamic(() =>
+      import(
+        '../../commentary/ton-year-quebec/components/equivalence-chart.js'
+      ).then((mod) => mod.EquivalenceChart || mod.default)
+    ),
+    CartoonAlbedo: dynamic(() =>
+      import(
+        '../../commentary/ton-year-quebec/components/cartoon-albedo.js'
+      ).then((mod) => mod.CartoonAlbedo || mod.default)
+    ),
+    SummaryResults: dynamic(() =>
+      import(
+        '../../commentary/ton-year-quebec/components/summary-results.js'
+      ).then((mod) => mod.SummaryResults || mod.default)
+    ),
+    Nowrap: dynamic(() =>
+      import('../../commentary/ton-year-quebec/components/nowrap.js').then(
+        (mod) => mod.Nowrap || mod.default
+      )
+    ),
+  },
   'sbti-carbon-removal': {
     FigureTwo: dynamic(() =>
       import(
