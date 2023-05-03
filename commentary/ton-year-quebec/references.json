@@ -1,0 +1,51 @@
+{
+  "drever.2021": {
+    "authors": "C R Drever et al.",
+    "journal": "Science Advances",
+    "title": "Natural climate solutions for Canada",
+    "url": "https://doi.org/10.1126/sciadv.abd6034",
+    "year": 2021
+  },
+  "green.2014": {
+    "authors": "J F Green",
+    "journal": "Nature",
+    "title": "Don't link carbon markets",
+    "url": "https://doi.org/10.1038/543484a",
+    "year": 2014
+  },
+  "rohatyn.2022": {
+    "authors": "S Rohatyn et al.",
+    "journal": "Science",
+    "title": "Limited climate change mitigation potential through forestation of the vast dryland regions",
+    "url": "https://doi.org/10.1126/science.abm9684",
+    "year": 2022
+  },
+  "smith.2018": {
+    "authors": "C J Smith et al.",
+    "journal": "Geoscientific Model Development",
+    "title": "FAIR v1.3: A simple emissions-based impulse response and carbon cycle model",
+    "url": "https://doi.org/10.5194/gmd-11-2273-2018",
+    "year": 2018
+  },
+  "tremblay.2006": {
+    "authors": "S Tremblay et al.",
+    "journal": "Canadian Journal of Forest Research",
+    "title": "Changes in organic carbon storage in a 50 year white spruce plantation chronosequence established on fallow land in Quebec",
+    "url": "https://doi.org/10.1139/x06-076",
+    "year": 2006
+  },
+  "vouligny.2008": {
+    "authors": "G Vouligny & S Gariépy",
+    "journal": "Agriculture and Agri-Food Canada",
+    "title": "Abandoned Farmland in Quebec: Status and Development Options",
+    "url": "https://publications.gc.ca/site/eng/336526/publication.html",
+    "year": 2008
+  },
+  "white.2005": {
+    "authors": "T M White & W A Kurz",
+    "journal": "The Forestry Chronicle",
+    "title": "Afforestation on private land in Canada from 1990 to 2002 estimated from historical records",
+    "url": "https://doi.org/10.5558/tfc81491-4",
+    "year": 2005
+  }
+}
