@@ -163,7 +163,11 @@ export const getStaticProps = async ({ params }) => {
       id: params.id,
       type,
       source: mdxSource,
-      frontMatter: { ...rest, number: metadata.number ?? 0 },
+      frontMatter: {
+        ...rest,
+        path: `/research/${params.id}`,
+        number: metadata.number ?? 0,
+      },
       references: metadata.references ?? {},
     },
   }

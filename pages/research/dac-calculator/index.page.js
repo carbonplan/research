@@ -11,6 +11,7 @@ const Index = () => {
     card: 'dac-calculator',
     quickLook:
       'How the cost of direct air capture varies under different energy scenarios',
+    path: '/research/dac-calculator',
   }
 
   const description = (

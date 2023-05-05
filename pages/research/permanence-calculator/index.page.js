@@ -1,4 +1,3 @@
-import { Box } from 'theme-ui'
 import { Link } from '@carbonplan/components'
 import { Tool } from '@carbonplan/layouts'
 import Calculator from './components/calculator'
@@ -11,6 +10,7 @@ const Index = () => {
     card: 'permanence-calculator-explainer',
     quickLook:
       'How to compare the long-term cost of temporary and permanent carbon removal',
+    path: '/research/permanence-calculator',
   }
 
   const description = (

@@ -1,4 +1,3 @@
-import { Box, Themed } from 'theme-ui'
 import { Link } from '@carbonplan/components'
 import { Tool } from '@carbonplan/layouts'
 import Main from './components/main'
@@ -10,6 +9,7 @@ const Index = () => {
     color: 'orange',
     card: 'soil-protocols',
     quickLook: 'A comparison of protocols that credit soil carbon',
+    path: '/research/soil-protocols',
   }
 
   const description = (

@@ -13,6 +13,7 @@ const Index = ({ articles, commentary, count }) => {
       links={'local'}
       metadata={`COUNT: ${count}`}
       nav={'research'}
+      url={'https://carbonplan.org/research'}
     >
       <Main articles={articles} commentary={commentary} />
     </Layout>
