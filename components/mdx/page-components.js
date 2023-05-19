@@ -365,6 +365,7 @@ const components = {
       )
     ),
   },
+  'forest-offsets-alaska': {},
   'ton-year-quebec': {
     EquivalenceChart: dynamic(() =>
       import(
