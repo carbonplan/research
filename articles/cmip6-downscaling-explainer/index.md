@@ -248,7 +248,7 @@ O Chegwidden, R Hagen, K Martin, M Jones, A Banihirwe, C Chiao, S Frank, J Freem
 
 <Endnote label='Terms'>
 
-CarbonPlan received a grant from Microsoft AI for Earth to support this work. Microsoft did not exercise any control over the output. The authors are solely responsible for the content of this write-up, which does not reflect the views of Microsoft or any other individuals or organizations.
+CarbonPlan received a grant from Microsoft AI for Earth to support this work. Funding from NASA (award no. 80NSSC21M0065) also contributed to this work. Microsoft and NASA did not exercise any control over the output. The authors are solely responsible for the content of this write-up, which does not reflect the views of Microsoft, NASA, or any other individuals or organizations.
 
 Article text and figures made available under a [CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/) license. Implementation of interactive visualizations made available under an [MIT license](https://github.com/carbonplan/research/blob/main/LICENSE). Associated [analysis package](https://github.com/carbonplan/cmip6-downscaling) made available under an [MIT license](https://github.com/carbonplan/cmip6-downscaling/blob/main/LICENSE). Associated [map explorer](https://github.com/carbonplan/cmip6-web) made available under [MIT license](https://github.com/carbonplan/cmip6-web/blob/main/LICENSE).
 
