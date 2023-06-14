@@ -23,6 +23,14 @@ const tools = [
     title: 'CDR Verification Framework',
   },
   {
+    id: 'forest-offsets-fires',
+    logo: <ForestOffsetsFires />,
+    color: 'red',
+    summary:
+      'Mapping forest carbon offset projects and their intersections with fires.',
+    title: 'Offsets Fires',
+  },
+  {
     id: 'cmip6-downscaling',
     logo: <CMIP6Downscaling />,
     color: 'warm',
@@ -64,14 +72,6 @@ const tools = [
     color: 'orange',
     summary: 'A database of protocols used to credit soil carbon.',
     title: 'Soil Protocols',
-  },
-  {
-    id: 'forest-offsets-fires',
-    logo: <ForestOffsetsFires />,
-    color: 'red',
-    summary:
-      'Mapping forest carbon offset projects and their intersections with fires.',
-    title: 'Offsets Fires',
   },
   {
     id: 'forest-offsets-crediting',
