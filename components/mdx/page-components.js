@@ -3,6 +3,18 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'climate-risk-assessments': {
+    DataSources: dynamic(() =>
+      import(
+        '../../articles/climate-risk-assessments/components/data-sources.js'
+      ).then((mod) => mod.DataSources || mod.default)
+    ),
+    FlowChart: dynamic(() =>
+      import(
+        '../../articles/climate-risk-assessments/components/flow-chart.js'
+      ).then((mod) => mod.FlowChart || mod.default)
+    ),
+  },
   'cdr-verification-explainer': {
     PathwayDiagram: dynamic(() =>
       import(
