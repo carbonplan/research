@@ -2,7 +2,19 @@ import { Box } from 'theme-ui'
 
 const InlineSecondaryCode = ({ children }) => {
   return (
-    <Box as='span' sx={{ fontFamily: 'mono', letterSpacing: 'mono' }}>
+    <Box
+      as='span'
+      sx={{
+        px: [1],
+        pb: ['3px'],
+        pt: ['1px'],
+        mx: ['1px'],
+        fontSize: [1, 1, 1, 2],
+        fontFamily: 'mono',
+        letterSpacing: 'mono',
+        color: 'secondary',
+      }}
+    >
       {children}
     </Box>
   )
