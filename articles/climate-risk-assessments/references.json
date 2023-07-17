@@ -46,5 +46,8 @@
     "title": "The Missing Risks of Climate Change",
     "journal": "Nature",
     "url": "https://www.nature.com/articles/s41586-022-05243-6"
+  },
+  "note.nerc": {
+    "note": "According to the North American Electric Reliability Corporation’s (NERC) 2021 Long-Term Reliability Assessment, long duration weather events driven by climate change threaten reliability when demand for electricity is driven above forecasts and supplies are reduced, especially when extremely hot weather encompasses a wide area for an extended period of time."
   }
 }
