@@ -5,7 +5,6 @@ const InlineSecondaryCode = ({ children }) => {
     <Box
       as='span'
       sx={{
-        px: [1],
         pb: ['3px'],
         pt: ['1px'],
         mx: ['1px'],
