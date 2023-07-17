@@ -1,0 +1,53 @@
+{
+  "ncei.2023": {
+    "authors": "NOAA National Centers for Environmental Information (NCEI)",
+    "year": 2023,
+    "title": "U.S. Billion-Dollar Weather and Climate Disasters",
+    "url": "https://www.ncei.noaa.gov/access/billions/"
+  },
+  "fiedler.2021": {
+    "authors": "Fiedler et al.",
+    "year": 2021,
+    "title": "Business Risk and the Emergence of Climate Analytics",
+    "journal": "Nature Climate Change",
+    "url": "https://www.nature.com/articles/s41558-020-00984-6"
+  },
+  "condon.2021": {
+    "authors": "Condon et al.",
+    "year": 2021,
+    "title": "Mandating Disclosure of Climate-Related Financial Risk",
+    "journal": "New York University Journal of Legislation and Public Policy",
+    "url": "https://ssrn.com/abstract=3931076"
+  },
+  "casey.2020": {
+    "authors": "Casey et al.",
+    "year": 2020,
+    "title": "Power Outages and Community Health: A Narrative Review",
+    "journal": "Current Environmental Health Reports",
+    "url": "https://doi.org/10.1007/s40572-020-00295-0"
+  },
+  "condon.2023": {
+    "authors": "Madison Condon",
+    "year": "Forthcoming",
+    "title": "Climate Services: The Business of Physical Risk",
+    "journal": "Arizona State Law Journal",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4396826"
+  },
+  "webb.2021": {
+    "authors": "Webb et al.",
+    "year": 2021,
+    "title": "Climate Risk in the Electricity Sector: Legal Obligations to Advance Climate Resilience Planning by Electric Utilities",
+    "journal": "Environmental Law Review",
+    "url": "https://law.lclark.edu/live/files/32603-51-3-webbpdf"
+  },
+  "rising.2022": {
+    "authors": "Rising et al.",
+    "year": 2022,
+    "title": "The Missing Risks of Climate Change",
+    "journal": "Nature",
+    "url": "https://www.nature.com/articles/s41586-022-05243-6"
+  },
+  "note.nerc": {
+    "note": "According to the North American Electric Reliability Corporation’s (NERC) 2021 Long-Term Reliability Assessment, long duration weather events driven by climate change threaten reliability when demand for electricity is driven above forecasts and supplies are reduced, especially when extremely hot weather encompasses a wide area for an extended period of time."
+  }
+}
