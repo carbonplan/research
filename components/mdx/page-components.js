@@ -14,6 +14,11 @@ const components = {
         '../../articles/climate-risk-assessments/components/flow-chart.js'
       ).then((mod) => mod.FlowChart || mod.default)
     ),
+    InlineSecondaryCode: dynamic(() =>
+      import(
+        '../../articles/climate-risk-assessments/components/inline-secondary-code.js'
+      ).then((mod) => mod.InlineSecondaryCode || mod.default)
+    ),
   },
   'cdr-verification-explainer': {
     PathwayDiagram: dynamic(() =>
