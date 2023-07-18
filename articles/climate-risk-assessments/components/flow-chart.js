@@ -39,7 +39,6 @@ const FlowChart = () => {
       <Row
         columns={6}
         sx={{
-          position: ['relative', 'absolute', 'absolute', 'absolute'],
           left: 0,
           width: '100%',
           pointerEvents: 'none',
@@ -60,34 +59,45 @@ const FlowChart = () => {
             }
             sx={{ right: 0 }}
           />
-          {active && (
-            <Box sx={{ mt: 2 }}>
-              <Circle
-                id={active}
-                active={active}
-                width={22}
-                height={22}
+          <Box sx={{ mt: [2, 2, 2, 3] }}>
+            <Circle
+              id={active}
+              active={active}
+              width={22}
+              height={22}
+              sx={{
+                position: ['relative', 'absolute', 'absolute', 'absolute'],
+                display: ['inline-block'],
+                left: 0,
+                ml: [0, -32, -32, -32],
+                pointerEvents: 'none',
+              }}
+            />
+            {TEXT[view][active] && (
+              <Box
                 sx={{
                   position: ['relative', 'absolute', 'absolute', 'absolute'],
-                  display: ['inline-block'],
-                  left: 0,
-                  ml: [0, -32, -32, -32],
-                  pointerEvents: 'none',
+                  fontSize: [1, 1, 1, 2],
+                  fontFamily: 'faux',
                 }}
-              />
-              {TEXT[view][active] && (
-                <Box
-                  sx={{
-                    fontSize: 1,
-                    bg: alpha('background', 0.9),
-                    fontFamily: 'faux',
-                  }}
-                >
-                  {TEXT[view][active]}
-                </Box>
-              )}
+              >
+                {TEXT[view][active]}
+              </Box>
+            )}
+
+            <Box
+              sx={{
+                display: ['none', 'inherit', 'inherit', 'inherit'],
+                opacity: 0,
+                pointerEvents: 'none',
+                fontSize: [1, 1, 1, 2],
+                bg: alpha('background', 0.9),
+                fontFamily: 'faux',
+              }}
+            >
+              {TEXT.Concerns[4]}
             </Box>
-          )}
+          </Box>
         </Column>
       </Row>
 
@@ -97,7 +107,7 @@ const FlowChart = () => {
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
         sx={{
-          mt: 5,
+          mt: [5, -6, -7, -8],
           overflow: 'visible',
           width: ['100%', '75%', '75%', '75%'],
         }}
