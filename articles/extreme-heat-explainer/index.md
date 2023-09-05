@@ -5,7 +5,7 @@ authors:
   - Oriana Chegwidden
   - Jeremy Freeman
 date: 09-05-2023
-summary: We developed a new dataset that models the impacts of humid heat with fully public data and code, describing risks now and projecting them in the future.
+summary: We developed a new dataset that models the impacts of humid heat with fully public data and code, describing risks now and projecting them into the future.
 quickLook: New data and open methods for modeling humid heat
 card: extreme-heat-explainer
 background: articles/021/sweat
