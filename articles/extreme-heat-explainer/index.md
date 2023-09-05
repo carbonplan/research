@@ -10,6 +10,11 @@ quickLook: New data and open methods for modeling humid heat
 card: extreme-heat-explainer
 background: articles/021/sweat
 icon: articles/021/sweat-small
+links:
+  - label: Code and data
+    href: https://github.com/carbonplan/extreme-heat
+  - label: Press coverage
+    href: TK
 components:
   - name: Small
     src: ./components/small.js
