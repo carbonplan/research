@@ -109,53 +109,6 @@ const f = {
   wind: format('.1f'),
 }
 
-// const d = {
-//   temperature: (v) => {
-//     if (v < 20) {
-//       return 'low'
-//     }
-//     if (v >= 20 && v < 40) {
-//       return 'med'
-//     }
-//     if (v > 40) {
-//       return 'high'
-//     }
-//   },
-//   humidity: (v) => {
-//     if (v < 33) {
-//       return 'low'
-//     }
-//     if (v >= 33 && v < 66) {
-//       return 'med'
-//     }
-//     if (v >= 66) {
-//       return 'high'
-//     }
-//   },
-//   radiation: (v) => {
-//     if (v < 200) {
-//       return 'low'
-//     }
-//     if (v >= 200 && v < 600) {
-//       return 'med'
-//     }
-//     if (v >= 600) {
-//       return 'high'
-//     }
-//   },
-//   wind: (v) => {
-//     if (v < 2) {
-//       return 'low'
-//     }
-//     if (v >= 2 && v < 5) {
-//       return 'med'
-//     }
-//     if (v >= 5) {
-//       return 'high'
-//     }
-//   },
-// }
-
 const HeatCalculator = () => {
   const [temperature, setTemperature] = useState(32)
   const [humidity, setHumidity] = useState(60)
