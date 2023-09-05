@@ -1,0 +1,156 @@
+{
+  "yaglou.1957": {
+    "authors": "C P Yaglou & D Minard",
+    "year": 1957,
+    "title": "Control of heat casualties at military training centers",
+    "journal": "AMA Arch Ind Health",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/13457450/"
+  },
+  "liljegren.2008": {
+    "authors": "J C Liljegren et al.",
+    "year": 2008,
+    "title": "Modeling the wet bulb globe temperature using standard meteorological measurements",
+    "journal": "J Occup Environ Hyg",
+    "url": "https://doi.org/10.1080/15459620802310770"
+  },
+  "lemke.2012": {
+    "authors": "B Lemke & T Kjellstrom",
+    "year": 2012,
+    "title": "Calculating workplace WBGT from meteorological data: a tool for climate change assessment",
+    "journal": "Ind Health",
+    "url": "https://doi.org/10.2486/indhealth.ms1352"
+  },
+  "kong.2022": {
+    "authors": "Q Kong & M Huber",
+    "year": 2022,
+    "title": "Explicit Calculations of Wet-Bulb Globe Temperature Compared With Approximations and Why It Matters for Labor Productivity",
+    "journal": "Earth's Future",
+    "url": "https://doi.org/10.1029/2021EF002334"
+  },
+  "thrasher.2022": {
+    "authors": "B Thrasher et al.",
+    "year": 2022,
+    "title": "NASA Global Daily Downscaled Projections, CMIP6",
+    "journal": "Scientific Data",
+    "url": "https://doi.org/10.1038/s41597-022-01393-4"
+  },
+  "eyring.2016": {
+    "authors": "V Eyring et al.",
+    "year": 2016,
+    "title": "Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimental design and organization",
+    "journal": "Europeon Geosciences Union",
+    "url": "https://doi.org/10.5194/gmd-9-1937-2016"
+  },
+  "schwingshackl.2021": {
+    "authors": "L Schwingshackl et al.",
+    "year": 2021,
+    "title": "Evaluating agreement between bodies of evidence from randomised controlled trials and cohort studies in nutrition research: meta-epidemiological study",
+    "journal": "BMJ",
+    "url": "https://doi.org/10.1136/bmj.n1864"
+  },
+  "stull.2011": {
+    "authors": "R Stull",
+    "year": 2011,
+    "title": "Wet-Bulb Temperature from Relative Humidity and Air Temperature",
+    "journal": "Journal of Applied Meteorology and Climatology",
+    "url": "https://doi.org/10.1175/JAMC-D-11-0143.1"
+  },
+  "brimicombe.2022": {
+    "authors": "C Brimicombe et al.",
+    "year": 2022,
+    "title": "Thermofeel: A python thermal comfort indices library",
+    "journal": "SoftwareX",
+    "url": "https://doi.org/10.1016/j.softx.2022.101005"
+  },
+  "dahl.2019": {
+    "authors": "K Dahl et al.",
+    "year": 2019,
+    "title": "Increased frequency of and population exposure to extreme heat index days in the United States during the 21st century",
+    "journal": "Environmental Research Communications",
+    "url": "https://doi.org/10.1088/2515-7620/ab27cf"
+  },
+  "raymond.2020": {
+    "authors": "C Raymond et al.",
+    "year": 2021,
+    "title": "The emergence of heat and humidity too severe for human tolerance",
+    "journal": "Science Advances",
+    "url": "https://doi.org/10.1126/sciadv.aaw1838"
+  },
+  "tuholske.2021": {
+    "authors": "C Tuholske et al.",
+    "year": 2020,
+    "title": "Global urban population exposure to extreme heat",
+    "journal": "PNAS",
+    "url": "https://doi.org/10.1073/pnas.2024792118"
+  },
+  "funk.2019": {
+    "authors": "C Funk et al.",
+    "year": 2019,
+    "title": "A High-Resolution 1983–2016 Tmax Climate Data Record Based on Infrared Temperatures and Stations by the Climate Hazard Center",
+    "journal": "Journal of Climate",
+    "url": "https://doi.org/10.1175/JCLI-D-18-0698.1"
+  },
+  "cannon.2015": {
+    "authors": "A J Cannon et al.",
+    "year": 2015,
+    "title": "Bias Correction of GCM Precipitation by Quantile Mapping: How Well Do Methods Preserve Changes in Quantiles and Extremes?",
+    "journal": "Journal of Climate",
+    "url": "https://doi.org/10.1175/JCLI-D-14-00754.1"
+  },
+  "verdin.2020": {
+    "authors": "A Verdin et al.",
+    "year": 2020,
+    "title": "Development and validation of the CHIRTS-daily quasi-global high-resolution daily temperature data set",
+    "journal": "Scientific Data",
+    "url": "https://doi.org/10.1038/s41597-020-00643-7"
+  },
+  "rode.2021": {
+    "authors": "A Rode et al.",
+    "year": 2021,
+    "title": "Estimating a social cost of carbon for global energy consumption",
+    "journal": "Nature",
+    "url": "https://doi.org/10.1038/s41586-021-03883-8"
+  },
+  "thrasher.2021": {
+    "authors": "B Thrasher et al.",
+    "year": 2021,
+    "title": "NEX-GDDP-CMIP6",
+    "journal": "NASA Center for Climate Simulation",
+    "url": "https://doi.org/10.7917/OFSG3345"
+  },
+  "florczyk.2019": {
+    "authors": "A Florczyk et al.",
+    "year": 2019,
+    "title": "GHS Urban Centre Database 2015, multitemporal and multidimensional attributes, R2019A",
+    "journal": "European Commission, Joint Research Centre (JRC)",
+    "url": "https://data.jrc.ec.europa.eu/dataset/53473144-b88c-44bc-b4a3-4583ed1f547e"
+  },
+  "tozer.2019": {
+    "authors": "B Tozer et al.",
+    "year": 2019,
+    "title": "Global bathymetry and topography at 15 arc sec: Srtm15+",
+    "journal": "Earth and Space Science",
+    "url": "https://doi.org/10.1029/2019EA000658"
+  },
+  "schiavina.2023": {
+    "authors": "B Tozer et al.",
+    "year": 2023,
+    "title": "GHS-POP R2023A - GHS population grid multitemporal (1975-2030)",
+    "journal": "European Commission, Joint Research Centre (JRC)",
+    "url": "https://data.europa.eu/89h/2ff68a52-5b5b-4a22-8f40-c41da8332cfe"
+  },
+  "chavaillaz.2019": {
+    "authors": "Y Chavaillaz et al.",
+    "year": 2019,
+    "title": "Exposure to excessive heat and impacts on labour productivity linked to cumulative CO2 emissions",
+    "journal": "Sci Rep",
+    "url": "https://doi.org/10.1038/s41598-019-50047-w"
+  },
+  "parsons.2021": {
+    "authors": "L Parsons et al.",
+    "year": 2021,
+    "title": "Increased labor losses and decreased adaptation potential in a warmer world",
+    "journal": "Nat Commun",
+    "url": "https://doi.org/10.1038/s41467-021-27328-y"
+  }
+}
