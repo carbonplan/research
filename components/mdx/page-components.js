@@ -3,6 +3,33 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'extreme-heat-explainer': {
+    Small: dynamic(() =>
+      import('../../articles/extreme-heat-explainer/components/small.js').then(
+        (mod) => mod.Small || mod.default
+      )
+    ),
+    HeatCalculator: dynamic(() =>
+      import(
+        '../../articles/extreme-heat-explainer/components/heat-calculator.js'
+      ).then((mod) => mod.HeatCalculator || mod.default)
+    ),
+    BiasCorrection: dynamic(() =>
+      import(
+        '../../articles/extreme-heat-explainer/components/bias-correction.js'
+      ).then((mod) => mod.BiasCorrection || mod.default)
+    ),
+    DaysOver: dynamic(() =>
+      import(
+        '../../articles/extreme-heat-explainer/components/days-over.js'
+      ).then((mod) => mod.DaysOver || mod.default)
+    ),
+    CityMap: dynamic(() =>
+      import(
+        '../../articles/extreme-heat-explainer/components/city-map.js'
+      ).then((mod) => mod.CityMap || mod.default)
+    ),
+  },
   'climate-risk-assessments': {
     DataSources: dynamic(() =>
       import(
