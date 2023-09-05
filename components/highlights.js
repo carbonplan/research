@@ -4,6 +4,28 @@ import Highlight from './highlight'
 
 const HIGHLIGHTS = [
   {
+    id: 'extreme-heat',
+    date: '09-05-2023',
+    href: '/research/extreme-heat-explainer',
+    title: 'Modeling extreme heat',
+    summary:
+      'We developed a new dataset modeling the impacts of humid heat now and into the future, in collaboration with The Washington Post. Read the article or the coverage in The Post.',
+    links: [
+      {
+        label: 'Explainer article',
+        href: '/research/extreme-heat-explainer',
+      },
+      {
+        label: 'Press coverage #1',
+        href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/extreme-heat-wet-bulb-globe-temperature/',
+      },
+      {
+        label: 'Press coverage #2',
+        href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/pakistan-extreme-heat-health-impacts-death/',
+      },
+    ],
+  },
+  {
     id: 'cdr-verification',
     date: '09-19-2022',
     href: '/research/cdr-verification',
@@ -23,25 +45,6 @@ const HIGHLIGHTS = [
       {
         label: 'Frontier post',
         href: 'http://frontierclimate.com/writing/quantifying-delivered-cdr',
-      },
-    ],
-  },
-  {
-    id: 'cmip6-downscaling',
-    date: '06-30-2022',
-    title: 'CMIP6 downscaling',
-    summary:
-      'Downscaled datasets form the basis of climate impacts and risk analysis. We released new globally downscaled climate datasets spanning multiple downscaling methods, alongside an interactive map tool, an explainer article, and a policy brief.',
-    href: '/research/cmip6-downscaling',
-    links: [
-      { label: 'Map tool', href: '/research/cmip6-downscaling' },
-      {
-        label: 'Explainer article',
-        href: '/research/cmip6-downscaling-explainer',
-      },
-      {
-        label: 'Policy brief',
-        href: '/research/data-financial-risk',
       },
     ],
   },

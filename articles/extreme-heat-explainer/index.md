@@ -13,8 +13,10 @@ icon: articles/021/sweat-small
 links:
   - label: Code and data
     href: https://github.com/carbonplan/extreme-heat
-  - label: Press coverage
-    href: TK
+  - label: 'Press coverage #1'
+    href: https://www.washingtonpost.com/climate-environment/interactive/2023/extreme-heat-wet-bulb-globe-temperature/
+  - label: 'Press coverage #2'
+    href: https://www.washingtonpost.com/climate-environment/interactive/2023/pakistan-extreme-heat-health-impacts-death/
 components:
   - name: Small
     src: ./components/small.js
@@ -33,7 +35,7 @@ If it wasn’t clear before the summer of 2023 that climate change is raising te
 
 As extreme heat becomes commonplace, people need to know when and where it will occur. But modeling and predicting heat is complicated. Temperature on its own doesn’t tell the whole story. For example, when it’s hot you sweat, and the water evaporates to cool you down. But if there’s too much moisture in the air (high humidity), that cooling effect can stop working. The amounts of sunlight and wind also matter (the former heats you up, and the latter cools you down).<Sidenote>While wind generally has a cooling effect, at very high temperatures, wind can increase the heat transfer to a body, as opposed to away from it.</Sidenote> These parameters vary from minute to minute. And they vary geographically, often at fine spatial scales, especially within cities where human activity and infrastructure trap heat.
 
-We want to help planners and the public navigate this complicated science by producing actionable data that will make it easier to understand the risks. As part of a [collaborative project with _The Washington Post_](TK), we developed a new dataset modeling extreme heat under a changing climate. We built on a foundation of academic work, aiming to combine the best pieces of several existing methods and datasets to produce something new, albeit with several assumptions and approximations. And we’re making all of our data, methods, and code [fully public](https://github.com/carbonplan/extreme-heat).
+We want to help planners and the public navigate this complicated science by producing actionable data that will make it easier to understand the risks. As part of a [collaborative project with _The Washington Post_](https://www.washingtonpost.com/climate-environment/interactive/2023/extreme-heat-wet-bulb-globe-temperature/), we developed a new dataset modeling extreme heat under a changing climate. We built on a foundation of academic work, aiming to combine the best pieces of several existing methods and datasets to produce something new, albeit with several assumptions and approximations. And we’re making all of our data, methods, and code [fully public](https://github.com/carbonplan/extreme-heat).
 
 In this explainer we describe how and why we developed the new dataset, and provide details on our methods, assumptions, and results.
 
