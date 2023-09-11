@@ -11,9 +11,18 @@ import {
   SeaweedFarming,
   CMIP6Downscaling,
   CDRVerification,
+  EWQuantification,
 } from '../components/tool-logos'
 
 const tools = [
+  {
+    id: 'ew-quantification',
+    logo: <EWQuantification />,
+    color: 'secondary',
+    summary:
+      'A tool for exploring different quantitative methods that could be used in enhanced weathering MRV.',
+    title: 'Quantifying enhanced weathering',
+  },
   {
     id: 'cdr-verification',
     logo: <CDRVerification />,
