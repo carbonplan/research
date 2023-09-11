@@ -163,7 +163,7 @@ We hope the tool presented here provides a useful reference for where our knowle
 
 <Endnote label='Credits' divider>
 
-Freya wrote the first draft of the article. Iris and Freya led the development of the tool. All authors contributed to developing the underlying concepts, reviewing the tool, and editing the article. The authors thank Dan Maxbauer and Tyler Kukla for helpful feedback.
+Freya wrote the first draft of the article. Iris, Kata, and Freya led the development of the tool. All authors contributed to developing the underlying concepts, reviewing the tool, and editing the article. The authors thank Dan Maxbauer and Tyler Kukla for helpful feedback.
 
 Please cite this web article as:
 
