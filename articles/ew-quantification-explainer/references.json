@@ -1,0 +1,42 @@
+{
+  "almaraz.2022": {
+    "authors": "M Almaraz et al.",
+    "year": 2022,
+    "title": "Methods for determining the CO2 removal capacity of enhanced weathering in agronomic settings",
+    "journal": "Frontiers in Climate",
+    "editors": "",
+    "url": "https://doi.org/10.3389/fclim.2022.970429"
+  },
+  "beerling.2018": {
+    "authors": "Beerling et al.",
+    "year": 2018,
+    "title": "Farming with crops and rocks to address global climate, food and soil security",
+    "journal": "Nature Plants",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s41477-018-0108-y"
+  },
+  "hartmann.2013": {
+    "authors": "Hartmann et al.",
+    "year": 2013,
+    "title": "Enhanced chemical weathering as a geoengineering strategy to reduce atmospheric carbon dioxide, supply nutrients, and mitigate ocean acidification",
+    "journal": "Reviews of Geophysics",
+    "editors": "",
+    "url": "https://doi.org/10.1002/rog.20004"
+  },
+  "beerling.2023": {
+    "authors": "Beerling et al.",
+    "year": 2023,
+    "title": "Enhanced weathering in the U.S. Corn Belt delivers carbon removal with agronomic benefits",
+    "journal": "(preprint)",
+    "editors": "",
+    "url": "https://arxiv.org/abs/2307.05343"
+  },
+  "kantzas.2022": {
+    "authors": "Kantzas et al.",
+    "year": 2022,
+    "title": "Substantial carbon drawdown potential from enhanced rock weathering in the United Kingdom",
+    "journal": "Nature Geoscience",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s41561-022-00925-2"
+  }
+}

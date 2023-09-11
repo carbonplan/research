@@ -3,6 +3,18 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'ew-quantification-explainer': {
+    PhasesTable: dynamic(() =>
+      import(
+        '../../articles/ew-quantification-explainer/components/phases-table.js'
+      ).then((mod) => mod.PhasesTable || mod.default)
+    ),
+    ProtocolsMethods: dynamic(() =>
+      import(
+        '../../articles/ew-quantification-explainer/components/protocols-methods.js'
+      ).then((mod) => mod.ProtocolsMethods || mod.default)
+    ),
+  },
   'extreme-heat-explainer': {
     Small: dynamic(() =>
       import('../../articles/extreme-heat-explainer/components/small.js').then(
