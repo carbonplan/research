@@ -181,7 +181,7 @@ const TimeSeries = (props) => {
                 <Line
                   key={key}
                   data={data}
-                  color='secondary'
+                  color='grey'
                   width={2}
                   sx={{ opacity: active ? 1 : 0.3, transition: '0.2s opacity' }}
                 />
@@ -205,7 +205,7 @@ const TimeSeries = (props) => {
             <Label
               x={100}
               y={Math.max(labels.emissions, props.emissions ? -0.85 : -0.93)}
-              sx={{ color: 'secondary', ...sx.chartLabel }}
+              sx={{ color: 'grey', ...sx.chartLabel }}
             >
               <Box sx={sx.chartLabelInner}>Emissions</Box>
             </Label>
