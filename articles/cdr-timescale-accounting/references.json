@@ -1,0 +1,70 @@
+{
+  "he.2023": {
+    "authors": "He et al.",
+    "year": 2023,
+    "title": "Limits and CO₂ equilibration of near-coast alkalinity enhancement",
+    "journal": "Biogeosciences",
+    "url": "https://doi.org/10.5194/bg-20-27-2023"
+  },
+  "joos.2013": {
+    "authors": "Joos et al.",
+    "year": 2013,
+    "title": "Carbon dioxide and climate impulse response functions for the computation of greenhouse gas metrics: a multi-model analysis",
+    "journal": "Atmospheric Chemistry and Physics",
+    "url": "https://doi.org/10.5194/acp-13-2793-2013"
+  },
+  "kanzaki.2023": {
+    "authors": "Kanzaki et al.",
+    "year": 2023,
+    "title": "New estimates of the storage permanence and ocean co-benefits of enhanced rock weathering",
+    "journal": "PNAS Nexus",
+    "url": "https://doi.org/10.1093/pnasnexus/pgad059"
+  },
+  "bach.2023": {
+    "authors": "Bach et al.",
+    "year": 2023,
+    "title": "Toward a consensus framework to evaluate air–sea CO₂ equilibration for marine CO₂ removal",
+    "journal": "Limnology and Oceanography Letters",
+    "url": "https://doi.org/10.1002/lol2.10330"
+  },
+  "beerling.preprint": {
+    "authors": "Beerling et al.",
+    "year": 2023,
+    "title": "Enhanced weathering in the U.S. Corn Belt delivers carbon removal with agronomic benefits",
+    "journal": "arXiv (preprint)",
+    "url": "https://doi.org/10.48550/arXiv.2307.05343"
+  },
+  "allen.2009": {
+    "authors": "Allen et al. 2009",
+    "year": 2009,
+    "title": "Warming caused by cumulative carbon emissions towards the trillionth tonne",
+    "journal": "Nature",
+    "url": "https://doi.org/10.1038/nature08019"
+  },
+  "hector": {
+    "authors": "K Dorheim and B Bond-Lamberty",
+    "year": 2023,
+    "title": "hector: The Hector Simple Climate Model",
+    "url": "https://jgcri.github.io/hector"
+  },
+  "ipcc.ar6.chp5": {
+    "authors": "J G Canadell et al.",
+    "year": 2021,
+    "title": "Global Carbon and other Biogeochemical Cycles and Feedbacks",
+    "journal": "Climate Change 2021: The Physical Science Basis",
+    "url": "https://doi.org//10.1017/9781009157896.007"
+  },
+  "sonntag.2018": {
+    "authors": "S Sonntag et al.",
+    "year": 2018,
+    "title": "Quantifying and Comparing Effects of Climate Engineering Methods on the Earth System",
+    "journal": "Earth's Future",
+    "url": " https://doi.org/10.1002/2017EF000620"
+  },
+  "nerd.note": {
+    "note": "Note that in a simulation of the present day, we would expect the net atmospheric response to be about half of the initial CDR flux. There is more outgassing in this illustrative example because this is an idealized simulation from a constant preindustrial baseline, and there is more outgassing when CDR is deployed at lower CO₂ concentrations."
+  },
+  "gwp.note": {
+    "note": "See, for example, discussions of the global warming potential (GWP) and alternative metrics."
+  }
+}
