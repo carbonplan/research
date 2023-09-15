@@ -159,8 +159,8 @@ C Zarakas, G Badgley, F Chay (2023) “Comparing carbon removal at different tim
 </Endnote>
 
 <Endnote label='Terms'>
-  This work was [funded in part](https://carbonplan.org/funding) by a grant from
-  the Patrick J. McGovern Foundation. Article text and figures made available
-  under a [CC-BY 4.0 International
+  This work was [funded in part](https://carbonplan.org/funding) by grants from
+  the Patrick J. McGovern Foundation and ClimateWorks. Article text and figures
+  made available under a [CC-BY 4.0 International
   license](https://creativecommons.org/licenses/by/4.0/).
 </Endnote>
