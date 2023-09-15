@@ -1,13 +1,12 @@
 const publications = [
   {
     date: '09-15-2023',
-    title:
-      'Carbon offsets are incompatible with the Paris Agreement',
+    title: 'Carbon offsets are incompatible with the Paris Agreement',
     href: 'https://doi.org/10.1016/j.oneear.2023.08.014',
     color: 'pink',
     summary:
       'For carbon offsets to support temperature stabilization under the Paris Agreement, nearly everything about them must change.',
-    journal: 'One Earth'
+    journal: 'One Earth',
   },
   {
     date: '12-23-2022',
