@@ -3,6 +3,23 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'cdr-timescale-accounting': {
+    TimeSeries: dynamic(() =>
+      import(
+        '../../articles/cdr-timescale-accounting/components/time-series.js'
+      ).then((mod) => mod.TimeSeries || mod.default)
+    ),
+    TimeHorizon: dynamic(() =>
+      import(
+        '../../articles/cdr-timescale-accounting/components/time-horizon.js'
+      ).then((mod) => mod.TimeHorizon || mod.default)
+    ),
+    TableRecommendations: dynamic(() =>
+      import(
+        '../../articles/cdr-timescale-accounting/components/table-recommendations.js'
+      ).then((mod) => mod.TableRecommendations || mod.default)
+    ),
+  },
   'ew-quantification-explainer': {
     PhasesTable: dynamic(() =>
       import(
@@ -419,6 +436,13 @@ const components = {
       import('../../articles/stripe-2020-insights/components/table.js').then(
         (mod) => mod.Table || mod.default
       )
+    ),
+  },
+  'ethanol-cdr-claims': {
+    Schematics: dynamic(() =>
+      import(
+        '../../commentary/ethanol-cdr-claims/components/schematics.js'
+      ).then((mod) => mod.Schematics || mod.default)
     ),
   },
   'forest-offsets-alaska': {},
