@@ -106,7 +106,13 @@ const AccountingEntry = ({ value, color, label }) => {
         viewBox='0 0 6 6'
         sx={{ position: 'absolute', top: '6px' }}
       >
-        <Box as='circle' cx='3' cy='3' r='2.5' sx={{ stroke: 'yellow' }} />
+        <Box
+          as='circle'
+          cx='3'
+          cy='3'
+          r='2.5'
+          sx={{ stroke: 'yellow', fill: 'none' }}
+        />
       </Box>
     )
   }
