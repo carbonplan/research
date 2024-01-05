@@ -94,7 +94,7 @@ const tools = [
     id: 'forest-risks',
     logo: <ForestRisks />,
     color: 'red',
-    summary: 'Mapping risks to forest carbon under a changing climate',
+    summary: 'Mapping risks to forest carbon under a changing climate.',
     title: 'Forest Risks',
   },
   {
