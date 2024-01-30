@@ -1,5 +1,5 @@
 ---
-version: 1.0.0
+version: 1.0.1
 title: Ethanol carbon capture and storage isn’t carbon removal
 authors:
   - Freya Chay
@@ -129,7 +129,7 @@ The authors are solely responsible for any mistakes or omissions.
 
 <Endnote label='Terms'>
 
-CarbonPlan received [no specific financial support](https://carbonplan.org/funding) for this work. No one except the authors exercised control over the research process or products. The authors are solely responsible for the content of this commentary, which does not reflect the views of any other individuals or organizations.
+This work was supported by a grant from the Patrick J. McGovern Foundation. No one except the authors exercised control over the research process or products. The authors are solely responsible for the content of this commentary, which does not reflect the views of any other individuals or organizations.
 
 Article text and figures made available under a [CC BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
 
