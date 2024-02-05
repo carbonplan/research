@@ -12,9 +12,18 @@ import {
   CMIP6Downscaling,
   CDRVerification,
   EWQuantification,
+  OffsetsDB,
 } from '../components/tool-logos'
 
 const tools = [
+  {
+    id: 'offsets-db',
+    logo: <OffsetsDB />,
+    color: 'secondary',
+    summary:
+      'A database of carbon offset projects and credits harmonized across several offset registries.',
+    title: 'Offsets DB',
+  },
   {
     id: 'ew-quantification',
     logo: <EWQuantification />,
