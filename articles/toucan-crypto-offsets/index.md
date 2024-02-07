@@ -177,7 +177,7 @@ G Badgley and D Cullenward (2022) “Zombies on the blockchain” CarbonPlan <sp
 
 <Endnote label='Terms'>
 
-CarbonPlan received [no specific financial support](https://carbonplan.org/funding) for this work. The FTX Foundation, which is associated with the cryptocurrency exchange FTX, previously gave CarbonPlan an unsolicited and [unrestricted donation](https://www.ftx-climate.com/research) in cash. Neither the authors nor CarbonPlan have any financial interest in cryptocurrencies.
+CarbonPlan received [no specific financial support](https://carbonplan.org/funding) for this work. The FTX Foundation, which was a nonprofit organization associated with the cryptocurrency exchange FTX, previously gave CarbonPlan an unsolicited and unrestricted donation in cash, but we subsequently [returned the funds](https://carbonplan.org/blog/ftx-donation-return) when they were requested by the FTX Debtors following the collapse of FTX, and we thus do not consider them a funder. Neither the authors nor CarbonPlan have any financial interest in cryptocurrencies.
 
 Article text and figures made available under a [CC-BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/). Associated [analysis code](https://github.com/carbonplan/toucan-crypto-offsets) made available under an [MIT](https://github.com/carbonplan/toucan-crypto-offsets/blob/main/LICENSE) license.
 
