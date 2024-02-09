@@ -438,6 +438,7 @@ const components = {
       )
     ),
   },
+  'buffer-pool-burning': {},
   'ethanol-cdr-claims': {
     Schematics: dynamic(() =>
       import(
