@@ -1,5 +1,11 @@
 const comments = [
   {
+    title:
+      'Commodity Futures Trading Commission re: Listing of voluntary carbon credit derivative contracts guidance',
+    href: 'https://files.carbonplan.org/CFTC-Voluntary-Carbon-Credit-Comment-Letter-02-16-2024.pdf',
+    date: '02-16-2024',
+  },
+  {
     title: 'UNFCCC Article 6.4 Supervisory Body re: SB005 annotated agenda',
     href: 'https://files.carbonplan.org/Article-6_4-Supervisory-Body-Comment-Letter-05-24-2023.pdf',
     date: '05-24-2023',
