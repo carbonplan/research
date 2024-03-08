@@ -1,0 +1,121 @@
+import { useThemeUI } from 'theme-ui'
+
+const Logo = () => {
+  const { theme } = useThemeUI()
+
+  return (
+    <svg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 100'>
+      <path fill={theme.colors.purple} opacity={0.7} d='M13.9,21.6' />
+      <path fill={theme.colors.purple} opacity={0.7} d='M79.3,21.6' />
+      <g>
+        <rect
+          x='13'
+          y='35'
+          fill={theme.colors.primary}
+          opacity={0.2}
+          width='124'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='23.5'
+          fill={theme.colors.primary}
+          opacity={0.2}
+          width='124'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='12'
+          fill={theme.colors.primary}
+          opacity={0.2}
+          width='124'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='12'
+          fill={theme.colors.green}
+          width='84.9'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='23.5'
+          fill={theme.colors.purple}
+          width='78.5'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='35'
+          fill={theme.colors.blue}
+          width='66.3'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='46.4'
+          fill={theme.colors.primary}
+          opacity={0.2}
+          width='124'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='57.9'
+          fill={theme.colors.primary}
+          opacity={0.2}
+          width='124'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='69.4'
+          fill={theme.colors.primary}
+          opacity={0.2}
+          width='124'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='80.9'
+          fill={theme.colors.primary}
+          opacity={0.2}
+          width='124'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='46.4'
+          fill={theme.colors.yellow}
+          width='52.8'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='57.9'
+          fill={theme.colors.pink}
+          width='28.8'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='69.4'
+          fill={theme.colors.orange}
+          width='18.5'
+          height='7.1'
+        />
+        <rect
+          x='13'
+          y='80.9'
+          fill={theme.colors.grey}
+          width='7.4'
+          height='7.1'
+        />
+      </g>
+    </svg>
+  )
+}
+
+export default Logo
