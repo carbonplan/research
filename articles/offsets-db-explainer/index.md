@@ -164,16 +164,15 @@ To help get started, the following table outlines some possible use cases for th
         'Journalist',
         'I am investigating an offset project.',
        <>
-        Search for specific projects and check the
+        Search for specific projects and check the <Link href='https://carbonplan.org/research/offsets-db/updates'>Updates feature</Link>{' '}
 
- <Link href='https://carbonplan.org/research/offsets-db/updates'>
-            Updates feature
-          </Link>{' '}
 for a timeline of activity. You can also access more records through our link to the underlying registry website for the project.
-     </>,
-      ]
-    ]}
-  />
+
+</>,
+]
+]}
+/>
+
 </Figure>
 
 In the months to come, we plan to add more data and annotations to OffsetsDB, with an initial focus on recording the listing dates of new projects based on the first date they appear in registry data. We're also excited to add additional, project-level categorizations to more fully reflect the diversity of offset projects participating in the market. This will allow tailored searches for specific types of projects, like REDD+ or dairy digesters, that go beyond the current ability to filter by protocol categories. You can follow our progress on [GitHub](https://github.com/carbonplan/offsets-db-data).
