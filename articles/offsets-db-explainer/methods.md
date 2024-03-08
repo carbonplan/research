@@ -4,7 +4,7 @@ title: How OffsetsDB Works
 card: offsets-db-methods
 quickLook: A brief intro to the methods behind our new carbon offsets database
 slug: offsets-db-methods
-back: research/offsets-db
+back: /research/offsets-db
 components:
   - name: TableCategories
     src: ./components/table-categories.js
