@@ -3,6 +3,23 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'offsets-db-explainer': {
+    Diagram: dynamic(() =>
+      import('../../articles/offsets-db-explainer/components/diagram.js').then(
+        (mod) => mod.Diagram || mod.default
+      )
+    ),
+    SummaryTable: dynamic(() =>
+      import(
+        '../../articles/offsets-db-explainer/components/summary-table.js'
+      ).then((mod) => mod.SummaryTable || mod.default)
+    ),
+    TimeSeries: dynamic(() =>
+      import(
+        '../../articles/offsets-db-explainer/components/time-series.js'
+      ).then((mod) => mod.TimeSeries || mod.default)
+    ),
+  },
   'cdr-timescale-accounting': {
     TimeSeries: dynamic(() =>
       import(
@@ -530,6 +547,16 @@ const components = {
       import(
         '../../articles/forest-offsets-explainer/components/common-practice/index.js'
       ).then((mod) => mod.CommonPractice || mod.default)
+    ),
+  },
+  'offsets-db-methods': {
+    TableCategories: dynamic(() =>
+      import(
+        '../../articles/offsets-db-explainer/components/table-categories.js'
+      ).then((mod) => mod.TableCategories || mod.default)
+    ),
+    Figure: dynamic(() =>
+      import('@carbonplan/components').then((mod) => mod.Figure || mod.default)
     ),
   },
   'soil-protocols-explainer-gold-standard-response': {},
