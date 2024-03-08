@@ -85,7 +85,16 @@ const Tool = ({ info, start }) => {
               }}
             />
           )}
-          <Flex sx={{ height: '100%', alignItems: 'center' }}>{logo}</Flex>
+          <Flex
+            sx={{
+              height: '100%',
+              width: '100%',
+              alignItems: 'center',
+              '& svg': { width: '100%' },
+            }}
+          >
+            {logo}
+          </Flex>
         </Box>
         <Box id='tool' sx={{ ...sx.tool, mt: ['12px', '12px', '12px', 3] }}>
           {title}
