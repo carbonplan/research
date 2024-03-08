@@ -20,8 +20,7 @@ const tools = [
     id: 'offsets-db',
     logo: <OffsetsDB />,
     color: 'secondary',
-    summary:
-      'A database of carbon offset projects and credits harmonized across several offset registries.',
+    summary: 'A harmonized database of carbon offset projects and credits.',
     title: 'Offsets DB',
   },
   {
