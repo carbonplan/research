@@ -1,4 +1,4 @@
-import { Box, Link } from 'theme-ui'
+import { Box, Flex, Link } from 'theme-ui'
 import { Row, Column } from '@carbonplan/components'
 
 const sx = {
@@ -85,7 +85,7 @@ const Tool = ({ info, start }) => {
               }}
             />
           )}
-          {logo}
+          <Flex sx={{ height: '100%', alignItems: 'center' }}>{logo}</Flex>
         </Box>
         <Box id='tool' sx={{ ...sx.tool, mt: ['12px', '12px', '12px', 3] }}>
           {title}
