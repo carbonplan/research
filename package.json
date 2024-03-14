@@ -24,7 +24,7 @@
   "homepage": "https://github.com/carbonplan/research#readme",
   "prettier": "@carbonplan/prettier",
   "dependencies": {
-    "@carbonplan/charts": "^3.0.0",
+    "@carbonplan/charts": "^3.1.1",
     "@carbonplan/colormaps": "^4.0.0",
     "@carbonplan/components": "^12.5.0",
     "@carbonplan/emoji": "^2.0.0",
