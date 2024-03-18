@@ -3,6 +3,43 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'enhanced-weathering-fluxes': {
+    ErwEstimates: dynamic(() =>
+      import(
+        '../../articles/enhanced-weathering-fluxes/components/erw-estimates.js'
+      ).then((mod) => mod.ErwEstimates || mod.default)
+    ),
+    ScatterChart: dynamic(() =>
+      import(
+        '../../articles/enhanced-weathering-fluxes/components/scatter-chart.js'
+      ).then((mod) => mod.ScatterChart || mod.default)
+    ),
+    ErwEfficiencies: dynamic(() =>
+      import(
+        '../../articles/enhanced-weathering-fluxes/components/erw-efficiencies.js'
+      ).then((mod) => mod.ErwEfficiencies || mod.default)
+    ),
+    Diagram: dynamic(() =>
+      import(
+        '../../articles/enhanced-weathering-fluxes/components/diagram.js'
+      ).then((mod) => mod.Diagram || mod.default)
+    ),
+    SpatialBoundary: dynamic(() =>
+      import(
+        '../../articles/enhanced-weathering-fluxes/components/spatial-boundary.js'
+      ).then((mod) => mod.SpatialBoundary || mod.default)
+    ),
+    TemporalBoundary: dynamic(() =>
+      import(
+        '../../articles/enhanced-weathering-fluxes/components/temporal-boundary.js'
+      ).then((mod) => mod.TemporalBoundary || mod.default)
+    ),
+    HatchingKey: dynamic(() =>
+      import(
+        '../../articles/enhanced-weathering-fluxes/components/hatching-key.js'
+      ).then((mod) => mod.HatchingKey || mod.default)
+    ),
+  },
   'offsets-db-explainer': {
     Diagram: dynamic(() =>
       import('../../articles/offsets-db-explainer/components/diagram.js').then(
