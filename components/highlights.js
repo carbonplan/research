@@ -4,6 +4,25 @@ import Highlight from './highlight'
 
 const HIGHLIGHTS = [
   {
+    id: 'offsets-db',
+    date: '03-08-2024',
+    href: '/research/offsets-db',
+    title: 'OffsetsDB',
+    summary:
+      'We developed a regularly-updating, harmonized database of carbon offset projects and credits for download and interactive exploration.',
+    links: [
+      { label: 'Database tool', href: '/research/offsets-db' },
+      {
+        label: 'Explainer article',
+        href: '/research/offsets-db-explainer',
+      },
+      {
+        label: 'Methods',
+        href: '/research/offsets-db-methods',
+      },
+    ],
+  },
+  {
     id: 'extreme-heat',
     date: '09-05-2023',
     href: '/research/extreme-heat-explainer',
@@ -22,29 +41,6 @@ const HIGHLIGHTS = [
       {
         label: 'Press coverage #2',
         href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/pakistan-extreme-heat-health-impacts-death/',
-      },
-    ],
-  },
-  {
-    id: 'cdr-verification',
-    date: '09-19-2022',
-    href: '/research/cdr-verification',
-    title: 'CDR verification framework',
-    summary:
-      'We developed an interactive tool to map quantification capacity and uncertainty across CDR pathways. Explore the interactive tool, read the article, or read Frontier’s post to learn more.',
-    links: [
-      { label: 'Interactive tool', href: '/research/cdr-verification' },
-      {
-        label: 'Explainer article',
-        href: '/research/cdr-verification-explainer',
-      },
-      {
-        label: 'Methods',
-        href: '/research/cdr-verification-methods',
-      },
-      {
-        label: 'Frontier post',
-        href: 'http://frontierclimate.com/writing/quantifying-delivered-cdr',
       },
     ],
   },
