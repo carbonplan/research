@@ -11,7 +11,7 @@ card: offsets-db-explainer
 background: articles/024/drawers
 icon: articles/024/drawers-small
 summary: Information about carbon offset projects and credits is spread across the internet, making it hard to compare up-to-date data from different sources. Our new, regularly updated database harmonizes offset data from several sources, helping make the offsets market more transparent.
-quickLook: OffsetsDB makes it easier to investigate carbon offset projects and credits.
+quickLook: OffsetsDB makes it easier to investigate carbon offset projects and credits
 links:
   - label: Database tool
     href: /research/offsets-db

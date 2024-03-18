@@ -9,7 +9,7 @@ authors:
   - Freya Chay
 date: 3-18-2024
 summary: There are lots of carbon removal estimates for enhanced weathering in the scientific literature, but making sense of them is hard. We synthesized these estimates to clarify the current state of the science and grapple with its limitations.
-quickLook: A synthesis of carbon removal estimates from the enhanced weathering literature.
+quickLook: A synthesis of carbon removal estimates from the enhanced weathering literature
 color: grey
 card: enhanced-weathering-fluxes
 background: articles/025/slovenia
