@@ -6,6 +6,11 @@ const comments = [
     date: '02-16-2024',
   },
   {
+    title: 'Federal Insurance Office re: Climate-related financial risk',
+    href: 'https://files.carbonplan.org/FIO-Climate-Related-Financial-Risk-12-04-2023.pdf',
+    date: '12-04-2023',
+  },
+  {
     title: 'UNFCCC Article 6.4 Supervisory Body re: SB005 annotated agenda',
     href: 'https://files.carbonplan.org/Article-6_4-Supervisory-Body-Comment-Letter-05-24-2023.pdf',
     date: '05-24-2023',
