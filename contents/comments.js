@@ -1,6 +1,12 @@
 const comments = [
   {
     title:
+      'Alaska Department of Natural Resources re: Proposed regulations regarding state carbon offset projects on state lands',
+    href: 'https://files.carbonplan.org/Alaska-State-Comment-Letter-04-29-2024.pdf',
+    date: '04-29-2024',
+  },
+  {
+    title:
       'Commodity Futures Trading Commission re: Listing of voluntary carbon credit derivative contracts guidance',
     href: 'https://files.carbonplan.org/CFTC-Voluntary-Carbon-Credit-Comment-Letter-02-16-2024.pdf',
     date: '02-16-2024',
