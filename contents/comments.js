@@ -1,6 +1,12 @@
 const comments = [
   {
     title:
+      'California Air Resources Board re: Workshop on potential amendments to the cap-and-trade regulation',
+    href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/CARB-CapAndTrade-Workshop-Comment-Letter-05-08-2024.pdf',
+    date: '05-08-2024',
+  },
+  {
+    title:
       'Alaska Department of Natural Resources re: Proposed regulations regarding state carbon offset projects on state lands',
     href: 'https://files.carbonplan.org/Alaska-State-Comment-Letter-04-29-2024.pdf',
     date: '04-29-2024',
@@ -38,12 +44,6 @@ const comments = [
     ],
   },
 
-  {
-    title:
-      'California Air Resources Board re: Workshop on potential amendments to the cap-and-trade regulation',
-    href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/CARB-CapAndTrade-Workshop-Comment-Letter-05-08-2024.pdf',
-    date: '05-08-2024',
-  },
   {
     title: 'California Air Resources Board re: Forest carbon offset workshop',
     href: 'https://files.carbonplan.org/CARB-Forest-Offsets-Workshop-Comment-Letter-12-15-2022.pdf',
