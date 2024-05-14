@@ -37,9 +37,10 @@ const comments = [
       },
     ],
   },
-  
+
   {
-    title: 'California Air Resources Board re: Workshop on potential amendments to the cap-and-trade regulation',
+    title:
+      'California Air Resources Board re: Workshop on potential amendments to the cap-and-trade regulation',
     href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/CARB-CapAndTrade-Workshop-Comment-Letter-05-08-2024.pdf',
     date: '05-08-2024',
   },
