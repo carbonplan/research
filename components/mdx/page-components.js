@@ -492,6 +492,18 @@ const components = {
       )
     ),
   },
+  'icvcm-landfill-additionality': {
+    AnnotatedProject: dynamic(() =>
+      import(
+        '../../commentary/icvcm-landfill-additionality/components/annotated-project.js'
+      ).then((mod) => mod.AnnotatedProject || mod.default)
+    ),
+    Summary: dynamic(() =>
+      import(
+        '../../commentary/icvcm-landfill-additionality/components/summary.js'
+      ).then((mod) => mod.Summary || mod.default)
+    ),
+  },
   'buffer-pool-burning': {},
   'ethanol-cdr-claims': {
     Schematics: dynamic(() =>
