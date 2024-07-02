@@ -20,7 +20,7 @@ const tools = [
   {
     id: 'oae-efficiency',
     logo: <OAEEfficiency />,
-    color: 'blue',
+    color: 'secondary',
     summary: 'Mapping the efficiency of ocean alkalinity enhancement.',
     title: 'OAE Efficiency',
   },
