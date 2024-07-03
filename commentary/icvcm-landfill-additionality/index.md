@@ -91,7 +91,7 @@ Grayson performed the analysis and wrote the article with Freya. Kata Martin des
 
 Please cite as:
 
-G Badgley and F Chay (2024) “The first offset credits approved by a major integrity program don’t make the grade” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/ticvcm-landfill-additionality](https://carbonplan.org/research/icvcm-landfill-additionality)</span>
+G Badgley and F Chay (2024) “The first offset credits approved by a major integrity program don’t make the grade” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/icvcm-landfill-additionality](https://carbonplan.org/research/icvcm-landfill-additionality)</span>
 
 </Endnote>
 
