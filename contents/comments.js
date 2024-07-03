@@ -1,6 +1,12 @@
 const comments = [
   {
     title:
+      'United States Department of Agriculture re: Greenhouse Gas Technical Assistance Provider and Third-Party Verifier Program',
+    href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/USDA-Greenhouse-Gas-Technical-Assistance-Program-Comment-Letter-06-28-2024.pdf',
+    date: '06-28-2024',
+  },
+  {
+    title:
       'California Air Resources Board re: Workshop on potential amendments to the cap-and-trade regulation',
     href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/CARB-CapAndTrade-Workshop-Comment-Letter-05-08-2024.pdf',
     date: '05-08-2024',
