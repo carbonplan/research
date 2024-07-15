@@ -3,6 +3,58 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'oae-efficiency-explainer': {
+    FluxMap: dynamic(() =>
+      import(
+        '../../articles/oae-efficiency-explainer/components/flux-map.js'
+      ).then((mod) => mod.FluxMap || mod.default)
+    ),
+    PhysicalProcesses: dynamic(() =>
+      import(
+        '../../articles/oae-efficiency-explainer/components/physical-processes.js'
+      ).then((mod) => mod.PhysicalProcesses || mod.default)
+    ),
+    ModelingMethods: dynamic(() =>
+      import(
+        '../../articles/oae-efficiency-explainer/components/modeling-methods.js'
+      ).then((mod) => mod.ModelingMethods || mod.default)
+    ),
+    EfficienciesMap: dynamic(() =>
+      import(
+        '../../articles/oae-efficiency-explainer/components/efficiencies-map.js'
+      ).then((mod) => mod.EfficienciesMap || mod.default)
+    ),
+    RegionalComparison: dynamic(() =>
+      import(
+        '../../articles/oae-efficiency-explainer/components/regional-comparison.js'
+      ).then((mod) => mod.RegionalComparison || mod.default)
+    ),
+    AlkChemDiagram: dynamic(() =>
+      import(
+        '../../articles/oae-efficiency-explainer/components/alk-chem-diagram.js'
+      ).then((mod) => mod.AlkChemDiagram || mod.default)
+    ),
+    CarbChemDiagram: dynamic(() =>
+      import(
+        '../../articles/oae-efficiency-explainer/components/carb-chem-diagram.js'
+      ).then((mod) => mod.CarbChemDiagram || mod.default)
+    ),
+    DataWrapper: dynamic(() =>
+      import('../../articles/oae-efficiency-explainer/components/data.js').then(
+        (mod) => mod.DataWrapper || mod.default
+      )
+    ),
+    HCO3: dynamic(() =>
+      import(
+        '../../articles/oae-efficiency-explainer/components/chemistry.js'
+      ).then((mod) => mod.HCO3 || mod.default)
+    ),
+    CO3: dynamic(() =>
+      import(
+        '../../articles/oae-efficiency-explainer/components/chemistry.js'
+      ).then((mod) => mod.CO3 || mod.default)
+    ),
+  },
   'enhanced-weathering-fluxes': {
     ErwEstimates: dynamic(() =>
       import(
