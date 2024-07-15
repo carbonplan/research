@@ -6,7 +6,7 @@ const HIGHLIGHTS = [
   {
     id: 'oae-efficiency',
     date: '07-16-2024',
-    href: '/research/oae-efficiency-explainer',
+    href: '/research/oae-efficiency',
     title: 'Mapping the efficiency of ocean alkalinity enhancement',
     summary:
       'We developed a tool to explore a new dataset that makes it easier to see how the efficiency of ocean alkalinity enhancement varies around the world, in collaboration with [C]Worthy.',
