@@ -5,7 +5,7 @@ import Highlight from './highlight'
 const HIGHLIGHTS = [
   {
     id: 'oae-efficiency',
-    date: '06-27-2024',
+    date: '07-16-2024',
     href: '/research/oae-efficiency-explainer',
     title: 'Mapping the efficiency of ocean alkalinity enhancement',
     summary:
