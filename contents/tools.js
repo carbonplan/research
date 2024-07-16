@@ -13,17 +13,9 @@ import {
   CDRVerification,
   EWQuantification,
   OffsetsDB,
-  OAEEfficiency,
 } from '../components/tool-logos'
 
 const tools = [
-  {
-    id: 'oae-efficiency',
-    logo: <OAEEfficiency />,
-    color: 'secondary',
-    summary: 'Mapping the efficiency of ocean alkalinity enhancement.',
-    title: 'OAE Efficiency',
-  },
   {
     id: 'offsets-db',
     logo: <OffsetsDB />,

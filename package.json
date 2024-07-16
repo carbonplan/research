@@ -55,7 +55,6 @@
     "d3-shape": "^3.0.1",
     "gray-matter": "^4.0.3",
     "mapbox-gl": "^1.13.1",
-    "ndarray-concat-cols": "^1.0.0",
     "next": "^12.0.5",
     "next-mdx-remote": "^4.1.0",
     "react": "^18.2.0",

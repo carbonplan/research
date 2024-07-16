@@ -4,33 +4,6 @@ import Highlight from './highlight'
 
 const HIGHLIGHTS = [
   {
-    id: 'oae-efficiency',
-    date: '07-16-2024',
-    href: '/research/oae-efficiency',
-    title: 'Mapping the efficiency of ocean alkalinity enhancement',
-    summary:
-      'We developed a tool to explore a new dataset that makes it easier to see how the efficiency of ocean alkalinity enhancement varies around the world, in collaboration with [C]Worthy.',
-    links: [
-      {
-        label: 'Map tool',
-        href: '/research/oae-efficiency',
-      },
-      {
-        label: 'Explainer article',
-        href: '/research/oae-efficiency-explainer',
-      },
-      {
-        label: 'Preprint',
-        href: 'https://www.researchsquare.com/article/rs-4124909/v1',
-      },
-      {
-        label: 'Dataset',
-        href: 'https://beta.source.coop/repositories/cworthy/oae-efficiency-atlas/description/',
-      },
-    ],
-  },
-
-  {
     id: 'offsets-db',
     date: '03-08-2024',
     href: '/research/offsets-db',
@@ -46,6 +19,28 @@ const HIGHLIGHTS = [
       {
         label: 'Methods',
         href: '/research/offsets-db-methods',
+      },
+    ],
+  },
+  {
+    id: 'extreme-heat',
+    date: '09-05-2023',
+    href: '/research/extreme-heat-explainer',
+    title: 'Modeling extreme heat',
+    summary:
+      'We developed a new dataset modeling the impacts of humid heat now and into the future, in collaboration with The Washington Post. Read the article or the coverage in The Post.',
+    links: [
+      {
+        label: 'Explainer article',
+        href: '/research/extreme-heat-explainer',
+      },
+      {
+        label: 'Press coverage #1',
+        href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/extreme-heat-wet-bulb-globe-temperature/',
+      },
+      {
+        label: 'Press coverage #2',
+        href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/pakistan-extreme-heat-health-impacts-death/',
       },
     ],
   },
