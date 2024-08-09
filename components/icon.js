@@ -44,7 +44,7 @@ const Icon = ({ color, icon, hovered }) => {
           transition: '0.25s',
           opacity: 1,
           backgroundImage: [`url('${prefix}/${icon}.png')`],
-          backgroundSize: 'contain',
+          backgroundSize: 'cover',
         }}
       ></Box>
       <Text
