@@ -1,0 +1,56 @@
+{
+  "carlin.2024": {
+    "authors": "D Carlin et al.",
+    "year": 2024,
+    "title": "2024 climate risk landscape report",
+    "journal": "UN Environment Programme Finance Initiative",
+    "url": "https://www.unepfi.org/themes/climate-change/2024-climate-risk-landscape/"
+  },
+  "chen.2021": {
+    "authors": "D Chen et al.",
+    "year": 2021,
+    "title": "Climate change 2021: the physical science basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change",
+    "journal": "",
+    "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-1/#1.5.4#1.6.1.1"
+  },
+  "condon.2023": {
+    "authors": "M Condon",
+    "year": 2023,
+    "title": "The business of physical risk",
+    "journal": "Arizona State Law Journal",
+    "editors": "",
+    "url": "https://dx.doi.org/10.2139/ssrn.4396826"
+  },
+  "fiedler.2021": {
+    "authors": "T Fiedler et al.",
+    "year": 2021,
+    "title": "Business risk and the emergence of climate analytics",
+    "journal": "Nature Climate Change",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s41558-020-00984-6"
+  },
+  "hain.2021": {
+    "authors": "L Hain et al.",
+    "year": 2021,
+    "title": "Let’s get physical: comparing metrics of physical risk",
+    "journal": "Financial Research Letters",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.frl.2021.102406"
+  },
+  "rising.2022": {
+    "authors": "J Rising et al.",
+    "year": 2022,
+    "title": "The missing risks of climate change",
+    "journal": "Nature",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s41586-022-05243-6"
+  },
+  "schubert.2024": {
+    "authors": "J Schubert et al.",
+    "year": 20224,
+    "title": "National-scale flood hazard data unfit for urban risk management",
+    "journal": "Earth's Future",
+    "editors": "",
+    "url": "https://doi.org/10.1029/2024EF004549"
+  }
+}

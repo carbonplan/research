@@ -3,6 +3,18 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'climate-risk-comparison': {
+    SummaryTable: dynamic(() =>
+      import(
+        '../../articles/climate-risk-comparison/components/summary-table.js'
+      ).then((mod) => mod.SummaryTable || mod.default)
+    ),
+    RegionSummary: dynamic(() =>
+      import(
+        '../../articles/climate-risk-comparison/components/region-summary.js'
+      ).then((mod) => mod.RegionSummary || mod.default)
+    ),
+  },
   'enhanced-weathering-fluxes': {
     ErwEstimates: dynamic(() =>
       import(
