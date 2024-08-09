@@ -34,7 +34,7 @@ To better understand what exactly risk companies offer and how assessments vary 
 
 ## Meager industry participation
 
-The analytics companies we contacted ranged from large, established firms to small shops. Our first surprise was that, of all nine, only two companies shared data and documentation: the US company Jupiter Intelligence and the Australian company XDI (part of The Climate Risk Group). Both were helpful and forthcoming with data and documentation, all of which can be found [in our GitHub repository](TK Github link).
+The analytics companies we contacted ranged from large, established firms to small shops. Our first surprise was that, of all nine, only two companies shared data and documentation: the US company Jupiter Intelligence and the Australian company XDI (part of The Climate Risk Group). Both were helpful and forthcoming with data and documentation, all of which can be found [in our GitHub repository](https://github.com/carbonplan/climate-risk-comparison).
 
 <Figure>
   <SummaryTable />
