@@ -17,6 +17,11 @@ components:
     src: ./components/summary-table.js
   - name: RegionSummary
     src: ./components/region-summary.js
+links:
+  - label: 'Press coverage #1'
+    href: https://www.bloomberg.com/news/articles/2024-08-09/clashing-risk-predictions-cast-doubt-on-black-box-climate-models
+  - label: 'Press coverage #2'
+    href: https://www.bloomberg.com/graphics/2024-flood-fire-climate-risk-analytics
 ---
 
 You might assume that buying a climate risk assessment means buying a singular truth. Unfortunately, that’s not the case. Climate risk assessments<Sidenote>Climate risks are often categorized as either physical (associated with the impacts of climate change) or transition (associated with the transition away from fossil fuels). This article exclusively considers physical climate risks.</Sidenote> reflect a long [chain of modeling](https://carbonplan.org/research/climate-risk-assessments) and a variety of [scientific and technical decisions](https://carbonplan.org/blog/climate-risk-metadata). While there’s, of course, agreement that the planet is warming, when it comes to predicting specific impacts in specific locations, there’s no one correct projection.
