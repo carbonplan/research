@@ -1,4 +1,10 @@
 const comments = [
+    {
+    title:
+      'Washington State Department of Ecology re: The August 6, 2024 meeting of the Washington State Forest Offset Technical Working Group',
+    href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/Washington-Ecology-Forest-Offset-Workgroup-Meeting-Two-08-29-2024.pdf',
+    date: '08-29-2024',
+  },
   {
     title:
       'United States Department of Agriculture re: Greenhouse Gas Technical Assistance Provider and Third-Party Verifier Program',
