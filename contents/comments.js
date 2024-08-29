@@ -2,19 +2,19 @@ const comments = [
   {
     title:
       'Washington State Department of Ecology re: the August 6, 2024 meeting of the Washington State Forest Offset Technical Working Group',
-    href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/Washington-Ecology-Forest-Offset-Workgroup-Meeting-Two-08-29-2024.pdf',
+    href: 'https://files.carbonplan.org/Washington-Ecology-Forest-Offset-Workgroup-Meeting-Two-08-29-2024.pdf',
     date: '08-29-2024',
   },
   {
     title:
       'United States Department of Agriculture re: Greenhouse Gas Technical Assistance Provider and Third-Party Verifier Program',
-    href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/USDA-Greenhouse-Gas-Technical-Assistance-Program-Comment-Letter-06-28-2024.pdf',
+    href: 'https://files.carbonplan.org/USDA-Greenhouse-Gas-Technical-Assistance-Program-Comment-Letter-06-28-2024.pdf',
     date: '06-28-2024',
   },
   {
     title:
       'California Air Resources Board re: Workshop on potential amendments to the cap-and-trade regulation',
-    href: 'https://carbonplan-web.s3.us-west-2.amazonaws.com/files/CARB-CapAndTrade-Workshop-Comment-Letter-05-08-2024.pdf',
+    href: 'https://files.carbonplan.org/CARB-CapAndTrade-Workshop-Comment-Letter-05-08-2024.pdf',
     date: '05-08-2024',
   },
   {
