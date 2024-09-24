@@ -3,7 +3,7 @@ const comments = [
     title: 'California Department of Insurance re: Proposed Text of Regulation of Catastrophe Modeling and Ratemaking',
     href: 'https://files.carbonplan.org/California-Department-of-Insurance-Comment-Letter-09-17-2024.pdf',
     date: '09-17-2024',
-  }
+  },
   {
     title:
       'Washington State Department of Ecology re: the August 6, 2024 meeting of the Washington State Forest Offset Technical Working Group',
