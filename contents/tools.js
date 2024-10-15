@@ -13,6 +13,7 @@ import {
   CDRVerification,
   EWQuantification,
   OffsetsDB,
+  OAEEfficiency,
 } from '../components/tool-logos'
 
 const tools = [
