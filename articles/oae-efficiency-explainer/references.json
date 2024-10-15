@@ -1,0 +1,106 @@
+{
+  "Krumhardt.2024": {
+    "authors": "Krumhardt et al.",
+    "year": 2024,
+    "title": "From nutrients to fish: Impacts of mesoscale processes in a global CESM-FEISTY eddying ocean model framework",
+    "journal": "Progress in Oceanography",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.pocean.2024.103314"
+  },
+  "he.2023": {
+    "authors": "He and Tyka",
+    "year": 2023,
+    "title": "Limits and CO₂ equilibration of near-coast alkalinity enhancement",
+    "journal": "Biogeosciences",
+    "editors": "",
+    "url": "https://doi.org/10.5194/bg-20-27-2023"
+  },
+  "friedlingstein.2023": {
+    "authors": "Friedlingstein et al.",
+    "year": 2023,
+    "title": "Global Carbon Budget 2023",
+    "journal": "Earth Syst. Sci. Data",
+    "editors": "",
+    "url": "https://doi.org/10.5194/essd-15-5301-2023"
+  },
+  "doney.2009": {
+    "authors": "Doney et al.",
+    "year": 2009,
+    "title": "Ocean Acidification: The Other CO₂ Problem",
+    "journal": "Annual Review of Marine Science",
+    "editors": "",
+    "url": "https://doi.org/10.1146/annurev.marine.010908.163834"
+  },
+  "long.2021": {
+    "authors": "Long et al.",
+    "year": 2021,
+    "title": "Simulations with the Marine Biogeochemistry Library (MARBL)",
+    "journal": "Journal of Advances in Modeling Earth Systems",
+    "editors": "",
+    "url": "https://doi.org/10.1029/2021MS002647"
+  },
+  "sigman&hain.2012": {
+    "authors": "Sigman & Haine",
+    "year": 2012,
+    "title": "The Biological Productivity of the Ocean: Section 3",
+    "journal": "Nature Education Knowledge",
+    "editors": "",
+    "url": "https://www.nature.com/scitable/knowledge/library/the-biological-productivity-of-the-ocean-section-71072666/"
+  },
+  "bach.2019": {
+    "authors": "Bach et al.",
+    "year": 2019,
+    "title": "CO₂ Removal With Enhanced Weathering and Ocean Alkalinity Enhancement: Potential Risks and Co-benefits for Marine Pelagic Ecosystems",
+    "journal": "Frontiers in Climate",
+    "editors": "",
+    "url": "https://doi.org/10.3389/fclim.2019.00007"
+  },
+  "hinrichs.2023": {
+    "authors": "Hinrichs et al.",
+    "year": 2023,
+    "title": "Alkalinity biases in CMIP6 Earth system models and implications for simulated CO₂ drawdown via artificial alkalinity enhancement",
+    "journal": "Biogeosciences",
+    "editors": "",
+    "url": "https://doi.org/10.5194/bg-20-3717-2023"
+  },
+  "wanninkhof.2014": {
+    "authors": "Wanninkhof",
+    "year": 2014,
+    "title": "Relationship between wind speed and gas exchange over the ocean revisited",
+    "journal": "Limnol. Oceanogr. Methods",
+    "editors": "",
+    "url": "https://doi.org/10.4319/lom.2014.12.351"
+  },
+  "ho.2006": {
+    "authors": "Ho et al.",
+    "year": 2006,
+    "title": "Measurements of air-sea gas exchange at high wind speeds in the Southern Ocean: Implications for global parameterizations",
+    "journal": "Geophysical Research Letters",
+    "editors": "",
+    "url": "https://doi.org/10.1029/2006GL026817"
+  },
+  "dobashi.2023": {
+    "authors": "Dobashi and Ho",
+    "year": 2023,
+    "title": "Air–sea gas exchange in a seagrass ecosystem – results from a ³He ∕ SF₆ tracer release experiment",
+    "journal": "Biogeosciences",
+    "editors": "",
+    "url": "https://doi.org/10.5194/bg-20-1075-2023"
+  },
+  "moras.2022": {
+    "authors": "Moras et al.",
+    "year": 2022,
+    "title": "Ocean alkalinity enhancement – avoiding runaway CaCO₃ precipitation during quick and hydrated lime dissolution",
+    "journal": "Biogeosciences",
+    "editors": "",
+    "url": "https://doi.org/10.5194/bg-19-3537-2022"
+  },
+  "bach.2024": {
+    "authors": "Bach",
+    "year": 2024,
+    "title": "The additionality problem of ocean alkalinity enhancement",
+    "journal": "Biogeosciences",
+    "editors": "",
+    "url": "https://doi.org/10.5194/bg-21-261-2024"
+  }
+}
