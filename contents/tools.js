@@ -18,6 +18,13 @@ import {
 
 const tools = [
   {
+    id: 'oae-efficiency',
+    logo: <OAEEfficiency />,
+    color: 'secondary',
+    summary: 'Mapping the efficiency of ocean alkalinity enhancement.',
+    title: 'OAE Efficiency',
+  },
+  {
     id: 'offsets-db',
     logo: <OffsetsDB />,
     color: 'secondary',
