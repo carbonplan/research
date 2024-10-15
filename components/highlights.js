@@ -4,43 +4,50 @@ import Highlight from './highlight'
 
 const HIGHLIGHTS = [
   {
-    id: 'offsets-db',
-    date: '03-08-2024',
-    href: '/research/offsets-db',
-    title: 'OffsetsDB',
+    id: 'oae-efficiency',
+    date: '10-15-2024',
+    href: '/research/oae-efficiency',
+    title: 'Mapping the efficiency of ocean alkalinity enhancement',
     summary:
-      'We developed a regularly-updating, harmonized database of carbon offset projects and credits for download and interactive exploration.',
+      'We developed a tool to explore a new dataset that makes it easier to see how the efficiency of ocean alkalinity enhancement varies around the world, in collaboration with [C]Worthy.',
     links: [
-      { label: 'Database tool', href: '/research/offsets-db' },
       {
-        label: 'Explainer article',
-        href: '/research/offsets-db-explainer',
+        label: 'Map tool',
+        href: '/research/oae-efficiency',
       },
       {
-        label: 'Methods',
-        href: '/research/offsets-db-methods',
+        label: 'Explainer article',
+        href: '/research/oae-efficiency-explainer',
+      },
+      {
+        label: 'Paper (in press)',
+        href: 'https://doi.org/10.21203/rs.3.rs-4124909/v1',
+      },
+      {
+        label: 'Dataset',
+        href: 'https://beta.source.coop/repositories/cworthy/oae-efficiency-atlas/description/',
       },
     ],
   },
   {
-    id: 'extreme-heat',
-    date: '09-05-2023',
-    href: '/research/extreme-heat-explainer',
-    title: 'Modeling extreme heat',
+    id: 'climate-risk-comparison',
+    date: '08-09-2024',
+    href: '/research/climate-risk-comparison',
+    title: 'Climate risk companies don’t always agree',
     summary:
-      'We developed a new dataset modeling the impacts of humid heat now and into the future, in collaboration with The Washington Post. Read the article or the coverage in The Post.',
+      'Climate analytics companies agree that climate change is increasing risks, but analysis shows that at the level of individual addresses their estimates differ.',
     links: [
       {
         label: 'Explainer article',
-        href: '/research/extreme-heat-explainer',
+        href: '/research/climate-risk-comparison',
       },
       {
         label: 'Press coverage #1',
-        href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/extreme-heat-wet-bulb-globe-temperature/',
+        href: 'https://www.bloomberg.com/news/articles/2024-08-09/clashing-risk-predictions-cast-doubt-on-black-box-climate-models?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTI5MiwiZXhwIjoxNzIzODI0MDkyLCJhcnRpY2xlSWQiOiJTSFlLR0JEV1gyUFMwMCIsImJjb25uZWN0SWQiOiJGMkY1NTFERTc4ODA0RkJBOTk5NEFBMTQ5RTM1NjQ3RCJ9.EbJ-4RSfCLQYocKlLXB1r7Qbo_KKYYNHtobrtIELL_g',
       },
       {
         label: 'Press coverage #2',
-        href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/pakistan-extreme-heat-health-impacts-death/',
+        href: 'https://www.bloomberg.com/graphics/2024-flood-fire-climate-risk-analytics/?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTgwOCwiZXhwIjoxNzIzODI0NjA4LCJhcnRpY2xlSWQiOiJTSFlLR0VEV1gyUFMwMCIsImJjb25uZWN0SWQiOiI5RjJFMEMxNDRGQkY0Q0M1OUJCRDA3MzQ0QkI2RUZDNCJ9.v2mR0nS7tJbnNJ23UVEKn98Ev917FWYgcoWm7TttUJ4',
       },
     ],
   },
