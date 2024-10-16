@@ -127,7 +127,10 @@ Since air-sea gas equilibration takes a long time and the ocean is constantly mo
     efficiency.
   </FigureCaption>
 </Figure>
-## Creating the OAE Efficiency Dataset We created the OAE efficiency dataset to explore
+
+## Creating the OAE Efficiency Dataset
+
+We created the OAE efficiency dataset to explore
 how adding alkalinity to the ocean at different locations and seasons results in
 diverse carbon removal outcomes. In this dataset, we define OAE efficiency as the
 amount of CO₂ that is transferred from the atmosphere to the ocean per unit of alkalinity
