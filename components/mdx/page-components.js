@@ -3,6 +3,13 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'ab1305-initial-disclosures': {
+    SummaryTable: dynamic(() =>
+      import(
+        '../../articles/ab1305-initial-disclosures/components/summary-table.js'
+      ).then((mod) => mod.SummaryTable || mod.default)
+    ),
+  },
   'oae-efficiency-explainer': {
     FluxMap: dynamic(() =>
       import(
@@ -655,6 +662,16 @@ const components = {
     ),
   },
   'climate-financial-risks': {},
+  'ab1305-initial-disclosures-database': {
+    DatabaseTable: dynamic(() =>
+      import(
+        '../../articles/ab1305-initial-disclosures/components/database-table.js'
+      ).then((mod) => mod.DatabaseTable || mod.default)
+    ),
+    Endnote: dynamic(() =>
+      import('@carbonplan/layouts').then((mod) => mod.Endnote || mod.default)
+    ),
+  },
   'forest-offsets-explainer-faq': {
     CommonPractice: dynamic(() =>
       import(

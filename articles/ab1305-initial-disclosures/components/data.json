@@ -1,0 +1,1552 @@
+{
+  "autodesk": {
+    "projects": [
+      {
+        "project_id": "VCS3207",
+        "name": "CO2 Utilization In Concrete - Removals & Reductions - Carboncure - U.S. Project #1",
+        "protocol": "vm0043",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS3207"
+        },
+        "category": "ghg-management"
+      },
+      {
+        "project_id": "GLD3429",
+        "name": "Solar Thermal Power Plant by Godawari Green Energy Limited",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD3429"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "VCS2498",
+        "name": "Afforestation of degraded grasslands in Caazap\u00e1 and Guair\u00e1",
+        "protocol": "acm0003",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2498"
+        },
+        "category": "fuel-switching"
+      },
+      {
+        "project_id": "VCS3160",
+        "name": "Distribution of Energy Efficient Cookstoves",
+        "protocol": "vmr0006",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS3160"
+        },
+        "category": "energy-efficiency"
+      },
+      {
+        "project_id": "VCS2930",
+        "name": "Reducing Gas Leakages within the Titas Gas Distribution Network In Bangladesh",
+        "protocol": "am0023",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2930"
+        },
+        "category": "ghg-management"
+      },
+      {
+        "project_id": "CPA 9416-P1-0009-CP1",
+        "name": "Vaspet IV Wind Power",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://cdm.unfccc.int/ProgrammeOfActivities/cpa_db/Z9TUOMQX5IGW82LFB4C70YANPRHSE3/view"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "VCS674",
+        "name": "Rimba Raya Biodiversity Reserve Project",
+        "protocol": "vm0004",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS674"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS1477",
+        "name": "Katingan Peatland Restoration and Conservation Project",
+        "protocol": "vm0007",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1477"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS1715",
+        "name": "Inner Mongolia Wu\u2018erqihan IFM (conversion of logged to protected forest) Project",
+        "protocol": "vm0010",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1715"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "GLD4220",
+        "name": "Reforestation Program in the Southeastern Region of Nicaragua on degraded pastureland",
+        "protocol": "gs-reforest",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD4220"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS665",
+        "name": "Multi-Species Reforestation in Mato Grosso, Brazil",
+        "protocol": "ar-ams0006",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS665"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "GLD2913",
+        "name": "BaumInvest Reforestation Project",
+        "protocol": "gs-reforest",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD2913"
+        },
+        "category": "forest"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/autodesk.pdf"
+  },
+  "bcg": {
+    "projects": [
+      {
+        "project_id": "VCS1477",
+        "name": "Katingan Peatland Restoration and Conservation Project",
+        "protocol": "vm0007",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1477"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS1686",
+        "name": "Agrocortex REDD Project",
+        "protocol": "vm0015",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1686"
+        },
+        "category": "forest"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/bcg.pdf"
+  },
+  "block": {
+    "projects": [
+      {
+        "project_id": 100000000000171,
+        "name": "Trees for Global Benefit",
+        "protocol": "plan-vivo-standard",
+        "link": {
+          "link_type": "project",
+          "url": "https://mer.markit.com/br-reg/public/project.jsp?project_id=100000000000171"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": 100000000000609,
+        "name": "CommuniTree",
+        "protocol": "plan-vivo-standard",
+        "link": {
+          "link_type": "project",
+          "url": "https://mer.markit.com/br-reg/public/project.jsp?project_id=100000000000609"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS899",
+        "name": "TIST Program in Kenya, VCS 006",
+        "protocol": "ar-ams0001",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS899"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "ACR637",
+        "name": "ILTF/NICC & SIG Keweenaw Bay Indian Community Forest Carbon Project",
+        "protocol": "acr-ifm-nonfed",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/ACR637"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "CAR1459",
+        "name": "Indigo U.S. Project No.1",
+        "protocol": "car-soil",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/CAR1459"
+        },
+        "category": "agriculture"
+      },
+      {
+        "project_id": "643002406801000725",
+        "name": "Wakefield Biochar Facility 1",
+        "protocol": "puro-biochar",
+        "link": {
+          "link_type": "project",
+          "url": "https://registry.puro.earth/carbon-sequestration/projects/Biochar/Wakefield-Biochar-Facility-1/f37179f6-58a1-484e-bdd4-17eb34a0c16f"
+        },
+        "category": "other"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/block.pdf"
+  },
+  "disney": {
+    "projects": [
+      {
+        "project_id": "VCS944",
+        "name": "Alto Mayo Conservation Initative",
+        "protocol": "vm0015",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS944"
+        },
+        "category": "forest"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/disney.pdf"
+  },
+  "dolby": {
+    "projects": [
+      {
+        "project_id": "GLD10782",
+        "name": "Household Biogas Plants in Rural Parts of Central India",
+        "protocol": "ams-i-e",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD10782"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "VCS2458",
+        "name": "Guoluo Grassland Sustainable Management Project",
+        "protocol": "vm0026",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2458"
+        },
+        "category": "agriculture"
+      },
+      {
+        "project_id": 4408,
+        "name": "Hunan Tongba Small Hydropower Project ",
+        "protocol": "ams-i-d",
+        "link": {
+          "link_type": "project",
+          "url": "https://cdm.unfccc.int/Projects/DB/TUEV-SUED1296048204.5/view?cp=1"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "VCS1113",
+        "name": "The Valparaiso Project",
+        "protocol": "vm0007",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1113"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS2310",
+        "name": "Anhuang Afforestation Project",
+        "protocol": "ar-acm0003",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2310"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": 2898,
+        "name": "Sichuan Rural Poor-Household Biogas Development Programme",
+        "protocol": "ams-i-i",
+        "link": {
+          "link_type": "project",
+          "url": "https://cdm.unfccc.int/ProgrammeOfActivities/poa_db/5BGM96VOK3ATN4JPR70XSWIQ8CZH2F/view?cp=1"
+        },
+        "category": "fuel-switching"
+      },
+      {
+        "project_id": "GLD407",
+        "name": "Gyapa Cook Stoves Project in Ghana",
+        "protocol": "gs-tpddtec",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD407"
+        },
+        "category": "energy-efficiency"
+      },
+      {
+        "project_id": "GLD4289",
+        "name": "Orb Energy Solar Program in India (POA)",
+        "protocol": "ams-i-c",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD4289"
+        },
+        "category": "fuel-switching"
+      },
+      {
+        "project_id": "VCS2370",
+        "name": "Zhangye City Afforestation Project in Gansu Province",
+        "protocol": "ar-acm0003",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2370"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS1112",
+        "name": "The Russas Project",
+        "protocol": "vm0007",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1112"
+        },
+        "category": "forest"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/dolby.pdf"
+  },
+  "doordash": {
+    "projects": [
+      {
+        "project_id": "PV_2002_002",
+        "name": "Trees for Global Benefit",
+        "protocol": "plan-vivo-standard",
+        "link": {
+          "link_type": "project",
+          "url": "https://www.planvivo.org/trees-for-global-benefits"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "643002406801000480",
+        "name": "Douglas County Biochar",
+        "protocol": "puro-biochar",
+        "link": {
+          "link_type": "project",
+          "url": "https://registry.puro.earth/carbon-sequestration/projects/Biochar/Douglas-County-Forest-Products/ca240538-6399-4212-a708-4ec66a1b18bf"
+        },
+        "category": "other"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/doordash.pdf"
+  },
+  "dropbox": {
+    "projects": [
+      {
+        "project_id": "CN20220110119",
+        "name": "Acre Amazonian Rainforest Conservation REDD+ Portfolio",
+        "protocol": "icroa standards",
+        "link": {
+          "link_type": "project",
+          "url": "https://www.climateimpact.com/global-projects/acre-amazon-redd-portfolio-brazil/"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "CN20220110119",
+        "name": "Bondhu Chula Stoves",
+        "protocol": "icroa standards",
+        "link": {
+          "link_type": "project",
+          "url": "https://www.climateimpact.com/global-projects/bondhu-chula-stoves-bangladesh/"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS1389",
+        "name": "Acapa REDD+ Avoided Deforestation",
+        "protocol": "verra - vcs",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1389"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS1686",
+        "name": "Agrocortex REDD",
+        "protocol": "verra - vcs",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1686"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS756",
+        "name": "Crow Lake Wind Emissions Reduction",
+        "protocol": "verra - vcs",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS756"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": 193828,
+        "name": "BioLite Improved Stove Programme",
+        "protocol": "gold standard ver",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/193828"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": 193827,
+        "name": "Vida Mejor Improved Cookstoves",
+        "protocol": "gold standard ver",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/193827"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "643002406801000237",
+        "name": "Freres Biochar",
+        "protocol": "puro-biochar",
+        "link": {
+          "link_type": "project",
+          "url": "https://registry.puro.earth/carbon-sequestration/projects/Biochar/Freres-Lumber-Co-Inc/d9f05c08-2802-487e-95c7-d0cebdbb7e19"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "643002406801000480",
+        "name": "Douglas County Forest Products Biochar",
+        "protocol": "puro-biochar",
+        "link": {
+          "link_type": "project",
+          "url": "https://registry.puro.earth/carbon-sequestration/projects/Biochar/Douglas-County-Forest-Products/ca240538-6399-4212-a708-4ec66a1b18bf"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "GLD10790",
+        "name": "VPA1: Efficient and Clean Cooking for Households in Somalia",
+        "protocol": "gs-tpddtec",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD10790"
+        },
+        "category": "energy-efficiency"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/dropbox.pdf"
+  },
+  "everlane": {
+    "projects": [
+      {
+        "project_id": "VCS4509",
+        "name": "Brazil Pastureland Regeneration with Native Palm SilvopastureHB",
+        "protocol": "ar-acm0003",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS4509"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS1523",
+        "name": "Beed Maharashtra India Wind",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1523"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "VCS674",
+        "name": "Rimba Raya Biodiversity Reserve Project",
+        "protocol": "vm0004",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS674"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS1750",
+        "name": "The Inner Mongolia Wu\u2019erqihan IFM",
+        "protocol": "vm0015",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1750"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS1477",
+        "name": "Borneo Peatlands | Katingan Mentaya",
+        "protocol": "vm0007",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1477"
+        },
+        "category": "forest"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/everlane.pdf"
+  },
+  "figma": {
+    "projects": [
+      {
+        "project_id": null,
+        "name": "Brilliant Planet",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://www.brilliantplanet.com/"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Carbon to Stone",
+        "protocol": null,
+        "link": { "link_type": "project", "url": "https://carbontostone.com/" },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Captura",
+        "protocol": null,
+        "link": { "link_type": "project", "url": "https://capturacorp.com/" },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Arbor",
+        "protocol": null,
+        "link": { "link_type": "project", "url": "https://arbor.co/" },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Charm Industrial",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://charmindustrial.com/"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Eion",
+        "protocol": null,
+        "link": { "link_type": "project", "url": "https://eioncarbon.com/" },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "CarbonBuilt",
+        "protocol": null,
+        "link": { "link_type": "project", "url": "https://carbonbuilt.com/" },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Living Carbon",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://www.livingcarbon.com/"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Bussme Energy",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://www.bussmeenergy.se/"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Nordgau Carbon",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://registry.puro.earth/carbon-sequestration/projects/Biochar/Nordgau-Carbon-Wernberg-Kblitz/fc159014-150c-4f65-9376-7936146eab6c"
+        },
+        "category": "other"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/figma.pdf"
+  },
+  "infosys": {
+    "projects": [
+      {
+        "project_id": "GLD1015",
+        "name": "Ramanagara Biogas Project, Version 02",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD1015"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "GLD10710",
+        "name": "Promotion ofclean cooking solutions in rural India by Infosys \u2013 VPA 1",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD10710"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "GLD5418",
+        "name": "The Breathing Space Improved Cooking Stoves Programme India - VPA No. 13 Envirofit",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD5418"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "GLD1021",
+        "name": "Improved Woodstoves in Udaipur - Helping Women and Environment (2.0)",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD1021"
+        },
+        "category": "other"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/infosys.pdf"
+  },
+  "jefferies": {
+    "projects": [
+      {
+        "project_id": "VCS2002",
+        "name": "THEPARAK WIND IN THAILAND",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2002"
+        },
+        "category": "renewable-energy"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/jefferies.pdf"
+  },
+  "jpmorgan": {
+    "projects": [
+      {
+        "project_id": "CAR1569",
+        "name": "Carbono, Aqua y Biodiversidad Indigena Abejones",
+        "protocol": "car-forest-mx",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/CAR1569"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "CAR1461",
+        "name": "Carbono, Aqua y Biodiversidad Indigena Ixtl\u00e1n",
+        "protocol": "car-forest-mx",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/CAR1461"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "CAR1399",
+        "name": "Carbono, Aqua y Biodiversidad Indigena La Trinidad",
+        "protocol": "car-forest-mx",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/CAR1399"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "CAR1411",
+        "name": "Carbono, Aqua y Biodiversidad Indigena Xiacu\u00ed",
+        "protocol": "car-forest-mx",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/CAR1411"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "CAR1415",
+        "name": "Carbono, Aqua y Biodiversidad Indigena Capul\u00e1lpam",
+        "protocol": "car-forest-mx",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/CAR1415"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "CAR1443",
+        "name": "Carbono, Aqua y Biodiversidad Indigena Maninaltepec",
+        "protocol": "car-forest-mx",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/CAR1443"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "CAR1463",
+        "name": "Carbono, Aqua y Biodiversidad Indigena Pe\u00f1oles",
+        "protocol": "car-forest-mx",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/CAR1463"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "CAR1532",
+        "name": "Carbono, Aqua y Biodiversidad Indigena Comaltepec",
+        "protocol": "car-forest-mx",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/CAR1532"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "Pacific Biochar CDI 002",
+        "name": "Pacific Biochar",
+        "protocol": "european biochar certificate",
+        "link": {
+          "link_type": "project",
+          "url": "https://pacificbiochar.com/biochar-carbon-credits/"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "Pacific Biochar CDI 005",
+        "name": "Pacific Biochar",
+        "protocol": "european biochar certificate",
+        "link": {
+          "link_type": "project",
+          "url": "https://pacificbiochar.com/biochar-carbon-credits/"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "Pacific Biochar CDI 003",
+        "name": "Pacific Biochar",
+        "protocol": "european biochar certificate",
+        "link": {
+          "link_type": "project",
+          "url": "https://pacificbiochar.com/biochar-carbon-credits/"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "Pacific Biochar CDI 004",
+        "name": "Pacific Biochar",
+        "protocol": "european biochar certificate",
+        "link": {
+          "link_type": "project",
+          "url": "https://pacificbiochar.com/biochar-carbon-credits/"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS899",
+        "name": "The International Small Group and Tree Planting Program (TIST)",
+        "protocol": "ar-ams0001",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS899"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS2250",
+        "name": "Delta Blue Carbon - 1 -- The Indus Delta Mangrove Restoration Project Phase 1",
+        "protocol": "vm0033",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2250"
+        },
+        "category": "unknown"
+      },
+      {
+        "project_id": "ACR604",
+        "name": "Bluesource - Moose Country Divide Forestrty Project ",
+        "protocol": "acr-non-fed-ifm",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/ACR604"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS2458",
+        "name": "Guoluo Grassland Sustainable Management Project",
+        "protocol": "vm0026",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2458"
+        },
+        "category": "agriculture"
+      },
+      {
+        "project_id": "VCS607",
+        "name": "Darkwoods Forest Carbon Project",
+        "protocol": "vm0012",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS607"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "ACR114",
+        "name": "Green Trees ACRE (Advanced Carbon Restored Ecosystem)",
+        "protocol": "acr-affor-refor",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/ACR114"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS514",
+        "name": "Promoting sustainable development through natural rubber tree plantations in Guatemala",
+        "protocol": "ar-acm0001",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS514"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "643002406801000220",
+        "name": "Oregon Biochar",
+        "protocol": "puro-biochar",
+        "link": {
+          "link_type": "project",
+          "url": "https://registry.puro.earth/carbon-sequestration/projects/Biochar/Oregon-Biochar-Solutions/e3b2475a-2813-4742-84c2-d56753c0997b"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "643002406801000718",
+        "name": "Wakefield Biochar",
+        "protocol": "puro-biochar",
+        "link": {
+          "link_type": "project",
+          "url": "https://registry.puro.earth/carbon-sequestration/projects/Biochar/Wakefield-Biochar-Facility-2/c7fd418f-d267-4da1-8031-3ce9cab06fec"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "643002406801000398",
+        "name": "Oplandske Bio",
+        "protocol": "puro-biochar",
+        "link": {
+          "link_type": "project",
+          "url": "https://registry.puro.earth/carbon-sequestration/projects/Biochar/OBIO-Rudshgda/b0cf1c3d-48f8-4c20-b645-0298e9e29182"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "643002406801000497",
+        "name": "Premier Forest",
+        "protocol": "puro-biochar",
+        "link": {
+          "link_type": "project",
+          "url": "https://registry.puro.earth/carbon-sequestration/projects/Biochar/Premier-Forest-Newport/af7dde60-36c1-4ff0-8bc8-88fe74ca7764"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "643002406801000251",
+        "name": "Nordgau Carbon",
+        "protocol": "puro-biochar",
+        "link": {
+          "link_type": "project",
+          "url": "https://registry.puro.earth/carbon-sequestration/projects/Biochar/Nordgau-Carbon-Wernberg-Kblitz/fc159014-150c-4f65-9376-7936146eab6c"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "643002406801000459",
+        "name": "Glanris",
+        "protocol": "puro-biochar",
+        "link": {
+          "link_type": "project",
+          "url": "https://registry.puro.earth/carbon-sequestration/projects/Biochar/Glanris/812d0886-cf35-4029-9f20-b47012fa0995"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "CAR1559",
+        "name": "Indigo U.S. Project No. 1",
+        "protocol": "car-soil",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/CAR1559"
+        },
+        "category": "agriculture"
+      },
+      {
+        "project_id": "ACR427",
+        "name": "The Nature Conservancy - Upper St. John Forest IFM Project",
+        "protocol": "arb-forest",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/ACR427"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "CAR1215",
+        "name": "CF Ataya IFM",
+        "protocol": "arb-forest",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/CAR1215"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS2370",
+        "name": "Zhangye City Afforestation Project in Gansu Province",
+        "protocol": "ar-acm0003",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2370"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS2083",
+        "name": "Liangdu Afforestation Project",
+        "protocol": "ar-acm0003",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2083"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS2082",
+        "name": "Qianbei Afforestation Project",
+        "protocol": "ar-acm0003",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2082"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "ACR115",
+        "name": "Mississippi Valley Reforestation",
+        "protocol": "ar-acm0001",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/ACR115"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS1740",
+        "name": "Teak Afforestation",
+        "protocol": "ar-acm0003",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1740"
+        },
+        "category": "forest"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/jpmorgan.pdf"
+  },
+  "lime": {
+    "projects": [
+      {
+        "project_id": 5897,
+        "name": "Sichuan Sanchahe River First Cascade & Second Cascade Bundled Hydropower Project of China",
+        "protocol": "ams-i-d",
+        "link": {
+          "link_type": "project",
+          "url": "https://cdm.unfccc.int/Projects/DB/Germanischer1331652204.55/view"
+        },
+        "category": "renewable-energy"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/lime.pdf"
+  },
+  "macquarie": {
+    "projects": [
+      {
+        "project_id": "ERF102191",
+        "name": "Industrial Carbon Emissions Reduction",
+        "protocol": "accu-carbon-farminng",
+        "link": {
+          "link_type": "project",
+          "url": "https://cer.gov.au/schemes/australian-carbon-credit-unit-scheme/accu-project-and-contract-register/project/ERF102191"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS2378",
+        "name": "Miaoling Afforestation Project",
+        "protocol": "ar-acm0003",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2378"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "643002406801000176",
+        "name": "Biochar Project",
+        "protocol": "puro-biochar",
+        "link": {
+          "link_type": "project",
+          "url": "https://registry.puro.earth/carbon-sequestration/projects/Biochar/Jeffries-Group/273017a2-b8ae-4612-8c11-a9f834bdb01c"
+        },
+        "category": "other"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/macquarie.pdf"
+  },
+  "robinhood": {
+    "projects": [
+      {
+        "project_id": null,
+        "name": "Running Tide",
+        "protocol": "running tide framework protocol 2023",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "GLD4210",
+        "name": "WIthOneSeed Community Forestry Program",
+        "protocol": "gs-reforest",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD4210"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": 100000000000609,
+        "name": "The CommuniTree Carbon Program (formerly Limay Community Carbon Project)",
+        "protocol": "plan-vivo-standard",
+        "link": {
+          "link_type": "project",
+          "url": "https://www.planvivo.org/communitree"
+        },
+        "category": "other"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/robinhood.pdf"
+  },
+  "shaw": {
+    "projects": [
+      {
+        "project_id": "ID4118",
+        "name": "Asahan 1 Hydroelectric Power Plant 2 x 90 MW",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://cdm.unfccc.int/Projects/DB/RWTUV1289918532.4/view?cp=1"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "BR9301",
+        "name": "Teles Pires Hydropower Plant",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://cdm.unfccc.int/Projects/DB/PJR%20CDM1356623851.07/view"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "VCS12",
+        "name": "Chuanwei Group 24MW Waste Gas based Captive Power Plant",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS12"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "VCS10",
+        "name": "BAESA",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS10"
+        },
+        "category": "renewable-energy"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/shaw.pdf"
+  },
+  "sidley-austin": {
+    "projects": [
+      {
+        "project_id": "VCS934",
+        "name": "The Mai Ndombe REDD+ Project",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS934"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS1067",
+        "name": "Tambopata Project",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1067"
+        },
+        "category": "other"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/sidley-austin.pdf"
+  },
+  "signature-aviation": {
+    "projects": [
+      {
+        "project_id": "ACR367",
+        "name": "Elk Creek Permit Area Abandoned Mine Project",
+        "protocol": "arb-mine-methane",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/ACR367"
+        },
+        "category": "ghg-management"
+      },
+      {
+        "project_id": "ACR367",
+        "name": "Elk Creek Permit Area Abandoned Mine Project",
+        "protocol": "arb-mine-methane",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/ACR367"
+        },
+        "category": "ghg-management"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/signature-aviation.pdf"
+  },
+  "snap": {
+    "projects": [
+      {
+        "project_id": "VCS1746",
+        "name": "108 MW Fatanpur Wind Power Project in Madhya Pradesh",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1746"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "VCS2065",
+        "name": "Renewable Energy Power Projects by Atria Power",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2065"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "VCS1856",
+        "name": "Bundled Wind Power Project by Sembcorp Green Infra Limited in India",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1856"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "VCS2361",
+        "name": "Afforestation in cooperation with local landowners for Forestal San Pedro S.A.",
+        "protocol": "ar-acm0003",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2361"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS1382",
+        "name": "The Envira Amazonia Project",
+        "protocol": "vm0007",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1382"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "GLD407",
+        "name": "Gyapa Cook Stoves Project in Ghana",
+        "protocol": "gs-tpddtec",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD407"
+        },
+        "category": "energy-efficiency"
+      },
+      {
+        "project_id": "GLD608",
+        "name": "GEYCEK Wind Farm Project",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD608"
+        },
+        "category": "renewable-energy"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/snap.pdf"
+  },
+  "sun-air-jets": {
+    "projects": [
+      {
+        "project_id": "VCS1344",
+        "name": "Murat HEPP",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1344"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "ACR480",
+        "name": "Advanced Refrigeration US49 ARS 002",
+        "protocol": "acr-refrige",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/ACR480"
+        },
+        "category": "ghg-management"
+      },
+      {
+        "project_id": "ACR398",
+        "name": "Anew - Doe Mountain Forestry Project",
+        "protocol": "acr-non-fed-ifm",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/ACR398"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS1289",
+        "name": "Talas de Maciel II Wind Farm",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1289"
+        },
+        "category": "renewable-energy"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/sun-air-jets.pdf"
+  },
+  "synopsys": {
+    "projects": [
+      {
+        "project_id": "ACR114",
+        "name": "GreenTrees ACRE",
+        "protocol": "acr-affor-refor",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/ACR114"
+        },
+        "category": "forest"
+      },
+      {
+        "project_id": "VCS2458",
+        "name": "Guoluo Grassland Sustainable Management Project",
+        "protocol": "vm0026",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS2458"
+        },
+        "category": "agriculture"
+      },
+      {
+        "project_id": "GLD4289",
+        "name": "Orb Energy Solar program in India (POA)",
+        "protocol": "ams-i-c",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD4289"
+        },
+        "category": "fuel-switching"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/synopsys.pdf"
+  },
+  "thomson-reuters": {
+    "projects": [
+      {
+        "project_id": "VCS728",
+        "name": "CECIC Wind Power",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS728"
+        },
+        "category": "renewable-energy"
+      },
+      {
+        "project_id": "VCS1728",
+        "name": "Bundled Wind Power Project by Mytrah Group",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1728"
+        },
+        "category": "renewable-energy"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/thomson-reuters.pdf"
+  },
+  "transunion": {
+    "projects": [
+      {
+        "project_id": "VCS1404",
+        "name": "Vaspet-II and Vaspet-III Wind Power Project, Maharashtra",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1404"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS255",
+        "name": "7.2 MW Nargund Wind Project for Grid System by Bhoruka Power Corporation LImited in Karnataka State, India",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS255"
+        },
+        "category": "other"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/transunion.pdf"
+  },
+  "uber": {
+    "projects": [
+      {
+        "project_id": "VCS1329",
+        "name": "Ma\u00edsa REDD+ Project",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1329"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS1382",
+        "name": "The Envira Amazonia Project",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1382"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "LaGeo, S. A. de C. V., Berline Geothermal Project, Phase Two",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Piedra Larga Wind Farm",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Switching of fuel from coal to palm oil mill biomass waste residues at Industrial de Oleaginosas Americanas S.A. (INOLASA)",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS1364",
+        "name": "Hydroelectric Project PCH Luzma",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1364"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Guacamaya Small Scale Hydropower Programme of Activities",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Potero Hydropower Plant, Peru",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Candelaria Hydroelectric Project",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS1391",
+        "name": "Sivir\u00fa, Usarag\u00e1, Pizarro y Piliz\u00e1 (SUPP) REDD+ Project",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS1391"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": "VCS985",
+        "name": "Cordillera azul national park reed project",
+        "protocol": null,
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/VCS985"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Greenfleet",
+        "protocol": null,
+        "link": {
+          "link_type": "provided",
+          "url": "https://www.greenfleet.com.au/pages/businesses"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Qantas",
+        "protocol": null,
+        "link": {
+          "link_type": "provided",
+          "url": "https://www.qantas.com/au/en/qantas-group/sustainability/our-planet/carbon-offsetting.html"
+        },
+        "category": "other"
+      },
+      {
+        "project_id": null,
+        "name": "Puro",
+        "protocol": null,
+        "link": {
+          "link_type": "provided",
+          "url": "https://carbon.puro.earth/biochar"
+        },
+        "category": "other"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/uber.pdf"
+  },
+  "zoominfo": {
+    "projects": [
+      {
+        "project_id": "GLD4962",
+        "name": "Wind power project in Madhya Pradesh, India",
+        "protocol": "acm0002",
+        "link": {
+          "link_type": "project",
+          "url": "https://carbonplan.org/research/offsets-db/projects/GLD4962"
+        },
+        "category": "renewable-energy"
+      }
+    ],
+    "disclosure_url": "https://carbonplan-ab1305-initial-disclosures.s3.us-west-2.amazonaws.com/disclosures/zoominfo.pdf"
+  }
+}
