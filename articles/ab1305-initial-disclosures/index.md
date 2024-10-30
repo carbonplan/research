@@ -51,24 +51,26 @@ In addition to the challenge of discovering and transcribing disclosures, we als
 
 <Figure>
   <Table
-    columns={[6]}
-    start={[[1]]}
-    index={false}
-    width={[6]}
+    columns={[10]}
+    start={[[1], [2]]}
+    width={[
+      [1],
+      [9],
+    ]}
     data={[
-      ['1.  The name of the business entity selling the offset.'],
-      ['2.  The name of the offset registry or program.'],
-      ['3.  The project identification number.'],
-      ['4.  The project name as listed in the registry or program.'],
+      ['1', 'The name of the business entity selling the offset.'],
+      ['2', 'The name of the offset registry or program.'],
+      ['3', 'The project identification number.'],
+      ['4', 'The project name as listed in the registry or program.'],
       [
-        '5.  The offset project type, including whether the offsets purchased were derived from a carbon removal, an avoided emission, or a combination of both.',
+        '5', 'The offset project type, including whether the offsets purchased were derived from a carbon removal, an avoided emission, or a combination of both.',
       ],
-      ['6.  The offset project site location.'],
+      ['6', 'The offset project site location.'],
       [
-        '7.  The specific protocol used to estimate emissions reductions or removal benefits.',
+        '7', 'The specific protocol used to estimate emissions reductions or removal benefits.',
       ],
       [
-        '8.  Whether there is independent third-party verification of company data and claims listed.',
+        '8', 'Whether there is independent third-party verification of company data and claims listed.',
       ],
     ]}
   />
