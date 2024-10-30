@@ -227,7 +227,15 @@ const ProjectRow = ({
             {project_id}
           </Badge>
         ) : (
-          <>{project_id ?? <Empty />}</>
+          <Box
+            sx={{
+              fontSize: [2, 2, 2, 3],
+              letterSpacing: '0.02em',
+              fontFamily: 'mono',
+            }}
+          >
+            {project_id ?? <Empty />}
+          </Box>
         )}
       </ProjectCell>
       <ProjectCell
