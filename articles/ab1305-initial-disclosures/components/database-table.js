@@ -205,6 +205,7 @@ const ProjectRow = ({
         '&:hover': standardLink
           ? {
               'td a': { color: 'primary' },
+              'td a .badge div': { color: 'primary' },
               '#suffix': { transform: 'rotate(45deg)', color: 'primary' },
             }
           : {},
@@ -216,11 +217,25 @@ const ProjectRow = ({
         href={standardLink ? link.url : undefined}
       >
         {project_id && link.url?.includes('offsets-db') ? (
-          <Badge sx={{ color: COLORS[category] ?? COLORS.other }}>
+          <Badge
+            className='badge'
+            sx={{
+              color: COLORS[category] ?? COLORS.other,
+              transition: '0.2s all',
+            }}
+          >
             {project_id}
           </Badge>
         ) : (
-          <>{project_id ?? <Empty />}</>
+          <Box
+            sx={{
+              fontSize: [2, 2, 2, 3],
+              letterSpacing: '0.02em',
+              fontFamily: 'mono',
+            }}
+          >
+            {project_id ?? <Empty />}
+          </Box>
         )}
       </ProjectCell>
       <ProjectCell
