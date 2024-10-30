@@ -54,6 +54,7 @@ In addition to the challenge of discovering and transcribing disclosures, we als
     columns={[10]}
     start={[[1], [2]]}
     width={[[1], [9]]}
+    index={false}
     data={[
       ['1', 'The name of the business entity selling the offset.'],
       ['2', 'The name of the offset registry or program.'],
