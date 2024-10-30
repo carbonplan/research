@@ -415,20 +415,14 @@
         "project_id": 193828,
         "name": "BioLite Improved Stove Programme",
         "protocol": "gold standard ver",
-        "link": {
-          "link_type": "project",
-          "url": "https://carbonplan.org/research/offsets-db/projects/193828"
-        },
+        "link": {},
         "category": "other"
       },
       {
         "project_id": 193827,
         "name": "Vida Mejor Improved Cookstoves",
         "protocol": "gold standard ver",
-        "link": {
-          "link_type": "project",
-          "url": "https://carbonplan.org/research/offsets-db/projects/193827"
-        },
+        "link": {},
         "category": "other"
       },
       {
@@ -1060,10 +1054,7 @@
         "project_id": null,
         "name": "Running Tide",
         "protocol": "running tide framework protocol 2023",
-        "link": {
-          "link_type": "project",
-          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
-        },
+        "link": {},
         "category": "other"
       },
       {
@@ -1415,30 +1406,21 @@
         "project_id": null,
         "name": "LaGeo, S. A. de C. V., Berline Geothermal Project, Phase Two",
         "protocol": null,
-        "link": {
-          "link_type": "project",
-          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
-        },
+        "link": {},
         "category": "other"
       },
       {
         "project_id": null,
         "name": "Piedra Larga Wind Farm",
         "protocol": null,
-        "link": {
-          "link_type": "project",
-          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
-        },
+        "link": {},
         "category": "other"
       },
       {
         "project_id": null,
         "name": "Switching of fuel from coal to palm oil mill biomass waste residues at Industrial de Oleaginosas Americanas S.A. (INOLASA)",
         "protocol": null,
-        "link": {
-          "link_type": "project",
-          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
-        },
+        "link": {},
         "category": "other"
       },
       {
@@ -1455,30 +1437,21 @@
         "project_id": null,
         "name": "Guacamaya Small Scale Hydropower Programme of Activities",
         "protocol": null,
-        "link": {
-          "link_type": "project",
-          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
-        },
+        "link": {},
         "category": "other"
       },
       {
         "project_id": null,
         "name": "Potero Hydropower Plant, Peru",
         "protocol": null,
-        "link": {
-          "link_type": "project",
-          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
-        },
+        "link": {},
         "category": "other"
       },
       {
         "project_id": null,
         "name": "Candelaria Hydroelectric Project",
         "protocol": null,
-        "link": {
-          "link_type": "project",
-          "url": "https://carbonplan.org/research/offsets-db/projects/nan"
-        },
+        "link": {},
         "category": "other"
       },
       {

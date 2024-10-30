@@ -164,7 +164,9 @@ const ProjectRow = ({
   company,
   category,
 }) => {
+  const standardLink = link.link_type === 'project'
   const customLink = link.link_type === 'provided'
+
   const handleClick = useCallback(
     (e) => {
       if (e.metaKey || e.ctrlKey) {
@@ -180,7 +182,7 @@ const ProjectRow = ({
       as='tr'
       columns={6}
       tabIndex={0}
-      onClick={customLink ? undefined : handleClick}
+      onClick={standardLink ? handleClick : undefined}
       sx={{
         ...styles.row,
         borderTopWidth: index === 0 ? 0 : '1px',
@@ -199,17 +201,21 @@ const ProjectRow = ({
         '& td a': {
           transition: '0.2s all',
         },
-        cursor: customLink ? 'initial' : 'pointer',
-        '&:hover': customLink
-          ? {}
-          : {
+        cursor: standardLink ? 'pointer' : 'initial',
+        '&:hover': standardLink
+          ? {
               'td a': { color: 'primary' },
               '#suffix': { transform: 'rotate(45deg)', color: 'primary' },
-            },
+            }
+          : {},
       }}
     >
-      <ProjectCell start={1} width={2} href={customLink ? undefined : link.url}>
-        {project_id && link.url.includes('offsets-db') ? (
+      <ProjectCell
+        start={1}
+        width={2}
+        href={standardLink ? link.url : undefined}
+      >
+        {project_id && link.url?.includes('offsets-db') ? (
           <Badge sx={{ color: COLORS[category] ?? COLORS.other }}>
             {project_id}
           </Badge>
@@ -217,7 +223,11 @@ const ProjectRow = ({
           <>{project_id ?? <Empty />}</>
         )}
       </ProjectCell>
-      <ProjectCell start={3} width={2} href={customLink ? undefined : link.url}>
+      <ProjectCell
+        start={3}
+        width={2}
+        href={standardLink ? link.url : undefined}
+      >
         {name ?? <Empty />}
         {customLink && (
           <>
@@ -236,7 +246,7 @@ const ProjectRow = ({
         start={5}
         width={2}
         sx={{ textTransform: 'uppercase' }}
-        href={customLink ? undefined : link.url}
+        href={standardLink ? link.url : undefined}
       >
         <Flex
           sx={{
@@ -246,7 +256,7 @@ const ProjectRow = ({
           }}
         >
           {protocol ?? <Empty />}
-          {!customLink && (
+          {standardLink && (
             <Button
               suffix={<RotatingArrow />}
               size='xs'
