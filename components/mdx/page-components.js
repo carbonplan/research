@@ -668,9 +668,6 @@ const components = {
         '../../articles/ab1305-initial-disclosures/components/database-table.js'
       ).then((mod) => mod.DatabaseTable || mod.default)
     ),
-    Endnote: dynamic(() =>
-      import('@carbonplan/layouts').then((mod) => mod.Endnote || mod.default)
-    ),
   },
   'forest-offsets-explainer-faq': {
     CommonPractice: dynamic(() =>
