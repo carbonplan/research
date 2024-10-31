@@ -269,7 +269,7 @@ const DatabaseTable = () => (
         <React.Fragment key={i}>
           <CompanyRow company={company} index={i} />
 
-          {data[company].projects.map((project, j) => (
+          {/* {data[company].projects.map((project, j) => (
             <ProjectRow
               {...project}
               index={j}
@@ -277,7 +277,7 @@ const DatabaseTable = () => (
               company={company}
               borderBottom={i === Object.keys(data).length - 1}
             />
-          ))}
+          ))} */}
         </React.Fragment>
       ))}
     </Box>
