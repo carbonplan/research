@@ -267,7 +267,7 @@ const DatabaseTable = () => (
     <Box as='tbody' sx={{ display: 'block' }}>
       {Object.keys(data).map((company, i) => (
         <React.Fragment key={i}>
-          {/* <CompanyRow company={company} index={i} /> */}
+          <CompanyRow company={company} index={i} />
 
           {data[company].projects.map((project, j) => (
             <ProjectRow
