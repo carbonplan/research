@@ -228,18 +228,6 @@ const ProjectRow = ({
         href={standardLink ? link.url : undefined}
       >
         {name ?? <Empty />}
-        {customLink && (
-          <>
-            {' ('}
-            <Link
-              href={link.url}
-              sx={{ color: 'secondary', ':hover': { color: 'primary' } }}
-            >
-              provided link
-            </Link>
-            {')'}
-          </>
-        )}
       </ProjectCell>
       <ProjectCell
         start={5}
