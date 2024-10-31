@@ -133,7 +133,23 @@ const ProjectCell = ({ start, width, children, href, sx }) => {
 
   return (
     <Column as='td' start={start} width={width} sx={sx}>
-      {children}
+      {href ? (
+        <Link
+          onClick={handleClick}
+          href={href}
+          sx={{
+            color: 'secondary',
+            textDecoration: 'none',
+            width: '100%',
+            height: '100%',
+            display: 'block',
+          }}
+        >
+          {children}
+        </Link>
+      ) : (
+        children
+      )}
     </Column>
   )
 }
@@ -189,7 +205,7 @@ const ProjectRow = ({
         '&:hover': standardLink
           ? {
               'td a': { color: 'primary' },
-              'td div div': { color: 'primary' },
+              'td a .badge div': { color: 'primary' },
               '#suffix': { transform: 'rotate(45deg)', color: 'primary' },
             }
           : {},
@@ -202,6 +218,7 @@ const ProjectRow = ({
       >
         {project_id && link.url?.includes('offsets-db') ? (
           <Badge
+            className='badge'
             sx={{
               color: COLORS[category] ?? COLORS.other,
               transition: '0.2s all',
@@ -227,6 +244,18 @@ const ProjectRow = ({
         href={standardLink ? link.url : undefined}
       >
         {name ?? <Empty />}
+        {customLink && (
+          <>
+            {' ('}
+            <Link
+              href={link.url}
+              sx={{ color: 'secondary', ':hover': { color: 'primary' } }}
+            >
+              provided link
+            </Link>
+            {')'}
+          </>
+        )}
       </ProjectCell>
       <ProjectCell
         start={5}
