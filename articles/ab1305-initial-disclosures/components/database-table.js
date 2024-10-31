@@ -133,23 +133,7 @@ const ProjectCell = ({ start, width, children, href, sx }) => {
 
   return (
     <Column as='td' start={start} width={width} sx={sx}>
-      {href ? (
-        <Link
-          onClick={handleClick}
-          href={href}
-          sx={{
-            color: 'secondary',
-            textDecoration: 'none',
-            width: '100%',
-            height: '100%',
-            display: 'block',
-          }}
-        >
-          {children}
-        </Link>
-      ) : (
-        children
-      )}
+      {children}
     </Column>
   )
 }
