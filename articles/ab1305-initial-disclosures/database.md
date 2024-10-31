@@ -24,3 +24,9 @@ Please cite this data viewer as:
 CarbonPlan (2024) “AB1305 Database” <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/ab1305-initial-disclosures-database](https://carbonplan.org/research/ab1305-initial-disclosures-database)</span>
 
 </Endnote>
+
+<Endnote label='Terms'>
+
+CarbonPlan received a grant from the Patrick J. McGovern Foundation to support this work.
+
+</Endnote>
