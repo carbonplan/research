@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { Box, Flex } from 'theme-ui'
 import { Badge, Button, Column, Link, Row } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
@@ -291,26 +291,38 @@ const ProjectRow = ({
   )
 }
 
-const DatabaseTable = () => (
-  <Box as='table' sx={{ display: 'block' }}>
-    <Box as='tbody' sx={{ display: 'block' }}>
-      {Object.keys(data).map((company, i) => (
-        <React.Fragment key={i}>
-          <CompanyRow company={company} index={i} />
+const DatabaseTable = () => {
+  const [isMounted, setIsMounted] = useState(false)
 
-          {data[company].projects.map((project, j) => (
-            <ProjectRow
-              {...project}
-              index={j}
-              key={j}
-              company={company}
-              borderBottom={i === Object.keys(data).length - 1}
-            />
-          ))}
-        </React.Fragment>
-      ))}
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  if (!isMounted) {
+    return null
+  }
+
+  return (
+    <Box as='table' sx={{ display: 'block' }}>
+      <Box as='tbody' sx={{ display: 'block' }}>
+        {Object.keys(data).map((company, i) => (
+          <React.Fragment key={i}>
+            <CompanyRow company={company} index={i} />
+
+            {data[company].projects.map((project, j) => (
+              <ProjectRow
+                {...project}
+                index={j}
+                key={j}
+                company={company}
+                borderBottom={i === Object.keys(data).length - 1}
+              />
+            ))}
+          </React.Fragment>
+        ))}
+      </Box>
     </Box>
-  </Box>
-)
+  )
+}
 
 export default DatabaseTable
