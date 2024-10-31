@@ -17,10 +17,10 @@ California’s AB1305 offset disclosure law will go into full effect in January 
 
 <DatabaseTable />
 
-<Endnote label='Terms'>
+<Endnote label='Citation'>
 
-CarbonPlan received a grant from the Patrick J. McGovern Foundation to support this work.
+Please cite this data viewer as:
 
-The data viewer is made available under a [CC BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
+CarbonPlan (2024) “AB1305 Database” <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/ab1305-initial-disclosures-database](https://carbonplan.org/research/ab1305-initial-disclosures-database)</span>
 
 </Endnote>
