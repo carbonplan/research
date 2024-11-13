@@ -50,7 +50,27 @@ links:
 ---
 
 <DataWrapper>
-The ocean plays an essential role in the global carbon cycle. It stores about 38,000 billion metric tons of carbon, making it the largest active reservoir of carbon on the planet. It also soaks up about one quarter of the CO₂ emitted annually by humans. Scientists and engineers are currently exploring how to amplify the ocean’s natural ability to absorb and store carbon. One promising approach is called ocean alkalinity enhancement (OAE). OAE mimics natural geochemical processes that shift ocean chemistry to remove CO₂ from the atmosphere. This could be a highly scalable approach to carbon dioxide removal (CDR), but making it work requires a rigorous understanding of ocean processes and how they vary over time and space.
+
+<Figure>
+  <RegionalComparison />
+  <FigureCaption number={7}>
+    Regional OAE efficiency data for example polygons in the North Atlantic. The
+    map shows the polygon locations of alkalinity release. Click on a polygon
+    and use the elapsed time slider to see how alkalinity injection leads to
+    additional CO₂ uptake over space and time. The bottom right panel shows the
+    OAE efficiency curves — moles of carbon uptake per mole of alkalinity added
+    — over the 15-year model integrations.
+  </FigureCaption>
+</Figure>
+The ocean plays an essential role in the global carbon cycle. It stores about 38,000
+billion metric tons of carbon, making it the largest active reservoir of carbon on
+the planet. It also soaks up about one quarter of the CO₂ emitted annually by humans.
+Scientists and engineers are currently exploring how to amplify the ocean’s natural
+ability to absorb and store carbon. One promising approach is called ocean alkalinity
+enhancement (OAE). OAE mimics natural geochemical processes that shift ocean chemistry
+to remove CO₂ from the atmosphere. This could be a highly scalable approach to carbon
+dioxide removal (CDR), but making it work requires a rigorous understanding of ocean
+processes and how they vary over time and space.
 
 OAE relies on adding alkaline materials, like crushed rocks or hydroxides, to the surface ocean — but this action alone does not guarantee carbon removal.<Sidenote>Strictly speaking, electrochemical OAE methods actually remove acid from the surface ocean, but this is functionally equivalent to adding a base such as hydroxide.</Sidenote> Instead, these materials shift the chemistry of the water, making it able to absorb and store more CO₂. Although this initial chemical shift happens quickly, it takes time for the ocean to absorb CO₂ from the atmosphere. Since the ocean is always in motion, carbon removal can happen far from where alkalinity is added. Furthermore, if ocean circulation moves the alkalinity-treated water away from the surface and out of contact with the atmosphere, the process of absorbing atmospheric CO₂ can be cut short. Natural variations in these physical circulation dynamics mean that alkalinity deployed in different locations or at different times of the year can result in different amounts of carbon removal. Understanding these dynamics is critical for deciding where and when it makes sense to pursue OAE, and estimating how much carbon actually gets removed from the atmosphere.
 

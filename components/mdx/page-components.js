@@ -3,6 +3,13 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'cdr-counterfactual-accounting': {
+    AccountingGraph: dynamic(() =>
+      import(
+        '../../articles/cdr-counterfactual-accounting/components/accounting-graph.js'
+      ).then((mod) => mod.AccountingGraph || mod.default)
+    ),
+  },
   'ab1305-initial-disclosures': {
     SummaryTable: dynamic(() =>
       import(
@@ -667,6 +674,21 @@ const components = {
       import(
         '../../articles/ab1305-initial-disclosures/components/database-table.js'
       ).then((mod) => mod.DatabaseTable || mod.default)
+    ),
+  },
+  'cdr-counterfactual-accounting-methods': {
+    NetCDR: dynamic(() =>
+      import(
+        '../../articles/cdr-counterfactual-accounting/components/net-cdr.js'
+      ).then((mod) => mod.NetCDR || mod.default)
+    ),
+    Figure: dynamic(() =>
+      import('@carbonplan/components').then((mod) => mod.Figure || mod.default)
+    ),
+    FigureCaption: dynamic(() =>
+      import('@carbonplan/components').then(
+        (mod) => mod.FigureCaption || mod.default
+      )
     ),
   },
   'forest-offsets-explainer-faq': {
