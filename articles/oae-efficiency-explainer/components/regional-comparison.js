@@ -272,7 +272,7 @@ const RegionalComparison = () => {
   return (
     <Row columns={6}>
       <Column start={1} width={4} sx={{ ...sx.column, overflowX: 'hidden' }}>
-        <Box sx={sx.heading}>
+        {/* <Box sx={sx.heading}>
           <Box sx={{ mb: 3, wordSpacing: 'inherit' }}>
             <Flex sx={{ gap: '11px', alignItems: 'baseline' }}>
               Region
@@ -294,41 +294,39 @@ const RegionalComparison = () => {
                 'calc(-1.5 * (100vw - 36px * 13 ) / 12 - 36px)', // 1.5 columns + gutter
               ],
             }}
-          >
-            <Minimap projection={naturalEarth1} {...MAP_PROPS}>
-              <Sphere
-                stroke={theme.colors.primary}
-                fill={theme.colors.background}
-                strokeWidth={1}
-              />
-              <Raster
-                source={data}
-                colormap={colormap}
-                clim={CLIM}
-                mode={'lut'}
-                nullValue={FILL_VALUE}
-                bounds={BOUNDS}
-              />
-              <Path
-                key={'basemap'}
-                stroke={theme.colors.primary}
-                source={
-                  'https://cdn.jsdelivr.net/npm/world-atlas@2/land-50m.json'
-                }
-                feature={'land'}
-                opacity={0.3}
-                fill={theme.colors.background}
-              />
+          > */}
+        <Minimap projection={naturalEarth1} {...MAP_PROPS}>
+          <Sphere
+            stroke={theme.colors.primary}
+            fill={theme.colors.background}
+            strokeWidth={1}
+          />
+          <Raster
+            source={data}
+            colormap={colormap}
+            clim={CLIM}
+            mode={'lut'}
+            nullValue={FILL_VALUE}
+            bounds={BOUNDS}
+          />
+          <Path
+            key={'basemap'}
+            stroke={theme.colors.primary}
+            source={'https://cdn.jsdelivr.net/npm/world-atlas@2/land-50m.json'}
+            feature={'land'}
+            opacity={0.3}
+            fill={theme.colors.background}
+          />
 
-              <Graticule stroke={theme.colors.primary} />
-              <Regions
-                region={region}
-                setRegion={handleSetRegion}
-                hoveredRegion={hoveredRegion}
-                setHoveredRegion={handleSetHoveredRegion}
-              />
-            </Minimap>
-          </Box>
+          <Graticule stroke={theme.colors.primary} />
+          <Regions
+            region={region}
+            setRegion={handleSetRegion}
+            hoveredRegion={hoveredRegion}
+            setHoveredRegion={handleSetHoveredRegion}
+          />
+        </Minimap>
+        {/* </Box>
         </Box>
         <Colorbar
           clim={[0, 1e-2]}
@@ -414,7 +412,7 @@ const RegionalComparison = () => {
               </Plot>
             </Chart>
           </Box>
-        </Flex>
+        </Flex> */}
       </Column>
     </Row>
   )
