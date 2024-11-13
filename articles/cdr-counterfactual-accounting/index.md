@@ -238,11 +238,10 @@ Of current ERW protocols (Table 1), only Isometric’s clearly addresses this co
       [
         'Isometric',
         <span>
-          Enhanced Rock Weathering in Agriculture (
+          Enhanced Rock Weathering in Agriculture{' '}
           <Link href='https://registry.isometric.com/protocol/enhanced-weathering-agriculture'>
-            v1.0
+            (v1.0)
           </Link>
-          )
         </span>,
         'Conservative',
       ],
@@ -253,20 +252,20 @@ Of current ERW protocols (Table 1), only Isometric’s clearly addresses this co
           <Link href='https://7518557.fs1.hubspotusercontent-na1.net/hubfs/7518557/Supplier%20Documents/ERW%20methodology.pdf'>
             v.1
           </Link>
-          ; <Link href='https://7518557.fs1.hubspotusercontent-na1.net/hubfs/7518557/ERW%20Standards/Enhanced_Rock_Weathering_2022_2.pdf'>
-            v.2
-          </Link>)
+          {'; '}
+          <Link href='https://7518557.fs1.hubspotusercontent-na1.net/hubfs/7518557/ERW%20Standards/Enhanced_Rock_Weathering_2022_2.pdf'>
+            v.2)
+          </Link>
         </span>,
         'Unclear; no method specified for weighing counterfactual against project',
       ],
       [
         'Carbon Standards International',
         <span>
-          Enhanced Rock Weathering in Croplands (
+          Enhanced Rock Weathering in Croplands{' '}
           <Link href='https://www.carbon-standards.com/docs/transfer/4000033EN.pdf'>
-            v0.9
+            (v0.9)
           </Link>
-          )
         </span>,
         'No counterfactual consideration',
       ],
