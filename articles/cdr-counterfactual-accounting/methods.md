@@ -17,7 +17,7 @@ components:
 
 ## Interactive calculator
 
-The calculator below lets you explore how different accounting rules converge or diverge when crediting CDR optimization projects. You can compare the crediting outcomes for preset scenarios provided in the drop-down menu, or use the sliders to construct your own ERW project and prior liming scenarios. The default preset scenario (“More rock, more efficiently”) is the example used in the [main article text](https://carbonplan.org/research/cdr-counterfactual-accounting).
+The calculator below lets you explore how different accounting rules converge or diverge when crediting CDR optimization projects. You can compare the crediting outcomes for preset scenarios provided in the drop-down menu, or use the sliders to construct your own ERW project and prior liming scenarios. The default preset scenario (“More rock, more efficiently”) is the example used in the [main article text](research/cdr-counterfactual-accounting).
 
 <Figure>
     <NetCDR

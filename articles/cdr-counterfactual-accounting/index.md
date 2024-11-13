@@ -63,7 +63,7 @@ Figure 1 shows a simplified example of an ERW project where traditional liming h
   </FigureCaption>
 </Figure>
 
-In this scenario, how much additional carbon removal has the CDR project achieved? It seems clear that the question requires comparing the project scenario to the traditional liming scenario. But surprisingly, the answer changes based on the details of how the comparison is made. Below, we illustrate four potential approaches that lead to four different answers about how much net CDR has been achieved. The answers range from 10 tCO₂ removed to 5 tCO₂ emitted. For a more detailed explanation of the four approaches and the ability to test them on different project and counterfactual scenarios, see our [supplemental methods](https://carbonplan.org/research/cdr-counterfactual-accounting-methods).
+In this scenario, how much additional carbon removal has the CDR project achieved? It seems clear that the question requires comparing the project scenario to the traditional liming scenario. But surprisingly, the answer changes based on the details of how the comparison is made. Below, we illustrate four potential approaches that lead to four different answers about how much net CDR has been achieved. The answers range from 10 tCO₂ removed to 5 tCO₂ emitted. For a more detailed explanation of the four approaches and the ability to test them on different project and counterfactual scenarios, see our [supplemental methods](/research/cdr-counterfactual-accounting-methods).
 
 ### Approach 1: Simple subtraction
 
