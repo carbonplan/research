@@ -253,11 +253,9 @@ Of current ERW protocols (Table 1), only Isometric’s clearly addresses this co
           <Link href='https://7518557.fs1.hubspotusercontent-na1.net/hubfs/7518557/Supplier%20Documents/ERW%20methodology.pdf'>
             v.1
           </Link>
-          ;{' '}
-          <Link href='https://7518557.fs1.hubspotusercontent-na1.net/hubfs/7518557/ERW%20Standards/Enhanced_Rock_Weathering_2022_2.pdf'>
+          ; <Link href='https://7518557.fs1.hubspotusercontent-na1.net/hubfs/7518557/ERW%20Standards/Enhanced_Rock_Weathering_2022_2.pdf'>
             v.2
-          </Link>
-          )
+          </Link>)
         </span>,
         'Unclear; no method specified for weighing counterfactual against project',
       ],
