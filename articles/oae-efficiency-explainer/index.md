@@ -43,38 +43,18 @@ components:
 links:
   - label: Map tool
     href: /research/oae-efficiency
-  - label: Paper (in press)
-    href: https://doi.org/10.21203/rs.3.rs-4124909/v1
+  - label: Scientific paper
+    href: https://www.nature.com/articles/s41558-024-02179-9.epdf?sharing_token=LgDF4VdJvkifRzIuQy5nT9RgN0jAjWel9jnR3ZoTv0ML06qtsGAXcI3ncw2VKMdvNBF8yc3ykUNvQP2YZSZZg3VEb8eJNbnayufBxkZ0cVTHRB4myOJv4osBgWv1OPyMNfRCLYPLT3MancsjfEhCqWMLGD_VUA_LXbALrR9640c%3D
   - label: Dataset
     href: https://beta.source.coop/repositories/cworthy/oae-efficiency-atlas/description/
 ---
 
 <DataWrapper>
-
-<Figure>
-  <RegionalComparison />
-  <FigureCaption number={7}>
-    Regional OAE efficiency data for example polygons in the North Atlantic. The
-    map shows the polygon locations of alkalinity release. Click on a polygon
-    and use the elapsed time slider to see how alkalinity injection leads to
-    additional CO₂ uptake over space and time. The bottom right panel shows the
-    OAE efficiency curves — moles of carbon uptake per mole of alkalinity added
-    — over the 15-year model integrations.
-  </FigureCaption>
-</Figure>
-The ocean plays an essential role in the global carbon cycle. It stores about 38,000
-billion metric tons of carbon, making it the largest active reservoir of carbon on
-the planet. It also soaks up about one quarter of the CO₂ emitted annually by humans.
-Scientists and engineers are currently exploring how to amplify the ocean’s natural
-ability to absorb and store carbon. One promising approach is called ocean alkalinity
-enhancement (OAE). OAE mimics natural geochemical processes that shift ocean chemistry
-to remove CO₂ from the atmosphere. This could be a highly scalable approach to carbon
-dioxide removal (CDR), but making it work requires a rigorous understanding of ocean
-processes and how they vary over time and space.
+The ocean plays an essential role in the global carbon cycle. It stores about 38,000 billion metric tons of carbon, making it the largest active reservoir of carbon on the planet. It also soaks up about one quarter of the CO₂ emitted annually by humans. Scientists and engineers are currently exploring how to amplify the ocean’s natural ability to absorb and store carbon. One promising approach is called ocean alkalinity enhancement (OAE). OAE mimics natural geochemical processes that shift ocean chemistry to remove CO₂ from the atmosphere. This could be a highly scalable approach to carbon dioxide removal (CDR), but making it work requires a rigorous understanding of ocean processes and how they vary over time and space.
 
 OAE relies on adding alkaline materials, like crushed rocks or hydroxides, to the surface ocean — but this action alone does not guarantee carbon removal.<Sidenote>Strictly speaking, electrochemical OAE methods actually remove acid from the surface ocean, but this is functionally equivalent to adding a base such as hydroxide.</Sidenote> Instead, these materials shift the chemistry of the water, making it able to absorb and store more CO₂. Although this initial chemical shift happens quickly, it takes time for the ocean to absorb CO₂ from the atmosphere. Since the ocean is always in motion, carbon removal can happen far from where alkalinity is added. Furthermore, if ocean circulation moves the alkalinity-treated water away from the surface and out of contact with the atmosphere, the process of absorbing atmospheric CO₂ can be cut short. Natural variations in these physical circulation dynamics mean that alkalinity deployed in different locations or at different times of the year can result in different amounts of carbon removal. Understanding these dynamics is critical for deciding where and when it makes sense to pursue OAE, and estimating how much carbon actually gets removed from the atmosphere.
 
-The OAE Efficiency Map is a new tool for understanding these dynamics and informing related decisions. Using a global ocean biogeochemical model, [[C]Worthy](https://cworthy.org/) and collaborators simulated how efficiently OAE leads to carbon removal and its dependence on the location and season in which the alkaline materials are added to the ocean, and described the results in a [scientific paper](https://doi.org/10.21203/rs.3.rs-4124909/v1) (in press). The “efficiency” of OAE is defined as the amount of CO₂ that will be transferred from the atmosphere to the ocean per unit of alkalinity added. Together, [C]Worthy and CarbonPlan have turned this dataset into an [interactive online tool](/research/oae-efficiency). With it, you can explore global patterns in OAE efficiency, and drill down to visualize how alkalinity released in a specific region and season will move through the ocean and result in carbon removal over time.
+The OAE Efficiency Map is a new tool for understanding these dynamics and informing related decisions. Using a global ocean biogeochemical model, [[C]Worthy](https://cworthy.org/) and collaborators simulated how efficiently OAE leads to carbon removal and its dependence on the location and season in which the alkaline materials are added to the ocean, and described the results in a [scientific paper](https://www.nature.com/articles/s41558-024-02179-9.epdf?sharing_token=LgDF4VdJvkifRzIuQy5nT9RgN0jAjWel9jnR3ZoTv0ML06qtsGAXcI3ncw2VKMdvNBF8yc3ykUNvQP2YZSZZg3VEb8eJNbnayufBxkZ0cVTHRB4myOJv4osBgWv1OPyMNfRCLYPLT3MancsjfEhCqWMLGD_VUA_LXbALrR9640c%3D). The “efficiency” of OAE is defined as the amount of CO₂ that will be transferred from the atmosphere to the ocean per unit of alkalinity added. Together, [C]Worthy and CarbonPlan have turned this dataset into an [interactive online tool](/research/oae-efficiency). With it, you can explore global patterns in OAE efficiency, and drill down to visualize how alkalinity released in a specific region and season will move through the ocean and result in carbon removal over time.
 
 Scientists, companies, policymakers, and society at large are all still learning about OAE — both its potential as a carbon removal strategy and its safety for ocean ecosystems. We hope this tool helps build intuition about how OAE works, supports smart decision-making about real-world deployments, and informs ongoing efforts to create scientifically informed standards and effective regulatory frameworks for ocean-based CDR.
 
@@ -175,7 +155,7 @@ The model we used represents the three-dimensional circulation of the ocean and 
 
 To compute net CO₂ uptake induced by OAE, we evaluated the time evolution of the simulated air-sea CO₂ flux relative to baseline simulation that did not include the OAE intervention, but was otherwise identical. The importance of this counterfactual is illustrated by the fact that OAE can drive ocean carbon uptake even in regions characterized by outgassing (see Figure 1): an OAE-induced reduction in ocean outgassing is functionally equivalent to net carbon dioxide removal. To represent the counterfactual, we used MARBL’s ability to simultaneously simulate two seawater carbonate systems. We applied the alkalinity addition to the first carbonate system; then we used a difference between the fields simulated by the perturbed and unperturbed carbonate systems to compute OAE effects.
 
-You can learn more about our modeling approach in this [preprint](https://doi.org/10.21203/rs.3.rs-4124909/v1), and you can access the data via this [Source Cooperative repository](https://beta.source.coop/repositories/cworthy/oae-efficiency-atlas/description/).
+You can learn more about our modeling approach in this [paper](https://www.nature.com/articles/s41558-024-02179-9.epdf?sharing_token=LgDF4VdJvkifRzIuQy5nT9RgN0jAjWel9jnR3ZoTv0ML06qtsGAXcI3ncw2VKMdvNBF8yc3ykUNvQP2YZSZZg3VEb8eJNbnayufBxkZ0cVTHRB4myOJv4osBgWv1OPyMNfRCLYPLT3MancsjfEhCqWMLGD_VUA_LXbALrR9640c%3D), and you can access the data via this [Source Cooperative repository](https://beta.source.coop/repositories/cworthy/oae-efficiency-atlas/description/).
 
 ## Exploring the OAE Efficiency Tool
 
@@ -243,7 +223,7 @@ There are different ways to start using the OAE efficiency dataset, depending on
         'OAE researcher',
         'I want to perform additional in-depth analysis of the data.',
         <span>
-          Read the <Link href='https://doi.org/10.21203/rs.3.rs-4124909/v1'>scientific paper</Link> (in press) and access the research-grade data{' '}
+          Read the <Link href='https://www.nature.com/articles/s41558-024-02179-9.epdf?sharing_token=LgDF4VdJvkifRzIuQy5nT9RgN0jAjWel9jnR3ZoTv0ML06qtsGAXcI3ncw2VKMdvNBF8yc3ykUNvQP2YZSZZg3VEb8eJNbnayufBxkZ0cVTHRB4myOJv4osBgWv1OPyMNfRCLYPLT3MancsjfEhCqWMLGD_VUA_LXbALrR9640c%3D'>scientific paper</Link> and access the research-grade data{' '}
 <Link href='https://beta.source.coop/repositories/cworthy/oae-efficiency-atlas/description/'>here</Link>.
         </span>,
       ],
