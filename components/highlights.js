@@ -20,8 +20,8 @@ const HIGHLIGHTS = [
         href: '/research/oae-efficiency-explainer',
       },
       {
-        label: 'Paper (in press)',
-        href: 'https://doi.org/10.21203/rs.3.rs-4124909/v1',
+        label: 'Science paper',
+        href: 'https://www.nature.com/articles/s41558-024-02179-9.epdf?sharing_token=LgDF4VdJvkifRzIuQy5nT9RgN0jAjWel9jnR3ZoTv0ML06qtsGAXcI3ncw2VKMdvNBF8yc3ykUNvQP2YZSZZg3VEb8eJNbnayufBxkZ0cVTHRB4myOJv4osBgWv1OPyMNfRCLYPLT3MancsjfEhCqWMLGD_VUA_LXbALrR9640c%3D',
       },
       {
         label: 'Dataset',
