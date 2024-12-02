@@ -1,5 +1,15 @@
 const publications = [
   {
+    date: '12-01-2024',
+    title:
+      'Increasingly active wildfire seasons threaten the sustainability of forest-backed carbon offset programs',
+    href: 'https://doi.org/10.1111/gcb.17599',
+    color: 'red',
+    summary:
+      "In 2024, wildfires burned a record number of forests participating in California's forest offset program, exposing the danger of relying on forests to slow climate change.",
+    journal: 'Global Change Biology',
+  },
+  {
     date: '09-15-2023',
     title: 'Carbon offsets are incompatible with the Paris Agreement',
     href: 'https://doi.org/10.1016/j.oneear.2023.08.014',
