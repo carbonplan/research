@@ -275,7 +275,7 @@ M. Long et al. (2024) “Mapping the efficiency of ocean alkalinity enhancement.
 
 <Endnote label='Terms'>
 
-CarbonPlan and [C]Worthy received funding from the [Carbon to Sea Initiative](https://carbontosea.org) and the [Environmental Defense Fund](https://www.edf.org) to implement the interactive tool and write this explainer article. The article text and figures are made available under a [CC BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
+CarbonPlan and [C]Worthy received funding from the [Carbon to Sea Initiative](https://carbontosea.org) (via Windward Fund) and the [Environmental Defense Fund](https://www.edf.org) to implement the interactive tool and write this explainer article. The article text and figures are made available under a [CC BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
 
 This material is based on work by [C]Worthy and collaborators that was supported by the National Center for Atmospheric Research (NCAR), a major facility sponsored by the National Science Foundation (NSF) under Cooperative Agreement No. 1852977. Mengyang received support from the Advanced Study Program Graduate Visitor Program at the National Center for Atmospheric Research. The authors acknowledge high performance computing support from the [Cheyenne](https://doi.org/10.5065/D6RX99HX) supercomputer provided by [NCAR's Computational and Information Systems Laboratory](https://www.cisl.ucar.edu/), sponsored by the NSF.
 
