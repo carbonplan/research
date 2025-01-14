@@ -1,7 +1,7 @@
 const fs = require('fs')
 const glob = require('glob')
 const puppeteer = require('puppeteer')
-const contents = require('./utils/mdx.js')
+const contents = require('./utils/metadata.js')
 
 glob('./cards/**.png', async (err, filePaths) => {
   if (!fs.existsSync('./cards')) {

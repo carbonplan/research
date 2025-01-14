@@ -31,7 +31,7 @@ import {
   articleMetadata,
   commentaryMetadata,
   supplementMetadata,
-} from '../../utils/mdx'
+} from '../../utils/metadata'
 import { displayTitles, pageComponents } from '../../components/mdx'
 
 const ARTICLE_COMPONENTS = {

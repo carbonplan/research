@@ -1,20 +1,22 @@
-const fs = require('fs')
-const path = require('path')
-const glob = require('glob')
-const matter = require('gray-matter')
+import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
+import matter from 'gray-matter'
+import glob from 'glob'
 
-// Utils based on examples in https://github.com/vercel/next.js/tree/canary/examples/with-mdx-remote
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
-// articles is the list of all article folders inside the ARTICLES_PATH directory
+// Get list of all article and commentary folders
 const articles = fs
   .readdirSync(path.join(process.cwd(), 'articles'))
   .filter((p) => p.match(/^[\w|\d|-]+$/))
 
-// commentary is the list of all commentary folders inside the COMMENTARY_PATH directory
 const commentary = fs
   .readdirSync(path.join(process.cwd(), 'commentary'))
   .filter((p) => p.match(/^[\w|\d|-]+$/))
 
+// Helper function to get metadata for articles and commentary
 const getMetadata = (ids, folder) => {
   const directory = path.join(process.cwd(), folder)
   return ids
@@ -22,10 +24,10 @@ const getMetadata = (ids, folder) => {
       const source = fs.readFileSync(path.join(directory, `${id}/index.md`))
       let references
       try {
-        references = fs.readFileSync(
+        const referencesBuffer = fs.readFileSync(
           path.join(directory, `${id}/references.json`)
         )
-        references = JSON.parse(references)
+        references = JSON.parse(referencesBuffer.toString())
       } catch {
         references = {}
       }
@@ -38,10 +40,17 @@ const getMetadata = (ids, folder) => {
         path: `${directory}/${id}/index.md`,
       }
     })
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .sort((a, b) => {
+      return new Date(b.date).getTime() - new Date(a.date).getTime()
+    })
     .map((meta, idx) => ({ ...meta, number: ids.length - 1 - idx }))
 }
 
+// Generate metadata for articles and commentary
+const articleMetadata = getMetadata(articles, 'articles')
+const commentaryMetadata = getMetadata(commentary, 'commentary')
+
+// Generate metadata for supplementary files
 const supplementMetadata = glob
   .sync('./@(articles|commentary)/**/!(index).md')
   .map((supplementPath) => {
@@ -63,8 +72,12 @@ const supplementMetadata = glob
     }
   })
 
-module.exports = {
-  articleMetadata: getMetadata(articles, 'articles'),
-  commentaryMetadata: getMetadata(commentary, 'commentary'),
-  supplementMetadata,
-}
+// Generate the metadata file content
+const fileContent = `// This file is auto-generated. Do not edit it manually.
+export const articleMetadata = ${JSON.stringify(articleMetadata, null, 2)}
+export const commentaryMetadata = ${JSON.stringify(commentaryMetadata, null, 2)}
+export const supplementMetadata = ${JSON.stringify(supplementMetadata, null, 2)}
+`
+
+// Write the metadata file
+fs.writeFileSync(path.join(process.cwd(), 'utils', 'metadata.js'), fileContent)

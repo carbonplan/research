@@ -2,7 +2,7 @@ import { Box, Flex, Text } from 'theme-ui'
 import { useEffect, useRef, useState } from 'react'
 import { Monogram, formatDate } from '@carbonplan/components'
 
-import { commentaryMetadata } from '../../utils/mdx'
+import { commentaryMetadata } from '../../utils/metadata'
 
 const Card = ({ title, authors, date, color }) => {
   const [lines, setLines] = useState(0)
