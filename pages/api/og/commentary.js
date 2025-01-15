@@ -21,7 +21,8 @@ export default async function handler(req) {
       throw new Error(`Commentary not found for id: ${id}`)
     }
 
-    const { title, date, collapseCardAuthors, titleWidthOverride } = commentary
+    const { title, date, collapseCardAuthors, titleWidthOverride, color } =
+      commentary
     const authors = commentary.authors.map((author) =>
       typeof author === 'string' ? author : author?.name || ''
     )
@@ -32,6 +33,7 @@ export default async function handler(req) {
       authors,
       collapseCardAuthors: collapseCardAuthorsParam || collapseCardAuthors,
       titleWidthOverride: titleWidthOverrideParam || titleWidthOverride,
+      color,
     })
 
     return new ImageResponse(component, {
