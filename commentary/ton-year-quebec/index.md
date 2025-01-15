@@ -9,7 +9,6 @@ authors:
 color: pink
 date: 05-03-2023
 summary: Quebec's flawed reforestation offsets protocol overestimates the value of temporary carbon storage and ignores the albedo effects of planting trees.
-card: ton-year-quebec
 components:
   - name: EquivalenceChart
     src: ./components/equivalence-chart.js

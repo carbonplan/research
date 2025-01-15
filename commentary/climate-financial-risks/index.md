@@ -7,7 +7,6 @@ authors:
 date: 11-01-2021
 summary: We discuss tensions and considerations at the nexus of climate risk disclosure and corporate net-zero strategies.
 color: secondary
-card: climate-financial-risks
 ---
 
 CarbonPlan has published research designed to help provide insight into the critical ways that climate science is increasingly woven into finance, public policy, and corporate strategy. Examples include [forest carbon offsets](https://carbonplan.org/research/forest-offsets-explainer), [biomass monitoring](https://carbonplan.org/blog/climate-trace-release), [forest risks](https://carbonplan.org/research/forest-risks-explainer), and [soil offset protocols](https://carbonplan.org/blog/soil-protocols-added). We have also analyzed over [200 carbon removal proposals](https://carbonplan.org/research/cdr-database) submitted to procurement processes run by Stripe and Microsoft.

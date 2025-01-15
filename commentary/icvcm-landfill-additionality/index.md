@@ -7,7 +7,6 @@ authors:
 date: 07-03-2024
 summary: Initial results from the ICVCM assessment process highlight the challenges of reliably identifying high-quality offset credits.
 color: yellow
-card: icvcm-landfill-additionality
 components:
   - name: AnnotatedProject
     src: ./components/annotated-project.js

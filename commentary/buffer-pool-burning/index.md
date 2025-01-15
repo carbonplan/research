@@ -9,7 +9,6 @@ color: red
 links:
   - label: Slate article
     href: 'https://slate.com/technology/2024/02/carbon-offsets-california-fire-neutral-shipping-climate-change.html'
-card: buffer-pool-burning
 ---
 
 _<Box as='span' sx={{color: 'secondary'}}>This commentary first appeared as an article at Slate</Box>_

@@ -7,7 +7,6 @@ authors:
   - Freya Chay
 date: 02-08-2022
 summary: Voluntary carbon markets don't provide investors with adequate data about who is using offset credits, nor what kinds of climate claims those credits justify. Simple disclosures would fix this gap.
-card: offset-disclosure-needs
 color: secondary
 links:
   - label: Comments to the SEC
