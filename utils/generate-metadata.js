@@ -1,11 +1,7 @@
-import fs from 'fs'
-import path from 'path'
-import { fileURLToPath } from 'url'
-import matter from 'gray-matter'
-import glob from 'glob'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+const fs = require('fs')
+const path = require('path')
+const matter = require('gray-matter')
+const glob = require('glob')
 
 // Get list of all article and commentary folders
 const articles = fs
@@ -74,9 +70,15 @@ const supplementMetadata = glob
 
 // Generate the metadata file content
 const fileContent = `// This file is auto-generated. Do not edit it manually.
-export const articleMetadata = ${JSON.stringify(articleMetadata, null, 2)}
-export const commentaryMetadata = ${JSON.stringify(commentaryMetadata, null, 2)}
-export const supplementMetadata = ${JSON.stringify(supplementMetadata, null, 2)}
+const articleMetadata = ${JSON.stringify(articleMetadata)}
+const commentaryMetadata = ${JSON.stringify(commentaryMetadata)}
+const supplementMetadata = ${JSON.stringify(supplementMetadata)}
+
+module.exports = {
+  articleMetadata,
+  commentaryMetadata,
+  supplementMetadata,
+}
 `
 
 // Write the metadata file
