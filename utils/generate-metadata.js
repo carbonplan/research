@@ -1,9 +1,10 @@
 const fs = require('fs')
 const path = require('path')
-const matter = require('gray-matter')
 const glob = require('glob')
+const matter = require('gray-matter')
 
-// Get list of all article and commentary folders
+// We generate this at build to allow us to access from edge functions like dynamic OG images (og.js)
+
 const articles = fs
   .readdirSync(path.join(process.cwd(), 'articles'))
   .filter((p) => p.match(/^[\w|\d|-]+$/))
@@ -12,7 +13,6 @@ const commentary = fs
   .readdirSync(path.join(process.cwd(), 'commentary'))
   .filter((p) => p.match(/^[\w|\d|-]+$/))
 
-// Helper function to get metadata for articles and commentary
 const getMetadata = (ids, folder) => {
   const directory = path.join(process.cwd(), folder)
   return ids
@@ -20,10 +20,10 @@ const getMetadata = (ids, folder) => {
       const source = fs.readFileSync(path.join(directory, `${id}/index.md`))
       let references
       try {
-        const referencesBuffer = fs.readFileSync(
+        references = fs.readFileSync(
           path.join(directory, `${id}/references.json`)
         )
-        references = JSON.parse(referencesBuffer.toString())
+        references = JSON.parse(references)
       } catch {
         references = {}
       }
@@ -36,9 +36,7 @@ const getMetadata = (ids, folder) => {
         path: `${directory}/${id}/index.md`,
       }
     })
-    .sort((a, b) => {
-      return new Date(b.date).getTime() - new Date(a.date).getTime()
-    })
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
     .map((meta, idx) => ({ ...meta, number: ids.length - 1 - idx }))
 }
 
