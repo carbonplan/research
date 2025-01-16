@@ -89,6 +89,7 @@ const Page = ({ id, type, source, frontMatter, references }) => {
     case 'commentary':
       return (
         <Commentary
+          id={id}
           meta={frontMatter}
           references={references}
           displayTitle={displayTitles[id]}
