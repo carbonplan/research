@@ -21,7 +21,7 @@ const Curve = ({
   const [displayValue, setDisplayValue] = useState(value[0][1])
 
   const initializeChart = () => {
-    const out = new CostCurve(
+    const out = CostCurve(
       container,
       theme,
       value,

@@ -45,7 +45,7 @@ const Timeline = ({ options }) => {
 
   useEffect(() => {
     if (container.current.offsetWidth > 0) {
-      chart = new TimelineChart(container, theme)
+      chart = TimelineChart(container, theme)
     }
 
     return function cleanup() {
