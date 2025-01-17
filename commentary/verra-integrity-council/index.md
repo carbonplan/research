@@ -9,7 +9,6 @@ authors:
 date: 09-29-2022
 summary: A blistering critique from the carbon offset registry with a dominant ⅔ market share says more about its opposition to independent standards than the best way to pursue them.
 color: yellow
-card: verra-integrity-council
 links:
   - label: Press coverage
     href: https://www.protocol.com/climate/verra-voluntary-carbon-offset-market

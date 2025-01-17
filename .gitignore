@@ -4,4 +4,4 @@
 .vscode
 /node_modules
 .env*.local
-/cards
+/utils/metadata.js

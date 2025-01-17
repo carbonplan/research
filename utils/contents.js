@@ -1,5 +1,9 @@
 import { publications, comments, tools } from '../contents/index'
-import { articleMetadata, commentaryMetadata, supplementMetadata } from './mdx'
+import {
+  articleMetadata,
+  commentaryMetadata,
+  supplementMetadata,
+} from './metadata'
 
 export const getCombinedContents = () => {
   return {

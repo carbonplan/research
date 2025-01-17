@@ -7,7 +7,6 @@ authors:
   - Grayson Badgley
 date: 01-31-2022
 summary: We review concerns with NCX’s use of discounted ton-year accounting methods to credit short-term timber harvests delays.
-card: ton-year-ncx
 color: pink
 components:
   - name: TableHundred

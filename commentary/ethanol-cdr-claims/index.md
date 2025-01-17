@@ -7,7 +7,6 @@ authors:
 date: 12-04-2023
 summary: The voluntary carbon market is gearing up to sell corn ethanol CCS projects as carbon removal because they store biogenic CO₂. We explain why this logic falls short.
 color: yellow
-card: ethanol-cdr-claims
 components:
   - name: Schematics
     src: ./components/schematics.js
