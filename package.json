@@ -7,7 +7,6 @@
     "dev": "npm run generate-metadata && npm run build-components && NODE_ENV=development next -p 4000",
     "build": "npm run generate-metadata && npm run build-components && next build",
     "build-components": "node build-components.js && prettier --write components/mdx/page-components.js",
-    "build-cards": "node build-cards.js",
     "generate-metadata": "node utils/generate-metadata.js && prettier --write utils/metadata.js",
     "start": "next start",
     "test": "jest --watch",
