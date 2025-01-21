@@ -29,7 +29,7 @@
     "@carbonplan/components": "^12.6.5",
     "@carbonplan/emoji": "^2.0.0",
     "@carbonplan/icons": "^2.0.0",
-    "@carbonplan/layouts": "^5.0.1",
+    "@carbonplan/layouts": "^5.0.2",
     "@carbonplan/minimaps": "^2.6.0",
     "@carbonplan/seaweed-farming-model": "^1.0.0",
     "@carbonplan/theme": "^8.1.0",
