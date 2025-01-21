@@ -4,7 +4,7 @@ const {
   articleMetadata,
   commentaryMetadata,
   supplementMetadata,
-} = require('./utils/mdx.js')
+} = require('./utils/metadata.js')
 
 glob.sync('./components/mdx/page-components.js').forEach((f) => {
   if (fs.rmSync) return fs.rmSync(f)

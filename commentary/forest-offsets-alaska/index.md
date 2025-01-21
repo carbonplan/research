@@ -7,7 +7,6 @@ authors:
 date: 05-19-2023
 summary: Alaska passed a bill that allows state forests to join the voluntary carbon market. We summarize the evidence that this program might result in non-additional offset credits.
 color: green
-card: forest-offsets-alaska
 ---
 
 Earlier this week, the Alaska State Legislature passed [SB 48](https://www.akleg.gov/basis/Bill/Detail/33?Root=sb%2048), a bill that authorizes Alaska's Department of Natural Resources to enroll State forests in the voluntary carbon market. While we fully support efforts to improve forest management, multiple lines of evidence suggest that Alaska's forest carbon offsets program could produce carbon credits that don’t represent real climate benefits. Repeatedly during the legislative process, proponents of SB 48 have promised that the State can make money from selling carbon without changing harvest practices. Although this could be a win for the State budget, it would be a loss for the climate — and for the credibility of the voluntary carbon market.
