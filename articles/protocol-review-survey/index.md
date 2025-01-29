@@ -42,13 +42,24 @@ Throughout the survey, we defined “independent” as indicating a review condu
 We invited 36 organizations to respond to the survey, including CDR providers, registries, brokers, buyers, investors, and non-profits. Survey participation was voluntary and participants were informed that all responses would be anonymized in the public reporting. In total, representatives from 26 organizations participated. No credit brokers investors provided a response.
 
 <Figure>
-  <OrganizationsTable data={[
-    ['CDR Providers', 'Charm, Climeworks, Ebb Carbon, Eion, Heirloom Carbon, Kodama Systems, Planetary Technologies, UNDO, Vaulted Deep'],
-    ['CDR Buyers', 'Amazon, Microsoft, Stripe, Shopify'],
-    ['CDR Standard-setters', 'Isometric, Puro, Absolute Climate'],
-    ['Ecosystem Actors', 'Carbon Direct, Carbon Removal Alliance, Carbon to Sea Initiative, Carbon Standards Initiative, Carbon180, Cascade Climate, CO2RE, Linden Trust for Conservation, RMI, Spark Climate Solutions']
-  ]} />
-  <TableCaption number={1}>Representatives from 26 organizations participated in the survey. “Ecosystem Actors” includes both NGOs and academic initiatives</TableCaption>
+  <OrganizationsTable
+    data={[
+      [
+        'CDR Providers',
+        'Charm, Climeworks, Ebb Carbon, Eion, Heirloom Carbon, Kodama Systems, Planetary Technologies, UNDO, Vaulted Deep',
+      ],
+      ['CDR Buyers', 'Amazon, Microsoft, Stripe, Shopify'],
+      ['CDR Standard-setters', 'Isometric, Puro, Absolute Climate'],
+      [
+        'Ecosystem Actors',
+        'Carbon Direct, Carbon Removal Alliance, Carbon to Sea Initiative, Carbon Standards Initiative, Carbon180, Cascade Climate, CO2RE, Linden Trust for Conservation, RMI, Spark Climate Solutions',
+      ],
+    ]}
+  />
+  <TableCaption number={1}>
+    Representatives from 26 organizations participated in the survey. “Ecosystem
+    Actors” includes both NGOs and academic initiatives
+  </TableCaption>
 </Figure>
 
 ## Survey results
@@ -80,31 +91,58 @@ Stakeholders expressed broad consensus that protocol review has a near-term role
       ],
     ]}
   />
-  <TableCaption number={2}>Structured data from multiple choice survey questions. One respondent abstained from each of these questions.</TableCaption>
+  <TableCaption number={2}>
+    Structured data from multiple choice survey questions. One respondent
+    abstained from each of these questions.
+  </TableCaption>
 </Figure>
-Some protocol review efforts do already exist. Organizations like the Integrity Council for the Voluntary Carbon Markets (ICVCM) conduct protocol reviews, but to-date, they have not focused on long-duration CDR. Sophisticated CDR buyers run internal protocol review processes, but the resources and effort that requires are unlikely to scale. Credit rating agencies also review protocols, but the results are not made fully public. Nevertheless, the majority of stakeholders expressed the opinion that there is a place for novel, independent protocol review efforts. There was some divergence, however, around the perceived urgency of filling those gaps (Table 3).  
+Some protocol review efforts do already exist. Organizations like the Integrity Council
+for the Voluntary Carbon Markets (ICVCM) conduct protocol reviews, but to-date, they
+have not focused on long-duration CDR. Sophisticated CDR buyers run internal protocol
+review processes, but the resources and effort that requires are unlikely to scale.
+Credit rating agencies also review protocols, but the results are not made fully
+public. Nevertheless, the majority of stakeholders expressed the opinion that there
+is a place for novel, independent protocol review efforts. There was some divergence,
+however, around the perceived urgency of filling those gaps (Table 3).
 <Figure>
-  <NovelEffortsTable 
-    question="Are novel efforts around independent protocol review needed in the near-term?"
+  <NovelEffortsTable
+    question='Are novel efforts around independent protocol review needed in the near-term?'
     data={[
-      ['Yes. There are opportunities for independent protocol review that merit near-term effort.', '15'],
-      ["Maybe. There are gaps that it might be useful to fill, but it's not clear that addressing them is a top priority.", '8'],
-      ['No. Existing efforts and resources are sufficient; further effort should not be directed toward novel independent protocol review at this time.', '1']
-    ]} />
-  <TableCaption number={3}>Structured data from multiple choice survey questions. Two respondents abstained from this question.</TableCaption>
+      [
+        'Yes. There are opportunities for independent protocol review that merit near-term effort.',
+        '15',
+      ],
+      [
+        "Maybe. There are gaps that it might be useful to fill, but it's not clear that addressing them is a top priority.",
+        '8',
+      ],
+      [
+        'No. Existing efforts and resources are sufficient; further effort should not be directed toward novel independent protocol review at this time.',
+        '1',
+      ],
+    ]}
+  />
+  <TableCaption number={3}>
+    Structured data from multiple choice survey questions. Two respondents
+    abstained from this question.
+  </TableCaption>
 </Figure>
 
 Interestingly, stakeholders were also divided in their opinions about whether the importance of independent protocol review was likely to increase, decrease, or remain stable over time. This seemed to be partially explained by expectations about whether or not the content of protocols would converge or harmonize over time, perhaps by the entrance of definitive standards set by policy. For example, one Standard Setter who thought independent review would become less important over time said, “The freedom for a project to choose a protocol will be limited by emerging regulations by EU, UN and other institutions.” In contrast, one Buyer argued that protocol review is likely to “become more important as the landscape of registries becomes more competitive.”
 
 <Figure>
-  <IndyReviewTable 
-    question="Will independent protocol review become more or less important over the next five years?"
+  <IndyReviewTable
+    question='Will independent protocol review become more or less important over the next five years?'
     data={[
       ['Likely to become more important.', '12'],
       ['Importance is likely to stay the same.', '9'],
-      ['Likely to become less important.', '4']
-    ]} />
-  <TableCaption number={4}>Structured data from multiple choice survey questions. One respondent abstained from this question</TableCaption>
+      ['Likely to become less important.', '4'],
+    ]}
+  />
+  <TableCaption number={4}>
+    Structured data from multiple choice survey questions. One respondent
+    abstained from this question
+  </TableCaption>
 </Figure>
 
 ### 02 — Most stakeholders wanted novel efforts to prioritize reviewing quantification and accounting rules.
@@ -112,17 +150,62 @@ Interestingly, stakeholders were also divided in their opinions about whether th
 Protocols include many elements, including eligibility rules, rules for quantifying how much net CDR a project has achieved, and procedural rules that determine how a project interacts with the protocol to receive credits. Stakeholders indicated that of the potential targets for review, they would want a novel protocol review process to focus on the rules for quantifying net CDR impacts — namely the accounting and quantification approach laid out by different protocols (Table 5).
 
 <Figure>
-  <RankingTable data={[
-    ['Accounting approach', 'Accounting boundaries, including life-cycle assessment approach (consequential vs. attributional), waste cut-off rules, co-product allocation rules, etc.', '11', '0'],
-    ['Quantification approach', 'Sampling density, analytical tool calibration and deployment, model validation, data sources, uncertainty quantification, etc.', '11', '0'],
-    ['Non-carbon guardrails', 'Sustainability criteria, community engagement requirements, etc.', '0', '7'],
-    ['Protocol governance', 'Financial incentives around protocol development, revision cadence, licensing, transparency, etc.', '0', '4'],
-    ['Crediting procedure', 'Timing of registration, verification, and credit issuance.', '0', '15'],
-    ['Credit characteristics', 'Storage durability, type of durability guarantee (physical, regulatory, or contractual), additionality, etc.', '4', '0']
-  ]} />
-  <TableCaption number={5}>Respondents were asked to rank the six categories above in order of highest to lowest priority.</TableCaption>
+  <RankingTable
+    data={[
+      [
+        'Accounting approach',
+        'Accounting boundaries, including life-cycle assessment approach (consequential vs. attributional), waste cut-off rules, co-product allocation rules, etc.',
+        '11',
+        '0',
+      ],
+      [
+        'Quantification approach',
+        'Sampling density, analytical tool calibration and deployment, model validation, data sources, uncertainty quantification, etc.',
+        '11',
+        '0',
+      ],
+      [
+        'Non-carbon guardrails',
+        'Sustainability criteria, community engagement requirements, etc.',
+        '0',
+        '7',
+      ],
+      [
+        'Protocol governance',
+        'Financial incentives around protocol development, revision cadence, licensing, transparency, etc.',
+        '0',
+        '4',
+      ],
+      [
+        'Crediting procedure',
+        'Timing of registration, verification, and credit issuance.',
+        '0',
+        '15',
+      ],
+      [
+        'Credit characteristics',
+        'Storage durability, type of durability guarantee (physical, regulatory, or contractual), additionality, etc.',
+        '4',
+        '0',
+      ],
+    ]}
+  />
+  <TableCaption number={5}>
+    Respondents were asked to rank the six categories above in order of highest
+    to lowest priority.
+  </TableCaption>
 </Figure>
-The degree of consensus around prioritizing accounting and quantification approach review was striking. Taking a different view on the data presented above, all but four stakeholders ranked "Accounting approach" in the top two, and all but nine stakeholders listed "Quantification approach" in the top two. As one buyer put it, “I tend to find a lot of past efforts (e.g. ICVCM and the like) have tended to focus on governance and procedure more than scientific accuracy, which I think is the more important issue for an emerging field like durable CDR.” Or as one supplier noted, “The most urgent issue is that different protocols and different technology pathways are subject to different boundary conditions which can result in very different removals -subsequently creating a convoluted climate impact.”
+
+The degree of consensus around prioritizing accounting and quantification approach
+review was striking. Taking a different view on the data presented above, all but
+four stakeholders ranked "Accounting approach" in the top two, and all but nine stakeholders
+listed "Quantification approach" in the top two. As one buyer put it, “I tend to
+find a lot of past efforts (e.g. ICVCM and the like) have tended to focus on governance
+and procedure more than scientific accuracy, which I think is the more important
+issue for an emerging field like durable CDR.” Or as one supplier noted, “The most
+urgent issue is that different protocols and different technology pathways are subject
+to different boundary conditions which can result in very different removals -subsequently
+creating a convoluted climate impact.”
 
 Despite this high-level consensus, we observed some underlying nuance around what kinds of questions should be prioritized within these categories. Some stakeholders indicated they wanted protocol review in these categories to focus on elements that are already broadly well-understood. For example, one Standard-setter said, “I bias towards the categories where consistency is needed, rather than innovation.” Other stakeholders emphasized the importance of reviewing dimensions of a protocol that involve open scientific questions or subjective decisions. As one Buyer put it, “The most critical components that need review are those that are prone to subjective design or sampling decisions…”
 
@@ -169,7 +252,10 @@ Stakeholders were split when asked if they would prefer novel protocol review ef
       ],
     }}
   />
-  <TableCaption number={6}>Structured data from multiple choice survey questions. One respondent abstained from each of these questions.</TableCaption>
+  <TableCaption number={6}>
+    Structured data from multiple choice survey questions. One respondent
+    abstained from each of these questions.
+  </TableCaption>
 </Figure>
 
 We also observed tension between how various stakeholders imagined a review process interacting with established protocols. Many respondents emphasized the importance of reviewing existing protocols in an ongoing manner to incorporate new science and assess the real-world outcomes of the protocol. For example, one Ecosystem Actor said, “[W]e need regular cycles that also assess what worked and what didn't work in the implementation of the protocol so far.” But other stakeholders raised concerns that reviewing protocols that are already in use could call into question the viability of the protocol itself and credits that have been previously issued under it. As one Buyer said, “I'd prefer protocols get reviewed and improved before a supplier starts issuing credits against it to us, vs be[sic] getting credits and then changes being made that casts doubt on prior issued credits.”
