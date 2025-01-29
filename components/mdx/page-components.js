@@ -3,6 +3,38 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'protocol-review-survey': {
+    OrganizationsTable: dynamic(() =>
+      import(
+        '../../articles/protocol-review-survey/components/organizations-table.js'
+      ).then((mod) => mod.OrganizationsTable || mod.default)
+    ),
+    QuestionsTable: dynamic(() =>
+      import(
+        '../../articles/protocol-review-survey/components/questions-table.js'
+      ).then((mod) => mod.QuestionsTable || mod.default)
+    ),
+    NovelEffortsTable: dynamic(() =>
+      import(
+        '../../articles/protocol-review-survey/components/novel-efforts-table.js'
+      ).then((mod) => mod.NovelEffortsTable || mod.default)
+    ),
+    IndyReviewTable: dynamic(() =>
+      import(
+        '../../articles/protocol-review-survey/components/indy-review-table.js'
+      ).then((mod) => mod.IndyReviewTable || mod.default)
+    ),
+    RankingTable: dynamic(() =>
+      import(
+        '../../articles/protocol-review-survey/components/ranking-table.js'
+      ).then((mod) => mod.RankingTable || mod.default)
+    ),
+    PerspectiveTable: dynamic(() =>
+      import(
+        '../../articles/protocol-review-survey/components/perspective-table.js'
+      ).then((mod) => mod.PerspectiveTable || mod.default)
+    ),
+  },
   'cdr-counterfactual-accounting': {
     AccountingGraph: dynamic(() =>
       import(
