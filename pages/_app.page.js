@@ -1,3 +1,5 @@
+import React from 'react'
+import PlausibleProvider from 'next-plausible'
 import { ThemeProvider } from 'theme-ui'
 import '@carbonplan/components/fonts.css'
 import '@carbonplan/components/globals.css'
@@ -7,11 +9,17 @@ import { ScrollProvider } from '../components/scroll'
 
 const App = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider theme={theme}>
-      <ScrollProvider>
-        <Component {...pageProps} />
-      </ScrollProvider>
-    </ThemeProvider>
+    <PlausibleProvider
+      domain='carbonplan.org'
+      trackOutboundLinks
+      trackFileDownloads
+    >
+      <ThemeProvider theme={theme}>
+        <ScrollProvider>
+          <Component {...pageProps} />
+        </ScrollProvider>
+      </ThemeProvider>
+    </PlausibleProvider>
   )
 }
 
