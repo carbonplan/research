@@ -81,7 +81,6 @@ const Item = ({ info, first, type }) => {
           }}
           tabIndex='-1'
           href={id ? `/research/${id}` : href}
-          tracking
         >
           {title}
         </Link>
@@ -89,12 +88,7 @@ const Item = ({ info, first, type }) => {
       <Box sx={{ fontSize: [2, 2, 2, 3] }}>{summary}</Box>
 
       {links && (
-        <LinkGroup
-          inverted
-          tracking
-          members={links}
-          sx={{ mt: '14px', mb: '2px' }}
-        />
+        <LinkGroup inverted members={links} sx={{ mt: '14px', mb: '2px' }} />
       )}
     </Box>
   )
@@ -150,19 +144,13 @@ const Letter = ({ info, first }) => {
           }}
           tabIndex='-1'
           href={href}
-          tracking
         >
           <Box>{title}</Box>
         </Link>
       </Box>
 
       {links && (
-        <LinkGroup
-          inverted
-          tracking
-          members={links}
-          sx={{ mt: '14px', mb: '2px' }}
-        />
+        <LinkGroup inverted members={links} sx={{ mt: '14px', mb: '2px' }} />
       )}
     </Box>
   )
@@ -192,7 +180,7 @@ const Commentary = ({ items, commentaryExpander, commentsExpander }) => {
           .filter((d) => index < 2 || d.type === 'commentary')
           .map((d, i) => (
             <Item
-              key={d.title}
+              key={d.title + d.date}
               info={d}
               start={[1, 2, 1, 1]}
               first={i === 0}
@@ -219,7 +207,7 @@ const Commentary = ({ items, commentaryExpander, commentsExpander }) => {
           {items
             .filter((d) => d.type === 'letter')
             .map((d) => (
-              <Letter key={d.title} info={d} start={[1, 2, 1, 1]} />
+              <Letter key={d.title + d.date} info={d} start={[1, 2, 1, 1]} />
             ))}
 
           {commentsExpander}

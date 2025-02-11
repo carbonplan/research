@@ -44,7 +44,7 @@ Any protocol for soil carbon crediting needs to start by appreciating the comple
 
 ## Our comments
 
-Given the enormous challenges in designing a carbon offset protocol to quantify and credit soil carbon storage, we were interested to see the Climate Action Reserve take this problem on. We reviewed the draft protocol and highlight two sets of issues here. See our <Link href='https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf' tracking>comment letter</Link> for details and check out comments posted by other groups at the [protocol website](https://www.climateactionreserve.org/how/protocols/soil-enrichment/).
+Given the enormous challenges in designing a carbon offset protocol to quantify and credit soil carbon storage, we were interested to see the Climate Action Reserve take this problem on. We reviewed the draft protocol and highlight two sets of issues here. See our <Link href='https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-05-18-2020.pdf'>comment letter</Link> for details and check out comments posted by other groups at the [protocol website](https://www.climateactionreserve.org/how/protocols/soil-enrichment/).
 
 ### Conflict of interest
 
@@ -90,7 +90,7 @@ Meanwhile, any efforts built around carbon offset credits should be transparent,
 
 <Endnote label='Update — Aug 25 2020' divider>
 
-After reviewing an updated version of the draft protocol, we submitted a second <Link href='https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf' tracking>comment letter</Link> on remaining concerns and additional issues.
+After reviewing an updated version of the draft protocol, we submitted a second <Link href='https://carbonplan-assets.s3.amazonaws.com/docs/Soil-Carbon-Comment-Letter-08-25-2020.pdf'>comment letter</Link> on remaining concerns and additional issues.
 
 </Endnote>
 

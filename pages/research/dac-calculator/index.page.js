@@ -25,7 +25,6 @@ const Index = () => {
         href={
           'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/full'
         }
-        tracking
       >
         paper
       </Link>{' '}
