@@ -17,7 +17,7 @@ const Methods = () => {
       </Text>
       <Box as='p' variant='styles.p'>
         This calculator computes the{' '}
-        <Link href='https://cdrprimer.org/read/chapter-4#sec-4-3' tracking>
+        <Link href='https://cdrprimer.org/read/chapter-4#sec-4-3'>
           net removed cost
         </Link>{' '}
         ($/tCO₂eq) of carbon removal for a hypothetical DAC facility coupled to
@@ -45,16 +45,12 @@ const Methods = () => {
       </Box>
       <Box as='p' variant='styles.p'>
         The entire model is implemented natively in JavaScript and{' '}
-        <Link
-          tracking
-          href='https://github.com/carbonplan/research/tree/main/tools/dac-calculator'
-        >
+        <Link href='https://github.com/carbonplan/research/tree/main/tools/dac-calculator'>
           available on Github
         </Link>
         , and a Python version is under development. The model is based directly
         on a{' '}
         <Link
-          tracking
           href={
             'https://www.frontiersin.org/articles/10.3389/fclim.2020.618644/full'
           }

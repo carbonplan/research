@@ -83,7 +83,6 @@ const Publication = ({ info, first }) => {
           }}
           tabIndex='-1'
           href={href}
-          tracking
         >
           {title}
         </Link>
@@ -91,12 +90,7 @@ const Publication = ({ info, first }) => {
       <Box sx={{ fontSize: [2, 2, 2, 3] }}>{summary}</Box>
 
       {links && (
-        <LinkGroup
-          inverted
-          tracking
-          members={links}
-          sx={{ mt: '14px', mb: '2px' }}
-        />
+        <LinkGroup inverted members={links} sx={{ mt: '14px', mb: '2px' }} />
       )}
     </Box>
   )

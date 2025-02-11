@@ -46,7 +46,6 @@ const Highlight = ({
       >
         <Button
           href={href || `/research/${id}`}
-          tracking
           suffix={
             <RotatingArrow
               color={'primary'}
@@ -85,12 +84,7 @@ const Highlight = ({
         }}
       >
         <Box sx={{ mb: [-1] }}>
-          <LinkGroup
-            inverted
-            tracking
-            members={links}
-            sx={{ mt: '14px', mb: '2px' }}
-          />
+          <LinkGroup inverted members={links} sx={{ mt: '14px', mb: '2px' }} />
         </Box>
       </Box>
       <Row columns={6} sx={{ mt: [4, 5, 5, 6] }}>
