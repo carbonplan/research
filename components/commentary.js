@@ -180,7 +180,7 @@ const Commentary = ({ items, commentaryExpander, commentsExpander }) => {
           .filter((d) => index < 2 || d.type === 'commentary')
           .map((d, i) => (
             <Item
-              key={d.title}
+              key={d.title + d.date}
               info={d}
               start={[1, 2, 1, 1]}
               first={i === 0}
@@ -207,7 +207,7 @@ const Commentary = ({ items, commentaryExpander, commentsExpander }) => {
           {items
             .filter((d) => d.type === 'letter')
             .map((d) => (
-              <Letter key={d.title} info={d} start={[1, 2, 1, 1]} />
+              <Letter key={d.title + d.date} info={d} start={[1, 2, 1, 1]} />
             ))}
 
           {commentsExpander}
