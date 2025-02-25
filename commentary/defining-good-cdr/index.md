@@ -155,7 +155,7 @@ Freya wrote the first draft of the article with input from Zeke. Kata and Freya 
 
 Please cite this web article as:
 
-Chay et al. (2025) ““What is CDR?” is the wrong question” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/good-cdr-commentary](https://carbonplan.org/research/good-cdr-commentary)</span>
+Chay et al. (2025) ““What is CDR?” is the wrong question” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/defining-good-cdr](https://carbonplan.org/research/defining-good-cdr)</span>
 
 </Endnote>
 
