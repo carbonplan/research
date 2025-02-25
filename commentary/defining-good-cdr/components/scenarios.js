@@ -75,7 +75,8 @@ const sx = {
   era: {
     textAlign: 'left',
     color: 'primary',
-    ml: 2,
+    mt: [1, 1, 2, 2],
+    ml: [2, 2, 3, 3],
     fontFamily: 'mono',
     letterSpacing: 'mono',
     textTransform: 'uppercase',
@@ -84,7 +85,8 @@ const sx = {
   description: {
     textAlign: 'left',
     color: 'primary',
-    mx: 2,
+    ml: [2, 2, 3, 3],
+    mr: 2,
     fontFamily: 'faux',
     letterSpacing: 'faux',
     fontSize: [1, 1, 1, 2],
