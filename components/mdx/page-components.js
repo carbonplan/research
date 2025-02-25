@@ -570,6 +570,18 @@ const components = {
       )
     ),
   },
+  'defining-good-cdr': {
+    Activities: dynamic(() =>
+      import(
+        '../../commentary/defining-good-cdr/components/activities.js'
+      ).then((mod) => mod.Activities || mod.default)
+    ),
+    Scenarios: dynamic(() =>
+      import('../../commentary/defining-good-cdr/components/scenarios.js').then(
+        (mod) => mod.Scenarios || mod.default
+      )
+    ),
+  },
   'icvcm-landfill-additionality': {
     AnnotatedProject: dynamic(() =>
       import(
