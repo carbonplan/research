@@ -601,6 +601,9 @@ const components = {
         '../../commentary/ethanol-cdr-claims/components/schematics.js'
       ).then((mod) => mod.Schematics || mod.default)
     ),
+    Divider: dynamic(() =>
+      import('theme-ui').then((mod) => mod.Divider || mod.default)
+    ),
   },
   'forest-offsets-alaska': {},
   'ton-year-quebec': {
