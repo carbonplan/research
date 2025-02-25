@@ -10,6 +10,8 @@ color: yellow
 components:
   - name: Schematics
     src: ./components/schematics.js
+  - name: Divider
+    src: theme-ui
 ---
 
 The voluntary carbon market is lurching toward buying and selling credits from corn ethanol carbon capture and storage (CCS) projects. As recent indications, [NextGen CDR](https://www.nextgencdr.com/) and an [ethanol CCS project](https://summitcarbonsolutions.com/) in the midwest made a [$30 million purchase agreement](https://www.bloomberg.com/news/articles/2023-04-26/carbon-credit-deal-targets-us-pipeline-to-remove-corn-based-ethanol-emissions), and the offset registries [Gold Standard](https://www.goldstandard.org/our-work/innovations-consultations/methodology-biomass-fermentation-carbon-capture-and-geologic) and [Verra](https://verra.org/methodologies/methodology-for-carbon-capture-and-storage/) have released draft methodologies under which such projects could be credited.
@@ -133,3 +135,9 @@ This work was supported by a grant from the Patrick J. McGovern Foundation. No o
 Article text and figures made available under a [CC BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
 
 </Endnote>
+
+<Divider sx={{ mt: [6, 6, 7, 7], '@media print': { display: 'none' } }} />
+
+## Update — Feb 25, 2025
+
+Since publishing this commentary, our thinking on defining carbon removal has evolved. We are still concerned that ethanol CCS projects don’t help build capacity for the unique future roles that justify investment in carbon removal. However, we no longer think that simply expanding the system boundary — as we do in the piece above — constitutes a reliable test for what kinds of projects do or do not merit CDR investment. Read more about our updated perspective in a [new commentary](/research/defining-good-cdr) which summarizes the ongoing debate around what “counts” as CDR, highlights the trade-offs of proposed definitions, and presents an alternative set of questions that we think provide a more meaningful guide to identifying effective CDR projects.
