@@ -1,11 +1,11 @@
 ---
 version: 1.0.0
-title: Do we need independent review of CDR protocols?
+title: Stakeholder views on independent CDR protocol review
 authors:
   - Freya Chay
   - Evan Sherwin
   - Sarah Baker
-date: 1-24-2025
+date: 3-3-2025
 color: pink
 summary: We conducted a stakeholder survey showing broad agreement that independent review of CDR protocols is needed. However, there appear to be diverse views on the desired scope and function of such a review.
 quickLook: Stakeholder survey illustrates desire for independent protocol review.
@@ -274,7 +274,7 @@ Freya designed the survey with input from Evan and Sarah. Freya wrote the first 
 
 Please cite this web article as:
 
-Chay et al. (2025) “Do we need independent review of CDR protocols?" CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/protocol-review-survey](https://carbonplan.org/research/protocol-review-survey)</span>
+Chay et al. (2025) “Stakeholder views on independent CDR protocol review" CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/protocol-review-survey](https://carbonplan.org/research/protocol-review-survey)</span>
 
 </Endnote>
 
