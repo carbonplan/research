@@ -29,7 +29,6 @@ const Inner = ({ summary, links, sx }) => (
             members={links}
             size='xs'
             inverted
-            tracking
             sx={{
               mt: '14px',
               mb: '2px',
@@ -100,7 +99,6 @@ const Article = ({ info, first }) => {
               }}
               tabIndex='-1'
               href={href}
-              tracking
               onMouseOver={() => setHovered(true)}
               onMouseOut={() => setHovered(false)}
             >
@@ -120,7 +118,7 @@ const Article = ({ info, first }) => {
           width={2}
           sx={{ textAlign: 'right', mt: [-5, 0] }}
         >
-          <Link tabIndex='-1' href={href} tracking>
+          <Link tabIndex='-1' href={href}>
             <Icon icon={icon} color={color} hovered={hovered} />
           </Link>
         </Column>

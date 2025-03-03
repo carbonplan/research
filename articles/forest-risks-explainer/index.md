@@ -148,7 +148,7 @@ Our approach has a number of important limitations. First, these projections do 
 
 The underlying observational disturbance datasets are also a limiting factor, especially for insect and drought models, where we conservatively predict static risks for forest types where we could not establish robust historical models. The drought and insect projections may additionally underestimate risk because they do not account for non-linear impacts or novel pests and pathogens.
 
-A more detailed description of our approach is available in the Methods and Datasets section of our [publication](https://doi.org/10.1111/ele.14018). All of our results are publicly available in [a Zenoodo archive](https://doi.org/10.5281/zenodo.4741333) or on Microsoft Azure (see our [dataset documentation](https://github.com/carbonplan/forest-risks#data-products)). We conducted the entire project under version control with the code freely accessible on GitHub to reproduce the [results](https://github.com/carbonplan/forest-risks) and [web map](https://github.com/carbonplan/forest-risks-web).
+A more detailed description of our approach is available in the Methods and Datasets section of our [publication](https://doi.org/10.1111/ele.14018). All of our results are publicly available in [a Zenodo archive](https://doi.org/10.5281/zenodo.4741333) or on Microsoft Azure (see our [dataset documentation](https://github.com/carbonplan/forest-risks#data-products)). We conducted the entire project under version control with the code freely accessible on GitHub to reproduce the [results](https://github.com/carbonplan/forest-risks) and [web map](https://github.com/carbonplan/forest-risks-web).
 
 </Endnote>
 
