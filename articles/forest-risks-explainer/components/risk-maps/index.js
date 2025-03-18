@@ -31,8 +31,8 @@ const RiskMaps = () => {
   }, [])
 
   useEffect(() => {
-    const prefix = 'https://carbonplan.blob.core.windows.net/'
-    const path = prefix + 'carbonplan-forests/risks/results/web/'
+    const prefix = 'https://carbonplan-forests.s3.us-west-2.amazonaws.com/'
+    const path = prefix + 'risks/results/web/'
     json(path + 'fire.geojson').then((d) => {
       setFire(d.features)
     })
