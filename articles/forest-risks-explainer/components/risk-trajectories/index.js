@@ -68,9 +68,8 @@ const RiskTrajectories = () => {
   }, [])
 
   useEffect(() => {
-    const prefix = 'https://carbonplan.blob.core.windows.net/'
-    const url =
-      prefix + 'carbonplan-forests/risks/results/web/time-series-hybrid.json'
+    const prefix = 'https://carbonplan-forests.s3.us-west-2.amazonaws.com/'
+    const url = prefix + 'risks/results/web/time-series-hybrid.json'
     json(url).then((d) => {
       setData(d)
     })
