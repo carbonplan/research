@@ -95,7 +95,7 @@ const fetchData = () => {
     REGIONS.map((region) => [
       new Promise((resolve) =>
         zarr().loadGroup(
-          `https://cmip6downscaling.blob.core.windows.net/vis/article/fig1/regions/${region}/downscaled-tasmax.zarr`,
+          `https://carbonplan-cmip6.s3.us-west-2.amazonaws.com/vis/article/fig1/regions/${region}/downscaled-tasmax.zarr`,
           (error, { tasmax, lat, lon }) => {
             const bounds = {
               lat: [
@@ -119,7 +119,7 @@ const fetchData = () => {
       ),
       new Promise((resolve) =>
         zarr().loadGroup(
-          `https://cmip6downscaling.blob.core.windows.net/vis/article/fig1/regions/${region}/gcm-tasmax.zarr`,
+          `https://carbonplan-cmip6.s3.us-west-2.amazonaws.com/vis/article/fig1/regions/${region}/gcm-tasmax.zarr`,
           (error, { tasmax, lat, lon }) => {
             const bounds = {
               lat: [
