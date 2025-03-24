@@ -56,7 +56,7 @@
     "gray-matter": "^4.0.3",
     "mapbox-gl": "^1.13.1",
     "ndarray-concat-cols": "^1.0.0",
-    "next": "^14.2.22",
+    "next": "^14.2.25",
     "next-mdx-remote": "^4.1.0",
     "react": "^18.2.0",
     "react-animate-height": "^2.0.23",
@@ -72,7 +72,7 @@
     "@carbonplan/prettier": "^1.2.0",
     "babel-jest": "^27.4.6",
     "glob": "^7.1.7",
-    "eslint-config-next": "^14.2.22",
+    "eslint-config-next": "^14.2.25",
     "jest": "^27.4.7",
     "prettier": "2.3.0",
     "puppeteer": "^10.4.0"
