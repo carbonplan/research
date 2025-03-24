@@ -45,9 +45,7 @@ Many different metrics capture how we experience the combined effects of tempera
 
 While the units of WBGT are familiar (degrees Celsius or Fahrenheit), the scale may not be, with even moderately high values still posing substantial risk. The [Occupational Safety and Health Administration](https://www.osha.gov/heat-exposure/hazards) (OSHA), for example, says that strenuous work at a WBGT of 25&nbsp;ºC (77&nbsp;ºF) or higher poses a risk of heat-related illness. When WBGT is over 32&nbsp;ºC (89.6&nbsp;ºF) a short period of outdoor work, even by a healthy individual, risks illness or death.<Sidenote>In 2021 President Biden [instructed OSHA](https://www.whitehouse.gov/briefing-room/statements-releases/2021/09/20/fact-sheet-biden-administration-mobilizes-to-protect-workers-and-communities-from-extreme-heat) to draft an extreme heat standard, but it is [taking years to develop](https://www.washingtonpost.com/business/2023/07/14/heat-workers-osha-protections/).</Sidenote> The calculator below (Figure 1) can help build intuition for how different variables together determine WBGT. Use it to confirm, for example, that with low humidity (10%), light wind (1&nbsp;m/s), and moderate radiation (500&nbsp;W/m²), a WBGT of 32&nbsp;ºC (89.6&nbsp;ºF) requires a blazingly hot temperature of 45&nbsp;ºC (113&nbsp;ºF). Despite the unintuitive scale, WBGT accounts for more physical variables than alternatives like the [heat index](https://www.weather.gov/ama/heatindex) or [Humidex](https://www.ccohs.ca/oshanswers/phys_agents/humidex.html), and therefore provides a more detailed window into the risks of heat stress.<Sidenote> There is much discussion in the public health literature about the [relative importance](https://ehp.niehs.nih.gov/doi/10.1289/EHP11807) of humidity in determining health outcomes. We hope that our research can help support that work.</Sidenote>
 
-<Figure>
-  <HeatCalculator />
-</Figure>
+<HeatCalculator />
 
 Measuring WBGT directly requires [specialized instrumentation](https://en.wikipedia.org/wiki/Wet-bulb_globe_temperature#/media/File:Bio-environmental_prepares_for_summer_110411-F-BQ904-001.jpg), but approximations to WBGT can be derived from meteorological or climate model data.<Cite id='liljegren.2008'/> The most complete, physically realistic calculations require data with high temporal resolution — ideally hourly or at least sub-daily — for several climate variables.<Cite ids={['lemke.2012','kong.2022']}/> Various approximations are possible, as we’ll discuss more below, and their efficacy has been systematically compared.<Cite id='kong.2022' hide/>
 
@@ -69,9 +67,7 @@ Climate models on their own do not account for the [“urban heat island” effe
 
 As a target for bias-correction, we used the UHE-Daily dataset.<Cite hide id='tuholske.2021'/> The UHE-Daily dataset includes city-level daily estimates of maximum WBGT in the shade, based on CHIRTS-Daily,<Cite id='funk.2019'/> a ~5 km gridded product which is a combination of reanalysis, station observations, and infrared satellite-based temperature.<Sidenote>Note that the UHE-Daily WBGT in the shade values were estimated via a formulation from Bernard and Iheanacho (2015) that calculates it from the heat index; while technically a different calculation, it essentially estimates the same quantity.</Sidenote> To perform the bias-correction, we used the quantile delta method<Cite id='cannon.2015'/> as implemented in the [xclim](https://xclim.readthedocs.io/en/stable/) package. Across all cities, the bias-correction was robust (see Extended Methods); Figure 2 shows data from four example cities with and without bias-correction.
 
-<Figure>
-  <BiasCorrection />
-</Figure>
+<BiasCorrection />
 
 ## Adjusting for the sun
 
@@ -81,9 +77,7 @@ Although we could not do a complete calculation of WBGT in the sun, we were able
 
 We obtained daily estimates of solar radiation and wind from the same downscaled climate data used in the rest of our analysis, and we used them as inputs into the linear model to produce a time- and space-varying adjustment. In practice, the adjustment ranged from +1.1 to +4.5&nbsp;ºC (+2.0 to +8.1&nbsp;ºF), depending on the location and the day.<Sidenote>Range reported as 1st to 99th percentile across locations and days of the adjustments made within the month of the year with the highest WBGT in the shade for each location.</Sidenote>
 
-<Figure>
-  <DaysOver />
-</Figure>
+<DaysOver />
 
 Our estimated values for WBGT in the sun are always higher, so for any given threshold temperature, more days a year will exceed that threshold when considering values in the sun compared to values in the shade. Using Figure 3, you can build intuition for the difference by exploring how changing the threshold influences the exceedances for both the shade and sun. It's particularly concerning when WBGT exceeds a dangerously high threshold even in the shade, because finding shade is often the first line of defense in escaping dangerous heat.
 
@@ -103,9 +97,7 @@ We applied the above analysis to projections from 26 global climate models (GCMs
 
 The map in Figure 4 shows the urban centers. One immediately clear, and worrisome, trend is that historically only South Asia and the Middle East experienced many days exceeding 32&nbsp;ºC (89.6&nbsp;ºF) in the sun, but by 2050 that level of heat will become even more frequent there, and increasingly commonplace elsewhere.
 
-<Figure>
-  <CityMap />
-</Figure>
+<CityMap />
 
 We’ve made all the input and output datasets public, alongside documented open source code that implements the analysis. For convenience, we’ve made the results available in multiple formats with varying levels of summarization, including: full time series of WBGT in the shade and in the sun over historical and future periods for each GCM; medians across climate models; and summary tables showing, for each city, the number of days likely to exceed a range of different WBGT thresholds.<Sidenote>Our use of medians across an ensemble of climate models makes our results more robust to the
 “[hot model problem](https://www.nature.com/articles/d41586-022-01192-2)”</Sidenote> See our [GitHub](https://github.com/carbonplan/extreme-heat) repository for links to all datasets and documented code.

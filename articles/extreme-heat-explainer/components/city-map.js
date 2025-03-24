@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Box, Flex, useThemeUI } from 'theme-ui'
 import { Minimap, Path, Sphere, Points, Graticule } from '@carbonplan/minimaps'
 import { naturalEarth1 } from '@carbonplan/minimaps/projections'
-import { Filter, Colorbar, FigureCaption } from '@carbonplan/components'
+import { Filter, Colorbar, FigureCaption, Figure } from '@carbonplan/components'
 import { useThemedColormap } from '@carbonplan/colormaps'
 
 import UnitConverter from './unit-converter'
@@ -53,7 +53,7 @@ const CityMap = () => {
   const { theme } = useThemeUI()
 
   return (
-    <>
+    <Figure>
       <Box sx={{ mb: [3, 3, 3, 4] }}>
         <Box sx={{ pb: [6, 6, 6, 7] }}>
           <Flex sx={{ justifyContent: 'space-between', mb: [4, 4, 4, 5] }}>
@@ -180,7 +180,7 @@ const CityMap = () => {
         the “typical” heat in any given location. Results are medians across the
         ensemble of GCMs. <UnitConverter units={units} setUnits={setUnits} />
       </FigureCaption>
-    </>
+    </Figure>
   )
 }
 
