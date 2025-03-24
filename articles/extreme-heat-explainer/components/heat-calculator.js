@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react'
 import { Box } from 'theme-ui'
-import { Row, Column, Slider, FigureCaption } from '@carbonplan/components'
+import {
+  Row,
+  Column,
+  Slider,
+  FigureCaption,
+  Figure,
+} from '@carbonplan/components'
 import { format } from 'd3-format'
 
 import convert from './convert-units'
@@ -127,7 +133,7 @@ const HeatCalculator = () => {
   }, [temperature, humidity, radiation, wind])
 
   return (
-    <>
+    <Figure>
       <Box sx={{ mb: [4, 4, 4, 5] }}>
         <Row columns={6}>
           <Column start={[1, 1]} width={[2, 2]}>
@@ -230,7 +236,7 @@ const HeatCalculator = () => {
         estimate assumes a fixed wind speed of 0.5 m/s and ignores radiation, so
         changing those parameters doesn’t affect that value.
       </FigureCaption>
-    </>
+    </Figure>
   )
 }
 

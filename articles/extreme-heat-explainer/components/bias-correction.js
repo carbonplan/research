@@ -11,7 +11,7 @@ import {
   Label,
   Grid,
 } from '@carbonplan/charts'
-import { Filter, FigureCaption, Colors } from '@carbonplan/components'
+import { Filter, FigureCaption, Colors, Figure } from '@carbonplan/components'
 
 import convert from './convert-units'
 import UnitConverter from './unit-converter'
@@ -81,7 +81,7 @@ const BiasCorrection = () => {
   }, [])
 
   return (
-    <>
+    <Figure>
       <Box sx={{ mb: [4, 4, 4, 5] }}>
         <Flex sx={{ justifyContent: 'space-between' }}>
           <Filter
@@ -329,7 +329,7 @@ const BiasCorrection = () => {
         , from a single example GCM (ACCESS-CM2). The gray reference line shows
         data from UHE-Daily. <UnitConverter units={units} setUnits={setUnits} />
       </FigureCaption>
-    </>
+    </Figure>
   )
 }
 

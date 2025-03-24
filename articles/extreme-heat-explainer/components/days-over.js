@@ -11,7 +11,13 @@ import {
   Label,
   Grid,
 } from '@carbonplan/charts'
-import { Slider, Filter, FigureCaption, Colors } from '@carbonplan/components'
+import {
+  Slider,
+  Filter,
+  FigureCaption,
+  Colors,
+  Figure,
+} from '@carbonplan/components'
 import { format } from 'd3-format'
 
 import convert from './convert-units.js'
@@ -197,7 +203,7 @@ const DaysOver = () => {
   }, [data, city, scenario, threshold])
 
   return (
-    <>
+    <Figure>
       <Box sx={{ mb: [4, 4, 4, 5] }}>
         <Flex sx={{ justifyContent: 'space-between' }}>
           <Filter
@@ -461,7 +467,7 @@ const DaysOver = () => {
         of days exceeding the specified threshold, averaged across years.{' '}
         <UnitConverter units={units} setUnits={setUnits} />
       </FigureCaption>
-    </>
+    </Figure>
   )
 }
 
