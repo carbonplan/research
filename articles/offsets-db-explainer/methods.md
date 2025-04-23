@@ -35,6 +35,14 @@ We update OffsetsDB on a daily basis, pulling in all available registry data.
 
 If you have any questions, suggestions, or see something that needs fixing, please send us an email at [hello@carbonplan.org](mailto:hello@carbonplan.org) or [open an issue on GitHub](https://github.com/carbonplan/offsets-db-data/issues).
 
+## Update — Apr 23 2025
+
+We expanded OffsetsDB to include project types and standardized information about the users retiring offset credits. Project types represent further subdivisions of the project categories described above. For example, you can now divide projects within the Forest category into separate groups, like afforestation and improved forest management. Project types in OffsetsDB derive from the [open source](https://creativecommons.org/licenses/by/4.0/) project type data produced by the [Berkeley Carbon Trading Project](https://gspp.berkeley.edu/research-and-impact/centers/cepp/projects/berkeley-carbon-trading-project).
+
+We used retirement beneficiary data — such as retirement accounts and notes accompanying individual retirement transactions — to identify the “retirement user” associated with retirement transactions.
+
+You can read more about these updates in an accompanying [blog post](https://carbonplan.org/blog/offsets-db-additions) and in the official [OffsetsDB documentation](https://offsets-db-data.readthedocs.io/en/latest/).
+
 ## Terms
 
 Associated [analysis package](https://github.com/carbonplan/offsets-db-data) and [web tool](https://github.com/carbonplan/offsets-db-web) made available under an [MIT license](https://github.com/carbonplan/offsets-db-web/blob/main/LICENSE). Data associated with OffsetsDB is subject to additional [terms of data access](https://offsets-db-data.readthedocs.io/en/latest/TERMS-OF-DATA-ACCESS.html).
