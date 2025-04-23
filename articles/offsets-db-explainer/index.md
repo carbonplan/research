@@ -19,6 +19,8 @@ links:
     href: /research/offsets-db-methods
   - label: Download data
     href: https://offsets-db-data.readthedocs.io/en/latest/data-access.html
+  - label: Update blog post
+    href: /blog/offsets-db-additions
 components:
   - name: Diagram
     src: ./components/diagram.js
