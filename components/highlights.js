@@ -4,6 +4,24 @@ import Highlight from './highlight'
 
 const HIGHLIGHTS = [
   {
+    id: 'offsets-db',
+    date: '04-23-2025',
+    href: '/research/offsets-db',
+    title: 'OffsetsDB',
+    summary:
+      'We’ve expanded our database of offset data with searchable project types and details about who is using offset credits.',
+    links: [
+      {
+        label: 'Database tool',
+        href: '/research/offsets-db',
+      },
+      {
+        label: 'Update blog post',
+        href: 'https://carbonplan.org/blog/offsets-db-additions',
+      },
+    ],
+  },
+  {
     id: 'oae-efficiency',
     date: '10-15-2024',
     href: '/research/oae-efficiency',
@@ -26,28 +44,6 @@ const HIGHLIGHTS = [
       {
         label: 'Dataset',
         href: 'https://beta.source.coop/repositories/cworthy/oae-efficiency-atlas/description/',
-      },
-    ],
-  },
-  {
-    id: 'climate-risk-comparison',
-    date: '08-09-2024',
-    href: '/research/climate-risk-comparison',
-    title: 'Climate risk companies don’t always agree',
-    summary:
-      'Climate analytics companies agree that climate change is increasing risks, but analysis shows that at the level of individual addresses their estimates differ.',
-    links: [
-      {
-        label: 'Explainer article',
-        href: '/research/climate-risk-comparison',
-      },
-      {
-        label: 'Press coverage #1',
-        href: 'https://www.bloomberg.com/news/articles/2024-08-09/clashing-risk-predictions-cast-doubt-on-black-box-climate-models?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTI5MiwiZXhwIjoxNzIzODI0MDkyLCJhcnRpY2xlSWQiOiJTSFlLR0JEV1gyUFMwMCIsImJjb25uZWN0SWQiOiJGMkY1NTFERTc4ODA0RkJBOTk5NEFBMTQ5RTM1NjQ3RCJ9.EbJ-4RSfCLQYocKlLXB1r7Qbo_KKYYNHtobrtIELL_g',
-      },
-      {
-        label: 'Press coverage #2',
-        href: 'https://www.bloomberg.com/graphics/2024-flood-fire-climate-risk-analytics/?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTgwOCwiZXhwIjoxNzIzODI0NjA4LCJhcnRpY2xlSWQiOiJTSFlLR0VEV1gyUFMwMCIsImJjb25uZWN0SWQiOiI5RjJFMEMxNDRGQkY0Q0M1OUJCRDA3MzQ0QkI2RUZDNCJ9.v2mR0nS7tJbnNJ23UVEKn98Ev917FWYgcoWm7TttUJ4',
       },
     ],
   },
