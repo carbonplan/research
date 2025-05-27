@@ -265,7 +265,7 @@ Thanks to Lydia Kapsenberg of [CEA Consulting](https://www.ceaconsulting.com/) f
 
 <Endnote label='Credits' divider>
 
-Matt, Mengyang, and Mike designed the numerical experiments. Mengyang performed the model simulations to generate the underlying data. Alicia conceived the idea to serve these data as a community dataset. Tom generated the dataset underlying the online tool and some of the explainer figures. Matt, Alicia, Freya, Kata, and Shane designed the figures; Kata and Shane produced the figures. Elizabeth and Tom produced the IRF convolution example. Matt and Freya wrote the article. All authors contributed to revising the text. Header image (modified) by [Koen Emmers](https://unsplash.com/photos/water-drop-on-body-of-water-Da1Wv-XC43k) on [Unsplash](https://unsplash.com/).
+Matt, Mengyang, and Mike designed the numerical experiments. Mengyang performed the model simulations to generate the underlying data. Alicia conceived the idea to serve these data as a community dataset. Tom generated the dataset underlying the online tool and some of the explainer figures. Matt, Alicia, Freya, Kata, and Shane designed the figures; Kata and Shane produced the figures. Elizabeth and Tom produced the IRF convolution example. Matt and Freya wrote the article. All authors contributed to revising the text. Header image (modified) by [Koen Emmers](https://unsplash.com/photos/water-drop-on-body-of-water-Da1Wv-XC43k) on [Unsplash](https://unsplash.com/). This research used resources of the National Energy Research Scientific Computing Center (NERSC), a Department of Energy Office of Science User Facility using NERSC award ALCC-ERCAP0034226.
 
 Please cite as:
 
