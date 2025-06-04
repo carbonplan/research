@@ -26,6 +26,8 @@ links:
     href: /research/dor-efficiency
   - label: Dataset
     href: https://beta.source.coop/repositories/cworthy/dor-efficiency-atlas/description/
+  - label: Comparison with OAE tool
+    href: /research/mcdr-tools-about
 ---
 
 In the field of carbon dioxide removal (CDR), there is growing interest in [open system](https://carbontosea.org/2025/03/06/open-system-cdr-and-mrv/) approaches that harness natural processes to remove carbon from the atmosphere. These approaches are compelling because they could be highly scalable. But because they interact with dynamic natural systems, understanding their impact usually requires models to track carbon flows over space and time.

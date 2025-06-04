@@ -20,12 +20,12 @@ const HIGHLIGHTS = [
         href: '/research/dor-efficiency-explainer',
       },
       {
-        label: 'Comparison with OAE',
-        href: '/research/mcdr-tools-about',
-      },
-      {
         label: 'Dataset',
         href: 'https://source.coop/repositories/cworthy/dor-efficiency-atlas/description/',
+      },
+      {
+        label: 'Comparison with OAE tool',
+        href: '/research/mcdr-tools-about',
       },
     ],
   },
