@@ -3,6 +3,18 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'dor-efficiency-explainer': {
+    TimeSeries: dynamic(() =>
+      import(
+        '../../articles/dor-efficiency-explainer/components/time-series.js'
+      ).then((mod) => mod.TimeSeries || mod.default)
+    ),
+    MapCompare: dynamic(() =>
+      import(
+        '../../articles/dor-efficiency-explainer/components/map-compare.js'
+      ).then((mod) => mod.MapCompare || mod.default)
+    ),
+  },
   'protocol-review-survey': {
     OrganizationsTable: dynamic(() =>
       import(

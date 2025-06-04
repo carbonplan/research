@@ -14,9 +14,17 @@ import {
   EWQuantification,
   OffsetsDB,
   OAEEfficiency,
+  DOREfficiency,
 } from '../components/tool-logos'
 
 const tools = [
+  {
+    id: 'dor-efficiency',
+    logo: <DOREfficiency />,
+    color: 'secondary',
+    summary: 'Mapping the efficiency of direct ocean removal.',
+    title: 'DOR Efficiency',
+  },
   {
     id: 'oae-efficiency',
     logo: <OAEEfficiency />,

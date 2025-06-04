@@ -1,0 +1,34 @@
+{
+  "eisaman.2020": {
+    "authors": "M Eisaman",
+    "year": 2020,
+    "title": "Negative Emissions Technologies: The Tradeoffs of Air-Capture Economics",
+    "journal": "Future Energy",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.joule.2020.02.007"
+  },
+  "nas.2019": {
+    "authors": "National Academies of Sciences, Engineering, and Medicine",
+    "year": 2020,
+    "title": "Sequestration of Supercritical CO₂ in Deep Sedimentary Geological Formations",
+    "journal": "Negative Emissions Technologies and Reliable Sequestration",
+    "editors": "",
+    "url": "https://doi.org/10.17226/25259"
+  },
+  "dipple.2021": {
+    "authors": "G Dipple, P Kelemen, and C Woodall",
+    "year": 2021,
+    "title": "CO₂ mineralization",
+    "journal": "CDR Primer",
+    "editors": "J Wilcox, B Kolosz, J Freeman",
+    "url": "https://cdrprimer.org/read/chapter-2#sec-2-1"
+  },
+  "hovorka.2021": {
+    "authors": "S Hovorka and P Kelemen",
+    "year": 2021,
+    "title": "Geological sequestration",
+    "journal": "CDR Primer",
+    "editors": "J Wilcox, B Kolosz, J Freeman",
+    "url": "https://cdrprimer.org/read/chapter-2#sec-2-9"
+  }
+}

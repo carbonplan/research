@@ -4,6 +4,32 @@ import Highlight from './highlight'
 
 const HIGHLIGHTS = [
   {
+    id: 'dor-efficiency',
+    date: '06-04-2025',
+    href: '/research/dor-efficiency',
+    title: 'Mapping the efficiency of direct ocean removal',
+    summary:
+      'We developed a tool to explore a new dataset that makes it easier to see how the efficiency of direct ocean removal varies around the world.',
+    links: [
+      {
+        label: 'Map tool',
+        href: '/research/dor-efficiency',
+      },
+      {
+        label: 'Explainer article',
+        href: '/research/dor-efficiency-explainer',
+      },
+      {
+        label: 'Dataset',
+        href: 'https://source.coop/repositories/cworthy/dor-efficiency-atlas/description/',
+      },
+      {
+        label: 'Comparison with OAE tool',
+        href: '/research/mcdr-tools-about',
+      },
+    ],
+  },
+  {
     id: 'offsets-db',
     date: '04-23-2025',
     href: '/research/offsets-db',
@@ -18,32 +44,6 @@ const HIGHLIGHTS = [
       {
         label: 'Update blog post',
         href: 'https://carbonplan.org/blog/offsets-db-additions',
-      },
-    ],
-  },
-  {
-    id: 'oae-efficiency',
-    date: '10-15-2024',
-    href: '/research/oae-efficiency',
-    title: 'Mapping the efficiency of ocean alkalinity enhancement',
-    summary:
-      'We developed a tool to explore a new dataset that makes it easier to see how the efficiency of ocean alkalinity enhancement varies around the world, in collaboration with [C]Worthy.',
-    links: [
-      {
-        label: 'Map tool',
-        href: '/research/oae-efficiency',
-      },
-      {
-        label: 'Explainer article',
-        href: '/research/oae-efficiency-explainer',
-      },
-      {
-        label: 'Scientific paper',
-        href: 'https://www.nature.com/articles/s41558-024-02179-9.epdf?sharing_token=LgDF4VdJvkifRzIuQy5nT9RgN0jAjWel9jnR3ZoTv0ML06qtsGAXcI3ncw2VKMdvNBF8yc3ykUNvQP2YZSZZg3VEb8eJNbnayufBxkZ0cVTHRB4myOJv4osBgWv1OPyMNfRCLYPLT3MancsjfEhCqWMLGD_VUA_LXbALrR9640c%3D',
-      },
-      {
-        label: 'Dataset',
-        href: 'https://beta.source.coop/repositories/cworthy/oae-efficiency-atlas/description/',
       },
     ],
   },
