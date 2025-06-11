@@ -167,7 +167,7 @@ const MONTH_LABELS = {
 const EfficienciesMap = () => {
   const { theme } = useThemeUI()
   const [injectionMonth, setInjectionMonth] = useState(0)
-  const [storageLoss, setStorageLoss] = useState(25)
+  const [storageLoss, setStorageLoss] = useState(0)
   const time = 179
   const baseColormap = useThemedColormap('cool')
   const negativeColorMapShort = [
