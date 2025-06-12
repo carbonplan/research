@@ -121,7 +121,7 @@ Together, these new data and the interactive map provide a foundation for assess
 
 As interest in ocean-based carbon removal grows, improving our understanding of these dynamics is critical for designing effective interventions. We hope these data can help inform efforts to guide responsible deployments, quantify DOR outcomes, and develop reliable standards.
 
-<Endnote label='Update — June 11 2025' divider>
+<Endnote label='Update — June 12 2025' divider>
 
 In response to helpful feedback after publication, we made updates to this article to clarify potentially misleading statements.
 
