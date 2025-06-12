@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import { Box, Flex, get, useThemeUI } from 'theme-ui'
-import { Filter, Row, Column } from '@carbonplan/components'
+import { Filter } from '@carbonplan/components'
 import { useSpring, animated } from '@react-spring/web'
 import {
   Chart,
@@ -42,7 +42,7 @@ const AnimatedChart = animated(Chart)
 const AnimatedBox = animated(Box)
 
 const TimeSeries = () => {
-  const [storageState, setStorageState] = useState('high')
+  const [storageState, setStorageState] = useState('leakage')
   const [efficiencyState, setEfficiencyState] = useState('high')
 
   const { theme } = useThemeUI()
@@ -57,10 +57,10 @@ const TimeSeries = () => {
     const rampStart = 0
     const rampEnd = 2
     let maxValue = 0.7
-    if (storageState === 'high') {
-      maxValue = 0.7
-    } else if (storageState === 'low') {
-      maxValue = 0.2
+    if (storageState === 'utilization') {
+      maxValue = 1
+    } else if (storageState === 'leakage') {
+      maxValue = 0.1
     } else if (storageState === 'none') {
       maxValue = 0
     }
@@ -104,111 +104,109 @@ const TimeSeries = () => {
 
   return (
     <>
-      <Row columns={[6]} sx={{ mb: 3 }}>
-        <Column start={[1]} width={[3, 2, 2, 2]}>
-          <Box>
-            <Box sx={{ ...sx.filterLabel, pr: 37 }}>Ocean Reuptake</Box>
-            <Flex
-              sx={{
-                alignItems: 'baseline',
-                gap: 2,
-                mt: 2,
+      <Flex
+        sx={{
+          justifyContent: 'space-between',
+          rowGap: 3,
+          columnGap: 5,
+          flexWrap: 'wrap',
+          mb: 5,
+        }}
+      >
+        <Box>
+          <Box sx={{ ...sx.filterLabel }}>Ocean Reuptake</Box>
+          <Flex
+            sx={{
+              alignItems: 'baseline',
+              mt: 2,
+            }}
+          >
+            <Filter
+              values={{
+                high: efficiencyState === 'high',
+                low: efficiencyState === 'low',
               }}
-            >
-              <Filter
-                sx={{ mb: 3 }}
-                values={{
-                  high: efficiencyState === 'high',
-                  low: efficiencyState === 'low',
-                }}
-                setValues={(newValues) => {
-                  if (newValues.high) setEfficiencyState('high')
-                  else if (newValues.low) setEfficiencyState('low')
-                }}
-              />
-            </Flex>
-          </Box>
-        </Column>
+              setValues={(newValues) => {
+                if (newValues.high) setEfficiencyState('high')
+                else if (newValues.low) setEfficiencyState('low')
+              }}
+            />
+          </Flex>
+        </Box>
+        <Box>
+          <Box sx={{ ...sx.filterLabel }}>Storage Loss</Box>
+          <Flex
+            sx={{
+              alignItems: 'baseline',
+              mt: 2,
+            }}
+          >
+            <Filter
+              values={{
+                none: storageState === 'none',
+                leakage: storageState === 'leakage',
+                utilization: storageState === 'utilization',
+              }}
+              setValues={(newValues) => {
+                if (newValues.utilization) setStorageState('utilization')
+                else if (newValues.leakage) setStorageState('leakage')
+                else if (newValues.none) setStorageState('none')
+              }}
+            />
+          </Flex>
+        </Box>
 
-        <Column start={[4, 3, 3, 3]} width={[3, 2, 2, 2]}>
-          <Box>
-            <Box sx={{ ...sx.filterLabel, pr: 60 }}>Storage Loss</Box>
-            <Flex
+        <Box>
+          <Box sx={sx.filterLabel}>Atmospheric Impact</Box>
+          <Flex
+            sx={{
+              alignItems: 'baseline',
+              gap: 2,
+            }}
+          >
+            <Box
               sx={{
-                alignItems: 'baseline',
-                gap: 2,
-                mt: 2,
+                fontFamily: 'mono',
+                fontSize: [4, 4, 4, 4],
               }}
             >
-              <Filter
-                values={{
-                  high: storageState === 'high',
-                  low: storageState === 'low',
-                  none: storageState === 'none',
-                }}
-                setValues={(newValues) => {
-                  if (newValues.high) setStorageState('high')
-                  else if (newValues.low) setStorageState('low')
-                  else if (newValues.none) setStorageState('none')
-                }}
-              />
-            </Flex>
-          </Box>
-        </Column>
-
-        <Column start={[1, 5, 5, 5]} width={[6, 2, 2, 2]}>
-          <Box>
-            <Box sx={sx.filterLabel}>Atmospheric Impact</Box>
-            <Flex
-              sx={{
-                alignItems: 'baseline',
-                gap: 2,
-              }}
-            >
-              <Box
-                sx={{
-                  fontFamily: 'mono',
-                  fontSize: [4, 4, 4, 4],
+              <AnimatedBox
+                as='span'
+                style={{
+                  color: atmosphereLabelY.to((val) =>
+                    val > 0
+                      ? get(theme, 'colors.red')
+                      : get(theme, 'colors.blue')
+                  ),
                 }}
               >
-                <AnimatedBox
-                  as='span'
-                  style={{
-                    color: atmosphereLabelY.to((val) =>
-                      val > 0
-                        ? get(theme, 'colors.red')
-                        : get(theme, 'colors.blue')
-                    ),
-                  }}
-                >
-                  {atmosphereLabelY.to((val) => Math.abs(val).toFixed(1))}
-                </AnimatedBox>
-                <AnimatedBox
-                  sx={{
-                    display: 'inline-block',
-                    ml: 2,
-                    fontFamily: 'mono',
-                    letterSpacing: 'mono',
-                    textTransform: 'uppercase',
-                    fontSize: [1, 1, 1, 2],
-                  }}
-                  style={{
-                    color: atmosphereLabelY.to((val) =>
-                      val > 0
-                        ? get(theme, 'colors.red')
-                        : get(theme, 'colors.blue')
-                    ),
-                  }}
-                >
-                  {atmosphereLabelY.to((val) =>
-                    val < 0 ? 'Removal' : 'Leakage'
-                  )}
-                </AnimatedBox>
-              </Box>
-            </Flex>
-          </Box>
-        </Column>
-      </Row>
+                {atmosphereLabelY.to((val) => Math.abs(val).toFixed(1))}
+              </AnimatedBox>
+              <AnimatedBox
+                sx={{
+                  display: 'inline-block',
+                  ml: 2,
+                  fontFamily: 'mono',
+                  letterSpacing: 'mono',
+                  textTransform: 'uppercase',
+                  fontSize: [1, 1, 1, 2],
+                }}
+                style={{
+                  color: atmosphereLabelY.to((val) =>
+                    val > 0
+                      ? get(theme, 'colors.red')
+                      : get(theme, 'colors.blue')
+                  ),
+                }}
+              >
+                {atmosphereLabelY.to((val) =>
+                  val < 0 ? 'Removal' : 'Emission'
+                )}
+              </AnimatedBox>
+            </Box>
+          </Flex>
+        </Box>
+      </Flex>
 
       <Box sx={{ width: '100%', height: '350px', position: 'relative' }}>
         <AnimatedChart x={domain} y={[-1, 1]}>
@@ -239,7 +237,7 @@ const TimeSeries = () => {
           </AxisLabel>
 
           <AxisLabel left align='right'>
-            Leakage
+            Emissions
           </AxisLabel>
 
           <AxisLabel left align='center' arrow={false} units='GtCO₂' />
@@ -275,21 +273,21 @@ const TimeSeries = () => {
             />
             <Line
               data={storageData}
-              color='secondary'
+              color='primary'
               width={2}
-              sx={{ ...lineStyle, strokeDasharray: '2,4' }}
+              sx={{ ...lineStyle, strokeDasharray: '4,8' }}
             />
             <Line
               data={atmosphereData}
               color={`url(#${gradientId})`}
-              width={2}
+              width={3}
               sx={lineStyle}
             />
             <Line
               data={efficiencyData}
-              color='secondary'
+              color='primary'
               width={2}
-              sx={{ ...lineStyle, strokeDasharray: '2,4' }}
+              sx={{ ...lineStyle, strokeDasharray: '4,8' }}
             />
           </Plot>
           <AnimatedLabel
@@ -298,7 +296,7 @@ const TimeSeries = () => {
             align='right'
             verticalAlign='bottom'
             height={1}
-            sx={{ color: 'secondary', mb: '3px' }}
+            sx={{ color: 'primary', my: '3px' }}
           >
             Storage Loss
           </AnimatedLabel>
@@ -311,9 +309,7 @@ const TimeSeries = () => {
             color={atmosphereLabelY.to((val) =>
               val > 0 ? get(theme, 'colors.red') : get(theme, 'colors.blue')
             )}
-            sx={{
-              my: '7px',
-            }}
+            sx={{ my: '7px', width: [80, 'auto'] }}
           >
             Atmospheric Impact
           </AnimatedLabel>
@@ -321,9 +317,9 @@ const TimeSeries = () => {
             x={timeScale}
             y={efficiencyLabelY}
             align='right'
-            verticalAlign={storageState === 'none' ? 'top' : 'bottom'}
+            verticalAlign={'top'}
             height={1}
-            sx={{ color: 'secondary', mb: '3px' }}
+            sx={{ color: 'primary', my: '3px' }}
           >
             Ocean Reuptake
           </AnimatedLabel>

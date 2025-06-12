@@ -46,7 +46,7 @@ At its technical core, direct ocean removal is a method of extracting CO₂ from
 
 DOR systems extract CO₂ from seawater by altering the water’s chemistry, temporarily reducing its capacity to hold carbon. While specific systems vary in their energy and material requirements, they generally rely on a common mechanism: acidifying the water (e.g., via electrochemical or photoacid processes) to shift carbonate chemistry and drive CO₂ outgassing. This produces a pure stream of CO₂ which can be stored or utilized, and a stream of CO₂-depleted seawater, which is returned to the ocean to absorb more CO₂ from the atmosphere. Both of these outputs must be tracked over time to understand the impact of DOR on atmospheric CO₂.
 
-A common misconception is that extracting CO₂ from seawater is inherently more efficient than removing it from the atmosphere. This assumption stems from the fact that CO₂ is more concentrated in seawater than in air. However, this overlooks key physical and energetic trade-offs. Because water is much denser than air, moving and processing seawater requires significantly more energy.<Cite id='eisaman.2020'/> As a result, the efficiency advantage of higher CO₂ concentrations in seawater can be offset by the additional energy costs of handling water. Moreover, removing CO₂ from the surface ocean does not automatically equate to removing it from the atmosphere. As discussed more below, the ultimate efficiency of DOR depends on the degree to which the resulting CO₂ deficit is replenished via air-sea gas exchange.
+A common misconception is that extracting CO₂ from seawater is inherently more efficient than removing it from the atmosphere. This assumption stems from the fact that CO₂ is more concentrated in seawater than in air. However, this overlooks key physical and energetic trade-offs. Because water is much denser than air, moving and processing seawater requires significantly more energy.<Cite id='eisaman.2020'/> That said, the actual energy requirements depend on specific design choices—such as pump head and whether the system leverages existing water movement. It’s also important to remember that removing CO₂ from the surface ocean does not automatically equate to removing it from the atmosphere. As discussed more below, the ultimate efficiency of DOR depends on the degree to which the resulting CO₂ deficit is replenished via air-sea gas exchange.
 
 ### 02 — Tracking the fate of the extracted CO₂
 
@@ -73,12 +73,15 @@ Assessing the ultimate impact of DOR on the atmosphere therefore requires tracki
 <Figure>
   <TimeSeries />
   <FigureCaption number={1}>
-    The atmospheric impact of direct ocean removal (DOR) depends on the ocean’s
-    reuptake of CO₂ from the atmosphere and the fate of the extracted CO₂ —
-    specifically, how much is stored versus lost back to the atmosphere. This
-    figure does not account for upstream emissions from the energy and materials
-    required to perform DOR, which would further reduce its net atmospheric
-    impact.
+    The atmospheric impact of direct ocean removal (DOR) depends on ocean’s
+    reuptake of CO₂ from the atmosphere, and the fate of the extracted CO₂. For
+    the storage loss term, “none” assumes that all of the extracted CO₂ is
+    successfully stored; “leakage” assumes a 10% loss from a dedicated storage
+    system (a significant failure); and “utilization” assumes 100% of the
+    extracted CO₂ is emitted to the atmosphere via a short-lived product.
+    Upstream emissions from the energy and materials needed to perform the DOR
+    intervention are not included in this figure — these would reduce the
+    atmospheric carbon removal.
   </FigureCaption>
 </Figure>
 
@@ -103,14 +106,14 @@ At a high level, global efficiency patterns are nearly identical for DOR and OAE
   <FigureCaption number={2}>
     Global patterns in DOR and OAE efficiency achieved over the 15-year modeling
     period. Patterns of CO₂ reuptake after DOR and OAE interventions closely
-    mirror each other. However, unlike OAE, DOR efficiency is also affected by
-    storage losses — that is, any release of extracted CO₂ into the atmosphere.
+    mirror each other. Unlike OAE, DOR efficiency is also affected by storage
+    losses — that is, any release of extracted CO₂ into the atmosphere.
   </FigureCaption>
 </Figure>
 
 Figure 2 also illustrates how the fate of the extracted CO₂ affects the overall efficiency of DOR. You can move the storage loss slider to change the fraction of extracted CO₂ that ends up emitted to the atmosphere. This slider only affects DOR, not OAE, and illustrates the potential impacts of unsuccessful storage, rapid CO₂ utilization, or cumulative leakage over the 15-year modeled period. This feature is also available in the new interactive tool.
 
-Note that directly comparing DOR and OAE efficiency required an additional analytical step that was not included in the original presentation of the OAE modeling results. There, OAE efficiency was defined as the amount of CO₂ removed per unit of alkalinity added. To compare across DOR and OAE, we needed to translate that concept of efficiency into a common metric: the amount of CO₂ removed per unit of removal potential. To do so, we divided the OAE efficiency by the mean surface 𝜂ₘₐₓ (a thermodynamic maximum OAE efficiency) over the region where alkalinity was released. You can read more about this translation [here](https://carbonplan.org/research/about-mcdr-efficiency-tools#comparing-oae-and-dor). The harmonized efficiency metric is now available as an additional layer in the OAE efficiency map, enabling direct comparisons across the two approaches.
+Note that directly comparing DOR and OAE efficiency required an additional analytical step that was not included in the original presentation of the OAE modeling results. There, OAE efficiency was defined as the amount of CO₂ removed per unit of alkalinity added. To compare across DOR and OAE, we needed to translate that concept of efficiency into a common metric: the amount of CO₂ removed per unit of removal potential. To do so, we divided the OAE efficiency by the mean surface 𝜂ₘₐₓ (a thermodynamic maximum OAE efficiency) over the region where alkalinity was released. The value of 𝜂ₘₐₓ ranges between about 0.7–0.9 over the global ocean, with lower values in the tropics and higher values towards the poles. If instead efficiency was represented per unit perturbation—mol alkalinity added and mols of DIC removed, respectively—OAE would reach a maximum of 0.7-0.9 (i.e., 𝜂ₘₐₓ) while DOR would reach a maximum of 1. You can read more about the translation between these two efficiency metrics [here](https://carbonplan.org/research/about-mcdr-efficiency-tools#comparing-oae-and-dor). The harmonized efficiency metric is now available as an additional layer in the OAE efficiency map, enabling direct comparisons across the two approaches.
 
 ## Conclusion
 
@@ -118,7 +121,17 @@ Together, these new data and the interactive map provide a foundation for assess
 
 As interest in ocean-based carbon removal grows, improving our understanding of these dynamics is critical for designing effective interventions. We hope these data can help inform efforts to guide responsible deployments, quantify DOR outcomes, and develop reliable standards.
 
-<Endnote label='Credits' divider>
+<Endnote label='Update — June 12 2025' divider>
+
+In response to helpful feedback after publication, we made updates to this article to clarify potentially misleading statements.
+
+The most significant change has to do with our representation of storage losses—the fraction of CO₂ extracted from the ocean that ultimately ends up in the atmosphere. In the original version of the article, there were several places where we highlighted very high storage losses (e.g., 25%) as a starting point to consider the whole range of outcomes from perfect storage (0% loss) to full utilization (100% loss). However, for well-designed storage systems, these levels of loss would be [extremely high](https://www.nature.com/articles/s41467-018-04423-1). Accordingly, in Figure 1, we changed the storage loss scenarios from none (0%) / low (20%) / high (100%) to none (0%) / leakage (10%) / utilization (100%), to better describe the hypothetical scenarios considered. In Figure 2, we changed the default storage loss slider from 25% to 0%, to avoid implying an unrealistically high degree of loss from dedicated storage systems.
+
+Additionally, we added two clarifying statements. First, that practical comparisons of pumping air versus seawater for carbon capture depend heavily on engineering choices. And second, that the comparison of OAE and DOR changes if efficiency is defined as CO₂ absorbed per unit perturbation rather than per unit removal potential.
+
+</Endnote>
+
+<Endnote label='Credits'>
 
 Matt designed the numerical experiments and performed the model simulations to generate the underlying data. Shane, Kata, Freya, and Matt designed the figures, which Shane implemented. Anderson performed the data transformation to support visualizations and data access. Freya wrote the article with input from Matt. All authors contributed to revising the text. Header image (modified) by [Daniel Sinoca](https://unsplash.com/photos/water-droplets-on-blue-surface-UjXGaJHH2jE) on [Unsplash](https://unsplash.com/).
 
