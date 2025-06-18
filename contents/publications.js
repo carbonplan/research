@@ -99,7 +99,7 @@ const publications = [
         label: 'Explainer article',
         href: '/research/forest-offsets-explainer',
       },
-      { label: 'Map tool', href: '/research/forest-offsets' },
+      { label: 'Map tool', href: '/research/forest-offsets-crediting' },
       {
         label: 'Press coverage',
         href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
