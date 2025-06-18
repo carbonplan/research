@@ -468,7 +468,7 @@ const ProjectAnalysis = () => {
             </Box>
             <Button
               size='xs'
-              href={`/research/forest-offsets?id=${selected}`}
+              href={`/research/forest-offsets-crediting?id=${selected}`}
               inverted
               suffix={<RotatingArrow />}
               sx={{

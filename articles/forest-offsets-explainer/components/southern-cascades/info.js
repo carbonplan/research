@@ -109,7 +109,7 @@ const Info = ({ project, mobile = false }) => {
       <Button
         size='xs'
         inverted
-        href={`/research/forest-offsets?id=${id}`}
+        href={`/research/forest-offsets-crediting?id=${id}`}
         suffix={<RotatingArrow />}
         sx={{
           cursor: 'pointer',
