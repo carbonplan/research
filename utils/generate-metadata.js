@@ -13,7 +13,7 @@ const commentary = fs
   .readdirSync(path.join(process.cwd(), 'commentary'))
   .filter((p) => p.match(/^[\w|\d|-]+$/))
 
-const getMetadata = (ids, folder) => {
+const getMetadata = (ids, folder, type) => {
   const directory = path.join(process.cwd(), folder)
   return ids
     .map((id) => {
@@ -30,6 +30,7 @@ const getMetadata = (ids, folder) => {
       const { data } = matter(source)
       return {
         ...data,
+        type,
         id,
         references,
         folder,
@@ -41,8 +42,8 @@ const getMetadata = (ids, folder) => {
 }
 
 // Generate metadata for articles and commentary
-const articleMetadata = getMetadata(articles, 'articles')
-const commentaryMetadata = getMetadata(commentary, 'commentary')
+const articleMetadata = getMetadata(articles, 'articles', 'article')
+const commentaryMetadata = getMetadata(commentary, 'commentary', 'commentary')
 
 // Generate metadata for supplementary files
 const supplementMetadata = glob
@@ -59,6 +60,7 @@ const supplementMetadata = glob
     const directory = path.join(process.cwd(), folder)
     return {
       ...data,
+      type: 'supplement',
       parentId: id,
       folder: folder,
       id: data.slug ?? `${id}-${fileName}`,
