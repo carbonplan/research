@@ -39,7 +39,8 @@ const tools = [
     logo: <OffsetsDB />,
     color: 'secondary',
     summary: 'A harmonized database of carbon offset projects and credits.',
-    title: 'Offsets DB',
+    displayName: 'OFFSETS DB', // Use space when all-caps
+    title: 'OffsetsDB',
     date: '04-23-2025',
   },
   {
