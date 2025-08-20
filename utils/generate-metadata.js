@@ -60,6 +60,7 @@ const supplementMetadata = glob
     const directory = path.join(process.cwd(), folder)
     return {
       ...data,
+      summary: data.quickLook,
       type: 'supplement',
       parentId: id,
       folder: folder,
