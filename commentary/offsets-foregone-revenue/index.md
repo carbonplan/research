@@ -7,7 +7,6 @@ authors:
 date: 08-21-2025
 summary: Offsets provide few climate benefits and cost California hundreds of millions of dollars each year. When lawmakers reauthorize the state’s cap and trade program this fall, they should eliminate the use of offsets.
 color: green
-card: offsets-foregone-revenue
 ---
 
 As the California legislature reconvenes after its summer break, lawmakers will have their best opportunity in almost ten years to reform the state’s influential cap and trade program.<Sidenote>Since 2012, California has limited the allowable quantity of emissions across the electricity, industrial, and transportation fuels sectors, requiring polluters to purchase either state-issued allowances or eligible carbon offsets for every ton of CO₂ they emit.</Sidenote> While not without its problems,<Cite ids={['tigue.2022', 'cullenward_victor.2020']}/> the program has generated roughly $31 billion in revenue for the state, funding everything from high speed rail to rebates on consumers’ electricity bills.<Cite id='carb.2025'/> Now, cap and trade is up for renewal and unless lawmakers take action, it will expire in 2030. While that might sound far away, uncertainty about the program’s future has already taken a toll on program revenue.<Cite id='von.kaenel.2025'/> The pending renewal has embroiled Sacramento in a debate about what a reauthorization should look like, and thrown a spotlight on one of the program’s longtime liabilities: its use of carbon offsets.
