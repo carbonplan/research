@@ -614,6 +614,7 @@ const components = {
       )
     ),
   },
+  'offsets-foregone-revenue': {},
   'defining-good-cdr': {
     Activities: dynamic(() =>
       import(
