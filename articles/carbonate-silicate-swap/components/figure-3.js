@@ -125,7 +125,7 @@ const Figure3 = () => {
     showAxis = true,
   }) => (
     <Box sx={{ position: 'relative' }}>
-      <Box sx={{ height: '325px' }}>
+      <Box sx={{ height: ['325px', '350px', '350px', '350px'] }}>
         <Chart
           x={xRange}
           y={yRange}
