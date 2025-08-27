@@ -72,7 +72,16 @@ That’s where the similarities end. Carbonates and silicates weather at very di
 
 <Figure>
   <Figure1 />
-  <FigureCaption number={1}>Rock weathering mediated by carbonic acid — which is in equilibrium with atmospheric CO₂ — produces dissolved carbon <DIC /> that is charge-balanced by cations <Cation />. Carbonates tend to weather faster than silicates, shown by more rocks weathering at once <Weathering />, but they release their own carbon <Anion />. In the high acidity case, weathering rates increase, but the weathering is done by strong acid that does not directly remove atmospheric CO₂ and can even emit carbonate-carbon to the atmosphere. </FigureCaption>
+  <FigureCaption number={1}>
+    Rock weathering mediated by carbonic acid — which is in equilibrium with
+    atmospheric CO₂ — produces dissolved carbon <DIC /> that is charge-balanced
+    by cations <Cation />. Carbonates tend to weather faster than silicates,
+    shown by more rocks weathering at once <Weathering />, but they release
+    their own carbon <Anion />. In the high acidity case, weathering rates
+    increase, but the weathering is done by strong acid that does not directly
+    remove atmospheric CO₂ and can even emit carbonate-carbon to the
+    atmosphere.{' '}
+  </FigureCaption>
 </Figure>
 
 ### Trade-offs mean outcomes aren’t intuitive
@@ -89,7 +98,14 @@ The other key takeaway from Figure 2 is that calcite does not _always_ emit carb
 
 <Figure>
   <Figure2 />
-  <FigureCaption number={2}>Carbon removal, integrated after 15 years of annual rock application, for different application fluxes. Moving the grain size slider shows that basalt removal is more responsive to changing the grain size than calcite. Toggling to the high acidity scenario shows that acidic soil decreases basalt carbon removal and can turn calcite into a source of emissions at lower calcite application fluxes. </FigureCaption>
+  <FigureCaption number={2}>
+    Carbon removal, integrated after 15 years of annual rock application, for
+    different application fluxes. Moving the grain size slider shows that basalt
+    removal is more responsive to changing the grain size than calcite. Toggling
+    to the high acidity scenario shows that acidic soil decreases basalt carbon
+    removal and can turn calcite into a source of emissions at lower calcite
+    application fluxes.{' '}
+  </FigureCaption>
 </Figure>
 
 Comparing calcite and basalt gets even more complicated when we account for the emissions from transport and crushing.<Sidenote>We use the emissions framework of [Zhang et al., 2023](https://doi.org/10.1021/acs.est.3c01658). More details on how we parameterize it can be found in the preprint.</Sidenote> Figure 3 shows how net removal — the bolded lines — peaks at a certain application flux for calcite, but not basalt. Once the soil approaches calcite saturation, adding more rock drives more emissions than removals. However, in our simulations, adding more basalt often compensates for the emissions of spreading more rock, unless the transport distance is very far. The same general trends are found in both the less acidic and more acidic soil cases. If our goal is to maximize the carbon removal flux, Figure 3 makes a strong case that maximizing basalt application is the answer.
@@ -98,7 +114,15 @@ However, at this point it’s important to stress that these are the results of 
 
 <Figure>
   <Figure3 />
-  <FigureCaption number={3}>Net carbon removal for calcite and basalt. The “weathering” line is the same as the removal line in Figure 2. The “logistics” line is the sum of crushing and transport emissions. The bold “net” line is the difference between the two. Explore different scenarios with the grain size slider (which affects both “logistics” and “weathering”) and the transport distance slider (which only affects “logistics”). Toggle to the high acidity case to see how more acidic soils change net removal outcomes.</FigureCaption>
+  <FigureCaption number={3}>
+    Net carbon removal for calcite and basalt. The “weathering” line is the same
+    as the removal line in Figure 2. The “logistics” line is the sum of crushing
+    and transport emissions. The bold “net” line is the difference between the
+    two. Explore different scenarios with the grain size slider (which affects
+    both “logistics” and “weathering”) and the transport distance slider (which
+    only affects “logistics”). Toggle to the high acidity case to see how more
+    acidic soils change net removal outcomes.
+  </FigureCaption>
 </Figure>
 
 ## Liming makes it harder to build a reliable carbon market
@@ -123,8 +147,18 @@ Which accounting approach is “correct” is largely a policy question that hin
 
 <Figure>
   <Figure4 />
-  <FigureCaption number={4}>Basalt carbon removal outcomes relative to a baseline liming scenario. Shading or hatching indicates a good climate outcome for a basalt practice that uses a given application flux (x-axis) and grain size (y-axis). The shading <SimpleSubtractionLegend />
-refers to the simple subtraction case, where removals (R) and emissions (E) from the liming baseline are subtracted directly from the basalt project. The hatching <ConservativeLegend /> refers to the conservative case, where only the baseline removals are subtracted from the project, ensuring that avoided baseline emissions are not credited. Use the toggle options to explore the effects of soil acidity and the basalt transport distance relative to the baseline.   </FigureCaption>
+  <FigureCaption number={4}>
+    Basalt carbon removal outcomes relative to a baseline liming scenario.
+    Shading or hatching indicates a good climate outcome for a basalt practice
+    that uses a given application flux (x-axis) and grain size (y-axis). The
+    shading <SimpleSubtractionLegend />
+    refers to the simple subtraction case, where removals (R) and emissions (E) from
+    the liming baseline are subtracted directly from the basalt project. The hatching{' '}
+    <ConservativeLegend /> refers to the conservative case, where only the baseline
+    removals are subtracted from the project, ensuring that avoided baseline emissions
+    are not credited. Use the toggle options to explore the effects of soil acidity
+    and the basalt transport distance relative to the baseline.{' '}
+  </FigureCaption>
 </Figure>
 
 Here we see that the impact of excluding avoided emissions depends on the details of the project and the baseline. Clicking through the options in Figure 4, more acidic conditions and a shorter basalt transport distance both lead to more project scenarios that appear good for the climate under simple subtraction but won’t be supported by the conservative approach. Some of this difference is owed to avoided emissions and, in the less acidic case, some is owed to real removals that [cannot be objectively separated](https://carbonplan.org/research/cdr-counterfactual-accounting) from avoided emissions. In contrast, if the transport distance is the same and soil acidity is low, then there is hardly any difference between the two approaches at all.
