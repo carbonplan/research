@@ -54,6 +54,16 @@ const components = {
         '../../articles/carbonate-silicate-swap/components/figure-4.js'
       ).then((mod) => mod.SimpleSubtractionLegend || mod.default)
     ),
+    HCO3: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/chemistry.js'
+      ).then((mod) => mod.HCO3 || mod.default)
+    ),
+    CO3: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/chemistry.js'
+      ).then((mod) => mod.CO3 || mod.default)
+    ),
   },
   'dor-efficiency-explainer': {
     TimeSeries: dynamic(() =>

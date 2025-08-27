@@ -9,13 +9,16 @@ authors:
   - Shane Loeffler
   - Kata Martin
   - Freya Chay
-date: 08-26-2025
+date: 08-27-2025
 summary: Both agricultural liming and enhanced weathering spread crushed rocks on fields and have the potential to remove carbon from the atmosphere. We explore how modifying liming for carbon removal works — and whether markets are the best way to fund it.
 quickLook: Both agricultural liming and enhanced weathering spread crushed rocks on fields and have the potential to remove carbon from the atmosphere. We explore how modifying liming for carbon removal works — and whether markets are the best way to fund it.
 color: grey
 background: articles/032/tractor
 icon: articles/032/tractor-small
 card: carbonate-silicate-swap
+links:
+  - label: Preprint
+    href: https://cdrxiv.org/preprint/304
 components:
   - name: Figure1
     src: ./components/figure-1.js
@@ -37,15 +40,19 @@ components:
     src: ./components/figure-4.js
   - name: SimpleSubtractionLegend
     src: ./components/figure-4.js
+  - name: HCO3
+    src: ./components/chemistry.js
+  - name: CO3
+    src: ./components/chemistry.js
 ---
 
 Part of the reason enhanced rock weathering is such a promising carbon removal approach today is that spreading crushed rocks on a field is nothing new. Agricultural liming is a farming practice that uses crushed rock to reduce soil acidity and improve yields. Over decades, farmers have figured out how to do this at scale — thus, without realizing it, overcoming a core practical challenge of enhanced weathering. Liming expanded the infrastructure for quarrying, crushing, transporting, and spreading rocks, and led to years of research on how rock dissolution affects soil chemistry and crop yields.
 
 To the carbon removal community, the scale and tradition of liming is thus a welcome vehicle for scaling enhanced weathering. But as real world deployments begin, it has become clear that the legacy of liming could limit enhanced weathering by complicating the use of carbon removal credits to support it.
 
-The problem is threefold. First, the rocks commonly used for enhanced weathering may not always remove more carbon than traditional liming. Second, it’s hard to account for the liming that would likely have happened without an enhanced weathering project. And third, modifying an existing process makes it difficult to separate out just the removal benefits — [something we’ve written about before](https://carbonplan.org/research/cdr-counterfactual-accounting). None of these issues can be ignored and, in many cases, are so thorny that they could limit the types of projects the carbon market will support.
+The problem is threefold. First, the rocks commonly used for enhanced weathering may not always remove more carbon than traditional liming. Second, it’s hard to account for the liming that would likely have happened without an enhanced weathering project. And third, modifying an existing process makes it difficult to separate out just the removal benefits — [something](https://carbonplan.org/research/cdr-counterfactual-accounting) [we’ve written about before](https://carbonplan.org/blog/counterfactual-accounting-update). None of these issues can be ignored and, in many cases, are so thorny that they could limit the types of projects the carbon market will support.
 
-We recently authored a [preprint](TK) that focuses on the first challenge — the conditions under which liming could outperform enhanced weathering for carbon removal. In it, we dove deep into the geochemical differences between rocks commonly used for liming and enhanced weathering, and presented a framework for deciding between them. We stopped short, however, of exploring the implications for making these decisions in the context of the nascent carbon markets.
+We recently authored a [preprint](https://cdrxiv.org/preprint/304) that focuses on the first challenge — the conditions under which liming could outperform enhanced weathering for carbon removal. In it, we dove deep into the geochemical differences between rocks commonly used for liming and enhanced weathering, and presented a framework for deciding between them. We stopped short, however, of exploring the implications for making these decisions in the context of the nascent carbon markets.
 
 This article builds on our preprint to explore how the existence of liming might limit the market’s ability to support and scale enhanced weathering projects. Liming creates tension with some of the market’s most basic requirements, including the precise quantification of carbon fluxes and a clear demonstration that carbon removal credits represent real, additional carbon removed relative to some baseline. Non-market-based solutions could relax these requirements to support good projects that might not happen in a world where the market is the only option.
 
@@ -59,22 +66,13 @@ The key difference, from a climate perspective, is that they usually use differe
 
 ### Different rocks with different strengths
 
-Carbonates and silicates are alike in that they are both cation-rich. When they dissolve, or weather, the chemical reactions consume protons (H⁺) and release cations such as Ca²⁺ and Mg²⁺. More cations increases the amount of carbon the soil water can hold — their positive charge balances the negative charge of dissolved inorganic carbon species like HCO₃⁻ and CO₃²⁻ (Figure 1). Once exported to the ocean, the cations and carbon can be durably stored for thousands of years.
+Carbonates and silicates are alike in that they are both cation-rich. When they dissolve, or weather, the chemical reactions consume protons (H⁺) and release cations such as Ca²⁺ and Mg²⁺. More cations increases the amount of carbon the soil water can hold — their positive charge balances the negative charge of dissolved inorganic carbon species like <HCO3 /> and <CO3 /> (Figure 1). Once exported to the ocean, the cations and carbon can be durably stored for thousands of years.
 
-That’s where the similarities end. Carbonates and silicates weather at very different rates — carbonates tend to weather rapidly, while silicates can take years to release the same number of cations a carbonate might release in months (Figure 1). But faster isn’t always better. Carbonates also release their own carbon when they dissolve, which means less of the resulting HCO₃⁻ and CO₃²⁻ comes from the atmosphere. In acidic conditions, that carbonate-derived carbon can even be released to the atmosphere, making carbonates a local source of CO₂ (Figure 1, high acidity).<Sidenote>Note that the total impact of cation release on the atmospheric CO₂ budget depends on the fate of the cations over time and the carbon fluxes that would have occurred if no rock was spread at all.</Sidenote>
+That’s where the similarities end. Carbonates and silicates weather at very different rates — carbonates tend to weather rapidly, while silicates can take years to release the same number of cations a carbonate might release in months (Figure 1). But faster isn’t always better. Carbonates also release their own carbon when they dissolve, which means less of the resulting <HCO3 /> and <CO3 /> comes from the atmosphere. In acidic conditions, that carbonate-derived carbon can even be released to the atmosphere, making carbonates a local source of CO₂ (Figure 1, high acidity).<Sidenote>Note that the total impact of cation release on the atmospheric CO₂ budget depends on the fate of the cations over time and the carbon fluxes that would have occurred if no rock was spread at all.</Sidenote>
 
 <Figure>
   <Figure1 />
-  <FigureCaption number={1}>
-    Rock weathering mediated by carbonic acid — which is in equilibrium with
-    atmospheric CO₂ — produces dissolved carbon <DIC /> that is charge-balanced
-    by cations <Cation />. Carbonates tend to weather faster than silicates,
-    shown by more rocks weathering at once <Weathering />, but they release
-    their own carbon <Anion />. In the high acidity case, weathering rates
-    increase, but the weathering is done by strong acid that does not directly
-    remove atmospheric CO₂ and can even emit carbonate-carbon to the
-    atmosphere.{' '}
-  </FigureCaption>
+  <FigureCaption number={1}>Rock weathering mediated by carbonic acid — which is in equilibrium with atmospheric CO₂ — produces dissolved carbon <DIC /> that is charge-balanced by cations <Cation />. Carbonates tend to weather faster than silicates, shown by more rocks weathering at once <Weathering />, but they release their own carbon <Anion />. In the high acidity case, weathering rates increase, but the weathering is done by strong acid that does not directly remove atmospheric CO₂ and can even emit carbonate-carbon to the atmosphere. </FigureCaption>
 </Figure>
 
 ### Trade-offs mean outcomes aren’t intuitive
@@ -91,14 +89,7 @@ The other key takeaway from Figure 2 is that calcite does not _always_ emit carb
 
 <Figure>
   <Figure2 />
-  <FigureCaption number={2}>
-    Carbon removal, integrated after 15 years of annual rock application, for
-    different application fluxes. Moving the grain size slider shows that basalt
-    removal is more responsive to changing the grain size than calcite. Toggling
-    to the high acidity scenario shows that acidic soil decreases basalt carbon
-    removal and can turn calcite into a source of emissions at lower calcite
-    application fluxes.{' '}
-  </FigureCaption>
+  <FigureCaption number={2}>Carbon removal, integrated after 15 years of annual rock application, for different application fluxes. Moving the grain size slider shows that basalt removal is more responsive to changing the grain size than calcite. Toggling to the high acidity scenario shows that acidic soil decreases basalt carbon removal and can turn calcite into a source of emissions at lower calcite application fluxes. </FigureCaption>
 </Figure>
 
 Comparing calcite and basalt gets even more complicated when we account for the emissions from transport and crushing.<Sidenote>We use the emissions framework of [Zhang et al., 2023](https://doi.org/10.1021/acs.est.3c01658). More details on how we parameterize it can be found in the preprint.</Sidenote> Figure 3 shows how net removal — the bolded lines — peaks at a certain application flux for calcite, but not basalt. Once the soil approaches calcite saturation, adding more rock drives more emissions than removals. However, in our simulations, adding more basalt often compensates for the emissions of spreading more rock, unless the transport distance is very far. The same general trends are found in both the less acidic and more acidic soil cases. If our goal is to maximize the carbon removal flux, Figure 3 makes a strong case that maximizing basalt application is the answer.
@@ -107,15 +98,7 @@ However, at this point it’s important to stress that these are the results of 
 
 <Figure>
   <Figure3 />
-  <FigureCaption number={3}>
-    Net carbon removal for calcite and basalt. The “weathering” line is the same
-    as the removal line in Figure 2. The “logistics” line is the sum of crushing
-    and transport emissions. The bold “net” line is the difference between the
-    two. Explore different scenarios with the grain size slider (which affects
-    both “logistics” and “weathering”) and the transport distance slider (which
-    only affects “logistics”). Toggle to the high acidity case to see how more
-    acidic soils change net removal outcomes.
-  </FigureCaption>
+  <FigureCaption number={3}>Net carbon removal for calcite and basalt. The “weathering” line is the same as the removal line in Figure 2. The “logistics” line is the sum of crushing and transport emissions. The bold “net” line is the difference between the two. Explore different scenarios with the grain size slider (which affects both “logistics” and “weathering”) and the transport distance slider (which only affects “logistics”). Toggle to the high acidity case to see how more acidic soils change net removal outcomes.</FigureCaption>
 </Figure>
 
 ## Liming makes it harder to build a reliable carbon market
@@ -136,23 +119,13 @@ Then, after all that, you still have to tackle the third step: determining which
 
 We can use a simplified scenario to show how different carbon accounting frameworks shape crediting of enhanced weathering projects. If we collapse all the complexity of enhanced weathering projects into just two decisions — the amount and fineness of silicate rock — we can get a sense for which projects might be excluded when we separate removals from avoided emissions. Figure 4 lays out this solution space, showing which projects are considered favorable to a baseline liming scenario under the “simple subtraction” method (represented by shading), which doesn’t separate removals from avoided emissions, and the “conservative” method (represented by hatching), which does.<Sidenote>While there are [several different approaches](https://carbonplan.org/research/cdr-counterfactual-accounting) one might take to separate avoided emissions, we use the “conservative” approach because it’s the one adopted by the registry Isometric in their enhanced weathering protocol ([v1.1](https://registry.isometric.com/protocol/enhanced-weathering-agriculture/1.1)).</Sidenote>
 
+Which accounting approach is “correct” is largely a policy question that hinges on the goal of funding the project. If the goal is the precise quantification of removal to support offsetting claims, the conservative approach makes sense. If the goal is to fund activities that are good for the climate, even if they might be hard to precisely quantify, then simple subtraction might be enough. Because the market primarily supports offsetting claims, we shouldn’t relax the accounting rules just to support more good projects. At the same time, it’s important to understand where market accounting frameworks risk excluding projects that _do_ bring real climate benefits.
+
 <Figure>
   <Figure4 />
-  <FigureCaption number={4}>
-    Basalt carbon removal outcomes relative to a baseline liming scenario.
-    Shading or hatching indicates a good climate outcome for a basalt practice
-    that uses a given application flux (x-axis) and grain size (y-axis). The
-    shading <SimpleSubtractionLegend />
-    refers to the simple subtraction case, where removals (R) and emissions (E) from
-    the liming baseline are subtracted directly from the basalt project. The hatching{' '}
-    <ConservativeLegend /> refers to the conservative case, where only the baseline
-    removals are subtracted from the project, ensuring that avoided baseline emissions
-    are not credited. Use the toggle options to explore the effects of soil acidity
-    and the basalt transport distance relative to the baseline.{' '}
-  </FigureCaption>
+  <FigureCaption number={4}>Basalt carbon removal outcomes relative to a baseline liming scenario. Shading or hatching indicates a good climate outcome for a basalt practice that uses a given application flux (x-axis) and grain size (y-axis). The shading <SimpleSubtractionLegend />
+refers to the simple subtraction case, where removals (R) and emissions (E) from the liming baseline are subtracted directly from the basalt project. The hatching <ConservativeLegend /> refers to the conservative case, where only the baseline removals are subtracted from the project, ensuring that avoided baseline emissions are not credited. Use the toggle options to explore the effects of soil acidity and the basalt transport distance relative to the baseline.   </FigureCaption>
 </Figure>
-
-Which accounting approach is “correct” is largely a policy question that hinges on the goal of funding the project. If the goal is the precise quantification of removal to support offsetting claims, the conservative approach makes sense. If the goal is to fund activities that are good for the climate, even if they might be hard to precisely quantify, then simple subtraction might be enough. Because the market primarily supports offsetting claims, we shouldn’t relax the accounting rules just to support more good projects. At the same time, it’s important to understand where market accounting frameworks risk excluding projects that _do_ bring real climate benefits.
 
 Here we see that the impact of excluding avoided emissions depends on the details of the project and the baseline. Clicking through the options in Figure 4, more acidic conditions and a shorter basalt transport distance both lead to more project scenarios that appear good for the climate under simple subtraction but won’t be supported by the conservative approach. Some of this difference is owed to avoided emissions and, in the less acidic case, some is owed to real removals that [cannot be objectively separated](https://carbonplan.org/research/cdr-counterfactual-accounting) from avoided emissions. In contrast, if the transport distance is the same and soil acidity is low, then there is hardly any difference between the two approaches at all.
 
