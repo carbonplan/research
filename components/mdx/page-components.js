@@ -3,6 +3,68 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'carbonate-silicate-swap': {
+    Figure1: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-1.js'
+      ).then((mod) => mod.Figure1 || mod.default)
+    ),
+    DIC: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-1.js'
+      ).then((mod) => mod.DIC || mod.default)
+    ),
+    Cation: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-1.js'
+      ).then((mod) => mod.Cation || mod.default)
+    ),
+    Anion: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-1.js'
+      ).then((mod) => mod.Anion || mod.default)
+    ),
+    Weathering: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-1.js'
+      ).then((mod) => mod.Weathering || mod.default)
+    ),
+    Figure2: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-2.js'
+      ).then((mod) => mod.Figure2 || mod.default)
+    ),
+    Figure3: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-3.js'
+      ).then((mod) => mod.Figure3 || mod.default)
+    ),
+    Figure4: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-4.js'
+      ).then((mod) => mod.Figure4 || mod.default)
+    ),
+    ConservativeLegend: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-4.js'
+      ).then((mod) => mod.ConservativeLegend || mod.default)
+    ),
+    SimpleSubtractionLegend: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-4.js'
+      ).then((mod) => mod.SimpleSubtractionLegend || mod.default)
+    ),
+    HCO3: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/chemistry.js'
+      ).then((mod) => mod.HCO3 || mod.default)
+    ),
+    CO3: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/chemistry.js'
+      ).then((mod) => mod.CO3 || mod.default)
+    ),
+  },
   'dor-efficiency-explainer': {
     TimeSeries: dynamic(() =>
       import(
