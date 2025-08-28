@@ -18,7 +18,7 @@ icon: articles/032/tractor-small
 card: carbonate-silicate-swap
 links:
   - label: Preprint
-    href: https://cdrxiv.org/preprint/304
+    href: https://doi.org/10.70212/cdrxiv.2025304.v1
 components:
   - name: Figure1
     src: ./components/figure-1.js
@@ -52,7 +52,7 @@ To the carbon removal community, the scale and tradition of liming is thus a wel
 
 The problem is threefold. First, the rocks commonly used for enhanced weathering may not always remove more carbon than traditional liming. Second, it’s hard to account for the liming that would likely have happened without an enhanced weathering project. And third, modifying an existing process makes it difficult to separate out just the removal benefits — [something](https://carbonplan.org/research/cdr-counterfactual-accounting) [we’ve written about before](https://carbonplan.org/blog/counterfactual-accounting-update). None of these issues can be ignored and, in many cases, are so thorny that they could limit the types of projects the carbon market will support.
 
-We recently authored a [preprint](https://cdrxiv.org/preprint/304) that focuses on the first challenge — the conditions under which liming could outperform enhanced weathering for carbon removal. In it, we dove deep into the geochemical differences between rocks commonly used for liming and enhanced weathering, and presented a framework for deciding between them. We stopped short, however, of exploring the implications for making these decisions in the context of the nascent carbon markets.
+We recently authored a [preprint](https://doi.org/10.70212/cdrxiv.2025304.v1) that focuses on the first challenge — the conditions under which liming could outperform enhanced weathering for carbon removal. In it, we dove deep into the geochemical differences between rocks commonly used for liming and enhanced weathering, and presented a framework for deciding between them. We stopped short, however, of exploring the implications for making these decisions in the context of the nascent carbon markets.
 
 This article builds on our preprint to explore how the existence of liming might limit the market’s ability to support and scale enhanced weathering projects. Liming creates tension with some of the market’s most basic requirements, including the precise quantification of carbon fluxes and a clear demonstration that carbon removal credits represent real, additional carbon removed relative to some baseline. Non-market-based solutions could relax these requirements to support good projects that might not happen in a world where the market is the only option.
 
