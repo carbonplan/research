@@ -201,7 +201,7 @@ Oriana and Maggie designed the study, Oriana and Jeremy analyzed the data, and a
 
 Please cite this web article as:
 
-O Chegwidden, M Koerth, & J Freeman (2024) “Climate risk companies don’t always agree” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/risk-provider-comparisons](https://carbonplan.org/research/risk-provider-comparisons)</span>
+O Chegwidden, M Koerth, & J Freeman (2024) “Climate risk companies don’t always agree” CarbonPlan <span style={{overflowWrap: 'break-word'}}>[https://carbonplan.org/research/climate-risk-comparison](https://carbonplan.org/research/climate-risk-comparison)</span>
 
 </Endnote>
 
