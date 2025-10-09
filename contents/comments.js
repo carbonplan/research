@@ -1,5 +1,10 @@
 const comments = [
   {
+    title: 'California Air Resources Board re: SB 905 Implementation',
+    href: 'https://files.carbonplan.org/CarbonPlan-SB-905-Comment-Letter-10-06-2025.pdf',
+    date: '10-06-2025',
+  },
+  {
     title:
       'California Department of Insurance re: Proposed Text of Regulation of Catastrophe Modeling and Ratemaking',
     href: 'https://files.carbonplan.org/California-Department-of-Insurance-Comment-Letter-09-17-2024.pdf',
