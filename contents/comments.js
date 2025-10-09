@@ -5,6 +5,16 @@ const comments = [
     date: '10-06-2025',
   },
   {
+    title: 'Washington State Department of Ecology re: Additional comments pertaining to US Forest Protocol Draft rule language',
+    href: 'https://files.carbonplan.org/Washington-Ecology-Draft-Protocol-Comment-Letter-09-30-2025.pdf',
+    date: '09-30-2025',
+  },
+  {
+    title: 'Washington State Department of Ecology re: Comments pertaining to US Forest Protocol Draft rule language',
+    href: 'https://files.carbonplan.org/Washington-Ecology-Draft-Protocol-Comment-Letter-08-18-2025.pdf',
+    date: '08-18-2025',
+  },
+  {
     title:
       'California Department of Insurance re: Proposed Text of Regulation of Catastrophe Modeling and Ratemaking',
     href: 'https://files.carbonplan.org/California-Department-of-Insurance-Comment-Letter-09-17-2024.pdf',
