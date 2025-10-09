@@ -5,12 +5,14 @@ const comments = [
     date: '10-06-2025',
   },
   {
-    title: 'Washington State Department of Ecology re: Additional comments pertaining to US Forest Protocol Draft rule language',
+    title:
+      'Washington State Department of Ecology re: Additional comments pertaining to US Forest Protocol Draft rule language',
     href: 'https://files.carbonplan.org/Washington-Ecology-Draft-Protocol-Comment-Letter-09-30-2025.pdf',
     date: '09-30-2025',
   },
   {
-    title: 'Washington State Department of Ecology re: Comments pertaining to US Forest Protocol Draft rule language',
+    title:
+      'Washington State Department of Ecology re: Comments pertaining to US Forest Protocol Draft rule language',
     href: 'https://files.carbonplan.org/Washington-Ecology-Draft-Protocol-Comment-Letter-08-18-2025.pdf',
     date: '08-18-2025',
   },
