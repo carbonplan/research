@@ -1,7 +1,6 @@
 const comments = [
   {
-    title:
-      'California Air Resources Board re: SB 905 Implementation',
+    title: 'California Air Resources Board re: SB 905 Implementation',
     href: 'https://files.carbonplan.org/CarbonPlan-SB-905-Comment-Letter-10-06-2025.pdf',
     date: '10-06-2025',
   },
