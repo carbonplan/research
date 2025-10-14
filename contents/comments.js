@@ -36,29 +36,29 @@ const comments = [
   },
   {
     title:
-      'California Air Resources Board re: Workshop on potential amendments to the cap-and-trade regulation',
+      'California Air Resources Board re: Workshop on Potential Amendments to the Cap-and-Trade Regulation',
     href: 'https://files.carbonplan.org/CARB-CapAndTrade-Workshop-Comment-Letter-05-08-2024.pdf',
     date: '05-08-2024',
   },
   {
     title:
-      'Alaska Department of Natural Resources re: Proposed regulations regarding state carbon offset projects on state lands',
+      'Alaska Department of Natural Resources re: Proposed Regulations Regarding State Carbon Offset Projects on State Lands',
     href: 'https://files.carbonplan.org/Alaska-State-Comment-Letter-04-29-2024.pdf',
     date: '04-29-2024',
   },
   {
     title:
-      'Commodity Futures Trading Commission re: Listing of voluntary carbon credit derivative contracts guidance',
+      'Commodity Futures Trading Commission re: Listing of Voluntary Carbon Credit Derivative Contracts Guidance',
     href: 'https://files.carbonplan.org/CFTC-Voluntary-Carbon-Credit-Comment-Letter-02-16-2024.pdf',
     date: '02-16-2024',
   },
   {
-    title: 'Federal Insurance Office re: Climate-related financial risk',
+    title: 'Federal Insurance Office re: Climate-Related Financial Risk',
     href: 'https://files.carbonplan.org/FIO-Climate-Related-Financial-Risk-12-04-2023.pdf',
     date: '12-04-2023',
   },
   {
-    title: 'UNFCCC Article 6.4 Supervisory Body re: SB005 annotated agenda',
+    title: 'UNFCCC Article 6.4 Supervisory Body re: SB005 Annotated Agenda',
     href: 'https://files.carbonplan.org/Article-6_4-Supervisory-Body-Comment-Letter-05-24-2023.pdf',
     date: '05-24-2023',
   },
@@ -68,7 +68,7 @@ const comments = [
     date: '04-21-2023',
   },
   {
-    title: 'Federal Insurance Office re: Climate-related financial risk',
+    title: 'Federal Insurance Office re: Climate-Related Financial Risk',
     href: 'https://files.carbonplan.org/FIO-Climate-Related-Financial-Risk-12-20-2022.pdf',
     date: '12-20-2022',
     links: [
@@ -80,7 +80,7 @@ const comments = [
   },
 
   {
-    title: 'California Air Resources Board re: Forest carbon offset workshop',
+    title: 'California Air Resources Board re: Forest Carbon Offset Workshop',
     href: 'https://files.carbonplan.org/CARB-Forest-Offsets-Workshop-Comment-Letter-12-15-2022.pdf',
     date: '12-15-2022',
   },
@@ -97,7 +97,7 @@ const comments = [
     ],
   },
   {
-    title: 'Science Based Targets initiative re: Carbon removal guidance',
+    title: 'Science Based Targets Initiative re: Carbon Removal Guidance',
     href: 'https://files.carbonplan.org/SBTi-Carbon-Removal-Letter-11-22-2022.pdf',
     date: '11-22-2022',
     links: [
@@ -109,7 +109,7 @@ const comments = [
   },
   {
     title:
-      'UNFCCC Article 6.4 Mechanism Supervisory Body re: Carbon removal guidance',
+      'UNFCCC Article 6.4 Mechanism Supervisory Body re: Carbon Removal Guidance',
     href: 'https://files.carbonplan.org/Article-6_4-Supervisory-Body-Comment-Letter-10-10-2022.pdf',
     date: '10-10-2022',
   },
@@ -126,7 +126,7 @@ const comments = [
     ],
   },
   {
-    title: 'Australian Independent Review Panel re: Climate integrity of ACCUs',
+    title: 'Australian Independent Review Panel re: Climate Integrity of ACCUs',
     href: 'https://files.carbonplan.org/ACCU-Review-Comment-Letter-09-27-2022.pdf',
     date: '09-27-2022',
   },
@@ -138,13 +138,13 @@ const comments = [
   },
   {
     title:
-      'Washington Department of Ecology re: California forest carbon offsets',
+      'Washington Department of Ecology re: California Forest Carbon Offsets',
     href: 'https://files.carbonplan.org/Washington-Ecology-Offsets-Comment-Letter-07-15-2022.pdf',
     date: '07-15-2022',
   },
   {
     title:
-      'U.S. Securities and Exchange Commission re: Climate-related financial disclosures',
+      'U.S. Securities and Exchange Commission re: Climate-Related Financial Disclosures',
     href: 'https://files.carbonplan.org/SEC-Climate-Disclosures-Comment-Letter-06-16-2022.pdf',
     date: '06-16-2022',
     links: [
@@ -156,7 +156,7 @@ const comments = [
   },
   {
     title:
-      'White House Office of Science and Technology Policy re: Digital assets',
+      'White House Office of Science and Technology Policy re: Digital Assets',
     href: 'https://files.carbonplan.org/OSTP-Digital-Assets-Comment-Letter-05-09-2022.pdf',
     date: '05-09-2022',
     links: [
@@ -167,12 +167,12 @@ const comments = [
     ],
   },
   {
-    title: 'European Commission re: Certifying carbon removal',
+    title: 'European Commission re: Certifying Carbon Removal',
     href: 'https://files.carbonplan.org/EU-CDR-Certification-Comment-Letter-05-02-2022.pdf',
     date: '05-02-2022',
   },
   {
-    title: "Verra re: NCX's proposed harvest deferral methodology",
+    title: "Verra re: NCX's Proposed Harvest Deferral Methodology",
     href: 'https://files.carbonplan.org/Verra-NCX-Harvest-Deferral-Comment-Letter-04-21-2022.pdf',
     date: '04-21-2022',
     links: [
@@ -183,7 +183,7 @@ const comments = [
     ],
   },
   {
-    title: 'Verra re: Proposed updates to the VCS Program',
+    title: 'Verra re: Proposed Updates to the VCS Program',
     href: 'https://files.carbonplan.org/Verra-Ton-Year-Comment-Letter-04-08-22.pdf',
     date: '04-08-2022',
     links: [
@@ -195,7 +195,7 @@ const comments = [
   },
   {
     title:
-      'Office of the Comptroller of the Currency re: Climate-related financial risk',
+      'Office of the Comptroller of the Currency re: Climate-Related Financial Risk',
     href: 'https://files.carbonplan.org/OCC-Climate-Risks-Comments-02-14-2022.pdf',
     date: '02-14-2022',
     links: [
@@ -207,11 +207,11 @@ const comments = [
   },
   {
     date: '02-01-2022',
-    title: 'NASA re: Open source science',
+    title: 'NASA re: Open Source Science',
     href: 'https://files.carbonplan.org/NASA-OSS-Data-RFI-Comments-02-01-2022.pdf',
   },
   {
-    title: 'PCAF and SBTi re: Net-zero standards',
+    title: 'PCAF and SBTi re: Net-Zero Standards',
     href: 'https://files.carbonplan.org/PCAF-SBTi-Net-Zero-Comment-Letter-12-20-2021.pdf',
     date: '12-20-2021',
     links: [
@@ -223,7 +223,7 @@ const comments = [
   },
   {
     date: '11-01-2021',
-    title: 'U.S. Department of Agriculture re: Climate-smart commodity markets',
+    title: 'U.S. Department of Agriculture re: Climate-Smart Commodity Markets',
     href: 'https://files.carbonplan.org/USDA-CSAF-Comment-Letter-11-01-21.pdf',
     links: [
       {
@@ -235,7 +235,7 @@ const comments = [
   {
     date: '01-05-2021',
     title:
-      'Taskforce Scaling Voluntary Carbon Markets re: Initial recommendations',
+      'Taskforce Scaling Voluntary Carbon Markets re: Initial Recommendations',
     href: 'https://files.carbonplan.org/Offset-Task-Force-Comment-Letter-01-05-2021.pdf',
     links: [
       {
