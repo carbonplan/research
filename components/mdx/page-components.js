@@ -676,6 +676,7 @@ const components = {
       )
     ),
   },
+  'kariba-excess-credits': {},
   'offsets-foregone-revenue': {},
   'defining-good-cdr': {
     Activities: dynamic(() =>
