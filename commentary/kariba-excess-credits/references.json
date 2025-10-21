@@ -1,0 +1,77 @@
+{
+  "romm.2025": {
+    "authors": "J Romm et al.",
+    "year": 2025,
+    "title": "Are carbon offsets fixable?",
+    "journal": "Annual Review of Environment and Resources",
+    "url": "https://doi.org/10.1146/annurev-environ-112823-064813"
+  },
+  "southpole.2025": {
+    "authors": "South Pole",
+    "year": 2025,
+    "title": "Response to Verra’s update on its section 6 review into Kariba REDD+",
+    "url": "https://www.southpole.com/news/response-to-verra-update"
+  },
+  "verra.reg.1": {
+    "authors": "Verra",
+    "year": 2024,
+    "title": "Registration and Issuance Process v4.6, § 6.1.5",
+    "journal": "Verified Carbon Standard",
+    "url": "https://verra.org/wp-content/uploads/2024/10/Registration-and-Issuance-Process-v4.6-1.pdf#page=41"
+  },
+  "verra.reg.2": {
+    "authors": "Verra",
+    "year": 2024,
+    "title": "Registration and Issuance Process v4.6, § 4.7.2",
+    "journal": "Verified Carbon Standard",
+    "url": "https://verra.org/wp-content/uploads/2024/10/Registration-and-Issuance-Process-v4.6-1.pdf#page=33"
+  },
+  "verra.2024": {
+    "authors": "Verra",
+    "year": 2024,
+    "title": "2024 Annual Report",
+    "url": "https://verra.org/wp-content/uploads/2025/09/2024-Annual-Report.pdf#page=15"
+  },
+  "trencher.2024": {
+    "authors": "G Trencher et al.",
+    "year": 2024,
+    "title": "Demand for low-quality offsets by major companies undermines climate integrity of the voluntary carbon market",
+    "journal": "Nature Communications",
+    "url": "https://doi.org/10.1038/s41467-024-51151-w"
+  },
+  "probst.2024": {
+    "authors": "B S Probst et al.",
+    "year": 2024,
+    "title": "Systematic assessment of the achieved emission reductions of carbon crediting projects",
+    "journal": "Nature Communications",
+    "url": "https://doi.org/10.1038/s41467-024-53645-z"
+  },
+  "west.2020": {
+    "authors": "T A P West et al.",
+    "year": 2020,
+    "title": "Overstated carbon emission reductions from voluntary REDD+ projects in the Brazilian Amazon",
+    "journal": "Proceedings of the National Academy of Sciences",
+    "url": "https://doi.org/10.1073/pnas.2004334117"
+  },
+  "west.2023": {
+    "authors": "T A P West et al.",
+    "year": 2023,
+    "title": "Action needed to make carbon offsets from forest conservation work for climate change mitigation",
+    "journal": "Science",
+    "url": "https://doi.org/10.1126/science.ade3535"
+  },
+  "calel.2025": {
+    "authors": "R Calel",
+    "year": 2025,
+    "title": "Do carbon offsets offset carbon?",
+    "journal": "American Economic Journal: Applied Economics",
+    "url": "https://doi.org/10.1257/app.20230052"
+  },
+  "west.2024": {
+    "authors": "T A P West",
+    "year": 2024,
+    "title": "Methodological issues with deforestation baselines compromise the integrity of carbon offsets from REDD+",
+    "journal": "Global Environmental Change",
+    "url": "https://doi.org/10.1016/j.gloenvcha.2024.102863"
+  }
+}
