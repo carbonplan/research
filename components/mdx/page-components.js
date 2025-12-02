@@ -676,6 +676,18 @@ const components = {
       )
     ),
   },
+  'excess-hydropower-credits': {
+    Issuances: dynamic(() =>
+      import(
+        '../../commentary/excess-hydropower-credits/components/issuances.js'
+      ).then((mod) => mod.Issuances || mod.default)
+    ),
+    Summary: dynamic(() =>
+      import(
+        '../../commentary/excess-hydropower-credits/components/summary.js'
+      ).then((mod) => mod.Summary || mod.default)
+    ),
+  },
   'kariba-excess-credits': {},
   'offsets-foregone-revenue': {},
   'defining-good-cdr': {
