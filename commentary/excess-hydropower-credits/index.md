@@ -25,7 +25,8 @@ A natural place to focus next would be hydropower credits, which are widely rega
     Nearly 70 percent of these credits have been issued since a 2019 rule change
     which banned new hydropower projects from the registry on the basis of
     additionality concerns. Issuances for 2025 are hashed, as more issuances
-    might occur before the end of the calendar year. Data from [OffsetsDB](https://carbonplan.org/research/offsets-db).
+    might occur before the end of the calendar year. Data from
+    [OffsetsDB](https://carbonplan.org/research/offsets-db).
   </FigureCaption>
 </Figure>
 
