@@ -1,5 +1,5 @@
 ---
-version: 1.0.0
+version: 1.0.1
 title: Verra should address its hydropower offsets problem
 authors:
   - Grayson Badgley
@@ -25,7 +25,8 @@ A natural place to focus next would be hydropower credits, which are widely rega
     Nearly 70 percent of these credits have been issued since a 2019 rule change
     which banned new hydropower projects from the registry on the basis of
     additionality concerns. Issuances for 2025 are hashed, as more issuances
-    might occur before the end of the calendar year.
+    might occur before the end of the calendar year. Data from
+    [OffsetsDB](https://carbonplan.org/research/offsets-db).
   </FigureCaption>
 </Figure>
 
@@ -49,7 +50,7 @@ But Verra’s decision included a sizable loophole: Verra did not prohibit _exis
 
 Verra’s decision to continue crediting existing hydropower projects has created a gap between narrative and reality. The common narrative is that hydropower credits are a shrinking segment of the market, a relic from an earlier era where mistakes were made, lessons were learned, and remedies were put in place. The reality is that hydropower credits remain an active and expanding component of Verra’s registry.
 
-Since the ban on new projects in 2019, Verra has issued tens of millions of hydropower-backed offset credits. As stated above, nearly 70 percent of all Verra’s hydropower credits have been issued after their 2019 rule change — totalling 155.8 million hydropower credits since 2020. That’s over nine percent of all the credits Verra has issued from 2020 onward to projects of any kind. Even the _number_ of credited hydropower projects has grown. To date, a total of 268 hydropower projects have been issued credits, a 36 percent increase from the 197 projects credited prior to 2020.<Sidenote>At least some of those new hydropower projects represent the “zombie” projects we linked to the [2021 crypto craze](https://carbonplan.org/research/toucan-crypto-offsets).</Sidenote> Concerningly, there are 79 _additional_ hydropower projects which enrolled in the program before the ban but have not yet been credited, meaning the problem could grow bigger still if Verra fails to take action.
+Since the ban on new projects in 2019, Verra has issued tens of millions of hydropower-backed offset credits.<Sidenote>You can view the data and code underlying this analysis on [GitHub](https://github.com/carbonplan/excess-hydropower-credits)</Sidenote> As stated above, nearly 70 percent of all Verra’s hydropower credits have been issued after their 2019 rule change — totalling 155.8 million hydropower credits since 2020. That’s over nine percent of all the credits Verra has issued from 2020 onward to projects of any kind. Even the _number_ of credited hydropower projects has grown. To date, a total of 268 hydropower projects have been issued credits, a 36 percent increase from the 197 projects credited prior to 2020.<Sidenote>At least some of those new hydropower projects represent the “zombie” projects we linked to the [2021 crypto craze](https://carbonplan.org/research/toucan-crypto-offsets).</Sidenote> Concerningly, there are 79 _additional_ hydropower projects which enrolled in the program before the ban but have not yet been credited, meaning the problem could grow bigger still if Verra fails to take action.
 
 ## Examples of non-additional outcomes
 
