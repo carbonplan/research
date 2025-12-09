@@ -21,7 +21,7 @@ const HIGHLIGHTS = [
       },
       {
         label: 'Dataset',
-        href: 'https://source.coop/repositories/cworthy/dor-efficiency-atlas/description/',
+        href: 'https://source.coop/cworthy/dor-efficiency-atlas',
       },
       {
         label: 'Comparison with OAE tool',
