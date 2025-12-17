@@ -79,7 +79,7 @@ const publications = [
   {
     date: '03-31-2022',
     title: 'Ocean solutions in the carbon market',
-    href: 'https://issuu.com/journaloceantechnology/docs/e-jot_vol17n1_interactive_book_lr_flipbook',
+    href: 'https://www.thejot.net/article-preview/?show_article_preview=1335',
     color: 'teal',
     summary:
       'A short article outlining the challenges of incorporating ocean-based CDR into carbon markets and the need for those who know the science to track claims carefully and help others do the same.',
