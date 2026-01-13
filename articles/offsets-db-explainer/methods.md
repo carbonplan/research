@@ -50,7 +50,6 @@ As part of the update, we added two features to the web tool: the ability to fil
 
 You can read more about these udpates in an accompanying [blog post](https://carbonplan.org/blog/offsetsdb-project-geometries).
 
-
 ## Terms
 
 Associated [analysis package](https://github.com/carbonplan/offsets-db-data) and [web tool](https://github.com/carbonplan/offsets-db-web) made available under an [MIT license](https://github.com/carbonplan/offsets-db-web/blob/main/LICENSE). Data associated with OffsetsDB is subject to additional [terms of data access](https://offsets-db-data.readthedocs.io/en/latest/TERMS-OF-DATA-ACCESS.html).
