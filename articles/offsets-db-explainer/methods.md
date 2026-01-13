@@ -43,6 +43,14 @@ We used retirement beneficiary data — such as retirement accounts and notes ac
 
 You can read more about these updates in an accompanying [blog post](https://carbonplan.org/blog/offsets-db-additions) and in the official [OffsetsDB documentation](https://offsets-db-data.readthedocs.io/en/latest/).
 
+## Update — Jan 13 2026
+
+We expanded OffsetsDB to include project boundary information, as described in [Karnik et al., 2025](https://doi.org/10.1038/s41597-025-04868-2).
+As part of the update, we added two features to the web tool: the ability to filter projects with boundary information and the ability to view project boundaries within the tool.
+
+You can read more about these udpates in an accompanying [blog post](https://carbonplan.org/blog/offsetsdb-project-geometries).
+
+
 ## Terms
 
 Associated [analysis package](https://github.com/carbonplan/offsets-db-data) and [web tool](https://github.com/carbonplan/offsets-db-web) made available under an [MIT license](https://github.com/carbonplan/offsets-db-web/blob/main/LICENSE). Data associated with OffsetsDB is subject to additional [terms of data access](https://offsets-db-data.readthedocs.io/en/latest/TERMS-OF-DATA-ACCESS.html).
