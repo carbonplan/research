@@ -57,12 +57,30 @@ const supplementMetadata = glob
       ? 'articles'
       : 'commentary'
     const directory = path.join(process.cwd(), folder)
+
+    // Load parent article's frontmatter for color fallback
+    const parentSource = fs.readFileSync(path.join(directory, `${id}/index.md`))
+    const { data: parentData } = matter(parentSource)
+
+    // Load references from parent article
+    let references
+    try {
+      references = fs.readFileSync(
+        path.join(directory, `${id}/references.json`)
+      )
+      references = JSON.parse(references)
+    } catch {
+      references = {}
+    }
+
     return {
       ...data,
+      color: data.color ?? parentData.color,
       parentId: id,
       folder: folder,
       id: data.slug ?? `${id}-${fileName}`,
       path: `${directory}/${id}/${fileName}.md`,
+      references,
     }
   })
 
