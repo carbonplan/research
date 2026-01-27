@@ -109,7 +109,11 @@ const Page = ({ id, type, source, frontMatter, references }) => {
       )
     case 'supplement':
       return (
-        <Supplement meta={frontMatter} back={frontMatter.back} references={references}>
+        <Supplement
+          meta={frontMatter}
+          back={frontMatter.back}
+          references={references}
+        >
           <MDXRemote
             {...source}
             components={{
