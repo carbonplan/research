@@ -53,6 +53,9 @@ const SUPPLEMENT_COMPONENTS = {
   blockquote: Blockquote,
   Box,
   Link,
+  Cite,
+  Endnote,
+  Sidenote,
 }
 
 const Page = ({ id, type, source, frontMatter, references }) => {
@@ -106,7 +109,11 @@ const Page = ({ id, type, source, frontMatter, references }) => {
       )
     case 'supplement':
       return (
-        <Supplement meta={frontMatter} back={frontMatter.back}>
+        <Supplement
+          meta={frontMatter}
+          back={frontMatter.back}
+          references={references}
+        >
           <MDXRemote
             {...source}
             components={{
@@ -166,6 +173,7 @@ export const getStaticProps = async ({ params }) => {
       source: mdxSource,
       frontMatter: {
         ...rest,
+        color: rest.color ?? metadata.color,
         path: `/research/${params.id}`,
         number: metadata.number ?? 0,
       },
