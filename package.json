@@ -30,7 +30,7 @@
     "@carbonplan/emoji": "^2.0.0",
     "@carbonplan/icons": "^2.0.0",
     "@carbonplan/layouts": "^5.2.0",
-    "@carbonplan/minimaps": "^2.6.0",
+    "@carbonplan/minimaps": "^2.7.1",
     "@carbonplan/seaweed-farming-model": "^1.0.0",
     "@carbonplan/theme": "^8.1.0",
     "@emotion/react": "^11.7.1",
@@ -66,7 +66,8 @@
     "remark-rehype": "^8.1.0",
     "theme-ui": "^0.15.3",
     "topojson-client": "^3.1.0",
-    "unified": "^10.1.2"
+    "unified": "^10.1.2",
+    "zarr-js": "^3.3.0"
   },
   "devDependencies": {
     "@carbonplan/prettier": "^1.2.0",
