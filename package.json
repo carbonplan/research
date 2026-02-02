@@ -30,7 +30,7 @@
     "@carbonplan/emoji": "^2.0.0",
     "@carbonplan/icons": "^2.0.0",
     "@carbonplan/layouts": "^5.2.0",
-    "@carbonplan/minimaps": "^2.7.1",
+    "@carbonplan/minimaps": "^2.7.2",
     "@carbonplan/seaweed-farming-model": "^1.0.0",
     "@carbonplan/theme": "^8.1.0",
     "@emotion/react": "^11.7.1",
