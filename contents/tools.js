@@ -15,9 +15,17 @@ import {
   OffsetsDB,
   OAEEfficiency,
   DOREfficiency,
+  OCR,
 } from '../components/tool-logos'
 
 const tools = [
+  {
+    id: 'climate-risks',
+    logo: <OCR />,
+    color: 'red',
+    summary: 'Mapping wildfire risk to buildings.',
+    title: 'Open Climate Risk',
+  },
   {
     id: 'dor-efficiency',
     logo: <DOREfficiency />,

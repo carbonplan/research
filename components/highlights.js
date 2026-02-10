@@ -4,38 +4,34 @@ import Highlight from './highlight'
 
 const HIGHLIGHTS = [
   {
-    id: 'dor-efficiency',
-    date: '06-04-2025',
-    href: '/research/dor-efficiency',
-    title: 'Mapping the efficiency of direct ocean removal',
+    id: 'climate-risk',
+    date: '02-10-2026',
+    href: '/research/climate-risk',
+    title: 'Open Climate Risk',
     summary:
-      'We developed a tool to explore a new dataset that makes it easier to see how the efficiency of direct ocean removal varies around the world.',
+      'We developed a tool to explore a new, open source dataset of wildfire risk estimates across the contiguous United States.',
     links: [
       {
         label: 'Map tool',
-        href: '/research/dor-efficiency',
+        href: '/research/climate-risk',
       },
       {
         label: 'Explainer article',
-        href: '/research/dor-efficiency-explainer',
+        href: '/research/climate-risk-explainer',
       },
       {
-        label: 'Dataset',
-        href: 'https://source.coop/cworthy/dor-efficiency-atlas',
-      },
-      {
-        label: 'Comparison with OAE tool',
-        href: '/research/mcdr-tools-about',
+        label: 'FAQ',
+        href: '/research/climate-risk-faq',
       },
     ],
   },
   {
     id: 'offsets-db',
-    date: '04-23-2025',
+    date: '01-14-2026',
     href: '/research/offsets-db',
     title: 'OffsetsDB',
     summary:
-      'We’ve expanded our database of offset data with searchable project types and details about who is using offset credits.',
+      'We’ve added project boundary data from 500 forest offset projects to our database of offset data.',
     links: [
       {
         label: 'Database tool',
@@ -43,7 +39,7 @@ const HIGHLIGHTS = [
       },
       {
         label: 'Update blog post',
-        href: 'https://carbonplan.org/blog/offsets-db-additions',
+        href: 'https://carbonplan.org/blog/offsetsdb-project-geometries',
       },
     ],
   },
