@@ -20,8 +20,8 @@ const HIGHLIGHTS = [
         href: '/research/climate-risk-explainer',
       },
       {
-        label: 'Dataset',
-        href: 'https://docs.carbonplan.org/ocr/en/latest/access-data.html',
+        label: 'FAQ',
+        href: '/research/climate-risk-faq',
       },
     ],
   },
