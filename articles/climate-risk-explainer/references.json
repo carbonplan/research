@@ -1,0 +1,217 @@
+{
+  "oehling.2025": {
+    "authors": "D Oehling et al.",
+    "year": 2025,
+    "title": "The private equity opportunity in climate adaptation and resilience",
+    "journal": "",
+    "url": "https://www.bcg.com/publications/2025/investment-opportunities-in-climate-a-and-r"
+  },
+  "condon.2023": {
+    "authors": "M Condon",
+    "year": 2023,
+    "title": "Climate Services: The business of physical risk",
+    "journal": "Arizona State Law Journal",
+    "editors": "",
+    "url": "https://dx.doi.org/10.2139/ssrn.4396826"
+  },
+  "hain.2021": {
+    "authors": "L Hain et al.",
+    "year": 2021,
+    "title": "Let’s get physical: Comparing metrics of physical risk",
+    "journal": "Finance Research Letters",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.frl.2021.102406"
+  },
+  "fiedler.2021": {
+    "authors": "T Fiedler et al.",
+    "year": 2021,
+    "title": "Business risk and the emergence of climate analytics",
+    "journal": "Nature Climate Change",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s41558-020-00984-6"
+  },
+  "paisley.2025": {
+    "authors": "J Paisley and M Nelson",
+    "year": 2025,
+    "title": "A risk professional’s guide to physical risk assessments",
+    "journal": "",
+    "editors": "Climate Financial Risk Forum",
+    "url": "https://www.fca.org.uk/publication/corporate/risk-professionals-guide-physical-risk-assessments-garp-benchmarking-study-13-vendors.pdf"
+  },
+  "riley.2025": {
+    "authors": "K Riley et al.",
+    "year": 2025,
+    "title": "Spatial datasets of probabilistic wildfire risk components for the conterminous United States (270m) for circa 2011 climate and projected future climate circa 2047",
+    "journal": "",
+    "editors": "",
+    "url": "https://www.fs.usda.gov/rds/archive/catalog/RDS-2025-0006"
+  },
+  "scott.2024": {
+    "authors": "J Scott et al.",
+    "year": 2024,
+    "title": "Wildfire risk to communities: spatial datasets of landscape-wide wildfire risk components for the United States (2nd edition)",
+    "journal": "",
+    "editors": "",
+    "url": "https://doi.org/10.2737/RDS-2020-0016-2"
+  },
+  "rasmussen.2023": {
+    "authors": "R Rasmussen et al.",
+    "year": 2023,
+    "title": "CONUS404: The NCAR-USGS 4-km long-term regional hydroclimate reanalysis over the CONUS",
+    "journal": "Bulletin of the American Meteorological Society",
+    "editors": "",
+    "url": "https://doi.org/10.1175/BAMS-D-21-0326.1"
+  },
+  "balch.2024": {
+    "authors": "J Balch et al.",
+    "year": 2024,
+    "title": "The fastest-growing and most destructive fires in the US (2001 to 2020)",
+    "journal": "Science",
+    "editors": "",
+    "url": "https://doi.org/10.1126/science.adk5737"
+  },
+  "maranghides.2022": {
+    "authors": "A Maranghides et al.",
+    "year": 2022,
+    "title": "WUI structure/parcel/community fire mitigation methodology",
+    "journal": "National Institute of Standards and Technology",
+    "editors": "",
+    "url": "https://doi.org/10.6028/NIST.TN.2205"
+  },
+  "chulahwat.2024": {
+    "authors": "A Chulahwat and H Mahmoud",
+    "year": 2024,
+    "title": "The impact of wind characteristics on the spatial distribution of damage to the built environment during wildfire events: The 2022 Marshall Fire",
+    "journal": "Natural Hazards Review",
+    "editors": "",
+    "url": "https://doi.org/10.1061/NHREFO.NHENG-1888"
+  },
+  "calfire.2024": {
+    "authors": "CAL FIRE",
+    "year": 2024,
+    "title": "Fire Hazard Severity Zones",
+    "journal": "",
+    "editors": "",
+    "url": "https://osfm.fire.ca.gov/what-we-do/community-wildfire-preparedness-and-mitigation/fire-hazard-severity-zones"
+  },
+  "moran.2025": {
+    "authors": "C Moran et al.",
+    "year": 2025,
+    "title": "Benchmarking performance of annual burn probability modeling against subsequent wildfire activity in California",
+    "journal": "Scientific Reports",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s41598-025-07968-6"
+  },
+  "schubert.2024": {
+    "authors": "J Schubert et al.",
+    "year": 2024,
+    "title": "National-scale flood hazard data unfit for urban risk management",
+    "journal": "Earth's Future",
+    "editors": "",
+    "url": "https://doi.org/10.1029/2024EF004549"
+  },
+  "dawkins.2023": {
+    "authors": "L Dawkins et al.",
+    "year": 2023,
+    "title": "Quantifying uncertainty and sensitivity in climate risk assessments: Varying hazard, exposure and vulnerability modelling choices",
+    "journal": "Climate Risk Management",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.crm.2023.100511"
+  },
+  "overture.2025": {
+    "authors": "OpenStreetMap contributors, Overture Maps Foundation",
+    "year": 2025,
+    "title": "",
+    "journal": "",
+    "editors": "",
+    "url": "https://overturemaps.org/"
+  },
+  "calkin.2023": {
+    "authors": "D Calkin et al.",
+    "year": 2023,
+    "title": "Wildland-urban fire disasters aren’t actually a wildfire problem",
+    "journal": "Proceedings of the National Academy of Sciences",
+    "editors": "",
+    "url": "https://doi.org/10.1073/pnas.2315797120"
+  },
+  "thompson.2025a": {
+    "authors": "M Thompson et al.",
+    "year": 2025,
+    "title": "Wildfire risk indices & the built environment: Part 1 - An inventory of current models",
+    "journal": "",
+    "editors": "",
+    "url": "https://headwaterseconomics.org/wp-content/uploads/2025/08/2025-Wildfire-Risk-Indices-Part-1-Inventory-of-Existing-Models.pdf"
+  },
+  "thompson.2025b": {
+    "authors": "M Thompson et al.",
+    "year": 2025,
+    "title": "Wildfire risk indices & the built environment: Part 2 - Gaps and opportunities",
+    "journal": "",
+    "editors": "",
+    "url": "https://headwaterseconomics.org/wp-content/uploads/2025/08/2025-Wildfire-Risk-Indices-Part-2-Gaps-and-Opportunities.pdf"
+  },
+  "brown.2024": {
+    "authors": "S Brown et al.",
+    "year": 2024,
+    "title": "Wildfire risk",
+    "journal": "Science you can use 101",
+    "editors": "",
+    "url": "https://www.fs.usda.gov/rm/pubs_journals/rmrs/sycu/2024/sycu101_2024_wildfire_risk.pdf"
+  },
+  "finney.2005": {
+    "authors": "M Finney",
+    "year": 2005,
+    "title": "The challenge of quantitative risk analysis for wildland fire",
+    "journal": "Forest Ecology and Management",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.foreco.2005.02.010"
+  },
+  "scott.2013": {
+    "authors": "J Scott et al.",
+    "year": 2013,
+    "title": "A wildfire risk assessment framework for land and resource management",
+    "journal": "",
+    "editors": "",
+    "url": "https://www.fs.usda.gov/rm/pubs/rmrs_gtr315.pdf"
+  },
+  "iso.2018": {
+    "authors": "International Standards Organization",
+    "year": 2018,
+    "title": "ISO 31000:2018 Risk management – Guidelines",
+    "journal": "ISO",
+    "editors": "",
+    "url": "https://www.iso.org/standard/65694.html"
+  },
+  "jtfti.2012": {
+    "authors": "Joint Task Force Transformation Initiative",
+    "year": 2012,
+    "title": "Guide for conducting risk assessments",
+    "journal": "",
+    "editors": "",
+    "url": "https://doi.org/10.6028/NIST.SP.800-30r1 "
+  },
+  "nifc.2025": {
+    "authors": "National Interagency Fire Center",
+    "year": 2025,
+    "title": "Interagency wildland fire perimeter history",
+    "journal": "",
+    "editors": "",
+    "url": "https://data-nifc.opendata.arcgis.com/datasets/nifc::interagencyfireperimeterhistory-all-years-view/about"
+  },
+  "fosberg.1978": {
+    "authors": "M A Fosberg",
+    "year": 1978,
+    "title": "Weather in wildland fire management: the Fire Weather Index",
+    "journal": "Conference on Sierra Nevada Meteorology",
+    "editors": "",
+    "url": "https://www.cabidigitallibrary.org/doi/full/10.5555/19800670973"
+  },
+  "richards.1990": {
+    "authors": "G Richards",
+    "year": 1990,
+    "title": "An elliptical growth model of forest fire fronts and its numerical solution",
+    "journal": "International Journal for Numerical Methods in Engineering",
+    "editors": "",
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.1620300606"
+  }
+}
