@@ -164,6 +164,7 @@ export const getStaticProps = async ({ params }) => {
       rehypePlugins: [slug],
     },
     scope: rest,
+    blockJS: false,
   })
 
   return {
