@@ -20,7 +20,7 @@ import {
 
 const tools = [
   {
-    id: 'climate-risks',
+    id: 'climate-risk',
     logo: <OCR />,
     color: 'red',
     summary: 'Mapping wildfire risk to buildings.',
