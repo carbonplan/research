@@ -1,5 +1,21 @@
 const publications = [
   {
+    date: '02-26-2026',
+    title:
+      'Recentering goals: A guide to CDR policymaking for a net-negative world',
+    href: 'https://files.carbonplan.org/CDR-Policy-Report.pdf',
+    color: 'yellow',
+    summary:
+      'The purpose of CDR deployment is to enable a net-negative world. Our report presents a framework for designing CDR policies with net negativity in mind.',
+    journal: 'Report',
+    links: [
+      {
+        label: 'Zenodo',
+        href: 'https://doi.org/10.5281/zenodo.18775522',
+      },
+    ],
+  },
+  {
     date: '12-01-2024',
     title:
       'Increasingly active wildfire seasons threaten the sustainability of forest-backed carbon offset programs',
