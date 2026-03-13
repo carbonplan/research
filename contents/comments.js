@@ -1,5 +1,10 @@
 const comments = [
   {
+    title: 'National Science Foundation re: Dear Colleague Letter: “NSF Intent to Restructure Critical Weather Infrastructure”',
+    href: 'https://files.carbonplan.org/CarbonPlan-NCAR-Comment-Letter-03-13-2026.pdf',
+    date: '03-13-2026',
+  },
+  {
     title: 'California Air Resources Board re: SB 905 Implementation',
     href: 'https://files.carbonplan.org/CarbonPlan-SB-905-Comment-Letter-10-06-2025.pdf',
     date: '10-06-2025',
