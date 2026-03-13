@@ -1,6 +1,7 @@
 const comments = [
   {
-    title: 'National Science Foundation re: Dear Colleague Letter: “NSF Intent to Restructure Critical Weather Infrastructure”',
+    title:
+      'National Science Foundation re: Dear Colleague Letter: “NSF Intent to Restructure Critical Weather Infrastructure”',
     href: 'https://files.carbonplan.org/CarbonPlan-NCAR-Comment-Letter-03-13-2026.pdf',
     date: '03-13-2026',
   },
