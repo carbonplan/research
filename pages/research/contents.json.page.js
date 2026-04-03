@@ -9,7 +9,7 @@ export function getServerSideProps({ res }) {
     getCombinedContents()
   const pages = articles
     .concat(commentary)
-    .concat(comments.map((t) => ({ ...t, type: 'comment letter' })))
+    .concat(comments.map((t) => ({ ...t, type: 'commentary' })))
     .concat(tools.map((t) => ({ ...t, type: 'tool' })))
     .concat(extras)
     .map(({ date, href, color, id, title, icon, type, authors, summary }) => {
