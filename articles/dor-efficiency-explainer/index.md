@@ -25,7 +25,7 @@ links:
   - label: Map tool
     href: /research/dor-efficiency
   - label: Dataset
-    href: https://beta.source.coop/repositories/cworthy/dor-efficiency-atlas/description/
+    href: https://source.coop/cworthy/dor-efficiency-atlas
   - label: Comparison with OAE tool
     href: /research/mcdr-tools-about
 ---
@@ -91,7 +91,7 @@ In an ideal CDR scenario, all of the CO₂ extracted from the ocean is permanent
 
 We created the DOR efficiency dataset to explore how extracting CO₂ from the surface ocean at different locations and seasons leads to variable amounts of atmospheric carbon removal. In this dataset, we define DOR efficiency as the amount of CO₂ that is transferred from the atmosphere to the ocean relative to the amount of CO₂ extracted.
 
-We modeled DOR efficiency using the same framework we previously used to model OAE efficiency. Briefly, we divided the surface ocean into 690 regions and quantified the efficiency of DOR in each region by removing dissolved inorganic carbon (DIC) at the surface at a rate of 10 mol m<sup>–2</sup>yr<sup>–1</sup> for one month, then running the model for 15 years to simulate atmospheric CO₂ absorption. These numerical experiments were repeated for each region in all four seasons. For a more complete explanation of the modeling framework — including a discussion of its strengths and limitations — see our [previous explainer](https://carbonplan.org/research/oae-efficiency-explainer) and the underlying [scientific paper](https://www.nature.com/articles/s41558-024-02179-9.epdf?sharing_token=LgDF4VdJvkifRzIuQy5nT9RgN0jAjWel9jnR3ZoTv0ML06qtsGAXcI3ncw2VKMdvNBF8yc3ykUNvQP2YZSZZg3VEb8eJNbnayufBxkZ0cVTHRB4myOJv4osBgWv1OPyMNfRCLYPLT3MancsjfEhCqWMLGD_VUA_LXbALrR9640c%3D). You can access the full research-grade dataset for DOR efficiency [here](https://beta.source.coop/repositories/cworthy/dor-efficiency-atlas/description/).
+We modeled DOR efficiency using the same framework we previously used to model OAE efficiency. Briefly, we divided the surface ocean into 690 regions and quantified the efficiency of DOR in each region by removing dissolved inorganic carbon (DIC) at the surface at a rate of 10 mol m<sup>–2</sup>yr<sup>–1</sup> for one month, then running the model for 15 years to simulate atmospheric CO₂ absorption. These numerical experiments were repeated for each region in all four seasons. For a more complete explanation of the modeling framework — including a discussion of its strengths and limitations — see our [previous explainer](https://carbonplan.org/research/oae-efficiency-explainer) and the underlying [scientific paper](https://www.nature.com/articles/s41558-024-02179-9.epdf?sharing_token=LgDF4VdJvkifRzIuQy5nT9RgN0jAjWel9jnR3ZoTv0ML06qtsGAXcI3ncw2VKMdvNBF8yc3ykUNvQP2YZSZZg3VEb8eJNbnayufBxkZ0cVTHRB4myOJv4osBgWv1OPyMNfRCLYPLT3MancsjfEhCqWMLGD_VUA_LXbALrR9640c%3D). You can access the full research-grade dataset for DOR efficiency [here](https://source.coop/cworthy/dor-efficiency-atlas).
 
 For clarity, this dataset focuses on the reabsorption of atmospheric CO₂ following a DOR intervention. The efficiency values do not account for the emissions associated with carrying out the DOR or potential storage losses that emit the extracted CO₂ to the atmosphere. In the interactive tool, users can apply different assumptions about the fate of extracted CO₂ to see how this affects this dataset’s efficiency estimates.
 

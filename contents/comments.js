@@ -1,6 +1,35 @@
 const comments = [
   {
     title:
+      'Washington Department of Ecology re: Proposed rule to update the US Forest Offsets Protocol',
+    href: 'https://files.carbonplan.org/Washington-Ecology-Draft-Forest-Porotocl-Comment-03-13-2026.pdf',
+    date: '03-13-2026',
+  },
+  {
+    title:
+      'National Science Foundation re: Dear Colleague Letter: “NSF Intent to Restructure Critical Weather Infrastructure”',
+    href: 'https://files.carbonplan.org/CarbonPlan-NCAR-Comment-Letter-03-13-2026.pdf',
+    date: '03-13-2026',
+  },
+  {
+    title: 'California Air Resources Board re: SB 905 Implementation',
+    href: 'https://files.carbonplan.org/CarbonPlan-SB-905-Comment-Letter-10-06-2025.pdf',
+    date: '10-06-2025',
+  },
+  {
+    title:
+      'Washington State Department of Ecology re: Additional comments pertaining to US Forest Protocol Draft rule language',
+    href: 'https://files.carbonplan.org/Washington-Ecology-Draft-Protocol-Comment-Letter-09-30-2025.pdf',
+    date: '09-30-2025',
+  },
+  {
+    title:
+      'Washington State Department of Ecology re: Comments pertaining to US Forest Protocol Draft rule language',
+    href: 'https://files.carbonplan.org/Washington-Ecology-Draft-Protocol-Comment-Letter-08-18-2025.pdf',
+    date: '08-18-2025',
+  },
+  {
+    title:
       'California Department of Insurance re: Proposed Text of Regulation of Catastrophe Modeling and Ratemaking',
     href: 'https://files.carbonplan.org/California-Department-of-Insurance-Comment-Letter-09-17-2024.pdf',
     date: '09-17-2024',

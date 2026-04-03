@@ -1,0 +1,37 @@
+{
+  "kanzaki.2022": {
+    "authors": "Y Kanzaki et al.",
+    "year": 2022,
+    "title": "Soil Cycles of Elements simulator for Predicting TERrestrial regulation of greenhouse gases: SCEPTER v0.9",
+    "journal": "Geoscientific Model Development",
+    "editors": "",
+    "url": "https://doi.org/10.5194/gmd-15-4959-2022"
+  },
+
+  "kanzaki.2024": {
+    "authors": "Y Kanzaki et al.",
+    "year": 2024,
+    "title": "In silico calculation of soil pH by SCEPTER v1.0",
+    "journal": "Geoscientific Model Development",
+    "editors": "",
+    "url": "https://doi.org/10.5194/gmd-17-4515-2024"
+  },
+
+  "levy.2024": {
+    "authors": "C Levy et al.",
+    "year": 2024,
+    "title": "Enhanced rock weathering for carbon removal–monitoring and mitigating potential environmental impacts on agricultural land",
+    "journal": "Environmental Science & Technology",
+    "editors": "",
+    "url": "https://doi.org/10.1021/acs.est.4c02368"
+  },
+
+  "zhang.2023": {
+    "authors": "B Zhang et al.",
+    "year": 2023,
+    "title": "Techno-economic and life cycle assessment of enhanced rock weathering: A case study from the Midwestern United States",
+    "journal": "Environmental Science & Technology",
+    "editors": "",
+    "url": "https://doi.org/10.1021/acs.est.3c01658"
+  }
+}

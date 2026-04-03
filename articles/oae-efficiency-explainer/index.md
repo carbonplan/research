@@ -46,7 +46,7 @@ links:
   - label: Scientific paper
     href: https://www.nature.com/articles/s41558-024-02179-9.epdf?sharing_token=LgDF4VdJvkifRzIuQy5nT9RgN0jAjWel9jnR3ZoTv0ML06qtsGAXcI3ncw2VKMdvNBF8yc3ykUNvQP2YZSZZg3VEb8eJNbnayufBxkZ0cVTHRB4myOJv4osBgWv1OPyMNfRCLYPLT3MancsjfEhCqWMLGD_VUA_LXbALrR9640c%3D
   - label: Dataset
-    href: https://beta.source.coop/repositories/cworthy/oae-efficiency-atlas/description/
+    href: https://source.coop/cworthy/oae-efficiency-atlas
 ---
 
 <DataWrapper>
@@ -155,7 +155,7 @@ The model we used represents the three-dimensional circulation of the ocean and 
 
 To compute net CO₂ uptake induced by OAE, we evaluated the time evolution of the simulated air-sea CO₂ flux relative to baseline simulation that did not include the OAE intervention, but was otherwise identical. The importance of this counterfactual is illustrated by the fact that OAE can drive ocean carbon uptake even in regions characterized by outgassing (see Figure 1): an OAE-induced reduction in ocean outgassing is functionally equivalent to net carbon dioxide removal. To represent the counterfactual, we used MARBL’s ability to simultaneously simulate two seawater carbonate systems. We applied the alkalinity addition to the first carbonate system; then we used a difference between the fields simulated by the perturbed and unperturbed carbonate systems to compute OAE effects.
 
-You can learn more about our modeling approach in this [paper](https://www.nature.com/articles/s41558-024-02179-9.epdf?sharing_token=LgDF4VdJvkifRzIuQy5nT9RgN0jAjWel9jnR3ZoTv0ML06qtsGAXcI3ncw2VKMdvNBF8yc3ykUNvQP2YZSZZg3VEb8eJNbnayufBxkZ0cVTHRB4myOJv4osBgWv1OPyMNfRCLYPLT3MancsjfEhCqWMLGD_VUA_LXbALrR9640c%3D), and you can access the data via this [Source Cooperative repository](https://beta.source.coop/repositories/cworthy/oae-efficiency-atlas/description/).
+You can learn more about our modeling approach in this [paper](https://www.nature.com/articles/s41558-024-02179-9.epdf?sharing_token=LgDF4VdJvkifRzIuQy5nT9RgN0jAjWel9jnR3ZoTv0ML06qtsGAXcI3ncw2VKMdvNBF8yc3ykUNvQP2YZSZZg3VEb8eJNbnayufBxkZ0cVTHRB4myOJv4osBgWv1OPyMNfRCLYPLT3MancsjfEhCqWMLGD_VUA_LXbALrR9640c%3D), and you can access the data via this [Source Cooperative repository](https://source.coop/cworthy/oae-efficiency-atlas).
 
 ## Exploring the OAE Efficiency Tool
 
@@ -224,7 +224,7 @@ There are different ways to start using the OAE efficiency dataset, depending on
         'I want to perform additional in-depth analysis of the data.',
         <span>
           Read the <Link href='https://www.nature.com/articles/s41558-024-02179-9.epdf?sharing_token=LgDF4VdJvkifRzIuQy5nT9RgN0jAjWel9jnR3ZoTv0ML06qtsGAXcI3ncw2VKMdvNBF8yc3ykUNvQP2YZSZZg3VEb8eJNbnayufBxkZ0cVTHRB4myOJv4osBgWv1OPyMNfRCLYPLT3MancsjfEhCqWMLGD_VUA_LXbALrR9640c%3D'>scientific paper</Link> and access the research-grade data{' '}
-<Link href='https://beta.source.coop/repositories/cworthy/oae-efficiency-atlas/description/'>here</Link>.
+<Link href='https://source.coop/cworthy/oae-efficiency-atlas'>here</Link>.
         </span>,
       ],
       [

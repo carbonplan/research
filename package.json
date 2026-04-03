@@ -26,11 +26,11 @@
   "dependencies": {
     "@carbonplan/charts": "^3.1.1",
     "@carbonplan/colormaps": "^4.0.0",
-    "@carbonplan/components": "^13.2.0",
+    "@carbonplan/components": "^13.2.1",
     "@carbonplan/emoji": "^2.0.0",
     "@carbonplan/icons": "^2.0.0",
-    "@carbonplan/layouts": "^5.1.0",
-    "@carbonplan/minimaps": "^2.6.0",
+    "@carbonplan/layouts": "^5.2.0",
+    "@carbonplan/minimaps": "^2.7.3",
     "@carbonplan/seaweed-farming-model": "^1.0.0",
     "@carbonplan/theme": "^8.1.0",
     "@emotion/react": "^11.7.1",
@@ -57,7 +57,7 @@
     "mapbox-gl": "^1.13.1",
     "ndarray-concat-cols": "^1.0.0",
     "next": "^14.2.25",
-    "next-mdx-remote": "^4.1.0",
+    "next-mdx-remote": "^6.0.0",
     "react": "^18.2.0",
     "react-animate-height": "^2.0.23",
     "react-dom": "^18.2.0",
@@ -66,13 +66,14 @@
     "remark-rehype": "^8.1.0",
     "theme-ui": "^0.15.3",
     "topojson-client": "^3.1.0",
-    "unified": "^10.1.2"
+    "unified": "^10.1.2",
+    "zarr-js": "^3.3.0"
   },
   "devDependencies": {
     "@carbonplan/prettier": "^1.2.0",
     "babel-jest": "^27.4.6",
-    "glob": "^7.1.7",
     "eslint-config-next": "^14.2.25",
+    "glob": "^7.1.7",
     "jest": "^27.4.7",
     "prettier": "2.3.0",
     "puppeteer": "^10.4.0"

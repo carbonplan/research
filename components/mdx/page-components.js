@@ -3,6 +3,90 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'climate-risk-explainer': {
+    OverviewMap: dynamic(() =>
+      import(
+        '../../articles/climate-risk-explainer/components/overview-map.js'
+      ).then((mod) => mod.OverviewMap || mod.default)
+    ),
+    CountyMap: dynamic(() =>
+      import(
+        '../../articles/climate-risk-explainer/components/county-map.js'
+      ).then((mod) => mod.CountyMap || mod.default)
+    ),
+    WindComparison: dynamic(() =>
+      import(
+        '../../articles/climate-risk-explainer/components/wind-comparison.js'
+      ).then((mod) => mod.WindComparison || mod.default)
+    ),
+    SummaryTable: dynamic(() =>
+      import(
+        '../../articles/climate-risk-explainer/components/summary-table.js'
+      ).then((mod) => mod.SummaryTable || mod.default)
+    ),
+  },
+  'carbonate-silicate-swap': {
+    Figure1: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-1.js'
+      ).then((mod) => mod.Figure1 || mod.default)
+    ),
+    DIC: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-1.js'
+      ).then((mod) => mod.DIC || mod.default)
+    ),
+    Cation: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-1.js'
+      ).then((mod) => mod.Cation || mod.default)
+    ),
+    Anion: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-1.js'
+      ).then((mod) => mod.Anion || mod.default)
+    ),
+    Weathering: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-1.js'
+      ).then((mod) => mod.Weathering || mod.default)
+    ),
+    Figure2: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-2.js'
+      ).then((mod) => mod.Figure2 || mod.default)
+    ),
+    Figure3: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-3.js'
+      ).then((mod) => mod.Figure3 || mod.default)
+    ),
+    Figure4: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-4.js'
+      ).then((mod) => mod.Figure4 || mod.default)
+    ),
+    ConservativeLegend: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-4.js'
+      ).then((mod) => mod.ConservativeLegend || mod.default)
+    ),
+    SimpleSubtractionLegend: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/figure-4.js'
+      ).then((mod) => mod.SimpleSubtractionLegend || mod.default)
+    ),
+    HCO3: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/chemistry.js'
+      ).then((mod) => mod.HCO3 || mod.default)
+    ),
+    CO3: dynamic(() =>
+      import(
+        '../../articles/carbonate-silicate-swap/components/chemistry.js'
+      ).then((mod) => mod.CO3 || mod.default)
+    ),
+  },
   'dor-efficiency-explainer': {
     TimeSeries: dynamic(() =>
       import(
@@ -614,6 +698,20 @@ const components = {
       )
     ),
   },
+  'excess-hydropower-credits': {
+    Issuances: dynamic(() =>
+      import(
+        '../../commentary/excess-hydropower-credits/components/issuances.js'
+      ).then((mod) => mod.Issuances || mod.default)
+    ),
+    Summary: dynamic(() =>
+      import(
+        '../../commentary/excess-hydropower-credits/components/summary.js'
+      ).then((mod) => mod.Summary || mod.default)
+    ),
+  },
+  'kariba-excess-credits': {},
+  'offsets-foregone-revenue': {},
   'defining-good-cdr': {
     Activities: dynamic(() =>
       import(
@@ -748,6 +846,46 @@ const components = {
       import('@carbonplan/components').then(
         (mod) => mod.FigureCaption || mod.default
       )
+    ),
+  },
+  'climate-risk-faq': {
+    FactorsTable: dynamic(() =>
+      import(
+        '../../articles/climate-risk-explainer/components/factors-table.js'
+      ).then((mod) => mod.FactorsTable || mod.default)
+    ),
+  },
+  'climate-risk-fire-methods': {
+    Table: dynamic(() =>
+      import('@carbonplan/components').then((mod) => mod.Table || mod.default)
+    ),
+    Figure: dynamic(() =>
+      import('@carbonplan/components').then((mod) => mod.Figure || mod.default)
+    ),
+    FigureCaption: dynamic(() =>
+      import('@carbonplan/components').then(
+        (mod) => mod.FigureCaption || mod.default
+      )
+    ),
+    GapFilling: dynamic(() =>
+      import(
+        '../../articles/climate-risk-explainer/components/methods/gap-filling.js'
+      ).then((mod) => mod.GapFilling || mod.default)
+    ),
+    Wind: dynamic(() =>
+      import(
+        '../../articles/climate-risk-explainer/components/methods/wind.js'
+      ).then((mod) => mod.Wind || mod.default)
+    ),
+    Spreading: dynamic(() =>
+      import(
+        '../../articles/climate-risk-explainer/components/methods/spreading.js'
+      ).then((mod) => mod.Spreading || mod.default)
+    ),
+    Blurring: dynamic(() =>
+      import(
+        '../../articles/climate-risk-explainer/components/methods/blurring.js'
+      ).then((mod) => mod.Blurring || mod.default)
     ),
   },
   'forest-offsets-explainer-faq': {
