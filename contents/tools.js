@@ -25,6 +25,7 @@ const tools = [
     color: 'red',
     summary: 'Mapping wildfire risk to buildings.',
     title: 'Open Climate Risk',
+    date: '02-10-2026',
   },
   {
     id: 'dor-efficiency',
