@@ -10,7 +10,6 @@ const Index = ({ articles, commentary, count }) => {
         'Articles, tools, and commentary on climate services and solutions.'
       }
       card={'https://images.carbonplan.org/social/research.png'}
-      links={'local'}
       metadata={`COUNT: ${count}`}
       nav={'research'}
       url={'https://carbonplan.org/research'}
