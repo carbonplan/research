@@ -5,17 +5,30 @@ function Contents() {
 }
 
 export function getServerSideProps({ res }) {
-  const { articles, commentary, tools, extras } = getCombinedContents()
+  const { articles, commentary, comments, tools, extras } =
+    getCombinedContents()
   const pages = articles
     .concat(commentary)
-    .concat(tools)
+    .concat(comments.map((t) => ({ ...t, type: 'commentary' })))
+    .concat(tools.map((t) => ({ ...t, type: 'tool' })))
     .concat(extras)
-    .filter((content) => content.id)
-    .map(({ date, id }) => {
-      const result = { page: `research/${id}` }
+    .map(({ date, href, color, id, title, icon, type, authors, summary }) => {
+      let result = { page: id ? `research/${id}` : href }
+
       if (date) {
         const [month, day, year] = date.split('-')
         result.date = `${year}-${month}-${day}`
+      }
+
+      if (title) {
+        result.metadata = {
+          type,
+          title,
+          authors,
+          summary,
+          color,
+          icon,
+        }
       }
       return result
     })

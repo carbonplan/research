@@ -25,6 +25,7 @@ const tools = [
     color: 'red',
     summary: 'Mapping wildfire risk to buildings.',
     title: 'Open Climate Risk',
+    date: '02-10-2026',
   },
   {
     id: 'dor-efficiency',
@@ -32,6 +33,7 @@ const tools = [
     color: 'secondary',
     summary: 'Mapping the efficiency of direct ocean removal.',
     title: 'DOR Efficiency',
+    date: '06-04-2025',
   },
   {
     id: 'oae-efficiency',
@@ -39,13 +41,16 @@ const tools = [
     color: 'secondary',
     summary: 'Mapping the efficiency of ocean alkalinity enhancement.',
     title: 'OAE Efficiency',
+    date: '06-04-2025',
   },
   {
     id: 'offsets-db',
     logo: <OffsetsDB />,
     color: 'secondary',
     summary: 'A harmonized database of carbon offset projects and credits.',
-    title: 'Offsets DB',
+    displayName: 'OFFSETS DB', // Use space when all-caps
+    title: 'OffsetsDB',
+    date: '04-23-2025',
   },
   {
     id: 'ew-quantification',
@@ -54,6 +59,7 @@ const tools = [
     summary:
       'A tool for exploring different quantitative methods that could be used in enhanced weathering MRV.',
     title: 'Quantifying enhanced weathering',
+    date: '09-11-2023',
   },
   {
     id: 'cdr-verification',
@@ -62,6 +68,7 @@ const tools = [
     summary:
       'Interactive tool for understanding Verification Confidence Levels (VCLs) for carbon removal.',
     title: 'CDR Verification Framework',
+    date: '04-01-2024',
   },
   {
     id: 'forest-offsets-fires',
@@ -70,6 +77,7 @@ const tools = [
     summary:
       'Mapping forest carbon offset projects and their intersections with fires.',
     title: 'Offsets Fires',
+    date: '06-25-2025',
   },
   {
     id: 'cmip6-downscaling',
@@ -77,6 +85,7 @@ const tools = [
     color: 'warm',
     summary: 'Interactive mapping tool for global downscaled climate data.',
     title: 'CMIP6 Downscaling',
+    date: '06-30-2022',
   },
   {
     id: 'seaweed-farming',
@@ -84,6 +93,7 @@ const tools = [
     color: 'teal',
     summary: 'Mapping the costs and climate benefits of farming seaweed.',
     title: 'Seaweed Farming',
+    date: '03-15-2022',
   },
   {
     id: 'cdr-database',
@@ -92,6 +102,7 @@ const tools = [
     summary:
       'A database of reports on carbon dioxide removal project proposals.',
     title: 'CDR Database',
+    date: '12-15-2021',
   },
   {
     id: 'permanence-calculator',
@@ -99,6 +110,7 @@ const tools = [
     color: 'pink',
     summary: 'Comparing costs for temporary and permanent carbon removal.',
     title: 'Permanence Calculator',
+    date: '12-09-2020',
   },
   {
     id: 'compliance-users',
@@ -106,6 +118,7 @@ const tools = [
     color: 'blue',
     summary: 'Tracking the users of compliance offsets.',
     title: 'Compliance users',
+    date: '12-19-2024',
   },
   {
     id: 'soil-protocols',
@@ -113,6 +126,7 @@ const tools = [
     color: 'orange',
     summary: 'A database of protocols used to credit soil carbon.',
     title: 'Soil Protocols',
+    date: '10-13-2021',
   },
   {
     id: 'forest-offsets-crediting',
@@ -121,6 +135,7 @@ const tools = [
     summary:
       'Mapping our over-crediting analysis of forest carbon offset projects.',
     title: 'Offsets Crediting',
+    date: '04-29-2021',
   },
   {
     id: 'forest-risks',
@@ -128,6 +143,7 @@ const tools = [
     color: 'red',
     summary: 'Mapping risks to forest carbon under a changing climate.',
     title: 'Forest Risks',
+    date: '05-20-2021',
   },
   {
     id: 'forest-carbon',
@@ -135,6 +151,7 @@ const tools = [
     color: 'green',
     summary: 'Mapping emissions related to forest carbon.',
     title: 'Forest Carbon',
+    date: '09-21-2021',
   },
   {
     id: 'dac-calculator',
@@ -142,6 +159,7 @@ const tools = [
     color: 'purple',
     summary: 'Explore key parameters affecting the cost of direct air capture.',
     title: 'DAC Cost Calculator',
+    date: '02-01-2021',
   },
 ]
 

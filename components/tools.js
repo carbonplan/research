@@ -13,7 +13,7 @@ const sx = {
 }
 
 const Tool = ({ info, start }) => {
-  const { color, id, logo, title, summary } = info
+  const { color, id, logo, displayName, title, summary } = info
   return (
     <Column start={start} width={[3, 2, 2, 2]} sx={{ mb: [3, 5, 5, 6] }}>
       <Link
@@ -97,7 +97,7 @@ const Tool = ({ info, start }) => {
           </Flex>
         </Box>
         <Box id='tool' sx={{ ...sx.tool, mt: ['12px', '12px', '12px', 3] }}>
-          {title}
+          {displayName ?? title}
         </Box>
         <Box
           id='summary'

@@ -147,7 +147,7 @@ const Main = ({ articles, commentary }) => {
             label='Tools'
             id='tools'
             selected={selected === 'tools'}
-            items={tools.filter((d) => !d.hideInIndex)}
+            items={sortByDate(tools.filter((d) => !d.hideInIndex))}
             Entries={Tools}
             limit={6}
             ref={listRefs.tools}
