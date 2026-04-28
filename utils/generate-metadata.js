@@ -74,6 +74,17 @@ const supplementMetadata = glob
       references = {}
     }
 
+    const childId = data.slug ?? `${id}-${fileName}`
+    const seriesConfig = parentData.series?.entries?.find(
+      (entry) => entry.href === `/research/${childId}`
+    )
+      ? {
+          ...parentData.series,
+          parentHref: `/research/${id}`,
+          parentTitle: parentData.title,
+        }
+      : undefined
+
     return {
       ...data,
       summary: data.quickLook,
@@ -81,9 +92,10 @@ const supplementMetadata = glob
       color: data.color ?? parentData.color,
       parentId: id,
       folder: folder,
-      id: data.slug ?? `${id}-${fileName}`,
+      id: childId,
       path: `${directory}/${id}/${fileName}.md`,
       references,
+      ...(seriesConfig ? { seriesConfig } : {}),
     }
   })
 
