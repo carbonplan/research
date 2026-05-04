@@ -33,6 +33,7 @@ import {
   supplementMetadata,
 } from '../../utils/metadata'
 import { displayTitles, pageComponents } from '../../components/mdx'
+import SeriesNav from '../../components/series-nav'
 
 const ARTICLE_COMPONENTS = {
   blockquote: Blockquote,
@@ -58,7 +59,7 @@ const SUPPLEMENT_COMPONENTS = {
   Sidenote,
 }
 
-const Page = ({ id, type, source, frontMatter, references }) => {
+const Page = ({ id, type, source, frontMatter, references, seriesConfig }) => {
   const components = useThemedStylesWithMdx(useMDXComponents())
   const router = useRouter()
 
@@ -75,6 +76,17 @@ const Page = ({ id, type, source, frontMatter, references }) => {
           meta={frontMatter}
           references={references}
           displayTitle={displayTitles[id]}
+          banner={
+            frontMatter.series ? (
+              <SeriesNav
+                series={{
+                  ...frontMatter.series,
+                  parentHref: `/research/${id}`,
+                }}
+                color={frontMatter.color}
+              />
+            ) : undefined
+          }
         >
           <MDXRemote
             {...source}
@@ -113,6 +125,11 @@ const Page = ({ id, type, source, frontMatter, references }) => {
           meta={frontMatter}
           back={frontMatter.back}
           references={references}
+          banner={
+            seriesConfig ? (
+              <SeriesNav series={seriesConfig} color={frontMatter.color} />
+            ) : undefined
+          }
         >
           <MDXRemote
             {...source}
@@ -126,7 +143,7 @@ const Page = ({ id, type, source, frontMatter, references }) => {
       )
     default:
       throw new Error(
-        `Unexpected page type: ${type}. Must be one of: 'article', 'supplement'.`
+        `Unexpected page type: ${type}. Must be one of: 'article', 'commentary', 'supplement'.`
       )
   }
 }
@@ -179,6 +196,7 @@ export const getStaticProps = async ({ params }) => {
         number: metadata.number ?? 0,
       },
       references: metadata.references ?? {},
+      seriesConfig: metadata.seriesConfig ?? null,
     },
   }
 }
