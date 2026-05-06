@@ -14,7 +14,7 @@ components:
 
 # How OffsetsDB Works
 
-The goal of OffsetsDB is to make access to offsets data easy and reliable so that more people are able to study how offsets are used. This is a critical part of improving market oversight. The database provides consistently formatted and regularly updated data about offset projects and offset credits sourced from five of the largest and most active offset registries: American Carbon Registry (ACR), ART TREES (ART), Climate Action Reserve (CAR), Gold Standard (GLD), and Verra (VCS). It is available for [download](https://offsets-db-data.readthedocs.io/en/latest/data-access.html) and through an interactive [database tool](https://carbonplan.org/research/offsets-db).
+The goal of OffsetsDB is to make access to offsets data easy and reliable so that more people are able to study how offsets are used. This is a critical part of improving market oversight. The database provides consistently formatted and regularly updated data about offset projects and offset credits sourced from seven of the largest and most active offset registries: American Carbon Registry (ACR), ART TREES (ART), Climate Action Reserve (CAR), Cercarbono (CCB), Gold Standard (GLD), Isometric (ISO), and Verra (VCS). It is available for [download](https://offsets-db-data.readthedocs.io/en/latest/data-access.html) and through an interactive [database tool](https://carbonplan.org/research/offsets-db).
 
 This document briefly describes the methods behind OffsetsDB. For more details, please refer to [the code used to produce OffsetsDB](https://github.com/carbonplan/offsets-db-data), as well as [the technical documentation describing that code](https://offsets-db-data.readthedocs.io/en/latest/).
 
@@ -49,6 +49,12 @@ We expanded OffsetsDB to include project boundary information, as described in [
 As part of the update, we added two features to the web tool: the ability to filter projects with boundary information and the ability to view project boundaries within the tool.
 
 You can read more about these udpates in an accompanying [blog post](https://carbonplan.org/blog/offsetsdb-project-geometries).
+
+## Update — May 06 2026
+
+We expanded OffsetsDB to include two additional offset registries: Cercarbono and Isometric.
+
+You can read more about these udpates in an accompanying [blog post](https://carbonplan.org/blog/offsetsdb-cercarbono-isometric).
 
 ## Terms
 
