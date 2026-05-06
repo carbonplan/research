@@ -54,7 +54,7 @@ You can read more about these udpates in an accompanying [blog post](https://car
 
 We expanded OffsetsDB to include two additional offset registries: Cercarbono and Isometric.
 
-You can read more about these udpates in an accompanying [blog post](https://carbonplan.org/blog/cercarbono-isometric-offsetsdb).
+You can read more about these udpates in an accompanying [blog post](https://carbonplan.org/blog/offsetsdb-cercarbono-isometric).
 
 ## Terms
 
