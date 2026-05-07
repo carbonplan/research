@@ -42,7 +42,7 @@ const Inner = ({ summary, links, sx }) => (
 
 const Article = ({ info, first }) => {
   const [hovered, setHovered] = useState(false)
-  let { id, title, color, date, icon, summary, links } = info
+  let { id, title, color, date, icon, summary, series, links } = info
   const href = `/research/${id}`
   color = color || 'text'
 
@@ -108,7 +108,14 @@ const Article = ({ info, first }) => {
 
           <Inner
             summary={summary}
-            links={links}
+            links={
+              series
+                ? series.entries.map((entry, i) => ({
+                    href: entry.href,
+                    label: `${series.entryLabel} #${i + 1}`,
+                  }))
+                : links
+            }
             sx={{ display: ['none', 'inherit', 'inherit', 'inherit'] }}
           />
         </Column>

@@ -180,7 +180,7 @@ export const getStaticProps = async ({ params }) => {
       remarkPlugins: [],
       rehypePlugins: [slug],
     },
-    scope: rest,
+    scope: { ...rest, color: rest.color ?? metadata.color ?? null },
     blockJS: false,
   })
 

@@ -1,0 +1,388 @@
+{
+  "anand.2026": {
+    "authors": "S K Anand et al.",
+    "year": 2026,
+    "title": "Soil structure and mixing controls on water‐rock contact: Implications for enhanced weathering",
+    "journal": "Water Resources Research",
+    "editors": "",
+    "url": "https://doi.org/10.1029/2025WR041479"
+  },
+
+  "anbeek.1992": {
+    "authors": "C Anbeek",
+    "year": 1992,
+    "title": "Surface roughness of minerals and implications for dissolution studies",
+    "journal": "Geochimica et Cosmochimica Acta",
+    "editors": "",
+    "url": "https://doi.org/10.1016/0016-7037(92)90216-6"
+  },
+
+  "baek.2023": {
+    "authors": "S H Baek et al.",
+    "year": 2023,
+    "title": "Impact of climate on the global capacity for enhanced rock weathering on croplands",
+    "journal": "Earth's Future",
+    "editors": "",
+    "url": "https://doi.org/10.1029/2023EF003698"
+  },
+
+  "beckingham.2016": {
+    "authors": "L E Beckingham et al.",
+    "year": 2016,
+    "title": "Evaluation of mineral reactive surface area estimates for prediction of reactivity of a multi-mineral sediment",
+    "journal": "Geochimica et Cosmochimica Acta",
+    "editors": "",
+    "url": "http://dx.doi.org/10.1016/j.gca.2016.05.040"
+  },
+
+  "beckingham.2017": {
+    "authors": "L E Beckingham et al.",
+    "year": 2017,
+    "title": "Evaluation of accessible mineral surface areas for improved prediction of mineral reaction rates in porous media",
+    "journal": "Geochimica et Cosmochimica Acta",
+    "editors": "",
+    "url": "http://dx.doi.org/10.1016/j.gca.2017.02.006"
+  },
+
+  "beerling.2020": {
+    "authors": "D J Beerling et al.",
+    "year": 2020,
+    "title": "Potential for large-scale CO₂ removal via enhanced rock weathering with croplands",
+    "journal": "Nature",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s41586-020-2448-9"
+  },
+
+  "beerling.2025": {
+    "authors": "D J Beerling et al.",
+    "year": 2025,
+    "title": "Transforming US agriculture for carbon removal with enhanced weathering",
+    "journal": "Nature",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s41586-024-08429-2"
+  },
+
+  "bertagni.2025": {
+    "authors": "M B Bertagni et al.",
+    "year": 2025,
+    "title": "Advancing enhanced weathering modeling in soils: Critical comparison with experimental data",
+    "journal": "JAMES",
+    "editors": "",
+    "url": "https://doi.org/10.1029/2024MS004224"
+  },
+
+  "brantley.2000": {
+    "authors": "S L Brantley and N P Mellott",
+    "year": 2000,
+    "title": "Surface area and porosity of primary silicate minerals",
+    "journal": "American Mineralogist",
+    "editors": "",
+    "url": "https://doi.org/10.2138/am-2000-11-1220"
+  },
+
+  "chen.2023": {
+    "authors": "A Chen et al.",
+    "year": 2023,
+    "title": "Experimentally-calibrated estimation of CO₂ removal potentials of enhanced weathering",
+    "journal": "Science of the Total Environment",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.scitotenv.2023.165766"
+  },
+
+  "cipolla.2021a": {
+    "authors": "G Cipolla et al.",
+    "year": 2021,
+    "title": "The role of hydrology on enhanced weathering for carbon sequestration I. Modeling rock-dissolution reactions coupled to plant, soil moisture, and carbon dynamics",
+    "journal": "Advances in Water Resources",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.advwatres.2021.103934"
+  },
+
+  "cipolla.2021b": {
+    "authors": "G Cipolla et al.",
+    "year": 2021,
+    "title": "The role of hydrology on enhanced weathering for carbon sequestration II. From hydroclimatic scenarios to carbon-sequestration efficiencies",
+    "journal": "Advances in Water Resources",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.advwatres.2021.103949"
+  },
+
+  "cipolla.2022": {
+    "authors": "G Cipolla et al.",
+    "year": 2022,
+    "title": "Effects of precipitation seasonality, irrigation, vegetation  cycle and soil type on enhanced weathering – modeling  of cropland case studies across four sites",
+    "journal": "Biogeosciences",
+    "editors": "",
+    "url": "https://doi.org/10.5194/bg-19-3877-2022"
+  },
+
+  "deng.2023": {
+    "authors": "H Deng et al.",
+    "year": 2023,
+    "title": "The environmental controls  on efficiency of enhanced rock  weathering in soils",
+    "journal": "Scientific Reports",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s41598-023-36113-4"
+  },
+
+  "eufrasio.2022": {
+    "authors": "R M Eufrasio et al.",
+    "year": 2022,
+    "title": "Environmental and health impacts of atmospheric CO₂ removal by enhanced rock weathering depend on nations’ energy mix",
+    "journal": "Communications Earth & Environment",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s43247-022-00436-3"
+  },
+
+  "fisher.2023": {
+    "authors": "B A Fisher et al.",
+    "year": 2023,
+    "title": "Mineral surface area in deep weathering profiles reveals the interrelationship of iron oxidation and silicate weathering",
+    "journal": "Earth Surface Dynamics",
+    "editors": "",
+    "url": "https://doi.org/10.5194/esurf-11-51-2023"
+  },
+
+  "geerts.2025": {
+    "authors": "L J J Geerts et al.",
+    "year": 2025,
+    "title": "Review and syntheses: Ocean alkalinity enhancement and carbon  dioxide removal through marine enhanced rock weathering  using olivine",
+    "journal": "Biogeosciences",
+    "editors": "",
+    "url": "https://doi.org/10.5194/bg-22-355-2025"
+  },
+
+  "green.2024": {
+    "authors": "H Green et al.",
+    "year": 2024,
+    "title": "Carbon dioxide removal via weathering of sugarcane mill ash under different soil conditions",
+    "journal": "Applied Geochemistry",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.apgeochem.2024.105940"
+  },
+
+  "hodson.1998": {
+    "authors": "M E Hodson et al.",
+    "year": 1998,
+    "title": "Determination of mineral surface area in relation to the calculation of weathering rates",
+    "journal": "Geoderma",
+    "editors": "",
+    "url": "https://doi.org/10.1016/S0016-7061(97)00136-5"
+  },
+
+  "jerden.2024": {
+    "authors": "J Jerden et al.",
+    "year": 2024,
+    "title": "The impact of geochemical and life-cycle variables on carbon dioxide removal by enhanced rock weathering: Development and application of the Stella ERW model",
+    "journal": "Applied Geochemistry",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.apgeochem.2024.106002"
+  },
+
+  "kantzas.2022": {
+    "authors": "E P Kantzas et al.",
+    "year": 2022,
+    "title": "Substantial carbon drawdown potential from enhanced rock weathering in the United Kingdom",
+    "journal": "Nature Geoscience",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s41561-022-00925-2"
+  },
+
+  "kanzaki.2022": {
+    "authors": "Y Kanzaki et al.",
+    "year": 2022,
+    "title": "Soil Cycles of Elements simulator for Predicting TERrestrial regulation of greenhouse gases: SCEPTER v0.9",
+    "journal": "Geoscientific Model Development",
+    "editors": "",
+    "url": "https://doi.org/10.5194/gmd-15-4959-2022"
+  },
+
+  "kanzaki.2024": {
+    "authors": "Y Kanzaki et al.",
+    "year": 2024,
+    "title": "In silico calculation of soil pH by SCEPTER v1.0",
+    "journal": "Geoscientific Model Development",
+    "editors": "",
+    "url": "https://doi.org/10.5194/gmd-17-4515-2024"
+  },
+
+  "kanzaki.2025": {
+    "authors": "Y Kanzaki et al.",
+    "year": 2025,
+    "title": "Soil cation storage is a key control on the carbon removal dynamics of enhanced weathering",
+    "journal": "Environmental Research Letters",
+    "editors": "",
+    "url": "https://doi.org/10.1088/1748-9326/ade0d5"
+  },
+
+  "kelland.2020": {
+    "authors": "M E Kelland et al.",
+    "year": 2020,
+    "title": "Increased yield and CO₂ sequestration potential with the C₄ cereal Sorghum bicolor cultivated in basaltic rock dust-amended  agricultural soil",
+    "journal": "Global Change Biology",
+    "editors": "",
+    "url": "https://doi.org/10.1111/gcb.15089"
+  },
+
+  "klemme.2022": {
+    "authors": "A Klemme et al.",
+    "year": 2022,
+    "title": "Destabilization of carbon in tropical peatlands by enhanced weathering",
+    "journal": "Communications Earth & Environment",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s43247-022-00544-0"
+  },
+
+  "kuila.2013": {
+    "authors": "U Kuila and M Prasad",
+    "year": 2013,
+    "title": "Specific surface area and pore‐size distribution in clays and shales",
+    "journal": "Geophysical Prospecting",
+    "editors": "",
+    "url": "https://doi.org/10.1111/1365-2478.12028"
+  },
+
+  "kukla.2025": {
+    "authors": "T Kukla et al.",
+    "year": 2025,
+    "title": "Swapping carbonate for silicate in agricultural enhanced rock weathering",
+    "journal": "CDRXIV (preprint)",
+    "editors": "",
+    "url": "https://doi.org/10.70212/cdrxiv.2025304.v1"
+  },
+
+  "lewis.2021": {
+    "authors": "A L Lewis et al.",
+    "year": 2021,
+    "title": "Effects of mineralogy, chemistry and physical properties of basalts on carbon capture potential and plant-nutrient element release via enhanced weathering",
+    "journal": "Applied Geochemistry",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.apgeochem.2021.105023"
+  },
+
+  "macht.2011": {
+    "authors": "F Macht et al.",
+    "year": 2011,
+    "title": "Specific surface area of clay minerals: Comparison between atomic force microscopy measurements and bulk-gas (N₂) and -liquid (EGME) adsorption methods",
+    "journal": "Applied Clay Science",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.clay.2011.04.006"
+  },
+
+  "navarre-sitchler.2007": {
+    "authors": "A Navarre-Sitchler and S Brantley",
+    "year": 2007,
+    "title": "Basalt weathering across scales",
+    "journal": "Earth and Planetary Science Letters",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.epsl.2007.07.010"
+  },
+
+  "qin.2021": {
+    "authors": "F Qin and L E Beckingham",
+    "year": 2021,
+    "title": "The impact of mineral reactive surface area variation on simulated mineral reactions and reaction rates",
+    "journal": "Applied Geochemistry",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.apgeochem.2020.104852"
+  },
+
+  "rimstidt.2012": {
+    "authors": "J D Rimstidt et al.",
+    "year": 2012,
+    "title": "Systematic review of forsterite dissolution rate data",
+    "journal": "Geochimica et Cosmochimica Acta",
+    "editors": "",
+    "url": "http://dx.doi.org/10.1016/j.gca.2012.09.019"
+  },
+
+  "strefler.2018": {
+    "authors": "J Strefler et al.",
+    "year": 2018,
+    "title": "Potential and costs of carbon dioxide removal by  enhanced weathering of rocks",
+    "journal": "Environmental Research Letters",
+    "editors": "",
+    "url": "https://doi.org/10.1088/1748-9326/aaa9c4"
+  },
+
+  "taylor.2026": {
+    "authors": "L Taylor et al.",
+    "year": 2026,
+    "title": "ARTEMIS version 1.0: A reactive transport enhanced rock weathering model with coupled soil carbon and nutrient dynamics",
+    "journal": "EGUsphere (preprint)",
+    "editors": "",
+    "url": "https://doi.org/10.5194/egusphere-2025-5823"
+  },
+
+  "theng.1982": {
+    "authors": "B K G Theng et al.,",
+    "year": 1982,
+    "title": "Surface properties of allophane, halloysite, and imogolite",
+    "journal": "Clays and Clay Minerals",
+    "editors": "",
+    "url": "https://doi.org/10.1346/CCMN.1982.0300209"
+  },
+
+  "valMartin.2023": {
+    "authors": "M Val Martin et al.",
+    "year": 2023,
+    "title": "Improving nitrogen cycling in a land surface model (CLM5) to quantify soil N₂O, NO, and NH₃ emissions from enhanced rock weathering with croplands",
+    "journal": "Geoscientific Model Development",
+    "editors": "",
+    "url": "https://doi.org/10.5194/gmd-16-5783-2023"
+  },
+
+  "vakilifard.2021": {
+    "authors": "N Vakilifard et al.",
+    "year": 2021,
+    "title": "The role of enhanced rock weathering deployment with agriculture in limiting future warming and protecting coral reefs",
+    "journal": "Environmental Research Letters",
+    "editors": "",
+    "url": "https://doi.org/10.1088/1748-9326/ac1818"
+  },
+
+  "vienne.2022": {
+    "authors": "A Vienne et al.",
+    "year": 2022,
+    "title": "Enhanced weathering using basalt rock powder: Carbon sequestration, co-benefits and risks in a mesocosm study with Solanum tuberosum",
+    "journal": "Frontiers in Climate",
+    "editors": "",
+    "url": "https://doi.org/10.3389/fclim.2022.869456"
+  },
+
+  "vink.2023": {
+    "authors": "J P M Vink and P Knops",
+    "year": 2023,
+    "title": "Size-fractionated weathering of olivine, its CO₂-sequestration rate, and ecotoxicological risk assessment of nickel release",
+    "journal": "Minerals",
+    "editors": "",
+    "url": "https://doi.org/10.3390/min13020235"
+  },
+
+  "white.2003": {
+    "authors": "A F White and S L Brantley",
+    "year": 2003,
+    "title": "The effect of time on the weathering of silicate minerals: Why do weathering rates differ in the laboratory and field?",
+    "journal": "Chemical Geology",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.chemgeo.2003.03.001"
+  },
+
+  "white.1990": {
+    "authors": "A F White and M L Peterson",
+    "year": 1990,
+    "title": "Role of reactive-surface-area characterization in geochemical kinetic models",
+    "journal": "ACS Publications",
+    "editors": "",
+    "url": "https://doi.org/10.1021/bk-1990-0416.ch035"
+  },
+
+  "zhang.2025": {
+    "authors": "Z Zhang et al.",
+    "year": 2025,
+    "title": "An integrated modelling framework to determine terrestrial carbon dioxide removal via enhanced rock weathering",
+    "journal": "Global Change Biology",
+    "editors": "",
+    "url": "https://doi.org/10.1111/gcb.70650"
+  }
+}

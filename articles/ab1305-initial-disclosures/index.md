@@ -9,7 +9,6 @@ color: purple
 date: 10-30-2024
 summary: Beginning in January, California law AB1305 will require companies to disclose which offsets they use. An analysis of early data, voluntarily released before the law takes effect, demonstrates that these disclosures are powerful, but also highlights the opportunity for improvements around discoverability and usability.
 quickLook: Early disclosures demonstrate the power of transparency, but also highlight the opportunity for improvements around discoverability and usability.
-fileId: 1NqoJQFkjn7mRx-j-yU4ISba_L9XquvrdKHWhhdjLH_I
 icon: articles/028/binders-small
 background: articles/028/binders
 card: ab1305-initial-disclosures
