@@ -23,6 +23,7 @@ components:
   - name: Cdr
     src: ./components/cdr.js
 slug: modeling-bytes-02-roughness
+card: modeling-bytes-02-roughness
 ---
 
 # {title}

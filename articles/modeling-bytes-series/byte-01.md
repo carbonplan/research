@@ -18,6 +18,7 @@ components:
   - name: FigureCaption
     src: '@carbonplan/components'
 slug: modeling-bytes-01-primer
+card: modeling-bytes-01-primer
 ---
 
 # {title}
