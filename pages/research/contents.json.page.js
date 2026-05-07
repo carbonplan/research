@@ -12,26 +12,39 @@ export function getServerSideProps({ res }) {
     .concat(comments.map((t) => ({ ...t, type: 'commentary' })))
     .concat(tools.map((t) => ({ ...t, type: 'tool' })))
     .concat(extras)
-    .map(({ date, href, color, id, title, icon, type, authors, summary }) => {
-      let result = { page: id ? `research/${id}` : href }
+    .map(
+      ({
+        date,
+        href,
+        color,
+        id,
+        title,
+        icon,
+        type,
+        authors,
+        summary,
+        seriesConfig,
+      }) => {
+        let result = { page: id ? `research/${id}` : href }
 
-      if (date) {
-        const [month, day, year] = date.split('-')
-        result.date = `${year}-${month}-${day}`
-      }
-
-      if (title) {
-        result.metadata = {
-          type,
-          title,
-          authors,
-          summary,
-          color,
-          icon,
+        if (date) {
+          const [month, day, year] = date.split('-')
+          result.date = `${year}-${month}-${day}`
         }
+
+        if (title) {
+          result.metadata = {
+            type: seriesConfig?.entryLabel?.toLowerCase() ?? type,
+            title,
+            authors,
+            summary,
+            color,
+            icon,
+          }
+        }
+        return result
       }
-      return result
-    })
+    )
 
   res.setHeader('Content-Type', 'application/json')
 
