@@ -3,6 +3,13 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'modeling-bytes-series': {
+    SeriesToc: dynamic(() =>
+      import(
+        '../../articles/modeling-bytes-series/components/series-toc.js'
+      ).then((mod) => mod.SeriesToc || mod.default)
+    ),
+  },
   'climate-risk-explainer': {
     OverviewMap: dynamic(() =>
       import(
@@ -893,6 +900,59 @@ const components = {
       import(
         '../../articles/forest-offsets-explainer/components/common-practice/index.js'
       ).then((mod) => mod.CommonPractice || mod.default)
+    ),
+  },
+  'modeling-bytes-01-primer': {
+    Authors: dynamic(() =>
+      import('../../articles/modeling-bytes-series/components/authors.js').then(
+        (mod) => mod.Authors || mod.default
+      )
+    ),
+    Decisions: dynamic(() =>
+      import(
+        '../../articles/modeling-bytes-series/components/decisions.js'
+      ).then((mod) => mod.Decisions || mod.default)
+    ),
+    Figure: dynamic(() =>
+      import('@carbonplan/components').then((mod) => mod.Figure || mod.default)
+    ),
+    Table: dynamic(() =>
+      import('@carbonplan/components').then((mod) => mod.Table || mod.default)
+    ),
+    FigureCaption: dynamic(() =>
+      import('@carbonplan/components').then(
+        (mod) => mod.FigureCaption || mod.default
+      )
+    ),
+  },
+  'modeling-bytes-02-roughness': {
+    Authors: dynamic(() =>
+      import('../../articles/modeling-bytes-series/components/authors.js').then(
+        (mod) => mod.Authors || mod.default
+      )
+    ),
+    Figure: dynamic(() =>
+      import('@carbonplan/components').then((mod) => mod.Figure || mod.default)
+    ),
+    FigureCaption: dynamic(() =>
+      import('@carbonplan/components').then(
+        (mod) => mod.FigureCaption || mod.default
+      )
+    ),
+    Rulers: dynamic(() =>
+      import('../../articles/modeling-bytes-series/components/rulers.js').then(
+        (mod) => mod.Rulers || mod.default
+      )
+    ),
+    Roughness: dynamic(() =>
+      import(
+        '../../articles/modeling-bytes-series/components/roughness.js'
+      ).then((mod) => mod.Roughness || mod.default)
+    ),
+    Cdr: dynamic(() =>
+      import('../../articles/modeling-bytes-series/components/cdr.js').then(
+        (mod) => mod.Cdr || mod.default
+      )
     ),
   },
   'offsets-db-methods': {
