@@ -4,6 +4,24 @@ import Highlight from './highlight'
 
 const HIGHLIGHTS = [
   {
+    id: 'modeling-bytes',
+    date: '05-07-2026',
+    href: '/research/modeling-bytes-series',
+    title: 'Introducing Modeling Bytes',
+    summary:
+      'A series of posts examining in-the-weeds modeling decisions that matter when applying reactive transport models to enhanced weathering.',
+    links: [
+      {
+        label: 'Byte #1',
+        href: '/research/modeling-bytes-01-primer',
+      },
+      {
+        label: 'Byte #2',
+        href: '/research/modeling-bytes-02-roughness',
+      },
+    ],
+  },
+  {
     id: 'climate-risk',
     date: '02-10-2026',
     href: '/research/climate-risk',
@@ -22,24 +40,6 @@ const HIGHLIGHTS = [
       {
         label: 'FAQ',
         href: '/research/climate-risk-faq',
-      },
-    ],
-  },
-  {
-    id: 'offsets-db',
-    date: '01-14-2026',
-    href: '/research/offsets-db',
-    title: 'OffsetsDB',
-    summary:
-      'We’ve added project boundary data from 500 forest offset projects to our database of offset data.',
-    links: [
-      {
-        label: 'Database tool',
-        href: '/research/offsets-db',
-      },
-      {
-        label: 'Update blog post',
-        href: 'https://carbonplan.org/blog/offsetsdb-project-geometries',
       },
     ],
   },
