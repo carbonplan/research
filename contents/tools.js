@@ -50,7 +50,7 @@ const tools = [
     summary: 'A harmonized database of carbon offset projects and credits.',
     displayName: 'OFFSETS DB', // Use space when all-caps
     title: 'OffsetsDB',
-    date: '04-23-2025',
+    date: '05-06-2026',
   },
   {
     id: 'ew-quantification',
@@ -77,7 +77,7 @@ const tools = [
     summary:
       'Mapping forest carbon offset projects and their intersections with fires.',
     title: 'Offsets Fires',
-    date: '06-25-2025',
+    date: '06-03-2026',
   },
   {
     id: 'cmip6-downscaling',
