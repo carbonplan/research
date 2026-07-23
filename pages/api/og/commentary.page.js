@@ -39,6 +39,14 @@ export default async function handler(req) {
     return new ImageResponse(component, {
       ...options,
       fonts,
+      headers: {
+        // Vercel's CDN only caches functions on `s-maxage`; the deployment URL
+        // is part of the cache key, so a redeploy refreshes these cards.
+        'Vercel-CDN-Cache-Control':
+          'public, s-maxage=31536000, stale-while-revalidate=86400',
+        // Keep browsers revalidating since the id-based URL is stable.
+        'cache-control': 'public, max-age=0, must-revalidate',
+      },
     })
   } catch (error) {
     console.log(`${error.message}`)
