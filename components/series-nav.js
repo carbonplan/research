@@ -5,6 +5,9 @@ import { Column, Expander, Link, Row } from '@carbonplan/components'
 
 export const SERIES_NAV_HEIGHT = 48
 
+const NAV_TOP = 56
+const OVERFLOW_BUFFER = 16
+
 const itemsRowSx = {
   gap: [4, 4, 4, 5],
   alignItems: 'center',
@@ -45,7 +48,7 @@ const Circle = ({ number, active, color }) => (
   </Flex>
 )
 
-const Item = ({ number, label, href, active, color }) => {
+const Item = ({ number, label, href, active, color, wrap }) => {
   const content = (
     <Flex
       className='series-nav-item'
@@ -61,7 +64,8 @@ const Item = ({ number, label, href, active, color }) => {
         className='series-nav-label'
         sx={{
           ...textSx,
-          whiteSpace: 'nowrap',
+          whiteSpace: wrap ? 'normal' : 'nowrap',
+          lineHeight: wrap ? 1.25 : 1,
           color: color || 'primary',
           transition: 'color 0.15s',
         }}
@@ -136,28 +140,23 @@ const SeriesNav = ({ series, color }) => {
   }, [expanded])
 
   useEffect(() => {
+    const container = itemsContainerRef.current
+    const measure = measureRef.current
     const checkOverflow = () => {
-      if (!itemsContainerRef.current || !measureRef.current) return
-      const containerWidth = itemsContainerRef.current.clientWidth
+      const containerWidth = container.clientWidth
       if (containerWidth === 0) return
-      const measureWidth = measureRef.current.scrollWidth
-      setIsOverflowing(measureWidth > containerWidth)
+      setIsOverflowing(measure.scrollWidth > containerWidth - OVERFLOW_BUFFER)
     }
     checkOverflow()
     const resizeObserver = new ResizeObserver(checkOverflow)
-    if (itemsContainerRef.current) {
-      resizeObserver.observe(itemsContainerRef.current)
-    }
-    window.addEventListener('resize', checkOverflow)
-    return () => {
-      resizeObserver.disconnect()
-      window.removeEventListener('resize', checkOverflow)
-    }
+    resizeObserver.observe(container)
+    resizeObserver.observe(measure)
+    return () => resizeObserver.disconnect()
   }, [entries])
 
   useEffect(() => {
     setExpanded(false)
-  }, [activeHref])
+  }, [activeHref, isOverflowing])
 
   const items = entries.map((a, i) => ({
     number: i + 1,
@@ -183,7 +182,7 @@ const SeriesNav = ({ series, color }) => {
       aria-label='Series navigation'
       sx={{
         position: 'sticky',
-        top: '56px',
+        top: `${NAV_TOP}px`,
         mx: [-3, -4, -5, -6],
         px: [3, 4, 5, 6],
         bg: 'background',
@@ -230,8 +229,11 @@ const SeriesNav = ({ series, color }) => {
           top: '100%',
           left: 0,
           right: 0,
-          overflow: 'hidden',
-          maxHeight: expanded ? '500px' : 0,
+          overflowX: 'hidden',
+          overflowY: expanded ? 'auto' : 'hidden',
+          maxHeight: expanded
+            ? `calc(100vh - ${NAV_TOP + SERIES_NAV_HEIGHT}px)`
+            : 0,
           transition: 'max-height 0.2s ease-out',
           bg: 'background',
         }}
@@ -246,7 +248,7 @@ const SeriesNav = ({ series, color }) => {
         >
           {drawerItems.map((item) => (
             <Box key={item.href} sx={{ py: 2 }}>
-              <Item {...item} color={color} />
+              <Item {...item} color={color} wrap />
             </Box>
           ))}
         </Box>
