@@ -20,6 +20,8 @@ series:
       href: /research/modeling-bytes-01-primer
     - label: Rock surface area
       href: /research/modeling-bytes-02-roughness
+    - label: Meteorological forcing
+      href: /research/modeling-bytes-03-meteorology
 components:
   - name: SeriesToc
     src: ./components/series-toc.js

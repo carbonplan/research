@@ -1,0 +1,689 @@
+{
+  "sites": [
+    "Cecil",
+    "Flanagan",
+    "HoustonBlack",
+    "Kalamazoo",
+    "Kuma",
+    "Palouse",
+    "Pullman",
+    "Yolo"
+  ],
+  "years": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "cases": ["daily", "monthly", "longterm"],
+  "feedstockMinPct": 3.0,
+  "annual": [
+    {
+      "site": "Cecil",
+      "year": 1,
+      "kept": true,
+      "daily": -0.267,
+      "monthly": 0.977,
+      "longterm": 1.292
+    },
+    {
+      "site": "Cecil",
+      "year": 2,
+      "kept": true,
+      "daily": -0.178,
+      "monthly": 0.696,
+      "longterm": -0.067
+    },
+    {
+      "site": "Cecil",
+      "year": 3,
+      "kept": true,
+      "daily": -0.042,
+      "monthly": 0.712,
+      "longterm": 2.984
+    },
+    {
+      "site": "Cecil",
+      "year": 4,
+      "kept": true,
+      "daily": -0.013,
+      "monthly": 0.628,
+      "longterm": 2.135
+    },
+    {
+      "site": "Cecil",
+      "year": 5,
+      "kept": true,
+      "daily": 0.015,
+      "monthly": 0.956,
+      "longterm": 1.973
+    },
+    {
+      "site": "Cecil",
+      "year": 6,
+      "kept": true,
+      "daily": 0.116,
+      "monthly": 1.545,
+      "longterm": 1.545
+    },
+    {
+      "site": "Cecil",
+      "year": 7,
+      "kept": true,
+      "daily": 0.744,
+      "monthly": 3.411,
+      "longterm": 3.952
+    },
+    {
+      "site": "Cecil",
+      "year": 8,
+      "kept": true,
+      "daily": 0.861,
+      "monthly": 3.655,
+      "longterm": 3.55
+    },
+    {
+      "site": "Cecil",
+      "year": 9,
+      "kept": true,
+      "daily": 0.952,
+      "monthly": 1.204,
+      "longterm": 1.825
+    },
+    {
+      "site": "Cecil",
+      "year": 10,
+      "kept": true,
+      "daily": 0.733,
+      "monthly": -1.664,
+      "longterm": -0.287
+    },
+    {
+      "site": "Flanagan",
+      "year": 1,
+      "kept": true,
+      "daily": -0.049,
+      "monthly": 1.567,
+      "longterm": 1.321
+    },
+    {
+      "site": "Flanagan",
+      "year": 2,
+      "kept": true,
+      "daily": 0.096,
+      "monthly": 1.085,
+      "longterm": 3.506
+    },
+    {
+      "site": "Flanagan",
+      "year": 3,
+      "kept": true,
+      "daily": 0.022,
+      "monthly": 1.006,
+      "longterm": 2.586
+    },
+    {
+      "site": "Flanagan",
+      "year": 4,
+      "kept": true,
+      "daily": 0.012,
+      "monthly": 2.015,
+      "longterm": 1.941
+    },
+    {
+      "site": "Flanagan",
+      "year": 5,
+      "kept": true,
+      "daily": 0.029,
+      "monthly": 1.147,
+      "longterm": 2.163
+    },
+    {
+      "site": "Flanagan",
+      "year": 6,
+      "kept": true,
+      "daily": -0.035,
+      "monthly": 1.828,
+      "longterm": 2.35
+    },
+    {
+      "site": "Flanagan",
+      "year": 7,
+      "kept": true,
+      "daily": 0.233,
+      "monthly": 2.86,
+      "longterm": 1.504
+    },
+    {
+      "site": "Flanagan",
+      "year": 8,
+      "kept": true,
+      "daily": 0.037,
+      "monthly": 1.366,
+      "longterm": 1.451
+    },
+    {
+      "site": "Flanagan",
+      "year": 9,
+      "kept": true,
+      "daily": 0.084,
+      "monthly": -0.857,
+      "longterm": -1.728
+    },
+    {
+      "site": "Flanagan",
+      "year": 10,
+      "kept": true,
+      "daily": -0.084,
+      "monthly": -3.73,
+      "longterm": -6.502
+    },
+    {
+      "site": "HoustonBlack",
+      "year": 1,
+      "kept": true,
+      "daily": 1.351,
+      "monthly": 12.642,
+      "longterm": 19.077
+    },
+    {
+      "site": "HoustonBlack",
+      "year": 2,
+      "kept": true,
+      "daily": 1.184,
+      "monthly": 12.42,
+      "longterm": 16.959
+    },
+    {
+      "site": "HoustonBlack",
+      "year": 3,
+      "kept": true,
+      "daily": 0.931,
+      "monthly": 11.142,
+      "longterm": 16.255
+    },
+    {
+      "site": "HoustonBlack",
+      "year": 4,
+      "kept": true,
+      "daily": 1.135,
+      "monthly": 9.262,
+      "longterm": 14.703
+    },
+    {
+      "site": "HoustonBlack",
+      "year": 5,
+      "kept": true,
+      "daily": 0.858,
+      "monthly": 5.826,
+      "longterm": 12.475
+    },
+    {
+      "site": "HoustonBlack",
+      "year": 6,
+      "kept": true,
+      "daily": 0.694,
+      "monthly": 4.729,
+      "longterm": 11.689
+    },
+    {
+      "site": "HoustonBlack",
+      "year": 7,
+      "kept": true,
+      "daily": 0.569,
+      "monthly": 5.891,
+      "longterm": 5.514
+    },
+    {
+      "site": "HoustonBlack",
+      "year": 8,
+      "kept": true,
+      "daily": 0.571,
+      "monthly": 2.732,
+      "longterm": 4.37
+    },
+    {
+      "site": "HoustonBlack",
+      "year": 9,
+      "kept": true,
+      "daily": 0.108,
+      "monthly": 1.509,
+      "longterm": -2.452
+    },
+    {
+      "site": "HoustonBlack",
+      "year": 10,
+      "kept": true,
+      "daily": -0.277,
+      "monthly": -3.818,
+      "longterm": -5.357
+    },
+    {
+      "site": "Kalamazoo",
+      "year": 1,
+      "kept": true,
+      "daily": -0.494,
+      "monthly": 0.844,
+      "longterm": 2.643
+    },
+    {
+      "site": "Kalamazoo",
+      "year": 2,
+      "kept": true,
+      "daily": -0.188,
+      "monthly": 1.361,
+      "longterm": 5.857
+    },
+    {
+      "site": "Kalamazoo",
+      "year": 3,
+      "kept": true,
+      "daily": -0.036,
+      "monthly": 0.443,
+      "longterm": 1.719
+    },
+    {
+      "site": "Kalamazoo",
+      "year": 4,
+      "kept": true,
+      "daily": -0.165,
+      "monthly": 0.848,
+      "longterm": -0.318
+    },
+    {
+      "site": "Kalamazoo",
+      "year": 5,
+      "kept": true,
+      "daily": 0.427,
+      "monthly": 1.028,
+      "longterm": -2.769
+    },
+    {
+      "site": "Kalamazoo",
+      "year": 6,
+      "kept": true,
+      "daily": 1.75,
+      "monthly": 8.632,
+      "longterm": 4.509
+    },
+    {
+      "site": "Kalamazoo",
+      "year": 7,
+      "kept": true,
+      "daily": 1.411,
+      "monthly": 6.424,
+      "longterm": 0.505
+    },
+    {
+      "site": "Kalamazoo",
+      "year": 8,
+      "kept": false,
+      "daily": 0.894,
+      "monthly": -3.262,
+      "longterm": -7.934
+    },
+    {
+      "site": "Kalamazoo",
+      "year": 9,
+      "kept": false,
+      "daily": 0.441,
+      "monthly": -13.999,
+      "longterm": -20.92
+    },
+    {
+      "site": "Kalamazoo",
+      "year": 10,
+      "kept": false,
+      "daily": 0.092,
+      "monthly": -31.19,
+      "longterm": -49.055
+    },
+    {
+      "site": "Kuma",
+      "year": 1,
+      "kept": true,
+      "daily": 0.0,
+      "monthly": 1.75,
+      "longterm": 7.176
+    },
+    {
+      "site": "Kuma",
+      "year": 2,
+      "kept": true,
+      "daily": 0.161,
+      "monthly": 2.16,
+      "longterm": 12.049
+    },
+    {
+      "site": "Kuma",
+      "year": 3,
+      "kept": true,
+      "daily": 0.275,
+      "monthly": 3.377,
+      "longterm": 16.334
+    },
+    {
+      "site": "Kuma",
+      "year": 4,
+      "kept": true,
+      "daily": 0.265,
+      "monthly": 5.72,
+      "longterm": 16.804
+    },
+    {
+      "site": "Kuma",
+      "year": 5,
+      "kept": true,
+      "daily": 0.442,
+      "monthly": 7.038,
+      "longterm": 19.346
+    },
+    {
+      "site": "Kuma",
+      "year": 6,
+      "kept": true,
+      "daily": -0.0,
+      "monthly": 4.224,
+      "longterm": 14.701
+    },
+    {
+      "site": "Kuma",
+      "year": 7,
+      "kept": true,
+      "daily": 0.094,
+      "monthly": 3.631,
+      "longterm": 13.625
+    },
+    {
+      "site": "Kuma",
+      "year": 8,
+      "kept": true,
+      "daily": 0.033,
+      "monthly": 3.576,
+      "longterm": 11.713
+    },
+    {
+      "site": "Kuma",
+      "year": 9,
+      "kept": true,
+      "daily": -0.236,
+      "monthly": 0.811,
+      "longterm": 8.916
+    },
+    {
+      "site": "Kuma",
+      "year": 10,
+      "kept": true,
+      "daily": -0.109,
+      "monthly": 1.241,
+      "longterm": 11.35
+    },
+    {
+      "site": "Palouse",
+      "year": 1,
+      "kept": true,
+      "daily": -0.402,
+      "monthly": 0.644,
+      "longterm": 0.796
+    },
+    {
+      "site": "Palouse",
+      "year": 2,
+      "kept": true,
+      "daily": -0.461,
+      "monthly": 1.019,
+      "longterm": 1.415
+    },
+    {
+      "site": "Palouse",
+      "year": 3,
+      "kept": true,
+      "daily": -0.36,
+      "monthly": 1.054,
+      "longterm": 1.737
+    },
+    {
+      "site": "Palouse",
+      "year": 4,
+      "kept": true,
+      "daily": -0.414,
+      "monthly": 1.243,
+      "longterm": 4.749
+    },
+    {
+      "site": "Palouse",
+      "year": 5,
+      "kept": true,
+      "daily": -0.308,
+      "monthly": 1.987,
+      "longterm": 3.666
+    },
+    {
+      "site": "Palouse",
+      "year": 6,
+      "kept": true,
+      "daily": -0.471,
+      "monthly": 2.148,
+      "longterm": 5.81
+    },
+    {
+      "site": "Palouse",
+      "year": 7,
+      "kept": true,
+      "daily": -0.261,
+      "monthly": 2.541,
+      "longterm": 5.652
+    },
+    {
+      "site": "Palouse",
+      "year": 8,
+      "kept": true,
+      "daily": 0.0,
+      "monthly": 3.945,
+      "longterm": 3.033
+    },
+    {
+      "site": "Palouse",
+      "year": 9,
+      "kept": true,
+      "daily": 0.064,
+      "monthly": 2.063,
+      "longterm": 6.351
+    },
+    {
+      "site": "Palouse",
+      "year": 10,
+      "kept": true,
+      "daily": 0.355,
+      "monthly": 0.476,
+      "longterm": -2.444
+    },
+    {
+      "site": "Pullman",
+      "year": 1,
+      "kept": true,
+      "daily": -0.324,
+      "monthly": -0.4,
+      "longterm": -5.333
+    },
+    {
+      "site": "Pullman",
+      "year": 2,
+      "kept": true,
+      "daily": -0.238,
+      "monthly": -1.558,
+      "longterm": -4.646
+    },
+    {
+      "site": "Pullman",
+      "year": 3,
+      "kept": true,
+      "daily": -0.366,
+      "monthly": -1.159,
+      "longterm": -5.823
+    },
+    {
+      "site": "Pullman",
+      "year": 4,
+      "kept": true,
+      "daily": -0.801,
+      "monthly": -5.309,
+      "longterm": -4.474
+    },
+    {
+      "site": "Pullman",
+      "year": 5,
+      "kept": true,
+      "daily": -0.132,
+      "monthly": -2.868,
+      "longterm": -8.309
+    },
+    {
+      "site": "Pullman",
+      "year": 6,
+      "kept": true,
+      "daily": -0.934,
+      "monthly": -4.462,
+      "longterm": -5.258
+    },
+    {
+      "site": "Pullman",
+      "year": 7,
+      "kept": true,
+      "daily": -0.103,
+      "monthly": -1.444,
+      "longterm": -7.563
+    },
+    {
+      "site": "Pullman",
+      "year": 8,
+      "kept": true,
+      "daily": -0.036,
+      "monthly": -1.505,
+      "longterm": -6.201
+    },
+    {
+      "site": "Pullman",
+      "year": 9,
+      "kept": true,
+      "daily": -0.263,
+      "monthly": -3.002,
+      "longterm": -4.503
+    },
+    {
+      "site": "Pullman",
+      "year": 10,
+      "kept": true,
+      "daily": 0.266,
+      "monthly": -2.244,
+      "longterm": -6.01
+    },
+    {
+      "site": "Yolo",
+      "year": 1,
+      "kept": true,
+      "daily": -0.497,
+      "monthly": 1.398,
+      "longterm": 3.003
+    },
+    {
+      "site": "Yolo",
+      "year": 2,
+      "kept": true,
+      "daily": -0.059,
+      "monthly": 3.673,
+      "longterm": 4.968
+    },
+    {
+      "site": "Yolo",
+      "year": 3,
+      "kept": true,
+      "daily": -0.444,
+      "monthly": 4.53,
+      "longterm": 7.535
+    },
+    {
+      "site": "Yolo",
+      "year": 4,
+      "kept": true,
+      "daily": -0.055,
+      "monthly": 7.289,
+      "longterm": 9.147
+    },
+    {
+      "site": "Yolo",
+      "year": 5,
+      "kept": true,
+      "daily": 0.237,
+      "monthly": 8.483,
+      "longterm": 11.569
+    },
+    {
+      "site": "Yolo",
+      "year": 6,
+      "kept": true,
+      "daily": 0.301,
+      "monthly": 6.115,
+      "longterm": 14.085
+    },
+    {
+      "site": "Yolo",
+      "year": 7,
+      "kept": true,
+      "daily": 0.083,
+      "monthly": 6.659,
+      "longterm": 12.431
+    },
+    {
+      "site": "Yolo",
+      "year": 8,
+      "kept": true,
+      "daily": 0.273,
+      "monthly": 6.44,
+      "longterm": 10.146
+    },
+    {
+      "site": "Yolo",
+      "year": 9,
+      "kept": true,
+      "daily": 0.466,
+      "monthly": 5.822,
+      "longterm": 8.017
+    },
+    {
+      "site": "Yolo",
+      "year": 10,
+      "kept": true,
+      "daily": 0.315,
+      "monthly": 2.874,
+      "longterm": 1.647
+    }
+  ],
+  "final": {
+    "daily": {
+      "Cecil": 0.048,
+      "Flanagan": 0.03,
+      "HoustonBlack": 0.832,
+      "Kalamazoo": 0.03,
+      "Kuma": 0.099,
+      "Palouse": -0.308,
+      "Pullman": -0.301,
+      "Yolo": -0.063
+    },
+    "monthly": {
+      "Cecil": 1.092,
+      "Flanagan": 1.239,
+      "HoustonBlack": 7.534,
+      "Kalamazoo": 0.779,
+      "Kuma": 3.183,
+      "Palouse": 1.482,
+      "Pullman": -2.222,
+      "Yolo": 4.762
+    },
+    "longterm": {
+      "Cecil": 1.719,
+      "Flanagan": 1.711,
+      "HoustonBlack": 11.363,
+      "Kalamazoo": 0.94,
+      "Kuma": 12.637,
+      "Palouse": 2.764,
+      "Pullman": -5.759,
+      "Yolo": 7.43
+    }
+  }
+}

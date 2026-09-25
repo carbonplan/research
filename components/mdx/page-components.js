@@ -955,6 +955,41 @@ const components = {
       )
     ),
   },
+  'modeling-bytes-03-meteorology': {
+    Authors: dynamic(() =>
+      import('../../articles/modeling-bytes-series/components/authors.js').then(
+        (mod) => mod.Authors || mod.default
+      )
+    ),
+    Forcing: dynamic(() =>
+      import(
+        '../../articles/modeling-bytes-series/components/meteorology/forcing.js'
+      ).then((mod) => mod.Forcing || mod.default)
+    ),
+    Profiles: dynamic(() =>
+      import(
+        '../../articles/modeling-bytes-series/components/meteorology/profiles.js'
+      ).then((mod) => mod.Profiles || mod.default)
+    ),
+    Dissolution: dynamic(() =>
+      import(
+        '../../articles/modeling-bytes-series/components/meteorology/dissolution.js'
+      ).then((mod) => mod.Dissolution || mod.default)
+    ),
+    Cdr: dynamic(() =>
+      import(
+        '../../articles/modeling-bytes-series/components/meteorology/cdr.js'
+      ).then((mod) => mod.Cdr || mod.default)
+    ),
+    Figure: dynamic(() =>
+      import('@carbonplan/components').then((mod) => mod.Figure || mod.default)
+    ),
+    FigureCaption: dynamic(() =>
+      import('@carbonplan/components').then(
+        (mod) => mod.FigureCaption || mod.default
+      )
+    ),
+  },
   'offsets-db-methods': {
     TableCategories: dynamic(() =>
       import(
