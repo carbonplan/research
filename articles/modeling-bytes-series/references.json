@@ -116,6 +116,24 @@
     "url": "https://doi.org/10.5194/bg-19-3877-2022"
   },
 
+  "cccs.2026": {
+    "authors": "Copernicus Climate Change Service (C3S)",
+    "year": 2026,
+    "title": "ERA5 hourly data on single levels from 1940 to present",
+    "journal": "",
+    "editors": "",
+    "url": "https://doi.org/10.24381/cds.adbb2d47"
+  },
+
+  "davidson.2012": {
+    "authors": "E A Davidson et al.",
+    "year": 2012,
+    "title": "The Dual Arrhenius and Michaelis–Menten kinetics model for decomposition of soil organic matter at hourly to seasonal time scales",
+    "journal": "Global Change Biology",
+    "editors": "",
+    "url": "https://doi.org/10.1111/j.1365-2486.2011.02546.x"
+  },
+
   "deng.2023": {
     "authors": "H Deng et al.",
     "year": 2023,
@@ -161,6 +179,15 @@
     "url": "https://doi.org/10.1016/j.apgeochem.2024.105940"
   },
 
+  "hersbach.2023": {
+    "authors": "H Hersbach et al.",
+    "year": 2023,
+    "title": "ERA5 hourly data on single levels from 1940 to present",
+    "journal": "",
+    "editors": "",
+    "url": "https://doi.org/10.24381/cds.adbb2d47"
+  },
+
   "hodson.1998": {
     "authors": "M E Hodson et al.",
     "year": 1998,
@@ -170,6 +197,24 @@
     "url": "https://doi.org/10.1016/S0016-7061(97)00136-5"
   },
 
+  "javadi.2008": {
+    "authors": "M Javadi",
+    "year": 2008,
+    "title": "Reactive transport modeling of unsaturated hydrology and geochemistry of neutral and acid rock drainage in highly heterogeneous mine waste rock at the Antamina Mine, Peru",
+    "journal": "PhD Dissertation",
+    "editors": "",
+    "url": " https://doi.org/10.14288/1.0378324"
+  },
+
+  "jarvis.2007": {
+    "authors": "P Jarvis et al.",
+    "year": 2007,
+    "title": "Drying and wetting of Mediterranean soils stimulates decomposition and carbon dioxide emission: the 'Birch effect'",
+    "journal": "Tree Physiology",
+    "editors": "",
+    "url": "https://doi.org/10.1093/treephys/27.7.929"
+  },
+
   "jerden.2024": {
     "authors": "J Jerden et al.",
     "year": 2024,
@@ -177,6 +222,15 @@
     "journal": "Applied Geochemistry",
     "editors": "",
     "url": "https://doi.org/10.1016/j.apgeochem.2024.106002"
+  },
+
+  "jia.2023": {
+    "authors": "M Jia et al.",
+    "year": 2023,
+    "title": "Modeling of dual-permeability gas and solute reactive transport in macroporous agricultural soils with a focus on GHG cycling and emissions",
+    "journal": "Journal of Hydrology",
+    "editors": "",
+    "url": "https://doi.org/10.1016/j.jhydrol.2023.129408"
   },
 
   "kantzas.2022": {
@@ -267,6 +321,15 @@
     "journal": "Applied Clay Science",
     "editors": "",
     "url": "https://doi.org/10.1016/j.clay.2011.04.006"
+  },
+
+  "mayer.2002": {
+    "authors": "U Mayer et al.",
+    "year": 2002,
+    "title": "Multicomponent reactive transport modeling in variably saturated porous media using a generalized formulation for kinetically controlled reactions",
+    "journal": "Water Resources Research",
+    "editors": "",
+    "url": "https://doi.org/10.1029/2001WR000862"
   },
 
   "navarre-sitchler.2007": {

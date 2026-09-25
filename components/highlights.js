@@ -19,6 +19,10 @@ const HIGHLIGHTS = [
         label: 'Byte #2',
         href: '/research/modeling-bytes-02-roughness',
       },
+      {
+        label: 'Byte #3',
+        href: '/research/modeling-bytes-03-meteorology',
+      },
     ],
   },
   {
