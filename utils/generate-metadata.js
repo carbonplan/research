@@ -99,6 +99,22 @@ const supplementMetadata = glob
     }
   })
 
+// Article and Supplement layouts build the page description from quickLook
+const requireQuickLook = (entries) => {
+  const invalid = entries.filter(
+    (meta) => typeof meta.quickLook !== 'string' || meta.quickLook.trim() === ''
+  )
+  if (invalid.length > 0) {
+    throw new Error(
+      `quickLook must be a non-empty string in frontmatter, but is missing or invalid in:\n${invalid
+        .map((meta) => `  ${meta.path}`)
+        .join('\n')}`
+    )
+  }
+}
+
+requireQuickLook([...articleMetadata, ...supplementMetadata])
+
 // Generate the metadata file content
 const fileContent = `// This file is auto-generated. Do not edit it manually.
 const articleMetadata = ${JSON.stringify(articleMetadata)}
