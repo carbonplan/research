@@ -21,11 +21,15 @@ const Label = ({
       fontSize={size}
       letterSpacing='0.02em'
       textAnchor='middle'
-      dominantBaseline='central'
       transform={rotate ? `rotate(${rotate} ${x} ${y})` : undefined}
     >
       {lines.map((line, i) => (
-        <tspan key={line} x={x} dy={i === 0 ? 0 : lineHeight}>
+        <tspan
+          key={line}
+          x={x}
+          dy={i === 0 ? 0 : lineHeight}
+          dominantBaseline='central'
+        >
           {line}
         </tspan>
       ))}
