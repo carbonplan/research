@@ -3,6 +3,33 @@ import dynamic from 'next/dynamic'
 // NOTE: This is a dynamically generated file based on the config specified under the
 //       `components` key in each article's frontmatter.
 const components = {
+  'sai-downscaling-explainer': {
+    DownscaledData: dynamic(() =>
+      import(
+        '../../articles/sai-downscaling-explainer/components/downscaled-data.js'
+      ).then((mod) => mod.DownscaledData || mod.default)
+    ),
+    Downscaling: dynamic(() =>
+      import(
+        '../../articles/sai-downscaling-explainer/components/downscaling.js'
+      ).then((mod) => mod.Downscaling || mod.default)
+    ),
+    ScenarioTemperature: dynamic(() =>
+      import(
+        '../../articles/sai-downscaling-explainer/components/scenario-temperature.js'
+      ).then((mod) => mod.ScenarioTemperature || mod.default)
+    ),
+    MethodComparison: dynamic(() =>
+      import(
+        '../../articles/sai-downscaling-explainer/components/method-comparison.js'
+      ).then((mod) => mod.MethodComparison || mod.default)
+    ),
+    SummaryTable: dynamic(() =>
+      import(
+        '../../articles/sai-downscaling-explainer/components/summary-table.js'
+      ).then((mod) => mod.SummaryTable || mod.default)
+    ),
+  },
   'modeling-bytes-series': {
     SeriesToc: dynamic(() =>
       import(

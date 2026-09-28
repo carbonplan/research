@@ -1,0 +1,172 @@
+{
+  "visioni_g615ksai_2024": {
+    "authors": "D Visioni et al.",
+    "year": 2024,
+    "title": "G6-1.5K-SAI: a new Geoengineering Model Intercomparison Project (GeoMIP) experiment integrating recent advances in solar radiation modification studies",
+    "journal": "Geoscientific Model Development",
+    "editors": "",
+    "url": "https://doi.org/10.5194/gmd-17-2583-2024"
+  },
+
+  "gettelman_whole_2019": {
+    "authors": "A Gettelman et al.",
+    "year": 2019,
+    "title": "The Whole Atmosphere Community Climate Model Version 6 (WACCM6)",
+    "journal": "Journal of Geophysical Research: Atmospheres",
+    "editors": "",
+    "url": "https://doi.org/10.1029/2019JD030943"
+  },
+
+  "hersbach_era5_2020": {
+    "authors": "H Hersbach et al.",
+    "year": 2020,
+    "title": "The ERA5 global reanalysis",
+    "journal": "Quarterly Journal of the Royal Meteorological Society",
+    "editors": "",
+    "url": "https://doi.org/10.1002/qj.3803"
+  },
+
+  "trisos2018": {
+    "authors": "C Trisos et al.",
+    "year": 2018,
+    "title": "Potentially dangerous consequences for biodiversity of solar geoengineering implementation and termination",
+    "journal": "Nature Ecology & Evolution",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s41559-017-0431-0"
+  },
+
+  "ricke_hydrological_2023": {
+    "authors": "K Ricke et al.",
+    "year": 2023,
+    "title": "Hydrological consequences of solar geoengineering",
+    "journal": "Annual Review of Earth and Planetary Sciences",
+    "editors": "",
+    "url": "https://doi.org/10.1146/annurev-earth-031920-083456"
+  },
+
+  "danabasoglu_community_2020": {
+    "authors": "G Danabasoglu et al.",
+    "year": 2020,
+    "title": "The Community Earth System Model Version 2 (CESM2)",
+    "journal": "Journal of Advances in Modeling Earth Systems",
+    "editors": "",
+    "url": "https://doi.org/10.1029/2019MS001916"
+  },
+
+  "kawamiya_two_2020": {
+    "authors": "M Kawamiya et al.",
+    "year": 2020,
+    "title": "Two decades of Earth system modeling with an emphasis on Model for Interdisciplinary Research on Climate (MIROC)",
+    "journal": "Progress in Earth and Planetary Science",
+    "editors": "",
+    "url": "https://doi.org/10.1186/s40645-020-00369-5"
+  },
+
+  "mulcahy_ukesm11_2023": {
+    "authors": "M Mulcahy et al.",
+    "year": 2023,
+    "title": "UKESM1.1: Development and evaluation of an updated configuration of the UK Earth System Model",
+    "journal": "Geoscientific Model Development",
+    "editors": "",
+    "url": "https://doi.org/10.5194/gmd-16-1569-2023"
+  },
+
+  "thrasher2012": {
+    "authors": "B Thrasher et al.",
+    "year": 2012,
+    "title": "Technical note: Bias correcting climate model simulated daily temperature extremes with quantile mapping",
+    "journal": "Hydrology and Earth System Sciences",
+    "editors": "",
+    "url": "https://doi.org/10.5194/hess-16-3309-2012"
+  },
+
+  "wood2002": {
+    "authors": "A Wood et al.",
+    "year": 2002,
+    "title": "Long-range experimental hydrologic forecasting for the eastern United States",
+    "journal": "Journal of Geophysical Research: Atmospheres",
+    "editors": "",
+    "url": "https://doi.org/10.1029/2001JD000659"
+  },
+
+  "wood2004": {
+    "authors": "A Wood et al.",
+    "year": 2004,
+    "title": "Hydrologic implications of dynamical and statistical approaches to downscaling climate model outputs",
+    "journal": "Climatic Change",
+    "editors": "",
+    "url": "https://doi.org/10.1023/B:CLIM.0000013685.99609.9e"
+  },
+
+  "wilby2012": {
+    "authors": "R Wilby and C Dawson",
+    "year": 2012,
+    "title": "The Statistical DownScaling Model: Insights from one decade of application",
+    "journal": "International Journal of Climatology",
+    "editors": "",
+    "url": "https://doi.org/10.1002/joc.3544"
+  },
+
+  "lee_g615ksai_2026": {
+    "authors": "W Lee et al.",
+    "year": 2026,
+    "title": "G6-1.5K-SAI and G6sulfur: Changes in impacts and uncertainty depending on stratospheric aerosol injection strategy in the Geoengineering Model Intercomparison Project",
+    "journal": "Atmospheric Chemistry and Physics",
+    "editors": "",
+    "url": "https://doi.org/10.5194/acp-26-7463-2026"
+  },
+
+  "proctor_estimating_2018": {
+    "authors": "J Proctor et al.",
+    "year": 2018,
+    "title": "Estimating global agricultural effects of geoengineering using volcanic eruptions",
+    "journal": "Nature",
+    "editors": "",
+    "url": "https://doi.org/10.1038/s41586-018-0417-3"
+  },
+
+  "clark_maize_2025": {
+    "authors": "B Clark et al.",
+    "year": 2025,
+    "title": "Maize yield changes under sulfate aerosol climate intervention using three global gridded crop models",
+    "journal": "Earth's Future",
+    "editors": "",
+    "url": "https://doi.org/10.1029/2024EF005269"
+  },
+
+  "zarakas_2026": {
+    "authors": "C Zarakas",
+    "year": 2026,
+    "title": "Climate model output from simulation of abrupt termination of stratospheric aerosol injection",
+    "journal": "Zenodo",
+    "editors": "",
+    "url": "https://doi.org/10.5281/zenodo.22713138"
+  },
+
+  "cannon2015": {
+    "authors": "A Cannon et al.",
+    "year": 2015,
+    "title": "Bias correction of GCM precipitation by quantile mapping: How well do methods preserve changes in quantiles and extremes?",
+    "journal": "Journal of Climate",
+    "editors": "",
+    "url": "https://doi.org/10.1175/JCLI-D-14-00754.1"
+  },
+
+  "visioni2026": {
+    "authors": "D Visioni et al.",
+    "year": 2026,
+    "title": "The Geoengineering Model Intercomparison Project (GeoMIP) contribution to CMIP7 – description of new experimental protocols and preliminary results",
+    "journal": "Geoscientific Model Development",
+    "editors": "",
+    "url": "https://doi.org/10.5194/gmd-19-8469-2026"
+  },
+
+  "TK": {
+    "authors": "TK",
+    "year": 2020,
+    "title": "TK",
+    "journal": "TK",
+    "editors": "",
+    "url": "TK"
+  }
+}
