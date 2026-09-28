@@ -1,7 +1,7 @@
 import { useThemeUI, Box, Text, Grid, Button, Divider } from 'theme-ui'
 import { useState, useEffect, useRef } from 'react'
 import { Slider } from '@carbonplan/components'
-import mapboxgl from 'mapbox-gl'
+import maplibregl from 'maplibre-gl'
 import style from './utils/style'
 import dates from './utils/dates'
 import Enhancers from './utils/enhancers'
@@ -46,10 +46,11 @@ const FireMap = () => {
       centerZoomIn = [-121.65406393004127, 44.751312650390256]
     }
 
-    const map = new mapboxgl.Map({
+    const map = new maplibregl.Map({
       container: container.current,
       style: style,
       center: centerZoomOut,
+      attributionControl: false,
       zoom: 7.1417,
       minZoom: 3,
       maxZoom: 9,
@@ -67,6 +68,16 @@ const FireMap = () => {
     map.dragRotate.disable()
     map.boxZoom.disable()
     map.doubleClickZoom.disable()
+
+    map.addControl(
+      new maplibregl.AttributionControl({ compact: true }),
+      'bottom-right'
+    )
+
+    map
+      .getContainer()
+      .querySelector('.maplibregl-ctrl-attrib')
+      ?.classList.add('maplibregl-compact')
 
     map.on('load', () => {
       setMap(map)
