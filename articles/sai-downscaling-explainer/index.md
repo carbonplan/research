@@ -17,6 +17,7 @@ summary: Analyzing the impacts of stratospheric aerosol injection (SAI) requires
 quickLook: Releasing downscaled versions of stratospheric aerosol injection simulations, alongside tools to make it accessible.
 background: articles/035/windows
 icon: articles/035/windows-small
+card: sai-downscaling-explainer
 links:
   - label: Data
     href: https://source.coop/carbonplan/srm-downscaling
