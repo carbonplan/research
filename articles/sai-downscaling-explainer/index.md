@@ -107,12 +107,12 @@ We downscaled outputs from two global climate models — CESM2(WACCM6)<Cite ids=
   <ScenarioTemperature />
   <FigureCaption number={3}>
     Global mean surface temperature over the historical period (grey), under
-    SSP2-4.5 (orange), under a stratospheric aerosol injection scenario that
-    holds warming to 1.5 °C (red), and in a sudden termination shock scenario
-    (purple) in the global climate model CESM2(WACCM6). Thick lines show the
-    ensemble mean; thin lines show individual ensemble members. Use the selector
-    at the top of the figure to see how key input variables change across these
-    scenarios.
+    SSP2-4.5 (<Purple>purple</Purple>), under a stratospheric aerosol injection
+    scenario that holds warming to 1.5 °C (<Orange>orange</Orange>), and in a
+    sudden termination shock scenario (<Red>red</Red>) in the global climate
+    model CESM2(WACCM6). Thick lines show the ensemble mean; thin lines show
+    individual ensemble members. Use the selector at the top of the figure to
+    see how key input variables change across these scenarios.
   </FigureCaption>
 </Figure>
 
