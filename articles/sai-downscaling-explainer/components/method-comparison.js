@@ -11,7 +11,7 @@ import figure from './data/figure4.json'
 import basin from './data/mekong.json'
 
 const STORE =
-  'https://carbonplan-srm.s3.us-west-2.amazonaws.com/output/explainer/figures/figure4'
+  'https://data.source.coop/carbonplan/srm-downscaling/output/explainer/figures/figure4'
 const RESIZE_DEBOUNCE_MS = 100
 const MASK_LAYER_ID = 'basin-mask'
 const MASK_OPACITY = 0.6
