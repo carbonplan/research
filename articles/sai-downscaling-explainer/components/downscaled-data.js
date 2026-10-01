@@ -10,9 +10,9 @@ const SLIDER_SIZES = [22, 22, 26]
 const RESIZE_DEBOUNCE_MS = 100
 const DEFAULT_REGION = 'south-africa'
 const COARSE_URL =
-  'https://carbonplan-srm.s3.us-west-2.amazonaws.com/output/explainer/figures/figure1_coarse.zarr'
+  'https://data.source.coop/carbonplan/srm-downscaling/output/explainer/figures/figure1_coarse.zarr'
 const DOWNSCALED_URL =
-  'https://carbonplan-srm.s3.us-west-2.amazonaws.com/output/explainer/figures/figure1_downscaled.zarr'
+  'https://data.source.coop/carbonplan/srm-downscaling/output/explainer/figures/figure1_downscaled.zarr'
 const sx = {
   slider: {
     '&::-webkit-slider-thumb': {
