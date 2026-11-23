@@ -1,5 +1,36 @@
 const publications = [
   {
+    date: '11-23-2026',
+    title:
+      'Integrated assessment models overestimate carbon removal from enhanced weathering',
+    href: 'https://doi.org/10.70212/cdrxiv.2026501.v1',
+    color: 'grey',
+    summary:
+      'Integrated assessment models produce some of the largest estimates of enhanced weathering carbon removal. Soil chemistry can lower those estimates by more than half.',
+    journal: 'CDRXIV',
+    links: [
+      {
+        label: 'Press coverage',
+        href: 'https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/',
+      },
+    ],
+  },
+  {
+    date: '11-23-2026',
+    title: 'How much enhanced weathering carbon removal can croplands sustain?',
+    href: 'https://doi.org/10.31223/X57522',
+    color: 'grey',
+    summary:
+      'Many large-scale models project enhanced weathering carbon removal rates that could raise soil pH too high. We quantify the effect and propose limits for future estimates.',
+    journal: 'EarthArXiv',
+    links: [
+      {
+        label: 'Press coverage',
+        href: 'https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/',
+      },
+    ],
+  },
+  {
     date: '02-26-2026',
     title:
       'Recentering goals: A guide to CDR policymaking for a net-negative world',
