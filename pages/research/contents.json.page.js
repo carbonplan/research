@@ -5,11 +5,12 @@ function Contents() {
 }
 
 export function getServerSideProps({ res }) {
-  const { articles, commentary, comments, tools, extras } =
+  const { articles, commentary, publications, comments, tools, extras } =
     getCombinedContents()
   const pages = articles
     .concat(commentary)
     .concat(comments.map((t) => ({ ...t, type: 'commentary' })))
+    .concat(publications.map((t) => ({ ...t, type: 'publication' })))
     .concat(tools.map((t) => ({ ...t, type: 'tool' })))
     .concat(extras)
     .map(
